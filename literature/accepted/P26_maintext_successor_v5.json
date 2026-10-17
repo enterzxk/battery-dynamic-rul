@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "paper_id": "P26",
+  "decision": "MAIN_TEXT_REVIEWED_ACCEPTED_WITH_ROOT_ADDENDUM",
+  "coordinator": "01a14564-865a-7a30-9417-a1a04b44891a",
+  "read_note": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v5_batch06/P26_full_read_v3_root.json",
+  "read_sha256": "193b55f33af04b5e0baae7a3c2f7329266f9d491ab915d105351d3f6f37ee6a6",
+  "review": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v5_batch06/P26_independent_review_v3_root.json",
+  "review_sha256": "9a10931c11acd016582eca418b0542241ab974fb71793861fe6f093bd3182a96",
+  "review_receipt": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v5_batch06/P26_independent_review_v3_root.json.receipt.json",
+  "review_receipt_sha256": "402233065283c73a6b6e3cdab8df56d724ae31850975bd69be5791c06e550f31",
+  "source_spot_check": "/home/yndx/zxk/rul/reports/literature_acceptance/successor_20261016_v5/P26_root_source_addendum.json",
+  "spot_check_sha256": "bb6a72605c2b10f105333ad86d5f322f5b3139f4a59640387d2d17f84341cd1d",
+  "qualifications_zh": [
+    "active只用v3，v2式24抽取误疑已移除；root PDF第8页实核式24含绝对值，文本缺竖线不是原文错误。",
+    "表II #25为PWM 0.05Hz/4A、表III #25 NASA-S train，与VI.A仅恒流冲突保留；不猜实际实现。",
+    "任务是单放电循环SOH，EOL指示绝对误差非严格动态RUL；first/last crossing操作仍待代码核实，绝对误差不当signed bias。",
+    "NASA同化学体系有限划分，#7 MAPE未胜Mazzi；缺前序循环的时间编码实现未证。",
+    "PDF图像内容未抽取，无法核实图中曲线、视觉标注及图表中未呈现在文本抽取内容里的细节。",
+    "论文报告的实验数值未由本次阅读独立复算或复现实测。",
+    "各对照方法是否采用完全一致的数据预处理、训练预算与调参流程，来源未充分报告，无法核实。",
+    "正文给出相邻循环时间差的位置编码公式，但未报告其输入在具体缺失前序循环时的处理细节。",
+    "publisher version未独立核实；本文身份按所给来源限定为arXiv v1。",
+    "仅恒流限制声明与NASA-S训练含PWM电芯#25冲突；实际数据筛选实现未核。",
+    "式24绝对值由root PDF第8页视觉核实；实际计算代码仍未核。第8页同段先称first cycle below threshold又要求考虑last occurrence，具体EOL crossing实现未证；不能自行选取一种定义。"
+  ],
+  "counts_as_main_text_reviewed": 1,
+  "counts_as_si_reviewed": 0,
+  "novelty_or_performance_acceptance": false
+}

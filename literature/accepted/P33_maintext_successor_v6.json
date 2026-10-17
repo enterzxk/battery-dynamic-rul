@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "paper_id": "P33",
+  "decision": "MAIN_TEXT_REVIEWED_ACCEPTED_WITH_ROOT_ADDENDUM",
+  "coordinator": "01a1473c-91c2-7973-9f88-53ad49464e39",
+  "read_note": "/home/yndx/zxk/rul/literature/revisions/successor_20261017_v6_batch07/P33_full_read_v4_root.json",
+  "read_sha256": "c7280fbcae6e583886ea21e6d740a3e74eefcd7b7c3463ac623b3b4238ba76cc",
+  "review": "/home/yndx/zxk/rul/literature/revisions/successor_20261017_v6_batch07/P33_independent_review_v4_root.json",
+  "review_sha256": "8cc3cd95d4118a531cb9212dd3daaa209302d8ae3a60e0f84fe547094c2c09d2",
+  "review_receipt": "/home/yndx/zxk/rul/literature/revisions/successor_20261017_v6_batch07/P33_independent_review_v4_root.json.receipt.json",
+  "review_receipt_sha256": "7a5a95081e10a3de5e22367ea89093f6845e203d93f4d86556798d477d15a3c3",
+  "source_spot_check": "/home/yndx/zxk/rul/reports/literature_acceptance/successor_20261017_v6/P33_root_source_addendum.json",
+  "spot_check_sha256": "2b979b054de28b3ed871d2b17dc59be7fe7fb1acae8c054133e3747c4871b5c0",
+  "qualifications_zh": [
+    "容量峰值高于初始与温度背景、测试一年容量不低于初值与电压降额解释分开，均作者观察非项目因果实测。",
+    "Fig6电流/电压/表温及前一时刻特征；回归当前Xn、聚类累计Ah与charge轨迹；w2=min(alphaAh,0.5)，alpha训练集验证选择未独立核嵌套预算。",
+    "BIBO限有界输入/轨迹下误差有界，非独立泛化；8同来源退役电芯平均RMSPE3.40→3.27有个体负面，SOH非动态RUL。",
+    "未提供独立补充材料。",
+    "PDF图像内容未抽取核实；相关图表只依据正文文字说明及表格文本转述。",
+    "未报告独立外部测试集或跨化学体系验证。",
+    "未报告统计显著性检验。",
+    "未报告以寿命标签、百分比RUL或绝对动态RUL为目标的实验。"
+  ],
+  "counts_as_main_text_reviewed": 1,
+  "counts_as_si_reviewed": 0,
+  "novelty_or_performance_acceptance": false
+}

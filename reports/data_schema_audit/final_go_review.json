@@ -1,0 +1,58 @@
+{
+  "created_utc": "2026-10-16T03:43:52.240937+00:00",
+  "review_type": "bounded_static_no_fit_pre_run_audit",
+  "no_fit": true,
+  "new_fits": 0,
+  "optimizer_steps": 0,
+  "verdict": "NO_P1_BLOCKER_FOUND_FOR_FIRST_FIT; root retains final live GPU/lock check",
+  "runner_path": "/home/yndx/zxk/rul/src/experiments/cpmlp_hust_pilot.py",
+  "runner_sha256": "64b4f517cc9089f8702cc60fb41e9bdd1bc19924dc02e7344bbadbb8a5ff5529",
+  "config_path": "/home/yndx/zxk/rul/configs/experiments/cpmlp_hust_pilot_seed42_v3.json",
+  "config_sha256": "e22102c87e73a0e5dc67a064d082ecf61f4dae65394efe7801374465be1793fa",
+  "stage_manifest_path": "/home/yndx/zxk/rul/data/source_audit/stage_v11_hust_v11_labels/stage_manifest.json",
+  "stage_manifest_sha256": "656ed7b923ef82e55cb0cd8860afb2ec66d91366d4c1b5ba9f1c62786e337635",
+  "view_manifest_path": "/home/yndx/zxk/rul/experiments/cpmlp_hust_pilot_seed42/input_trainval/view_manifest.json",
+  "view_manifest_sha256": "5d215aac95ae30f40b01c8fba7c43d5f78a81e15904a979cc4972809be808b47",
+  "actual_trainval_labels_sha256": "ccb0d9b03f555aacbbd8a2ff9a03d536a5927ff11da99545ef747c4f80ea8cad",
+  "source_commit": "3b17bb53202e10711deae0448c91f84144bb3dd9",
+  "checks": {
+    "runner_sha_matches_reviewed": true,
+    "config_sha_matches_reviewed": true,
+    "config_frozen_authorized_total_eol": true,
+    "budget_exact": true,
+    "splits_47_15_15_disjoint": true,
+    "view_exactly_trainval_62_no_test": true,
+    "view_labels_actual_sha_matches_manifest": true,
+    "view_source_manifest_matches_actual": true,
+    "runner_authorization_guard": true,
+    "runner_mutual_exclusion": true,
+    "resume_refusals": true,
+    "resume_rng": true,
+    "test_locked": true
+  },
+  "all_checks_pass": true,
+  "facts": {
+    "training_semantics": "official_total_eol_not_dynamic_rul",
+    "train_cells": 47,
+    "validation_cells": 15,
+    "test_split_cells_in_config": 15,
+    "test_files_in_input_view": 0,
+    "budget": {
+      "steps": 300,
+      "epochs": 10,
+      "wall_seconds": 600
+    },
+    "optimizer": "Adam with official defaults as configured",
+    "validation_selection": "prefix-mean MAPE across all validation prefixes",
+    "also_reported": [
+      "native cell-macro MAE",
+      "native cell-macro MAPE"
+    ],
+    "resume_boundary": "epoch checkpoint only; RNG restored; refuse resume if optimizer-step ledger is newer than checkpoint; not exact mid-step hard-crash recovery"
+  },
+  "limits": [
+    "No runner execution or model/data loading in this review.",
+    "No GPU availability, competing-process, or live lock check; root owns those runtime checks.",
+    "The frozen pilot is a bounded HUST v11 total-EOL run, not full MIX reproduction and not dynamic RUL."
+  ]
+}

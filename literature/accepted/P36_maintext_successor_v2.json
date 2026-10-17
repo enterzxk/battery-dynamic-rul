@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "paper_id": "P36",
+  "decision": "MAIN_TEXT_REVIEWED_ACCEPTED_WITH_ROOT_SOURCE_ADDENDUM",
+  "coordinator": "01a1442c-2bf2-73e0-87a4-a075751edd0d",
+  "read_note": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v2/P36_full_read_v2.json",
+  "read_sha256": "8d557a908030fe819650a6d2de4c781c8eb33e4fc77db692a6c00304f73e070a",
+  "review": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v2/P36_independent_review_v7.json",
+  "review_sha256": "adc9d77dcb1b45c3188db2cd7621531eab0dff2323aa45ef34dc74aa12e67c14",
+  "source_spot_check": "/home/yndx/zxk/rul/reports/literature_acceptance/successor_20261016_v2/P36_root_source_check_addendum.json",
+  "spot_check_sha256": "219533397bd3a013c9128938e4dea801a7d3d29ea12bbbe0b3360afe5cf89171",
+  "source_backed_addendum_zh": "主文第11页报告在训练数据上逐步前向特征筛选，对最多10个特征进行5折交叉验证、重复5次，同时权衡平均误差与跨折方差；两特征模型方差较低，加入第三个DoD特征降低平均误差但增加波动。此root补充解决独立v7review唯一流程遗漏。主文第4页前5%数据22%MAPE/至多15%数据15.1%MAPE和2.8周RMSE以及第16页代码DOI已核。",
+  "qualifications_zh": [
+    "使用部分早期寿命数据预测总寿命，不能自动称动态RUL。",
+    "低DoD外推/加入DoD误差恶化是作者报告，不是本项目实测；是否严格负迁移需独立设定。",
+    "SI未提供；代码DOI原文存在不等于代码内容、实现对应或复现已核。"
+  ],
+  "counts_as_main_text_reviewed": 1,
+  "counts_as_si_reviewed": 0,
+  "novelty_or_performance_acceptance": false
+}

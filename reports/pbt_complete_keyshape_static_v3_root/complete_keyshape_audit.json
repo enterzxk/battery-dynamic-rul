@@ -1,0 +1,60 @@
+{
+  "status": "COMPLETE_STATIC_KEY_SHAPE_MATCH",
+  "expected_keys": 1447,
+  "observed_header_keys": 1447,
+  "missing": [],
+  "unexpected": [],
+  "shape_dtype_mismatch": [],
+  "expected_numel": 18849158,
+  "expected_tensor_bytes_F32": 75396632,
+  "family_counts": {
+    "gate": 2,
+    "flattenIntraCycleLayer": 69,
+    "intra_MoE_layers": 210,
+    "inter_MoE_layers": 1150,
+    "norm": 2,
+    "pe": 1,
+    "regression_head": 13
+  },
+  "sources": [
+    {
+      "path": "/home/yndx/zxk/rul/repos/pinned/PBT_122077bc5435bb0ba5406f2b112fa96903a08c6a/models/PBT.py",
+      "sha256": "171646ca4821eeac74b61f2a23b5f2381179a571d890994866dd0e3acc8655a8"
+    },
+    {
+      "path": "/home/yndx/zxk/rul/repos/pinned/PBT_122077bc5435bb0ba5406f2b112fa96903a08c6a/layers/MLPs.py",
+      "sha256": "9c17214ba535b52659581b4c9ba2cfdcd4fd1461705b74b2fbc3f210870fcebe"
+    },
+    {
+      "path": "/home/yndx/zxk/rul/repos/pinned/PBT_122077bc5435bb0ba5406f2b112fa96903a08c6a/layers/Embed.py",
+      "sha256": "55f25caf26aba3cbd1142e27d6f287575930ddd28f310150ffb0d43261e66770"
+    },
+    {
+      "path": "/home/yndx/zxk/rul/repos/pinned/PBT_122077bc5435bb0ba5406f2b112fa96903a08c6a/layers/SelfAttention_Family.py",
+      "sha256": "5ce236c78fa5036e3dbc6927d999dd51231c81e94228003da1449332a5015ad7"
+    },
+    {
+      "path": "/home/yndx/zxk/rul/data/processed/audit_only/PBT_seed42/args.json",
+      "sha256": "461d0cd4acaa2bd3edb0b330ca94eea1aadf9811cde94bd0b5f203272c9f6ed6"
+    },
+    {
+      "path": "/home/yndx/zxk/rul/reports/pbt_checkpoint_metadata_audit/seed42_static_checkpoint_audit_v2.json",
+      "sha256": "32d0373051fc148501af51a8a4bf461f9d327eeea259145e440512ea78307f32"
+    }
+  ],
+  "expected_manifest_sha256": "06793ed0b15cbf93a353320062190f3efbbac108d610af5cc32ff56ac8b24400",
+  "checkpoint_sha256_prior_header_record_only": "cdfaef812d64accdd4320c84e462753a85aa387bcfa7501cdfea9e9d565cd36d",
+  "checkpoint_payload_opened": false,
+  "scope": "Hand-derived named parameter and persistent buffer map from pinned constructor sources and pinned args. AST syntax only; source not imported/executed. Cached prior header JSON compared; checkpoint not reopened.",
+  "strict_load_executed": false,
+  "model_constructed": false,
+  "forward_passes": 0,
+  "new_fits": 0,
+  "optimizer_steps": 0,
+  "limits": [
+    "Static key/shape/dtype correspondence does not prove strict runtime load, values, arithmetic, dispatch, tokenizer/PCA removal equivalence, preprocessing, ID isolation or inference legality.",
+    "nn.Linear/LayerNorm naming and default F32 are static constructor assumptions, not introspected live runtime.",
+    "PCA pickle.load and tokenizer from_pretrained in original constructor remain unexecuted and unresolved; no bypass is authorized."
+  ],
+  "elapsed_seconds": 0.0201
+}

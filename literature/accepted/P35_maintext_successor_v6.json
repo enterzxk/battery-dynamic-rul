@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "paper_id": "P35",
+  "decision": "MAIN_TEXT_REVIEWED_ACCEPTED_WITH_ROOT_ADDENDUM",
+  "coordinator": "01a1473c-91c2-7973-9f88-53ad49464e39",
+  "read_note": "/home/yndx/zxk/rul/literature/revisions/successor_20261017_v6_batch07/P35_full_read_v3_root.json",
+  "read_sha256": "5de495ae36a7dbb40d44f045e7c9f5b067226a81db1afc11bb28a47618392e39",
+  "review": "/home/yndx/zxk/rul/reports/p35_independent_v3_luna/review.json",
+  "review_sha256": "2fdeb04014d27f740033b91906f3a22964b4d994710e171ce8e4792077a66c4b",
+  "independent_manifest": "/home/yndx/zxk/rul/reports/p35_independent_v3_luna/manifest.json",
+  "independent_manifest_sha256": "08596cf85be12d4bb43b896d2724261da3013b3176e2462cdee4135632b7a8fc",
+  "source_spot_check": "/home/yndx/zxk/rul/reports/literature_acceptance/successor_20261017_v6/P35_root_source_addendum.json",
+  "spot_check_sha256": "ffd1683b923de22b470a8c70f9ea992b43e5bb8fda2d5705f60706ba01281047",
+  "qualifications_zh": [
+    "仅接受arxiv2410.23893v3完整主文+内含附录阅读审查；独立子代理显式Luna/high，运行时模型未独立内省，非controller自动回执。",
+    "root与独立review均实际查看PDF7/9页，RF对照168±9、w2=104±6，旧1046/1689为文本粘连错误，旧PASS和旧note保留inactive。",
+    "SOH RMSE必要时reference补零匹配预测长度；不静默替换为公共长度指标。",
+    "前100循环条件生成完整SOH曲线并由阈值推寿命；非逐origin动态RUL或已证as-of/ID合法。",
+    "沿用BatteryML splits不证明等计算预算、完全物理电芯隔离或独立泛化；数字均作者报告，非本项目复测。",
+    "独立review证据中“10样本择优”具体操作在第6页3.1，条件矩阵在第5页2.2，root据实定位两页，不将第5页单独当完整采样协议。"
+  ],
+  "counts_as_main_text_reviewed": 1,
+  "counts_as_si_reviewed": 0,
+  "novelty_or_performance_acceptance": false
+}

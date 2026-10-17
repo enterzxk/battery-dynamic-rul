@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "paper_id": "P11",
+  "decision": "MAIN_TEXT_REVIEWED_ACCEPTED_WITH_ROOT_ADDENDUM",
+  "coordinator": "01a14441-0beb-7c42-bfae-d6ee875d4987",
+  "read_note": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v3_batch04/P11_full_read_v2_root.json",
+  "read_sha256": "4380aa27b72728527d1f9246222d858477b57924498eb73391939855dbe1553b",
+  "review": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v3_batch04/P11_independent_review_v2_root.json",
+  "review_sha256": "8cd2908adf9beca489eed418421f5bf0f8a8a12c5e13493647bdf490c5f62606",
+  "source_spot_check": "/home/yndx/zxk/rul/reports/literature_acceptance/successor_20261016_v3/P11_root_source_addendum.json",
+  "spot_check_sha256": "0de62cfe0efcb667a28be76bda4bc5ad556527e69e557fe7ffd2145c9f90ed37",
+  "qualifications_zh": [
+    "第10页Table3是逐层渐进复杂度表：Transformer训练时间/内存O(L²)、测试L步；Informer时间O(L log L)、内存O(L log L)、测试1步；MLP时间/内存O(L²)、测试1步；DLinear与IIP-Mixer时间/内存O(L)、测试1步。IIP-Mixer该推导依赖文中W=H、W×H=L等设定，不是实测运行时。",
+    "第9页Table2的MAE=0.037 Ah、RMSE=0.048 Ah是作者表中容量序列尺度误差；ARE以阈值RUL比定义。不能当作0.037循环的动态RUL-MAE。",
+    "电芯划分、预测跨度N、阈值穿越抽取与训练集内特征选择流程未证；主文接纳不是公平复现或独立泛化GO。",
+    "代码是否公开或与论文关联：无法核实。",
+    "是否存在已发表版本及其出版身份：无法核实。",
+    "撤稿状态：无法核实。",
+    "正文未报告具体电芯清单、样本数及训练/验证/测试的电芯级划分。",
+    "正文未报告训练轮数、优化器具体设置及早停规则。",
+    "具体预测跨度N、阈值穿越后处理步骤及随机森林特征选择是否仅拟合训练集：正文未报告，无法核实。",
+    "未提供补充材料，无法核实是否有SI中的额外方法或实验信息。"
+  ],
+  "counts_as_main_text_reviewed": 1,
+  "counts_as_si_reviewed": 0,
+  "novelty_or_performance_acceptance": false
+}

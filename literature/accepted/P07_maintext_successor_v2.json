@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "paper_id": "P07",
+  "decision": "MAIN_TEXT_REVIEWED_ACCEPTED_WITH_QUALIFICATIONS",
+  "coordinator": "01a1442c-2bf2-73e0-87a4-a075751edd0d",
+  "read_note": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v2/P07_full_read_v3_rootchecked.json",
+  "read_sha256": "631bc90387b91329d0cb1c9f8771928cf65bddcc51439e22d7e6de6ef81fa124",
+  "review": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v2/P07_independent_review_v7.json",
+  "review_sha256": "9920f560daa83a78f20e1ced750c04d5608de4b3715f1d810428e6bfa5e28fca",
+  "source_spot_check": "/home/yndx/zxk/rul/reports/literature_acceptance/successor_20261016_v2/P07_root_source_check.json",
+  "spot_check_sha256": "49a6fc478b22e9dc9c7110bcf518034e0daf2ec6d03c26fb4ce21531a7b3f3f8",
+  "qualifications_zh": [
+    "按输入首页EES/Published15September2026/DOI10.1039/d6ee03446b识别为发表版文本；原路径arxiv命名不证明v7身份，未与arxiv逐字对齐。",
+    "主文17个有文字页面及第18空页；SI未提供，划分/超参数完整细节未核。",
+    "24.8%/73.9%是摘要作者报告；正文另列12覆盖内与3覆盖外分项，完整聚合和最大值归属未核，不由root重算或替作者解释。",
+    "已完成静态metadata/validation embedding安全解码不等于PBT模型复现；forward0；代码作者声明不是运行证据。"
+  ],
+  "counts_as_main_text_reviewed": 1,
+  "counts_as_si_reviewed": 0,
+  "novelty_or_performance_acceptance": false
+}

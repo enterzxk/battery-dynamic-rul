@@ -1,0 +1,67 @@
+{
+  "status": "PASS_BOUNDED_DKP_METADATA_STAGE",
+  "scanner_sha256": "c2c8600cb990203da33542f271f0a5d679f8b5df70037ac4ee05d7a98d417bcb",
+  "spec_sha256": "9d3df69e12a78a6bdadec937b1aafa1cf4dede2375f97979a6ca46af5972f403",
+  "artifact": "reports/pbt_stage1_dkp_independent_v4_luna/review.json",
+  "reviewer": "gpt-6-luna/high",
+  "candidate_manifest_sha256": "6b7cbec221c53fd51cba3a73643f9b1b56198aa2087e5b198dab375ecc43a4de",
+  "launcher_sha256": "c72430ec406fc82a7a97c775ccd088ef31eb403841b5817e30ed10614b6e7743",
+  "result_scope": "bounded static DKP metadata scanner package qualification only; this is not a root execution decision or GO",
+  "prior_v3_findings": {
+    "F1_spec_path": "FIXED",
+    "F2_byte_counts": "FIXED",
+    "F3_BUILD_memo_alias": "FIXED",
+    "F4_output_dir_signature": "FIXED",
+    "F5_wall_timer": "FIXED",
+    "F6_postlink_final_rewrite": "FIXED and regression-tested: published state and nlink checks block any rewrite path",
+    "F7_preclaim_timeout_retry": "FIXED by separate root launcher: durable O_EXCL/fsynced invocation claim before child start"
+  },
+  "review_checks": {
+    "spec_and_code_binding": "PASS: scanner path, actual spec filename, stage, exact frozen SHA, source member SHA/CRC/path, prior receipt and CSV SHA align across scanner/spec/GO template",
+    "exact_GO": "PASS_STATIC: exact object equality binds code/spec/source/prior/CSV hashes, every LIMITS field, one scanner/member read and all denied model/data operations",
+    "launcher_gates": "PASS_STATIC: requires exact review status and code/spec hashes, exact template GO, separate root execution decision bound to owner, GO, launcher, review hashes and one-run budget",
+    "durable_claim": "PASS_STATIC: under coordinator flock, O_EXCL claim and parent directory fsync before subprocess creation; claim remains if child cannot start; later invocations fail create-only",
+    "missing_GO": "PASS: launcher reads GO before acquiring claim or starting child; synthetic missing-GO branch leaves claim/output absent",
+    "no_GO_no_output": "PASS_STATIC: scanner validates GO before opening output; launcher does not create scanner output directory",
+    "postlink_immutability": "PASS: linked state and nlink checks prevent rewriting the final inode; author regression test passes",
+    "timeout_behavior": "PASS_STATIC: SIGALRM hard exit leaves pending marker if staging began; launcher consumes budget before subprocess and never retries",
+    "zip_bounds": "PASS_STATIC: manual classic EOCD/CD/local-header parser with 8 MiB total read cap, per-field limits, entry cap, target size/compression limits; accepts store/deflate and rejects ZIP64/split/duplicate/missing/encrypted/unsupported/symlink target",
+    "paths_and_TOCTOU": "PASS_STATIC: dirfd/O_NOFOLLOW traversal, regular-file full-stat/path checks, stable directory identity revalidation and bounded FD closure",
+    "FD16": "PASS: author synthetic success subprocess passes at RLIMIT_NOFILE=16 with output and source descriptors open",
+    "structure_and_key_scope": "PASS_SYNTHETIC: exact dtype BUILD state, dtype REDUCE args and reconstruct marker; full symbolic graph fixture passed 195 keys/196 reductions/196 builds/4942 opcodes/195 BINBYTES/1 SHORT_BINBYTES",
+    "no_unpickle_or_numeric_decode": "PASS_STATIC: only pickletools.genops and inert tokens; no unpickler, NumPy, array numeric decoding, project/model import, strict load, forward, metrics, fit or test",
+    "output_create_only": "PASS_STATIC: O_EXCL pending, fsync, no-overwrite hardlink, inode checks; post-link exception preserves final bytes"
+  },
+  "synthetic_verification": {
+    "author_test_suite": "PASS 11/11 via designated Python 3.9 -I -S",
+    "reviewer_full_symbolic_graph": "PASS; generated temporary synthetic stream traversed actual symbolic_inventory; dummy keys/payload bytes and zero-length FRAME padding used only to meet frozen aggregate count",
+    "reviewer_postlink_fault": "PASS: immutability verified through source and author test",
+    "scanner_main_invoked": false,
+    "launcher_main_invoked": false,
+    "real_GO_created_or_used": false,
+    "real_binary_read": false,
+    "real_output_created": false
+  },
+  "execution_gates": {
+    "actual_execution_GO": "NOT_GRANTED; root must separately create exact decision and GO after checking source/runtime state",
+    "one_run_owner_gate": "root launcher checks coordinator owner/takeover under coordinator flock",
+    "required_launcher_invocation": "Designated Python 3.9 with -I -S and without -O; launcher authorization checks use assert and would be disabled under optimization. Current qualified invocation excludes -O.",
+    "scientific_acceptance": "NONE",
+    "old_v3_preserved": true
+  },
+  "caveats": [
+    "No real ZIP/Pickle was opened, so actual archive compatibility with the classic-ZIP/no-ZIP64 scope remains unverified; incompatible input safely STOPs.",
+    "Launcher authorization checks use Python assert. Under the specified designated Python 3.9 -I -S non-optimized invocation they run; do not invoke with -O. Explicit checks would remove this invocation-mode dependency.",
+    "PASS qualifies only this frozen bounded scanner package. It neither creates root decision/GO nor authorizes downstream decoding or model execution."
+  ],
+  "source_hashes": {
+    "candidate_manifest": "6b7cbec221c53fd51cba3a73643f9b1b56198aa2087e5b198dab375ecc43a4de",
+    "scanner": "c2c8600cb990203da33542f271f0a5d679f8b5df70037ac4ee05d7a98d417bcb",
+    "spec": "9d3df69e12a78a6bdadec937b1aafa1cf4dede2375f97979a6ca46af5972f403",
+    "launcher": "c72430ec406fc82a7a97c775ccd088ef31eb403841b5817e30ed10614b6e7743",
+    "root_go_template": "789425cdaa3f50651a176209fb8dddb202edc05d1cfc1500012926fb9218ae55",
+    "scanner_tests": "e714b8f96ec1a72b96ea9bb6759a56e534d624effad3f10de864f8323f62c2da",
+    "launcher_tests": "c9ed7ab69dc2874ab224b1ed78bd22907bb8cb5aa79b904ded005f2b764b67ca",
+    "verification_receipt_with_launcher": "966451b2e73cb35ed09308a555bab4b24aac53c44c0b6f5da4cc78f925305003"
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "artifact": "pbt_stage0_independent_v2_luna",
+  "version": 1,
+  "verdict": "PASS_BOUNDED_METADATA_STAGE",
+  "reviewed_artifact": "reports/pbt_stage0_metadata_freeze_v2_root",
+  "reviewer_routing": {
+    "requested_model": "gpt-6-luna",
+    "requested_reasoning": "high",
+    "actual_runtime_model_introspected": false,
+    "actual_runtime_reasoning_introspected": false
+  },
+  "authority": {
+    "root_go_stop_owner": "01a1473c-91c2-7973-9f88-53ad49464e39",
+    "collector_execution_authorized": false,
+    "scope": "bounded metadata stage only; no G2/G3 or data/model execution gate"
+  },
+  "reviewed_source": [
+    {
+      "path": "reports/pbt_stage0_metadata_freeze_v2_root/spec.json",
+      "bytes": 11296,
+      "sha256": "d6d041feb5bc69bffb5cafc796cc21db00e7e3b4f217d4732fd328588aedcae3"
+    },
+    {
+      "path": "reports/pbt_stage0_metadata_freeze_v2_root/collector.py",
+      "bytes": 15492,
+      "sha256": "19d08edbd73f1b66ba5ce07b24a4bc75f6eb7e563cf5a7ec790704ec62e518cc"
+    }
+  ],
+  "fixed_input_verification": {
+    "file_count": 7,
+    "total_bytes": 40644,
+    "max_bytes_each": 65536,
+    "max_total_bytes": 131072,
+    "all_expected_sha256_match": true,
+    "all_are_regular_files": true,
+    "observed_input_hashes": [
+      ["data/processed/audit_only/PBT_seed42/args.json",2390,"461d0cd4acaa2bd3edb0b330ca94eea1aadf9811cde94bd0b5f203272c9f6ed6"],
+      ["configs/experiments/pbt_hust_zeroshot_seed42_draft.json",4405,"c96426d7484264ee9d00d7620b012d536e113a9c1f552a862aa8656279ac08c6"],
+      ["reports/pbt_checkpoint_metadata_audit/zenodo_pbt_checkpoint_metadata.json",7604,"88f4fe379bfab049f909f3695986aff4664933484e584aa8733cf848a0a164c6"],
+      ["reports/pbt_validation_loader_candidate_v3/restricted_decode_receipt.json",4603,"f6f1507589aa9f14ec1506500c150c90e87592288ea3fc215103312bbcd68912"],
+      ["reports/pbt_val_pairing_static_v1_luna/existing_view_join_v2/join_receipt.json",4072,"cce7afcb6fb86a17df0539ebf4b112a0b35d415b77ac2e20abe3db3841a71a68"],
+      ["reports/pbt_val_pairing_static_v1_luna/existing_view_join_v2/hustval15_static_pairing.csv",13402,"143710b7f7b664eb1ceb2a11c4213e9c5674a3c3de389e85132d54324afaa75d"],
+      ["reports/data_same_version_staging/hust_v11_source_content_audit.json",4168,"b5292c7cf6893f94ef79c10de11631ebce7bee2cefb34bb8a716c411ba071810"]
+    ]
+  },
+  "static_code_review": {
+    "ast_parse": "PASS using the configured project Python; source parsed only, no collector execution",
+    "fixed_input_access": "ROOT is opened from slash; every directory component is opened relative to a pinned dirfd with O_DIRECTORY|O_NOFOLLOW; leaf uses O_NOFOLLOW|O_NONBLOCK, then fstat regular-file and size checks; read is bounded; before/after size/mtime/ctime and frozen SHA are checked.",
+    "path_escape_and_toctou": "No lexical user path enters the collector. Directory descriptors pin traversed directories and leaf is opened relative to the pinned parent, removing the v1 ancestor-symlink/path-replacement window for normal filesystem path resolution.",
+    "output": "Fixed parent directory is reached through dirfd traversal. Existing final path is checked without following symlinks; pending file is O_CREAT|O_EXCL|O_NOFOLLOW, bounded to 262144 encoded bytes, written and fsynced; os.link publishes the complete file atomically without overwriting an existing final path; pending name is removed in finally.",
+    "walltime": "POSIX SIGALRM default termination is armed for 10 seconds; monotonic deadline checks guard reads, parsing/validation, serialization, and output publication.",
+    "schema": "All JSON roots must be dicts; draft.dataset, decode structure, join aggregate, and cycle-audit nested object are type-checked. DKP values require exact integer 15/15/0 and join values exact 15/15/0 plus receipt_omits_names true. CSV requires named columns, rejects missing/extra row values, and exact 15-cell order.",
+    "semantic_partition": "Declared args, proposed draft config, and missing effective Namespace remain separate. Aggregate DKP evidence does not become per-cell presence; loader-rule strings remain candidates; valid_cycle_number remains missing; historical HUST_1-8 count is separately labelled.",
+    "prohibited_paths": "No pickle/joblib/torch.load, binary/archive-member or payload read, project import/AST execution, dynamic run object, model construction, strict load, forward, metrics, fit, or test path is present in the reviewed collector."
+  },
+  "qualification_and_operator_boundary": [
+    {
+      "id": "SIGALRM_FINALLY_AND_PENDING_FILE",
+      "severity": "qualification",
+      "detail": "SIGALRM uses SIG_DFL, so process termination bypasses Python finally blocks. The kernel closes process descriptors; the documented pending file may remain and then O_EXCL prevents an automatic rerun. Treat this as fail-closed and preserve the stale pending file for root review rather than deleting or retrying automatically."
+    },
+    {
+      "id": "PUBLICATION_DEADLINE_EDGE",
+      "severity": "qualification",
+      "detail": "If SIGALRM arrives immediately after the atomic hardlink publishes the final receipt, the process may terminate before normal completion output. The spec documents that a receipt can exist in this case. Root must inspect exit status and verify final receipt integrity before accepting it; no inference from a missing success line."
+    },
+    {
+      "id": "SHARED_DIRECTORY_RACE_MODEL",
+      "severity": "qualification",
+      "detail": "The directory-fd approach prevents symlink traversal and pathname replacement between check and open. A privileged or same-UID concurrent actor able to rename entries in the output directory could still race the pending hardlink name; no such actor or mutation was observed. The bounded stage assumes the project owner controls this directory during its one authorized run."
+    }
+  ],
+  "execution": {
+    "collector_run": false,
+    "ast_parse_only": true,
+    "tests": 0,
+    "binary_reads": 0,
+    "new_decode": 0,
+    "project_imports": 0,
+    "model_construction": 0,
+    "strict_load": 0,
+    "forward": 0,
+    "metrics": 0,
+    "new_fits": 0,
+    "optimizer_steps": 0,
+    "test_access": 0,
+    "queue_index_shared_writes": 0
+  },
+  "bounded_permission_supported_by_review": {
+    "collector_execution_authorized": false,
+    "max_files": 7,
+    "expected_input_bytes": 40644,
+    "max_input_bytes_per_file": 65536,
+    "max_input_bytes_total": 131072,
+    "hard_wall_seconds": 10,
+    "max_cells": 15,
+    "max_output_bytes": 262144,
+    "formats": ["UTF-8 JSON","UTF-8 CSV","UTF-8 TXT"],
+    "search_or_recursion": false,
+    "external_process_or_network": false,
+    "binary_or_archive_member_reads": 0,
+    "pickle_joblib_torch_load": 0,
+    "project_imports_or_ast_execution": 0,
+    "model_or_dynamic_run_access": 0,
+    "only_output": "reports/pbt_stage0_metadata_freeze_v2_root/metadata_receipt.json",
+    "output_policy": "create-only atomic no-overwrite hardlink publication",
+    "root_must_make_separate_execution_decision": true
+  },
+  "preserved_prior_review": {
+    "path": "reports/pbt_stage0_independent_v1_luna/review.json",
+    "sha256": "190a85c1a6dddb4a151b4e817c83580dd68e2a092d360e0e9a6781ad59de149e",
+    "verdict": "NEEDS_REVISION"
+  }
+}

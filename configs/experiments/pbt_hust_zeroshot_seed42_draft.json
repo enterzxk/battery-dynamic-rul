@@ -1,0 +1,92 @@
+{
+  "protocol_id": "pbt_hust_v11_zero_shot_total_eol_seed42_draft",
+  "status": "DRAFT",
+  "training_authorized": false,
+  "inference_authorized": false,
+  "training_semantics": "official_total_eol_pretrained_transfer",
+  "dynamic_rul": false,
+  "full_pbt_paper_reproduction": false,
+  "new_method": false,
+  "dataset": {
+    "name": "HUST",
+    "release": "v11",
+    "zenodo_record": 19688272,
+    "view": "CPMLP audited HUST v11 train/val split manifest",
+    "candidate_target_partition": "val only",
+    "candidate_validation_cells": 15,
+    "train_dataset_constructed": false,
+    "test_dataset_constructed": false,
+    "test_inference": false
+  },
+  "checkpoint": {
+    "record_id": 17972780,
+    "zenodo_file": "PBT_checkpoints.zip",
+    "official_md5": "7a2f59d027cf13c3e608d3b20a9b5291",
+    "archive_sha256": "b3e6730a9e33c76578c7cef78464f13dbb39c9f561056f0f36edc5ba0bb9bec2",
+    "member": "seed42-100/model.safetensors under PBTs/PBT_10_Llama_..._MIX_large...",
+    "member_sha256": "cdfaef812d64accdd4320c84e462753a85aa387bcfa7501cdfea9e9d565cd36d",
+    "checkpoint_kind": "safetensors state dict; header statically read; no tensor payload loaded",
+    "args_json_sha256": "461d0cd4acaa2bd3edb0b330ca94eea1aadf9811cde94bd0b5f203272c9f6ed6",
+    "checkpoint_training_source_confirmed": false,
+    "checkpoint_label_scaler_sha256": "4b7b6926384a6db536a90f209f432c543cc54f2bd1b9a306120d7c72d2874bac"
+  },
+  "reported_checkpoint_args": {
+    "seed": 42,
+    "dataset": "MIX_large",
+    "model": "PBT",
+    "data": "Dataset_BatteryLifeLLM_original",
+    "llm_choice": "Llama",
+    "LLM_path": "/data/LLMs/models--meta-llama--Llama-3.2-3B-Instruct/snapshots/0cb88a4f764b7a12671c53f0838cd831a0843b95",
+    "pca_path": "/data/trf/python_works/BatteryLife/dataset/MIX_large_pca_0.99_Llama.pkl",
+    "early_cycle_threshold": 100,
+    "seq_len": 1,
+    "charge_discharge_length": 300,
+    "d_model": 128,
+    "n_heads": 8,
+    "e_layers": 2,
+    "d_layers": 10,
+    "d_ff": 128,
+    "learning_rate": 2.5e-05,
+    "batch_size": 128,
+    "train_epochs": 100,
+    "least_epochs": 80,
+    "loss": "MSE"
+  },
+  "candidate_eval_budget": {
+    "optimizer_steps": 0,
+    "epochs": 0,
+    "forward_passes": 0,
+    "max_test_files_read": 0,
+    "metrics_not_computed": true
+  },
+  "embedding_artifact": {
+    "record_id": 17972780,
+    "file": "aging_condition_prompt_embeddings.zip",
+    "md5": "79362ef52a3f7c7db6278ee546f7d06e",
+    "sha256": "6199e9cf81726779b503a50ba343b1b40caa919566c069d9e84b238dcd5c0112",
+    "members": [
+      "validation_DKP_embed_all_Llama.pkl",
+      "training_DKP_embed_all_Llama.pkl",
+      "testing_DKP_embed_all_Llama.pkl"
+    ],
+    "all_embeddings_pickle": true,
+    "loaded": false
+  },
+  "gates": {
+    "test_locked": true,
+    "no_train": true,
+    "no_inference_in_this_task": true,
+    "weights_only_safetensors_safe_header_inspection": true,
+    "scaler_not_joblib_loaded": true,
+    "gated_hf_terms_not_accepted": true
+  },
+  "blocked_until_review": [
+    "Pinned Dataset_BatteryLifeLLM_original loader unconditionally pickle.load()s training, validation and testing DKP embedding maps; testing embedding must be excluded before any val-only path.",
+    "Pinned PBT Model.__init__ unconditionally calls AutoTokenizer.from_pretrained(configs.LLM_path, local_files_only=True); exact gated Llama path from args is absent on server. Do not download or access gated assets.",
+    "Pinned PBT Model.__init__ unconditionally pickle.load()s configs.pca_path; args path /data/trf/python_works/BatteryLife/dataset/MIX_large_pca_0.99_Llama.pkl is absent. Do not load untrusted PCA object.",
+    "Three embedding members are pickle. Static opcode/global/schema audit is required before any restricted decoder; test member must not be decoded for val-only pilot.",
+    "Zenodo checkpoint bundle names args MIX_large, but actual training cell membership/overlap remains unverified. Do not infer checkpoint training provenance from split names or prior HUST overlap.",
+    "Current project venv has accelerate/transformers/safetensors etc; deepspeed and sentence_transformers absent. No package changes attempted."
+  ],
+  "next_allowed_action": "First static-inspect only validation_DKP_embed_all_Llama.pkl with pickletools (no load); then resolve tokenizer/PCA dependencies without changing pinned model semantics. No inference command is authorized or provided until root review."
+}

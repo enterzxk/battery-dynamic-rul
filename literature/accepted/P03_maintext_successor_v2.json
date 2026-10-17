@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "paper_id": "P03",
+  "decision": "MAIN_TEXT_REVIEWED_ACCEPTED_WITH_QUALIFICATIONS",
+  "coordinator": "01a1442c-2bf2-73e0-87a4-a075751edd0d",
+  "read_note": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v1/P03_full_read_compact_v4_root.json",
+  "read_sha256": "df3ca017a9a5d65115c94b1acad0a4f32d34b4a7afc3665306e7093d39e31272",
+  "review": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v1/P03_independent_review_v6.json",
+  "review_sha256": "c9c13260271e2f0a5a93061967557b56113f93d8447699488535995982fc90e7",
+  "source_spot_check": "/home/yndx/zxk/rul/reports/literature_acceptance/successor_20261016_v2/P03_root_source_check.json",
+  "spot_check_sha256": "9571893e91aaaf73ef1002dfc1ca3e6f292a875e4de2738243e541d5e9307a4b",
+  "qualifications_zh": [
+    "接纳 compact_v4_root，旧 v3 方向错误记录保留，不作 active 稿。",
+    "主文51个有文字页面及第52空页；独立 SI 未提供，不能计 SI 完成。",
+    "早期前100圈的总寿命预测不等于任意时点动态 RUL；作者未用验证集选择 CNN 超参数的限制保留。",
+    "正文作者提供代码链接不等于项目执行或复现。"
+  ],
+  "counts_as_main_text_reviewed": 1,
+  "counts_as_si_reviewed": 0,
+  "novelty_or_performance_acceptance": false
+}

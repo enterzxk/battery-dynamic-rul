@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "paper_id": "P10",
+  "decision": "MAIN_TEXT_REVIEWED_ACCEPTED_WITH_ROOT_ADDENDUM",
+  "coordinator": "01a14564-865a-7a30-9417-a1a04b44891a",
+  "read_note": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v3_batch04/P10_full_read_v5_root.json",
+  "read_sha256": "3a66660f6a6489b832a46960689f4e2a9a5b20d2b3b284ddf1793905ae003c90",
+  "review": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v3_batch04/P10_independent_review_v5_root.json",
+  "review_sha256": "aad1b3332420c6f17b63f9db9db70d6382eb100fd9bc285aabab6e62b697c9e0",
+  "review_receipt": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v3_batch04/P10_independent_review_v5_root.json.receipt.json",
+  "review_receipt_sha256": "47ffe1b394a8695223a26169ba9f3d178a50fd6f77df81070c2608adcec328a5",
+  "source_spot_check": "/home/yndx/zxk/rul/reports/literature_acceptance/successor_20261016_v5/P10_root_source_addendum.json",
+  "spot_check_sha256": "81767e2d32da774ae99e8c84208a31d97c294feab0e4aaebf871eba60eaf380f",
+  "qualifications_zh": [
+    "只以最新v5及独立v5审查裁定，旧版本和旧失败保留；root本轮实读40/42页限制与愿景，既有20折source/算术回执不重算。",
+    "Table6逐折算术均值XGBoost0.99653、MLP0.99105；MLP四位half-up0.9911/ties-even0.9910。原表两mean0.9969冲突保留，算术不是模型复现。",
+    "RUL是目标非已证输入泄漏；未明确电芯隔离、Table5评估集归属、CV和留出评估对应，不能从高R2宣称独立泛化。",
+    "第40页明确缺真实部署能力/示例配置，第42页应用愿景仅潜力非部署。",
+    "第 47 页文本为空；该页及正文图表的图像内容未据文本核实。所列页码段中另出现第 48 页空文本记录，但 PDF 页数与 form-feed 页数均为 47，因此该记录不计入阅读页数。",
+    "图表只能依据正文中的文字描述核对，图中未被文本转录的具体内容无法核实。",
+    "出版 venue、期刊或会议版本及其出版身份未核实；代码虽在正文中被称可通过 GitHub 获取，但代码仓库内容与可运行性未核实。",
+    "按电芯划分的数据集分配、完整交叉验证嵌套细节、各模型最终选择测试集的具体流程均未报告或无法核实。",
+    "分类准确率及部分回归指标在正文段落与表格间存在不一致；上述结果按对应段落或表格分别转述，无法从提供文本判定哪组数值为最终更正值。",
+    "正文没有报告显式消融实验。",
+    "表5的具体评估集归属未明确：80:20拆分事实不能代替结果表与留出测试集的明确对应。",
+    "Table6汇总均值/std与逐折值的来源差异未解；作者未提供更正。"
+  ],
+  "counts_as_main_text_reviewed": 1,
+  "counts_as_si_reviewed": 0,
+  "novelty_or_performance_acceptance": false
+}

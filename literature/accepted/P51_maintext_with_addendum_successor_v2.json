@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "paper_id": "P51",
+  "decision": "MAIN_TEXT_REVIEWED_ACCEPTED_WITH_ROOT_SOURCE_ADDENDUM",
+  "coordinator": "01a1442c-2bf2-73e0-87a4-a075751edd0d",
+  "read_note": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v1/P51_full_read_v2.json",
+  "read_sha256": "34a5003ae80b52b42a4b7337c9955239cd78b4eb19df4cd7d94135861f21a581",
+  "review": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v1/P51_independent_review_v6.json",
+  "review_sha256": "873def897c6360bd0695c66b01ca56e85f720ecef7b1abcea4f126c7a407675d",
+  "source_spot_check": "/home/yndx/zxk/rul/reports/literature_acceptance/successor_20261016_v2/P51_root_source_check_addendum.json",
+  "spot_check_sha256": "6d800844d3ea35bd84a9f091a15c63d122a8d1f8a1e7f8b66906dcbd0974d083",
+  "source_backed_addendum_zh": "主文第9页Discussion明确说明，作者在电池A训练、电池B测试，而非同一电池早期训练、后期测试，用于防止该种训练/测试信息泄漏。原note已说明按电池划分，独立review指出漏了此理由；本root源文补充纳入接纳记录。此作者陈述不证明所有预训练身份、as-of处理或其他泄漏风险均已排除。",
+  "qualifications_zh": [
+    "本篇是SOH估计，不能作为动态RUL或剩余寿命性能证据。",
+    "SI未提供；预印本身份未核实；代码来源声明不等于实际运行/复现。",
+    "本root接纳含明确上述页9补充，不将review PASS当无遗漏。"
+  ],
+  "counts_as_main_text_reviewed": 1,
+  "counts_as_si_reviewed": 0,
+  "novelty_or_performance_acceptance": false
+}

@@ -1,0 +1,111 @@
+{
+  "status": "SOURCE_CONFIG_OUTPUT_PATH_AUDITED_NOT_EXECUTED",
+  "coordinator": "01a14441-0beb-7c42-bfae-d6ee875d4987",
+  "created_utc": "2026-10-16T15:15:19.729101+00:00",
+  "sources": [
+    {
+      "path": "/home/yndx/zxk/rul/repos/pinned/PBT_122077bc5435bb0ba5406f2b112fa96903a08c6a/BatteryLifeLLMUtils/configuration_BatteryLifeLLM.py",
+      "sha256": "375e53ebc991fae70369847752899a3887d68219f52744d08202ea319a3a6c8d"
+    },
+    {
+      "path": "/home/yndx/zxk/rul/repos/pinned/PBT_122077bc5435bb0ba5406f2b112fa96903a08c6a/evaluate_model.py",
+      "sha256": "24a6150f95646fbde0e7eabd048407bdbe5a8722aff656360663a0743c5d301f"
+    },
+    {
+      "path": "/home/yndx/zxk/rul/repos/pinned/PBT_122077bc5435bb0ba5406f2b112fa96903a08c6a/scripts/evaluate_model.sh",
+      "sha256": "d7fbfac60a28dd5b2f208a2989ef8ee25fc1336255c7a763091cba85919bc135"
+    },
+    {
+      "path": "/home/yndx/zxk/rul/repos/pinned/PBT_122077bc5435bb0ba5406f2b112fa96903a08c6a/models/PBT.py",
+      "sha256": "171646ca4821eeac74b61f2a23b5f2381179a571d890994866dd0e3acc8655a8"
+    },
+    {
+      "path": "/home/yndx/zxk/rul/reports/pbt_scaler_static_audit_v4_root/scaler_static_audit.json",
+      "sha256": "5a0a5eb2a1bd273fb1359188bc52dca061b0eb5ba7c1d7e32937e321af84af19"
+    }
+  ],
+  "config_get_configs_ast_exact_namespace_passthrough": true,
+  "source_evidence": [
+    {
+      "path": "/home/yndx/zxk/rul/repos/pinned/PBT_122077bc5435bb0ba5406f2b112fa96903a08c6a/BatteryLifeLLMUtils/configuration_BatteryLifeLLM.py",
+      "lines": [
+        19,
+        29
+      ],
+      "finding": "BatteryElectrochemicalConfig stores args; get_configs returns argparse.Namespace(**self.configs) without value transformation."
+    },
+    {
+      "path": "/home/yndx/zxk/rul/repos/pinned/PBT_122077bc5435bb0ba5406f2b112fa96903a08c6a/evaluate_model.py",
+      "lines": [
+        517,
+        537
+      ],
+      "finding": "Evaluator saves trained_dataset, overwrites evaluation dataset and CLI model/batch/root/numworkers; not a verbatim checkpoint args evaluation."
+    },
+    {
+      "path": "/home/yndx/zxk/rul/repos/pinned/PBT_122077bc5435bb0ba5406f2b112fa96903a08c6a/evaluate_model.py",
+      "lines": [
+        568,
+        572
+      ],
+      "finding": "PBT route constructs BatteryElectrochemicalConfig -> AutoConfig.from_pretrained optional text model -> BatteryLifeConfig -> PBT.Model."
+    },
+    {
+      "path": "/home/yndx/zxk/rul/repos/pinned/PBT_122077bc5435bb0ba5406f2b112fa96903a08c6a/scripts/evaluate_model.sh",
+      "lines": [
+        30,
+        38
+      ],
+      "finding": "Published script source requests accelerate mixed_precision bf16. CPU runtime parity not tested."
+    },
+    {
+      "path": "/home/yndx/zxk/rul/repos/pinned/PBT_122077bc5435bb0ba5406f2b112fa96903a08c6a/evaluate_model.py",
+      "lines": [
+        655,
+        656
+      ],
+      "finding": "Inverse transform uses sqrt(label_scaler.var_[-1]) and mean_[-1]. Static scaler values known; code joblib.load remains prohibited."
+    },
+    {
+      "path": "/home/yndx/zxk/rul/repos/pinned/PBT_122077bc5435bb0ba5406f2b112fa96903a08c6a/evaluate_model.py",
+      "lines": [
+        706,
+        707
+      ],
+      "finding": "load_checkpoint_in_model then accelerator.prepare; actual strictness/runtime not executed or certified."
+    },
+    {
+      "path": "/home/yndx/zxk/rul/repos/pinned/PBT_122077bc5435bb0ba5406f2b112fa96903a08c6a/evaluate_model.py",
+      "lines": [
+        719,
+        770
+      ],
+      "finding": "model.eval/no_grad; PBT returns tuple first outputs with DKP and masks, then outputs*std+mean. Official evaluator constructs test loader and is not eligible for current val-only execution."
+    },
+    {
+      "path": "/home/yndx/zxk/rul/repos/pinned/PBT_122077bc5435bb0ba5406f2b112fa96903a08c6a/models/PBT.py",
+      "lines": [
+        589,
+        641
+      ],
+      "finding": "Forward casts curve/mask/DKP bf16, uses gate, experts, positional encoding, last valid-prefix representation and regression_head. No zero-DKP or precision changes authorized."
+    }
+  ],
+  "root_interpretation_zh": [
+    "get_configs的源码表达式可静态证明是Namespace逐键传递；没有导入transformers或执行包装器。",
+    "已核源码的反归一化公式为y_cycles=y_scaled*765.6855681613043+879.4115308151094，其中sqrt(var)=scale；只固定算术参数，不计算任何预测。",
+    "作者发布评估脚本的bf16配置与模型内bfloat16转换一致，但CPU autocast/算子数值等价没有验证，不能据此运行替代精度。",
+    "官方evaluate_model.py创建test数据、普通joblib加载并经accelerator加载模型，当前不能直接运行；须单独冻结val-only执行链，不能只改数据名就称隔离完成。",
+    "回顾性total-EOL输出尺度已明确；绝对动态剩余循环目标和online origin仍须独立审计。"
+  ],
+  "authorization": {
+    "model_construction": false,
+    "checkpoint_load": false,
+    "forward": false,
+    "test": false,
+    "training": false
+  },
+  "new_fits": 0,
+  "optimizer_steps": 0,
+  "forward_calls": 0
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "paper_id": "P17",
+  "decision": "MAIN_TEXT_REVIEWED_ACCEPTED_WITH_ROOT_ADDENDUM",
+  "coordinator": "01a14551-5f05-7112-a499-a39a2b116c8d",
+  "read_note": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v4_batch05/P17_full_read_v2_root.json",
+  "read_sha256": "001c2261bc42e606f2a9affb5061be53fb3f031d4b4afed43ef82197bc35bfbe",
+  "review": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v4_batch05/P17_independent_review_v2_root.json",
+  "review_sha256": "4b27ba95449e22b971b77f592cea4032721cfecb75938b4a15548a120a6d4bda",
+  "review_receipt": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v4_batch05/P17_independent_review_v2_root.json.receipt.json",
+  "review_receipt_sha256": "bad95356e15352ab2af15dada5de14597f3d5f1749224f88aea8b28865866071",
+  "source_spot_check": "/home/yndx/zxk/rul/reports/literature_acceptance/successor_20261016_v4/P17_root_source_addendum.json",
+  "spot_check_sha256": "5ffdf114c34027dff8295141b71b14065e8d888bd694ba1424d4e3b09a0be206",
+  "qualifications_zh": [
+    "root实际核第2页II-A、3页II-C/D及表I、4页表II-IV。Ii/Vi/Ti的原文归属为RUL/SOH，不能自行改为SOC；具体输入对应仍未证。",
+    "RUL RMSE表I CaseA45.86→39.71、CaseB56.29→47.62均为作者报告；split/origin、窗口及基线公平性未证，不代表全寿命多origin动态或独立泛化。",
+    "页眉LaTeX Class Files/August2021为模板，不是发表身份；源码地址声明已见但仓库未审。",
+    "独立v2审查PASS同时提命名遗漏：root已在第4页III-B实际看到MambaStock而TableIV写MambaLithium，作为作者命名不一致补入，不擅改表结果归属。此root addendum与note共同构成接纳读书记录。",
+    "图像未抽取，图中曲线细节无法核实。",
+    "未提供独立补充材料。",
+    "全文未报告详细训练窗口、RUL标签生成流程、预测起点及电芯级数据划分。",
+    "全文未报告SOC测试划分中各数据集/电芯的具体样本分配。",
+    "基线复现细节、公平性控制、重复实验和不确定性估计未报告。",
+    "全文未见消融实验，也未见作者明确的局限性自述。",
+    "元数据标注发表场所未知；页眉模板信息不能核实正式发表状态。",
+    "第2页Ii、Vi、Ti原文归于RUL/SOH；与SOC任务实际输入的对应及是否为行文笔误未证，不自行纠正作者。",
+    "正文第1至2页声明代码地址https://github.com/zshicode/MambaLithium；仅核到声明，未访问/审查仓库或复现。",
+    "RMSE表不能证明完整寿命各origin动态更新或电芯级独立泛化。"
+  ],
+  "counts_as_main_text_reviewed": 1,
+  "counts_as_si_reviewed": 0,
+  "novelty_or_performance_acceptance": false
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "paper_id": "P21",
+  "decision": "MAIN_TEXT_REVIEWED_ACCEPTED_WITH_QUALIFICATIONS",
+  "coordinator": "01a1442c-2bf2-73e0-87a4-a075751edd0d",
+  "read_note": "/home/yndx/zxk/rul/literature/notes/batch03_v4/P21/P21_arxiv_v1_full_read_v4.json",
+  "read_sha256": "50070178cc8bcc5056f2748c31153271a206cd29e3af7c14e3471f94fbe69dc7",
+  "review": "/home/yndx/zxk/rul/literature/notes/batch03_v4/P21/P21_arxiv_v1_independent_review_v4.json",
+  "review_sha256": "cc5cd4a7d945efb289ab4dc91fe03cefbf385c0407811f7be968641c9d17cbf3",
+  "review_verdict": "PASS_MAIN_TEXT",
+  "source_spot_check": "/home/yndx/zxk/rul/reports/literature_acceptance/successor_20261016_v2/P21_root_source_check.json",
+  "spot_check_sha256": "5b76fbd921b7f40dc13e387d590f9bdc6d09ad7b0f94a9b7ff823389a7d97c8a",
+  "qualifications_zh": [
+    "仅接纳 arXiv:2404.04049 v1 主文；没有与正式会议版逐字比对，独立 SI 未提供。",
+    "这是教程及既有研究案例，不是新模型实验或本项目复现。",
+    "笔记 method 引文的跨栏连续字符串不是优良语义锚点；实质方法据页3–4的特征和弹性网说明核定。limitations 引文所在具体小节为 III.D 的续段，IV 的日历老化限制另在同页核定；本接纳记录修正定位。"
+  ],
+  "counts_as_main_text_reviewed": 1,
+  "counts_as_si_reviewed": 0,
+  "novelty_or_performance_acceptance": false
+}

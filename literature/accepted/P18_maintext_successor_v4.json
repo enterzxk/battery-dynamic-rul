@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "paper_id": "P18",
+  "decision": "MAIN_TEXT_REVIEWED_ACCEPTED_WITH_ROOT_ADDENDUM",
+  "coordinator": "01a14551-5f05-7112-a499-a39a2b116c8d",
+  "read_note": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v4_p18/P18_full_read_v2_root.json",
+  "read_sha256": "063cf8f373bb1daf749d5b020d6f8e83debf910ebbd53bbdddc464d23bd70aa0",
+  "review": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v4_p18/P18_independent_review_v2_root.json",
+  "review_sha256": "87146152645e8e2aa86831a1247af14254a37edc38af91298c05c176561a4e47",
+  "review_receipt": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v4_p18/P18_independent_review_v2_root.json.receipt.json",
+  "review_receipt_sha256": "d94bf0707aa9b1f93b5f37a5b113fbf30471c56ac02a22a79bfc52b7c28842ba",
+  "source_spot_check": "/home/yndx/zxk/rul/reports/literature_acceptance/successor_20261016_v4/P18_root_source_addendum.json",
+  "spot_check_sha256": "b169793d0a24c7a946a8f21fb2f4bc124d78877386089912717ccdeb9b328d97",
+  "qualifications_zh": [
+    "root核第1页传统SOH定义和第5页4.1/4.2仿真及6页结论，pdfinfo确认6物理页、尾空段不算7页。传统SOH不只容量，原文也提电阻/功率。",
+    "deepSOH是SPM退化机制状态，不是已训练神经网络；同eSOH/阻抗但不同机制产生不同轨迹为模型假设内仿真，不是量化真实电芯RUL增益。",
+    "式38唯一解/无解是作者在已设机制/参数中的陈述，参数可知、噪声/观测性局限保留；不外推普遍可辨识性或已解决strict动态协议。",
+    "独立补充材料未提供，SI 内容及其是否存在无法核实。",
+    "真实电芯数据集、样本数、型号、具体电芯划分及实验室实测验证未报告。",
+    "仿真所用参数数值、完整参数化过程及可复现配置未报告。",
+    "RUL 的数值定义、预测时点、量化指标、误差统计和数值性能提升未报告。",
+    "基线模型比较与消融实验未报告。",
+    "表图具体数值未从所给文本逐项报告；不据图形外推数值。",
+    "期刊精确 online date、version-of-record date 及可用官方代码链接无法由所给来源核实。",
+    "式(38)唯一解或无解为作者在已设模型/参数下的陈述；未独立验证所有参数域全局可辨识性，不外推为任意电池、任意噪声下的普遍保证。",
+    "本文deepSOH指退化机制状态，不是经过训练的深度神经网络方法；未提供可核量化RUL预测改进。"
+  ],
+  "counts_as_main_text_reviewed": 1,
+  "counts_as_si_reviewed": 0,
+  "novelty_or_performance_acceptance": false
+}

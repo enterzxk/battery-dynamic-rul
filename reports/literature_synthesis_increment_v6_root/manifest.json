@@ -1,0 +1,56 @@
+{
+  "created_utc": "2026-10-17T00:36:52.357808+00:00",
+  "coordinator": "01a1473c-91c2-7973-9f88-53ad49464e39",
+  "scope": "five newly accepted maintexts increment only; root scientific judgment retained",
+  "inputs": [
+    {
+      "path": "/home/yndx/zxk/rul/literature/accepted/P33_maintext_successor_v6.json",
+      "sha256": "fb345f66ff3c80b8e4cdbed18de9a5b3b1dba826481d8312d2af2f3d1c07fccf",
+      "note": "/home/yndx/zxk/rul/literature/revisions/successor_20261017_v6_batch07/P33_full_read_v4_root.json",
+      "review": "/home/yndx/zxk/rul/literature/revisions/successor_20261017_v6_batch07/P33_independent_review_v4_root.json",
+      "root_source_addendum": "/home/yndx/zxk/rul/reports/literature_acceptance/successor_20261017_v6/P33_root_source_addendum.json"
+    },
+    {
+      "path": "/home/yndx/zxk/rul/literature/accepted/P35_maintext_successor_v6.json",
+      "sha256": "3ab1356dae437a5e74cc0e0d55b97055f9a0b0c055d579c7d96c0d98c731ddf8",
+      "note": "/home/yndx/zxk/rul/literature/revisions/successor_20261017_v6_batch07/P35_full_read_v3_root.json",
+      "review": "/home/yndx/zxk/rul/reports/p35_independent_v3_luna/review.json",
+      "root_source_addendum": "/home/yndx/zxk/rul/reports/literature_acceptance/successor_20261017_v6/P35_root_source_addendum.json"
+    },
+    {
+      "path": "/home/yndx/zxk/rul/literature/accepted/P38_maintext_successor_v6.json",
+      "sha256": "65007ac989fac7a00f8bde7b2fcb7b23aeec84e74b10e0795688852710032b93",
+      "note": "/home/yndx/zxk/rul/literature/revisions/successor_20261017_v6_batch07/P38_full_read_v4_root.json",
+      "review": "/home/yndx/zxk/rul/literature/revisions/successor_20261017_v6_batch07/P38_independent_review_v4_root.json",
+      "root_source_addendum": "/home/yndx/zxk/rul/reports/literature_acceptance/successor_20261017_v6/P38_root_source_addendum.json"
+    },
+    {
+      "path": "/home/yndx/zxk/rul/literature/accepted/P39_maintext_successor_v6.json",
+      "sha256": "c8cac0b8dd528d775422d2327863ddb2cd7f3862029526dcaf42161eb0da3283",
+      "note": "/home/yndx/zxk/rul/literature/revisions/successor_20261017_v6_batch07/P39_full_read_v4_root.json",
+      "review": "/home/yndx/zxk/rul/reports/p39_independent_v3_luna/review_v4.json",
+      "root_source_addendum": "/home/yndx/zxk/rul/reports/literature_acceptance/successor_20261017_v6/P39_root_source_addendum.json"
+    },
+    {
+      "path": "/home/yndx/zxk/rul/literature/accepted/P41_maintext_successor_v6.json",
+      "sha256": "9d7a20be61a752b097bd0243b2af85a730951bb5dddcc73530a10a2d312ea6c2",
+      "note": "/home/yndx/zxk/rul/literature/revisions/successor_20261017_v6_batch07/P41_full_read_v4_root.json",
+      "review": "/home/yndx/zxk/rul/literature/revisions/successor_20261017_v6_batch07/P41_independent_review_v4_root.json",
+      "root_source_addendum": "/home/yndx/zxk/rul/reports/literature_acceptance/successor_20261017_v6/P41_root_source_addendum.json"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "/home/yndx/zxk/rul/reports/literature_synthesis_increment_v6_root/REVIEW_ZH.md",
+      "sha256": "9dd2304ae605d81a962f5089e462e2aa745833712525f5cc21b2a0520a9fa631"
+    },
+    {
+      "path": "/home/yndx/zxk/rul/reports/literature_synthesis_increment_v6_root/batch07_evidence_matrix.csv",
+      "sha256": "941dd6e1d4032e85c78536bdad02ea37448a785422ff32f91f9e29a8d1925421"
+    }
+  ],
+  "new_fits": 0,
+  "optimizer_steps": 0,
+  "PBT_forward": 0,
+  "test": 0
+}

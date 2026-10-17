@@ -1,0 +1,1 @@
+{"requested_model":"gpt-6-luna","requested_reasoning_effort":"high","role":"battery dynamic RUL official-reproduction and protocol audit subagent","scope":"Official BatteryLife CPMLP/CPTransformer, PBT, MATR/HUST first-pass audit; no training","workspace_policy":"SSH direct write under /home/yndx/zxk/rul, subagent-owned paths only","created_date":"2026-10-15","status":"COMPLETE"}

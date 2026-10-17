@@ -1,0 +1,20 @@
+{
+  "version": "0.1-draft",
+  "status": "DRAFT_REQUIRES_DATA_AUDIT",
+  "primary_metric": "cell_macro_MAE_cycles",
+  "eol_rule": "PENDING_DATA_AUDIT",
+  "query": "cycle_index_t; visible inputs only <=t",
+  "label": "observed_EOl-t; no artificial EOL from censoring",
+  "split_unit": "physical_cell",
+  "roles": [
+    "train",
+    "validation",
+    "calibration",
+    "test"
+  ],
+  "pretraining_overlap": "UNKNOWN_BLOCKS_INDEPENDENT_TRANSFER_CLAIM",
+  "future_policy": "recorded_or_explicit_reference_policy",
+  "training_allowed": false,
+  "new_fits": 0,
+  "optimizer_steps": 0
+}

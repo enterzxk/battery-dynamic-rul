@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "paper_id": "P39",
+  "decision": "MAIN_TEXT_REVIEWED_ACCEPTED_WITH_ROOT_ADDENDUM",
+  "coordinator": "01a1473c-91c2-7973-9f88-53ad49464e39",
+  "read_note": "/home/yndx/zxk/rul/literature/revisions/successor_20261017_v6_batch07/P39_full_read_v4_root.json",
+  "read_sha256": "ddb3406c931121679b58e80f837af4206818212740b9b1d24b620c648aa892b4",
+  "review": "/home/yndx/zxk/rul/reports/p39_independent_v3_luna/review_v4.json",
+  "review_sha256": "90a9637037598dd65c9a70925670e6b2eb63d59ab293c81726e0171e8d0f5659",
+  "independent_manifest": "/home/yndx/zxk/rul/reports/p39_independent_v3_luna/manifest_v4.json",
+  "independent_manifest_sha256": "15beb6d62e2101bdb1e0eab6eb81f0f537611460e584db49afc842b687d02145",
+  "source_spot_check": "/home/yndx/zxk/rul/reports/literature_acceptance/successor_20261017_v6/P39_root_source_addendum.json",
+  "spot_check_sha256": "1edf351244fbc46afb00708c9782227d8f770b513794305e76d62e02ce4e762b",
+  "qualifications_zh": [
+    "只接受arxiv2510.02839v1完整12页主文阅读审查；独审v3 NEEDS保留，v4仅对唯一PSO方法补句增量核验，全文与视觉阅读在同审查任务已实际完成。",
+    "NASA目标电芯SP前容量也训练，非zero-shot；VMD/PSO归一化窗口asof与调参边界未证。",
+    "表II为EOL-cycle容量误差×1e-2非cycles TimeMAE；表III给cycle RUL。",
+    "图4(b)CALCE SP100标EOL641/639/713/759及RUL591/589/663/709；EOL-SP及表III pred为541/539/613/659，图标签多50，源矛盾保留。",
+    "表II参考基线不同SP、适配/预算未匹配；第9页DUALSTR平均MAE叙述0.0055与表II MAE0.0041/RMSE0.0055列混用风险保留。",
+    "B0007未到70%而改72%作者协议不能直接充当统一strictonline EOL；95%CI非独立coverage或安全证据。"
+  ],
+  "counts_as_main_text_reviewed": 1,
+  "counts_as_si_reviewed": 0,
+  "novelty_or_performance_acceptance": false
+}

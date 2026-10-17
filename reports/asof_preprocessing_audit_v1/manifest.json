@@ -1,0 +1,68 @@
+{
+  "audit_id": "asof_preprocessing_audit_v1",
+  "date": "2026-10-16",
+  "actual_model": "gpt-6-luna/high",
+  "root": "/home/yndx/zxk/rul",
+  "pinned_source_dir": "repos/pinned/BatteryLife_3b17bb53202e10711deae0448c91f84144bb3dd9",
+  "pin_identity": "directory ID only; git unavailable",
+  "training_gate": "closed",
+  "scope": "bounded static read-only; no large pickle scan/load, training, performance run, or shared-state change",
+  "source_files": [
+    {
+      "path": "process_scripts/preprocess_MATR.py",
+      "sha256": "ada511cf294862f123def7ff52e060a84e935ab1d3cec8efe3633b46015349b9",
+      "lines": "19-43,46-113;116-165;168-206;236-262"
+    },
+    {
+      "path": "process_scripts/preprocess_HUST.py",
+      "sha256": "de0c0c9f48f88feda73a3886393b543cff03cd7cce2f089e4bac86ecdb24fa37",
+      "lines": "22-53;55-78"
+    },
+    {
+      "path": "process_scripts/time_normalization_utils.py",
+      "sha256": "c9702d4daab575af995d3ec5ee714b421b0a6d42c7a8103e5f3beabbf50ec0d9",
+      "lines": "29-83;122-214"
+    },
+    {
+      "path": "process_scripts/Extract_life_labels.py",
+      "sha256": "a905ef24c568e6f615ee638ebb6581c170aaf1e21ee50354a57ebaf11e9ad85b",
+      "lines": "106-165"
+    },
+    {
+      "path": "data_provider/data_loader.py",
+      "sha256": "f49f22e379bf9012fd284c2ef82e4fdd350e70db760f995d85661f7ac29e1fe2",
+      "lines": "53-80;116-123;205-210;229-255;340-477;480-528;530-626"
+    },
+    {
+      "path": "data_provider/data_split_recorder.py",
+      "sha256": "f6f0d42b721c533351ed93467a1ebcaf1021b4daff234e828ab18698fa724b77",
+      "lines": "1-8"
+    },
+    {
+      "path": "preprocess_scripts.py",
+      "sha256": "eb9e00e66f9f30a6ea0e54ee2cdca9a03b4040bf71f5037485de590d26db53f9",
+      "lines": "19-41"
+    },
+    {
+      "path": "assets/Preprocess.md",
+      "sha256": "c8f2a93bd40ea0bd1fdddde4083d3a288b91f1f65f90bffecc2a7918603c12e5",
+      "lines": "52-60"
+    }
+  ],
+  "verified": [
+    "whole-trajectory source build",
+    "terminal/tail/full-track label generation",
+    "collate prefix mask",
+    "true EOL controls cell/query inclusion",
+    "filename-level split definitions"
+  ],
+  "unverified": [
+    "v11 generator source/config",
+    "full source and pretraining entity identity",
+    "cycle-internal as-of safety",
+    "all consumer paths use collate",
+    "pinned code exact match to v11"
+  ],
+  "minimal_next_action": "Read-only reconcile staged release hashes/manifests against pinned source, then inspect existing small alias manifest; preserve unresolved items as unverified.",
+  "decision_boundary": "Audit only; main thread retains scientific GO/STOP; dynamic training gate closed."
+}

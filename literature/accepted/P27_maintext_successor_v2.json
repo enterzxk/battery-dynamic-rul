@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "paper_id": "P27",
+  "decision": "MAIN_TEXT_REVIEWED_ACCEPTED_WITH_ROOT_SOURCE_ADDENDUM",
+  "coordinator": "01a1442c-2bf2-73e0-87a4-a075751edd0d",
+  "read_note": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v2/P27_full_read_v2.json",
+  "read_sha256": "d93458736a05f6dc3ebb9136ce7530db7cdf9b1ca71dbe21634f2b3061da7381",
+  "review": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v2/P27_independent_review_v7.json",
+  "review_sha256": "865d78f0f2e666e562ab4551780d725b523f551732b571fb056b3195a69d25cc",
+  "source_spot_check": "/home/yndx/zxk/rul/reports/literature_acceptance/successor_20261016_v2/P27_root_source_check_addendum.json",
+  "spot_check_sha256": "46d9d8b8501977636bb5a460703fa1c06c3525b31dd054332e8ce90d5dbad67c",
+  "source_backed_addendum_zh": "补充独立review的两项遗漏：主文第4页建议通常每年测量1–2次，高强度使用或二手买卖前可更频繁；第7页具体报告7辆VW集团车（5辆Cupra Born，12700–17700km；2辆VW ID.3，其中一辆在400–40500km多次测量、另一辆有缺陷电芯）、1辆Tesla Model3（1000和80100km测量）、2辆Porsche Taycan（10000、70500km）、2辆Tesla ModelY（77600、24800km）。总计12辆由上述分项相加，只表示研究规模，不是独立同分布样本或本项目测量。",
+  "qualifications_zh": [
+    "本篇研究车辆电池SOH标准测量/诊断，不是寿命预测性能。",
+    "主文第5页pristine voltage-capacity curves/OEM访问限制已修窄，不泛称全部原始数据难取得。",
+    "SI未提供；作者代码/数据声明的当前可访问性和运行未核。"
+  ],
+  "counts_as_main_text_reviewed": 1,
+  "counts_as_si_reviewed": 0,
+  "novelty_or_performance_acceptance": false
+}

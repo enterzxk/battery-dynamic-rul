@@ -1,0 +1,333 @@
+{
+  "artifact": "pbt_minimal_val_plan_independent_v1_luna",
+  "verdict": "PASS_PLAN_SPECIFICITY_WITH_BLOCKING_EVIDENCE_GAPS",
+  "decision_scope": "Independent review of an inactive validation-only proposal; plan can support staged root adjudication only. This review is not authorization, execution readiness, scientific GO, performance evidence, or model acceptance.",
+  "observed_utc": "2026-10-17T00:20:02Z",
+  "inputs": {
+    "plan_path": "reports/pbt_minimal_val_same_arithmetic_plan_v1_luna/plan.json",
+    "plan_sha256": "7095dbeb7df5a1d18838eaabf62af5dae1756087697851b979eb9cd6b74b9155",
+    "report_path": "reports/pbt_minimal_val_same_arithmetic_plan_v1_luna/report_zh.md",
+    "report_sha256": "4c08da5ea0bd2ca2cb1adcd75f6b2da193b109975c8649f3c1a6f86b59e9870f"
+  },
+  "evidence_reference_count": 23,
+  "all_23_references_verified": true,
+  "verified_references": [
+    {
+      "id": "active_contract",
+      "path": "reports/pbt_author_eol_val_contract_v4_root/contract_v4.json",
+      "expected_sha256": "d87322e53f932232bf03d1ed651e9e0547ba7b67c2ea950c5e7d1754eb068f8e",
+      "observed_sha256": "d87322e53f932232bf03d1ed651e9e0547ba7b67c2ea950c5e7d1754eb068f8e",
+      "verified": true
+    },
+    {
+      "id": "v4_acceptance",
+      "path": "reports/pbt_author_eol_val_contract_v4_root/root_acceptance.json",
+      "expected_sha256": "2e3852d2fd34ec5f80c7a9fb77ad2240d4fdd96142b89beed54bd3189596d602",
+      "observed_sha256": "2e3852d2fd34ec5f80c7a9fb77ad2240d4fdd96142b89beed54bd3189596d602",
+      "verified": true
+    },
+    {
+      "id": "config_output",
+      "path": "reports/pbt_config_output_static_v1/config_output_audit.json",
+      "expected_sha256": "662419eac9c3f0027280c8175a438890245d813154402ee9f8afa4c48225aeff",
+      "observed_sha256": "662419eac9c3f0027280c8175a438890245d813154402ee9f8afa4c48225aeff",
+      "verified": true
+    },
+    {
+      "id": "proposal",
+      "path": "reports/pbt_minimal_constructor_proposal_v1_root/proposal.json",
+      "expected_sha256": "382abd86bf5e2bbd9298ff1d006f81c31c3029ca54f59a86b9fc453a51e70d41",
+      "observed_sha256": "382abd86bf5e2bbd9298ff1d006f81c31c3029ca54f59a86b9fc453a51e70d41",
+      "verified": true
+    },
+    {
+      "id": "proposal_acceptance",
+      "path": "reports/pbt_minimal_constructor_proposal_v1_root/root_acceptance_inactive.json",
+      "expected_sha256": "cc9b1f46f4945fd1565ebb8a272408791a13e77271490fa93caaa6a066aaa8b0",
+      "observed_sha256": "cc9b1f46f4945fd1565ebb8a272408791a13e77271490fa93caaa6a066aaa8b0",
+      "verified": true
+    },
+    {
+      "id": "import_v2",
+      "path": "reports/pbt_import_closure_static_v2_luna/audit.json",
+      "expected_sha256": "1d32e8dd6337fd53a8485561cd5f10d78da76d0918ac4df2d4370d651bc56ba9",
+      "observed_sha256": "1d32e8dd6337fd53a8485561cd5f10d78da76d0918ac4df2d4370d651bc56ba9",
+      "verified": true
+    },
+    {
+      "id": "import_independent",
+      "path": "reports/pbt_import_closure_independent_v1_luna/review.json",
+      "expected_sha256": "71ee91d088d7ce44209150bc69d17cf3a274ab976e334f9572ea6b53ff48614f",
+      "observed_sha256": "71ee91d088d7ce44209150bc69d17cf3a274ab976e334f9572ea6b53ff48614f",
+      "verified": true
+    },
+    {
+      "id": "import_addendum",
+      "path": "reports/pbt_import_closure_independent_v1_luna/review_addendum.json",
+      "expected_sha256": "02c65b52380c9d2fadc7b0b99e29b41f8e7cdbb44a5b70846c313b8df811b142",
+      "observed_sha256": "02c65b52380c9d2fadc7b0b99e29b41f8e7cdbb44a5b70846c313b8df811b142",
+      "verified": true
+    },
+    {
+      "id": "keyed_audit",
+      "path": "reports/pbt_keyed_runtime_contract_static_v1_luna/audit.json",
+      "expected_sha256": "91ab12950f52e8ea7bd6b3ff42333aa8bba1c7dc02fc97af01ca6b81fb0e7295",
+      "observed_sha256": "91ab12950f52e8ea7bd6b3ff42333aa8bba1c7dc02fc97af01ca6b81fb0e7295",
+      "verified": true
+    },
+    {
+      "id": "keyed_independent",
+      "path": "reports/pbt_keyed_runtime_independent_v1_luna/review.json",
+      "expected_sha256": "e153b75a732af664d6ad67d74cd9dab18296caccf5dbbb773db68f2e7f255aac",
+      "observed_sha256": "e153b75a732af664d6ad67d74cd9dab18296caccf5dbbb773db68f2e7f255aac",
+      "verified": true
+    },
+    {
+      "id": "join_receipt",
+      "path": "reports/pbt_val_pairing_static_v1_luna/existing_view_join_v2/join_receipt.json",
+      "expected_sha256": "cce7afcb6fb86a17df0539ebf4b112a0b35d415b77ac2e20abe3db3841a71a68",
+      "observed_sha256": "cce7afcb6fb86a17df0539ebf4b112a0b35d415b77ac2e20abe3db3841a71a68",
+      "verified": true
+    },
+    {
+      "id": "pairing_csv",
+      "path": "reports/pbt_val_pairing_static_v1_luna/existing_view_join_v2/hustval15_static_pairing.csv",
+      "expected_sha256": "143710b7f7b664eb1ceb2a11c4213e9c5674a3c3de389e85132d54324afaa75d",
+      "observed_sha256": "143710b7f7b664eb1ceb2a11c4213e9c5674a3c3de389e85132d54324afaa75d",
+      "verified": true
+    },
+    {
+      "id": "prefix_csv",
+      "path": "reports/pbt_val_pairing_static_v1_luna/existing_view_join_v2/prefix_projection.csv",
+      "expected_sha256": "90e5f9027b64a419a8feafd998c0edfbc32966c467b5b8af55dd43a8091068dc",
+      "observed_sha256": "90e5f9027b64a419a8feafd998c0edfbc32966c467b5b8af55dd43a8091068dc",
+      "verified": true
+    },
+    {
+      "id": "data_loader",
+      "path": "repos/pinned/PBT_122077bc5435bb0ba5406f2b112fa96903a08c6a/data_provider/data_loader.py",
+      "expected_sha256": "86d70a40e33f12c843abf856dcbbc29b823b78928a758c8fee6788118565756a",
+      "observed_sha256": "86d70a40e33f12c843abf856dcbbc29b823b78928a758c8fee6788118565756a",
+      "verified": true
+    },
+    {
+      "id": "split",
+      "path": "repos/pinned/PBT_122077bc5435bb0ba5406f2b112fa96903a08c6a/data_provider/data_split_recorder.py",
+      "expected_sha256": "70a14cd0e482f81314fa4c0e86d3233d2ebba59b54cb07df630a7513a5ea9c08",
+      "observed_sha256": "70a14cd0e482f81314fa4c0e86d3233d2ebba59b54cb07df630a7513a5ea9c08",
+      "verified": true
+    },
+    {
+      "id": "data_factory",
+      "path": "repos/pinned/PBT_122077bc5435bb0ba5406f2b112fa96903a08c6a/data_provider/data_factory.py",
+      "expected_sha256": "f9492412e045f6efd3cadf96d49590e84b666e272bfc42d9d03126752ff6ff8d",
+      "observed_sha256": "f9492412e045f6efd3cadf96d49590e84b666e272bfc42d9d03126752ff6ff8d",
+      "verified": true
+    },
+    {
+      "id": "finetune_shell",
+      "path": "repos/pinned/PBT_122077bc5435bb0ba5406f2b112fa96903a08c6a/scripts/finetune_PBT.sh",
+      "expected_sha256": "31329043d03a490960ae8c9e99e9a675b0a50c8f817011a2510a8bb0fa93ac83",
+      "observed_sha256": "31329043d03a490960ae8c9e99e9a675b0a50c8f817011a2510a8bb0fa93ac83",
+      "verified": true
+    },
+    {
+      "id": "eval_shell",
+      "path": "repos/pinned/PBT_122077bc5435bb0ba5406f2b112fa96903a08c6a/scripts/evaluate_model.sh",
+      "expected_sha256": "d7fbfac60a28dd5b2f208a2989ef8ee25fc1336255c7a763091cba85919bc135",
+      "observed_sha256": "d7fbfac60a28dd5b2f208a2989ef8ee25fc1336255c7a763091cba85919bc135",
+      "verified": true
+    },
+    {
+      "id": "evaluator",
+      "path": "repos/pinned/PBT_122077bc5435bb0ba5406f2b112fa96903a08c6a/evaluate_model.py",
+      "expected_sha256": "24a6150f95646fbde0e7eabd048407bdbe5a8722aff656360663a0743c5d301f",
+      "observed_sha256": "24a6150f95646fbde0e7eabd048407bdbe5a8722aff656360663a0743c5d301f",
+      "verified": true
+    },
+    {
+      "id": "model",
+      "path": "repos/pinned/PBT_122077bc5435bb0ba5406f2b112fa96903a08c6a/models/PBT.py",
+      "expected_sha256": "171646ca4821eeac74b61f2a23b5f2381179a571d890994866dd0e3acc8655a8",
+      "observed_sha256": "171646ca4821eeac74b61f2a23b5f2381179a571d890994866dd0e3acc8655a8",
+      "verified": true
+    },
+    {
+      "id": "config_wrapper",
+      "path": "repos/pinned/PBT_122077bc5435bb0ba5406f2b112fa96903a08c6a/BatteryLifeLLMUtils/configuration_BatteryLifeLLM.py",
+      "expected_sha256": "375e53ebc991fae70369847752899a3887d68219f52744d08202ea319a3a6c8d",
+      "observed_sha256": "375e53ebc991fae70369847752899a3887d68219f52744d08202ea319a3a6c8d",
+      "verified": true
+    },
+    {
+      "id": "scaler",
+      "path": "reports/pbt_scaler_static_audit_v4_root/scaler_static_audit.json",
+      "expected_sha256": "5a0a5eb2a1bd273fb1359188bc52dca061b0eb5ba7c1d7e32937e321af84af19",
+      "observed_sha256": "5a0a5eb2a1bd273fb1359188bc52dca061b0eb5ba7c1d7e32937e321af84af19",
+      "verified": true
+    },
+    {
+      "id": "requirements",
+      "path": "repos/pinned/PBT_122077bc5435bb0ba5406f2b112fa96903a08c6a/requirements.txt",
+      "expected_sha256": "7f860e3c9905b6f1dc3a99fd7d81eb9fe9a127472e025a1c0a18da8ebda81a63",
+      "observed_sha256": "7f860e3c9905b6f1dc3a99fd7d81eb9fe9a127472e025a1c0a18da8ebda81a63",
+      "verified": true
+    }
+  ],
+  "fixed_sources_reviewed": [
+    {
+      "path": "repos/pinned/PBT_122077bc5435bb0ba5406f2b112fa96903a08c6a/data_provider/data_split_recorder.py",
+      "sha256": "70a14cd0e482f81314fa4c0e86d3233d2ebba59b54cb07df630a7513a5ea9c08",
+      "lines": "5",
+      "finding": "15个HUST_val名单及顺序与方案相同"
+    },
+    {
+      "path": "repos/pinned/PBT_122077bc5435bb0ba5406f2b112fa96903a08c6a/data_provider/data_loader.py",
+      "sha256": "86d70a40e33f12c843abf856dcbbc29b823b78928a758c8fee6788118565756a",
+      "lines": "902-920;1029-1053;1114-1177",
+      "finding": "按cell filename查DKP，缺失零向量；valid_cycle_number=len(cycle_data)；前缀循环、break、mask及筛选均为条件语义"
+    },
+    {
+      "path": "repos/pinned/PBT_122077bc5435bb0ba5406f2b112fa96903a08c6a/data_provider/data_factory.py",
+      "sha256": "f9492412e045f6efd3cadf96d49590e84b666e272bfc42d9d03126752ff6ff8d",
+      "lines": "241-249",
+      "finding": "非lookup分支静态选择my_collate_fn_withId，未证明runtime形状与行对齐"
+    },
+    {
+      "path": "repos/pinned/PBT_122077bc5435bb0ba5406f2b112fa96903a08c6a/evaluate_model.py",
+      "sha256": "24a6150f95646fbde0e7eabd048407bdbe5a8722aff656360663a0743c5d301f",
+      "lines": "362-435;517-537;568-572;655-675;706-707;758-771",
+      "finding": "parser默认值可被checkpoint args/CLI覆盖；官方路径joblib读取scaler并构建test loader、加载checkpoint、accelerator prepare"
+    },
+    {
+      "path": "repos/pinned/PBT_122077bc5435bb0ba5406f2b112fa96903a08c6a/models/PBT.py",
+      "sha256": "171646ca4821eeac74b61f2a23b5f2381179a571d890994866dd0e3acc8655a8",
+      "lines": "487-519;585-641",
+      "finding": "tokenizer与PCA在constructor；输入及DKP转bfloat16，回归输出tuple首项preds[:B]；省略constructor对象的副作用等价未证"
+    },
+    {
+      "path": "repos/pinned/PBT_122077bc5435bb0ba5406f2b112fa96903a08c6a/BatteryLifeLLMUtils/configuration_BatteryLifeLLM.py",
+      "sha256": "375e53ebc991fae70369847752899a3887d68219f52744d08202ea319a3a6c8d",
+      "lines": "19-29",
+      "finding": "args传入配置并逐项还原Namespace；不能替代核对实际checkpoint args/CLI"
+    },
+    {
+      "path": "repos/pinned/PBT_122077bc5435bb0ba5406f2b112fa96903a08c6a/scripts/evaluate_model.sh",
+      "sha256": "d7fbfac60a28dd5b2f208a2989ef8ee25fc1336255c7a763091cba85919bc135",
+      "lines": "28-38",
+      "finding": "示例使用本地Llama路径并请求bf16；非目标active run证据"
+    }
+  ],
+  "findings": {
+    "scope_and_order": {
+      "verdict": "PASS_STATIC",
+      "finding": "pinned split行5与现有CSV均含同一15文件、顺序一致；限定回顾性HUST estimated-total-EOL val lane，排除online RUL/generalization。",
+      "count": 15,
+      "source_list_matches_csv": true,
+      "ordered_names": [
+        "HUST_6-8.pkl",
+        "HUST_3-8.pkl",
+        "HUST_2-3.pkl",
+        "HUST_9-1.pkl",
+        "HUST_10-8.pkl",
+        "HUST_7-4.pkl",
+        "HUST_2-8.pkl",
+        "HUST_8-3.pkl",
+        "HUST_5-2.pkl",
+        "HUST_10-1.pkl",
+        "HUST_5-5.pkl",
+        "HUST_5-7.pkl",
+        "HUST_7-8.pkl",
+        "HUST_7-6.pkl",
+        "HUST_1-8.pkl"
+      ]
+    },
+    "namespace_and_args": {
+      "verdict": "BLOCKING_UNFROZEN",
+      "finding": "计划正确指出checkpoint args被CLI覆盖且active args_path、实际Namespace和数据根路径未知。shell声明seq_len=1/threshold=100、evaluate parser默认seq_len=5/threshold=100、eval范围默认10/10均不得升级为有效run args；完整消费字段集合和实际值未冻结。"
+    },
+    "dkp": {
+      "verdict": "BLOCKING_EXACT_BINDING_UNVERIFIED",
+      "finding": "join receipt仅aggregate覆盖15/15并明确receipt omit names；CSV的逐项精确回执字段为空。loader按去.pkl文件名查找且缺失时用零向量，因此 aggregate coverage 与每cell精确key/value绑定不同。"
+    },
+    "valid_cycle_and_rows": {
+      "verdict": "BLOCKING_RUNTIME_ROWS_UNVERIFIED",
+      "finding": "源码条件为EOL>early threshold、i<=valid_cycle_number并经过NaN和dataset mask分支；valid_cycle_number=len(cycle_data)。10行投影依赖valid length、有效EOL、active eval范围以及实际row/mask。prefix CSV是conditional projection，不能认定15行或mask/runtime/collate已成立。"
+    },
+    "arithmetic": {
+      "verdict": "PASS_SOURCE_FORMULA_ONLY",
+      "finding": "保留原bf16入口算术和DKP路径，tuple第0项preds[:B]，按固定静态scaler std=765.6855681613043、mean=879.4115308151094反变换；内部preds在PBT源码转float后输出。仅确认静态公式，不证明设备算子/预测表现。"
+    },
+    "constructor_and_import": {
+      "verdict": "BLOCKING_EQUIVALENCE_UNPROVEN",
+      "finding": "省略tokenizer创建、padding_side设置、pickle PCA构造虽具体，但RNG、hooks、module/parameter registration、全局状态与metadata影响等价未证。import closure仅限既定AST边界；patched Llama/trust_remote_code/tokenizer/model资产未核，evaluate/reformer_pytorch/wandb依赖缺失或未解，selected dist versions与requirements不同。"
+    },
+    "official_evaluator_and_loader": {
+      "verdict": "PASS_DO_NOT_RUN",
+      "finding": "源码验证官方evaluate路径创建test_data/test_loader，joblib.load scaler并调用checkpoint load/accelerator.prepare。当前不是val-only safe route；安全strict loader及完成状态均未证。"
+    },
+    "budget_and_authorization": {
+      "verdict": "PASS_NO_IMPLIED_AUTHORIZATION",
+      "finding": "当前任务预算明示全零；未来key/cycle/rows/forward/metric caps只是提案上限，plan也把每阶段授权标false。root须逐阶段裁决；本独立PASS不授予执行。"
+    }
+  },
+  "blocking_gaps": [
+    "exact per-cell DKP key-to-array mapping receipt",
+    "15 valid_cycle_number values from approved metadata/safe format",
+    "actual effective checkpoint Namespace and eval CLI/root values",
+    "runtime eligibility, selected row IDs, masks, and collate keys/shapes",
+    "constructor omission RNG/hooks/registry/global-state/metadata equivalence",
+    "exact installed runtime and unresolved package closure",
+    "patched Llama/trust_remote_code and tokenizer/model asset identity",
+    "separately reviewed val-only safe strict-load pathway and strict-load outcome"
+  ],
+  "explicitly_unverified": [
+    "No payload/runtime check of exact HUST cell EOL/cycle_data association",
+    "No actual DKP values or key names inspected",
+    "No model/tokenizer/PCA/checkpoint files inspected or checksums newly performed",
+    "No actual runtime precision/operator support or numerical parity",
+    "No numerical metric/performance, fit, online-RUL, or generalization conclusion"
+  ],
+  "bounded_future_caps_not_authorized": {
+    "key_identities": 15,
+    "cycle_counts": 15,
+    "selected_prefix_rows": 15,
+    "forward_examples": 15,
+    "predictions": 15,
+    "metric_passes": 1,
+    "fits": 0,
+    "optimizer_steps": 0,
+    "test": 0
+  },
+  "current_task_budget": {
+    "binary_reads": 0,
+    "new_decode": 0,
+    "project_imports": 0,
+    "model_construction": 0,
+    "strict_load": 0,
+    "forward": 0,
+    "metrics": 0,
+    "new_fits": 0,
+    "optimizer_steps": 0,
+    "test": 0
+  },
+  "historical_budget_preserved": {
+    "fits": 2,
+    "optimizer_steps": 600
+  },
+  "execution_counters": {
+    "binary_reads": 0,
+    "new_decode": 0,
+    "project_imports": 0,
+    "model_construction": 0,
+    "strict_load": 0,
+    "forward": 0,
+    "metrics": 0,
+    "new_fits": 0,
+    "optimizer_steps": 0,
+    "test": 0
+  },
+  "root_go_stop_changed": false,
+  "shared_state_index_queue_modified": false,
+  "audit_limits": "只读AGENTS、rul.sh status、方案引用的23项小型JSON/CSV及必要固定源码文本/指定行号。未重做旧1447/scaler/finite审计；未读任何模型、checkpoint、PCA、tokenizer二进制或资产；未调用newdecode195；未import项目模块或依赖；未构造/加载/forward/算metrics/fit/test。"
+}

@@ -1,0 +1,68 @@
+{
+  "decision": "ROOT_ACCEPTED_EXACT_DKP_KEY_METADATA_ONLY",
+  "at_utc": "2026-10-17T04:22:17.197158+00:00",
+  "owner": "01a1474d-7d3f-7113-b428-8ab465fac02e",
+  "stage_id": "PBT_STAGE1_DKP_KEYS_V4",
+  "fixed_population_count": 15,
+  "present_count": 15,
+  "exact_per_cell_dkp_missing_after": 0,
+  "valid_cycle_number_missing_after": 15,
+  "historical_effective_namespace_fields_missing": 44,
+  "execution_budget_remaining": 0,
+  "scanner_or_launcher_rerun_forbidden": true,
+  "all_model_gates_remain_closed": true,
+  "scientific_or_performance_acceptance": false,
+  "archive_read_bytes": 1295934,
+  "output_bytes": 5860,
+  "artifacts": [
+    {
+      "path": "/home/yndx/zxk/rul/reports/pbt_stage1_dkp_keys_v4_root/manifest.json",
+      "sha256": "6b7cbec221c53fd51cba3a73643f9b1b56198aa2087e5b198dab375ecc43a4de"
+    },
+    {
+      "path": "/home/yndx/zxk/rul/reports/pbt_stage1_dkp_keys_v4_root/stage1_dkp_key_scanner_v4.py",
+      "sha256": "c2c8600cb990203da33542f271f0a5d679f8b5df70037ac4ee05d7a98d417bcb"
+    },
+    {
+      "path": "/home/yndx/zxk/rul/reports/pbt_stage1_dkp_keys_v4_root/pbt_stage1_dkp_key_spec_v4.json",
+      "sha256": "9d3df69e12a78a6bdadec937b1aafa1cf4dede2375f97979a6ca46af5972f403"
+    },
+    {
+      "path": "/home/yndx/zxk/rul/reports/pbt_stage1_dkp_keys_v4_root/root_single_run_launcher_v4.py",
+      "sha256": "c72430ec406fc82a7a97c775ccd088ef31eb403841b5817e30ed10614b6e7743"
+    },
+    {
+      "path": "/home/yndx/zxk/rul/reports/pbt_stage1_dkp_keys_v4_root/root_go.json",
+      "sha256": "789425cdaa3f50651a176209fb8dddb202edc05d1cfc1500012926fb9218ae55"
+    },
+    {
+      "path": "/home/yndx/zxk/rul/reports/pbt_stage1_dkp_keys_v4_root/root_execution_decision.json",
+      "sha256": "990171eca005e9f6104214f89caf82d5047f9af85373fa326cb12bfc7b514f70"
+    },
+    {
+      "path": "/home/yndx/zxk/rul/reports/pbt_stage1_dkp_keys_v4_root/root_invocation_budget_claim.json",
+      "sha256": "c1b02bf4c9bf0dfc9fc34513c61c29676769ed1bad14f29c8402f30268d1e6be"
+    },
+    {
+      "path": "/home/yndx/zxk/rul/reports/pbt_stage1_dkp_keys_v4_root/root_execution_receipt.json",
+      "sha256": "e1a63c244e897d7188d725f70bd601358908cb186093a736c6d1420420b71c99"
+    },
+    {
+      "path": "/home/yndx/zxk/rul/reports/pbt_stage1_dkp_keys_v4_root/output/key_presence_manifest.json",
+      "sha256": "01a7cd1906730863502f00194b0b038251343436e7128d1abf41c7e9d6a561e1"
+    },
+    {
+      "path": "/home/yndx/zxk/rul/reports/pbt_stage1_dkp_independent_v4_luna/review.json",
+      "sha256": "95b38e0fc5aefd6121cd1d8c98e59eb7ceddbd8bb01bfc98c93009563dd64100"
+    },
+    {
+      "path": "/home/yndx/zxk/rul/reports/pbt_stage1_dkp_result_independent_v1_luna/review.json",
+      "sha256": "44ea827ebdc9a2fc5c565e6c6abb68749c74af116556785f84325796918fad2b"
+    },
+    {
+      "path": "/home/yndx/zxk/rul/reports/pbt_stage1_dkp_result_independent_v1_luna/manifest.json",
+      "sha256": "8ba31d374ac10b5176810583b6ec584ee6807911ebb3e0f771060b70d09c87ef"
+    }
+  ],
+  "scope": "one successful root-key structural scan, independently audited code and post-execution text chain; independent reviewer did not reopen binary"
+}

@@ -1,0 +1,21 @@
+{
+  "status": "CREATE_ONLY_STATIC_AUDIT_MANIFEST",
+  "files": [
+    {
+      "path": "/home/yndx/zxk/rul/reports/pbt_import_closure_static_v2_luna/audit_import_closure.py",
+      "sha256": "07a1335e1fdea4b70c0f385ae30b5e93ec812b6545e9219ef952d30227fa4786",
+      "bytes": 12881
+    },
+    {
+      "path": "/home/yndx/zxk/rul/reports/pbt_import_closure_static_v2_luna/audit.json",
+      "sha256": "1d32e8dd6337fd53a8485561cd5f10d78da76d0918ac4df2d4370d651bc56ba9",
+      "bytes": 870013
+    },
+    {
+      "path": "/home/yndx/zxk/rul/reports/pbt_import_closure_static_v2_luna/report_zh.md",
+      "sha256": "807b3ed9c77c228f18f959eae476f9e64c8456f8a9b31d9747b2a39fda184ed6",
+      "bytes": 5467
+    }
+  ],
+  "self_hash": "omitted_by_design"
+}

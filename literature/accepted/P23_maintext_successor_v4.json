@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "paper_id": "P23",
+  "decision": "MAIN_TEXT_REVIEWED_ACCEPTED_WITH_ROOT_ADDENDUM",
+  "coordinator": "01a14551-5f05-7112-a499-a39a2b116c8d",
+  "read_note": "/home/yndx/zxk/rul/literature/notes/batch05_v1/P23/P23_full_read_v1.json",
+  "read_sha256": "7f20048acd3bf026c2cdfa9e8bb1d4f1ac3209f7e9fa352243df34e7f0e1a95b",
+  "review": "/home/yndx/zxk/rul/literature/notes/batch05_v1/P23/P23_independent_review_v1.json",
+  "review_sha256": "fedc16f9d4bd60e7625bf531ed798c7130de9d4c03038385557b1a2f2247ab5e",
+  "review_receipt": "/home/yndx/zxk/rul/literature/notes/batch05_v1/P23/P23_independent_review_v1.json.receipt.json",
+  "review_receipt_sha256": "ae185859672cbb7d1537f439deb067309dac534648d91f51d864a59334665211",
+  "source_spot_check": "/home/yndx/zxk/rul/reports/literature_acceptance/successor_20261016_v4/P23_root_source_addendum.json",
+  "spot_check_sha256": "f8e8022868ec3642de2dfe9bf8013814103ba560a85196cb49928f10c817f894",
+  "qualifications_zh": [
+    "root核第3至6页模型/完整轨迹等权损失与定理1证明、9至10页定理5/6，并结合独立theory spot audit。主文接纳仅认可读书笔记与源文一致，不是定理独立重证。",
+    "定理1 Step3直接以Pdim(H)控制trajectory-integrated squared loss class，复杂度传递论证未展开；定理5 Fano packing对任意Pdim类/退化族适用性未展开。保留为证明缺口待核，不据此声称已证错误或反例。",
+    "标准uniform deviation率与Bernstein条件fast excess-risk率分开。Theta(p/n)需packing/fast-rate等条件；经验alpha单点校准/文献指标换算不是独立定理证成。",
+    "t/T归一化及完整轨迹风险不是已实现prefix-only在线系统，也不自动证明训练标签泄漏。删失SNR效率不等同RUL外推效率。",
+    "未提供独立补充材料；没有补充材料可核读。",
+    "来源文本未包含可核对的图像提取内容，无法核实图像中超出正文说明的细节。",
+    "未报告完整数据划分、重复训练次数、随机种子及子样本分析的抽样实现细节。",
+    "未核实正式出版版本；文稿页眉仍含模板占位信息，关联 DOI 不能单独证明该 PDF 为正式出版版。",
+    "代码仓库状态及结果可复现性无法据所给正文核实。"
+  ],
+  "counts_as_main_text_reviewed": 1,
+  "counts_as_si_reviewed": 0,
+  "novelty_or_performance_acceptance": false
+}

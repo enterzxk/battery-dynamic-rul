@@ -1,0 +1,105 @@
+{
+  "audit_date": "2026-10-16",
+  "verdict": "BatteryLife CPMLP/CPTransformer and PBT are early total cycle-life/EOL prediction, not dynamic RUL.",
+  "execution": {
+    "training": "NOT_RUN",
+    "data_download": "NOT_RUN",
+    "data_presence": "NOT_VERIFIED",
+    "metrics": "NOT_RUN"
+  },
+  "official_snapshots": [
+    {
+      "name": "BatteryLife",
+      "url": "https://github.com/Ruifeng-Tan/BatteryLife",
+      "paper": "https://arxiv.org/abs/2502.18807",
+      "paper_version": "v7 2025-11-12",
+      "code_license": "MIT",
+      "archive": "/home/yndx/zxk/rul/repos/audit/BatteryLife-main.zip",
+      "sha256": "aab91f6e8c02f446203307157d78c89b6ea4187de84b19f410564c03f340fb82"
+    },
+    {
+      "name": "Pretrained Battery Transformer (PBT)",
+      "url": "https://github.com/Ruifeng-Tan/PBT",
+      "paper": "https://arxiv.org/abs/2512.16334",
+      "paper_version": "v7 2026-09-30",
+      "journal": "Energy & Environmental Science 2026",
+      "code_license": "Apache-2.0",
+      "archive": "/home/yndx/zxk/rul/repos/audit/PBT-main.zip",
+      "sha256": "693e0290caf39c5d70e6ad90b44ce7c96698eae18e66f484bec5c5b23d4f4dd9"
+    }
+  ],
+  "findings": [
+    {
+      "claim": "BatteryLife task uses first S cycles, S<=100, to predict scalar cycle life. Paper defines EOL at the cycle where SOH<=80%, except CALB uses 90% and Q1 reference.",
+      "source": "https://arxiv.org/html/2502.18807",
+      "evidence": "Section 2.2 lines 137-139."
+    },
+    {
+      "claim": "Paper excludes final SOH above lambda+2.5%; linearly extrapolates labels for final SOH in (lambda,lambda+2.5%]; lambda=80% except CALB 90%, using Q1 as Q0 for CALB.",
+      "source": "https://arxiv.org/html/2502.18807",
+      "evidence": "Experimental setup lines 216-217."
+    },
+    {
+      "claim": "CPMLP/CPTransformer are CyclePatch BLP models, not dynamic RUL. Scripts use early_cycle_threshold=100, MSE, scalar c_out=1, two processes; defaults are CALB and MIX_large respectively. Model heads return scalars.",
+      "source": "https://github.com/Ruifeng-Tan/BatteryLife",
+      "evidence": "train_eval_scripts/{CPMLP,CPTransformer}.sh and models/{CPMLP,CPTransformer}.py."
+    },
+    {
+      "claim": "Loader reads per-cell EOL from Life labels JSON and appends labels.append(eol) for each prefix. It never subtracts observed cycle i; dynamic RUL needs a separate EOL-i target.",
+      "source": "https://raw.githubusercontent.com/Ruifeng-Tan/BatteryLife/main/data_provider/data_loader.py",
+      "evidence": "read_cell_data_according_to_prefix, read_cell_df, read_samples_from_one_cell, around lines 399-503."
+    },
+    {
+      "claim": "Each battery generates overlapping prefix samples with the same EOL label; split recorder lists cell files across partitions. Prefix rows must not be treated as independent batteries.",
+      "source": "https://raw.githubusercontent.com/Ruifeng-Tan/BatteryLife/main/data_provider/data_split_recorder.py",
+      "evidence": "Explicit HUST/MATR per-cell lists plus loader prefix loop."
+    },
+    {
+      "claim": "HUST Mendeley version 2 DOI 10.17632/nsc7hnsg4s.2 describes 77 LFP/graphite 1.1Ah cells at 30C and has CC BY 4.0 license.",
+      "source": "https://data.mendeley.com/datasets/nsc7hnsg4s/2",
+      "evidence": "Record lines 4-34."
+    },
+    {
+      "claim": "BatteryLife README points MATR to data.matr.io, HUST to Mendeley, and says cite BatteryML for processed MATR/HUST. Exact license of each MATR/CLO release requires checking the individual file/project; the code license does not license data.",
+      "source": "https://github.com/Ruifeng-Tan/BatteryLife",
+      "evidence": "README data availability/citation section; data.matr.io project content is JS-only in web extraction."
+    },
+    {
+      "claim": "PBT official README specifies early prediction with first N<=100 cycles and cycle-life labels; not dynamic RUL.",
+      "source": "https://github.com/Ruifeng-Tan/PBT",
+      "evidence": "Official README and arXiv abstract."
+    },
+    {
+      "claim": "BatteryML is a distinct Microsoft project with its own separately named RUL benchmark; avoid conflation with BatteryLife and PBT.",
+      "source": "https://github.com/microsoft/BatteryML",
+      "evidence": "Official README."
+    }
+  ],
+  "limitations": [
+    "Only official repo ZIP archives were downloaded; no data was downloaded, unpacked, or checked.",
+    "The snapshots are main-branch ZIPs; no immutable Git commit SHA was collected.",
+    "Paper and current main may differ; pin the exact commit and hash split/label files before any reproduction.",
+    "Data terms are source-specific; MIT/Apache code licenses do not license dataset contents."
+  ],
+  "next_action": "Pin immutable BatteryLife commit; obtain HUST/MATR processed data after confirming source terms; verify cell IDs, EOL labels, and split disjointness. If dynamic RUL is intended, preregister target EOL_cycle-observed_cycle and metrics; do not present official BLP scripts as dynamic RUL.",
+  "split_list_static_audit": {
+    "script": "/home/yndx/zxk/rul/repos/audit/check_batterylife_split_disjointness.py",
+    "python": "/home/yndx/miniconda3/envs/a40_env/bin/python",
+    "method": "AST literal parsing of official data_provider/data_split_recorder.py class attributes; no code import or model/data execution",
+    "HUST": {
+      "train": 47,
+      "validation": 15,
+      "test": 15,
+      "pairwise_file_id_overlap": 0,
+      "result": "PASS_STATIC_LIST_DISJOINT"
+    },
+    "MATR": {
+      "train": 102,
+      "validation": 34,
+      "test": 33,
+      "pairwise_file_id_overlap": 0,
+      "result": "PASS_STATIC_LIST_DISJOINT"
+    },
+    "limit": "Confirms only that listed filename IDs are pairwise disjoint; does not verify files exist, file contents, aliases/duplicate physical batteries, or actual downloaded data."
+  }
+}

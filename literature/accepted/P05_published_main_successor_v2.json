@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "paper_id": "P05",
+  "decision": "MAIN_TEXT_REVIEWED_ACCEPTED_WITH_QUALIFICATIONS",
+  "coordinator": "01a1442c-2bf2-73e0-87a4-a075751edd0d",
+  "read_note": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v1/P05_published_main_full_read_v2.json",
+  "read_sha256": "78f7b9560243d5f80b8c176cbba9e0f0c8826e3808abc2add50efced34c1f7d1",
+  "review": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v1/P05_main_independent_review_v6.json",
+  "review_sha256": "c263d242e2a1d9ef67963d4bbbf2d01f3dd9d1cd9bc6858fb2abc8f4051c4caf",
+  "source_spot_check": "/home/yndx/zxk/rul/reports/literature_acceptance/successor_20261016_v2/P05_root_source_check.json",
+  "spot_check_sha256": "bd2f3b74e64a2094c444ec2121262814b895194d825a87e51544b2684e91ac85",
+  "qualifications_zh": [
+    "正式发表主文范围接纳；SI是独立read/review路径，当前SI仍NEEDS_REVISION，不合并为SI完成。",
+    "主文64个参考电芯的推理折中与SI实现说明32个参考电芯分别保留，不推定同一默认配置。",
+    "主文概述平均输出与方法中α加权组合的差别已披露，不推断α=0.5。",
+    "作者报告早期阈值寿命/迁移结果，不是项目复现或动态RUL性能。"
+  ],
+  "counts_as_main_text_reviewed": 1,
+  "counts_as_si_reviewed": 0,
+  "novelty_or_performance_acceptance": false
+}

@@ -1,0 +1,221 @@
+{
+  "budget": {
+    "max_address_space_bytes": 268435456,
+    "max_archive_bytes_read": 8388608,
+    "max_central_directory_bytes": 6291456,
+    "max_cpu_seconds": 10,
+    "max_csv_bytes": 65536,
+    "max_eocd_tail_bytes": 65557,
+    "max_member_compressed_bytes": 2097152,
+    "max_member_uncompressed_bytes": 2097152,
+    "max_opcode_count": 6000,
+    "max_open_files": 16,
+    "max_output_bytes": 32768,
+    "max_prior_receipt_bytes": 16384,
+    "max_text_file_bytes": 65536,
+    "max_wall_seconds": 20,
+    "max_zip_entries": 4096
+  },
+  "cells": [
+    {
+      "array_build_offset": 82517,
+      "file_name": "HUST_6-8.pkl",
+      "filename_stem": "HUST_6-8",
+      "key": "HUST_6-8",
+      "present": true
+    },
+    {
+      "array_build_offset": 90756,
+      "file_name": "HUST_3-8.pkl",
+      "filename_stem": "HUST_3-8",
+      "key": "HUST_3-8",
+      "present": true
+    },
+    {
+      "array_build_offset": 98995,
+      "file_name": "HUST_2-3.pkl",
+      "filename_stem": "HUST_2-3",
+      "key": "HUST_2-3",
+      "present": true
+    },
+    {
+      "array_build_offset": 107234,
+      "file_name": "HUST_9-1.pkl",
+      "filename_stem": "HUST_9-1",
+      "key": "HUST_9-1",
+      "present": true
+    },
+    {
+      "array_build_offset": 115474,
+      "file_name": "HUST_10-8.pkl",
+      "filename_stem": "HUST_10-8",
+      "key": "HUST_10-8",
+      "present": true
+    },
+    {
+      "array_build_offset": 123713,
+      "file_name": "HUST_7-4.pkl",
+      "filename_stem": "HUST_7-4",
+      "key": "HUST_7-4",
+      "present": true
+    },
+    {
+      "array_build_offset": 131952,
+      "file_name": "HUST_2-8.pkl",
+      "filename_stem": "HUST_2-8",
+      "key": "HUST_2-8",
+      "present": true
+    },
+    {
+      "array_build_offset": 140200,
+      "file_name": "HUST_8-3.pkl",
+      "filename_stem": "HUST_8-3",
+      "key": "HUST_8-3",
+      "present": true
+    },
+    {
+      "array_build_offset": 148439,
+      "file_name": "HUST_5-2.pkl",
+      "filename_stem": "HUST_5-2",
+      "key": "HUST_5-2",
+      "present": true
+    },
+    {
+      "array_build_offset": 156679,
+      "file_name": "HUST_10-1.pkl",
+      "filename_stem": "HUST_10-1",
+      "key": "HUST_10-1",
+      "present": true
+    },
+    {
+      "array_build_offset": 164918,
+      "file_name": "HUST_5-5.pkl",
+      "filename_stem": "HUST_5-5",
+      "key": "HUST_5-5",
+      "present": true
+    },
+    {
+      "array_build_offset": 173157,
+      "file_name": "HUST_5-7.pkl",
+      "filename_stem": "HUST_5-7",
+      "key": "HUST_5-7",
+      "present": true
+    },
+    {
+      "array_build_offset": 181396,
+      "file_name": "HUST_7-8.pkl",
+      "filename_stem": "HUST_7-8",
+      "key": "HUST_7-8",
+      "present": true
+    },
+    {
+      "array_build_offset": 189635,
+      "file_name": "HUST_7-6.pkl",
+      "filename_stem": "HUST_7-6",
+      "key": "HUST_7-6",
+      "present": true
+    },
+    {
+      "array_build_offset": 197874,
+      "file_name": "HUST_1-8.pkl",
+      "filename_stem": "HUST_1-8",
+      "key": "HUST_1-8",
+      "present": true
+    }
+  ],
+  "elapsed_wall_seconds": 0.021238,
+  "execution_count_authorized": 1,
+  "fixed_population_csv_sha256": "143710b7f7b664eb1ceb2a11c4213e9c5674a3c3de389e85132d54324afaa75d",
+  "forward": false,
+  "go_sha256": "789425cdaa3f50651a176209fb8dddb202edc05d1cfc1500012926fb9218ae55",
+  "metrics": false,
+  "model_construction": false,
+  "ndarray_values_decoded": 0,
+  "numeric_payload_decode": false,
+  "numpy_imported": false,
+  "optimizer_steps": 0,
+  "pickle_unpickler_used": false,
+  "population_count": 15,
+  "prior_receipt_sha256": "f6f1507589aa9f14ec1506500c150c90e87592288ea3fc215103312bbcd68912",
+  "scanner_code_sha256": "c2c8600cb990203da33542f271f0a5d679f8b5df70037ac4ee05d7a98d417bcb",
+  "schema_version": 1,
+  "source": {
+    "archive_path": "data/raw/PBT/aging_condition_prompt_embeddings.zip",
+    "archive_sha256": "NOT_COMPUTED_BY_SCOPE",
+    "archive_size_bytes": 6165383,
+    "archive_total_bytes_read": 1295934,
+    "central_directory_bytes_read": 307,
+    "eocd_bytes_read": 65557,
+    "member": "validation_DKP_embed_all_Llama.pkl",
+    "member_compressed_bytes": 1229970,
+    "member_crc32": "c1c331ee",
+    "member_sha256": "de4ff4ec876361a2020b6f6b8f5f2cbbee87199b9b941958806ad7b0fdf3261a",
+    "member_uncompressed_bytes": 1608976,
+    "zip_entries_examined": 3,
+    "zip_method": 8
+  },
+  "spec_sha256": "9d3df69e12a78a6bdadec937b1aafa1cf4dede2375f97979a6ca46af5972f403",
+  "stage_id": "PBT_STAGE1_DKP_KEYS_V4",
+  "status": "STATIC_DKP_ROOT_KEY_PRESENCE_AND_ARRAY_BUILD_OFFSETS_ONLY",
+  "strict_load": false,
+  "structural_inventory": {
+    "binbytes_count": 195,
+    "build_count": 196,
+    "byte_string_opcode_count": 196,
+    "direct_root_key_count": 195,
+    "globals": [
+      {
+        "module": "numpy.core.multiarray",
+        "name": "_reconstruct",
+        "offset": 64
+      },
+      {
+        "module": "numpy",
+        "name": "ndarray",
+        "offset": 84
+      },
+      {
+        "module": "numpy",
+        "name": "dtype",
+        "offset": 118
+      }
+    ],
+    "keyset_sha256_sorted_newline": "5a148151dd076744acff1c48400450a387135cb0a2b0a541e08f50b3c6515fe5",
+    "opcode_count": 4942,
+    "opcode_names": [
+      "BINBYTES",
+      "BINGET",
+      "BININT",
+      "BININT1",
+      "BININT2",
+      "BUILD",
+      "EMPTY_DICT",
+      "FRAME",
+      "MARK",
+      "MEMOIZE",
+      "NEWFALSE",
+      "NEWTRUE",
+      "NONE",
+      "PROTO",
+      "REDUCE",
+      "SETITEMS",
+      "SHORT_BINBYTES",
+      "SHORT_BINUNICODE",
+      "STACK_GLOBAL",
+      "STOP",
+      "TUPLE",
+      "TUPLE1",
+      "TUPLE2",
+      "TUPLE3"
+    ],
+    "protocol": 4,
+    "reduce_count": 196,
+    "root_empty_dict_count": 1,
+    "root_setitems_count": 1,
+    "short_binbytes_count": 1,
+    "stack_global_count": 3
+  },
+  "test_access": false,
+  "training": false,
+  "values_emitted": false
+}

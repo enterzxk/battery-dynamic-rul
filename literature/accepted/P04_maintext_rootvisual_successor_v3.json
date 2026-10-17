@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "paper_id": "P04",
+  "decision": "MAIN_TEXT_REVIEWED_ACCEPTED_WITH_ROOT_VISUAL_CONFIRMATION",
+  "coordinator": "01a14441-0beb-7c42-bfae-d6ee875d4987",
+  "read_note": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v1/P04_full_read_v4_rootvisual_complete_table.json",
+  "read_sha256": "a4542c8d6daeb79a92bd237d0bb687aceb319bd1647ad208940afbfea0881aee",
+  "review": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v1/P04_independent_review_v8_complete_table.json",
+  "review_sha256": "492374b84cf3ea67cf1954c1a7edd7a68a6e48ba8adcce42cf737d29c1933c0e",
+  "source_spot_check": "/home/yndx/zxk/rul/reports/literature_acceptance/successor_20261016_v3/P04_root_visual_confirmation.json",
+  "spot_check_sha256": "85f974d48066f976fa99ca7c9ba29bb511dab59819ffb3faa1815b9096344788",
+  "qualifications_zh": [
+    "Random forest八格为168±9、233±7、368±7、532±25、192±2、81±1、416±5、197±0；均值与下标std不能粘连。",
+    "MLP/CNN/LSTM/Transformer全部32格与当前v4的mean±std一致；CNN CLO的>1000无std。",
+    "原Table2仅写error mean、下标standard deviation；不擅补RMSE/MAE指标名或循环单位。",
+    "神经网络种子波动不是逐时刻动态预测振荡的证据。主文接纳不构成动态RUL公平复现、创新或性能GO。",
+    "note.results_and_ablation 中 Table 2 随机森林及神经模型的逐格均值±标准差拆分无法仅依据所给主文提取文本独立核实；提取文本存在上下标粘连。note记录的PDF视觉核对 provenance 不属于本次主文文本的独立逐格核验。",
+    "SI未随输入提供；SI中可能包含的方法、结果或限制未核实。note已如实声明该范围。",
+    "Table 2 的指标名称和单位、表3的单位、消融图完整逐点数值，主文输入未报告或无法据文本核实。",
+    "具体随机种子值、逐项实验的完整超参数与预处理配置、全部拆分电芯名单及统计显著性检验未报告。"
+  ],
+  "counts_as_main_text_reviewed": 1,
+  "counts_as_si_reviewed": 0,
+  "novelty_or_performance_acceptance": false
+}

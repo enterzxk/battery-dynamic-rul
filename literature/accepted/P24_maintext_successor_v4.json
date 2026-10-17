@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "paper_id": "P24",
+  "decision": "MAIN_TEXT_REVIEWED_ACCEPTED_WITH_ROOT_ADDENDUM",
+  "coordinator": "01a14551-5f05-7112-a499-a39a2b116c8d",
+  "read_note": "/home/yndx/zxk/rul/literature/notes/batch05_v1/P24/P24_full_read_v1.json",
+  "read_sha256": "6731de2ccc943f74410f7f8b42e6d20056cde0e175f83d0e092fd1101d92e991",
+  "review": "/home/yndx/zxk/rul/literature/notes/batch05_v1/P24/P24_independent_review_v1.json",
+  "review_sha256": "5749441080b7d1497d7cce4c1fa2d55e5f03b3294fe8c6323d194dcd1745b925",
+  "review_receipt": "/home/yndx/zxk/rul/literature/notes/batch05_v1/P24/P24_independent_review_v1.json.receipt.json",
+  "review_receipt_sha256": "27d28c9dcf406804ed64f0e4a8e750b244c970479fc066a4fdc82bfef2f6ad29",
+  "source_spot_check": "/home/yndx/zxk/rul/reports/literature_acceptance/successor_20261016_v4/P24_root_source_addendum.json",
+  "spot_check_sha256": "b59fce15859720d9a6c0aa1a713a71d3ece93f63b227670c2c249103b424bb1e",
+  "qualifications_zh": [
+    "root核第3页TableI、5至7页III-A/B及式13、第10页TableII与13页TableIII。74cells按表分配是作者报告，非本项目数据审计。",
+    "式13的MAPE分母是文中bar_y（作者称observed cycle of battery EOL），不是逐样本remaining-RUL y_i；不能将其数值直接与通常逐样本RUL-MAPE比较。",
+    "67.09%来自NCA35C相对benchmark RMSE59.53→19.59；不是所有条件平均增益。NCA35C分类联合特征劣于ECM且仅1train/1test必须保留。",
+    "窗口起点/松弛采样需可得性定义；全文未提供完整阈值/label生成链，不直接等同严格online合法验证。PDF无版本戳，v1由精确下载URL/SHA和对应primary record限定，不宣称PDF内有戳。",
+    "表I逐工况train/test：NCA25C 0.25/1=2/3、25C0.5/1=6/7、35C0.5/1=1/1、45C0.5/1=11/10；NCM25/35/45C0.5/1依次2/2、2/2、4/12；NCM+NCA25C0.5/1、0.5/2、0.5/4各1/2，总30train/44test=74。按表保留少电芯限制，prefix/循环数据点不等于独立电芯。",
+    "分类假定统一标准充放电，预测用原工况松弛采样；note已概述此区别，此处显式补足。式19分类threshold=N_at_SOH1*(SOH-0.8)/0.2(SOH>0.8)，NCA上下450/180、NCM800/200；分类阈值不自动补齐回归EOL生成操作定义。",
+    "独立v1审查PASS但列2项coverage建议，本addendum逐项补全工况counts并明确采样区别，不隐去review原文。",
+    "附录及正文图像未抽取为可核验图像内容；图中未在文本中明确给出的逐点数值无法核实。",
+    "寿命预测部分EOL阈值的完整操作定义、所有样本级标签构造细节及分类阈值之外的超参数选择细节未充分报告。",
+    "独立外部数据集、现场运行验证及跨数据集泛化结果未报告，无法核实。",
+    "未提供独立补充材料。"
+  ],
+  "counts_as_main_text_reviewed": 1,
+  "counts_as_si_reviewed": 0,
+  "novelty_or_performance_acceptance": false
+}

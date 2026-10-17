@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "paper_id": "P29",
+  "decision": "MAIN_TEXT_REVIEWED_ACCEPTED_WITH_ROOT_ADDENDUM",
+  "coordinator": "01a14564-865a-7a30-9417-a1a04b44891a",
+  "read_note": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v5_batch06/P29_full_read_v2_root.json",
+  "read_sha256": "99b422a1d7bac0fffe5141b68212f52e0edf0784b8271d36f5503e1e20fbc6bf",
+  "review": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v5_batch06/P29_independent_review_v2_root.json",
+  "review_sha256": "71cc66dfd6c628d62156772ac4b15913272a4ab2bd197b52bf72f9e029fb8409",
+  "review_receipt": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v5_batch06/P29_independent_review_v2_root.json.receipt.json",
+  "review_receipt_sha256": "bb7586ba4b02aa4d2c224e0aaf0678260f9647291bc2c5ca597485c097149983",
+  "source_spot_check": "/home/yndx/zxk/rul/reports/literature_acceptance/successor_20261016_v5/P29_root_source_addendum.json",
+  "spot_check_sha256": "3775af57874f03b9f9512224b86f1ab6c785c257ef1ef394fdcd37e7ebf4bc25",
+  "qualifications_zh": [
+    "正文inner10 subsets与附录S3 inner5 groups冲突保留，实际实现未核。",
+    "RLS需准确SoC/额外低倍率循环且只适合同形成温度；agnostic模板/个体诊断限制显式保留。",
+    "形成期cycle-life预测非全origin动态RUL；仅纳入达到EOL178/186的回顾筛选不当strict online资格。",
+    "设计2特征中位MAPE9.20优于autoML9.72但最大11.93差于10.85；机制微观异质性仍作者假设，非独立实测。",
+    "图像本身及未由正文、表格或图注明确陈述的图形细节未核实。",
+    "独立补充信息文件未提供；本文文本中附录S1–S7已阅读。",
+    "未核实出版社版本、外部数据集上的独立复现或代码运行结果。",
+    "粒子电阻异质性等物理机制解释属于作者提出的假设，本文未给出形式化证明。",
+    "逐电芯划分明细及同一形成方案下电芯是否跨训练、验证或测试集合未能从所述方案级划分信息核实。",
+    "内层划分正文10子集与附录S3 5组冲突，实际代码实现未核。形成期cycle-life监督与严格多origin动态RUL不同；不将仅达到EOL的178个电芯筛选升级为strict online合法性。"
+  ],
+  "counts_as_main_text_reviewed": 1,
+  "counts_as_si_reviewed": 0,
+  "novelty_or_performance_acceptance": false
+}

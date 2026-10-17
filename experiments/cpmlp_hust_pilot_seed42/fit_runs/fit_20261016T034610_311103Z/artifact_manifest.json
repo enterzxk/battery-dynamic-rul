@@ -1,0 +1,71 @@
+{
+  "created_at": "2026-10-16T04:04:38.010494+00:00",
+  "self_excluded": true,
+  "artifacts": [
+    {
+      "path": "experiments/cpmlp_hust_pilot_seed42/fit_runs/fit_20261016T034610_311103Z/budget_ledger.jsonl",
+      "bytes": 61839,
+      "sha256": "743e7b58c76367a209debe7aa2c614cf4de3e8e7510ceefdeb51d30b53b457ae"
+    },
+    {
+      "path": "experiments/cpmlp_hust_pilot_seed42/fit_runs/fit_20261016T034610_311103Z/checkpoint_epoch_001.pt",
+      "bytes": 25876062,
+      "sha256": "fdfa841ef45563d9d2ae099ceaaecec9069c01a21d7b8ddb58c99c61e0d2ed89"
+    },
+    {
+      "path": "experiments/cpmlp_hust_pilot_seed42/fit_runs/fit_20261016T034610_311103Z/checkpoint_epoch_002.pt",
+      "bytes": 25876062,
+      "sha256": "b757aa38614dbc9d7e1d0fa5107e37fe0da07a8e0af66223e9bd8c043db9294e"
+    },
+    {
+      "path": "experiments/cpmlp_hust_pilot_seed42/fit_runs/fit_20261016T034610_311103Z/checkpoint_epoch_003.pt",
+      "bytes": 25876062,
+      "sha256": "41b4c305bf58c48293316ff159798cd59e22e9eca3670c774c815731fdbbad9a"
+    },
+    {
+      "path": "experiments/cpmlp_hust_pilot_seed42/fit_runs/fit_20261016T034610_311103Z/completion_receipt.json",
+      "bytes": 3475,
+      "sha256": "c5ade13c03bf33bc057b76f7eb8bd83d4773bd6f4740ac2d0885206d3800a38b"
+    },
+    {
+      "path": "experiments/cpmlp_hust_pilot_seed42/fit_runs/fit_20261016T034610_311103Z/epoch_metrics.jsonl",
+      "bytes": 12319,
+      "sha256": "7476af57b85d6479d6364c94252243436c856b88dad393b0aec9179343b22806"
+    },
+    {
+      "path": "experiments/cpmlp_hust_pilot_seed42/fit_runs/fit_20261016T034610_311103Z/run_manifest.json",
+      "bytes": 3215,
+      "sha256": "4db151ac9b32e505bc655776c223c2f03ccf2265ac95e55d660fbc763c7ca979"
+    },
+    {
+      "path": "experiments/cpmlp_hust_pilot_seed42/fit_runs/fit_20261016T034610_311103Z/train_median_val_predictions_epoch_001.csv",
+      "bytes": 85205,
+      "sha256": "e5bc14bc1bb85a04fd1b581530137aaaac17ab79e84758e48974cae107ddb0ba"
+    },
+    {
+      "path": "experiments/cpmlp_hust_pilot_seed42/fit_runs/fit_20261016T034610_311103Z/train_median_val_predictions_epoch_002.csv",
+      "bytes": 85205,
+      "sha256": "e5bc14bc1bb85a04fd1b581530137aaaac17ab79e84758e48974cae107ddb0ba"
+    },
+    {
+      "path": "experiments/cpmlp_hust_pilot_seed42/fit_runs/fit_20261016T034610_311103Z/train_median_val_predictions_epoch_003.csv",
+      "bytes": 85205,
+      "sha256": "e5bc14bc1bb85a04fd1b581530137aaaac17ab79e84758e48974cae107ddb0ba"
+    },
+    {
+      "path": "experiments/cpmlp_hust_pilot_seed42/fit_runs/fit_20261016T034610_311103Z/val_predictions_epoch_001.csv",
+      "bytes": 116819,
+      "sha256": "b53b0b266ffbaa5ef113217a42f83bb58d2fc19471879426e75c58c5f8a79e65"
+    },
+    {
+      "path": "experiments/cpmlp_hust_pilot_seed42/fit_runs/fit_20261016T034610_311103Z/val_predictions_epoch_002.csv",
+      "bytes": 117741,
+      "sha256": "8b203701e2a8aaaca455c3019c46c9619210437599de2c270eba1574b8ad9fec"
+    },
+    {
+      "path": "experiments/cpmlp_hust_pilot_seed42/fit_runs/fit_20261016T034610_311103Z/val_predictions_epoch_003.csv",
+      "bytes": 117625,
+      "sha256": "d49e026eaaaeb4b4d3c67ea7a05328ddc16cd472e160bd42ea814650be82e1ed"
+    }
+  ]
+}

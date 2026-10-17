@@ -1,0 +1,78 @@
+{
+  "artifact": "pbt_keyed_runtime_contract_static_v1_luna",
+  "status": "STATIC_G2_KEYED_DKP_AND_RUNTIME_PREFIX_COLLATE_UNPROVEN",
+  "findings": {
+    "dkp": "Aggregate 15/15 covered; restricted receipt omits names, inventory lacks key-to-array mapping; no exact per-cell binding",
+    "valid_cycle": "No per-cell values in small metadata; source data_loader.py:1052-1053 computes len(cycle_data)",
+    "prefix_mask": "data_loader.py:1114-1177 conditionally loops i=seq_len..threshold, breaks for i>valid_cycle_number or i>=EOL, sets mask[:i]=1; 1500 conditional only",
+    "eval": "finetune_PBT.sh:9-10 sets seq_len=1/threshold=100, omits eval min/max; evaluate_model.py:485-497 defaults 10/10; 15 rows conditional, not runtime proof",
+    "collate": "data_loader.py:163-194 only static stack source; no runtime shapes/values"
+  },
+  "missing": [
+    "15 exact DKP key identities",
+    "15 valid_cycle_number values",
+    "actual prefixes and masks",
+    "collate output shapes"
+  ],
+  "source": {
+    "data_loader": {
+      "sha256": "86d70a40e33f12c843abf856dcbbc29b823b78928a758c8fee6788118565756a",
+      "lines": "163-194;630-645;902-920;1029-1053;1114-1177;1390-1408"
+    },
+    "split": {
+      "sha256": "70a14cd0e482f81314fa4c0e86d3233d2ebba59b54cb07df630a7513a5ea9c08",
+      "lines": "5"
+    },
+    "finetune": {
+      "sha256": "31329043d03a490960ae8c9e99e9a675b0a50c8f817011a2510a8bb0fa93ac83",
+      "lines": "9-10"
+    },
+    "evaluate": {
+      "sha256": "24a6150f95646fbde0e7eabd048407bdbe5a8722aff656360663a0743c5d301f",
+      "lines": "485-497"
+    }
+  },
+  "prior_artifacts": {
+    "contract_v3": "e22344c46e527143d2ff9c4b8e856c5f09dc4255592eaec1fcae343d185516fa",
+    "join_receipt": "cce7afcb6fb86a17df0539ebf4b112a0b35d415b77ac2e20abe3db3841a71a68",
+    "pairing_csv": "143710b7f7b664eb1ceb2a11c4213e9c5674a3c3de389e85132d54324afaa75d",
+    "prefix_csv": "90e5f9027b64a419a8feafd998c0edfbc32966c467b5b8af55dd43a8091068dc"
+  },
+  "inactive_plan": {
+    "status": "INACTIVE_NOT_AUTHORIZED",
+    "scope": "pinned HUSTval15 only, fixed hashes, validation only",
+    "steps": [
+      "Prefer pre-existing key-only metadata; else separately authorize bounded receipt for 15 key identities/present-missing only; no values/other members.",
+      "Prefer hash-bound cycle-count manifest; else separate authorization for bounded val-only safe reader, never ordinary pickle/joblib/torch.load.",
+      "Apply pinned source arithmetic per cell; report 1500 only if all qualify.",
+      "Only after separate root authorization, capture val-only row IDs/masks/shapes; no model construction/strict-load/forward/metrics/fit/test."
+    ],
+    "gates": {
+      "dkp_key": false,
+      "valid_cycle": false,
+      "prefix": false,
+      "mask": false,
+      "collate": false,
+      "runtime_equivalence": false,
+      "construction": false,
+      "strict_load": false,
+      "forward": false,
+      "metrics": false,
+      "fit": false,
+      "test": false
+    }
+  },
+  "counters": {
+    "new_decode": 0,
+    "new_fits": 0,
+    "optimizer_steps": 0,
+    "forward": 0,
+    "metrics": 0,
+    "test": 0
+  },
+  "limitations": [
+    "No full scan or curve/checkpoint/large binary reads/rehashes",
+    "No new decode195/import/construction/load/forward/metrics/fit/test",
+    "shared state/index/queue unchanged"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "paper_id": "P12",
+  "decision": "MAIN_TEXT_REVIEWED_ACCEPTED_WITH_ROOT_ADDENDUM",
+  "coordinator": "01a14441-0beb-7c42-bfae-d6ee875d4987",
+  "read_note": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v3_batch04/P12_full_read_v2_root.json",
+  "read_sha256": "b717e71a540898c2d797f28b0b2e644000543e3515d4d6c763f7399f226f994e",
+  "review": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v3_batch04/P12_independent_review_v2_root.json",
+  "review_sha256": "5f7bdb32d56f6690f0e64b00810300e7b32f9b2b38af3366094e9cfc311c60a4",
+  "source_spot_check": "/home/yndx/zxk/rul/reports/literature_acceptance/successor_20261016_v3/P12_root_source_addendum.json",
+  "spot_check_sha256": "cdfb350f77621184efd918e3a449c3fc3ec822cee972403d15d6f0a04f952133",
+  "qualifications_zh": [
+    "正文以FPC可视化示例及平均约95%放电容量位置说明第一阶段，没有报告针对独立FPC真值的准确率/召回率或检测时延等定量评估；不能把平均位置当检测准确率。",
+    "监督标签为(EOL_i-j)/(EOL_i-FPC_i)，训练完整电芯寿命监督不自动等于输入泄漏；但百分比输出到绝对循环RUL的尺度未证，不能据作者“无需EOL”宣称已验证绝对在线动态RUL。",
+    "作者对照从完整寿命40%起点预测容量，其与FPC后百分比预测的起点、特征和输出并不完全匹配；论文报告优越不自动是公平同协议模型优势。",
+    "arXiv元数据的IECON2023接收声明仅是作者/record说明，未读正式会议版本；当前主文接受仅限arXiv v1。",
+    "出版版本、会议录详情及当前出版状态无法由提供的主文独立核实；metadata仅记录arXiv页面称其被IECON 2023接收。",
+    "代码是否公开及其可用性无法核实。",
+    "训练与测试电芯的具体名单、划分方式、随机种子、重复实验及不确定性分析未报告。",
+    "图像中未由文本呈现的细节无法核实。",
+    "未提供补充材料。"
+  ],
+  "counts_as_main_text_reviewed": 1,
+  "counts_as_si_reviewed": 0,
+  "novelty_or_performance_acceptance": false
+}

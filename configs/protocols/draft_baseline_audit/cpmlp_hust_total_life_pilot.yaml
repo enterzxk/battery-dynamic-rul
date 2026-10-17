@@ -1,0 +1,53 @@
+protocol_id: draft_cpmlp_hust_total_life_pilot
+status: DRAFT_NOT_FROZEN
+training_allowed: false
+source:
+  repository: BatteryLife
+  commit: 3b17bb53202e10711deae0448c91f84144bb3dd9
+  dataset_release: v11
+  zenodo_record: 19688272
+  stage_root: /home/yndx/zxk/rul/data/source_audit/stage_v11_hust_v11_labels
+  data_subdir: HUST
+  labels_file: Life labels/HUST_labels.json
+target:
+  name: official_total_life_label
+  unit: cycles
+  value: eol
+  semantics: total life / EOL label repeated for every visible-prefix sample
+  dynamic_remaining_rul: false
+split:
+  source: data_provider/data_split_recorder.py at pinned commit
+  grouping: physical_cell_file
+  train_cells: 47
+  validation_cells: 15
+  test_cells: 15
+  test_access: LOCKED
+  evaluate_test_each_epoch: false
+model:
+  name: CPMLP
+  early_cycle_threshold: 100
+  seq_len: 1
+  charge_discharge_length: 300
+  input_channels: [voltage, current_C_rate, capacity_over_nominal_Ah]
+  d_model: 128
+  d_ff: 256
+  e_layers: 4
+  d_layers: 2
+  dropout: 0.0
+  output_num: 1
+optimization_suggestion_for_main_thread:
+  epochs: 1
+  seeds: [2021]
+  batch_size: 16
+  learning_rate: 0.00005
+  loss: MSE
+  weighted_loss: false
+  scaler: fit StandardScaler on unique train-cell total-life labels only; validation uses frozen train scaler
+  checkpoint_selection: validation_only
+  primary_readout: cell-equal absolute error in cycles over legal prefixes, with per-prefix and per-cell outputs retained
+  not_run: true
+entrypoint_blockers:
+  - Official run_main.py imports missing evaluate, wandb, peft, deepspeed and instantiates DeepSpeedPlugin.
+  - Official run_main.py evaluates the test set inside every epoch; it must be isolated behind a test-disabled runner before any fit.
+  - Official Dataset_original uses generic pickle.load; use the audited primitive-only stage through a constrained data reader or explicitly approved safe conversion before instantiating it.
+  - This benchmark predicts absolute EOL label from partial observations; a dynamic RUL claim needs a separately frozen target y=eol-prefix_index and a separate protocol.

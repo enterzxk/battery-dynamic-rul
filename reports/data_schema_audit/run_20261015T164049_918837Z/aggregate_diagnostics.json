@@ -1,0 +1,95 @@
+{
+  "run_id": "run_20261015T164049_918837Z",
+  "battery_life_commit": "3b17bb53202e10711deae0448c91f84144bb3dd9",
+  "files_decoded": 77,
+  "cycles_summarized": 146120,
+  "restricted_unpickle": {
+    "custom_class_globals_rejected": true,
+    "persistent_ids_rejected": true,
+    "global_allowlist": [],
+    "cells_passed": 77,
+    "cells_stopped": 0,
+    "training_data_exported": false,
+    "fit_count": 0,
+    "optimizer_steps": 0
+  },
+  "schema": {
+    "top_level_type_counts": {
+      "dict": 77
+    },
+    "all_cells_same_cycle_field_union": true,
+    "cycle_field_union": [
+      "charge_capacity_in_Ah",
+      "current_in_A",
+      "cycle_number",
+      "discharge_capacity_in_Ah",
+      "internal_resistance_in_ohm",
+      "temperature_in_C",
+      "time_in_s",
+      "voltage_in_V"
+    ],
+    "missing_required_cycle_field_rows": 0,
+    "core_curve_length_mismatch_rows": 0,
+    "nan_count_required_curve_values": 0,
+    "inf_count_required_curve_values": 0,
+    "temperature_null_rows": 146120,
+    "internal_resistance_null_rows": 146120
+  },
+  "sequence_and_physical_diagnostics": {
+    "cycle_numbers_1_based_index_for_rows": 144247,
+    "non_1_based_cells": {
+      "HUST_7-5.pkl": {
+        "cycle_count": 1873,
+        "first_cycle_number": 3,
+        "last_cycle_number": 1875
+      }
+    },
+    "known_official_handling": "BatteryLife process_scripts/preprocess_HUST.py drops the first two HUST_7-5 cycles after assigning cycle_number; retained sequence beginning at 3 is expected from this pinned code."
+  },
+  "quality_flags": {
+    "time_nonmonotonic_pairs_leq_zero": 4,
+    "time_backward_pairs": 0,
+    "time_duplicate_pairs": 4,
+    "cross_cycle_time_backward_rows": 0,
+    "discharge_capacity_decrease_pairs": 1,
+    "cells_with_capacity_decrease": [
+      "HUST_1-8.pkl"
+    ]
+  },
+  "capacity_and_label_diagnostic": {
+    "nominal_capacity_Ah": 1.1,
+    "SOC_interval": [
+      0,
+      1
+    ],
+    "threshold_Ah": 0.8800000000000001,
+    "first_crossing_cells": 0,
+    "cells_without_observed_crossing": 77,
+    "labels_release": "BatteryLife v11 Zenodo record 19688272",
+    "v9_data_release": "BatteryLife v9 Zenodo record 17958489",
+    "label_crossing_comparability": {
+      "not_comparable": 77
+    },
+    "labels_beyond_observed_cycle_count": 77,
+    "label_minus_observed_cycle_count": {
+      "min": 22,
+      "max": 124,
+      "median": 53
+    },
+    "all_cycle_max_discharge_capacity_range_Ah": [
+      0.8907700638888857,
+      1.2494336138888882
+    ],
+    "last_cycle_max_discharge_capacity_range_Ah": [
+      0.8907700638888857,
+      0.9063379833333359
+    ],
+    "interpretation": "All 77 v11 labels lie beyond recorded v9 cycle_data lengths; no observed cycle crosses the official 80% threshold. This is diagnostic evidence of mismatch/possible extrapolation and must not be interpreted as label agreement. Do not replace labels automatically."
+  },
+  "artifacts": {
+    "per_cell_schema": "reports/data_schema_audit/run_20261015T164049_918837Z/per_cell_schema_audit.jsonl",
+    "per_cycle_csv": "data/processed/audit_only/run_20261015T164049_918837Z/hust_v9_cycle_diagnostics.csv",
+    "sha256_index": "reports/data_schema_audit/run_20261015T164049_918837Z/hust_file_sha256.json",
+    "script": "src/data_audit/audit_hust_schema_restricted.py"
+  }
+}

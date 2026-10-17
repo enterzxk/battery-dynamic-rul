@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "paper_id": "P52",
+  "decision": "MAIN_TEXT_REVIEWED_ACCEPTED_WITH_ROOT_IDENTITY_ADDENDUM",
+  "coordinator": "01a1442c-2bf2-73e0-87a4-a075751edd0d",
+  "read_note": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v1/P52_full_read_v3_root.json",
+  "read_sha256": "aebf6ddea5239521ff50fe97c43e5c8fbb804ff827ebdccd435337c112c3912f",
+  "review": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v1/P52_independent_review_v7_root.json",
+  "review_sha256": "16fe15caed88a4d464b668df626d5e100f1aa73319774c48c6e0416d214bbe78",
+  "source_spot_check": "/home/yndx/zxk/rul/reports/literature_acceptance/successor_20261016_v2/P52_root_source_check_addendum.json",
+  "spot_check_sha256": "37c006e7856146cd5196d181ca7f20772987c6da4914906a7ff427c03675e877",
+  "source_backed_addendum_zh": "书目身份补充：已核验metadata区分online2025（2025-12-05）与卷期2026、17卷文章126（metadata的version_of_record_date为2026-01-06）；这些来自保存的Nature/Crossref身份核验，不从DOI字符串推断。原metadata的Coming soon是旧快照，不作为当前代码状态。当前公开GitHub保存页面与README的SHA核验通过，只确认部分源码/quickstart可获取，不代表代码执行或论文复现。",
+  "qualifications_zh": [
+    "独立SI未提供，训练/验证/测试拆分措辞及不同段落百分比差异保留。",
+    "0.001到0.0001与rising方向矛盾不代替作者推断schedule。",
+    "Zenodo17420674/17420675正文与参考文献冲突未核；当前部分源码可获取，未执行或复现。",
+    "发表版主文接纳不等于创新、完整复现或动态RUL合法评测。"
+  ],
+  "counts_as_main_text_reviewed": 1,
+  "counts_as_si_reviewed": 0,
+  "novelty_or_performance_acceptance": false
+}

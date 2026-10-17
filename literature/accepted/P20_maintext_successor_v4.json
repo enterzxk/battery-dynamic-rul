@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "paper_id": "P20",
+  "decision": "MAIN_TEXT_REVIEWED_ACCEPTED_WITH_ROOT_ADDENDUM",
+  "coordinator": "01a14551-5f05-7112-a499-a39a2b116c8d",
+  "read_note": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v4_batch05/P20_full_read_v2_root.json",
+  "read_sha256": "6edca1c4c7f1e80cf0be0447a91f11e28567ecba9b88892c54a00608c5d2e584",
+  "review": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v4_batch05/P20_independent_review_v2_root.json",
+  "review_sha256": "c7772675fd6d0596fe3556dbe126f1e2d6eba3dedd741f81141407f6fb9e564d",
+  "review_receipt": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v4_batch05/P20_independent_review_v2_root.json.receipt.json",
+  "review_receipt_sha256": "a08abaa6271a8aa67ad3138f0043ecb8eb615e3872030f9e77bae4f9b43c4319",
+  "source_spot_check": "/home/yndx/zxk/rul/reports/literature_acceptance/successor_20261016_v4/P20_root_source_addendum.json",
+  "spot_check_sha256": "bb27144af3673d049f35cd7e05254228e0e3df7b6cefd802f9e96a1e0f5b1254",
+  "qualifications_zh": [
+    "root核第3至6页5.2-5.6及表2/3、附录SNL。CRUSH RMSE表3=68/第6页文字=100；CLO表3=93/文字=70，均保留，不裁定更正值。",
+    "10至100循环曲线序列、每曲线1000点而1010维及cycle100-only比较之间，如何聚合未证。实际label是否减origin、全寿命更新/拆分/基线预算未证。",
+    "专家正间隔及共享非负门控权重的非交叉构造不是校准保证；1632和[1565,1681]覆盖1599只是单例。SNL仍在实验为源文状态，不替代独立验证。",
+    "图像未抽取；除正文可读取的图注及文字描述外，无法核实图中全部曲线、标注和视觉细节。",
+    "独立补充材料未提供。",
+    "第二阶段训练所用验证集和测试集的具体划分、是否与第一阶段完全一致，未报告。",
+    "基线是否在相同的数据划分、特征处理和调参预算下重新训练，正文未充分说明。",
+    "未报告消融实验、重复试验方差、概率校准指标或独立外部数据验证。",
+    "论文首页称为IAAI 2026扩展版，但正式会议版本及出版状态无法从所给全文核实。",
+    "正文不同位置对数据集数量和总体指标的描述存在设置差异；无法据此确认摘要总体数值与表2、表3之间的统一汇总口径。",
+    "CRUSH RMSE表3=68/第6页文字=100；CLO RMSE表3=93/第6页文字=70，原文内部冲突未解决。",
+    "第3页输入描述为10至100循环曲线序列且每曲线1000点，随即称1010维；第5页比较仅cycle100。跨循环如何聚合到1010维未说明，不能自行假定实现。",
+    "虽称RUL且举cycle100以后additional cycles语义例子，实际标签是否减去origin、全寿命多origin更新协议及80%阈值的实际各数据集来源未证；不当成严格online动态RUL复现。"
+  ],
+  "counts_as_main_text_reviewed": 1,
+  "counts_as_si_reviewed": 0,
+  "novelty_or_performance_acceptance": false
+}

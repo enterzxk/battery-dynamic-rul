@@ -1,0 +1,71 @@
+{
+  "created_at": "2026-10-16T04:04:37.950807+00:00",
+  "self_excluded": true,
+  "artifacts": [
+    {
+      "path": "experiments/cptransformer_hust_pilot_seed42/fit_runs/fit_20261016T040414_680559Z/budget_ledger.jsonl",
+      "bytes": 61672,
+      "sha256": "360fea578e2c0fdd5f749cd3cc0f1e3cc728c89ed0ee7a511c327ce86bc5e91f"
+    },
+    {
+      "path": "experiments/cptransformer_hust_pilot_seed42/fit_runs/fit_20261016T040414_680559Z/checkpoint_epoch_001.pt",
+      "bytes": 28162668,
+      "sha256": "899f5274de0b419b0c7b4011a9b1c3ca42b54bf387fdc4a11b36b67a32775eef"
+    },
+    {
+      "path": "experiments/cptransformer_hust_pilot_seed42/fit_runs/fit_20261016T040414_680559Z/checkpoint_epoch_002.pt",
+      "bytes": 28162668,
+      "sha256": "55f99ab99fd1c277e6ceb9e890da13b790e429f6742352370b224706f0cb75da"
+    },
+    {
+      "path": "experiments/cptransformer_hust_pilot_seed42/fit_runs/fit_20261016T040414_680559Z/checkpoint_epoch_003.pt",
+      "bytes": 28162668,
+      "sha256": "4d60f4febdf91eba047aaca023d84c8dc9e754bc3c0d1e4c00fd818696601b8a"
+    },
+    {
+      "path": "experiments/cptransformer_hust_pilot_seed42/fit_runs/fit_20261016T040414_680559Z/completion_receipt.json",
+      "bytes": 3491,
+      "sha256": "4670106e73ab1c6336f0189cd916d51bb6d40d325037795443ab945df96fa699"
+    },
+    {
+      "path": "experiments/cptransformer_hust_pilot_seed42/fit_runs/fit_20261016T040414_680559Z/epoch_metrics.jsonl",
+      "bytes": 12322,
+      "sha256": "d8f10434962912a12518f0859f1d564b7eb76218f3bcebd009ee341a77d7564f"
+    },
+    {
+      "path": "experiments/cptransformer_hust_pilot_seed42/fit_runs/fit_20261016T040414_680559Z/run_manifest.json",
+      "bytes": 3231,
+      "sha256": "314bf3b066809ba929083c6fee6770ebdeab1ba4158add3b55300c861759ce04"
+    },
+    {
+      "path": "experiments/cptransformer_hust_pilot_seed42/fit_runs/fit_20261016T040414_680559Z/train_median_val_predictions_epoch_001.csv",
+      "bytes": 85205,
+      "sha256": "e5bc14bc1bb85a04fd1b581530137aaaac17ab79e84758e48974cae107ddb0ba"
+    },
+    {
+      "path": "experiments/cptransformer_hust_pilot_seed42/fit_runs/fit_20261016T040414_680559Z/train_median_val_predictions_epoch_002.csv",
+      "bytes": 85205,
+      "sha256": "e5bc14bc1bb85a04fd1b581530137aaaac17ab79e84758e48974cae107ddb0ba"
+    },
+    {
+      "path": "experiments/cptransformer_hust_pilot_seed42/fit_runs/fit_20261016T040414_680559Z/train_median_val_predictions_epoch_003.csv",
+      "bytes": 85205,
+      "sha256": "e5bc14bc1bb85a04fd1b581530137aaaac17ab79e84758e48974cae107ddb0ba"
+    },
+    {
+      "path": "experiments/cptransformer_hust_pilot_seed42/fit_runs/fit_20261016T040414_680559Z/val_predictions_epoch_001.csv",
+      "bytes": 118063,
+      "sha256": "8f06cb1566875b102bd75d4c44d5ed044ed4de89fbebc1b358984c8fec777ce6"
+    },
+    {
+      "path": "experiments/cptransformer_hust_pilot_seed42/fit_runs/fit_20261016T040414_680559Z/val_predictions_epoch_002.csv",
+      "bytes": 117540,
+      "sha256": "7df51fb8370fdd6b3cbf0f7ae5742da029c662c9ba9a0105a7a1a78e0efc54ae"
+    },
+    {
+      "path": "experiments/cptransformer_hust_pilot_seed42/fit_runs/fit_20261016T040414_680559Z/val_predictions_epoch_003.csv",
+      "bytes": 117729,
+      "sha256": "0606f7f3f89cc145d08dfde5aa222dc08b6c6265b244d8e71052d2cd2163ab67"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "version": "0.2-candidate",
+  "status": "DRAFT_NOT_FROZEN",
+  "training_allowed": false,
+  "inference_authorized": false,
+  "primary_metric": "cell_macro_MAE_cycles",
+  "decision_time": "after completed cycle; cycle-internal task excluded",
+  "eol_reference": "NOT_FROZEN",
+  "absolute_query_grid": "NOT_FROZEN",
+  "at_risk_rule": "observable survival status at k; no future EOL>early-threshold selection",
+  "coordinate_mapping": "row_position versus actual_cycle_number explicit; pending release reconciliation",
+  "physical_identity": "PARTIAL_ALIAS_AUDIT; raw-source/pretrain unresolved",
+  "processed_generator": "UNVERIFIED_FOR_V11",
+  "future_policy": "recorded_policy_distribution_only_until_evidence",
+  "per_turn_new_fits": 0,
+  "per_turn_optimizer_steps": 0,
+  "historical_fits": 2,
+  "historical_optimizer_steps": 600,
+  "test_inference": 0,
+  "document": "/home/yndx/zxk/rul/docs/DYNAMIC_RUL_ASOF_FREEZE_CANDIDATE_v2_ZH.md",
+  "document_sha256": "fc42a43dc6ca1e4a750f164e12df9f347c928c15958de9729d93b83a2828e939"
+}

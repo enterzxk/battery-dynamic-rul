@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "paper_id": "P42",
+  "decision": "MAIN_TEXT_REVIEWED_ACCEPTED_WITH_ROOT_ADDENDUM",
+  "coordinator": "01a1474d-7d3f-7113-b428-8ab465fac02e",
+  "read_note": "/home/yndx/zxk/rul/literature/revisions/successor_20261017_v7_batch08/P42_full_read_v5_root.json",
+  "read_sha256": "1d1a10d72820555cc4e3cdfc2c6c75279c9206e25196ed619979eaf761202d84",
+  "review": "/home/yndx/zxk/rul/literature/revisions/successor_20261017_v7_batch08/P42_independent_review_v5_root.json",
+  "review_sha256": "c09260705acc5df0aa587e92a3fc05e2b1d64dc3469416841cbe156a1a4afc48",
+  "review_receipt": "/home/yndx/zxk/rul/literature/revisions/successor_20261017_v7_batch08/P42_independent_review_v5_root.json.receipt.json",
+  "review_receipt_sha256": "7e6b2596730ca44e5a3d73853d2e2b65c717aeabb66a51a42feb4fc0d732ab51",
+  "source_spot_check": "/home/yndx/zxk/rul/reports/literature_acceptance/successor_20261017_v7/P42_root_acceptance_addendum_latest.json",
+  "spot_check_sha256": "e3aa6601e6d92b3dcc723872af68f3b992df0f08e47e1ae2e891f7c171204098",
+  "qualifications_zh": [
+    "文中对ISU-ILCC数据规模的描述不一致：输入数据段称约225个电芯，前文称251个，统计表列251个；可靠性拟合附表又列222个。不同分析的样本筛选和口径未充分解释，无法核实其对应关系。",
+    "摘要称分析超过250个电芯，但各结果表的纳入样本数不一；各数据集合并分析的具体样本构成无法从现有文字完整核实。",
+    "“harmonised evaluation protocol”及时间交叉验证、按电芯留出和跨数据集训练/测试的具体拆分如何对应，原文未充分交代。",
+    "摘要和附录对早期5至20循环预测的表述与部分寿命统计及统一循环定义并列后，具体样本和预测目标的对应关系无法仅凭文字核实。",
+    "部分公式字符及图中信息的文本抽取不完整，未据此补推缺失的实现细节或数值。",
+    "第15物理页式9后Q0称initial rated capacity，而第32页限制段称initial value；不擅自统一实测初始/额定基准，代码及数据的实际分母未核。",
+    "第18物理页表2邻文称大多数EOL在统一索引8至20，且非完整物理充放电事件；5/10/20输入窗口与该EOL人口的先后、仍存活纳入规则及绝对RUL目标单位未充分交代，不能视作合法逐origin动态RUL证据。",
+    "表2 linear regression/5输入的RMSE2.05、MAE1.54、R2.81，恰与表7标为Random Forest early-only的同三值一致，而表2 RF/5为1.72/1.31/.86；两表模型/窗口/人口对应未说明，保留原值，不自行更正或宣称同一实验。",
+    "第27物理页表6行列为Recommissioned/Regular/Second-life数据类型，不自动等同NASA/CALCE/ISU三个数据集留一；类型到原始数据及物理ID映射未核。",
+    "表2数值为validation splits平均，未给逐split人数/ID、次数、独立final确认与误差条；作者数字不构成本项目性能或显著优势。",
+    "物理第32-33页第9节最后一段明确：性能可能依赖architectural choices、coordinate parameterisation、optimisation settings。既有笔记summary已提网络架构和优化但未单列坐标参数化；本版明确完整三项，不把独审遗漏提示解释成此前完全未提。模型部分可解释不等于满足物理定律；无显式电化学约束。"
+  ],
+  "counts_as_main_text_reviewed": 1,
+  "counts_as_si_reviewed": 0,
+  "si_scope": "No independent SI file provided",
+  "novelty_or_performance_acceptance": false
+}

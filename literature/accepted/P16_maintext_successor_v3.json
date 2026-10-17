@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "paper_id": "P16",
+  "decision": "MAIN_TEXT_REVIEWED_ACCEPTED_WITH_ROOT_ADDENDUM",
+  "coordinator": "01a14441-0beb-7c42-bfae-d6ee875d4987",
+  "read_note": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v3_batch04/P16_full_read_v2_root.json",
+  "read_sha256": "0e2facf6b29d2daa3fc4e2626580396e85dbedd5e64374fda2695f01e51627ed",
+  "review": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v3_batch04/P16_independent_review_v2_root.json",
+  "review_sha256": "f9c7f322e3451e13d01ebf5459e4a4e608def2ed9647dadc349f24e3c720a6e5",
+  "source_spot_check": "/home/yndx/zxk/rul/reports/literature_acceptance/successor_20261016_v3/P16_root_source_addendum.json",
+  "spot_check_sha256": "acba385f8cf0054e1221bea528063329e11fb0c5466fccd118f237267039a5ac",
+  "qualifications_zh": [
+    "早期20循环预测；第5页图3长线由早期预测外推到失效，不是全寿命逐时更新实验。第8页作者明确区分与原研究动态RUL演化目标的不同。",
+    "分类60点来自有限独立电芯及循环，不称60独立电芯；25C04分类用线性外推，RUL回归移除该电芯并把25C07移到训练集。",
+    "主要模型的8.8Hz、部分讨论8Hz与第4页单频段8.8kHz保留原文差异；代码未核，不自行更正作者。",
+    "Lasso SOC V的三个系数在第8页给出，但截距、全部正则和标准化/调参未证；不称已完整复现。",
+    "出版期刊或会议身份与代码状态无法核实；任务提供的metadata也标为未知。",
+    "未提供补充材料，无法核实其内容。",
+    "正文未报告完整超参数、标准化方法、调参程序、重复验证方案或结果不确定性。",
+    "正文对高、低性能标签分别使用严格大于和小于0.8C1；等于阈值时如何处理未报告。",
+    "正文第4页单频结果写8.8 kHz，而其他相关段落写8.8 Hz或8 Hz；不能从所给文本确定哪一种是作者原意。"
+  ],
+  "counts_as_main_text_reviewed": 1,
+  "counts_as_si_reviewed": 0,
+  "novelty_or_performance_acceptance": false
+}

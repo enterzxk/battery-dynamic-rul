@@ -1,0 +1,13 @@
+{
+  "stage_id": "PBT_STAGE1_DKP_KEYS_V4",
+  "decision": "GO_ONE_DKP_METADATA_SCANNER_INVOCATION_ONLY",
+  "owner": "01a1474d-7d3f-7113-b428-8ab465fac02e",
+  "scanner_sha256": "c2c8600cb990203da33542f271f0a5d679f8b5df70037ac4ee05d7a98d417bcb",
+  "spec_sha256": "9d3df69e12a78a6bdadec937b1aafa1cf4dede2375f97979a6ca46af5972f403",
+  "root_go_sha256": "789425cdaa3f50651a176209fb8dddb202edc05d1cfc1500012926fb9218ae55",
+  "launcher_sha256": "c72430ec406fc82a7a97c775ccd088ef31eb403841b5817e30ed10614b6e7743",
+  "independent_review_sha256": "95b38e0fc5aefd6121cd1d8c98e59eb7ceddbd8bb01bfc98c93009563dd64100",
+  "single_run_budget": 1,
+  "model_gates_remain_closed": true,
+  "retry_after_any_invocation": false
+}

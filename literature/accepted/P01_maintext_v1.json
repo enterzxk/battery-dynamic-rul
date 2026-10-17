@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "paper_id": "P01",
+  "decision": "MAIN_TEXT_REVIEWED_ACCEPTED_WITH_QUALIFICATIONS",
+  "coordinator": "root",
+  "basis": "Independent fresh-session review plus second bounded source spot check; explicit root acceptance",
+  "read_note": "literature/notes/batch01/P01_full_read_v1.json",
+  "read_sha256": "5a156a17e898bfe0c49fa589587b1885f33c3cfe0712a0da52ad965dc19ee7e7",
+  "review": "literature/notes/batch01_recovery_v3/P01_independent_review_v2.json",
+  "review_sha256": "1e9b51c76faac8f77bd5d9d7dcd30c95216b6ef3e7698cc45701e497ad6994d5",
+  "source_spot_check": "reports/literature_acceptance/P01_acceptance_recommendation_20261016.json",
+  "spot_check_sha256": "8c0a49d06e7a3b8601cf0673a85c8e49500be5b9a8f891c20107b1d54ecdb025",
+  "scope": "9 PDF main-text pages only; source explicitly links separately provided Supplementary Information",
+  "supplementary_information_read": false,
+  "qualifications_zh": [
+    "主文同时报告124个电池、41/43/40划分及排除4个高噪声电池；排除前后口径暂不推断，任何样本数比较须核SI Table 9或原始清单。",
+    "分类准确率段落与Table 2口径差异保留，不合并为单一数字。",
+    "本篇是早期总循环寿命预测，不等同任意在线时点的动态RUL。",
+    "论文报告数值不是本项目复现实测；预印本信息仍未核实。"
+  ],
+  "counts_as_main_text_reviewed": 1,
+  "counts_as_si_reviewed": 0,
+  "novelty_or_performance_acceptance": false
+}

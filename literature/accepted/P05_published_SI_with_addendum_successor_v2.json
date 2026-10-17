@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "paper_id": "P05",
+  "decision": "SI_REVIEWED_ACCEPTED_WITH_ROOT_BASELINE_ADDENDUM",
+  "coordinator": "01a1442c-2bf2-73e0-87a4-a075751edd0d",
+  "read_note": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v1/P05_published_si_full_read_v3_root.json",
+  "read_sha256": "bbd2a6b31c9569842c7f06ac72f84e14fe01d95a3fa46951d9a84cfcef9c0e55",
+  "review": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v1/P05_si_independent_review_v7.json",
+  "review_sha256": "b3afa931011dc8f04bfb970920555812b066267704d89495b4fb003ede0b4351",
+  "review_verdict_as_delivered": "NEEDS_REVISION",
+  "root_source_addendum": "/home/yndx/zxk/rul/reports/literature_acceptance/successor_20261016_v2/P05_si_root_baseline_addendum.json",
+  "root_source_addendum_sha256": "6faf7935d3a9736d244d8cd60089bca87449b5c7c6dbc52a9a3ef80347404c5a",
+  "source_backed_addendum_zh": "SI第14页Supplementary Note8.2基线实现：CNN使用同一卷积模块，即两个卷积层、ReLU和平均池化，接全连接层压缩空间维度并映射寿命；LSTM使用PyTorch标准实现和两层LSTM，把同循环不同电信号连接为四维输入；MLP模块为线性层、tanh和0.05 dropout，使用四个模块并采用与LSTM相同的flatten步骤。线性模型/PCR/PLSR/SVM/随机森林使用Scikit-learn默认实现，并通过交叉验证调整超参数。此root补充解决v7独立review唯一missed_coverage，未执行代码或复现。",
+  "counts_as_main_text_reviewed": 0,
+  "counts_as_si_reviewed": 1,
+  "qualifications_zh": [
+    "独立review的唯一遗漏由root主文外SI页14原文补充；review原NEEDS_REVISION不改写。",
+    "本SI现独立接纳，更新主文接纳record当时SI待审的时间状态，不新增unique论文数。",
+    "SI32与主文64参考电芯数不同，分别报告不擅自统一；没有代码执行或论文复现。"
+  ],
+  "novelty_or_performance_acceptance": false
+}

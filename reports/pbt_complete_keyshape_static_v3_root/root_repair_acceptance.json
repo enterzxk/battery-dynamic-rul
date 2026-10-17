@@ -1,0 +1,13 @@
+{
+  "root_verdict": "COMPLETE_STATIC_KEY_SHAPE_MATCH_WITH_SOURCE_PINS",
+  "independent_review": "/home/yndx/zxk/rul/reports/pbt_complete_keyshape_static_v2/independent_review_luna_v1.json",
+  "independent_review_sha256": "54618a1f86c51c9548211773f5a892a8f212412c5d5696f0498f847f11426b01",
+  "repairs": [
+    "gate.0 source lines corrected to522-524",
+    "all4 model/helper source hashes now assert before deriving expected map"
+  ],
+  "expected_map_unchanged": true,
+  "strict_runtime_load": false,
+  "forward": 0,
+  "execution_returncode": 0
+}

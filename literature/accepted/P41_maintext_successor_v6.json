@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "paper_id": "P41",
+  "decision": "MAIN_TEXT_REVIEWED_ACCEPTED_WITH_ROOT_ADDENDUM",
+  "coordinator": "01a1473c-91c2-7973-9f88-53ad49464e39",
+  "read_note": "/home/yndx/zxk/rul/literature/revisions/successor_20261017_v6_batch07/P41_full_read_v4_root.json",
+  "read_sha256": "5af2e55ddbf3302dc7c0e8872e1f9fe13fa82ca465a808886cdd17dd15396f5a",
+  "review": "/home/yndx/zxk/rul/literature/revisions/successor_20261017_v6_batch07/P41_independent_review_v4_root.json",
+  "review_sha256": "26e3dac9b4785d60fab98faf315b09acf4598f7df6f8132a54e167d3315dcf9b",
+  "review_receipt": "/home/yndx/zxk/rul/literature/revisions/successor_20261017_v6_batch07/P41_independent_review_v4_root.json.receipt.json",
+  "review_receipt_sha256": "769e100833f503c4417caa9bfa2655b3c7ab63d6592a30a6760f06a862f918ea",
+  "source_spot_check": "/home/yndx/zxk/rul/reports/literature_acceptance/successor_20261017_v6/P41_root_source_addendum.json",
+  "spot_check_sha256": "6e7543f8b6ecb32f642cd3677b2c79706f636623137c751643838e178e15167b",
+  "qualifications_zh": [
+    "SOH监督为Kneedle放电弯折点容量，作者说明非通常SOH；Verhulst经验近似/同cell参数假设不当异质泛化。",
+    "第8页u先定义1-SOH容量loss随后称网络输出u代表SOH，实际代码符号未核；u0通常10%、K20%-100%为作者范围。",
+    "同10电芯前称validation、结论称testing，gamma34在该集选择，不构成未调参独立finaltest。",
+    "表4segment6 MAPE1.543%与相邻正文1.52%差异保留；root实际看PDF8/13页。",
+    "主要SOH/在线趋势/膝点/EoL示意，无独立逐origin绝对RUL误差；real-time/battery-agnostic主张非asof合法或独立泛化。",
+    "独立v4 PASS建议更明确标签/输入边界；root实际读第6-7页：完整周期Kneedle弯折点容量用于训练/验证监督标签，推理仅用局部放电段特征并在段内独立积分容量。标签构造所需完整曲线不自动等于推理输入泄漏；实际实现/asof仍未闭合，不声称已泄漏或已合法。",
+    "没有提供独立补充材料；正文提到的补充视频未包含在来源文本中，无法核实其内容。",
+    "图像未抽取内容无法核实。",
+    "正文未给出形式化定理或证明；Verhulst动力学作为退化近似的理论保证无法从来源核实。",
+    "验证结果针对同一数据集留出的10只电芯；跨数据集、不同电芯类型及不同电流工况的实际泛化表现未报告。",
+    "正文表4第6段MAPE为1.543%，相邻文字报告为1.52%；差异未能从来源文本消解。",
+    "没有报告独立的RUL数值预测指标或RUL误差；报告的是在线退化趋势、膝点与EoL估计。",
+    "第8页u=1-SOH容量损失与随后称u代表SOH的措辞差异、实际代码残差符号未核。",
+    "同10只留出电芯用于gamma选择并在结论称test，不构成独立最终测试；在线全链as-of及绝对RUL误差未证。"
+  ],
+  "counts_as_main_text_reviewed": 1,
+  "counts_as_si_reviewed": 0,
+  "novelty_or_performance_acceptance": false
+}

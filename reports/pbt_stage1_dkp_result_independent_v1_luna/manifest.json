@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "artifact": "/home/yndx/zxk/rul/reports/pbt_stage1_dkp_result_independent_v1_luna",
+  "status": "PASS_TEXT_RESULT_CHAIN_AND_MAPPING",
+  "files": {
+    "review.json": {
+      "sha256": "44ea827ebdc9a2fc5c565e6c6abb68749c74af116556785f84325796918fad2b"
+    },
+    "report_zh.md": {
+      "sha256": "de1542a443e53543cfef2f0e3ac03a69f358cbc07a97a9fc7271e1f37eb58663"
+    },
+    "inputs/root_execution_decision.json": {
+      "sha256": "990171eca005e9f6104214f89caf82d5047f9af85373fa326cb12bfc7b514f70"
+    },
+    "inputs/root_go.json": {
+      "sha256": "789425cdaa3f50651a176209fb8dddb202edc05d1cfc1500012926fb9218ae55"
+    },
+    "inputs/root_invocation_budget_claim.json": {
+      "sha256": "c1b02bf4c9bf0dfc9fc34513c61c29676769ed1bad14f29c8402f30268d1e6be"
+    },
+    "inputs/root_execution_receipt.json": {
+      "sha256": "e1a63c244e897d7188d725f70bd601358908cb186093a736c6d1420420b71c99"
+    },
+    "inputs/key_presence_manifest.json": {
+      "sha256": "01a7cd1906730863502f00194b0b038251343436e7128d1abf41c7e9d6a561e1"
+    },
+    "inputs/scanner_v4.py": {
+      "sha256": "c2c8600cb990203da33542f271f0a5d679f8b5df70037ac4ee05d7a98d417bcb"
+    },
+    "inputs/spec_v4.json": {
+      "sha256": "9d3df69e12a78a6bdadec937b1aafa1cf4dede2375f97979a6ca46af5972f403"
+    },
+    "inputs/launcher_v4.py": {
+      "sha256": "c72430ec406fc82a7a97c775ccd088ef31eb403841b5817e30ed10614b6e7743"
+    },
+    "inputs/prior_independent_code_review.json": {
+      "sha256": "95b38e0fc5aefd6121cd1d8c98e59eb7ceddbd8bb01bfc98c93009563dd64100"
+    },
+    "inputs/fixed_population_csv.csv": {
+      "sha256": "143710b7f7b664eb1ceb2a11c4213e9c5674a3c3de389e85132d54324afaa75d"
+    },
+    "inputs/prior_aggregate_receipt.json": {
+      "sha256": "f6f1507589aa9f14ec1506500c150c90e87592288ea3fc215103312bbcd68912"
+    }
+  },
+  "scope": "Read-only text artifact review; actual ZIP/Pickle binary not reopened; no scanner rerun; no changes to source artifacts.",
+  "findings": {
+    "mapped_population": 15,
+    "all_presence_true": true,
+    "unique_bounded_build_offsets": 15,
+    "direct_root_keys": 195,
+    "archive_bytes_read": 1295934,
+    "output_bytes": 5860,
+    "reruns_remaining": 0,
+    "valid_cycle_missing": 15,
+    "historical_namespace_missing": 44,
+    "model_gates_closed": true
+  }
+}

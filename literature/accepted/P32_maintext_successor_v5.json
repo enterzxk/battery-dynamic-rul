@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "paper_id": "P32",
+  "decision": "MAIN_TEXT_REVIEWED_ACCEPTED_WITH_ROOT_ADDENDUM",
+  "coordinator": "01a14564-865a-7a30-9417-a1a04b44891a",
+  "read_note": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v5_batch06/P32_full_read_v2_root.json",
+  "read_sha256": "1cdd52df0df3d71f3502e4ff84f6383cf20ed693b1663147a5c35e5e4459ce7e",
+  "review": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v5_batch06/P32_independent_review_v2_root.json",
+  "review_sha256": "7938010da200090489914c6ac94c7638bb56086801fe1578a6793bb689a96dff",
+  "review_receipt": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v5_batch06/P32_independent_review_v2_root.json.receipt.json",
+  "review_receipt_sha256": "227b91163dd79e81d2b6d1c1afb8170f16f07e1b73500b1504ac6f95c222e212",
+  "source_spot_check": "/home/yndx/zxk/rul/reports/literature_acceptance/successor_20261016_v5/P32_root_source_addendum.json",
+  "spot_check_sha256": "8203340c0f6f0dafd1962e73b9711bc0cf803ebc4b178cb46038c63552d30ad6",
+  "qualifications_zh": [
+    "NASA avgMAE AUKF0.0253优于MDFA0.0259，不能说全表所有指标胜出；可复现均10次与文献最佳值混用公平性未证。",
+    "第6页作者称示例曲线倾向低估且更安全，仅作者定性叙述非root像素/统计或真实安全证明。",
+    "B0006训练243.18/154.64/491.35秒及测试0.7812/0.2343/1.2656秒只在作者设置内；无实际BMS部署验证。",
+    "70% nominal EOL、留一电芯是作者协议；实际RUL单位/标签/输入完整特征与origin未明，Lie-Trotter类比不是证明。",
+    "输入序列的完整特征定义及预处理、归一化细节未报告；文本仅称使用循环测试容量数据。",
+    "RUL标签的精确构造方式、单位、百分比或绝对寿命定义，以及训练和推理时预测origin的具体规则未报告。",
+    "各次留一实验的完整电芯划分细节、随机种子和不确定性区间未报告。",
+    "指标的精确定义、按电芯或按样本汇总的方式未充分说明。",
+    "图像内容未抽取，无法核实图中额外信息。",
+    "未提供独立补充材料；代码与出版社版本状态无法依据论文正文核实。",
+    "作者所述低估RUL是Fig.4定性描述，未经本项目逐点图像审计或signed error重算，不等同实际安全保证。NASA平均MAE未优于表中AUKF-GASVR，不称全表全指标最优。"
+  ],
+  "counts_as_main_text_reviewed": 1,
+  "counts_as_si_reviewed": 0,
+  "novelty_or_performance_acceptance": false
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "paper_id": "P38",
+  "decision": "MAIN_TEXT_REVIEWED_ACCEPTED_WITH_ROOT_ADDENDUM",
+  "coordinator": "01a1473c-91c2-7973-9f88-53ad49464e39",
+  "read_note": "/home/yndx/zxk/rul/literature/revisions/successor_20261017_v6_batch07/P38_full_read_v4_root.json",
+  "read_sha256": "9572b04b8a7d9896de8899ff77a1c92253f52da42f6f9681c45e5ef3e2b4ad6e",
+  "review": "/home/yndx/zxk/rul/literature/revisions/successor_20261017_v6_batch07/P38_independent_review_v4_root.json",
+  "review_sha256": "acbcb8c937fa0cfc62af9f3949046b6c00d5a54a9b925c6e1964f6788d47ecfb",
+  "review_receipt": "/home/yndx/zxk/rul/literature/revisions/successor_20261017_v6_batch07/P38_independent_review_v4_root.json.receipt.json",
+  "review_receipt_sha256": "caa99492102a81dc9c672c087d48c5fa24fc09c5c3b0333f64b7c0699dd50c26",
+  "source_spot_check": "/home/yndx/zxk/rul/reports/literature_acceptance/successor_20261017_v6/P38_root_source_addendum.json",
+  "spot_check_sha256": "dc1170379cddfde9530d8c7978c18a781e4e53639dfdaddea3ef3737860994ef",
+  "qualifications_zh": [
+    "1.86Ah为作者observedmax定义非厂家额定2.0；统计人口/训练折/asof未证。",
+    "第4页>100%归属B0006/7与表1 B0018上限104.6%矛盾；第5页tau拟合636/637与提取623/630口径差异均保留。",
+    "组合指标只RMSE/R2最佳，CC-only MAE2.72优于combined2.87；各表LOBO汇总口径差异未解决。",
+    "early-to-late负R2与仅单化学/单NASA同协议范围保留；5%维护工程判断与作者计时非真实安全/BMS部署。",
+    "独立v4 PASS建议补表10具体资源值，root已实际读第11页：LightGBM1.4ms/111kB、XGBoost0.6ms/229kB、CatBoost1.4ms/65kB、RandomForest32.9ms/3106kB；仅作者计时/体积，非本项目测量或真实BMS部署。",
+    "未提供独立补充信息文件。",
+    "图像内容未抽取，无法独立核实图中细节。",
+    "代码及代码仓库状态未核实。",
+    "无法核实所给文本首页刊头所列出版信息与arXiv v1是否对应同一正式出版版本。",
+    "来源未报告RUL预测实验、RUL标签或将寿命量用作推理输入。",
+    "正文中不同表格的LOBO汇总数值口径差异未获解释。",
+    "1.86 Ah observed-max归一化常量的统计人口、时间范围及是否fold/as-of隔离未证。",
+    "第4页>100%循环正文归B0006/B0007与表1 B0018=104.6%的差异未解释；CC-only的MAE优于combined，不能称全指标胜出。",
+    "第5页拟合636/637与有效提取623/630的计数差异未解释；不能把两个样本数默认为一致。"
+  ],
+  "counts_as_main_text_reviewed": 1,
+  "counts_as_si_reviewed": 0,
+  "novelty_or_performance_acceptance": false
+}

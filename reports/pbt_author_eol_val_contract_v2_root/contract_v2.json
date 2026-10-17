@@ -1,0 +1,141 @@
+{
+  "artifact": "pbt_author_eol_val_contract_v2_root",
+  "status": "STATIC_PREPARATION_ADVANCED_FORWARD_NOT_AUTHORIZED",
+  "coordinator": "01a14441-0beb-7c42-bfae-d6ee875d4987",
+  "created_utc": "2026-10-16T15:14:04.935814+00:00",
+  "supersedes_for_active_preparation": "reports/pbt_author_eol_val_contract_v1/contract_v1.json; original preserved",
+  "scope": "HUST author-v11 estimated-total-EOL validation-only reproduction preparation; strict online dynamic-RUL is a separate lane",
+  "authorization": {
+    "model_construction": false,
+    "strict_load": false,
+    "forward": false,
+    "metrics": false,
+    "training": false,
+    "test_access": false
+  },
+  "evidence": [
+    {
+      "path": "/home/yndx/zxk/rul/reports/pbt_scaler_static_audit_v4_root/scaler_static_audit.json",
+      "sha256": "5a0a5eb2a1bd273fb1359188bc52dca061b0eb5ba7c1d7e32937e321af84af19"
+    },
+    {
+      "path": "/home/yndx/zxk/rul/reports/pbt_scaler_static_audit_v4_root/independent_review_luna_v1.json",
+      "sha256": "3f51d54b9df1b786864fbd8381fcc01186b1a08df383be9aae02e8550234c968"
+    },
+    {
+      "path": "/home/yndx/zxk/rul/reports/pbt_complete_keyshape_static_v3_root/complete_keyshape_audit.json",
+      "sha256": "6e2a84abc9a7300ba4e1e5036f4752a33f2af0e4d59d0d8569db7c9281eb73c8"
+    },
+    {
+      "path": "/home/yndx/zxk/rul/reports/pbt_complete_keyshape_static_v3_root/root_repair_acceptance.json",
+      "sha256": "5bd03bda7af0852c22bf4709ebaed9666337aa9ade9dc0e42bd7e56060d9526d"
+    },
+    {
+      "path": "/home/yndx/zxk/rul/reports/pbt_complete_keyshape_static_v2/independent_review_luna_v1.json",
+      "sha256": "54618a1f86c51c9548211773f5a892a8f212412c5d5696f0498f847f11426b01"
+    },
+    {
+      "path": "/home/yndx/zxk/rul/reports/pbt_validation_finite_static_v1/finite_static_receipt.json",
+      "sha256": "5c4b6ca92e0bd7f1465d345b132717e8e6647ccefb65a895d66f8d9a016c8605"
+    },
+    {
+      "path": "/home/yndx/zxk/rul/reports/pbt_constructor_dependency_static_v2/constructor_static_audit.json",
+      "sha256": "f7d39572bb4efa9e9de6cc7cc54f94fdf344340b252f4c4a8e8cf79bdbe69476"
+    },
+    {
+      "path": "/home/yndx/zxk/rul/reports/pbt_validation_loader_candidate_v3/restricted_decode_receipt.json",
+      "sha256": "f6f1507589aa9f14ec1506500c150c90e87592288ea3fc215103312bbcd68912"
+    },
+    {
+      "path": "/home/yndx/zxk/rul/reports/pbt_static_state_shape_audit_v1/root_lane_clarification.json",
+      "sha256": "4909ae18071de16f27678b6d17deff7d5cd4b24000a579c7977cbaedb50fc7b0"
+    },
+    {
+      "path": "/home/yndx/zxk/rul/reports/pbt_author_eol_val_contract_v1/contract_v1.json",
+      "sha256": "83b77c4875d95891c43d66a262ef44e7becfb2934634cd6c2341fd3fccc18685"
+    }
+  ],
+  "verified_static": {
+    "checkpoint_cached_header": "source-derived full1447 expected keys/shape/dtype match cached header1447; payload not opened",
+    "scaler": {
+      "bytes": 623,
+      "n_features_in": 1,
+      "mean": 879.4115308151094,
+      "var": 586274.3892904994,
+      "scale": 765.6855681613043,
+      "dtype": "float64 little-endian shape1",
+      "scale_squared_minus_var": 0.0,
+      "method": "static inert opcode symbolic mapping;9 rejection selftests; independently reviewed"
+    },
+    "validation_DKP": "195 arrays shape1x4096 f2; HUSTval15/15 key coverage from prior bounded decoder; new static finite check798720/798720 finite; no embedding values emitted",
+    "constructor": "tokenizer/PCA direct attributes used in __init__ only; does not prove omission equivalence, construction, precision support or strictload"
+  },
+  "lanes": {
+    "R_author_retrospective": {
+      "goal": "Faithful author estimated-total-EOL exploratory HUST validation, with future-EOL sampling disclosed",
+      "training_supervision": "Using completed training-cell EOL labels is not automatically input leakage",
+      "population": "Exact author HUSTval15 prefix/filter reproduction and curve/label/DKP pairing still unproven",
+      "eligibility": "Historical full-EOL filters may be documented for faithful retrospective reproduction; cannot claim online validity or independent generalization",
+      "status": "NOT_FROZEN_NOT_EXECUTED"
+    },
+    "O_strict_online_dynamic": {
+      "goal": "RUL at legal origin using only information available by cutoff",
+      "requirements": "observed/censored event semantics, at-risk set and prefixes without full-EOL selection; physical-cell identity and pretraining exposure audit",
+      "status": "NO_GO_UNRESOLVED_LABEL_ASOF_ID"
+    }
+  },
+  "remaining_gates": [
+    {
+      "id": "G0",
+      "status": "PARTIAL",
+      "required": "Pinned source/config/input manifests and exact 15 val cells; no drift; physical identity unknown remains disclosed"
+    },
+    {
+      "id": "G1R",
+      "status": "OPEN",
+      "required": "Freeze retrospective author-EOL legal scope and original full-EOL selection explicitly; no dynamic/independent-generalization claim"
+    },
+    {
+      "id": "G1O",
+      "status": "STOP",
+      "required": "Strict online observed/censored labels and no future trigger/filter; separate from laneR"
+    },
+    {
+      "id": "G2",
+      "status": "OPEN",
+      "required": "Prove val-only curve/label/DKP pairing, exact prefix/mask/collation, no train/test payload or zero-DKP fallback"
+    },
+    {
+      "id": "G3",
+      "status": "PARTIAL_STATIC_ONLY",
+      "required": "Prove configuration wrapper and constructor handling, actual strictload, bfloat16/eval and same preprocessing/output arithmetic; full static keyshape alone insufficient"
+    },
+    {
+      "id": "G4",
+      "status": "CLOSED",
+      "required": "Root review of complete concrete val-only proposal, explicit bounded budget and approval before construction/forward; currentnone"
+    },
+    {
+      "id": "G5",
+      "status": "STOP_INDEPENDENT_GENERALIZATION",
+      "required": "Checkpoint exposure and physical/pretraining IDs unresolved; MIX_large includes HUST train/val"
+    }
+  ],
+  "current_counters": {
+    "session_new_fits": 0,
+    "session_optimizer_steps": 0,
+    "session_forward": 0,
+    "test_inference": 0,
+    "historical_fits": 2,
+    "historical_optimizer_steps": 600
+  },
+  "first_executable_next": "Read pinned BatteryLifeConfig/ec_config get_configs and official call site, static map expected runtime config/precision/output without constructing model or reading payload. Then design exact val-only pairing audit using existing views; no forward.",
+  "prohibited": [
+    "ordinary pickle/joblib/torch load",
+    "8GB pickle rescan",
+    "train/test payload",
+    "new fit/resume/budget expansion",
+    "unsafe loading or dropping DKP for execution",
+    "changing precision/constructor for convenience without equivalence evidence"
+  ]
+}

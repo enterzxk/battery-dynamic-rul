@@ -1,0 +1,17 @@
+{
+  "decision": "/home/yndx/zxk/rul/reports/pbt_stage0_metadata_freeze_v2_root/root_execution_decision.json",
+  "decision_sha256": "7720539875047e139b980b52a2dba9635bc66a772831b117b9a62da8d6386d6b",
+  "execution_receipt": "/home/yndx/zxk/rul/reports/pbt_stage0_metadata_freeze_v2_root/root_execution_receipt.json",
+  "execution_sha256": "f9e922ae28405e5fb8905ee91a0b0114ed9352d0d59be98ad08b284f0a969a37",
+  "receipt": "/home/yndx/zxk/rul/reports/pbt_stage0_metadata_freeze_v2_root/metadata_receipt.json",
+  "receipt_sha256": "75878598379bf5999f91ecc1bab17d6840baac8799ee7d3554198f7d9f2e6c59",
+  "returncode": 0,
+  "declared_fields": 101,
+  "effective_fields_missing": 44,
+  "per_cell_exact_dkp_missing": 15,
+  "valid_cycle_missing": 15,
+  "new_fits": 0,
+  "optimizer_steps": 0,
+  "PBT_forward": 0,
+  "test": 0
+}

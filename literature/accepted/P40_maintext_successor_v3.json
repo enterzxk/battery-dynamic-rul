@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "paper_id": "P40",
+  "decision": "MAIN_TEXT_REVIEWED_ACCEPTED_WITH_ROOT_ADDENDUM",
+  "coordinator": "01a14441-0beb-7c42-bfae-d6ee875d4987",
+  "read_note": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v2/P40_full_read_v2_root.json",
+  "read_sha256": "c06dba50b8cbf8e4b7b3bb1cba6483893c92b3b3080764bfbfd9d996a3cab846",
+  "review": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v2/P40_independent_review_v7_root.json",
+  "review_sha256": "69c8e407844c5e125ee1b10e3f8a12c913cb3a0904bc40791e2c9b9b82460f3e",
+  "source_spot_check": "/home/yndx/zxk/rul/reports/literature_acceptance/successor_20261016_v3/P40_root_source_check_addendum.json",
+  "spot_check_sha256": "b7c2ccf6adbb3ec52263f6d8c1da6a971bec17bd19b8979bc30504adbbaba83d",
+  "source_url": "https://arxiv.org/pdf/2603.24475v1",
+  "qualifications_zh": [
+    "方法为单步SOH预测，非动态RUL数值结果；数据是30Ah NMC合成老化，A123校准是模型既有背景。",
+    "第6页式6使用历史SOH与倍率，第5页截断后可用信息论述仅明确倍率一直可测。截断后SOH输入由真实值或递归预测得到的实施未证，不可自动称严格online/as-of合法长期预测。",
+    "第8页CP校准为每源域批次10电芯，与源域同分布及工况模拟生成。第10页98.8%是本合成目标域经验覆盖，不证任意域移位的分布无关保证。",
+    "表3确认0.083/1.637/1.591/0.781%等RMSE；第9页明确常规fine-tuning为dense-layer重训。本项目未运行或复现本模型。",
+    "arXiv v1 only; conference primary identity unverified",
+    "No new real-cell validation, test population size or repeated-run significance established",
+    "No project performance acceptance or dynamic-RUL GO"
+  ],
+  "counts_as_main_text_reviewed": 1,
+  "counts_as_si_reviewed": 0,
+  "novelty_or_performance_acceptance": false
+}

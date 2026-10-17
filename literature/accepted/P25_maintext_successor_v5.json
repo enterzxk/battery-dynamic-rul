@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "paper_id": "P25",
+  "decision": "MAIN_TEXT_REVIEWED_ACCEPTED_WITH_ROOT_ADDENDUM",
+  "coordinator": "01a14564-865a-7a30-9417-a1a04b44891a",
+  "read_note": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v5_batch06/P25_full_read_v2_root.json",
+  "read_sha256": "5854a0724d87492ca4284c8425b2af22f316653b39daf8401df7421cb1c06d80",
+  "review": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v5_batch06/P25_independent_review_v2_root.json",
+  "review_sha256": "ba2079672faa57a0490add6ce925a34c8e587dd660f4f26998e4e77832af4805",
+  "review_receipt": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v5_batch06/P25_independent_review_v2_root.json.receipt.json",
+  "review_receipt_sha256": "935b42f668d8a4ea416b8bbaaec50fbbbab23d958222d0b9c18460cbf0159337",
+  "source_spot_check": "/home/yndx/zxk/rul/reports/literature_acceptance/successor_20261016_v5/P25_root_source_addendum.json",
+  "spot_check_sha256": "ab4da217fb604eb9e75cf2a4b88f001504559afa6d95e820622e2b519b01dabe",
+  "qualifications_zh": [
+    "正文表1 W9=341、补充表S2=340并列，原文未解释；不自行更正。",
+    "五电芯受控23C/UDDS容量SOH估计，非动态RUL；RPT插值监督不自动等于输入泄漏。",
+    "LR与复杂模型没有全面赢家；功率自相关依赖周期放电，能量指标现实工况适用性及跨温度/化学体系未验证。",
+    "独立v2 PASS仍建议补作者化学体系无关主张；root实际读第4页明确：作者称指标agnostic to specific battery chemistries且不依赖累计周期/Ah，这只是指标设计/适用性主张，本研究五只NMC实验不验证跨化学泛化。独立审建议和此root补充一并保留，未改旧note/review。",
+    "PDF图像未抽取，图表的视觉细节及图中未进入文本的内容无法核实。",
+    "未提供独立SI文件；所读文本包含论文内附的Supplementary Information及补充说明。",
+    "现场车辆部署、温度变化下的性能、不同电芯化学体系上的实验泛化、RUL预测及理论证明均未报告或无法由该来源核实。",
+    "实验划分是否重复、多随机种子评估及统计不确定性未报告。",
+    "W9 aging cycles正文表1=341、补充表S2=340，准确总数及差异原因未证。"
+  ],
+  "counts_as_main_text_reviewed": 1,
+  "counts_as_si_reviewed": 0,
+  "novelty_or_performance_acceptance": false
+}

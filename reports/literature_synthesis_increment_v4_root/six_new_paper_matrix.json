@@ -1,0 +1,138 @@
+[
+  {
+    "paper_id": "P10",
+    "target": "RUL regression and thresholded classes",
+    "input_and_population": "Cycle-level time/voltage engineered features; cell grouping not specified",
+    "author_reported_results_only": "TLE Table5 MAE1.4858/RMSE2.8350; exact Table6 means0.99653/0.99105 conflict with table0.9969",
+    "fairness_and_limitations": "Evaluation-set identity/CV mapping and cell isolation unverified; deployed prototype absent",
+    "strict_online_boundary": "Strict dynamic target/origin legality not established",
+    "source_pages_1based": [
+      8,
+      11,
+      15,
+      32,
+      40,
+      42
+    ],
+    "source_text": "/home/yndx/zxk/rul/literature/papers/P10/1792080805672906557.txt",
+    "source_url": "unverified; see accepted source record",
+    "acceptance_path": "/home/yndx/zxk/rul/literature/accepted/P10_maintext_successor_v5.json",
+    "acceptance_sha256": "72888edc3c22f399b0fc1906cc4eaaf7f41aabdcf1c7716ed9c946cf9f11ed43",
+    "read_note": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v3_batch04/P10_full_read_v5_root.json",
+    "review": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v3_batch04/P10_independent_review_v5_root.json",
+    "root_addendum": "/home/yndx/zxk/rul/reports/literature_acceptance/successor_20261016_v5/P10_root_source_addendum.json"
+  },
+  {
+    "paper_id": "P25",
+    "target": "Capacity/SOH estimation",
+    "input_and_population": "Five NMC cells, UDDS, controlled23C; energy/impedance increments",
+    "author_reported_results_only": "Scenario1 APE<2.5%, leave-one scenario<1.6%; no model wins every RMSE entry",
+    "fairness_and_limitations": "W9 cycles341/340 conflict; same small cell family, field/temperature generalization absent",
+    "strict_online_boundary": "No RUL experiment reported",
+    "source_pages_1based": [
+      4,
+      11,
+      12,
+      15,
+      30,
+      45
+    ],
+    "source_text": "/home/yndx/zxk/rul/literature/papers/P25/1792080889445438490.txt",
+    "source_url": "https://arxiv.org/pdf/2409.14575v1",
+    "acceptance_path": "/home/yndx/zxk/rul/literature/accepted/P25_maintext_successor_v5.json",
+    "acceptance_sha256": "6fd05b9ce48b92ab6edab2091aeaad3b3ee78953be161710509de2d081f9fead",
+    "read_note": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v5_batch06/P25_full_read_v2_root.json",
+    "review": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v5_batch06/P25_independent_review_v2_root.json",
+    "root_addendum": "/home/yndx/zxk/rul/reports/literature_acceptance/successor_20261016_v5/P25_root_source_addendum.json"
+  },
+  {
+    "paper_id": "P26",
+    "target": "Single-discharge-cycle SOH; separate EOL indicator",
+    "input_and_population": "Current/voltage/temperature/time, resampling; NASA train/eval splits",
+    "author_reported_results_only": "NASA-L L MAE1.072/RMSE1.592/MAPE1.346; #7 MAPE inferior to cited comparison",
+    "fairness_and_limitations": "Only-constant limitation contradicts NASA-S PWM#25; fairness/budget not fully established",
+    "strict_online_boundary": "PDF Eq24 abs visually confirmed; first/last crossing operation unknown; not multi-origin remaining-time",
+    "source_pages_1based": [
+      7,
+      8,
+      10,
+      11
+    ],
+    "source_text": "/home/yndx/zxk/rul/literature/papers/P26/1792080902567527792.txt",
+    "source_url": "https://arxiv.org/pdf/2411.00233v1",
+    "acceptance_path": "/home/yndx/zxk/rul/literature/accepted/P26_maintext_successor_v5.json",
+    "acceptance_sha256": "972728c893c8beb30b8f766e63b3648d748ec229b0c3c6812f02de4587d41532",
+    "read_note": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v5_batch06/P26_full_read_v3_root.json",
+    "review": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v5_batch06/P26_independent_review_v3_root.json",
+    "root_addendum": "/home/yndx/zxk/rul/reports/literature_acceptance/successor_20261016_v5/P26_root_source_addendum.json"
+  },
+  {
+    "paper_id": "P29",
+    "target": "Formation-stage total cycle life",
+    "input_and_population": "178 reached-EOL cells of186,62formation protocols; two Q(V) features",
+    "author_reported_results_only": "Design medianMAPE9.20 vs autoML9.72, worst11.93 vs10.85",
+    "fairness_and_limitations": "Inner10subsets vs appendix5groups conflict; RLS temperature/SoC and agnostic template restrictions",
+    "strict_online_boundary": "Formation total life is not dynamic RUL; retrospective reached-EOL filter disclosed",
+    "source_pages_1based": [
+      2,
+      4,
+      12,
+      13,
+      29,
+      30
+    ],
+    "source_text": "/home/yndx/zxk/rul/literature/papers/P29/1792080923035434847.txt",
+    "source_url": "https://arxiv.org/pdf/2410.07458v1",
+    "acceptance_path": "/home/yndx/zxk/rul/literature/accepted/P29_maintext_successor_v5.json",
+    "acceptance_sha256": "7915d328a3430cc85b7e27b642217a6267e1fd25c546f9655c64bf4645eb805c",
+    "read_note": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v5_batch06/P29_full_read_v2_root.json",
+    "review": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v5_batch06/P29_independent_review_v2_root.json",
+    "root_addendum": "/home/yndx/zxk/rul/reports/literature_acceptance/successor_20261016_v5/P29_root_source_addendum.json"
+  },
+  {
+    "paper_id": "P31",
+    "target": "SOH trajectory estimation/temporal extrapolation",
+    "input_and_population": "16 charging features + operating variables, Euler degradation prior",
+    "author_reported_results_only": "Mean MSE standard6.6271e-5/extrap1.1067e-4; R3 extrap MLP beats PiDDM on4 errors",
+    "fairness_and_limitations": "epochs500/200,batch10000/256,baseLR.001/.01; no equal-compute mechanism conclusion",
+    "strict_online_boundary": "No absolute multi-origin remaining-time evaluation; 90/10 excludes last labels but full operational asof chain unverified",
+    "source_pages_1based": [
+      9,
+      10,
+      14,
+      15,
+      16,
+      19
+    ],
+    "source_text": "/home/yndx/zxk/rul/literature/papers/P31/1792080938458119277.txt",
+    "source_url": "https://arxiv.org/pdf/2607.29095v1",
+    "acceptance_path": "/home/yndx/zxk/rul/literature/accepted/P31_maintext_successor_v5.json",
+    "acceptance_sha256": "cbf386c021730d76fd713c71138690d6ab92c2e9c1f5a1c34f65a5a1a363b3df",
+    "read_note": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v5_batch06/P31_full_read_v2_root.json",
+    "review": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v5_batch06/P31_independent_review_v2_root.json",
+    "root_addendum": "/home/yndx/zxk/rul/reports/literature_acceptance/successor_20261016_v5/P31_root_source_addendum.json"
+  },
+  {
+    "paper_id": "P32",
+    "target": "Author-named RUL; exact target/unit undefined",
+    "input_and_population": "NASA/CALCE cyclic capacity data, windows16/64; author leave-one-cell",
+    "author_reported_results_only": "NASA avgR2 .9571/MAE.0259/RMSE.0333; AUKF avgMAE.0253 is lower",
+    "fairness_and_limitations": "10run averages mixed with literature best; no full same-budget rerun proof; latency only author setup",
+    "strict_online_boundary": "EOL70% nominal declared; origin/label/unit operation incomplete; qualitative underestimation not signed-bias/safety evidence",
+    "source_pages_1based": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "source_text": "/home/yndx/zxk/rul/literature/papers/P32/1792080943754579388.txt",
+    "source_url": "https://arxiv.org/pdf/2512.19719v1",
+    "acceptance_path": "/home/yndx/zxk/rul/literature/accepted/P32_maintext_successor_v5.json",
+    "acceptance_sha256": "147c0acb37601ae206f366dd4f2eb44ca242c962914ade846c27de88c27b8a21",
+    "read_note": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v5_batch06/P32_full_read_v2_root.json",
+    "review": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v5_batch06/P32_independent_review_v2_root.json",
+    "root_addendum": "/home/yndx/zxk/rul/reports/literature_acceptance/successor_20261016_v5/P32_root_source_addendum.json"
+  }
+]

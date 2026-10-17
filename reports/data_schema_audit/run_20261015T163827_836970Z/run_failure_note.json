@@ -1,0 +1,9 @@
+{
+  "stage": "first batched restricted decode attempt",
+  "pickle_decode_started": true,
+  "restricted_decode_of_first_59_files_succeeded_before_output_error": true,
+  "failure": "CSV DictWriter field-name mismatch for curve_lengths/finite_stats; no class/global import was involved",
+  "stopped_by_operator_to_prevent_misrecording_remaining_cells": true,
+  "per_file_sha_manifest": "hust_file_sha256.json",
+  "opcode_scan_repeated": false
+}\n

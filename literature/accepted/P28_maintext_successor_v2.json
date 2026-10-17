@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "paper_id": "P28",
+  "decision": "MAIN_TEXT_REVIEWED_ACCEPTED_WITH_ROOT_SOURCE_ADDENDUM",
+  "coordinator": "01a1442c-2bf2-73e0-87a4-a075751edd0d",
+  "read_note": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v2/P28_full_read_v2.json",
+  "read_sha256": "dac75ed92e7731811b64f48c77a166dcfb89c76b0a2740232345364475064541",
+  "review": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v2/P28_independent_review_v7.json",
+  "review_sha256": "92013d2564f76947d52c51d4d5aea1656d0c70dafd90b3a09cb07a62127f26e4",
+  "source_spot_check": "/home/yndx/zxk/rul/reports/literature_acceptance/successor_20261016_v2/P28_root_source_check_addendum.json",
+  "spot_check_sha256": "fc0f36481f6718667f762b6037b86877d78432cf7fe0ec72697a4ea73ef23f46",
+  "source_backed_addendum_zh": "Root核对主文第3页文字“under0.88%”与第4页Table2五机制模型25°C的0.88数值，note已如实披露边界差异，不将来源原文差异当自造错误。",
+  "qualifications_zh": [
+    "物理退化模型比较与验证，不自动构成动态RUL预测。",
+    "保留原文文字与表格0.88%的边界差异。",
+    "SI中的方程/参数/补图未提供，代码与模型实现对应和项目复现未核。"
+  ],
+  "counts_as_main_text_reviewed": 1,
+  "counts_as_si_reviewed": 0,
+  "novelty_or_performance_acceptance": false
+}

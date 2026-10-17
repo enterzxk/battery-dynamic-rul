@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "paper_id": "P06",
+  "decision": "MAIN_TEXT_AND_INCLUDED_APPENDICES_REVIEWED_ACCEPTED_WITH_ADDENDUM",
+  "coordinator": "root",
+  "source_version": "arXiv2502.18807v7,13 PDF pages",
+  "formal_doi": "10.1145/3711896.3737372",
+  "bibliographic_verification": "literature/identity_audit/P05_P06_primary_version_check_root_20261016.json",
+  "read_note": "/home/yndx/zxk/rul/literature/notes/batch01_recovery_v3/P06_revision_v3.json",
+  "read_sha256": "0eb4d85ef203234feddd7d842fab53f125ad08edff0d803f032da0e88b950e28",
+  "review": "/home/yndx/zxk/rul/literature/notes/batch01_recovery_v3/P06_independent_review_v3.json",
+  "review_sha256": "76c51083c8c9fc50f856f16102eb06ae7f2b45e7be8c51756775ff6ae205e1d6",
+  "review_verdict": "PASS_MAIN_TEXT",
+  "source_backed_addendum_zh": "Figure5及PDF第8页延续段落说明：更多可用循环起初提高预测表现，之后信息收益趋于平台；Zn-ion、CALB的最佳模型会随循环数而变。此观察是作者报告，对本项目动态RUL选题相关，但不是本项目实验。",
+  "qualifications_zh": [
+    "正式12页conference版本未与此13页arxiv版本逐字对齐",
+    "单独SI未读，文件内附录A/B已读",
+    "CALB表0.140/正文0.141差异保留；随机划分/unknown-condition操作等正文未给完整名单",
+    "论文原始数据统计与后续v11 release应分开；当前pilot不是正式paper reproduction"
+  ],
+  "counts_as_main_text_reviewed": 1,
+  "counts_as_si_reviewed": 0,
+  "scientific_result_or_innovation_accepted": false
+}

@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "paper_id": "P02",
+  "decision": "MAIN_TEXT_REVIEWED_ACCEPTED_WITH_QUALIFICATIONS",
+  "coordinator": "01a1442c-2bf2-73e0-87a4-a075751edd0d",
+  "read_note": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v2/P02_full_read_v2.json",
+  "read_sha256": "aab79e5eacb000534344999b89be528c775934f3a457725f15a22cbfa659e5a1",
+  "review": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v2/P02_independent_review_v7.json",
+  "review_sha256": "a1f0f19f4fc85e12db5eaac7c14022e3f7e0e114909c33cccd95f4137d056d32",
+  "source_spot_check": "/home/yndx/zxk/rul/reports/literature_acceptance/successor_20261016_v2/P02_root_source_check.json",
+  "spot_check_sha256": "999f53ddcb1d0bfd1551e1e941cc50a50c77707b2cdcb5010b8ea9dcb5fedec9",
+  "qualifications_zh": [
+    "所给作者托管主文及内含Extended Data文本；独立SI未提供，不能计SI完成。",
+    "Kendall0.83归于CLO协议寿命排序，Pearson0.86归于验证早期预测与最终寿命，未混用。",
+    "快速充电闭环优化/早期总寿命预测，不是动态RUL性能或本项目复现。"
+  ],
+  "counts_as_main_text_reviewed": 1,
+  "counts_as_si_reviewed": 0,
+  "novelty_or_performance_acceptance": false
+}

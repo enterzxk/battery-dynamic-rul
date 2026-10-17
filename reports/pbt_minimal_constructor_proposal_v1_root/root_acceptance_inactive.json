@@ -1,0 +1,24 @@
+{
+  "status": "ROOT_ACCEPTED_INACTIVE_STATIC_PROPOSAL_ONLY",
+  "coordinator": "01a14551-5f05-7112-a499-a39a2b116c8d",
+  "independent_review": "/home/yndx/zxk/rul/reports/pbt_constructor_proposal_review_v1_luna/review.json",
+  "independent_review_sha256": "5b95cb66f8299bf547a707e0f07ad958f22dbc388b081d990ad8fda85aaa3db7",
+  "hash_correction": "/home/yndx/zxk/rul/reports/pbt_constructor_proposal_review_v2_root_hash_correction/v2_root_hash_correction.json",
+  "hash_correction_sha256": "4da6ef961efad485e34332efc0e37fedb9aac5f7590e4fc06c894cef1e20eda9",
+  "proposal": "/home/yndx/zxk/rul/reports/pbt_minimal_constructor_proposal_v1_root/proposal.json",
+  "proposal_sha256": "382abd86bf5e2bbd9298ff1d006f81c31c3029ca54f59a86b9fc453a51e70d41",
+  "limitation": "All other AST unchanged modulo3 dependency omission edits; no import closure/runtime/numerical equivalence. Old63-character source SHA is inactive; corrected64-character computed hash is authoritative.",
+  "authorization": {
+    "candidate_import": false,
+    "model_construction": false,
+    "strict_load": false,
+    "forward": false,
+    "metrics": false,
+    "fits": false,
+    "test": false
+  },
+  "new_fits": 0,
+  "optimizer_steps": 0,
+  "forward": 0,
+  "test_inference": 0
+}

@@ -1,0 +1,28 @@
+{
+  "protocol_id": "draft_batterylife_hust_matr_lifetime_vs_dynamic_rul",
+  "status": "DRAFT_NOT_RUN",
+  "execution_permission": "NO_TRAINING_AUTHORIZED_IN_THIS_AUDIT",
+  "official_code_path": "/home/yndx/zxk/rul/repos/audit/BatteryLife-main/BatteryLife-main",
+  "data_root": "/home/yndx/zxk/rul/data/processed_batterylife",
+  "preconditions": [
+    "Data presence is NOT_VERIFIED. Stage official processed HUST/MATR data and Life labels only after recording source terms and hashes.",
+    "Record preprocessing version, data and label hashes, split-list hash; compare actual cell IDs against official lists.",
+    "Official CPMLP.sh and CPTransformer.sh use two processes and default to CALB and MIX_large respectively; check GPU count, root/checkpoint paths, live lock and budget before any launch.",
+    "Official target is total EOL cycle life. Dynamic RUL requires EOL_cycle-observed_cycle and a separate protocol."
+  ],
+  "cpmlp": {
+    "entrypoint": "bash train_eval_scripts/CPMLP.sh",
+    "defaults": {"dataset":"CALB","early_cycle_threshold":100,"epochs":100,"learning_rate":0.00005,"batch_size_per_process":16,"processes":2,"loss":"MSE","seed":2021,"seq_len":1,"curve_length":300}
+  },
+  "cptransformer": {
+    "entrypoint": "bash train_eval_scripts/CPTransformer.sh",
+    "defaults": {"dataset":"MIX_large","early_cycle_threshold":100,"epochs":100,"learning_rate":0.00005,"batch_size_per_process":32,"processes":2,"loss":"MSE","seed":2024,"seq_len":1,"curve_length":300}
+  },
+  "next_executable": [
+    "cd /home/yndx/zxk/rul/repos/audit/BatteryLife-main/BatteryLife-main",
+    "After prerequisites pass, create a run-local copy for dataset=HUST or MATR, root_path=/home/yndx/zxk/rul/data/processed_batterylife, and a new empty checkpoint path; preserve other flags and log the diff.",
+    "bash <run-local-copy-of-official-script>"
+  ],
+  "dynamic_rul": "Do not launch official BLP commands for a dynamic-RUL claim. First transform each prefix target to EOL_cycle-observed_cycle and preregister battery-level split and metrics."
+}
+

@@ -1,0 +1,82 @@
+{
+  "status": "PASS_INACTIVE_STATIC_PROPOSAL_ONLY",
+  "scope": "AST/source-only independent review; no candidate or repository module imports/execution, no construction/load/forward/metrics/fit/testpayload/checkpoint/pickle operations.",
+  "source": {
+    "path": "/home/yndx/zxk/rul/repos/pinned/PBT_122077bc5435bb0ba5406f2b112fa96903a08c6a/models/PBT.py",
+    "sha256": "171646ca4821eeac74b61f2a23b5f2381179a571d890994866dd0e3acc8655a"
+  },
+  "candidate": {
+    "path": "/home/yndx/zxk/rul/reports/pbt_minimal_constructor_proposal_v1_root/PBT_dependency_omission_INACTIVE.py",
+    "sha256": "d0cd9c5d2518833bc4c99b5949d9feb0529dcf36852915a05ffd6fb76aeb9555"
+  },
+  "checks": {
+    "source_hash_matches_fixed_hash": true,
+    "candidate_hash_matches_proposal": true,
+    "both_sources_parse_as_python_ast": true,
+    "normalized_ast_equal_after_only_three_allowed_edits": true,
+    "edits": [
+      {
+        "source_line": 487,
+        "candidate_line": 487,
+        "change": "AutoTokenizer.from_pretrained(...) assignment replaced by self.tokenizer = None."
+      },
+      {
+        "source_line": 498,
+        "candidate_line": 492,
+        "change": "self.tokenizer.padding_side = 'right' setter removed."
+      },
+      {
+        "source_line": 519,
+        "candidate_line": 512,
+        "change": "pickle.load(open(configs.pca_path, 'rb')) assignment replaced by self.pca_scaler = None."
+      }
+    ],
+    "all_forward_helper_arithmetic_module_constructor_and_remaining_ast_nodes_equal": true,
+    "direct_remaining_attribute_references": "AST attribute scan finds only the three source-side constructor references (plus nested self.tokenizer receiver for padding_side); no later tokenizer/pca_scaler references in this file."
+  },
+  "static_import_inventory": {
+    "stdlib": [
+      "copy",
+      "math",
+      "pickle",
+      "json",
+      "typing(List,Literal,Optional,Tuple,TypedDict)"
+    ],
+    "third_party": [
+      "torch",
+      "torch.nn",
+      "scipy.signal",
+      "transformers",
+      "numpy",
+      "torch.nn.functional",
+      "torch.nn.utils.rnn"
+    ],
+    "repository_local": [
+      "BatteryLifeLLMUtils.configuration_BatteryLifeLLM",
+      "BatteryLifeLLMUtils.output_BatteryLifeLLM",
+      "layers.Embed",
+      "layers.Transformer_EncDec",
+      "layers.SelfAttention_Family",
+      "layers.StandardNorm",
+      "layers.distributional_router_encoder",
+      "layers.MOE_dispatcher",
+      "utils.tools",
+      "utils.augmentation",
+      "layers.MLPs"
+    ],
+    "note": "Candidate and source import nodes are identical. This is only the direct source import inventory; transitive import closure and import-time effects of these dependencies were not inspected or executed."
+  },
+  "limitations": [
+    "Static AST identity after normalization does not establish runtime or numerical equivalence.",
+    "Top-level import execution and transitive dependency closure remain unreviewed; imports of torch/transformers and repository modules remain present.",
+    "Initializer/global RNG side effects, module registration, hooks, serialized metadata, parameter mapping, and behavior tied to absent attributes are not established by direct-reference scan or AST equality.",
+    "No model construction, strict checkpoint loading, full checkpoint coverage check, forward, evaluation, metrics, fitting, optimizer steps, or test inference was performed or authorized."
+  ],
+  "decision_boundary": "PASS applies only to this inactive static proposal. It is not a numeric-equivalence finding and does not authorize construction, strict load, forward, evaluation, metrics, fit, or test. Scientific GO/STOP remains with the root coordinator.",
+  "counters": {
+    "new_fits": 0,
+    "optimizer_steps": 0,
+    "forward": 0,
+    "test_inference": 0
+  }
+}

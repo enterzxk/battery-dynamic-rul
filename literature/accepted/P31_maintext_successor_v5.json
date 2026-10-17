@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "paper_id": "P31",
+  "decision": "MAIN_TEXT_REVIEWED_ACCEPTED_WITH_ROOT_ADDENDUM",
+  "coordinator": "01a14564-865a-7a30-9417-a1a04b44891a",
+  "read_note": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v5_batch06/P31_full_read_v2_root.json",
+  "read_sha256": "fd741ddcc0cc40349c06abff95650b07706ce29b959801c44813a1d763fefc7a",
+  "review": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v5_batch06/P31_independent_review_v2_root.json",
+  "review_sha256": "6529fd4a1504387f43c0e680e94f0fbd612cc04a3f5203f1830a05f2804374f8",
+  "review_receipt": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v5_batch06/P31_independent_review_v2_root.json.receipt.json",
+  "review_receipt_sha256": "24d11187f43a2e1f63b5eb3346b65ad080706c30dcb40aa2a46f10870928ca5d",
+  "source_spot_check": "/home/yndx/zxk/rul/reports/literature_acceptance/successor_20261016_v5/P31_root_source_addendum.json",
+  "spot_check_sha256": "400aad291a2507685e093eb19c4695a419b285ec5bec0a54eb2065715b515079",
+  "qualifications_zh": [
+    "PiDDM/MLP与PINN epochs500/200、batch10000/256、baseLR0.001/0.01，且PINN双网络不同；共同输入/拆分不等相同预算。",
+    "55cells报告43train/12test及90/10外推；SOH轨迹估计非严格全origin绝对RUL，label/asof实现与独立验证集划分未核。",
+    "负衰退先验可牺牲局部恢复拟合；R2.5部分指标、外推R3 MLP四误差更好，保留负面。",
+    "经验Arrhenius/幂律是学习先验，非完整唯一机理；无定理或内部组件消融。",
+    "未提供独立补充材料。",
+    "图像内容未抽取，本文图示中的曲线或其他图像细节无法独立核实；以上只转述正文所述结果。",
+    "文中未报告PiDDM内部组件或损失项的正式消融实验。",
+    "所提供文本未报告独立验证集的具体电池划分。",
+    "无法核实按请求提供的数据与代码是否实际可获取。",
+    "不同模型训练配置有明确差异，等计算/调参预算与PiDDM独立组件机制贡献未证。"
+  ],
+  "counts_as_main_text_reviewed": 1,
+  "counts_as_si_reviewed": 0,
+  "novelty_or_performance_acceptance": false
+}

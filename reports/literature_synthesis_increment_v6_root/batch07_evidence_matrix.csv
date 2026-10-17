@@ -1,0 +1,6 @@
+paper_id,version,task,evidence_pages,useful_evidence,comparison_limit,project_implication,status
+P33,2401.04734v2,退役电池C/20容量与SOH,"2,7,9-10",聚类与ENR自适应权重；条件BIBO有界性；容量上升与温度/降额背景,8同来源电芯；平均RMSPE3.40%至3.27%有个体负面；非cycle RUL,不以bounded-error理论代替误差改善；先核前缀可用特征和恢复轨迹,ROOT_MAIN_TEXT_ACCEPTED_ONLY
+P35,2410.23893v3,最初100循环条件生成SOH曲线与阈值寿命,"5-7,9,14-15",十条生成曲线按前100循环拟合择优；合成下游RF作者104±6对168±9,原文mean下标std需视觉读；SOH参考曲线必要时补零；split一致不等预算/物理ID独立,冻结曲线选择与指标长度规则；概率样本/95%类量需独立校准，不自动动态RUL,ROOT_MAIN_TEXT_ACCEPTED_ONLY
+P38,2607.23482v1,NASA4电芯CC/CV SOH指标比较,"4-5,7-8,10-11",LOBO与随机CV差距；组合RMSE/R2更好但CC-only MAE更低,1.86Ah observedmax来源/asof未证；SOH范围与拟合637/有效623人口口径矛盾；单数据单化学,预处理常量必须冻结统计人口与训练折；所有指标逐项比较，禁止笼统全胜,ROOT_MAIN_TEXT_ACCEPTED_ONLY
+P39,2510.02839v1,目标前缀适配、频域双流与PF外推RUL,"3-4,6,8-10",VMD kmax/alpha经PSO；目标SP前容量训练；表III循环RUL及CI,表II为EOL处容量误差非TimeMAE；图4b的SP100 RUL标注多50；VMD/asof未知；baseline SP不同,与target-adapted基线等适配预算比较；分开容量误差与剩余循环误差；不预判泄漏或负迁移,ROOT_MAIN_TEXT_ACCEPTED_ONLY
+P41,2608.14764v1,局部放电SOH代理与趋势/膝点/EoL,"3,6-8,11,13,16-17",分段网络与Verhulst约束；u0通常10%、K20%-100%；用户EoL阈值通常80%,Kneedle容量非传统SOH；u loss/SOH措辞矛盾；同10val/test集调gamma34；无独立逐origin RUL误差,完整曲线监督不自动推理泄漏；需代码核输入与残差；不能将online标签等同asof及final验证,ROOT_MAIN_TEXT_ACCEPTED_ONLY

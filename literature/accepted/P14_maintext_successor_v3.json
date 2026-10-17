@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "paper_id": "P14",
+  "decision": "MAIN_TEXT_REVIEWED_ACCEPTED_WITH_ROOT_ADDENDUM",
+  "coordinator": "01a14441-0beb-7c42-bfae-d6ee875d4987",
+  "read_note": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v3_batch04/P14_full_read_v2_root.json",
+  "read_sha256": "a8eb6386496f3bc65c204cf6ca3e0b0285bd82a74015a50a64542019918b4a45",
+  "review": "/home/yndx/zxk/rul/literature/revisions/successor_20261016_v3_batch04/P14_independent_review_v2_root.json",
+  "review_sha256": "eeac24e93489f63770f5fa26877ca5ca656f7c3e2f9008ba4b091f08f7778851",
+  "source_spot_check": "/home/yndx/zxk/rul/reports/literature_acceptance/successor_20261016_v3/P14_root_source_addendum.json",
+  "spot_check_sha256": "f166422f0cb6a04d3d4a7572255914a1cfbeae864711c4dcf124f90c186ea3bc",
+  "qualifications_zh": [
+    "第5页3.1节称分类器两个LSTM模块、每个四层；第6页图2画一个三层LSTM块，第14页4.4及第15页Table7选择一个三层块。正文内部结构描述不一致，不能只凭最优表格推断全部实际运行结构。",
+    "第7页MCT文字定义为total cycle count百分比，而Algorithm1未列MCT条件，比例与在线来源未明；若使用待预测电芯的真实完整寿命则在线不可用。本文未闭环，不据此断定测试标签确参与训练。",
+    "第15页Table8去除时间LSTM时HUST MAPE为0.0331，完整模型0.0384，该消融指标改善；MAE变差、MSE四舍五入相同。保留负面消融，不称所有组件在所有指标都受支持。",
+    "FPC后百分比输出及传统40%完整寿命起点对照，与绝对online动态RUL同协议评估分开；另有相同两阶段/特征TCN/LSTM对照，应独立解释。",
+    "代码及其可用性未核实。",
+    "出版版本、期刊或会议身份及撤稿状态未核实。",
+    "未提供独立补充材料；无法据文本核实未呈现的图像细节。",
+    "正文未报告统计显著性检验或真实部署验证，相关效果无法核实。",
+    "正文未说明MCT的具体比例或在线估计来源，也未充分交代百分比RUL如何转为绝对剩余循环数。"
+  ],
+  "counts_as_main_text_reviewed": 1,
+  "counts_as_si_reviewed": 0,
+  "novelty_or_performance_acceptance": false
+}

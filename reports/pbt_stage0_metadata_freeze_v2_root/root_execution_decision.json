@@ -1,0 +1,52 @@
+{
+  "coordinator": "01a1473c-91c2-7973-9f88-53ad49464e39",
+  "created_utc": "2026-10-17T00:33:16.795981+00:00",
+  "decision": "ROOT_GO_ONE_FIXED_METADATA_COLLECTION_ONLY",
+  "review": "/home/yndx/zxk/rul/reports/pbt_stage0_independent_v2_luna/review.json",
+  "review_sha256": "794572f444f3655bfd32c1242498534cf19e7ead573b348a44722146ac4b6ab8",
+  "reviewed_sources": [
+    {
+      "path": "reports/pbt_stage0_metadata_freeze_v2_root/spec.json",
+      "bytes": 11296,
+      "sha256": "d6d041feb5bc69bffb5cafc796cc21db00e7e3b4f217d4732fd328588aedcae3"
+    },
+    {
+      "path": "reports/pbt_stage0_metadata_freeze_v2_root/collector.py",
+      "bytes": 15492,
+      "sha256": "19d08edbd73f1b66ba5ce07b24a4bc75f6eb7e563cf5a7ec790704ec62e518cc"
+    }
+  ],
+  "command": [
+    "/home/yndx/miniconda3/envs/a40_env/bin/python",
+    "-I",
+    "-S",
+    "/home/yndx/zxk/rul/reports/pbt_stage0_metadata_freeze_v2_root/collector.py"
+  ],
+  "execution_budget": {
+    "attempts": 1,
+    "fixed_text_inputs": 7,
+    "input_bytes_expected": 40644,
+    "max_input_bytes_each": 65536,
+    "max_input_bytes_total": 131072,
+    "collector_hard_wall_seconds": 10,
+    "supervisor_wall_seconds": 12,
+    "max_output_bytes": 262144,
+    "cells": 15
+  },
+  "metadata_collector_authorized": true,
+  "authorization": {
+    "data_decode": false,
+    "model_construction": false,
+    "strict_load": false,
+    "forward": false,
+    "metrics": false,
+    "training": false,
+    "test_access": false
+  },
+  "failure_policy": "Preserve all failure/pending receipts; do not auto retry or broaden scope",
+  "scientific_scope": "metadata declaration/missing receipt only; not G2/G3 closure, runtime config or model performance",
+  "new_fits": 0,
+  "optimizer_steps": 0,
+  "PBT_forward": 0,
+  "test": 0
+}
