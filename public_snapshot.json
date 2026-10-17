@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-17T20:52:17.638147+00:00",
-  "content_sha256": "39d7dca4e03d053d9b405c18a77c2ef9ce77af2339779499b1e6a14320e055f4",
-  "file_count": 301,
+  "snapshot_utc": "2026-10-17T20:55:18.784993+00:00",
+  "content_sha256": "ba1044b93eff587a6bced5517d01c8ac9a7c4a68706d6f933d28052a9f5ee2ae",
+  "file_count": 305,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,8 +14,8 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 22412,
-      "sha256": "2fa838c9e7f44aa51b0095ba0dbe27a5333bda89472b91ae8992abbf04f25fbd"
+      "bytes": 23817,
+      "sha256": "1ec31bda7fbfbfb8e23c3675d77fd15bd8b0a68d74e652f13357aebfa5780f9b"
     },
     {
       "path": "README.md",
@@ -32,8 +32,8 @@
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 7504,
-      "sha256": "8abd77b0a2ed2a5864d1f73b222ff72079562b6871b2e7e80e21163c812de593"
+      "bytes": 7642,
+      "sha256": "267fc2d04147ae4f3b1a1c0684d98ba0c4c679a7316422ee995682a2b49db3af"
     },
     {
       "path": "automation/github_export/build_dynamic_A_eligible_20261017.py",
@@ -128,8 +128,8 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 13813,
-      "sha256": "78f9a4ba0daab39c0df068e91427b31878b0135fd517551301b59b4ae6ad992e"
+      "bytes": 15218,
+      "sha256": "beb3ff4cee619598651ca555c5df983456d5a8b0faa2c57dd48c47cd92271860"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
@@ -928,6 +928,30 @@
       "source_path": "reports/cpmlp_recipe_error_diagnosis_20261018_root/per_cell_prefix_segment.csv",
       "bytes": 11624,
       "sha256": "f7ac87d32de46197110653713db05223af3b0768d2275f747472cb873b8cbf27"
+    },
+    {
+      "path": "reports/cpmlp_selection_diagnosis_20261018_root/SELECTION_DIAGNOSIS_ZH.md",
+      "source_path": "reports/cpmlp_selection_diagnosis_20261018_root/SELECTION_DIAGNOSIS_ZH.md",
+      "bytes": 2256,
+      "sha256": "e5dff401dba2febcb81f54ba07e8ef8f81b5b1e6d05471d620a003fa1694196f"
+    },
+    {
+      "path": "reports/cpmlp_selection_diagnosis_20261018_root/diagnose_selection.py",
+      "source_path": "reports/cpmlp_selection_diagnosis_20261018_root/diagnose_selection.py",
+      "bytes": 6612,
+      "sha256": "b61f9f464121536deef93f1130e45cbc76e54e74bad863745803324d0980838f"
+    },
+    {
+      "path": "reports/cpmlp_selection_diagnosis_20261018_root/epoch_comparison.csv",
+      "source_path": "reports/cpmlp_selection_diagnosis_20261018_root/epoch_comparison.csv",
+      "bytes": 904,
+      "sha256": "19c598a6b223a3002d7048cd8ec5e8535c797be86a34b9b60f6d7fb6b09147b7"
+    },
+    {
+      "path": "reports/cpmlp_selection_diagnosis_20261018_root/selection_diagnosis.json",
+      "source_path": "reports/cpmlp_selection_diagnosis_20261018_root/selection_diagnosis.json",
+      "bytes": 3062,
+      "sha256": "27e69a6d498d182d71675aea315f2c811d8a531ba25ea613de58fcdb97ea3a57"
     },
     {
       "path": "reports/data_schema_audit/final_go_review.json",

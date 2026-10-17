@@ -128,3 +128,12 @@
 - **最小验证**：两份源预测SHA匹配冻结指标，1500唯一键、15×100前缀、标签完全一致、文件名train/val隔离；cell/分段/交叉贡献均重构净增（误差<1e-8），原主指标吻合。new_fits=0、optimizer_steps=0、model_loads=0、test_access=false；未重跑旧独立复算/smoke。
 - **阻塞/风险**：只作算术来源定位，不能孤立归因LR（初始化RNG/时长亦不同）；同15电池重复开发选模，不能声称独立确认、CALB/MIX完整复现或strict在线RUL。prefix_index按CSV序号，不新增物理循环/raw-asof认证。NO_GAIN与PBT消费预算/旧训练/test门均保持。
 - **下一步**：只读现有逐epoch验证预测与epoch_metrics，检查冻结MAPE选模点相对各自MAE最小点的差异；不改选择规则、不重选汇报checkpoint、不新增推理/训练。
+
+
+## 2026-10-18 04:55 北京时间：CPMLP选模目标差异核查闭合
+
+- **已完成**：仅核已有旧3/新10条验证事件，旧epoch3为8batch partial。旧MAPE与MAE均在epoch2最小，新均在epoch3最小，MAE选模惩罚均0；排除“冻结MAPE选模点与已记录MAE最小点不同”解释当前回退，原选择和NO_GAIN保持。
+- **证据**：reports/cpmlp_selection_diagnosis_20261018_root/SELECTION_DIAGNOSIS_ZH.md、selection_diagnosis.json、epoch_comparison.csv、diagnose_selection.py。相同292steps旧/新MAE177.3831/201.0238，差+23.6407（13.3275%）；新epoch10 MAE241.7783比所选epoch3多47.7711循环。
+- **最小验证**：13事件各15电池×100前缀，per_cell独立求均值吻合MAE/MAPE（<1e-8/<1e-10）；冻结最小MAPE点吻合completion。源JSONL/receipt及程序SHA绑定。new_fits=0、optimizer_steps=0、new_inference=0、model_loads=0、test_access=false。
+- **阻塞/风险**：同15验证电池重复开发选择，不是独立确认；相同步数仍有LR/初始化混杂，后期验证变差不证明一般性过拟合机理。不称CALB/MIX完整复现或strict在线RUL，不换checkpoint救分，原预算/门不变。
+- **下一步**：转回P1，只读官方CPMLP CALB脚本及已有数据/标签/拆分凭证、stat，确定完整忠实复现最早缺失项；不加载数据、构造模型或训练，不重复HUST开发调参。
