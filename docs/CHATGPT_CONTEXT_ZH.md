@@ -144,3 +144,12 @@
 - **最小验证**：22电池必需字段长度对齐、raw非有限值0/负容量点0、实际[100,3,300]曲线有限、mask/缺cycle零填充/真实cycle电压max1通过、cell_id匹配。仅17train unique标签预期scaler mean852.294117647059、scale532.436659000628（ddof0），val/test未参与；scaler.fit未执行。new_fits=0、optimizer_steps=0、model_loads=0、new_inference=0、testPKL0。
 - **阻塞/风险**：完整Dataset_original/实际增强/共享train-only scaler仍未运行；物理身份/generator/strict asof与真实在线标签、官方test调用、2GPUruntime/模型训练门保持。前缀不等权，后续需同时报官方prefix与cell-equal，不能补造1700/500。
 - **下一步**：同stage只初始化pinned train/val Dataset_original一次，固定受限pickle映射核真实1689/497、shared train-only label scaler和一个真实batch形状/mask；不建test loader或模型/fit。
+
+
+## 2026-10-18 06:27 北京时间：CALB完整train/val与实际batch接口核验
+
+- **已完成**：pinned Dataset_original真实train/val各初始化一次（含实际增强），固定22不同PKL，1689/497及逐cell分布、共享train-only label scaler通过。末batch断言预期误写[32]而非官方[32,1]失败，原exit1/回执保留；只用首个真实cell前32prefix定向重建官方getitem/collate修复，不全cohort重跑或refit。
+- **证据**：reports/calb_dataset_trainval_20261018_root_v2/DATASET_CHECK_ZH.md、targeted_batch_check.json、check_targeted_batch.py；原目录failure_receipt.json、execution_receipt.json、check_dataset.py。batch实际[32,100,3,300]、mask[32,100]、labels[32,1]，全部有限、mask未来槽0、标签逆变换吻合。
+- **最小验证**：label scaler只fit17train unique标签（mean852.2941176470588/scale532.4366590006279），val共享同对象且参数不变；另life_class_scaler fit1689train rows，总2次预处理fit均train_init，修复新增0。predictive_fits=0、optimizer_steps=0、model_instances=0、testPKL0。
+- **阻塞/风险**：数据接口通过不等于模型性能或正式复现；singleGPU/val-only相对官方2GPU/test有偏离，物理身份/generator/strict在线边界不变；全局new_fits_allowed=false，旧HUST消费GO不能复用。
+- **下一步**：最小适配已审HUST runner为独立CALB seed2021单GPUval-only配方，冻结候选1fit/5200steps（52batch×100epoch）/1200s和源哈希/停止条件；仅主控新scoped GO且全部适用门满足后才真实运行，不开放test。

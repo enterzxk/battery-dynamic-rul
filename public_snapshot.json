@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-17T22:11:06.681446+00:00",
-  "content_sha256": "17d7d26d67978d147afd29aadae112eec8159cc15c3f510ad1980b3347c605db",
-  "file_count": 337,
+  "snapshot_utc": "2026-10-17T22:27:01.953689+00:00",
+  "content_sha256": "c9932486f56f666e6606cd849035992cdb84c68d2070ff65df2e88bd4d8cdd0e",
+  "file_count": 343,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,8 +14,8 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 31795,
-      "sha256": "ab6ff190a67ff768bd2e964b89f6f07b0672c2049b7ea7fa853424ff35ac8ee6"
+      "bytes": 33389,
+      "sha256": "0b4bdaa4b6b931f1e3c6cd057423c35a9f73909910242bd9602d799cfe7b450d"
     },
     {
       "path": "README.md",
@@ -32,8 +32,8 @@
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 8492,
-      "sha256": "a867a41de30f3e65e57f6062a8efcefb742f58679f32ec9714b22806516fd380"
+      "bytes": 8710,
+      "sha256": "fdd5e0c53dc2289e7142febb0bc2b6eff98159b589f5af6634bb6319bffc2a5e"
     },
     {
       "path": "automation/github_export/build_dynamic_A_eligible_20261017.py",
@@ -128,8 +128,8 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 23196,
-      "sha256": "5272cf8ff6c6fc52b9636fcc1a62ddc42334a0bf3087a743d29df8c54bdea806"
+      "bytes": 24790,
+      "sha256": "1b5e742fb5d1e588e826e239134c7488f13e706fe550f9a30ef4a8a1698512cc"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
@@ -964,6 +964,42 @@
       "source_path": "reports/calb_acquisition_20261018_root_v2/transport_repair_review.json",
       "bytes": 973,
       "sha256": "214bce7d61551dd2a0ceb01c07a152516c6f64fa2c1fe9718d753c057162c8e6"
+    },
+    {
+      "path": "reports/calb_dataset_trainval_20261018_root/check_dataset.py",
+      "source_path": "reports/calb_dataset_trainval_20261018_root/check_dataset.py",
+      "bytes": 7133,
+      "sha256": "70ef916f04bd327a2ede449992991426d6ebeb53a7216d01cbdba74039b04e79"
+    },
+    {
+      "path": "reports/calb_dataset_trainval_20261018_root/execution_receipt.json",
+      "source_path": "reports/calb_dataset_trainval_20261018_root/execution_receipt.json",
+      "bytes": 293,
+      "sha256": "0e46d5bf0d5f3282bea6e2c2007a25722a1bb585a724fccb262a32df016083b6"
+    },
+    {
+      "path": "reports/calb_dataset_trainval_20261018_root/failure_receipt.json",
+      "source_path": "reports/calb_dataset_trainval_20261018_root/failure_receipt.json",
+      "bytes": 5968,
+      "sha256": "39ed020c78fd3cc26dc4237113173d5a810faa3c7459f9e9157925efcd3ddd92"
+    },
+    {
+      "path": "reports/calb_dataset_trainval_20261018_root_v2/DATASET_CHECK_ZH.md",
+      "source_path": "reports/calb_dataset_trainval_20261018_root_v2/DATASET_CHECK_ZH.md",
+      "bytes": 2428,
+      "sha256": "7ee01dafa66f812563774a76a084522bcf70fbdbc88f730c1556f1ebe83d7f12"
+    },
+    {
+      "path": "reports/calb_dataset_trainval_20261018_root_v2/check_targeted_batch.py",
+      "source_path": "reports/calb_dataset_trainval_20261018_root_v2/check_targeted_batch.py",
+      "bytes": 6250,
+      "sha256": "34e61ceb2907fb69781a2958d6814641f10508c8115a059662e27b0f0d349cfc"
+    },
+    {
+      "path": "reports/calb_dataset_trainval_20261018_root_v2/targeted_batch_check.json",
+      "source_path": "reports/calb_dataset_trainval_20261018_root_v2/targeted_batch_check.json",
+      "bytes": 3704,
+      "sha256": "4dbf68e7e1a20cb78326510a224322cf8fed75dfbf32aca6afdc5958390f52ed"
     },
     {
       "path": "reports/calb_remaining20_audit_20261018_root/COHORT_AUDIT_ZH.md",
@@ -2059,6 +2095,10 @@
     },
     {
       "path": "experiments/cptransformer_hust_pilot_seed42/fit_runs/fit_20261016T040414_680559Z/checkpoint_epoch_003.pt",
+      "reason": "not_small_allowlisted_text"
+    },
+    {
+      "path": "reports/calb_dataset_trainval_20261018_root/execution.stdout.log",
       "reason": "not_small_allowlisted_text"
     },
     {

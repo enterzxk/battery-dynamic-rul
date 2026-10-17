@@ -1,0 +1,10 @@
+{
+  "status": "CHILD_COMPLETED",
+  "exit_code": 1,
+  "elapsed_seconds": 7.845956889912486,
+  "command": [
+    "/home/yndx/zxk/rul/automation/venvs/batterylife/bin/python",
+    "/home/yndx/zxk/rul/reports/calb_dataset_trainval_20261018_root/check_dataset.py"
+  ],
+  "wall_limit_seconds": 120
+}
