@@ -1,0 +1,8 @@
+{
+  "status": "PASS_PINNED_LOADER_IDENTITY",
+  "loader_path": "/home/yndx/zxk/rul/repos/pinned/BatteryLife_3b17bb53202e10711deae0448c91f84144bb3dd9/data_provider/data_loader.py",
+  "sha256": "f49f22e379bf9012fd284c2ef82e4fdd350e70db760f995d85661f7ac29e1fe2",
+  "prior_authoritative_receipt": "/home/yndx/zxk/rul/experiments/cpmlp_hust_recipe_adapt_seed42_v2/completion_receipt.json",
+  "prior_receipt_sha256": "8ddb0835dde77e000ea1db6182519f88b31d070dbf60d19b5efddc322fde82c9",
+  "no_preprocessing_rerun": true
+}

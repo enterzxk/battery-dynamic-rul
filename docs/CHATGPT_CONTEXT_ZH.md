@@ -126,3 +126,12 @@
 - **最小验证**：CALB_35_B229训练实际99cycle/EOL1171、CALB_0_B187验证100cycle/EOL189，可用前缀99/100；两者58Ah、五必需字段长度对齐、非有限值/负容量点/循环内时间倒退均0，cell_id吻合。复用已扫两文件SHA不重扫；新fits=0、optimizer_steps=0、model_loads=0、new_inference=0、testPKL0、test标签值0解码。
 - **阻塞/风险**：仅2/22样本字段审计，不宣称全cohort合法；[100,3,300]仍为源码预期而非测量张量。99cycle不能默认为100prefix。实际重采样/归一化/mask、train-only label scaler和其余20类型未核；物理身份/strict在线/官方test入口/双进程限制保持。
 - **下一步**：固定同两样本执行pinned曲线重采样/归一化和prefix mask定向检查，核99cycle补零与100cycle边界；不重载全cohort、不fit scaler/模型或读test。
+
+
+## 2026-10-18 05:55 北京时间：CALB两样本官方数值预处理通过
+
+- **已完成**：仅同两固定样本，提取调用pinned四个曲线/样本方法，未初始化Dataset_original或模型；未使用增强分支作identity stub。真实生成[100,3,300]，99cycle训练样本第100槽零且仅99prefix，100cycle验证样本100prefix。
+- **证据**：reports/calb_two_sample_preprocessing_20261018_root/PREPROCESSING_ZH.md、preprocessing_check.json、check_preprocessing.py、source_identity_verification.json。两个曲线数组SHA、源码函数行和stage/decoder/source SHA绑定；原数据不公开。
+- **最小验证**：全部曲线有限、每个prefix mask前i=1/后=0且遮罩后未来槽0；真实cycle电压max1误差0，首cycle三个通道独立归一化重算差0。loader SHA与既有完成回执一致，不重复运行。new_fits=0、optimizer_steps=0、model_loads=0、new_inference=0、scaler_fits=0、testPKL0。
+- **阻塞/风险**：仅2/22预处理，完整Dataset_original/增广/label scaler未运行，数值mask不证明模型或strict asof成立；仍有物理身份/标签/官方test入口/双进程边界。99/100前缀差异需并报官方prefix聚合及cell-equal指标。
+- **下一步**：只检查剩余20成员序列化/字段/官方预处理并复用已过2样本结果，形成17/5完整有效prefix清单和train-only scaler准备判定；失败不扩dtype/global映射，不读test或模型/fit。
