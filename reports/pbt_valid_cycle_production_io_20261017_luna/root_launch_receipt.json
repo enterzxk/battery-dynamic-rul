@@ -1,0 +1,6 @@
+{
+  "exit_code": 2,
+  "stdout": "",
+  "stderr": "STOP: RuntimeError worker_exit_2:STOP_WORKER: Stop entry_cap\n\n",
+  "command": "/home/yndx/miniconda3/envs/a40_env/bin/python -I -S /home/yndx/zxk/rul/reports/pbt_valid_cycle_production_io_20261017_luna/production_io_wrapper_v2.py"
+}

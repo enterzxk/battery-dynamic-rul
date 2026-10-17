@@ -1,0 +1,22 @@
+{
+  "status": "ROOT_GO",
+  "binary_execution_authorized": true,
+  "proposal_shard_id": "VALID_CYCLE_PROPOSED_SHARD_1",
+  "cells": [
+    "HUST_6-8.pkl",
+    "HUST_3-8.pkl",
+    "HUST_2-3.pkl",
+    "HUST_9-1.pkl"
+  ],
+  "wrapper_sha256": "756e3ff1957a41fff5e3dc26c6ea900a1657d6b69a296f5436eb8038d7987c7e",
+  "spec_sha256": "6008c4bb1755c0fdc243ace563577307f3f76b044fbe616c9370d6642a2e01a7",
+  "helper_sha256": "d2ef21d9345fb20953b689eae690028ca414fd0b52b3ba77720ae85d1b438a19",
+  "review_path": "/home/yndx/zxk/rul/reports/pbt_valid_cycle_production_io_20261017_luna/root_review_v2.json",
+  "review_sha256": "0ffff3f9f07deb611f2cf75e384990d35970fc43f1d4143592f7e96079c8790e",
+  "max_invocations": 1,
+  "max_total_read_bytes": 268435456,
+  "max_file_bytes": 67108864,
+  "scope": "single structural count acquisition only; no scalar decode/model/forward/metrics/fit/test",
+  "issued_by": "01a14a34-4ec4-7e91-995f-42318e1322d3",
+  "at_utc": "2026-10-17T15:31:22.555876+00:00"
+}

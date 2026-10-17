@@ -16,10 +16,10 @@ def main():
     for directory in ['src', 'configs', 'results', 'literature/accepted']:
         chosen.update(str(p.relative_to(ROOT)) for p in (ROOT / directory).rglob('*') if p.is_file())
     chosen.update('docs/' + name for name in [
-        'CHATGPT_CONTEXT_ZH.md', 'GITHUB_SYNC_ZH.md', 'CONTINUATION_POLICY.md', 'RESEARCH_PLAN_ZH.md',
+        'CHATGPT_CONTEXT_ZH.md', 'GITHUB_SYNC_ZH.md', 'CONTINUATION_POLICY.md', 'RESEARCH_PLAN_ZH.md', 'Battery_RUL_Codex_Handoff_20261017_ZH.md', 'COORDINATOR_HANDOFF_20261017_V9_ZH.md',
         'BATTERY_CONCEPTS_ZH_v0.md', 'DYNAMIC_RUL_PROTOCOL_ZH.md',
         'DYNAMIC_RUL_LABEL_DECISIONS_v1.md', 'DYNAMIC_RUL_ASOF_FREEZE_CANDIDATE_v3_ZH.md'])
-    for directory in ['data_schema_audit', 'baseline_audit', 'development_pilot', 'asof_preprocessing_audit_v1', 'literature_discussion_20261017_root_v1']:
+    for directory in ['data_schema_audit', 'baseline_audit', 'development_pilot', 'asof_preprocessing_audit_v1', 'literature_discussion_20261017_root_v1', 'dynamic_A_eligible_20261017_root', 'pbt_valid_cycle_production_io_20261017_luna']:
         chosen.update(str(p.relative_to(ROOT)) for p in (ROOT / 'reports' / directory).rglob('*') if p.is_file())
     for directory in sorted((ROOT / 'reports').glob('literature_synthesis_increment*')):
         chosen.update(str(p.relative_to(ROOT)) for p in directory.rglob('*') if p.is_file())

@@ -1,0 +1,7 @@
+{
+  "binary_read_bytes": 2250966,
+  "error": "entry_cap",
+  "error_type": "Stop",
+  "run_id": "9a016a9a0bd347d7afdcde01ca4c40d5",
+  "status": "WORKER_FAILED_STOP_NO_RETRY"
+}

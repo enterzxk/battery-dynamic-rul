@@ -1,0 +1,8 @@
+{
+  "at_utc": "2026-10-17T15:31:23.502924+00:00",
+  "binary_read_bytes": 2250966,
+  "error": "worker_exit_2:STOP_WORKER: Stop entry_cap\n",
+  "error_type": "RuntimeError",
+  "invocation_consumed": true,
+  "status": "FAILED_STOP_NO_RETRY"
+}

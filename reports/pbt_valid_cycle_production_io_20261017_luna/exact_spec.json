@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "status": "INACTIVE_REQUIRES_INDEPENDENT_REVIEW_AND_ROOT_GO",
+  "proposal_shard_id": "VALID_CYCLE_PROPOSED_SHARD_1",
+  "population_source": "reports/coordinator_progress_20261017_v8/fixed15_shard_proposal_inactive.json#shards[0]",
+  "exact_cells": ["HUST_6-8.pkl", "HUST_3-8.pkl", "HUST_2-3.pkl", "HUST_9-1.pkl"],
+  "expected_stat_sum_bytes": 224438322,
+  "budgets": {
+    "invocations": 1,
+    "automatic_retry": false,
+    "per_file_read_bytes_max": 67108864,
+    "aggregate_read_bytes_max_including_eof_probes": 268435456,
+    "cpu_seconds_worker": 3600,
+    "address_space_bytes_worker": 4294967296,
+    "open_file_descriptors_worker": 32,
+    "file_size_bytes_worker": 2097152,
+    "wall_seconds_parent_timeout": 7200
+  },
+  "identity": {
+    "declared_entries_must_be_symlinks": true,
+    "declared_symlink_target_must_equal_fixed_absolute_canonical_target": true,
+    "canonical_path_components_opened_with_dirfd_and_O_NOFOLLOW": true,
+    "canonical_file_opened_with_O_NOFOLLOW": true,
+    "compare_dev_ino_size_mtime_ns_ctime_ns_nlink_before_and_after_same_fd": true,
+    "expected_per_cell_dev_ino_size_mtime_ns_ctime_ns_nlink": "embedded in wrapper from frozen shard proposal"
+  },
+  "scanner": {
+    "path": "reports/pbt_valid_cycle_stage_v3_luna/valid_cycle_structure_scanner_v3.py",
+    "expected_sha256": "d2ef21d9345fb20953b689eae690028ca414fd0b52b3ba77720ae85d1b438a19",
+    "same_fd_streaming": true,
+    "numeric_scalar_decode": false,
+    "pickle_joblib_torch_load": false,
+    "eof_probe_bytes_counted": true
+  },
+  "budget_claim": {
+    "path": "reports/pbt_valid_cycle_production_io_20261017_luna/shard1.invocation.claim",
+    "create_mode": "O_CREAT|O_EXCL",
+    "fsync_before_worker_first_content_byte": true,
+    "failure_consumes_invocation": true
+  },
+  "publication": {
+    "result_create_only": true,
+    "temporary_file_fsync_before_publish": true,
+    "no_overwrite_publish": "hard-link temporary inode into final name; fail if final exists",
+    "parent_launcher_failure_receipt_create_only": true
+  },
+  "gate": {
+    "root_go_path": "reports/pbt_valid_cycle_production_io_20261017_luna/ROOT_GO.json",
+    "required_status": "ROOT_GO",
+    "required_bindings": ["wrapper_sha256", "spec_sha256", "helper_sha256", "review_path", "review_sha256", "exact cells"],
+    "must_be_one_invocation": true,
+    "production_entry_closed_without_matching_go": true
+  },
+  "stop_policy": "Any validation, identity, budget, parsing, timeout, worker or publication failure stops permanently; no retry or budget expansion.",
+  "synthetic_validation": "One synthetic-only valid tiny protocol-4 file in a temporary directory; production input files are never opened."
+}

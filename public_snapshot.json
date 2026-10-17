@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-17T15:09:08.848568+00:00",
-  "content_sha256": "83bf7b992da2ddae5132dd818a2c48030942b9a6852c9fbf7432a61794946386",
-  "file_count": 219,
+  "snapshot_utc": "2026-10-17T15:32:59.484764+00:00",
+  "content_sha256": "9da6e497f4c47bace445ba9634a236f36f1e6040e1fae44b1a9fbc16a54b280d",
+  "file_count": 236,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,8 +14,8 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 7666,
-      "sha256": "23f359fbbf99a90627dadc9645bbd7edbc1968f67be3c4e31867021b4f674d99"
+      "bytes": 9638,
+      "sha256": "7dfb516865b3905170e0c4e8cfb1cbef7301fb8182bed5fde79829fde3b86258"
     },
     {
       "path": "README.md",
@@ -32,8 +32,8 @@
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 5350,
-      "sha256": "21e9021652a0d6c9a977671bc2f9aa6abd7c8eee8f2a6238c725ffc1858bcc5f"
+      "bytes": 5518,
+      "sha256": "5259aa65345f7faf020d4ac198c60696be921a177e689c1a771bc318f0a24d73"
     },
     {
       "path": "configs/experiments/cpmlp_hust_pilot_seed42.json",
@@ -114,16 +114,28 @@
       "sha256": "e6d1254b948c4c43f93de6bf12e0cf744b3c6eaf1b9656dd3b8cf87b3988d82b"
     },
     {
+      "path": "docs/Battery_RUL_Codex_Handoff_20261017_ZH.md",
+      "source_path": "docs/Battery_RUL_Codex_Handoff_20261017_ZH.md",
+      "bytes": 21702,
+      "sha256": "96486eb216e711c1e32808717f94892def2e70da4dcf5b05ad372625e92e729a"
+    },
+    {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 5275,
-      "sha256": "ea4f2303053bb4218c8d42838bb1d90bcccd520d5be903e8e79312d2b37ddf27"
+      "bytes": 6149,
+      "sha256": "df4cdd026f68165bc18dbc91cc73187bb24b48237a30fb8e46705d8bbc390c85"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
       "source_path": "docs/CONTINUATION_POLICY.md",
       "bytes": 6294,
       "sha256": "d846ecb572c6ab2c2fcfba158a22203fbb46bc70ea3ca12e17e37000a33853cd"
+    },
+    {
+      "path": "docs/COORDINATOR_HANDOFF_20261017_V9_ZH.md",
+      "source_path": "docs/COORDINATOR_HANDOFF_20261017_V9_ZH.md",
+      "bytes": 5669,
+      "sha256": "014d86054688364bc7f4aca8bf415b13aba56e954ed7a9003e145fb81a0b7e4f"
     },
     {
       "path": "docs/DYNAMIC_RUL_ASOF_FREEZE_CANDIDATE_v3_ZH.md",
@@ -708,6 +720,30 @@
       "sha256": "1620218fe5fd6b6272dc05bbd88bd6dd7ded16e3098de7388a9faaa25cb369ab"
     },
     {
+      "path": "reports/dynamic_A_eligible_20261017_root/candidate_features.csv",
+      "source_path": "reports/dynamic_A_eligible_20261017_root/candidate_features.csv",
+      "bytes": 69185,
+      "sha256": "b6a4dd686ce922cbbf964e40fcf610612a6e4388078b7f54cec256a18f27d211"
+    },
+    {
+      "path": "reports/dynamic_A_eligible_20261017_root/cohort_receipt.json",
+      "source_path": "reports/dynamic_A_eligible_20261017_root/cohort_receipt.json",
+      "bytes": 82175,
+      "sha256": "e5f0f1390bbd3b0f12680a9eac894cb738eea8909523afcc7971ea9e33dcd9ea"
+    },
+    {
+      "path": "reports/dynamic_A_eligible_20261017_root/eligible_origins.csv",
+      "source_path": "reports/dynamic_A_eligible_20261017_root/eligible_origins.csv",
+      "bytes": 121818,
+      "sha256": "e6e0a9903cb0401af5ed0b535f831430c0edf1c5f25f6495fd2561c8756ca4a2"
+    },
+    {
+      "path": "reports/dynamic_A_eligible_20261017_root/protocol_candidate.json",
+      "source_path": "reports/dynamic_A_eligible_20261017_root/protocol_candidate.json",
+      "bytes": 1763,
+      "sha256": "03df2eaab1e6695a586b45243e0859378d314209f1b8ed0e304dadbac6ab2740"
+    },
+    {
       "path": "reports/literature_discussion_20261017_root_v1/LITERATURE_DISCUSSION_ZH.md",
       "source_path": "reports/literature_discussion_20261017_root_v1/LITERATURE_DISCUSSION_ZH.md",
       "bytes": 19438,
@@ -1164,6 +1200,72 @@
       "sha256": "c8f2fed97742aa76663c0d2c31c130df4185d2daf796821df2ae5a58fe63e298"
     },
     {
+      "path": "reports/pbt_valid_cycle_production_io_20261017_luna/ROOT_GO.json",
+      "source_path": "reports/pbt_valid_cycle_production_io_20261017_luna/ROOT_GO.json",
+      "bytes": 973,
+      "sha256": "7c20652b9a540dfdb1dbba849c5ef4c9e87fabd97b63f20fac580fba71e7a177"
+    },
+    {
+      "path": "reports/pbt_valid_cycle_production_io_20261017_luna/exact_spec.json",
+      "source_path": "reports/pbt_valid_cycle_production_io_20261017_luna/exact_spec.json",
+      "bytes": 2713,
+      "sha256": "654ffc5059c6a68b676bc81bb3f49b76950f2c98e548c1e5bfdb299f0db83927"
+    },
+    {
+      "path": "reports/pbt_valid_cycle_production_io_20261017_luna/exact_spec_v1.json",
+      "source_path": "reports/pbt_valid_cycle_production_io_20261017_luna/exact_spec_v1.json",
+      "bytes": 2713,
+      "sha256": "654ffc5059c6a68b676bc81bb3f49b76950f2c98e548c1e5bfdb299f0db83927"
+    },
+    {
+      "path": "reports/pbt_valid_cycle_production_io_20261017_luna/exact_spec_v2.json",
+      "source_path": "reports/pbt_valid_cycle_production_io_20261017_luna/exact_spec_v2.json",
+      "bytes": 3556,
+      "sha256": "6008c4bb1755c0fdc243ace563577307f3f76b044fbe616c9370d6642a2e01a7"
+    },
+    {
+      "path": "reports/pbt_valid_cycle_production_io_20261017_luna/production_io_wrapper.py",
+      "source_path": "reports/pbt_valid_cycle_production_io_20261017_luna/production_io_wrapper.py",
+      "bytes": 11320,
+      "sha256": "a72820d21725d03dc53089ad6421dca69092f08998f137172ae5a1b9b7f152f1"
+    },
+    {
+      "path": "reports/pbt_valid_cycle_production_io_20261017_luna/production_io_wrapper_v1.py",
+      "source_path": "reports/pbt_valid_cycle_production_io_20261017_luna/production_io_wrapper_v1.py",
+      "bytes": 11320,
+      "sha256": "a72820d21725d03dc53089ad6421dca69092f08998f137172ae5a1b9b7f152f1"
+    },
+    {
+      "path": "reports/pbt_valid_cycle_production_io_20261017_luna/production_io_wrapper_v2.py",
+      "source_path": "reports/pbt_valid_cycle_production_io_20261017_luna/production_io_wrapper_v2.py",
+      "bytes": 14317,
+      "sha256": "756e3ff1957a41fff5e3dc26c6ea900a1657d6b69a296f5436eb8038d7987c7e"
+    },
+    {
+      "path": "reports/pbt_valid_cycle_production_io_20261017_luna/root_launch_receipt.json",
+      "source_path": "reports/pbt_valid_cycle_production_io_20261017_luna/root_launch_receipt.json",
+      "bytes": 284,
+      "sha256": "6cc3be5df0f33d78106bca459bf008b3966aa0c757d249213ae578444e7ceff9"
+    },
+    {
+      "path": "reports/pbt_valid_cycle_production_io_20261017_luna/root_review_v2.json",
+      "source_path": "reports/pbt_valid_cycle_production_io_20261017_luna/root_review_v2.json",
+      "bytes": 1938,
+      "sha256": "0ffff3f9f07deb611f2cf75e384990d35970fc43f1d4143592f7e96079c8790e"
+    },
+    {
+      "path": "reports/pbt_valid_cycle_production_io_20261017_luna/shard1.v2.receipt.json",
+      "source_path": "reports/pbt_valid_cycle_production_io_20261017_luna/shard1.v2.receipt.json",
+      "bytes": 240,
+      "sha256": "7e6dbef73dd2037e4957193c798238e33f99b2286f6d95d44fb0a4c19f2a9385"
+    },
+    {
+      "path": "reports/pbt_valid_cycle_production_io_20261017_luna/shard1.worker_v2_failure.json",
+      "source_path": "reports/pbt_valid_cycle_production_io_20261017_luna/shard1.worker_v2_failure.json",
+      "bytes": 174,
+      "sha256": "8d88c74faf2fd5aa9859f217fa42fc02e843424f788a30e8118fd895cc4e0be2"
+    },
+    {
       "path": "reports/pbt_validation_finite_static_v1/finite_static_receipt.json",
       "source_path": "reports/pbt_validation_finite_static_v1/finite_static_receipt.json",
       "bytes": 26756,
@@ -1363,6 +1465,14 @@
     },
     {
       "path": "reports/literature_discussion_20261017_root_v1/reading_part_28.json",
+      "reason": "not_small_allowlisted_text"
+    },
+    {
+      "path": "reports/pbt_valid_cycle_production_io_20261017_luna/shard1.invocation_v2.claim",
+      "reason": "not_small_allowlisted_text"
+    },
+    {
+      "path": "reports/pbt_valid_cycle_production_io_20261017_luna/shard1.worker_v2.started",
       "reason": "not_small_allowlisted_text"
     },
     {

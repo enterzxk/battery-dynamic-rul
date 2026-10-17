@@ -1,0 +1,24 @@
+{
+  "decision": "ACCEPT_WRAPPER_V2_SINGLE_SHARD_STRUCTURAL_READ_ONLY",
+  "root_thread": "01a14a34-4ec4-7e91-995f-42318e1322d3",
+  "at_utc": "2026-10-17T15:31:22.551934+00:00",
+  "reviewer": "root gpt-6.1-sol/high requested; runtime not independently introspected",
+  "author": "pbt_io_wrapper gpt-6-luna/high requested",
+  "review_scope": "Read v2 code/spec and frozen helper; targeted correction of worker gate bypass in unchanged v1. Existing helper independent review reused, synthetic tests not repeated.",
+  "bindings": {
+    "/home/yndx/zxk/rul/reports/pbt_valid_cycle_production_io_20261017_luna/production_io_wrapper_v2.py": "756e3ff1957a41fff5e3dc26c6ea900a1657d6b69a296f5436eb8038d7987c7e",
+    "/home/yndx/zxk/rul/reports/pbt_valid_cycle_production_io_20261017_luna/exact_spec_v2.json": "6008c4bb1755c0fdc243ace563577307f3f76b044fbe616c9370d6642a2e01a7",
+    "/home/yndx/zxk/rul/reports/pbt_valid_cycle_stage_v3_luna/valid_cycle_structure_scanner_v3.py": "d2ef21d9345fb20953b689eae690028ca414fd0b52b3ba77720ae85d1b438a19"
+  },
+  "findings": [
+    "Parent and direct worker both require matching root GO, exact hashes, unique run ID and O_EXCL fsynced parent claim.",
+    "Worker start is create-only; dirfd/O_NOFOLLOW canonical traversal and exact stat identity precede same-FD streaming SHA and structural list count.",
+    "One invocation only, first four fixed cells, 64MiB/file, 256MiB aggregate including EOF probes; CPU120s, AS4GiB, fd32, wall180s. Failure consumes invocation.",
+    "No numeric scalar interpretation, pickle/joblib/torch deserialization, model construction, forward, metrics, fit or test.",
+    "Unsupported opcodes, protocol or resource limits are decisive STOP; no automatic retries or budget widening."
+  ],
+  "limitations": [
+    "Success would establish only structure counts, not model validity or scientific performance.",
+    "Historical runtime arguments remain unverified and separate."
+  ]
+}
