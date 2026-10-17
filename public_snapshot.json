@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-17T21:55:49.573985+00:00",
-  "content_sha256": "66b61b63ed6c91fa9472a67619d4025f2f8eda9f2d2ff75347a01c31a340a103",
-  "file_count": 331,
+  "snapshot_utc": "2026-10-17T22:11:06.681446+00:00",
+  "content_sha256": "17d7d26d67978d147afd29aadae112eec8159cc15c3f510ad1980b3347c605db",
+  "file_count": 337,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,8 +14,8 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 30223,
-      "sha256": "c002eacfad7e4a977893a8447f963fd0280a1816719d8ff125cbdd80c7bbdd16"
+      "bytes": 31795,
+      "sha256": "ab6ff190a67ff768bd2e964b89f6f07b0672c2049b7ea7fa853424ff35ac8ee6"
     },
     {
       "path": "README.md",
@@ -32,8 +32,8 @@
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 8357,
-      "sha256": "dbc52ae25d6e29bdd4032cb275319bbec21f5f2e5c84fca5cebde123139e8bee"
+      "bytes": 8492,
+      "sha256": "a867a41de30f3e65e57f6062a8efcefb742f58679f32ec9714b22806516fd380"
     },
     {
       "path": "automation/github_export/build_dynamic_A_eligible_20261017.py",
@@ -128,8 +128,8 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 21624,
-      "sha256": "ea31290d68da61fb08a55d351a7cb66c87bedaeb2afc2266a13e15a4a7074349"
+      "bytes": 23196,
+      "sha256": "5272cf8ff6c6fc52b9636fcc1a62ddc42334a0bf3087a743d29df8c54bdea806"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
@@ -964,6 +964,42 @@
       "source_path": "reports/calb_acquisition_20261018_root_v2/transport_repair_review.json",
       "bytes": 973,
       "sha256": "214bce7d61551dd2a0ceb01c07a152516c6f64fa2c1fe9718d753c057162c8e6"
+    },
+    {
+      "path": "reports/calb_remaining20_audit_20261018_root/COHORT_AUDIT_ZH.md",
+      "source_path": "reports/calb_remaining20_audit_20261018_root/COHORT_AUDIT_ZH.md",
+      "bytes": 2385,
+      "sha256": "96b36c49291a47683e3e566795865cdff4e58206c6db176972e18886858da68b"
+    },
+    {
+      "path": "reports/calb_remaining20_audit_20261018_root/audit_remaining.py",
+      "source_path": "reports/calb_remaining20_audit_20261018_root/audit_remaining.py",
+      "bytes": 9568,
+      "sha256": "8fae8def87b597df503566510b270652eb7d6ec8afa0126e49cefed348378291"
+    },
+    {
+      "path": "reports/calb_remaining20_audit_20261018_root/cohort_audit.json",
+      "source_path": "reports/calb_remaining20_audit_20261018_root/cohort_audit.json",
+      "bytes": 14586,
+      "sha256": "757988b08ab9199806493fd403b525e4f6f8a1d0e2c37a7c798f36f0f175ef12"
+    },
+    {
+      "path": "reports/calb_remaining20_audit_20261018_root/cohort_inventory.csv",
+      "source_path": "reports/calb_remaining20_audit_20261018_root/cohort_inventory.csv",
+      "bytes": 3647,
+      "sha256": "a68d22d508f888f0bbf314f10293abb1114d07991f5f7d173715835435497b2a"
+    },
+    {
+      "path": "reports/calb_remaining20_audit_20261018_root/progress.jsonl",
+      "source_path": "reports/calb_remaining20_audit_20261018_root/progress.jsonl",
+      "bytes": 1506,
+      "sha256": "bab4d2dd9cca6109ef874c7d949eaf3ffa769e31aca872088e09810130e2f471"
+    },
+    {
+      "path": "reports/calb_remaining20_audit_20261018_root/static_scan_remaining20.json",
+      "source_path": "reports/calb_remaining20_audit_20261018_root/static_scan_remaining20.json",
+      "bytes": 4907,
+      "sha256": "c70ba038c59cd68b09e76c3d8c81707f9ec44cdb1fc1b257658aa47fabebe338"
     },
     {
       "path": "reports/calb_trainval_sample_audit_20261018_root/audit_samples.py",

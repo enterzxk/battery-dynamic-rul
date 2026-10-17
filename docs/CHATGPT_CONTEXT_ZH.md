@@ -135,3 +135,12 @@
 - **最小验证**：全部曲线有限、每个prefix mask前i=1/后=0且遮罩后未来槽0；真实cycle电压max1误差0，首cycle三个通道独立归一化重算差0。loader SHA与既有完成回执一致，不重复运行。new_fits=0、optimizer_steps=0、model_loads=0、new_inference=0、scaler_fits=0、testPKL0。
 - **阻塞/风险**：仅2/22预处理，完整Dataset_original/增广/label scaler未运行，数值mask不证明模型或strict asof成立；仍有物理身份/标签/官方test入口/双进程边界。99/100前缀差异需并报官方prefix聚合及cell-equal指标。
 - **下一步**：只检查剩余20成员序列化/字段/官方预处理并复用已过2样本结果，形成17/5完整有效prefix清单和train-only scaler准备判定；失败不扩dtype/global映射，不读test或模型/fit。
+
+
+## 2026-10-18 06:11 北京时间：CALB剩余20一次审计与17/5完整前缀清单
+
+- **已完成**：剩余20固定成员各一次静态预检/受限载入/字段/官方基础曲线与mask检查，原2成员证据复用未重载；固定22 cohort通过该范围数据subgate，未扩大dtype/global映射。
+- **证据**：reports/calb_remaining20_audit_20261018_root/COHORT_AUDIT_ZH.md、cohort_audit.json、cohort_inventory.csv、static_scan_remaining20.json、audit_remaining.py。17train1689prefix（11×99+6×100）、5val497prefix（3×99+2×100）；train存储99–208cycle、val99–100cycle，作者EOL范围104–1352/189–1411。
+- **最小验证**：22电池必需字段长度对齐、raw非有限值0/负容量点0、实际[100,3,300]曲线有限、mask/缺cycle零填充/真实cycle电压max1通过、cell_id匹配。仅17train unique标签预期scaler mean852.294117647059、scale532.436659000628（ddof0），val/test未参与；scaler.fit未执行。new_fits=0、optimizer_steps=0、model_loads=0、new_inference=0、testPKL0。
+- **阻塞/风险**：完整Dataset_original/实际增强/共享train-only scaler仍未运行；物理身份/generator/strict asof与真实在线标签、官方test调用、2GPUruntime/模型训练门保持。前缀不等权，后续需同时报官方prefix与cell-equal，不能补造1700/500。
+- **下一步**：同stage只初始化pinned train/val Dataset_original一次，固定受限pickle映射核真实1689/497、shared train-only label scaler和一个真实batch形状/mask；不建test loader或模型/fit。
