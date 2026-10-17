@@ -209,3 +209,12 @@
 - **最小验证**：原预测SHA/5cell固定，共用精确作者标签，模型精确MAE吻合旧独立值；三模型差值分解重构（<1e-8），先验无val/test参与拟合。new_fits=0、optimizer_steps=0、model_loads=0、new_inference=0；原native浮点口径/选模/结果不改。
 - **阻塞/风险**：判NO_GO_FOR_CALB_MODEL_OR_SEED_EXPANSION_FROM_CURRENT5，保留开发fit完成但不据弱全局基线82.41%称强模型或创新证据。整体对组prior仍改善32.2695%/3of5，支持组4cell却差7.0283%；5开发cell单seed与45组1train、25组0train限制不隐去，非因果/独立泛化确认。神经累计4fits2580steps、原HUST/MATR/PBT/test门保持。
 - **下一步**：只读已存官方v11完整API JSON及旧MATR来源回执，核实际generator commit/config绑定并区分保存快照与live未知；无绑定保留缺证STOP，不重新下载/扫描PBT或训练。
+
+
+## 2026-10-18 07:14 北京时间：MATR 已存完整 API 补充核查（来源仍 STOP）
+
+- **已完成**：V11在coordinator.lock内核前驱释放后接管；完整检查已有官方v11 API保存快照，补正旧完整API未读范围。保存metadata已核，实时API当前UNKNOWN；未找到实际MATR归档到generator commit/config/run绑定，保留STOP。
+- **证据**：reports/matr_v11_release_provenance_20261018_root/SAVED_API_ADDENDUM_ZH.md、saved_api_addendum.json、saved_api_metadata.json；原API SHA5b79e36abb25fc0721aef484cf92605c7e8d559df7bffba90003b291475238ae，11932bytes；旧四证据SHA不变。
+- **最小验证**：记录19688272/description v11/2026-04-22、MATR.zip大小4864920138及MD583a1528858b9e1b7b6886757bb561669与旧回执吻合；metadata.version实际无键，版本来自description；custom仅仓库/语言，related_identifiers/references/notes无键、swh={}。获取时间不以record时间冒充。
+- **阻塞/风险**：generator精确绑定与物理身份仍未闭合；保存对象的缺字段不代表全官方或实时API均缺证。方向A NO_GAIN、CALB扩展NO_GO、PBT已消费失败/训练/test门保持；本轮new_fits=0、optimizer_steps=0、model_loads=0、new_inference=0、binary_reads=0、网络请求0。
+- **下一步**：只用P0已有审计索引和pinned split/source文本定位一个可闭合的物理电芯身份/重叠证据缺口；缺证不反复核同一发布metadata，不据此启动训练。

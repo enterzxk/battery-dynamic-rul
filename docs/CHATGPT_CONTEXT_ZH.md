@@ -171,3 +171,8 @@
 - **最小验证**：原预测SHA/5cell固定，共用精确作者标签，模型精确MAE吻合旧独立值；三模型差值分解重构（<1e-8），先验无val/test参与拟合。new_fits=0、optimizer_steps=0、model_loads=0、new_inference=0；原native浮点口径/选模/结果不改。
 - **阻塞/风险**：判NO_GO_FOR_CALB_MODEL_OR_SEED_EXPANSION_FROM_CURRENT5，保留开发fit完成但不据弱全局基线82.41%称强模型或创新证据。整体对组prior仍改善32.2695%/3of5，支持组4cell却差7.0283%；5开发cell单seed与45组1train、25组0train限制不隐去，非因果/独立泛化确认。神经累计4fits2580steps、原HUST/MATR/PBT/test门保持。
 - **下一步**：只读已存官方v11完整API JSON及旧MATR来源回执，核实际generator commit/config绑定并区分保存快照与live未知；无绑定保留缺证STOP，不重新下载/扫描PBT或训练。
+
+
+## 2026-10-18 07:14 北京时间增量：保存完整 API 已核，实时未知
+
+MATR来源补充核查已完成：已存record19688272完整API（SHA 5b79e36abb25fc0721aef484cf92605c7e8d559df7bffba90003b291475238ae）实际存在且已读；description明示v11，metadata.version无键。custom只给仓库/语言，related_identifiers/references/notes无键，swh为空；文件大小/MD5与既有MATR回执吻合，但未给出实际归档到generator commit/config/run绑定。旧报告的网络失败保留，不能继续把“完整API未读”用于已存快照；实时API当前UNKNOWN、保存获取时间未验证。见reports/matr_v11_release_provenance_20261018_root/SAVED_API_ADDENDUM_ZH.md及saved_api_addendum.json。来源STOP/方向A NO_GAIN/CALB扩展NO_GO/PBT消费与test锁保持，本阶段fit/steps/model/inference/binary/network均0。下一项只用现有P0索引和源码定位物理身份/重叠证据缺口。
