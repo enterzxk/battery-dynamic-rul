@@ -1,0 +1,485 @@
+{
+  "at_utc": "2026-10-17T15:46:45.902009+00:00",
+  "status": "COMPLETE_EXISTING_PREDICTION_FAILURE_DIAGNOSIS",
+  "question": "Are dominant errors merely remote author-tail extrapolation, or already incompatible with processed-record observed followup?",
+  "training_author_EOL_range": [
+    147.0,
+    1834.0
+  ],
+  "top2_share_of_total34_equal_cell_absolute_error": 0.4367584749342024,
+  "censored_cells": [
+    {
+      "cell_id": "MATR_b1c2",
+      "followup_cycles": 2235,
+      "author_EOL": 2237,
+      "author_EOL_minus_followup": 2,
+      "last_capacity_minus_threshold_Ah": 0.0006705499999999365,
+      "metadata_path": "/home/yndx/zxk/rul/reports/matr_schema_audit/run_v2_20261016T031830319822Z/cells/MATR_b1c2.pkl.json",
+      "metadata_sha256": "86dad52f3c396310044f64d09e31ff052e2859876e0009178feb6309e063c53f",
+      "models": {
+        "A0": {
+          "author_MAE_cycles": 1386.4274958316237,
+          "underprediction_error_lower_bound_from_followup_cycles": 1384.4274958316237
+        },
+        "A1": {
+          "author_MAE_cycles": 1381.3929798417637,
+          "underprediction_error_lower_bound_from_followup_cycles": 1379.3929798417637
+        },
+        "A2": {
+          "author_MAE_cycles": 1379.8070451089375,
+          "underprediction_error_lower_bound_from_followup_cycles": 1377.8070451089375
+        },
+        "GBDT_A1": {
+          "author_MAE_cycles": 1291.33090753741,
+          "underprediction_error_lower_bound_from_followup_cycles": 1289.33090753741
+        },
+        "GBDT_A2": {
+          "author_MAE_cycles": 1285.7179680413478,
+          "underprediction_error_lower_bound_from_followup_cycles": 1283.7179680413478
+        }
+      }
+    },
+    {
+      "cell_id": "MATR_b3c38",
+      "followup_cycles": 1933,
+      "author_EOL": 1932,
+      "author_EOL_minus_followup": -1,
+      "last_capacity_minus_threshold_Ah": 4.5799999999207586e-06,
+      "metadata_path": "/home/yndx/zxk/rul/reports/matr_schema_audit/run_v2_20261016T031830319822Z/cells/MATR_b3c38.pkl.json",
+      "metadata_sha256": "d8618f2ccdb132df55e2438a7f6acac113972a3c810fa1b0157a378691e80e1f",
+      "models": {
+        "A0": {
+          "author_MAE_cycles": 865.1291855862551,
+          "underprediction_error_lower_bound_from_followup_cycles": 866.1291855862551
+        },
+        "A1": {
+          "author_MAE_cycles": 883.8658202246688,
+          "underprediction_error_lower_bound_from_followup_cycles": 884.8658202246688
+        },
+        "A2": {
+          "author_MAE_cycles": 869.2452391246183,
+          "underprediction_error_lower_bound_from_followup_cycles": 870.2452391246183
+        },
+        "GBDT_A1": {
+          "author_MAE_cycles": 786.4270065338284,
+          "underprediction_error_lower_bound_from_followup_cycles": 787.4270065338284
+        },
+        "GBDT_A2": {
+          "author_MAE_cycles": 726.829568078475,
+          "underprediction_error_lower_bound_from_followup_cycles": 727.829568078475
+        }
+      }
+    },
+    {
+      "cell_id": "MATR_b3c11",
+      "followup_cycles": 815,
+      "author_EOL": 815,
+      "author_EOL_minus_followup": 0,
+      "last_capacity_minus_threshold_Ah": 0.0011336799999999148,
+      "metadata_path": "/home/yndx/zxk/rul/reports/matr_schema_audit/run_v2_20261016T031830319822Z/cells/MATR_b3c11.pkl.json",
+      "metadata_sha256": "4162c72056ddac6ad2b3749ab9fbd866b64d1508f121c7831da98c6123dfa7a2",
+      "models": {
+        "A0": {
+          "author_MAE_cycles": 241.58756315069968,
+          "underprediction_error_lower_bound_from_followup_cycles": 0
+        },
+        "A1": {
+          "author_MAE_cycles": 219.668573684208,
+          "underprediction_error_lower_bound_from_followup_cycles": 0
+        },
+        "A2": {
+          "author_MAE_cycles": 233.84977113019454,
+          "underprediction_error_lower_bound_from_followup_cycles": 0
+        },
+        "GBDT_A1": {
+          "author_MAE_cycles": 291.0887395967978,
+          "underprediction_error_lower_bound_from_followup_cycles": 0
+        },
+        "GBDT_A2": {
+          "author_MAE_cycles": 227.00163336485795,
+          "underprediction_error_lower_bound_from_followup_cycles": 0
+        }
+      }
+    },
+    {
+      "cell_id": "MATR_b3c34",
+      "followup_cycles": 1156,
+      "author_EOL": 1156,
+      "author_EOL_minus_followup": 0,
+      "last_capacity_minus_threshold_Ah": 0.00017183999999992317,
+      "metadata_path": "/home/yndx/zxk/rul/reports/matr_schema_audit/run_v2_20261016T031830319822Z/cells/MATR_b3c34.pkl.json",
+      "metadata_sha256": "ca791988120d61da685ccc2a587346b3b36439329e65f017941d3679854645a8",
+      "models": {
+        "A0": {
+          "author_MAE_cycles": 135.27383555480856,
+          "underprediction_error_lower_bound_from_followup_cycles": 135.27383555480856
+        },
+        "A1": {
+          "author_MAE_cycles": 146.4830612869666,
+          "underprediction_error_lower_bound_from_followup_cycles": 146.4830612869666
+        },
+        "A2": {
+          "author_MAE_cycles": 128.19155298665817,
+          "underprediction_error_lower_bound_from_followup_cycles": 128.19155298665817
+        },
+        "GBDT_A1": {
+          "author_MAE_cycles": 93.13513382188506,
+          "underprediction_error_lower_bound_from_followup_cycles": 93.13513382188506
+        },
+        "GBDT_A2": {
+          "author_MAE_cycles": 110.6049240125246,
+          "underprediction_error_lower_bound_from_followup_cycles": 110.6049240125246
+        }
+      }
+    },
+    {
+      "cell_id": "MATR_b1c43",
+      "followup_cycles": 649,
+      "author_EOL": 649,
+      "author_EOL_minus_followup": 0,
+      "last_capacity_minus_threshold_Ah": 0.00044434999999987124,
+      "metadata_path": "/home/yndx/zxk/rul/reports/matr_schema_audit/run_v2_20261016T031830319822Z/cells/MATR_b1c43.pkl.json",
+      "metadata_sha256": "5de2e8d9a10e4120c77de58e0cd49cffe1431aa117925ee4738b5bf2f75f7b51",
+      "models": {
+        "A0": {
+          "author_MAE_cycles": 122.4393311844758,
+          "underprediction_error_lower_bound_from_followup_cycles": 0
+        },
+        "A1": {
+          "author_MAE_cycles": 140.54789186094223,
+          "underprediction_error_lower_bound_from_followup_cycles": 0
+        },
+        "A2": {
+          "author_MAE_cycles": 148.5641847786646,
+          "underprediction_error_lower_bound_from_followup_cycles": 0
+        },
+        "GBDT_A1": {
+          "author_MAE_cycles": 148.6502717886996,
+          "underprediction_error_lower_bound_from_followup_cycles": 0
+        },
+        "GBDT_A2": {
+          "author_MAE_cycles": 144.18691059715403,
+          "underprediction_error_lower_bound_from_followup_cycles": 0
+        }
+      }
+    },
+    {
+      "cell_id": "MATR_b1c30",
+      "followup_cycles": 707,
+      "author_EOL": 707,
+      "author_EOL_minus_followup": 0,
+      "last_capacity_minus_threshold_Ah": 0.0005428699999998621,
+      "metadata_path": "/home/yndx/zxk/rul/reports/matr_schema_audit/run_v2_20261016T031830319822Z/cells/MATR_b1c30.pkl.json",
+      "metadata_sha256": "d34bb81d8d8cbecd5e6cb5cfe5078fc74ff0fd094af206e801da7dd6766e7cee",
+      "models": {
+        "A0": {
+          "author_MAE_cycles": 126.08600914225019,
+          "underprediction_error_lower_bound_from_followup_cycles": 0
+        },
+        "A1": {
+          "author_MAE_cycles": 131.2832703290041,
+          "underprediction_error_lower_bound_from_followup_cycles": 0
+        },
+        "A2": {
+          "author_MAE_cycles": 132.40333419289723,
+          "underprediction_error_lower_bound_from_followup_cycles": 0
+        },
+        "GBDT_A1": {
+          "author_MAE_cycles": 161.72653940221613,
+          "underprediction_error_lower_bound_from_followup_cycles": 0
+        },
+        "GBDT_A2": {
+          "author_MAE_cycles": 151.50176602302818,
+          "underprediction_error_lower_bound_from_followup_cycles": 0
+        }
+      }
+    },
+    {
+      "cell_id": "MATR_b1c36",
+      "followup_cycles": 702,
+      "author_EOL": 704,
+      "author_EOL_minus_followup": 2,
+      "last_capacity_minus_threshold_Ah": 0.0023180199999999207,
+      "metadata_path": "/home/yndx/zxk/rul/reports/matr_schema_audit/run_v2_20261016T031830319822Z/cells/MATR_b1c36.pkl.json",
+      "metadata_sha256": "649b05cd7a5019e9fea330fbc445c2ff074fee0a1af1e4d40f702d4d38397bf0",
+      "models": {
+        "A0": {
+          "author_MAE_cycles": 127.10931195482203,
+          "underprediction_error_lower_bound_from_followup_cycles": 0
+        },
+        "A1": {
+          "author_MAE_cycles": 131.19611163873228,
+          "underprediction_error_lower_bound_from_followup_cycles": 0
+        },
+        "A2": {
+          "author_MAE_cycles": 133.2868783117231,
+          "underprediction_error_lower_bound_from_followup_cycles": 0
+        },
+        "GBDT_A1": {
+          "author_MAE_cycles": 157.24935510890805,
+          "underprediction_error_lower_bound_from_followup_cycles": 0
+        },
+        "GBDT_A2": {
+          "author_MAE_cycles": 130.9264844859328,
+          "underprediction_error_lower_bound_from_followup_cycles": 0
+        }
+      }
+    },
+    {
+      "cell_id": "MATR_b1c32",
+      "followup_cycles": 729,
+      "author_EOL": 729,
+      "author_EOL_minus_followup": 0,
+      "last_capacity_minus_threshold_Ah": 0.0008090699999998563,
+      "metadata_path": "/home/yndx/zxk/rul/reports/matr_schema_audit/run_v2_20261016T031830319822Z/cells/MATR_b1c32.pkl.json",
+      "metadata_sha256": "927c73e046ce79ed5bf918163acb5abf79c76fa57cf67f4835b216abf5cf1f90",
+      "models": {
+        "A0": {
+          "author_MAE_cycles": 93.40115895688598,
+          "underprediction_error_lower_bound_from_followup_cycles": 0
+        },
+        "A1": {
+          "author_MAE_cycles": 102.02364882022317,
+          "underprediction_error_lower_bound_from_followup_cycles": 0
+        },
+        "A2": {
+          "author_MAE_cycles": 103.47967081713969,
+          "underprediction_error_lower_bound_from_followup_cycles": 0
+        },
+        "GBDT_A1": {
+          "author_MAE_cycles": 103.4716783844616,
+          "underprediction_error_lower_bound_from_followup_cycles": 0
+        },
+        "GBDT_A2": {
+          "author_MAE_cycles": 70.56589351970987,
+          "underprediction_error_lower_bound_from_followup_cycles": 0
+        }
+      }
+    },
+    {
+      "cell_id": "MATR_b1c34",
+      "followup_cycles": 740,
+      "author_EOL": 742,
+      "author_EOL_minus_followup": 2,
+      "last_capacity_minus_threshold_Ah": 0.00205444999999993,
+      "metadata_path": "/home/yndx/zxk/rul/reports/matr_schema_audit/run_v2_20261016T031830319822Z/cells/MATR_b1c34.pkl.json",
+      "metadata_sha256": "a7f5bc2aa2b05bc9925e253c7eeb7e5f4ae4d0dbaa3e67c496b7e85958ba628c",
+      "models": {
+        "A0": {
+          "author_MAE_cycles": 85.68065853112932,
+          "underprediction_error_lower_bound_from_followup_cycles": 0
+        },
+        "A1": {
+          "author_MAE_cycles": 90.25125172881425,
+          "underprediction_error_lower_bound_from_followup_cycles": 0
+        },
+        "A2": {
+          "author_MAE_cycles": 94.17261927346445,
+          "underprediction_error_lower_bound_from_followup_cycles": 0
+        },
+        "GBDT_A1": {
+          "author_MAE_cycles": 88.98445891665435,
+          "underprediction_error_lower_bound_from_followup_cycles": 0
+        },
+        "GBDT_A2": {
+          "author_MAE_cycles": 113.36278629906556,
+          "underprediction_error_lower_bound_from_followup_cycles": 0
+        }
+      }
+    },
+    {
+      "cell_id": "MATR_b3c35",
+      "followup_cycles": 1091,
+      "author_EOL": 1091,
+      "author_EOL_minus_followup": 0,
+      "last_capacity_minus_threshold_Ah": 0.00011735999999984426,
+      "metadata_path": "/home/yndx/zxk/rul/reports/matr_schema_audit/run_v2_20261016T031830319822Z/cells/MATR_b3c35.pkl.json",
+      "metadata_sha256": "86e5c8a4a6d5ab241163e8c6892b60ca03e574951805b35cdd297c726f6e17f9",
+      "models": {
+        "A0": {
+          "author_MAE_cycles": 63.92850640894335,
+          "underprediction_error_lower_bound_from_followup_cycles": 63.92850640894335
+        },
+        "A1": {
+          "author_MAE_cycles": 74.95547067193598,
+          "underprediction_error_lower_bound_from_followup_cycles": 74.95547067193598
+        },
+        "A2": {
+          "author_MAE_cycles": 56.59048591441788,
+          "underprediction_error_lower_bound_from_followup_cycles": 56.59048591441788
+        },
+        "GBDT_A1": {
+          "author_MAE_cycles": 27.206327592621335,
+          "underprediction_error_lower_bound_from_followup_cycles": 27.206327592621335
+        },
+        "GBDT_A2": {
+          "author_MAE_cycles": 43.31781597475862,
+          "underprediction_error_lower_bound_from_followup_cycles": 37.07377518296022
+        }
+      }
+    },
+    {
+      "cell_id": "MATR_b1c14",
+      "followup_cycles": 878,
+      "author_EOL": 877,
+      "author_EOL_minus_followup": -1,
+      "last_capacity_minus_threshold_Ah": 6.489999999992335e-05,
+      "metadata_path": "/home/yndx/zxk/rul/reports/matr_schema_audit/run_v2_20261016T031830319822Z/cells/MATR_b1c14.pkl.json",
+      "metadata_sha256": "018b20b284c969ef37a890e883771707369f7597a593e1ffef8abe9d4d67b7b4",
+      "models": {
+        "A0": {
+          "author_MAE_cycles": 69.14894740409795,
+          "underprediction_error_lower_bound_from_followup_cycles": 70.14894740409795
+        },
+        "A1": {
+          "author_MAE_cycles": 57.760770513650016,
+          "underprediction_error_lower_bound_from_followup_cycles": 58.760770513650016
+        },
+        "A2": {
+          "author_MAE_cycles": 51.858364219739514,
+          "underprediction_error_lower_bound_from_followup_cycles": 52.858364219739514
+        },
+        "GBDT_A1": {
+          "author_MAE_cycles": 131.652006300909,
+          "underprediction_error_lower_bound_from_followup_cycles": 132.652006300909
+        },
+        "GBDT_A2": {
+          "author_MAE_cycles": 86.48573085038305,
+          "underprediction_error_lower_bound_from_followup_cycles": 85.3538370748056
+        }
+      }
+    },
+    {
+      "cell_id": "MATR_b1c11",
+      "followup_cycles": 786,
+      "author_EOL": 786,
+      "author_EOL_minus_followup": 0,
+      "last_capacity_minus_threshold_Ah": 0.0005435899999999272,
+      "metadata_path": "/home/yndx/zxk/rul/reports/matr_schema_audit/run_v2_20261016T031830319822Z/cells/MATR_b1c11.pkl.json",
+      "metadata_sha256": "b7fdb55fab26428c34bf2990ab81367e011ea3b327d89eb105e413d3d950ea78",
+      "models": {
+        "A0": {
+          "author_MAE_cycles": 58.48452933886324,
+          "underprediction_error_lower_bound_from_followup_cycles": 58.48452933886324
+        },
+        "A1": {
+          "author_MAE_cycles": 30.965173395890446,
+          "underprediction_error_lower_bound_from_followup_cycles": 30.965173395890446
+        },
+        "A2": {
+          "author_MAE_cycles": 16.006698270183136,
+          "underprediction_error_lower_bound_from_followup_cycles": 16.006698270183136
+        },
+        "GBDT_A1": {
+          "author_MAE_cycles": 33.672799067754795,
+          "underprediction_error_lower_bound_from_followup_cycles": 33.672799067754795
+        },
+        "GBDT_A2": {
+          "author_MAE_cycles": 36.82091422942821,
+          "underprediction_error_lower_bound_from_followup_cycles": 15.919141779003837
+        }
+      }
+    },
+    {
+      "cell_id": "MATR_b1c25",
+      "followup_cycles": 852,
+      "author_EOL": 852,
+      "author_EOL_minus_followup": 0,
+      "last_capacity_minus_threshold_Ah": 0.00019996999999993825,
+      "metadata_path": "/home/yndx/zxk/rul/reports/matr_schema_audit/run_v2_20261016T031830319822Z/cells/MATR_b1c25.pkl.json",
+      "metadata_sha256": "4c0c251ec542bde0ed3d9124a0455ec960070adef5a49f890ccb99b5a6f3650f",
+      "models": {
+        "A0": {
+          "author_MAE_cycles": 33.73696808412592,
+          "underprediction_error_lower_bound_from_followup_cycles": 33.73696808412592
+        },
+        "A1": {
+          "author_MAE_cycles": 25.208750764369654,
+          "underprediction_error_lower_bound_from_followup_cycles": 25.208750764369654
+        },
+        "A2": {
+          "author_MAE_cycles": 20.263321300380596,
+          "underprediction_error_lower_bound_from_followup_cycles": 20.263321300380596
+        },
+        "GBDT_A1": {
+          "author_MAE_cycles": 51.66042281982757,
+          "underprediction_error_lower_bound_from_followup_cycles": 49.24461433195523
+        },
+        "GBDT_A2": {
+          "author_MAE_cycles": 91.37086786528789,
+          "underprediction_error_lower_bound_from_followup_cycles": 77.34630476385595
+        }
+      }
+    },
+    {
+      "cell_id": "MATR_b1c28",
+      "followup_cycles": 858,
+      "author_EOL": 858,
+      "author_EOL_minus_followup": 0,
+      "last_capacity_minus_threshold_Ah": 0.0005822699999998848,
+      "metadata_path": "/home/yndx/zxk/rul/reports/matr_schema_audit/run_v2_20261016T031830319822Z/cells/MATR_b1c28.pkl.json",
+      "metadata_sha256": "9b49542511dcc809514c17619fe6d0c4e77bd672f5ed88ba48b5d0256222d964",
+      "models": {
+        "A0": {
+          "author_MAE_cycles": 32.880049295744584,
+          "underprediction_error_lower_bound_from_followup_cycles": 32.880049295744584
+        },
+        "A1": {
+          "author_MAE_cycles": 24.161909704020616,
+          "underprediction_error_lower_bound_from_followup_cycles": 24.161909704020616
+        },
+        "A2": {
+          "author_MAE_cycles": 21.255407724491334,
+          "underprediction_error_lower_bound_from_followup_cycles": 21.255407724491334
+        },
+        "GBDT_A1": {
+          "author_MAE_cycles": 32.43537245402533,
+          "underprediction_error_lower_bound_from_followup_cycles": 19.840013583961763
+        },
+        "GBDT_A2": {
+          "author_MAE_cycles": 25.714300709622933,
+          "underprediction_error_lower_bound_from_followup_cycles": 16.205457931616507
+        }
+      }
+    },
+    {
+      "cell_id": "MATR_b1c27",
+      "followup_cycles": 840,
+      "author_EOL": 841,
+      "author_EOL_minus_followup": 1,
+      "last_capacity_minus_threshold_Ah": 0.0013005699999998344,
+      "metadata_path": "/home/yndx/zxk/rul/reports/matr_schema_audit/run_v2_20261016T031830319822Z/cells/MATR_b1c27.pkl.json",
+      "metadata_sha256": "72b94f6209d02b064a9421f3554a988aae10b50c9f0cac9bf989a4e4235c4a89",
+      "models": {
+        "A0": {
+          "author_MAE_cycles": 9.649556328630183,
+          "underprediction_error_lower_bound_from_followup_cycles": 8.649556328630183
+        },
+        "A1": {
+          "author_MAE_cycles": 6.445965446076002,
+          "underprediction_error_lower_bound_from_followup_cycles": 3.980727364326725
+        },
+        "A2": {
+          "author_MAE_cycles": 7.793454669326735,
+          "underprediction_error_lower_bound_from_followup_cycles": 3.9373002227329152
+        },
+        "GBDT_A1": {
+          "author_MAE_cycles": 39.558541027692684,
+          "underprediction_error_lower_bound_from_followup_cycles": 0
+        },
+        "GBDT_A2": {
+          "author_MAE_cycles": 35.544296267295834,
+          "underprediction_error_lower_bound_from_followup_cycles": 0
+        }
+      }
+    }
+  ],
+  "mean_censored_underprediction_lower_bound_A1": 175.25164425117285,
+  "interpretation": "Underprediction lower bound uses only recorded survival through last observed cycle; actual crossing is unobserved. This is retrospective processed-record evidence, not a new target or train feature. No removal/reweighting/refit. Short author extrapolation gaps in top outliers would rule out long extrapolation distance as the sole cause, not validate labels or generator.",
+  "new_fits": 0,
+  "optimizer_steps": 0,
+  "test_access": false,
+  "binary_reads": 0,
+  "predictions_sha256": "b336f3b69219d9f8c1a4044e68bb8e6b9a365b7227673d722118e3b750ca0c22",
+  "next_action": "Inspect existing train/validation early-prefix feature support for the two dominant surviving outliers using text only; no fitting or changing primary cohort/labels."
+}

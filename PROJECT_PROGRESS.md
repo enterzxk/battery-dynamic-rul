@@ -54,3 +54,14 @@
 - **最小验证**：从全部原预测独立复算全34及观测19的cell-macro MAE/bias、paired改善比例、年龄层和尾部；全部匹配，41开始/完成账本匹配。未加smoke或重复训练，旧CP2fits/600steps未混记。
 - **阻塞/风险**：判NO_GAIN_FOR_COMPLEX_HISTORY_EXPANSION_ON_THIS_DIAGNOSTIC：Ridge增益2.679%/21of34，GBDT3.664%/18of34且bootstrap跨0；未达约10%推进幅度。观测19 Ridge增益5.144%仍不足。尾部未一致改善。v11实际生成器/其余physical serial未知、strict_online_eligible=0，容量权限为完整循环测量；全34含15作者外推标签，不能称严格在线或独立泛化。PBT已消费entry_cap失败不重跑。
 - **下一步**：仅用现有逐电池预测诊断高误差删失电池与作者外推标签偏差，不启动复杂历史模型/新seed或新增fit；阶段公开同步以`automation/state/github_sync.json`核回读为准。
+
+
+## 2026-10-17 23:47 北京时间：已有预测的删失误差诊断
+
+- **已完成**：仅分析15个删失电池的现有validation预测及哈希绑定文本metadata，未新fit。前两大误差电池占全34电池A1等权绝对误差的43.68%；其作者EOL较末次观测仅多2/-1循环，A1低估误差下界为1379.39/884.87循环。不能把大误差单独归咎于长距离尾段外推，也不证明作者标签/生成器有效。
+- **证据**：`experiments/dynamic_A_matr_retrospective_seed42_v1/censored_failure_diagnosis.json`、`CENSORED_FAILURE_ZH.md`；保留逐cell来源SHA和预测SHA。
+- **最小验证**：15份metadata SHA与原cohort一致，每模型每电池4时点；低估下界不当精确EOL，不改主指标。
+- **阻塞/风险**：strict_online/physical serial/generator限制不变，PBT一次预算消费不重跑。普通额度本轮已用97%，真实重置timestamp1792264349；恢复仍需实查。new_fits=0、optimizer_steps=0。
+- **下一步**：只用已有文本比较两大长寿命离群电池的早期特征训练支持范围；不改标签/删电池/新增fit。
+
+补充标签边界：MATR_b3c38作者EOL=1932，但完整文本记录存活至1933且nominal crossing未观测；存在1循环边界不一致，需核已有标签算法的外推/取整语义。不得把作者标签当精确真实EOL，不修改或删除既有结果；下一动作优先核此边界，再看训练特征支持。
