@@ -176,3 +176,8 @@
 ## 2026-10-18 07:14 北京时间增量：保存完整 API 已核，实时未知
 
 MATR来源补充核查已完成：已存record19688272完整API（SHA 5b79e36abb25fc0721aef484cf92605c7e8d559df7bffba90003b291475238ae）实际存在且已读；description明示v11，metadata.version无键。custom只给仓库/语言，related_identifiers/references/notes无键，swh为空；文件大小/MD5与既有MATR回执吻合，但未给出实际归档到generator commit/config/run绑定。旧报告的网络失败保留，不能继续把“完整API未读”用于已存快照；实时API当前UNKNOWN、保存获取时间未验证。见reports/matr_v11_release_provenance_20261018_root/SAVED_API_ADDENDUM_ZH.md及saved_api_addendum.json。来源STOP/方向A NO_GAIN/CALB扩展NO_GO/PBT消费与test锁保持，本阶段fit/steps/model/inference/binary/network均0。下一项只用现有P0索引和源码定位物理身份/重叠证据缺口。
+
+
+## 2026-10-18 07:25 北京时间增量：CALB命名身份边界
+
+仅源码/旧CSV核官方27名单：去掉温度前缀后basename27唯一、跨角色/温度重名0。pinned代码以温度目录+源文件basename生成cell_id，因此旧22条cell_id_matches不构成独立物理serial证明。报告reports/calb_identity_text_audit_20261018_root/IDENTITY_AUDIT_ZH.md及identity_audit.json。不同别名/跨来源/预训练身份仍未知，实际生成器STOP/原CALB扩展NO_GO保持。文件组prior可按pinned命名解释为温度层prior，不能作因果温度结论。test仅源码5文件名，本轮fit/step/model/inference/binary/network=0。下一项只用既有小摘要核eol<=100筛选的实际origin排除。

@@ -218,3 +218,12 @@
 - **最小验证**：记录19688272/description v11/2026-04-22、MATR.zip大小4864920138及MD583a1528858b9e1b7b6886757bb561669与旧回执吻合；metadata.version实际无键，版本来自description；custom仅仓库/语言，related_identifiers/references/notes无键、swh={}。获取时间不以record时间冒充。
 - **阻塞/风险**：generator精确绑定与物理身份仍未闭合；保存对象的缺字段不代表全官方或实时API均缺证。方向A NO_GAIN、CALB扩展NO_GO、PBT已消费失败/训练/test门保持；本轮new_fits=0、optimizer_steps=0、model_loads=0、new_inference=0、binary_reads=0、网络请求0。
 - **下一步**：只用P0已有审计索引和pinned split/source文本定位一个可闭合的物理电芯身份/重叠证据缺口；缺证不反复核同一发布metadata，不据此启动训练。
+
+
+## 2026-10-18 07:25 北京时间：CALB温度剥离文件名身份核查
+
+- **已完成**：官方17/5/5共27文件名剥离温度前缀后basename仍27唯一、跨角色/温度重名0；pinned预处理确认组字段为温度目录，cell_id由文件名生成。只关闭窄命名重复风险。
+- **证据**：reports/calb_identity_text_audit_20261018_root/identity_audit.json、IDENTITY_AUDIT_ZH.md；绑定preprocess_CALB.py:23–30/263–274、data_split_recorder.py:59–61及原22cell审计CSV SHA。
+- **最小验证**：解析固定17/5/5名单、27全名/27basename唯一；复用22条cell_id_matches核对应train/val全集，不重开PKL；5test仅源码文件名。new_fits=0、steps=0、model/inference/binary/network=0。
+- **阻塞/风险**：cell_id本由文件名派生，非独立serial；不同basename别名、跨来源/预训练身份仍unverified。未证明实际v11生成器，温度组prior不作温度因果结论，原CALB NO_GO/训练/test/PBT门保持。
+- **下一步**：只用现有标签/周期小摘要核官方eol<=100整cell筛选的实际早期origin排除量，不新fit或构建严格在线队列。

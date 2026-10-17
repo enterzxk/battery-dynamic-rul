@@ -1,0 +1,231 @@
+{
+  "at_utc": "2026-10-17T23:25:07.416232+00:00",
+  "decision": "PASS_CALB_FILENAME_BASENAME_DISJOINT_ONLY_PHYSICAL_IDENTITY_UNVERIFIED",
+  "question": "Does removing temperature from official CALB filenames reveal duplicate source-basename candidates across frozen splits?",
+  "official_counts": {
+    "CALB_train_files": 17,
+    "CALB_val_files": 5,
+    "CALB_test_files": 5
+  },
+  "unique_full_filenames": 27,
+  "unique_temperature_stripped_basenames": 27,
+  "basename_collisions": {},
+  "records": [
+    {
+      "role": "CALB_train_files",
+      "file": "CALB_35_B229.pkl",
+      "temperature_group": "35",
+      "raw_basename_candidate": "B229"
+    },
+    {
+      "role": "CALB_train_files",
+      "file": "CALB_35_B173.pkl",
+      "temperature_group": "35",
+      "raw_basename_candidate": "B173"
+    },
+    {
+      "role": "CALB_train_files",
+      "file": "CALB_35_B228.pkl",
+      "temperature_group": "35",
+      "raw_basename_candidate": "B228"
+    },
+    {
+      "role": "CALB_train_files",
+      "file": "CALB_0_B184.pkl",
+      "temperature_group": "0",
+      "raw_basename_candidate": "B184"
+    },
+    {
+      "role": "CALB_train_files",
+      "file": "CALB_35_B248.pkl",
+      "temperature_group": "35",
+      "raw_basename_candidate": "B248"
+    },
+    {
+      "role": "CALB_train_files",
+      "file": "CALB_35_B227.pkl",
+      "temperature_group": "35",
+      "raw_basename_candidate": "B227"
+    },
+    {
+      "role": "CALB_train_files",
+      "file": "CALB_0_B185.pkl",
+      "temperature_group": "0",
+      "raw_basename_candidate": "B185"
+    },
+    {
+      "role": "CALB_train_files",
+      "file": "CALB_35_B249.pkl",
+      "temperature_group": "35",
+      "raw_basename_candidate": "B249"
+    },
+    {
+      "role": "CALB_train_files",
+      "file": "CALB_35_B223.pkl",
+      "temperature_group": "35",
+      "raw_basename_candidate": "B223"
+    },
+    {
+      "role": "CALB_train_files",
+      "file": "CALB_35_B224.pkl",
+      "temperature_group": "35",
+      "raw_basename_candidate": "B224"
+    },
+    {
+      "role": "CALB_train_files",
+      "file": "CALB_0_B189.pkl",
+      "temperature_group": "0",
+      "raw_basename_candidate": "B189"
+    },
+    {
+      "role": "CALB_train_files",
+      "file": "CALB_35_B250.pkl",
+      "temperature_group": "35",
+      "raw_basename_candidate": "B250"
+    },
+    {
+      "role": "CALB_train_files",
+      "file": "CALB_0_B188.pkl",
+      "temperature_group": "0",
+      "raw_basename_candidate": "B188"
+    },
+    {
+      "role": "CALB_train_files",
+      "file": "CALB_45_B256.pkl",
+      "temperature_group": "45",
+      "raw_basename_candidate": "B256"
+    },
+    {
+      "role": "CALB_train_files",
+      "file": "CALB_0_B183.pkl",
+      "temperature_group": "0",
+      "raw_basename_candidate": "B183"
+    },
+    {
+      "role": "CALB_train_files",
+      "file": "CALB_35_B175.pkl",
+      "temperature_group": "35",
+      "raw_basename_candidate": "B175"
+    },
+    {
+      "role": "CALB_train_files",
+      "file": "CALB_0_B190.pkl",
+      "temperature_group": "0",
+      "raw_basename_candidate": "B190"
+    },
+    {
+      "role": "CALB_val_files",
+      "file": "CALB_0_B187.pkl",
+      "temperature_group": "0",
+      "raw_basename_candidate": "B187"
+    },
+    {
+      "role": "CALB_val_files",
+      "file": "CALB_35_B222.pkl",
+      "temperature_group": "35",
+      "raw_basename_candidate": "B222"
+    },
+    {
+      "role": "CALB_val_files",
+      "file": "CALB_25_T25-2.pkl",
+      "temperature_group": "25",
+      "raw_basename_candidate": "T25-2"
+    },
+    {
+      "role": "CALB_val_files",
+      "file": "CALB_35_B247.pkl",
+      "temperature_group": "35",
+      "raw_basename_candidate": "B247"
+    },
+    {
+      "role": "CALB_val_files",
+      "file": "CALB_45_B253.pkl",
+      "temperature_group": "45",
+      "raw_basename_candidate": "B253"
+    },
+    {
+      "role": "CALB_test_files",
+      "file": "CALB_0_B182.pkl",
+      "temperature_group": "0",
+      "raw_basename_candidate": "B182"
+    },
+    {
+      "role": "CALB_test_files",
+      "file": "CALB_25_T25-1.pkl",
+      "temperature_group": "25",
+      "raw_basename_candidate": "T25-1"
+    },
+    {
+      "role": "CALB_test_files",
+      "file": "CALB_35_B174.pkl",
+      "temperature_group": "35",
+      "raw_basename_candidate": "B174"
+    },
+    {
+      "role": "CALB_test_files",
+      "file": "CALB_35_B230.pkl",
+      "temperature_group": "35",
+      "raw_basename_candidate": "B230"
+    },
+    {
+      "role": "CALB_test_files",
+      "file": "CALB_45_B255.pkl",
+      "temperature_group": "45",
+      "raw_basename_candidate": "B255"
+    }
+  ],
+  "source_claims": [
+    {
+      "url": "https://github.com/Ruifeng-Tan/BatteryLife/blob/3b17bb53202e10711deae0448c91f84144bb3dd9/process_scripts/preprocess_CALB.py#L23-L30",
+      "claim": "Temperature directory token plus source XLSX basename forms cell_name; 0/25/35/45 are temperature directories",
+      "lines": [
+        23,
+        30
+      ]
+    },
+    {
+      "url": "https://github.com/Ruifeng-Tan/BatteryLife/blob/3b17bb53202e10711deae0448c91f84144bb3dd9/process_scripts/preprocess_CALB.py#L263-L274",
+      "claim": "BatteryData.cell_id=name; no independent raw serial mapping in this constructor",
+      "lines": [
+        263,
+        274
+      ]
+    },
+    {
+      "url": "https://github.com/Ruifeng-Tan/BatteryLife/blob/3b17bb53202e10711deae0448c91f84144bb3dd9/data_provider/data_split_recorder.py#L59-L61",
+      "claim": "Frozen17/5/5 filename split lists",
+      "lines": [
+        59,
+        61
+      ]
+    }
+  ],
+  "reused_trainval_content_identity": {
+    "rows": 22,
+    "cell_id_matches_filename": true,
+    "no_binary_reopen": true,
+    "scope": "Prior decoded output cell_id was consistent with filename; constructor derives it from filename, so not independent physical serial evidence"
+  },
+  "scientific_boundary": [
+    "No duplicated temperature-stripped basename in these27 names does not rule out different aliases for one physical cell",
+    "Candidate XLSX basenames inferred from pinned code, not verified original raw files or actual v11 generator",
+    "No evidence of pretraining population overlap or independence; no independent-generalization claim",
+    "Temperature-group prior can be described as a temperature-stratified filename prior under pinned naming semantics; no causal temperature effect inferred; prior predictions/NO_GO unchanged"
+  ],
+  "bindings": {
+    "repos/pinned/BatteryLife_3b17bb53202e10711deae0448c91f84144bb3dd9/data_provider/data_split_recorder.py": "f6f0d42b721c533351ed93467a1ebcaf1021b4daff234e828ab18698fa724b77",
+    "repos/pinned/BatteryLife_3b17bb53202e10711deae0448c91f84144bb3dd9/process_scripts/preprocess_CALB.py": "663b42497d5a4f29b60cf44aca91f6e6d340f5863b7fbf25a5fcf3c012cb803a",
+    "reports/calb_remaining20_audit_20261018_root/cohort_inventory.csv": "a68d22d508f888f0bbf314f10293abb1114d07991f5f7d173715835435497b2a",
+    "reports/asof_preprocessing_audit_v1/manifest_v2.json": "4f9948c9f6d506402b6daa8ce18fe2222b50e51863c7857986cbf0ab522dc0f0"
+  },
+  "new_fits": 0,
+  "optimizer_steps": 0,
+  "model_loads": 0,
+  "new_inference": 0,
+  "dataset_binary_reads": 0,
+  "test_dataset_access": false,
+  "test_filename_metadata_only": 5,
+  "new_network_requests": 0,
+  "gates_changed": false,
+  "next_action": "Using existing small label/source audit summaries only, quantify whether official offline eol<=100 cohort selection actually excludes observed-alive early origins; do not construct new strict-online cohort or fit."
+}

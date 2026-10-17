@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-17T23:13:46.581849+00:00",
-  "content_sha256": "85176c4df4b5fcc7230f9e3950821290f3016f0bdfa55e33a373b4804533346b",
-  "file_count": 367,
+  "snapshot_utc": "2026-10-17T23:25:20.247039+00:00",
+  "content_sha256": "f49b4a1964df976db296cd879ad0f0052f80c55bfdd9489dc964094de6a08665",
+  "file_count": 369,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,8 +14,8 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 38207,
-      "sha256": "6d73e40475ba79425d3d0826be9951fd937682a2d4271a546d61b76895724984"
+      "bytes": 39349,
+      "sha256": "c30d7e457f132b3b9b57885d91baff80f0675c3a64a241d3e8acc3e50bec212b"
     },
     {
       "path": "README.md",
@@ -32,8 +32,8 @@
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 9286,
-      "sha256": "f6421a543f24145a3eb387e3aec7bb5abaa464747b8773ad2327c3a24db7ac03"
+      "bytes": 9423,
+      "sha256": "ec2317544e8601fbde94ef85bea380240c738e2fe011a3ee51ec0486680d0e76"
     },
     {
       "path": "automation/github_export/build_dynamic_A_eligible_20261017.py",
@@ -128,8 +128,8 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 29072,
-      "sha256": "1d59d7cf747543fd68439f3d916641132960a129ee2b7f06b0255747c964a33c"
+      "bytes": 29798,
+      "sha256": "418159c728960b6fb181ba6f638d21fcab57d96ebaad0032ffb6b83cb340d757"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
@@ -1120,6 +1120,18 @@
       "source_path": "reports/calb_group_prior_diagnosis_20261018_root/root_diagnostic_decision.json",
       "bytes": 1006,
       "sha256": "9ccf2c0a43fa02f71404f8fa59e205d6a4d291c8ef149b364366277ef8542d34"
+    },
+    {
+      "path": "reports/calb_identity_text_audit_20261018_root/IDENTITY_AUDIT_ZH.md",
+      "source_path": "reports/calb_identity_text_audit_20261018_root/IDENTITY_AUDIT_ZH.md",
+      "bytes": 2275,
+      "sha256": "69881ad6d9ad75316d7c18bbf30c1b63907eda4e0f1164751296acda90ec3321"
+    },
+    {
+      "path": "reports/calb_identity_text_audit_20261018_root/identity_audit.json",
+      "source_path": "reports/calb_identity_text_audit_20261018_root/identity_audit.json",
+      "bytes": 7519,
+      "sha256": "26bb8aebfea28fce27efa29d5ca76e603081664c8a8ec3a9b8f980adeeb2efe1"
     },
     {
       "path": "reports/calb_remaining20_audit_20261018_root/COHORT_AUDIT_ZH.md",
