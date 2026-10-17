@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-17T22:27:01.953689+00:00",
-  "content_sha256": "c9932486f56f666e6606cd849035992cdb84c68d2070ff65df2e88bd4d8cdd0e",
-  "file_count": 343,
+  "snapshot_utc": "2026-10-17T22:42:34.240400+00:00",
+  "content_sha256": "11ff1ca4dde1daec2b20235c04d954876a4bb2dcb731eaec60cd533823670cf2",
+  "file_count": 358,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,8 +14,8 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 33389,
-      "sha256": "0b4bdaa4b6b931f1e3c6cd057423c35a9f73909910242bd9602d799cfe7b450d"
+      "bytes": 35078,
+      "sha256": "5d23587a4efa1f5a0140014459c92a1e245f7de8a509c75a35ca1390cf743d1e"
     },
     {
       "path": "README.md",
@@ -32,8 +32,8 @@
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 8710,
-      "sha256": "fdd5e0c53dc2289e7142febb0bc2b6eff98159b589f5af6634bb6319bffc2a5e"
+      "bytes": 9147,
+      "sha256": "8c647f361a2098b6a00d78bb162bb00290c5d1a5445565b573bd1e5481aa3b68"
     },
     {
       "path": "automation/github_export/build_dynamic_A_eligible_20261017.py",
@@ -128,8 +128,8 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 24790,
-      "sha256": "1b5e742fb5d1e588e826e239134c7488f13e706fe550f9a30ef4a8a1698512cc"
+      "bytes": 26479,
+      "sha256": "3a3159dac6491ddd20791507c2528dc287b908c202391fb17ad1a41dca1358fd"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
@@ -172,6 +172,90 @@
       "source_path": "docs/RESEARCH_PLAN_ZH.md",
       "bytes": 3091,
       "sha256": "91a94a893ead248ab251f498e7f58de7a9c1551a5278d47c4898cd9d93a010e8"
+    },
+    {
+      "path": "experiments/cpmlp_calb_recipe_adapt_seed2021_v1/RESULTS_ZH.md",
+      "source_path": "experiments/cpmlp_calb_recipe_adapt_seed2021_v1/RESULTS_ZH.md",
+      "bytes": 2867,
+      "sha256": "8f0b3b3af968deb6abc0a55d4000df861006dfb4a4af24c7aecddbfce00ab621"
+    },
+    {
+      "path": "experiments/cpmlp_calb_recipe_adapt_seed2021_v1/ROOT_GO.json",
+      "source_path": "experiments/cpmlp_calb_recipe_adapt_seed2021_v1/ROOT_GO.json",
+      "bytes": 3056,
+      "sha256": "f32ad505cf601952e15f8113b9906414b6c2266f46bd045dfb91cb9d33a79d22"
+    },
+    {
+      "path": "experiments/cpmlp_calb_recipe_adapt_seed2021_v1/budget_ledger.jsonl",
+      "source_path": "experiments/cpmlp_calb_recipe_adapt_seed2021_v1/budget_ledger.jsonl",
+      "bytes": 77135,
+      "sha256": "42e38ab412da36a2a0fc81f138635f6faf301f101b2cb791ce677beec2a624f7"
+    },
+    {
+      "path": "experiments/cpmlp_calb_recipe_adapt_seed2021_v1/completion_receipt.json",
+      "source_path": "experiments/cpmlp_calb_recipe_adapt_seed2021_v1/completion_receipt.json",
+      "bytes": 3555,
+      "sha256": "b083688cb61e5e82256fe1c93a8a3945aedcaace0ac7a3e8292192516d7429b0"
+    },
+    {
+      "path": "experiments/cpmlp_calb_recipe_adapt_seed2021_v1/config.json",
+      "source_path": "experiments/cpmlp_calb_recipe_adapt_seed2021_v1/config.json",
+      "bytes": 3886,
+      "sha256": "786ef050046c6ccc7afa9ff4f794245a5298fd15a8588bb58d874a5721d5c414"
+    },
+    {
+      "path": "experiments/cpmlp_calb_recipe_adapt_seed2021_v1/epoch_metrics.jsonl",
+      "source_path": "experiments/cpmlp_calb_recipe_adapt_seed2021_v1/epoch_metrics.jsonl",
+      "bytes": 12739,
+      "sha256": "8e291ef0865a2b8328c901b11f4b26bbcb3c86151443fe38b952cb76b90bee63"
+    },
+    {
+      "path": "experiments/cpmlp_calb_recipe_adapt_seed2021_v1/independent_metric_recompute.py",
+      "source_path": "experiments/cpmlp_calb_recipe_adapt_seed2021_v1/independent_metric_recompute.py",
+      "bytes": 4829,
+      "sha256": "94a6944390b3373a4888a6ed62b71844b1ce6819797e688cf65f52dd6423319f"
+    },
+    {
+      "path": "experiments/cpmlp_calb_recipe_adapt_seed2021_v1/independent_metrics.json",
+      "source_path": "experiments/cpmlp_calb_recipe_adapt_seed2021_v1/independent_metrics.json",
+      "bytes": 3812,
+      "sha256": "9f68b4b4ff23f344993fa8942343701656b4633f99e6677e84b820d386d31d5b"
+    },
+    {
+      "path": "experiments/cpmlp_calb_recipe_adapt_seed2021_v1/launch_receipt.json",
+      "source_path": "experiments/cpmlp_calb_recipe_adapt_seed2021_v1/launch_receipt.json",
+      "bytes": 441,
+      "sha256": "c2305ef5d42eacf4a962df324a33fa0c12f6c011db27d14791b81e4e4b00d2b9"
+    },
+    {
+      "path": "experiments/cpmlp_calb_recipe_adapt_seed2021_v1/root_adaptation_review.json",
+      "source_path": "experiments/cpmlp_calb_recipe_adapt_seed2021_v1/root_adaptation_review.json",
+      "bytes": 911,
+      "sha256": "ca9bd6de28cab6ecde69529d64dbe2a385383cb827dfd90756f71ed85b9f462c"
+    },
+    {
+      "path": "experiments/cpmlp_calb_recipe_adapt_seed2021_v1/root_result_decision.json",
+      "source_path": "experiments/cpmlp_calb_recipe_adapt_seed2021_v1/root_result_decision.json",
+      "bytes": 1453,
+      "sha256": "cd2d1f5e2ad0b02238017c0bc7ae6b4a4a6fb50f2603b8e9ff7f060f9cf17627"
+    },
+    {
+      "path": "experiments/cpmlp_calb_recipe_adapt_seed2021_v1/run_manifest.json",
+      "source_path": "experiments/cpmlp_calb_recipe_adapt_seed2021_v1/run_manifest.json",
+      "bytes": 2471,
+      "sha256": "29d35d7ecffa064510b5d6cf90d1a2ba4fba467c81582633489616af31c3e9ec"
+    },
+    {
+      "path": "experiments/cpmlp_calb_recipe_adapt_seed2021_v1/runner.py",
+      "source_path": "experiments/cpmlp_calb_recipe_adapt_seed2021_v1/runner.py",
+      "bytes": 14355,
+      "sha256": "2bc776d4a94249d4cb83777edc84224e4e8361466f8229b0f4b860928be235bb"
+    },
+    {
+      "path": "experiments/cpmlp_calb_recipe_adapt_seed2021_v1/validation_predictions_epoch_002.csv",
+      "source_path": "experiments/cpmlp_calb_recipe_adapt_seed2021_v1/validation_predictions_epoch_002.csv",
+      "bytes": 42118,
+      "sha256": "bffadd1558ba46cd210f9c74145296dd300a9d0aec04bf72ec8e9011c7a3755c"
     },
     {
       "path": "experiments/cpmlp_hust_pilot_seed42/fit_runs/fit_20261016T034610_311103Z/artifact_manifest.json",
@@ -1906,6 +1990,12 @@
       "source_path": "reports/pbt_validation_finite_static_v1/finite_static_receipt.json",
       "bytes": 26756,
       "sha256": "5c4b6ca92e0bd7f1465d345b132717e8e6647ccefb65a895d66f8d9a016c8605"
+    },
+    {
+      "path": "results/development_calb_cpmlp_recipe_adapt_seed2021_v1.csv",
+      "source_path": "results/development_calb_cpmlp_recipe_adapt_seed2021_v1.csv",
+      "bytes": 285,
+      "sha256": "a62c525b10e103898a67816492beb04638793632b5f8244411d0427853534965"
     },
     {
       "path": "results/development_hust_cpmlp_recipe_adapt_seed42_v2.csv",

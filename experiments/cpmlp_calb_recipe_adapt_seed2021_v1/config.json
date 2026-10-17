@@ -1,0 +1,124 @@
+{
+  "protocol_id": "cpmlp_calb_v11_recipe_adapt_seed2021_v1",
+  "status": "FROZEN_RECIPE_ADAPTATION",
+  "training_authorized": true,
+  "repository_commit": "3b17bb53202e10711deae0448c91f84144bb3dd9",
+  "dataset": "CALB",
+  "release": "v11",
+  "zenodo_record": 19688272,
+  "stage_root": "/home/yndx/zxk/rul/data/source_audit/calb_v11_trainval_stage_20261018_root",
+  "training_semantics": "official_total_eol",
+  "is_dynamic_rul": false,
+  "is_full_mix_paper_reproduction": false,
+  "is_new_method": false,
+  "split_files": {
+    "train": [
+      "CALB_35_B229.pkl",
+      "CALB_35_B173.pkl",
+      "CALB_35_B228.pkl",
+      "CALB_0_B184.pkl",
+      "CALB_35_B248.pkl",
+      "CALB_35_B227.pkl",
+      "CALB_0_B185.pkl",
+      "CALB_35_B249.pkl",
+      "CALB_35_B223.pkl",
+      "CALB_35_B224.pkl",
+      "CALB_0_B189.pkl",
+      "CALB_35_B250.pkl",
+      "CALB_0_B188.pkl",
+      "CALB_45_B256.pkl",
+      "CALB_0_B183.pkl",
+      "CALB_35_B175.pkl",
+      "CALB_0_B190.pkl"
+    ],
+    "val": [
+      "CALB_0_B187.pkl",
+      "CALB_35_B222.pkl",
+      "CALB_25_T25-2.pkl",
+      "CALB_35_B247.pkl",
+      "CALB_45_B253.pkl"
+    ],
+    "test": [
+      "CALB_0_B182.pkl",
+      "CALB_25_T25-1.pkl",
+      "CALB_35_B174.pkl",
+      "CALB_35_B230.pkl",
+      "CALB_45_B255.pkl"
+    ]
+  },
+  "seed": 2021,
+  "model": {
+    "name": "CPMLP",
+    "d_model": 128,
+    "d_ff": 256,
+    "e_layers": 4,
+    "d_layers": 2,
+    "dropout": 0.0,
+    "early_cycle_threshold": 100,
+    "seq_len": 1,
+    "charge_discharge_length": 300,
+    "input_channel_order": [
+      "voltage",
+      "current_C_rate",
+      "capacity_over_nominal_Ah"
+    ],
+    "actual_loader_tensor_order": "[batch,early_cycle,channel=3,fixed_curve_point=300]",
+    "output_num": 1
+  },
+  "fit_budget": {
+    "max_epochs": 100,
+    "max_optimizer_steps": 5200,
+    "max_wall_seconds": 1200,
+    "batch_size": 32,
+    "learning_rate": 5e-05,
+    "optimizer": "Adam",
+    "optimizer_args": {
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "eps": 1e-08,
+      "weight_decay": 0
+    },
+    "loss": "MSE on train-scaled total EOL",
+    "weighted_loss": false,
+    "save_checkpoint_each_epoch": true,
+    "selection": "validation prefix-mean MAPE over all prefixes (official run_main vali_baseline aggregation); native cell-macro MAE/MAPE reported in parallel",
+    "additional_report_metrics": [
+      "per-cell per-prefix native-cycle MAE/MAPE",
+      "cell-macro validation MAE/MAPE",
+      "train-only median EOL baseline"
+    ],
+    "test_access": "LOCKED_NO_TEST_DATASET_NO_TEST_INFERENCE",
+    "early_stop_patience": 5,
+    "early_stop_least_epochs": 5,
+    "constant_learning_rate": true,
+    "max_predictive_fits": 1
+  },
+  "scope": "CALB author totalEOL official-recipe singleGPU train/val adaptation; not full2GPU/test paper reproduction or strict online RUL",
+  "checkpoint_policy": "No resume supported; complete/partial explicitly labelled; old runs immutable",
+  "deviations": [
+    "singleGPU custom train/validation-only runner instead of2GPU accelerate/DeepSpeed",
+    "nominal global batch32 only; distributed numerical equivalence not claimed",
+    "test remains locked; no full-paper score"
+  ],
+  "batch_semantics": "singleGPU32 matches nominal2x16 global batch only; not distributed numerical equivalence",
+  "legacy_budget": {
+    "neural_fits": 3,
+    "optimizer_steps": 2060,
+    "MATR_CPU_fits": 41,
+    "not_reused_or_reset": true
+  },
+  "data_limitations": [
+    "Author totalEOL, not verified true-event strict-online RUL",
+    "Filename/official cell_id split; full physical serial and actual generator binding unverified",
+    "Stored complete-cycle processed records and ordinal prefix permissions only; no strict raw-asof claim"
+  ],
+  "expected_data": {
+    "train_cells": 17,
+    "val_cells": 5,
+    "train_prefixes": 1689,
+    "val_prefixes": 497,
+    "train_batches_per_epoch": 52
+  }
+}

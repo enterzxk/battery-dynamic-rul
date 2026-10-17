@@ -1,0 +1,77 @@
+{
+  "status": "EARLY_STOP_COMPLETED",
+  "at_utc": "2026-10-17T22:41:11.751186+00:00",
+  "new_predictive_fits": 1,
+  "optimizer_steps": 520,
+  "completed_full_epochs": 10,
+  "last_epoch": 10,
+  "best_epoch": 2,
+  "selection_metric": "validation prefix-MAPE, strict best; early-stop ties reset counter",
+  "best_validation_metrics": {
+    "cell_count": 5,
+    "prefix_count": 497,
+    "prefix_mean_mae_cycles": 61.576998889086475,
+    "prefix_mean_mape": 0.0787961436112859,
+    "cell_equal_mae_cycles": 61.63474312183111,
+    "cell_equal_mape": 0.07868657684517111,
+    "per_cell": [
+      {
+        "file_name": "CALB_0_B187.pkl",
+        "prefixes": 100,
+        "mae_cycles": 27.021390533447267,
+        "mape": 0.14297033182540422
+      },
+      {
+        "file_name": "CALB_25_T25-2.pkl",
+        "prefixes": 99,
+        "mae_cycles": 89.83595537898516,
+        "mape": 0.0914826429521234
+      },
+      {
+        "file_name": "CALB_35_B222.pkl",
+        "prefixes": 99,
+        "mae_cycles": 28.33377475931187,
+        "mape": 0.022487122824850693
+      },
+      {
+        "file_name": "CALB_35_B247.pkl",
+        "prefixes": 99,
+        "mae_cycles": 95.4333829012784,
+        "mape": 0.0676352819994886
+      },
+      {
+        "file_name": "CALB_45_B253.pkl",
+        "prefixes": 100,
+        "mae_cycles": 67.54921203613281,
+        "mape": 0.0688575046239886
+      }
+    ]
+  },
+  "selected_prediction_file": "validation_predictions_epoch_002.csv",
+  "predictions_sha256": "bffadd1558ba46cd210f9c74145296dd300a9d0aec04bf72ec8e9011c7a3755c",
+  "elapsed_seconds": 18.17192524857819,
+  "seed": 2021,
+  "test_access": false,
+  "strict_online_claim": false,
+  "full_paper_reproduction": false,
+  "checkpoint_resume_supported": false,
+  "scope": "CALB author totalEOL official-recipe singleGPU train/val adaptation; not full2GPU/test paper reproduction or strict online RUL",
+  "deviations": [
+    "singleGPU custom train/validation-only runner instead of2GPU accelerate/DeepSpeed",
+    "nominal global batch32 only; distributed numerical equivalence not claimed",
+    "test remains locked; no full-paper score"
+  ],
+  "bindings": {
+    "/home/yndx/zxk/rul/experiments/cpmlp_calb_recipe_adapt_seed2021_v1/runner.py": "2bc776d4a94249d4cb83777edc84224e4e8361466f8229b0f4b860928be235bb",
+    "/home/yndx/zxk/rul/experiments/cpmlp_calb_recipe_adapt_seed2021_v1/config.json": "786ef050046c6ccc7afa9ff4f794245a5298fd15a8588bb58d874a5721d5c414",
+    "/home/yndx/zxk/rul/src/experiments/cpmlp_hust_pilot.py": "64b4f517cc9089f8702cc60fb41e9bdd1bc19924dc02e7344bbadbb8a5ff5529",
+    "/home/yndx/zxk/rul/data/source_audit/calb_v11_trainval_stage_20261018_root/stage_manifest.json": "512db20103ecb56e72686577970bf8c7f05f281b10e128068925c358e1637146",
+    "/home/yndx/zxk/rul/reports/calb_trainval_sample_audit_20261018_root_v2/audit_typed_samples.py": "e27b55bf822ca85d2b91d8e82d367683e5320d8cdba8a5ea0babadbb8a762c24",
+    "/home/yndx/zxk/rul/reports/calb_dataset_trainval_20261018_root_v2/targeted_batch_check.json": "4dbf68e7e1a20cb78326510a224322cf8fed75dfbf32aca6afdc5958390f52ed",
+    "/home/yndx/zxk/rul/repos/pinned/BatteryLife_3b17bb53202e10711deae0448c91f84144bb3dd9/models/CPMLP.py": "a2ebd17b0c7df925776fed2067467b5388eb454ec3baf9dee4a868f19a495000",
+    "/home/yndx/zxk/rul/repos/pinned/BatteryLife_3b17bb53202e10711deae0448c91f84144bb3dd9/data_provider/data_loader.py": "f49f22e379bf9012fd284c2ef82e4fdd350e70db760f995d85661f7ac29e1fe2"
+  },
+  "legacy_fits": 3,
+  "legacy_optimizer_steps": 2060,
+  "MATR_direction_A_closed_NO_GAIN_unchanged": true
+}

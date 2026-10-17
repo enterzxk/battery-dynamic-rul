@@ -1,0 +1,24 @@
+{
+  "status": "ROOT_MINIMAL_CALB_ADAPTATION_REVIEW_PASS",
+  "at_utc": "2026-10-17T22:40:20.254146+00:00",
+  "parent_runner_sha256": "709d899447dba343cca27ba61ce0e95f67c0e7093090e3f6182895d7fbeaef6e",
+  "new_runner_sha256": "2bc776d4a94249d4cb83777edc84224e4e8361466f8229b0f4b860928be235bb",
+  "config_sha256": "786ef050046c6ccc7afa9ff4f794245a5298fd15a8588bb58d874a5721d5c414",
+  "reused_unchanged_stop_deadline_checkpoint_functions": [
+    "stopping",
+    "checkpoint_meta",
+    "bounded_batches"
+  ],
+  "changes": [
+    "CALB exact22 stage and verified typed primitive/f8 facade",
+    "official seed2021;17train/5val1689/497",
+    "52batches and5200step cap",
+    "fresh independent output/GO/budget",
+    "finite gradients in actual fit step; no extra smoke"
+  ],
+  "no_model_construction_during_review": true,
+  "new_fits": 0,
+  "optimizer_steps": 0,
+  "full_2gpu_fidelity": false,
+  "test_access": false
+}

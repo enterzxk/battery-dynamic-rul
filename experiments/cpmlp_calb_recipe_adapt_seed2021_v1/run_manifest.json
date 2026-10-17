@@ -1,0 +1,58 @@
+{
+  "at_utc": "2026-10-17T22:41:01.460806+00:00",
+  "bindings": {
+    "/home/yndx/zxk/rul/experiments/cpmlp_calb_recipe_adapt_seed2021_v1/runner.py": "2bc776d4a94249d4cb83777edc84224e4e8361466f8229b0f4b860928be235bb",
+    "/home/yndx/zxk/rul/experiments/cpmlp_calb_recipe_adapt_seed2021_v1/config.json": "786ef050046c6ccc7afa9ff4f794245a5298fd15a8588bb58d874a5721d5c414",
+    "/home/yndx/zxk/rul/src/experiments/cpmlp_hust_pilot.py": "64b4f517cc9089f8702cc60fb41e9bdd1bc19924dc02e7344bbadbb8a5ff5529",
+    "/home/yndx/zxk/rul/data/source_audit/calb_v11_trainval_stage_20261018_root/stage_manifest.json": "512db20103ecb56e72686577970bf8c7f05f281b10e128068925c358e1637146",
+    "/home/yndx/zxk/rul/reports/calb_trainval_sample_audit_20261018_root_v2/audit_typed_samples.py": "e27b55bf822ca85d2b91d8e82d367683e5320d8cdba8a5ea0babadbb8a762c24",
+    "/home/yndx/zxk/rul/reports/calb_dataset_trainval_20261018_root_v2/targeted_batch_check.json": "4dbf68e7e1a20cb78326510a224322cf8fed75dfbf32aca6afdc5958390f52ed",
+    "/home/yndx/zxk/rul/repos/pinned/BatteryLife_3b17bb53202e10711deae0448c91f84144bb3dd9/models/CPMLP.py": "a2ebd17b0c7df925776fed2067467b5388eb454ec3baf9dee4a868f19a495000",
+    "/home/yndx/zxk/rul/repos/pinned/BatteryLife_3b17bb53202e10711deae0448c91f84144bb3dd9/data_provider/data_loader.py": "f49f22e379bf9012fd284c2ef82e4fdd350e70db760f995d85661f7ac29e1fe2"
+  },
+  "seed": 2021,
+  "protocol_id": "cpmlp_calb_v11_recipe_adapt_seed2021_v1",
+  "training_labels": "CALB_v11 author total EOL",
+  "train_cells": [
+    "CALB_0_B183.pkl",
+    "CALB_0_B184.pkl",
+    "CALB_0_B185.pkl",
+    "CALB_0_B188.pkl",
+    "CALB_0_B189.pkl",
+    "CALB_0_B190.pkl",
+    "CALB_35_B173.pkl",
+    "CALB_35_B175.pkl",
+    "CALB_35_B223.pkl",
+    "CALB_35_B224.pkl",
+    "CALB_35_B227.pkl",
+    "CALB_35_B228.pkl",
+    "CALB_35_B229.pkl",
+    "CALB_35_B248.pkl",
+    "CALB_35_B249.pkl",
+    "CALB_35_B250.pkl",
+    "CALB_45_B256.pkl"
+  ],
+  "val_cells": [
+    "CALB_0_B187.pkl",
+    "CALB_25_T25-2.pkl",
+    "CALB_35_B222.pkl",
+    "CALB_35_B247.pkl",
+    "CALB_45_B253.pkl"
+  ],
+  "test_access": false,
+  "train_batches_per_epoch": 52,
+  "train_samples": 1689,
+  "validation_samples": 497,
+  "runtime": {
+    "python": "3.9.25",
+    "torch": "2.5.1+cu121",
+    "numpy": "1.26.4"
+  },
+  "determinism": "seed2021; cudnn deterministic, benchmark false; no cross-environment bitwise claim",
+  "scaler_mean": [
+    852.2941176470588
+  ],
+  "scaler_scale": [
+    532.4366590006279
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "status": "GO_CALB_AUTHOR_EOL_RECIPE_ADAPTATION_ONLY",
+  "at_utc": "2026-10-17T22:40:53.545910+00:00",
+  "owner": "01a14ba0-f032-7b42-b9d7-5862e3de2638",
+  "requested_model": "gpt-6.1-sol/high",
+  "actual_model": "NOT_INDEPENDENTLY_INTROSPECTED",
+  "strict_online_claim": false,
+  "test_access": false,
+  "max_invocations": 1,
+  "max_predictive_fits": 1,
+  "max_optimizer_steps": 5200,
+  "max_wall_seconds": 1200,
+  "bindings": {
+    "/home/yndx/zxk/rul/experiments/cpmlp_calb_recipe_adapt_seed2021_v1/runner.py": "2bc776d4a94249d4cb83777edc84224e4e8361466f8229b0f4b860928be235bb",
+    "/home/yndx/zxk/rul/experiments/cpmlp_calb_recipe_adapt_seed2021_v1/config.json": "786ef050046c6ccc7afa9ff4f794245a5298fd15a8588bb58d874a5721d5c414",
+    "/home/yndx/zxk/rul/src/experiments/cpmlp_hust_pilot.py": "64b4f517cc9089f8702cc60fb41e9bdd1bc19924dc02e7344bbadbb8a5ff5529",
+    "/home/yndx/zxk/rul/data/source_audit/calb_v11_trainval_stage_20261018_root/stage_manifest.json": "512db20103ecb56e72686577970bf8c7f05f281b10e128068925c358e1637146",
+    "/home/yndx/zxk/rul/reports/calb_trainval_sample_audit_20261018_root_v2/audit_typed_samples.py": "e27b55bf822ca85d2b91d8e82d367683e5320d8cdba8a5ea0babadbb8a762c24",
+    "/home/yndx/zxk/rul/reports/calb_dataset_trainval_20261018_root_v2/targeted_batch_check.json": "4dbf68e7e1a20cb78326510a224322cf8fed75dfbf32aca6afdc5958390f52ed",
+    "/home/yndx/zxk/rul/repos/pinned/BatteryLife_3b17bb53202e10711deae0448c91f84144bb3dd9/models/CPMLP.py": "a2ebd17b0c7df925776fed2067467b5388eb454ec3baf9dee4a868f19a495000",
+    "/home/yndx/zxk/rul/repos/pinned/BatteryLife_3b17bb53202e10711deae0448c91f84144bb3dd9/data_provider/data_loader.py": "f49f22e379bf9012fd284c2ef82e4fdd350e70db760f995d85661f7ac29e1fe2"
+  },
+  "root_review_sha256": "ca9bd6de28cab6ecde69529d64dbe2a385383cb827dfd90756f71ed85b9f462c",
+  "global_new_fits_allowed_unchanged_false": true,
+  "old_HUST_GO_consumed_not_reused": true,
+  "legacy_neural_fits": 3,
+  "legacy_neural_steps": 2060,
+  "MATR41CPUfits_separate": true,
+  "question": "One official CALB seed2021 recipe adaptation: establish validation-only cell-equal EOL-MAE and compare with fixed train-only median EOL baseline; no innovation or isolated recipe-effect claim",
+  "root_gate_judgment": "Fixed17/5 official filename population and exact22 safe source stage, real field/curve/mask/fullDataset/shared train-only scaler passed; unchanged pinned CPMLP same tensor and label interface as prior trained HUST; source/stop/deadline reviewed. Existing Python3.9 GPU runtime reused. Complete-cycle authorEOL retrospective official benchmark lane only; full physical serial/generator/strict online claims not authorized.",
+  "stop_conditions": [
+    "Any SHA/population/runtime mismatch stops without retry",
+    "Nonfinite loss/gradient/validation stops with spent budget retained",
+    "One fit;patience5 afterleast5;100full epochs or5200steps or1200seconds",
+    "No test loader or old checkpoint load/resume",
+    "No new seed/model/cell filtering or label/threshold rescue after result"
+  ]
+}

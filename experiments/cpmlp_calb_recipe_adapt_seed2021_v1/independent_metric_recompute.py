@@ -1,0 +1,24 @@
+"""Independent selected validation prediction and budget recomputation, no model."""
+from pathlib import Path
+import json,csv,math,statistics,hashlib,datetime
+R=Path('/home/yndx/zxk/rul');O=R/'experiments/cpmlp_calb_recipe_adapt_seed2021_v1'
+sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+rec=json.loads((O/'completion_receipt.json').read_text());cfg=json.loads((O/'config.json').read_text());pred=O/rec['selected_prediction_file'];assert sha(pred)==rec['predictions_sha256']
+rows=list(csv.DictReader(pred.open()));labels=json.loads((Path(cfg['stage_root'])/'Life labels/CALB_labels.json').read_text())
+expected={x['file_name']:x['prefix_samples'] for x in json.loads((R/'reports/calb_remaining20_audit_20261018_root/cohort_audit.json').read_text())['rows'] if x['role']=='validation'}
+assert len(rows)==497 and set(x['file_name'] for x in rows)==set(cfg['split_files']['val'])==set(expected)
+keys=[(x['file_name'],int(x['prefix_index'])) for x in rows];assert len(keys)==len(set(keys))
+median=float(statistics.median(labels[n] for n in cfg['split_files']['train']));per=[];maxround=0
+for name,count in expected.items():
+ rr=[x for x in rows if x['file_name']==name];assert sorted(int(x['prefix_index']) for x in rr)==list(range(1,count+1))
+ err=[float(x['prediction_total_life_cycles'])-float(x['label_total_life_cycles']) for x in rr]
+ assert all(math.isfinite(e) for e in err);maxround=max(maxround,max(abs(float(x['label_total_life_cycles'])-labels[name]) for x in rr))
+ mae=statistics.mean(abs(e) for e in err);mape=statistics.mean(abs(float(x['prediction_total_life_cycles'])-float(x['label_total_life_cycles']))/float(x['label_total_life_cycles']) for x in rr)
+ per.append(dict(cell=name,prefix_count=count,MAE=mae,MAPE=mape,bias=statistics.mean(err),exact_author_label_MAE=statistics.mean(abs(float(x['prediction_total_life_cycles'])-labels[name]) for x in rr),train_median_baseline_MAE=abs(median-labels[name]),train_median_baseline_MAPE=abs(median-labels[name])/labels[name]))
+mae=statistics.mean(x['MAE'] for x in per);mape=statistics.mean(x['MAPE'] for x in per);base=statistics.mean(x['train_median_baseline_MAE'] for x in per)
+assert abs(mae-rec['best_validation_metrics']['cell_equal_mae_cycles'])<1e-8 and abs(mape-rec['best_validation_metrics']['cell_equal_mape'])<1e-10 and maxround<1e-3
+ledger=[json.loads(x) for x in (O/'budget_ledger.jsonl').read_text().splitlines()];steps=[x['optimizer_step'] for x in ledger if x['event']=='optimizer_step'];epochs=[json.loads(x) for x in (O/'epoch_metrics.jsonl').read_text().splitlines()]
+assert steps==list(range(1,521)) and sum(x['event']=='fit_started' for x in ledger)==1 and len(epochs)==10 and all(x['epoch_complete'] and x['validation_complete'] and x['train_batches_completed']==52 for x in epochs)
+res=dict(status='SELECTED_METRICS_AND_BUDGET_RECOMPUTATION_PASS',at_utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),validation_cells=5,validation_prefixes=497,selected_epoch=rec['best_epoch'],cell_equal_EOL_MAE_cycles=mae,cell_equal_MAPE=mape,cell_equal_bias=statistics.mean(x['bias'] for x in per),prefix_mean_MAE=statistics.mean(float(x['absolute_error_cycles']) for x in rows),prefix_mean_MAPE=statistics.mean(float(x['absolute_percentage_error']) for x in rows),exact_author_label_MAE=statistics.mean(x['exact_author_label_MAE'] for x in per),max_label_scaler_roundtrip_error_cycles=maxround,train_only_median_EOL=median,train_median_cell_equal_MAE=base,train_median_cell_equal_MAPE=statistics.mean(x['train_median_baseline_MAPE'] for x in per),relative_MAE_reduction_vs_train_median=1-mae/base,improved_cells_vs_train_median=sum(x['MAE']<x['train_median_baseline_MAE'] for x in per),per_cell=per,budget=dict(new_predictive_fits=1,optimizer_steps=520,full_validated_epochs=10,ledger_contiguous=True,fit_budget_consumed=True,legacy_neural_fits=3,legacy_neural_steps=2060,cumulative_neural_fits=4,cumulative_neural_steps=2580,MATR41CPUfits_separate=True),new_fits_during_recompute=0,optimizer_steps_during_recompute=0,test_access=False,strict_online_claim=False,full_paper_reproduction=False,bindings={str(pred.relative_to(R)):sha(pred),str((O/'completion_receipt.json').relative_to(R)):sha(O/'completion_receipt.json'),str(Path(__file__).relative_to(R)):sha(Path(__file__))},limits=['One seed and only5 development validation cells selected on the same data; no independent performance confirmation','Train-median is a simple reference, not strong SOTA or a matched recipe-effect control','SingleGPU/val-only official-recipe adaptation; not official2GPU full-paper or strict online RUL','No claim of actual physical serial independence, generator identity or pretrained-overlap closure'])
+with (O/'independent_metrics.json').open('x',encoding='utf-8') as f:json.dump(res,f,indent=2);f.write('\n')
+print(json.dumps(res,ensure_ascii=True))

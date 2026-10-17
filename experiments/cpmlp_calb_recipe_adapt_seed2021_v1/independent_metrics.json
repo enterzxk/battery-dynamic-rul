@@ -1,0 +1,99 @@
+{
+  "status": "SELECTED_METRICS_AND_BUDGET_RECOMPUTATION_PASS",
+  "at_utc": "2026-10-17T22:41:39.902801+00:00",
+  "validation_cells": 5,
+  "validation_prefixes": 497,
+  "selected_epoch": 2,
+  "cell_equal_EOL_MAE_cycles": 61.63474312183111,
+  "cell_equal_MAPE": 0.07868657684517111,
+  "cell_equal_bias": -14.124906223798039,
+  "prefix_mean_MAE": 61.576998889086475,
+  "prefix_mean_MAPE": 0.0787961436112859,
+  "exact_author_label_MAE": 61.63474574634282,
+  "max_label_scaler_roundtrip_error_cycles": 1.52587890625e-05,
+  "train_only_median_EOL": 1233.0,
+  "train_median_cell_equal_MAE": 350.4,
+  "train_median_cell_equal_MAPE": 1.2367742618664943,
+  "relative_MAE_reduction_vs_train_median": 0.8241017604970573,
+  "improved_cells_vs_train_median": 4,
+  "per_cell": [
+    {
+      "cell": "CALB_0_B187.pkl",
+      "prefix_count": 100,
+      "MAE": 27.021390533447267,
+      "MAPE": 0.14297033182540425,
+      "bias": -19.576887969970702,
+      "exact_author_label_MAE": 27.02140365600586,
+      "train_median_baseline_MAE": 1044.0,
+      "train_median_baseline_MAPE": 5.523809523809524
+    },
+    {
+      "cell": "CALB_25_T25-2.pkl",
+      "prefix_count": 99,
+      "MAE": 89.83595537898516,
+      "MAPE": 0.09148264295212338,
+      "bias": 89.83595537898516,
+      "exact_author_label_MAE": 89.83595537898516,
+      "train_median_baseline_MAE": 251.0,
+      "train_median_baseline_MAPE": 0.2556008146639511
+    },
+    {
+      "cell": "CALB_35_B222.pkl",
+      "prefix_count": 99,
+      "MAE": 28.33377475931187,
+      "MAPE": 0.02248712282485069,
+      "bias": 19.044660471906564,
+      "exact_author_label_MAE": 28.33377475931187,
+      "train_median_baseline_MAE": 27.0,
+      "train_median_baseline_MAPE": 0.02142857142857143
+    },
+    {
+      "cell": "CALB_35_B247.pkl",
+      "prefix_count": 99,
+      "MAE": 95.4333829012784,
+      "MAPE": 0.0676352819994886,
+      "bias": -95.4333829012784,
+      "exact_author_label_MAE": 95.4333829012784,
+      "train_median_baseline_MAE": 178.0,
+      "train_median_baseline_MAPE": 0.1261516654854713
+    },
+    {
+      "cell": "CALB_45_B253.pkl",
+      "prefix_count": 100,
+      "MAE": 67.54921203613281,
+      "MAPE": 0.0688575046239886,
+      "bias": -64.49487609863282,
+      "exact_author_label_MAE": 67.54921203613281,
+      "train_median_baseline_MAE": 252.0,
+      "train_median_baseline_MAPE": 0.25688073394495414
+    }
+  ],
+  "budget": {
+    "new_predictive_fits": 1,
+    "optimizer_steps": 520,
+    "full_validated_epochs": 10,
+    "ledger_contiguous": true,
+    "fit_budget_consumed": true,
+    "legacy_neural_fits": 3,
+    "legacy_neural_steps": 2060,
+    "cumulative_neural_fits": 4,
+    "cumulative_neural_steps": 2580,
+    "MATR41CPUfits_separate": true
+  },
+  "new_fits_during_recompute": 0,
+  "optimizer_steps_during_recompute": 0,
+  "test_access": false,
+  "strict_online_claim": false,
+  "full_paper_reproduction": false,
+  "bindings": {
+    "experiments/cpmlp_calb_recipe_adapt_seed2021_v1/validation_predictions_epoch_002.csv": "bffadd1558ba46cd210f9c74145296dd300a9d0aec04bf72ec8e9011c7a3755c",
+    "experiments/cpmlp_calb_recipe_adapt_seed2021_v1/completion_receipt.json": "b083688cb61e5e82256fe1c93a8a3945aedcaace0ac7a3e8292192516d7429b0",
+    "experiments/cpmlp_calb_recipe_adapt_seed2021_v1/independent_metric_recompute.py": "94a6944390b3373a4888a6ed62b71844b1ce6819797e688cf65f52dd6423319f"
+  },
+  "limits": [
+    "One seed and only5 development validation cells selected on the same data; no independent performance confirmation",
+    "Train-median is a simple reference, not strong SOTA or a matched recipe-effect control",
+    "SingleGPU/val-only official-recipe adaptation; not official2GPU full-paper or strict online RUL",
+    "No claim of actual physical serial independence, generator identity or pretrained-overlap closure"
+  ]
+}

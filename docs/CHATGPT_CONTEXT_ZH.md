@@ -153,3 +153,12 @@
 - **最小验证**：label scaler只fit17train unique标签（mean852.2941176470588/scale532.4366590006279），val共享同对象且参数不变；另life_class_scaler fit1689train rows，总2次预处理fit均train_init，修复新增0。predictive_fits=0、optimizer_steps=0、model_instances=0、testPKL0。
 - **阻塞/风险**：数据接口通过不等于模型性能或正式复现；singleGPU/val-only相对官方2GPU/test有偏离，物理身份/generator/strict在线边界不变；全局new_fits_allowed=false，旧HUST消费GO不能复用。
 - **下一步**：最小适配已审HUST runner为独立CALB seed2021单GPUval-only配方，冻结候选1fit/5200steps（52batch×100epoch）/1200s和源哈希/停止条件；仅主控新scoped GO且全部适用门满足后才真实运行，不开放test。
+
+
+## 2026-10-18 06:42 北京时间：CALB官方配方适配首次真实训练完成
+
+- **已完成**：复用已审runner最小适配并签发独立scoped GO，一次CALB seed2021单GPU train/val真实fit，10完整验证epoch/520steps早停，prefix-MAPE选epoch2。5cell/497预测独立复算cell-equal EOL-MAE61.634743、MAPE0.078686577；训练中位数基线MAE350.4，4/5改善，下降82.4102%。
+- **证据**：experiments/cpmlp_calb_recipe_adapt_seed2021_v1/RESULTS_ZH.md、config/runner/ROOT_GO、completion_receipt.json、validation_predictions_epoch_002.csv、independent_metrics.json、root_result_decision.json、连续账本；results/development_calb_cpmlp_recipe_adapt_seed2021_v1.csv。预测SHAbffadd1558ba46cd210f9c74145296dd300a9d0aec04bf72ec8e9011c7a3755c。
+- **最小验证**：原stop/deadline/partial逻辑AST一致，不重复smoke；实际首batch有限loss/gradient/shape，497唯一配对键与99/100分布、原指标及10×52/连续520步账本吻合。原标签往返最大1.53e-5cycle，精确作者标签MAE61.634746。实际wall18.74s<1200；独立1fit/5200step预算已消费。
+- **阻塞/风险**：仅弱全局train-median与5开发验证电池，同集选模不是独立确认/SOTA/创新；singleGPU/val-only偏离，非完整2GPU/test论文复现或strict在线RUL。HUST/MATR NO_GAIN保留。神经累计4fits2580steps，MATR41CPUfits另记，全局new_fits_allowed=false/PBT消费/test锁不变。
+- **下一步**：只用已有CALB预测和17train标签，核有训练支持的文件组条件中位数对照（无支持组回退全局中位数），分解全局弱基线优势来源；不新fit/seed/model/inference/test或改标签/选模。

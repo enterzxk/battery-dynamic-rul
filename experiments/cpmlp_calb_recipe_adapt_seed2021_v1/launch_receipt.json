@@ -1,0 +1,13 @@
+{
+  "status": "CHILD_FINISHED",
+  "at_utc": "2026-10-17T22:41:12.287562+00:00",
+  "exit_code": 0,
+  "elapsed_seconds": 18.740842428058386,
+  "command": [
+    "/home/yndx/zxk/rul/automation/venvs/batterylife/bin/python",
+    "/home/yndx/zxk/rul/experiments/cpmlp_calb_recipe_adapt_seed2021_v1/runner.py",
+    "--fit"
+  ],
+  "external_timeout_seconds": 1200,
+  "go_sha256": "f32ad505cf601952e15f8113b9906414b6c2266f46bd045dfb91cb9d33a79d22"
+}

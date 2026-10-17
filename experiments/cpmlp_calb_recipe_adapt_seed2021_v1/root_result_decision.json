@@ -1,0 +1,19 @@
+{
+  "status": "DEVELOPMENT_BASELINE_COMPLETED_NO_INDEPENDENT_CONFIRMATION",
+  "at_utc": "2026-10-17T22:42:33.425732+00:00",
+  "scope": "CALB official-recipe singleGPU train/val adaptation only",
+  "new_fits": 1,
+  "optimizer_steps": 520,
+  "fit_budget_consumed": true,
+  "new_fits_allowed_globally": false,
+  "root_go_sha256": "f32ad505cf601952e15f8113b9906414b6c2266f46bd045dfb91cb9d33a79d22",
+  "selected_prediction_sha256": "bffadd1558ba46cd210f9c74145296dd300a9d0aec04bf72ec8e9011c7a3755c",
+  "independent_metrics_sha256": "9f68b4b4ff23f344993fa8942343701656b4633f99e6677e84b820d386d31d5b",
+  "cell_equal_MAE": 61.63474312183111,
+  "train_median_MAE": 350.4,
+  "scientific_judgment": "Real one-seed baseline training/validation chain established; model beats weak global train-median on4/5 cells. Not innovation/SOTA/full-paper/independent-generalization/strict-online proof. Global median disadvantage may be group/lifetime composition; test stronger training-only group prior before any expansion.",
+  "legacy_HUST_NO_GAIN_unchanged": true,
+  "MATR_NO_GAIN_unchanged": true,
+  "PBT_consumed_gate_unchanged": true,
+  "next_action": "Use only existing CALB selected validation predictions and training17 labels to compare with prespecified train-only file-group conditional median (global median fallback for unsupported group), decompose weak-global-median gain concentration; no refit/new seed/model/inference/test, no label/selection changes."
+}

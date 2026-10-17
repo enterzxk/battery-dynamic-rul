@@ -45,6 +45,8 @@ def main():
     chosen.update(str(p.relative_to(ROOT)) for p in (ROOT / 'reports/calb_remaining20_audit_20261018_root').rglob('*') if p.is_file())
     for directory in ['calb_dataset_trainval_20261018_root', 'calb_dataset_trainval_20261018_root_v2']:
         chosen.update(str(p.relative_to(ROOT)) for p in (ROOT / 'reports' / directory).rglob('*') if p.is_file())
+    for name in ['runner.py', 'config.json', 'ROOT_GO.json', 'root_adaptation_review.json', 'run_manifest.json', 'launch_receipt.json', 'budget_ledger.jsonl', 'epoch_metrics.jsonl', 'completion_receipt.json', 'validation_predictions_epoch_002.csv', 'independent_metric_recompute.py', 'independent_metrics.json', 'root_result_decision.json', 'RESULTS_ZH.md']:
+        chosen.add('experiments/cpmlp_calb_recipe_adapt_seed2021_v1/' + name)
     chosen.add('reports/p1_cpmlp_recipe_review_20261018_luna/review.json')
     for name in ['runner.py', 'config.json', 'ROOT_GO.json', 'stopping_check.json', 'deadline_boundary_check.json', 'failure_receipt.json', 'launch_receipt.json']:
         chosen.add('experiments/cpmlp_hust_recipe_adapt_seed42_v1/' + name)

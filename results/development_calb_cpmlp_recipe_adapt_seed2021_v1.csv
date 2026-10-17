@@ -1,0 +1,2 @@
+dataset,seed,train_cells,val_cells,val_prefixes,new_fits,optimizer_steps,full_epochs,best_epoch,cell_equal_EOL_MAE,cell_equal_MAPE,train_median_MAE,status,test_access
+CALB_v11_author_EOL,2021,17,5,497,1,520,10,2,61.63474312183111,0.07868657684517111,350.4,EARLY_STOP_COMPLETED,False
