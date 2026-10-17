@@ -1,0 +1,81 @@
+{
+  "status": "COMPLETE_RETROSPECTIVE_PROCESSED_RECORD_DIAGNOSTIC",
+  "scores": {
+    "A0|author_EOL_all_validation": {
+      "cell_macro_Time_MAE_cycles": 151.9080302349405,
+      "cell_macro_signed_bias_cycles": -45.71191277489058,
+      "cells": 34,
+      "origins": 136
+    },
+    "A0|observed_crossing_validation_only": {
+      "cell_macro_Time_MAE_cycles": 90.20578532813796,
+      "cell_macro_signed_bias_cycles": 16.00789508244996,
+      "cells": 19,
+      "origins": 76
+    },
+    "A1|author_EOL_all_validation": {
+      "cell_macro_Time_MAE_cycles": 152.54485636602797,
+      "cell_macro_signed_bias_cycles": -41.16815578683097,
+      "cells": 34,
+      "origins": 136
+    },
+    "A1|observed_crossing_validation_only": {
+      "cell_macro_Time_MAE_cycles": 91.59549823861495,
+      "cell_macro_signed_bias_cycles": 21.716914782719282,
+      "cells": 19,
+      "origins": 76
+    },
+    "A2|author_EOL_all_validation": {
+      "cell_macro_Time_MAE_cycles": 148.4576270004029,
+      "cell_macro_signed_bias_cycles": -40.20455570741521,
+      "cells": 34,
+      "origins": 136
+    },
+    "A2|observed_crossing_validation_only": {
+      "cell_macro_Time_MAE_cycles": 86.88375211530855,
+      "cell_macro_signed_bias_cycles": 17.45199515101919,
+      "cells": 19,
+      "origins": 76
+    },
+    "GBDT_A1|author_EOL_all_validation": {
+      "cell_macro_Time_MAE_cycles": 159.62201169197726,
+      "cell_macro_signed_bias_cycles": -34.887127445605465,
+      "cells": 34,
+      "origins": 136
+    },
+    "GBDT_A1|observed_crossing_validation_only": {
+      "cell_macro_Time_MAE_cycles": 104.67888616702812,
+      "cell_macro_signed_bias_cycles": 12.66345915980917,
+      "cells": 19,
+      "origins": 76
+    },
+    "GBDT_A2|author_EOL_all_validation": {
+      "cell_macro_Time_MAE_cycles": 153.77400251933156,
+      "cell_macro_signed_bias_cycles": -33.624327197960206,
+      "cells": 34,
+      "origins": 136
+    },
+    "GBDT_A2|observed_crossing_validation_only": {
+      "cell_macro_Time_MAE_cycles": 102.54548554412641,
+      "cell_macro_signed_bias_cycles": 15.02226150945578,
+      "cells": 19,
+      "origins": 76
+    }
+  },
+  "seed": 42,
+  "new_predictive_fits": 41,
+  "optimizer_steps": 0,
+  "ridge_relative_Time_MAE_reduction": 0.026793622957812846,
+  "ridge_improved_validation_cells": 21,
+  "validation_cells": 34,
+  "elapsed_seconds": 0.770324595272541,
+  "test_access": false,
+  "strict_online_claim": false,
+  "physical_identity_and_generator_limits": "Known aliases split safe; other serial identity and actual v11 generator unverified",
+  "input_permission": "complete-cycle measured capacity; no deployable I/V-only claim",
+  "training_labels": "author total EOL including extrapolated; observed subset scored separately",
+  "code_sha256": "73c044139e75b04a9a58868974a8517dcced03bb7792b9d0d7d44e3a1c653a1f",
+  "input_sha256": "b6a4dd686ce922cbbf964e40fcf610612a6e4388078b7f54cec256a18f27d211",
+  "protocol_sha256": "03df2eaab1e6695a586b45243e0859378d314209f1b8ed0e304dadbac6ab2740",
+  "predictions_sha256": "b336f3b69219d9f8c1a4044e68bb8e6b9a365b7227673d722118e3b750ca0c22"
+}

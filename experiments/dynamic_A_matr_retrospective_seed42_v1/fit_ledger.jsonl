@@ -1,0 +1,82 @@
+{"event": "fit_started", "fit_number": 1, "model": "Ridge"}
+{"event": "fit_completed", "fit_number": 1}
+{"event": "fit_started", "fit_number": 2, "model": "Ridge"}
+{"event": "fit_completed", "fit_number": 2}
+{"event": "fit_started", "fit_number": 3, "model": "Ridge"}
+{"event": "fit_completed", "fit_number": 3}
+{"event": "fit_started", "fit_number": 4, "model": "Ridge"}
+{"event": "fit_completed", "fit_number": 4}
+{"event": "fit_started", "fit_number": 5, "model": "Ridge"}
+{"event": "fit_completed", "fit_number": 5}
+{"event": "fit_started", "fit_number": 6, "model": "Ridge"}
+{"event": "fit_completed", "fit_number": 6}
+{"event": "fit_started", "fit_number": 7, "model": "Ridge"}
+{"event": "fit_completed", "fit_number": 7}
+{"event": "fit_started", "fit_number": 8, "model": "Ridge"}
+{"event": "fit_completed", "fit_number": 8}
+{"event": "fit_started", "fit_number": 9, "model": "Ridge"}
+{"event": "fit_completed", "fit_number": 9}
+{"event": "fit_started", "fit_number": 10, "model": "Ridge"}
+{"event": "fit_completed", "fit_number": 10}
+{"event": "fit_started", "fit_number": 11, "model": "Ridge"}
+{"event": "fit_completed", "fit_number": 11}
+{"event": "fit_started", "fit_number": 12, "model": "Ridge"}
+{"event": "fit_completed", "fit_number": 12}
+{"event": "fit_started", "fit_number": 13, "model": "Ridge"}
+{"event": "fit_completed", "fit_number": 13}
+{"event": "fit_started", "fit_number": 14, "model": "Ridge"}
+{"event": "fit_completed", "fit_number": 14}
+{"event": "fit_started", "fit_number": 15, "model": "Ridge"}
+{"event": "fit_completed", "fit_number": 15}
+{"event": "fit_started", "fit_number": 16, "model": "Ridge"}
+{"event": "fit_completed", "fit_number": 16}
+{"event": "fit_started", "fit_number": 17, "model": "Ridge"}
+{"event": "fit_completed", "fit_number": 17}
+{"event": "fit_started", "fit_number": 18, "model": "Ridge"}
+{"event": "fit_completed", "fit_number": 18}
+{"event": "fit_started", "fit_number": 19, "model": "Ridge"}
+{"event": "fit_completed", "fit_number": 19}
+{"event": "fit_started", "fit_number": 20, "model": "Ridge"}
+{"event": "fit_completed", "fit_number": 20}
+{"event": "fit_started", "fit_number": 21, "model": "Ridge"}
+{"event": "fit_completed", "fit_number": 21}
+{"event": "fit_started", "fit_number": 22, "model": "Ridge"}
+{"event": "fit_completed", "fit_number": 22}
+{"event": "fit_started", "fit_number": 23, "model": "Ridge"}
+{"event": "fit_completed", "fit_number": 23}
+{"event": "fit_started", "fit_number": 24, "model": "Ridge"}
+{"event": "fit_completed", "fit_number": 24}
+{"event": "fit_started", "fit_number": 25, "model": "Ridge"}
+{"event": "fit_completed", "fit_number": 25}
+{"event": "fit_started", "fit_number": 26, "model": "Ridge"}
+{"event": "fit_completed", "fit_number": 26}
+{"event": "fit_started", "fit_number": 27, "model": "Ridge"}
+{"event": "fit_completed", "fit_number": 27}
+{"event": "fit_started", "fit_number": 28, "model": "Ridge"}
+{"event": "fit_completed", "fit_number": 28}
+{"event": "fit_started", "fit_number": 29, "model": "Ridge"}
+{"event": "fit_completed", "fit_number": 29}
+{"event": "fit_started", "fit_number": 30, "model": "Ridge"}
+{"event": "fit_completed", "fit_number": 30}
+{"event": "fit_started", "fit_number": 31, "model": "Ridge"}
+{"event": "fit_completed", "fit_number": 31}
+{"event": "fit_started", "fit_number": 32, "model": "Ridge"}
+{"event": "fit_completed", "fit_number": 32}
+{"event": "fit_started", "fit_number": 33, "model": "Ridge"}
+{"event": "fit_completed", "fit_number": 33}
+{"event": "fit_started", "fit_number": 34, "model": "Ridge"}
+{"event": "fit_completed", "fit_number": 34}
+{"event": "fit_started", "fit_number": 35, "model": "Ridge"}
+{"event": "fit_completed", "fit_number": 35}
+{"event": "fit_started", "fit_number": 36, "model": "Ridge"}
+{"event": "fit_completed", "fit_number": 36}
+{"event": "fit_started", "fit_number": 37, "model": "Ridge"}
+{"event": "fit_completed", "fit_number": 37}
+{"event": "fit_started", "fit_number": 38, "model": "Ridge"}
+{"event": "fit_completed", "fit_number": 38}
+{"event": "fit_started", "fit_number": 39, "model": "Ridge"}
+{"event": "fit_completed", "fit_number": 39}
+{"event": "fit_started", "fit_number": 40, "model": "HistGradientBoostingRegressor"}
+{"event": "fit_completed", "fit_number": 40}
+{"event": "fit_started", "fit_number": 41, "model": "HistGradientBoostingRegressor"}
+{"event": "fit_completed", "fit_number": 41}

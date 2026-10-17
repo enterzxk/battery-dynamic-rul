@@ -1,0 +1,179 @@
+{
+  "decision": "NO_GAIN_FOR_COMPLEX_HISTORY_EXPANSION_ON_THIS_DIAGNOSTIC",
+  "at_utc": "2026-10-17T15:41:38.008606+00:00",
+  "reason": "Ridge gain2.679% (<5%); fixed GBDT gain3.664%, only18/34 improved and paired bootstrap interval includes0; both far below exploratory10% advance target. No new seed, model or fit authorized.",
+  "scope": "Processed-record retrospective author total-EOL agreement; not proof that rate carries no information, not strict-online/physical-generalization/reproduction claim.",
+  "observed_subgroup": "19 observed cells Ridge gain5.144%,13/19 improved, GBDT gain2.038%,8/19 improved; not robust10% advance signal.",
+  "tail_risk": "All34 Ridge p90 cell worst overestimate146.61->157.65 cycles; fixed GBDT197.50->218.21, cells with any >=200 cycle overestimate3->6.",
+  "censored_author_diagnostics": {
+    "A0": {
+      "right_censored_author_label_cells": 15,
+      "cell_macro_MAE_cycles": 230.06420711689037,
+      "worst5": [
+        [
+          "MATR_b1c2",
+          1386.4274958316237
+        ],
+        [
+          "MATR_b3c38",
+          865.1291855862551
+        ],
+        [
+          "MATR_b3c11",
+          241.58756315069968
+        ],
+        [
+          "MATR_b3c34",
+          135.27383555480856
+        ],
+        [
+          "MATR_b1c36",
+          127.10931195482203
+        ]
+      ]
+    },
+    "A1": {
+      "right_censored_author_label_cells": 15,
+      "cell_macro_MAE_cycles": 229.74737666075106,
+      "worst5": [
+        [
+          "MATR_b1c2",
+          1381.3929798417637
+        ],
+        [
+          "MATR_b3c38",
+          883.8658202246688
+        ],
+        [
+          "MATR_b3c11",
+          219.668573684208
+        ],
+        [
+          "MATR_b3c34",
+          146.4830612869666
+        ],
+        [
+          "MATR_b1c43",
+          140.54789186094223
+        ]
+      ]
+    },
+    "A2": {
+      "right_censored_author_label_cells": 15,
+      "cell_macro_MAE_cycles": 226.45120185485578,
+      "worst5": [
+        [
+          "MATR_b1c2",
+          1379.8070451089375
+        ],
+        [
+          "MATR_b3c38",
+          869.2452391246183
+        ],
+        [
+          "MATR_b3c11",
+          233.84977113019454
+        ],
+        [
+          "MATR_b1c43",
+          148.5641847786646
+        ],
+        [
+          "MATR_b1c36",
+          133.2868783117231
+        ]
+      ]
+    },
+    "GBDT_A1": {
+      "right_censored_author_label_cells": 15,
+      "cell_macro_MAE_cycles": 229.21663735691277,
+      "worst5": [
+        [
+          "MATR_b1c2",
+          1291.33090753741
+        ],
+        [
+          "MATR_b3c38",
+          786.4270065338284
+        ],
+        [
+          "MATR_b3c11",
+          291.0887395967978
+        ],
+        [
+          "MATR_b1c30",
+          161.72653940221613
+        ],
+        [
+          "MATR_b1c36",
+          157.24935510890805
+        ]
+      ]
+    },
+    "GBDT_A2": {
+      "right_censored_author_label_cells": 15,
+      "cell_macro_MAE_cycles": 218.6634573545915,
+      "worst5": [
+        [
+          "MATR_b1c2",
+          1285.7179680413478
+        ],
+        [
+          "MATR_b3c38",
+          726.829568078475
+        ],
+        [
+          "MATR_b3c11",
+          227.00163336485795
+        ],
+        [
+          "MATR_b1c30",
+          151.50176602302818
+        ],
+        [
+          "MATR_b1c43",
+          144.18691059715403
+        ]
+      ]
+    }
+  },
+  "author_minus_observed_EOL_cycles": {
+    "MATR_b2c13": 0.0,
+    "MATR_b2c2": 0.0,
+    "MATR_b2c22": 0.0,
+    "MATR_b2c25": 0.0,
+    "MATR_b2c35": 0.0,
+    "MATR_b2c40": 0.0,
+    "MATR_b2c45": 0.0,
+    "MATR_b2c46": 0.0,
+    "MATR_b2c47": 0.0,
+    "MATR_b4c13": 0.0,
+    "MATR_b4c16": 0.0,
+    "MATR_b4c22": 0.0,
+    "MATR_b4c28": 0.0,
+    "MATR_b4c3": 0.0,
+    "MATR_b4c31": 0.0,
+    "MATR_b4c32": 0.0,
+    "MATR_b4c33": 0.0,
+    "MATR_b4c39": 0.0,
+    "MATR_b4c5": 0.0
+  },
+  "new_fits": 41,
+  "fit_breakdown": {
+    "Ridge_including_CV": 39,
+    "fixed_GBDT": 2
+  },
+  "optimizer_steps": 0,
+  "legacy_CP_fits": 2,
+  "legacy_CP_optimizer_steps": 600,
+  "test_access": false,
+  "strict_online_claim": false,
+  "next_action": "Use existing predictions only to diagnose high-error right-censored cells and author-label extrapolation; no new model fitting. PBT remains stopped after consumed entry-cap failure.",
+  "bindings": {
+    "runner.py": "73c044139e75b04a9a58868974a8517dcced03bb7792b9d0d7d44e3a1c653a1f",
+    "ROOT_GO.json": "756dc312b7e52b8685dd195db69319fe1e49ca7b4d0958551c46b76df2917cdd",
+    "completion_receipt.json": "2ea5b2c9a1bebb2a8bfc8bf2a49cdeae1b128598a1d0ca8ccec6d4699e42e0f1",
+    "validation_predictions.csv": "b336f3b69219d9f8c1a4044e68bb8e6b9a365b7227673d722118e3b750ca0c22",
+    "independent_metrics.json": "974b733202beddc312b1499b8c6ca5b5b8e75cae0fac064d29a72c74c1d7c297"
+  }
+}

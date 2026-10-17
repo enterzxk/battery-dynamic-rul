@@ -1,0 +1,5 @@
+{
+  "exit_code": 0,
+  "command": "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 /home/yndx/miniconda3/envs/a40_env/bin/python /home/yndx/zxk/rul/experiments/dynamic_A_matr_retrospective_seed42_v1/runner.py",
+  "go_sha256": "756dc312b7e52b8685dd195db69319fe1e49ca7b4d0958551c46b76df2917cdd"
+}

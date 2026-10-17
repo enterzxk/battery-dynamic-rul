@@ -1,0 +1,25 @@
+{
+  "status": "GO_RETROSPECTIVE_PROCESSED_RECORD_DIAGNOSTIC_ONLY",
+  "at_utc": "2026-10-17T15:38:25.394497+00:00",
+  "owner": "01a14a80-7add-70c2-b412-5f0ae4be2c80",
+  "strict_online_claim": false,
+  "test_access": false,
+  "max_invocations": 1,
+  "max_predictive_fits": 41,
+  "planned_ridge_fits_including_cv": 39,
+  "conditional_gbdt_fits": 2,
+  "seed": 42,
+  "review_path": "/home/yndx/zxk/rul/reports/dynamic_A_matr_retrospective_independent_20261017_luna/review.json",
+  "review_sha256": "a52d7ae701427821ee2531f24a0cbda4481c112e6ca110e66bbf16c7b8d957b9",
+  "scope": "MATR processed-record retrospective author total-EOL diagnostic; all34 validation and separate19 observed crossing subgroup; complete-cycle measured capacity permission",
+  "root_review": "Read generator and runner: features caps[:k], fixed nominal denominator, past20 slope; event/label never input; known aliases resolved only within source; groupCV train-only, scaler fitted per train fold; A0/A1/A2 same val origins. Missing actual generator/serial evidence prohibits online or physical independence claims. No old PBT or strict dynamic gates opened.",
+  "stop_conditions": [
+    "any label < origin or split leakage stops with consumed claim",
+    "one invocation only; failure no retry",
+    "A2 Ridge gain <5% triggers only two fixed GBDT fits",
+    "advance only exploratory >=10% reduction and >=60% improved cells, no dominant tail failure; otherwise INCONCLUSIVE or NO_GAIN; no model/seed rescue"
+  ],
+  "runner_sha256": "73c044139e75b04a9a58868974a8517dcced03bb7792b9d0d7d44e3a1c653a1f",
+  "input_sha256": "b6a4dd686ce922cbbf964e40fcf610612a6e4388078b7f54cec256a18f27d211",
+  "protocol_sha256": "03df2eaab1e6695a586b45243e0859378d314209f1b8ed0e304dadbac6ab2740"
+}

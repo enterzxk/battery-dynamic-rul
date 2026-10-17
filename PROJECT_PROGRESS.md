@@ -45,3 +45,12 @@
 - **最小验证**：PBT复用已核helper，root仅审修复后的worker授权入口并绑定三项SHA；实际执行一次失败即停止，没有重跑旧smoke。MATR按既有拆分提取train/val、已知别名合并与错移电池排除，保存前缀范围和来源。候选表不是模型性能证据。
 - **阻塞/风险**：首分片一次性预算已消费，不扩entry cap或切分片重试；PBT模型运行仍未开放。MATR实际v11生成器与其余物理serial未知，strict_online_eligible=0，只可经独立窄审判定回顾性工程诊断资格；原严格动态训练/test门保持false。明确上下文压缩已发生，正在事务交接，不宣称未验证的迁移成功。
 - **下一步**：在fresh接续对话核候选protocol+runner一次，若隔离工程lane可接受，立即执行A0/A1/A2同cohort CPU Ridge对照并交付逐电池预测/Time-MAE；39次fit含CV，上限41次含条件固定GBDT。当前不冒称实验完成。接续入口为`docs/COORDINATOR_HANDOFF_20261017_V9_ZH.md`。
+
+
+## 2026-10-17 15:40 UTC：方向A首次真实信息增量对照完成（回顾性工程lane）
+
+- **已完成**：V9 fresh接管、同一battery-rul迁移和项目/cwd/active核验完成。独审PASS_RETROSPECTIVE_ONLY后root签发exact SHA GO，一次执行A0/A1/A2及条件固定GBDT；39 Ridge含CV+2GBDT=41 fits，optimizer_steps=0，test未访问。
+- **证据**：`experiments/dynamic_A_matr_retrospective_seed42_v1/RESULTS_ZH.md`、`validation_predictions.csv`、`completion_receipt.json`、`independent_metrics.json`、`root_decision.json`与fit_ledger；独审`reports/dynamic_A_matr_retrospective_independent_20261017_luna/review.json`。全34作者EOL Time-MAE：A0 151.9080、A1 152.5449、A2 148.4576；GBDT A1 159.6220、A2 153.7740。
+- **最小验证**：从全部原预测独立复算全34及观测19的cell-macro MAE/bias、paired改善比例、年龄层和尾部；全部匹配，41开始/完成账本匹配。未加smoke或重复训练，旧CP2fits/600steps未混记。
+- **阻塞/风险**：判NO_GAIN_FOR_COMPLEX_HISTORY_EXPANSION_ON_THIS_DIAGNOSTIC：Ridge增益2.679%/21of34，GBDT3.664%/18of34且bootstrap跨0；未达约10%推进幅度。观测19 Ridge增益5.144%仍不足。尾部未一致改善。v11实际生成器/其余physical serial未知、strict_online_eligible=0，容量权限为完整循环测量；全34含15作者外推标签，不能称严格在线或独立泛化。PBT已消费entry_cap失败不重跑。
+- **下一步**：仅用现有逐电池预测诊断高误差删失电池与作者外推标签偏差，不启动复杂历史模型/新seed或新增fit；阶段公开同步以`automation/state/github_sync.json`核回读为准。

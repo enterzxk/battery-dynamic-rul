@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "reviewer_model_requested": "gpt-6-luna/high",
+  "reviewer_runtime_identity_independently_introspectable": false,
+  "reviewer_runtime_identity": "UNVERIFIED_BY_REVIEWER",
+  "decision": "PASS_RETROSPECTIVE_ONLY",
+  "scope": "Isolated processed-record retrospective engineering diagnostic for A0/A1/A2 only; not strict-online eligibility, deployment, independent physical-cell generalization, or a scientific performance claim.",
+  "authorization_boundary": "This independent review does not write ROOT_GO.json and does not itself start a fit; the root owner retains the GO decision.",
+  "key_findings": [
+    "Inputs are mechanically derived from processed capacity rows through cycle k, after complete-cycle measurement: age=k, SOH from the last prefix capacity, cumulative capacity from prefix capacities, and the 20-cycle slope from the final 20 prefix capacities. The EOL labels, observed crossing, and event status are not in A1/A2 predictor lists.",
+    "Official split roles are parsed from the pinned split recorder and source IDs are asserted mutually exclusive. Text audit found 99 eligible train cells and 34 eligible validation cells, no cell with conflicting split roles, no duplicate cell-origin, and no author_EOL<k rows. Test IDs are skipped before summaries are read.",
+    "Known continuation aliases are excluded as whole source cells when present in train/validation. The existing identity report says the five right-side continuation IDs are absent from split names and their canonical IDs each lie in one split; this is filename/source-level alias evidence only.",
+    "Feature scaling is fit within each grouped training fold and again on all train rows for each final model. GroupKFold groups by cell_id, so different origins for one cell stay within a fold. The final validation metric averages origin MAE within each cell, then averages cells equally.",
+    "The configured budget is at most 39 Ridge fits (3 arms x [4 alphas x 3 grouped folds + 1 final fit]) plus at most 2 fixed-parameter GBDT fits, capped at 41. No optimizer is used. The conditional GBDT branch is triggered by A2-vs-A1 validation gain; its same-validation score is exploratory and must not be presented as an unbiased confirmatory estimate."
+  ],
+  "risks_and_limits": [
+    "The actual MATR v11 generator remains UNVERIFIED, and full physical serial identity / cross-source identity remains unresolved. strict_online_eligible is false for all 544 considered origins and the receipt reports zero strict-online-eligible origins.",
+    "Inputs include laboratory complete-cycle measured capacity. This cannot support an I/V-only, deployable online claim.",
+    "The target author_EOL includes author extrapolations for right-censored cells. Report the all-cell author-label lane as retrospective label agreement; keep observed-crossing evaluation separate and explicitly conditional on event-observed cells.",
+    "Cohort eligibility is a retrospective risk-set construction from observed crossing status. It is compatible with an at-risk-at-k retrospective diagnostic, but the processed-record and unverified-generator limitations prevent a strict online provenance claim.",
+    "A0/A1/A2 validation results are internal engineering diagnostics under this fixed source split and small cohort; they do not establish independent physical-cell generalization or a scientific gain."
+  ],
+  "runtime_constraints_if_root_owner_approves": {
+    "scope": "Only the exact processed candidate_features.csv and protocol_candidate.json hashes below.",
+    "arms": ["A0 early-origin EOL decrement", "A1 batch/state-age cumulative-Ah", "A2 A1 plus past-20-cycle capacity rate"],
+    "fit_budget": "39 Ridge fits including grouped train-only CV and final fits; conditional fixed GBDT diagnostics add no more than 2; hard cap 41.",
+    "test_access": false,
+    "strict_online_claim": false,
+    "training_labels": "author total EOL estimate/observed; observed crossing scored in a separate conditional lane",
+    "optimizer_steps": 0,
+    "new_fits_by_reviewer": 0
+  },
+  "evidence": [
+    {"path": "experiments/dynamic_A_matr_retrospective_seed42_v1/runner.py", "lines": "31-37, 48-68, 69-82, 85-111", "supports": "Role restriction and no train/validation cell overlap; feature lists; train-fold scaler and grouped CV; A0/A1/A2 setup; cell-macro cycle metrics; conditional GBDT branch and receipt limitations."},
+    {"path": "automation/github_export/build_dynamic_A_eligible_20261017.py", "lines": "11-28, 30-40, 43-58, 60-84, 87-96", "supports": "Known alias exclusion; fixed protocol; source-ID split exclusivity; test skip; source text hash checks; prefix-only feature construction; strict-online false and zero-fit receipt."},
+    {"path": "reports/dynamic_A_eligible_20261017_root/protocol_candidate.json", "lines": "13-27, 30-48", "supports": "Train/validation-only split, fixed at-risk cohort, label lanes, physical identity and generator caveats, complete-cycle capacity scope, arms, grouped train-only CV, metric, and no-fit/no-test intent."},
+    {"path": "reports/dynamic_A_eligible_20261017_root/cohort_receipt.json", "lines": "15-29", "supports": "544 origins considered, 530 engineering origins, 99 train and 34 validation cells, zero strict-online origins, 12 known-alias-risk origins excluded, zero new fits and optimizer steps."},
+    {"path": "reports/dynamic_A_eligible_20261017_root/candidate_features.csv", "lines": "1-2 and text-level audit of all rows", "supports": "530 rows over 133 cells (99 train, 34 validation); k values 50/100/150/200; 282 observed and 248 right-censored origins; no nonfinite feature, duplicate cell-origin, split conflict, or author_EOL<k row."},
+    {"path": "reports/dynamic_A_eligible_20261017_root/eligible_origins.csv", "lines": "1-2 and text-level audit of all rows", "supports": "544 considered origins, all marked strict_online_eligible=false; 530 marked engineering eligible and 14 excluded. Known continuation-risk cells are excluded in all their listed origins."},
+    {"path": "reports/asof_preprocessing_audit_v1/REPORT_v2.md", "lines": "38-42", "supports": "Five known MATR continuation mappings and statement that right-side continuation IDs are absent from split names; evidence does not resolve other physical identities."}
+  ],
+  "sha256": {
+    "runner.py": "73c044139e75b04a9a58868974a8517dcced03bb7792b9d0d7d44e3a1c653a1f",
+    "candidate_features.csv": "b6a4dd686ce922cbbf964e40fcf610612a6e4388078b7f54cec256a18f27d211",
+    "protocol_candidate.json": "03df2eaab1e6695a586b45243e0859378d314209f1b8ed0e304dadbac6ab2740",
+    "eligible_origins.csv": "e6e0a9903cb0401af5ed0b535f831430c0edf1c5f25f6495fd2561c8756ca4a2",
+    "cohort_receipt.json": "e5f0f1390bbd3b0f12680a9eac894cb738eea8909523afcc7971ea9e33dcd9ea",
+    "build_dynamic_A_eligible_20261017.py": "8b3943b7df54767ea67b12cbed10693214d8e74a035df5109c3e76074e1c1506",
+    "identity_evidence_REPORT_v2.md": "9b76797a2f7f6b7f6c67b1ff56c32eed3d78b97b3b31701d6f636b1c9a7f568d"
+  },
+  "review_activity": {"raw_or_binary_data_read": false, "test_data_read": false, "PBT_or_literature_work": false, "fit_or_training_executed": false, "new_fits": 0, "optimizer_steps": 0, "shared_state_modified": false}
+}

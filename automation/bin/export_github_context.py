@@ -30,6 +30,10 @@ def main():
     for item in index.get('active_static_evidence', []):
         path = item['path'].removeprefix(str(ROOT) + '/')
         chosen.add(path)
+    chosen.add('automation/github_export/build_dynamic_A_eligible_20261017.py')
+    chosen.add('reports/dynamic_A_matr_retrospective_independent_20261017_luna/review.json')
+    for name in ['runner.py', 'ROOT_GO.json', 'fit_ledger.jsonl', 'validation_predictions.csv', 'per_cell_paired_deltas.json', 'selection.json', 'completion_receipt.json', 'launch_receipt.json', 'independent_metrics.json', 'root_decision.json', 'RESULTS_ZH.md', 'independent_metric_recompute.py']:
+        chosen.add('experiments/dynamic_A_matr_retrospective_seed42_v1/' + name)
     for run in (ROOT / 'experiments').glob('*/fit_runs/*'):
         chosen.update(str(p.relative_to(ROOT)) for p in run.iterdir() if p.is_file())
 

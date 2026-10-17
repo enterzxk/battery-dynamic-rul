@@ -1,0 +1,77 @@
+{
+  "A0": {
+    "alpha": 1.0,
+    "train_only_group_cv_MAE_cycles": {
+      "0.1": 139.24694618112008,
+      "1.0": 138.93451366417426,
+      "10.0": 141.2718620413863,
+      "100.0": 178.01260378363517
+    },
+    "features": [
+      "age",
+      "soh",
+      "cumulative_discharge_Ah",
+      "batch2",
+      "batch3",
+      "batch4"
+    ]
+  },
+  "A1": {
+    "alpha": 10.0,
+    "train_only_group_cv_MAE_cycles": {
+      "0.1": 141.48625370749696,
+      "1.0": 141.1572683213208,
+      "10.0": 141.0248612833741,
+      "100.0": 173.69323002006925
+    },
+    "features": [
+      "age",
+      "soh",
+      "cumulative_discharge_Ah",
+      "batch2",
+      "batch3",
+      "batch4"
+    ]
+  },
+  "A2": {
+    "alpha": 1.0,
+    "train_only_group_cv_MAE_cycles": {
+      "0.1": 141.1438757227277,
+      "1.0": 141.02332832312325,
+      "10.0": 141.1868927700421,
+      "100.0": 168.67631039845025
+    },
+    "features": [
+      "age",
+      "soh",
+      "cumulative_discharge_Ah",
+      "batch2",
+      "batch3",
+      "batch4",
+      "capacity_slope_last20_Ah_per_cycle"
+    ]
+  },
+  "GBDT_A1": {
+    "features": [
+      "age",
+      "soh",
+      "cumulative_discharge_Ah",
+      "batch2",
+      "batch3",
+      "batch4"
+    ],
+    "fixed_hyperparameters": true
+  },
+  "GBDT_A2": {
+    "features": [
+      "age",
+      "soh",
+      "cumulative_discharge_Ah",
+      "batch2",
+      "batch3",
+      "batch4",
+      "capacity_slope_last20_Ah_per_cycle"
+    ],
+    "fixed_hyperparameters": true
+  }
+}

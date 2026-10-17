@@ -2,9 +2,11 @@
 
 本页帮助解释项目，不把规划、程序检查或文献作者数值当作本项目实验成果。请先查看 `public_snapshot.json` 的快照时间与文件哈希，再读 `PROJECT_PROGRESS.md`。这里记录的是发布快照，服务器当前状态可能已推进。
 
-## 最新执行增量：2026-10-17 15:31 UTC
+## 最新执行增量：2026-10-17 15:40 UTC
 
-以下更新优先于后文历史快照：PBT首分片已经做一次真实结构读取，2250966字节后entry_cap失败停止，未取得循环数或模型结果；不自动扩预算重试。MATR方向A已从既有文本生成530个工程候选时点（99训练/34验证源ID电池）；尚未运行新模型，严格在线资格为0。待执行的A0/A1/A2代码与候选协议不是结果，须经过一次窄范围审查后只允许隔离的回顾性已处理记录诊断。物理serial/实际v11生成器未知，实验完整循环容量也不是部署时I/V-only输入，不能据此宣布严格在线动态RUL或泛化成立。具体失败证据、候选表和第一未执行动作见PROJECT_PROGRESS最新阶段与docs/COORDINATOR_HANDOFF_20261017_V9_ZH.md。旧两次开发fit/600steps保持；本阶段新增fit=0。
+方向A已实际完成一次MATR回顾性已处理记录诊断：99训练/34验证源ID，136验证时点，seed42。全34作者总EOL Time-MAE：A0 151.9080、A1 152.5449、A2 148.4576 cycles；加速率下降2.679%，21/34改善。条件固定GBDT下降3.664%，18/34改善且配对区间跨0。观测19电池单列：Ridge A1 91.5955→A2 86.8838（5.144%），固定GBDT仅2.038%。未达约10%推进目标，root判NO_GAIN：不扩复杂历史模型，不改seed救结果；不是证明速率绝无信息。尾部未一致改善。41 fits含39 Ridge交叉验证/最终拟合+2固定GBDT，optimizer_steps=0；历史CP2fits/600steps分开。详见experiments/dynamic_A_matr_retrospective_seed42_v1/RESULTS_ZH.md及原始validation_predictions.csv/independent_metrics.json/root_decision.json。
+
+全34含15个作者外推EOL，只代表作者标签一致性；观测19为条件子群。实际v11生成器及其余物理serial仍未知，strict_online_eligible=0，完整循环测量容量也不能称I/V-only部署输入。本次exact GO只开放隔离工程lane，原严格动态/PBT/test门保持。PBT首分片真实读取2250966字节entry_cap失败预算已消费，不重跑/扩cap/切分片。新聊天owner已实际接管，同一battery-rul每15分钟任务已迁移核对；尚未经历真实耗尽后恢复，不能写成已验证。
 
 ## 项目在研究什么
 
@@ -16,7 +18,7 @@
 - 已完成 CPMLP、CPTransformer 两次 seed=42 的有界开发试验，每次 300 个优化器步骤，共 600 步。完成回执状态均为 `BUDGET_EXHAUSTED_AFTER_PARTIAL_EPOCH`：这是预算内试验结束，完整论文复现尚未完成。没有测试集推理。
 - PBT 已完成若干静态检查和一次限定的精确 DKP 键元数据采集，15 个验证电芯的键映射已找到。当前仍缺 15 个 `valid_cycle_number` 证据和 44 项历史实际 Namespace 字段；完整新运行配置尚未闭合。静态通过不等于模型运行、预测性能或训练许可。
 - 文献主文接纳记录按独立 paper_id 计为 41 篇。接纳的是带限定的阅读证据，不代表公平复现、动态 RUL 性能或创新成立。原文矛盾和未核实事项保留。
-- 当前不开放新增训练；最终 test 保持锁定。本次 GitHub 同步没有新增 fit 或优化器步骤。
+- 原严格动态与PBT模型门继续关闭；最终test保持锁定。上述隔离回顾性lane已完成41 CPU fits，无新增梯度优化器步骤，不能冒充严格动态训练授权。
 
 ## 已有真实开发结果
 

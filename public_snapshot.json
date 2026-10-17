@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-17T15:32:59.484764+00:00",
-  "content_sha256": "9da6e497f4c47bace445ba9634a236f36f1e6040e1fae44b1a9fbc16a54b280d",
-  "file_count": 236,
+  "snapshot_utc": "2026-10-17T15:41:38.285101+00:00",
+  "content_sha256": "7458f8e818b761dc41b8c6c5753aadab570fb13c89abd844fdfa9dd88bbbe888",
+  "file_count": 250,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,8 +14,8 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 9638,
-      "sha256": "7dfb516865b3905170e0c4e8cfb1cbef7301fb8182bed5fde79829fde3b86258"
+      "bytes": 11315,
+      "sha256": "b8aa9e1da229abe12cf5890e663849d9e2cf4f9fcbff05e69d3c8e6cd74af834"
     },
     {
       "path": "README.md",
@@ -32,8 +32,14 @@
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 5518,
-      "sha256": "5259aa65345f7faf020d4ac198c60696be921a177e689c1a771bc318f0a24d73"
+      "bytes": 6070,
+      "sha256": "f6354ecb2174aa5a5223061d628c625aede4fc73ab02380915c48174792ed7a8"
+    },
+    {
+      "path": "automation/github_export/build_dynamic_A_eligible_20261017.py",
+      "source_path": "automation/github_export/build_dynamic_A_eligible_20261017.py",
+      "bytes": 7873,
+      "sha256": "8b3943b7df54767ea67b12cbed10693214d8e74a035df5109c3e76074e1c1506"
     },
     {
       "path": "configs/experiments/cpmlp_hust_pilot_seed42.json",
@@ -122,8 +128,8 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 6149,
-      "sha256": "df4cdd026f68165bc18dbc91cc73187bb24b48237a30fb8e46705d8bbc390c85"
+      "bytes": 6745,
+      "sha256": "7927ec6be227e40cca9504e61c06074e960f8936cc8b1a98299f5df71e65348e"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
@@ -298,6 +304,78 @@
       "source_path": "experiments/cptransformer_hust_pilot_seed42/fit_runs/fit_20261016T040414_680559Z/val_predictions_epoch_003.csv",
       "bytes": 117729,
       "sha256": "0606f7f3f89cc145d08dfde5aa222dc08b6c6265b244d8e71052d2cd2163ab67"
+    },
+    {
+      "path": "experiments/dynamic_A_matr_retrospective_seed42_v1/RESULTS_ZH.md",
+      "source_path": "experiments/dynamic_A_matr_retrospective_seed42_v1/RESULTS_ZH.md",
+      "bytes": 4038,
+      "sha256": "bed747870dbefb6186e2f29e48da4b480823a9d91f2ea818da1d683842d44dd5"
+    },
+    {
+      "path": "experiments/dynamic_A_matr_retrospective_seed42_v1/ROOT_GO.json",
+      "source_path": "experiments/dynamic_A_matr_retrospective_seed42_v1/ROOT_GO.json",
+      "bytes": 1748,
+      "sha256": "756dc312b7e52b8685dd195db69319fe1e49ca7b4d0958551c46b76df2917cdd"
+    },
+    {
+      "path": "experiments/dynamic_A_matr_retrospective_seed42_v1/completion_receipt.json",
+      "source_path": "experiments/dynamic_A_matr_retrospective_seed42_v1/completion_receipt.json",
+      "bytes": 3096,
+      "sha256": "2ea5b2c9a1bebb2a8bfc8bf2a49cdeae1b128598a1d0ca8ccec6d4699e42e0f1"
+    },
+    {
+      "path": "experiments/dynamic_A_matr_retrospective_seed42_v1/fit_ledger.jsonl",
+      "source_path": "experiments/dynamic_A_matr_retrospective_seed42_v1/fit_ledger.jsonl",
+      "bytes": 4376,
+      "sha256": "62cb46c0fab7010f47f6ad85ce320466f21c476dcab197ebb4aaed38c7f73335"
+    },
+    {
+      "path": "experiments/dynamic_A_matr_retrospective_seed42_v1/independent_metric_recompute.py",
+      "source_path": "experiments/dynamic_A_matr_retrospective_seed42_v1/independent_metric_recompute.py",
+      "bytes": 5016,
+      "sha256": "c4394e210d7db9df2d7111db08d2e191b251717d79dc9dbf1f7a8eb4320cf775"
+    },
+    {
+      "path": "experiments/dynamic_A_matr_retrospective_seed42_v1/independent_metrics.json",
+      "source_path": "experiments/dynamic_A_matr_retrospective_seed42_v1/independent_metrics.json",
+      "bytes": 13830,
+      "sha256": "974b733202beddc312b1499b8c6ca5b5b8e75cae0fac064d29a72c74c1d7c297"
+    },
+    {
+      "path": "experiments/dynamic_A_matr_retrospective_seed42_v1/launch_receipt.json",
+      "source_path": "experiments/dynamic_A_matr_retrospective_seed42_v1/launch_receipt.json",
+      "bytes": 304,
+      "sha256": "302b95bab88e24178fca3a945dea2fe75d2afee86f069e05d3b8fcc9f28441c3"
+    },
+    {
+      "path": "experiments/dynamic_A_matr_retrospective_seed42_v1/per_cell_paired_deltas.json",
+      "source_path": "experiments/dynamic_A_matr_retrospective_seed42_v1/per_cell_paired_deltas.json",
+      "bytes": 11932,
+      "sha256": "caa25e17beafa62615bfbf643948a795179e760822bb0cdbafd0de26b0fd1713"
+    },
+    {
+      "path": "experiments/dynamic_A_matr_retrospective_seed42_v1/root_decision.json",
+      "source_path": "experiments/dynamic_A_matr_retrospective_seed42_v1/root_decision.json",
+      "bytes": 4794,
+      "sha256": "a5e38a69febeb476cd2dd0e28a9e84312788fed81ffe0eb4c57e83f0dcb9f20a"
+    },
+    {
+      "path": "experiments/dynamic_A_matr_retrospective_seed42_v1/runner.py",
+      "source_path": "experiments/dynamic_A_matr_retrospective_seed42_v1/runner.py",
+      "bytes": 8975,
+      "sha256": "73c044139e75b04a9a58868974a8517dcced03bb7792b9d0d7d44e3a1c653a1f"
+    },
+    {
+      "path": "experiments/dynamic_A_matr_retrospective_seed42_v1/selection.json",
+      "source_path": "experiments/dynamic_A_matr_retrospective_seed42_v1/selection.json",
+      "bytes": 1489,
+      "sha256": "f25bec260d8a52139c10e54e98fc5015687f7a986ab4a8ac88c91ad3f96f8509"
+    },
+    {
+      "path": "experiments/dynamic_A_matr_retrospective_seed42_v1/validation_predictions.csv",
+      "source_path": "experiments/dynamic_A_matr_retrospective_seed42_v1/validation_predictions.csv",
+      "bytes": 77048,
+      "sha256": "b336f3b69219d9f8c1a4044e68bb8e6b9a365b7227673d722118e3b750ca0c22"
     },
     {
       "path": "literature/accepted/P01_maintext_v1.json",
@@ -742,6 +820,12 @@
       "source_path": "reports/dynamic_A_eligible_20261017_root/protocol_candidate.json",
       "bytes": 1763,
       "sha256": "03df2eaab1e6695a586b45243e0859378d314209f1b8ed0e304dadbac6ab2740"
+    },
+    {
+      "path": "reports/dynamic_A_matr_retrospective_independent_20261017_luna/review.json",
+      "source_path": "reports/dynamic_A_matr_retrospective_independent_20261017_luna/review.json",
+      "bytes": 7236,
+      "sha256": "a52d7ae701427821ee2531f24a0cbda4481c112e6ca110e66bbf16c7b8d957b9"
     },
     {
       "path": "reports/literature_discussion_20261017_root_v1/LITERATURE_DISCUSSION_ZH.md",
