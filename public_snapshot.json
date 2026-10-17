@@ -1,21 +1,21 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-17T15:03:21.589181+00:00",
-  "content_sha256": "e77860da7dcaec529b1ada78d2e259f76115d9e438bb306c9fd64d01be682398",
-  "file_count": 218,
+  "snapshot_utc": "2026-10-17T15:09:08.848568+00:00",
+  "content_sha256": "83bf7b992da2ddae5132dd818a2c48030942b9a6852c9fbf7432a61794946386",
+  "file_count": 219,
   "files": [
     {
       "path": "AGENTS.md",
       "source_path": "AGENTS.md",
-      "bytes": 11035,
-      "sha256": "2df2603adebabeb54c9310a9fa4c05788ada7d7523cc6dc9377414be56cb9b22"
+      "bytes": 12751,
+      "sha256": "15bbd0aad46549f5c94de267bf427d76006a3ffdfc1d15febd78e7f89fd04c3f"
     },
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 6142,
-      "sha256": "327bcbbe2441b5666e8d00182d58163c961448a6bf1a506bc177a7cbd9f45b72"
+      "bytes": 7666,
+      "sha256": "23f359fbbf99a90627dadc9645bbd7edbc1968f67be3c4e31867021b4f674d99"
     },
     {
       "path": "README.md",
@@ -26,14 +26,14 @@
     {
       "path": "agent.md",
       "source_path": "AGENTS.md",
-      "bytes": 11035,
-      "sha256": "2df2603adebabeb54c9310a9fa4c05788ada7d7523cc6dc9377414be56cb9b22"
+      "bytes": 12751,
+      "sha256": "15bbd0aad46549f5c94de267bf427d76006a3ffdfc1d15febd78e7f89fd04c3f"
     },
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 5324,
-      "sha256": "f09fb66acc39f1e85b5c0ba65f0272b6ee5294cdbe5cfaaf626ed7983329a9cd"
+      "bytes": 5350,
+      "sha256": "21e9021652a0d6c9a977671bc2f9aa6abd7c8eee8f2a6238c725ffc1858bcc5f"
     },
     {
       "path": "configs/experiments/cpmlp_hust_pilot_seed42.json",
@@ -120,6 +120,12 @@
       "sha256": "ea4f2303053bb4218c8d42838bb1d90bcccd520d5be903e8e79312d2b37ddf27"
     },
     {
+      "path": "docs/CONTINUATION_POLICY.md",
+      "source_path": "docs/CONTINUATION_POLICY.md",
+      "bytes": 6294,
+      "sha256": "d846ecb572c6ab2c2fcfba158a22203fbb46bc70ea3ca12e17e37000a33853cd"
+    },
+    {
       "path": "docs/DYNAMIC_RUL_ASOF_FREEZE_CANDIDATE_v3_ZH.md",
       "source_path": "docs/DYNAMIC_RUL_ASOF_FREEZE_CANDIDATE_v3_ZH.md",
       "bytes": 6335,
@@ -140,8 +146,8 @@
     {
       "path": "docs/GITHUB_SYNC_ZH.md",
       "source_path": "docs/GITHUB_SYNC_ZH.md",
-      "bytes": 2573,
-      "sha256": "6ed898b1d1dc13c5ddaf7b14b9f341ef8037f9c580d641de2c6a1cabba0c0b35"
+      "bytes": 2575,
+      "sha256": "9899d379fe260cf9d63dfaaa0ec0320ad4195375e8c78b710a9f45234550d51e"
     },
     {
       "path": "docs/RESEARCH_PLAN_ZH.md",

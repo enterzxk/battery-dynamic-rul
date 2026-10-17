@@ -2,7 +2,7 @@
 
 用户于 2026-10-17 明确授权新建并同步到公开仓库 `enterzxk/battery-dynamic-rul`，默认分支 `main`。这是服务器研究项目的公开阅读镜像，服务器继续是原始科研证据的权威来源。
 
-- 复用当前每小时任务 `battery-rul`。每个实质阶段完成后，更新 PROJECT_PROGRESS.md 和 docs/CHATGPT_CONTEXT_ZH.md，再导出并同步；上轮存在未同步内容时，下一轮先补同步。无内容变化不制造新提交。
+- 复用当前每15分钟任务 `battery-rul`。每个实质阶段完成后，更新 PROJECT_PROGRESS.md 和 docs/CHATGPT_CONTEXT_ZH.md，再导出并同步；上轮存在未同步内容时，下一轮先补同步。无内容变化不制造新提交。
 - 导出命令：`/home/yndx/miniconda3/envs/a40_env/bin/python /home/yndx/zxk/rul/automation/bin/export_github_context.py`。导出只读取文本和已有预测，不加载数据二进制、不训练、不重算指标。命令返回本地于服务器的 bundle 路径和内容摘要。
 - 上传使用已连接的 GitHub 工具：先读取 main 最新提交/树，在其基础上批量 create_tree（bundle 中 tree_elements，按需分批）→ create_commit → update_ref，保留父提交并核对 expected_sha，force=false。初次空仓库需先通过 create_file 建立 README 初始提交。权限缺失、认证失败或分支冲突时保存失败，不覆盖远端变更、不读取凭据、不自动更改仓库授权。
 - 同步白名单：项目自有 src/configs/results、选定研究说明、必要数据/as-of/PBT 报告与活动入口引用的静态文本证据、文献接纳记录与综合、已有实验配置和运行回执/指标/validation 预测。完整源数据、checkpoint、论文PDF/全文/逐篇长笔记、第三方 repos、环境与运行目录、认证文件、原始控制器日志和模型会话不上传。
