@@ -43,3 +43,7 @@
 ## 可以交给网页版 GPT 的请求
 
 请先读取本仓库 README.md、docs/CHATGPT_CONTEXT_ZH.md、PROJECT_PROGRESS.md 和 public_snapshot.json，再用中文介绍：项目研究问题、实际完成的实验与结果、仍未完成的事项、当前唯一最优先行动。关键判断引用具体仓库文件；区分作者报告、本项目实测和待验证推测。不要把规划、metadata PASS、smoke 或文献接纳写成模型性能。若无法访问仓库，明确说无法读取，不能假装看过文件。
+
+## 详细精读结论
+
+新增[41篇主文精读结论与方向讨论稿](../reports/literature_discussion_20261017_root_v1/LITERATURE_DISCUSSION_ZH.md)，含逐篇附录、证据和三个可否证候选方向；讨论方向优先读它。本次复用既有精读，不声称新读41篇PDF。

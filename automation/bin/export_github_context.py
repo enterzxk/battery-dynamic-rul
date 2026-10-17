@@ -19,7 +19,7 @@ def main():
         'CHATGPT_CONTEXT_ZH.md', 'GITHUB_SYNC_ZH.md', 'RESEARCH_PLAN_ZH.md',
         'BATTERY_CONCEPTS_ZH_v0.md', 'DYNAMIC_RUL_PROTOCOL_ZH.md',
         'DYNAMIC_RUL_LABEL_DECISIONS_v1.md', 'DYNAMIC_RUL_ASOF_FREEZE_CANDIDATE_v3_ZH.md'])
-    for directory in ['data_schema_audit', 'baseline_audit', 'development_pilot', 'asof_preprocessing_audit_v1']:
+    for directory in ['data_schema_audit', 'baseline_audit', 'development_pilot', 'asof_preprocessing_audit_v1', 'literature_discussion_20261017_root_v1']:
         chosen.update(str(p.relative_to(ROOT)) for p in (ROOT / 'reports' / directory).rglob('*') if p.is_file())
     for directory in sorted((ROOT / 'reports').glob('literature_synthesis_increment*')):
         chosen.update(str(p.relative_to(ROOT)) for p in directory.rglob('*') if p.is_file())
@@ -43,7 +43,7 @@ def main():
             continue
         if not path.resolve().is_relative_to(ROOT):
             raise RuntimeError('Outside project: ' + source_path)
-        if path.suffix.lower() not in EXT or '__pycache__' in path.parts or path.stat().st_size > 2000000:
+        if path.name.startswith('reading_part_') or path.suffix.lower() not in EXT or '__pycache__' in path.parts or path.stat().st_size > 2000000:
             skipped.append({'path': source_path, 'reason': 'not_small_allowlisted_text'})
             continue
         raw = path.read_bytes()

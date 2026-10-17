@@ -1,0 +1,27 @@
+{
+  "created_utc": "2026-10-17T15:02:16.202857+00:00",
+  "scope": "41 accepted main-text records synthesized; no new full-text reading claimed",
+  "unique_main_text_papers": 41,
+  "new_fits": 0,
+  "optimizer_steps": 0,
+  "files": [
+    {
+      "path": "reports/literature_discussion_20261017_root_v1/LITERATURE_DISCUSSION_ZH.md",
+      "bytes": 19438,
+      "chars": 8129,
+      "sha256": "ad58f708d9a82ee004b1f1320513526f915947c56ede834051636f58c8f968f2"
+    },
+    {
+      "path": "reports/literature_discussion_20261017_root_v1/PAPER_BY_PAPER_ZH.md",
+      "bytes": 159145,
+      "chars": 87361,
+      "sha256": "326e6022e6fd4b16b802a85e11ebbdb0d7207b6ab2abcfafdb8e05a2852574d9"
+    },
+    {
+      "path": "reports/literature_discussion_20261017_root_v1/paper_evidence.json",
+      "bytes": 452022,
+      "chars": 269941,
+      "sha256": "3057c8bccce2ed836a0688b8ff9ed0f9280c8a32d9fff3b8539e3595df0a5686"
+    }
+  ]
+}

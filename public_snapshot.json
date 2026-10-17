@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-17T14:47:40.014159+00:00",
-  "content_sha256": "94f97bb7488128421603fc9ac1015418d27425b0fd25cc3e83cfc1072d35bb9d",
-  "file_count": 214,
+  "snapshot_utc": "2026-10-17T15:03:21.589181+00:00",
+  "content_sha256": "e77860da7dcaec529b1ada78d2e259f76115d9e438bb306c9fd64d01be682398",
+  "file_count": 218,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,14 +14,14 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 4514,
-      "sha256": "70cbf100388f3ac09e7a2909b356975597730ab7f0d9a25dcaf73c3d1c060828"
+      "bytes": 6142,
+      "sha256": "327bcbbe2441b5666e8d00182d58163c961448a6bf1a506bc177a7cbd9f45b72"
     },
     {
       "path": "README.md",
       "source_path": "docs/GITHUB_README_ZH.md",
-      "bytes": 1641,
-      "sha256": "3d422caf8f90a77e20758e176cc93cf1d68a3dc76f23071b73dcee9748a79de6"
+      "bytes": 1806,
+      "sha256": "3f8a0029a50e161b7061e90af193bff71d2c2670125a3af9cf1167b3de6b5220"
     },
     {
       "path": "agent.md",
@@ -32,8 +32,8 @@
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 5241,
-      "sha256": "7fa5cb10b334ef3c9b15ba2475922c15fe15501e623afff8fcf2915b8ef5950c"
+      "bytes": 5324,
+      "sha256": "f09fb66acc39f1e85b5c0ba65f0272b6ee5294cdbe5cfaaf626ed7983329a9cd"
     },
     {
       "path": "configs/experiments/cpmlp_hust_pilot_seed42.json",
@@ -116,8 +116,8 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 4982,
-      "sha256": "b9061a3fd08dcb28be35c14bf6cc2600a5c34ba0355697d45f4183f5d0e2b80d"
+      "bytes": 5275,
+      "sha256": "ea4f2303053bb4218c8d42838bb1d90bcccd520d5be903e8e79312d2b37ddf27"
     },
     {
       "path": "docs/DYNAMIC_RUL_ASOF_FREEZE_CANDIDATE_v3_ZH.md",
@@ -700,6 +700,30 @@
       "source_path": "reports/development_pilot/cpmlp_hust_seed42_v3/report_zh.md",
       "bytes": 908,
       "sha256": "1620218fe5fd6b6272dc05bbd88bd6dd7ded16e3098de7388a9faaa25cb369ab"
+    },
+    {
+      "path": "reports/literature_discussion_20261017_root_v1/LITERATURE_DISCUSSION_ZH.md",
+      "source_path": "reports/literature_discussion_20261017_root_v1/LITERATURE_DISCUSSION_ZH.md",
+      "bytes": 19438,
+      "sha256": "ad58f708d9a82ee004b1f1320513526f915947c56ede834051636f58c8f968f2"
+    },
+    {
+      "path": "reports/literature_discussion_20261017_root_v1/PAPER_BY_PAPER_ZH.md",
+      "source_path": "reports/literature_discussion_20261017_root_v1/PAPER_BY_PAPER_ZH.md",
+      "bytes": 159145,
+      "sha256": "326e6022e6fd4b16b802a85e11ebbdb0d7207b6ab2abcfafdb8e05a2852574d9"
+    },
+    {
+      "path": "reports/literature_discussion_20261017_root_v1/manifest.json",
+      "source_path": "reports/literature_discussion_20261017_root_v1/manifest.json",
+      "bytes": 920,
+      "sha256": "5f6e48be6a77507a51649dae996aa8d2c382d63206caecfa2745208c87e36df6"
+    },
+    {
+      "path": "reports/literature_discussion_20261017_root_v1/paper_evidence.json",
+      "source_path": "reports/literature_discussion_20261017_root_v1/paper_evidence.json",
+      "bytes": 452022,
+      "sha256": "3057c8bccce2ed836a0688b8ff9ed0f9280c8a32d9fff3b8539e3595df0a5686"
     },
     {
       "path": "reports/literature_synthesis_increment_v4_root/REVIEW_ZH.md",
@@ -1321,6 +1345,18 @@
     },
     {
       "path": "experiments/cptransformer_hust_pilot_seed42/fit_runs/fit_20261016T040414_680559Z/checkpoint_epoch_003.pt",
+      "reason": "not_small_allowlisted_text"
+    },
+    {
+      "path": "reports/literature_discussion_20261017_root_v1/reading_part_0.json",
+      "reason": "not_small_allowlisted_text"
+    },
+    {
+      "path": "reports/literature_discussion_20261017_root_v1/reading_part_14.json",
+      "reason": "not_small_allowlisted_text"
+    },
+    {
+      "path": "reports/literature_discussion_20261017_root_v1/reading_part_28.json",
       "reason": "not_small_allowlisted_text"
     },
     {

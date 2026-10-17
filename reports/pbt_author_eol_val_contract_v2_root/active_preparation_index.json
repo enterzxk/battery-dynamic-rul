@@ -242,7 +242,7 @@
       "sha256": "e9eff2c39304afdc6ecdb05c6a15b6ab45efc7886a024b21c36a1d97af02ab19"
     }
   ],
-  "next_action": "Do not rerun consumed stage0 or DKP v4. Freeze next 15-cell hash-bound valid_cycle_number structural metadata scanner and complete prospective Namespace; independent review then separate exact-stage root GO. No curve/model reads or execution before that GO.",
+  "next_action": "Create isolated inactive production IO wrapper/spec for exact first proposed4-cell shard; independent review before separate immutable single-stage root GO; do not widen budgets or rerun old stages",
   "root_model_request": "gpt-6.1-sol/high",
   "subagents_requested": "gpt-6-luna/high explicitly, fork_turns=none; independent scaler and keyshape reviews",
   "inactive_candidates": "scaler v2 weak hardcoded checks and v3 incomplete script preserved, not execution evidence",
@@ -255,7 +255,7 @@
     "test": false
   },
   "prior_index_snapshot": "/home/yndx/zxk/rul/reports/pbt_author_eol_val_contract_v4_root/previous_active_index_v3.json",
-  "updated_utc": "2026-10-17T04:22:17.197158+00:00",
+  "updated_utc": "2026-10-17T14:32:34.955396+00:00",
   "inactive_minimal_val_plan": {
     "path": "/home/yndx/zxk/rul/reports/pbt_minimal_val_same_arithmetic_plan_v1_luna/plan.json",
     "sha256": "7095dbeb7df5a1d18838eaabf62af5dae1756087697851b979eb9cd6b74b9155",
@@ -309,5 +309,22 @@
     "historical_effective_namespace_fields": 44,
     "complete_new_prospective_runtime_namespace": false,
     "model_readiness": false
+  },
+  "inactive_valid_cycle_preparation_v8": {
+    "status": "ACCEPT_SYNTHETIC_HELPER_ONLY_PRODUCTION_BLOCKED",
+    "root_acceptance_path": "/home/yndx/zxk/rul/reports/coordinator_progress_20261017_v8/root_acceptance_synthetic_only.json",
+    "root_acceptance_sha256": "8d6dfac53c9b9363786fe34bc8b7b4bbd6299b2620994fa95f5278b003d109db",
+    "author_manifest_path": "/home/yndx/zxk/rul/reports/pbt_valid_cycle_stage_v3_luna/manifest.json",
+    "author_manifest_sha256": "93b1958071c7a716ba98a2b55e115e414fb50b95ace39c2c177b9ea7c1b4a884",
+    "independent_review_path": "/home/yndx/zxk/rul/reports/pbt_valid_cycle_stage_independent_v3_luna/review.json",
+    "independent_review_sha256": "b64961f75115d15208b125f2c7e2ac54dbd3b95318d37b775cc38dfe50464b14",
+    "fixed_shard_proposal_path": "/home/yndx/zxk/rul/reports/coordinator_progress_20261017_v8/fixed15_shard_proposal_inactive.json",
+    "fixed_shard_proposal_sha256": "0abf800390edce250c4fa1c1e7deec3c41e834ed744caffae59ed73044cfbf77",
+    "real_curve_execution_go": false,
+    "allocated_invocations": 0
+  },
+  "prior_index_snapshot_before_v8": {
+    "path": "/home/yndx/zxk/rul/reports/coordinator_progress_20261017_v8/active_preparation_index_before_v8.json",
+    "sha256": "a0345229363a0c884856a85a6c963caf1971018d6201088d5a15416740f571ae"
   }
 }
