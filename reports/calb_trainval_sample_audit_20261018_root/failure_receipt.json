@@ -1,0 +1,16 @@
+{
+  "status": "FAILED_STOP_PRESERVE_STAGE",
+  "at_utc": "2026-10-17T21:40:16.667847+00:00",
+  "error_type": "AssertionError",
+  "error": "Unsupported serialization; do not expand allowlist",
+  "counters": {
+    "extracted_trainval_files": 22,
+    "static_scans": 2,
+    "restricted_sample_loads": 0,
+    "test_pkl_opened": 0,
+    "test_label_values_decoded": 0,
+    "new_fits": 0,
+    "optimizer_steps": 0,
+    "model_loads": 0
+  }
+}

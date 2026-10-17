@@ -155,3 +155,12 @@
 - **最小验证**：官方size/MD5、22固定成员CRC/SHA（合计41,987,581解压字节）及复用标签包SHA吻合，标签只扫22键、未解码任何数值；test PKL0打开、test标签数值0解码，不冒称全包逐成员CRC。源阶段加本轮估计7,834,285,913<21,474,836,480。new_fits=0、optimizer_steps=0、new_inference=0、model_loads=0。
 - **阻塞/风险**：共享标签成员读取字节仅做键扫描，测试数值未解码/保留。归档结构覆盖不等于语义/asof/物理身份或安全载入通过；CALB双进程和官方入口test冲突未闭合，训练门仍false。失败/旧预算/NO_GAIN不覆盖。
 - **下一步**：隔离固定22train/val stage，先审序列化可允许类型，安全时用受限加载检查1train+1val真实样本字段/形状/标签/有效前缀；不普通unpickle、不读test、不构造模型/fit。
+
+
+## 2026-10-18 05:42 北京时间：CALB固定22隔离与两样本真实字段审计
+
+- **已完成**：已核22train/val成员与仅22键标签create-only隔离到data/source_audit/calb_v11_trainval_stage_20261018_root。primitive-only门因验证样本NumPy scalar停止0载入，原失败保留；独立v2固定符号惰性float64替身安全载入1train+1val，不导入/调用NumPy原构造器。
+- **证据**：reports/calb_trainval_sample_audit_20261018_root_v2/SAMPLE_AUDIT_ZH.md、sample_audit.json、ROOT_TYPED_LOAD_REVIEW.json、audit_typed_samples.py及原目录serialization_gate.json/failure_receipt.json。stage_manifest SHA512db20103ecb56e72686577970bf8c7f05f281b10e128068925c358e1637146。
+- **最小验证**：CALB_35_B229训练实际99cycle/EOL1171、CALB_0_B187验证100cycle/EOL189，可用前缀99/100；两者58Ah、五必需字段长度对齐、非有限值/负容量点/循环内时间倒退均0，cell_id吻合。复用已扫两文件SHA不重扫；新fits=0、optimizer_steps=0、model_loads=0、new_inference=0、testPKL0、test标签值0解码。
+- **阻塞/风险**：仅2/22样本字段审计，不宣称全cohort合法；[100,3,300]仍为源码预期而非测量张量。99cycle不能默认为100prefix。实际重采样/归一化/mask、train-only label scaler和其余20类型未核；物理身份/strict在线/官方test入口/双进程限制保持。
+- **下一步**：固定同两样本执行pinned曲线重采样/归一化和prefix mask定向检查，核99cycle补零与100cycle边界；不重载全cohort、不fit scaler/模型或读test。

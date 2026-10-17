@@ -1,0 +1,24 @@
+{
+  "status": "GO_FIXED_TWO_CALB_SAMPLES_WITH_INERT_F8_REPLACEMENTS",
+  "at_utc": "2026-10-17T21:41:16.830036+00:00",
+  "source_sha256": "e27b55bf822ca85d2b91d8e82d367683e5320d8cdba8a5ea0babadbb8a762c24",
+  "prior_failure_sha256": "19ea0f699cc7dfd45cc2f7ce979154a0730506f678225d51337c6091847a92bb",
+  "prior_gate_sha256": "078ebb2eaad06922c91f5b54fb1a8bc3f01cbd34399a009b926f914bf4477e0f",
+  "scope": [
+    "CALB_35_B229.pkl",
+    "CALB_0_B187.pkl"
+  ],
+  "observed_validation_globals": [
+    "numpy.core.multiarray.scalar",
+    "numpy.dtype"
+  ],
+  "numeric_contract": "Only exact dtype(f8,False,True), state(3,little-endian,None,None,None,-1,-1,0), scalar8bytes -> struct-unpacked Pythonfloat. Never import/call NumPy.",
+  "unrestricted_unpickle_allowed": false,
+  "ordinary_global_imports": false,
+  "max_bytes_per_sample": 8388608,
+  "max_nodes_per_sample": 2000000,
+  "max_loaded_samples": 2,
+  "test_access": false,
+  "model_allowed": false,
+  "fits_allowed": false
+}

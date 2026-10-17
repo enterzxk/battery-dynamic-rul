@@ -1,0 +1,29 @@
+{
+  "status": "STOP_NO_LOAD",
+  "scans": [
+    {
+      "file_name": "CALB_35_B229.pkl",
+      "bytes": 1805349,
+      "opcodes": 233664,
+      "last_opcode": "STOP",
+      "stop_at_exact_end": true,
+      "blocked_opcode_counts": {},
+      "sha256": "55aa57bd16638bfba33ce3b9e78d33c2d10a050884ee2ac9879bc7f7c1307323"
+    },
+    {
+      "file_name": "CALB_0_B187.pkl",
+      "bytes": 1796280,
+      "opcodes": 412074,
+      "last_opcode": "STOP",
+      "stop_at_exact_end": true,
+      "blocked_opcode_counts": {
+        "STACK_GLOBAL": 2,
+        "REDUCE": 31391,
+        "BUILD": 1
+      },
+      "sha256": "a2f67e876ae86edc90ee87e802eea68c5b6467d422c2ef8c5077d2eef3078a3a"
+    }
+  ],
+  "ordinary_unpickle_allowed": false,
+  "scope": "Two selected samples only; remaining20 not statically scanned"
+}

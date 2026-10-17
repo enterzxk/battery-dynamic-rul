@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-17T21:27:39.758598+00:00",
-  "content_sha256": "230982e5d226bdfceeae0febf7ec046882a6fe544176a786b67aaa6ee37a446f",
-  "file_count": 320,
+  "snapshot_utc": "2026-10-17T21:41:56.865564+00:00",
+  "content_sha256": "2cb0b518f201f99058e13222fe60410ce48a3e739a67875dd1db2e010d561347",
+  "file_count": 327,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,8 +14,8 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 27181,
-      "sha256": "5e6297add8a976b1933c76e58da27196405eb098c41df77aba71c6f91c645a1d"
+      "bytes": 28762,
+      "sha256": "e57926bb91728ed41055b6b8f1fb7752a6b4b4696015da5487c25768b4d0aba5"
     },
     {
       "path": "README.md",
@@ -32,8 +32,8 @@
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 7987,
-      "sha256": "63ca40cd8b8eb293739c10194be99adb96b2197067a69ff05b33ad9e632923f4"
+      "bytes": 8215,
+      "sha256": "b0d2ed215649530243abc0dba36dfc554256156be694ef81f621f7681a4cdfb0"
     },
     {
       "path": "automation/github_export/build_dynamic_A_eligible_20261017.py",
@@ -128,8 +128,8 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 18582,
-      "sha256": "2efd921f021491acf5558eb995854fba90a07011edafdc8c98a94e4c49ce720b"
+      "bytes": 20163,
+      "sha256": "1fc160a2f59b3f2dcac64cf74268f35b9227ad201daf0938c35c6f812fce5025"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
@@ -964,6 +964,48 @@
       "source_path": "reports/calb_acquisition_20261018_root_v2/transport_repair_review.json",
       "bytes": 973,
       "sha256": "214bce7d61551dd2a0ceb01c07a152516c6f64fa2c1fe9718d753c057162c8e6"
+    },
+    {
+      "path": "reports/calb_trainval_sample_audit_20261018_root/audit_samples.py",
+      "source_path": "reports/calb_trainval_sample_audit_20261018_root/audit_samples.py",
+      "bytes": 8987,
+      "sha256": "5e89f866cc4f3075f483e5bb75135701eed93c1b5a387b4a48cd8b857dea259a"
+    },
+    {
+      "path": "reports/calb_trainval_sample_audit_20261018_root/failure_receipt.json",
+      "source_path": "reports/calb_trainval_sample_audit_20261018_root/failure_receipt.json",
+      "bytes": 434,
+      "sha256": "19ea0f699cc7dfd45cc2f7ce979154a0730506f678225d51337c6091847a92bb"
+    },
+    {
+      "path": "reports/calb_trainval_sample_audit_20261018_root/serialization_gate.json",
+      "source_path": "reports/calb_trainval_sample_audit_20261018_root/serialization_gate.json",
+      "bytes": 801,
+      "sha256": "078ebb2eaad06922c91f5b54fb1a8bc3f01cbd34399a009b926f914bf4477e0f"
+    },
+    {
+      "path": "reports/calb_trainval_sample_audit_20261018_root_v2/ROOT_TYPED_LOAD_REVIEW.json",
+      "source_path": "reports/calb_trainval_sample_audit_20261018_root_v2/ROOT_TYPED_LOAD_REVIEW.json",
+      "bytes": 974,
+      "sha256": "0e89491c6c6a6eccfe3b4f1379d58612d71ec3b3d788f18cc0071bb1fcfa04bf"
+    },
+    {
+      "path": "reports/calb_trainval_sample_audit_20261018_root_v2/SAMPLE_AUDIT_ZH.md",
+      "source_path": "reports/calb_trainval_sample_audit_20261018_root_v2/SAMPLE_AUDIT_ZH.md",
+      "bytes": 2660,
+      "sha256": "6dff0e68cb0a68e882c218d32ca6186e9f48716db79a3dd29b9eccc874d4c241"
+    },
+    {
+      "path": "reports/calb_trainval_sample_audit_20261018_root_v2/audit_typed_samples.py",
+      "source_path": "reports/calb_trainval_sample_audit_20261018_root_v2/audit_typed_samples.py",
+      "bytes": 7148,
+      "sha256": "e27b55bf822ca85d2b91d8e82d367683e5320d8cdba8a5ea0babadbb8a762c24"
+    },
+    {
+      "path": "reports/calb_trainval_sample_audit_20261018_root_v2/sample_audit.json",
+      "source_path": "reports/calb_trainval_sample_audit_20261018_root_v2/sample_audit.json",
+      "bytes": 4986,
+      "sha256": "d07a0a2bfb767d69cbbbf464aaf3d445fcb80a145bdad735fbcde1d84f0ed8f0"
     },
     {
       "path": "reports/cpmlp_recipe_error_diagnosis_20261018_root/DIAGNOSIS_ZH.md",
