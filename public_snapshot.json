@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-17T20:05:22.322999+00:00",
-  "content_sha256": "859cdadf7b58996b41bb46d6344df3004b19202c1fd7f8a0027b77f235a49d5c",
-  "file_count": 269,
+  "snapshot_utc": "2026-10-17T20:25:02.424643+00:00",
+  "content_sha256": "c490478893a29e803e36294d33fd42657f43f5b9d5d5deb1d0e130175055547f",
+  "file_count": 272,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,8 +14,8 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 17925,
-      "sha256": "540efe37173238693213d3c6cda994c83301c5cebc69d14b5e31cbc566d5d227"
+      "bytes": 19285,
+      "sha256": "5f1b03cf0818f9c970acf890f7258b36485bd8b94e4d9616de91d46ffd6e4bc7"
     },
     {
       "path": "README.md",
@@ -32,8 +32,8 @@
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 6570,
-      "sha256": "3bf90306de261bf7dac6381e33605b143a7ae942b29f5e0c6d8abe0a814d8fea"
+      "bytes": 6614,
+      "sha256": "b597ad65b012fa0822c27bfa8a0f7c9e7195d77e4ede9225a3a6c45851f5ce02"
     },
     {
       "path": "automation/github_export/build_dynamic_A_eligible_20261017.py",
@@ -128,8 +128,8 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 10540,
-      "sha256": "e8dfc47d59ec863b4ebe4808c00663cb93e7a6198154b1be8808a6b8764569aa"
+      "bytes": 11293,
+      "sha256": "8c70a24b3ed718cfdc5fca54877468fba7b6cfb14ec61cfbcf2349c857617d63"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
@@ -1036,6 +1036,24 @@
       "source_path": "reports/matr_v11_release_provenance_20261018_root/web_source_observations.json",
       "bytes": 1554,
       "sha256": "b6dac0cad0c771be6fb1bc119a7065ce7a5d97496e14893677c5b30ab2623deb"
+    },
+    {
+      "path": "reports/p1_cp_checkpoint_inventory_20261018_root/P1_CONTINUATION_REVIEW_ZH.md",
+      "source_path": "reports/p1_cp_checkpoint_inventory_20261018_root/P1_CONTINUATION_REVIEW_ZH.md",
+      "bytes": 3957,
+      "sha256": "860ebcbc3e9242f8fe4ceae698752a6b62fa9e301def375b302ddcc12f2dbc78"
+    },
+    {
+      "path": "reports/p1_cp_checkpoint_inventory_20261018_root/inventory_review.json",
+      "source_path": "reports/p1_cp_checkpoint_inventory_20261018_root/inventory_review.json",
+      "bytes": 11803,
+      "sha256": "f72e16074aee19fa497c52dc89b47f25f6486edb79e9b05aa356dee262b12b17"
+    },
+    {
+      "path": "reports/p1_cp_checkpoint_inventory_20261018_root/next_cpmlp_recipe_candidate.json",
+      "source_path": "reports/p1_cp_checkpoint_inventory_20261018_root/next_cpmlp_recipe_candidate.json",
+      "bytes": 2557,
+      "sha256": "608807e73b05634cc94d25c318172325449f9bd5bd9368c4dc58a7a35ae39b74"
     },
     {
       "path": "reports/pbt_author_eol_val_contract_v2_root/active_preparation_index.json",

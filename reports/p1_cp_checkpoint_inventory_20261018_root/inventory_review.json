@@ -1,0 +1,271 @@
+{
+  "status": "P1_EXISTING_RUNS_STATIC_RESUMABILITY_REVIEW_COMPLETE",
+  "at_utc": "2026-10-17T20:21:51.024390+00:00",
+  "models": [
+    {
+      "model": "CPMLP",
+      "run_dir": "/home/yndx/zxk/rul/experiments/cpmlp_hust_pilot_seed42/fit_runs/fit_20261016T034610_311103Z",
+      "completion_state": "BUDGET_EXHAUSTED_AFTER_PARTIAL_EPOCH",
+      "completed_marker_exists": true,
+      "consumed_optimizer_steps": 300,
+      "old_budget_max_steps": 300,
+      "old_budget_remaining_steps": 0,
+      "epoch_records": [
+        {
+          "epoch": 1,
+          "batches": 146,
+          "cumulative_steps": 146,
+          "checkpoint": "checkpoint_epoch_001.pt"
+        },
+        {
+          "epoch": 2,
+          "batches": 146,
+          "cumulative_steps": 292,
+          "checkpoint": "checkpoint_epoch_002.pt"
+        },
+        {
+          "epoch": 3,
+          "batches": 8,
+          "cumulative_steps": 300,
+          "checkpoint": "checkpoint_epoch_003.pt"
+        }
+      ],
+      "latest_checkpoint_is_partial_epoch": true,
+      "unprocessed_batches_in_epoch3": 138,
+      "checkpoint_save_schema_from_source_only": [
+        "model_state_dict",
+        "optimizer_state_dict",
+        "epoch",
+        "optimizer_steps_total",
+        "best_epoch",
+        "best_val_prefix_mean_mape",
+        "elapsed_total_seconds",
+        "config_sha256",
+        "stage_manifest_sha256",
+        "view_manifest_sha256",
+        "repository_commit",
+        "seed",
+        "rng_python_state",
+        "rng_numpy_state",
+        "rng_torch_cpu_state",
+        "rng_torch_cuda_states"
+      ],
+      "batch_cursor_saved_by_source": false,
+      "schema_and_checkpoint_contents_distinct": true,
+      "checkpoint_inventory": [
+        {
+          "path": "/home/yndx/zxk/rul/experiments/cpmlp_hust_pilot_seed42/fit_runs/fit_20261016T034610_311103Z/checkpoint_epoch_001.pt",
+          "bytes": 25876062,
+          "sha256_from_existing_ledger_not_rehashed": "fdfa841ef45563d9d2ae099ceaaecec9069c01a21d7b8ddb58c99c61e0d2ed89",
+          "ledger_step": 146,
+          "contents_deserialized": false
+        },
+        {
+          "path": "/home/yndx/zxk/rul/experiments/cpmlp_hust_pilot_seed42/fit_runs/fit_20261016T034610_311103Z/checkpoint_epoch_002.pt",
+          "bytes": 25876062,
+          "sha256_from_existing_ledger_not_rehashed": "b757aa38614dbc9d7e1d0fa5107e37fe0da07a8e0af66223e9bd8c043db9294e",
+          "ledger_step": 292,
+          "contents_deserialized": false
+        },
+        {
+          "path": "/home/yndx/zxk/rul/experiments/cpmlp_hust_pilot_seed42/fit_runs/fit_20261016T034610_311103Z/checkpoint_epoch_003.pt",
+          "bytes": 25876062,
+          "sha256_from_existing_ledger_not_rehashed": "41b4c305bf58c48293316ff159798cd59e22e9eca3670c774c815731fdbbad9a",
+          "ledger_step": 300,
+          "contents_deserialized": false
+        }
+      ],
+      "direct_resume_decision": "STOP_OLD_RUN_COMPLETE_AND_BUDGET_EXHAUSTED; exact mid-epoch continuation not established because sampler cursor/permutation absent, resume starts epoch+1",
+      "evidence_lines": {
+        "resume_guards": "src/experiments/cpmlp_hust_pilot.py:188-227",
+        "partial_epoch_save": "src/experiments/cpmlp_hust_pilot.py:240-275"
+      },
+      "official_shell_parameters": {
+        "dataset": "CALB",
+        "train_epochs": "100",
+        "early_cycle_threshold": "100",
+        "learning_rate": "0.00005",
+        "num_process": "2",
+        "batch_size": "16",
+        "seed": "2021",
+        "patience": "5",
+        "lradj": "constant"
+      },
+      "current_pilot_parameters": {
+        "dataset": "HUST",
+        "seed": 42,
+        "fit_budget": {
+          "max_epochs": 10,
+          "max_optimizer_steps": 300,
+          "max_wall_seconds": 600,
+          "batch_size": 32,
+          "learning_rate": 0.0003,
+          "optimizer": "Adam",
+          "optimizer_args": {
+            "betas": [
+              0.9,
+              0.999
+            ],
+            "eps": 1e-08,
+            "weight_decay": 0
+          },
+          "loss": "MSE on train-scaled total EOL",
+          "weighted_loss": false,
+          "save_checkpoint_each_epoch": true,
+          "selection": "validation prefix-mean MAPE over all prefixes (official run_main vali_baseline aggregation); native cell-macro MAE/MAPE reported in parallel",
+          "additional_report_metrics": [
+            "per-cell per-prefix native-cycle MAE/MAPE",
+            "cell-macro validation MAE/MAPE",
+            "train-only median EOL baseline"
+          ],
+          "test_access": "LOCKED_NO_TEST_DATASET_NO_TEST_INFERENCE"
+        }
+      },
+      "bindings": {
+        "experiments/cpmlp_hust_pilot_seed42/fit_runs/fit_20261016T034610_311103Z/completion_receipt.json": "c5ade13c03bf33bc057b76f7eb8bd83d4773bd6f4740ac2d0885206d3800a38b",
+        "experiments/cpmlp_hust_pilot_seed42/fit_runs/fit_20261016T034610_311103Z/budget_ledger.jsonl": "743e7b58c76367a209debe7aa2c614cf4de3e8e7510ceefdeb51d30b53b457ae",
+        "experiments/cpmlp_hust_pilot_seed42/fit_runs/fit_20261016T034610_311103Z/epoch_metrics.jsonl": "7476af57b85d6479d6364c94252243436c856b88dad393b0aec9179343b22806",
+        "configs/experiments/cpmlp_hust_pilot_seed42_v3.json": "e22102c87e73a0e5dc67a064d082ecf61f4dae65394efe7801374465be1793fa",
+        "src/experiments/cpmlp_hust_pilot.py": "64b4f517cc9089f8702cc60fb41e9bdd1bc19924dc02e7344bbadbb8a5ff5529",
+        "repos/pinned/BatteryLife_3b17bb53202e10711deae0448c91f84144bb3dd9/train_eval_scripts/CPMLP.sh": "bfb7ac66acc02e632fc3bfddb52946b167b4ecd6fc87a45539c7e59144c2b7d2"
+      }
+    },
+    {
+      "model": "CPTransformer",
+      "run_dir": "/home/yndx/zxk/rul/experiments/cptransformer_hust_pilot_seed42/fit_runs/fit_20261016T040414_680559Z",
+      "completion_state": "BUDGET_EXHAUSTED_AFTER_PARTIAL_EPOCH",
+      "completed_marker_exists": true,
+      "consumed_optimizer_steps": 300,
+      "old_budget_max_steps": 300,
+      "old_budget_remaining_steps": 0,
+      "epoch_records": [
+        {
+          "epoch": 1,
+          "batches": 146,
+          "cumulative_steps": 146,
+          "checkpoint": "checkpoint_epoch_001.pt"
+        },
+        {
+          "epoch": 2,
+          "batches": 146,
+          "cumulative_steps": 292,
+          "checkpoint": "checkpoint_epoch_002.pt"
+        },
+        {
+          "epoch": 3,
+          "batches": 8,
+          "cumulative_steps": 300,
+          "checkpoint": "checkpoint_epoch_003.pt"
+        }
+      ],
+      "latest_checkpoint_is_partial_epoch": true,
+      "unprocessed_batches_in_epoch3": 138,
+      "checkpoint_save_schema_from_source_only": [
+        "model_state_dict",
+        "optimizer_state_dict",
+        "epoch",
+        "optimizer_steps_total",
+        "best_epoch",
+        "best_val_prefix_mean_mape",
+        "elapsed_total_seconds",
+        "config_sha256",
+        "stage_manifest_sha256",
+        "view_manifest_sha256",
+        "repository_commit",
+        "seed",
+        "rng_python_state",
+        "rng_numpy_state",
+        "rng_torch_cpu_state",
+        "rng_torch_cuda_states"
+      ],
+      "batch_cursor_saved_by_source": false,
+      "schema_and_checkpoint_contents_distinct": true,
+      "checkpoint_inventory": [
+        {
+          "path": "/home/yndx/zxk/rul/experiments/cptransformer_hust_pilot_seed42/fit_runs/fit_20261016T040414_680559Z/checkpoint_epoch_001.pt",
+          "bytes": 28162668,
+          "sha256_from_existing_ledger_not_rehashed": "899f5274de0b419b0c7b4011a9b1c3ca42b54bf387fdc4a11b36b67a32775eef",
+          "ledger_step": 146,
+          "contents_deserialized": false
+        },
+        {
+          "path": "/home/yndx/zxk/rul/experiments/cptransformer_hust_pilot_seed42/fit_runs/fit_20261016T040414_680559Z/checkpoint_epoch_002.pt",
+          "bytes": 28162668,
+          "sha256_from_existing_ledger_not_rehashed": "55f99ab99fd1c277e6ceb9e890da13b790e429f6742352370b224706f0cb75da",
+          "ledger_step": 292,
+          "contents_deserialized": false
+        },
+        {
+          "path": "/home/yndx/zxk/rul/experiments/cptransformer_hust_pilot_seed42/fit_runs/fit_20261016T040414_680559Z/checkpoint_epoch_003.pt",
+          "bytes": 28162668,
+          "sha256_from_existing_ledger_not_rehashed": "4d60f4febdf91eba047aaca023d84c8dc9e754bc3c0d1e4c00fd818696601b8a",
+          "ledger_step": 300,
+          "contents_deserialized": false
+        }
+      ],
+      "direct_resume_decision": "STOP_OLD_RUN_COMPLETE_AND_BUDGET_EXHAUSTED; exact mid-epoch continuation not established because sampler cursor/permutation absent, resume starts epoch+1",
+      "evidence_lines": {
+        "resume_guards": "src/experiments/cptransformer_hust_pilot.py:188-227",
+        "partial_epoch_save": "src/experiments/cptransformer_hust_pilot.py:240-275"
+      },
+      "official_shell_parameters": {
+        "dataset": "MIX_large",
+        "train_epochs": "100",
+        "early_cycle_threshold": "100",
+        "learning_rate": "0.00005",
+        "num_process": "2",
+        "batch_size": "32",
+        "patience": "5",
+        "lradj": "constant",
+        "seed": "2024"
+      },
+      "current_pilot_parameters": {
+        "dataset": "HUST",
+        "seed": 42,
+        "fit_budget": {
+          "max_epochs": 10,
+          "max_optimizer_steps": 300,
+          "max_wall_seconds": 600,
+          "batch_size": 32,
+          "learning_rate": 0.0003,
+          "optimizer": "Adam",
+          "optimizer_args": {
+            "betas": [
+              0.9,
+              0.999
+            ],
+            "eps": 1e-08,
+            "weight_decay": 0
+          },
+          "loss": "MSE on train-scaled total EOL",
+          "weighted_loss": false,
+          "save_checkpoint_each_epoch": true,
+          "selection": "validation prefix-mean MAPE over all prefixes (official run_main vali_baseline aggregation); native cell-macro MAE/MAPE reported in parallel",
+          "additional_report_metrics": [
+            "per-cell per-prefix native-cycle MAE/MAPE",
+            "cell-macro validation MAE/MAPE",
+            "train-only median EOL baseline"
+          ],
+          "test_access": "LOCKED_NO_TEST_DATASET_NO_TEST_INFERENCE"
+        }
+      },
+      "bindings": {
+        "experiments/cptransformer_hust_pilot_seed42/fit_runs/fit_20261016T040414_680559Z/completion_receipt.json": "4670106e73ab1c6336f0189cd916d51bb6d40d325037795443ab945df96fa699",
+        "experiments/cptransformer_hust_pilot_seed42/fit_runs/fit_20261016T040414_680559Z/budget_ledger.jsonl": "360fea578e2c0fdd5f749cd3cc0f1e3cc728c89ed0ee7a511c327ce86bc5e91f",
+        "experiments/cptransformer_hust_pilot_seed42/fit_runs/fit_20261016T040414_680559Z/epoch_metrics.jsonl": "d8f10434962912a12518f0859f1d564b7eb76218f3bcebd009ee341a77d7564f",
+        "configs/experiments/cptransformer_hust_pilot_seed42_v1.json": "4c9668606f6019284fe12753c998d46d1d738462f555e20b30261a030b320125",
+        "src/experiments/cptransformer_hust_pilot.py": "260648dbae2030d2fb1be340adab4580047421233166ba12598214306b6adb46",
+        "repos/pinned/BatteryLife_3b17bb53202e10711deae0448c91f84144bb3dd9/train_eval_scripts/CPTransformer.sh": "15f78c8ef273af0f35c6cf28208900d2e237c91126bff3fc0ce6ab5f09769be2"
+      }
+    }
+  ],
+  "legacy_fits": 2,
+  "legacy_optimizer_steps": 600,
+  "new_fits": 0,
+  "new_optimizer_steps": 0,
+  "checkpoint_contents_read": false,
+  "model_construction": false,
+  "test_access": false,
+  "finding": "Files named epoch003 are checkpoints of a budget-truncated third epoch at step300, not completed epoch boundaries. Source saves model/Adam/RNG but no batch cursor. Old immutable completed runs are not resumable under their existing300-step cap.",
+  "scientific_boundary": "Existing runs remain bounded HUST author-total-EOL development pilots; official shell tasks and seeds differ, so neither is full paper reproduction."
+}

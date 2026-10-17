@@ -26,6 +26,10 @@
 
 一次官方MATR v11来源核查已结束：Zenodo record19688272的v11/发布日期2026-04-22及MATR.zip MD5可核，与既有下载回执一致；版本说明中的MATR变更是b3c0 seen/unseen分类。已读HTML/Version11文档没有精确generator绑定；完整API metadata获取失败（web不可访问，服务器一次请求DNS失败），其字段UNKNOWN，不能扩大为“所有官方metadata无凭证”。actual v11 provenance保持未核，严格在线/PBT/test门未改，方向A闭合NO_GAIN。证据见`reports/matr_v11_release_provenance_20261018_root/PROVENANCE_CHECK_ZH.md`及root_review；新增fit=0。下一项转P1已有完成回执/配置/checkpoint清单静态核对，不自动训练或重置旧600步。
 
+## 2026-10-18 04:21 北京时间增量：P1接续判定
+
+上轮来源核查已补同步2e794b27。CPMLP/CPTransformer旧运行各300步实际为epoch1/2各146批、epoch3仅8批；checkpoint003是partial epoch3，不能称3完整epoch或无损自动恢复。源码有模型/Adam/RNG但无batch游标，且旧completion及预算耗尽门保留。核查没有加载checkpoint或新fit。旧pilot不是完整论文复现；已具体准备一个HUST官方配方适配CPMLP的DRAFT候选（1fit/14600步/1200秒拟议，未分配/未GO），下一项是独立runner最小实现与一次停止边界检查。证据见`reports/p1_cp_checkpoint_inventory_20261018_root/P1_CONTINUATION_REVIEW_ZH.md`。不挽救MATR NO_GAIN，不重置旧600步或访问test。
+
 ## 项目在研究什么
 
 研究电池随着循环数据逐步到达时，如何合法、准确地更新剩余使用寿命（RUL）。核心问题是：动态更新能否优于“早期预测总寿命 EOL，再减去当前循环数”的固定预测基线？必须先解决标签定义、物理电池拆分、前缀可见性和归一化问题，再比较模型。路线为 P0 数据审计 → P1 BatteryLife 最小可信复现 → P2 PBT checkpoint/适配复现 → P3 动态 RUL → P4 失败模式 → P5 最小创新验证。路线不是完成清单。

@@ -101,3 +101,12 @@
 - **最小验证**：MD5比对旧已核回执、pinned版本说明SHA留存；没有重读归档/下载数据/new fit或test。new_fits=0、optimizer_steps=0。
 - **阻塞/风险**：完整API metadata未取得；web工具不可访问API，服务器一次API请求DNS临时失败，不改DNS/代理、不循环重试。只称已读HTML/更新说明未发现绑定，API字段UNKNOWN，不能声称全metadata缺失。STOP_ACTUAL_V11_GENERATOR_PROVENANCE_NOT_CLOSED，方向A闭合NO_GAIN与旧PBT/模型/test门保持。
 - **下一步**：转P1只读已有CP完成回执/冻结配置/checkpoint清单与stat，判断独立预算下的忠实复现可推进性；不加载checkpoint、不重跑fit或重置旧600步，不启动训练。
+
+
+## 2026-10-18 04:21 北京时间：补同步与P1检查点接续判定
+
+- **已完成**：上轮MATR来源核查已补发布并回读，提交2e794b2758a3f33839918e7b1bb5f7c6712a8d3f。核已有CP两次运行：各300步=146+146+8批，checkpoint003是partial epoch3，旧剩余预算0；不能自动resume。已形成一个独立HUST官方配方适配候选（DRAFT，不是新训练）。
+- **证据**：`reports/p1_cp_checkpoint_inventory_20261018_root/P1_CONTINUATION_REVIEW_ZH.md`、`inventory_review.json`、`next_cpmlp_recipe_candidate.json`；旧完成回执/账本/源代码/配置SHA与checkpoint stat对应。
+- **最小验证**：两份runner/config SHA与完成回执一致，300步账本连续，checkpoint事件146/292/300与epoch批次146/146/8匹配；只读源码/JSON/stat，未加载checkpoint、构造模型或fit。new_fits=0、optimizer_steps=0。
+- **阻塞/风险**：源码保存模型/Adam/RNG但无batch排列/游标，且旧completion与预算门禁止恢复。不能把文件名epoch003当完整epoch。旧pilot的HUST/seed42/LR3e-4/执行方式不同于官方CALB或MIX脚本，不能称全论文复现。
+- **下一步**：创建一个独立CPMLP适配runner/config（LR5e-5、官方早停patience5且least_epochs5、诚实partial标记）；一次停止/保存边界检查后root判exact GO，旧结果/600步预算不动。
