@@ -1,0 +1,12 @@
+{
+  "status": "CHILD_FINISHED",
+  "exit_code": 0,
+  "elapsed_seconds": 126.79402309283614,
+  "command": [
+    "/home/yndx/zxk/rul/automation/venvs/batterylife/bin/python",
+    "/home/yndx/zxk/rul/experiments/cpmlp_hust_recipe_adapt_seed42_v2/runner.py",
+    "--fit"
+  ],
+  "external_timeout_seconds": 1200,
+  "go_sha256": "f996c533316716aa9cd3e9bf50232e3af5dfbb3ba24b675d362f4d12f498872e"
+}

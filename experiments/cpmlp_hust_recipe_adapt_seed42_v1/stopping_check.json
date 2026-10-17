@@ -1,0 +1,10 @@
+{
+  "status": "PASS_SINGLE_TARGETED_BOUNDARY_CHECK",
+  "worsening_stop_epoch": 10,
+  "tie_resets_counter": true,
+  "partial8of146_marked_incomplete": true,
+  "model_imports": 0,
+  "data_reads": 0,
+  "new_fits": 0,
+  "optimizer_steps": 0
+}

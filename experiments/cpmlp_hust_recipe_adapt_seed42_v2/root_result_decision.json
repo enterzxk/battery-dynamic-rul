@@ -1,0 +1,30 @@
+{
+  "status": "P1_ADAPTED_RECIPE_RUN_COMPLETE_NO_GAIN_VS_PILOT",
+  "at_utc": "2026-10-17T20:43:26.284374+00:00",
+  "operational_result": "One real fit completed via official early-stop semantics; independent metrics and budget recomputation passed",
+  "scientific_result": "New HUST author-EOL validation MAE194.0073 is9.3719% worse than old CPMLP bounded pilot177.3831;6/15 cells improved. No recipe gain, paper reproduction, strict-online or generalization claim. Different LR/duration/RNG sequence prevent isolated causal interpretation.",
+  "new_fits": 1,
+  "new_optimizer_steps": 1460,
+  "failed_prefit_launch_fits": 0,
+  "failed_prefit_launch_steps": 0,
+  "legacy_neural_fits": 2,
+  "legacy_optimizer_steps": 600,
+  "neural_totals_after_stage": {
+    "fits": 3,
+    "optimizer_steps": 2060
+  },
+  "MATR_cpu41fits_NO_GAIN_preserved": true,
+  "test_access": false,
+  "strict_online_claim": false,
+  "no_seed_or_model_rescue": true,
+  "next_action": "Use existing old/new predictions to explain recipe error increase by cell and early-prefix range; no new fit or seed, no isolated LR-effect claim.",
+  "bindings": {
+    "runner.py": "709d899447dba343cca27ba61ce0e95f67c0e7093090e3f6182895d7fbeaef6e",
+    "config.json": "9fb2031e0b7d6a44ea95ae4dc17ff2c927681b1a24966720be033cfc99e8f4c7",
+    "ROOT_GO.json": "f996c533316716aa9cd3e9bf50232e3af5dfbb3ba24b675d362f4d12f498872e",
+    "completion_receipt.json": "8ddb0835dde77e000ea1db6182519f88b31d070dbf60d19b5efddc322fde82c9",
+    "independent_metrics.json": "8a93a622d341ec0846ec1768c03ddb72d9b73ff77e15ec3f15aca8685ed5678c",
+    "validation_predictions_epoch_003.csv": "156b00a5b0832b0b3938c840be2cb1ab270a543092305732945cccfa73c30975"
+  },
+  "initial_failure_receipt_sha256": "51bb0d0483fa002e1cc3680a672374ede76ea74b5cb97cabd4c411dbeeed8274"
+}

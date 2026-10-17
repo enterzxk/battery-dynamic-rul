@@ -110,3 +110,12 @@
 - **最小验证**：两份runner/config SHA与完成回执一致，300步账本连续，checkpoint事件146/292/300与epoch批次146/146/8匹配；只读源码/JSON/stat，未加载checkpoint、构造模型或fit。new_fits=0、optimizer_steps=0。
 - **阻塞/风险**：源码保存模型/Adam/RNG但无batch排列/游标，且旧completion与预算门禁止恢复。不能把文件名epoch003当完整epoch。旧pilot的HUST/seed42/LR3e-4/执行方式不同于官方CALB或MIX脚本，不能称全论文复现。
 - **下一步**：创建一个独立CPMLP适配runner/config（LR5e-5、官方早停patience5且least_epochs5、诚实partial标记）；一次停止/保存边界检查后root判exact GO，旧结果/600步预算不动。
+
+
+## 2026-10-18 04:43 北京时间：CPMLP真实完整配方适配运行完成（负面结果保留）
+
+- **已完成**：独立runner实现与窄审后执行一次真实CPMLP HUST作者EOL配方适配，10完整epochs/1460steps，early-stop完成，选epoch3；MAE194.0073、MAPE0.10136755，比旧pilot177.3831差9.3719%，6/15电池改善，无性能增益。
+- **证据**：`experiments/cpmlp_hust_recipe_adapt_seed42_v2/{RESULTS_ZH.md,completion_receipt.json,independent_metrics.json,validation_predictions_epoch_003.csv,root_result_decision.json}`，`results/development_hust_cpmlp_recipe_adapt_seed42_v2.csv`；独审`reports/p1_cpmlp_recipe_review_20261018_luna/review.json`。
+- **最小验证**：停止/partial逻辑与修复deadline边界定向检查；未重复旧smoke。已选1500条预测独立复算吻合，1460连续步/10个完整验证epoch。v1缺batteryml启动失败fit0/step0保留，v2只改目录/使用已有项目环境，未扩大1fit预算；实际wall126.79s<1200s。
+- **阻塞/风险**：HUST/seed42/singleGPU/val-only为配方适配偏离，非CALB/MIX完整论文复现/strict在线RUL。旧600步与MATR41CPU fits分开，新神经训练累计2060steps；新旧配方/初始化顺序/时长改变，不能孤立归因学习率。PBT/test/物理身份和生成器限制保持。
+- **下一步**：只用既有新旧预测分析误差上升的电池与早期prefix位置；不换seed/模型或追加训练救分。

@@ -1,0 +1,12 @@
+{
+  "status": "CHILD_FINISHED",
+  "exit_code": 1,
+  "elapsed_seconds": 1.9673786368221045,
+  "command": [
+    "/home/yndx/miniconda3/envs/a40_env/bin/python",
+    "/home/yndx/zxk/rul/experiments/cpmlp_hust_recipe_adapt_seed42_v1/runner.py",
+    "--fit"
+  ],
+  "external_timeout_seconds": 1200,
+  "go_sha256": "8ed0fb4fe74297d318c961789b962c3255aaaf2347d2687f504ac6d534d29ab9"
+}

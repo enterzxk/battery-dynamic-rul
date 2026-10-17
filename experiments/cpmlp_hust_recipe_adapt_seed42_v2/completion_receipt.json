@@ -1,0 +1,137 @@
+{
+  "status": "EARLY_STOP_COMPLETED",
+  "at_utc": "2026-10-17T20:41:42.751402+00:00",
+  "new_predictive_fits": 1,
+  "optimizer_steps": 1460,
+  "completed_full_epochs": 10,
+  "last_epoch": 10,
+  "best_epoch": 3,
+  "selection_metric": "validation prefix-MAPE, strict best; early-stop ties reset counter",
+  "best_validation_metrics": {
+    "cell_count": 15,
+    "prefix_count": 1500,
+    "prefix_mean_mae_cycles": 194.00726375325522,
+    "prefix_mean_mape": 0.10136754805349898,
+    "cell_equal_mae_cycles": 194.00726375325516,
+    "cell_equal_mape": 0.101367548053499,
+    "per_cell": [
+      {
+        "file_name": "HUST_1-8.pkl",
+        "prefixes": 100,
+        "mae_cycles": 666.8949731445313,
+        "mape": 0.28270240489382414
+      },
+      {
+        "file_name": "HUST_10-1.pkl",
+        "prefixes": 100,
+        "mae_cycles": 223.5999951171875,
+        "mape": 0.12704545177112925
+      },
+      {
+        "file_name": "HUST_10-8.pkl",
+        "prefixes": 100,
+        "mae_cycles": 233.077568359375,
+        "mape": 0.1627636650554295
+      },
+      {
+        "file_name": "HUST_2-3.pkl",
+        "prefixes": 100,
+        "mae_cycles": 108.961826171875,
+        "mape": 0.06019990396236187
+      },
+      {
+        "file_name": "HUST_2-8.pkl",
+        "prefixes": 100,
+        "mae_cycles": 377.59614135742186,
+        "mape": 0.24663366515834212
+      },
+      {
+        "file_name": "HUST_3-8.pkl",
+        "prefixes": 100,
+        "mae_cycles": 94.45051025390624,
+        "mape": 0.039158586340757154
+      },
+      {
+        "file_name": "HUST_5-2.pkl",
+        "prefixes": 100,
+        "mae_cycles": 127.71762451171875,
+        "mape": 0.06447128950616797
+      },
+      {
+        "file_name": "HUST_5-5.pkl",
+        "prefixes": 100,
+        "mae_cycles": 30.38904052734375,
+        "mape": 0.018597944019182223
+      },
+      {
+        "file_name": "HUST_5-7.pkl",
+        "prefixes": 100,
+        "mae_cycles": 19.78505615234375,
+        "mape": 0.013278561176069632
+      },
+      {
+        "file_name": "HUST_6-8.pkl",
+        "prefixes": 100,
+        "mae_cycles": 29.9370556640625,
+        "mape": 0.011630557756046036
+      },
+      {
+        "file_name": "HUST_7-4.pkl",
+        "prefixes": 100,
+        "mae_cycles": 90.259931640625,
+        "mape": 0.0635186007323188
+      },
+      {
+        "file_name": "HUST_7-6.pkl",
+        "prefixes": 100,
+        "mae_cycles": 53.38245361328125,
+        "mape": 0.03681548525053879
+      },
+      {
+        "file_name": "HUST_7-8.pkl",
+        "prefixes": 100,
+        "mae_cycles": 237.5995666503906,
+        "mape": 0.12030357805083071
+      },
+      {
+        "file_name": "HUST_8-3.pkl",
+        "prefixes": 100,
+        "mae_cycles": 410.06146728515625,
+        "mape": 0.1753898491382191
+      },
+      {
+        "file_name": "HUST_9-1.pkl",
+        "prefixes": 100,
+        "mae_cycles": 206.39574584960937,
+        "mape": 0.09800367799126752
+      }
+    ]
+  },
+  "selected_prediction_file": "validation_predictions_epoch_003.csv",
+  "predictions_sha256": "156b00a5b0832b0b3938c840be2cb1ab270a543092305732945cccfa73c30975",
+  "elapsed_seconds": 126.21320512332022,
+  "seed": 42,
+  "test_access": false,
+  "strict_online_claim": false,
+  "full_paper_reproduction": false,
+  "checkpoint_resume_supported": false,
+  "scope": "HUST author total EOL, official-recipe adaptation; not strict online, true-event RUL, full paper reproduction or MATR directionA rescue",
+  "deviations": [
+    "HUST-only instead of official CPMLP shell CALB dataset",
+    "seed42 instead of shell2021",
+    "singleGPU custom validation-only runner instead of2GPU accelerate/DeepSpeed",
+    "test remains locked; not full MIX/paper reproduction"
+  ],
+  "bindings": {
+    "/home/yndx/zxk/rul/experiments/cpmlp_hust_recipe_adapt_seed42_v2/runner.py": "709d899447dba343cca27ba61ce0e95f67c0e7093090e3f6182895d7fbeaef6e",
+    "/home/yndx/zxk/rul/experiments/cpmlp_hust_recipe_adapt_seed42_v2/config.json": "9fb2031e0b7d6a44ea95ae4dc17ff2c927681b1a24966720be033cfc99e8f4c7",
+    "/home/yndx/zxk/rul/src/experiments/cpmlp_hust_pilot.py": "64b4f517cc9089f8702cc60fb41e9bdd1bc19924dc02e7344bbadbb8a5ff5529",
+    "/home/yndx/zxk/rul/experiments/cpmlp_hust_pilot_seed42/input_trainval/view_manifest.json": "5d215aac95ae30f40b01c8fba7c43d5f78a81e15904a979cc4972809be808b47",
+    "/home/yndx/zxk/rul/data/source_audit/stage_v11_hust_v11_labels/stage_manifest.json": "656ed7b923ef82e55cb0cd8860afb2ec66d91366d4c1b5ba9f1c62786e337635",
+    "/home/yndx/zxk/rul/repos/pinned/BatteryLife_3b17bb53202e10711deae0448c91f84144bb3dd9/models/CPMLP.py": "a2ebd17b0c7df925776fed2067467b5388eb454ec3baf9dee4a868f19a495000",
+    "/home/yndx/zxk/rul/repos/pinned/BatteryLife_3b17bb53202e10711deae0448c91f84144bb3dd9/data_provider/data_loader.py": "f49f22e379bf9012fd284c2ef82e4fdd350e70db760f995d85661f7ac29e1fe2"
+  },
+  "legacy_fits": 2,
+  "legacy_optimizer_steps": 600,
+  "MATR_direction_A_closed_NO_GAIN_unchanged": true
+}

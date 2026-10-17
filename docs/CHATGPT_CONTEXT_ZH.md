@@ -30,6 +30,10 @@
 
 上轮来源核查已补同步2e794b27。CPMLP/CPTransformer旧运行各300步实际为epoch1/2各146批、epoch3仅8批；checkpoint003是partial epoch3，不能称3完整epoch或无损自动恢复。源码有模型/Adam/RNG但无batch游标，且旧completion及预算耗尽门保留。核查没有加载checkpoint或新fit。旧pilot不是完整论文复现；已具体准备一个HUST官方配方适配CPMLP的DRAFT候选（1fit/14600步/1200秒拟议，未分配/未GO），下一项是独立runner最小实现与一次停止边界检查。证据见`reports/p1_cp_checkpoint_inventory_20261018_root/P1_CONTINUATION_REVIEW_ZH.md`。不挽救MATR NO_GAIN，不重置旧600步或访问test。
 
+## 2026-10-18 04:43 北京时间增量：真实CPMLP配方运行完成
+
+已完成1次CPMLP HUST作者EOL完整配方适配：10完整epoch/1460steps，early-stop完成，选epoch3。15验证电池/1500prefix独立复算EOL-MAE194.0073、MAPE0.10136755；比旧短pilot177.3831差9.3719%，仅6/15电池改善，负面结果保留。首次v1启动缺batteryml，fit0/step0失败证据保留；v2仅输出目录与已有项目runtime修复，沿用未消费1fit预算，无全局安装。旧CP600步不动，神经训练累计2060步，MATR41CPU fits另列。配方HUST/seed42/singleGPU/val-only偏离明示，非完整论文复现、strict在线或动态真实RUL。证据见`experiments/cpmlp_hust_recipe_adapt_seed42_v2/RESULTS_ZH.md`及原预测/receipt/independent_metrics。下一步仅现有预测误差分析，不追加训练救分。
+
 ## 项目在研究什么
 
 研究电池随着循环数据逐步到达时，如何合法、准确地更新剩余使用寿命（RUL）。核心问题是：动态更新能否优于“早期预测总寿命 EOL，再减去当前循环数”的固定预测基线？必须先解决标签定义、物理电池拆分、前缀可见性和归一化问题，再比较模型。路线为 P0 数据审计 → P1 BatteryLife 最小可信复现 → P2 PBT checkpoint/适配复现 → P3 动态 RUL → P4 失败模式 → P5 最小创新验证。路线不是完成清单。

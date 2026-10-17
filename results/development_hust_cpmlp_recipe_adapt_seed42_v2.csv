@@ -1,0 +1,2 @@
+model,dataset,seed,validation_cells,validation_prefixes,optimizer_steps,completed_epochs,best_epoch,cell_macro_EOL_MAE_cycles,cell_macro_MAPE,status,test_access,scope
+CPMLP,HUST_v11_author_total_EOL,42,15,1500,1460,10,3,194.00726375325522,0.10136754805349898,EARLY_STOP_COMPLETED,False,"official-recipe adaptation only, not full paper or strict online"

@@ -1,0 +1,10 @@
+{
+  "status": "PASS_NEW_DEADLINE_BOUNDARY_CHECK",
+  "expired_before_validation_rejected": true,
+  "deadline_after_final_validation_batch_rejected": true,
+  "train_complete_not_implicitly_validated": true,
+  "new_fits": 0,
+  "optimizer_steps": 0,
+  "model_data_imports": 0,
+  "runner_sha256": "dee7a03d894531ceb3910edf41d976cacbb45c3ffd96793157fcc91427c1a056"
+}

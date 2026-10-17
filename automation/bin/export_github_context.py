@@ -34,6 +34,11 @@ def main():
     chosen.add('reports/dynamic_A_matr_retrospective_independent_20261017_luna/review.json')
     for name in ['runner.py', 'ROOT_GO.json', 'fit_ledger.jsonl', 'validation_predictions.csv', 'per_cell_paired_deltas.json', 'selection.json', 'completion_receipt.json', 'launch_receipt.json', 'independent_metrics.json', 'root_decision.json', 'RESULTS_ZH.md', 'independent_metric_recompute.py', 'censored_failure_diagnosis.json', 'CENSORED_FAILURE_ZH.md', 'LABEL_BOUNDARY_SUPPORT_ZH.md', 'label_boundary_feature_support.json', 'label_boundary_support_diagnosis.py', 'ERROR_CONTRIBUTION_ZH.md', 'error_contribution.json', 'batch_observation_cross_tab.json', 'error_contribution_diagnosis.py', 'batch_observation_diagnosis.py', 'TERMINAL_BOUNDARY_ZH.md', 'terminal_boundary_diagnosis.json', 'terminal_boundary_diagnosis.py', 'diagnostic_closure.json']:
         chosen.add('experiments/dynamic_A_matr_retrospective_seed42_v1/' + name)
+    chosen.add('reports/p1_cpmlp_recipe_review_20261018_luna/review.json')
+    for name in ['runner.py', 'config.json', 'ROOT_GO.json', 'stopping_check.json', 'deadline_boundary_check.json', 'failure_receipt.json', 'launch_receipt.json']:
+        chosen.add('experiments/cpmlp_hust_recipe_adapt_seed42_v1/' + name)
+    for name in ['runner.py', 'config.json', 'ROOT_GO.json', 'runtime_repair_review.json', 'completion_receipt.json', 'launch_receipt.json', 'run_manifest.json', 'epoch_metrics.jsonl', 'budget_ledger.jsonl', 'independent_metrics.json', 'root_result_decision.json', 'RESULTS_ZH.md', 'independent_metric_recompute.py', 'validation_predictions_epoch_003.csv']:
+        chosen.add('experiments/cpmlp_hust_recipe_adapt_seed42_v2/' + name)
     for run in (ROOT / 'experiments').glob('*/fit_runs/*'):
         chosen.update(str(p.relative_to(ROOT)) for p in run.iterdir() if p.is_file())
 

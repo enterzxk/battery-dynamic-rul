@@ -1,0 +1,36 @@
+{
+  "status": "GO_HUST_AUTHOR_EOL_RECIPE_ADAPTATION_ONLY",
+  "at_utc": "2026-10-17T20:37:21.898441+00:00",
+  "owner": "01a14a80-7add-70c2-b412-5f0ae4be2c80",
+  "root_requested_model": "gpt-6.1-sol/high",
+  "reviewer_requested_model": "gpt-6-luna/high",
+  "runtime_model_identity": "NOT_INDEPENDENTLY_INTROSPECTED",
+  "strict_online_claim": false,
+  "test_access": false,
+  "max_invocations": 1,
+  "max_predictive_fits": 1,
+  "max_optimizer_steps": 14600,
+  "max_wall_seconds": 1200,
+  "external_child_timeout_seconds": 1200,
+  "bindings": {
+    "/home/yndx/zxk/rul/experiments/cpmlp_hust_recipe_adapt_seed42_v1/runner.py": "dee7a03d894531ceb3910edf41d976cacbb45c3ffd96793157fcc91427c1a056",
+    "/home/yndx/zxk/rul/experiments/cpmlp_hust_recipe_adapt_seed42_v1/config.json": "9fb2031e0b7d6a44ea95ae4dc17ff2c927681b1a24966720be033cfc99e8f4c7",
+    "/home/yndx/zxk/rul/src/experiments/cpmlp_hust_pilot.py": "64b4f517cc9089f8702cc60fb41e9bdd1bc19924dc02e7344bbadbb8a5ff5529",
+    "/home/yndx/zxk/rul/experiments/cpmlp_hust_pilot_seed42/input_trainval/view_manifest.json": "5d215aac95ae30f40b01c8fba7c43d5f78a81e15904a979cc4972809be808b47",
+    "/home/yndx/zxk/rul/data/source_audit/stage_v11_hust_v11_labels/stage_manifest.json": "656ed7b923ef82e55cb0cd8860afb2ec66d91366d4c1b5ba9f1c62786e337635",
+    "/home/yndx/zxk/rul/repos/pinned/BatteryLife_3b17bb53202e10711deae0448c91f84144bb3dd9/models/CPMLP.py": "a2ebd17b0c7df925776fed2067467b5388eb454ec3baf9dee4a868f19a495000",
+    "/home/yndx/zxk/rul/repos/pinned/BatteryLife_3b17bb53202e10711deae0448c91f84144bb3dd9/data_provider/data_loader.py": "f49f22e379bf9012fd284c2ef82e4fdd350e70db760f995d85661f7ac29e1fe2"
+  },
+  "independent_review_path": "/home/yndx/zxk/rul/reports/p1_cpmlp_recipe_review_20261018_luna/review.json",
+  "independent_review_sha256": "5e694fd4e6e7025aa2407ed1d1b7bf833b93b166b1b772dec15ee833b04fcf54",
+  "root_judgment": "One baseline recipe-adaptation convergence experiment: reuse frozen tested model/preprocessing, source/config match and restricted train/val permission; official stop semantics and honest partial/unvalidated metadata checked. Retrospective author EOL only; HUST/seed42/singleGPU/val-only deviations explicit. No full-paper, physical generalization, online-RUL or MATR innovation claim. Old600steps and consumed PBT budgets unchanged.",
+  "stop_conditions": [
+    "Any source or allowlist mismatch: STOP, no retry",
+    "Nonfinite training/validation: STOP, no retry",
+    "One fit only;100epochs or official patience5 afterleast5, max14600steps",
+    "External1200s timeout terminates only this training child; preserve failure and spent steps",
+    "Test loader/checkpoint resume/old fit replay forbidden"
+  ],
+  "gpu_snapshot": "45415, 0",
+  "gpu_compute_apps": ""
+}

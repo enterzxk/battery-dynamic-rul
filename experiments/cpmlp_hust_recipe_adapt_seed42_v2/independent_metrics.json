@@ -1,0 +1,251 @@
+{
+  "status": "INDEPENDENT_METRICS_AND_BUDGET_RECOMPUTATION_PASS",
+  "at_utc": "2026-10-17T20:41:49.504799+00:00",
+  "cells": 15,
+  "prefixes": 1500,
+  "cell_macro_EOL_MAE_cycles": 194.00726375325522,
+  "cell_macro_MAPE": 0.10136754805349898,
+  "cell_macro_bias_cycles": -34.96439998372396,
+  "exact_author_integer_label_MAE_cycles": 194.00726375325522,
+  "max_label_scaler_float_roundtrip_error_cycles": 0.0,
+  "per_cell": [
+    {
+      "cell": "HUST_1-8.pkl",
+      "MAE_cycles": 666.8949731445313,
+      "MAPE": 0.2827024048938242,
+      "bias_cycles": -666.8949731445313,
+      "exact_author_label_MAE_cycles": 666.8949731445313,
+      "label_roundtrip_max_abs_error_cycles": 0.0
+    },
+    {
+      "cell": "HUST_10-1.pkl",
+      "MAE_cycles": 223.5999951171875,
+      "MAPE": 0.12704545177112925,
+      "bias_cycles": 223.5999951171875,
+      "exact_author_label_MAE_cycles": 223.5999951171875,
+      "label_roundtrip_max_abs_error_cycles": 0.0
+    },
+    {
+      "cell": "HUST_10-8.pkl",
+      "MAE_cycles": 233.077568359375,
+      "MAPE": 0.16276366505542947,
+      "bias_cycles": 233.077568359375,
+      "exact_author_label_MAE_cycles": 233.077568359375,
+      "label_roundtrip_max_abs_error_cycles": 0.0
+    },
+    {
+      "cell": "HUST_2-3.pkl",
+      "MAE_cycles": 108.961826171875,
+      "MAPE": 0.06019990396236188,
+      "bias_cycles": 50.63952880859375,
+      "exact_author_label_MAE_cycles": 108.961826171875,
+      "label_roundtrip_max_abs_error_cycles": 0.0
+    },
+    {
+      "cell": "HUST_2-8.pkl",
+      "MAE_cycles": 377.59614135742186,
+      "MAPE": 0.24663366515834217,
+      "bias_cycles": 377.59614135742186,
+      "exact_author_label_MAE_cycles": 377.59614135742186,
+      "label_roundtrip_max_abs_error_cycles": 0.0
+    },
+    {
+      "cell": "HUST_3-8.pkl",
+      "MAE_cycles": 94.45051025390624,
+      "MAPE": 0.039158586340757154,
+      "bias_cycles": 17.94061767578125,
+      "exact_author_label_MAE_cycles": 94.45051025390624,
+      "label_roundtrip_max_abs_error_cycles": 0.0
+    },
+    {
+      "cell": "HUST_5-2.pkl",
+      "MAE_cycles": 127.71762451171875,
+      "MAPE": 0.06447128950616797,
+      "bias_cycles": 110.07159912109375,
+      "exact_author_label_MAE_cycles": 127.71762451171875,
+      "label_roundtrip_max_abs_error_cycles": 0.0
+    },
+    {
+      "cell": "HUST_5-5.pkl",
+      "MAE_cycles": 30.38904052734375,
+      "MAPE": 0.01859794401918222,
+      "bias_cycles": 3.682216796875,
+      "exact_author_label_MAE_cycles": 30.38904052734375,
+      "label_roundtrip_max_abs_error_cycles": 0.0
+    },
+    {
+      "cell": "HUST_5-7.pkl",
+      "MAE_cycles": 19.78505615234375,
+      "MAPE": 0.01327856117606963,
+      "bias_cycles": 16.04835693359375,
+      "exact_author_label_MAE_cycles": 19.78505615234375,
+      "label_roundtrip_max_abs_error_cycles": 0.0
+    },
+    {
+      "cell": "HUST_6-8.pkl",
+      "MAE_cycles": 29.9370556640625,
+      "MAPE": 0.011630557756046036,
+      "bias_cycles": -14.8300390625,
+      "exact_author_label_MAE_cycles": 29.9370556640625,
+      "label_roundtrip_max_abs_error_cycles": 0.0
+    },
+    {
+      "cell": "HUST_7-4.pkl",
+      "MAE_cycles": 90.259931640625,
+      "MAPE": 0.06351860073231878,
+      "bias_cycles": -74.973037109375,
+      "exact_author_label_MAE_cycles": 90.259931640625,
+      "label_roundtrip_max_abs_error_cycles": 0.0
+    },
+    {
+      "cell": "HUST_7-6.pkl",
+      "MAE_cycles": 53.38245361328125,
+      "MAPE": 0.03681548525053879,
+      "bias_cycles": 53.38245361328125,
+      "exact_author_label_MAE_cycles": 53.38245361328125,
+      "label_roundtrip_max_abs_error_cycles": 0.0
+    },
+    {
+      "cell": "HUST_7-8.pkl",
+      "MAE_cycles": 237.5995666503906,
+      "MAPE": 0.1203035780508307,
+      "bias_cycles": -237.34921508789063,
+      "exact_author_label_MAE_cycles": 237.5995666503906,
+      "label_roundtrip_max_abs_error_cycles": 0.0
+    },
+    {
+      "cell": "HUST_8-3.pkl",
+      "MAE_cycles": 410.06146728515625,
+      "MAPE": 0.1753898491382191,
+      "bias_cycles": -410.06146728515625,
+      "exact_author_label_MAE_cycles": 410.06146728515625,
+      "label_roundtrip_max_abs_error_cycles": 0.0
+    },
+    {
+      "cell": "HUST_9-1.pkl",
+      "MAE_cycles": 206.39574584960937,
+      "MAPE": 0.09800367799126751,
+      "bias_cycles": -206.39574584960937,
+      "exact_author_label_MAE_cycles": 206.39574584960937,
+      "label_roundtrip_max_abs_error_cycles": 0.0
+    }
+  ],
+  "old_pilot_descriptive_comparison": {
+    "old_MAE": 177.3830694173177,
+    "new_MAE": 194.00726375325522,
+    "relative_MAE_reduction": -0.09371917168051058,
+    "improved_cells": 6,
+    "paired_deltas": [
+      {
+        "cell": "HUST_1-8.pkl",
+        "old_pilot_MAE": 888.7733117675781,
+        "new_recipe_MAE": 666.8949731445313,
+        "improvement_cycles": 221.87833862304683
+      },
+      {
+        "cell": "HUST_10-1.pkl",
+        "old_pilot_MAE": 82.59303588867188,
+        "new_recipe_MAE": 223.5999951171875,
+        "improvement_cycles": -141.0069592285156
+      },
+      {
+        "cell": "HUST_10-8.pkl",
+        "old_pilot_MAE": 160.90180786132814,
+        "new_recipe_MAE": 233.077568359375,
+        "improvement_cycles": -72.17576049804686
+      },
+      {
+        "cell": "HUST_2-3.pkl",
+        "old_pilot_MAE": 101.26368286132812,
+        "new_recipe_MAE": 108.961826171875,
+        "improvement_cycles": -7.698143310546882
+      },
+      {
+        "cell": "HUST_2-8.pkl",
+        "old_pilot_MAE": 114.6217578125,
+        "new_recipe_MAE": 377.59614135742186,
+        "improvement_cycles": -262.97438354492186
+      },
+      {
+        "cell": "HUST_3-8.pkl",
+        "old_pilot_MAE": 87.46116088867187,
+        "new_recipe_MAE": 94.45051025390624,
+        "improvement_cycles": -6.989349365234375
+      },
+      {
+        "cell": "HUST_5-2.pkl",
+        "old_pilot_MAE": 190.57401489257813,
+        "new_recipe_MAE": 127.71762451171875,
+        "improvement_cycles": 62.85639038085938
+      },
+      {
+        "cell": "HUST_5-5.pkl",
+        "old_pilot_MAE": 135.4680334472656,
+        "new_recipe_MAE": 30.38904052734375,
+        "improvement_cycles": 105.07899291992186
+      },
+      {
+        "cell": "HUST_5-7.pkl",
+        "old_pilot_MAE": 18.36018310546875,
+        "new_recipe_MAE": 19.78505615234375,
+        "improvement_cycles": -1.4248730468749997
+      },
+      {
+        "cell": "HUST_6-8.pkl",
+        "old_pilot_MAE": 88.62897216796875,
+        "new_recipe_MAE": 29.9370556640625,
+        "improvement_cycles": 58.691916503906256
+      },
+      {
+        "cell": "HUST_7-4.pkl",
+        "old_pilot_MAE": 35.630050048828124,
+        "new_recipe_MAE": 90.259931640625,
+        "improvement_cycles": -54.629881591796874
+      },
+      {
+        "cell": "HUST_7-6.pkl",
+        "old_pilot_MAE": 55.351402587890625,
+        "new_recipe_MAE": 53.38245361328125,
+        "improvement_cycles": 1.9689489746093756
+      },
+      {
+        "cell": "HUST_7-8.pkl",
+        "old_pilot_MAE": 200.8054248046875,
+        "new_recipe_MAE": 237.5995666503906,
+        "improvement_cycles": -36.79414184570311
+      },
+      {
+        "cell": "HUST_8-3.pkl",
+        "old_pilot_MAE": 414.68922607421877,
+        "new_recipe_MAE": 410.06146728515625,
+        "improvement_cycles": 4.627758789062511
+      },
+      {
+        "cell": "HUST_9-1.pkl",
+        "old_pilot_MAE": 85.62397705078125,
+        "new_recipe_MAE": 206.39574584960937,
+        "improvement_cycles": -120.77176879882812
+      }
+    ],
+    "warning": "Different learning-rate trajectory/duration and initialization RNG sequence; same15-cell development validation reused for selection, no independent confirmation or isolated causal recipe-effect claim."
+  },
+  "budget": {
+    "fit_started_events": 1,
+    "optimizer_steps": 1460,
+    "ledger_contiguous": true,
+    "completed_validated_epochs": 10,
+    "all_epochs_complete": true,
+    "all_epochs_validated": true,
+    "legacy600steps_untouched": true,
+    "prefit_runtime_failure_fits_and_steps": 0
+  },
+  "test_access": false,
+  "strict_online_claim": false,
+  "new_fits_during_recomputation": 0,
+  "new_optimizer_steps_during_recomputation": 0,
+  "bindings": {
+    "experiments/cpmlp_hust_recipe_adapt_seed42_v2/validation_predictions_epoch_003.csv": "156b00a5b0832b0b3938c840be2cb1ab270a543092305732945cccfa73c30975",
+    "experiments/cpmlp_hust_recipe_adapt_seed42_v2/completion_receipt.json": "8ddb0835dde77e000ea1db6182519f88b31d070dbf60d19b5efddc322fde82c9",
+    "experiments/cpmlp_hust_pilot_seed42/fit_runs/fit_20261016T034610_311103Z/val_predictions_epoch_002.csv": "8b203701e2a8aaaca455c3019c46c9619210437599de2c270eba1574b8ad9fec"
+  }
+}
