@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-17T20:43:26.692623+00:00",
-  "content_sha256": "f956ea6f5484ae609f3542c6e3da4bbdcb51350fa29ea6090bf46a48c471abc1",
-  "file_count": 295,
+  "snapshot_utc": "2026-10-17T20:52:17.638147+00:00",
+  "content_sha256": "39d7dca4e03d053d9b405c18a77c2ef9ce77af2339779499b1e6a14320e055f4",
+  "file_count": 301,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,8 +14,8 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 20735,
-      "sha256": "9e97bdfd363a08121df8ac93b1a756a4adf45930183e36547c2e38d2e9f5c256"
+      "bytes": 22412,
+      "sha256": "2fa838c9e7f44aa51b0095ba0dbe27a5333bda89472b91ae8992abbf04f25fbd"
     },
     {
       "path": "README.md",
@@ -32,8 +32,8 @@
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 7363,
-      "sha256": "93f183b7bd6f284b3c5ee014177790ca917d70579e1422e2968763b1088d30e3"
+      "bytes": 7504,
+      "sha256": "8abd77b0a2ed2a5864d1f73b222ff72079562b6871b2e7e80e21163c812de593"
     },
     {
       "path": "automation/github_export/build_dynamic_A_eligible_20261017.py",
@@ -128,8 +128,8 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 12136,
-      "sha256": "bf7af62e6b62123a9f60b2a1feb36b5240aa70055289d4bd486fe5453aeb9a4f"
+      "bytes": 13813,
+      "sha256": "78f9a4ba0daab39c0df068e91427b31878b0135fd517551301b59b4ae6ad992e"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
@@ -892,6 +892,42 @@
       "source_path": "reports/baseline_audit/baseline_audit_report_zh.md",
       "bytes": 7686,
       "sha256": "9fe40e555a399ca70a0d83a935457a0d5c4f0dd69ec696584de0531d7d4148ed"
+    },
+    {
+      "path": "reports/cpmlp_recipe_error_diagnosis_20261018_root/DIAGNOSIS_ZH.md",
+      "source_path": "reports/cpmlp_recipe_error_diagnosis_20261018_root/DIAGNOSIS_ZH.md",
+      "bytes": 3315,
+      "sha256": "05b31f504f8c27739414c96b4e53561603557cfc8bb3bbca6e4da5ec23d12640"
+    },
+    {
+      "path": "reports/cpmlp_recipe_error_diagnosis_20261018_root/diagnose.py",
+      "source_path": "reports/cpmlp_recipe_error_diagnosis_20261018_root/diagnose.py",
+      "bytes": 9725,
+      "sha256": "cd53af0a68901f645dbc26133005e4cc046b296500a1e13e8614404dd7aad46b"
+    },
+    {
+      "path": "reports/cpmlp_recipe_error_diagnosis_20261018_root/diagnosis.json",
+      "source_path": "reports/cpmlp_recipe_error_diagnosis_20261018_root/diagnosis.json",
+      "bytes": 12005,
+      "sha256": "5b5003caafb7ca98576a2b4f215f514e412b6e93cd822db0d5190865de271c37"
+    },
+    {
+      "path": "reports/cpmlp_recipe_error_diagnosis_20261018_root/paired_prediction_deltas.csv",
+      "source_path": "reports/cpmlp_recipe_error_diagnosis_20261018_root/paired_prediction_deltas.csv",
+      "bytes": 238550,
+      "sha256": "728c1da702c64cb58818667b2d50fe43d258e1c09191780044c050d881e53fea"
+    },
+    {
+      "path": "reports/cpmlp_recipe_error_diagnosis_20261018_root/per_cell.csv",
+      "source_path": "reports/cpmlp_recipe_error_diagnosis_20261018_root/per_cell.csv",
+      "bytes": 2497,
+      "sha256": "2986c33aa069c42dbef15402f6e12d64ae0731197a66c2c81f9fb6d152614740"
+    },
+    {
+      "path": "reports/cpmlp_recipe_error_diagnosis_20261018_root/per_cell_prefix_segment.csv",
+      "source_path": "reports/cpmlp_recipe_error_diagnosis_20261018_root/per_cell_prefix_segment.csv",
+      "bytes": 11624,
+      "sha256": "f7ac87d32de46197110653713db05223af3b0768d2275f747472cb873b8cbf27"
     },
     {
       "path": "reports/data_schema_audit/final_go_review.json",

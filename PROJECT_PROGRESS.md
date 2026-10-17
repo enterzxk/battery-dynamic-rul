@@ -119,3 +119,12 @@
 - **最小验证**：停止/partial逻辑与修复deadline边界定向检查；未重复旧smoke。已选1500条预测独立复算吻合，1460连续步/10个完整验证epoch。v1缺batteryml启动失败fit0/step0保留，v2只改目录/使用已有项目环境，未扩大1fit预算；实际wall126.79s<1200s。
 - **阻塞/风险**：HUST/seed42/singleGPU/val-only为配方适配偏离，非CALB/MIX完整论文复现/strict在线RUL。旧600步与MATR41CPU fits分开，新神经训练累计2060steps；新旧配方/初始化顺序/时长改变，不能孤立归因学习率。PBT/test/物理身份和生成器限制保持。
 - **下一步**：只用既有新旧预测分析误差上升的电池与早期prefix位置；不换seed/模型或追加训练救分。
+
+
+## 2026-10-18 04:52 北京时间：CPMLP已有预测的配对误差分解
+
+- **已完成**：V10锁内接管并核同一battery-rul已绑定；按file_name/prefix_index对齐旧epoch2和新epoch3的15电池/1500验证预测。MAE177.3831→194.0073，净增16.6242循环（9.3719%）；9电池恶化、6改善。恶化前三HUST_2-8/10-1/9-1占全部正向恶化74.4896%，全局贡献+34.9835循环；全部恶化+46.9644、改善抵消-30.3402。
+- **证据**：reports/cpmlp_recipe_error_diagnosis_20261018_root/ 内 DIAGNOSIS_ZH.md、diagnosis.json、per_cell.csv、per_cell_prefix_segment.csv、paired_prediction_deltas.csv、diagnose.py。五个prefix序号段均恶化，21–60贡献净增60.3167%；全局bias -71.1230→-34.9644，但电池绝对bias均值158.0395→179.7695，正负抵消不等于改善。
+- **最小验证**：两份源预测SHA匹配冻结指标，1500唯一键、15×100前缀、标签完全一致、文件名train/val隔离；cell/分段/交叉贡献均重构净增（误差<1e-8），原主指标吻合。new_fits=0、optimizer_steps=0、model_loads=0、test_access=false；未重跑旧独立复算/smoke。
+- **阻塞/风险**：只作算术来源定位，不能孤立归因LR（初始化RNG/时长亦不同）；同15电池重复开发选模，不能声称独立确认、CALB/MIX完整复现或strict在线RUL。prefix_index按CSV序号，不新增物理循环/raw-asof认证。NO_GAIN与PBT消费预算/旧训练/test门均保持。
+- **下一步**：只读现有逐epoch验证预测与epoch_metrics，检查冻结MAPE选模点相对各自MAE最小点的差异；不改选择规则、不重选汇报checkpoint、不新增推理/训练。

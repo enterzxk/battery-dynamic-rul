@@ -1,0 +1,344 @@
+{
+  "status": "PAIRED_PREDICTION_ATTRIBUTION_PASS_NO_GAIN",
+  "at_utc": "2026-10-17T20:51:42.884043+00:00",
+  "scope": "HUST author total EOL validation only; descriptive accounting attribution, not causal or strict online RUL",
+  "selected_epochs": {
+    "old": 2,
+    "new": 3
+  },
+  "cells": 15,
+  "paired_prefixes": 1500,
+  "overall": {
+    "old_MAE": 177.3830694173177,
+    "new_MAE": 194.00726375325522,
+    "delta_MAE": 16.6241943359375,
+    "old_bias": -71.12299845377605,
+    "new_bias": -34.96439998372396,
+    "prediction_shift": 36.158598470052084,
+    "improved_prefixes": 644,
+    "prefix_count": 1500
+  },
+  "relative_MAE_increase": 0.09371917168051044,
+  "worsened_cells": 9,
+  "improved_cells": 6,
+  "gross_worsening_contribution": 46.964350748697925,
+  "offsetting_improvement_contribution": 30.340156412760415,
+  "top3_worsening_cells": [
+    "HUST_2-8.pkl",
+    "HUST_10-1.pkl",
+    "HUST_9-1.pkl"
+  ],
+  "top3_share_of_gross_worsening": 0.7448956541245125,
+  "top3_worsening_global_contribution": 34.98354077148438,
+  "concentration": {
+    "old": {
+      "top1_cell": "HUST_1-8.pkl",
+      "top1_share": 0.3340316204498707,
+      "top3_cells": [
+        "HUST_1-8.pkl",
+        "HUST_8-3.pkl",
+        "HUST_7-8.pkl"
+      ],
+      "top3_share": 0.565355708256271,
+      "macro_absolute_cell_bias": 158.03950317382814
+    },
+    "new": {
+      "top1_cell": "HUST_1-8.pkl",
+      "top1_share": 0.2291649498899554,
+      "top3_cells": [
+        "HUST_1-8.pkl",
+        "HUST_8-3.pkl",
+        "HUST_2-8.pkl"
+      ],
+      "top3_share": 0.49982753348075915,
+      "macro_absolute_cell_bias": 179.7695303548177
+    }
+  },
+  "segments": [
+    {
+      "prefix_segment": "1-20",
+      "old_MAE": 201.47409627278645,
+      "new_MAE": 209.23150065104167,
+      "delta_MAE": 7.757404378255209,
+      "old_bias": -119.66114217122396,
+      "new_bias": -67.1646826171875,
+      "prediction_shift": 52.496459554036456,
+      "improved_prefixes": 141,
+      "prefix_count": 300,
+      "global_delta_contribution_cycles": 1.5514808756510416
+    },
+    {
+      "prefix_segment": "21-40",
+      "old_MAE": 158.27796061197915,
+      "new_MAE": 184.17984903971353,
+      "delta_MAE": 25.901888427734374,
+      "old_bias": -82.18697021484375,
+      "new_bias": -30.895555419921877,
+      "prediction_shift": 51.29141479492188,
+      "improved_prefixes": 103,
+      "prefix_count": 300,
+      "global_delta_contribution_cycles": 5.180377685546874
+    },
+    {
+      "prefix_segment": "41-60",
+      "old_MAE": 163.27115071614583,
+      "new_MAE": 187.50510579427083,
+      "delta_MAE": 24.233955078125,
+      "old_bias": -58.93164225260416,
+      "new_bias": -22.46646565755208,
+      "prediction_shift": 36.465176595052085,
+      "improved_prefixes": 120,
+      "prefix_count": 300,
+      "global_delta_contribution_cycles": 4.8467910156250005
+    },
+    {
+      "prefix_segment": "61-80",
+      "old_MAE": 180.47385294596353,
+      "new_MAE": 191.94572509765624,
+      "delta_MAE": 11.471872151692708,
+      "old_bias": -56.307586669921875,
+      "new_bias": -26.480418294270834,
+      "prediction_shift": 29.82716837565104,
+      "improved_prefixes": 144,
+      "prefix_count": 300,
+      "global_delta_contribution_cycles": 2.2943744303385416
+    },
+    {
+      "prefix_segment": "81-100",
+      "old_MAE": 183.41828653971353,
+      "new_MAE": 197.17413818359375,
+      "delta_MAE": 13.755851643880208,
+      "old_bias": -38.52765096028646,
+      "new_bias": -27.8148779296875,
+      "prediction_shift": 10.712773030598958,
+      "improved_prefixes": 136,
+      "prefix_count": 300,
+      "global_delta_contribution_cycles": 2.7511703287760416
+    }
+  ],
+  "per_cell": [
+    {
+      "cell": "HUST_2-8.pkl",
+      "label_EOL": 1531.0,
+      "old_MAE": 114.6217578125,
+      "new_MAE": 377.59614135742186,
+      "delta_MAE": 262.97438354492186,
+      "old_bias": 114.6217578125,
+      "new_bias": 377.59614135742186,
+      "prediction_shift": 262.97438354492186,
+      "improved_prefixes": 1,
+      "prefix_count": 100,
+      "global_delta_contribution_cycles": 17.531625569661458
+    },
+    {
+      "cell": "HUST_10-1.pkl",
+      "label_EOL": 1760.0,
+      "old_MAE": 82.59303588867188,
+      "new_MAE": 223.5999951171875,
+      "delta_MAE": 141.00695922851563,
+      "old_bias": 28.945201416015625,
+      "new_bias": 223.5999951171875,
+      "prediction_shift": 194.65479370117188,
+      "improved_prefixes": 12,
+      "prefix_count": 100,
+      "global_delta_contribution_cycles": 9.400463948567708
+    },
+    {
+      "cell": "HUST_9-1.pkl",
+      "label_EOL": 2106.0,
+      "old_MAE": 85.62397705078125,
+      "new_MAE": 206.39574584960937,
+      "delta_MAE": 120.77176879882812,
+      "old_bias": -84.20077392578125,
+      "new_bias": -206.39574584960937,
+      "prediction_shift": -122.19497192382812,
+      "improved_prefixes": 8,
+      "prefix_count": 100,
+      "global_delta_contribution_cycles": 8.051451253255207
+    },
+    {
+      "cell": "HUST_10-8.pkl",
+      "label_EOL": 1432.0,
+      "old_MAE": 160.90180786132814,
+      "new_MAE": 233.077568359375,
+      "delta_MAE": 72.17576049804687,
+      "old_bias": 160.90180786132814,
+      "new_bias": 233.077568359375,
+      "prediction_shift": 72.17576049804687,
+      "improved_prefixes": 1,
+      "prefix_count": 100,
+      "global_delta_contribution_cycles": 4.811717366536458
+    },
+    {
+      "cell": "HUST_7-4.pkl",
+      "label_EOL": 1421.0,
+      "old_MAE": 35.630050048828124,
+      "new_MAE": 90.259931640625,
+      "delta_MAE": 54.629881591796874,
+      "old_bias": -24.980689697265625,
+      "new_bias": -74.973037109375,
+      "prediction_shift": -49.992347412109375,
+      "improved_prefixes": 2,
+      "prefix_count": 100,
+      "global_delta_contribution_cycles": 3.6419921061197917
+    },
+    {
+      "cell": "HUST_7-8.pkl",
+      "label_EOL": 1975.0,
+      "old_MAE": 200.8054248046875,
+      "new_MAE": 237.5995666503906,
+      "delta_MAE": 36.79414184570312,
+      "old_bias": -200.8054248046875,
+      "new_bias": -237.34921508789063,
+      "prediction_shift": -36.54379028320312,
+      "improved_prefixes": 18,
+      "prefix_count": 100,
+      "global_delta_contribution_cycles": 2.4529427897135414
+    },
+    {
+      "cell": "HUST_2-3.pkl",
+      "label_EOL": 1810.0,
+      "old_MAE": 101.26368286132812,
+      "new_MAE": 108.961826171875,
+      "delta_MAE": 7.698143310546875,
+      "old_bias": -29.665198974609375,
+      "new_bias": 50.63952880859375,
+      "prediction_shift": 80.30472778320312,
+      "improved_prefixes": 32,
+      "prefix_count": 100,
+      "global_delta_contribution_cycles": 0.5132095540364584
+    },
+    {
+      "cell": "HUST_3-8.pkl",
+      "label_EOL": 2412.0,
+      "old_MAE": 87.46116088867187,
+      "new_MAE": 94.45051025390624,
+      "delta_MAE": 6.989349365234375,
+      "old_bias": -11.995858154296876,
+      "new_bias": 17.94061767578125,
+      "prediction_shift": 29.936475830078123,
+      "improved_prefixes": 44,
+      "prefix_count": 100,
+      "global_delta_contribution_cycles": 0.46595662434895835
+    },
+    {
+      "cell": "HUST_5-7.pkl",
+      "label_EOL": 1490.0,
+      "old_MAE": 18.36018310546875,
+      "new_MAE": 19.78505615234375,
+      "delta_MAE": 1.424873046875,
+      "old_bias": 3.34363525390625,
+      "new_bias": 16.04835693359375,
+      "prediction_shift": 12.7047216796875,
+      "improved_prefixes": 44,
+      "prefix_count": 100,
+      "global_delta_contribution_cycles": 0.09499153645833333
+    },
+    {
+      "cell": "HUST_7-6.pkl",
+      "label_EOL": 1450.0,
+      "old_MAE": 55.351402587890625,
+      "new_MAE": 53.38245361328125,
+      "delta_MAE": -1.968948974609375,
+      "old_bias": 53.937943115234376,
+      "new_bias": 53.38245361328125,
+      "prediction_shift": -0.555489501953125,
+      "improved_prefixes": 54,
+      "prefix_count": 100,
+      "global_delta_contribution_cycles": -0.13126326497395832
+    },
+    {
+      "cell": "HUST_8-3.pkl",
+      "label_EOL": 2338.0,
+      "old_MAE": 414.68922607421877,
+      "new_MAE": 410.06146728515625,
+      "delta_MAE": -4.6277587890625,
+      "old_bias": -414.68922607421877,
+      "new_bias": -410.06146728515625,
+      "prediction_shift": 4.6277587890625,
+      "improved_prefixes": 53,
+      "prefix_count": 100,
+      "global_delta_contribution_cycles": -0.3085172526041667
+    },
+    {
+      "cell": "HUST_6-8.pkl",
+      "label_EOL": 2574.0,
+      "old_MAE": 88.62897216796875,
+      "new_MAE": 29.9370556640625,
+      "delta_MAE": -58.69191650390625,
+      "old_bias": -63.60827880859375,
+      "new_bias": -14.8300390625,
+      "prediction_shift": 48.77823974609375,
+      "improved_prefixes": 95,
+      "prefix_count": 100,
+      "global_delta_contribution_cycles": -3.91279443359375
+    },
+    {
+      "cell": "HUST_5-2.pkl",
+      "label_EOL": 1981.0,
+      "old_MAE": 190.57401489257813,
+      "new_MAE": 127.71762451171875,
+      "delta_MAE": -62.856390380859374,
+      "old_bias": 162.12443725585936,
+      "new_bias": 110.07159912109375,
+      "prediction_shift": -52.05283813476562,
+      "improved_prefixes": 98,
+      "prefix_count": 100,
+      "global_delta_contribution_cycles": -4.190426025390625
+    },
+    {
+      "cell": "HUST_5-5.pkl",
+      "label_EOL": 1634.0,
+      "old_MAE": 135.4680334472656,
+      "new_MAE": 30.38904052734375,
+      "delta_MAE": -105.07899291992187,
+      "old_bias": 127.99900268554687,
+      "new_bias": 3.682216796875,
+      "prediction_shift": -124.31678588867187,
+      "improved_prefixes": 87,
+      "prefix_count": 100,
+      "global_delta_contribution_cycles": -7.005266194661458
+    },
+    {
+      "cell": "HUST_1-8.pkl",
+      "label_EOL": 2359.0,
+      "old_MAE": 888.7733117675781,
+      "new_MAE": 666.8949731445313,
+      "delta_MAE": -221.8783386230469,
+      "old_bias": -888.7733117675781,
+      "new_bias": -666.8949731445313,
+      "prediction_shift": 221.8783386230469,
+      "improved_prefixes": 95,
+      "prefix_count": 100,
+      "global_delta_contribution_cycles": -14.79188924153646
+    }
+  ],
+  "boundary": "prefix_index is stored within-cell ordinal1..100; this report does not newly certify physical-cycle/raw-asof semantics",
+  "limitations": [
+    "LR, initialization RNG sequence and training duration differ simultaneously; no isolated causal LR claim",
+    "Same15-cell development validation reused for model selection; no independent confirmation",
+    "No removal of outliers, label edits, new selection, ensemble, calibration or train/test access",
+    "Old budget600steps, total neural2060steps and MATR41CPUfits remain unchanged; consumed PBT gate not reopened"
+  ],
+  "new_fits": 0,
+  "optimizer_steps": 0,
+  "test_access": false,
+  "model_loads": 0,
+  "bindings": {
+    "experiments/cpmlp_hust_pilot_seed42/fit_runs/fit_20261016T034610_311103Z/val_predictions_epoch_002.csv": "8b203701e2a8aaaca455c3019c46c9619210437599de2c270eba1574b8ad9fec",
+    "experiments/cpmlp_hust_recipe_adapt_seed42_v2/validation_predictions_epoch_003.csv": "156b00a5b0832b0b3938c840be2cb1ab270a543092305732945cccfa73c30975",
+    "experiments/cpmlp_hust_pilot_seed42/fit_runs/fit_20261016T034610_311103Z/completion_receipt.json": "c5ade13c03bf33bc057b76f7eb8bd83d4773bd6f4740ac2d0885206d3800a38b",
+    "experiments/cpmlp_hust_recipe_adapt_seed42_v2/completion_receipt.json": "8ddb0835dde77e000ea1db6182519f88b31d070dbf60d19b5efddc322fde82c9",
+    "experiments/cpmlp_hust_recipe_adapt_seed42_v2/independent_metrics.json": "8a93a622d341ec0846ec1768c03ddb72d9b73ff77e15ec3f15aca8685ed5678c",
+    "src/experiments/cpmlp_hust_pilot.py": "64b4f517cc9089f8702cc60fb41e9bdd1bc19924dc02e7344bbadbb8a5ff5529",
+    "reports/cpmlp_recipe_error_diagnosis_20261018_root/diagnose.py": "cd53af0a68901f645dbc26133005e4cc046b296500a1e13e8614404dd7aad46b"
+  },
+  "minimum_validation": {
+    "unique_exact_keys": true,
+    "identical_labels": true,
+    "train_val_disjoint_by_filename": true,
+    "per_cell100_prefixes": true,
+    "existing_metrics_reconciled": true,
+    "cell_and_segment_and_cross_contributions_reconstruct_delta": true
+  }
+}

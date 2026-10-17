@@ -81,3 +81,12 @@
 新增[41篇主文精读结论与方向讨论稿](../reports/literature_discussion_20261017_root_v1/LITERATURE_DISCUSSION_ZH.md)，含逐篇附录、证据和三个可否证候选方向；讨论方向优先读它。本次复用既有精读，不声称新读41篇PDF。
 
 补充标签边界：MATR_b3c38作者EOL=1932，但完整文本记录存活至1933且nominal crossing未观测；存在1循环边界不一致，需核已有标签算法的外推/取整语义。不得把作者标签当精确真实EOL，不修改或删除既有结果；下一动作优先核此边界，再看训练特征支持。
+
+
+## 2026-10-18 04:52 北京时间：CPMLP已有预测的配对误差分解
+
+- **已完成**：V10锁内接管并核同一battery-rul已绑定；按file_name/prefix_index对齐旧epoch2和新epoch3的15电池/1500验证预测。MAE177.3831→194.0073，净增16.6242循环（9.3719%）；9电池恶化、6改善。恶化前三HUST_2-8/10-1/9-1占全部正向恶化74.4896%，全局贡献+34.9835循环；全部恶化+46.9644、改善抵消-30.3402。
+- **证据**：reports/cpmlp_recipe_error_diagnosis_20261018_root/ 内 DIAGNOSIS_ZH.md、diagnosis.json、per_cell.csv、per_cell_prefix_segment.csv、paired_prediction_deltas.csv、diagnose.py。五个prefix序号段均恶化，21–60贡献净增60.3167%；全局bias -71.1230→-34.9644，但电池绝对bias均值158.0395→179.7695，正负抵消不等于改善。
+- **最小验证**：两份源预测SHA匹配冻结指标，1500唯一键、15×100前缀、标签完全一致、文件名train/val隔离；cell/分段/交叉贡献均重构净增（误差<1e-8），原主指标吻合。new_fits=0、optimizer_steps=0、model_loads=0、test_access=false；未重跑旧独立复算/smoke。
+- **阻塞/风险**：只作算术来源定位，不能孤立归因LR（初始化RNG/时长亦不同）；同15电池重复开发选模，不能声称独立确认、CALB/MIX完整复现或strict在线RUL。prefix_index按CSV序号，不新增物理循环/raw-asof认证。NO_GAIN与PBT消费预算/旧训练/test门均保持。
+- **下一步**：只读现有逐epoch验证预测与epoch_metrics，检查冻结MAPE选模点相对各自MAE最小点的差异；不改选择规则、不重选汇报checkpoint、不新增推理/训练。
