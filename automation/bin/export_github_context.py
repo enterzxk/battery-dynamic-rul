@@ -36,6 +36,7 @@ def main():
         chosen.add('experiments/dynamic_A_matr_retrospective_seed42_v1/' + name)
     chosen.update(str(p.relative_to(ROOT)) for p in (ROOT / 'reports/cpmlp_recipe_error_diagnosis_20261018_root').rglob('*') if p.is_file())
     chosen.update(str(p.relative_to(ROOT)) for p in (ROOT / 'reports/cpmlp_selection_diagnosis_20261018_root').rglob('*') if p.is_file())
+    chosen.update(str(p.relative_to(ROOT)) for p in (ROOT / 'reports/p1_calb_reproduction_gap_20261018_root').rglob('*') if p.is_file())
     chosen.add('reports/p1_cpmlp_recipe_review_20261018_luna/review.json')
     for name in ['runner.py', 'config.json', 'ROOT_GO.json', 'stopping_check.json', 'deadline_boundary_check.json', 'failure_receipt.json', 'launch_receipt.json']:
         chosen.add('experiments/cpmlp_hust_recipe_adapt_seed42_v1/' + name)

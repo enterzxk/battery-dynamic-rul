@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-17T20:55:18.784993+00:00",
-  "content_sha256": "ba1044b93eff587a6bced5517d01c8ac9a7c4a68706d6f933d28052a9f5ee2ae",
-  "file_count": 305,
+  "snapshot_utc": "2026-10-17T21:10:55.512260+00:00",
+  "content_sha256": "153e89e4aa7cc18e082df5b6320a4501806b5ab74328a82b0a4100ffde1815b5",
+  "file_count": 308,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,8 +14,8 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 23817,
-      "sha256": "1ec31bda7fbfbfb8e23c3675d77fd15bd8b0a68d74e652f13357aebfa5780f9b"
+      "bytes": 25432,
+      "sha256": "bec70f5c4a5fa38902a20b7dc363e99b331d53e41e632914e6bbac94acc450b6"
     },
     {
       "path": "README.md",
@@ -32,8 +32,8 @@
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 7642,
-      "sha256": "267fc2d04147ae4f3b1a1c0684d98ba0c4c679a7316422ee995682a2b49db3af"
+      "bytes": 7779,
+      "sha256": "6cf032d3c6c42bc7dfb044426f2f3eb99b8d16208e78f89545adf9cdc9b4ce02"
     },
     {
       "path": "automation/github_export/build_dynamic_A_eligible_20261017.py",
@@ -128,8 +128,8 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 15218,
-      "sha256": "beb3ff4cee619598651ca555c5df983456d5a8b0faa2c57dd48c47cd92271860"
+      "bytes": 16833,
+      "sha256": "78bb4a133036a0c08071ccd51b1fcc08ffc539b37343aad03d93f57d2274eaf1"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
@@ -1222,6 +1222,24 @@
       "source_path": "reports/matr_v11_release_provenance_20261018_root/web_source_observations.json",
       "bytes": 1554,
       "sha256": "b6dac0cad0c771be6fb1bc119a7065ce7a5d97496e14893677c5b30ab2623deb"
+    },
+    {
+      "path": "reports/p1_calb_reproduction_gap_20261018_root/GAP_REVIEW_ZH.md",
+      "source_path": "reports/p1_calb_reproduction_gap_20261018_root/GAP_REVIEW_ZH.md",
+      "bytes": 2393,
+      "sha256": "f2e323b74ed3c1af28d1cce47e6cda3f6146d5288414a43abfcb58c27af33f05"
+    },
+    {
+      "path": "reports/p1_calb_reproduction_gap_20261018_root/gap_inventory.json",
+      "source_path": "reports/p1_calb_reproduction_gap_20261018_root/gap_inventory.json",
+      "bytes": 6915,
+      "sha256": "25e47f609ee8e2d7f44e878efcdb976fe0b604be4ed18b370d0e3625ea00ecf6"
+    },
+    {
+      "path": "reports/p1_calb_reproduction_gap_20261018_root/inventory.py",
+      "source_path": "reports/p1_calb_reproduction_gap_20261018_root/inventory.py",
+      "bytes": 8533,
+      "sha256": "7273d4478f00746d9ae17dc0ab537e56b40b76a031166d3357ca3e6e7be4810a"
     },
     {
       "path": "reports/p1_cp_checkpoint_inventory_20261018_root/P1_CONTINUATION_REVIEW_ZH.md",

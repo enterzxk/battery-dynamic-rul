@@ -137,3 +137,12 @@
 - **最小验证**：13事件各15电池×100前缀，per_cell独立求均值吻合MAE/MAPE（<1e-8/<1e-10）；冻结最小MAPE点吻合completion。源JSONL/receipt及程序SHA绑定。new_fits=0、optimizer_steps=0、new_inference=0、model_loads=0、test_access=false。
 - **阻塞/风险**：同15验证电池重复开发选择，不是独立确认；相同步数仍有LR/初始化混杂，后期验证变差不证明一般性过拟合机理。不称CALB/MIX完整复现或strict在线RUL，不换checkpoint救分，原预算/门不变。
 - **下一步**：转回P1，只读官方CPMLP CALB脚本及已有数据/标签/拆分凭证、stat，确定完整忠实复现最早缺失项；不加载数据、构造模型或训练，不重复HUST开发调参。
+
+
+## 2026-10-18 05:11 北京时间：P1官方CALB忠实复现缺口定位
+
+- **已完成**：只读pinned官方CPMLP脚本、loader和拆分AST，定向stat项目data/现有stage。官方CALB seed2021、2进程×16、LR5e-5 constant；固定文件名拆分17/5/5唯一且两两无交集。当前项目data无CALB路径、无已展开CALB_labels.json，首个真实阻塞为数据/标签未获取并落入受审stage。
+- **证据**：reports/p1_calb_reproduction_gap_20261018_root/GAP_REVIEW_ZH.md、gap_inventory.json、inventory.py；含源码URL/行号与SHA。现有v11官方API快照列CALB.zip 12,671,967 bytes、MD5 2b1006e96e0ca42765a732060f964687；已有Life_labels_v11.zip stat12,586 bytes可复用候选，未打开、不重下。
+- **最小验证**：AST只解析三个拆分静态列表，核源码参数/loader路径和test调用具体行，项目内CALB路径stat为空。new_fits=0、optimizer_steps=0、archive_reads=0、model_loads=0、test_access=false；不把文件名隔离当物理身份通过。
+- **阻塞/风险**：pinned run_main.py:211构造test、:370逐epoch评估test，直接官方入口冲突当前test锁；双进程runtime未验证，HUST单GPU结果不替代。元数据为保存快照，本轮未实时验证；CALB标签覆盖、来源/asof审计均未完成。原PBT/HUST预算与new_fits_allowed=false保持。
+- **下一步**：实时核公开v11 CALB元数据/响应头和当前传输预算后，单次有界获取约12.7MB CALB归档并核checksum；复用已有标签包，固定17train+5val成员/CRC/标签覆盖，test内容不读，不反序列化/模型/训练。
