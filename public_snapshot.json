@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-17T19:33:51.064990+00:00",
-  "content_sha256": "771b8b36edaba572f388d2368d42fc2c00c71fbcffeb6ab46aec9ea8255c7afa",
-  "file_count": 260,
+  "snapshot_utc": "2026-10-17T19:48:38.805176+00:00",
+  "content_sha256": "e865217ea156b956cc64990bacb35989bff41d226180aeb5df21894f178815bb",
+  "file_count": 264,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,8 +14,8 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 15327,
-      "sha256": "8819bbe99ca2058a2e157bc366a7f15479555775bd4b8e0aa594fc08423c060f"
+      "bytes": 16668,
+      "sha256": "1c33f6fc9f3a8c7effcd8d7fbd1380cdb2e09adc3937f4133779f892a37843a7"
     },
     {
       "path": "README.md",
@@ -32,8 +32,8 @@
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 6401,
-      "sha256": "edfa5580f791481679bb2dddc0eb8604406c27cb8fe7f659b950a09f7107e1e9"
+      "bytes": 6525,
+      "sha256": "834f10df8a58b826070b23317ae8633d0c493b20a3505ed7696862e12ed0261f"
     },
     {
       "path": "automation/github_export/build_dynamic_A_eligible_20261017.py",
@@ -128,8 +128,8 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 8934,
-      "sha256": "e58f8dd0a1f42c1d94fcc2bd7298ff3b0523f3efe56726711454c54587b96cdd"
+      "bytes": 9741,
+      "sha256": "9d899bb45b4d1a98db71ad714e2c7fb6258fa53c3462d36483bb4336e3b76433"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
@@ -336,6 +336,12 @@
       "sha256": "756dc312b7e52b8685dd195db69319fe1e49ca7b4d0958551c46b76df2917cdd"
     },
     {
+      "path": "experiments/dynamic_A_matr_retrospective_seed42_v1/TERMINAL_BOUNDARY_ZH.md",
+      "source_path": "experiments/dynamic_A_matr_retrospective_seed42_v1/TERMINAL_BOUNDARY_ZH.md",
+      "bytes": 3732,
+      "sha256": "61decdc9e493b51c06d7b2af65b617a1c8ac009b54f7f338366cc0520bd720ba"
+    },
+    {
       "path": "experiments/dynamic_A_matr_retrospective_seed42_v1/batch_observation_cross_tab.json",
       "source_path": "experiments/dynamic_A_matr_retrospective_seed42_v1/batch_observation_cross_tab.json",
       "bytes": 1244,
@@ -358,6 +364,12 @@
       "source_path": "experiments/dynamic_A_matr_retrospective_seed42_v1/completion_receipt.json",
       "bytes": 3096,
       "sha256": "2ea5b2c9a1bebb2a8bfc8bf2a49cdeae1b128598a1d0ca8ccec6d4699e42e0f1"
+    },
+    {
+      "path": "experiments/dynamic_A_matr_retrospective_seed42_v1/diagnostic_closure.json",
+      "source_path": "experiments/dynamic_A_matr_retrospective_seed42_v1/diagnostic_closure.json",
+      "bytes": 1929,
+      "sha256": "c2e7058c762a75d76bd95184cb6b48ee3e5c3f490bad5132e6fc885954fe2415"
     },
     {
       "path": "experiments/dynamic_A_matr_retrospective_seed42_v1/error_contribution.json",
@@ -430,6 +442,18 @@
       "source_path": "experiments/dynamic_A_matr_retrospective_seed42_v1/selection.json",
       "bytes": 1489,
       "sha256": "f25bec260d8a52139c10e54e98fc5015687f7a986ab4a8ac88c91ad3f96f8509"
+    },
+    {
+      "path": "experiments/dynamic_A_matr_retrospective_seed42_v1/terminal_boundary_diagnosis.json",
+      "source_path": "experiments/dynamic_A_matr_retrospective_seed42_v1/terminal_boundary_diagnosis.json",
+      "bytes": 74769,
+      "sha256": "32ad560bb9d8f5f7a24195d97250b624b44adad66f5cbcc1e1c6c3e5982aa17a"
+    },
+    {
+      "path": "experiments/dynamic_A_matr_retrospective_seed42_v1/terminal_boundary_diagnosis.py",
+      "source_path": "experiments/dynamic_A_matr_retrospective_seed42_v1/terminal_boundary_diagnosis.py",
+      "bytes": 4740,
+      "sha256": "4c1be5a0fbe2137a0dc1fd1e609311b0235dac4c73ec0dc3a5a0a5d8a10c4dbe"
     },
     {
       "path": "experiments/dynamic_A_matr_retrospective_seed42_v1/validation_predictions.csv",

@@ -83,3 +83,12 @@
 - **最小验证**：3种划分均覆盖同34电池/136时点；每组加权贡献重构全部5模型原始MAE（<=1e-8），原预测SHA吻合。new_fits=0、optimizer_steps=0，无binary/test。
 - **阻塞/风险**：合格训练/验证中batch1/3全部未观测事件、batch2/4全部已观测，观测/删失误差差异与batch完全混杂，不能归因为标签或删失单独效应。作者标签/strict_online/physical serial/generator限制及PBT/test门保持。
 - **下一步**：仅查已有各batch末次容量、观测终止位置与pinned标签分支的可证对应，解释混杂的边界；不猜实际生成器、不改阈值/标签/人口或新增fit。
+
+
+## 2026-10-18 03:48 北京时间：各batch终点核对与方向A诊断闭合
+
+- **已完成**：核133个合格train/val源ID末次SOH、事件可见性与标签分支。batch1/3末端SOH约0.8000..0.8030无crossing，batch2约0.7500..0.7523，batch4约0.2282..0.7624。全部71个观测事件电池在首次crossing后仍有记录；验证batch2/4分别保留20..37/23..273循环。方向A诊断链闭合为NO_GAIN，不追加seed/模型或阈值救结果。
+- **证据**：`experiments/dynamic_A_matr_retrospective_seed42_v1/TERMINAL_BOUNDARY_ZH.md`、`terminal_boundary_diagnosis.json`、`terminal_boundary_diagnosis.py`、`diagnostic_closure.json`。
+- **最小验证**：133份metadata SHA与原cohort吻合，末SOH与旧标签审计差<1e-12，observed标记与crossing存在性相符；仅已有文本，无cycle曲线/binary/test摘要读取，new_fits=0、optimizer_steps=0。
+- **阻塞/风险**：可证processed-record终点差异，不能推断原始采集停止或实际v11截断/插值机制。实际generator commit/config与完整physical身份未核；pinned源码及标签重建不是来源证明。原PBT消费预算和模型/test门保持。
+- **下一步**：仅做一次官方MATR_v11发布metadata的generator版本凭证核查，不重复下载数据或反推；若发布记录未给出，则记录缺证STOP。

@@ -18,6 +18,10 @@
 
 现有34电池完整误差分解已完成：两只超训练寿命范围电池占A1绝对误差43.676%，但仅占Ridge速率净改善11.662%；范围内32电池Ridge/固定GBDT改善4.202%/3.989%，原NO_GAIN保持，不删离群点美化。合格train/val中batch1/3全部未观测阈值事件，batch2/4全部已观测；观测组和删失组差异与batch完全混杂，不能单独归因于标签类型或删失。证据见`experiments/dynamic_A_matr_retrospective_seed42_v1/ERROR_CONTRIBUTION_ZH.md`及机器记录。全34主指标未改，新增fit=0。
 
+## 2026-10-18 03:48 北京时间增量：终点语义与诊断闭合
+
+133个合格train/val记录的终点核对完成：batch1/3停于约80.00%..80.30% SOH且无nominal crossing，batch2约75%，batch4保留到更低且分散的容量。全部71个观测crossing电池在阈值后继续有记录；验证batch2/4分别有20..37/23..273个后续循环。观测状态差异对应显著不同的processed-record终点，不能当随机删失或单独标签效应。不能据此确认实际v11生成器或原始实验停止规则。方向A诊断链已闭合NO_GAIN，不追加模型/seed/改阈值救结果；本阶段fit=0。见`experiments/dynamic_A_matr_retrospective_seed42_v1/TERMINAL_BOUNDARY_ZH.md`、`diagnostic_closure.json`。下一项仅核官方发布metadata的版本凭证，缺失保持STOP。
+
 ## 项目在研究什么
 
 研究电池随着循环数据逐步到达时，如何合法、准确地更新剩余使用寿命（RUL）。核心问题是：动态更新能否优于“早期预测总寿命 EOL，再减去当前循环数”的固定预测基线？必须先解决标签定义、物理电池拆分、前缀可见性和归一化问题，再比较模型。路线为 P0 数据审计 → P1 BatteryLife 最小可信复现 → P2 PBT checkpoint/适配复现 → P3 动态 RUL → P4 失败模式 → P5 最小创新验证。路线不是完成清单。

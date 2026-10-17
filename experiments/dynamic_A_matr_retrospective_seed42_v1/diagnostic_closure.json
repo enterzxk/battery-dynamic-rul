@@ -1,0 +1,27 @@
+{
+  "status": "DIRECTION_A_RETROSPECTIVE_DIAGNOSTIC_CLOSED_NO_GAIN",
+  "at_utc": "2026-10-17T19:48:23.635307+00:00",
+  "final_scientific_boundary": "No support for complex history expansion on this diagnostic; not proof of no information, strict online eligibility, independent generalization or full reproduction.",
+  "predictive_fits_completed_in_closed_run": 41,
+  "ridge_fits_including_cv": 39,
+  "fixed_GBDT_fits": 2,
+  "optimizer_steps_in_closed_run": 0,
+  "new_fits_in_this_stage": 0,
+  "strict_online_claim": false,
+  "test_access": false,
+  "no_additional_seed_or_model_rescue": true,
+  "remaining_external_evidence_gap": "Actual v11 generator commit/config/version mapping, full physical identity; pinned source alone insufficient.",
+  "first_unexecuted_action": "One official MATR_v11 release metadata provenance check, no dataset downloads; absent actual evidence remains STOP.",
+  "artifacts": {
+    "ROOT_GO.json": "756dc312b7e52b8685dd195db69319fe1e49ca7b4d0958551c46b76df2917cdd",
+    "completion_receipt.json": "2ea5b2c9a1bebb2a8bfc8bf2a49cdeae1b128598a1d0ca8ccec6d4699e42e0f1",
+    "validation_predictions.csv": "b336f3b69219d9f8c1a4044e68bb8e6b9a365b7227673d722118e3b750ca0c22",
+    "independent_metrics.json": "974b733202beddc312b1499b8c6ca5b5b8e75cae0fac064d29a72c74c1d7c297",
+    "root_decision.json": "a5e38a69febeb476cd2dd0e28a9e84312788fed81ffe0eb4c57e83f0dcb9f20a",
+    "censored_failure_diagnosis.json": "68e7081fe78228b5c1ed1e1e002ebcc72d9993fbe0d1dccc998a328c014ed8c4",
+    "label_boundary_feature_support.json": "c1322331a98a49f2a7bfa9f649d51666e7bf673ce25901903b44f9edc685efce",
+    "error_contribution.json": "54ba2723f7c7cb517c3867d9ead9d8d3169205d886e3b6cc30ddfd358fd5d72c",
+    "batch_observation_cross_tab.json": "13a0a3a8a14d612052ebb28c1586b16a853d1390aef89701aff50668eb272220",
+    "terminal_boundary_diagnosis.json": "32ad560bb9d8f5f7a24195d97250b624b44adad66f5cbcc1e1c6c3e5982aa17a"
+  }
+}
