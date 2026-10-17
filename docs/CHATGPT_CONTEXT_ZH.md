@@ -22,6 +22,10 @@
 
 133个合格train/val记录的终点核对完成：batch1/3停于约80.00%..80.30% SOH且无nominal crossing，batch2约75%，batch4保留到更低且分散的容量。全部71个观测crossing电池在阈值后继续有记录；验证batch2/4分别有20..37/23..273个后续循环。观测状态差异对应显著不同的processed-record终点，不能当随机删失或单独标签效应。不能据此确认实际v11生成器或原始实验停止规则。方向A诊断链已闭合NO_GAIN，不追加模型/seed/改阈值救结果；本阶段fit=0。见`experiments/dynamic_A_matr_retrospective_seed42_v1/TERMINAL_BOUNDARY_ZH.md`、`diagnostic_closure.json`。下一项仅核官方发布metadata的版本凭证，缺失保持STOP。
 
+## 2026-10-18 04:04 北京时间增量：官方来源核查STOP
+
+一次官方MATR v11来源核查已结束：Zenodo record19688272的v11/发布日期2026-04-22及MATR.zip MD5可核，与既有下载回执一致；版本说明中的MATR变更是b3c0 seen/unseen分类。已读HTML/Version11文档没有精确generator绑定；完整API metadata获取失败（web不可访问，服务器一次请求DNS失败），其字段UNKNOWN，不能扩大为“所有官方metadata无凭证”。actual v11 provenance保持未核，严格在线/PBT/test门未改，方向A闭合NO_GAIN。证据见`reports/matr_v11_release_provenance_20261018_root/PROVENANCE_CHECK_ZH.md`及root_review；新增fit=0。下一项转P1已有完成回执/配置/checkpoint清单静态核对，不自动训练或重置旧600步。
+
 ## 项目在研究什么
 
 研究电池随着循环数据逐步到达时，如何合法、准确地更新剩余使用寿命（RUL）。核心问题是：动态更新能否优于“早期预测总寿命 EOL，再减去当前循环数”的固定预测基线？必须先解决标签定义、物理电池拆分、前缀可见性和归一化问题，再比较模型。路线为 P0 数据审计 → P1 BatteryLife 最小可信复现 → P2 PBT checkpoint/适配复现 → P3 动态 RUL → P4 失败模式 → P5 最小创新验证。路线不是完成清单。

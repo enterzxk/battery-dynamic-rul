@@ -92,3 +92,12 @@
 - **最小验证**：133份metadata SHA与原cohort吻合，末SOH与旧标签审计差<1e-12，observed标记与crossing存在性相符；仅已有文本，无cycle曲线/binary/test摘要读取，new_fits=0、optimizer_steps=0。
 - **阻塞/风险**：可证processed-record终点差异，不能推断原始采集停止或实际v11截断/插值机制。实际generator commit/config与完整physical身份未核；pinned源码及标签重建不是来源证明。原PBT消费预算和模型/test门保持。
 - **下一步**：仅做一次官方MATR_v11发布metadata的generator版本凭证核查，不重复下载数据或反推；若发布记录未给出，则记录缺证STOP。
+
+
+## 2026-10-18 04:04 北京时间：MATR v11官方来源核查（有界STOP）
+
+- **已完成**：查官方Zenodo v11页及链接的Version11说明。发布身份/日期和MATR.zip MD5与旧下载回执一致；MATR具体更新为b3c0 seen/unseen分类，已读材料未给出归档精确generator commit/config绑定。
+- **证据**：`reports/matr_v11_release_provenance_20261018_root/PROVENANCE_CHECK_ZH.md`、`web_source_observations.json`、`acquisition_receipt.json`、`root_review.json`；官方URL在报告中。
+- **最小验证**：MD5比对旧已核回执、pinned版本说明SHA留存；没有重读归档/下载数据/new fit或test。new_fits=0、optimizer_steps=0。
+- **阻塞/风险**：完整API metadata未取得；web工具不可访问API，服务器一次API请求DNS临时失败，不改DNS/代理、不循环重试。只称已读HTML/更新说明未发现绑定，API字段UNKNOWN，不能声称全metadata缺失。STOP_ACTUAL_V11_GENERATOR_PROVENANCE_NOT_CLOSED，方向A闭合NO_GAIN与旧PBT/模型/test门保持。
+- **下一步**：转P1只读已有CP完成回执/冻结配置/checkpoint清单与stat，判断独立预算下的忠实复现可推进性；不加载checkpoint、不重跑fit或重置旧600步，不启动训练。

@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-17T19:48:38.805176+00:00",
-  "content_sha256": "e865217ea156b956cc64990bacb35989bff41d226180aeb5df21894f178815bb",
-  "file_count": 264,
+  "snapshot_utc": "2026-10-17T20:05:22.322999+00:00",
+  "content_sha256": "859cdadf7b58996b41bb46d6344df3004b19202c1fd7f8a0027b77f235a49d5c",
+  "file_count": 269,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,8 +14,8 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 16668,
-      "sha256": "1c33f6fc9f3a8c7effcd8d7fbd1380cdb2e09adc3937f4133779f892a37843a7"
+      "bytes": 17925,
+      "sha256": "540efe37173238693213d3c6cda994c83301c5cebc69d14b5e31cbc566d5d227"
     },
     {
       "path": "README.md",
@@ -32,8 +32,8 @@
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 6525,
-      "sha256": "834f10df8a58b826070b23317ae8633d0c493b20a3505ed7696862e12ed0261f"
+      "bytes": 6570,
+      "sha256": "3bf90306de261bf7dac6381e33605b143a7ae942b29f5e0c6d8abe0a814d8fea"
     },
     {
       "path": "automation/github_export/build_dynamic_A_eligible_20261017.py",
@@ -128,8 +128,8 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 9741,
-      "sha256": "9d899bb45b4d1a98db71ad714e2c7fb6258fa53c3462d36483bb4336e3b76433"
+      "bytes": 10540,
+      "sha256": "e8dfc47d59ec863b4ebe4808c00663cb93e7a6198154b1be8808a6b8764569aa"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
@@ -1006,6 +1006,36 @@
       "source_path": "reports/literature_synthesis_increment_v7_root/manifest.json",
       "bytes": 1820,
       "sha256": "38576d3cdf1cedf11531dbd6e34c0c8ebeb367e20824235188f4c66b486c692c"
+    },
+    {
+      "path": "reports/matr_v11_release_provenance_20261018_root/PROVENANCE_CHECK_ZH.md",
+      "source_path": "reports/matr_v11_release_provenance_20261018_root/PROVENANCE_CHECK_ZH.md",
+      "bytes": 2668,
+      "sha256": "98fd7a5f90d3678a4270be70ad5418dc9d4aae16614c4a2ed27c8dcfbbe07b92"
+    },
+    {
+      "path": "reports/matr_v11_release_provenance_20261018_root/acquisition_receipt.json",
+      "source_path": "reports/matr_v11_release_provenance_20261018_root/acquisition_receipt.json",
+      "bytes": 1353,
+      "sha256": "a8277ddebf7e85970c4a37a40cf8d24dfbf88c0f8c70ea3c6df063e0773b18fc"
+    },
+    {
+      "path": "reports/matr_v11_release_provenance_20261018_root/metadata_acquisition.py",
+      "source_path": "reports/matr_v11_release_provenance_20261018_root/metadata_acquisition.py",
+      "bytes": 4132,
+      "sha256": "0767ce06cd71551ccd99e1ee52af1964a2a60a7a657f973e95215629ce730589"
+    },
+    {
+      "path": "reports/matr_v11_release_provenance_20261018_root/root_review.json",
+      "source_path": "reports/matr_v11_release_provenance_20261018_root/root_review.json",
+      "bytes": 1594,
+      "sha256": "fa722d8ddc7241166ed58dac2699f9c4feb48e39e190c4a046da411b7241c18a"
+    },
+    {
+      "path": "reports/matr_v11_release_provenance_20261018_root/web_source_observations.json",
+      "source_path": "reports/matr_v11_release_provenance_20261018_root/web_source_observations.json",
+      "bytes": 1554,
+      "sha256": "b6dac0cad0c771be6fb1bc119a7065ce7a5d97496e14893677c5b30ab2623deb"
     },
     {
       "path": "reports/pbt_author_eol_val_contract_v2_root/active_preparation_index.json",

@@ -1,0 +1,29 @@
+{
+  "recorded_utc": "2026-10-17T20:05:22.039791+00:00",
+  "collection_method": "web tool opened official record HTML and linked Version11 document; this file is selected observations, not a raw HTTP snapshot or complete API response",
+  "sources": [
+    {
+      "url": "https://zenodo.org/records/19688272",
+      "sections": "Published/version; News; Files MATR.zip; Software Repository URL",
+      "facts": {
+        "version": "v11",
+        "published": "2026-04-22",
+        "MATR_zip_md5": "83a1528858b9e1b7b6886757bb561669",
+        "repository_url": "https://github.com/Ruifeng-Tan/BatteryLife",
+        "version11_details_url": "https://github.com/Ruifeng-Tan/BatteryLife/blob/main/assets/Version11_Update_Details.md"
+      },
+      "exact_generator_binding_found_in_inspected_HTML": false
+    },
+    {
+      "url": "https://github.com/Ruifeng-Tan/BatteryLife/blob/main/assets/Version11_Update_Details.md",
+      "section": "Update item3",
+      "fact": "MATR_b3c0.pkl seen/unseen category changed from unseen to seen; no execution provenance of MATR.zip stated in this document",
+      "exact_generator_binding_found_in_document": false
+    }
+  ],
+  "unverified_scope": [
+    "Complete official API metadata unavailable through web tool; server API request failed temporary DNS; not claiming all possible metadata has been inspected",
+    "Mutable GitHub main version notes do not identify source commit used to generate the released archive",
+    "No manifest binds exact generator configuration to the archive in the inspected material"
+  ]
+}
