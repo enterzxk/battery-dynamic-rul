@@ -1,0 +1,164 @@
+{
+  "status": "TRAIN_ONLY_GROUP_PRIOR_DIAGNOSTIC_COMPLETE",
+  "at_utc": "2026-10-17T22:54:53.029477+00:00",
+  "global_train_median": 1233.0,
+  "training_group_priors": {
+    "35": {
+      "train_cells": 10,
+      "median": 1263.5,
+      "min": 1171,
+      "max": 1352
+    },
+    "0": {
+      "train_cells": 6,
+      "median": 142.0,
+      "min": 104,
+      "max": 176
+    },
+    "45": {
+      "train_cells": 1,
+      "median": 987.0,
+      "min": 987,
+      "max": 987
+    }
+  },
+  "cell_equal_MAE": {
+    "model_exact_author": 61.63474574634282,
+    "model_original_roundtrip_native": 61.63474312183111,
+    "global_prior": 350.4,
+    "group_prior_with_fallback": 91.0
+  },
+  "relative_MAE_reduction_vs_group_prior": 0.32269510168854043,
+  "improved_cells_vs_group_prior": 3,
+  "global_to_model_gain": 288.76525425365713,
+  "global_to_group_gain": 259.4,
+  "group_to_model_gain": 29.365254253657177,
+  "fraction_global_gain_explained_by_group_prior": 0.8983075220405079,
+  "largest_global_gain_cell": "CALB_0_B187.pkl",
+  "largest_global_gain_share": 0.7043635488434906,
+  "per_cell": [
+    {
+      "cell": "CALB_0_B187.pkl",
+      "file_group": "0",
+      "prefixes": 100,
+      "group_train_support": 6,
+      "used_global_fallback": false,
+      "group_prior_prediction": 142.0,
+      "model_exact_author_MAE": 27.02140365600586,
+      "global_prior_MAE": 1044.0,
+      "group_prior_MAE": 47.0,
+      "global_to_model_gain": 1016.9785963439941,
+      "global_to_group_gain": 997.0,
+      "group_to_model_gain": 19.97859634399414,
+      "global_to_model_contribution": 203.3957192687988,
+      "global_to_group_contribution": 199.4,
+      "group_to_model_contribution": 3.9957192687988283
+    },
+    {
+      "cell": "CALB_35_B222.pkl",
+      "file_group": "35",
+      "prefixes": 99,
+      "group_train_support": 10,
+      "used_global_fallback": false,
+      "group_prior_prediction": 1263.5,
+      "model_exact_author_MAE": 28.33377475931187,
+      "global_prior_MAE": 27.0,
+      "group_prior_MAE": 3.5,
+      "global_to_model_gain": -1.3337747593118685,
+      "global_to_group_gain": 23.5,
+      "group_to_model_gain": -24.83377475931187,
+      "global_to_model_contribution": -0.2667549518623737,
+      "global_to_group_contribution": 4.7,
+      "group_to_model_contribution": -4.966754951862374
+    },
+    {
+      "cell": "CALB_25_T25-2.pkl",
+      "file_group": "25",
+      "prefixes": 99,
+      "group_train_support": 0,
+      "used_global_fallback": true,
+      "group_prior_prediction": 1233.0,
+      "model_exact_author_MAE": 89.83595537898516,
+      "global_prior_MAE": 251.0,
+      "group_prior_MAE": 251.0,
+      "global_to_model_gain": 161.16404462101485,
+      "global_to_group_gain": 0.0,
+      "group_to_model_gain": 161.16404462101485,
+      "global_to_model_contribution": 32.23280892420297,
+      "global_to_group_contribution": 0.0,
+      "group_to_model_contribution": 32.23280892420297
+    },
+    {
+      "cell": "CALB_35_B247.pkl",
+      "file_group": "35",
+      "prefixes": 99,
+      "group_train_support": 10,
+      "used_global_fallback": false,
+      "group_prior_prediction": 1263.5,
+      "model_exact_author_MAE": 95.4333829012784,
+      "global_prior_MAE": 178.0,
+      "group_prior_MAE": 147.5,
+      "global_to_model_gain": 82.5666170987216,
+      "global_to_group_gain": 30.5,
+      "group_to_model_gain": 52.06661709872159,
+      "global_to_model_contribution": 16.513323419744317,
+      "global_to_group_contribution": 6.1,
+      "group_to_model_contribution": 10.41332341974432
+    },
+    {
+      "cell": "CALB_45_B253.pkl",
+      "file_group": "45",
+      "prefixes": 100,
+      "group_train_support": 1,
+      "used_global_fallback": false,
+      "group_prior_prediction": 987.0,
+      "model_exact_author_MAE": 67.54921203613281,
+      "global_prior_MAE": 252.0,
+      "group_prior_MAE": 6.0,
+      "global_to_model_gain": 184.45078796386719,
+      "global_to_group_gain": 246.0,
+      "group_to_model_gain": -61.549212036132815,
+      "global_to_model_contribution": 36.890157592773434,
+      "global_to_group_contribution": 49.2,
+      "group_to_model_contribution": -12.309842407226563
+    }
+  ],
+  "subgroups": {
+    "group_supported": {
+      "cells": 4,
+      "model_MAE": 54.58444333818224,
+      "group_prior_MAE": 51.0,
+      "global_prior_MAE": 375.25,
+      "group_to_model_gain_contribution": -2.8675546705457897,
+      "global_to_model_gain_contribution": 256.5324453294542
+    },
+    "unsupported_fallback": {
+      "cells": 1,
+      "model_MAE": 89.83595537898516,
+      "group_prior_MAE": 251.0,
+      "global_prior_MAE": 251.0,
+      "group_to_model_gain_contribution": 32.23280892420297,
+      "global_to_model_gain_contribution": 32.23280892420297
+    }
+  },
+  "scope": "Existing selected5-cell validation predictions; exact author labels used for all three comparators. Original frozen native metric retained separately; no checkpoint re-selection.",
+  "new_fits": 0,
+  "optimizer_steps": 0,
+  "new_inference": 0,
+  "model_loads": 0,
+  "test_access": false,
+  "bindings": {
+    "experiments/cpmlp_calb_recipe_adapt_seed2021_v1/validation_predictions_epoch_002.csv": "bffadd1558ba46cd210f9c74145296dd300a9d0aec04bf72ec8e9011c7a3755c",
+    "experiments/cpmlp_calb_recipe_adapt_seed2021_v1/independent_metrics.json": "9f68b4b4ff23f344993fa8942343701656b4633f99e6677e84b820d386d31d5b",
+    "data/source_audit/calb_v11_trainval_stage_20261018_root/Life labels/CALB_labels.json": "6bd0999714f381c08aac2011e2347c47a9980ebca5c1866577bdfe46e3422958",
+    "experiments/cpmlp_calb_recipe_adapt_seed2021_v1/config.json": "786ef050046c6ccc7afa9ff4f794245a5298fd15a8588bb58d874a5721d5c414",
+    "reports/calb_group_prior_diagnosis_20261018_root/protocol.json": "aabb8d018bb76fe1a5583d88513ab77f3bc79f0ffbcc76a7a57ee1fa25f52b3d",
+    "reports/calb_group_prior_diagnosis_20261018_root/diagnose.py": "26dafa50915382d91f04daef21e83971dabe52bc5157e82fe610c5667b4dd954"
+  },
+  "limitations": [
+    "5 development cells/one seed and same-data model selection, no independent significance or generalization claim",
+    "Filename grouping is a legal static prior here, not a proven causal temperature effect; no validation labels used to estimate priors",
+    "Group45 support1, group25 support0 uses global fallback; supported/unsupported results must be separate",
+    "Full2GPU/test fidelity, physical identity/generator/strict online RUL restrictions unchanged"
+  ]
+}

@@ -200,3 +200,12 @@
 - **最小验证**：原stop/deadline/partial逻辑AST一致，不重复smoke；实际首batch有限loss/gradient/shape，497唯一配对键与99/100分布、原指标及10×52/连续520步账本吻合。原标签往返最大1.53e-5cycle，精确作者标签MAE61.634746。实际wall18.74s<1200；独立1fit/5200step预算已消费。
 - **阻塞/风险**：仅弱全局train-median与5开发验证电池，同集选模不是独立确认/SOTA/创新；singleGPU/val-only偏离，非完整2GPU/test论文复现或strict在线RUL。HUST/MATR NO_GAIN保留。神经累计4fits2580steps，MATR41CPUfits另记，全局new_fits_allowed=false/PBT消费/test锁不变。
 - **下一步**：只用已有CALB预测和17train标签，核有训练支持的文件组条件中位数对照（无支持组回退全局中位数），分解全局弱基线优势来源；不新fit/seed/model/inference/test或改标签/选模。
+
+
+## 2026-10-18 06:55 北京时间：CALB训练专用组先验缩小模型证据（停止扩展）
+
+- **已完成**：只用既有497预测与train17标签，按预先冻结文件组中位数/无支持回退全局规则完成对照。group35/0/45训练支持10/6/1，25无支持。整体模型MAE61.634746、组prior91、全局prior350.4；组prior在算术上覆盖原全局增益89.8308%。
+- **证据**：reports/calb_group_prior_diagnosis_20261018_root/GROUP_PRIOR_ZH.md、group_prior_diagnosis.json、per_cell_comparison.csv、protocol.json、root_diagnostic_decision.json、diagnose.py。支持组4cell模型54.584443>prior51；无支持25单cell模型89.835955<回退251，净余量集中于该cell。CALB_0_B187占全局增益70.4364%。
+- **最小验证**：原预测SHA/5cell固定，共用精确作者标签，模型精确MAE吻合旧独立值；三模型差值分解重构（<1e-8），先验无val/test参与拟合。new_fits=0、optimizer_steps=0、model_loads=0、new_inference=0；原native浮点口径/选模/结果不改。
+- **阻塞/风险**：判NO_GO_FOR_CALB_MODEL_OR_SEED_EXPANSION_FROM_CURRENT5，保留开发fit完成但不据弱全局基线82.41%称强模型或创新证据。整体对组prior仍改善32.2695%/3of5，支持组4cell却差7.0283%；5开发cell单seed与45组1train、25组0train限制不隐去，非因果/独立泛化确认。神经累计4fits2580steps、原HUST/MATR/PBT/test门保持。
+- **下一步**：只读已存官方v11完整API JSON及旧MATR来源回执，核实际generator commit/config绑定并区分保存快照与live未知；无绑定保留缺证STOP，不重新下载/扫描PBT或训练。

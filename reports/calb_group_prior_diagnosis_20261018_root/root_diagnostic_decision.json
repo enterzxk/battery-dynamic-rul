@@ -1,0 +1,11 @@
+{
+  "status": "NO_GO_FOR_CALB_MODEL_OR_SEED_EXPANSION_FROM_CURRENT5",
+  "at_utc": "2026-10-17T22:55:55.274520+00:00",
+  "reason": "Overall improvement against group prior relies on one unsupported-group fallback cell; supported4 modelMAE54.5844 worse than static prior51.0. Not stable evidence beyond legal static grouping.",
+  "development_fit_result_retained": true,
+  "original_predictions_unchanged": true,
+  "original_HUST_MATR_NO_GAIN_unchanged": true,
+  "new_fits_allowed": false,
+  "diagnostic_sha256": "b98c044c69cabdbf8ede733b57fcbe54da6ed075170cd6451658d975964d2d7f",
+  "next_action": "Close earliest source-provenance gap by reading existing full saved official v11 API JSON(data/source_audit/zenodo_19688272.json) and prior MATR provenance receipt; distinguish saved full-metadata evidence from live unknown and inspect exact generator commit/config binding. No fresh data download, PBT scan retry, model/test/fit or repeat HTML/literature review; preserve missing evidence STOP if absent."
+}
