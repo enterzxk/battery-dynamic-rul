@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-17T14:27:24.017604+00:00",
-  "content_sha256": "4625b12d0094716e7a43cda7de87842115707d83fdcc221c5badb909c0adf735",
+  "snapshot_utc": "2026-10-17T14:47:40.014159+00:00",
+  "content_sha256": "94f97bb7488128421603fc9ac1015418d27425b0fd25cc3e83cfc1072d35bb9d",
   "file_count": 214,
   "files": [
     {
@@ -14,8 +14,8 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 4273,
-      "sha256": "39b916e2144ee6f4b17c9dcb84ec32d66fb20d398d5d256733c1f4cd9b38e491"
+      "bytes": 4514,
+      "sha256": "70cbf100388f3ac09e7a2909b356975597730ab7f0d9a25dcaf73c3d1c060828"
     },
     {
       "path": "README.md",
@@ -776,8 +776,8 @@
     {
       "path": "reports/pbt_author_eol_val_contract_v2_root/active_preparation_index.json",
       "source_path": "reports/pbt_author_eol_val_contract_v2_root/active_preparation_index.json",
-      "bytes": 15931,
-      "sha256": "a0345229363a0c884856a85a6c963caf1971018d6201088d5a15416740f571ae"
+      "bytes": 17169,
+      "sha256": "7ca7fbdcebd23245a838b2cb3f65e57f3b429291fb761f7ec559e617544b7bc7"
     },
     {
       "path": "reports/pbt_author_eol_val_contract_v2_root/contract_v2.json",

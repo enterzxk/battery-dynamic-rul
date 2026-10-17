@@ -16,5 +16,7 @@
 - **已完成**：用户明确选择公开仓库 `enterzxk/battery-dynamic-rul`。实现白名单文本导出，提供 `docs/CHATGPT_CONTEXT_ZH.md` 中文项目解释入口和 `docs/GITHUB_SYNC_ZH.md` 同步规则；已将每阶段更新/补同步接入现有每小时任务 `battery-rul`。此阶段没有训练或模型推理。
 - **证据**：`automation/bin/export_github_context.py`；导出清单 `automation/github_export/public_snapshot.json`；待上传内容 `automation/github_export/bundle.json`。清单列出实际导出的文件路径、大小与原始 SHA256，包含真实开发结果和 validation 预测。首次发布成功后的提交 SHA/URL 与回读记录以 `automation/state/github_sync.json` 为准；该文件缺失或 status 非 SYNCED 时不能报告上传成功。
 - **最小验证**：已在真实服务器运行一次导出；白名单路径/文本大小/UTF-8/常见凭据格式检查通过。没有读取原始数据、checkpoint 或论文全文，没有重跑 smoke 或训练。
-- **阻塞/风险**：首次新建仓库时浏览器控制连续超时，目标仓库创建等待用户手工完成；创建后使用已连接 GitHub 工具继续发布。每小时任务依赖额度、应用、网络与授权可用。公开镜像只代表清单时点，清单之外引用的服务器材料没有自动公开。
-- **下一步**：确认仓库存在后上传当前 bundle 到 main，回读快照与中文入口一致后记录同步回执；随后按科学主线解决当前最早真实阻塞。
+- **阻塞/风险**：仓库创建阻塞已由用户手工创建解除；公开性、写入权限和 main 分支已核对，首批上传并回读成功。每小时任务依赖额度、应用、网络与授权可用。公开镜像只代表清单时点，清单之外引用的服务器材料没有自动公开。
+- **下一步**：按科学主线解决当前最早真实阻塞；每个实质阶段完成后同步新进度和证据，无变化不提交。
+
+首次发布回执：215 个文件已更新到 main，三个关键入口回读逐字一致。提交 [865a6037039b](https://github.com/enterzxk/battery-dynamic-rul/commit/865a6037039bc66ae3df653c117c107fc2b79342)。后续同步以 `automation/state/github_sync.json` 与仓库最新提交为准。
