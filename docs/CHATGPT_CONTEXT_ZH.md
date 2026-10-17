@@ -181,3 +181,8 @@ MATR来源补充核查已完成：已存record19688272完整API（SHA 5b79e36abb
 ## 2026-10-18 07:25 北京时间增量：CALB命名身份边界
 
 仅源码/旧CSV核官方27名单：去掉温度前缀后basename27唯一、跨角色/温度重名0。pinned代码以温度目录+源文件basename生成cell_id，因此旧22条cell_id_matches不构成独立物理serial证明。报告reports/calb_identity_text_audit_20261018_root/IDENTITY_AUDIT_ZH.md及identity_audit.json。不同别名/跨来源/预训练身份仍未知，实际生成器STOP/原CALB扩展NO_GO保持。文件组prior可按pinned命名解释为温度层prior，不能作因果温度结论。test仅源码5文件名，本轮fit/step/model/inference/binary/network=0。下一项只用既有小摘要核eol<=100筛选的实际origin排除。
+
+
+## 2026-10-18 07:40 北京时间：EOL门槛风险的实际边界
+
+现有固定MATR136/HUST62 trainval全部作者EOL>100（最小147/1164），所以官方eol<=100整cell筛选实际移除0cell/0origin。完整结局依赖仍存在，不能称这批已被该门槛删除；其他缺记录/别名排除原因未在此评估。见reports/early_eol_filter_realization_20261018_root/FILTER_REALIZATION_ZH.md与filter_realization.json。本轮无fit/step/model/inference/binary，strict在线与test门不变。下一项仅现有CALB10epoch选模目标诊断。

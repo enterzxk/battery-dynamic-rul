@@ -227,3 +227,12 @@
 - **最小验证**：解析固定17/5/5名单、27全名/27basename唯一；复用22条cell_id_matches核对应train/val全集，不重开PKL；5test仅源码文件名。new_fits=0、steps=0、model/inference/binary/network=0。
 - **阻塞/风险**：cell_id本由文件名派生，非独立serial；不同basename别名、跨来源/预训练身份仍unverified。未证明实际v11生成器，温度组prior不作温度因果结论，原CALB NO_GO/训练/test/PBT门保持。
 - **下一步**：只用现有标签/周期小摘要核官方eol<=100整cell筛选的实际早期origin排除量，不新fit或构建严格在线队列。
+
+
+## 2026-10-18 07:40 北京时间：early EOL筛选实际影响为零（限定人口）
+
+- **已完成**：固定MATR102train/34val、HUST47train/15val共198cell，eol<=100实际排除0cell/0origin；最小作者EOL分别147/1164。
+- **证据**：reports/early_eol_filter_realization_20261018_root/FILTER_REALIZATION_ZH.md、filter_realization.json；绑定既有摘要、split和loader:487–505 SHA。
+- **最小验证**：按role精确覆盖/唯一性，HUST现有摘要trainval标签与stage v11标签逐值吻合；全部>100即可确定该规则实际移除0origin，不重建曲线/重跑smoke。
+- **阻塞/风险**：完整结局依赖仍是结构风险，但不冒称在这198cell已造成删除；不涵盖其他排除原因/CALB/test或证明strict在线与身份。new_fits=0、steps/model/inference/binary=0，门控保持。
+- **下一步**：只读CALB已存10epoch指标核prefix-MAPE与cell-MAE最优是否一致，不重新选模/预测/fit。
