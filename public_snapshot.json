@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-17T19:20:23.588948+00:00",
-  "content_sha256": "13d3559464625950f16dcb31abe3943d007fb9affbafe7da496c41aeacddc704",
-  "file_count": 255,
+  "snapshot_utc": "2026-10-17T19:33:51.064990+00:00",
+  "content_sha256": "771b8b36edaba572f388d2368d42fc2c00c71fbcffeb6ab46aec9ea8255c7afa",
+  "file_count": 260,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,8 +14,8 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 14107,
-      "sha256": "b5970dc68dcfe2416ad2e6e328c28e90782b9ec193cba8e718abd79c5796f9dc"
+      "bytes": 15327,
+      "sha256": "8819bbe99ca2058a2e157bc366a7f15479555775bd4b8e0aa594fc08423c060f"
     },
     {
       "path": "README.md",
@@ -32,8 +32,8 @@
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 6241,
-      "sha256": "b1e35938395ff485f9ec108b823eb4dbf6c17e6d9c12bf5547365fa031fe12ca"
+      "bytes": 6401,
+      "sha256": "edfa5580f791481679bb2dddc0eb8604406c27cb8fe7f659b950a09f7107e1e9"
     },
     {
       "path": "automation/github_export/build_dynamic_A_eligible_20261017.py",
@@ -128,8 +128,8 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 8304,
-      "sha256": "eaf3566c2c2ee3fa7da416aa0810316cb459ae805250e4e26f1a1fb092c7f087"
+      "bytes": 8934,
+      "sha256": "e58f8dd0a1f42c1d94fcc2bd7298ff3b0523f3efe56726711454c54587b96cdd"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
@@ -312,6 +312,12 @@
       "sha256": "9f44c73925fe8b6fb2e5d1482fece2d4272a21f5a694bf621024c8d7348969d7"
     },
     {
+      "path": "experiments/dynamic_A_matr_retrospective_seed42_v1/ERROR_CONTRIBUTION_ZH.md",
+      "source_path": "experiments/dynamic_A_matr_retrospective_seed42_v1/ERROR_CONTRIBUTION_ZH.md",
+      "bytes": 3424,
+      "sha256": "c751dd5442ee2d13249bd074930cd70fd9dadb5921d9f984778ef14a5b9bfbb8"
+    },
+    {
       "path": "experiments/dynamic_A_matr_retrospective_seed42_v1/LABEL_BOUNDARY_SUPPORT_ZH.md",
       "source_path": "experiments/dynamic_A_matr_retrospective_seed42_v1/LABEL_BOUNDARY_SUPPORT_ZH.md",
       "bytes": 4407,
@@ -330,6 +336,18 @@
       "sha256": "756dc312b7e52b8685dd195db69319fe1e49ca7b4d0958551c46b76df2917cdd"
     },
     {
+      "path": "experiments/dynamic_A_matr_retrospective_seed42_v1/batch_observation_cross_tab.json",
+      "source_path": "experiments/dynamic_A_matr_retrospective_seed42_v1/batch_observation_cross_tab.json",
+      "bytes": 1244,
+      "sha256": "13a0a3a8a14d612052ebb28c1586b16a853d1390aef89701aff50668eb272220"
+    },
+    {
+      "path": "experiments/dynamic_A_matr_retrospective_seed42_v1/batch_observation_diagnosis.py",
+      "source_path": "experiments/dynamic_A_matr_retrospective_seed42_v1/batch_observation_diagnosis.py",
+      "bytes": 991,
+      "sha256": "ae386378d4e8cdada2486489924335d7f623a19c608065aa288e5d1ae98f7a25"
+    },
+    {
       "path": "experiments/dynamic_A_matr_retrospective_seed42_v1/censored_failure_diagnosis.json",
       "source_path": "experiments/dynamic_A_matr_retrospective_seed42_v1/censored_failure_diagnosis.json",
       "bytes": 19872,
@@ -340,6 +358,18 @@
       "source_path": "experiments/dynamic_A_matr_retrospective_seed42_v1/completion_receipt.json",
       "bytes": 3096,
       "sha256": "2ea5b2c9a1bebb2a8bfc8bf2a49cdeae1b128598a1d0ca8ccec6d4699e42e0f1"
+    },
+    {
+      "path": "experiments/dynamic_A_matr_retrospective_seed42_v1/error_contribution.json",
+      "source_path": "experiments/dynamic_A_matr_retrospective_seed42_v1/error_contribution.json",
+      "bytes": 43922,
+      "sha256": "54ba2723f7c7cb517c3867d9ead9d8d3169205d886e3b6cc30ddfd358fd5d72c"
+    },
+    {
+      "path": "experiments/dynamic_A_matr_retrospective_seed42_v1/error_contribution_diagnosis.py",
+      "source_path": "experiments/dynamic_A_matr_retrospective_seed42_v1/error_contribution_diagnosis.py",
+      "bytes": 5073,
+      "sha256": "ccbd959c97eff29bdcdd99fb8df58db0faabe3345567e916909a7aa065fdbfc4"
     },
     {
       "path": "experiments/dynamic_A_matr_retrospective_seed42_v1/fit_ledger.jsonl",

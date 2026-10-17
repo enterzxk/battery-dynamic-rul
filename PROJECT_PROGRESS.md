@@ -74,3 +74,12 @@
 - **最小验证**：已存回归值int后吻合作者标签，源码SHA匹配；133个合格源ID标签记录、每k训练角色特征范围和feature-only同batch邻居。没有重跑回归或smoke；new_fits=0、optimizer_steps=0。
 - **阻塞/风险**：47训练/15验证尾段回归标签中41/11个不晚于观测末端，不能当真实未来事件；两个大误差电池EOL2237/1932均超过训练最大1834，但早期特征均在全训练边际范围内，边际包含不能证明联合支持/可预测性。v11生成器、物理serial、PBT/test门保持原限制，NO_GAIN不变。
 - **下一步**：仅用既有预测按训练寿命支持范围内/外及观测/删失分解误差贡献，不改标签/主要指标或新增fit。
+
+
+## 2026-10-18 03:34 北京时间：固定人口误差分解与batch混杂
+
+- **已完成**：从已有预测完成训练寿命范围内/外、观测/删失及交叉组的误差贡献分解。超训练范围两电池占A1绝对误差43.676%，但仅占Ridge速率净改善11.662%；范围内32电池Ridge/GBDT速率增益4.202%/3.989%，NO_GAIN保持。
+- **证据**：`experiments/dynamic_A_matr_retrospective_seed42_v1/ERROR_CONTRIBUTION_ZH.md`、`error_contribution.json`、`batch_observation_cross_tab.json`及两份可复算诊断程序。
+- **最小验证**：3种划分均覆盖同34电池/136时点；每组加权贡献重构全部5模型原始MAE（<=1e-8），原预测SHA吻合。new_fits=0、optimizer_steps=0，无binary/test。
+- **阻塞/风险**：合格训练/验证中batch1/3全部未观测事件、batch2/4全部已观测，观测/删失误差差异与batch完全混杂，不能归因为标签或删失单独效应。作者标签/strict_online/physical serial/generator限制及PBT/test门保持。
+- **下一步**：仅查已有各batch末次容量、观测终止位置与pinned标签分支的可证对应，解释混杂的边界；不猜实际生成器、不改阈值/标签/人口或新增fit。

@@ -1,0 +1,56 @@
+{
+  "status": "EXISTING_COHORT_BATCH_OBSERVATION_CROSS_TAB",
+  "counts": [
+    {
+      "split": "train",
+      "batch": 1,
+      "event_status": "right_censored",
+      "cells": 19
+    },
+    {
+      "split": "train",
+      "batch": 2,
+      "event_status": "observed",
+      "cells": 26
+    },
+    {
+      "split": "train",
+      "batch": 3,
+      "event_status": "right_censored",
+      "cells": 28
+    },
+    {
+      "split": "train",
+      "batch": 4,
+      "event_status": "observed",
+      "cells": 26
+    },
+    {
+      "split": "val",
+      "batch": 1,
+      "event_status": "right_censored",
+      "cells": 11
+    },
+    {
+      "split": "val",
+      "batch": 2,
+      "event_status": "observed",
+      "cells": 9
+    },
+    {
+      "split": "val",
+      "batch": 3,
+      "event_status": "right_censored",
+      "cells": 4
+    },
+    {
+      "split": "val",
+      "batch": 4,
+      "event_status": "observed",
+      "cells": 10
+    }
+  ],
+  "interpretation": "Observed versus censored subgroup comparison may be confounded by source batch. This is descriptive association, not an effect of censoring, labels or chemistry. Batch already existed as legal A1/A2 feature; no refit/label change.",
+  "new_fits": 0,
+  "optimizer_steps": 0
+}
