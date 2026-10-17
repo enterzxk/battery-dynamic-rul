@@ -1,0 +1,518 @@
+{
+  "at_utc": "2026-10-17T19:17:04.232049+00:00",
+  "status": "COMPLETE_EXISTING_TEXT_LABEL_AND_SUPPORT_DIAGNOSIS",
+  "label_boundary": {
+    "MATR_b1c2": {
+      "cycle_rows": 2235,
+      "last_cycle_soh": 0.8006095909090909,
+      "rule": "last20_fit_soh_to_row_predict_0.80_int_truncate",
+      "regression_float_before_int": 2237.9413549873907,
+      "reconstructed_label": 2237,
+      "author_v11_label": 2237,
+      "first_crossing_row": null,
+      "metadata_sha256": "86dad52f3c396310044f64d09e31ff052e2859876e0009178feb6309e063c53f",
+      "cycle_summary_sha256": "56831b714d9e36700d2ca7950ccd387c692824a5ae0fdb5b1457506e6c7f592a",
+      "float_minus_followup": 2.941354987390696
+    },
+    "MATR_b3c38": {
+      "cycle_rows": 1933,
+      "last_cycle_soh": 0.8000041636363636,
+      "rule": "last20_fit_soh_to_row_predict_0.80_int_truncate",
+      "regression_float_before_int": 1932.6233891675752,
+      "reconstructed_label": 1932,
+      "author_v11_label": 1932,
+      "first_crossing_row": null,
+      "metadata_sha256": "d8618f2ccdb132df55e2438a7f6acac113972a3c810fa1b0157a378691e80e1f",
+      "cycle_summary_sha256": "d6e4dad806c4bc58464562d7c75f848105581b1a1336540be6594a6ac550248d",
+      "float_minus_followup": -0.37661083242483073
+    }
+  },
+  "eligible_train_val_label_boundary": {
+    "train": {
+      "tail_regression_cells": 47,
+      "author_EOL_at_or_before_observed_end": 41,
+      "author_minus_followup_range": [
+        -1,
+        3
+      ],
+      "warning": "These are author regression targets, not guaranteed future failure events; no label edits or test role evaluated."
+    },
+    "val": {
+      "tail_regression_cells": 15,
+      "author_EOL_at_or_before_observed_end": 11,
+      "author_minus_followup_range": [
+        -1,
+        2
+      ],
+      "warning": "These are author regression targets, not guaranteed future failure events; no label edits or test role evaluated."
+    }
+  },
+  "training_author_EOL_range": [
+    147.0,
+    1834.0
+  ],
+  "feature_support": [
+    {
+      "cell_id": "MATR_b1c2",
+      "k": 50,
+      "train_cells": 99,
+      "same_batch_train_cells": 19,
+      "feature_marginals": {
+        "soh": {
+          "target": 0.9871209090909091,
+          "all_train_min": 0.9379879999999998,
+          "all_train_max": 0.997751818181818,
+          "all_train_percentile_le": 0.9090909090909091,
+          "outside_all_train_range": false,
+          "same_batch_min": 0.9712984545454546,
+          "same_batch_max": 0.997751818181818,
+          "outside_same_batch_range": false
+        },
+        "cumulative_discharge_Ah": {
+          "target": 54.26086019999999,
+          "all_train_min": 51.862317000000004,
+          "all_train_max": 54.887189600000006,
+          "all_train_percentile_le": 0.9191919191919192,
+          "outside_all_train_range": false,
+          "same_batch_min": 53.35111990000001,
+          "same_batch_max": 54.887189600000006,
+          "outside_same_batch_range": false
+        },
+        "capacity_slope_last20_Ah_per_cycle": {
+          "target": 9.501729323298725e-06,
+          "all_train_min": -0.0010757347368421078,
+          "all_train_max": 4.912270676691561e-05,
+          "all_train_percentile_le": 0.8282828282828283,
+          "outside_all_train_range": false,
+          "same_batch_min": -0.0001314166917293296,
+          "same_batch_max": 2.5465714285717245e-05,
+          "outside_same_batch_range": false
+        }
+      },
+      "nearest_same_batch": [
+        {
+          "cell_id": "MATR_b1c3",
+          "distance_train_sd_units": 0.09225655701990572,
+          "author_EOL": 1431.0
+        },
+        {
+          "cell_id": "MATR_b1c16",
+          "distance_train_sd_units": 0.1206613916029869,
+          "author_EOL": 860.0
+        },
+        {
+          "cell_id": "MATR_b1c42",
+          "distance_train_sd_units": 0.17651569315370416,
+          "author_EOL": 700.0
+        }
+      ],
+      "target_author_EOL": 2237.0
+    },
+    {
+      "cell_id": "MATR_b1c2",
+      "k": 100,
+      "train_cells": 99,
+      "same_batch_train_cells": 19,
+      "feature_marginals": {
+        "soh": {
+          "target": 0.9863133636363637,
+          "all_train_min": 0.8795228909090909,
+          "all_train_max": 0.9961453636363635,
+          "all_train_percentile_le": 0.9090909090909091,
+          "outside_all_train_range": false,
+          "same_batch_min": 0.9645928181818181,
+          "same_batch_max": 0.9961453636363635,
+          "outside_same_batch_range": false
+        },
+        "cumulative_discharge_Ah": {
+          "target": 108.53669319999996,
+          "all_train_min": 102.80986297999995,
+          "all_train_max": 109.70510160000002,
+          "all_train_percentile_le": 0.9191919191919192,
+          "outside_all_train_range": false,
+          "same_batch_min": 106.76570659999997,
+          "same_batch_max": 109.70510160000002,
+          "outside_same_batch_range": false
+        },
+        "capacity_slope_last20_Ah_per_cycle": {
+          "target": -1.534939849625655e-05,
+          "all_train_min": -0.0013794987067669107,
+          "all_train_max": 1.8592932330850768e-05,
+          "all_train_percentile_le": 0.7676767676767676,
+          "outside_all_train_range": false,
+          "same_batch_min": -0.00022389270676691724,
+          "same_batch_max": -6.957368421061412e-06,
+          "outside_same_batch_range": false
+        }
+      },
+      "nearest_same_batch": [
+        {
+          "cell_id": "MATR_b1c3",
+          "distance_train_sd_units": 0.057883764543379214,
+          "author_EOL": 1431.0
+        },
+        {
+          "cell_id": "MATR_b1c16",
+          "distance_train_sd_units": 0.14497576366656106,
+          "author_EOL": 860.0
+        },
+        {
+          "cell_id": "MATR_b1c42",
+          "distance_train_sd_units": 0.1716491368284816,
+          "author_EOL": 700.0
+        }
+      ],
+      "target_author_EOL": 2237.0
+    },
+    {
+      "cell_id": "MATR_b1c2",
+      "k": 150,
+      "train_cells": 98,
+      "same_batch_train_cells": 19,
+      "feature_marginals": {
+        "soh": {
+          "target": 0.9852697272727271,
+          "all_train_min": 0.9167510909090908,
+          "all_train_max": 0.9939408181818182,
+          "all_train_percentile_le": 0.9285714285714286,
+          "outside_all_train_range": false,
+          "same_batch_min": 0.9535171818181817,
+          "same_batch_max": 0.9939408181818182,
+          "outside_same_batch_range": false
+        },
+        "cumulative_discharge_Ah": {
+          "target": 162.75824239999994,
+          "all_train_min": 155.55829369999995,
+          "all_train_max": 164.417649,
+          "all_train_percentile_le": 0.9183673469387755,
+          "outside_all_train_range": false,
+          "same_batch_min": 159.72062190000005,
+          "same_batch_max": 164.417649,
+          "outside_same_batch_range": false
+        },
+        "capacity_slope_last20_Ah_per_cycle": {
+          "target": -2.609413533835479e-05,
+          "all_train_min": -0.0006553692481202992,
+          "all_train_max": 0.00012962992481202088,
+          "all_train_percentile_le": 0.8163265306122449,
+          "outside_all_train_range": false,
+          "same_batch_min": -0.00025161796992480994,
+          "same_batch_max": -2.683849624060896e-05,
+          "outside_same_batch_range": true
+        }
+      },
+      "nearest_same_batch": [
+        {
+          "cell_id": "MATR_b1c16",
+          "distance_train_sd_units": 0.12435990459097013,
+          "author_EOL": 860.0
+        },
+        {
+          "cell_id": "MATR_b1c9",
+          "distance_train_sd_units": 0.2308902092215892,
+          "author_EOL": 1052.0
+        },
+        {
+          "cell_id": "MATR_b1c42",
+          "distance_train_sd_units": 0.26151765299784957,
+          "author_EOL": 700.0
+        }
+      ],
+      "target_author_EOL": 2237.0
+    },
+    {
+      "cell_id": "MATR_b1c2",
+      "k": 200,
+      "train_cells": 98,
+      "same_batch_train_cells": 19,
+      "feature_marginals": {
+        "soh": {
+          "target": 0.9842919090909091,
+          "all_train_min": 0.887113809090909,
+          "all_train_max": 0.9916494545454544,
+          "all_train_percentile_le": 0.9489795918367347,
+          "outside_all_train_range": false,
+          "same_batch_min": 0.9415368181818181,
+          "same_batch_max": 0.9916494545454544,
+          "outside_same_batch_range": false
+        },
+        "cumulative_discharge_Ah": {
+          "target": 216.91907359999988,
+          "all_train_min": 206.3894761999999,
+          "all_train_max": 219.02490790000007,
+          "all_train_percentile_le": 0.9183673469387755,
+          "outside_all_train_range": false,
+          "same_batch_min": 211.81396580000006,
+          "same_batch_max": 219.02490790000007,
+          "outside_same_batch_range": false
+        },
+        "capacity_slope_last20_Ah_per_cycle": {
+          "target": -3.324360902256723e-05,
+          "all_train_min": -0.0007222960751879575,
+          "all_train_max": -4.358421052627146e-06,
+          "all_train_percentile_le": 0.8163265306122449,
+          "outside_all_train_range": false,
+          "same_batch_min": -0.00024877646616541923,
+          "same_batch_max": -4.358421052627146e-06,
+          "outside_same_batch_range": false
+        }
+      },
+      "nearest_same_batch": [
+        {
+          "cell_id": "MATR_b1c16",
+          "distance_train_sd_units": 0.08058374593315286,
+          "author_EOL": 860.0
+        },
+        {
+          "cell_id": "MATR_b1c3",
+          "distance_train_sd_units": 0.16818590661931584,
+          "author_EOL": 1431.0
+        },
+        {
+          "cell_id": "MATR_b1c9",
+          "distance_train_sd_units": 0.20886699378991233,
+          "author_EOL": 1052.0
+        }
+      ],
+      "target_author_EOL": 2237.0
+    },
+    {
+      "cell_id": "MATR_b3c38",
+      "k": 50,
+      "train_cells": 99,
+      "same_batch_train_cells": 28,
+      "feature_marginals": {
+        "soh": {
+          "target": 0.974757909090909,
+          "all_train_min": 0.9379879999999998,
+          "all_train_max": 0.997751818181818,
+          "all_train_percentile_le": 0.5757575757575758,
+          "outside_all_train_range": false,
+          "same_batch_min": 0.9498795454545454,
+          "same_batch_max": 0.9796476363636363,
+          "outside_same_batch_range": false
+        },
+        "cumulative_discharge_Ah": {
+          "target": 53.611888,
+          "all_train_min": 51.862317000000004,
+          "all_train_max": 54.887189600000006,
+          "all_train_percentile_le": 0.5959595959595959,
+          "outside_all_train_range": false,
+          "same_batch_min": 52.469971,
+          "same_batch_max": 53.84905030000001,
+          "outside_same_batch_range": false
+        },
+        "capacity_slope_last20_Ah_per_cycle": {
+          "target": -2.010736842105068e-05,
+          "all_train_min": -0.0010757347368421078,
+          "all_train_max": 4.912270676691561e-05,
+          "all_train_percentile_le": 0.46464646464646464,
+          "outside_all_train_range": false,
+          "same_batch_min": -0.0002172787969924712,
+          "same_batch_max": 1.5514736842092703e-05,
+          "outside_same_batch_range": false
+        }
+      },
+      "nearest_same_batch": [
+        {
+          "cell_id": "MATR_b3c15",
+          "distance_train_sd_units": 0.14300982221729133,
+          "author_EOL": 874.0
+        },
+        {
+          "cell_id": "MATR_b3c9",
+          "distance_train_sd_units": 0.15522442725157895,
+          "author_EOL": 1036.0
+        },
+        {
+          "cell_id": "MATR_b3c44",
+          "distance_train_sd_units": 0.155309635426895,
+          "author_EOL": 938.0
+        }
+      ],
+      "target_author_EOL": 1932.0
+    },
+    {
+      "cell_id": "MATR_b3c38",
+      "k": 100,
+      "train_cells": 99,
+      "same_batch_train_cells": 28,
+      "feature_marginals": {
+        "soh": {
+          "target": 0.9736919090909091,
+          "all_train_min": 0.8795228909090909,
+          "all_train_max": 0.9961453636363635,
+          "all_train_percentile_le": 0.6060606060606061,
+          "outside_all_train_range": false,
+          "same_batch_min": 0.9397421818181818,
+          "same_batch_max": 0.9784982727272725,
+          "outside_same_batch_range": false
+        },
+        "cumulative_discharge_Ah": {
+          "target": 107.1973535,
+          "all_train_min": 102.80986297999995,
+          "all_train_max": 109.70510160000002,
+          "all_train_percentile_le": 0.6060606060606061,
+          "outside_all_train_range": false,
+          "same_batch_min": 104.44139639999996,
+          "same_batch_max": 107.70091289999999,
+          "outside_same_batch_range": false
+        },
+        "capacity_slope_last20_Ah_per_cycle": {
+          "target": -2.4101503759398286e-05,
+          "all_train_min": -0.0013794987067669107,
+          "all_train_max": 1.8592932330850768e-05,
+          "all_train_percentile_le": 0.6161616161616161,
+          "outside_all_train_range": false,
+          "same_batch_min": -0.00023907556390975935,
+          "same_batch_max": -7.387969924798926e-06,
+          "outside_same_batch_range": false
+        }
+      },
+      "nearest_same_batch": [
+        {
+          "cell_id": "MATR_b3c45",
+          "distance_train_sd_units": 0.04749090838372862,
+          "author_EOL": 1799.0
+        },
+        {
+          "cell_id": "MATR_b3c9",
+          "distance_train_sd_units": 0.10452619471462848,
+          "author_EOL": 1036.0
+        },
+        {
+          "cell_id": "MATR_b3c31",
+          "distance_train_sd_units": 0.1410747680391738,
+          "author_EOL": 729.0
+        }
+      ],
+      "target_author_EOL": 1932.0
+    },
+    {
+      "cell_id": "MATR_b3c38",
+      "k": 150,
+      "train_cells": 98,
+      "same_batch_train_cells": 28,
+      "feature_marginals": {
+        "soh": {
+          "target": 0.9727800909090908,
+          "all_train_min": 0.9167510909090908,
+          "all_train_max": 0.9939408181818182,
+          "all_train_percentile_le": 0.6428571428571429,
+          "outside_all_train_range": false,
+          "same_batch_min": 0.9291431818181818,
+          "same_batch_max": 0.9773773636363636,
+          "outside_same_batch_range": false
+        },
+        "cumulative_discharge_Ah": {
+          "target": 160.72519690000004,
+          "all_train_min": 155.55829369999995,
+          "all_train_max": 164.417649,
+          "all_train_percentile_le": 0.6224489795918368,
+          "outside_all_train_range": false,
+          "same_batch_min": 155.82802809999998,
+          "same_batch_max": 161.49066799999989,
+          "outside_same_batch_range": false
+        },
+        "capacity_slope_last20_Ah_per_cycle": {
+          "target": -2.7782932330833846e-05,
+          "all_train_min": -0.0006553692481202992,
+          "all_train_max": 0.00012962992481202088,
+          "all_train_percentile_le": 0.7959183673469388,
+          "outside_all_train_range": false,
+          "same_batch_min": -0.00024270090225565402,
+          "same_batch_max": 5.188721804430509e-07,
+          "outside_same_batch_range": false
+        }
+      },
+      "nearest_same_batch": [
+        {
+          "cell_id": "MATR_b3c31",
+          "distance_train_sd_units": 0.15720510381944994,
+          "author_EOL": 729.0
+        },
+        {
+          "cell_id": "MATR_b3c15",
+          "distance_train_sd_units": 0.19122640822903592,
+          "author_EOL": 874.0
+        },
+        {
+          "cell_id": "MATR_b3c9",
+          "distance_train_sd_units": 0.24754487862957797,
+          "author_EOL": 1036.0
+        }
+      ],
+      "target_author_EOL": 1932.0
+    },
+    {
+      "cell_id": "MATR_b3c38",
+      "k": 200,
+      "train_cells": 98,
+      "same_batch_train_cells": 28,
+      "feature_marginals": {
+        "soh": {
+          "target": 0.9714307272727272,
+          "all_train_min": 0.887113809090909,
+          "all_train_max": 0.9916494545454544,
+          "all_train_percentile_le": 0.673469387755102,
+          "outside_all_train_range": false,
+          "same_batch_min": 0.9187848181818181,
+          "same_batch_max": 0.9757334545454543,
+          "outside_same_batch_range": false
+        },
+        "cumulative_discharge_Ah": {
+          "target": 214.1895344000001,
+          "all_train_min": 206.3894761999999,
+          "all_train_max": 219.02490790000007,
+          "all_train_percentile_le": 0.6326530612244898,
+          "outside_all_train_range": false,
+          "same_batch_min": 206.63379539999997,
+          "same_batch_max": 215.1950700999999,
+          "outside_same_batch_range": false
+        },
+        "capacity_slope_last20_Ah_per_cycle": {
+          "target": -3.40050375939881e-05,
+          "all_train_min": -0.0007222960751879575,
+          "all_train_max": -4.358421052627146e-06,
+          "all_train_percentile_le": 0.8061224489795918,
+          "outside_all_train_range": false,
+          "same_batch_min": -0.00022332992481202715,
+          "same_batch_max": -2.294766917292724e-05,
+          "outside_same_batch_range": false
+        }
+      },
+      "nearest_same_batch": [
+        {
+          "cell_id": "MATR_b3c7",
+          "distance_train_sd_units": 0.10110301537864809,
+          "author_EOL": 1834.0
+        },
+        {
+          "cell_id": "MATR_b3c9",
+          "distance_train_sd_units": 0.1289676906925819,
+          "author_EOL": 1036.0
+        },
+        {
+          "cell_id": "MATR_b3c44",
+          "distance_train_sd_units": 0.1697588044750696,
+          "author_EOL": 938.0
+        }
+      ],
+      "target_author_EOL": 1932.0
+    }
+  ],
+  "method": "Within each fixed k, compare target to training-only marginal ranges and nearest same-batch training cells in 3D (SOH,cumulativeAh,rate), standardized using all train cells at that k. Neighbors chosen by features only, labels shown after selection; descriptive, no predictive model fitted.",
+  "bindings": {
+    "reports/dynamic_A_eligible_20261017_root/candidate_features.csv": "b6a4dd686ce922cbbf964e40fcf610612a6e4388078b7f54cec256a18f27d211",
+    "reports/matr_label_reconstruction_audit/per_cell_with_diff.jsonl": "e694a1ede002fe0bc9030e140c31166434094c4f4127d0be729e8d2a511e6f5c",
+    "repos/pinned/BatteryLife_3b17bb53202e10711deae0448c91f84144bb3dd9/process_scripts/Extract_life_labels.py": "a905ef24c568e6f615ee638ebb6581c170aaf1e21ee50354a57ebaf11e9ad85b",
+    "experiments/dynamic_A_matr_retrospective_seed42_v1/validation_predictions.csv": "b336f3b69219d9f8c1a4044e68bb8e6b9a365b7227673d722118e3b750ca0c22"
+  },
+  "new_fits": 0,
+  "optimizer_steps": 0,
+  "label_reconstructions_rerun": 0,
+  "binary_reads": 0,
+  "test_inference": false,
+  "strict_online_claim": false,
+  "interpretation": "The b3c38 float target is already before observed followup (1932.623<1933); int() further truncates to1932. This is consistent with unconstrained inverse tail-SOH regression, not simply one-based indexing or rounding alone. Code consistency does not validate event semantics or actual v11 provenance. Feature marginals/neighbor labels diagnose support and ambiguity, not causal explanation or a new predictive gain."
+}

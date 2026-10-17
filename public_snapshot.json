@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-17T15:47:04.048126+00:00",
-  "content_sha256": "ce45979043a921d0fb83e9fb7d8c5a77c7b88adfe02fd402022717c6b51293f4",
-  "file_count": 252,
+  "snapshot_utc": "2026-10-17T19:20:23.588948+00:00",
+  "content_sha256": "13d3559464625950f16dcb31abe3943d007fb9affbafe7da496c41aeacddc704",
+  "file_count": 255,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,8 +14,8 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 12762,
-      "sha256": "091ffa9625bb6cd337ffe0741e48e1a2ccdca51d8db66a716f1e7f8577ec02eb"
+      "bytes": 14107,
+      "sha256": "b5970dc68dcfe2416ad2e6e328c28e90782b9ec193cba8e718abd79c5796f9dc"
     },
     {
       "path": "README.md",
@@ -32,8 +32,8 @@
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 6131,
-      "sha256": "4028857da3c581bd65cbe1f0991ed29a1a1bb03120065fea80470b321a4f4747"
+      "bytes": 6241,
+      "sha256": "b1e35938395ff485f9ec108b823eb4dbf6c17e6d9c12bf5547365fa031fe12ca"
     },
     {
       "path": "automation/github_export/build_dynamic_A_eligible_20261017.py",
@@ -128,8 +128,8 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 7468,
-      "sha256": "3d3963be237693292bf36376d8d1d9ab06b6e94f77d90749401536b701aad6f5"
+      "bytes": 8304,
+      "sha256": "eaf3566c2c2ee3fa7da416aa0810316cb459ae805250e4e26f1a1fb092c7f087"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
@@ -312,6 +312,12 @@
       "sha256": "9f44c73925fe8b6fb2e5d1482fece2d4272a21f5a694bf621024c8d7348969d7"
     },
     {
+      "path": "experiments/dynamic_A_matr_retrospective_seed42_v1/LABEL_BOUNDARY_SUPPORT_ZH.md",
+      "source_path": "experiments/dynamic_A_matr_retrospective_seed42_v1/LABEL_BOUNDARY_SUPPORT_ZH.md",
+      "bytes": 4407,
+      "sha256": "34b3028b5ec3e6c1afc20e87009e23efe2888f451ddc634af50f908a779a3fef"
+    },
+    {
       "path": "experiments/dynamic_A_matr_retrospective_seed42_v1/RESULTS_ZH.md",
       "source_path": "experiments/dynamic_A_matr_retrospective_seed42_v1/RESULTS_ZH.md",
       "bytes": 4038,
@@ -352,6 +358,18 @@
       "source_path": "experiments/dynamic_A_matr_retrospective_seed42_v1/independent_metrics.json",
       "bytes": 13830,
       "sha256": "974b733202beddc312b1499b8c6ca5b5b8e75cae0fac064d29a72c74c1d7c297"
+    },
+    {
+      "path": "experiments/dynamic_A_matr_retrospective_seed42_v1/label_boundary_feature_support.json",
+      "source_path": "experiments/dynamic_A_matr_retrospective_seed42_v1/label_boundary_feature_support.json",
+      "bytes": 19009,
+      "sha256": "c1322331a98a49f2a7bfa9f649d51666e7bf673ce25901903b44f9edc685efce"
+    },
+    {
+      "path": "experiments/dynamic_A_matr_retrospective_seed42_v1/label_boundary_support_diagnosis.py",
+      "source_path": "experiments/dynamic_A_matr_retrospective_seed42_v1/label_boundary_support_diagnosis.py",
+      "bytes": 4908,
+      "sha256": "352243d7a0542de67737ad24512b3f17081cbb55c903e2c619de33c931d7ce78"
     },
     {
       "path": "experiments/dynamic_A_matr_retrospective_seed42_v1/launch_receipt.json",

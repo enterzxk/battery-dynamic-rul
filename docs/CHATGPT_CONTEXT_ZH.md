@@ -6,9 +6,13 @@
 
 方向A已实际完成一次MATR回顾性已处理记录诊断：99训练/34验证源ID，136验证时点，seed42。全34作者总EOL Time-MAE：A0 151.9080、A1 152.5449、A2 148.4576 cycles；加速率下降2.679%，21/34改善。条件固定GBDT下降3.664%，18/34改善且配对区间跨0。观测19电池单列：Ridge A1 91.5955→A2 86.8838（5.144%），固定GBDT仅2.038%。未达约10%推进目标，root判NO_GAIN：不扩复杂历史模型，不改seed救结果；不是证明速率绝无信息。尾部未一致改善。41 fits含39 Ridge交叉验证/最终拟合+2固定GBDT，optimizer_steps=0；历史CP2fits/600steps分开。详见experiments/dynamic_A_matr_retrospective_seed42_v1/RESULTS_ZH.md及原始validation_predictions.csv/independent_metrics.json/root_decision.json。
 
-全34含15个作者外推EOL，只代表作者标签一致性；观测19为条件子群。实际v11生成器及其余物理serial仍未知，strict_online_eligible=0，完整循环测量容量也不能称I/V-only部署输入。本次exact GO只开放隔离工程lane，原严格动态/PBT/test门保持。PBT首分片真实读取2250966字节entry_cap失败预算已消费，不重跑/扩cap/切分片。新聊天owner已实际接管，同一battery-rul每15分钟任务已迁移核对；尚未经历真实耗尽后恢复，不能写成已验证。
+全34含15个作者外推EOL，只代表作者标签一致性；观测19为条件子群。实际v11生成器及其余物理serial仍未知，strict_online_eligible=0，完整循环测量容量也不能称I/V-only部署输入。本次exact GO只开放隔离工程lane，原严格动态/PBT/test门保持。PBT首分片真实读取2250966字节entry_cap失败预算已消费，不重跑/扩cap/切分片。新聊天owner已实际接管，同一battery-rul每15分钟任务已迁移核对；本轮已观察到一次真实耗尽后恢复并执行保存动作；不推广为每次唤醒均保证成功。
 
 补充失败诊断：前两大误差电池占全34电池A1等权绝对误差的43.68%；其作者EOL较末次观测仅多2/-1循环，A1低估误差下界为1379.39/884.87循环。不能把大误差单独归咎于长距离尾段外推，也不证明作者标签/生成器有效。 证据见`experiments/dynamic_A_matr_retrospective_seed42_v1/CENSORED_FAILURE_ZH.md`。本诊断新增fit=0。
+
+## 2026-10-18 03:20 北京时间增量：标签与支持范围
+
+已完成首次实际额度耗尽后恢复，并接着完成保存的文本诊断。b3c38作者EOL1932来自已存末20SOH回归1932.623再int；浮点值已小于末次观测1933，不能只称取整问题。合格训练47/验证15个尾段回归标签中41/11个不晚于观测末端，作者标签不能当精确真实未来事件。两个大误差电池EOL2237/1932超过训练最大1834，但k50/100/150/200的SOH/累计Ah/速率均在全训练边际范围内；边际包含不证明联合支持或因果机制。完整证据见`experiments/dynamic_A_matr_retrospective_seed42_v1/LABEL_BOUNDARY_SUPPORT_ZH.md`及机器记录。原标签/预测/NO_GAIN保留，本轮fit=0，没有重跑标签回归或test推理。
 
 ## 项目在研究什么
 
