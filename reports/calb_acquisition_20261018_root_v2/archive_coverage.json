@@ -1,0 +1,401 @@
+{
+  "status": "FIXED22_ARCHIVE_CRC_AND_LABEL_KEY_COVERAGE_PASS",
+  "at_utc": "2026-10-17T21:26:56.969568+00:00",
+  "train_files": 17,
+  "validation_files": 5,
+  "test_filename_count_static": 5,
+  "all_archive_entries": [
+    {
+      "name": "CALB/",
+      "bytes": 0,
+      "crc32": "00000000",
+      "compressed_bytes": 0
+    },
+    {
+      "name": "CALB/CALB_0_B182.pkl",
+      "bytes": 1801524,
+      "crc32": "64ae3035",
+      "compressed_bytes": 443431
+    },
+    {
+      "name": "CALB/CALB_0_B183.pkl",
+      "bytes": 1806084,
+      "crc32": "44cfbb8f",
+      "compressed_bytes": 447552
+    },
+    {
+      "name": "CALB/CALB_0_B184.pkl",
+      "bytes": 1805115,
+      "crc32": "4c716296",
+      "compressed_bytes": 436807
+    },
+    {
+      "name": "CALB/CALB_0_B185.pkl",
+      "bytes": 1802664,
+      "crc32": "8ad040f9",
+      "compressed_bytes": 436804
+    },
+    {
+      "name": "CALB/CALB_0_B187.pkl",
+      "bytes": 1796280,
+      "crc32": "aba431ee",
+      "compressed_bytes": 434163
+    },
+    {
+      "name": "CALB/CALB_0_B188.pkl",
+      "bytes": 3623313,
+      "crc32": "2dd19a43",
+      "compressed_bytes": 921971
+    },
+    {
+      "name": "CALB/CALB_0_B189.pkl",
+      "bytes": 1790922,
+      "crc32": "719f6cb8",
+      "compressed_bytes": 439176
+    },
+    {
+      "name": "CALB/CALB_0_B190.pkl",
+      "bytes": 1814634,
+      "crc32": "ac34a957",
+      "compressed_bytes": 454193
+    },
+    {
+      "name": "CALB/CALB_25_T25-1.pkl",
+      "bytes": 1870736,
+      "crc32": "32df75e9",
+      "compressed_bytes": 444698
+    },
+    {
+      "name": "CALB/CALB_25_T25-2.pkl",
+      "bytes": 1839152,
+      "crc32": "5b945ebf",
+      "compressed_bytes": 445726
+    },
+    {
+      "name": "CALB/CALB_35_B173.pkl",
+      "bytes": 1803328,
+      "crc32": "ba1e8a1e",
+      "compressed_bytes": 429648
+    },
+    {
+      "name": "CALB/CALB_35_B174.pkl",
+      "bytes": 1797265,
+      "crc32": "e864d0ca",
+      "compressed_bytes": 453898
+    },
+    {
+      "name": "CALB/CALB_35_B175.pkl",
+      "bytes": 1797453,
+      "crc32": "710c74a1",
+      "compressed_bytes": 433881
+    },
+    {
+      "name": "CALB/CALB_35_B222.pkl",
+      "bytes": 1798910,
+      "crc32": "f9e09672",
+      "compressed_bytes": 431845
+    },
+    {
+      "name": "CALB/CALB_35_B223.pkl",
+      "bytes": 1795808,
+      "crc32": "a7dd44a5",
+      "compressed_bytes": 432664
+    },
+    {
+      "name": "CALB/CALB_35_B224.pkl",
+      "bytes": 1802247,
+      "crc32": "2ab22bb0",
+      "compressed_bytes": 433456
+    },
+    {
+      "name": "CALB/CALB_35_B227.pkl",
+      "bytes": 1798017,
+      "crc32": "10af53aa",
+      "compressed_bytes": 437863
+    },
+    {
+      "name": "CALB/CALB_35_B228.pkl",
+      "bytes": 1802905,
+      "crc32": "7cd4142f",
+      "compressed_bytes": 455911
+    },
+    {
+      "name": "CALB/CALB_35_B229.pkl",
+      "bytes": 1805349,
+      "crc32": "7c279696",
+      "compressed_bytes": 448760
+    },
+    {
+      "name": "CALB/CALB_35_B230.pkl",
+      "bytes": 1797077,
+      "crc32": "423232eb",
+      "compressed_bytes": 449989
+    },
+    {
+      "name": "CALB/CALB_35_B247.pkl",
+      "bytes": 2221212,
+      "crc32": "a78beb5a",
+      "compressed_bytes": 636904
+    },
+    {
+      "name": "CALB/CALB_35_B248.pkl",
+      "bytes": 1799709,
+      "crc32": "ce5cd768",
+      "compressed_bytes": 447148
+    },
+    {
+      "name": "CALB/CALB_35_B249.pkl",
+      "bytes": 1796983,
+      "crc32": "f6dc66cf",
+      "compressed_bytes": 451488
+    },
+    {
+      "name": "CALB/CALB_35_B250.pkl",
+      "bytes": 1811835,
+      "crc32": "3aedf884",
+      "compressed_bytes": 441364
+    },
+    {
+      "name": "CALB/CALB_45_B253.pkl",
+      "bytes": 1862886,
+      "crc32": "6eb9434c",
+      "compressed_bytes": 462496
+    },
+    {
+      "name": "CALB/CALB_45_B255.pkl",
+      "bytes": 1847188,
+      "crc32": "2d18b835",
+      "compressed_bytes": 448623
+    },
+    {
+      "name": "CALB/CALB_45_B256.pkl",
+      "bytes": 1812775,
+      "crc32": "1ffb4285",
+      "compressed_bytes": 466226
+    }
+  ],
+  "selected_members": [
+    {
+      "file_name": "CALB_0_B183.pkl",
+      "member": "CALB/CALB_0_B183.pkl",
+      "bytes": 1806084,
+      "crc32": "44cfbb8f",
+      "sha256": "4360c759437fc1990b4298ba51f55b1f9bc5931d3808c2f76b3b91bcfbb95220",
+      "role": "train"
+    },
+    {
+      "file_name": "CALB_0_B184.pkl",
+      "member": "CALB/CALB_0_B184.pkl",
+      "bytes": 1805115,
+      "crc32": "4c716296",
+      "sha256": "a805714fec7361879224ab4a0c693663a0cafc2b46068b918ee904dc36b6822d",
+      "role": "train"
+    },
+    {
+      "file_name": "CALB_0_B185.pkl",
+      "member": "CALB/CALB_0_B185.pkl",
+      "bytes": 1802664,
+      "crc32": "8ad040f9",
+      "sha256": "c348f79e605bfc96a65447feadfd590e155ca91d4edbb430eeab93fa63eb2297",
+      "role": "train"
+    },
+    {
+      "file_name": "CALB_0_B187.pkl",
+      "member": "CALB/CALB_0_B187.pkl",
+      "bytes": 1796280,
+      "crc32": "aba431ee",
+      "sha256": "a2f67e876ae86edc90ee87e802eea68c5b6467d422c2ef8c5077d2eef3078a3a",
+      "role": "validation"
+    },
+    {
+      "file_name": "CALB_0_B188.pkl",
+      "member": "CALB/CALB_0_B188.pkl",
+      "bytes": 3623313,
+      "crc32": "2dd19a43",
+      "sha256": "fe5df3e00aefdb6097b80e6a771e364b5ba77384fa86254cb12771821cf6bfef",
+      "role": "train"
+    },
+    {
+      "file_name": "CALB_0_B189.pkl",
+      "member": "CALB/CALB_0_B189.pkl",
+      "bytes": 1790922,
+      "crc32": "719f6cb8",
+      "sha256": "9008fc3f9ea02a55bf7bc0c2d784ec3950b658a71954e41b9a394b0a951ff207",
+      "role": "train"
+    },
+    {
+      "file_name": "CALB_0_B190.pkl",
+      "member": "CALB/CALB_0_B190.pkl",
+      "bytes": 1814634,
+      "crc32": "ac34a957",
+      "sha256": "855e00ab0440da5e11a8a02d22fbf010e44a04fbe2028b37983ac5b327dc1985",
+      "role": "train"
+    },
+    {
+      "file_name": "CALB_25_T25-2.pkl",
+      "member": "CALB/CALB_25_T25-2.pkl",
+      "bytes": 1839152,
+      "crc32": "5b945ebf",
+      "sha256": "efe5fdd956fe69df21ff6475600280f160cb88807e940e4004ebe4706b959170",
+      "role": "validation"
+    },
+    {
+      "file_name": "CALB_35_B173.pkl",
+      "member": "CALB/CALB_35_B173.pkl",
+      "bytes": 1803328,
+      "crc32": "ba1e8a1e",
+      "sha256": "5a7fb08a1bf1157ce484790cdbd337b5950904dfa1ab8c96468dc538dcd2fc2a",
+      "role": "train"
+    },
+    {
+      "file_name": "CALB_35_B175.pkl",
+      "member": "CALB/CALB_35_B175.pkl",
+      "bytes": 1797453,
+      "crc32": "710c74a1",
+      "sha256": "90a76dbd58a5ecfabdb022df198b5328ef9d144e28b1ac4995eed7ebecdd3f73",
+      "role": "train"
+    },
+    {
+      "file_name": "CALB_35_B222.pkl",
+      "member": "CALB/CALB_35_B222.pkl",
+      "bytes": 1798910,
+      "crc32": "f9e09672",
+      "sha256": "4f2a21dad39ab707c9673e77c0e2327e6115d33b49b57807a564872a780b1145",
+      "role": "validation"
+    },
+    {
+      "file_name": "CALB_35_B223.pkl",
+      "member": "CALB/CALB_35_B223.pkl",
+      "bytes": 1795808,
+      "crc32": "a7dd44a5",
+      "sha256": "51cf3583e3d21bef911a1cb7cbe472859ae91bf9d9ad1a64a93d00a1ec669dae",
+      "role": "train"
+    },
+    {
+      "file_name": "CALB_35_B224.pkl",
+      "member": "CALB/CALB_35_B224.pkl",
+      "bytes": 1802247,
+      "crc32": "2ab22bb0",
+      "sha256": "184a5789f4acfc9b7e27df439ed947b1cf27305fd6363c56b79b617ddf4c5066",
+      "role": "train"
+    },
+    {
+      "file_name": "CALB_35_B227.pkl",
+      "member": "CALB/CALB_35_B227.pkl",
+      "bytes": 1798017,
+      "crc32": "10af53aa",
+      "sha256": "3a1d7fca5378b5aa9ac416b26fd6704b3509379bd898d2012803a915375711e1",
+      "role": "train"
+    },
+    {
+      "file_name": "CALB_35_B228.pkl",
+      "member": "CALB/CALB_35_B228.pkl",
+      "bytes": 1802905,
+      "crc32": "7cd4142f",
+      "sha256": "01713e2ddb257ddf1245cfbeeec4cda9bb90bc0fc350b73fe1dd36250cb39815",
+      "role": "train"
+    },
+    {
+      "file_name": "CALB_35_B229.pkl",
+      "member": "CALB/CALB_35_B229.pkl",
+      "bytes": 1805349,
+      "crc32": "7c279696",
+      "sha256": "55aa57bd16638bfba33ce3b9e78d33c2d10a050884ee2ac9879bc7f7c1307323",
+      "role": "train"
+    },
+    {
+      "file_name": "CALB_35_B247.pkl",
+      "member": "CALB/CALB_35_B247.pkl",
+      "bytes": 2221212,
+      "crc32": "a78beb5a",
+      "sha256": "ded969f57951dd3cb5a2a11a1983f169bb158e6bbe30c4a21fd088654a270ba6",
+      "role": "validation"
+    },
+    {
+      "file_name": "CALB_35_B248.pkl",
+      "member": "CALB/CALB_35_B248.pkl",
+      "bytes": 1799709,
+      "crc32": "ce5cd768",
+      "sha256": "df5586fed053be74049629dcaedaed7ae671facd178abe3f1fd418d5f1ec4f0e",
+      "role": "train"
+    },
+    {
+      "file_name": "CALB_35_B249.pkl",
+      "member": "CALB/CALB_35_B249.pkl",
+      "bytes": 1796983,
+      "crc32": "f6dc66cf",
+      "sha256": "9f70767e13cc56661210a5878863e6214e9d5eb5dc1f523baade647568f877e7",
+      "role": "train"
+    },
+    {
+      "file_name": "CALB_35_B250.pkl",
+      "member": "CALB/CALB_35_B250.pkl",
+      "bytes": 1811835,
+      "crc32": "3aedf884",
+      "sha256": "51ff48abfed60767c922c02ad82e93bba0759cf2e3eabaa36c7dc042b15de5de",
+      "role": "train"
+    },
+    {
+      "file_name": "CALB_45_B253.pkl",
+      "member": "CALB/CALB_45_B253.pkl",
+      "bytes": 1862886,
+      "crc32": "6eb9434c",
+      "sha256": "6bfc5a2024afdd695465e6e43e71ba07aee7498eac1d0afd884f0460511e9e9d",
+      "role": "validation"
+    },
+    {
+      "file_name": "CALB_45_B256.pkl",
+      "member": "CALB/CALB_45_B256.pkl",
+      "bytes": 1812775,
+      "crc32": "1ffb4285",
+      "sha256": "5ba7224a96f29084628ac7e8fb522873e67ca064e1816453918d71731250825d",
+      "role": "train"
+    }
+  ],
+  "selected_total_uncompressed_bytes": 41987581,
+  "labels": {
+    "archive_path": "/home/yndx/zxk/rul/data/raw/HUST/Life_labels_v11.zip",
+    "archive_sha256": "45b3adf3f5ea2819244ac206f204defd4eea0ad1eaa4d38534f0543cab4ac033",
+    "member": "Life labels/CALB_labels.json",
+    "member_bytes": 683,
+    "member_crc_pass": true,
+    "selected_trainval_keys": [
+      "CALB_0_B183.pkl",
+      "CALB_0_B184.pkl",
+      "CALB_0_B185.pkl",
+      "CALB_0_B187.pkl",
+      "CALB_0_B188.pkl",
+      "CALB_0_B189.pkl",
+      "CALB_0_B190.pkl",
+      "CALB_25_T25-2.pkl",
+      "CALB_35_B173.pkl",
+      "CALB_35_B175.pkl",
+      "CALB_35_B222.pkl",
+      "CALB_35_B223.pkl",
+      "CALB_35_B224.pkl",
+      "CALB_35_B227.pkl",
+      "CALB_35_B228.pkl",
+      "CALB_35_B229.pkl",
+      "CALB_35_B247.pkl",
+      "CALB_35_B248.pkl",
+      "CALB_35_B249.pkl",
+      "CALB_35_B250.pkl",
+      "CALB_45_B253.pkl",
+      "CALB_45_B256.pkl"
+    ],
+    "numeric_label_values_decoded": false,
+    "mixed_label_member_bytes_read_for_key_only_coverage": true,
+    "test_label_values_decoded": 0
+  },
+  "test_pkl_members_opened": 0,
+  "semantic_data_audit_passed": false,
+  "physical_identity_verified": false,
+  "training_allowed": false,
+  "new_fits": 0,
+  "optimizer_steps": 0,
+  "bindings": {
+    "/home/yndx/zxk/rul/repos/pinned/BatteryLife_3b17bb53202e10711deae0448c91f84144bb3dd9/data_provider/data_split_recorder.py": "f6f0d42b721c533351ed93467a1ebcaf1021b4daff234e828ab18698fa724b77",
+    "/home/yndx/zxk/rul/data/raw/CALB/acquisition_v11_20261018_root_v2/CALB_v11.zip": "153dc6230d445d23b4928ce4dc993f37b331651de8473497f8df01ed9bafe7a3",
+    "/home/yndx/zxk/rul/reports/calb_acquisition_20261018_root_v2/acquire.py": "432f9ba00e0013b7636bdedc4af7bca4c1c4569b1dc3baabae55c20e0d2b1990"
+  }
+}

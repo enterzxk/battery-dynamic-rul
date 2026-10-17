@@ -1,0 +1,12 @@
+{
+  "status": "VERIFIED_OFFICIAL_ARCHIVE_CHECKSUM",
+  "url": "https://zenodo.org/api/records/19688272/files/CALB.zip/content",
+  "record_id": 19688272,
+  "bytes": 12671967,
+  "md5": "2b1006e96e0ca42765a732060f964687",
+  "sha256": "153dc6230d445d23b4928ce4dc993f37b331651de8473497f8df01ed9bafe7a3",
+  "at_utc": "2026-10-17T21:26:56.809459+00:00",
+  "archive_path": "/home/yndx/zxk/rul/data/raw/CALB/acquisition_v11_20261018_root_v2/CALB_v11.zip",
+  "artifact_get_requests": 1,
+  "bytes_transferred": 12671967
+}

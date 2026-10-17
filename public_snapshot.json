@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-17T21:10:55.512260+00:00",
-  "content_sha256": "153e89e4aa7cc18e082df5b6320a4501806b5ab74328a82b0a4100ffde1815b5",
-  "file_count": 308,
+  "snapshot_utc": "2026-10-17T21:27:39.758598+00:00",
+  "content_sha256": "230982e5d226bdfceeae0febf7ec046882a6fe544176a786b67aaa6ee37a446f",
+  "file_count": 320,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,8 +14,8 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 25432,
-      "sha256": "bec70f5c4a5fa38902a20b7dc363e99b331d53e41e632914e6bbac94acc450b6"
+      "bytes": 27181,
+      "sha256": "5e6297add8a976b1933c76e58da27196405eb098c41df77aba71c6f91c645a1d"
     },
     {
       "path": "README.md",
@@ -32,8 +32,8 @@
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 7779,
-      "sha256": "6cf032d3c6c42bc7dfb044426f2f3eb99b8d16208e78f89545adf9cdc9b4ce02"
+      "bytes": 7987,
+      "sha256": "63ca40cd8b8eb293739c10194be99adb96b2197067a69ff05b33ad9e632923f4"
     },
     {
       "path": "automation/github_export/build_dynamic_A_eligible_20261017.py",
@@ -128,8 +128,8 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 16833,
-      "sha256": "78bb4a133036a0c08071ccd51b1fcc08ffc539b37343aad03d93f57d2274eaf1"
+      "bytes": 18582,
+      "sha256": "2efd921f021491acf5558eb995854fba90a07011edafdc8c98a94e4c49ce720b"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
@@ -892,6 +892,78 @@
       "source_path": "reports/baseline_audit/baseline_audit_report_zh.md",
       "bytes": 7686,
       "sha256": "9fe40e555a399ca70a0d83a935457a0d5c4f0dd69ec696584de0531d7d4148ed"
+    },
+    {
+      "path": "reports/calb_acquisition_20261018_root/acquire.py",
+      "source_path": "reports/calb_acquisition_20261018_root/acquire.py",
+      "bytes": 8377,
+      "sha256": "1ed08ba40c0925503e19f94afa54ed9c732daa5d077de6f4c7ed5bdea16a7d5b"
+    },
+    {
+      "path": "reports/calb_acquisition_20261018_root/budget_and_bounds.json",
+      "source_path": "reports/calb_acquisition_20261018_root/budget_and_bounds.json",
+      "bytes": 504,
+      "sha256": "6cb160718d0ac56a52ddf4ebef5614df3898992f15fe4c060eba8b8cdf8d2661"
+    },
+    {
+      "path": "reports/calb_acquisition_20261018_root/failure_receipt.json",
+      "source_path": "reports/calb_acquisition_20261018_root/failure_receipt.json",
+      "bytes": 480,
+      "sha256": "4571b78ce49dad54a9add9a9c3568d9d7e32a13caab77f609bb465f643715a64"
+    },
+    {
+      "path": "reports/calb_acquisition_20261018_root_v2/ACQUISITION_ZH.md",
+      "source_path": "reports/calb_acquisition_20261018_root_v2/ACQUISITION_ZH.md",
+      "bytes": 2985,
+      "sha256": "66c9c9562d268e99f760d1d82fd6c01c5cac5938eb34775164516b3288bd1266"
+    },
+    {
+      "path": "reports/calb_acquisition_20261018_root_v2/acquire.py",
+      "source_path": "reports/calb_acquisition_20261018_root_v2/acquire.py",
+      "bytes": 8413,
+      "sha256": "432f9ba00e0013b7636bdedc4af7bca4c1c4569b1dc3baabae55c20e0d2b1990"
+    },
+    {
+      "path": "reports/calb_acquisition_20261018_root_v2/acquisition_receipt.json",
+      "source_path": "reports/calb_acquisition_20261018_root_v2/acquisition_receipt.json",
+      "bytes": 510,
+      "sha256": "92f54abfcbf5462562f0e84aacc078adf4f3fa2e1754b52146ec8d3e99285524"
+    },
+    {
+      "path": "reports/calb_acquisition_20261018_root_v2/archive_coverage.json",
+      "source_path": "reports/calb_acquisition_20261018_root_v2/archive_coverage.json",
+      "bytes": 11321,
+      "sha256": "4cd8e73c1cdceb49fe21adf244161f9ae4b5648e116e670d0025798b5d0fa2fe"
+    },
+    {
+      "path": "reports/calb_acquisition_20261018_root_v2/budget_and_bounds.json",
+      "source_path": "reports/calb_acquisition_20261018_root_v2/budget_and_bounds.json",
+      "bytes": 504,
+      "sha256": "6cb160718d0ac56a52ddf4ebef5614df3898992f15fe4c060eba8b8cdf8d2661"
+    },
+    {
+      "path": "reports/calb_acquisition_20261018_root_v2/completion_receipt.json",
+      "source_path": "reports/calb_acquisition_20261018_root_v2/completion_receipt.json",
+      "bytes": 733,
+      "sha256": "96d4e0860b9ca1d5daee6643fae8fe3be0db2433dbf2f37e05759e7d85e5f689"
+    },
+    {
+      "path": "reports/calb_acquisition_20261018_root_v2/head_receipt.json",
+      "source_path": "reports/calb_acquisition_20261018_root_v2/head_receipt.json",
+      "bytes": 348,
+      "sha256": "e47a34a3c47d8d41e3d3473d09ad4964f7a09cf6ce00ea78ccd6822579d84670"
+    },
+    {
+      "path": "reports/calb_acquisition_20261018_root_v2/live_source_metadata.json",
+      "source_path": "reports/calb_acquisition_20261018_root_v2/live_source_metadata.json",
+      "bytes": 688,
+      "sha256": "6046a6fde020857a3b278d4c8db3f7eb8bf602c035954b1ce19bf778cdf11554"
+    },
+    {
+      "path": "reports/calb_acquisition_20261018_root_v2/transport_repair_review.json",
+      "source_path": "reports/calb_acquisition_20261018_root_v2/transport_repair_review.json",
+      "bytes": 973,
+      "sha256": "214bce7d61551dd2a0ceb01c07a152516c6f64fa2c1fe9718d753c057162c8e6"
     },
     {
       "path": "reports/cpmlp_recipe_error_diagnosis_20261018_root/DIAGNOSIS_ZH.md",

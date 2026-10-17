@@ -1,0 +1,16 @@
+{
+  "status": "FAILED_STOP_NO_RETRY",
+  "at_utc": "2026-10-17T21:25:28.048806+00:00",
+  "metadata_requests": 1,
+  "head_requests": 0,
+  "artifact_get_requests": 0,
+  "artifact_bytes_transferred": 0,
+  "archive_pkl_members_decompressed": 0,
+  "test_pkl_members_opened": 0,
+  "test_label_values_decoded": 0,
+  "new_fits": 0,
+  "optimizer_steps": 0,
+  "error_type": "URLError",
+  "error": "<urlopen error [Errno 111] Connection refused>",
+  "elapsed_seconds": 0.012746680527925491
+}

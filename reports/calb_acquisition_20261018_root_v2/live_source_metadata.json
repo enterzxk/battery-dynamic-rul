@@ -1,0 +1,20 @@
+{
+  "at_utc": "2026-10-17T21:26:20.638418+00:00",
+  "record_id": 19688272,
+  "version": null,
+  "doi": "10.5281/zenodo.19688272",
+  "metadata_http_status": 200,
+  "metadata_response_bytes": 11933,
+  "metadata_response_sha256": "db032cafb5d76f2ec74c5de34c1f4eeb3b0c761db8a152baa5d34b2b60598da0",
+  "entry": {
+    "id": "3e255ece-9ab0-43ec-9117-31272fe87abd",
+    "key": "CALB.zip",
+    "size": 12671967,
+    "checksum": "md5:2b1006e96e0ca42765a732060f964687",
+    "links": {
+      "self": "https://zenodo.org/api/records/19688272/files/CALB.zip/content"
+    }
+  },
+  "official_page_url": "https://zenodo.org/records/19688272",
+  "metadata_url": "https://zenodo.org/api/records/19688272"
+}

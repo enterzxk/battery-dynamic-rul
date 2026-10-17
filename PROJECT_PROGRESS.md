@@ -146,3 +146,12 @@
 - **最小验证**：AST只解析三个拆分静态列表，核源码参数/loader路径和test调用具体行，项目内CALB路径stat为空。new_fits=0、optimizer_steps=0、archive_reads=0、model_loads=0、test_access=false；不把文件名隔离当物理身份通过。
 - **阻塞/风险**：pinned run_main.py:211构造test、:370逐epoch评估test，直接官方入口冲突当前test锁；双进程runtime未验证，HUST单GPU结果不替代。元数据为保存快照，本轮未实时验证；CALB标签覆盖、来源/asof审计均未完成。原PBT/HUST预算与new_fits_allowed=false保持。
 - **下一步**：实时核公开v11 CALB元数据/响应头和当前传输预算后，单次有界获取约12.7MB CALB归档并核checksum；复用已有标签包，固定17train+5val成员/CRC/标签覆盖，test内容不读，不反序列化/模型/训练。
+
+
+## 2026-10-18 05:27 北京时间：CALB v11真实获取与固定22覆盖完成
+
+- **已完成**：实时核官方v11 API/HEAD后单次GET获取CALB.zip 12,671,967字节，官方MD5吻合；固定17train+5val成员CRC/SHA和标签文件名键覆盖22/22。首轮代理拒绝连接失败0artifact请求/0字节保留；确认原隧道PID退出后按既有参数仅恢复项目隧道，独立v2继续，未启动控制器/队列。
+- **证据**：reports/calb_acquisition_20261018_root_v2/ACQUISITION_ZH.md、live_source_metadata.json、head_receipt.json、acquisition_receipt.json、archive_coverage.json、completion_receipt.json、transport_repair_review.json；原失败reports/calb_acquisition_20261018_root/failure_receipt.json。归档data/raw/CALB/acquisition_v11_20261018_root_v2/CALB_v11.zip，SHA153dc6230d445d23b4928ce4dc993f37b331651de8473497f8df01ed9bafe7a3。
+- **最小验证**：官方size/MD5、22固定成员CRC/SHA（合计41,987,581解压字节）及复用标签包SHA吻合，标签只扫22键、未解码任何数值；test PKL0打开、test标签数值0解码，不冒称全包逐成员CRC。源阶段加本轮估计7,834,285,913<21,474,836,480。new_fits=0、optimizer_steps=0、new_inference=0、model_loads=0。
+- **阻塞/风险**：共享标签成员读取字节仅做键扫描，测试数值未解码/保留。归档结构覆盖不等于语义/asof/物理身份或安全载入通过；CALB双进程和官方入口test冲突未闭合，训练门仍false。失败/旧预算/NO_GAIN不覆盖。
+- **下一步**：隔离固定22train/val stage，先审序列化可允许类型，安全时用受限加载检查1train+1val真实样本字段/形状/标签/有效前缀；不普通unpickle、不读test、不构造模型/fit。

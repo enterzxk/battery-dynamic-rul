@@ -1,0 +1,12 @@
+{
+  "url": "https://zenodo.org/api/records/19688272/files/CALB.zip/content",
+  "http_status": 200,
+  "headers": {
+    "Content-Length": "12671967",
+    "Content-Type": "application/octet-stream",
+    "ETag": null,
+    "Last-Modified": "Wed, 22 Apr 2026 03:33:25 GMT",
+    "Accept-Ranges": null
+  },
+  "at_utc": "2026-10-17T21:26:21.955730+00:00"
+}
