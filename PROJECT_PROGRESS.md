@@ -267,7 +267,7 @@
 ## 2026-10-18：动态 RUL 时间预测十篇聚焦精读
 
 - **已完成**：从既有41篇主文精读档案筛选十篇相关工作，区分早期总寿命、动态RUL与轨迹阈值推导；提出“创新量触发稀疏更新”可证伪问题。新增训练0、优化器步数0、新推理0。
-- **证据**：`reports/rul_time_prediction_literature_20261018_root/LITERATURE_REVIEW_ZH.md`，SHA256 `d480d6e119e6d3a077ea994aa9d463cdb04391db588d8295537d839b16182fc5`；项目逐篇原记录 `reports/literature_discussion_20261017_root_v1/PAPER_BY_PAPER_ZH.md`；既有MATR诊断 `experiments/dynamic_A_matr_retrospective_seed42_v1/root_decision.json`。
+- **证据**：`reports/rul_time_prediction_literature_20261018_root/LITERATURE_REVIEW_ZH.md`，SHA256 `4e220d42634c16da592fb2e80ba994cd4036cdcc3b84a1e1771ef4b45f61c8ff`；项目逐篇原记录 `reports/literature_discussion_20261017_root_v1/PAPER_BY_PAPER_ZH.md`；既有MATR诊断 `experiments/dynamic_A_matr_retrospective_seed42_v1/root_decision.json`。
 - **最小验证**：核十篇原始出版方/论文链接与已有精读记录；核现存Time-MAE和NO_GAIN决策，不重训、不重算指标。
 - **阻塞/风险**：本稿不是系统综述；IC²ML等较新来源的电芯拆分及逐前缀口径仍需正文核实；新颖性尚未系统检索，不作首创声明。
 - **下一步**：用本稿和GPT讨论机制；项目执行仍受数据身份/as-of与训练门限制，先按最早真实阻塞推进。
