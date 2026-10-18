@@ -1,0 +1,28 @@
+{
+  "status": "PASS_ORIGINAL_CSV_METRIC_RECOMPUTATION_NO_MODEL",
+  "metrics": {
+    "direct_RUL_saved": {
+      "MAE": 58.11369800278736,
+      "bias": 11.676224212761715,
+      "severe_over100": 0.1416005147437414
+    },
+    "capacity_firstpassage": {
+      "MAE": 129.64462396170842,
+      "bias": 57.48726704722903,
+      "severe_over100": 0.07743488637099104
+    }
+  },
+  "maximum_delta": 2.842170943040401e-14,
+  "noncross_or_invalid": 163,
+  "all_origins_retained": true,
+  "new_fits": 0,
+  "new_forwards": 0,
+  "warning": "Noncross lowerbound cap is diagnostic only, any noncross fails gate",
+  "capacity_MAE_mSOH": {
+    "persistence": 9.588254015264635,
+    "robust20": 1.9728936895116025,
+    "old_preEOL_model": 1.0314458076437922,
+    "new_endpoint_model": 0.9749230470292046
+  },
+  "capacity_metric_delta": 4.440892098500626e-16
+}

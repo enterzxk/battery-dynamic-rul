@@ -1,0 +1,10 @@
+{
+  "same_cal_pairs": 4367,
+  "cell_equal_MAE_mSOH": {
+    "persistence": 9.588254015264635,
+    "robust20": 1.972893689511603,
+    "old_preEOL_model": 1.0314458076437922,
+    "new_endpoint_model": 0.9749230470292047
+  },
+  "relative_v2_vs_v1_reduction": 0.05479954467380754
+}

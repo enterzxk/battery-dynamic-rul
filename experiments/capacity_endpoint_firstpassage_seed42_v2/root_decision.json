@@ -1,0 +1,36 @@
+{
+  "decision": "NO_GO_FIXED20_RECURSIVE_CAPACITY_FIRSTPASSAGE_AFTER_ENDPOINT_FIX",
+  "GO_consumed": true,
+  "new_CPU_predictive_fits": 1,
+  "optimizer_steps": 0,
+  "checkpoint_loads": 0,
+  "noncross_origins": 163,
+  "noncross_cells": {
+    "MATR_b2c6": 163
+  },
+  "capacity_MAE_relative_improvement_over_v1": 0.05479954467380754,
+  "RUL_gain_established": false,
+  "no_horizon_slope_or_seed_rescue": true,
+  "next_bounded_action": {
+    "question": "Does fixedHGB native-cycle absolute_error improve the primary case-equal RUL MAE vs existing samecohort log-RUL squared_error?",
+    "fit_cells": 42,
+    "fit_origins": 22281,
+    "calibration_cells": 10,
+    "calibration_origins": 4567,
+    "features": [
+      "age",
+      "SOH",
+      "robust20_percycle"
+    ],
+    "target": "Native observed-event cycle RUL=event_cycle-origin, same labels and preevent origins asold directmodel",
+    "loss": "absolute_error on nativeRUL; fixed nonnegative prediction floor0, count any negative raw outputs",
+    "model": "HGB150iter leaf7 depth3 lr.05 min50 L2=1 seed42, early_stopping=False, sameequalcell weights",
+    "max_new_CPU_predictive_fits": 1,
+    "development_or_test_access": false,
+    "source_cohort": "experiments/matr_raw_heldout_calibration_seed42_v1/cohort.json",
+    "source_fit_prediction_sha256": "7cd0d1c902dacacf8f519c02962eb0343c240d1be41555d96e94b4bbf17775e3",
+    "source_cal_prediction_sha256": "c27dd53fce992318292397486aaff8ce02e3f8b802ee54932867517ce7c2af76",
+    "gate": "Calonly>=5% TimeMAE reduction,>=7/10cells improve, pairedcell2000seed42CI lower>0, severeover100 increase<=.01; no uncertainty/novelty or independent-confirmation claim",
+    "status": "NOT_STARTED_REQUIRES_FRESH_REVIEW_AND_EXACT_GO"
+  }
+}

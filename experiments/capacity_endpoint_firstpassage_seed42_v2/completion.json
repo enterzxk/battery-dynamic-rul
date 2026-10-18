@@ -1,0 +1,31 @@
+{
+  "status": "COMPLETE_ONE_ENDPOINT_FIT_CAL_ONLY_MATCHED_FIRSTPASSAGE",
+  "new_fits": 1,
+  "checkpoint_loads": 0,
+  "calibration_cells": 10,
+  "origins": 4567,
+  "optimizer_steps": 0,
+  "development_or_test_reads": 0,
+  "batch_forward_calls": 100,
+  "row_forwards": 73060,
+  "generated_SOH_min_max": [
+    0.7516779877041107,
+    0.9787688181818182
+  ],
+  "generated_rate_mSOH_per_cycle_min_max": [
+    -2.6985280991735494,
+    1.0243492221299149
+  ],
+  "capacity_eval_batch_forward_calls": 1,
+  "capacity_eval_row_forwards": 4367,
+  "checkpoint_sha256": "0980e4c7898a18de7562c20679ebbd60000a03bd9c7ebb1a976dad46c75dd127",
+  "dataset_sha256": "47fb353d8788c74b515a10bbd250c6b93ed7393cfcc0df6faf44f7067cb1f679",
+  "capacity_prediction_sha256": "109221cb883b45a808b6dd4d32d295f1321ee7e82491d62ab79ef7ad9e86cbea",
+  "runner_sha256": "ac8ac296086e862a497a740aed1ffb2a56eb67b2373d09a81a3f05683f0c5e9f",
+  "protocol_sha256": "7d8e96301ec40671a747c71ca4bda7bd882734115ac042a78f0906515c5ed073",
+  "GO_sha256": "98146176fbf901795b1b40955fef58014ac8b77b0fb353c17e67184789030ddf",
+  "prediction_sha256": "005a41a389e416a1f212f14d60034a216a7d0c007e72dade468f04fbb5959e7a",
+  "elapsed_seconds": 0.6389419510960579,
+  "uncertainty_distribution_implemented": false,
+  "source_support_note": "Age support marker only; full covariate/joint support unverified; generated future slopes use piecewise-linear model path."
+}

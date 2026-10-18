@@ -1,0 +1,9 @@
+{
+  "stage": "GO issuance orchestration before scientific invocation",
+  "error": "reviewed_files key absent in review schema; GO was not created; runner then rejected absentGO before claim/data/model/fit",
+  "invocation_claim_exists": false,
+  "fit_starts": 0,
+  "GO_budget_consumed": false,
+  "old_logs_preserved": true,
+  "resolution": "Read actual source_files mapping, verify all exact hashes before GO; launch only if issuance returns success"
+}

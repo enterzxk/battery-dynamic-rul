@@ -1,0 +1,40 @@
+{
+  "question": "Does adding only840 observed endpoint/postevent capacity targets repair firstpassage noncross and improve samecal RUL?",
+  "source_RUL_prediction_sha256": "c27dd53fce992318292397486aaff8ce02e3f8b802ee54932867517ce7c2af76",
+  "scope": "Exact10cal all4567 source origins100..event-1; use existing causalfeatures at eachorigin. Do not read dev/test features or old RUL checkpoint.",
+  "max_new_fits": 1,
+  "max_checkpoint_loads": 0,
+  "max_batch_predict_calls": 101,
+  "max_row_forwards": 461067,
+  "max_generated_horizon": 2000,
+  "max_seconds": 180,
+  "stepsize": 20,
+  "dynamics": "Predict delta20mSOH from age,SOH,robust20_mSOHpercycle; qnext=q+delta/1000. Future20 points linear between model endpoints, hence next robust20_mSOHpercycle=delta/20. Generated age+=20. No actual future q/RUL in rollout. No clipping/negative slope forcing.",
+  "endpoint": "First generated q<=.8; interpolate crossing inside20cycle segment, output continuouscycle RUL. Preserve every origin.",
+  "noncross": "At100steps/2000cycles noncross or invalid states recorded, not dropped. Capped lower-bound2000 used ONLY diagnostic allorigin score; any noncross/invalid fails gate.",
+  "gate": "0noncross/invalid; >=5% cell-equal TimeMAE reduction vs same10cal saved directRUL; >=7/10 improve; pairedcell bootstrap2000seed42 lower>0; severeover100 increase<=.01. Cal development only; no dev/test gate auto-unlock.",
+  "versions": "Python3.9/numpy1.26.4/sklearn1.6.1; no checkpoint load",
+  "limits": [
+    "New exploratory generated-path point-RUL diagnostic; conditional distribution not implemented",
+    "Piecewise-linear future synthetic slope assumption and 20-step model extrapolation must be disclosed",
+    "Full physical identity/sourceSHA notclosed, same10cal exposed, event-only labcapacity",
+    "Capacityforecast ability doesn't validate long-horizon rollout; no seed/window/dynamics rescue afterFAIL"
+  ],
+  "development_access": false,
+  "test_access": false,
+  "global_new_fits_allowed_remains": false,
+  "dataset_path": "/home/yndx/zxk/rul/data/processed/capacity20_endpoint_targets_v2/fit_pairs.csv",
+  "dataset_sha256": "47fb353d8788c74b515a10bbd250c6b93ed7393cfcc0df6faf44f7067cb1f679",
+  "model": {
+    "max_iter": 150,
+    "max_leaf_nodes": 7,
+    "max_depth": 3,
+    "learning_rate": 0.05,
+    "min_samples_leaf": 50,
+    "l2_regularization": 1,
+    "early_stopping": false,
+    "random_state": 42
+  },
+  "training": "42fit22281pairs; only X age/SOH/rate20, never targetcycle or phase; cell equalweights. Prior21441targets unchanged, add840. Same seed/model/dynamics, no rescue. New model save, never reload/refit old.",
+  "capacity_eval_source_sha256": "835ef130cfeef6a81e9c6f5860065945260e253550a61f9f626fe71931d4e0c5"
+}

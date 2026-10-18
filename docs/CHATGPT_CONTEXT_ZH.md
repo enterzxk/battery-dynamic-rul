@@ -1,3 +1,11 @@
+## 2026-10-18：端点标签修复匹配fit已完成，递归首过路线仍NO_GO
+- **已完成**：新DataV2下执行且仅执行1辅助CPUfit，相同42fit/10cal、模型/seed/生成规则；容量MAE1.031446→0.974923mSOH改善5.4800%，但4567首过预测仍163noncross（旧191），全部b2c6；4/10cell改善，冻结gateFAIL。关闭本固定20cycle递归首过路线，不加horizon/强制下降/seed。
+- **证据**：experiments/capacity_endpoint_firstpassage_seed42_v2/RESULTS_ZH.md、protocol/cohort/ROOT_GO/fit_ledger/completion、capacity_comparison/calibration_predictions/independent_metrics/root_decision；checkpoint SHA0980e4c7898a18de7562c20679ebbd60000a03bd9c7ebb1a976dad46c75dd127只在服务器；审查reports/capacity_endpoint_v2_review_20261018_luna/review.json SHA42bb9de27515bbb658f1af7af9d7d4ed149ee067745e8e67c5b2aea64d2a6d53。
+- **最小验证**：CSV独立重算首过指标最大差2.84e-14，容量指标差4.44e-16；保留全4567origins及163noncross，原EOL不变。RUL预测无损压缩，容量v2用旧CSV+精确delta复原SHA通过。签发脚本曾因review字段名不一致而在GO前拒绝，0claim/fit，失败日志与preGO_control_failure/resolution保留；核哈希签发后真实fit账本仅1次。
+- **阻塞/风险**：129.644624是把未到端点赋2000cycle下界cap的全样本诊断分数，不是有效完整点预测MAE；直接RUL在同10cal有效MAE58.113698。修复数据覆盖不足以修复长程预测；capacity能力不能当RUL/分布/新方法证据。新增1fit0optimizer、0checkpointload、100rolloutcalls73060rows+1capacitycall4367rows、0dev/test；旧预算不变。
+- **下一步**：做一个缺失的强简单基线：同42fit/10cal、相同age/SOH/robust20与固定HGB参数，仅将log-RUL平方损失改为native-cycle RUL absolute_error；1CPUfit，独立窄审+fresh exactGO后直接执行。同4567cal预测与旧directRUL比较，先解决训练目标和主MAE口径的差异，不开发新模块。0dev/test、不重训旧checkpoint，cal暴露不得当独立确认。
+
+
 ## 2026-10-18：真实first-passage rollout失败，已实际修复训练端点标签覆盖
 - **已完成**：freshGO复用自训checkpoint一次，0fit，对10cal4567前缀作固定20step/2000cycle首过预测；100batch/75031row forward，191noncross，原gateFAIL。随后只审42fit源数据，确认原容量训练遗漏EOL及之后840个合法target；新建端点标签DataV2，22281pair，未修改任何旧结果。
 - **证据**：experiments/capacity_firstpassage_seed42_v1/RESULTS_ZH.md、protocol/ROOT_GO/completion/calibration_predictions/independent_metrics/comparison/training_endpoint_coverage；审查reports/capacity_firstpassage_review_20261018_luna/review.json SHA634ecb543db58e6e770b3878bdd58f19daeea84b9c76820e9cb98f99789c64fe。新data/processed/capacity20_endpoint_targets_v2/fit_pairs.csv SHA47fb353d8788c74b515a10bbd250c6b93ed7393cfcc0df6faf44f7067cb1f679及manifest；构建automation/bin/build_capacity20_endpoint_targets_v2.py。
