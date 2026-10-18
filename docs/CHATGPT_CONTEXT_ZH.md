@@ -1,3 +1,11 @@
+## 2026-10-18：容量线性反馈代理真实诊断失败，转向可验证的短期容量预测
+- **已完成**：冻结20cycle公式后只对10cal已有预测及past容量计算4367时点；无新模型/前向/fit、无dev/test读取。信号方向平衡准确率37.2132%、电池内rho中位数-0.0910，仅5/10正相关；未通过预设筛选，关闭该线性代理修正路线。
+- **证据**：reports/causal_capacity_feedback_20261018_root/protocol.json、diagnose.py、diagnostic.json、minimal_validation.json、root_decision.json、RESULTS_ZH.md；diagnostic_rows.csv仅服务器审计不公开。protocol SHA73f3bc3c81cbd7d9db5ccd67ed7f1592cb57ef670d6b4c07357266241d89f7e0，runner SHA2243e9c67f72a61296aee7e3ae60caeb5cc49c3188c0c8999e4c93930539e7b6。
+- **最小验证**：单例SOH1.00→.98、旧RUL100的20cycle代理差+.02手算正确；10cell第一有效时点截断prefix后结果相等、源CSV/manifest/feature SHA一致、s=t-20<t。标签只用于回顾评价，从未进入反馈公式。没有重复smoke或改horizon/阈值救结果。
+- **阻塞/风险**：九颗mean innovation>0而部分持续高估RUL，如b4c7信号+.005607却真实剩余误差mean-120.27cycle。相对实际容量变化/仅模型隐含项的rho增量中位数-.0423/-.5751；没有额外可用信息的证据。反复时点相关、短cell仅28点，不作独立统计确认；线性路径只是代理，不能当模型预测容量。
+- **下一步**：改为先检验可被直接评分的20cycle容量预测：复用42fit/10cal，固定一个HGB预测SOH(s+20)-SOH(s)，与persist0和past20 TheilSen外推比较；独立窄审和fresh exactGO后最多1CPUfit。只在cal容量MAE优于两简单基线至少5%且>=6/10cell改善时才继续研究其反馈残差；否则关闭该辅助预测路线。此次不运行RUL修正、dev/test或旧模型重训。
+
+
 ## 2026-10-18：一次真实训练完成，独立电池全局尺度校准NO_GAIN
 - **已完成**：按固定源ID哈希每批留出5颗校准，42fit/10calibration/18development；独立窄审与fresh精确GO后执行1CPUfit。两arm共享点预测Time-MAE43.644383；heldout尺度未通过冻结标准，NO_GAIN，不扩seed/重复fit。
 - **证据**：experiments/matr_raw_heldout_calibration_seed42_v1/RESULTS_ZH.md、cohort/protocol/ROOT_GO/fit_ledger/completion、三角色原始prediction CSV、fit_parameters/metrics/comparison/independent_metrics/root_decision；公开published_predictions.json可逐字节解码三CSV。review为reports/matr_heldout_scale_review_20261018_luna/review.json，请求gpt-6-luna/high。

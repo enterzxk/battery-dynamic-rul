@@ -1,0 +1,37 @@
+{
+  "decision": "NO_GO_FOR_LINEAR_CAPACITY_PROXY_RUL_CORRECTION",
+  "screen": {
+    "cell_equal_sign_accuracy": 0.47320931628365936,
+    "cell_equal_balanced_sign_accuracy": 0.3721332400715574,
+    "both_error_sign_cells": 9,
+    "cell_equal_hindsight_constant_accuracy": 0.8776624336216543,
+    "rho_median": {
+      "innovation": -0.091003831550936,
+      "observed_capacity_change": -0.4630157481523206,
+      "model_only_implied_drop": 0.43423593954801065,
+      "age": 0.44742307248824037
+    },
+    "innovation_positive_rho_cells": 5,
+    "median_rho_increment_vs_observed_change": -0.04233519128937277,
+    "median_rho_increment_vs_model_control": -0.5750964941833328,
+    "frozen_support_screen_pass": false
+  },
+  "new_fits": 0,
+  "model_forwards": 0,
+  "test_or_dev_reads": 0,
+  "no_horizon_threshold_or_sign_rescue": true,
+  "next_bounded_action": {
+    "question": "Can learned20cycle capacity-change forecast beat persistence and robustpast20 extrapolation on10cal cells before using any forecast residual as online feedback?",
+    "reuse_cohort": "experiments/matr_raw_heldout_calibration_seed42_v1/cohort.json",
+    "fit_cells": 42,
+    "calibration_cells": 10,
+    "development_or_test_access": false,
+    "new_CPU_predictive_fits_max": 1,
+    "status": "NOT_STARTED_REQUIRES_FRESH_REVIEW_AND_HASH_BOUND_GO",
+    "features": "source age,SOH,robust20 slope at s; label SOH(s+20)-SOH(s) supervised on fit cells only; auxiliary scale milliSOH fixed physical conversion",
+    "model": "Fixed HGB150iter leaf7 depth3 lr.05 min50 L2=1 seed42; equalcellweights; do not refit old RUL model",
+    "baselines": "persistence delta0 and20*TheilSen20(s); identical eligible(s,s+20) pairs, no postevent origins or label-driven selections",
+    "continuation_gate": "cal cell-equal capacityMAE at least5% lower than both simple baselines and >=6/10 cells improve over best global simple baseline; gate is capability only, no RUL/novelty confirmation",
+    "stop": "Any fit-start consumes budget; failure or gatefail closes this auxiliary lane without seeds/model rescue"
+  }
+}

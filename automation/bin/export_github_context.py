@@ -105,6 +105,9 @@ def main():
     for name in ['runner.py', 'protocol.json', 'cohort.json', 'ROOT_GO.json', 'fit_ledger.jsonl', 'completion.json', 'fit_parameters.json', 'residual_cell_statistics.json', 'metrics.json', 'per_cell_metrics.json', 'comparison.json', 'independent_metric_recompute.py', 'independent_metrics.json', 'scale_failure_diagnosis.json', 'root_decision.json', 'RESULTS_ZH.md', 'minimal_metric_check.json', 'published_predictions.json', 'decode_public_predictions.py']:
         chosen.add('experiments/matr_raw_heldout_calibration_seed42_v1/' + name)
 
+    for name in ['protocol.json','diagnose.py','diagnostic.json','minimal_validation.json','root_decision.json','RESULTS_ZH.md']:
+        chosen.add('reports/causal_capacity_feedback_20261018_root/' + name)
+
     contents, files, skipped = {}, [], []
     mapping = {'README.md': 'docs/GITHUB_README_ZH.md', 'agent.md': 'AGENTS.md'}
     mapping.update({rel: rel for rel in sorted(chosen)})

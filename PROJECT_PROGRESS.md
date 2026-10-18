@@ -362,3 +362,11 @@
 - **最小验证**：新增interval_score的唯一手算用例通过；从22281fit/4567cal/9561dev原始预测CSV独立重算尺度与8指标，最大差2.56e-13；无重复smoke。1predictivefit、2标量残差估计、0optimizer、0test，本次GO已消费。
 - **阻塞/风险**：尺度0.19898→0.26624，coverage83.38%→91.30%偏离80%，width136.66→184.42增34.95%，interval_score202.94→210.67差3.81%，Brier均变差，只有4/18cell覆盖误差改善。校准10cell前三贡献67.38%残差均方，79.63%均方来自cell有向均值平方，提示个体偏差不能靠统一加宽处理；此为描述而非因果证明。18dev暴露/事件队列/源ID与不完整SHA限制保留，勿与旧52/19或不同训练队列直接比总指标。
 - **下一步**：只对10cal已存预测与past容量做一个固定20cycle容量反馈代理诊断，检验预测时可观测信号能否对应持续有向RUL误差，再决定是否设计因果个体修正；0fit、0dev/test读取，不使用目标电池真实RUL作为在线反馈、不事后调阈值。全局尺度路线关闭，训练总门仍false。
+
+
+## 2026-10-18：容量线性反馈代理真实诊断失败，转向可验证的短期容量预测
+- **已完成**：冻结20cycle公式后只对10cal已有预测及past容量计算4367时点；无新模型/前向/fit、无dev/test读取。信号方向平衡准确率37.2132%、电池内rho中位数-0.0910，仅5/10正相关；未通过预设筛选，关闭该线性代理修正路线。
+- **证据**：reports/causal_capacity_feedback_20261018_root/protocol.json、diagnose.py、diagnostic.json、minimal_validation.json、root_decision.json、RESULTS_ZH.md；diagnostic_rows.csv仅服务器审计不公开。protocol SHA73f3bc3c81cbd7d9db5ccd67ed7f1592cb57ef670d6b4c07357266241d89f7e0，runner SHA2243e9c67f72a61296aee7e3ae60caeb5cc49c3188c0c8999e4c93930539e7b6。
+- **最小验证**：单例SOH1.00→.98、旧RUL100的20cycle代理差+.02手算正确；10cell第一有效时点截断prefix后结果相等、源CSV/manifest/feature SHA一致、s=t-20<t。标签只用于回顾评价，从未进入反馈公式。没有重复smoke或改horizon/阈值救结果。
+- **阻塞/风险**：九颗mean innovation>0而部分持续高估RUL，如b4c7信号+.005607却真实剩余误差mean-120.27cycle。相对实际容量变化/仅模型隐含项的rho增量中位数-.0423/-.5751；没有额外可用信息的证据。反复时点相关、短cell仅28点，不作独立统计确认；线性路径只是代理，不能当模型预测容量。
+- **下一步**：改为先检验可被直接评分的20cycle容量预测：复用42fit/10cal，固定一个HGB预测SOH(s+20)-SOH(s)，与persist0和past20 TheilSen外推比较；独立窄审和fresh exactGO后最多1CPUfit。只在cal容量MAE优于两简单基线至少5%且>=6/10cell改善时才继续研究其反馈残差；否则关闭该辅助预测路线。此次不运行RUL修正、dev/test或旧模型重训。

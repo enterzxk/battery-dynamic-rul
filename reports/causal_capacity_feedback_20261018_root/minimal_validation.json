@@ -1,0 +1,58 @@
+{
+  "synthetic_signal_innovation": 0.02,
+  "synthetic_expected": 0.02,
+  "real_prefix_checks": [
+    {
+      "cell_id": "MATR_b2c1",
+      "first_origin": 120,
+      "prefix_truncation_equal": true
+    },
+    {
+      "cell_id": "MATR_b2c21",
+      "first_origin": 120,
+      "prefix_truncation_equal": true
+    },
+    {
+      "cell_id": "MATR_b2c24",
+      "first_origin": 120,
+      "prefix_truncation_equal": true
+    },
+    {
+      "cell_id": "MATR_b2c41",
+      "first_origin": 120,
+      "prefix_truncation_equal": true
+    },
+    {
+      "cell_id": "MATR_b2c6",
+      "first_origin": 120,
+      "prefix_truncation_equal": true
+    },
+    {
+      "cell_id": "MATR_b4c14",
+      "first_origin": 120,
+      "prefix_truncation_equal": true
+    },
+    {
+      "cell_id": "MATR_b4c19",
+      "first_origin": 120,
+      "prefix_truncation_equal": true
+    },
+    {
+      "cell_id": "MATR_b4c26",
+      "first_origin": 120,
+      "prefix_truncation_equal": true
+    },
+    {
+      "cell_id": "MATR_b4c29",
+      "first_origin": 120,
+      "prefix_truncation_equal": true
+    },
+    {
+      "cell_id": "MATR_b4c7",
+      "first_origin": 120,
+      "prefix_truncation_equal": true
+    }
+  ],
+  "status": "PASS",
+  "label_used_in_signal": false
+}
