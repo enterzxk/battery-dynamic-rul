@@ -1,0 +1,10 @@
+{
+  "operation": "Read five already-downloaded nested ZIP directories and README text only",
+  "max_nested_uncompressed_bytes": 220000000,
+  "max_seconds": 30,
+  "max_readme_bytes": 100000,
+  "MAT_deserialization": false,
+  "new_downloads": 0,
+  "new_fits": 0,
+  "test_MAT_reads": 0
+}

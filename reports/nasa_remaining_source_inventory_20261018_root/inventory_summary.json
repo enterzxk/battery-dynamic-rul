@@ -1,0 +1,126 @@
+{
+  "status": "COMPLETE_DIRECTORY_README_ONLY",
+  "source_sha256": "82302a7db4fc1b34e0b6676326610438d43b816bdf11a69d1d012a464ef2f92e",
+  "nested_bytes_read": 153141831,
+  "elapsed_seconds": 0.3034965991973877,
+  "unique_source_ids": [
+    "B0025",
+    "B0026",
+    "B0027",
+    "B0028",
+    "B0029",
+    "B0030",
+    "B0031",
+    "B0032",
+    "B0033",
+    "B0034",
+    "B0036",
+    "B0038",
+    "B0039",
+    "B0040",
+    "B0041",
+    "B0042",
+    "B0043",
+    "B0044",
+    "B0045",
+    "B0046",
+    "B0047",
+    "B0048",
+    "B0049",
+    "B0050",
+    "B0051",
+    "B0052",
+    "B0053",
+    "B0054",
+    "B0055",
+    "B0056"
+  ],
+  "repeated_source_ids": {
+    "B0028": [
+      {
+        "package": "5. Battery Data Set/2. BatteryAgingARC_25_26_27_28_P1.zip",
+        "path": "B0028.mat",
+        "stem": "B0028",
+        "bytes": 2820196,
+        "crc32": "0db2d4c2"
+      },
+      {
+        "package": "5. Battery Data Set/3. BatteryAgingARC_25-44.zip",
+        "path": "B0028.mat",
+        "stem": "B0028",
+        "bytes": 2820196,
+        "crc32": "0db2d4c2"
+      }
+    ],
+    "B0025": [
+      {
+        "package": "5. Battery Data Set/2. BatteryAgingARC_25_26_27_28_P1.zip",
+        "path": "B0025.mat",
+        "stem": "B0025",
+        "bytes": 2753821,
+        "crc32": "b6fd72b7"
+      },
+      {
+        "package": "5. Battery Data Set/3. BatteryAgingARC_25-44.zip",
+        "path": "B0025.mat",
+        "stem": "B0025",
+        "bytes": 2753821,
+        "crc32": "b6fd72b7"
+      }
+    ],
+    "B0026": [
+      {
+        "package": "5. Battery Data Set/2. BatteryAgingARC_25_26_27_28_P1.zip",
+        "path": "B0026.mat",
+        "stem": "B0026",
+        "bytes": 2764789,
+        "crc32": "f6fa4a64"
+      },
+      {
+        "package": "5. Battery Data Set/3. BatteryAgingARC_25-44.zip",
+        "path": "B0026.mat",
+        "stem": "B0026",
+        "bytes": 2764789,
+        "crc32": "f6fa4a64"
+      }
+    ],
+    "B0027": [
+      {
+        "package": "5. Battery Data Set/2. BatteryAgingARC_25_26_27_28_P1.zip",
+        "path": "B0027.mat",
+        "stem": "B0027",
+        "bytes": 2783781,
+        "crc32": "149e7704"
+      },
+      {
+        "package": "5. Battery Data Set/3. BatteryAgingARC_25-44.zip",
+        "path": "B0027.mat",
+        "stem": "B0027",
+        "bytes": 2783781,
+        "crc32": "149e7704"
+      }
+    ]
+  },
+  "MAT_deserialization_count": 0,
+  "test_MAT_reads": 0,
+  "new_fits": 0,
+  "optimizer_steps": 0,
+  "inventory_sha256": "c5421db9f75a07d11621e59a7fdd7fb5efecf2fa0913bd2a1f39e9da8498a0b6",
+  "prospective_split_sha256": "1d6ae025583d86655e97003ffd31d54d1990bddea98b8b9305f9e2e050521617",
+  "source_nominal_capacity_unverified": [
+    "B0025",
+    "B0026",
+    "B0027",
+    "B0028",
+    "B0029",
+    "B0030",
+    "B0031",
+    "B0032"
+  ],
+  "software_crash_group": [
+    "B0049",
+    "B0050",
+    "B0051",
+    "B0052"
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "status": "FROZEN_BEFORE_NEW_MAT_DECODING",
+  "roles": {
+    "train": [
+      "B0025",
+      "B0026",
+      "B0027",
+      "B0029",
+      "B0030",
+      "B0033",
+      "B0036",
+      "B0038",
+      "B0041",
+      "B0042",
+      "B0045",
+      "B0046",
+      "B0049",
+      "B0051",
+      "B0053",
+      "B0054"
+    ],
+    "development": [
+      "B0031",
+      "B0034",
+      "B0039",
+      "B0043",
+      "B0047",
+      "B0050",
+      "B0055"
+    ],
+    "locked": [
+      "B0028",
+      "B0032",
+      "B0040",
+      "B0044",
+      "B0048",
+      "B0052",
+      "B0056"
+    ]
+  },
+  "existing_B0018_locked": true,
+  "duplicate_policy": "B0025-28 shared ID; read only25-44 package, never P1 as extra cells",
+  "permissions": "Role ceiling only; not scientific eligibility/fit permission",
+  "next_two_reads": [
+    "B0036",
+    "B0050"
+  ],
+  "max_new_MAT_cells": 2,
+  "max_MAT_bytes": 30000000,
+  "max_wall_seconds": 30,
+  "no_auto_expansion": true,
+  "predictive_fits": 0,
+  "test_access": false,
+  "new_split_is_prospective": true
+}

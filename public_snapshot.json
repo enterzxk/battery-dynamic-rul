@@ -1,21 +1,21 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-18T05:52:19.372838+00:00",
-  "content_sha256": "d0e824815a0280726b0334dad267995ff7cff349ae043a3dbe30631a788fd8a1",
-  "file_count": 456,
+  "snapshot_utc": "2026-10-18T05:57:50.769432+00:00",
+  "content_sha256": "a6da58ef395c86eee02fb681a4034af7bb8756f194227e21a119cbdc3538d181",
+  "file_count": 460,
   "files": [
     {
       "path": "AGENTS.md",
       "source_path": "AGENTS.md",
-      "bytes": 12751,
-      "sha256": "15bbd0aad46549f5c94de267bf427d76006a3ffdfc1d15febd78e7f89fd04c3f"
+      "bytes": 13328,
+      "sha256": "93488b4e887ff13c8ac88687d1be4197a52c22667708dfd960d424007f3b1c19"
     },
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 51633,
-      "sha256": "7d2982d9de0d6d6681f503e93207ec155e6a038d895ce0dbb95148ca6c8ec1e6"
+      "bytes": 52853,
+      "sha256": "a80618a918b3dc4d4dd900b469bbeeb8b19e8a872317618443539f210a9498ee"
     },
     {
       "path": "README.md",
@@ -26,14 +26,14 @@
     {
       "path": "agent.md",
       "source_path": "AGENTS.md",
-      "bytes": 12751,
-      "sha256": "15bbd0aad46549f5c94de267bf427d76006a3ffdfc1d15febd78e7f89fd04c3f"
+      "bytes": 13328,
+      "sha256": "93488b4e887ff13c8ac88687d1be4197a52c22667708dfd960d424007f3b1c19"
     },
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 11482,
-      "sha256": "a517bad57d67bf6277b886e2e0ceff4486b4dbead64455d8dd4d66809cc5da2a"
+      "bytes": 11675,
+      "sha256": "ac8d155272fb5471f362a0832df7b2df7cd543579d1446189a75c8b8a81699c7"
     },
     {
       "path": "automation/github_export/build_dynamic_A_eligible_20261017.py",
@@ -128,14 +128,14 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 38894,
-      "sha256": "0bff8b94fae84bf0421ece3e9978f2a74ebc05e305463ed09eb5a50fbdd532ac"
+      "bytes": 40114,
+      "sha256": "b678439c98f2b75f31dff726a95ced0872f34f3bcc16cc64e229658b67107a4c"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
       "source_path": "docs/CONTINUATION_POLICY.md",
-      "bytes": 6294,
-      "sha256": "d846ecb572c6ab2c2fcfba158a22203fbb46bc70ea3ca12e17e37000a33853cd"
+      "bytes": 6871,
+      "sha256": "e0c5c1f390338a9f100c4a09e5e540b3bac4667ec1eaa97f1a01c910cb69c255"
     },
     {
       "path": "docs/COORDINATOR_HANDOFF_20261017_V9_ZH.md",
@@ -2026,6 +2026,30 @@
       "source_path": "reports/matr_v11_release_provenance_20261018_root/web_source_observations.json",
       "bytes": 1554,
       "sha256": "b6dac0cad0c771be6fb1bc119a7065ce7a5d97496e14893677c5b30ab2623deb"
+    },
+    {
+      "path": "reports/nasa_remaining_source_inventory_20261018_root/SOURCE_INVENTORY_ZH.md",
+      "source_path": "reports/nasa_remaining_source_inventory_20261018_root/SOURCE_INVENTORY_ZH.md",
+      "bytes": 3750,
+      "sha256": "9d1813eca64a1bce068a7fb4d847313c16c8ad9bb066cbb6e85ba01fa492a7dc"
+    },
+    {
+      "path": "reports/nasa_remaining_source_inventory_20261018_root/budget.json",
+      "source_path": "reports/nasa_remaining_source_inventory_20261018_root/budget.json",
+      "bytes": 284,
+      "sha256": "921302cd45d89205cc023de8c61510e1524d95bd991b13727c6d674b0f1e9644"
+    },
+    {
+      "path": "reports/nasa_remaining_source_inventory_20261018_root/inventory_summary.json",
+      "source_path": "reports/nasa_remaining_source_inventory_20261018_root/inventory_summary.json",
+      "bytes": 2868,
+      "sha256": "169c20a47a547d035168733f1ab0614baae4ff8028f07f1a05e1677946fd420c"
+    },
+    {
+      "path": "reports/nasa_remaining_source_inventory_20261018_root/prospective_split.json",
+      "source_path": "reports/nasa_remaining_source_inventory_20261018_root/prospective_split.json",
+      "bytes": 1038,
+      "sha256": "1d6ae025583d86655e97003ffd31d54d1990bddea98b8b9305f9e2e050521617"
     },
     {
       "path": "reports/online_rate_harm_diagnosis_20261018_root/DIAGNOSIS_ZH.md",

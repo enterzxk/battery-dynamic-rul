@@ -1,3 +1,11 @@
+## 2026-10-18：NASA剩余子包去重与删失机制边界闭合
+- **已完成**：只读已下载5子包目录/README，34条MAT目录对应30唯一源ID；B0025–B0028跨两包大小/CRC一致，冻结同ID单角色。工况与后续读取分组已在新MAT解码前冻结。
+- **证据**：reports/nasa_remaining_source_inventory_20261018_root/SOURCE_INVENTORY_ZH.md、inventory.json（仅服务器原文）、inventory_summary.json、prospective_split.json、budget.json。读取153141831嵌套字节、0.3035s；无新增下载/MAT解码。
+- **最小验证**：逐组README Files与目录对应、源ID去重34→30；温度/负载/截止/停止原因直接来自首段。B0049–B0052明确因软件崩溃结束，不能当自然失效/随机删失。
+- **阻塞/风险**：不同温度/负载不可直接混成同队列；25–32名义容量未证；低温异常原因作者亦未解释，完整物理serial/alias未证。size+CRC重复候选未冒充SHA逐字节相等。new_fits=0、steps=0、test=0。
+- **下一步**：按冻结预算只读B0036与B0050两非locked MAT，核前者兼容性和后者崩溃组源操作/实际载荷/时间/容量；B0050仅独立机制诊断，不并入室温主实验。
+
+
 ## 2026-10-18：原始NASA因果DataV1有界链完成，MATR传输停止保留
 - **已完成**：真实owner锁内接管；MATR原始第二批传输速度超预算预计而提前STOP，部分文件保留未用；一次下载NASA官方209708670bytes。两真实电芯最小验证后一次生成3颗/504次放电、train119+development42=161前缀；B0018封存MAT未读。
 - **证据**：reports/data_v1_raw_nasa_20261018_root/DATAV1_ZH.md、import_nasa.py、preprocessing_protocol_v2.json、two_cell_check.json、data_v1_summary.json；data/processed/data_v1_nasa_fy08q4/manifest.json SHA74acf85c1116cb919c5e68fdbdba901770ce3c07e973bb907adb85f3a983002e。官方archive SHA82302a7db4fc1b34e0b6676326610438d43b816bdf11a69d1d012a464ef2f92e。

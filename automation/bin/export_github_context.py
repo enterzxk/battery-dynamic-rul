@@ -75,6 +75,9 @@ def main():
     for name in ['acquisition_budget.json','availability_probe.json','matr_batch2_stream_budget.json','matr_transfer_stop.json','nasa_stream_budget.json']:
         chosen.add('reports/data_v1_raw_matr_20261018_root/' + name)
 
+    for name in ['SOURCE_INVENTORY_ZH.md','inventory_summary.json','prospective_split.json','budget.json']:
+        chosen.add('reports/nasa_remaining_source_inventory_20261018_root/' + name)
+
     contents, files, skipped = {}, [], []
     mapping = {'README.md': 'docs/GITHUB_README_ZH.md', 'agent.md': 'AGENTS.md'}
     mapping.update({rel: rel for rel in sorted(chosen)})

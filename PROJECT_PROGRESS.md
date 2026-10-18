@@ -314,3 +314,11 @@
 - **最小验证**：两cell共4次真实放电的独立区间积分误差<1e-10Ah、prefix20截断相等、单位与源操作对应；无重复smoke。README截止电压描述冲突保留，原Capacity不覆盖，另列共同2.7V容量80%端点B0005/B0007/B0006=74/85/62；原Capacity80%=75/86/63，原70%=125/未观测/109。
 - **阻塞/风险**：2train1development仅导入工程资产，无论文性能/物理泛化证明；共同截止不证明完整SOCspan；三颗past100全缺失，不证明长程机制。MATR完整raw未得；partial1013972992bytes未解码。new_fits=0、optimizer_steps=0、test=0，全球训练门保持false。
 - **下一步**：只读已下载NASA其它5子包目录/README，确认同电芯续段/alias与兼容工况；MAT读取前冻结分组后有界扩DataV1，不用此3颗运行论文比较、不重开MATR已消费全文件票。
+
+
+## 2026-10-18：NASA剩余子包去重与删失机制边界闭合
+- **已完成**：只读已下载5子包目录/README，34条MAT目录对应30唯一源ID；B0025–B0028跨两包大小/CRC一致，冻结同ID单角色。工况与后续读取分组已在新MAT解码前冻结。
+- **证据**：reports/nasa_remaining_source_inventory_20261018_root/SOURCE_INVENTORY_ZH.md、inventory.json（仅服务器原文）、inventory_summary.json、prospective_split.json、budget.json。读取153141831嵌套字节、0.3035s；无新增下载/MAT解码。
+- **最小验证**：逐组README Files与目录对应、源ID去重34→30；温度/负载/截止/停止原因直接来自首段。B0049–B0052明确因软件崩溃结束，不能当自然失效/随机删失。
+- **阻塞/风险**：不同温度/负载不可直接混成同队列；25–32名义容量未证；低温异常原因作者亦未解释，完整物理serial/alias未证。size+CRC重复候选未冒充SHA逐字节相等。new_fits=0、steps=0、test=0。
+- **下一步**：按冻结预算只读B0036与B0050两非locked MAT，核前者兼容性和后者崩溃组源操作/实际载荷/时间/容量；B0050仅独立机制诊断，不并入室温主实验。
