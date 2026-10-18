@@ -156,6 +156,9 @@ def main():
     for name in ['runner.py','protocol.json','cohort.json','ROOT_GO.json','fit_ledger.jsonl','completion.json','metrics.json','per_cell_metrics.json','comparison.json','independent_recompute.py','independent_metrics.json','prediction_delta.json','decode_prediction_delta.py','policy_exposure_subgroups.json','preGO_review_schema_rejection.json','preGO_hash_resolution.json','root_decision.json','RESULTS_ZH.md']:
         chosen.add('experiments/policy_context_point_seed42_v1/' + name)
 
+    for name in ['protocol.json','diagnose.py','metrics.json','per_cell_metrics.json','comparison.json','transition_audit.json','phase_metrics.json','arithmetic_examples.json','completion.json','independent_recompute.py','independent_metrics.json','root_decision.json','RESULTS_ZH.md']:
+        chosen.add('reports/policy_fixedearly_dynamic_20261018_root/' + name)
+
     contents, files, skipped = {}, [], []
     mapping = {'README.md': 'docs/GITHUB_README_ZH.md', 'agent.md': 'AGENTS.md'}
     mapping.update({rel: rel for rel in sorted(chosen)})

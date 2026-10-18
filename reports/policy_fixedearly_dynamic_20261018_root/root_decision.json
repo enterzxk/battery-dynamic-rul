@@ -1,0 +1,20 @@
+{
+  "decision": "ACCURACY_GAIN_BUT_NO_GO_JOINT_GUARDRAIL_DYNAMIC_VS_POLICY_FIXED_POINT_COUNTDOWN",
+  "comparison": {
+    "relative_MAE_reduction": 0.5193985779187504,
+    "cells_improved": 8,
+    "pairedcell_MAE_difference_CI95": [
+      13.121579947828653,
+      73.20561337104671
+    ],
+    "severe_over100_increment": 0.042582465379289114,
+    "fixed_expired_origins_before_trueEOL": 647,
+    "development_gate_pass": false
+  },
+  "new_fits": 0,
+  "new_model_inference": 0,
+  "independent_metrics_sha256": "b1436a5ea84c5f86945d7e6e6fe80f67112f00e0c64b15d204f8d669222a3701",
+  "scope": "knownfixedpolicy exposedcal only; naive countdown not probabilistic survivalconditioning",
+  "do_not_revoke_previous_policy_vs_three_state_gate": "differentcomparison, previous policy vs oldstate point PASS remains valid within development",
+  "next_action": "0fit frozen-distribution control: use previous fit-only sigmaA unchanged with saved policy mu100 for proper early survivalconditioning and saved policy mu_t for dynamic; old3state dynamic as matchedscale reference. Compute pointMAE/severeover +80intervalscore/coverage/Brier100/300. No newscale/calibration/model inference/devtest; retain current countdown riskFAIL."
+}

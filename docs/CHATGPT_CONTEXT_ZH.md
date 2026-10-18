@@ -387,3 +387,11 @@ MATR来源补充核查已完成：已存record19688272完整API（SHA 5b79e36abb
 - **最小验证**：独立CSV主指标差7.11e-15，4567保留；公开rawlog+exp双列无损delta复原SHA通过。v0边界/浮点及审查cohort哈希转录错误均GO前0fit拒绝，原证据保留，七项重核后单次fit。0optimizer/新尺度估计/checkpointload/dev/test。
 - **阻塞/风险**：cal已暴露；6seen/4unseenpolicy仅描述，b2c1/b2c24恶化保留。已知固定labpolicy可用性是基于原文/静态字段的有限实验推断，不代表部署未知未来工况、物理泛化或创新。累计科研CPU14=RUL12+aux2，神经4fit2580steps/旧MATR41另记，newfits仍false。
 - **下一步**：0fit同policy模型已有10cal4567预测，origin100固定EOL递减vs逐时点更新，检验强工况上下文下动态增益；不新估sigma/训练/推理/devtest，不因gatePASS扩seed。
+
+
+## 2026-10-18：强工况基线下动态精度增益仍在，但相对风险护栏FAIL
+- **已完成**：0fit同policy模型10cal4567既有预测，origin100固定EOL递减vs逐时点动态，TimeMAE75.740130→36.400814改善51.9399%，8/10改善，pairedcell95%差[13.121580,73.205613]；severeover1000→4.2582%，联合gateFAIL。
+- **证据**：reports/policy_fixedearly_dynamic_20261018_root/protocol/diagnose、metrics/per_cell_metrics/comparison、transition_audit/phase_metrics、completion/independent_recompute/independent_metrics/root_decision/RESULTS_ZH；源CSV SHA796844ff5c863a08ca7f1238c620afee39a3f22b84d68b615ec52135c48b7ea0。
+- **最小验证**：独立重算主指标/647固定预测归零origin/48.3085%伤害更新通过，最大差1.42e-14；4557transition完整。0fit/optimizer/新模型推理/sigma/checkpoint/devtest，预算CPU14/神经4fit2580steps不变。
+- **阻塞/风险**：固定基线偏保守bias-34.98，零严重高估不是整体可靠，且不是生存条件化。动态远期RUL>300分段over10011.3577%，未来真RUL只能事后诊断。cal暴露/已知固定policy/物理身份限制保留，不因平均收益扩大训练；上一项policyvs三状态PASS不因不同对照而撤销。
+- **下一步**：0fit固定旧sigmaA，将policy早期mu100正规存活条件化vs动态policy mu_t，旧三状态动态同尺度参考；算MAE/over100及80%区间得分/覆盖/Brier100/300。不估sigma/训练/推理/devtest，保留本轮riskFAIL。

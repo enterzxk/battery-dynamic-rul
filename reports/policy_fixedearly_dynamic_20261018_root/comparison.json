@@ -1,0 +1,11 @@
+{
+  "relative_MAE_reduction": 0.5193985779187504,
+  "cells_improved": 8,
+  "pairedcell_MAE_difference_CI95": [
+    13.121579947828653,
+    73.20561337104671
+  ],
+  "severe_over100_increment": 0.042582465379289114,
+  "fixed_expired_origins_before_trueEOL": 647,
+  "development_gate_pass": false
+}

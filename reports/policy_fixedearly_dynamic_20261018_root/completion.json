@@ -1,0 +1,16 @@
+{
+  "status": "COMPLETE_SAVED_PREDICTION_DIAGNOSTIC",
+  "new_fits": 0,
+  "optimizer_steps": 0,
+  "new_model_inference": 0,
+  "checkpoint_loads": 0,
+  "raw_feature_reads": 0,
+  "development_reads": 0,
+  "test_reads": 0,
+  "source_sha256": "796844ff5c863a08ca7f1238c620afee39a3f22b84d68b615ec52135c48b7ea0",
+  "protocol_sha256": "4f67588ef800279faa0cf8d03b9d9f2958979744590c715a8c0d3db7e0d1b171",
+  "script_sha256": "06b79edf3407a8468c26c1da50eed595f2ef446f7f843ca82d7aac03267f51d1",
+  "rows": 4567,
+  "cells": 10,
+  "elapsed_seconds": 0.04001942276954651
+}

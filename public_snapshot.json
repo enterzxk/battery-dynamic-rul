@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-18T15:38:17.813062+00:00",
-  "content_sha256": "883ba99708e6fb2b6c3c334cb4c779b5abe30bbb57cb394c100a798b36f4826e",
-  "file_count": 650,
+  "snapshot_utc": "2026-10-18T15:45:44.665652+00:00",
+  "content_sha256": "05ca0b664f52d431897f2e108f8aa457e9cdb8c0a07966b54de769178ed4274a",
+  "file_count": 663,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,8 +14,8 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 80530,
-      "sha256": "037c22ec23ef9c3c6a89895e7e3f4d72aa0184be1cfc5dc7e59e647364413c8f"
+      "bytes": 82020,
+      "sha256": "2de45eaed15f3ba4abaff5ec6bc8c85aa9e4ea41918b85e1b096379ae4317437"
     },
     {
       "path": "README.md",
@@ -38,8 +38,8 @@
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 23084,
-      "sha256": "0a80edb1655f95279ac062ea1403803984dabfd7cc52cbac57983d2da76b3b5e"
+      "bytes": 23450,
+      "sha256": "e23d8780c435d066fb2de086509d6f46fda4b5a562af1a79d2ce97992b8bf263"
     },
     {
       "path": "automation/bin/matr_raw_batch2_asset_worker_v1.py",
@@ -164,8 +164,8 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 67791,
-      "sha256": "6a969ab6e981353d09b0ff9ec121a0073add22437d1a9ded89f17982a833f188"
+      "bytes": 69281,
+      "sha256": "8a92378c2cc9df26e6e9daa27f1ae6c3da01753b5e846539e26550b4484fa7e1"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
@@ -3718,6 +3718,84 @@
       "source_path": "reports/policy_context_point_seed42_v1_luna/review_v0_hash_transcription_error.json",
       "bytes": 3754,
       "sha256": "0d25739245edeb5e8b167e999d77ad6aa07ca941258b1416734f685121ac9686"
+    },
+    {
+      "path": "reports/policy_fixedearly_dynamic_20261018_root/RESULTS_ZH.md",
+      "source_path": "reports/policy_fixedearly_dynamic_20261018_root/RESULTS_ZH.md",
+      "bytes": 2594,
+      "sha256": "1e3306fc2a03c15d6571d8901ea834a81aee571ff52b6792ddc021f4b53e983f"
+    },
+    {
+      "path": "reports/policy_fixedearly_dynamic_20261018_root/arithmetic_examples.json",
+      "source_path": "reports/policy_fixedearly_dynamic_20261018_root/arithmetic_examples.json",
+      "bytes": 6057,
+      "sha256": "60bfa6a6167a7051561386caae261f5c3508cc7bcbb1d4abb5370ec8e46122a7"
+    },
+    {
+      "path": "reports/policy_fixedearly_dynamic_20261018_root/comparison.json",
+      "source_path": "reports/policy_fixedearly_dynamic_20261018_root/comparison.json",
+      "bytes": 296,
+      "sha256": "39aa8bc46d74e6f2925ae477f9bd334edea2caca13196f495a9d995f03ae4a38"
+    },
+    {
+      "path": "reports/policy_fixedearly_dynamic_20261018_root/completion.json",
+      "source_path": "reports/policy_fixedearly_dynamic_20261018_root/completion.json",
+      "bytes": 556,
+      "sha256": "28980a079e2bff929fef7eab55b152d5f78d6b574d3ccfd8c11e6aa0b1fa8c24"
+    },
+    {
+      "path": "reports/policy_fixedearly_dynamic_20261018_root/diagnose.py",
+      "source_path": "reports/policy_fixedearly_dynamic_20261018_root/diagnose.py",
+      "bytes": 4648,
+      "sha256": "06b79edf3407a8468c26c1da50eed595f2ef446f7f843ca82d7aac03267f51d1"
+    },
+    {
+      "path": "reports/policy_fixedearly_dynamic_20261018_root/independent_metrics.json",
+      "source_path": "reports/policy_fixedearly_dynamic_20261018_root/independent_metrics.json",
+      "bytes": 565,
+      "sha256": "b1436a5ea84c5f86945d7e6e6fe80f67112f00e0c64b15d204f8d669222a3701"
+    },
+    {
+      "path": "reports/policy_fixedearly_dynamic_20261018_root/independent_recompute.py",
+      "source_path": "reports/policy_fixedearly_dynamic_20261018_root/independent_recompute.py",
+      "bytes": 1876,
+      "sha256": "90aa8bbd1ab77615c9ffc8556d3ae7f518a0c5f5d2d96fed44c478a8e961c570"
+    },
+    {
+      "path": "reports/policy_fixedearly_dynamic_20261018_root/metrics.json",
+      "source_path": "reports/policy_fixedearly_dynamic_20261018_root/metrics.json",
+      "bytes": 267,
+      "sha256": "cf2fd4c91a161e53457de493f6112f0261faf6b22183c9964613577201af6afb"
+    },
+    {
+      "path": "reports/policy_fixedearly_dynamic_20261018_root/per_cell_metrics.json",
+      "source_path": "reports/policy_fixedearly_dynamic_20261018_root/per_cell_metrics.json",
+      "bytes": 4217,
+      "sha256": "b13bd68536b6adbcaeb721f840e603109176202a78f4318730d34d8dd930a9f5"
+    },
+    {
+      "path": "reports/policy_fixedearly_dynamic_20261018_root/phase_metrics.json",
+      "source_path": "reports/policy_fixedearly_dynamic_20261018_root/phase_metrics.json",
+      "bytes": 14096,
+      "sha256": "3f5d8449c2c1eb21363bcf8ccbab79c3b795e59ba06d5aec5e885eb9f9598ff7"
+    },
+    {
+      "path": "reports/policy_fixedearly_dynamic_20261018_root/protocol.json",
+      "source_path": "reports/policy_fixedearly_dynamic_20261018_root/protocol.json",
+      "bytes": 1675,
+      "sha256": "4f67588ef800279faa0cf8d03b9d9f2958979744590c715a8c0d3db7e0d1b171"
+    },
+    {
+      "path": "reports/policy_fixedearly_dynamic_20261018_root/root_decision.json",
+      "source_path": "reports/policy_fixedearly_dynamic_20261018_root/root_decision.json",
+      "bytes": 1219,
+      "sha256": "108a9b1e70033c416e842f1dbcb5db5add9cc61c7f2b933efe5cec363c9d2e69"
+    },
+    {
+      "path": "reports/policy_fixedearly_dynamic_20261018_root/transition_audit.json",
+      "source_path": "reports/policy_fixedearly_dynamic_20261018_root/transition_audit.json",
+      "bytes": 3922,
+      "sha256": "a09e61cc78d6429320f7b97dcb77cd181504283ed705f3800b6a0ac68d04f4bc"
     },
     {
       "path": "reports/saved_examples_lossless_20261018_root/completed_details_lossless.json",
