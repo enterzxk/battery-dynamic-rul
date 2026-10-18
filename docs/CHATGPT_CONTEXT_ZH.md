@@ -205,3 +205,7 @@ MATR来源补充核查已完成：已存record19688272完整API（SHA 5b79e36abb
 ## 2026-10-18：动态 RUL 时间预测十篇聚焦精读
 
 新增十篇聚焦讨论稿：`reports/rul_time_prediction_literature_20261018_root/LITERATURE_REVIEW_ZH.md`。它从既有41篇精读档案挑选来源，区分早期总寿命、动态 RUL(t)、轨迹阈值推导，并提出尚未验证/未完成新颖性检索的“创新量触发稀疏更新”候选。MATR历史结果仍为NO_GAIN，不扩模型/seed；本轮训练0、optimizer steps 0、新推理0。报告SHA256：`4e220d42634c16da592fb2e80ba994cd4036cdcc3b84a1e1771ef4b45f61c8ff`。
+
+## 2026-10-18：跨领域 RUL 精读（纠正范围）
+
+用户澄清需超出电池领域。新的正式阅读入口为 `reports/cross_domain_rul_literature_20261018_root/CROSS_DOMAIN_RUL_REVIEW_ZH.md`，覆盖航空发动机、风机轴承、旋转机械、CNC及医疗纵向生存分析十篇。原电池十篇总结仍保留历史，但不作为这次跨领域任务的交付。跨域候选为删失感知、随新纵向观测更新的条件RUL生存分布；尚未检索确认创新性，不授权训练。训练/推理均为0。SHA256：`4e9f9463b676ccdee8b044fbe1626abc95d3cfba0bbfb3098e855e321ce0526a`。
