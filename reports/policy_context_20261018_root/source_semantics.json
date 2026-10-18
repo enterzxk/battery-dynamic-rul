@@ -1,0 +1,59 @@
+{
+  "status": "PASS_SCOPED_POLICY_METADATA_INPUT",
+  "P01": {
+    "url": "https://web.mit.edu/braatzgroup/Severson_NatureEnergy_2019.pdf",
+    "section": "Methods experimental data generation",
+    "pdf_page_1based": 7,
+    "text_lines": [
+      630,
+      649
+    ],
+    "text_sha256": "7edf25018656c99af9b0ac1fefe868dd617efa1572e949464e8f3900cc5f27eb",
+    "paraphrase": "Prespecified one-/two-step C-rate policies over0to80SOC; common80to100CCCV segment."
+  },
+  "P02": {
+    "url": "https://web.mit.edu/braatzgroup/Attia_Nature_2020.pdf",
+    "section": "Fig2caption page398, PDFpage2",
+    "text_lines": [
+      175,
+      183
+    ],
+    "text_sha256": "3dfbb713576dfcdce648bed4119caafc279529b1969ae50b0c8c2f3a50a81c70",
+    "paraphrase": "Firstfour currents eachspan20pctSOC, fixed10minute0to80charge constrains fourth; protocol chosen before100cycle earlyprediction."
+  },
+  "official_code": {
+    "url": "https://github.com/chueh-ermon/battery-fast-charging-optimization/blob/master/policies.py",
+    "lines": [
+      3,
+      9,
+      18,
+      23,
+      36,
+      45
+    ],
+    "paraphrase": "Prespecified C-rate grid and C4 constraint, not from finalRUL",
+    "verified_utc": "2026-10-18T15:32:50.726288+00:00"
+  },
+  "project_extraction": {
+    "code_lines": [
+      "automation/bin/matr_raw_batch2_asset_worker_v1.py:70",
+      "automation/bin/matr_raw_batch4_asset_worker_v2.py:64"
+    ],
+    "manifest_sha256": [
+      "fcbedb9ee4ea9da83efe3239cda3d56d629678b3dbbd90b675039f6456ad32c1",
+      "862d796f8b1ba2d0d865884de1d77e32f2e7ce00480327299209d966c73bbe8e"
+    ],
+    "mapping": "static raw policy_readable -> percell manifest policy, no capacityfuture/event labels used"
+  },
+  "inference_boundary": "Known labprotocol availability inferred from Methods+code+staticrawfield. No deployment futurepolicy/percyclechanges guarantee, no fullsourceSHA orphysicalidentity closure.",
+  "encoding": "Four common20pctSOCbin effective Crates=.2/integral_bin dSOC/C. Policyonly, no category/batchID/label/learnedtransform.",
+  "v0_failure": "Two valid4.8C(80%)-4.8C single-step boundaryrecords stopped beforefit; v0code+failure preserved. V1 allows0/80 boundary. Floatidentity error1.78e-15 resolved by analytic1e-12 tolerance, no featureformula change.",
+  "validation": "All52 parser/timeintegral pass; fourstage10min roundingerror<.01min; one-step knownconstant4.8C valid.",
+  "scope_read": "P01Methods/P02maintextFig2 only, not whole21pageSI newlyread",
+  "public_lookup_failures": [
+    "Nature loginredirect",
+    "MATR metadataAPI unavailable viawebtool; retain oldassetreceipts, no livefullsourceclaim"
+  ],
+  "encoder_sha256": "6a322bc105c6a76be999ecbf4fafd66788449af356ad0d998f6f220fdc4ef7e1",
+  "policy_features_sha256": "91a6bfa3be83b403289133bd13669d36ed7a1f212ec0ca4e692efecfb85be462"
+}

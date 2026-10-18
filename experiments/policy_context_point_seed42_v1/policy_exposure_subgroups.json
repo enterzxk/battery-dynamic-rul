@@ -1,0 +1,40 @@
+{
+  "preexisting_table_seen_definition": "rawpolicy string appeared among42fit; groups frozen beforefit",
+  "descriptive_only": true,
+  "groups": {
+    "seen_policy": {
+      "cells": 6,
+      "metrics": {
+        "saved_log_squared": {
+          "MAE": 77.26436083483834,
+          "bias": 26.2384851008061,
+          "severe_over100": 0.2354942722932671
+        },
+        "with_policy_context": {
+          "MAE": 45.01598152675376,
+          "bias": 3.5720943138628116,
+          "severe_over100": 0.07097077563214851
+        }
+      },
+      "relative_MAE_reduction": 0.4173771575878209,
+      "cells_improved": 5
+    },
+    "unseen_policy": {
+      "cells": 4,
+      "metrics": {
+        "saved_log_squared": {
+          "MAE": 29.3877037547109,
+          "bias": -10.16716711930487,
+          "severe_over100": 0.0007598784194528875
+        },
+        "with_policy_context": {
+          "MAE": 23.478063566569062,
+          "bias": -14.167879257815436,
+          "severe_over100": 0.0
+        }
+      },
+      "relative_MAE_reduction": 0.20109227442428235,
+      "cells_improved": 3
+    }
+  }
+}

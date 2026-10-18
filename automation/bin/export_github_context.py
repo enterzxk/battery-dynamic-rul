@@ -150,6 +150,12 @@ def main():
     for name in ['protocol.json','diagnose.py','summary.json','examples.json','source_hashes.json','completion.json','minimal_validation.json','policy_context_observation.json','root_decision.json','RESULTS_ZH.md']:
         chosen.add('reports/local_state_support_20261018_root/' + name)
 
+    for name in ['encode_policy.py','encode_policy_v0.py','encode_policy_v1.py','encoder_v0_failure.json','constant_check_float_resolution.json','policy_features.json','encoding_summary.json','source_semantics.json','two_encoding_examples.json','ENCODING_ZH.md']:
+        chosen.add('reports/policy_context_20261018_root/' + name)
+    chosen.update(['reports/policy_context_point_seed42_v1_luna/review.json','reports/policy_context_point_seed42_v1_luna/review_v0_hash_transcription_error.json'])
+    for name in ['runner.py','protocol.json','cohort.json','ROOT_GO.json','fit_ledger.jsonl','completion.json','metrics.json','per_cell_metrics.json','comparison.json','independent_recompute.py','independent_metrics.json','prediction_delta.json','decode_prediction_delta.py','policy_exposure_subgroups.json','preGO_review_schema_rejection.json','preGO_hash_resolution.json','root_decision.json','RESULTS_ZH.md']:
+        chosen.add('experiments/policy_context_point_seed42_v1/' + name)
+
     contents, files, skipped = {}, [], []
     mapping = {'README.md': 'docs/GITHUB_README_ZH.md', 'agent.md': 'AGENTS.md'}
     mapping.update({rel: rel for rel in sorted(chosen)})

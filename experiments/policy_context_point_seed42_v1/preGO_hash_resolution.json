@@ -1,0 +1,9 @@
+{
+  "status": "RESOLVED_BEFORE_GO_NO_SCIENTIFIC_INVOCATION",
+  "issue": "reviewcohort SHAtranscription omittedcharacters",
+  "old_review_preserved": "reports/policy_context_point_seed42_v1_luna/review_v0_hash_transcription_error.json",
+  "corrected_review_sha256": "1e9f63c0fbc0c2809a57ca8c9c56709b19154f4e543725e988ccf84cb75b5ac6",
+  "all7_hashes_recomputed": true,
+  "GO_issued_after_correction": true,
+  "actual_fit_ledger_starts": 1
+}

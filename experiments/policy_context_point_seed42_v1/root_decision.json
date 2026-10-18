@@ -1,0 +1,25 @@
+{
+  "decision": "PASS_SCOPED_POLICY_CONTEXT_POINT_DEVELOPMENT_GATE",
+  "gate_pass": true,
+  "comparison": {
+    "relative_MAE_reduction": 0.3736276369654886,
+    "cells_improved": 8,
+    "pairedcell_MAE_difference_CI95": [
+      5.583948589166248,
+      41.35450219632845
+    ],
+    "severe_over100_increment": -0.0990180493644523,
+    "negative_log_outputs_info": 0,
+    "gate_pass": true
+  },
+  "new_CPU_fits": 1,
+  "optimizer_steps": 0,
+  "new_scalar_estimates": 0,
+  "dev_test_reads": 0,
+  "GO_consumed": true,
+  "prediction_sha256": "796844ff5c863a08ca7f1238c620afee39a3f22b84d68b615ec52135c48b7ea0",
+  "checkpoint_sha256": "97241e1c5966d179a23902270993c0de5f84c5c3e6de2cb3798ec41728efe541",
+  "independent_metrics_sha256": "0b0c3476f3dc90416fdcdfccce84b44a818c160bed395d9d33be771c5701224b",
+  "scope": "same10exposedcal,knownfixedlabpolicies,not independentconfirmation/novelty orphysicalgeneralization",
+  "next_action": "0fit samecontextmodel savedpredictions: frozen origin100 EOL countdown vs everyorigin dynamic contextprediction; same10cal4567, sourcehash/protocol fixed; isolate dynamic update value after strong knownpolicy context. No newscale/fit/inference/devtest."
+}

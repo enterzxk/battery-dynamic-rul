@@ -1,0 +1,20 @@
+{
+  "status": "COMPLETE",
+  "new_CPU_predictive_fits": 1,
+  "optimizer_steps": 0,
+  "development_reads": 0,
+  "test_reads": 0,
+  "fit_origins": 22281,
+  "calibration_origins": 4567,
+  "checkpoint_sha256": "97241e1c5966d179a23902270993c0de5f84c5c3e6de2cb3798ec41728efe541",
+  "prediction_sha256": "796844ff5c863a08ca7f1238c620afee39a3f22b84d68b615ec52135c48b7ea0",
+  "source_prediction_sha256": {
+    "fit_predictions.csv": "7cd0d1c902dacacf8f519c02962eb0343c240d1be41555d96e94b4bbf17775e3",
+    "calibration_predictions.csv": "c27dd53fce992318292397486aaff8ce02e3f8b802ee54932867517ce7c2af76"
+  },
+  "runner_sha256": "20a00208a58ed37256a97d4b5ead0be555e9c318b21434567789132197c916f1",
+  "protocol_sha256": "30b37abb94065144c18c98c170cd30a09f2edb732f6b2a27c8a21606dfbdb85d",
+  "GO_sha256": "a59009337e47849e2ee45f9f76c29927736687a0ca9e61156c7297f3bd6e59fa",
+  "elapsed_seconds": 0.3696058951318264,
+  "within_budget": true
+}

@@ -1,0 +1,35 @@
+{
+  "status": "PASS_INDEPENDENT_CSV_RECOMPUTE",
+  "rows": 4567,
+  "cells": 10,
+  "metrics": {
+    "saved_log_squared": {
+      "MAE": 58.11369800278736,
+      "bias": 11.676224212761717,
+      "severe_over100": 0.1416005147437414
+    },
+    "with_policy_context": {
+      "MAE": 36.40081434267988,
+      "bias": -3.5238951148084894,
+      "severe_over100": 0.04258246537928911
+    }
+  },
+  "max_absolute_metric_difference": 7.105427357601002e-15,
+  "pairedcell_MAE_difference_CI95": [
+    5.583948589166253,
+    41.354502196328454
+  ],
+  "prediction_sha256": "796844ff5c863a08ca7f1238c620afee39a3f22b84d68b615ec52135c48b7ea0",
+  "per_cell_MAE_improvement": {
+    "MATR_b2c1": -3.3477472632793708,
+    "MATR_b2c21": 1.7458507898271893,
+    "MATR_b2c24": -4.962391044482972,
+    "MATR_b2c41": 18.984478340474368,
+    "MATR_b2c6": 6.255978885545176,
+    "MATR_b4c14": 15.122642595586015,
+    "MATR_b4c19": 23.952719618968615,
+    "MATR_b4c26": 81.73504178010833,
+    "MATR_b4c29": 5.753443859064959,
+    "MATR_b4c7": 71.88881903926251
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "status": "GO_ONE_POLICY_CONTEXT_POINT_FIT_CAL_ONLY",
+  "owner": "01a14e92-ea7a-7cc3-8007-67b4d16a873a",
+  "issued_utc": "2026-10-18T15:36:48.419480+00:00",
+  "actual_cwd": "/home/yndx/zxk/rul",
+  "max_new_fits": 1,
+  "max_seconds": 180,
+  "development_access": false,
+  "test_access": false,
+  "new_scalar_estimates": 0,
+  "global_new_fits_allowed_remains": false,
+  "review_path": "/home/yndx/zxk/rul/reports/policy_context_point_seed42_v1_luna/review.json",
+  "review_sha256": "1e9f63c0fbc0c2809a57ca8c9c56709b19154f4e543725e988ccf84cb75b5ac6",
+  "reviewer_requested_model": "gpt-6-luna/high",
+  "scope": "Knownlabpolicy4SOCfeatures only; same42fit10cal/seed/model/labels; preGO reviewhash transcription corrected andoldreview preserved,0previousclaimfit",
+  "runner.py_sha256": "20a00208a58ed37256a97d4b5ead0be555e9c318b21434567789132197c916f1",
+  "protocol.json_sha256": "30b37abb94065144c18c98c170cd30a09f2edb732f6b2a27c8a21606dfbdb85d",
+  "cohort.json_sha256": "42535de5825f6857e3aa69a596306a909a9a1b3ac087c43631032f6d293ef289",
+  "policy_features_sha256": "91a6bfa3be83b403289133bd13669d36ed7a1f212ec0ca4e692efecfb85be462",
+  "semantics_sha256": "c973219a60549f3ef4af0803a821eeafd2b4fe2ade552234294a25dd01e3ad32"
+}

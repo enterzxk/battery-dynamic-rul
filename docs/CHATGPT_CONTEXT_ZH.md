@@ -379,3 +379,11 @@ MATR来源补充核查已完成：已存record19688272完整API（SHA 5b79e36abb
 - **最小验证**：固定六时点30邻居独立距离差<=2.22e-16；841origin汇总计数重算通过。44特征文件hash匹配；0fit/optimizer/新模型推理/checkpoint/dev/test，累计CPU13/神经4fit2580steps不变。
 - **阻塞/风险**：两个选中暴露case不是总体结论，逐轴box非联合支持，五邻居范围非概率区间；不能证明不可约误差或policy因果效应。policy预设时点与双格式语义尚未独立核实；旧raw100长rate NO_GAIN仍关闭。
 - **下一步**：核已存官方源说明的policy预测时可用性/双格式语义，冻结42fit/10cal解析与hash；关闭合法性后fresh1CPUfit匹配policy上下文基线，须窄审+exactGO。当前无新fit授权，不重开长窗口或复杂网络。
+
+
+## 2026-10-18：已知工况匹配1fit通过TimeMAE开发门槛
+- **已完成**：P01Methods/P02Fig2及作者代码核已知工况语义，52cell冻结共同SOCbin等效Crate；同42fit/10cal仅加4工况特征真实1CPUfit。TimeMAE58.113698→36.400814改善37.3628%，8/10改善，pairedcell95%差[5.583949,41.354502]，severeover10014.1601%→4.2582%，gatePASS。
+- **证据**：reports/policy_context_20261018_root/ENCODING_ZH.md/source_semantics/policy_features与v0失败；experiments/policy_context_point_seed42_v1/RESULTS_ZH.md、ROOT_GO/fit_ledger/completion、predictions/checkpoint、metrics/comparison/independent_metrics、policy_exposure_subgroups/root_decision；审查reports/policy_context_point_seed42_v1_luna/review.json。
+- **最小验证**：独立CSV主指标差7.11e-15，4567保留；公开rawlog+exp双列无损delta复原SHA通过。v0边界/浮点及审查cohort哈希转录错误均GO前0fit拒绝，原证据保留，七项重核后单次fit。0optimizer/新尺度估计/checkpointload/dev/test。
+- **阻塞/风险**：cal已暴露；6seen/4unseenpolicy仅描述，b2c1/b2c24恶化保留。已知固定labpolicy可用性是基于原文/静态字段的有限实验推断，不代表部署未知未来工况、物理泛化或创新。累计科研CPU14=RUL12+aux2，神经4fit2580steps/旧MATR41另记，newfits仍false。
+- **下一步**：0fit同policy模型已有10cal4567预测，origin100固定EOL递减vs逐时点更新，检验强工况上下文下动态增益；不新估sigma/训练/推理/devtest，不因gatePASS扩seed。

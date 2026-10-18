@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-18T15:17:16.444836+00:00",
-  "content_sha256": "16c5c0bd9722c79b8a1fed7be160ebca82ea0987e0bbe1886d3a8cb572040542",
-  "file_count": 620,
+  "snapshot_utc": "2026-10-18T15:38:17.813062+00:00",
+  "content_sha256": "883ba99708e6fb2b6c3c334cb4c779b5abe30bbb57cb394c100a798b36f4826e",
+  "file_count": 650,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,8 +14,8 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 78963,
-      "sha256": "e013637f8e7367c1033ede5618cdac42db1bf568782ab8e2d247b67e1791971b"
+      "bytes": 80530,
+      "sha256": "037c22ec23ef9c3c6a89895e7e3f4d72aa0184be1cfc5dc7e59e647364413c8f"
     },
     {
       "path": "README.md",
@@ -38,8 +38,8 @@
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 22101,
-      "sha256": "a511ec4f6842a672c32204c3dc2a66895e9d9da4cdfa9bb68e0a281737375873"
+      "bytes": 23084,
+      "sha256": "0a80edb1655f95279ac062ea1403803984dabfd7cc52cbac57983d2da76b3b5e"
     },
     {
       "path": "automation/bin/matr_raw_batch2_asset_worker_v1.py",
@@ -164,8 +164,8 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 66224,
-      "sha256": "7a80ccbb431ea512c851469d55b4495d2f163d14b972b9c7a784b72823c152e3"
+      "bytes": 67791,
+      "sha256": "6a969ab6e981353d09b0ff9ec121a0073add22437d1a9ded89f17982a833f188"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
@@ -1570,6 +1570,114 @@
       "source_path": "experiments/online_survival_robust_rate_seed42_v1/runner.py",
       "bytes": 7408,
       "sha256": "e17933d204cd99a4bca8a3a1d753b1cf310c1e6332e13becb75f20df6e9979a2"
+    },
+    {
+      "path": "experiments/policy_context_point_seed42_v1/RESULTS_ZH.md",
+      "source_path": "experiments/policy_context_point_seed42_v1/RESULTS_ZH.md",
+      "bytes": 2781,
+      "sha256": "bb03b473ca458fd64cb606774bbd5a63cb1f9e59daf70915f3366bc6a5dd1f13"
+    },
+    {
+      "path": "experiments/policy_context_point_seed42_v1/ROOT_GO.json",
+      "source_path": "experiments/policy_context_point_seed42_v1/ROOT_GO.json",
+      "bytes": 1227,
+      "sha256": "a59009337e47849e2ee45f9f76c29927736687a0ca9e61156c7297f3bd6e59fa"
+    },
+    {
+      "path": "experiments/policy_context_point_seed42_v1/cohort.json",
+      "source_path": "experiments/policy_context_point_seed42_v1/cohort.json",
+      "bytes": 2573,
+      "sha256": "42535de5825f6857e3aa69a596306a909a9a1b3ac087c43631032f6d293ef289"
+    },
+    {
+      "path": "experiments/policy_context_point_seed42_v1/comparison.json",
+      "source_path": "experiments/policy_context_point_seed42_v1/comparison.json",
+      "bytes": 268,
+      "sha256": "2cba838e9e1cd5844b423925001f7c8abd52e5c19764261aa152f5cf9fafd1d4"
+    },
+    {
+      "path": "experiments/policy_context_point_seed42_v1/completion.json",
+      "source_path": "experiments/policy_context_point_seed42_v1/completion.json",
+      "bytes": 924,
+      "sha256": "1caa2674e055cab9d4d1bb7680eb2349b7ff4f0af529cbe402ba56a571ac79d3"
+    },
+    {
+      "path": "experiments/policy_context_point_seed42_v1/decode_prediction_delta.py",
+      "source_path": "experiments/policy_context_point_seed42_v1/decode_prediction_delta.py",
+      "bytes": 952,
+      "sha256": "c12818561359b4f0b0f5dc09d6cbe7ef23d2d64d0da158060f265cd5a4536ab9"
+    },
+    {
+      "path": "experiments/policy_context_point_seed42_v1/fit_ledger.jsonl",
+      "source_path": "experiments/policy_context_point_seed42_v1/fit_ledger.jsonl",
+      "bytes": 109,
+      "sha256": "c64a04f9c77404909494fec8fe7aa17a2d89fbbd4d6ad03b0c55aa40a387f37d"
+    },
+    {
+      "path": "experiments/policy_context_point_seed42_v1/independent_metrics.json",
+      "source_path": "experiments/policy_context_point_seed42_v1/independent_metrics.json",
+      "bytes": 1038,
+      "sha256": "0b0c3476f3dc90416fdcdfccce84b44a818c160bed395d9d33be771c5701224b"
+    },
+    {
+      "path": "experiments/policy_context_point_seed42_v1/independent_recompute.py",
+      "source_path": "experiments/policy_context_point_seed42_v1/independent_recompute.py",
+      "bytes": 1990,
+      "sha256": "083aee4fb4dd657acf4fe8b4c13e12312c5b70d6e39f3d424475dea273f219b4"
+    },
+    {
+      "path": "experiments/policy_context_point_seed42_v1/metrics.json",
+      "source_path": "experiments/policy_context_point_seed42_v1/metrics.json",
+      "bytes": 272,
+      "sha256": "8a3faf3324a5ed145d8d89f5cbc7d75335aec7f56430e7e923b01af6eeeace8c"
+    },
+    {
+      "path": "experiments/policy_context_point_seed42_v1/per_cell_metrics.json",
+      "source_path": "experiments/policy_context_point_seed42_v1/per_cell_metrics.json",
+      "bytes": 3731,
+      "sha256": "164b705c0eef57ac89bf4912e37da826fb1a6521180143b12dbe7f62816ddd67"
+    },
+    {
+      "path": "experiments/policy_context_point_seed42_v1/policy_exposure_subgroups.json",
+      "source_path": "experiments/policy_context_point_seed42_v1/policy_exposure_subgroups.json",
+      "bytes": 1102,
+      "sha256": "ce60da948e4a605ef0670999fe2da785904fa1177e61e09d3c4cc13759d78f21"
+    },
+    {
+      "path": "experiments/policy_context_point_seed42_v1/preGO_hash_resolution.json",
+      "source_path": "experiments/policy_context_point_seed42_v1/preGO_hash_resolution.json",
+      "bytes": 439,
+      "sha256": "8ac80b8d1fa9dbab2fd16362223a9e43b7dc8819634034925bd51c20136f971a"
+    },
+    {
+      "path": "experiments/policy_context_point_seed42_v1/preGO_review_schema_rejection.json",
+      "source_path": "experiments/policy_context_point_seed42_v1/preGO_review_schema_rejection.json",
+      "bytes": 1923,
+      "sha256": "27f827e19747dd91750f7b3f812ad1505efc208893843e05226eb14af4f02c9d"
+    },
+    {
+      "path": "experiments/policy_context_point_seed42_v1/prediction_delta.json",
+      "source_path": "experiments/policy_context_point_seed42_v1/prediction_delta.json",
+      "bytes": 38264,
+      "sha256": "7bbe567e7cc2d105b989dde3e1f859369613b49707af473b761d652ac1c98cbb"
+    },
+    {
+      "path": "experiments/policy_context_point_seed42_v1/protocol.json",
+      "source_path": "experiments/policy_context_point_seed42_v1/protocol.json",
+      "bytes": 2897,
+      "sha256": "30b37abb94065144c18c98c170cd30a09f2edb732f6b2a27c8a21606dfbdb85d"
+    },
+    {
+      "path": "experiments/policy_context_point_seed42_v1/root_decision.json",
+      "source_path": "experiments/policy_context_point_seed42_v1/root_decision.json",
+      "bytes": 1185,
+      "sha256": "927c641732b8be4ba0270f8d07bc6f34daaff9a23ca1440a70e87e3f60cf8fee"
+    },
+    {
+      "path": "experiments/policy_context_point_seed42_v1/runner.py",
+      "source_path": "experiments/policy_context_point_seed42_v1/runner.py",
+      "bytes": 7327,
+      "sha256": "20a00208a58ed37256a97d4b5ead0be555e9c318b21434567789132197c916f1"
     },
     {
       "path": "literature/accepted/P01_maintext_v1.json",
@@ -3538,6 +3646,78 @@
       "source_path": "reports/persistent_capacity_feedback_20261018_root/root_decision.json",
       "bytes": 201,
       "sha256": "368f4d8a3b4b2cadb7132286956203064f1db79d7b6d17674d36ce0d01710b9f"
+    },
+    {
+      "path": "reports/policy_context_20261018_root/ENCODING_ZH.md",
+      "source_path": "reports/policy_context_20261018_root/ENCODING_ZH.md",
+      "bytes": 2380,
+      "sha256": "a64a237b1d7763d6257104395c63ec3dbb01cb57b50b509fc4128076163d2555"
+    },
+    {
+      "path": "reports/policy_context_20261018_root/constant_check_float_resolution.json",
+      "source_path": "reports/policy_context_20261018_root/constant_check_float_resolution.json",
+      "bytes": 299,
+      "sha256": "8fc2f305490675339ecefd3a349295c9441ddaa29b467b3041f3f089fa5773f4"
+    },
+    {
+      "path": "reports/policy_context_20261018_root/encode_policy.py",
+      "source_path": "reports/policy_context_20261018_root/encode_policy.py",
+      "bytes": 806,
+      "sha256": "24f7c03cd98c7cb847e49ae01ef737304ad3532c7f4777cbe4f26eb95fd3a1ca"
+    },
+    {
+      "path": "reports/policy_context_20261018_root/encode_policy_v0.py",
+      "source_path": "reports/policy_context_20261018_root/encode_policy_v0.py",
+      "bytes": 806,
+      "sha256": "24f7c03cd98c7cb847e49ae01ef737304ad3532c7f4777cbe4f26eb95fd3a1ca"
+    },
+    {
+      "path": "reports/policy_context_20261018_root/encode_policy_v1.py",
+      "source_path": "reports/policy_context_20261018_root/encode_policy_v1.py",
+      "bytes": 808,
+      "sha256": "6a322bc105c6a76be999ecbf4fafd66788449af356ad0d998f6f220fdc4ef7e1"
+    },
+    {
+      "path": "reports/policy_context_20261018_root/encoder_v0_failure.json",
+      "source_path": "reports/policy_context_20261018_root/encoder_v0_failure.json",
+      "bytes": 408,
+      "sha256": "3f9d196f2892e09c376eab290c37a49c14acb4abc7ba355a87f16a0cb6fa59c7"
+    },
+    {
+      "path": "reports/policy_context_20261018_root/encoding_summary.json",
+      "source_path": "reports/policy_context_20261018_root/encoding_summary.json",
+      "bytes": 341,
+      "sha256": "ce8cbdb9c56d6cc68930baeb9fdceaa952c152aa201544e52d56cd7756e0710e"
+    },
+    {
+      "path": "reports/policy_context_20261018_root/policy_features.json",
+      "source_path": "reports/policy_context_20261018_root/policy_features.json",
+      "bytes": 16514,
+      "sha256": "91a6bfa3be83b403289133bd13669d36ed7a1f212ec0ca4e692efecfb85be462"
+    },
+    {
+      "path": "reports/policy_context_20261018_root/source_semantics.json",
+      "source_path": "reports/policy_context_20261018_root/source_semantics.json",
+      "bytes": 2808,
+      "sha256": "c973219a60549f3ef4af0803a821eeafd2b4fe2ade552234294a25dd01e3ad32"
+    },
+    {
+      "path": "reports/policy_context_20261018_root/two_encoding_examples.json",
+      "source_path": "reports/policy_context_20261018_root/two_encoding_examples.json",
+      "bytes": 217,
+      "sha256": "5c086e279acdf81d2ac314b0392af9109b13a41327fce05aa69cee8194c615e4"
+    },
+    {
+      "path": "reports/policy_context_point_seed42_v1_luna/review.json",
+      "source_path": "reports/policy_context_point_seed42_v1_luna/review.json",
+      "bytes": 4459,
+      "sha256": "1e9f63c0fbc0c2809a57ca8c9c56709b19154f4e543725e988ccf84cb75b5ac6"
+    },
+    {
+      "path": "reports/policy_context_point_seed42_v1_luna/review_v0_hash_transcription_error.json",
+      "source_path": "reports/policy_context_point_seed42_v1_luna/review_v0_hash_transcription_error.json",
+      "bytes": 3754,
+      "sha256": "0d25739245edeb5e8b167e999d77ad6aa07ca941258b1416734f685121ac9686"
     },
     {
       "path": "reports/saved_examples_lossless_20261018_root/completed_details_lossless.json",

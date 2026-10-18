@@ -1,0 +1,17 @@
+{
+  "status": "PASS_TWO_ANALYTIC_EXAMPLES",
+  "b2c6_expected": [
+    3.6,
+    4.5,
+    6,
+    6
+  ],
+  "b4c7_expected": [
+    8,
+    6,
+    4.8,
+    3
+  ],
+  "max_abs_error": 1.7763568394002505e-15,
+  "new_fits": 0
+}

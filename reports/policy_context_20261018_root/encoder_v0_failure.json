@@ -1,0 +1,18 @@
+{
+  "status": "PRE_FIT_ENCODING_STOP",
+  "bad": [
+    {
+      "cell_id": "MATR_b2c24",
+      "policy": "4.8C(80%)-4.8C",
+      "error": "AssertionError"
+    },
+    {
+      "cell_id": "MATR_b2c26",
+      "policy": "4.8C(80%)-4.8C",
+      "error": "AssertionError"
+    }
+  ],
+  "encoder_sha256": "24f7c03cd98c7cb847e49ae01ef737304ad3532c7f4777cbe4f26eb95fd3a1ca",
+  "new_fits": 0,
+  "new_model_inference": 0
+}
