@@ -1,0 +1,26 @@
+{
+  "status": "COMPLETE_RAW_SOURCE_BATCH2_TRAIN_DEVELOPMENT_ASSETS",
+  "cells": 35,
+  "counts": {
+    "train": {
+      "cells": 26,
+      "prefixes": 9445,
+      "observed_events": 26
+    },
+    "val": {
+      "cells": 9,
+      "prefixes": 3586,
+      "observed_events": 9
+    }
+  },
+  "new_network_bytes": 16777216,
+  "new_requests": 16,
+  "elapsed_seconds": 34.598711244761944,
+  "two_raw_cycle_checks": "PASS",
+  "manifest_sha256": "fcbedb9ee4ea9da83efe3239cda3d56d629678b3dbbd90b675039f6456ad32c1",
+  "maximum_delta_old_capacity_shift1": 0.0,
+  "invalid_rows": 0,
+  "gaps": 0,
+  "new_fits": 0,
+  "test_cell_reads": 0
+}

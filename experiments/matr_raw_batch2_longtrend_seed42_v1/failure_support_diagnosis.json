@@ -1,0 +1,132 @@
+{
+  "scope": "Zero-fit descriptive diagnosis only; marginal range is not joint support or online reliability detector",
+  "train_event_range": [
+    148,
+    561
+  ],
+  "train_feature_min": [
+    100.0,
+    0.800050609090909,
+    -0.0020939866666666697,
+    -0.0014690722136396638
+  ],
+  "train_feature_max": [
+    560.0,
+    0.987559909090909,
+    0.0006445829004329025,
+    2.341554551860907e-05
+  ],
+  "cells": [
+    {
+      "cell_id": "MATR_b2c2",
+      "event_cycle": 438,
+      "A_MAE": 24.884991597502502,
+      "B_MAE": 26.48108613355156,
+      "B_bias": 26.47473731490453,
+      "B_coverage80": 0.47041420118343197,
+      "B_width80": 52.96049834158117,
+      "B_severe_under100": 0.0,
+      "marginal_any_feature_out_of_train_range_fraction": 0.0,
+      "event_after_train_max": false
+    },
+    {
+      "cell_id": "MATR_b2c13",
+      "event_cycle": 483,
+      "A_MAE": 25.090638146705274,
+      "B_MAE": 4.328180699374529,
+      "B_bias": -3.9463769907151884,
+      "B_coverage80": 0.9268929503916449,
+      "B_width80": 50.81988487887675,
+      "B_severe_under100": 0.0,
+      "marginal_any_feature_out_of_train_range_fraction": 0.0,
+      "event_after_train_max": false
+    },
+    {
+      "cell_id": "MATR_b2c22",
+      "event_cycle": 513,
+      "A_MAE": 9.46706087900479,
+      "B_MAE": 15.587061991831312,
+      "B_bias": -14.961744935872083,
+      "B_coverage80": 0.9733656174334141,
+      "B_width80": 51.8966976468063,
+      "B_severe_under100": 0.002421307506053269,
+      "marginal_any_feature_out_of_train_range_fraction": 0.0,
+      "event_after_train_max": false
+    },
+    {
+      "cell_id": "MATR_b2c25",
+      "event_cycle": 461,
+      "A_MAE": 8.268147137965592,
+      "B_MAE": 13.72766561872827,
+      "B_bias": 13.689844411456104,
+      "B_coverage80": 0.96398891966759,
+      "B_width80": 52.61326701261225,
+      "B_severe_under100": 0.0,
+      "marginal_any_feature_out_of_train_range_fraction": 0.0,
+      "event_after_train_max": false
+    },
+    {
+      "cell_id": "MATR_b2c35",
+      "event_cycle": 463,
+      "A_MAE": 14.714685397288347,
+      "B_MAE": 15.901185680015496,
+      "B_bias": 15.884352981102289,
+      "B_coverage80": 0.90633608815427,
+      "B_width80": 53.47655565952115,
+      "B_severe_under100": 0.0,
+      "marginal_any_feature_out_of_train_range_fraction": 0.0,
+      "event_after_train_max": false
+    },
+    {
+      "cell_id": "MATR_b2c40",
+      "event_cycle": 499,
+      "A_MAE": 9.999071476287966,
+      "B_MAE": 11.886664220044668,
+      "B_bias": -10.974408921873463,
+      "B_coverage80": 0.924812030075188,
+      "B_width80": 51.082550944938355,
+      "B_severe_under100": 0.0,
+      "marginal_any_feature_out_of_train_range_fraction": 0.0,
+      "event_after_train_max": false
+    },
+    {
+      "cell_id": "MATR_b2c45",
+      "event_cycle": 487,
+      "A_MAE": 9.949921570430991,
+      "B_MAE": 3.425902665122001,
+      "B_bias": 0.47223714079266077,
+      "B_coverage80": 0.9922480620155039,
+      "B_width80": 52.55446050696265,
+      "B_severe_under100": 0.0,
+      "marginal_any_feature_out_of_train_range_fraction": 0.0,
+      "event_after_train_max": false
+    },
+    {
+      "cell_id": "MATR_b2c46",
+      "event_cycle": 429,
+      "A_MAE": 65.10723182542723,
+      "B_MAE": 41.225885884176805,
+      "B_bias": 41.225885884176805,
+      "B_coverage80": 0.11854103343465046,
+      "B_width80": 55.730783656110624,
+      "B_severe_under100": 0.0,
+      "marginal_any_feature_out_of_train_range_fraction": 0.04559270516717325,
+      "event_after_train_max": false
+    },
+    {
+      "cell_id": "MATR_b2c47",
+      "event_cycle": 713,
+      "A_MAE": 155.11128169322976,
+      "B_MAE": 116.12861087300307,
+      "B_bias": -110.57735645719865,
+      "B_coverage80": 0.23817292006525284,
+      "B_width80": 53.08154117273751,
+      "B_severe_under100": 0.5187601957585645,
+      "marginal_any_feature_out_of_train_range_fraction": 0.24796084828711257,
+      "event_after_train_max": true
+    }
+  ],
+  "new_fits": 0,
+  "optimizer_steps": 0,
+  "test_access": false
+}

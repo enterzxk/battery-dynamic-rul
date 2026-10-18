@@ -1,0 +1,16 @@
+{
+  "status": "COMPLETE_RAW_BATCH2_DEVELOPMENT_COMPARISON",
+  "new_CPU_predictive_fits": 3,
+  "optimizer_steps": 0,
+  "train_cells": 26,
+  "development_cells": 9,
+  "train_origins": 9445,
+  "development_origins": 3586,
+  "test_cell_reads": 0,
+  "runner_sha256": "0a4a592d937789b5d8d44657334aaedd9c4aff9c4b710b0cbffc9b068ab8bb3b",
+  "protocol_sha256": "d5b4395d83bc26633cff7b7f8736017a3581fa2a7997d80a176b80604ba8fc60",
+  "GO_sha256": "7aadb5f35442f7473b81d22664672ab24537820198d78697f313533f28a52ee5",
+  "manifest_sha256": "fcbedb9ee4ea9da83efe3239cda3d56d629678b3dbbd90b675039f6456ad32c1",
+  "prediction_sha256": "8813407210851ba05bc96b40cd9607827ff91aa28f8e570b01e8f06e2600a004",
+  "elapsed_seconds": 0.3390181716531515
+}

@@ -1,3 +1,19 @@
+## 2026-10-18：原始批次3CPUfit真实完成，长期速率候选NO_GAIN
+- **已完成**：独立关键窄审后一次限定GO执行3CPUfit：稳健线性A/同输入非线性B/只加100速率C。Time-MAE35.843670/27.632472/27.438338；C对B仅0.7026%，NO_GAIN且不扩复杂度/seed。
+- **证据**：experiments/matr_raw_batch2_longtrend_seed42_v1/RESULTS_ZH.md、protocol/ROOT_GO/fit_ledger/completion、10758行development_predictions.csv、metrics/comparisons/independent_metrics、failure_support_diagnosis。审查reports/matr_raw_longtrend_review_20261018_luna/review.json，子代理请求gpt-6-luna/high。
+- **最小验证**：完整CSV独立重算7指标最大差8.17e-14，同cell同origin与T-t一致；无重复smoke。26train/9development，9445/3586origin，3fit0steps0test，GO已消费。
+- **阻塞/风险**：B平均改善22.91%但只4/9改善、区间跨0且coverage83.87%→72.39%；C只5/9改善。b2c47寿命713超train最大561，B半数前缀低估>100；b2c46边际特征约95%在训练范围仍coverage11.85%，不能简单范围门控。9dev已暴露、源ID/部分SHA/event-only限制保留。
+- **下一步**：停止加长期速率，推进其它获准原始批次的DataV1，冻结人群后再决定train-cell留出的概率校准对照；不在当前9dev调区间/加seed，不自动开放新fit或test。
+
+
+## 2026-10-18：额度恢复后原始MATR35cell资产真实完成
+- **已完成**：本次可执行查询ordinaryUsageAllowed=true、主窗1%used；先补上轮GitHub，再一次生成35颗原始第二批资产：26train/9development，9445/3586前缀。未声称此前排队唤醒均执行。
+- **证据**：reports/matr_raw_batch2_datav1_20261018_root/protocol.json、two_raw_cycle_check.json、completion.json、DATAV1_ZH.md；data/processed/data_v1_matr_raw_batch2/manifest.json SHAfcbedb9ee4ea9da83efe3239cda3d56d629678b3dbbd90b675039f6456ad32c1。
+- **最小验证**：两真实原始cycle100的Qd最大值与summary一致<1e-6Ah、时间不倒退、特征截断相等；35cell循环0缺口/0无效，原始去首行容量与旧处理版逐值差0。16新请求/16MiB/34.60s，无整包重试。
+- **阻塞/风险**：raw全文件SHA UNKNOWN，有ETag/逐块SHA；source-ID不等于完整物理serial，9dev已暴露且event-only，不作独立确认或自然删失收益。new_fits=0、steps=0、test=0。
+- **下一步**：对已冻结3CPUfit进行一次独立关键窄审，签发精确hash限定GO后运行稳健线性/同输入非线性/只加长期速率三臂真实对照，不再smoke或文献扩展。
+
+
 ## 2026-10-18：主动修复数据阻塞，MATR原始范围读取成功
 - **已完成**：NASA两cell空Capacity加载错误修复，累计24,973,571 MAT bytes仍在30MB预算；B0036/B0050首操作均为放电、首容量低而后恢复，不能把未知初始充电状态当退化失效。转向MATR选择字段范围读取，4请求/3,502,419bytes取得两原始summary；未重开整包下载。
 - **证据**：reports/nasa_remaining_source_inventory_20261018_root/two_reads_failure.json、two_raw_summary.json、two_raw_read.py；reports/matr_raw_range_20261018_root/range_budget.json、failure.json、completion.json及两raw_summary；automation/bin/matr_selected_range_worker_v1.py/v2.py。项目局部h5py依赖隔离于runtime_deps/h5py_3_11，未修改全局环境。

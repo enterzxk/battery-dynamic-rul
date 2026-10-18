@@ -84,6 +84,17 @@ def main():
         chosen.add('reports/nasa_remaining_source_inventory_20261018_root/' + name)
     chosen.update(['automation/bin/matr_selected_range_worker_v1.py','automation/bin/matr_selected_range_worker_v2.py'])
 
+    # Preserve original server predictions and historical commit; publish exact lossless CSV archive.
+    chosen.discard('experiments/online_survival_observed_pilot_seed42_v1/published_prediction_csvs_lossless.json')
+    chosen.difference_update(str(p.relative_to(ROOT)) for p in (ROOT/'experiments/online_survival_observed_pilot_seed42_v1/validation_predictions').glob('*.csv'))
+    chosen.update(['experiments/online_survival_observed_pilot_seed42_v1/published_prediction_csvs_part1.json','experiments/online_survival_observed_pilot_seed42_v1/published_prediction_csvs_part2.json','experiments/online_survival_observed_pilot_seed42_v1/decode_public_prediction_csvs.py','docs/PUBLIC_PREDICTION_STORAGE_V1.json'])
+
+    chosen.add('automation/bin/matr_raw_batch2_asset_worker_v1.py')
+    for name in ['protocol.json','two_raw_cycle_check.json','completion.json','DATAV1_ZH.md']:
+        chosen.add('reports/matr_raw_batch2_datav1_20261018_root/' + name)
+    chosen.add('reports/matr_raw_longtrend_review_20261018_luna/review.json')
+    chosen.update(str(p.relative_to(ROOT)) for p in (ROOT/'experiments/matr_raw_batch2_longtrend_seed42_v1').iterdir() if p.is_file())
+
     contents, files, skipped = {}, [], []
     mapping = {'README.md': 'docs/GITHUB_README_ZH.md', 'agent.md': 'AGENTS.md'}
     mapping.update({rel: rel for rel in sorted(chosen)})

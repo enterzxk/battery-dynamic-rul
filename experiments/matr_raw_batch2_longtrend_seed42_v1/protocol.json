@@ -1,0 +1,41 @@
+{
+  "question": "Does fixed100-cycle robust trend add predictive information beyond a same-input nonlinear strong baseline on raw-source single-batch development cells?",
+  "manifest_sha256": "fcbedb9ee4ea9da83efe3239cda3d56d629678b3dbbd90b675039f6456ad32c1",
+  "source": "MATR raw20170630, ETag and exact range blocks; complete-source SHA UNKNOWN",
+  "roles": {
+    "train": 26,
+    "development": 9,
+    "test": 0
+  },
+  "origins": {
+    "train": 9445,
+    "development": 3586,
+    "rule": "all actual source cycles100..firstObserved80%-1, equal cell weighting"
+  },
+  "endpoint": "raw source QDischarge<=0.8*1.1Ah at actual cycle; complete-cycle lab capacity available after cycle",
+  "two_sample_check": "reports/matr_raw_batch2_datav1_20261018_root/two_raw_cycle_check.json",
+  "arms": {
+    "A": "Ridge logRUL age/SOH/robust20; alpha1 train weighted StandardScaler",
+    "B": "HistGradientBoosting logRUL same inputs; fixed150iter lr.05 depth3 leaf7 min50 L2=1 early_stopping=False",
+    "C": "Same B hyperparameters, add only robust100 rate; simple information ablation, not novel mechanism"
+  },
+  "weights": "1/n_origins per cell then normalized mean weight1; same train weights for all arms",
+  "distribution": "positive remaining lifetime lognormal; sigma weighted in-sample train residual RMS floor.05; no validation calibration; approximate uncertainty, no novelty claim",
+  "primary": "full available duration after100, within-cell MAE then cell-equal mean",
+  "seed": 42,
+  "max_predictive_fits": 3,
+  "max_optimizer_steps": 0,
+  "max_seconds": 180,
+  "threads": 1,
+  "development_gate": ">=5%TimeMAE reduction vs matched B, cell bootstrap2000 lower>0, >=6/9 improved, severe_over100 increase<=.01,80%coverage decrease<=.02; adaptive-development only",
+  "failure": "Every fit-start consumes one; any failure STOP, no retry/seed rescue",
+  "test_access": false,
+  "global_new_fits_allowed_remains": false,
+  "limits": [
+    "same nine development cells previously exposed; not independent confirmation",
+    "event-only batch2, no censoring benefit or cross-batch generalization",
+    "full physical serial unverified; source-ID isolation and known continuations excluded",
+    "no complex gate or new neural model; no seed expansion",
+    "new comparisons answer nonlinear/long-rate question; old52/19 fits/results remain immutable"
+  ]
+}

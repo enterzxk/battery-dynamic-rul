@@ -1,0 +1,28 @@
+[
+  {
+    "base": "A_robust_linear",
+    "new": "B_robust_nonlinear",
+    "relative_Time_MAE_reduction": 0.22908364145765314,
+    "paired_cell_bootstrap95": [
+      -0.10063018383307852,
+      0.38981182892339333
+    ],
+    "improved_cells": 4,
+    "severe_over100_increase": -0.004390408645727794,
+    "coverage80_change": -0.11486384829325713,
+    "development_gate": false
+  },
+  {
+    "base": "B_robust_nonlinear",
+    "new": "C_add_long_rate",
+    "relative_Time_MAE_reduction": 0.007025545300561653,
+    "paired_cell_bootstrap95": [
+      -0.08653829470823023,
+      0.03800469842254921
+    ],
+    "improved_cells": 5,
+    "severe_over100_increase": 0.0,
+    "coverage80_change": -0.014253483930877553,
+    "development_gate": false
+  }
+]

@@ -1,0 +1,40 @@
+{
+  "status": "PASS_INDEPENDENT_CSV_RECOMPUTE",
+  "prediction_rows": 10758,
+  "cells": 9,
+  "arms": 3,
+  "metrics": {
+    "A_robust_linear": {
+      "MAE": 35.8436699693158,
+      "bias": -9.257260956500643,
+      "severe_over100": 0.004390408645727794,
+      "coverage80": 0.8387273841178065,
+      "width80": 160.71157584012846,
+      "Brier100": 0.030709282270882925,
+      "Brier300": 0.10638689058035748
+    },
+    "B_robust_nonlinear": {
+      "MAE": 27.632471529538584,
+      "bias": -4.745869952580782,
+      "severe_over100": 0.0,
+      "coverage80": 0.7238635358245495,
+      "width80": 52.69069331334965,
+      "Brier100": 0.013385005442642338,
+      "Brier300": 0.08239796175191427
+    },
+    "C_add_long_rate": {
+      "MAE": 27.4383383490413,
+      "bias": -5.05642763711478,
+      "severe_over100": 0.0,
+      "coverage80": 0.709610051893672,
+      "width80": 50.27890498494286,
+      "Brier100": 0.014383958154657131,
+      "Brier300": 0.08025625779380588
+    }
+  },
+  "maximum_absolute_difference": 8.171241461241152e-14,
+  "prediction_sha256": "8813407210851ba05bc96b40cd9607827ff91aa28f8e570b01e8f06e2600a004",
+  "new_fits": 0,
+  "optimizer_steps": 0,
+  "test_cell_reads": 0
+}

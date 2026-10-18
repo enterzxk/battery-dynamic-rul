@@ -1,0 +1,33 @@
+{
+  "reason": "Stay within12MiB; losslessly represent repeated prior prediction CSVs without removing server evidence",
+  "historical_commit": "de7f7850cdde14ba9540c6ca8d42d2c1f62878df",
+  "archived_paths": [
+    "experiments/online_survival_observed_pilot_seed42_v1/validation_predictions/MATR_b2c13.csv",
+    "experiments/online_survival_observed_pilot_seed42_v1/validation_predictions/MATR_b2c2.csv",
+    "experiments/online_survival_observed_pilot_seed42_v1/validation_predictions/MATR_b2c22.csv",
+    "experiments/online_survival_observed_pilot_seed42_v1/validation_predictions/MATR_b2c25.csv",
+    "experiments/online_survival_observed_pilot_seed42_v1/validation_predictions/MATR_b2c35.csv",
+    "experiments/online_survival_observed_pilot_seed42_v1/validation_predictions/MATR_b2c40.csv",
+    "experiments/online_survival_observed_pilot_seed42_v1/validation_predictions/MATR_b2c45.csv",
+    "experiments/online_survival_observed_pilot_seed42_v1/validation_predictions/MATR_b2c46.csv",
+    "experiments/online_survival_observed_pilot_seed42_v1/validation_predictions/MATR_b2c47.csv",
+    "experiments/online_survival_observed_pilot_seed42_v1/validation_predictions/MATR_b4c13.csv",
+    "experiments/online_survival_observed_pilot_seed42_v1/validation_predictions/MATR_b4c16.csv",
+    "experiments/online_survival_observed_pilot_seed42_v1/validation_predictions/MATR_b4c22.csv",
+    "experiments/online_survival_observed_pilot_seed42_v1/validation_predictions/MATR_b4c28.csv",
+    "experiments/online_survival_observed_pilot_seed42_v1/validation_predictions/MATR_b4c3.csv",
+    "experiments/online_survival_observed_pilot_seed42_v1/validation_predictions/MATR_b4c31.csv",
+    "experiments/online_survival_observed_pilot_seed42_v1/validation_predictions/MATR_b4c32.csv",
+    "experiments/online_survival_observed_pilot_seed42_v1/validation_predictions/MATR_b4c33.csv",
+    "experiments/online_survival_observed_pilot_seed42_v1/validation_predictions/MATR_b4c39.csv",
+    "experiments/online_survival_observed_pilot_seed42_v1/validation_predictions/MATR_b4c5.csv"
+  ],
+  "replacement": [
+    "experiments/online_survival_observed_pilot_seed42_v1/published_prediction_csvs_part1.json",
+    "experiments/online_survival_observed_pilot_seed42_v1/published_prediction_csvs_part2.json"
+  ],
+  "decoder": "experiments/online_survival_observed_pilot_seed42_v1/decode_public_prediction_csvs.py",
+  "original_bytes": 5358356,
+  "replacement_bytes": 2521434,
+  "exact_original_SHA_verified": true
+}

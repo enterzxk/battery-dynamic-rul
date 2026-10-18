@@ -1,0 +1,16 @@
+{
+  "status": "GO_THREE_CPU_FITS_ONLY",
+  "signed_by_thread": "01a14d81-fffd-7092-9a86-45704ca86840",
+  "created_utc": "2026-10-18T09:05:33.409335+00:00",
+  "runner_sha256": "0a4a592d937789b5d8d44657334aaedd9c4aff9c4b710b0cbffc9b068ab8bb3b",
+  "protocol_sha256": "d5b4395d83bc26633cff7b7f8736017a3581fa2a7997d80a176b80604ba8fc60",
+  "manifest_sha256": "fcbedb9ee4ea9da83efe3239cda3d56d629678b3dbbd90b675039f6456ad32c1",
+  "independent_review_sha256": "67273259e31a7fb57695be837b6a6d03b3e75847c29af95744da1d76ad21033e",
+  "max_predictive_fits": 3,
+  "max_optimizer_steps": 0,
+  "max_seconds": 180,
+  "test_access": false,
+  "global_new_fits_allowed_unchanged": false,
+  "scope": "Raw batch2 single-batch nonlinear and long-rate information comparison; old GO/checkpoints not reused",
+  "review_text_clarification": "Sampled b2c2 origins100..437 give338 queries; review prose rows339 does not supersede authoritative manifest or runner count assertions; no effect on source roles or fit."
+}

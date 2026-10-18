@@ -1,0 +1,12 @@
+{
+  "decision": "NO_GAIN_FOR_ADDING_RAW100_RATE",
+  "expansion": "NO_GO_LONG_RATE_COMPLEXITY_OR_SEED_EXPANSION",
+  "preserve": "B nonlinear point-prediction strong control only; uncertainty not calibrated",
+  "new_CPU_predictive_fits": 3,
+  "optimizer_steps": 0,
+  "test_access": false,
+  "GO_consumed": true,
+  "completion_sha256": "38514e85b12f15fc2f1f063c7d2ede94cbeecb12042e7291a4d5ed4987837292",
+  "independent_metrics_sha256": "789e206b838093cc61db0d513671b873eed78fb5801540d8b4e0de964f10c186",
+  "next": "Other raw training/development batches before a separately gated train-cell calibration comparison"
+}
