@@ -1,0 +1,10 @@
+{
+  "cutoff": 12.386630419730523,
+  "quantile": 0.9,
+  "weighted_CDF_at_selected_order": 0.9000317132320945,
+  "fit_cells": 42,
+  "fit_transitions": 22239,
+  "method": "equal-cell weighted inverse empirical CDF of abs(D): every42fit cell total weight1/42, first sorted value whose cumulative weight>=.9",
+  "fit_prediction_sha256": "97d11dd456fe2836160010f7112fe5bc69572b96a9179018fc061fee168f95b4",
+  "no_calibration_labels_used": true
+}

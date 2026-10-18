@@ -1,3 +1,11 @@
+## 2026-10-19：额度恢复后完成大修订可靠性检验，幅度抑制代理NO_GO
+- **已完成**：0fit，仅42fit已存预测冻结电池等权q90绝对EOL修订阈值12.386630cycle；10cal4557更新中405大修订/9cell。同9cell大vs其余有害率42.6219%vs49.0847%，平均每步误差增益+2.255252vs+.014526；7/9大修订均值为正，不支持抑制大更新，关闭幅度代理。
+- **证据**：reports/policy_revision_reliability_20261019_root/RESULTS_ZH.md、protocol/diagnose/train_cutoff、summary/paired_calibration/examples/completion、per_cell_metrics_lossless/decoder、independent_recompute/validation、independent_public_recompute/public_validation/root_decision；全transitionCSV服务器保存。
+- **最小验证**：精确Fraction加权CDF与独立标量复算，q90差0、465分组差3.38e-14；22239fit/4557cal转换完整，公开四列预测另复算及分组无损解码通过。0fit/optimizer/模型推理/checkpoint/rawfeatures/devtest，唯一train-only q90统计，累计CPU14不变。
+- **阻塞/风险**：大小/符号效果非单调，不从暴露cal追加符号门控；没有激活预测过滤或证明反事实性能。cal反复暴露/训练内预测/event-only/物理身份/固定policy限制保留。正常quota100%→1%已观察，排队wake不冒充执行；原点PASS/概率FAIL/EMA_NO_GAIN不变。
+- **下一步**：准备已知policy7输入匹配HGB q.1/.9强区间基线，最多2新CPUfit且中位数复用；先冻结逐电池覆盖误差/score/crossing规则、一次窄审+fresh exactGO，当前未授权fit。0dev/test，不重复旧3state分位数、不调参数/seed或排序救援。
+
+
 ## 2026-10-19：固定因果EMA平滑实际对照，主指标NO_GAIN
 - **已完成**：0fit已有10cal4567工况预测，固定alpha2/21绝对EOL因果EMA；TimeMAE36.400814→35.804016仅降1.6395%，5/10改善、paired95%差[-1.089981,2.303030]跨零；over1004.2582%→3.8189%，gateFAIL/NO_GAIN，停止本固定方案不搜alpha/窗口。
 - **证据**：reports/policy_causal_ema20_20261019_root/RESULTS_ZH.md、protocol/diagnose_v1、metrics/per_cell_metrics/comparison、transition_audit/arithmetic_examples/completion、independent_recompute/independent_metrics/root_decision及v0失败文件；派生CSV服务器保存。

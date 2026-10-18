@@ -490,3 +490,11 @@
 - **最小验证**：4567独立闭式卷积复算，预测差4.55e-13、指标差1.42e-14，3个归零完整。v0严格浮点相等差1.42e-14失败在指标前，原件保留，仅初始化容差修复；无算法/门槛变更。0fit/optimizer/推理/尺度/checkpoint/原始特征/devtest，累计CPU14不变。
 - **阻塞/风险**：EOL修订3.1988→1.0331循环、有害更新48.31%→36.50%并不等价精度提升；平均追踪差9.7932、理论低频延迟9.5cycle不能当实测事件延迟。cal暴露/物理身份/event-only限制及原概率FAIL保留。
 - **下一步**：0fit新42fit已存预测冻结绝对EOL修订的电池等权q90阈值，10cal4557更新仅一次大修订vs其余的有害率/误差增益诊断；不搜索阈值、不启动预测门控/新模型，检验抑制大更新是否有依据。
+
+
+## 2026-10-19：额度恢复后完成大修订可靠性检验，幅度抑制代理NO_GO
+- **已完成**：0fit，仅42fit已存预测冻结电池等权q90绝对EOL修订阈值12.386630cycle；10cal4557更新中405大修订/9cell。同9cell大vs其余有害率42.6219%vs49.0847%，平均每步误差增益+2.255252vs+.014526；7/9大修订均值为正，不支持抑制大更新，关闭幅度代理。
+- **证据**：reports/policy_revision_reliability_20261019_root/RESULTS_ZH.md、protocol/diagnose/train_cutoff、summary/paired_calibration/examples/completion、per_cell_metrics_lossless/decoder、independent_recompute/validation、independent_public_recompute/public_validation/root_decision；全transitionCSV服务器保存。
+- **最小验证**：精确Fraction加权CDF与独立标量复算，q90差0、465分组差3.38e-14；22239fit/4557cal转换完整，公开四列预测另复算及分组无损解码通过。0fit/optimizer/模型推理/checkpoint/rawfeatures/devtest，唯一train-only q90统计，累计CPU14不变。
+- **阻塞/风险**：大小/符号效果非单调，不从暴露cal追加符号门控；没有激活预测过滤或证明反事实性能。cal反复暴露/训练内预测/event-only/物理身份/固定policy限制保留。正常quota100%→1%已观察，排队wake不冒充执行；原点PASS/概率FAIL/EMA_NO_GAIN不变。
+- **下一步**：准备已知policy7输入匹配HGB q.1/.9强区间基线，最多2新CPUfit且中位数复用；先冻结逐电池覆盖误差/score/crossing规则、一次窄审+fresh exactGO，当前未授权fit。0dev/test，不重复旧3state分位数、不调参数/seed或排序救援。

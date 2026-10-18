@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-18T16:31:07.115646+00:00",
-  "content_sha256": "0d418f9f6637fcaeb182ddf732220a7215ddcb4c9e51bfb9e0232cdd0c742b45",
-  "file_count": 710,
+  "snapshot_utc": "2026-10-18T19:17:56.738954+00:00",
+  "content_sha256": "9e155f4050e46a6784123d76597105ae37bbf090c516a7b7165f24e89fa7b6a9",
+  "file_count": 725,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,8 +14,8 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 86901,
-      "sha256": "6a1b0d3f377a5d41ed03d6f54b60689d13db90128f10216952190605c748a9c9"
+      "bytes": 88559,
+      "sha256": "741c9ffc24ef614f7f19d438b19a30c1cd8bd7f6c2d38a2d7318a6330a4119c5"
     },
     {
       "path": "README.md",
@@ -38,8 +38,8 @@
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 24804,
-      "sha256": "abb0f50d2d537085457f9e04a410586e6e66ce4cf91e1dd4dfd61391af333d9a"
+      "bytes": 25256,
+      "sha256": "00ec3a6fcaff94510d0a711109ff55440e54c19ba1046d31d03b7c10e78dc112"
     },
     {
       "path": "automation/bin/matr_raw_batch2_asset_worker_v1.py",
@@ -164,8 +164,8 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 74162,
-      "sha256": "f01eafbd5f106365f220e740f1c9ab9d423e261df0e0de6c0e706c9f0bede900"
+      "bytes": 75820,
+      "sha256": "c095acaf1ed7e26566bc61ff4724a953fc3d3ecfccc3b01f1700fc2c7ef16ab6"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
@@ -4012,6 +4012,96 @@
       "source_path": "reports/policy_fixedearly_dynamic_20261018_root/transition_audit.json",
       "bytes": 3922,
       "sha256": "a09e61cc78d6429320f7b97dcb77cd181504283ed705f3800b6a0ac68d04f4bc"
+    },
+    {
+      "path": "reports/policy_revision_reliability_20261019_root/RESULTS_ZH.md",
+      "source_path": "reports/policy_revision_reliability_20261019_root/RESULTS_ZH.md",
+      "bytes": 3556,
+      "sha256": "cc52dfb25470f8a67633df93152ddcb3960b67f433268fad751abaf298605c1d"
+    },
+    {
+      "path": "reports/policy_revision_reliability_20261019_root/completion.json",
+      "source_path": "reports/policy_revision_reliability_20261019_root/completion.json",
+      "bytes": 606,
+      "sha256": "6d7ab98a7419f40c5622eaeb71cb6fd12e1216b144132656a7d1c5ecfc0c85bc"
+    },
+    {
+      "path": "reports/policy_revision_reliability_20261019_root/decode_per_cell_metrics.py",
+      "source_path": "reports/policy_revision_reliability_20261019_root/decode_per_cell_metrics.py",
+      "bytes": 439,
+      "sha256": "c2309452d0bff38e627f9ff02a9351806e62e5e934e9f5c6656bac6d3b8b2035"
+    },
+    {
+      "path": "reports/policy_revision_reliability_20261019_root/diagnose.py",
+      "source_path": "reports/policy_revision_reliability_20261019_root/diagnose.py",
+      "bytes": 5958,
+      "sha256": "763ae3713a657c5e3512dd61098faa552e964064f9194d6df9468f5c3c8e77ae"
+    },
+    {
+      "path": "reports/policy_revision_reliability_20261019_root/examples.json",
+      "source_path": "reports/policy_revision_reliability_20261019_root/examples.json",
+      "bytes": 1922,
+      "sha256": "7b79fa46caf84bf2bbba6e1272f69fde6f82500ff67cbf15a733b96a86073e40"
+    },
+    {
+      "path": "reports/policy_revision_reliability_20261019_root/independent_public_recompute.py",
+      "source_path": "reports/policy_revision_reliability_20261019_root/independent_public_recompute.py",
+      "bytes": 3484,
+      "sha256": "86f688a180b77f3ba2115b55a0522329af89105325d85f39659e5af2c653c6ad"
+    },
+    {
+      "path": "reports/policy_revision_reliability_20261019_root/independent_recompute.py",
+      "source_path": "reports/policy_revision_reliability_20261019_root/independent_recompute.py",
+      "bytes": 3042,
+      "sha256": "e5d808173206f8d1f3beef480c542aedd781131d367d410603b96c43b9647cba"
+    },
+    {
+      "path": "reports/policy_revision_reliability_20261019_root/independent_validation.json",
+      "source_path": "reports/policy_revision_reliability_20261019_root/independent_validation.json",
+      "bytes": 514,
+      "sha256": "2982dc3bc89238aa95968a478a64155eff23ba19da4e13d49b88de944c184288"
+    },
+    {
+      "path": "reports/policy_revision_reliability_20261019_root/paired_calibration.json",
+      "source_path": "reports/policy_revision_reliability_20261019_root/paired_calibration.json",
+      "bytes": 2207,
+      "sha256": "d372b8009cee37f2353fbf609c77b61d9c43b721865694d1eede9ff179c75391"
+    },
+    {
+      "path": "reports/policy_revision_reliability_20261019_root/per_cell_metrics_lossless.json",
+      "source_path": "reports/policy_revision_reliability_20261019_root/per_cell_metrics_lossless.json",
+      "bytes": 27507,
+      "sha256": "f6af48000554b23742ef695621a018cd5ceeb0400cb15ea4f7fa2acabff73819"
+    },
+    {
+      "path": "reports/policy_revision_reliability_20261019_root/protocol.json",
+      "source_path": "reports/policy_revision_reliability_20261019_root/protocol.json",
+      "bytes": 2284,
+      "sha256": "2523b6e82305b209ca4a0b3c76211a2044cf7a46069dfaadd7ffd6eaf18ad723"
+    },
+    {
+      "path": "reports/policy_revision_reliability_20261019_root/public_independent_validation.json",
+      "source_path": "reports/policy_revision_reliability_20261019_root/public_independent_validation.json",
+      "bytes": 514,
+      "sha256": "2982dc3bc89238aa95968a478a64155eff23ba19da4e13d49b88de944c184288"
+    },
+    {
+      "path": "reports/policy_revision_reliability_20261019_root/root_decision.json",
+      "source_path": "reports/policy_revision_reliability_20261019_root/root_decision.json",
+      "bytes": 3623,
+      "sha256": "f58d2d7deb809f149f9255860d2cdf606a043d7a6673bb2cbe8d90491d1ce6f5"
+    },
+    {
+      "path": "reports/policy_revision_reliability_20261019_root/summary.json",
+      "source_path": "reports/policy_revision_reliability_20261019_root/summary.json",
+      "bytes": 5443,
+      "sha256": "ce1806808726d62c45fd16c02e273a09a766f91edd7306f1a68670fda6a75fa1"
+    },
+    {
+      "path": "reports/policy_revision_reliability_20261019_root/train_cutoff.json",
+      "source_path": "reports/policy_revision_reliability_20261019_root/train_cutoff.json",
+      "bytes": 439,
+      "sha256": "95811ddbca7c616e1df5b38c775af3baf485c121b5592de9ea5f06ed49ea84b8"
     },
     {
       "path": "reports/policy_survival_probability_20261019_root/RESULTS_ZH.md",

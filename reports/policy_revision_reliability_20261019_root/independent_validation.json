@@ -1,0 +1,22 @@
+{
+  "status": "PASS_INDEPENDENT_FRACTION_WEIGHTED_CDF_AND_SCALAR_TRANSITIONS",
+  "cutoff": 12.386630419730523,
+  "cutoff_difference": 0.0,
+  "maximum_per_cell_metric_difference": 3.375077994860476e-14,
+  "fit_transitions": 22239,
+  "calibration_transitions": 4557,
+  "counts": {
+    "fit": {
+      "large": 2503,
+      "rest": 19736
+    },
+    "calibration": {
+      "large": 405,
+      "rest": 4152
+    }
+  },
+  "per_cell_groups": 465,
+  "new_fits": 0,
+  "new_model_inference": 0,
+  "new_cutpoint_estimates": 0
+}

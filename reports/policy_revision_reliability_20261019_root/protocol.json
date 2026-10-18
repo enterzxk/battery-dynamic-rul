@@ -1,0 +1,33 @@
+{
+  "question": "Are large current EOL revisions less reliable than other revisions when size threshold is frozen only on fit?",
+  "source_fit": "experiments/policy_fit_scale_seed42_v1/fit_predictions.csv",
+  "source_fit_sha256": "97d11dd456fe2836160010f7112fe5bc69572b96a9179018fc061fee168f95b4",
+  "source_cal": "experiments/policy_context_point_seed42_v1/calibration_predictions.csv",
+  "source_cal_sha256": "796844ff5c863a08ca7f1238c620afee39a3f22b84d68b615ec52135c48b7ea0",
+  "fit_prediction": "exp(policy_mu_log_RUL)",
+  "cal_prediction": "saved context_RUL_prediction",
+  "revision": "D_t=(t+predRUL_t)-(t-1+predRUL_previous)",
+  "training_cutoff": "equal-cell weighted inverse empirical CDF of abs(D): every42fit cell total weight1/42, first sorted value whose cumulative weight>=.9",
+  "quantile": 0.9,
+  "large_rule": "abs(D)>training_cutoff+1e-10 numerical tolerance; others rest",
+  "gain": "abs(max(0,predRUL_previous-1)-trueRUL_t)-abs(predRUL_t-trueRUL_t)",
+  "harmful_rule": "gain<-1e-10; helpful gain>1e-10; otherwise tie",
+  "directions": "positive D>1e-10; negative D<-1e-10; zero otherwise",
+  "aggregation": "cell-equal within each supported bin; report cells and transitions; paired large-minus-rest contrasts only cells having both bins; no prefix-weighted headline",
+  "mechanism_support_screen": "Candidate blind-large suppression support only if >=7cal cells have bothbins, pairedcell harmful large-rest>=.10, large mean updategain<0, >=7cells have negative large mean gain. This is diagnostic support only, never acceptance or predictor authorization.",
+  "new_fits": 0,
+  "optimizer_steps": 0,
+  "new_model_inference": 0,
+  "checkpoint_loads": 0,
+  "new_train_only_quantile_cutpoints": 1,
+  "raw_feature_reads": 0,
+  "dev_test_reads": 0,
+  "limits": [
+    "42fit predictions are in-sample, calibration10 repeatedly exposed",
+    "trueRUL only for retrospective gain/harm, not cutoff/causal rule",
+    "no threshold/quantile search; no new gate activated; close size-only proxy if screen fails",
+    "positive/negative direction is predeclared descriptive audit, no automatic rescue filter",
+    "event-only source-record cohort, physicalserial/fullsourceSHA/knownfixedpolicy restrictions unchanged"
+  ],
+  "frozen_utc": "2026-10-18T19:14:29.555525+00:00"
+}

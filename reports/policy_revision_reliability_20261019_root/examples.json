@@ -1,0 +1,80 @@
+[
+  {
+    "role": "fit",
+    "cell_id": "MATR_b2c32",
+    "origin": 370,
+    "revision": 295.3711886521826,
+    "abs_revision": 295.3711886521826,
+    "gain": -295.3711886521826,
+    "harmful": true,
+    "helpful": false,
+    "weight": 5.696058327637275e-05,
+    "size_bin": "large",
+    "direction": "positive"
+  },
+  {
+    "role": "fit",
+    "cell_id": "MATR_b2c10",
+    "origin": 251,
+    "revision": -175.8203020873633,
+    "abs_revision": 175.8203020873633,
+    "gain": -175.82030208736336,
+    "harmful": true,
+    "helpful": false,
+    "weight": 5.175983436853002e-05,
+    "size_bin": "large",
+    "direction": "negative"
+  },
+  {
+    "role": "fit",
+    "cell_id": "MATR_b2c10",
+    "origin": 252,
+    "revision": 175.45508091131467,
+    "abs_revision": 175.45508091131467,
+    "gain": 175.45508091131467,
+    "harmful": false,
+    "helpful": true,
+    "weight": 5.175983436853002e-05,
+    "size_bin": "large",
+    "direction": "positive"
+  },
+  {
+    "role": "calibration",
+    "cell_id": "MATR_b4c29",
+    "origin": 111,
+    "revision": 113.68722695770191,
+    "abs_revision": 113.68722695770191,
+    "gain": 113.68722695770185,
+    "harmful": false,
+    "helpful": true,
+    "weight": 0.00012706480304955527,
+    "size_bin": "large",
+    "direction": "positive"
+  },
+  {
+    "role": "calibration",
+    "cell_id": "MATR_b4c19",
+    "origin": 480,
+    "revision": 69.75008910821339,
+    "abs_revision": 69.75008910821339,
+    "gain": 69.75008910821333,
+    "harmful": false,
+    "helpful": true,
+    "weight": 0.0001122334455667789,
+    "size_bin": "large",
+    "direction": "positive"
+  },
+  {
+    "role": "calibration",
+    "cell_id": "MATR_b4c29",
+    "origin": 460,
+    "revision": -66.3407322433294,
+    "abs_revision": 66.3407322433294,
+    "gain": 57.73454131947966,
+    "harmful": false,
+    "helpful": true,
+    "weight": 0.00012706480304955527,
+    "size_bin": "large",
+    "direction": "negative"
+  }
+]

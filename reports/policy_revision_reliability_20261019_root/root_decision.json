@@ -1,0 +1,45 @@
+{
+  "decision": "NO_GO_FOR_BLIND_REVISION_MAGNITUDE_SUPPRESSION_PROXY",
+  "cutoff": 12.386630419730523,
+  "paired_calibration": {
+    "matched_cells": 9,
+    "cell_equal_harmful_large_minus_rest": -0.06462734516577745,
+    "cell_equal_large_mean_gain": 2.255252325069101,
+    "cell_equal_gain_large_minus_rest": 2.240725864957492,
+    "cells_negative_large_mean_gain": 2,
+    "blind_large_suppression_support": false
+  },
+  "interpretation": "Large revisions are not less reliable here; average gain positive, harmful rate lower on common cells. Do not activate size gate or use direction bins as posthoc rescue.",
+  "new_fits": 0,
+  "optimizer_steps": 0,
+  "new_model_inference": 0,
+  "new_train_only_quantile_cutpoints": 1,
+  "dev_test_reads": 0,
+  "previous_point_PASS_probability_FAIL_EMA_NO_GAIN_preserved": true,
+  "evidence": {
+    "protocol.json": "2523b6e82305b209ca4a0b3c76211a2044cf7a46069dfaadd7ffd6eaf18ad723",
+    "diagnose.py": "763ae3713a657c5e3512dd61098faa552e964064f9194d6df9468f5c3c8e77ae",
+    "train_cutoff.json": "95811ddbca7c616e1df5b38c775af3baf485c121b5592de9ea5f06ed49ea84b8",
+    "summary.json": "ce1806808726d62c45fd16c02e273a09a766f91edd7306f1a68670fda6a75fa1",
+    "paired_calibration.json": "d372b8009cee37f2353fbf609c77b61d9c43b721865694d1eede9ff179c75391",
+    "completion.json": "6d7ab98a7419f40c5622eaeb71cb6fd12e1216b144132656a7d1c5ecfc0c85bc",
+    "independent_recompute.py": "e5d808173206f8d1f3beef480c542aedd781131d367d410603b96c43b9647cba",
+    "independent_validation.json": "2982dc3bc89238aa95968a478a64155eff23ba19da4e13d49b88de944c184288",
+    "per_cell_metrics_lossless.json": "f6af48000554b23742ef695621a018cd5ceeb0400cb15ea4f7fa2acabff73819",
+    "public_independent_validation.json": "2982dc3bc89238aa95968a478a64155eff23ba19da4e13d49b88de944c184288"
+  },
+  "next_bounded_action": {
+    "status": "NOT_STARTED",
+    "question": "Can conditional tail quantiles with the now-verified known-policy information repair cell-level interval failures beyond a global scale?",
+    "action": "Prepare matched7feature HGB logRUL q.1/q.9 baseline on same42fit/10cal; reuse saved policy median without refit. Different information from closed3state quantile baseline, not a repeat of old fits. At most2newCPUfit starts only after one independent narrow review and fresh exactGO; currently no new fit/model authorization.",
+    "proposed_max_new_CPU_fits_after_GO": 2,
+    "max_new_fits_allowed_now": 0,
+    "development_or_test_access": false,
+    "checkpoint_loads": 0,
+    "parameters": "existing fixed HGB150iter7leavesdepth3 lr.05 min50 L2=1 seed42 noearlystop; equalcell weights; age/SOH/robust20 plus four static known-policy effectiveCrates",
+    "scope": "Necessary strong interval baseline, no architecture/seed expansion, not innovation or fullCDF/Brier model.",
+    "gate_to_freeze_before_fit": "pointmedian unchanged; >=5pct intervalscore reduction with pairedcell CIlo>0; >=7/10cells reduce abs coverageerror, >=.03 reduction in MEAN CELL absolute80coverageerror; aggregate coverage error must not increase; width<=2x; any lower>median/upper<median/lower>=upper FAIL no sorting/clipping. New interval comparison, earlier3state and frozen-sigma gates/results unchanged.",
+    "why_new_coverage_metric": "Current aggregate error .0149838 makes old absolute .03 aggregate-improvement floor mathematically unreachable; prior cell-heterogeneity evidence motivates mean-cell absolute error, declared before any new fit. No retroactive gate rewrite.",
+    "no_rescue": "FailureSTOP no quantile/parameter/seed/resorting rescue; old predictions/checkpoints/failures immutable"
+  }
+}
