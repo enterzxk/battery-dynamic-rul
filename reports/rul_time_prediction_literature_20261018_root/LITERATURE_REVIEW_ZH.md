@@ -16,7 +16,7 @@
 6. **Hell et al., Scientific Reports 2024**：健康指标 + SVR/GPR + 状态空间/UKF处理容量再生，外推阈值并给置信区间/SHAP。NASA B5/B6/B7固定起点T=70/80/90，B7阈值1.5Ah而另两只1.4Ah；区间必须核验覆盖率。[DOI](https://doi.org/10.1038/s41598-024-63160-2)
 7. **Zhang et al., Nature Machine Intelligence 2025 (BatLiNet)**：结合单电芯学习和电芯对寿命差值学习。作者报告401电芯、168工况；五个数据集相对各自最佳基线RMSE降低36.5%、6.8%、20.1%、27.4%、40.1%，混合工况仍较难。是早期总寿命预测，不等于动态RUL，且需要完整寿命参考电芯。[DOI](https://doi.org/10.1038/s42256-024-00972-x)
 8. **Tan et al., PBT 2025预印本**：13数据集预训练、领域条件化专家结构和迁移学习。应审计预训练/测试电芯重叠、目标标签权限与预算；核心仍是早期寿命预测，项目现有PBT门槛不因此放宽。[arXiv](https://arxiv.org/abs/2512.16334)
-9. **Li et al., Reliability Engineering & System Safety 2024**：概率多任务预测膝点/寿命、SOH轨迹、老化速率并识别加速老化。说明速率变化和寿命风险有关；阶段识别好不自动意味着RUL准确。[DOI](https://doi.org/10.1016/j.ress.2023.109603)
+9. **Che et al., Reliability Engineering & System Safety 2024**：概率多任务预测膝点/寿命、SOH轨迹、老化速率并识别加速老化。说明速率变化和寿命风险有关；阶段识别好不自动意味着RUL准确。[DOI](https://doi.org/10.1016/j.ress.2023.109603)
 10. **Huang et al., Journal of Power Sources 2026 (IC²ML)**：融合单循环电压曲线和跨循环特征，联合估SOH、退化轨迹及阈值推导RUL。出版页面报告121电芯/10工况，SOH/轨迹/RUL RMSE为1.85%/2.36%/23.90 cycles；电芯拆分、EOL及逐前缀聚合尚需正文核实，故只称作者页面报告。[DOI](https://doi.org/10.1016/j.jpowsour.2025.239148)
 
 ## 横向总结
