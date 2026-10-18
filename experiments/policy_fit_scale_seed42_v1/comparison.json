@@ -1,0 +1,10 @@
+{
+  "sigma_ratio": 0.7779756012710037,
+  "interval_score_reduction": -0.04444364524863409,
+  "absolute_coverage_error_reduction": -0.11786327174292,
+  "cells_coverage_error_improved": 4,
+  "width_ratio": 0.7746657062675454,
+  "mean_Brier_increment": -0.0004264002805723574,
+  "point_metrics_exactly_unchanged": true,
+  "diagnostic_screen_pass": false
+}

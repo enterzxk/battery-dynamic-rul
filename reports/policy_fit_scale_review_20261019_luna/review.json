@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "review_type": "static_independent_narrow_review",
+  "reviewed_at_utc": "2026-10-19T00:00:00Z",
+  "reviewed_hashes": {
+    "experiments/policy_fit_scale_seed42_v1/runner.py": "394bf20a1b91b61ae0f7561e06ff692cbd711805320fcc17ed716eaacad19125",
+    "experiments/policy_fit_scale_seed42_v1/protocol.json": "3ff270d7e5946e914085a54c72159c7037f80d35f16aa991c2edf5d7e2ace678",
+    "experiments/policy_fit_scale_seed42_v1/cohort.json": "42535de5825f6857e3aa69a596306a909a9a1b3ac087c43631032f6d293ef289",
+    "experiments/policy_fit_scale_seed42_v1/point_model_protocol.json": "30b37abb94065144c18c98c170cd30a09f2edb732f6b2a27c8a21606dfbdb85d"
+  },
+  "source_evidence_hashes": {
+    "experiments/policy_context_point_seed42_v1/completion.json": "1caa2674e055cab9d4d1bb7680eb2349b7ff4f0af529cbe402ba56a571ac79d3",
+    "experiments/matr_raw_heldout_calibration_seed42_v1/fit_parameters.json": "ca95515be2d4977aa5160f9aa520acb996c6bd83eff5618ab72e8655f34711e5"
+  },
+  "checks": {
+    "inputs_and_causal_roles": "PASS: runner reads only the 42 fit-role rows, maps origin cycle, SOH, and rate20_per_cycle (robust20 in original units) with four static policy effective-C features, verifies visible_through_cycle==origin<event, and derives the fit target event_cycle-origin. It excludes development/calibration roles from feature construction and declares no dev/test access.",
+    "checkpoint_provenance": "PASS_STATIC: protocol pins checkpoint SHA256 97241e1c5966d179a23902270993c0de5f84c5c3e6de2cb3798ec41728efe541 and provenance completion SHA256 1caa2674e055cab9d4d1bb7680eb2349b7ff4f0af529cbe402ba56a571ac79d3. The completion records COMPLETE, exactly one prior predictive fit, 22281 fit origins, zero dev/test reads, and the same checkpoint hash. The checkpoint itself was not opened or loaded. Old parameter receipt SHA is pinned and its A_fit_residual_scale matches protocol value 0.19898311654196568.",
+    "budget_and_order": "PASS_STATIC: hash/role/input checks precede loading; runner records create-only claim, then one load-start, one predict-start for exactly 22281 fit rows, then one scalar equal-cell RMS log-residual sigma with .05 floor. Load/predict/scalar counters are set before each costly action, so failure consumes its allowance. No refit, optimizer step, calibration model inference, or retry path.",
+    "create_only_lock_go": "PASS_STATIC: runner validates exact status and zero-fit/one-load/one-predict/one-scalar limits in ROOT_GO; GO must bind all four reviewed file hashes and review hash. Under GO it takes nonblocking exclusive online_survival_cpu.lock, checks coordinator owner/thread/takeover and new_fits_allowed=false, checks coordinator GO SHA, and uses exclusive create for invocation claim and all result artifacts. No runner was executed and no checkpoint was loaded.",
+    "calibration_comparison": "PASS: reads existing calibration prediction CSV and old sigma receipt only; requires 4567 calibration rows over 10 disjoint calibration IDs and verifies exp(saved raw log mu) equals saved median. Both sigma arms share the same mu, so point MAE/bias/severe-over-100 must remain exactly equal. Screen criteria are explicit and limited to calibration diagnostics."
+  },
+  "risks": [
+    "Fit residual sigma is estimated in-sample on the same 42 cells used to train the checkpoint; it is optimistically biased and is not OOF, calibration, or reliability evidence.",
+    "The 10 calibration cells are already exposed and the screen is diagnostic only. A screen pass cannot replace or reverse the prior probabilistic FAIL / joint acceptance gate; any continuation still requires the earlier gate outcome and fresh exact GO.",
+    "Physical serial identity and complete raw-source SHA remain unresolved per the source point-model protocol; claims stay within this known fixed laboratory policy cohort.",
+    "No ROOT_GO was present or reviewed in this task; the runner must not run until the root issues exact hash-bound GO."
+  ],
+  "action": "Root may issue its own fresh exact GO only if the prior probability gate remains explicitly honored; this review authorizes no run by itself. Independently recompute outputs after any authorized run."
+}

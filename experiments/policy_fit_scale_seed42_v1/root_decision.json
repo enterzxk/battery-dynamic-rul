@@ -1,0 +1,52 @@
+{
+  "decision": "NO_GAIN_MATCHED_POLICY_IN_SAMPLE_RESIDUAL_SCALE_NO_CALIBRATION_RESCUE",
+  "sigma_old": 0.19898311654196568,
+  "sigma_policy_fit": 0.15480400973451397,
+  "comparison": {
+    "sigma_ratio": 0.7779756012710037,
+    "interval_score_reduction": -0.04444364524863409,
+    "absolute_coverage_error_reduction": -0.11786327174292,
+    "cells_coverage_error_improved": 4,
+    "width_ratio": 0.7746657062675454,
+    "mean_Brier_increment": -0.0004264002805723574,
+    "point_metrics_exactly_unchanged": true,
+    "diagnostic_screen_pass": false
+  },
+  "previous_probability_joint_FAIL_preserved": true,
+  "known_policy_point_PASS_preserved": true,
+  "new_fits": 0,
+  "optimizer_steps": 0,
+  "checkpoint_loads": 1,
+  "fit_predict_calls": 1,
+  "fit_predict_rows": 22281,
+  "calibration_model_calls": 0,
+  "new_scalar_estimates": 1,
+  "dev_test_reads": 0,
+  "independent_metric_difference": 1.9895196601282805e-13,
+  "evidence": {
+    "protocol.json": "3ff270d7e5946e914085a54c72159c7037f80d35f16aa991c2edf5d7e2ace678",
+    "runner.py": "394bf20a1b91b61ae0f7561e06ff692cbd711805320fcc17ed716eaacad19125",
+    "ROOT_GO.json": "58eaa55e93d20644a6b83fedeea6f6c404ed823dcd294c787bf7ab25c88280a1",
+    "completion.json": "52b97e8102d03cec8f50d554a52f0cd96411a9ef42b3584ab4389bf0b53cc935",
+    "fit_scale.json": "c897f23748c33c91b6a95200558471d76fd06a5597ac97b17e069380fe6ca472",
+    "metrics.json": "285d1597158936d985d4d0ea431c121e280600b2f32b88bdf361ff5e028fdff0",
+    "per_cell_metrics.json": "54143fa57bf0e1992f3c936b5b337814ec55c10d346ff3cdf8b92ca8c009ffe7",
+    "comparison.json": "0f8696a79e142b94003795261d5e95a616e9da7623acff01b9c2081d0672d479",
+    "independent_metrics.json": "bf8585d8a72be45fd23ecf6d2251874c74667463bf73e6901d0b608df13974e7",
+    "lossless_validation.json": "1f3ace8c94b5ad21f38ca526ce58e57555f69a25777125a4a5dda53fd053493e",
+    "review_timestamp_annotation.json": "ff379ba2b8186179af96f2f66d82a1fdf4b528307c5695c7ea0695b6da1116ae"
+  },
+  "next_bounded_action": {
+    "status": "NOT_STARTED",
+    "question": "Does one fixed causal smoothing baseline reduce dynamic overestimation without losing genuine update accuracy?",
+    "source": "existing policy10cal point predictions only; no model/raw features",
+    "method": "EMA of predicted absolute EOL, alpha=2/(20+1) fixed from existing20cycle memory; initialize at origin100 same model EOL; Ehat_t=(1-alpha)*Ehat_previous+alpha*(t+saved_RUL_t); predicted RUL=max(0,Ehat_t-t). No true residual or future information used by recurrence.",
+    "max_new_fits": 0,
+    "new_scalar_estimates": 0,
+    "new_model_inference": false,
+    "checkpoint_loads": 0,
+    "development_or_test_access": false,
+    "validation": "same10cells4567origins; existing >=5pct TimeMAE gain,>=7/10cells,bootstrap2000seed42CIlo>0,over100increment<=.01; compare vs unsmoothedpolicy, report expired count/update lag/harmful revisions. IfFAIL stop this fixedbaseline, no alpha/window/seed rescue.",
+    "scope": "strong simple point update baseline, not innovation or calibrated probability distribution; all earlier probability NO_GO retained"
+  }
+}

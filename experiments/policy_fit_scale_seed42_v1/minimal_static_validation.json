@@ -1,0 +1,19 @@
+{
+  "status": "PASS_STATIC_SYNTAX_AND_CALL_BUDGET",
+  "calls": [
+    [
+      "predict",
+      49,
+      "model.predict"
+    ],
+    [
+      "load",
+      46,
+      "pickle.load"
+    ]
+  ],
+  "new_fits": 0,
+  "executed_runner": false,
+  "checkpoint_reads": 0,
+  "runner_sha256": "394bf20a1b91b61ae0f7561e06ff692cbd711805320fcc17ed716eaacad19125"
+}

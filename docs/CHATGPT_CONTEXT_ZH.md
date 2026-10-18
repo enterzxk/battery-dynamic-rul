@@ -1,3 +1,11 @@
+## 2026-10-19：工况训练内残差尺度实际运行，覆盖恶化，NO_GAIN
+- **已完成**：fresh窄审+exactGO，已训checkpoint仅42fit/22281origin一次predict，原equalcell RMSlog残差唯一sigma=.154804010（旧.198983117）。同10cal4567旧mu，覆盖78.5016%→66.7153%，区间得分148.489249→155.088652恶化4.4444%，仅4/10覆盖误差改善，screenFAIL/NO_GAIN；TimeMAE36.400814及over1004.2582%完全不变。
+- **证据**：experiments/policy_fit_scale_seed42_v1/RESULTS_ZH.md、protocol/cohort/runner/ROOT_GO/inference_ledger/completion、fit_predictions/fit_scale、metrics/comparison/per_cell_metrics、independent_recompute/independent_metrics、fit_residual_predictions_lossless/decoder/lossless_validation/root_decision；独审reports/policy_fit_scale_review_20261019_luna/review.json。review日期自填错误保留并由review_timestamp_annotation说明，实际先审后GO顺序不变。
+- **最小验证**：独立全部22281fit残差及4567cal复算，sigma差0、指标差1.99e-13；公开四列训练标签/预测无损CSV字节SHA通过。0fit/optimizer，1checkpointload/1fit-onlypredict/1scalar，0calforward/devtest；本次预算消费，累计CPU14不变。
+- **阻塞/风险**：训练内残差尺度乐观，缩窄区间没有修复概率可靠性；cal反复暴露、event-only/物理身份/固定labpolicy限制保留。旧点PASS与概率联合FAIL均保留，不调sigma/偏置/seed救结果。
+- **下一步**：0fit已有工况预测，固定alpha2/21、origin100初始化的绝对EOL因果EMA强简单对照；同4567评TimeMAE/over100/延迟/归零，不用未来或真误差回滚，不搜窗口/alpha，不估尺度/模型推理/devtest。
+
+
 ## 2026-10-19：工况正规存活对照保留精度收益，概率联合门槛仍FAIL
 - **已完成**：0fit同10cal4567，固定旧sigmaA。正规早期存活条件vs工况动态TimeMAE71.670982→36.400814下降49.2112%，8/10、pairedcell95%差[13.659585,64.823141]；区间得分346.168385→148.489249、覆盖71.4197%→78.5016%，Brier100/300均改善，但over1001.2920%→4.2582%超护栏、仅6/10覆盖误差改善，联合FAIL。相对旧三状态点PASS保留，概率仅5/10改善也FAIL。
 - **证据**：reports/policy_survival_probability_20261019_root/RESULTS_ZH.md、protocol/diagnose、metrics/per_cell_metrics/comparisons、arithmetic_examples、completion/independent_recompute/independent_metrics/root_decision；派生13701行CSV只在服务器，可由公开旧预测与脚本复算。

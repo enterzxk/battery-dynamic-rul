@@ -1,0 +1,18 @@
+{
+  "status": "COMPLETE_ONE_FIT_ONLY_PREDICT_AND_SCALE_NO_REFIT",
+  "new_fits": 0,
+  "optimizer_steps": 0,
+  "checkpoint_loads": 1,
+  "model_predict_calls": 1,
+  "fit_rows_predicted": 22281,
+  "calibration_model_calls": 0,
+  "new_scalar_estimates": 1,
+  "dev_test_reads": 0,
+  "checkpoint_sha256": "97241e1c5966d179a23902270993c0de5f84c5c3e6de2cb3798ec41728efe541",
+  "source_calibration_sha256": "796844ff5c863a08ca7f1238c620afee39a3f22b84d68b615ec52135c48b7ea0",
+  "fit_prediction_sha256": "97d11dd456fe2836160010f7112fe5bc69572b96a9179018fc061fee168f95b4",
+  "runner_sha256": "394bf20a1b91b61ae0f7561e06ff692cbd711805320fcc17ed716eaacad19125",
+  "protocol_sha256": "3ff270d7e5946e914085a54c72159c7037f80d35f16aa991c2edf5d7e2ace678",
+  "GO_sha256": "58eaa55e93d20644a6b83fedeea6f6c404ed823dcd294c787bf7ab25c88280a1",
+  "elapsed_seconds": 0.41250602528452873
+}

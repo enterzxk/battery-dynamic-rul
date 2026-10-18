@@ -1,0 +1,14 @@
+{
+  "status": "PASS_BYTE_EXACT",
+  "rows": 22281,
+  "cells": 42,
+  "decoded_sha256": "f1d7cb4f43c94cc8265159253013b6b3323f57a607624d6c6b52e262a012f870",
+  "archive_bytes": 249443,
+  "source_full_fit_csv_sha256": "97d11dd456fe2836160010f7112fe5bc69572b96a9179018fc061fee168f95b4",
+  "columns": [
+    "cell_id",
+    "origin",
+    "true_RUL",
+    "policy_mu_log_RUL"
+  ]
+}

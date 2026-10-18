@@ -1,0 +1,3 @@
+{"event": "checkpoint_load_started", "sha256": "97241e1c5966d179a23902270993c0de5f84c5c3e6de2cb3798ec41728efe541"}
+{"event": "predict_started", "role": "fit", "rows": 22281, "calls": 1}
+{"event": "predict_completed", "rows": 22281}

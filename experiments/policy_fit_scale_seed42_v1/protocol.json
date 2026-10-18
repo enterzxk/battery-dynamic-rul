@@ -1,0 +1,66 @@
+{
+  "question": "Does one matched policy-model FIT-only residualscale repair uncertainty versus the unchanged transferred old-model sigmaA, with exactly unchanged saved calibration mu?",
+  "owner": "01a14e92-ea7a-7cc3-8007-67b4d16a873a",
+  "max_seconds": 180,
+  "max_new_fits": 0,
+  "optimizer_steps": 0,
+  "max_checkpoint_loads": 1,
+  "max_predict_calls": 1,
+  "max_predict_rows": 22281,
+  "prediction_role": "fit only42cells",
+  "max_new_scalar_estimates": 1,
+  "calibration_inference": false,
+  "development_access": false,
+  "test_access": false,
+  "cohort_sha256": "42535de5825f6857e3aa69a596306a909a9a1b3ac087c43631032f6d293ef289",
+  "point_model_protocol_sha256": "30b37abb94065144c18c98c170cd30a09f2edb732f6b2a27c8a21606dfbdb85d",
+  "source_fit_predictions": "/home/yndx/zxk/rul/experiments/matr_raw_heldout_calibration_seed42_v1/fit_predictions.csv",
+  "source_fit_sha256": "7cd0d1c902dacacf8f519c02962eb0343c240d1be41555d96e94b4bbf17775e3",
+  "source_calibration_predictions": "/home/yndx/zxk/rul/experiments/policy_context_point_seed42_v1/calibration_predictions.csv",
+  "source_calibration_sha256": "796844ff5c863a08ca7f1238c620afee39a3f22b84d68b615ec52135c48b7ea0",
+  "checkpoint_path": "/home/yndx/zxk/rul/experiments/policy_context_point_seed42_v1/checkpoints/policy_context_hgb.pkl",
+  "checkpoint_sha256": "97241e1c5966d179a23902270993c0de5f84c5c3e6de2cb3798ec41728efe541",
+  "checkpoint_provenance_completion_path": "/home/yndx/zxk/rul/experiments/policy_context_point_seed42_v1/completion.json",
+  "checkpoint_provenance_completion_sha256": "1caa2674e055cab9d4d1bb7680eb2349b7ff4f0af529cbe402ba56a571ac79d3",
+  "source_old_parameters": "/home/yndx/zxk/rul/experiments/matr_raw_heldout_calibration_seed42_v1/fit_parameters.json",
+  "source_old_parameters_sha256": "ca95515be2d4977aa5160f9aa520acb996c6bd83eff5618ab72e8655f34711e5",
+  "old_sigma": 0.19898311654196568,
+  "scale_rule": "sigma=max(.05,sqrt(mean_over42cells(mean_over_cell_origins((predicted_logRUL-log(true_RUL))**2)))); no optimization/centering/tuning/calibrationlabels",
+  "arms": [
+    "policy_dynamic_old_sigma",
+    "policy_dynamic_own_fit_sigma"
+  ],
+  "probability_metrics": [
+    "interval_score80",
+    "coverage80",
+    "width80",
+    "lower_miss",
+    "upper_miss",
+    "Brier100",
+    "Brier300"
+  ],
+  "point_metrics": [
+    "MAE",
+    "bias",
+    "severe_over100"
+  ],
+  "diagnostic_screen": {
+    "require_existing_policy_vs_three_state_point_PASS": true,
+    "point_predictions_unchanged": true,
+    "interval_score_reduction_min": 0.05,
+    "absolute_coverage_error_must_not_increase": true,
+    "cells_coverage_error_improved_min": 7,
+    "width_ratio_max": 2,
+    "mean_Brier_increment_max": 0.002
+  },
+  "screen_scope": "Only a scale-matching diagnostic screen, NOT a replacement of previous early-vs-dynamic joint gates, not sufficient probability reliability or expansion. Old >=.03 coverage-improvement floor is not applicable to baseline absolute error .0149838; directional nonworsening declared before reading any new prediction.",
+  "limitations": [
+    "same exposed10cal; no independent confirmation",
+    "event-only no censoringclaim",
+    "FIT residuals optimistically in-sample, NOT OOF or calibration guarantee",
+    "physicalserial/fullsourceSHA unresolved, known fixedlabpolicy scope",
+    "0fits no retry, any predict-start consumes onecall; no seed/model/horizon rescue",
+    "no extra calibrationforward; old sigma/runs immutable"
+  ],
+  "frozen_utc": "2026-10-18T16:15:03.924125+00:00"
+}

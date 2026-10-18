@@ -1,0 +1,23 @@
+{
+  "status": "GO_ONE_POLICY_FIT_ONLY_INFERENCE_AND_SCALE",
+  "review_path": "/home/yndx/zxk/rul/reports/policy_fit_scale_review_20261019_luna/review.json",
+  "review_sha256": "451fcf88eb9232017c32e3c520e35a1eed659ba1cae5359017ae2d185fcb07f3",
+  "reviewed_hashes": {
+    "experiments/policy_fit_scale_seed42_v1/runner.py": "394bf20a1b91b61ae0f7561e06ff692cbd711805320fcc17ed716eaacad19125",
+    "experiments/policy_fit_scale_seed42_v1/protocol.json": "3ff270d7e5946e914085a54c72159c7037f80d35f16aa991c2edf5d7e2ace678",
+    "experiments/policy_fit_scale_seed42_v1/cohort.json": "42535de5825f6857e3aa69a596306a909a9a1b3ac087c43631032f6d293ef289",
+    "experiments/policy_fit_scale_seed42_v1/point_model_protocol.json": "30b37abb94065144c18c98c170cd30a09f2edb732f6b2a27c8a21606dfbdb85d"
+  },
+  "max_new_fits": 0,
+  "max_checkpoint_loads": 1,
+  "max_predict_calls": 1,
+  "max_predict_rows": 22281,
+  "max_new_scalar_estimates": 1,
+  "calibration_model_calls": 0,
+  "dev_test_access": false,
+  "max_seconds": 180,
+  "owner": "01a14e92-ea7a-7cc3-8007-67b4d16a873a",
+  "issued_utc": "2026-10-18T16:16:34.791285+00:00",
+  "scope": "Only already self-trained checkpoint matched to provenance hash; old PBT/model/test gates remain closed; no refit/calibration-label scale tuning",
+  "root_rationale": "Close one actual mismatch: previous same-sigma control used old three-state residualscale. This one training-only matched-scale diagnostic does not change previous joint FAIL or justify model/seed expansion."
+}

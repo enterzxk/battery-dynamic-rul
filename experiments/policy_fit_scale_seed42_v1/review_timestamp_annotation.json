@@ -1,0 +1,10 @@
+{
+  "issue": "Review authored_at UTC is a future timestamp inconsistent with tool delivery; timezone/date metadata error, not runtime approval time.",
+  "authored_value": "2026-10-19T00:00:00Z",
+  "actual_GO_issued_utc": "2026-10-18T16:16:34.791285+00:00",
+  "observed_utc": "2026-10-18T16:17:17.757715+00:00",
+  "review_hash_bound_before_GO": true,
+  "sequence": "Review tool delivery observed by root, file hash/status/four source hashes verified, rootGO issued, then subprocess run; original review unchanged.",
+  "review_sha256": "451fcf88eb9232017c32e3c520e35a1eed659ba1cae5359017ae2d185fcb07f3",
+  "scientific_sources_or_GO_changed": false
+}

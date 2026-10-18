@@ -1,0 +1,40 @@
+{
+  "status": "PASS_INDEPENDENT_FIT_RESIDUAL_SCALE_AND_CALIBRATION_METRICS",
+  "fit_rows": 22281,
+  "cal_rows": 4567,
+  "fit_cells": 42,
+  "cal_cells": 10,
+  "recomputed_sigma": 0.15480400973451397,
+  "sigma_difference": 0.0,
+  "maximum_metric_difference": 1.9895196601282805e-13,
+  "new_fits": 0,
+  "new_model_inference": 0,
+  "checkpoint_loads": 0,
+  "metrics": {
+    "policy_dynamic_old_sigma": {
+      "MAE": 36.40081434267988,
+      "bias": -3.5238951148084894,
+      "severe_over100": 0.04258246537928911,
+      "coverage80": 0.7850161610247275,
+      "width80": 116.16909007664155,
+      "interval_score80": 148.48924887864771,
+      "lower_miss": 0.11989603623626532,
+      "upper_miss": 0.09508780273900717,
+      "Brier100": 0.014017516501594336,
+      "Brier300": 0.05651082652575491
+    },
+    "policy_dynamic_own_fit_sigma": {
+      "MAE": 36.40081434267988,
+      "bias": -3.5238951148084894,
+      "severe_over100": 0.04258246537928911,
+      "coverage80": 0.6671528892818076,
+      "width80": 89.99221021067983,
+      "interval_score80": 155.08865237904632,
+      "lower_miss": 0.19224040061942987,
+      "upper_miss": 0.1406067100987625,
+      "Brier100": 0.012730985314656808,
+      "Brier300": 0.05694455715154773
+    }
+  },
+  "script_sha256": "aa8d0c005e0ca14199997e3ced38151160e85aa5a5d6660cb617ae138693a5ff"
+}

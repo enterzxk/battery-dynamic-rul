@@ -474,3 +474,11 @@
 - **最小验证**：全部4567独立math.erfc二分复算，预测差1.14e-12、指标差5.68e-14；区间有序/概率合法，原时点完整。0fit/optimizer/新尺度估计/模型推理/checkpoint/devtest；累计CPU14/神经4fit2580steps不变。V13第一次真实压缩16:00:34.346Z仅本地SHA检查点，未建新聊。
 - **阻塞/风险**：聚合78.50%掩盖b2c1覆盖18.75%与b2c6覆盖29.6837%；b4c14/b4c7高估风险保留。共用旧三状态sigma不是policy自身估计，不能把控制比较当可靠分布。cal暴露/event-only/物理身份/固定labpolicy限制保留，不扩模型或seed。
 - **下一步**：0fit准备policy自身fit-only尺度实验：现有自训checkpoint一次42fit/22281prefix predict，再唯一原RMSlogresidual尺度估计，既有10cal mu一次评估；独立窄审+fresh exactGO前不读checkpoint/forward，不重训或用cal调尺度，0dev/test。
+
+
+## 2026-10-19：工况训练内残差尺度实际运行，覆盖恶化，NO_GAIN
+- **已完成**：fresh窄审+exactGO，已训checkpoint仅42fit/22281origin一次predict，原equalcell RMSlog残差唯一sigma=.154804010（旧.198983117）。同10cal4567旧mu，覆盖78.5016%→66.7153%，区间得分148.489249→155.088652恶化4.4444%，仅4/10覆盖误差改善，screenFAIL/NO_GAIN；TimeMAE36.400814及over1004.2582%完全不变。
+- **证据**：experiments/policy_fit_scale_seed42_v1/RESULTS_ZH.md、protocol/cohort/runner/ROOT_GO/inference_ledger/completion、fit_predictions/fit_scale、metrics/comparison/per_cell_metrics、independent_recompute/independent_metrics、fit_residual_predictions_lossless/decoder/lossless_validation/root_decision；独审reports/policy_fit_scale_review_20261019_luna/review.json。review日期自填错误保留并由review_timestamp_annotation说明，实际先审后GO顺序不变。
+- **最小验证**：独立全部22281fit残差及4567cal复算，sigma差0、指标差1.99e-13；公开四列训练标签/预测无损CSV字节SHA通过。0fit/optimizer，1checkpointload/1fit-onlypredict/1scalar，0calforward/devtest；本次预算消费，累计CPU14不变。
+- **阻塞/风险**：训练内残差尺度乐观，缩窄区间没有修复概率可靠性；cal反复暴露、event-only/物理身份/固定labpolicy限制保留。旧点PASS与概率联合FAIL均保留，不调sigma/偏置/seed救结果。
+- **下一步**：0fit已有工况预测，固定alpha2/21、origin100初始化的绝对EOL因果EMA强简单对照；同4567评TimeMAE/over100/延迟/归零，不用未来或真误差回滚，不搜窗口/alpha，不估尺度/模型推理/devtest。

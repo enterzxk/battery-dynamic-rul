@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-18T16:04:32.689516+00:00",
-  "content_sha256": "f9292b7c9f662712ed553f4c8372a946bb33059c8692b103b97d83f4c187ede7",
-  "file_count": 674,
+  "snapshot_utc": "2026-10-18T16:18:47.762184+00:00",
+  "content_sha256": "3f531dd3d21d4f411813c0179ae009c45d8537725646e4d0ddcc6b76fdf19034",
+  "file_count": 696,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,8 +14,8 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 83738,
-      "sha256": "e0cf86cdf62c24311abc246f8e6ff2af77b46dd84ed5e55df7ddf0da84f7158d"
+      "bytes": 85443,
+      "sha256": "6a9170c1c94b73fd44eb342582d879c2458bc996b7f7d800e09c202e7f54c03e"
     },
     {
       "path": "README.md",
@@ -38,8 +38,8 @@
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 23774,
-      "sha256": "eb128ae1aa037c18e0d65470b52660016c70a19283839a6d4391a1ff97f2d35e"
+      "bytes": 24430,
+      "sha256": "d9b94785a9eaf10140686064f6a6394eab297d838755a554336ac0bc2e6ba262"
     },
     {
       "path": "automation/bin/matr_raw_batch2_asset_worker_v1.py",
@@ -164,8 +164,8 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 70999,
-      "sha256": "a60a3c820f94a09ab5ce768957e38fa43d73d0d639c023b82daa01dc955f986d"
+      "bytes": 72704,
+      "sha256": "40f3105fae91cebf3f9fe974f632dec5837029717ad32910cc530764cd03982e"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
@@ -1678,6 +1678,132 @@
       "source_path": "experiments/policy_context_point_seed42_v1/runner.py",
       "bytes": 7327,
       "sha256": "20a00208a58ed37256a97d4b5ead0be555e9c318b21434567789132197c916f1"
+    },
+    {
+      "path": "experiments/policy_fit_scale_seed42_v1/RESULTS_ZH.md",
+      "source_path": "experiments/policy_fit_scale_seed42_v1/RESULTS_ZH.md",
+      "bytes": 3785,
+      "sha256": "659f0113aad7806655de5ae16c68b790e267ab69f34caf79934500e1cd105b73"
+    },
+    {
+      "path": "experiments/policy_fit_scale_seed42_v1/ROOT_GO.json",
+      "source_path": "experiments/policy_fit_scale_seed42_v1/ROOT_GO.json",
+      "bytes": 1503,
+      "sha256": "58eaa55e93d20644a6b83fedeea6f6c404ed823dcd294c787bf7ab25c88280a1"
+    },
+    {
+      "path": "experiments/policy_fit_scale_seed42_v1/cohort.json",
+      "source_path": "experiments/policy_fit_scale_seed42_v1/cohort.json",
+      "bytes": 2573,
+      "sha256": "42535de5825f6857e3aa69a596306a909a9a1b3ac087c43631032f6d293ef289"
+    },
+    {
+      "path": "experiments/policy_fit_scale_seed42_v1/comparison.json",
+      "source_path": "experiments/policy_fit_scale_seed42_v1/comparison.json",
+      "bytes": 353,
+      "sha256": "0f8696a79e142b94003795261d5e95a616e9da7623acff01b9c2081d0672d479"
+    },
+    {
+      "path": "experiments/policy_fit_scale_seed42_v1/completion.json",
+      "source_path": "experiments/policy_fit_scale_seed42_v1/completion.json",
+      "bytes": 862,
+      "sha256": "52b97e8102d03cec8f50d554a52f0cd96411a9ef42b3584ab4389bf0b53cc935"
+    },
+    {
+      "path": "experiments/policy_fit_scale_seed42_v1/decode_fit_residual_predictions.py",
+      "source_path": "experiments/policy_fit_scale_seed42_v1/decode_fit_residual_predictions.py",
+      "bytes": 455,
+      "sha256": "7b4afea4bd507aefcacec1cb75c41dc4df4a00f952428902aa788fd1ae6ef679"
+    },
+    {
+      "path": "experiments/policy_fit_scale_seed42_v1/fit_input_receipt.json",
+      "source_path": "experiments/policy_fit_scale_seed42_v1/fit_input_receipt.json",
+      "bytes": 971,
+      "sha256": "d468614d06990e18b1e674e440cb150224b0f5b7ec1bb1afc629bf18201d9e99"
+    },
+    {
+      "path": "experiments/policy_fit_scale_seed42_v1/fit_residual_predictions_lossless.json",
+      "source_path": "experiments/policy_fit_scale_seed42_v1/fit_residual_predictions_lossless.json",
+      "bytes": 249443,
+      "sha256": "6a0389405fdfec39f757e579676c896294296044a0e3b896da19fddf08053ed0"
+    },
+    {
+      "path": "experiments/policy_fit_scale_seed42_v1/fit_scale.json",
+      "source_path": "experiments/policy_fit_scale_seed42_v1/fit_scale.json",
+      "bytes": 5399,
+      "sha256": "c897f23748c33c91b6a95200558471d76fd06a5597ac97b17e069380fe6ca472"
+    },
+    {
+      "path": "experiments/policy_fit_scale_seed42_v1/independent_metrics.json",
+      "source_path": "experiments/policy_fit_scale_seed42_v1/independent_metrics.json",
+      "bytes": 1332,
+      "sha256": "bf8585d8a72be45fd23ecf6d2251874c74667463bf73e6901d0b608df13974e7"
+    },
+    {
+      "path": "experiments/policy_fit_scale_seed42_v1/independent_recompute.py",
+      "source_path": "experiments/policy_fit_scale_seed42_v1/independent_recompute.py",
+      "bytes": 2293,
+      "sha256": "aa8d0c005e0ca14199997e3ced38151160e85aa5a5d6660cb617ae138693a5ff"
+    },
+    {
+      "path": "experiments/policy_fit_scale_seed42_v1/inference_ledger.jsonl",
+      "source_path": "experiments/policy_fit_scale_seed42_v1/inference_ledger.jsonl",
+      "bytes": 232,
+      "sha256": "4a9d56f2852ef3a0bbca395fa6ba025319ca6520152ab4e15d1de5eed71f194f"
+    },
+    {
+      "path": "experiments/policy_fit_scale_seed42_v1/lossless_validation.json",
+      "source_path": "experiments/policy_fit_scale_seed42_v1/lossless_validation.json",
+      "bytes": 370,
+      "sha256": "1f3ace8c94b5ad21f38ca526ce58e57555f69a25777125a4a5dda53fd053493e"
+    },
+    {
+      "path": "experiments/policy_fit_scale_seed42_v1/metrics.json",
+      "source_path": "experiments/policy_fit_scale_seed42_v1/metrics.json",
+      "bytes": 830,
+      "sha256": "285d1597158936d985d4d0ea431c121e280600b2f32b88bdf361ff5e028fdff0"
+    },
+    {
+      "path": "experiments/policy_fit_scale_seed42_v1/minimal_static_validation.json",
+      "source_path": "experiments/policy_fit_scale_seed42_v1/minimal_static_validation.json",
+      "bytes": 346,
+      "sha256": "e7cf8912b3d98c852230ff4fb51f91fa4ec0422b6427dce1171ad3a0b95189d7"
+    },
+    {
+      "path": "experiments/policy_fit_scale_seed42_v1/per_cell_metrics.json",
+      "source_path": "experiments/policy_fit_scale_seed42_v1/per_cell_metrics.json",
+      "bytes": 9059,
+      "sha256": "54143fa57bf0e1992f3c936b5b337814ec55c10d346ff3cdf8b92ca8c009ffe7"
+    },
+    {
+      "path": "experiments/policy_fit_scale_seed42_v1/point_model_protocol.json",
+      "source_path": "experiments/policy_fit_scale_seed42_v1/point_model_protocol.json",
+      "bytes": 2897,
+      "sha256": "30b37abb94065144c18c98c170cd30a09f2edb732f6b2a27c8a21606dfbdb85d"
+    },
+    {
+      "path": "experiments/policy_fit_scale_seed42_v1/protocol.json",
+      "source_path": "experiments/policy_fit_scale_seed42_v1/protocol.json",
+      "bytes": 3511,
+      "sha256": "3ff270d7e5946e914085a54c72159c7037f80d35f16aa991c2edf5d7e2ace678"
+    },
+    {
+      "path": "experiments/policy_fit_scale_seed42_v1/review_timestamp_annotation.json",
+      "source_path": "experiments/policy_fit_scale_seed42_v1/review_timestamp_annotation.json",
+      "bytes": 648,
+      "sha256": "ff379ba2b8186179af96f2f66d82a1fdf4b528307c5695c7ea0695b6da1116ae"
+    },
+    {
+      "path": "experiments/policy_fit_scale_seed42_v1/root_decision.json",
+      "source_path": "experiments/policy_fit_scale_seed42_v1/root_decision.json",
+      "bytes": 3101,
+      "sha256": "dc1637d21e784881cdfc05679a1cfef377650df9594c89e11d950d1c7da09169"
+    },
+    {
+      "path": "experiments/policy_fit_scale_seed42_v1/runner.py",
+      "source_path": "experiments/policy_fit_scale_seed42_v1/runner.py",
+      "bytes": 9931,
+      "sha256": "394bf20a1b91b61ae0f7561e06ff692cbd711805320fcc17ed716eaacad19125"
     },
     {
       "path": "literature/accepted/P01_maintext_v1.json",
@@ -3718,6 +3844,12 @@
       "source_path": "reports/policy_context_point_seed42_v1_luna/review_v0_hash_transcription_error.json",
       "bytes": 3754,
       "sha256": "0d25739245edeb5e8b167e999d77ad6aa07ca941258b1416734f685121ac9686"
+    },
+    {
+      "path": "reports/policy_fit_scale_review_20261019_luna/review.json",
+      "source_path": "reports/policy_fit_scale_review_20261019_luna/review.json",
+      "bytes": 4194,
+      "sha256": "451fcf88eb9232017c32e3c520e35a1eed659ba1cae5359017ae2d185fcb07f3"
     },
     {
       "path": "reports/policy_fixedearly_dynamic_20261018_root/RESULTS_ZH.md",
