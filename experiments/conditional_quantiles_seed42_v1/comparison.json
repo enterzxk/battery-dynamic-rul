@@ -1,0 +1,17 @@
+{
+  "interval_score_relative_reduction": -0.0019657110357385044,
+  "absolute_coverage_error_reduction": -0.080951738514638,
+  "width_ratio": 1.1078578429410095,
+  "coverage_error_cells_improved": 7,
+  "point_MAE_unchanged": true,
+  "lower_above_median": 82,
+  "upper_below_median": 128,
+  "lower_ge_upper": 0,
+  "any_crossing_origins": 210,
+  "pairedcell_raw_score_difference_CI95": [
+    -80.29637426808351,
+    87.64542781986191
+  ],
+  "valid_allorigin_interval_score": true,
+  "gate_pass": false
+}

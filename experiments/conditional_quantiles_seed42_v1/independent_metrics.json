@@ -1,0 +1,31 @@
+{
+  "status": "PASS_INDEPENDENT_CSV_RECOMPUTE",
+  "metrics": {
+    "saved_fixed_sigma": {
+      "MAE": 58.11369800278736,
+      "coverage80": 0.620234418987876,
+      "width80": 124.00566113102475,
+      "raw_formula_score_diagnostic_only": 264.57073385101853,
+      "lower_miss": 0.24523740060942714,
+      "upper_miss": 0.13452818040269687,
+      "interval_score80": 264.57073385101853
+    },
+    "direct_conditional_quantiles": {
+      "MAE": 58.11369800278736,
+      "coverage80": 0.5392826804732379,
+      "width80": 137.38064425309088,
+      "raw_formula_score_diagnostic_only": 265.090803462283,
+      "lower_miss": 0.31147906078823134,
+      "upper_miss": 0.1492382587385307,
+      "interval_score80": 265.090803462283
+    }
+  },
+  "max_absolute_metric_difference": 5.684341886080802e-14,
+  "crossing_counts": [
+    82,
+    128,
+    0,
+    210
+  ],
+  "prediction_sha256": "fde7a87d1dce3c8f3e9bff3059551c8de8a912234f8db09b6869021ab36c5e00"
+}

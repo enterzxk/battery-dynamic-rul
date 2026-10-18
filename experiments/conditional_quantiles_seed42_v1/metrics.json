@@ -1,0 +1,20 @@
+{
+  "saved_fixed_sigma": {
+    "MAE": 58.11369800278735,
+    "coverage80": 0.620234418987876,
+    "width80": 124.00566113102472,
+    "raw_formula_score_diagnostic_only": 264.5707338510186,
+    "lower_miss": 0.24523740060942717,
+    "upper_miss": 0.13452818040269687,
+    "interval_score80": 264.5707338510186
+  },
+  "direct_conditional_quantiles": {
+    "MAE": 58.11369800278735,
+    "coverage80": 0.539282680473238,
+    "width80": 137.38064425309085,
+    "raw_formula_score_diagnostic_only": 265.09080346228296,
+    "lower_miss": 0.31147906078823134,
+    "upper_miss": 0.14923825873853072,
+    "interval_score80": 265.09080346228296
+  }
+}

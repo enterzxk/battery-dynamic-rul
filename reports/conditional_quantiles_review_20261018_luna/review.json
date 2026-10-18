@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "reviewed_hashes": {
+    "experiments/conditional_quantiles_seed42_v1/runner.py": "eddc921082b012adb4bf6e033ab44ae88e137dd420068cd9b271e760e66ca91b",
+    "experiments/conditional_quantiles_seed42_v1/protocol.json": "c05c7218c7079ab9408031f9957f9699835d63ffb4af10db42ecf08a4536a0ff",
+    "experiments/conditional_quantiles_seed42_v1/cohort.json": "42535de5825f6857e3aa69a596306a909a9a1b3ac087c43631032f6d293ef289"
+  },
+  "remote_agents_sha256": "93488b4e887ff13c8ac88687d1be4197a52c22667708dfd960d424007f3b1c19",
+  "requested_model": "gpt-6-luna/high",
+  "actual_model": "不可独立内省；未作运行时模型身份认证",
+  "scope": "仅指定runner.py、protocol.json、cohort.json静态窄审；未执行runner、fit、读取checkpoint、读取development/test预测或修改共享状态。",
+  "review_note": "初审曾将median crossing误解为区间端点倒置，经主控指出数学区别后更正：q10>saved median或q90<saved median但q10<q90仍是有序区间，其80% interval score有定义；这会触发三分位一致性gate失败，但不要求将该有序区间score置null。q10>=q90才是倒置区间。",
+  "checks": {
+    "sample_scope": "runner检查fit=42 cells/22281 origins、calibration=10 cells/4567 origins并检查cell互斥；跳过development角色cell特征；不访问test。",
+    "inputs_targets": "age、SOH、past20 TheilSen rate20_per_cycle原单位；visible_through_cycle=origin<event_cycle，rate20非缺失；目标log(event_cycle-origin)，即原event RUL取log。",
+    "weights": "每fit cell总权重等同，sample_weight平均归一化为1。",
+    "model": "最多两次CPU HGB quantile fit，q=.1/.9；150 iter、leaf7、depth3、lr .05、min_leaf50、L2=1、seed42、无early stopping；180秒总剩余计时，超时进入失败停止路径。",
+    "preserve_median": "median只取已存CSV预测；sigma只读fit_parameters用于fixed-sigma对照；未加载旧模型checkpoint或重训median；两个quantile checkpoint使用xb保存。",
+    "crossing_and_scores": "cross.any()覆盖q10>saved median、q90<saved median、q10>=q90；任一cross使coherent三分位gate失败且不排序/裁剪。单个cell出现q10>=q90时该cell interval_score80为null；汇总只要任一cell interval score为null则整体interval_score80为null。raw_formula_score_diagnostic_only单列且不代表coherent quantile pass。",
+    "createonly_lock": "invocation.claim以x创建；执行时检查项目CPU锁、owner和new_fits_allowed状态；首个fit ledger以x创建，第二fit追加；执行必须先通过fresh精确hash GO。"
+  },
+  "limits": "校准集已暴露用于开发；sourceID分离但物理serial及完整source SHA未验证；观测event-only实验不能声称删失场景、完整CDF或Brier概率。",
+  "allowed_scope": "本PASS仅静态窄审；仍须主控复核owner/CPU锁、现有CSV和fresh精确hash GO后才能启动最多两次CPU quantile fit。不得读取dev/test、加载旧模型、重训median或排序/裁剪端点。",
+  "next_action": "由主控决定是否基于这三个精确hash签发fresh GO；本审查没有建立claim或启动fit。"
+}

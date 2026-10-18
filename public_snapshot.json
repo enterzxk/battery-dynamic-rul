@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-18T14:45:57.761467+00:00",
-  "content_sha256": "efbded2388d04ae539f38ece2a3a843201003fcedd6cda8a3c6bf21a97b4024b",
-  "file_count": 630,
+  "snapshot_utc": "2026-10-18T15:04:32.628126+00:00",
+  "content_sha256": "ebb33452759e345004fef8f41c7bb7bde641e82112ac2cc5e110e505fdbfbc0a",
+  "file_count": 610,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,8 +14,8 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 76054,
-      "sha256": "a8b114fc0e959af21aa37a7b44b58f24aedf899e2d7935c2a57e8cd37ef52821"
+      "bytes": 77511,
+      "sha256": "d93a07318f9c4e0a6f632a96ad07734263ddde0794cadbc0156338ad623a11e0"
     },
     {
       "path": "README.md",
@@ -38,8 +38,8 @@
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 18693,
-      "sha256": "d01bc80c57c92739b70dfefbc98f7e7504edbea30e37e47a4e8fe02c7b39ad06"
+      "bytes": 21812,
+      "sha256": "51b88b4c9b097a8654b2bde087c6b71ce557dc9195bcc1963770809bbe62a55b"
     },
     {
       "path": "automation/bin/matr_raw_batch2_asset_worker_v1.py",
@@ -164,8 +164,8 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 63315,
-      "sha256": "b0ebe48d3990aac4d051770deb375216edd578ca125c1882601b2d59e37bddc5"
+      "bytes": 64772,
+      "sha256": "e59593ccfa5e7de4a719f2dc39268a8edf60aa7eb69ed806e13ec890fc3afd1e"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
@@ -538,6 +538,96 @@
       "source_path": "experiments/capacity_firstpassage_seed42_v1/training_endpoint_coverage.json",
       "bytes": 9648,
       "sha256": "4b501419117e081418c9f01df17022f31d2d3cbeabb942a83f5c06c936d02437"
+    },
+    {
+      "path": "experiments/conditional_quantiles_seed42_v1/RESULTS_ZH.md",
+      "source_path": "experiments/conditional_quantiles_seed42_v1/RESULTS_ZH.md",
+      "bytes": 2251,
+      "sha256": "095f22a973c923b734808d0561c04143c7604ca9eaf3bc4189181b685bf7038e"
+    },
+    {
+      "path": "experiments/conditional_quantiles_seed42_v1/ROOT_GO.json",
+      "source_path": "experiments/conditional_quantiles_seed42_v1/ROOT_GO.json",
+      "bytes": 1039,
+      "sha256": "9acecf7031534886d7308ea06d68acf2aa4fa93616ce0983ca91673359e93d43"
+    },
+    {
+      "path": "experiments/conditional_quantiles_seed42_v1/cohort.json",
+      "source_path": "experiments/conditional_quantiles_seed42_v1/cohort.json",
+      "bytes": 2573,
+      "sha256": "42535de5825f6857e3aa69a596306a909a9a1b3ac087c43631032f6d293ef289"
+    },
+    {
+      "path": "experiments/conditional_quantiles_seed42_v1/comparison.json",
+      "source_path": "experiments/conditional_quantiles_seed42_v1/comparison.json",
+      "bytes": 501,
+      "sha256": "778d5b3daf95ced4fd5596e6030aeaf20c192bb0d2fc15b7878ab620888135f4"
+    },
+    {
+      "path": "experiments/conditional_quantiles_seed42_v1/completion.json",
+      "source_path": "experiments/conditional_quantiles_seed42_v1/completion.json",
+      "bytes": 849,
+      "sha256": "91224745bdb7f0b3813cd0efd785bf427c87b078ed102e45ac83c6856f08544f"
+    },
+    {
+      "path": "experiments/conditional_quantiles_seed42_v1/decode_prediction_delta.py",
+      "source_path": "experiments/conditional_quantiles_seed42_v1/decode_prediction_delta.py",
+      "bytes": 914,
+      "sha256": "cd989a29a6c79747a053d805e36f30d7292c5f92e16a2e427373ed737e49c0e7"
+    },
+    {
+      "path": "experiments/conditional_quantiles_seed42_v1/fit_ledger.jsonl",
+      "source_path": "experiments/conditional_quantiles_seed42_v1/fit_ledger.jsonl",
+      "bytes": 286,
+      "sha256": "23470e43142e263dc271d5ebf16e29f22c081abbbed902b386d045b336366a07"
+    },
+    {
+      "path": "experiments/conditional_quantiles_seed42_v1/independent_metrics.json",
+      "source_path": "experiments/conditional_quantiles_seed42_v1/independent_metrics.json",
+      "bytes": 949,
+      "sha256": "9abd31975ba505cd1a7a469288c92d21a3c7ce7519ce9954d9e13c31ba90b231"
+    },
+    {
+      "path": "experiments/conditional_quantiles_seed42_v1/independent_recompute.py",
+      "source_path": "experiments/conditional_quantiles_seed42_v1/independent_recompute.py",
+      "bytes": 2460,
+      "sha256": "619a6da3c2e3955871b18563a3249601299d6b059eee3ffca865e8497310d41c"
+    },
+    {
+      "path": "experiments/conditional_quantiles_seed42_v1/metrics.json",
+      "source_path": "experiments/conditional_quantiles_seed42_v1/metrics.json",
+      "bytes": 640,
+      "sha256": "6c770ede80b911ed08d83df02e07dbacfe6ee2682a052f91302cc1eedb335e66"
+    },
+    {
+      "path": "experiments/conditional_quantiles_seed42_v1/per_cell_metrics.json",
+      "source_path": "experiments/conditional_quantiles_seed42_v1/per_cell_metrics.json",
+      "bytes": 7410,
+      "sha256": "9a67661b7e1a1ee2db134dfa731a6460f4055216804b694ce34120f1bce5652a"
+    },
+    {
+      "path": "experiments/conditional_quantiles_seed42_v1/prediction_delta.json",
+      "source_path": "experiments/conditional_quantiles_seed42_v1/prediction_delta.json",
+      "bytes": 34088,
+      "sha256": "67a86ce58ccd5f79e443ce9628846ebc70c6f114d1a42fd8d8cab3ab5f8e615d"
+    },
+    {
+      "path": "experiments/conditional_quantiles_seed42_v1/protocol.json",
+      "source_path": "experiments/conditional_quantiles_seed42_v1/protocol.json",
+      "bytes": 2792,
+      "sha256": "c05c7218c7079ab9408031f9957f9699835d63ffb4af10db42ecf08a4536a0ff"
+    },
+    {
+      "path": "experiments/conditional_quantiles_seed42_v1/root_decision.json",
+      "source_path": "experiments/conditional_quantiles_seed42_v1/root_decision.json",
+      "bytes": 1355,
+      "sha256": "960c823d51b08bed956b1c0ee5c751273ebd6ca7fbd8772d16009d54c58aace6"
+    },
+    {
+      "path": "experiments/conditional_quantiles_seed42_v1/runner.py",
+      "source_path": "experiments/conditional_quantiles_seed42_v1/runner.py",
+      "bytes": 8960,
+      "sha256": "eddc921082b012adb4bf6e033ab44ae88e137dd420068cd9b271e760e66ca91b"
     },
     {
       "path": "experiments/cpmlp_calb_recipe_adapt_seed2021_v1/RESULTS_ZH.md",
@@ -1248,70 +1338,10 @@
       "sha256": "c220bfef2aefe7f9e25dd453583d1641b7e0e1ac58a4a274c7ec142dbcaca088"
     },
     {
-      "path": "experiments/native_rul_mae_seed42_v1/ROOT_GO.json",
-      "source_path": "experiments/native_rul_mae_seed42_v1/ROOT_GO.json",
-      "bytes": 899,
-      "sha256": "8bc1fda869052fe2328517d0fce3dc9deb5336e1183e8812ab5e2c0de5ebc3a1"
-    },
-    {
-      "path": "experiments/native_rul_mae_seed42_v1/cohort.json",
-      "source_path": "experiments/native_rul_mae_seed42_v1/cohort.json",
-      "bytes": 2573,
-      "sha256": "42535de5825f6857e3aa69a596306a909a9a1b3ac087c43631032f6d293ef289"
-    },
-    {
-      "path": "experiments/native_rul_mae_seed42_v1/comparison.json",
-      "source_path": "experiments/native_rul_mae_seed42_v1/comparison.json",
-      "bytes": 269,
-      "sha256": "e5a141737976a7532a7fd80d2a906803de47c8eb52cbd97c19dd5ce9454abd82"
-    },
-    {
-      "path": "experiments/native_rul_mae_seed42_v1/completion.json",
-      "source_path": "experiments/native_rul_mae_seed42_v1/completion.json",
-      "bytes": 924,
-      "sha256": "5fb0b8083aa6ae96d568287015009b055253537e8ab36c4ed637101595013bfa"
-    },
-    {
       "path": "experiments/native_rul_mae_seed42_v1/decode_prediction_delta.py",
       "source_path": "experiments/native_rul_mae_seed42_v1/decode_prediction_delta.py",
       "bytes": 1059,
       "sha256": "1534ef85c5c9006d43c40b32e9e130819b0e55417deaf6d1004563fa5549eebe"
-    },
-    {
-      "path": "experiments/native_rul_mae_seed42_v1/failure_diagnosis.json",
-      "source_path": "experiments/native_rul_mae_seed42_v1/failure_diagnosis.json",
-      "bytes": 925,
-      "sha256": "0ee93ff3e4b2d5b12d7258589e5e505098a32fc0b35f0ba720c60ba9a3fedcb9"
-    },
-    {
-      "path": "experiments/native_rul_mae_seed42_v1/fit_ledger.jsonl",
-      "source_path": "experiments/native_rul_mae_seed42_v1/fit_ledger.jsonl",
-      "bytes": 109,
-      "sha256": "c64a04f9c77404909494fec8fe7aa17a2d89fbbd4d6ad03b0c55aa40a387f37d"
-    },
-    {
-      "path": "experiments/native_rul_mae_seed42_v1/independent_metric_recompute.py",
-      "source_path": "experiments/native_rul_mae_seed42_v1/independent_metric_recompute.py",
-      "bytes": 1944,
-      "sha256": "5c2347de9a6e63c765f50215b648482b0e0ec88f036c0b0a9b82801b673f2332"
-    },
-    {
-      "path": "experiments/native_rul_mae_seed42_v1/independent_metrics.json",
-      "source_path": "experiments/native_rul_mae_seed42_v1/independent_metrics.json",
-      "bytes": 1041,
-      "sha256": "b172e771f44374277f3ba8a5f704c8ebace17770a29aadc09f92f267de5fa7d5"
-    },
-    {
-      "path": "experiments/native_rul_mae_seed42_v1/metrics.json",
-      "source_path": "experiments/native_rul_mae_seed42_v1/metrics.json",
-      "bytes": 266,
-      "sha256": "d5a5804a37d4f398099ef8ad5409a304c4ff362faf71e5b8a941c1e2f0c3aade"
-    },
-    {
-      "path": "experiments/native_rul_mae_seed42_v1/per_cell_metrics.json",
-      "source_path": "experiments/native_rul_mae_seed42_v1/per_cell_metrics.json",
-      "bytes": 3710,
-      "sha256": "31ad3890ed3b15a41bc7317ffd704938aa5a955624530fa61a2de4762683425c"
     },
     {
       "path": "experiments/native_rul_mae_seed42_v1/prediction_delta.json",
@@ -1320,22 +1350,10 @@
       "sha256": "20580f159e03400c2ef99a21e0dd4856f4c012b4622dcceb55d6d2c5f6705f41"
     },
     {
-      "path": "experiments/native_rul_mae_seed42_v1/protocol.json",
-      "source_path": "experiments/native_rul_mae_seed42_v1/protocol.json",
-      "bytes": 1929,
-      "sha256": "e9ea8edc608b208c212db86c77926aa29589d938593a6b3edc48e30d80f48a2c"
-    },
-    {
       "path": "experiments/native_rul_mae_seed42_v1/root_decision.json",
       "source_path": "experiments/native_rul_mae_seed42_v1/root_decision.json",
       "bytes": 1488,
       "sha256": "ee61afb90bf58bccef73536145ab07922cd4eed63d8d5453951a36167310f8b3"
-    },
-    {
-      "path": "experiments/native_rul_mae_seed42_v1/runner.py",
-      "source_path": "experiments/native_rul_mae_seed42_v1/runner.py",
-      "bytes": 6800,
-      "sha256": "ae5732d80d99566abe39a330893009770502ceaf66a19cfc0be858b7b708b7c3"
     },
     {
       "path": "experiments/online_survival_observed_pilot_seed42_v1/RESULTS_ZH.md",
@@ -2190,6 +2208,12 @@
       "sha256": "f231ed562dcff152eae0670471fb06f0e8108ba04947f64113b46c2ca94fb691"
     },
     {
+      "path": "reports/conditional_quantiles_review_20261018_luna/review.json",
+      "source_path": "reports/conditional_quantiles_review_20261018_luna/review.json",
+      "bytes": 3161,
+      "sha256": "f4929c16de7612b67aff3f0379630db8828130dd2439b0a3ad1787b0c2db79c4"
+    },
+    {
       "path": "reports/cpmlp_recipe_error_diagnosis_20261018_root/DIAGNOSIS_ZH.md",
       "source_path": "reports/cpmlp_recipe_error_diagnosis_20261018_root/DIAGNOSIS_ZH.md",
       "bytes": 3315,
@@ -2478,60 +2502,6 @@
       "sha256": "45dae19edbfec0aca746a9363a21fb4fbaf7e7fa7229c58b975117d662eb0cd9"
     },
     {
-      "path": "reports/early_survival_conditioning_20261018_root/comparison.json",
-      "source_path": "reports/early_survival_conditioning_20261018_root/comparison.json",
-      "bytes": 592,
-      "sha256": "1863af3b97b719fec3ad6b93a51564ae2fa1c7081cbd5ac0bed12fef470fecdf"
-    },
-    {
-      "path": "reports/early_survival_conditioning_20261018_root/completion.json",
-      "source_path": "reports/early_survival_conditioning_20261018_root/completion.json",
-      "bytes": 677,
-      "sha256": "364d5f933f02f9b7e8e17a8a9b4d5be25c90821e7eef16ff2691673c65d21a4c"
-    },
-    {
-      "path": "reports/early_survival_conditioning_20261018_root/diagnose.py",
-      "source_path": "reports/early_survival_conditioning_20261018_root/diagnose.py",
-      "bytes": 4205,
-      "sha256": "a2aea4b553190a62b7b348da907fecced0e06a3a4591a6dbd1b57c999009f090"
-    },
-    {
-      "path": "reports/early_survival_conditioning_20261018_root/independent_metrics.json",
-      "source_path": "reports/early_survival_conditioning_20261018_root/independent_metrics.json",
-      "bytes": 631,
-      "sha256": "82d9362283750e7ac2fdb5bb4dd5f7645a0ef5fcc78441a53bf3a9a6cce80fcc"
-    },
-    {
-      "path": "reports/early_survival_conditioning_20261018_root/independent_recompute.py",
-      "source_path": "reports/early_survival_conditioning_20261018_root/independent_recompute.py",
-      "bytes": 1753,
-      "sha256": "9c9b354b85baf06cca37cc20d6964dbe1026860ed8a70d2e29b0079ed300b1ca"
-    },
-    {
-      "path": "reports/early_survival_conditioning_20261018_root/metrics.json",
-      "source_path": "reports/early_survival_conditioning_20261018_root/metrics.json",
-      "bytes": 406,
-      "sha256": "9cdd4a922ccc0ef0d76090e55608f0e2b39022db57d1b2bed93199c7981cfbfe"
-    },
-    {
-      "path": "reports/early_survival_conditioning_20261018_root/numeric_validation.json",
-      "source_path": "reports/early_survival_conditioning_20261018_root/numeric_validation.json",
-      "bytes": 256,
-      "sha256": "884bf1f599e0654e1ff8dbe87c009c0d66ad3e5c59fa16f662d14a564208048d"
-    },
-    {
-      "path": "reports/early_survival_conditioning_20261018_root/per_cell_metrics.json",
-      "source_path": "reports/early_survival_conditioning_20261018_root/per_cell_metrics.json",
-      "bytes": 5595,
-      "sha256": "7467c115b294eae7d144deff0cf0b3d3293f50f6f3d72efc4da8148b02ccca3e"
-    },
-    {
-      "path": "reports/early_survival_conditioning_20261018_root/protocol.json",
-      "source_path": "reports/early_survival_conditioning_20261018_root/protocol.json",
-      "bytes": 2010,
-      "sha256": "139ad658c5d69ed503472f56c65661d579cb021a9227c1f2e929f5edaeb39aa6"
-    },
-    {
       "path": "reports/early_survival_conditioning_20261018_root/root_decision.json",
       "source_path": "reports/early_survival_conditioning_20261018_root/root_decision.json",
       "bytes": 1397,
@@ -2544,112 +2514,16 @@
       "sha256": "98bc4138279e761d9118aa2bd1b8e0e9d261431e756d735b8401f02898d00a95"
     },
     {
-      "path": "reports/fixedearly_dynamic_20261018_root/comparison.json",
-      "source_path": "reports/fixedearly_dynamic_20261018_root/comparison.json",
-      "bytes": 292,
-      "sha256": "66f3280da58e384a4644cec832e51aa5a3e6f9e965c15bce8c023319a93aaf39"
-    },
-    {
-      "path": "reports/fixedearly_dynamic_20261018_root/completion.json",
-      "source_path": "reports/fixedearly_dynamic_20261018_root/completion.json",
-      "bytes": 557,
-      "sha256": "cecfa542a4fbb31aeeaa41d3c23eff79a0b40e04756a4e7baad29382c093046b"
-    },
-    {
-      "path": "reports/fixedearly_dynamic_20261018_root/diagnose.py",
-      "source_path": "reports/fixedearly_dynamic_20261018_root/diagnose.py",
-      "bytes": 4632,
-      "sha256": "6f9fa13bd146757b626c9bbc3136fdffaea3ab3c03860aefec9aafb224d36162"
-    },
-    {
-      "path": "reports/fixedearly_dynamic_20261018_root/independent_metrics.json",
-      "source_path": "reports/fixedearly_dynamic_20261018_root/independent_metrics.json",
-      "bytes": 602,
-      "sha256": "fc6b8495017d8a03c2a6f1c1628b62d756947af5034882fee59c69398b1658c7"
-    },
-    {
-      "path": "reports/fixedearly_dynamic_20261018_root/metrics.json",
-      "source_path": "reports/fixedearly_dynamic_20261018_root/metrics.json",
-      "bytes": 265,
-      "sha256": "53a67c50009af845689bdb48fb04b926102acb4b6e74be256a9b27488b0a06db"
-    },
-    {
-      "path": "reports/fixedearly_dynamic_20261018_root/per_cell_metrics.json",
-      "source_path": "reports/fixedearly_dynamic_20261018_root/per_cell_metrics.json",
-      "bytes": 4236,
-      "sha256": "d939953d1a727d7087b9bb09bf52083997f1dd0456e37c66e6dc626af925b27e"
-    },
-    {
-      "path": "reports/fixedearly_dynamic_20261018_root/phase_metrics.json",
-      "source_path": "reports/fixedearly_dynamic_20261018_root/phase_metrics.json",
-      "bytes": 14134,
-      "sha256": "3506351a809e7d5781315be6478fe56505b42c37b5379f59ced53ca4a9bff2df"
-    },
-    {
-      "path": "reports/fixedearly_dynamic_20261018_root/protocol.json",
-      "source_path": "reports/fixedearly_dynamic_20261018_root/protocol.json",
-      "bytes": 1669,
-      "sha256": "6fc80199b483b92140ce3bc8d7e0d0fd5d252a8c3288542338ecab90eae06332"
-    },
-    {
       "path": "reports/fixedearly_dynamic_20261018_root/root_decision.json",
       "source_path": "reports/fixedearly_dynamic_20261018_root/root_decision.json",
       "bytes": 1045,
       "sha256": "8195e84dcbd4397d36e6dc39c3dfca3d401496ad6f75b459ab0e76acfca3283e"
     },
     {
-      "path": "reports/fixedearly_dynamic_20261018_root/transition_audit.json",
-      "source_path": "reports/fixedearly_dynamic_20261018_root/transition_audit.json",
-      "bytes": 3915,
-      "sha256": "bc5d74221d5ce696509e0297917c7bc9d0db6d028eaf180d02aeb85520503ad8"
-    },
-    {
       "path": "reports/frozen_probability_audit_20261018_root/RESULTS_ZH.md",
       "source_path": "reports/frozen_probability_audit_20261018_root/RESULTS_ZH.md",
       "bytes": 1979,
       "sha256": "c98981aa8978dcceaf9753bda3c1cb16bb2363a879493cbf7953b1ea0f12cc84"
-    },
-    {
-      "path": "reports/frozen_probability_audit_20261018_root/completion.json",
-      "source_path": "reports/frozen_probability_audit_20261018_root/completion.json",
-      "bytes": 661,
-      "sha256": "35d15efa8573c38a2d618d5fe0b8678eb743ff9b2d629ef7afd5dbc7f92907ed"
-    },
-    {
-      "path": "reports/frozen_probability_audit_20261018_root/diagnose.py",
-      "source_path": "reports/frozen_probability_audit_20261018_root/diagnose.py",
-      "bytes": 3962,
-      "sha256": "efc7a9000fbcf2bfd6dccfb6cb75a1341df95f6559921269412dc84b5819fc25"
-    },
-    {
-      "path": "reports/frozen_probability_audit_20261018_root/export_cap_failure.json",
-      "source_path": "reports/frozen_probability_audit_20261018_root/export_cap_failure.json",
-      "bytes": 378,
-      "sha256": "6c72547411864873d700dd463f8519519c8cf942d0d690ace6adb915f5179259"
-    },
-    {
-      "path": "reports/frozen_probability_audit_20261018_root/independent_metrics.json",
-      "source_path": "reports/frozen_probability_audit_20261018_root/independent_metrics.json",
-      "bytes": 526,
-      "sha256": "795a213efe370c38d9dcf425292191947366d134cabdf5e98b636f2a0ebf3d4f"
-    },
-    {
-      "path": "reports/frozen_probability_audit_20261018_root/independent_recompute.py",
-      "source_path": "reports/frozen_probability_audit_20261018_root/independent_recompute.py",
-      "bytes": 1931,
-      "sha256": "a2ce5838768b8b841a39bb888d3d3b2316c13579bb60b27ff0dfe0e3bae27acc"
-    },
-    {
-      "path": "reports/frozen_probability_audit_20261018_root/protocol.json",
-      "source_path": "reports/frozen_probability_audit_20261018_root/protocol.json",
-      "bytes": 1451,
-      "sha256": "c1d453c2a50e42f9c8308db4db41a6e9f6e0f50e8af6cb0c1a734b3bf9da8810"
-    },
-    {
-      "path": "reports/frozen_probability_audit_20261018_root/results.json",
-      "source_path": "reports/frozen_probability_audit_20261018_root/results.json",
-      "bytes": 10548,
-      "sha256": "0915409542f1a0cd239b5208d677e029093770abeae64359024612ac90d361c0"
     },
     {
       "path": "reports/frozen_probability_audit_20261018_root/root_decision.json",
@@ -3234,12 +3108,6 @@
       "sha256": "02c65b52380c9d2fadc7b0b99e29b41f8e7cdbb44a5b70846c313b8df811b142"
     },
     {
-      "path": "reports/pbt_import_closure_static_v2_luna/audit.json",
-      "source_path": "reports/pbt_import_closure_static_v2_luna/audit.json",
-      "bytes": 870013,
-      "sha256": "1d32e8dd6337fd53a8485561cd5f10d78da76d0918ac4df2d4370d651bc56ba9"
-    },
-    {
       "path": "reports/pbt_import_closure_static_v2_luna/manifest.json",
       "source_path": "reports/pbt_import_closure_static_v2_luna/manifest.json",
       "bytes": 741,
@@ -3612,10 +3480,22 @@
       "sha256": "368f4d8a3b4b2cadb7132286956203064f1db79d7b6d17674d36ce0d01710b9f"
     },
     {
+      "path": "reports/saved_examples_lossless_20261018_root/completed_details_lossless.json",
+      "source_path": "reports/saved_examples_lossless_20261018_root/completed_details_lossless.json",
+      "bytes": 94975,
+      "sha256": "6c29524c80d7a39d5b6d3c9f8408389174d1c5e805cb45f16ae880f90c27e0fc"
+    },
+    {
       "path": "reports/saved_examples_lossless_20261018_root/decode.py",
       "source_path": "reports/saved_examples_lossless_20261018_root/decode.py",
       "bytes": 603,
       "sha256": "e47f47d002e1293b73d1bfd734cfe9e4e213054eea043da453ffbf35fe08af42"
+    },
+    {
+      "path": "reports/saved_examples_lossless_20261018_root/decode_completed_details.py",
+      "source_path": "reports/saved_examples_lossless_20261018_root/decode_completed_details.py",
+      "bytes": 640,
+      "sha256": "f60df09c734cc1e886cc6772e7eeb304d06a82d4d0f899cd36d62902029f58b1"
     },
     {
       "path": "reports/saved_examples_lossless_20261018_root/examples_lossless.json",

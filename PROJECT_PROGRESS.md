@@ -434,3 +434,11 @@
 - **最小验证**：全部4567独立erfc二分复算区间/Brier，最大差5.68e-14；概率[0,1]且区间有序。0fit/新模型推理/尺度估计/checkpoint/dev/test，旧预算不变。
 - **阻塞/风险**：动态lower-miss24.5237%、upper-miss13.4528%，不能把相对改善称概率已可靠，不能在cal调sigma救覆盖；cal暴露/event-only/物理serial限制保留。
 - **下一步**：fresh有界条件分位数基线，同42fit/10cal固定logRUL q.1/q.9两CPUfit、已有中位数不变；先冻结protocol、一次独立窄审及主控exactGO。禁止排序/clipping掩盖crossing、参数/seed救援或dev/test，尚未开始fit。
+
+
+## 2026-10-18：条件分位数两次真实fit完成，NO_GAIN
+- **已完成**：同42fit/10cal固定HGB直接logRUL q.1/.9两CPUfit，已有点中位数不变。coverage80 62.0234%→53.9283%，intervalscore264.570734→265.090803（恶化.1966%），宽度+10.7858%，gateFAIL。
+- **证据**：experiments/conditional_quantiles_seed42_v1/RESULTS_ZH.md、protocol/cohort/ROOT_GO/fit_ledger/completion、metrics/per_cell_metrics/comparison、原始CSV与2checkpoint、prediction_delta/decoder、independent_recompute/metrics、root_decision；独立窄审reports/conditional_quantiles_review_20261018_luna/review.json。
+- **最小验证**：CSV独立重算最大差5.68e-14；210median crossings（82lower、128upper），0端点倒置，均保留未排序/clipping；无损公开增量复原byteSHA通过。真实2fit0optimizer/新标量校准/checkpointload/dev/test；累计新科研CPU13=RUL11+aux2，神经4fit2580steps与旧MATR41另记。
+- **阻塞/风险**：7/10覆盖误差改善不抵总体恶化和crossing；score改善CI[-80.296374,87.645428]跨零。旧TimeMAE58.113698完全不变，非新方法收益/独立确认。cal暴露/物理serial/fullsourceSHA限制保留，不调参数/seed救援。
+- **下一步**：0fit固定b4c7/b2c6相反漏出case，42fit原age/SOH/robust20的fit-only medianIQR及跨sourcecell局部原标签支持诊断，判断外推或状态相近但寿命差异；不读dev/test、不新增模型推理/训练。

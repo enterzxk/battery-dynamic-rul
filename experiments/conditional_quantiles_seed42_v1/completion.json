@@ -1,0 +1,20 @@
+{
+  "status": "COMPLETE_TWO_QUANTILE_FITS",
+  "new_CPU_predictive_fits": 2,
+  "optimizer_steps": 0,
+  "development_reads": 0,
+  "test_reads": 0,
+  "new_scalar_estimates": 0,
+  "checkpoint_loads": 0,
+  "fit_origins": 22281,
+  "calibration_origins": 4567,
+  "checkpoint_sha256": {
+    "q10_hgb.pkl": "5be285a078761367ab83adc6d3a466dc52364fe18e9691cc3bd9d3d74bb1dc66",
+    "q90_hgb.pkl": "459093543fb451831acbb5ee4750ec2bb8914b49a905d4a001ed6f3a8d7cb84c"
+  },
+  "prediction_sha256": "fde7a87d1dce3c8f3e9bff3059551c8de8a912234f8db09b6869021ab36c5e00",
+  "runner_sha256": "eddc921082b012adb4bf6e033ab44ae88e137dd420068cd9b271e760e66ca91b",
+  "protocol_sha256": "c05c7218c7079ab9408031f9957f9699835d63ffb4af10db42ecf08a4536a0ff",
+  "GO_sha256": "9acecf7031534886d7308ea06d68acf2aa4fa93616ce0983ca91673359e93d43",
+  "elapsed_seconds": 0.8376906644552946
+}

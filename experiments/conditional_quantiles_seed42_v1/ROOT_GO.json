@@ -1,0 +1,23 @@
+{
+  "status": "GO_TWO_CONDITIONAL_QUANTILE_FITS_CAL_ONLY",
+  "owner": "01a14e92-ea7a-7cc3-8007-67b4d16a873a",
+  "issued_utc": "2026-10-18T15:01:42.086299+00:00",
+  "actual_cwd": "/home/yndx/zxk/rul",
+  "max_new_fits": 2,
+  "max_seconds": 180,
+  "quantiles": [
+    0.1,
+    0.9
+  ],
+  "development_access": false,
+  "test_access": false,
+  "new_scalar_estimates": 0,
+  "global_new_fits_allowed_remains": false,
+  "review_path": "/home/yndx/zxk/rul/reports/conditional_quantiles_review_20261018_luna/review.json",
+  "review_sha256": "f4929c16de7612b67aff3f0379630db8828130dd2439b0a3ad1787b0c2db79c4",
+  "reviewer_requested_model": "gpt-6-luna/high",
+  "scope": "Fixed42fit10cal directconditional bounds only; savedmedian unchanged; no reorder/clipping or rescue",
+  "runner.py_sha256": "eddc921082b012adb4bf6e033ab44ae88e137dd420068cd9b271e760e66ca91b",
+  "protocol.json_sha256": "c05c7218c7079ab9408031f9957f9699835d63ffb4af10db42ecf08a4536a0ff",
+  "cohort.json_sha256": "42535de5825f6857e3aa69a596306a909a9a1b3ac087c43631032f6d293ef289"
+}

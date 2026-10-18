@@ -1,0 +1,29 @@
+{
+  "decision": "NO_GAIN_DIRECT_CONDITIONAL_QUANTILE_BASELINE",
+  "gate_pass": false,
+  "comparison": {
+    "interval_score_relative_reduction": -0.0019657110357385044,
+    "absolute_coverage_error_reduction": -0.080951738514638,
+    "width_ratio": 1.1078578429410095,
+    "coverage_error_cells_improved": 7,
+    "point_MAE_unchanged": true,
+    "lower_above_median": 82,
+    "upper_below_median": 128,
+    "lower_ge_upper": 0,
+    "any_crossing_origins": 210,
+    "pairedcell_raw_score_difference_CI95": [
+      -80.29637426808351,
+      87.64542781986191
+    ],
+    "valid_allorigin_interval_score": true,
+    "gate_pass": false
+  },
+  "new_CPU_fits": 2,
+  "optimizer_steps": 0,
+  "dev_test_reads": 0,
+  "GO_consumed": true,
+  "review_sha256": "f4929c16de7612b67aff3f0379630db8828130dd2439b0a3ad1787b0c2db79c4",
+  "prediction_sha256": "fde7a87d1dce3c8f3e9bff3059551c8de8a912234f8db09b6869021ab36c5e00",
+  "independent_metrics_sha256": "9abd31975ba505cd1a7a469288c92d21a3c7ce7519ce9954d9e13c31ba90b231",
+  "next_action": "0fit local training-support diagnosis on fixed2 opposite miss cases b4c7 and b2c6: original age/SOH/robust20 fit-only medianIQR, nearestsourcecell training state/label support. No parameter/gate tuning, no new model inference/devtest; explain covariate extrapolation vs conditional-life heterogeneity before any model expansion."
+}
