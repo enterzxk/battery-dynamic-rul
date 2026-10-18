@@ -1,0 +1,556 @@
+{
+  "status": "COMPLETE_PARAMETER_FREE_PERSISTENT_STATE_DIAGNOSTIC",
+  "cells": 10,
+  "origins": 4367,
+  "summary": {
+    "instant_learned": {
+      "cell_equal_sign_accuracy": 0.5320194052724035,
+      "equal_cell_global_balanced_sign_accuracy": 0.5347257513474457,
+      "mean_state_error_direction_agree_cells": 8,
+      "median_within_cell_rho": -0.36977503909142617,
+      "between_cell_mean_state_mean_error_rho": 0.3696969696969697,
+      "mean_within_cell_balanced_sign_accuracy": 0.430283560834569
+    },
+    "cumulative_learned": {
+      "cell_equal_sign_accuracy": 0.4931930866565879,
+      "equal_cell_global_balanced_sign_accuracy": 0.5161945449052687,
+      "mean_state_error_direction_agree_cells": 5,
+      "median_within_cell_rho": -0.5596652456707665,
+      "between_cell_mean_state_mean_error_rho": 0.3696969696969697,
+      "mean_within_cell_balanced_sign_accuracy": 0.39563419191248184
+    },
+    "cumulative_slope": {
+      "cell_equal_sign_accuracy": 0.6195903806080821,
+      "equal_cell_global_balanced_sign_accuracy": 0.5202408900065757,
+      "mean_state_error_direction_agree_cells": 6,
+      "median_within_cell_rho": -0.4529180891948144,
+      "between_cell_mean_state_mean_error_rho": 0.406060606060606,
+      "mean_within_cell_balanced_sign_accuracy": 0.5090056734951065
+    },
+    "cumulative_observed": {
+      "cell_equal_sign_accuracy": 0.6089620008154979,
+      "equal_cell_global_balanced_sign_accuracy": 0.5,
+      "mean_state_error_direction_agree_cells": 6,
+      "median_within_cell_rho": -0.4459230231838467,
+      "between_cell_mean_state_mean_error_rho": -0.04242424242424241,
+      "mean_within_cell_balanced_sign_accuracy": 0.5
+    }
+  },
+  "per_cell": [
+    {
+      "cell_id": "MATR_b2c1",
+      "origins": 28,
+      "mean_remaining_error": -2.1825709947716025,
+      "signals": {
+        "instant_learned": {
+          "mean_state": -0.9389838783767362,
+          "mean_state_sign_agrees_mean_error": true,
+          "sign_accuracy": 0.5714285714285714,
+          "within_cell_balanced_sign_accuracy": 0.34782608695652173,
+          "within_cell_rho": -0.7723043240284619,
+          "equal_cell_positive_mass": 0.17857142857142858,
+          "equal_cell_negative_mass": 0.8214285714285714,
+          "equal_cell_correct_positive_mass": 0.0,
+          "equal_cell_correct_negative_mass": 0.5714285714285714
+        },
+        "cumulative_learned": {
+          "mean_state": 0.25441900056100686,
+          "mean_state_sign_agrees_mean_error": false,
+          "sign_accuracy": 0.25,
+          "within_cell_balanced_sign_accuracy": 0.15217391304347827,
+          "within_cell_rho": -0.8357963875205253,
+          "equal_cell_positive_mass": 0.17857142857142858,
+          "equal_cell_negative_mass": 0.8214285714285714,
+          "equal_cell_correct_positive_mass": 0.0,
+          "equal_cell_correct_negative_mass": 0.25
+        },
+        "cumulative_slope": {
+          "mean_state": -5.324696580855191,
+          "mean_state_sign_agrees_mean_error": true,
+          "sign_accuracy": 0.8214285714285714,
+          "within_cell_balanced_sign_accuracy": 0.5,
+          "within_cell_rho": -0.7328954570333881,
+          "equal_cell_positive_mass": 0.17857142857142858,
+          "equal_cell_negative_mass": 0.8214285714285714,
+          "equal_cell_correct_positive_mass": 0.0,
+          "equal_cell_correct_negative_mass": 0.8214285714285714
+        },
+        "cumulative_observed": {
+          "mean_state": -32.317340133668516,
+          "mean_state_sign_agrees_mean_error": true,
+          "sign_accuracy": 0.8214285714285714,
+          "within_cell_balanced_sign_accuracy": 0.5,
+          "within_cell_rho": -0.9053092501368363,
+          "equal_cell_positive_mass": 0.17857142857142858,
+          "equal_cell_negative_mass": 0.8214285714285714,
+          "equal_cell_correct_positive_mass": 0.0,
+          "equal_cell_correct_negative_mass": 0.8214285714285714
+        }
+      }
+    },
+    {
+      "cell_id": "MATR_b2c21",
+      "origins": 369,
+      "mean_remaining_error": 11.131746170027238,
+      "signals": {
+        "instant_learned": {
+          "mean_state": 0.3471875788385266,
+          "mean_state_sign_agrees_mean_error": true,
+          "sign_accuracy": 0.4878048780487805,
+          "within_cell_balanced_sign_accuracy": 0.4200429249190451,
+          "within_cell_rho": -0.3405794713058764,
+          "equal_cell_positive_mass": 0.7344173441734417,
+          "equal_cell_negative_mass": 0.26558265582655827,
+          "equal_cell_correct_positive_mass": 0.4146341463414634,
+          "equal_cell_correct_negative_mass": 0.07317073170731707
+        },
+        "cumulative_learned": {
+          "mean_state": -0.04050732720434872,
+          "mean_state_sign_agrees_mean_error": false,
+          "sign_accuracy": 0.2845528455284553,
+          "within_cell_balanced_sign_accuracy": 0.2881805858874915,
+          "within_cell_rho": -0.5264812797951716,
+          "equal_cell_positive_mass": 0.7344173441734417,
+          "equal_cell_negative_mass": 0.26558265582655827,
+          "equal_cell_correct_positive_mass": 0.20596205962059622,
+          "equal_cell_correct_negative_mass": 0.07859078590785908
+        },
+        "cumulative_slope": {
+          "mean_state": -0.5472650445092724,
+          "mean_state_sign_agrees_mean_error": false,
+          "sign_accuracy": 0.26558265582655827,
+          "within_cell_balanced_sign_accuracy": 0.5,
+          "within_cell_rho": 0.38069153458867144,
+          "equal_cell_positive_mass": 0.7344173441734417,
+          "equal_cell_negative_mass": 0.26558265582655827,
+          "equal_cell_correct_positive_mass": 0.0,
+          "equal_cell_correct_negative_mass": 0.26558265582655827
+        },
+        "cumulative_observed": {
+          "mean_state": -4.095905177061312,
+          "mean_state_sign_agrees_mean_error": false,
+          "sign_accuracy": 0.26558265582655827,
+          "within_cell_balanced_sign_accuracy": 0.5,
+          "within_cell_rho": 0.5696282709008054,
+          "equal_cell_positive_mass": 0.7344173441734417,
+          "equal_cell_negative_mass": 0.26558265582655827,
+          "equal_cell_correct_positive_mass": 0.0,
+          "equal_cell_correct_negative_mass": 0.26558265582655827
+        }
+      }
+    },
+    {
+      "cell_id": "MATR_b2c24",
+      "origins": 375,
+      "mean_remaining_error": -3.672229977779601,
+      "signals": {
+        "instant_learned": {
+          "mean_state": 0.004871882100117413,
+          "mean_state_sign_agrees_mean_error": false,
+          "sign_accuracy": 0.392,
+          "within_cell_balanced_sign_accuracy": 0.36378848728246316,
+          "within_cell_rho": -0.2994406815019166,
+          "equal_cell_positive_mass": 0.336,
+          "equal_cell_negative_mass": 0.664,
+          "equal_cell_correct_positive_mass": 0.09333333333333334,
+          "equal_cell_correct_negative_mass": 0.2986666666666667
+        },
+        "cumulative_learned": {
+          "mean_state": -0.07939887692027531,
+          "mean_state_sign_agrees_mean_error": true,
+          "sign_accuracy": 0.6426666666666667,
+          "within_cell_balanced_sign_accuracy": 0.4898164084911073,
+          "within_cell_rho": -0.10119399249061328,
+          "equal_cell_positive_mass": 0.336,
+          "equal_cell_negative_mass": 0.664,
+          "equal_cell_correct_positive_mass": 0.008,
+          "equal_cell_correct_negative_mass": 0.6346666666666667
+        },
+        "cumulative_slope": {
+          "mean_state": -0.4946612135721686,
+          "mean_state_sign_agrees_mean_error": true,
+          "sign_accuracy": 0.6533333333333333,
+          "within_cell_balanced_sign_accuracy": 0.49392809332568366,
+          "within_cell_rho": -0.17294072135624075,
+          "equal_cell_positive_mass": 0.336,
+          "equal_cell_negative_mass": 0.664,
+          "equal_cell_correct_positive_mass": 0.0026666666666666666,
+          "equal_cell_correct_negative_mass": 0.6506666666666666
+        },
+        "cumulative_observed": {
+          "mean_state": -2.9786977124409217,
+          "mean_state_sign_agrees_mean_error": true,
+          "sign_accuracy": 0.664,
+          "within_cell_balanced_sign_accuracy": 0.5,
+          "within_cell_rho": -0.11078438957788145,
+          "equal_cell_positive_mass": 0.336,
+          "equal_cell_negative_mass": 0.664,
+          "equal_cell_correct_positive_mass": 0.0,
+          "equal_cell_correct_negative_mass": 0.664
+        }
+      }
+    },
+    {
+      "cell_id": "MATR_b2c41",
+      "origins": 309,
+      "mean_remaining_error": -30.13340945102081,
+      "signals": {
+        "instant_learned": {
+          "mean_state": -0.28860724612787914,
+          "mean_state_sign_agrees_mean_error": true,
+          "sign_accuracy": 0.6828478964401294,
+          "within_cell_balanced_sign_accuracy": 0.5920195439739413,
+          "within_cell_rho": -0.06130577846832152,
+          "equal_cell_positive_mass": 0.006472491909385114,
+          "equal_cell_negative_mass": 0.9935275080906149,
+          "equal_cell_correct_positive_mass": 0.003236245954692557,
+          "equal_cell_correct_negative_mass": 0.6796116504854369
+        },
+        "cumulative_learned": {
+          "mean_state": -0.28982390316878426,
+          "mean_state_sign_agrees_mean_error": true,
+          "sign_accuracy": 0.9935275080906149,
+          "within_cell_balanced_sign_accuracy": 0.5,
+          "within_cell_rho": -0.5928492115463614,
+          "equal_cell_positive_mass": 0.006472491909385114,
+          "equal_cell_negative_mass": 0.9935275080906149,
+          "equal_cell_correct_positive_mass": 0.0,
+          "equal_cell_correct_negative_mass": 0.9935275080906149
+        },
+        "cumulative_slope": {
+          "mean_state": -0.7410062903357587,
+          "mean_state_sign_agrees_mean_error": true,
+          "sign_accuracy": 0.9935275080906149,
+          "within_cell_balanced_sign_accuracy": 0.5,
+          "within_cell_rho": -0.8330784467646352,
+          "equal_cell_positive_mass": 0.006472491909385114,
+          "equal_cell_negative_mass": 0.9935275080906149,
+          "equal_cell_correct_positive_mass": 0.0,
+          "equal_cell_correct_negative_mass": 0.9935275080906149
+        },
+        "cumulative_observed": {
+          "mean_state": -3.5041668498157614,
+          "mean_state_sign_agrees_mean_error": true,
+          "sign_accuracy": 0.9935275080906149,
+          "within_cell_balanced_sign_accuracy": 0.5,
+          "within_cell_rho": -0.781061656789812,
+          "equal_cell_positive_mass": 0.006472491909385114,
+          "equal_cell_negative_mass": 0.9935275080906149,
+          "equal_cell_correct_positive_mass": 0.0,
+          "equal_cell_correct_negative_mass": 0.9935275080906149
+        }
+      }
+    },
+    {
+      "cell_id": "MATR_b2c6",
+      "origins": 391,
+      "mean_remaining_error": 62.7597460694975,
+      "signals": {
+        "instant_learned": {
+          "mean_state": -1.2171420253461085,
+          "mean_state_sign_agrees_mean_error": false,
+          "sign_accuracy": 0.45268542199488493,
+          "within_cell_balanced_sign_accuracy": 0.7242268041237113,
+          "within_cell_rho": 0.6547874668261954,
+          "equal_cell_positive_mass": 0.9923273657289002,
+          "equal_cell_negative_mass": 0.0076726342710997444,
+          "equal_cell_correct_positive_mass": 0.44501278772378516,
+          "equal_cell_correct_negative_mass": 0.0076726342710997444
+        },
+        "cumulative_learned": {
+          "mean_state": -0.02424697129015823,
+          "mean_state_sign_agrees_mean_error": false,
+          "sign_accuracy": 0.5959079283887468,
+          "within_cell_balanced_sign_accuracy": 0.7963917525773196,
+          "within_cell_rho": 0.49129451111548306,
+          "equal_cell_positive_mass": 0.9923273657289002,
+          "equal_cell_negative_mass": 0.0076726342710997444,
+          "equal_cell_correct_positive_mass": 0.5882352941176471,
+          "equal_cell_correct_negative_mass": 0.0076726342710997444
+        },
+        "cumulative_slope": {
+          "mean_state": -0.17848053226832442,
+          "mean_state_sign_agrees_mean_error": false,
+          "sign_accuracy": 0.2071611253196931,
+          "within_cell_balanced_sign_accuracy": 0.6005154639175257,
+          "within_cell_rho": 0.08085414767913855,
+          "equal_cell_positive_mass": 0.9923273657289002,
+          "equal_cell_negative_mass": 0.0076726342710997444,
+          "equal_cell_correct_positive_mass": 0.19948849104859334,
+          "equal_cell_correct_negative_mass": 0.0076726342710997444
+        },
+        "cumulative_observed": {
+          "mean_state": -6.2663184844846755,
+          "mean_state_sign_agrees_mean_error": false,
+          "sign_accuracy": 0.0076726342710997444,
+          "within_cell_balanced_sign_accuracy": 0.5,
+          "within_cell_rho": 0.007735870267839578,
+          "equal_cell_positive_mass": 0.9923273657289002,
+          "equal_cell_negative_mass": 0.0076726342710997444,
+          "equal_cell_correct_positive_mass": 0.0,
+          "equal_cell_correct_negative_mass": 0.0076726342710997444
+        }
+      }
+    },
+    {
+      "cell_id": "MATR_b4c14",
+      "origins": 488,
+      "mean_remaining_error": -65.01119722991959,
+      "signals": {
+        "instant_learned": {
+          "mean_state": -0.14901452258505624,
+          "mean_state_sign_agrees_mean_error": true,
+          "sign_accuracy": 0.3709016393442623,
+          "within_cell_balanced_sign_accuracy": 0.2620067298868155,
+          "within_cell_rho": -0.5636212654430048,
+          "equal_cell_positive_mass": 0.0430327868852459,
+          "equal_cell_negative_mass": 0.9569672131147541,
+          "equal_cell_correct_positive_mass": 0.006147540983606557,
+          "equal_cell_correct_negative_mass": 0.36475409836065575
+        },
+        "cumulative_learned": {
+          "mean_state": 0.23697312235279652,
+          "mean_state_sign_agrees_mean_error": false,
+          "sign_accuracy": 0.045081967213114756,
+          "within_cell_balanced_sign_accuracy": 0.15998776384215355,
+          "within_cell_rho": -0.911285704284442,
+          "equal_cell_positive_mass": 0.0430327868852459,
+          "equal_cell_negative_mass": 0.9569672131147541,
+          "equal_cell_correct_positive_mass": 0.012295081967213115,
+          "equal_cell_correct_negative_mass": 0.03278688524590164
+        },
+        "cumulative_slope": {
+          "mean_state": -0.23641244695260377,
+          "mean_state_sign_agrees_mean_error": true,
+          "sign_accuracy": 0.8688524590163934,
+          "within_cell_balanced_sign_accuracy": 0.4539614561027837,
+          "within_cell_rho": -0.8948986636559397,
+          "equal_cell_positive_mass": 0.0430327868852459,
+          "equal_cell_negative_mass": 0.9569672131147541,
+          "equal_cell_correct_positive_mass": 0.0,
+          "equal_cell_correct_negative_mass": 0.8688524590163934
+        },
+        "cumulative_observed": {
+          "mean_state": -1.5010723183694503,
+          "mean_state_sign_agrees_mean_error": true,
+          "sign_accuracy": 0.9569672131147541,
+          "within_cell_balanced_sign_accuracy": 0.5,
+          "within_cell_rho": -0.9069139681399586,
+          "equal_cell_positive_mass": 0.0430327868852459,
+          "equal_cell_negative_mass": 0.9569672131147541,
+          "equal_cell_correct_positive_mass": 0.0,
+          "equal_cell_correct_negative_mass": 0.9569672131147541
+        }
+      }
+    },
+    {
+      "cell_id": "MATR_b4c19",
+      "origins": 872,
+      "mean_remaining_error": 83.54872134447662,
+      "signals": {
+        "instant_learned": {
+          "mean_state": 0.32123783714646087,
+          "mean_state_sign_agrees_mean_error": true,
+          "sign_accuracy": 0.6192660550458715,
+          "within_cell_balanced_sign_accuracy": 0.37407057648680625,
+          "within_cell_rho": -0.39897060687697594,
+          "equal_cell_positive_mass": 0.8589449541284404,
+          "equal_cell_negative_mass": 0.14105504587155962,
+          "equal_cell_correct_positive_mass": 0.6146788990825688,
+          "equal_cell_correct_negative_mass": 0.0045871559633027525
+        },
+        "cumulative_learned": {
+          "mean_state": 0.3029472699167379,
+          "mean_state_sign_agrees_mean_error": true,
+          "sign_accuracy": 0.8589449541284404,
+          "within_cell_balanced_sign_accuracy": 0.5,
+          "within_cell_rho": 0.08401035513887031,
+          "equal_cell_positive_mass": 0.8589449541284404,
+          "equal_cell_negative_mass": 0.14105504587155962,
+          "equal_cell_correct_positive_mass": 0.8589449541284404,
+          "equal_cell_correct_negative_mass": 0.0
+        },
+        "cumulative_slope": {
+          "mean_state": -0.10413229872180654,
+          "mean_state_sign_agrees_mean_error": false,
+          "sign_accuracy": 0.14105504587155962,
+          "within_cell_balanced_sign_accuracy": 0.5,
+          "within_cell_rho": 0.0054014426119661785,
+          "equal_cell_positive_mass": 0.8589449541284404,
+          "equal_cell_negative_mass": 0.14105504587155962,
+          "equal_cell_correct_positive_mass": 0.0,
+          "equal_cell_correct_negative_mass": 0.14105504587155962
+        },
+        "cumulative_observed": {
+          "mean_state": -1.062707674256758,
+          "mean_state_sign_agrees_mean_error": false,
+          "sign_accuracy": 0.14105504587155962,
+          "within_cell_balanced_sign_accuracy": 0.5,
+          "within_cell_rho": 0.7267319304936948,
+          "equal_cell_positive_mass": 0.8589449541284404,
+          "equal_cell_negative_mass": 0.14105504587155962,
+          "equal_cell_correct_positive_mass": 0.0,
+          "equal_cell_correct_negative_mass": 0.14105504587155962
+        }
+      }
+    },
+    {
+      "cell_id": "MATR_b4c26",
+      "origins": 357,
+      "mean_remaining_error": -93.24698996056418,
+      "signals": {
+        "instant_learned": {
+          "mean_state": -0.7902865819824555,
+          "mean_state_sign_agrees_mean_error": true,
+          "sign_accuracy": 0.5966386554621849,
+          "within_cell_balanced_sign_accuracy": 0.2991573033707865,
+          "within_cell_rho": -0.6756126341064328,
+          "equal_cell_positive_mass": 0.0028011204481792717,
+          "equal_cell_negative_mass": 0.9971988795518207,
+          "equal_cell_correct_positive_mass": 0.0,
+          "equal_cell_correct_negative_mass": 0.5966386554621849
+        },
+        "cumulative_learned": {
+          "mean_state": -0.039677269677028525,
+          "mean_state_sign_agrees_mean_error": true,
+          "sign_accuracy": 0.3473389355742297,
+          "within_cell_balanced_sign_accuracy": 0.17415730337078653,
+          "within_cell_rho": -0.9012384817086713,
+          "equal_cell_positive_mass": 0.0028011204481792717,
+          "equal_cell_negative_mass": 0.9971988795518207,
+          "equal_cell_correct_positive_mass": 0.0,
+          "equal_cell_correct_negative_mass": 0.3473389355742297
+        },
+        "cumulative_slope": {
+          "mean_state": -0.3814040356170106,
+          "mean_state_sign_agrees_mean_error": true,
+          "sign_accuracy": 0.9971988795518207,
+          "within_cell_balanced_sign_accuracy": 0.5,
+          "within_cell_rho": -0.8206733449766825,
+          "equal_cell_positive_mass": 0.0028011204481792717,
+          "equal_cell_negative_mass": 0.9971988795518207,
+          "equal_cell_correct_positive_mass": 0.0,
+          "equal_cell_correct_negative_mass": 0.9971988795518207
+        },
+        "cumulative_observed": {
+          "mean_state": -1.7251873483365503,
+          "mean_state_sign_agrees_mean_error": true,
+          "sign_accuracy": 0.9971988795518207,
+          "within_cell_balanced_sign_accuracy": 0.5,
+          "within_cell_rho": -0.924091235891758,
+          "equal_cell_positive_mass": 0.0028011204481792717,
+          "equal_cell_negative_mass": 0.9971988795518207,
+          "equal_cell_correct_positive_mass": 0.0,
+          "equal_cell_correct_negative_mass": 0.9971988795518207
+        }
+      }
+    },
+    {
+      "cell_id": "MATR_b4c29",
+      "origins": 768,
+      "mean_remaining_error": 39.917281664279976,
+      "signals": {
+        "instant_learned": {
+          "mean_state": 0.3854681251939592,
+          "mean_state_sign_agrees_mean_error": true,
+          "sign_accuracy": 0.6197916666666666,
+          "within_cell_balanced_sign_accuracy": 0.48941359051102984,
+          "within_cell_rho": -0.17461252676650454,
+          "equal_cell_positive_mass": 0.7578125,
+          "equal_cell_negative_mass": 0.2421875,
+          "equal_cell_correct_positive_mass": 0.5625,
+          "equal_cell_correct_negative_mass": 0.057291666666666664
+        },
+        "cumulative_learned": {
+          "mean_state": 0.3346387001560396,
+          "mean_state_sign_agrees_mean_error": true,
+          "sign_accuracy": 0.7578125,
+          "within_cell_balanced_sign_accuracy": 0.5,
+          "within_cell_rho": 0.33880349486201794,
+          "equal_cell_positive_mass": 0.7578125,
+          "equal_cell_negative_mass": 0.2421875,
+          "equal_cell_correct_positive_mass": 0.7578125,
+          "equal_cell_correct_negative_mass": 0.0
+        },
+        "cumulative_slope": {
+          "mean_state": -0.10477676474869163,
+          "mean_state_sign_agrees_mean_error": false,
+          "sign_accuracy": 0.2916666666666667,
+          "within_cell_balanced_sign_accuracy": 0.5326460481099656,
+          "within_cell_rho": 0.23985868959840495,
+          "equal_cell_positive_mass": 0.7578125,
+          "equal_cell_negative_mass": 0.2421875,
+          "equal_cell_correct_positive_mass": 0.049479166666666664,
+          "equal_cell_correct_negative_mass": 0.2421875
+        },
+        "cumulative_observed": {
+          "mean_state": -1.1613749205504673,
+          "mean_state_sign_agrees_mean_error": false,
+          "sign_accuracy": 0.2421875,
+          "within_cell_balanced_sign_accuracy": 0.5,
+          "within_cell_rho": 0.5668351193917497,
+          "equal_cell_positive_mass": 0.7578125,
+          "equal_cell_negative_mass": 0.2421875,
+          "equal_cell_correct_positive_mass": 0.0,
+          "equal_cell_correct_negative_mass": 0.2421875
+        }
+      }
+    },
+    {
+      "cell_id": "MATR_b4c7",
+      "origins": 410,
+      "mean_remaining_error": -120.2719316611937,
+      "signals": {
+        "instant_learned": {
+          "mean_state": -1.0761293690854425,
+          "mean_state_sign_agrees_mean_error": true,
+          "sign_accuracy": 0.526829268292683,
+          "within_cell_balanced_sign_accuracy": null,
+          "within_cell_rho": -0.796994192881982,
+          "equal_cell_positive_mass": 0.0,
+          "equal_cell_negative_mass": 1.0,
+          "equal_cell_correct_positive_mass": 0.0,
+          "equal_cell_correct_negative_mass": 0.526829268292683
+        },
+        "cumulative_learned": {
+          "mean_state": 0.14622507569937587,
+          "mean_state_sign_agrees_mean_error": false,
+          "sign_accuracy": 0.15609756097560976,
+          "within_cell_balanced_sign_accuracy": null,
+          "within_cell_rho": -0.9444621701584388,
+          "equal_cell_positive_mass": 0.0,
+          "equal_cell_negative_mass": 1.0,
+          "equal_cell_correct_positive_mass": 0.0,
+          "equal_cell_correct_negative_mass": 0.15609756097560976
+        },
+        "cumulative_slope": {
+          "mean_state": -0.290426310737147,
+          "mean_state_sign_agrees_mean_error": true,
+          "sign_accuracy": 0.9560975609756097,
+          "within_cell_balanced_sign_accuracy": null,
+          "within_cell_rho": -0.8966490565446408,
+          "equal_cell_positive_mass": 0.0,
+          "equal_cell_negative_mass": 1.0,
+          "equal_cell_correct_positive_mass": 0.0,
+          "equal_cell_correct_negative_mass": 0.9560975609756097
+        },
+        "cumulative_observed": {
+          "mean_state": -1.3985122271419392,
+          "mean_state_sign_agrees_mean_error": true,
+          "sign_accuracy": 1.0,
+          "within_cell_balanced_sign_accuracy": null,
+          "within_cell_rho": -0.9501948546871116,
+          "equal_cell_positive_mass": 0.0,
+          "equal_cell_negative_mass": 1.0,
+          "equal_cell_correct_positive_mass": 0.0,
+          "equal_cell_correct_negative_mass": 1.0
+        }
+      }
+    }
+  ],
+  "minimal_validation": "manual cumulative [1,-1,3] -> [1,0,1] and10real cell prefix equality; no future observations used by cumulative state",
+  "new_fits": 0,
+  "new_forwards": 0,
+  "dev_test_reads": 0,
+  "limits": "New exploratory between-cell hypothesis after instantFAIL; no independent validation/performance/novelty/training permission. Per-cell within balanced screen remains reported; do not substitute global metric for old gate."
+}

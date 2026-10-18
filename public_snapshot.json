@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-18T09:51:17.100482+00:00",
-  "content_sha256": "5cbbef18538882e4ef4dcac5508670d6ff5bc5305406b59709e099ef84c6a7af",
-  "file_count": 530,
+  "snapshot_utc": "2026-10-18T10:02:43.478509+00:00",
+  "content_sha256": "98e6c5bbf3bb6fe6a626e766281ab5c8a0c5e827d23085fe8acb6e0d479d0b48",
+  "file_count": 541,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,8 +14,8 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 64647,
-      "sha256": "14aafadbd1198b96e9b31f67cdde8749d957e266ddd689c1e5b6551cb01bd33c"
+      "bytes": 66409,
+      "sha256": "e57a144cf34731be4928ff8907b18227ddf0842379aab5ec43c0ca04a1361df7"
     },
     {
       "path": "README.md",
@@ -32,8 +32,8 @@
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 15202,
-      "sha256": "04c4be2fa0b49b34fd44f640a8b23731b4254aeabcf3781f3a456808ba5d9e4b"
+      "bytes": 15508,
+      "sha256": "8065a0255fea621feaa6233fcf098d4f3f46f28f1daf05700f7b1df062230e27"
     },
     {
       "path": "automation/bin/matr_raw_batch2_asset_worker_v1.py",
@@ -158,8 +158,8 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 51908,
-      "sha256": "1a882f404406a5c6ef81cc789af48baefc40dca42971e41c216e23fc6c808a85"
+      "bytes": 53670,
+      "sha256": "552fcf1d59d3037f7a89f2d1336c972fabf29dd6a4b5295c88cfaed2f9847d52"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
@@ -2166,6 +2166,42 @@
       "sha256": "21d5356c053ebe46bbe873e8563415ad6c3fd587a8426ef82772c721f532b842"
     },
     {
+      "path": "reports/learned_capacity_feedback_20261018_root/RESULTS_ZH.md",
+      "source_path": "reports/learned_capacity_feedback_20261018_root/RESULTS_ZH.md",
+      "bytes": 2104,
+      "sha256": "aae71e244f6fdbef3b366ccab51d3de98daaa203d5d0c5a8e61466d995fcbf90"
+    },
+    {
+      "path": "reports/learned_capacity_feedback_20261018_root/diagnose.py",
+      "source_path": "reports/learned_capacity_feedback_20261018_root/diagnose.py",
+      "bytes": 5373,
+      "sha256": "1fba42fe2fc31604bfebe9ab6fa4b1a35a301afbe43cb8dfd85a6cafb4bd823c"
+    },
+    {
+      "path": "reports/learned_capacity_feedback_20261018_root/diagnostic.json",
+      "source_path": "reports/learned_capacity_feedback_20261018_root/diagnostic.json",
+      "bytes": 11991,
+      "sha256": "ed446e5674464142658e26643fedbe85ba7f1a18b46f9b3cfaedd0ac9962d6f7"
+    },
+    {
+      "path": "reports/learned_capacity_feedback_20261018_root/minimal_validation.json",
+      "source_path": "reports/learned_capacity_feedback_20261018_root/minimal_validation.json",
+      "bytes": 391,
+      "sha256": "1876931b5f9c7689da6fe371c0521477c6908f01869db35dd98f1eb97e341041"
+    },
+    {
+      "path": "reports/learned_capacity_feedback_20261018_root/protocol.json",
+      "source_path": "reports/learned_capacity_feedback_20261018_root/protocol.json",
+      "bytes": 1358,
+      "sha256": "b8e7eb2b37204994462e6b11b62fb5c27e6819f0df1c484e0f7407eba0474080"
+    },
+    {
+      "path": "reports/learned_capacity_feedback_20261018_root/root_decision.json",
+      "source_path": "reports/learned_capacity_feedback_20261018_root/root_decision.json",
+      "bytes": 1323,
+      "sha256": "85fe159e6af91198e16dbee8e29b079600042109b8b08e0942e5dddc77cc4af9"
+    },
+    {
       "path": "reports/literature_discussion_20261017_root_v1/LITERATURE_DISCUSSION_ZH.md",
       "source_path": "reports/literature_discussion_20261017_root_v1/LITERATURE_DISCUSSION_ZH.md",
       "bytes": 19438,
@@ -3024,6 +3060,36 @@
       "sha256": "5c4b6ca92e0bd7f1465d345b132717e8e6647ccefb65a895d66f8d9a016c8605"
     },
     {
+      "path": "reports/persistent_capacity_feedback_20261018_root/RESULTS_ZH.md",
+      "source_path": "reports/persistent_capacity_feedback_20261018_root/RESULTS_ZH.md",
+      "bytes": 2104,
+      "sha256": "aae71e244f6fdbef3b366ccab51d3de98daaa203d5d0c5a8e61466d995fcbf90"
+    },
+    {
+      "path": "reports/persistent_capacity_feedback_20261018_root/diagnose.py",
+      "source_path": "reports/persistent_capacity_feedback_20261018_root/diagnose.py",
+      "bytes": 4962,
+      "sha256": "1cac92103e01ae784ee974a85c6ea628e68d0a01570c7c48400f05218cd94a29"
+    },
+    {
+      "path": "reports/persistent_capacity_feedback_20261018_root/diagnostic.json",
+      "source_path": "reports/persistent_capacity_feedback_20261018_root/diagnostic.json",
+      "bytes": 24602,
+      "sha256": "6dcaf32854a87c18564169526a9188d7b27c49b5108d4705c66995914c6fb2ec"
+    },
+    {
+      "path": "reports/persistent_capacity_feedback_20261018_root/protocol.json",
+      "source_path": "reports/persistent_capacity_feedback_20261018_root/protocol.json",
+      "bytes": 1213,
+      "sha256": "614293ba7cccc0fb1d7702a6e5e447617659d2f88bb893d8f5654cd046d45434"
+    },
+    {
+      "path": "reports/persistent_capacity_feedback_20261018_root/root_decision.json",
+      "source_path": "reports/persistent_capacity_feedback_20261018_root/root_decision.json",
+      "bytes": 201,
+      "sha256": "368f4d8a3b4b2cadb7132286956203064f1db79d7b6d17674d36ce0d01710b9f"
+    },
+    {
       "path": "results/development_calb_cpmlp_recipe_adapt_seed2021_v1.csv",
       "source_path": "results/development_calb_cpmlp_recipe_adapt_seed2021_v1.csv",
       "bytes": 285,
@@ -3282,6 +3348,10 @@
     {
       "path": "reports/pbt_valid_cycle_production_io_20261017_luna/shard1.worker_v2.started",
       "reason": "not_small_allowlisted_text"
+    },
+    {
+      "path": "reports/persistent_capacity_feedback_20261018_root/minimal_validation.json",
+      "reason": "missing_or_symlink"
     },
     {
       "path": "src/data_audit/__pycache__/audit_dynamic_labels.cpython-39.pyc",

@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "manual_sign_case": "trueDelta-2 minus predictedDelta-3 = +1 mSOH; simple slopeDelta-1 gives residual-1",
+  "one_to_one_target_join": true,
+  "horizon20_and_features_at_source": true,
+  "innovation_visible_through_target_t": true,
+  "all4367_rows_matched": true,
+  "source_hashes_verified": true,
+  "trueRUL_used_in_signal": false,
+  "no_extra_feature_reads": true
+}
