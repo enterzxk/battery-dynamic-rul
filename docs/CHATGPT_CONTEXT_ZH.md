@@ -186,3 +186,8 @@ MATR来源补充核查已完成：已存record19688272完整API（SHA 5b79e36abb
 ## 2026-10-18 07:40 北京时间：EOL门槛风险的实际边界
 
 现有固定MATR136/HUST62 trainval全部作者EOL>100（最小147/1164），所以官方eol<=100整cell筛选实际移除0cell/0origin。完整结局依赖仍存在，不能称这批已被该门槛删除；其他缺记录/别名排除原因未在此评估。见reports/early_eol_filter_realization_20261018_root/FILTER_REALIZATION_ZH.md与filter_realization.json。本轮无fit/step/model/inference/binary，strict在线与test门不变。下一项仅现有CALB10epoch选模目标诊断。
+
+
+## 2026-10-18 11:44 北京时间：CALB选模目标一致
+
+额度恢复首次可执行检查后完成已保存动作：10epoch的prefix-MAPE/cell-MAE/prefix-MAE/cell-MAPE最优均epoch2；cell-MAE61.634743，次优epoch4为64.673063。原选模没有与整体cell-MAE冲突，不能靠重选既有epoch得到更低整体MAE。原预测/回执保持，CALB当前5cell扩展NO_GO不变，per-cell事后选epoch不允许。见reports/calb_selection_diagnosis_20261018_root/SELECTION_DIAGNOSIS_ZH.md及机器记录。新fit/step/model/inference/binary/test均0。下一项仅HUST既有原始来源metadata身份凭证核对。

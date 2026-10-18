@@ -1,0 +1,119 @@
+{
+  "at_utc": "2026-10-18T03:44:46.794127+00:00",
+  "decision": "NO_SELECTION_OBJECTIVE_CONFLICT_ON_CURRENT_CALB5",
+  "best_epochs_by_metric": {
+    "prefix_mean_mape": 2,
+    "cell_equal_mae_cycles": 2,
+    "prefix_mean_mae_cycles": 2,
+    "cell_equal_mape": 2
+  },
+  "selected_epoch": 2,
+  "selected_cell_equal_mae_cycles": 61.63474312183111,
+  "second_best_cell_mae_epoch": 4,
+  "second_best_cell_mae_cycles": 64.67306281041617,
+  "cell_mae_gap_cycles": 3.0383196885850623,
+  "cell_mae_gap_percent": 4.929556828977657,
+  "selected_prefix_mean_mape": 0.0787961436112859,
+  "per_cell_best_mae_epoch_diagnostic_only": {
+    "CALB_0_B187.pkl": 2,
+    "CALB_25_T25-2.pkl": 8,
+    "CALB_35_B222.pkl": 10,
+    "CALB_35_B247.pkl": 4,
+    "CALB_45_B253.pkl": 4
+  },
+  "epoch_metric_table": [
+    {
+      "epoch": 1,
+      "prefix_mean_mape": 0.29043866105112154,
+      "cell_equal_mae_cycles": 160.20619402302515,
+      "prefix_mean_mae_cycles": 160.35247147790864,
+      "cell_equal_mape": 0.2893624220965906
+    },
+    {
+      "epoch": 2,
+      "prefix_mean_mape": 0.0787961436112859,
+      "cell_equal_mae_cycles": 61.63474312183111,
+      "prefix_mean_mae_cycles": 61.576998889086475,
+      "cell_equal_mape": 0.07868657684517111
+    },
+    {
+      "epoch": 3,
+      "prefix_mean_mape": 0.10428226321866713,
+      "cell_equal_mae_cycles": 68.83274311936503,
+      "prefix_mean_mae_cycles": 68.90781692719796,
+      "cell_equal_mape": 0.1039330432584404
+    },
+    {
+      "epoch": 4,
+      "prefix_mean_mape": 0.08267858466389552,
+      "cell_equal_mae_cycles": 64.67306281041617,
+      "prefix_mean_mae_cycles": 64.57711052079075,
+      "cell_equal_mape": 0.08261069535868289
+    },
+    {
+      "epoch": 5,
+      "prefix_mean_mape": 0.08555868520247091,
+      "cell_equal_mae_cycles": 66.88184763189759,
+      "prefix_mean_mae_cycles": 66.93475129954533,
+      "cell_equal_mape": 0.08532311699476108
+    },
+    {
+      "epoch": 6,
+      "prefix_mean_mape": 0.1077223892305508,
+      "cell_equal_mae_cycles": 71.84832895714345,
+      "prefix_mean_mae_cycles": 71.90074193021901,
+      "cell_equal_mape": 0.10738600075310019
+    },
+    {
+      "epoch": 7,
+      "prefix_mean_mape": 0.12021340249959722,
+      "cell_equal_mae_cycles": 79.43412099556971,
+      "prefix_mean_mae_cycles": 79.49524258895659,
+      "cell_equal_mape": 0.11983261763963668
+    },
+    {
+      "epoch": 8,
+      "prefix_mean_mape": 0.13037195754897135,
+      "cell_equal_mae_cycles": 85.22209955465914,
+      "prefix_mean_mae_cycles": 85.3886671929772,
+      "cell_equal_mape": 0.12985036365314
+    },
+    {
+      "epoch": 9,
+      "prefix_mean_mape": 0.12543594416876042,
+      "cell_equal_mae_cycles": 82.9436261208804,
+      "prefix_mean_mae_cycles": 83.07873611574921,
+      "cell_equal_mape": 0.12496695917203286
+    },
+    {
+      "epoch": 10,
+      "prefix_mean_mape": 0.12094661828881927,
+      "cell_equal_mae_cycles": 78.45053932498199,
+      "prefix_mean_mae_cycles": 78.60972655083332,
+      "cell_equal_mape": 0.12046442102283587
+    }
+  ],
+  "minimal_validation": "All10 completed5-cell497-prefix rows; independent cell-equal and prefix-weighted recomputation from per-cell summaries; completion selection and selected prediction SHA match",
+  "native_label_scope": "Same stored float32/scaler roundtrip native label metric as original epoch logs; not replacing exact author-label corrected report",
+  "interpretation": "Official prefix-MAPE and cell-macro MAE choose the same epoch. The saved epoch history provides no aggregate MAE gain from reselection; no claim about untried future training.",
+  "prior_CALB_expansion_NO_GO_unchanged": true,
+  "limitations": [
+    "Same5 development cells used for training-time selection; no independent confirmation",
+    "Per-cell optima differ; selecting separate epochs per cell would use validation outcomes and is not an allowed model",
+    "Official singleGPU val-only adaptation remains distinct from full2GPU/test reproduction or strict online RUL"
+  ],
+  "bindings": {
+    "experiments/cpmlp_calb_recipe_adapt_seed2021_v1/epoch_metrics.jsonl": "8e291ef0865a2b8328c901b11f4b26bbcb3c86151443fe38b952cb76b90bee63",
+    "experiments/cpmlp_calb_recipe_adapt_seed2021_v1/completion_receipt.json": "b083688cb61e5e82256fe1c93a8a3945aedcaace0ac7a3e8292192516d7429b0",
+    "experiments/cpmlp_calb_recipe_adapt_seed2021_v1/config.json": "786ef050046c6ccc7afa9ff4f794245a5298fd15a8588bb58d874a5721d5c414",
+    "experiments/cpmlp_calb_recipe_adapt_seed2021_v1/validation_predictions_epoch_002.csv": "bffadd1558ba46cd210f9c74145296dd300a9d0aec04bf72ec8e9011c7a3755c"
+  },
+  "new_fits": 0,
+  "optimizer_steps": 0,
+  "model_loads": 0,
+  "new_inference": 0,
+  "binary_reads": 0,
+  "test_access": false,
+  "reselection_performed": false,
+  "next_action": "P0 earliest remaining identity gap: inspect existing saved original HUST Mendeley public metadata and source manifest for raw row/column-to-physical-cell provenance; text-only once, preserve unverified if absent; no download/model/test/fit or repeated CALB diagnosis."
+}

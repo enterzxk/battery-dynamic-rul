@@ -236,3 +236,12 @@
 - **最小验证**：按role精确覆盖/唯一性，HUST现有摘要trainval标签与stage v11标签逐值吻合；全部>100即可确定该规则实际移除0origin，不重建曲线/重跑smoke。
 - **阻塞/风险**：完整结局依赖仍是结构风险，但不冒称在这198cell已造成删除；不涵盖其他排除原因/CALB/test或证明strict在线与身份。new_fits=0、steps/model/inference/binary=0，门控保持。
 - **下一步**：只读CALB已存10epoch指标核prefix-MAPE与cell-MAE最优是否一致，不重新选模/预测/fit。
+
+
+## 2026-10-18 11:44 北京时间：额度恢复后CALB选模目标诊断闭合
+
+- **已完成**：本次可执行唤醒实查普通额度允许、主窗已用1%；继续保存动作，CALB四种验证指标最优均epoch2，无prefix-MAPE与cell-MAE目标冲突。
+- **证据**：reports/calb_selection_diagnosis_20261018_root/SELECTION_DIAGNOSIS_ZH.md、selection_diagnosis.json、epoch_comparison.csv；selected cell-MAE61.63474312183111，次优epoch4为64.67306281041617。
+- **最小验证**：10完整epoch/5cell/497prefix，逐cell摘要独立重构四聚合，原选模/预测SHA与completion吻合；旧四文件SHA不变。不声称额度阻断期间的排队唤醒均已执行。
+- **阻塞/风险**：同5cell开发集，per-cell最优不同不能事后分cell选模；原native/精确标签口径分开，原CALB扩展NO_GO保持。new_fits=0、optimizer_steps=0、model/inference/binary/test=0。
+- **下一步**：P0只核已有HUST原始Mendeley metadata和source manifest是否含row/column到物理电芯的凭证；缺证不猜、不下载/训练，不重做CALB诊断。
