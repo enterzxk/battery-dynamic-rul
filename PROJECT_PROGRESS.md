@@ -354,3 +354,11 @@
 - **最小验证**：b4c1/b4c3 rawcycle100 Qd最大值与summary差0、时间单调与prefix截断相等；保留cell循环无缺口/无效，旧容量去首行后差0。一次关键失败诊断找到长度不匹配，未截断配对/重编号/改标签；无需新增smoke。合并52train/18development、26848/9561origin。
 - **阻塞/风险**：train事件范围148–561扩大至148–1056，修复寿命范围不足的数据条件，尚未证明模型收益。两批全为已观测事件、18dev已用于开发，非独立确认/自然删失收益；物理serial未闭合，fullsource SHA未知。隔离b4c31导致不同于旧52/19队列，不直接比较总指标。本轮new_fits=0、steps=0、test=0，旧GO消费不变。
 - **下一步**：冻结两批52训练电池的按源ID且分批稳定哈希留出校准组（每批5颗共10，余42fit），实现同一固定HGB的训练残差/独立电池校准残差概率对照；一次关键窄审与精确GO后只跑1CPUfit，评估18dev但不调参、不作独立确认；测试仍锁定。检验coverage/宽度/Brier与逐cell差异，不把校准称新方法或预设收益。
+
+
+## 2026-10-18：一次真实训练完成，独立电池全局尺度校准NO_GAIN
+- **已完成**：按固定源ID哈希每批留出5颗校准，42fit/10calibration/18development；独立窄审与fresh精确GO后执行1CPUfit。两arm共享点预测Time-MAE43.644383；heldout尺度未通过冻结标准，NO_GAIN，不扩seed/重复fit。
+- **证据**：experiments/matr_raw_heldout_calibration_seed42_v1/RESULTS_ZH.md、cohort/protocol/ROOT_GO/fit_ledger/completion、三角色原始prediction CSV、fit_parameters/metrics/comparison/independent_metrics/root_decision；公开published_predictions.json可逐字节解码三CSV。review为reports/matr_heldout_scale_review_20261018_luna/review.json，请求gpt-6-luna/high。
+- **最小验证**：新增interval_score的唯一手算用例通过；从22281fit/4567cal/9561dev原始预测CSV独立重算尺度与8指标，最大差2.56e-13；无重复smoke。1predictivefit、2标量残差估计、0optimizer、0test，本次GO已消费。
+- **阻塞/风险**：尺度0.19898→0.26624，coverage83.38%→91.30%偏离80%，width136.66→184.42增34.95%，interval_score202.94→210.67差3.81%，Brier均变差，只有4/18cell覆盖误差改善。校准10cell前三贡献67.38%残差均方，79.63%均方来自cell有向均值平方，提示个体偏差不能靠统一加宽处理；此为描述而非因果证明。18dev暴露/事件队列/源ID与不完整SHA限制保留，勿与旧52/19或不同训练队列直接比总指标。
+- **下一步**：只对10cal已存预测与past容量做一个固定20cycle容量反馈代理诊断，检验预测时可观测信号能否对应持续有向RUL误差，再决定是否设计因果个体修正；0fit、0dev/test读取，不使用目标电池真实RUL作为在线反馈、不事后调阈值。全局尺度路线关闭，训练总门仍false。

@@ -1,0 +1,59 @@
+{
+  "status": "DESCRIPTIVE_FROM_SAVED_PREDICTIONS_NO_MODEL",
+  "calibration_mean_square_sum": 0.7088596520207163,
+  "top3_cells": [
+    "MATR_b4c7",
+    "MATR_b4c26",
+    "MATR_b2c6"
+  ],
+  "top3_share": 0.6737580616306031,
+  "between_cell_signed_bias_square_share": 0.7962556416281186,
+  "development_arms": {
+    "A_fit_residual_scale": {
+      "coverage_min_max": [
+        0.2019704433497537,
+        0.9951573849878934
+      ],
+      "coverage_below60_cells": [
+        "MATR_b2c47",
+        "MATR_b4c33"
+      ],
+      "coverage_above95_cells": [
+        "MATR_b2c13",
+        "MATR_b2c2",
+        "MATR_b2c22",
+        "MATR_b2c25",
+        "MATR_b2c35",
+        "MATR_b2c40",
+        "MATR_b2c45"
+      ],
+      "interval_score_improved_cells": 0
+    },
+    "B_heldout_cell_scale": {
+      "coverage_min_max": [
+        0.566068515497553,
+        0.9974160206718347
+      ],
+      "coverage_below60_cells": [
+        "MATR_b2c47",
+        "MATR_b4c33"
+      ],
+      "coverage_above95_cells": [
+        "MATR_b2c13",
+        "MATR_b2c2",
+        "MATR_b2c22",
+        "MATR_b2c25",
+        "MATR_b2c35",
+        "MATR_b2c40",
+        "MATR_b2c45",
+        "MATR_b4c16",
+        "MATR_b4c3",
+        "MATR_b4c32",
+        "MATR_b4c39"
+      ],
+      "interval_score_improved_cells": 4
+    }
+  },
+  "limits": "Residual decomposition is descriptive with known outcomes; trueRUL residual is unavailable online and cannot be used as target-battery feedback",
+  "new_fits": 0
+}

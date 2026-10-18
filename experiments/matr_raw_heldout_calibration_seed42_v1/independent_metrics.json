@@ -1,0 +1,38 @@
+{
+  "status": "PASS_FROM_ORIGINAL_CSV_NO_MODEL_NO_FIT",
+  "sigmas": {
+    "A_fit_residual_scale": 0.19898311654196568,
+    "B_heldout_cell_scale": 0.2662441834145332
+  },
+  "metrics": {
+    "A_fit_residual_scale": {
+      "MAE": 43.644382600505985,
+      "bias": -1.008715510734078,
+      "severe_over100": 0.047917350609487014,
+      "coverage80": 0.8338286900461218,
+      "width80": 136.66182695766568,
+      "interval_score80": 202.94483220970199,
+      "Brier100": 0.015781764701931184,
+      "Brier300": 0.06935758815516874
+    },
+    "B_heldout_cell_scale": {
+      "MAE": 43.644382600505985,
+      "bias": -1.008715510734078,
+      "severe_over100": 0.047917350609487014,
+      "coverage80": 0.9129772223593798,
+      "width80": 184.42030907275736,
+      "interval_score80": 210.66912673507446,
+      "Brier100": 0.01771185740578461,
+      "Brier300": 0.0708817389407591
+    }
+  },
+  "maximum_metric_delta": 2.5579538487363607e-13,
+  "origin_counts": {
+    "fit": 22281,
+    "calibration": 4567,
+    "development": 9561
+  },
+  "distribution_reconstruction": "mu_log_RUL CSV + fit_parameters sigma uniquely specify every lognormal CDF/quantile; NormalDist/erf independent of runner scipy",
+  "new_fits": 0,
+  "optimizer_steps": 0
+}

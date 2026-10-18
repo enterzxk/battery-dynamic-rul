@@ -1,0 +1,27 @@
+{
+  "status": "COMPLETE_ONE_FIT_HELDOUT_CALIBRATION_DEVELOPMENT_COMPARISON",
+  "new_CPU_predictive_fits": 1,
+  "scalar_residual_estimates": 2,
+  "optimizer_steps": 0,
+  "role_cells": {
+    "fit": 42,
+    "calibration": 10,
+    "development": 18
+  },
+  "role_origins": {
+    "fit": 22281,
+    "calibration": 4567,
+    "development": 9561
+  },
+  "test_reads": 0,
+  "runner_sha256": "f6931775158365cf245cfefd359ea5e620d50a1c0554bb0bcac610716711121b",
+  "protocol_sha256": "9788eaf1c28271f8d1702727d28adccda6251511771f237a68ec7ee484f33347",
+  "cohort_sha256": "42535de5825f6857e3aa69a596306a909a9a1b3ac087c43631032f6d293ef289",
+  "GO_sha256": "a872e8a00769ec5c667ae90aed5c6781204775dce5656cf1c2d3148aadb5ba02",
+  "prediction_sha256": {
+    "fit": "7cd0d1c902dacacf8f519c02962eb0343c240d1be41555d96e94b4bbf17775e3",
+    "calibration": "c27dd53fce992318292397486aaff8ce02e3f8b802ee54932867517ce7c2af76",
+    "development": "e824736b26ba7a0da3928de9b60624e26892401e4e283737ecb26de3409d8c0f"
+  },
+  "elapsed_seconds": 0.508324708789587
+}

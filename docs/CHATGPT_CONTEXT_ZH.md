@@ -1,3 +1,11 @@
+## 2026-10-18：一次真实训练完成，独立电池全局尺度校准NO_GAIN
+- **已完成**：按固定源ID哈希每批留出5颗校准，42fit/10calibration/18development；独立窄审与fresh精确GO后执行1CPUfit。两arm共享点预测Time-MAE43.644383；heldout尺度未通过冻结标准，NO_GAIN，不扩seed/重复fit。
+- **证据**：experiments/matr_raw_heldout_calibration_seed42_v1/RESULTS_ZH.md、cohort/protocol/ROOT_GO/fit_ledger/completion、三角色原始prediction CSV、fit_parameters/metrics/comparison/independent_metrics/root_decision；公开published_predictions.json可逐字节解码三CSV。review为reports/matr_heldout_scale_review_20261018_luna/review.json，请求gpt-6-luna/high。
+- **最小验证**：新增interval_score的唯一手算用例通过；从22281fit/4567cal/9561dev原始预测CSV独立重算尺度与8指标，最大差2.56e-13；无重复smoke。1predictivefit、2标量残差估计、0optimizer、0test，本次GO已消费。
+- **阻塞/风险**：尺度0.19898→0.26624，coverage83.38%→91.30%偏离80%，width136.66→184.42增34.95%，interval_score202.94→210.67差3.81%，Brier均变差，只有4/18cell覆盖误差改善。校准10cell前三贡献67.38%残差均方，79.63%均方来自cell有向均值平方，提示个体偏差不能靠统一加宽处理；此为描述而非因果证明。18dev暴露/事件队列/源ID与不完整SHA限制保留，勿与旧52/19或不同训练队列直接比总指标。
+- **下一步**：只对10cal已存预测与past容量做一个固定20cycle容量反馈代理诊断，检验预测时可观测信号能否对应持续有向RUL误差，再决定是否设计因果个体修正；0fit、0dev/test读取，不使用目标电池真实RUL作为在线反馈、不事后调阈值。全局尺度路线关闭，训练总门仍false。
+
+
 ## 2026-10-18：第四批原始数据格式阻塞已隔离修复，70cell因果资产完成
 - **已完成**：官方第四批HEAD锁定2,601,295,745bytes与ETag，21次范围请求/21,798,785bytes；两真实cycle100容量核验后发现b4c31原始cycle833条而QDischarge834条。保留v1失败，整cell隔离；v2完全缓存0新GET完成另外35颗。
 - **证据**：reports/matr_raw_batch4_datav1_20261018_root/DATAV1_ZH.md、source_receipt.json、protocol.json、failure.json、repair_v2/protocol.json及completion.json、combined_cohort_summary.json；data/processed/data_v1_matr_raw_batch4/manifest.json SHA862d796f8b1ba2d0d865884de1d77e32f2e7ce00480327299209d966c73bbe8e。

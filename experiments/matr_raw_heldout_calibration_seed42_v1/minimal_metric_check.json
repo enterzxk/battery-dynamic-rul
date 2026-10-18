@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "case": "q10=5,median10,q90=20; truth4,12,22; MAE20/3, intervalscore25,coverage1/3",
+  "actual": {
+    "MAE": 6.666666666666667,
+    "bias": -2.6666666666666647,
+    "severe_over100": 0.0,
+    "coverage80": 0.3333333333333333,
+    "width80": 15.000000000000007,
+    "interval_score80": 24.999999999999986,
+    "Brier100": 1.0710455175866331e-10,
+    "Brier300": 2.5709829580905228e-20
+  },
+  "model_constructions": 0,
+  "new_fits": 0
+}

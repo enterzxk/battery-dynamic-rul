@@ -101,6 +101,10 @@ def main():
 
     chosen.discard('experiments/matr_raw_batch2_longtrend_seed42_v1/previous_github_sync.json')
 
+    chosen.add('reports/matr_heldout_scale_review_20261018_luna/review.json')
+    for name in ['runner.py', 'protocol.json', 'cohort.json', 'ROOT_GO.json', 'fit_ledger.jsonl', 'completion.json', 'fit_parameters.json', 'residual_cell_statistics.json', 'metrics.json', 'per_cell_metrics.json', 'comparison.json', 'independent_metric_recompute.py', 'independent_metrics.json', 'scale_failure_diagnosis.json', 'root_decision.json', 'RESULTS_ZH.md', 'minimal_metric_check.json', 'published_predictions.json', 'decode_public_predictions.py']:
+        chosen.add('experiments/matr_raw_heldout_calibration_seed42_v1/' + name)
+
     contents, files, skipped = {}, [], []
     mapping = {'README.md': 'docs/GITHUB_README_ZH.md', 'agent.md': 'AGENTS.md'}
     mapping.update({rel: rel for rel in sorted(chosen)})

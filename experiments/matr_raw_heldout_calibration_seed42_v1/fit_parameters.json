@@ -1,0 +1,21 @@
+{
+  "model": {
+    "max_iter": 150,
+    "max_leaf_nodes": 7,
+    "max_depth": 3,
+    "learning_rate": 0.05,
+    "min_samples_leaf": 50,
+    "l2_regularization": 1,
+    "early_stopping": false,
+    "random_state": 42
+  },
+  "sigmas": {
+    "A_fit_residual_scale": 0.19898311654196568,
+    "B_heldout_cell_scale": 0.26624418341453326
+  },
+  "distribution": "lognormal CDF with common mu_log_RUL and arm-specific sigma; shared median exp(mu), no mean/bias calibration",
+  "calibration_rule": "sqrt(equal-cell mean squared log residual), floor .05; no dev fitting",
+  "predictive_fits": 1,
+  "scalar_residual_estimates": 2,
+  "cohort_sha256": "42535de5825f6857e3aa69a596306a909a9a1b3ac087c43631032f6d293ef289"
+}

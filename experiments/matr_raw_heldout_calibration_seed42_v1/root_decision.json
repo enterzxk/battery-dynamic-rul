@@ -1,0 +1,17 @@
+{
+  "decision": "NO_GAIN_FOR_GLOBAL_HELDOUT_RESIDUAL_SCALE",
+  "scope": "42fit/10cal/18previously-exposeddev rawbatch2+4",
+  "frozen_gate_passed": false,
+  "GO_consumed": true,
+  "new_CPU_predictive_fits": 1,
+  "scalar_residual_estimates": 2,
+  "optimizer_steps": 0,
+  "test_reads": 0,
+  "independent_metric_max_delta": 2.5579538487363607e-13,
+  "do_not_expand": [
+    "global scalar calibration seeds",
+    "longrate complexity",
+    "PBT or neural fits without new independent authorization"
+  ],
+  "next_bounded_action": "Zero-fit causal capacity-innovation diagnostic on10heldout calibration cells only: origin t>=120, s=t-20, expectedSOH(t|s)=SOH_s+(.8-SOH_s)*20/exp(mu_s), innovation observedSOH_t-expectedSOH(t|s); compare sign/rank with retrospective trueRUL_t-exp(mu_t), and same20capacity change control. Freeze formula before computing; no fitting, threshold tuning or dev/test read. TrueRUL used solely retrospective outcome, never online feedback. Determine if persistent bias has observable causal proxy before proposing any correction model."
+}

@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-18T09:19:33.115329+00:00",
-  "content_sha256": "d61855a7b6da82944b48ed30419f5411f6ea4457d7609f303bcda6d947f806b0",
-  "file_count": 487,
+  "snapshot_utc": "2026-10-18T09:33:34.663886+00:00",
+  "content_sha256": "2595dab9d6ee00aafa452cb63c2c095f39bbb20a068e08f0f3c4703d68f527e5",
+  "file_count": 507,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,8 +14,8 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 59029,
-      "sha256": "bad07a9d5ecef708b685457c1241dc6f051aa0cd9d92f57da01e60860ee887aa"
+      "bytes": 60871,
+      "sha256": "212af874c0baecdccd21f4ec17627838d4e454cdc44396e28997630856f538e3"
     },
     {
       "path": "README.md",
@@ -32,8 +32,8 @@
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 13858,
-      "sha256": "189b73e17610cf5bf70c323f4f4e817045afec23454136fdb8c54910fc2aa19e"
+      "bytes": 14477,
+      "sha256": "1ef76cade674f21a800644565cba2e4d8827eca67183505de9e990a478414d9e"
     },
     {
       "path": "automation/bin/matr_raw_batch2_asset_worker_v1.py",
@@ -158,8 +158,8 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 46290,
-      "sha256": "fee72299acc1b067f649b4874c4f05d646649caac3f78512b311d36dfcc50280"
+      "bytes": 48132,
+      "sha256": "178908c59c813381f398713dd9c68ec2c635d1af2a4bc2e5f709759748563914"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
@@ -808,6 +808,120 @@
       "source_path": "experiments/matr_raw_batch2_longtrend_seed42_v1/runner.py",
       "bytes": 6511,
       "sha256": "0a4a592d937789b5d8d44657334aaedd9c4aff9c4b710b0cbffc9b068ab8bb3b"
+    },
+    {
+      "path": "experiments/matr_raw_heldout_calibration_seed42_v1/RESULTS_ZH.md",
+      "source_path": "experiments/matr_raw_heldout_calibration_seed42_v1/RESULTS_ZH.md",
+      "bytes": 3629,
+      "sha256": "aa5fb9842b646a51fb13ffeeb0140cd865698996d0d9e5153830684bcb7d6fcc"
+    },
+    {
+      "path": "experiments/matr_raw_heldout_calibration_seed42_v1/ROOT_GO.json",
+      "source_path": "experiments/matr_raw_heldout_calibration_seed42_v1/ROOT_GO.json",
+      "bytes": 1079,
+      "sha256": "a872e8a00769ec5c667ae90aed5c6781204775dce5656cf1c2d3148aadb5ba02"
+    },
+    {
+      "path": "experiments/matr_raw_heldout_calibration_seed42_v1/cohort.json",
+      "source_path": "experiments/matr_raw_heldout_calibration_seed42_v1/cohort.json",
+      "bytes": 2573,
+      "sha256": "42535de5825f6857e3aa69a596306a909a9a1b3ac087c43631032f6d293ef289"
+    },
+    {
+      "path": "experiments/matr_raw_heldout_calibration_seed42_v1/comparison.json",
+      "source_path": "experiments/matr_raw_heldout_calibration_seed42_v1/comparison.json",
+      "bytes": 328,
+      "sha256": "aba882f8a12c3028b3ec63fbdb0e0fd9d79d96871462352654e5a2ff7614be14"
+    },
+    {
+      "path": "experiments/matr_raw_heldout_calibration_seed42_v1/completion.json",
+      "source_path": "experiments/matr_raw_heldout_calibration_seed42_v1/completion.json",
+      "bytes": 1030,
+      "sha256": "d8970b437a313955af7b4711fa77d45de5e8c7b939b35c5a8b06a841c736f7d3"
+    },
+    {
+      "path": "experiments/matr_raw_heldout_calibration_seed42_v1/decode_public_predictions.py",
+      "source_path": "experiments/matr_raw_heldout_calibration_seed42_v1/decode_public_predictions.py",
+      "bytes": 418,
+      "sha256": "003d856d6752d138ad9bd4d50ea87ef1711b964927e1f78c492b4a58862ec23c"
+    },
+    {
+      "path": "experiments/matr_raw_heldout_calibration_seed42_v1/fit_ledger.jsonl",
+      "source_path": "experiments/matr_raw_heldout_calibration_seed42_v1/fit_ledger.jsonl",
+      "bytes": 109,
+      "sha256": "c64a04f9c77404909494fec8fe7aa17a2d89fbbd4d6ad03b0c55aa40a387f37d"
+    },
+    {
+      "path": "experiments/matr_raw_heldout_calibration_seed42_v1/fit_parameters.json",
+      "source_path": "experiments/matr_raw_heldout_calibration_seed42_v1/fit_parameters.json",
+      "bytes": 708,
+      "sha256": "ca95515be2d4977aa5160f9aa520acb996c6bd83eff5618ab72e8655f34711e5"
+    },
+    {
+      "path": "experiments/matr_raw_heldout_calibration_seed42_v1/independent_metric_recompute.py",
+      "source_path": "experiments/matr_raw_heldout_calibration_seed42_v1/independent_metric_recompute.py",
+      "bytes": 3145,
+      "sha256": "815a646b2d028a210ea00428d94a4e3015b623a680a563d23c46016da38ede87"
+    },
+    {
+      "path": "experiments/matr_raw_heldout_calibration_seed42_v1/independent_metrics.json",
+      "source_path": "experiments/matr_raw_heldout_calibration_seed42_v1/independent_metrics.json",
+      "bytes": 1238,
+      "sha256": "7a42f3c79b56a5ba27af1412f6630405304be97130e4a122c5157335ee4a4fee"
+    },
+    {
+      "path": "experiments/matr_raw_heldout_calibration_seed42_v1/metrics.json",
+      "source_path": "experiments/matr_raw_heldout_calibration_seed42_v1/metrics.json",
+      "bytes": 665,
+      "sha256": "13071c3c05d9b7093bdfd6876772a3f64702bf4e183378b7c28cb3e8b850d76b"
+    },
+    {
+      "path": "experiments/matr_raw_heldout_calibration_seed42_v1/minimal_metric_check.json",
+      "source_path": "experiments/matr_raw_heldout_calibration_seed42_v1/minimal_metric_check.json",
+      "bytes": 459,
+      "sha256": "be208768c91abf59746dd70027abc9909a6f934326e81f41f6caec2e015dca1b"
+    },
+    {
+      "path": "experiments/matr_raw_heldout_calibration_seed42_v1/per_cell_metrics.json",
+      "source_path": "experiments/matr_raw_heldout_calibration_seed42_v1/per_cell_metrics.json",
+      "bytes": 13004,
+      "sha256": "104b3f133369bffdea821fa95efdc53e047ef8b1424a0aee26166f18dba8b1ae"
+    },
+    {
+      "path": "experiments/matr_raw_heldout_calibration_seed42_v1/protocol.json",
+      "source_path": "experiments/matr_raw_heldout_calibration_seed42_v1/protocol.json",
+      "bytes": 2309,
+      "sha256": "9788eaf1c28271f8d1702727d28adccda6251511771f237a68ec7ee484f33347"
+    },
+    {
+      "path": "experiments/matr_raw_heldout_calibration_seed42_v1/published_predictions.json",
+      "source_path": "experiments/matr_raw_heldout_calibration_seed42_v1/published_predictions.json",
+      "bytes": 452474,
+      "sha256": "ba21da98e23e6230f42815eeb045356720e5493526c7d2fdba27ad7d04ab3b4d"
+    },
+    {
+      "path": "experiments/matr_raw_heldout_calibration_seed42_v1/residual_cell_statistics.json",
+      "source_path": "experiments/matr_raw_heldout_calibration_seed42_v1/residual_cell_statistics.json",
+      "bytes": 9281,
+      "sha256": "685587fae4b62f2be784570f7ed771979bd9584ebbb8bc4d0e7aa0dd72a2ba7d"
+    },
+    {
+      "path": "experiments/matr_raw_heldout_calibration_seed42_v1/root_decision.json",
+      "source_path": "experiments/matr_raw_heldout_calibration_seed42_v1/root_decision.json",
+      "bytes": 1059,
+      "sha256": "dcd14299b332f6bcabf2dfb5fdd58da5683a12319a638289da41245db9e6e794"
+    },
+    {
+      "path": "experiments/matr_raw_heldout_calibration_seed42_v1/runner.py",
+      "source_path": "experiments/matr_raw_heldout_calibration_seed42_v1/runner.py",
+      "bytes": 7318,
+      "sha256": "f6931775158365cf245cfefd359ea5e620d50a1c0554bb0bcac610716711121b"
+    },
+    {
+      "path": "experiments/matr_raw_heldout_calibration_seed42_v1/scale_failure_diagnosis.json",
+      "source_path": "experiments/matr_raw_heldout_calibration_seed42_v1/scale_failure_diagnosis.json",
+      "bytes": 1479,
+      "sha256": "42c15c18855379e9429a71269b8824c3db579fe21ea7a8829d4db5f1c28c6bd6"
     },
     {
       "path": "experiments/online_survival_observed_pilot_seed42_v1/RESULTS_ZH.md",
@@ -2008,6 +2122,12 @@
       "source_path": "reports/literature_synthesis_increment_v7_root/manifest.json",
       "bytes": 1820,
       "sha256": "38576d3cdf1cedf11531dbd6e34c0c8ebeb367e20824235188f4c66b486c692c"
+    },
+    {
+      "path": "reports/matr_heldout_scale_review_20261018_luna/review.json",
+      "source_path": "reports/matr_heldout_scale_review_20261018_luna/review.json",
+      "bytes": 5249,
+      "sha256": "a88126850dc4e5257fbd19a067f9a465a5f69b829f1abb90c73464cfa2ff4cd7"
     },
     {
       "path": "reports/matr_raw_batch2_datav1_20261018_root/DATAV1_ZH.md",

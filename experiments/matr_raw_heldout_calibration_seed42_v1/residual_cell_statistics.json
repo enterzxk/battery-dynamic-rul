@@ -1,0 +1,366 @@
+[
+  {
+    "cell_id": "MATR_b2c0",
+    "role": "fit",
+    "origins": 200,
+    "mean_log_residual": -0.009290748046392114,
+    "mean_squared_log_residual": 0.005401111274275321
+  },
+  {
+    "cell_id": "MATR_b2c10",
+    "role": "fit",
+    "origins": 461,
+    "mean_log_residual": 0.20761549491936265,
+    "mean_squared_log_residual": 0.05182731462937063
+  },
+  {
+    "cell_id": "MATR_b2c14",
+    "role": "fit",
+    "origins": 385,
+    "mean_log_residual": 0.003753616576095384,
+    "mean_squared_log_residual": 0.003400710946496611
+  },
+  {
+    "cell_id": "MATR_b2c17",
+    "role": "fit",
+    "origins": 394,
+    "mean_log_residual": 0.03320655893023348,
+    "mean_squared_log_residual": 0.026150886989933172
+  },
+  {
+    "cell_id": "MATR_b2c18",
+    "role": "fit",
+    "origins": 387,
+    "mean_log_residual": 0.03718434944911744,
+    "mean_squared_log_residual": 0.006424381967444337
+  },
+  {
+    "cell_id": "MATR_b2c19",
+    "role": "fit",
+    "origins": 361,
+    "mean_log_residual": -0.02998008877081182,
+    "mean_squared_log_residual": 0.012167505631463581
+  },
+  {
+    "cell_id": "MATR_b2c26",
+    "role": "fit",
+    "origins": 371,
+    "mean_log_residual": 0.02214046390913098,
+    "mean_squared_log_residual": 0.006111359404071283
+  },
+  {
+    "cell_id": "MATR_b2c28",
+    "role": "fit",
+    "origins": 409,
+    "mean_log_residual": 0.010407961515224808,
+    "mean_squared_log_residual": 0.01080782596818419
+  },
+  {
+    "cell_id": "MATR_b2c29",
+    "role": "fit",
+    "origins": 398,
+    "mean_log_residual": -0.03505378719891309,
+    "mean_squared_log_residual": 0.006302236500086539
+  },
+  {
+    "cell_id": "MATR_b2c3",
+    "role": "fit",
+    "origins": 235,
+    "mean_log_residual": 0.008531588939675674,
+    "mean_squared_log_residual": 0.0063985767698866965
+  },
+  {
+    "cell_id": "MATR_b2c30",
+    "role": "fit",
+    "origins": 381,
+    "mean_log_residual": -0.03681470801611991,
+    "mean_squared_log_residual": 0.004617598153167726
+  },
+  {
+    "cell_id": "MATR_b2c31",
+    "role": "fit",
+    "origins": 392,
+    "mean_log_residual": 0.014285152760816154,
+    "mean_squared_log_residual": 0.0029955892889951936
+  },
+  {
+    "cell_id": "MATR_b2c32",
+    "role": "fit",
+    "origins": 419,
+    "mean_log_residual": -0.003533752658932613,
+    "mean_squared_log_residual": 0.043200367037717236
+  },
+  {
+    "cell_id": "MATR_b2c33",
+    "role": "fit",
+    "origins": 420,
+    "mean_log_residual": -0.00421001864349625,
+    "mean_squared_log_residual": 0.0069405548428046245
+  },
+  {
+    "cell_id": "MATR_b2c34",
+    "role": "fit",
+    "origins": 399,
+    "mean_log_residual": -0.07053196197278,
+    "mean_squared_log_residual": 0.01390598146153876
+  },
+  {
+    "cell_id": "MATR_b2c36",
+    "role": "fit",
+    "origins": 435,
+    "mean_log_residual": 0.07226075685767809,
+    "mean_squared_log_residual": 0.009832845523240062
+  },
+  {
+    "cell_id": "MATR_b2c37",
+    "role": "fit",
+    "origins": 378,
+    "mean_log_residual": -0.08008368581198325,
+    "mean_squared_log_residual": 0.012382316932190008
+  },
+  {
+    "cell_id": "MATR_b2c38",
+    "role": "fit",
+    "origins": 365,
+    "mean_log_residual": -0.10534914863349178,
+    "mean_squared_log_residual": 0.015499719866592912
+  },
+  {
+    "cell_id": "MATR_b2c39",
+    "role": "fit",
+    "origins": 359,
+    "mean_log_residual": -0.08833517407622268,
+    "mean_squared_log_residual": 0.01197488926947955
+  },
+  {
+    "cell_id": "MATR_b2c4",
+    "role": "fit",
+    "origins": 344,
+    "mean_log_residual": 0.003051555845511931,
+    "mean_squared_log_residual": 0.007911215151172435
+  },
+  {
+    "cell_id": "MATR_b2c5",
+    "role": "fit",
+    "origins": 380,
+    "mean_log_residual": -0.03680344567214846,
+    "mean_squared_log_residual": 0.004407746545205105
+  },
+  {
+    "cell_id": "MATR_b4c1",
+    "role": "fit",
+    "origins": 661,
+    "mean_log_residual": 0.24537279766079045,
+    "mean_squared_log_residual": 0.07824900258854743
+  },
+  {
+    "cell_id": "MATR_b4c10",
+    "role": "fit",
+    "origins": 773,
+    "mean_log_residual": 0.07168447202478088,
+    "mean_squared_log_residual": 0.026633449912479183
+  },
+  {
+    "cell_id": "MATR_b4c11",
+    "role": "fit",
+    "origins": 764,
+    "mean_log_residual": 0.058621371494839,
+    "mean_squared_log_residual": 0.02130501708217199
+  },
+  {
+    "cell_id": "MATR_b4c12",
+    "role": "fit",
+    "origins": 719,
+    "mean_log_residual": 3.2082768305755634e-05,
+    "mean_squared_log_residual": 0.015549477489995179
+  },
+  {
+    "cell_id": "MATR_b4c15",
+    "role": "fit",
+    "origins": 576,
+    "mean_log_residual": -0.07411246360018033,
+    "mean_squared_log_residual": 0.014895037325151553
+  },
+  {
+    "cell_id": "MATR_b4c18",
+    "role": "fit",
+    "origins": 807,
+    "mean_log_residual": 0.10496793097024913,
+    "mean_squared_log_residual": 0.030184505612084543
+  },
+  {
+    "cell_id": "MATR_b4c20",
+    "role": "fit",
+    "origins": 648,
+    "mean_log_residual": 0.1275761392030604,
+    "mean_squared_log_residual": 0.026930626116432873
+  },
+  {
+    "cell_id": "MATR_b4c21",
+    "role": "fit",
+    "origins": 674,
+    "mean_log_residual": -0.04014579538879158,
+    "mean_squared_log_residual": 0.013422319453309472
+  },
+  {
+    "cell_id": "MATR_b4c23",
+    "role": "fit",
+    "origins": 939,
+    "mean_log_residual": 0.2419463488377653,
+    "mean_squared_log_residual": 0.08446597110808117
+  },
+  {
+    "cell_id": "MATR_b4c24",
+    "role": "fit",
+    "origins": 889,
+    "mean_log_residual": 0.19170806382899155,
+    "mean_squared_log_residual": 0.0597226109295634
+  },
+  {
+    "cell_id": "MATR_b4c25",
+    "role": "fit",
+    "origins": 354,
+    "mean_log_residual": -0.35657155968801485,
+    "mean_squared_log_residual": 0.15158928889692133
+  },
+  {
+    "cell_id": "MATR_b4c30",
+    "role": "fit",
+    "origins": 516,
+    "mean_log_residual": 0.05016607580927674,
+    "mean_squared_log_residual": 0.018052135550409118
+  },
+  {
+    "cell_id": "MATR_b4c34",
+    "role": "fit",
+    "origins": 792,
+    "mean_log_residual": 0.14542932598777075,
+    "mean_squared_log_residual": 0.040970159728921436
+  },
+  {
+    "cell_id": "MATR_b4c37",
+    "role": "fit",
+    "origins": 764,
+    "mean_log_residual": 0.10705600110709325,
+    "mean_squared_log_residual": 0.032808833944647814
+  },
+  {
+    "cell_id": "MATR_b4c38",
+    "role": "fit",
+    "origins": 956,
+    "mean_log_residual": 0.1922735756739743,
+    "mean_squared_log_residual": 0.1338094626375695
+  },
+  {
+    "cell_id": "MATR_b4c4",
+    "role": "fit",
+    "origins": 557,
+    "mean_log_residual": -0.27524531418987236,
+    "mean_squared_log_residual": 0.09038408610195474
+  },
+  {
+    "cell_id": "MATR_b4c40",
+    "role": "fit",
+    "origins": 772,
+    "mean_log_residual": -0.25648415472050895,
+    "mean_squared_log_residual": 0.3571433381284639
+  },
+  {
+    "cell_id": "MATR_b4c42",
+    "role": "fit",
+    "origins": 675,
+    "mean_log_residual": -0.03457085834591031,
+    "mean_squared_log_residual": 0.01432117127730247
+  },
+  {
+    "cell_id": "MATR_b4c43",
+    "role": "fit",
+    "origins": 651,
+    "mean_log_residual": -0.046660002582379574,
+    "mean_squared_log_residual": 0.014774601973000824
+  },
+  {
+    "cell_id": "MATR_b4c8",
+    "role": "fit",
+    "origins": 578,
+    "mean_log_residual": -0.0063326468722612415,
+    "mean_squared_log_residual": 0.013960424726002967
+  },
+  {
+    "cell_id": "MATR_b4c9",
+    "role": "fit",
+    "origins": 343,
+    "mean_log_residual": -0.35975621382553175,
+    "mean_squared_log_residual": 0.1551275333513199
+  },
+  {
+    "cell_id": "MATR_b2c1",
+    "role": "calibration",
+    "origins": 48,
+    "mean_log_residual": -0.1481393415830925,
+    "mean_squared_log_residual": 0.037607350364782556
+  },
+  {
+    "cell_id": "MATR_b2c21",
+    "role": "calibration",
+    "origins": 389,
+    "mean_log_residual": 0.045762430602185086,
+    "mean_squared_log_residual": 0.008378684151558312
+  },
+  {
+    "cell_id": "MATR_b2c24",
+    "role": "calibration",
+    "origins": 395,
+    "mean_log_residual": -0.016885878087175805,
+    "mean_squared_log_residual": 0.0037405510307931353
+  },
+  {
+    "cell_id": "MATR_b2c41",
+    "role": "calibration",
+    "origins": 329,
+    "mean_log_residual": -0.1542333357677648,
+    "mean_squared_log_residual": 0.03131434350572096
+  },
+  {
+    "cell_id": "MATR_b2c6",
+    "role": "calibration",
+    "origins": 411,
+    "mean_log_residual": 0.32262323607146254,
+    "mean_squared_log_residual": 0.12975539469140876
+  },
+  {
+    "cell_id": "MATR_b4c14",
+    "role": "calibration",
+    "origins": 508,
+    "mean_log_residual": -0.1819602349023127,
+    "mean_squared_log_residual": 0.04718475823063711
+  },
+  {
+    "cell_id": "MATR_b4c19",
+    "role": "calibration",
+    "origins": 892,
+    "mean_log_residual": 0.19622936972502417,
+    "mean_squared_log_residual": 0.06311305783991156
+  },
+  {
+    "cell_id": "MATR_b4c26",
+    "role": "calibration",
+    "origins": 377,
+    "mean_log_residual": -0.38285939724129264,
+    "mean_squared_log_residual": 0.15886080300112468
+  },
+  {
+    "cell_id": "MATR_b4c29",
+    "role": "calibration",
+    "origins": 788,
+    "mean_log_residual": 0.11190582948348161,
+    "mean_squared_log_residual": 0.03992100178369094
+  },
+  {
+    "cell_id": "MATR_b4c7",
+    "role": "calibration",
+    "origins": 430,
+    "mean_log_residual": -0.426046358878892,
+    "mean_squared_log_residual": 0.1889837074210883
+  }
+]

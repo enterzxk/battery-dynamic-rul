@@ -1,0 +1,19 @@
+{
+  "status": "GO_ONE_CPU_FIT_AND_TWO_SCALAR_RESIDUAL_ESTIMATES_ONLY",
+  "owner": "01a14d81-fffd-7092-9a86-45704ca86840",
+  "actual_cwd": "/home/yndx/zxk/rul",
+  "issued_utc": "2026-10-18T09:31:39.889733+00:00",
+  "max_predictive_fits": 1,
+  "max_optimizer_steps": 0,
+  "max_seconds": 180,
+  "scalar_residual_estimates": 2,
+  "test_access": false,
+  "global_new_fits_allowed_remains": false,
+  "review_path": "/home/yndx/zxk/rul/reports/matr_heldout_scale_review_20261018_luna/review.json",
+  "review_sha256": "a88126850dc4e5257fbd19a067f9a465a5f69b829f1abb90c73464cfa2ff4cd7",
+  "reviewer_requested_model": "gpt-6-luna/high",
+  "root_decision": "Fresh scoped oneCPUfit to test heldout uncertainty scale; fixed same model/median for botharms, no seed/model expansion or independent confirmation claim",
+  "runner.py_sha256": "f6931775158365cf245cfefd359ea5e620d50a1c0554bb0bcac610716711121b",
+  "protocol.json_sha256": "9788eaf1c28271f8d1702727d28adccda6251511771f237a68ec7ee484f33347",
+  "cohort.json_sha256": "42535de5825f6857e3aa69a596306a909a9a1b3ac087c43631032f6d293ef289"
+}

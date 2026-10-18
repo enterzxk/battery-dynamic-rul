@@ -1,0 +1,9 @@
+{
+  "coverage80_absolute_error_reduction": -0.07914853231325769,
+  "interval_score_relative_reduction": -0.038061055515771436,
+  "width_ratio": 1.3494646835790203,
+  "mean_Brier_increase": 0.0017271217447218934,
+  "cell_calibration_error_improved": 4,
+  "shared_point_MAE_exact": true,
+  "predeclared_development_gate": false
+}
