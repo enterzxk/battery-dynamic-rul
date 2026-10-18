@@ -1,0 +1,404 @@
+[
+  {
+    "cell_id": "MATR_b4c7",
+    "origin": 100,
+    "visible_state": [
+      100.0,
+      0.9595739999999999,
+      -5.9450757575717685e-06
+    ],
+    "true_RUL": 430,
+    "neighbors": [
+      {
+        "training_cell": "MATR_b4c42",
+        "training_origin": 102,
+        "IQR_L2": 0.040121224836677113,
+        "training_state": [
+          102.0,
+          0.9580266363636364,
+          -4.2621015348225834e-06
+        ],
+        "training_RUL": 673
+      },
+      {
+        "training_cell": "MATR_b4c18",
+        "training_origin": 101,
+        "IQR_L2": 0.07247998182146077,
+        "training_state": [
+          101.0,
+          0.9567364545454544,
+          -8.797979797957476e-06
+        ],
+        "training_RUL": 806
+      },
+      {
+        "training_cell": "MATR_b4c21",
+        "training_origin": 102,
+        "IQR_L2": 0.07674422803010317,
+        "training_state": [
+          102.0,
+          0.9625717272727271,
+          -8.887762237764944e-06
+        ],
+        "training_RUL": 672
+      },
+      {
+        "training_cell": "MATR_b4c8",
+        "training_origin": 100,
+        "IQR_L2": 0.09409224032043179,
+        "training_state": [
+          100.0,
+          0.9567224545454545,
+          -2.207272727271503e-05
+        ],
+        "training_RUL": 578
+      },
+      {
+        "training_cell": "MATR_b4c38",
+        "training_origin": 100,
+        "IQR_L2": 0.09796364555492612,
+        "training_state": [
+          100.0,
+          0.963355,
+          -1.185528074866569e-05
+        ],
+        "training_RUL": 956
+      }
+    ]
+  },
+  {
+    "cell_id": "MATR_b4c7",
+    "origin": 315,
+    "visible_state": [
+      315.0,
+      0.9500942727272728,
+      -8.059217171718029e-05
+    ],
+    "true_RUL": 215,
+    "neighbors": [
+      {
+        "training_cell": "MATR_b4c8",
+        "training_origin": 318,
+        "IQR_L2": 0.10267748685722236,
+        "training_state": [
+          318.0,
+          0.9468700909090907,
+          -6.414669421486466e-05
+        ],
+        "training_RUL": 360
+      },
+      {
+        "training_cell": "MATR_b4c42",
+        "training_origin": 342,
+        "IQR_L2": 0.11634742809233047,
+        "training_state": [
+          342.0,
+          0.9494706363636362,
+          -6.163208556150159e-05
+        ],
+        "training_RUL": 433
+      },
+      {
+        "training_cell": "MATR_b4c34",
+        "training_origin": 297,
+        "IQR_L2": 0.11725256042310503,
+        "training_state": [
+          297.0,
+          0.9474508181818182,
+          -6.0596590909102466e-05
+        ],
+        "training_RUL": 595
+      },
+      {
+        "training_cell": "MATR_b4c18",
+        "training_origin": 312,
+        "IQR_L2": 0.11957042687179957,
+        "training_state": [
+          312.0,
+          0.9486789090909091,
+          -5.035489510489992e-05
+        ],
+        "training_RUL": 595
+      },
+      {
+        "training_cell": "MATR_b2c17",
+        "training_origin": 284,
+        "IQR_L2": 0.12368302845034099,
+        "training_state": [
+          284.0,
+          0.9516619999999999,
+          -9.494444444444349e-05
+        ],
+        "training_RUL": 210
+      }
+    ]
+  },
+  {
+    "cell_id": "MATR_b4c7",
+    "origin": 529,
+    "visible_state": [
+      529.0,
+      0.8027299999999999,
+      -0.0026985280991735495
+    ],
+    "true_RUL": 1,
+    "neighbors": [
+      {
+        "training_cell": "MATR_b4c25",
+        "training_origin": 453,
+        "IQR_L2": 1.029143378939365,
+        "training_state": [
+          453.0,
+          0.8027546545454545,
+          -0.0024332979080578503
+        ],
+        "training_RUL": 1
+      },
+      {
+        "training_cell": "MATR_b4c4",
+        "training_origin": 656,
+        "IQR_L2": 1.794207984802267,
+        "training_state": [
+          656.0,
+          0.8024651909090909,
+          -0.002234901452020201
+        ],
+        "training_RUL": 1
+      },
+      {
+        "training_cell": "MATR_b4c9",
+        "training_origin": 441,
+        "IQR_L2": 1.8460925076742278,
+        "training_state": [
+          441.0,
+          0.802925609090909,
+          -0.0022137615584415576
+        ],
+        "training_RUL": 2
+      },
+      {
+        "training_cell": "MATR_b2c38",
+        "training_origin": 463,
+        "IQR_L2": 2.2833896321596905,
+        "training_state": [
+          463.0,
+          0.8020980272727273,
+          -0.0020939866666666697
+        ],
+        "training_RUL": 2
+      },
+      {
+        "training_cell": "MATR_b2c39",
+        "training_origin": 458,
+        "IQR_L2": 2.312198381647234,
+        "training_state": [
+          458.0,
+          0.8001922999999999,
+          -0.0020869554545454617
+        ],
+        "training_RUL": 1
+      }
+    ]
+  },
+  {
+    "cell_id": "MATR_b2c6",
+    "origin": 100,
+    "visible_state": [
+      100.0,
+      0.9565447272727272,
+      -0.0002813131313131323
+    ],
+    "true_RUL": 411,
+    "neighbors": [
+      {
+        "training_cell": "MATR_b2c17",
+        "training_origin": 113,
+        "IQR_L2": 0.16496762647673677,
+        "training_state": [
+          113.0,
+          0.9520814545454545,
+          -0.00031120454545452425
+        ],
+        "training_RUL": 381
+      },
+      {
+        "training_cell": "MATR_b2c3",
+        "training_origin": 101,
+        "IQR_L2": 0.22926019573143436,
+        "training_state": [
+          101.0,
+          0.9512820909090909,
+          -0.00033101871657753145
+        ],
+        "training_RUL": 234
+      },
+      {
+        "training_cell": "MATR_b2c4",
+        "training_origin": 154,
+        "IQR_L2": 0.26778034389807365,
+        "training_state": [
+          154.0,
+          0.9575250909090908,
+          -0.00022928117715618001
+        ],
+        "training_RUL": 290
+      },
+      {
+        "training_cell": "MATR_b2c28",
+        "training_origin": 133,
+        "IQR_L2": 0.3256295422822943,
+        "training_state": [
+          133.0,
+          0.9681094545454546,
+          -0.00025663235294117457
+        ],
+        "training_RUL": 376
+      },
+      {
+        "training_cell": "MATR_b2c18",
+        "training_origin": 131,
+        "IQR_L2": 0.4044429494589726,
+        "training_state": [
+          131.0,
+          0.9577049999999999,
+          -0.00017763636363637172
+        ],
+        "training_RUL": 356
+      }
+    ]
+  },
+  {
+    "cell_id": "MATR_b2c6",
+    "origin": 305,
+    "visible_state": [
+      305.0,
+      0.8962878272727272,
+      -0.00025866161995899043
+    ],
+    "true_RUL": 206,
+    "neighbors": [
+      {
+        "training_cell": "MATR_b2c19",
+        "training_origin": 320,
+        "IQR_L2": 0.07532538143864352,
+        "training_state": [
+          320.0,
+          0.8946625181818181,
+          -0.00024850364304812903
+        ],
+        "training_RUL": 141
+      },
+      {
+        "training_cell": "MATR_b4c25",
+        "training_origin": 369,
+        "IQR_L2": 0.3950365694877068,
+        "training_state": [
+          369.0,
+          0.909315,
+          -0.0002701499999999977
+        ],
+        "training_RUL": 85
+      },
+      {
+        "training_cell": "MATR_b2c18",
+        "training_origin": 352,
+        "IQR_L2": 0.4438793532490335,
+        "training_state": [
+          352.0,
+          0.9091961818181818,
+          -0.00032702922077921886
+        ],
+        "training_RUL": 135
+      },
+      {
+        "training_cell": "MATR_b2c10",
+        "training_origin": 390,
+        "IQR_L2": 0.5570564587943498,
+        "training_state": [
+          390.0,
+          0.9126144545454544,
+          -0.00032339502164501925
+        ],
+        "training_RUL": 171
+      },
+      {
+        "training_cell": "MATR_b2c4",
+        "training_origin": 308,
+        "IQR_L2": 0.6031506707345144,
+        "training_state": [
+          308.0,
+          0.9151132727272727,
+          -0.0003574893939393975
+        ],
+        "training_RUL": 136
+      }
+    ]
+  },
+  {
+    "cell_id": "MATR_b2c6",
+    "origin": 510,
+    "visible_state": [
+      510.0,
+      0.8006508272727273,
+      -0.0008276777272727326
+    ],
+    "true_RUL": 1,
+    "neighbors": [
+      {
+        "training_cell": "MATR_b2c10",
+        "training_origin": 541,
+        "IQR_L2": 0.6230776588558401,
+        "training_state": [
+          541.0,
+          0.8208594,
+          -0.0009188075757575649
+        ],
+        "training_RUL": 20
+      },
+      {
+        "training_cell": "MATR_b4c30",
+        "training_origin": 595,
+        "IQR_L2": 0.8343697737038588,
+        "training_state": [
+          595.0,
+          0.8260955636363636,
+          -0.0009473989393939406
+        ],
+        "training_RUL": 21
+      },
+      {
+        "training_cell": "MATR_b4c1",
+        "training_origin": 752,
+        "IQR_L2": 0.8474879599724093,
+        "training_state": [
+          752.0,
+          0.8096899727272727,
+          -0.0008495055194805079
+        ],
+        "training_RUL": 9
+      },
+      {
+        "training_cell": "MATR_b4c20",
+        "training_origin": 727,
+        "IQR_L2": 0.9702153045142076,
+        "training_state": [
+          727.0,
+          0.8231859272727272,
+          -0.0009064510330578498
+        ],
+        "training_RUL": 21
+      },
+      {
+        "training_cell": "MATR_b2c19",
+        "training_origin": 435,
+        "IQR_L2": 0.9859068017345921,
+        "training_state": [
+          435.0,
+          0.8359026909090909,
+          -0.0009188087121212302
+        ],
+        "training_RUL": 26
+      }
+    ]
+  }
+]

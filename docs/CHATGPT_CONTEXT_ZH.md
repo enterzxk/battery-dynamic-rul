@@ -371,3 +371,11 @@ MATR来源补充核查已完成：已存record19688272完整API（SHA 5b79e36abb
 - **最小验证**：CSV独立重算最大差5.68e-14；210median crossings（82lower、128upper），0端点倒置，均保留未排序/clipping；无损公开增量复原byteSHA通过。真实2fit0optimizer/新标量校准/checkpointload/dev/test；累计新科研CPU13=RUL11+aux2，神经4fit2580steps与旧MATR41另记。
 - **阻塞/风险**：7/10覆盖误差改善不抵总体恶化和crossing；score改善CI[-80.296374,87.645428]跨零。旧TimeMAE58.113698完全不变，非新方法收益/独立确认。cal暴露/物理serial/fullsourceSHA限制保留，不调参数/seed救援。
 - **下一步**：0fit固定b4c7/b2c6相反漏出case，42fit原age/SOH/robust20的fit-only medianIQR及跨sourcecell局部原标签支持诊断，判断外推或状态相近但寿命差异；不读dev/test、不新增模型推理/训练。
+
+
+## 2026-10-18：局部状态相近仍有标签支持差异，发现未用policy上下文
+- **已完成**：0fit固定b4c7/b2c6两例，42fit-only median/IQR、每训练sourcecell最近prefix及五独立source邻居。逐轴外推仅6/430与0/411，但真实RUL在五邻居label范围外为69.0698%/73.4793%；近距离参考子集189/274与119/119仍外，偏差方向相反。
+- **证据**：reports/local_state_support_20261018_root/protocol/diagnose、summary/examples/source_hashes、服务器origin_label_support.csv、minimal_validation/root_decision/RESULTS_ZH；policy_context_observation记录已存manifest字段：42fit共30policy字符串，失败query与近邻policy不同。
+- **最小验证**：固定六时点30邻居独立距离差<=2.22e-16；841origin汇总计数重算通过。44特征文件hash匹配；0fit/optimizer/新模型推理/checkpoint/dev/test，累计CPU13/神经4fit2580steps不变。
+- **阻塞/风险**：两个选中暴露case不是总体结论，逐轴box非联合支持，五邻居范围非概率区间；不能证明不可约误差或policy因果效应。policy预设时点与双格式语义尚未独立核实；旧raw100长rate NO_GAIN仍关闭。
+- **下一步**：核已存官方源说明的policy预测时可用性/双格式语义，冻结42fit/10cal解析与hash；关闭合法性后fresh1CPUfit匹配policy上下文基线，须窄审+exactGO。当前无新fit授权，不重开长窗口或复杂网络。

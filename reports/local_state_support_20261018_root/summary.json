@@ -1,0 +1,88 @@
+{
+  "fit_prefixes": 22281,
+  "fit_cells": 42,
+  "fit_only_median": [
+    367.0,
+    0.9409751818181817,
+    -0.00011068160173159105
+  ],
+  "fit_only_IQR": [
+    298.0,
+    0.03962854545454564,
+    0.0002660169568993154
+  ],
+  "fit_axis_min": [
+    100.0,
+    0.8000451909090909,
+    -0.0024332979080578503
+  ],
+  "fit_axis_max": [
+    1055.0,
+    0.987559909090909,
+    0.0006445829004329025
+  ],
+  "cases": [
+    {
+      "cell_id": "MATR_b4c7",
+      "origins": 430,
+      "outside_axisbox_origins": 6,
+      "outside_axisbox_by_feature": {
+        "origin_cycle": 0,
+        "soh": 0,
+        "rate20_per_cycle": 6
+      },
+      "nearest_IQR_L2_quantiles": {
+        "min": 0.01453342206858672,
+        "q25": 0.03636382998945751,
+        "median": 0.08397027408835564,
+        "q75": 0.15026234229205612,
+        "max": 1.029143378939365
+      },
+      "near_reference_origins": 274,
+      "truth_outside5label_range_origins": 297,
+      "truth_outside5label_range_fraction": 0.6906976744186046,
+      "near_reference_truth_outside5range": 189,
+      "fivecell_labelspan_cycles_quantiles": [
+        1.0,
+        345.5,
+        557.0
+      ],
+      "truth_minus_nearest_train_label_quantiles": [
+        -256.0,
+        -152.0,
+        33.0
+      ]
+    },
+    {
+      "cell_id": "MATR_b2c6",
+      "origins": 411,
+      "outside_axisbox_origins": 0,
+      "outside_axisbox_by_feature": {
+        "origin_cycle": 0,
+        "soh": 0,
+        "rate20_per_cycle": 0
+      },
+      "nearest_IQR_L2_quantiles": {
+        "min": 0.017345148714172122,
+        "q25": 0.08573883959855386,
+        "median": 0.20614340347043145,
+        "q75": 0.3017827638274638,
+        "max": 0.8429748807162664
+      },
+      "near_reference_origins": 119,
+      "truth_outside5label_range_origins": 302,
+      "truth_outside5label_range_fraction": 0.7347931873479319,
+      "near_reference_truth_outside5range": 119,
+      "fivecell_labelspan_cycles_quantiles": [
+        14.0,
+        74.0,
+        191.0
+      ],
+      "truth_minus_nearest_train_label_quantiles": [
+        -27.0,
+        48.0,
+        154.0
+      ]
+    }
+  ]
+}

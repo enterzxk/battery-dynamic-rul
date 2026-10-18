@@ -1,0 +1,16 @@
+{
+  "status": "COMPLETE_LOCAL_STATE_LABEL_SUPPORT_DIAGNOSTIC",
+  "new_fits": 0,
+  "optimizer_steps": 0,
+  "new_model_inference": 0,
+  "normalization_statistics": "fit-only descriptive median/IQR, not predictivefit",
+  "checkpoint_loads": 0,
+  "dev_test_reads": 0,
+  "feature_files_read": 44,
+  "fit_origins": 22281,
+  "cal_origins": 841,
+  "protocol_sha256": "c3bc6c1af2521e1c088a8b47342cdf9694ef304e1e4740cd7d34f525b1108beb",
+  "script_sha256": "ebeaf03d28eb4f47a6bc846832fb381cbf94db3b78dc0659f71e43c919a737d1",
+  "origin_audit_sha256": "05ebaf15dc21151c1a4159f13a9656f733f075fcdb8abae2a214b68497dbaf67",
+  "elapsed_seconds": 0.4884875025600195
+}

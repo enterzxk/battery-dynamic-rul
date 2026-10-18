@@ -1,0 +1,10 @@
+{
+  "status": "PASS_TARGETED_DISTANCE_AND_ALL_ORIGIN_LABEL_COUNTS",
+  "examples": 6,
+  "neighbor_distances_checked": 30,
+  "max_distance_difference": 2.220446049250313e-16,
+  "all_origins_checked": 841,
+  "scope": "independent scalar distance arithmetic for30savedneighbor pairs; all841origin summarycounts fromCSV; no formal probability or global nearest-proof claim",
+  "new_fits": 0,
+  "new_model_inference": 0
+}

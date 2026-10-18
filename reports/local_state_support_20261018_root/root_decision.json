@@ -1,0 +1,79 @@
+{
+  "decision": "CURRENT3STATE_LOCAL_LABEL_SUPPORT_MISMATCH_OBSERVED_IN_TWO_SELECTED_FAILURES",
+  "cases": [
+    {
+      "cell_id": "MATR_b4c7",
+      "origins": 430,
+      "outside_axisbox_origins": 6,
+      "outside_axisbox_by_feature": {
+        "origin_cycle": 0,
+        "soh": 0,
+        "rate20_per_cycle": 6
+      },
+      "nearest_IQR_L2_quantiles": {
+        "min": 0.01453342206858672,
+        "q25": 0.03636382998945751,
+        "median": 0.08397027408835564,
+        "q75": 0.15026234229205612,
+        "max": 1.029143378939365
+      },
+      "near_reference_origins": 274,
+      "truth_outside5label_range_origins": 297,
+      "truth_outside5label_range_fraction": 0.6906976744186046,
+      "near_reference_truth_outside5range": 189,
+      "fivecell_labelspan_cycles_quantiles": [
+        1.0,
+        345.5,
+        557.0
+      ],
+      "truth_minus_nearest_train_label_quantiles": [
+        -256.0,
+        -152.0,
+        33.0
+      ]
+    },
+    {
+      "cell_id": "MATR_b2c6",
+      "origins": 411,
+      "outside_axisbox_origins": 0,
+      "outside_axisbox_by_feature": {
+        "origin_cycle": 0,
+        "soh": 0,
+        "rate20_per_cycle": 0
+      },
+      "nearest_IQR_L2_quantiles": {
+        "min": 0.017345148714172122,
+        "q25": 0.08573883959855386,
+        "median": 0.20614340347043145,
+        "q75": 0.3017827638274638,
+        "max": 0.8429748807162664
+      },
+      "near_reference_origins": 119,
+      "truth_outside5label_range_origins": 302,
+      "truth_outside5label_range_fraction": 0.7347931873479319,
+      "near_reference_truth_outside5range": 119,
+      "fivecell_labelspan_cycles_quantiles": [
+        14.0,
+        74.0,
+        191.0
+      ],
+      "truth_minus_nearest_train_label_quantiles": [
+        -27.0,
+        48.0,
+        154.0
+      ]
+    }
+  ],
+  "new_fits": 0,
+  "optimizer_steps": 0,
+  "new_model_inference": 0,
+  "limits": [
+    "selected2case descriptive only",
+    "axisbox not jointsupport guarantee",
+    "5neighbor range not interval or performancebaseline",
+    "not proof of irreducible uncertainty or causal policy effect"
+  ],
+  "existing_long100_route": "NO_GAIN_FOR_ADDING_RAW100_RATE remains closed; no window/seed rescue",
+  "new_context_evidence": "policy_readable already present in hashbound DataV1 manifest but absent from current inputs; query-neighbor policy strings differ; timing/semantic gate unverified",
+  "next_action": "Verify saved policy_readable timing/semantics from existing official source documentation (not abstract), freeze two-/four-stage train42/cal10 literal policy encoding and hashes; if causal availability closes, fresh1CPUfit matched age/SOH/robust20+policy baseline only after narrowreview/exactGO. Do not retry raw100 or infer policy effect from case audit."
+}
