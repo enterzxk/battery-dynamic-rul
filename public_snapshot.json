@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-18T03:47:35.344934+00:00",
-  "content_sha256": "94dab62eb6bf971b7c44fc87ffddc7a9a693bd20b4cb3301eccc488f9dc439c0",
-  "file_count": 376,
+  "snapshot_utc": "2026-10-18T04:03:17.443610+00:00",
+  "content_sha256": "d9e81062497ca385412fd68a302a8cceaac2599ad19f672f5e646d2b642232a2",
+  "file_count": 378,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,8 +14,8 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 42531,
-      "sha256": "4a13cc7f8c20996d6840d91fc0fd6b74d6294796801dafbddf989ac9891e72ac"
+      "bytes": 43576,
+      "sha256": "905a7833882d13d83f89e11e546cc4125fa625f216888a7d94e9038b04192bd5"
     },
     {
       "path": "README.md",
@@ -128,8 +128,8 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 31618,
-      "sha256": "99e3f8e600073835746a663d416c553be91d771893a9a1877c97543b8dfa4fc6"
+      "bytes": 32323,
+      "sha256": "98630bd625c3f71937527eb47bd43d2fae90912a167d8d8e5dbe4a4040890def"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
@@ -1470,10 +1470,22 @@
       "sha256": "482f7c27aacd9f5a75de7870f03790083d7a1577f926a5ab0df87b6292df58af"
     },
     {
+      "path": "reports/hust_saved_source_identity_20261018_root/PUBLIC_INVENTORY_ACCESS_ZH.md",
+      "source_path": "reports/hust_saved_source_identity_20261018_root/PUBLIC_INVENTORY_ACCESS_ZH.md",
+      "bytes": 1446,
+      "sha256": "91fe5fbc2ca66c84cd79343fcb0781af1315858548627046bd895bd6e022df48"
+    },
+    {
       "path": "reports/hust_saved_source_identity_20261018_root/SOURCE_IDENTITY_ZH.md",
       "source_path": "reports/hust_saved_source_identity_20261018_root/SOURCE_IDENTITY_ZH.md",
       "bytes": 2132,
       "sha256": "c36d48709181664e0410298474578de403e0a2b9a221f3c4689446170eb8db44"
+    },
+    {
+      "path": "reports/hust_saved_source_identity_20261018_root/public_inventory_attempt.json",
+      "source_path": "reports/hust_saved_source_identity_20261018_root/public_inventory_attempt.json",
+      "bytes": 2502,
+      "sha256": "465818ef299813b1653a0884263f11bb7899fb2955e056ef93f098ac546e9351"
     },
     {
       "path": "reports/hust_saved_source_identity_20261018_root/source_identity_review.json",

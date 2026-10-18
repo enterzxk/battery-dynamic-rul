@@ -254,3 +254,12 @@
 - **最小验证**：原始ID nsc7hnsg4s/version2/DOI10.17632/nsc7hnsg4s.2与manifest一致；完整对象无files键、size0不解释为空数据；另API文件实际仅路由错误，旧清单接口400不冒充实时结果。
 - **阻塞/风险**：原始文件库存、row/column-serial及跨来源身份未证；pinned cell_id由文件stem生成。发布说明77cell不证明独立物理身份；旧manifest状态不作当前执行状态。new_fits=0、steps/model/inference/binary/test/network=0。
 - **下一步**：一次官方公开v2文件库存metadata查询，只找README/映射文件入口；不下载原始数据/改权限/认证，失败不循环重试。
+
+
+## 2026-10-18 12:02 北京时间：HUST公开文件库存查询一次失败停止
+
+- **已完成**：执行有界公开文件清单访问；官方v2页面身份可读，正文Files无行；一次候选库存端点被网页工具报告不可访问，停止不重试。
+- **证据**：reports/hust_saved_source_identity_20261018_root/public_inventory_attempt.json、PUBLIC_INVENTORY_ACCESS_ZH.md，保存官方/文档/库存精确URL和工具失败类型。
+- **最小验证**：一次库存请求/0重试/0raw下载；未返回origin状态或清单，候选路由正确性未验证；不将旧400、Files无行或size0当新空库存结论。
+- **阻塞/风险**：该来源身份门需新的可读官方库存/README/serial凭证或访问变化；不证明官方不存在映射。当前整个研究不宣称完成。new_fits=0、steps/model/inference/binary/test=0，原预算/门保持。
+- **下一步**：等待上述来源/访问变化再恢复此门，不循环原metadata/HTML、不扩下载；状态不变时定时检查安静结束。

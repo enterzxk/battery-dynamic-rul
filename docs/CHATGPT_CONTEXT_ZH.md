@@ -196,3 +196,8 @@ MATR来源补充核查已完成：已存record19688272完整API（SHA 5b79e36abb
 ## 2026-10-18 11:47 北京时间：HUST来源身份仍缺独立映射
 
 已存Mendeley公开metadata可核原始DOI/版本，但没有files键、size0不能解释为空数据；旧manifest记录文件清单接口400。pinned preprocess_HUST以原file.stem拼HUST_后赋cell_id，不提供独立serial。当前只在已读保存材料中缺证，不声称所有原始材料都无映射。见reports/hust_saved_source_identity_20261018_root/SOURCE_IDENTITY_ZH.md和机器回执。原门控保持、本轮fit/steps/model/inference/binary/test/network均0。下一项一次公开v2文件清单metadata查询，不下载raw或改权限。
+
+
+## 2026-10-18 12:02 北京时间：HUST实时库存入口受限
+
+官方v2页可读，但正文没有展开Files；一次候选公开库存端点被网页工具报告不可访问，没有可核HTTP状态或文件清单，路由正确性也未证。已停止不重试，不把旧400/size0/动态列表未提取解释为空库存或无身份映射。见reports/hust_saved_source_identity_20261018_root/public_inventory_attempt.json与PUBLIC_INVENTORY_ACCESS_ZH.md。原source/physical identity门仍未闭合；需要新可读官方inventory/README/serial凭证或访问变化，再恢复此有界来源任务，不循环当前查询。本轮raw/fit/model/inference/test=0，研究整体未宣称完成。

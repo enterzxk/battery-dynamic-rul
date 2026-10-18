@@ -1,0 +1,48 @@
+{
+  "at_utc": "2026-10-18T04:02:59.687351+00:00",
+  "decision": "STOP_PUBLIC_INVENTORY_ACCESS_UNRESOLVED_NO_RETRY",
+  "collection_method": "web tool observations; not a raw HTTP response or complete API snapshot",
+  "sources": [
+    {
+      "url": "https://data.mendeley.com/datasets/nsc7hnsg4s/2",
+      "outcome": "OFFICIAL_PAGE_READ",
+      "observed_sections": {
+        "identity": "Version2, published24May2022, DOI10.17632/nsc7hnsg4s.2",
+        "Files": "Heading present but no file rows in tool-extracted page text"
+      },
+      "interpretation": "No file rows in extracted page is not evidence of zero files; dynamic file list may be outside extraction"
+    },
+    {
+      "url": "https://data.mendeley.com/api/docs",
+      "outcome": "TOOL_FETCH_FAILED",
+      "tool_error": "Failed to fetch ... (400) Timeout fetching",
+      "interpretation": "Tool-reported docs fetch failure; not an inventory response"
+    },
+    {
+      "url": "https://data.mendeley.com/public-api/datasets/nsc7hnsg4s/files?folder_id=root&version=2",
+      "outcome": "TOOL_URL_NOT_ACCESSIBLE",
+      "tool_error": "URL ... is not accessible via this tool.",
+      "http_status_verified": null,
+      "endpoint_route_validated": false,
+      "returned_file_inventory": false,
+      "interpretation": "No successful origin response; exact route correctness and server response unknown, do not label current source400 or empty inventory"
+    }
+  ],
+  "inventory_attempts": 1,
+  "inventory_retries": 0,
+  "raw_files_downloaded": 0,
+  "raw_or_auth_bodies_read": 0,
+  "authentication_or_terms_changed": false,
+  "source_identity_closed": false,
+  "physical_serial_mapping_verified": false,
+  "negative_evidence_boundary": "Access limitation only; no absence claim about official raw files, README or serial map",
+  "prior_saved_review_sha256": "21d5356c053ebe46bbe873e8563415ad6c3fd587a8426ef82772c721f532b842",
+  "new_fits": 0,
+  "optimizer_steps": 0,
+  "model_loads": 0,
+  "new_inference": 0,
+  "binary_reads": 0,
+  "test_access": false,
+  "gates_changed": false,
+  "next_action": "WAIT_FOR_CHANGED_SOURCE_EVIDENCE: original HUST inventory metadata attempt consumed. Do not requery same endpoint/HTML or broaden downloads. Resume this identity gate only upon a readable official file inventory/README/serial map or changed access evidence; retain physical identity/pretraining overlap unverified and existing no-fit/test/PBT gates. No independent authorized scientific action identified in this bounded source task."
+}
