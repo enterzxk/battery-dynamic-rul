@@ -95,6 +95,12 @@ def main():
     chosen.add('reports/matr_raw_longtrend_review_20261018_luna/review.json')
     chosen.update(str(p.relative_to(ROOT)) for p in (ROOT/'experiments/matr_raw_batch2_longtrend_seed42_v1').iterdir() if p.is_file())
 
+    chosen.update(['automation/bin/matr_raw_batch4_asset_worker_v1.py','automation/bin/matr_raw_batch4_asset_worker_v2.py'])
+    for name in ['DATAV1_ZH.md','source_receipt.json','quarantine_report.json','protocol.json','failure.json','two_raw_cycle_check.json','combined_cohort_summary.json','repair_v2/protocol.json','repair_v2/two_raw_cycle_check.json','repair_v2/completion.json']:
+        chosen.add('reports/matr_raw_batch4_datav1_20261018_root/' + name)
+
+    chosen.discard('experiments/matr_raw_batch2_longtrend_seed42_v1/previous_github_sync.json')
+
     contents, files, skipped = {}, [], []
     mapping = {'README.md': 'docs/GITHUB_README_ZH.md', 'agent.md': 'AGENTS.md'}
     mapping.update({rel: rel for rel in sorted(chosen)})

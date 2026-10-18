@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-18T09:08:38.384287+00:00",
-  "content_sha256": "2aae5a5cb5d698b44cff386f55234349d867d18099d4724329028e9a146161e5",
-  "file_count": 475,
+  "snapshot_utc": "2026-10-18T09:19:33.115329+00:00",
+  "content_sha256": "d61855a7b6da82944b48ed30419f5411f6ea4457d7609f303bcda6d947f806b0",
+  "file_count": 487,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,8 +14,8 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 57209,
-      "sha256": "2e1f83878b4893fd82d30ebed35a998e06139acf9ab34d5083d35448b9988c15"
+      "bytes": 59029,
+      "sha256": "bad07a9d5ecef708b685457c1241dc6f051aa0cd9d92f57da01e60860ee887aa"
     },
     {
       "path": "README.md",
@@ -32,14 +32,26 @@
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 13299,
-      "sha256": "a3ee4513de467a77ceb0fc833a404f574aa1d2f043836c39e1670b263ce2e44a"
+      "bytes": 13858,
+      "sha256": "189b73e17610cf5bf70c323f4f4e817045afec23454136fdb8c54910fc2aa19e"
     },
     {
       "path": "automation/bin/matr_raw_batch2_asset_worker_v1.py",
       "source_path": "automation/bin/matr_raw_batch2_asset_worker_v1.py",
       "bytes": 8872,
       "sha256": "751fe047d7f98e12c5784dcf846ddf37a241a846f79a115a80ef3e9991371c2c"
+    },
+    {
+      "path": "automation/bin/matr_raw_batch4_asset_worker_v1.py",
+      "source_path": "automation/bin/matr_raw_batch4_asset_worker_v1.py",
+      "bytes": 8852,
+      "sha256": "424d8c810d8fadd9c5f77416f93d544f4d3c1731d065e823897581170079fe8a"
+    },
+    {
+      "path": "automation/bin/matr_raw_batch4_asset_worker_v2.py",
+      "source_path": "automation/bin/matr_raw_batch4_asset_worker_v2.py",
+      "bytes": 9007,
+      "sha256": "bed54a0e03f2838dc330944d2cffba443cf55f912075c5578886b019d30e333a"
     },
     {
       "path": "automation/bin/matr_selected_range_worker_v1.py",
@@ -146,8 +158,8 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 44470,
-      "sha256": "9f016fc68eac5e93251fb132c49b451cd0b5afdcdf0623220577ea1afa1d40f4"
+      "bytes": 46290,
+      "sha256": "fee72299acc1b067f649b4874c4f05d646649caac3f78512b311d36dfcc50280"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
@@ -2020,6 +2032,66 @@
       "source_path": "reports/matr_raw_batch2_datav1_20261018_root/two_raw_cycle_check.json",
       "bytes": 701,
       "sha256": "02f2c4f28981e2a76575d22e93ebde40d6a45a53e4a1b9015d4ae99970679bba"
+    },
+    {
+      "path": "reports/matr_raw_batch4_datav1_20261018_root/DATAV1_ZH.md",
+      "source_path": "reports/matr_raw_batch4_datav1_20261018_root/DATAV1_ZH.md",
+      "bytes": 2928,
+      "sha256": "c9b9c993e797b85a10dc9e6a506ca73369402550d49a31dee3219d1727df15f2"
+    },
+    {
+      "path": "reports/matr_raw_batch4_datav1_20261018_root/combined_cohort_summary.json",
+      "source_path": "reports/matr_raw_batch4_datav1_20261018_root/combined_cohort_summary.json",
+      "bytes": 5460,
+      "sha256": "a161afa2d86f70b9233de6136333d7d4a0ac73bc34966e748150a377fa41e7fd"
+    },
+    {
+      "path": "reports/matr_raw_batch4_datav1_20261018_root/failure.json",
+      "source_path": "reports/matr_raw_batch4_datav1_20261018_root/failure.json",
+      "bytes": 3220,
+      "sha256": "7a8f747aee33d0568033b80199e293698529634fbc5631c409e50bd6c418ab63"
+    },
+    {
+      "path": "reports/matr_raw_batch4_datav1_20261018_root/protocol.json",
+      "source_path": "reports/matr_raw_batch4_datav1_20261018_root/protocol.json",
+      "bytes": 2118,
+      "sha256": "10baa8eb69f989e9bdd446436c1940e1acc9c09da3250ea97dc45b8d095729ad"
+    },
+    {
+      "path": "reports/matr_raw_batch4_datav1_20261018_root/quarantine_report.json",
+      "source_path": "reports/matr_raw_batch4_datav1_20261018_root/quarantine_report.json",
+      "bytes": 359,
+      "sha256": "1d701e11a1ac737ea7306ec97d95cd3be702d9073cd507a3662d7cedaaecff38"
+    },
+    {
+      "path": "reports/matr_raw_batch4_datav1_20261018_root/repair_v2/completion.json",
+      "source_path": "reports/matr_raw_batch4_datav1_20261018_root/repair_v2/completion.json",
+      "bytes": 742,
+      "sha256": "6cd3b27b6a6bedad2e63c2b91ac868929e3782a7d150372c9dedefc7ebf26075"
+    },
+    {
+      "path": "reports/matr_raw_batch4_datav1_20261018_root/repair_v2/protocol.json",
+      "source_path": "reports/matr_raw_batch4_datav1_20261018_root/repair_v2/protocol.json",
+      "bytes": 2492,
+      "sha256": "cdd6172df3d120ec0a61e9b686e65ba4b74c53ae874e8067b079de920ee8fb4e"
+    },
+    {
+      "path": "reports/matr_raw_batch4_datav1_20261018_root/repair_v2/two_raw_cycle_check.json",
+      "source_path": "reports/matr_raw_batch4_datav1_20261018_root/repair_v2/two_raw_cycle_check.json",
+      "bytes": 896,
+      "sha256": "3938c973da441880bdd840f95c61d3f95d58800ddce2d8f88cfea856e094af12"
+    },
+    {
+      "path": "reports/matr_raw_batch4_datav1_20261018_root/source_receipt.json",
+      "source_path": "reports/matr_raw_batch4_datav1_20261018_root/source_receipt.json",
+      "bytes": 535,
+      "sha256": "6da8d811edc465a1db2823b0088f0760a55d36c6d39185867ca61c644c5dd42a"
+    },
+    {
+      "path": "reports/matr_raw_batch4_datav1_20261018_root/two_raw_cycle_check.json",
+      "source_path": "reports/matr_raw_batch4_datav1_20261018_root/two_raw_cycle_check.json",
+      "bytes": 700,
+      "sha256": "8173ab2b33755d49d1660d699d422a88ef358733fe9cea4c173ad28c6d734ffc"
     },
     {
       "path": "reports/matr_raw_longtrend_review_20261018_luna/review.json",

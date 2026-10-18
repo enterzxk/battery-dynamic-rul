@@ -1,3 +1,11 @@
+## 2026-10-18：第四批原始数据格式阻塞已隔离修复，70cell因果资产完成
+- **已完成**：官方第四批HEAD锁定2,601,295,745bytes与ETag，21次范围请求/21,798,785bytes；两真实cycle100容量核验后发现b4c31原始cycle833条而QDischarge834条。保留v1失败，整cell隔离；v2完全缓存0新GET完成另外35颗。
+- **证据**：reports/matr_raw_batch4_datav1_20261018_root/DATAV1_ZH.md、source_receipt.json、protocol.json、failure.json、repair_v2/protocol.json及completion.json、combined_cohort_summary.json；data/processed/data_v1_matr_raw_batch4/manifest.json SHA862d796f8b1ba2d0d865884de1d77e32f2e7ce00480327299209d966c73bbe8e。
+- **最小验证**：b4c1/b4c3 rawcycle100 Qd最大值与summary差0、时间单调与prefix截断相等；保留cell循环无缺口/无效，旧容量去首行后差0。一次关键失败诊断找到长度不匹配，未截断配对/重编号/改标签；无需新增smoke。合并52train/18development、26848/9561origin。
+- **阻塞/风险**：train事件范围148–561扩大至148–1056，修复寿命范围不足的数据条件，尚未证明模型收益。两批全为已观测事件、18dev已用于开发，非独立确认/自然删失收益；物理serial未闭合，fullsource SHA未知。隔离b4c31导致不同于旧52/19队列，不直接比较总指标。本轮new_fits=0、steps=0、test=0，旧GO消费不变。
+- **下一步**：冻结两批52训练电池的按源ID且分批稳定哈希留出校准组（每批5颗共10，余42fit），实现同一固定HGB的训练残差/独立电池校准残差概率对照；一次关键窄审与精确GO后只跑1CPUfit，评估18dev但不调参、不作独立确认；测试仍锁定。检验coverage/宽度/Brier与逐cell差异，不把校准称新方法或预设收益。
+
+
 ## 2026-10-18：原始批次3CPUfit真实完成，长期速率候选NO_GAIN
 - **已完成**：独立关键窄审后一次限定GO执行3CPUfit：稳健线性A/同输入非线性B/只加100速率C。Time-MAE35.843670/27.632472/27.438338；C对B仅0.7026%，NO_GAIN且不扩复杂度/seed。
 - **证据**：experiments/matr_raw_batch2_longtrend_seed42_v1/RESULTS_ZH.md、protocol/ROOT_GO/fit_ledger/completion、10758行development_predictions.csv、metrics/comparisons/independent_metrics、failure_support_diagnosis。审查reports/matr_raw_longtrend_review_20261018_luna/review.json，子代理请求gpt-6-luna/high。

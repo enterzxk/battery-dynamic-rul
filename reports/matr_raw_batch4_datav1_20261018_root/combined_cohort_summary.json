@@ -1,0 +1,242 @@
+{
+  "status": "COMPLETE_NONTEST_RAW_BATCH2_4_ASSETS",
+  "manifests": {
+    "batch2": {
+      "path": "/home/yndx/zxk/rul/data/processed/data_v1_matr_raw_batch2/manifest.json",
+      "sha256": "fcbedb9ee4ea9da83efe3239cda3d56d629678b3dbbd90b675039f6456ad32c1"
+    },
+    "batch4": {
+      "path": "/home/yndx/zxk/rul/data/processed/data_v1_matr_raw_batch4/manifest.json",
+      "sha256": "862d796f8b1ba2d0d865884de1d77e32f2e7ce00480327299209d966c73bbe8e"
+    }
+  },
+  "cells": 70,
+  "roles": {
+    "batch2": {
+      "train": {
+        "cells": 26,
+        "prefixes": 9445,
+        "event_min_max": [
+          148,
+          561
+        ],
+        "observed_events": 26,
+        "censored": 0,
+        "source_ids": [
+          "MATR_b2c0",
+          "MATR_b2c1",
+          "MATR_b2c3",
+          "MATR_b2c4",
+          "MATR_b2c5",
+          "MATR_b2c6",
+          "MATR_b2c10",
+          "MATR_b2c14",
+          "MATR_b2c17",
+          "MATR_b2c18",
+          "MATR_b2c19",
+          "MATR_b2c21",
+          "MATR_b2c24",
+          "MATR_b2c26",
+          "MATR_b2c28",
+          "MATR_b2c29",
+          "MATR_b2c30",
+          "MATR_b2c31",
+          "MATR_b2c32",
+          "MATR_b2c33",
+          "MATR_b2c34",
+          "MATR_b2c36",
+          "MATR_b2c37",
+          "MATR_b2c38",
+          "MATR_b2c39",
+          "MATR_b2c41"
+        ]
+      },
+      "val": {
+        "cells": 9,
+        "prefixes": 3586,
+        "event_min_max": [
+          429,
+          713
+        ],
+        "observed_events": 9,
+        "censored": 0,
+        "source_ids": [
+          "MATR_b2c2",
+          "MATR_b2c13",
+          "MATR_b2c22",
+          "MATR_b2c25",
+          "MATR_b2c35",
+          "MATR_b2c40",
+          "MATR_b2c45",
+          "MATR_b2c46",
+          "MATR_b2c47"
+        ]
+      }
+    },
+    "batch4": {
+      "train": {
+        "cells": 26,
+        "prefixes": 17403,
+        "event_min_max": [
+          443,
+          1056
+        ],
+        "observed_events": 26,
+        "censored": 0,
+        "source_ids": [
+          "MATR_b4c1",
+          "MATR_b4c4",
+          "MATR_b4c7",
+          "MATR_b4c8",
+          "MATR_b4c9",
+          "MATR_b4c10",
+          "MATR_b4c11",
+          "MATR_b4c12",
+          "MATR_b4c14",
+          "MATR_b4c15",
+          "MATR_b4c18",
+          "MATR_b4c19",
+          "MATR_b4c20",
+          "MATR_b4c21",
+          "MATR_b4c23",
+          "MATR_b4c24",
+          "MATR_b4c25",
+          "MATR_b4c26",
+          "MATR_b4c29",
+          "MATR_b4c30",
+          "MATR_b4c34",
+          "MATR_b4c37",
+          "MATR_b4c38",
+          "MATR_b4c40",
+          "MATR_b4c42",
+          "MATR_b4c43"
+        ]
+      },
+      "val": {
+        "cells": 9,
+        "prefixes": 5975,
+        "event_min_max": [
+          506,
+          914
+        ],
+        "observed_events": 9,
+        "censored": 0,
+        "source_ids": [
+          "MATR_b4c3",
+          "MATR_b4c5",
+          "MATR_b4c13",
+          "MATR_b4c16",
+          "MATR_b4c22",
+          "MATR_b4c28",
+          "MATR_b4c32",
+          "MATR_b4c33",
+          "MATR_b4c39"
+        ]
+      }
+    },
+    "combined": {
+      "train": {
+        "cells": 52,
+        "prefixes": 26848,
+        "event_min_max": [
+          148,
+          1056
+        ],
+        "observed_events": 52,
+        "censored": 0,
+        "source_ids": [
+          "MATR_b2c0",
+          "MATR_b2c1",
+          "MATR_b2c3",
+          "MATR_b2c4",
+          "MATR_b2c5",
+          "MATR_b2c6",
+          "MATR_b2c10",
+          "MATR_b2c14",
+          "MATR_b2c17",
+          "MATR_b2c18",
+          "MATR_b2c19",
+          "MATR_b2c21",
+          "MATR_b2c24",
+          "MATR_b2c26",
+          "MATR_b2c28",
+          "MATR_b2c29",
+          "MATR_b2c30",
+          "MATR_b2c31",
+          "MATR_b2c32",
+          "MATR_b2c33",
+          "MATR_b2c34",
+          "MATR_b2c36",
+          "MATR_b2c37",
+          "MATR_b2c38",
+          "MATR_b2c39",
+          "MATR_b2c41",
+          "MATR_b4c1",
+          "MATR_b4c4",
+          "MATR_b4c7",
+          "MATR_b4c8",
+          "MATR_b4c9",
+          "MATR_b4c10",
+          "MATR_b4c11",
+          "MATR_b4c12",
+          "MATR_b4c14",
+          "MATR_b4c15",
+          "MATR_b4c18",
+          "MATR_b4c19",
+          "MATR_b4c20",
+          "MATR_b4c21",
+          "MATR_b4c23",
+          "MATR_b4c24",
+          "MATR_b4c25",
+          "MATR_b4c26",
+          "MATR_b4c29",
+          "MATR_b4c30",
+          "MATR_b4c34",
+          "MATR_b4c37",
+          "MATR_b4c38",
+          "MATR_b4c40",
+          "MATR_b4c42",
+          "MATR_b4c43"
+        ]
+      },
+      "val": {
+        "cells": 18,
+        "prefixes": 9561,
+        "event_min_max": [
+          429,
+          914
+        ],
+        "observed_events": 18,
+        "censored": 0,
+        "source_ids": [
+          "MATR_b2c2",
+          "MATR_b2c13",
+          "MATR_b2c22",
+          "MATR_b2c25",
+          "MATR_b2c35",
+          "MATR_b2c40",
+          "MATR_b2c45",
+          "MATR_b2c46",
+          "MATR_b2c47",
+          "MATR_b4c3",
+          "MATR_b4c5",
+          "MATR_b4c13",
+          "MATR_b4c16",
+          "MATR_b4c22",
+          "MATR_b4c28",
+          "MATR_b4c32",
+          "MATR_b4c33",
+          "MATR_b4c39"
+        ]
+      }
+    }
+  },
+  "source_id_disjoint": true,
+  "physical_serial_disjoint": "UNVERIFIED",
+  "new_fits": 0,
+  "test_reads": 0,
+  "quarantined_ids": [
+    "MATR_b4c31"
+  ],
+  "development_is_independent_confirmation": false
+}

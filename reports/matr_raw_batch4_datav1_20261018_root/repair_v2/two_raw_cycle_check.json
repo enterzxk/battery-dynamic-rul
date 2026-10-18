@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "cell_id": "MATR_b4c1",
+      "actual_cycle": 100,
+      "raw_cycle_index": 99,
+      "summary_capacity_Ah": 1.0469337,
+      "raw_Qd_max_Ah": 1.0469337,
+      "difference_Ah": 0.0,
+      "raw_points": 732,
+      "time_nondecreasing": true,
+      "truncated_feature_equality": true
+    },
+    {
+      "cell_id": "MATR_b4c3",
+      "actual_cycle": 100,
+      "raw_cycle_index": 99,
+      "summary_capacity_Ah": 1.0498888,
+      "raw_Qd_max_Ah": 1.0498888,
+      "difference_Ah": 0.0,
+      "raw_points": 728,
+      "time_nondecreasing": true,
+      "truncated_feature_equality": true
+    }
+  ],
+  "source_etag": "8aba93a84a5c353645274b231a3707b0-311",
+  "reused_from": "/home/yndx/zxk/rul/reports/matr_raw_batch4_datav1_20261018_root/two_raw_cycle_check.json",
+  "source_sha256": "8173ab2b33755d49d1660d699d422a88ef358733fe9cea4c173ad28c6d734ffc"
+}

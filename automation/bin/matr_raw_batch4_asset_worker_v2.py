@@ -1,0 +1,84 @@
+import sys,io,json,pathlib,hashlib,time,ast,csv,datetime
+sys.path.insert(0,'/home/yndx/zxk/rul/runtime_deps/h5py_3_11')
+import h5py,numpy as np
+R=pathlib.Path('/home/yndx/zxk/rul');BASE=R/'reports/matr_raw_range_20261018_root';O=R/'reports/matr_raw_batch4_datav1_20261018_root/repair_v2';O.mkdir(exist_ok=False)
+DATA=R/'data/processed/data_v1_matr_raw_batch4'
+SPLIT=R/'repos/pinned/BatteryLife_3b17bb53202e10711deae0448c91f84144bb3dd9/data_provider/data_split_recorder.py'
+roles={}
+for n in ast.parse(SPLIT.read_text()).body[0].body:
+ if isinstance(n,ast.Assign) and isinstance(n.targets[0],ast.Name):
+  for role in ['train','val','test']:
+   if n.targets[0].id=='MATR_'+role+'_files':
+    for name in ast.literal_eval(n.value):
+     if name.startswith('MATR_b4c'):roles[int(name.split('b4c')[1].split('.')[0])]=role
+ids=sorted(i for i,r in roles.items() if r!='test' and i!=31);assert len(ids)==35
+B={'source_url':'https://data.matr.io/assetstore/85/13/851331bb015245eba64586099449fa93','source_bytes':2601295745,'source_etag':'8aba93a84a5c353645274b231a3707b0-311','max_new_network_bytes':45310079,'max_new_requests':43,'max_seconds':130,'source_indices':ids,'roles':{str(i):roles[i] for i in ids},'two_raw_cycle_checks':[[1,100],[3,100]],'test_indices_excluded':sorted(i for i,r in roles.items() if r=='test'),'special_shift_quarantine':[],'continuation_aliases_not_in_cohort':[],'nominal_Ah':1.1,'event':'first valid actual source cycle summary.QDischarge<=.88Ah; otherwise right censor at last valid cycle','origins':'all valid source cycles>=100 before event or <=censor','features':'age,currentSOH,past20 and past100 TheilSen using actual cycle denominator; masks if numeric window incomplete','no_imputation':True,'test_access':False,'predictive_fits':0}
+def dump(p,d):
+ with p.open('x') as f:json.dump(d,f,ensure_ascii=False,indent=2);f.write('\n')
+B.update(quarantined_source_ids={'MATR_b4c31':'summary.cycle833 versus QDischarge834; no positional repair without correspondence evidence'},parent_protocol_sha256='10baa8eb69f989e9bdd446436c1940e1acc9c09da3250ea97dc45b8d095729ad', cumulative_original_budget={'max_bytes':67108864,'max_requests':64,'v1_consumed_bytes':21798785,'v1_consumed_requests':21},source_api_url='https://data.matr.io/1/api/v1/file/5dcef152110002c7215b2c90/download',batch_specific_alias_verification='No cross-batch alias proof; source-index disjoint only');dump(O/'protocol.json',B)
+start=time.monotonic();parent=R/'reports/matr_raw_batch4_datav1_20261018_root';old={'blocks':json.loads((parent/'failure.json').read_text())['new_requests']};blocks={}
+for r in old['blocks']:
+ k=r['offset']//1048576;b=(parent/('block_'+str(k)+'.bin')).read_bytes();assert hashlib.sha256(b).hexdigest()==r['sha256'];blocks[k]=b
+new=[];used=0
+class RF(io.RawIOBase):
+ def __init__(self):self.pos=0
+ def readable(self):return True
+ def seekable(self):return True
+ def tell(self):return self.pos
+ def seek(self,o,w=0):
+  self.pos=o if w==0 else self.pos+o if w==1 else B['source_bytes']+o;assert self.pos>=0;return self.pos
+ def read(self,n=-1):
+  global used
+  if n<0:n=B['source_bytes']-self.pos
+  n=min(n,B['source_bytes']-self.pos);result=bytearray()
+  while n>0:
+   key=self.pos//1048576;offset=key*1048576
+   if key not in blocks:
+    size=min(1048576,B['source_bytes']-offset)
+    assert used+size<=B['max_new_network_bytes'] and len(new)<B['max_new_requests'] and time.monotonic()-start<B['max_seconds']
+    print(json.dumps({'request':True,'offset':offset,'size':size}),flush=True);b=sys.stdin.buffer.read(size);assert len(b)==size
+    blocks[key]=b;used+=size;(O/('block_'+str(key)+'.bin')).write_bytes(b);new.append({'offset':offset,'bytes':size,'sha256':hashlib.sha256(b).hexdigest()})
+   b=blocks[key];k=self.pos-offset;take=min(n,len(b)-k);assert take>0;result.extend(b[k:k+take]);self.pos+=take;n-=take
+  return bytes(result)
+ def readinto(self,b):
+  d=self.read(len(b));b[:len(d)]=d;return len(d)
+def features(cy,q,valid,t):
+ out={'origin_cycle':int(t),'visible_through_cycle':int(t),'soh':float(q[cy==t][0]/1.1)}
+ for width in [20,100]:
+  ix=np.flatnonzero(valid&(cy<=t)&(cy>=t-width+1));x=cy[ix];y=q[ix]/1.1;ok=len(ix)==width and np.all(np.diff(x)==1)
+  if ok:
+   a,b=np.triu_indices(width,1);rate=float(np.median((y[b]-y[a])/(x[b]-x[a])))
+  else:rate=None
+  out.update({f'rate{width}_per_cycle':rate,f'rate{width}_missing':not ok})
+ return out
+try:
+ rf=RF();cells=[];summaries={};checks=[]
+ with h5py.File(rf,'r') as f:
+  batch=f['batch']
+  prior_check=parent/'two_raw_cycle_check.json';check=json.loads(prior_check.read_text());assert check['status']=='PASS';dump(O/'two_raw_cycle_check.json',dict(check,reused_from=str(prior_check),source_sha256=hashlib.sha256(prior_check.read_bytes()).hexdigest()))
+  for i in ids:
+   s=f[batch['summary'][i,0]];cy=np.asarray(s['cycle'][:]).reshape(-1);q=np.asarray(s['QDischarge'][:]).reshape(-1)
+   assert len(cy)==len(q) and np.isfinite(cy).all() and np.all(cy==np.round(cy)) and np.all(np.diff(cy)>0);cy=cy.astype(int)
+   valid=np.isfinite(q)&(q>0)&(q<=2.2)&(cy>=1);cross=np.flatnonzero(valid&(q<=.88));event=int(cy[cross[0]]) if len(cross) else None
+   stop=event if event is not None else int(cy[valid][-1]);origin=cy[valid&(cy>=100)&((cy<stop) if event is not None else (cy<=stop))]
+   policy=f[batch['policy_readable'][i,0]];policy=''.join(chr(int(x)) for x in np.asarray(policy[:]).reshape(-1) if x)
+   cid='MATR_b4c'+str(i);meta={'cell_id':cid,'role':roles[i],'source_index':i,'raw_rows':len(q),'valid_rows':int(valid.sum()),'invalid_rows':int((~valid).sum()),'gap_count':int((np.diff(cy[valid])>1).sum()),'event_cycle':event,'censor_cycle':None if event is not None else stop,'censor_reason':'unknown' if event is None else 'not_applicable','prefix_count':len(origin),'policy':policy,'nominal_Ah':1.1,'identity_scope':'source batch/index only; MATLAB string barcode opaque, not physical serial'}
+   oldp=R/'reports/matr_schema_audit/run_v2_20261016T031830319822Z/cells'/(cid+'.pkl.cycles.json')
+   if oldp.exists():
+    oq=np.array([r['capacity_Ah'] for r in json.loads(oldp.read_text())]);n=min(len(oq),len(q)-1);meta['max_capacity_delta_old_shift1']=float(abs(oq[:n]-q[1:1+n]).max());meta['old_summary_sha256']=hashlib.sha256(oldp.read_bytes()).hexdigest()
+   summaries[cid]=(cy,q,valid,origin);cells.append(meta)
+ DATA.mkdir(exist_ok=False)
+ for m in cells:
+  cid=m['cell_id'];cy,q,valid,origin=summaries[cid];p=DATA/(cid+'_cycles.csv')
+  with p.open('x',newline='') as f:
+   w=csv.writer(f);w.writerow(['actual_cycle','capacity_Ah','valid']);w.writerows(zip(cy,q,valid))
+  m['cycles_sha256']=hashlib.sha256(p.read_bytes()).hexdigest();rows=[features(cy,q,valid,int(t)) for t in origin];p=DATA/(cid+'_features.csv')
+  with p.open('x',newline='') as f:
+   w=csv.DictWriter(f,fieldnames=['origin_cycle','visible_through_cycle','soh','rate20_per_cycle','rate20_missing','rate100_per_cycle','rate100_missing']);w.writeheader();w.writerows(rows)
+  m['features_sha256']=hashlib.sha256(p.read_bytes()).hexdigest()
+ manifest={'status':'COMPLETE_RAW_SOURCE_BATCH4_TRAIN_DEVELOPMENT_ASSETS','cells':cells,'source_url':B['source_url'],'source_etag':B['source_etag'],'full_source_sha256':'UNKNOWN_NOT_FULL_FILE','cached_block_receipts':old['blocks'],'new_block_receipts':new,'protocol_sha256':hashlib.sha256((O/'protocol.json').read_bytes()).hexdigest(),'runner_sha256':hashlib.sha256(pathlib.Path(__file__).read_bytes()).hexdigest(),'split_sha256':hashlib.sha256(SPLIT.read_bytes()).hexdigest(),'new_predictive_fits':0,'optimizer_steps':0,'test_cell_reads':0,'limits':['development exposure inherited; not independent confirmation','batch4 only; no natural-censor benefit claim','MATR_b4c31 fully quarantined for unmatched raw lengths; no silent truncation','source IDs do not prove global physical identity']}
+ dump(DATA/'manifest.json',manifest)
+ summary={'status':manifest['status'],'cells':len(cells),'counts':{r:{'cells':sum(m['role']==r for m in cells),'prefixes':sum(m['prefix_count'] for m in cells if m['role']==r),'observed_events':sum(m['event_cycle'] is not None for m in cells if m['role']==r)} for r in ['train','val']},'new_network_bytes':used,'new_requests':len(new),'quarantined_cell_ids':['MATR_b4c31'],'prior_consumed_bytes':21798785,'cumulative_network_bytes':21798785+used,'elapsed_seconds':time.monotonic()-start,'two_raw_cycle_checks':'PASS','manifest_sha256':hashlib.sha256((DATA/'manifest.json').read_bytes()).hexdigest(),'maximum_delta_old_capacity_shift1':max(m.get('max_capacity_delta_old_shift1',0) for m in cells),'invalid_rows':sum(m['invalid_rows'] for m in cells),'gaps':sum(m['gap_count'] for m in cells),'new_fits':0,'test_cell_reads':0}
+ dump(O/'completion.json',summary);print(json.dumps({'done':True,'result':summary}),flush=True)
+except BaseException as e:
+ dump(O/'failure.json',{'error':str(e),'type':type(e).__name__,'new_network_bytes':used,'new_requests':new,'elapsed_seconds':time.monotonic()-start});print(json.dumps({'done':True,'error':str(e),'type':type(e).__name__}),flush=True);raise
