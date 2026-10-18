@@ -1,0 +1,17 @@
+{
+  "persistence": {
+    "MAE_mSOH": 9.588254015264635,
+    "bias_mSOH": 9.562119330055223,
+    "RMSE_mSOH": 13.035652480905815
+  },
+  "robust20_extrapolation": {
+    "MAE_mSOH": 1.972893689511603,
+    "bias_mSOH": 1.8071723790399816,
+    "RMSE_mSOH": 3.2238539088861886
+  },
+  "learned_capacity20": {
+    "MAE_mSOH": 1.0314458076437922,
+    "bias_mSOH": 0.3401398200224614,
+    "RMSE_mSOH": 1.7164879429171702
+  }
+}

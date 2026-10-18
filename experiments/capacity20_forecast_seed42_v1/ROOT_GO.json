@@ -1,0 +1,19 @@
+{
+  "status": "GO_ONE_AUX_CAPACITY_CPU_FIT_CAL_ONLY",
+  "issued_utc": "2026-10-18T09:49:51.563843+00:00",
+  "owner": "01a14d81-fffd-7092-9a86-45704ca86840",
+  "actual_cwd": "/home/yndx/zxk/rul",
+  "max_new_CPU_predictive_fits": 1,
+  "optimizer_steps": 0,
+  "development_access": false,
+  "test_access": false,
+  "max_seconds": 180,
+  "global_new_fits_allowed_remains": false,
+  "review_path": "/home/yndx/zxk/rul/reports/capacity20_forecast_review_20261018_luna/review.json",
+  "review_sha256": "b058db8b89d2d9cc1bf52b8acf8966c66894edb7493f0e7945ca53af67c8e7e3",
+  "reviewer_requested_model": "gpt-6-luna/high",
+  "scientific_scope": "Forecast capability against persistence and robust20. No RUL correction, no guarantee or novelty claim; failure consumes budget and stops.",
+  "runner.py_sha256": "631759314cd5066383f9c9c9bb325e52fa66702cd2aff0f38da7878019bbb20a",
+  "protocol.json_sha256": "258ad319b5cde47e958c5b49895adf1448dc03f6a1395b266d1858c01b8493b4",
+  "cohort.json_sha256": "42535de5825f6857e3aa69a596306a909a9a1b3ac087c43631032f6d293ef289"
+}

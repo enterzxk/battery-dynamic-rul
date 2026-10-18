@@ -108,6 +108,10 @@ def main():
     for name in ['protocol.json','diagnose.py','diagnostic.json','minimal_validation.json','root_decision.json','RESULTS_ZH.md']:
         chosen.add('reports/causal_capacity_feedback_20261018_root/' + name)
 
+    chosen.add('reports/capacity20_forecast_review_20261018_luna/review.json')
+    for name in ['runner.py', 'protocol.json', 'cohort.json', 'ROOT_GO.json', 'fit_ledger.jsonl', 'completion.json', 'metrics.json', 'per_cell_metrics.json', 'comparison.json', 'independent_metric_recompute.py', 'independent_metrics.json', 'published_predictions.json', 'decode_public_predictions.py', 'two_pair_check.json', 'root_decision.json', 'RESULTS_ZH.md']:
+        chosen.add('experiments/capacity20_forecast_seed42_v1/' + name)
+
     contents, files, skipped = {}, [], []
     mapping = {'README.md': 'docs/GITHUB_README_ZH.md', 'agent.md': 'AGENTS.md'}
     mapping.update({rel: rel for rel in sorted(chosen)})

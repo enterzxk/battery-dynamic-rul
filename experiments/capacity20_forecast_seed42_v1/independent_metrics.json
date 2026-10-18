@@ -1,0 +1,26 @@
+{
+  "status": "PASS_FROM_ORIGINAL_FORECAST_CSV_NO_MODEL",
+  "metrics": {
+    "persistence": {
+      "MAE_mSOH": 9.588254015264635,
+      "bias_mSOH": 9.562119330055223,
+      "RMSE_mSOH": 13.035652480905815
+    },
+    "robust20_extrapolation": {
+      "MAE_mSOH": 1.9728936895116025,
+      "bias_mSOH": 1.8071723790399818,
+      "RMSE_mSOH": 3.223853908886189
+    },
+    "learned_capacity20": {
+      "MAE_mSOH": 1.0314458076437922,
+      "bias_mSOH": 0.3401398200224614,
+      "RMSE_mSOH": 1.7164879429171702
+    }
+  },
+  "maximum_metric_delta": 4.440892098500626e-16,
+  "forecasts": 4367,
+  "cells": 10,
+  "one_mSOH_in_Ah": 0.0011,
+  "no_future_feature_index": true,
+  "new_fits": 0
+}

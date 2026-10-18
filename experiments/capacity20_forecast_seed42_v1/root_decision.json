@@ -1,0 +1,21 @@
+{
+  "decision": "PASS_AUX_CAPACITY20_CAPABILITY_ONLY",
+  "RUL_gain_established": false,
+  "novelty_established": false,
+  "independent_confirmation": false,
+  "GO_consumed": true,
+  "new_CPU_predictive_fits": 1,
+  "optimizer_steps": 0,
+  "development_or_test_reads": 0,
+  "checkpoint_sha256": "5022a619e9cc86c725be57faabc8ab0a191e084d58c342f67ac303f6fb9ea006",
+  "next_bounded_action": {
+    "task": "Zero-fit ten-cal learned capacity forecast residual diagnostic only. At t=s+20, innovation=true_delta_mSOH(s,t)-predicted_delta_mSOH(s,t), compare sign and within-cell rank against retrospective trueRUL_t-exp(mu_t). Controls: true_delta (persistence residual), true_delta-robust20_delta (simple forecast residual), and age. Same fixed20 horizon; no threshold/sign/window sweep, no dev/test or model load/forward. Freeze summary screen before calculation. Never use trueRUL residual as online signal.",
+    "prediction_csv": "experiments/capacity20_forecast_seed42_v1/calibration_predictions.csv",
+    "prediction_sha256": "835ef130cfeef6a81e9c6f5860065945260e253550a61f9f626fe71931d4e0c5",
+    "rul_prediction_csv": "experiments/matr_raw_heldout_calibration_seed42_v1/calibration_predictions.csv",
+    "rul_prediction_sha256": "c27dd53fce992318292397486aaff8ce02e3f8b802ee54932867517ce7c2af76",
+    "new_fits": 0,
+    "new_forwards": 0,
+    "development_or_test_access": false
+  }
+}

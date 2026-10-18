@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-18T09:46:24.678379+00:00",
-  "content_sha256": "f342a7767c6e6f5a45c1748ca40356f69990b7a272de7ef2b110625a6032e1b3",
-  "file_count": 513,
+  "snapshot_utc": "2026-10-18T09:51:17.100482+00:00",
+  "content_sha256": "5cbbef18538882e4ef4dcac5508670d6ff5bc5305406b59709e099ef84c6a7af",
+  "file_count": 530,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,8 +14,8 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 62733,
-      "sha256": "2c238af8269c5f5f30654841978f5079bdd0e2a3afda7aea8139af988a9dbef6"
+      "bytes": 64647,
+      "sha256": "14aafadbd1198b96e9b31f67cdde8749d957e266ddd689c1e5b6551cb01bd33c"
     },
     {
       "path": "README.md",
@@ -32,8 +32,8 @@
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 14685,
-      "sha256": "9f4a93fa41e5844c5d314bb0144eb1b8dc7ee789c1ea7487dc35e2a1bc195c09"
+      "bytes": 15202,
+      "sha256": "04c4be2fa0b49b34fd44f640a8b23731b4254aeabcf3781f3a456808ba5d9e4b"
     },
     {
       "path": "automation/bin/matr_raw_batch2_asset_worker_v1.py",
@@ -158,8 +158,8 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 49994,
-      "sha256": "dde4578b933e1c705d67520c5e48c4cf85bb41372e0842edbd1aedc289316fec"
+      "bytes": 51908,
+      "sha256": "1a882f404406a5c6ef81cc789af48baefc40dca42971e41c216e23fc6c808a85"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
@@ -220,6 +220,102 @@
       "source_path": "docs/USER_SINGLE_BATTERY_ONLINE_RUL_20261018_ZH.md",
       "bytes": 19477,
       "sha256": "d2e8b517a2df4aa58c9de33d7bc4c0b21828d5a66d5ce51afb74c8a98e2985c5"
+    },
+    {
+      "path": "experiments/capacity20_forecast_seed42_v1/RESULTS_ZH.md",
+      "source_path": "experiments/capacity20_forecast_seed42_v1/RESULTS_ZH.md",
+      "bytes": 3409,
+      "sha256": "d26e511f1c73096e9b5b8f2694fd1cf59a0f885fbc278427250ba8e72c4cff2c"
+    },
+    {
+      "path": "experiments/capacity20_forecast_seed42_v1/ROOT_GO.json",
+      "source_path": "experiments/capacity20_forecast_seed42_v1/ROOT_GO.json",
+      "bytes": 1052,
+      "sha256": "860f8698059ca86a6d71fc79abcbde0f64b221b7089d05ac0737dc592077e9b5"
+    },
+    {
+      "path": "experiments/capacity20_forecast_seed42_v1/cohort.json",
+      "source_path": "experiments/capacity20_forecast_seed42_v1/cohort.json",
+      "bytes": 2573,
+      "sha256": "42535de5825f6857e3aa69a596306a909a9a1b3ac087c43631032f6d293ef289"
+    },
+    {
+      "path": "experiments/capacity20_forecast_seed42_v1/comparison.json",
+      "source_path": "experiments/capacity20_forecast_seed42_v1/comparison.json",
+      "bytes": 294,
+      "sha256": "2dd9e8d483b428dfbb9debd6dc144bb11fc8a7d5c616354075497ff177187b87"
+    },
+    {
+      "path": "experiments/capacity20_forecast_seed42_v1/completion.json",
+      "source_path": "experiments/capacity20_forecast_seed42_v1/completion.json",
+      "bytes": 1069,
+      "sha256": "a22d11ff32b3e8651e447e181936a62066bcb104849b31c063adeb331f879faf"
+    },
+    {
+      "path": "experiments/capacity20_forecast_seed42_v1/decode_public_predictions.py",
+      "source_path": "experiments/capacity20_forecast_seed42_v1/decode_public_predictions.py",
+      "bytes": 391,
+      "sha256": "ce7fe99fdf3aef5e247f132904f86b9310356420d7f291e48908bfbbfa702adf"
+    },
+    {
+      "path": "experiments/capacity20_forecast_seed42_v1/fit_ledger.jsonl",
+      "source_path": "experiments/capacity20_forecast_seed42_v1/fit_ledger.jsonl",
+      "bytes": 132,
+      "sha256": "5c792023770459881ae06ab03bdb30d05f185603ab69b4c15f5aeeaa684bc294"
+    },
+    {
+      "path": "experiments/capacity20_forecast_seed42_v1/independent_metric_recompute.py",
+      "source_path": "experiments/capacity20_forecast_seed42_v1/independent_metric_recompute.py",
+      "bytes": 2240,
+      "sha256": "7e29de2ba36d306b2d18eea077c64072bf350c5a58911c9226e87bbde0ac14ec"
+    },
+    {
+      "path": "experiments/capacity20_forecast_seed42_v1/independent_metrics.json",
+      "source_path": "experiments/capacity20_forecast_seed42_v1/independent_metrics.json",
+      "bytes": 686,
+      "sha256": "c7558a59f51d109077280c4913668dc789e68870e65c84cbabf28d6b406eda6e"
+    },
+    {
+      "path": "experiments/capacity20_forecast_seed42_v1/metrics.json",
+      "source_path": "experiments/capacity20_forecast_seed42_v1/metrics.json",
+      "bytes": 417,
+      "sha256": "fb4c6f1c0c872e2533045ed547c6abe6e15a9f8af0f4aa8a8afeb500c5a4f6bd"
+    },
+    {
+      "path": "experiments/capacity20_forecast_seed42_v1/per_cell_metrics.json",
+      "source_path": "experiments/capacity20_forecast_seed42_v1/per_cell_metrics.json",
+      "bytes": 5929,
+      "sha256": "e30d9ad85d0cd852cccb5a964cc2d3f273feee9bc8fe8981f8cc684cdc7da5a9"
+    },
+    {
+      "path": "experiments/capacity20_forecast_seed42_v1/protocol.json",
+      "source_path": "experiments/capacity20_forecast_seed42_v1/protocol.json",
+      "bytes": 2002,
+      "sha256": "258ad319b5cde47e958c5b49895adf1448dc03f6a1395b266d1858c01b8493b4"
+    },
+    {
+      "path": "experiments/capacity20_forecast_seed42_v1/published_predictions.json",
+      "source_path": "experiments/capacity20_forecast_seed42_v1/published_predictions.json",
+      "bytes": 138400,
+      "sha256": "b45987e47e0eca834068d89b320be2954789cc203cba2609e2fc295673295cea"
+    },
+    {
+      "path": "experiments/capacity20_forecast_seed42_v1/root_decision.json",
+      "source_path": "experiments/capacity20_forecast_seed42_v1/root_decision.json",
+      "bytes": 1383,
+      "sha256": "6bd983ab52c9052fd5c79a15bb8574164bbee4a610ea2323227091d205c78c0c"
+    },
+    {
+      "path": "experiments/capacity20_forecast_seed42_v1/runner.py",
+      "source_path": "experiments/capacity20_forecast_seed42_v1/runner.py",
+      "bytes": 5940,
+      "sha256": "631759314cd5066383f9c9c9bb325e52fa66702cd2aff0f38da7878019bbb20a"
+    },
+    {
+      "path": "experiments/capacity20_forecast_seed42_v1/two_pair_check.json",
+      "source_path": "experiments/capacity20_forecast_seed42_v1/two_pair_check.json",
+      "bytes": 659,
+      "sha256": "d8505e9e07c24d29081c27f91b960a8f9d0cc8e4ce55f3523936c823d5796a9e"
     },
     {
       "path": "experiments/cpmlp_calb_recipe_adapt_seed2021_v1/RESULTS_ZH.md",
@@ -1720,6 +1816,12 @@
       "source_path": "reports/calb_two_sample_preprocessing_20261018_root/source_identity_verification.json",
       "bytes": 513,
       "sha256": "68cdc69ea9aa8c8e350d5408cac6240c684c4ce19fc5f6aa3cddc651222bba4c"
+    },
+    {
+      "path": "reports/capacity20_forecast_review_20261018_luna/review.json",
+      "source_path": "reports/capacity20_forecast_review_20261018_luna/review.json",
+      "bytes": 5449,
+      "sha256": "b058db8b89d2d9cc1bf52b8acf8966c66894edb7493f0e7945ca53af67c8e7e3"
     },
     {
       "path": "reports/causal_capacity_feedback_20261018_root/RESULTS_ZH.md",

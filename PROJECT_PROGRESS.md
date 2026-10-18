@@ -370,3 +370,11 @@
 - **最小验证**：单例SOH1.00→.98、旧RUL100的20cycle代理差+.02手算正确；10cell第一有效时点截断prefix后结果相等、源CSV/manifest/feature SHA一致、s=t-20<t。标签只用于回顾评价，从未进入反馈公式。没有重复smoke或改horizon/阈值救结果。
 - **阻塞/风险**：九颗mean innovation>0而部分持续高估RUL，如b4c7信号+.005607却真实剩余误差mean-120.27cycle。相对实际容量变化/仅模型隐含项的rho增量中位数-.0423/-.5751；没有额外可用信息的证据。反复时点相关、短cell仅28点，不作独立统计确认；线性路径只是代理，不能当模型预测容量。
 - **下一步**：改为先检验可被直接评分的20cycle容量预测：复用42fit/10cal，固定一个HGB预测SOH(s+20)-SOH(s)，与persist0和past20 TheilSen外推比较；独立窄审和fresh exactGO后最多1CPUfit。只在cal容量MAE优于两简单基线至少5%且>=6/10cell改善时才继续研究其反馈残差；否则关闭该辅助预测路线。此次不运行RUL修正、dev/test或旧模型重训。
+
+
+## 2026-10-18：主动换向完成一次真实容量预测fit，强简单基线比较通过能力门
+- **已完成**：线性RUL→容量代理失败后，改为直接监督未来20cycle容量变化；复用42fit/10cal、21441/4367同窗口样本，窄审+freshGO下1辅助CPUfit。capacity-MAE(mSOH)容量不变9.588254、robust20外推1.972894、HGB1.031446，较强简单基线降47.7191%、9/10cell改善，通过冻结能力门。
+- **证据**：experiments/capacity20_forecast_seed42_v1/RESULTS_ZH.md、runner/protocol/cohort/ROOT_GO/fit_ledger/completion、calibration_predictions.csv、metrics/per_cell_metrics/comparison/independent_metrics、published_predictions.json；checkpoints/auxiliary_hgb.pkl SHA5022a619e9cc86c725be57faabc8ab0a191e084d58c342f67ac303f6fb9ea006仅服务器。审查reports/capacity20_forecast_review_20261018_luna/review.json SHA b058db8b89d2d9cc1bf52b8acf8966c66894edb7493f0e7945ca53af67c8e7e3。
+- **最小验证**：2真实fit/cal pair确认输入仅s、未来s+20仅label；4367预测CSV独立重算3指标×3arm，最大差4.44e-16；原CSV无损解码哈希匹配。无重复smoke。新增1辅助CPUfit0optimizer0dev/test；GO已消费，checkpoint已存不可重复fit。
+- **阻塞/风险**：这是已用于开发的10cal容量预测能力，不是RUL增益/创新/独立确认。b2c6反而从1.0354差到2.3666mSOH，保留失败个体；其他源ID/物理serial/fullsource SHA/事件队列限制不变。名义1.1Ah时1mSOH=.0011Ah，HGB约1.1346mAh、robust20约2.1702mAh；不能与RUL循环MAE混用。
+- **下一步**：仅用已存容量预测和同10cal的RUL预测，固定t=s+20的实际容量变化减预测变化为可观测innovation，对比其与回顾RUL误差的方向/rank关系以及robust20预测残差和原容量变化控制；0fit/0forward/0dev/test，先确认反馈信息增量才设计RUL修正。不得把真实RUL残差作为在线输入。

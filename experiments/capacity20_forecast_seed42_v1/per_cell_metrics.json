@@ -1,0 +1,242 @@
+[
+  {
+    "cell_id": "MATR_b2c1",
+    "arm": "persistence",
+    "origins": 28,
+    "MAE_mSOH": 34.36775000000001,
+    "bias_mSOH": 34.36775000000001,
+    "RMSE_mSOH": 34.45850687509045
+  },
+  {
+    "cell_id": "MATR_b2c1",
+    "arm": "robust20_extrapolation",
+    "origins": 28,
+    "MAE_mSOH": 5.560731385654021,
+    "bias_mSOH": 5.560731385654021,
+    "RMSE_mSOH": 5.629519997715007
+  },
+  {
+    "cell_id": "MATR_b2c1",
+    "arm": "learned_capacity20",
+    "origins": 28,
+    "MAE_mSOH": 1.7681131825207614,
+    "bias_mSOH": 0.9389838783767362,
+    "RMSE_mSOH": 2.0131681131905337
+  },
+  {
+    "cell_id": "MATR_b2c21",
+    "arm": "persistence",
+    "origins": 369,
+    "MAE_mSOH": 8.754846686375954,
+    "bias_mSOH": 8.754846686375954,
+    "RMSE_mSOH": 11.650170181104347
+  },
+  {
+    "cell_id": "MATR_b2c21",
+    "arm": "robust20_extrapolation",
+    "origins": 369,
+    "MAE_mSOH": 1.7002359760626,
+    "bias_mSOH": 1.5412325347047284,
+    "RMSE_mSOH": 2.5267215820742375
+  },
+  {
+    "cell_id": "MATR_b2c21",
+    "arm": "learned_capacity20",
+    "origins": 369,
+    "MAE_mSOH": 0.8115974198936423,
+    "bias_mSOH": -0.3471875788385266,
+    "RMSE_mSOH": 1.105733699897127
+  },
+  {
+    "cell_id": "MATR_b2c24",
+    "arm": "persistence",
+    "origins": 375,
+    "MAE_mSOH": 8.406638012121213,
+    "bias_mSOH": 8.404390254545454,
+    "RMSE_mSOH": 12.499456030646884
+  },
+  {
+    "cell_id": "MATR_b2c24",
+    "arm": "robust20_extrapolation",
+    "origins": 375,
+    "MAE_mSOH": 1.6842949504773332,
+    "bias_mSOH": 1.5825211068278422,
+    "RMSE_mSOH": 2.676623594728833
+  },
+  {
+    "cell_id": "MATR_b2c24",
+    "arm": "learned_capacity20",
+    "origins": 375,
+    "MAE_mSOH": 0.48755290437581184,
+    "bias_mSOH": -0.004871882100117413,
+    "RMSE_mSOH": 0.6439103868939063
+  },
+  {
+    "cell_id": "MATR_b2c41",
+    "arm": "persistence",
+    "origins": 309,
+    "MAE_mSOH": 10.046520653133275,
+    "bias_mSOH": 10.046520653133275,
+    "RMSE_mSOH": 14.826151698738174
+  },
+  {
+    "cell_id": "MATR_b2c41",
+    "arm": "robust20_extrapolation",
+    "origins": 309,
+    "MAE_mSOH": 2.5673857393405055,
+    "bias_mSOH": 2.395996235149332,
+    "RMSE_mSOH": 3.7296788858838905
+  },
+  {
+    "cell_id": "MATR_b2c41",
+    "arm": "learned_capacity20",
+    "origins": 309,
+    "MAE_mSOH": 0.7610216895132182,
+    "bias_mSOH": 0.28860724612787914,
+    "RMSE_mSOH": 1.0189709378636655
+  },
+  {
+    "cell_id": "MATR_b2c6",
+    "arm": "persistence",
+    "origins": 391,
+    "MAE_mSOH": 7.666815601023016,
+    "bias_mSOH": 7.416436200883513,
+    "RMSE_mSOH": 8.77456224483679
+  },
+  {
+    "cell_id": "MATR_b2c6",
+    "arm": "robust20_extrapolation",
+    "origins": 391,
+    "MAE_mSOH": 1.0353514568733624,
+    "bias_mSOH": 0.46771912990824455,
+    "RMSE_mSOH": 4.004781950786439
+  },
+  {
+    "cell_id": "MATR_b2c6",
+    "arm": "learned_capacity20",
+    "origins": 391,
+    "MAE_mSOH": 2.366557000232891,
+    "bias_mSOH": 1.2171420253461085,
+    "RMSE_mSOH": 4.373394097202468
+  },
+  {
+    "cell_id": "MATR_b4c14",
+    "arm": "persistence",
+    "origins": 488,
+    "MAE_mSOH": 6.13117356557377,
+    "bias_mSOH": 6.13117356557377,
+    "RMSE_mSOH": 10.74160383692972
+  },
+  {
+    "cell_id": "MATR_b4c14",
+    "arm": "robust20_extrapolation",
+    "origins": 488,
+    "MAE_mSOH": 1.434755414759437,
+    "bias_mSOH": 1.3188429818385339,
+    "RMSE_mSOH": 2.5669065397793838
+  },
+  {
+    "cell_id": "MATR_b4c14",
+    "arm": "learned_capacity20",
+    "origins": 488,
+    "MAE_mSOH": 0.6499607975740594,
+    "bias_mSOH": 0.14901452258505624,
+    "RMSE_mSOH": 0.9722060402667115
+  },
+  {
+    "cell_id": "MATR_b4c19",
+    "arm": "persistence",
+    "origins": 872,
+    "MAE_mSOH": 3.3133255733944944,
+    "bias_mSOH": 3.309801595079232,
+    "RMSE_mSOH": 5.7362132314283745
+  },
+  {
+    "cell_id": "MATR_b4c19",
+    "arm": "robust20_extrapolation",
+    "origins": 872,
+    "MAE_mSOH": 0.6794392538974146,
+    "bias_mSOH": 0.4445086685078624,
+    "RMSE_mSOH": 0.9877763998176791
+  },
+  {
+    "cell_id": "MATR_b4c19",
+    "arm": "learned_capacity20",
+    "origins": 872,
+    "MAE_mSOH": 0.501971703491518,
+    "bias_mSOH": -0.32123783714646087,
+    "RMSE_mSOH": 0.6494126668624169
+  },
+  {
+    "cell_id": "MATR_b4c26",
+    "arm": "persistence",
+    "origins": 357,
+    "MAE_mSOH": 6.7632480264833195,
+    "bias_mSOH": 6.7624326457855854,
+    "RMSE_mSOH": 12.153122265301334
+  },
+  {
+    "cell_id": "MATR_b4c26",
+    "arm": "robust20_extrapolation",
+    "origins": 357,
+    "MAE_mSOH": 2.159677455133961,
+    "bias_mSOH": 2.090629393404851,
+    "RMSE_mSOH": 4.1577053327385505
+  },
+  {
+    "cell_id": "MATR_b4c26",
+    "arm": "learned_capacity20",
+    "origins": 357,
+    "MAE_mSOH": 1.03877340121083,
+    "bias_mSOH": 0.7902865819824555,
+    "RMSE_mSOH": 2.1931254368401585
+  },
+  {
+    "cell_id": "MATR_b4c29",
+    "arm": "persistence",
+    "origins": 768,
+    "MAE_mSOH": 4.101871768465909,
+    "bias_mSOH": 4.099573473011363,
+    "RMSE_mSOH": 7.083007356834688
+  },
+  {
+    "cell_id": "MATR_b4c29",
+    "arm": "robust20_extrapolation",
+    "origins": 768,
+    "MAE_mSOH": 0.7244879650185488,
+    "bias_mSOH": 0.5483983188458738,
+    "RMSE_mSOH": 1.0572867847580516
+  },
+  {
+    "cell_id": "MATR_b4c29",
+    "arm": "learned_capacity20",
+    "origins": 768,
+    "MAE_mSOH": 0.5495877262091576,
+    "bias_mSOH": -0.3854681251939592,
+    "RMSE_mSOH": 0.7667588021392076
+  },
+  {
+    "cell_id": "MATR_b4c7",
+    "arm": "persistence",
+    "origins": 410,
+    "MAE_mSOH": 6.330350266075388,
+    "bias_mSOH": 6.328268226164078,
+    "RMSE_mSOH": 12.433731088147397
+  },
+  {
+    "cell_id": "MATR_b4c7",
+    "arm": "robust20_extrapolation",
+    "origins": 410,
+    "MAE_mSOH": 2.182577297898844,
+    "bias_mSOH": 2.121144035558528,
+    "RMSE_mSOH": 4.9015380205798165
+  },
+  {
+    "cell_id": "MATR_b4c7",
+    "arm": "learned_capacity20",
+    "origins": 410,
+    "MAE_mSOH": 1.379322251416033,
+    "bias_mSOH": 1.0761293690854425,
+    "RMSE_mSOH": 3.4281992480155052
+  }
+]

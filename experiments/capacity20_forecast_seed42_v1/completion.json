@@ -1,0 +1,23 @@
+{
+  "status": "COMPLETE_ONE_AUX_CAPACITY_FIT_CAL_ONLY",
+  "new_CPU_predictive_fits": 1,
+  "optimizer_steps": 0,
+  "fit_cells": 42,
+  "calibration_cells": 10,
+  "fit_pairs": 21441,
+  "calibration_pairs": 4367,
+  "development_or_test_reads": 0,
+  "runner_sha256": "631759314cd5066383f9c9c9bb325e52fa66702cd2aff0f38da7878019bbb20a",
+  "protocol_sha256": "258ad319b5cde47e958c5b49895adf1448dc03f6a1395b266d1858c01b8493b4",
+  "cohort_sha256": "42535de5825f6857e3aa69a596306a909a9a1b3ac087c43631032f6d293ef289",
+  "GO_sha256": "860f8698059ca86a6d71fc79abcbde0f64b221b7089d05ac0737dc592077e9b5",
+  "prediction_sha256": "835ef130cfeef6a81e9c6f5860065945260e253550a61f9f626fe71931d4e0c5",
+  "checkpoint_sha256": "5022a619e9cc86c725be57faabc8ab0a191e084d58c342f67ac303f6fb9ea006",
+  "checkpoint_scope": "self-trained trusted auxiliary estimator saved only; no model deserialization or old RUL refit",
+  "versions": {
+    "python": "3.9.25 (main, Nov  3 2025, 22:33:05) \n[GCC 11.2.0]",
+    "numpy": "1.26.4",
+    "sklearn": "1.6.1"
+  },
+  "elapsed_seconds": 0.2676491905003786
+}

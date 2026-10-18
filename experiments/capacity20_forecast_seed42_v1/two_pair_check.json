@@ -1,0 +1,25 @@
+{
+  "status": "PASS_TWO_REAL_PAIRS_NO_MODEL_NO_FIT",
+  "checks": [
+    {
+      "cell_id": "MATR_b2c31",
+      "role": "fit",
+      "s": 100,
+      "t": 120,
+      "target_delta_mSOH": -1.0331818181819052,
+      "robust20_baseline_delta_mSOH": -0.8017975206613506,
+      "input_columns_visible_through": 100,
+      "future_target_is_label_only": true
+    },
+    {
+      "cell_id": "MATR_b2c41",
+      "role": "calibration",
+      "s": 100,
+      "t": 120,
+      "target_delta_mSOH": -1.0356363636364607,
+      "robust20_baseline_delta_mSOH": -0.8148863636363464,
+      "input_columns_visible_through": 100,
+      "future_target_is_label_only": true
+    }
+  ]
+}

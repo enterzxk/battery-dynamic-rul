@@ -1,3 +1,11 @@
+## 2026-10-18：主动换向完成一次真实容量预测fit，强简单基线比较通过能力门
+- **已完成**：线性RUL→容量代理失败后，改为直接监督未来20cycle容量变化；复用42fit/10cal、21441/4367同窗口样本，窄审+freshGO下1辅助CPUfit。capacity-MAE(mSOH)容量不变9.588254、robust20外推1.972894、HGB1.031446，较强简单基线降47.7191%、9/10cell改善，通过冻结能力门。
+- **证据**：experiments/capacity20_forecast_seed42_v1/RESULTS_ZH.md、runner/protocol/cohort/ROOT_GO/fit_ledger/completion、calibration_predictions.csv、metrics/per_cell_metrics/comparison/independent_metrics、published_predictions.json；checkpoints/auxiliary_hgb.pkl SHA5022a619e9cc86c725be57faabc8ab0a191e084d58c342f67ac303f6fb9ea006仅服务器。审查reports/capacity20_forecast_review_20261018_luna/review.json SHA b058db8b89d2d9cc1bf52b8acf8966c66894edb7493f0e7945ca53af67c8e7e3。
+- **最小验证**：2真实fit/cal pair确认输入仅s、未来s+20仅label；4367预测CSV独立重算3指标×3arm，最大差4.44e-16；原CSV无损解码哈希匹配。无重复smoke。新增1辅助CPUfit0optimizer0dev/test；GO已消费，checkpoint已存不可重复fit。
+- **阻塞/风险**：这是已用于开发的10cal容量预测能力，不是RUL增益/创新/独立确认。b2c6反而从1.0354差到2.3666mSOH，保留失败个体；其他源ID/物理serial/fullsource SHA/事件队列限制不变。名义1.1Ah时1mSOH=.0011Ah，HGB约1.1346mAh、robust20约2.1702mAh；不能与RUL循环MAE混用。
+- **下一步**：仅用已存容量预测和同10cal的RUL预测，固定t=s+20的实际容量变化减预测变化为可观测innovation，对比其与回顾RUL误差的方向/rank关系以及robust20预测残差和原容量变化控制；0fit/0forward/0dev/test，先确认反馈信息增量才设计RUL修正。不得把真实RUL残差作为在线输入。
+
+
 ## 2026-10-18：容量线性反馈代理真实诊断失败，转向可验证的短期容量预测
 - **已完成**：冻结20cycle公式后只对10cal已有预测及past容量计算4367时点；无新模型/前向/fit、无dev/test读取。信号方向平衡准确率37.2132%、电池内rho中位数-0.0910，仅5/10正相关；未通过预设筛选，关闭该线性代理修正路线。
 - **证据**：reports/causal_capacity_feedback_20261018_root/protocol.json、diagnose.py、diagnostic.json、minimal_validation.json、root_decision.json、RESULTS_ZH.md；diagnostic_rows.csv仅服务器审计不公开。protocol SHA73f3bc3c81cbd7d9db5ccd67ed7f1592cb57ef670d6b4c07357266241d89f7e0，runner SHA2243e9c67f72a61296aee7e3ae60caeb5cc49c3188c0c8999e4c93930539e7b6。

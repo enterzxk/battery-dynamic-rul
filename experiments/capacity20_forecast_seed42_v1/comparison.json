@@ -1,0 +1,10 @@
+{
+  "best_simple_baseline": "robust20_extrapolation",
+  "relative_MAE_reduction": {
+    "persistence": 0.8924261074016483,
+    "robust20_extrapolation": 0.4771913899227229
+  },
+  "cells_improved_vs_best_simple": 9,
+  "capability_gate_passed": true,
+  "not_RUL_gain_or_novelty_evidence": true
+}
