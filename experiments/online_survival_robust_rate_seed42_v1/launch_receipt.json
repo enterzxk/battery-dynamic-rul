@@ -1,0 +1,6 @@
+{
+  "at_utc": "2026-10-18T05:29:05.498295+00:00",
+  "command": "/home/yndx/miniconda3/envs/a40_env/bin/python /home/yndx/zxk/rul/experiments/online_survival_robust_rate_seed42_v1/runner.py",
+  "timeout_seconds": 180,
+  "new_predictive_fit_cap": 1
+}

@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-18T05:18:53.963986+00:00",
-  "content_sha256": "20e8500c81b42887ee9403e74c8567b28684be1d37e60e8ac13527e3a1a7de67",
-  "file_count": 428,
+  "snapshot_utc": "2026-10-18T05:32:07.004059+00:00",
+  "content_sha256": "2486deea8b06e6ec494ef49ef150ee3fddacf5204e7a599495bb7befc09e3d4d",
+  "file_count": 445,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,8 +14,8 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 48565,
-      "sha256": "f46e0e6b0adc6da840e2fd5ee798b413ab484632dafa49a0bbbb881ba07cc10e"
+      "bytes": 50020,
+      "sha256": "7ac5da962e41f0a702911e96284d0c33992ce92e963c977b447e85c0fbc12670"
     },
     {
       "path": "README.md",
@@ -32,8 +32,8 @@
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 10419,
-      "sha256": "298d32e13026381f0d3525b5355066d3feee83ee661a4c1b86d4f68996f3ed99"
+      "bytes": 10934,
+      "sha256": "b1e263bd6a95f52ce22f39475889c633ac32561f8b6836c563154ca9dbcff8f6"
     },
     {
       "path": "automation/github_export/build_dynamic_A_eligible_20261017.py",
@@ -128,8 +128,8 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 35824,
-      "sha256": "ee171b875a933a050fb639ae6660abe1604b1c334b49a5fc9da89c96011b3ff3"
+      "bytes": 37281,
+      "sha256": "0166a698bbe5c9aaba4d417a45b8e41503b73f03cbe0baf819b0f099ce9be6a2"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
@@ -166,6 +166,12 @@
       "source_path": "docs/GITHUB_SYNC_ZH.md",
       "bytes": 2575,
       "sha256": "9899d379fe260cf9d63dfaaa0ec0320ad4195375e8c78b710a9f45234550d51e"
+    },
+    {
+      "path": "docs/PAPER_FAST_PATH_20261018_ZH.md",
+      "source_path": "docs/PAPER_FAST_PATH_20261018_ZH.md",
+      "bytes": 7300,
+      "sha256": "434acc38dd475d77777db457dc63c9d53236e18e3d47aa325128ada44c2e91a5"
     },
     {
       "path": "docs/RESEARCH_PLAN_ZH.md",
@@ -892,6 +898,102 @@
       "source_path": "experiments/online_survival_observed_pilot_seed42_v1/validation_predictions/MATR_b4c5.csv",
       "bytes": 428831,
       "sha256": "24f7a41ea1e4c4a8c71c309b2ee2ee8c17ac7abb9676c1e4488c822abe6767e7"
+    },
+    {
+      "path": "experiments/online_survival_robust_rate_seed42_v1/RESULTS_ZH.md",
+      "source_path": "experiments/online_survival_robust_rate_seed42_v1/RESULTS_ZH.md",
+      "bytes": 2003,
+      "sha256": "b7377e98c31aa68661ac9644d4f1b5b9d5e50ecee792d96207587a87f8c8a47e"
+    },
+    {
+      "path": "experiments/online_survival_robust_rate_seed42_v1/ROOT_GO.json",
+      "source_path": "experiments/online_survival_robust_rate_seed42_v1/ROOT_GO.json",
+      "bytes": 524,
+      "sha256": "667efc0cb0434fd30ea0d5f534c0569d4508810148d7e59ef5f568cf0aceabfe"
+    },
+    {
+      "path": "experiments/online_survival_robust_rate_seed42_v1/comparisons.json",
+      "source_path": "experiments/online_survival_robust_rate_seed42_v1/comparisons.json",
+      "bytes": 582,
+      "sha256": "bbea7b4b723fe112e30276a96321aebbd34878a98e365c87a5524f9bbcb514f0"
+    },
+    {
+      "path": "experiments/online_survival_robust_rate_seed42_v1/completion_receipt.json",
+      "source_path": "experiments/online_survival_robust_rate_seed42_v1/completion_receipt.json",
+      "bytes": 13966,
+      "sha256": "f86bc04f8bc8002e3782d396b6a62e004a41012df6dc0cac2f8f1dfa0de6f2d6"
+    },
+    {
+      "path": "experiments/online_survival_robust_rate_seed42_v1/decode_public_predictions.py",
+      "source_path": "experiments/online_survival_robust_rate_seed42_v1/decode_public_predictions.py",
+      "bytes": 751,
+      "sha256": "a97e1764cac24000b2d0631661008558fd80dce5853ed60c3fe454a5e31142c2"
+    },
+    {
+      "path": "experiments/online_survival_robust_rate_seed42_v1/fit_ledger.jsonl",
+      "source_path": "experiments/online_survival_robust_rate_seed42_v1/fit_ledger.jsonl",
+      "bytes": 126,
+      "sha256": "dc71a2732cea3cae2528c6ad8f3db6e62a2b2ae8b3894658f5bb367d58c30552"
+    },
+    {
+      "path": "experiments/online_survival_robust_rate_seed42_v1/independent_metrics.json",
+      "source_path": "experiments/online_survival_robust_rate_seed42_v1/independent_metrics.json",
+      "bytes": 585,
+      "sha256": "ac292ea5784983427c6ab5218525c9092db64ebb7bad423d325630e060d086fc"
+    },
+    {
+      "path": "experiments/online_survival_robust_rate_seed42_v1/launch_receipt.json",
+      "source_path": "experiments/online_survival_robust_rate_seed42_v1/launch_receipt.json",
+      "bytes": 248,
+      "sha256": "402a21064a45b0955219f85fc9b7537a32dec183d226e475f2b5bcef1c66a326"
+    },
+    {
+      "path": "experiments/online_survival_robust_rate_seed42_v1/metrics.json",
+      "source_path": "experiments/online_survival_robust_rate_seed42_v1/metrics.json",
+      "bytes": 240,
+      "sha256": "63093ed7b1cdaafc59fa56e7524214c8c6f58eeefd71b47691db91fbaa8c5d13"
+    },
+    {
+      "path": "experiments/online_survival_robust_rate_seed42_v1/per_cell_metrics.json",
+      "source_path": "experiments/online_survival_robust_rate_seed42_v1/per_cell_metrics.json",
+      "bytes": 5240,
+      "sha256": "cf26c86732d98a8a5405726498620088e8ff2c81df5f4beaf767f5a6d4adbf4d"
+    },
+    {
+      "path": "experiments/online_survival_robust_rate_seed42_v1/predeclared_failure_windows.json",
+      "source_path": "experiments/online_survival_robust_rate_seed42_v1/predeclared_failure_windows.json",
+      "bytes": 397,
+      "sha256": "c505804d1b42817b4309daebadd042d5faa890f2f6e2b17ca23cb4b56a3de8d1"
+    },
+    {
+      "path": "experiments/online_survival_robust_rate_seed42_v1/protocol.json",
+      "source_path": "experiments/online_survival_robust_rate_seed42_v1/protocol.json",
+      "bytes": 1816,
+      "sha256": "78e87c3928bded3f741896f243048f737e00be7b9de48cc02ac5bbdc87db9ccc"
+    },
+    {
+      "path": "experiments/online_survival_robust_rate_seed42_v1/published_predictions_columnar.json",
+      "source_path": "experiments/online_survival_robust_rate_seed42_v1/published_predictions_columnar.json",
+      "bytes": 508521,
+      "sha256": "51775cd46d561fb5f2a41765f01acdd6336705a82dcf40902a1f2cefbe3751e7"
+    },
+    {
+      "path": "experiments/online_survival_robust_rate_seed42_v1/root_decision.json",
+      "source_path": "experiments/online_survival_robust_rate_seed42_v1/root_decision.json",
+      "bytes": 646,
+      "sha256": "07831b8eb30a5e98bd497834b2881dfe9b0f4014c24880a0def76550636e4482"
+    },
+    {
+      "path": "experiments/online_survival_robust_rate_seed42_v1/root_delta_review.json",
+      "source_path": "experiments/online_survival_robust_rate_seed42_v1/root_delta_review.json",
+      "bytes": 562,
+      "sha256": "875c1448aa3b9d481babaafc2e7437a8ac7c23601fab65c72e58f930eeac833f"
+    },
+    {
+      "path": "experiments/online_survival_robust_rate_seed42_v1/runner.py",
+      "source_path": "experiments/online_survival_robust_rate_seed42_v1/runner.py",
+      "bytes": 7408,
+      "sha256": "e17933d204cd99a4bca8a3a1d753b1cf310c1e6332e13becb75f20df6e9979a2"
     },
     {
       "path": "literature/accepted/P01_maintext_v1.json",

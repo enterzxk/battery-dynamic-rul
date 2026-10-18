@@ -1,0 +1,2 @@
+{"event": "fit_started", "fit": 1, "arm": "F4_robust_rate"}
+{"event": "fit_completed", "fit": 1, "sigma": 0.3666615870315559}

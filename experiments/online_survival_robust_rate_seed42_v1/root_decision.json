@@ -1,0 +1,11 @@
+{
+  "decision": "NO_GO_FOR_COMPLEX_GATE_OR_SEED_EXPANSION_FROM_THIS_COMPARISON",
+  "preserve": "F4 strong simple baseline; development improvement relative to F2 not novelty",
+  "result_sha256": "f86bc04f8bc8002e3782d396b6a62e004a41012df6dc0cac2f8f1dfa0de6f2d6",
+  "metrics_sha256": "63093ed7b1cdaafc59fa56e7524214c8c6f58eeefd71b47691db91fbaa8c5d13",
+  "independent_metrics_sha256": "ac292ea5784983427c6ab5218525c9092db64ebb7bad423d325630e060d086fc",
+  "next": "Raw causal DataV1 with two representative cells before any new predictivefit; archive52/19 as development",
+  "new_predictive_fits": 1,
+  "optimizer_steps": 0,
+  "test_access": false
+}

@@ -1,0 +1,7 @@
+{
+  "reviewer": "root requested gpt-6.1-sol/high; actual model not independently introspected",
+  "scope": "Only changed190pair median feature; reuse independently reviewed original split/weighting/distribution/metric protocol",
+  "finding": "t-20..t-1 zero-based covers completedcycles t-19..t; no input aftert; pair j-i denominator; one linear-trend assertion; all previous cohorts and prediction hashes bound",
+  "decision": "PASS_ONE_FIXED_STRONG_SIMPLE_BASELINE_ONLY",
+  "runner_sha256": "e17933d204cd99a4bca8a3a1d753b1cf310c1e6332e13becb75f20df6e9979a2"
+}

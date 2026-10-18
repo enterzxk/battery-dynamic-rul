@@ -65,6 +65,10 @@ def main():
     for run in (ROOT / 'experiments').glob('*/fit_runs/*'):
         chosen.update(str(p.relative_to(ROOT)) for p in run.iterdir() if p.is_file())
 
+    chosen.add("docs/PAPER_FAST_PATH_20261018_ZH.md")
+    for name in ["runner.py","protocol.json","ROOT_GO.json","root_delta_review.json","fit_ledger.jsonl","launch_receipt.json","completion_receipt.json","metrics.json","per_cell_metrics.json","comparisons.json","predeclared_failure_windows.json","independent_metrics.json","root_decision.json","RESULTS_ZH.md","published_predictions_columnar.json","decode_public_predictions.py"]:
+        chosen.add("experiments/online_survival_robust_rate_seed42_v1/" + name)
+
     contents, files, skipped = {}, [], []
     mapping = {'README.md': 'docs/GITHUB_README_ZH.md', 'agent.md': 'AGENTS.md'}
     mapping.update({rel: rel for rel in sorted(chosen)})

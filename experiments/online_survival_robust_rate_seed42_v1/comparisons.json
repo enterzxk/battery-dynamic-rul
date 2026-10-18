@@ -1,0 +1,24 @@
+[
+  {
+    "old": "F2_current_state",
+    "relative_MAE_reduction": 0.16762525296233188,
+    "paired_bootstrap95CI": [
+      0.06590881346450388,
+      0.24499460678175702
+    ],
+    "improved_cells": 13,
+    "severe_over100_increase": -0.009667208299189989,
+    "exploratory_gate": true
+  },
+  {
+    "old": "F3_state_rate",
+    "relative_MAE_reduction": 0.03011273836485251,
+    "paired_bootstrap95CI": [
+      0.005680519655143884,
+      0.0676946242623046
+    ],
+    "improved_cells": 11,
+    "severe_over100_increase": -0.0022982348253719614,
+    "exploratory_gate": false
+  }
+]

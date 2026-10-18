@@ -297,3 +297,12 @@
 - **最小验证**：原预测/源摘要SHA、精确配对/7cell与既有结果一致，每标签与补集重构总净差值<1e-9；粗糙度阈值只由52train估计一次。无需再跑模型/smoke。
 - **阻塞/风险**：正速率只有28时点且全部在train边际范围内，不能推因果恢复/噪声；高粗糙度仍平均获益，大幅修正贡献87.92%净增益，NO_GO粗暴噪声暂停/大修正回滚。未建立预测时可靠判别器；同19val描述非独立确认。new_fits=0、steps/model/inference/binary/test=0。
 - **下一步**：固定20cycle Theil–Sen稳健速率替代OLS的强简单对照，新exactGO下最多1CPUfit，保持其他F3协议，不开发门控或加seed/test。
+
+
+## 2026-10-18：固定稳健速率真实对照与论文路线收敛
+
+- **已完成**：用户要求快速成果、仔细预处理、设计并运行实验；一次1CPUfit完成固定20cycle Theil-Sen替代OLS，复用F0-F3；形成面向论文的DataV1与最小实验/止损路线。
+- **证据**：experiments/online_survival_robust_rate_seed42_v1/RESULTS_ZH.md、10002行validation_predictions、protocol/ROOT_GO/fit_ledger/completion_receipt/metrics/comparisons/independent_metrics；docs/PAPER_FAST_PATH_20261018_ZH.md。Time-MAE56.837960，比F2降16.7625%、比F3仅降3.0113%；b2c22尖峰385.3614→32.5354，但b4c28持续区间71.3287→77.7856。
+- **最小验证**：唯一新增斜率的线性序列校验、原cohort/源文本SHA与同origin配对断言；真实1fit后从已存10002预测重算7指标，差0。没有重复smoke/旧模型训练。
+- **阻塞/风险**：F4vsF3未达预设5%扩展门，NO_GO复杂门控/seed扩张；19val已用于适应性开发，event-only processed-source不能支持严格在线/自然删失/独立物理泛化。新增1CPUfit0optimizer；此前3CPU新主线fit、旧41CPU和神经4fit2580step分别保留。
+- **下一步**：定位已存MATR原始文件/清单，核2cell的物理ID、实际cycle/容量单位/事件删失和past-only预处理，生成DataV1；原始不可得则有界评估官方NASA独立体系，不再重复旧v11/PBT审计或在同19val调窗。当前不新增预测fit/test。

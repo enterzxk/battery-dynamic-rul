@@ -1,0 +1,36 @@
+{
+  "question": "Does fixed robust past20 rate improve the OLS rate baseline and predeclared harmful windows?",
+  "scope": "Same observed processed-event engineering cohort and permissions as reviewed pilot; no raw strict-online claim",
+  "base_bindings": {
+    "runner.py": "c9e72ed32f3141e579e28481f23c9be4a4d059a947d59e8af23fae0cbe635a06",
+    "protocol.json": "6a40b4849c1d85c7fa553135b2089f4022f36d4102d2d0b2fc15a6ffe473e1ad",
+    "cohort.json": "7ee7d1859d1c72d79d1dff863695ab861ab81aed69712c5ebff60a8053717df4",
+    "metrics.json": "3c9f08827aaed0022c85170bed8a68a196a98bed3fd6f2c70ee2c30d20495278",
+    "per_cell_metrics.json": "8f0544e4978667376360eb72abc5fe2b2fd4e423e8fcd416fb8d69a276dc6ff7",
+    "completion_receipt.json": "d7927010d85c2ad1cf00e2babb6180d2fe8324d3e480302749d68eb42ec93746"
+  },
+  "review_reuse": "reports/online_survival_pilot_review_20261018_luna/review.json plus review_v2.json; shared cohort/features/regression/metrics unchanged",
+  "changed_feature": "Median of all190 pairwise capacity slopes in last20 completed cycles q[t-20:t], no full-life smoothing",
+  "max_predictive_fits": 1,
+  "max_optimizer_steps": 0,
+  "seed": 42,
+  "alpha": 1.0,
+  "scaler": "train-only cell-equal weighted",
+  "sigma": "train log residual weighted RMS floor0.05",
+  "origins": "same100..event-1:26796train10002validation",
+  "tuning": "none; no clipping, alternative window, gate or seed search",
+  "exploratory_gate": "same >=5%MAE reduction, paired2000cell bootstrap lower>0, severe_over100 increase<=0.02; adaptive development only",
+  "predeclared_failure_windows": {
+    "MATR_b2c22": [
+      256,
+      268
+    ],
+    "MATR_b4c28": [
+      100,
+      426
+    ]
+  },
+  "test_access": false,
+  "wall_seconds": 180,
+  "failure": "one invocation; predictivefitstart consumes budget; failure STOP"
+}

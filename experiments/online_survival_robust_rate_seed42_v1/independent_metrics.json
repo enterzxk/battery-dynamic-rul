@@ -1,0 +1,26 @@
+{
+  "status": "PASS_FROM_SAVED_10002_PREDICTIONS",
+  "new_fits": 0,
+  "maximum_metric_difference": 0.0,
+  "computed_metrics": {
+    "MAE": 56.83795998921068,
+    "bias": -5.0117454653778255,
+    "severe_over100": 0.1014445087691331,
+    "coverage80": 0.839691984064502,
+    "width80": 252.1692059844915,
+    "Brier100": 0.028439726063868808,
+    "Brier300": 0.10417126694365027
+  },
+  "ledger": [
+    {
+      "event": "fit_started",
+      "fit": 1,
+      "arm": "F4_robust_rate"
+    },
+    {
+      "event": "fit_completed",
+      "fit": 1,
+      "sigma": 0.3666615870315559
+    }
+  ]
+}

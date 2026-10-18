@@ -1,3 +1,13 @@
+
+
+## 2026-10-18：固定稳健速率真实对照与论文路线收敛
+
+- **已完成**：用户要求快速成果、仔细预处理、设计并运行实验；一次1CPUfit完成固定20cycle Theil-Sen替代OLS，复用F0-F3；形成面向论文的DataV1与最小实验/止损路线。
+- **证据**：experiments/online_survival_robust_rate_seed42_v1/RESULTS_ZH.md、10002行validation_predictions、protocol/ROOT_GO/fit_ledger/completion_receipt/metrics/comparisons/independent_metrics；docs/PAPER_FAST_PATH_20261018_ZH.md。Time-MAE56.837960，比F2降16.7625%、比F3仅降3.0113%；b2c22尖峰385.3614→32.5354，但b4c28持续区间71.3287→77.7856。
+- **最小验证**：唯一新增斜率的线性序列校验、原cohort/源文本SHA与同origin配对断言；真实1fit后从已存10002预测重算7指标，差0。没有重复smoke/旧模型训练。
+- **阻塞/风险**：F4vsF3未达预设5%扩展门，NO_GO复杂门控/seed扩张；19val已用于适应性开发，event-only processed-source不能支持严格在线/自然删失/独立物理泛化。新增1CPUfit0optimizer；此前3CPU新主线fit、旧41CPU和神经4fit2580step分别保留。
+- **下一步**：定位已存MATR原始文件/清单，核2cell的物理ID、实际cycle/容量单位/事件删失和past-only预处理，生成DataV1；原始不可得则有界评估官方NASA独立体系，不再重复旧v11/PBT审计或在同19val调窗。当前不新增预测fit/test。
+
 ## 最新增量：2026-10-18 13:18 北京时间，速率有害区间诊断
 
 整体速率收益保留，但33.89%查询绝对误差增加，7cell整体受损。b2c22出现13cycle容量回升样式伴极端RUL修正（origin265：F3=1439.50、F2=280.54、真247）；b4c28另有327cycle持久受损。高粗糙度组仍平均获益，大幅修正贡献87.92%净改善，因此不支持“噪声大就暂停/修正大就回滚”。这只是既有19cell描述，未识别因果或验证可靠性门。见reports/online_rate_harm_diagnosis_20261018_root/DIAGNOSIS_ZH.md；本轮fit/steps/model/inference/binary/test=0。下一项是在新限定GO后至多1CPUfit的固定20cycle Theil–Sen稳健速率简单对照，非新架构/创新确认。

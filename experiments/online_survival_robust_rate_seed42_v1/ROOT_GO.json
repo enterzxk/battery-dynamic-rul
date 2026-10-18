@@ -1,0 +1,10 @@
+{
+  "status": "GO_ONE_FIXED_ROBUST_RATE_FIT",
+  "runner_sha256": "e17933d204cd99a4bca8a3a1d753b1cf310c1e6332e13becb75f20df6e9979a2",
+  "protocol_sha256": "78e87c3928bded3f741896f243048f737e00be7b9de48cc02ac5bbdc87db9ccc",
+  "delta_review_sha256": "875c1448aa3b9d481babaafc2e7437a8ac7c23601fab65c72e58f930eeac833f",
+  "max_predictive_fits": 1,
+  "test_access": false,
+  "global_new_fits_allowed": false,
+  "authority": "Main coordinator bounded experiment under latest user design-and-run instruction; all old GO consumed"
+}
