@@ -1,0 +1,50 @@
+{
+  "lossless_dynamic_vs_lossless_early_survival_conditioned": {
+    "point_MAE_reduction": 0.4021366258435092,
+    "cells_MAE_improved": 9,
+    "pairedcell_MAE_difference_CI95": [
+      10.098086945971659,
+      35.13349017970889
+    ],
+    "severe_over100_increment": 0.02884022096694884,
+    "interval_score_reduction": 0.437238873787836,
+    "absolute_coverage_error_reduction": 0.0017889340372851947,
+    "width_ratio": 0.5669463289357217,
+    "mean_Brier_increment": -0.0457064942882062,
+    "cells_coverage_error_improved": 6,
+    "point_development_gate_pass": false,
+    "probability_checks": {
+      "point_gate": false,
+      "interval_score": true,
+      "coverage_error": false,
+      "width": true,
+      "Brier": true,
+      "cell_coverage": false
+    },
+    "joint_probability_gate_pass": false
+  },
+  "lossless_dynamic_vs_compressed_policy_dynamic_reference": {
+    "point_MAE_reduction": 0.09267856312067368,
+    "cells_MAE_improved": 6,
+    "pairedcell_MAE_difference_CI95": [
+      -0.7527890937505052,
+      8.350660280382126
+    ],
+    "severe_over100_increment": -0.010951546737921668,
+    "interval_score_reduction": -0.00932124429492176,
+    "absolute_coverage_error_reduction": 0.009293109680503897,
+    "width_ratio": 1.0043012595995098,
+    "mean_Brier_increment": -4.522227896650022e-05,
+    "cells_coverage_error_improved": 2,
+    "point_development_gate_pass": false,
+    "probability_checks": {
+      "point_gate": false,
+      "interval_score": false,
+      "coverage_error": false,
+      "width": true,
+      "Brier": true,
+      "cell_coverage": false
+    },
+    "joint_probability_gate_pass": false
+  }
+}

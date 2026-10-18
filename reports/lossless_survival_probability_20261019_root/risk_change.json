@@ -1,0 +1,92 @@
+[
+  {
+    "cell_id": "MATR_b2c1",
+    "early_MAE": 20.396519399003633,
+    "dynamic_MAE": 10.699251467886503,
+    "MAE_gain": 9.69726793111713,
+    "early_over100": 0.0,
+    "dynamic_over100": 0.0,
+    "over100_increment": 0.0
+  },
+  {
+    "cell_id": "MATR_b2c21",
+    "early_MAE": 10.838852405093787,
+    "dynamic_MAE": 8.538025812536548,
+    "MAE_gain": 2.3008265925572395,
+    "early_over100": 0.0,
+    "dynamic_over100": 0.0,
+    "over100_increment": 0.0
+  },
+  {
+    "cell_id": "MATR_b2c24",
+    "early_MAE": 35.51924558329646,
+    "dynamic_MAE": 14.181574054113556,
+    "MAE_gain": 21.337671529182906,
+    "early_over100": 0.0,
+    "dynamic_over100": 0.0,
+    "over100_increment": 0.0
+  },
+  {
+    "cell_id": "MATR_b2c41",
+    "early_MAE": 9.692256409214993,
+    "dynamic_MAE": 11.822046455047223,
+    "MAE_gain": -2.1297900458322303,
+    "early_over100": 0.0,
+    "dynamic_over100": 0.0,
+    "over100_increment": 0.0
+  },
+  {
+    "cell_id": "MATR_b2c6",
+    "early_MAE": 113.85003231504497,
+    "dynamic_MAE": 61.35764275105357,
+    "MAE_gain": 52.4923895639914,
+    "early_over100": 0.0,
+    "dynamic_over100": 0.0,
+    "over100_increment": 0.0
+  },
+  {
+    "cell_id": "MATR_b4c14",
+    "early_MAE": 47.4851836420751,
+    "dynamic_MAE": 40.50993411966049,
+    "MAE_gain": 6.975249522414607,
+    "early_over100": 0.0,
+    "dynamic_over100": 0.051181102362204724,
+    "over100_increment": 0.051181102362204724
+  },
+  {
+    "cell_id": "MATR_b4c19",
+    "early_MAE": 135.2616883937679,
+    "dynamic_MAE": 73.73717930728257,
+    "MAE_gain": 61.52450908648534,
+    "early_over100": 0.0,
+    "dynamic_over100": 0.0,
+    "over100_increment": 0.0
+  },
+  {
+    "cell_id": "MATR_b4c26",
+    "early_MAE": 19.641566563108793,
+    "dynamic_MAE": 12.702339308885326,
+    "MAE_gain": 6.939227254223466,
+    "early_over100": 0.0,
+    "dynamic_over100": 0.0,
+    "over100_increment": 0.0
+  },
+  {
+    "cell_id": "MATR_b4c29",
+    "early_MAE": 78.13771067748502,
+    "dynamic_MAE": 41.01110646963878,
+    "MAE_gain": 37.126604207846235,
+    "early_over100": 0.0,
+    "dynamic_over100": 0.027918781725888325,
+    "over100_increment": 0.027918781725888325
+  },
+  {
+    "cell_id": "MATR_b4c7",
+    "early_MAE": 81.59812645090612,
+    "dynamic_MAE": 55.71329198367442,
+    "MAE_gain": 25.884834467231705,
+    "early_over100": 0.027906976744186046,
+    "dynamic_over100": 0.2372093023255814,
+    "over100_increment": 0.20930232558139536
+  }
+]

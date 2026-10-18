@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-18T20:48:03.440860+00:00",
-  "content_sha256": "b01937a6854569ce72075d800c362b0cff0d5f63257758988076449541aca200",
-  "file_count": 827,
+  "snapshot_utc": "2026-10-18T21:01:23.846434+00:00",
+  "content_sha256": "518ee1fcbb9d39b98983aa9b37647bd7c53a24282694e646711b76d7a0101329",
+  "file_count": 839,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,8 +14,8 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 98172,
-      "sha256": "fa7d69378acd179be4592d7efcb1613877549b9657add2a35d887b809f91d311"
+      "bytes": 99549,
+      "sha256": "2291ae8d22fdec21d97733f1ae682a08774b815bee8308dae314b844fb17b00e"
     },
     {
       "path": "README.md",
@@ -38,8 +38,8 @@
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 32816,
-      "sha256": "5fd16a01c069a20e143609496fdfb8b62f45a1c2bc228d5a6b4c9bcf888c0333"
+      "bytes": 33716,
+      "sha256": "f150dc636c164f5c74dee385985f1e05a3b126e1ad38d4b882751243f958df66"
     },
     {
       "path": "automation/bin/matr_raw_batch2_asset_worker_v1.py",
@@ -164,8 +164,8 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 82390,
-      "sha256": "722bf124d7497aacce01918db00eab90804a54b1d4394a4fcf6bf6866132bc3e"
+      "bytes": 83291,
+      "sha256": "4df346564c1658bde73abdb24c078ba3b094fdc0a382f6e3799f8b2be79ad51f"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
@@ -3448,6 +3448,78 @@
       "source_path": "reports/local_state_support_20261018_root/summary.json",
       "bytes": 2114,
       "sha256": "3e5108280a7f7c52f0bb6a932d49b266e627321a27bca9fde90ec1925198822e"
+    },
+    {
+      "path": "reports/lossless_survival_probability_20261019_root/RESULTS_ZH.md",
+      "source_path": "reports/lossless_survival_probability_20261019_root/RESULTS_ZH.md",
+      "bytes": 4398,
+      "sha256": "2fbca7eafdae5c399af41d3e049fd381fe0e5f208e859e0d54cb82d31b784a1e"
+    },
+    {
+      "path": "reports/lossless_survival_probability_20261019_root/arithmetic_examples.json",
+      "source_path": "reports/lossless_survival_probability_20261019_root/arithmetic_examples.json",
+      "bytes": 25050,
+      "sha256": "6913f7c280c49cf0a1e11e20ecb3ae52944ff8441a88788e6aee8ab1ff9117b6"
+    },
+    {
+      "path": "reports/lossless_survival_probability_20261019_root/comparisons.json",
+      "source_path": "reports/lossless_survival_probability_20261019_root/comparisons.json",
+      "bytes": 1641,
+      "sha256": "8f367c0ab1a169d2c2afe555058f5c1cf9b5f924c8f038e257de52e46e2e6c7e"
+    },
+    {
+      "path": "reports/lossless_survival_probability_20261019_root/completion.json",
+      "source_path": "reports/lossless_survival_probability_20261019_root/completion.json",
+      "bytes": 937,
+      "sha256": "3e4fd7527f244a3a555428a9542a943b76ae64374770da2644eec3e1667c88bd"
+    },
+    {
+      "path": "reports/lossless_survival_probability_20261019_root/diagnose.py",
+      "source_path": "reports/lossless_survival_probability_20261019_root/diagnose.py",
+      "bytes": 6261,
+      "sha256": "e5b88f42a716f5411397917fc0529c447581b0e59dff7667509a14df0dede7be"
+    },
+    {
+      "path": "reports/lossless_survival_probability_20261019_root/independent_metrics.json",
+      "source_path": "reports/lossless_survival_probability_20261019_root/independent_metrics.json",
+      "bytes": 4167,
+      "sha256": "66ce0a098adfdc7351fc9925ca6e3e41aff87b13ae195a289a6372c56e85888d"
+    },
+    {
+      "path": "reports/lossless_survival_probability_20261019_root/independent_recompute.py",
+      "source_path": "reports/lossless_survival_probability_20261019_root/independent_recompute.py",
+      "bytes": 3347,
+      "sha256": "18842198349f587354f1eb8a5eda28b525a45c8f7f32a2d87ed0eabe0085cc3d"
+    },
+    {
+      "path": "reports/lossless_survival_probability_20261019_root/metrics.json",
+      "source_path": "reports/lossless_survival_probability_20261019_root/metrics.json",
+      "bytes": 1816,
+      "sha256": "f02bcb318a87f620919167be597b192c0a98c0bc61f759b570cb7b5897aad16f"
+    },
+    {
+      "path": "reports/lossless_survival_probability_20261019_root/per_cell_metrics.json",
+      "source_path": "reports/lossless_survival_probability_20261019_root/per_cell_metrics.json",
+      "bytes": 19095,
+      "sha256": "77ed3787c469b4985b44457333b97e8328cfff119edbbd8cbeec4b143dbebc3c"
+    },
+    {
+      "path": "reports/lossless_survival_probability_20261019_root/protocol.json",
+      "source_path": "reports/lossless_survival_probability_20261019_root/protocol.json",
+      "bytes": 2626,
+      "sha256": "f44453844be8ec258118ed6be4f3e4ed9a219f14c2f6b811811bf5ae733053f7"
+    },
+    {
+      "path": "reports/lossless_survival_probability_20261019_root/risk_change.json",
+      "source_path": "reports/lossless_survival_probability_20261019_root/risk_change.json",
+      "bytes": 2427,
+      "sha256": "76ead8a778bc5438c4811353ae955031995b5f7e8f47db6a55757ce5f7e95b3b"
+    },
+    {
+      "path": "reports/lossless_survival_probability_20261019_root/root_decision.json",
+      "source_path": "reports/lossless_survival_probability_20261019_root/root_decision.json",
+      "bytes": 2874,
+      "sha256": "02061b8432d93cb788bfa8f8ec8af4bebb31ed89bd2d2c6fce4f15d3aabf5eaa"
     },
     {
       "path": "reports/matr_heldout_scale_review_20261018_luna/review.json",

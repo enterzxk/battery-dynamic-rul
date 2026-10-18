@@ -455,3 +455,7 @@ reports/policy_encoding_collision_20261019_root/RESULTS_ZH.md。0fit/0标签读�
 
 ## 最新真实1fit：可逆schedule点均值收益，联合门槛未通过
 experiments/policy_lossless_schedule_point_seed42_v1/RESULTS_ZH.md。同42fit/10cal、3state+可逆4电流3SOC切点10输入、固定HGBseed42/logtarget真实1fit+1calpredict：MAE36.400814→33.027239降9.2679%，over1004.2582%→3.1631%；6/10改善、paired95%差[-.752789,8.350660]，gateFAIL/NO_GO_FOR_LOSSLESS_POLICY_MODEL_OR_SEED_EXPANSION_SINGLEFIT_MEAN_GAIN_ONLY。b4c14/b4c29贡献99.8365%净MAE收益，碰撞cal b2c1反而变差；b4c7风险增加，不作碰撞因果解释。52精确schedule roundtrip和4567指标独立重算通过差2.22e-15，CSV无损SHA通过，0旧checkpointload/新scale/devtest。累计CPU20=RUL18+aux2，旧GO和本次GO已消费，globalnewfitsfalse。新编码/模型不是创新或独立确认。下一项0fit新lossless初始条件存活vs逐时动态+旧compressed参考，统一固定旧sigma，仅概率参考诊断，不追加校准/seed/模型。
+
+
+## 最新0fit强对照：新观测点收益与严重高估冲突
+reports/lossless_survival_probability_20261019_root/RESULTS_ZH.md。固定旧sigmaA，新lossless第100循环分布条件存活vs动态：MAE55.242118→33.027239降40.2137%，9/10、pairedCI[10.098087,35.133490]；over100.2791%→3.1631%增2.8840pp超过+1pp，点/概率联合FAIL。IS266.317886→149.873353、Brier改善不救风险；逐cell覆盖误差仅6/10。b4c7同cell MAE81.598→55.713改善而over1002.79%→23.72%，说明同cell也有精度/尾部风险冲突。旧sigma并非新模型独立校准，所有概率均为该尺度条件下参考诊断；cal暴露/eventonly/身份限制保留。0fit，CPU20不变；旧lossless点扩展NO_GO保留。下一项固定等权CDF混合.5surv+.5dynamic，实际混合分位数，0fit/新推理/尺度/devtest；一次窄审+freshGO后仅一次，不搜权重，不当创新。

@@ -1,0 +1,61 @@
+{
+  "question": "Does newlossless target dynamic information improve over its own early survivalconditioning under one fixedold reference scale?",
+  "source_predictions": "experiments/policy_lossless_schedule_point_seed42_v1/calibration_predictions.csv",
+  "prediction_sha256": "98a0ef87f4ab9ea2a9ff0588dbde2890f56768cae5be3585cba4510eeb55aa0c",
+  "source_parameters": "experiments/matr_raw_heldout_calibration_seed42_v1/fit_parameters.json",
+  "parameter_sha256": "ca95515be2d4977aa5160f9aa520acb996c6bd83eff5618ab72e8655f34711e5",
+  "sigma_key": "A_fit_residual_scale",
+  "sigma": 0.19898311654196568,
+  "arms": [
+    "lossless_early_survival_conditioned",
+    "lossless_dynamic",
+    "compressed_policy_dynamic_reference"
+  ],
+  "anchor": 100,
+  "interval": [
+    0.1,
+    0.9
+  ],
+  "horizons": [
+    100,
+    300
+  ],
+  "aggregate": "equal-cell means, all4567 saved calibration origins from10cells",
+  "point_gate": {
+    "MAE_reduction_min": 0.05,
+    "cells_improved_min": 7,
+    "paired_cell_bootstrap_replicates": 2000,
+    "bootstrap_seed": 42,
+    "CI95_lower_gt": 0,
+    "severe_over100_increment_max": 0.01
+  },
+  "probability_gate": {
+    "require_point_gate": true,
+    "interval_score_reduction_min": 0.05,
+    "absolute_coverage_error_reduction_min": 0.03,
+    "width_ratio_max": 2,
+    "mean_Brier_increment_max": 0.002,
+    "cells_coverage_error_improved_min": 7
+  },
+  "metrics_definition": {
+    "TimeMAE": "mean over cells of mean abs(q50-true_RUL)",
+    "severe_over100": "mean over cells of fraction(q50-true_RUL>100)",
+    "interval_score80": "hi-lo+10*max(lo-y,0)+10*max(y-hi,0)",
+    "Brier": "mean over cells of mean((P(RUL<=h)-I(true_RUL<=h))**2)"
+  },
+  "new_fits": 0,
+  "new_scalar_estimates": 0,
+  "new_model_inference": 0,
+  "checkpoint_loads": 0,
+  "dev_test_reads": 0,
+  "limits": [
+    "Fixedold sigmaA estimated for old3state point model, not fitted/independentlycalibrated for lossless or compressedpolicy model; all probabilityresults conditional on this fixed reference assumption",
+    "Existing exposedcal10/4567, no independentconfirmation or causallyidentified observationeffect",
+    "Eventonly physicalserial/fullsource unknown knownfixedlabpolicy; no rawfeatures/model/checkpoint/devtest",
+    "All oldgate thresholds retained, no scale/feature/seed rescue; priorlossless point expansionNO_GO remains"
+  ],
+  "frozen_utc": "2026-10-18T20:58:39.387848+00:00",
+  "owner": "01a1508e-83e9-7232-a0e4-07606110b443",
+  "primary_comparison": "lossless_dynamic_vs_lossless_early_survival_conditioned",
+  "secondary_comparison": "lossless_dynamic_vs_compressed_policy_dynamic_reference"
+}

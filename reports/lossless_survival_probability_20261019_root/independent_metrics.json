@@ -1,0 +1,136 @@
+{
+  "status": "PASS_ALL13701_METRICS_FORWARD_CDF_AND_THREE_BISECTION_CASES",
+  "source_rows": 4567,
+  "derived_rows": 13701,
+  "cells": 10,
+  "maximum_metric_difference": 2.842170943040401e-14,
+  "maximum_risk_difference": 3.774758283725532e-15,
+  "maximum_quantile_CDF_error": 1.3961054534661343e-14,
+  "maximum_bisection_difference": 4.547473508864641e-13,
+  "examples": [
+    {
+      "cell_id": "MATR_b2c1",
+      "origin": 100,
+      "quantile": 0.1,
+      "bisection": 52.969030235955316,
+      "saved": 52.9690302359553,
+      "difference": 1.4210854715202004e-14
+    },
+    {
+      "cell_id": "MATR_b2c1",
+      "origin": 100,
+      "quantile": 0.5,
+      "bisection": 68.35498760918634,
+      "saved": 68.35498760918637,
+      "difference": 2.842170943040401e-14
+    },
+    {
+      "cell_id": "MATR_b2c1",
+      "origin": 100,
+      "quantile": 0.9,
+      "bisection": 88.21011655751249,
+      "saved": 88.21011655751252,
+      "difference": 2.842170943040401e-14
+    },
+    {
+      "cell_id": "MATR_b4c19",
+      "origin": 303,
+      "quantile": 0.1,
+      "bisection": 354.429530732927,
+      "saved": 354.42953073292676,
+      "difference": 2.2737367544323206e-13
+    },
+    {
+      "cell_id": "MATR_b4c19",
+      "origin": 303,
+      "quantile": 0.5,
+      "bisection": 516.3465406768423,
+      "saved": 516.3465406768426,
+      "difference": 2.2737367544323206e-13
+    },
+    {
+      "cell_id": "MATR_b4c19",
+      "origin": 303,
+      "quantile": 0.9,
+      "bisection": 725.2957164772877,
+      "saved": 725.2957164772872,
+      "difference": 4.547473508864641e-13
+    },
+    {
+      "cell_id": "MATR_b4c7",
+      "origin": 529,
+      "quantile": 0.1,
+      "bisection": 23.081706648847586,
+      "saved": 23.081706648847387,
+      "difference": 1.9895196601282805e-13
+    },
+    {
+      "cell_id": "MATR_b4c7",
+      "origin": 529,
+      "quantile": 0.5,
+      "bisection": 105.6640025783691,
+      "saved": 105.66400257836892,
+      "difference": 1.7053025658242404e-13
+    },
+    {
+      "cell_id": "MATR_b4c7",
+      "origin": 529,
+      "quantile": 0.9,
+      "bisection": 243.78984948376802,
+      "saved": 243.78984948376763,
+      "difference": 3.979039320256561e-13
+    }
+  ],
+  "metrics": {
+    "lossless_early_survival_conditioned": {
+      "MAE": 55.24211818389968,
+      "bias": -12.656288986105888,
+      "severe_over100": 0.0027906976744186047,
+      "coverage80": 0.7925203366679463,
+      "width80": 205.78449411518724,
+      "interval_score80": 266.31788597656606,
+      "lower_miss": 0.12572783851453542,
+      "upper_miss": 0.08175182481751825,
+      "Brier100": 0.08211333375614953,
+      "mean_risk100": 0.31320840457028215,
+      "observed_event_fraction100": 0.29911660351601,
+      "Brier300": 0.0797375532896791,
+      "mean_risk300": 0.7014631737893477,
+      "observed_event_fraction300": 0.6973498105480299
+    },
+    "lossless_dynamic": {
+      "MAE": 33.0272391729779,
+      "bias": -2.55470904315091,
+      "severe_over100": 0.031630918641367446,
+      "coverage80": 0.7943092707052315,
+      "width80": 116.66876349050003,
+      "interval_score80": 149.87335344261498,
+      "lower_miss": 0.12774807443721123,
+      "upper_miss": 0.07794265485755728,
+      "Brier100": 0.013910461667455602,
+      "mean_risk100": 0.30788266087488675,
+      "observed_event_fraction100": 0.29911660351601,
+      "Brier300": 0.05652743680196063,
+      "mean_risk300": 0.701568458896107,
+      "observed_event_fraction300": 0.6973498105480299
+    },
+    "compressed_policy_dynamic_reference": {
+      "MAE": 36.40081434267988,
+      "bias": -3.523895114808489,
+      "severe_over100": 0.04258246537928911,
+      "coverage80": 0.7850161610247275,
+      "width80": 116.16909007664155,
+      "interval_score80": 148.4892488786477,
+      "lower_miss": 0.11989603623626532,
+      "upper_miss": 0.09508780273900717,
+      "Brier100": 0.014017516501594317,
+      "mean_risk100": 0.3063527780308095,
+      "observed_event_fraction100": 0.29911660351601,
+      "Brier300": 0.05651082652575491,
+      "mean_risk300": 0.6991772960805062,
+      "observed_event_fraction300": 0.6973498105480299
+    }
+  },
+  "new_fits": 0,
+  "new_model_inference": 0
+}

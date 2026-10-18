@@ -546,3 +546,11 @@
 - **最小验证**：52行Fraction回原schedule、34unique保留34；4567独立点指标/CI/gate重算最大差2.22e-15、原CSV字节SHA归档通过。1fit/1calpredict/0旧checkpointload/新尺度/devtest；累计CPU20=RUL18+辅助2，神经4fit2580steps/旧MATR41另记。
 - **阻塞/风险**：b4c14/b4c29贡献99.8365%净收益，碰撞cal b2c1反而变差；b4c7 severeover10016.05%→23.72%。不把平均收益归因碰撞或当稳定确认，cal暴露/物理ID/eventonly限制保留。两份历史明文无损397695→146658bytes，原件/历史保留；已压缩JSON无空间收益尝试回执保留，无cap扩张。
 - **下一步**：0fit新lossless origin100条件存活vs动态，旧compressed动态作参考；固定旧sigmaA，不新估尺度/推理/checkpoint/devtest；一次冻结点/风险/概率参考诊断，新点扩展NO_GO不变。
+
+
+## 2026-10-19：lossless条件存活强对照完成，精度/严重高估冲突仍在
+- **已完成**：0fit已有10cal4567，新lossless初始分布条件存活vs逐时动态+旧compressed参考，固定旧sigmaA。MAE55.242118→33.027239改善40.2137%、9/10、CI[10.098087,35.133490]；over100.2791%→3.1631%增2.8840pp超+1pp，点/概率联合FAIL，不扩模型/seed。
+- **证据**：reports/lossless_survival_probability_20261019_root/protocol/diagnose、metrics/per_cell_metrics/comparisons/arithmetic_examples/risk_change/completion/independent_recompute/metrics/root_decision/RESULTS_ZH；派生13701行CSV服务器保存。
+- **最小验证**：13701独立指标/CDF/风险复算差2.84e-14/1.40e-14/3.77e-15，3代表时点分位数独立二分差4.55e-13通过。0fit/推理/旧checkpoint/新尺度/rawfeatures/devtest，CPU20不变。
+- **阻塞/风险**：b4c7同cell MAE81.598→55.713改善而over1002.79%→23.72%，冲突不只是跨cell混合；新动态coverage79.43%仍不能称条件覆盖。旧sigma不是新模型独立校准，cal暴露/eventonly/物理身份限制保留。上一点对照6/10CI跨0的扩展NO_GO不变。
+- **下一步**：已有分布唯一等权Fmix=.5Fsurv+.5Fdyn强参考，真实混合CDF分位数；0fit/推理/新尺度/devtest，冻结门槛+一次窄审+freshGO后一次，不搜权重，不把普通混合当创新。

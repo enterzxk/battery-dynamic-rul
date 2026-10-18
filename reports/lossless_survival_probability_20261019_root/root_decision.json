@@ -1,0 +1,70 @@
+{
+  "decision": "NO_GO_LOSSLESS_DYNAMIC_ACCURACY_RISK_TRADEOFF_FIXED_SCALE",
+  "new_fits": 0,
+  "new_model_inference": 0,
+  "new_scale_estimates": 0,
+  "checkpoint_loads": 0,
+  "dev_test_reads": 0,
+  "CPUfits_unchanged": 20,
+  "comparisons": {
+    "lossless_dynamic_vs_lossless_early_survival_conditioned": {
+      "point_MAE_reduction": 0.4021366258435092,
+      "cells_MAE_improved": 9,
+      "pairedcell_MAE_difference_CI95": [
+        10.098086945971659,
+        35.13349017970889
+      ],
+      "severe_over100_increment": 0.02884022096694884,
+      "interval_score_reduction": 0.437238873787836,
+      "absolute_coverage_error_reduction": 0.0017889340372851947,
+      "width_ratio": 0.5669463289357217,
+      "mean_Brier_increment": -0.0457064942882062,
+      "cells_coverage_error_improved": 6,
+      "point_development_gate_pass": false,
+      "probability_checks": {
+        "point_gate": false,
+        "interval_score": true,
+        "coverage_error": false,
+        "width": true,
+        "Brier": true,
+        "cell_coverage": false
+      },
+      "joint_probability_gate_pass": false
+    },
+    "lossless_dynamic_vs_compressed_policy_dynamic_reference": {
+      "point_MAE_reduction": 0.09267856312067368,
+      "cells_MAE_improved": 6,
+      "pairedcell_MAE_difference_CI95": [
+        -0.7527890937505052,
+        8.350660280382126
+      ],
+      "severe_over100_increment": -0.010951546737921668,
+      "interval_score_reduction": -0.00932124429492176,
+      "absolute_coverage_error_reduction": 0.009293109680503897,
+      "width_ratio": 1.0043012595995098,
+      "mean_Brier_increment": -4.522227896650022e-05,
+      "cells_coverage_error_improved": 2,
+      "point_development_gate_pass": false,
+      "probability_checks": {
+        "point_gate": false,
+        "interval_score": false,
+        "coverage_error": false,
+        "width": true,
+        "Brier": true,
+        "cell_coverage": false
+      },
+      "joint_probability_gate_pass": false
+    }
+  },
+  "scope": "Fixedold reference sigma, exposedcal development; no independentlycalibrated newmodel distribution",
+  "evidence_sha256": {
+    "protocol.json": "f44453844be8ec258118ed6be4f3e4ed9a219f14c2f6b811811bf5ae733053f7",
+    "diagnose.py": "e5b88f42a716f5411397917fc0529c447581b0e59dff7667509a14df0dede7be",
+    "metrics.json": "f02bcb318a87f620919167be597b192c0a98c0bc61f759b570cb7b5897aad16f",
+    "comparisons.json": "8f367c0ab1a169d2c2afe555058f5c1cf9b5f924c8f038e257de52e46e2e6c7e",
+    "risk_change.json": "76ead8a778bc5438c4811353ae955031995b5f7e8f47db6a55757ce5f7e95b3b",
+    "completion.json": "3e4fd7527f244a3a555428a9542a943b76ae64374770da2644eec3e1667c88bd",
+    "independent_metrics.json": "66ce0a098adfdc7351fc9925ca6e3e41aff87b13ae195a289a6372c56e85888d",
+    "derived_distribution_predictions.csv": "2874159abbe8bfbe3c03a434b5182c9472874d1994f1db67a3cac37c2e43e781"
+  }
+}
