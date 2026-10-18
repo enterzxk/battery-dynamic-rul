@@ -1,0 +1,12 @@
+{
+  "source_url": "https://data.matr.io/1/api/v1/file/5c86bf13fa2ede00015ddd82/download",
+  "source_code": "repos/audit/BatteryML_2861ae3b8c79938c7fc8e6fe9986b799ca71c7dd/batteryml/preprocess/download.py:16-17",
+  "expected_bytes": 2007331155,
+  "max_bytes": 2007331155,
+  "max_seconds": 600,
+  "download_requests": 1,
+  "retries": 0,
+  "transport": "Windows memory stream -> verified SSH lab-server; no local raw file",
+  "scope": "Raw batch2; parse only approved train/development cells; no test or predictive fits",
+  "reason": "Remote DNS failed; Windows official HEAD200 size2007331155 observed"
+}

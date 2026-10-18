@@ -1,0 +1,99 @@
+{
+  "status": "COMPLETE_BOUNDED_NASA_RAW_DATAV1_ENGINEERING",
+  "source_archive_sha256": "82302a7db4fc1b34e0b6676326610438d43b816bdf11a69d1d012a464ef2f92e",
+  "nested_sha256": "f3a4fcd7c3434e06906f4222778445ce6ad42f49c5c78a785bdd676b7c223a2e",
+  "protocol_sha256": "c5377ddda74f2d6f558070d24a18704dd13ac9b49153863b4325107c68ff8f1b",
+  "runner_sha256": "df338e327d53a4b6bf193de2efce64ea0ca3d9da45b2d6e51e7863687502961c",
+  "cells": [
+    {
+      "cell_id": "B0005",
+      "role": "train",
+      "source_MAT_sha256": "0eae4585baf3f200c09fe24c5ab884f1889679fc75206ca1aa19da704104f0b0",
+      "identity_scope": "NASA raw filename battery number; physical serial and cross-source aliases unverified",
+      "source_operation_count": 616,
+      "discharge_count": 168,
+      "prefix_count": 54,
+      "common2p7V80_event": 74,
+      "common2p7V80_censor": null,
+      "reported_Capacity80_event": 75,
+      "reported_Capacity70_event": 125,
+      "invalid_common_cutoff_count": 0,
+      "capacity_rebound_pairs": 19,
+      "prefix_features_sha256": "7a74f97c7ff81a75775edf1c9f72e8b6c2500fdf5d0570d08a14a580423981a8",
+      "canonical_sha256": "0f3d60fcbe4546109ba29b59d1d6907d502bca66bf693667177b91d07733afe6"
+    },
+    {
+      "cell_id": "B0007",
+      "role": "train",
+      "source_MAT_sha256": "d022afa086efaf54ab5b63f05220f5be178c8027e2fa8d68589db0e85a441a3b",
+      "identity_scope": "NASA raw filename battery number; physical serial and cross-source aliases unverified",
+      "source_operation_count": 616,
+      "discharge_count": 168,
+      "prefix_count": 65,
+      "common2p7V80_event": 85,
+      "common2p7V80_censor": null,
+      "reported_Capacity80_event": 86,
+      "reported_Capacity70_event": null,
+      "invalid_common_cutoff_count": 0,
+      "capacity_rebound_pairs": 20,
+      "prefix_features_sha256": "7eef841cf677af71da0b1f974c0155211a6b5fac569c65851259fc3b1b5f4314",
+      "canonical_sha256": "a05db429ab9d6921b89f18b538aa6d3c0e6bfc919d8a4d87e4c6b25b9f696113"
+    },
+    {
+      "cell_id": "B0006",
+      "role": "val",
+      "source_MAT_sha256": "fa818ab4db5db8ab21e910b6dd6c3e20d3761bb9672089e1a4de8f96074616c5",
+      "identity_scope": "NASA raw filename battery number; physical serial and cross-source aliases unverified",
+      "source_operation_count": 616,
+      "discharge_count": 168,
+      "prefix_count": 42,
+      "common2p7V80_event": 62,
+      "common2p7V80_censor": null,
+      "reported_Capacity80_event": 63,
+      "reported_Capacity70_event": 109,
+      "invalid_common_cutoff_count": 0,
+      "capacity_rebound_pairs": 24,
+      "prefix_features_sha256": "15a6b05df2b4c9b8e65e356f183b0010b08ce8a46d82269255f02913cd3777e9",
+      "canonical_sha256": "896c58035ee6e10122ad91337abbd6ae90d58b27a22b5acdc66905bf56daf18a"
+    }
+  ],
+  "locked_cell": "B0018",
+  "locked_MAT_reads": 0,
+  "new_predictive_fits": 0,
+  "optimizer_steps": 0,
+  "test_access": false,
+  "feature_columns_for_future_models": [
+    "origin_discharge",
+    "soh_common2p7V",
+    "rate20_per_discharge",
+    "rate20_missing",
+    "rate100_per_discharge",
+    "rate100_missing"
+  ],
+  "not_features": [
+    "source_operation_index",
+    "source_completion_time_naive",
+    "event/censor",
+    "reported_Capacity70/80 endpoints"
+  ],
+  "limits": [
+    "2train1development importer pilot only",
+    "no generalization or performance claim",
+    "common2.7V discharge integral is project endpoint, not original NASA 1.4Ah reproduction",
+    "SOC span and raw physical serial unverified",
+    "other NASA packages and MATR raw not processed"
+  ],
+  "manifest_path": "data/processed/data_v1_nasa_fy08q4/manifest.json",
+  "manifest_sha256": "74acf85c1116cb919c5e68fdbdba901770ce3c07e973bb907adb85f3a983002e",
+  "total_prefixes": 161,
+  "counts": {
+    "train": {
+      "cells": 2,
+      "prefixes": 119
+    },
+    "val": {
+      "cells": 1,
+      "prefixes": 42
+    }
+  }
+}

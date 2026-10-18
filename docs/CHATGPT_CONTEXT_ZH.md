@@ -1,3 +1,11 @@
+## 2026-10-18：原始NASA因果DataV1有界链完成，MATR传输停止保留
+- **已完成**：真实owner锁内接管；MATR原始第二批传输速度超预算预计而提前STOP，部分文件保留未用；一次下载NASA官方209708670bytes。两真实电芯最小验证后一次生成3颗/504次放电、train119+development42=161前缀；B0018封存MAT未读。
+- **证据**：reports/data_v1_raw_nasa_20261018_root/DATAV1_ZH.md、import_nasa.py、preprocessing_protocol_v2.json、two_cell_check.json、data_v1_summary.json；data/processed/data_v1_nasa_fy08q4/manifest.json SHA74acf85c1116cb919c5e68fdbdba901770ce3c07e973bb907adb85f3a983002e。官方archive SHA82302a7db4fc1b34e0b6676326610438d43b816bdf11a69d1d012a464ef2f92e。
+- **最小验证**：两cell共4次真实放电的独立区间积分误差<1e-10Ah、prefix20截断相等、单位与源操作对应；无重复smoke。README截止电压描述冲突保留，原Capacity不覆盖，另列共同2.7V容量80%端点B0005/B0007/B0006=74/85/62；原Capacity80%=75/86/63，原70%=125/未观测/109。
+- **阻塞/风险**：2train1development仅导入工程资产，无论文性能/物理泛化证明；共同截止不证明完整SOCspan；三颗past100全缺失，不证明长程机制。MATR完整raw未得；partial1013972992bytes未解码。new_fits=0、optimizer_steps=0、test=0，全球训练门保持false。
+- **下一步**：只读已下载NASA其它5子包目录/README，确认同电芯续段/alias与兼容工况；MAT读取前冻结分组后有界扩DataV1，不用此3颗运行论文比较、不重开MATR已消费全文件票。
+
+
 
 
 ## 2026-10-18：固定稳健速率真实对照与论文路线收敛

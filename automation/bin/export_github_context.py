@@ -69,6 +69,12 @@ def main():
     for name in ["runner.py","protocol.json","ROOT_GO.json","root_delta_review.json","fit_ledger.jsonl","launch_receipt.json","completion_receipt.json","metrics.json","per_cell_metrics.json","comparisons.json","predeclared_failure_windows.json","independent_metrics.json","root_decision.json","RESULTS_ZH.md","published_predictions_columnar.json","decode_public_predictions.py"]:
         chosen.add("experiments/online_survival_robust_rate_seed42_v1/" + name)
 
+    # Raw NASA DataV1 pilot: code and small derived audit only; no raw MAT/CSV/source README.
+    for name in ['DATAV1_ZH.md','import_nasa.py','preprocessing_protocol.json','preprocessing_protocol_v2.json','two_cell_check.json','data_v1_summary.json']:
+        chosen.add('reports/data_v1_raw_nasa_20261018_root/' + name)
+    for name in ['acquisition_budget.json','availability_probe.json','matr_batch2_stream_budget.json','matr_transfer_stop.json','nasa_stream_budget.json']:
+        chosen.add('reports/data_v1_raw_matr_20261018_root/' + name)
+
     contents, files, skipped = {}, [], []
     mapping = {'README.md': 'docs/GITHUB_README_ZH.md', 'agent.md': 'AGENTS.md'}
     mapping.update({rel: rel for rel in sorted(chosen)})

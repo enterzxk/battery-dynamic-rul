@@ -306,3 +306,11 @@
 - **最小验证**：唯一新增斜率的线性序列校验、原cohort/源文本SHA与同origin配对断言；真实1fit后从已存10002预测重算7指标，差0。没有重复smoke/旧模型训练。
 - **阻塞/风险**：F4vsF3未达预设5%扩展门，NO_GO复杂门控/seed扩张；19val已用于适应性开发，event-only processed-source不能支持严格在线/自然删失/独立物理泛化。新增1CPUfit0optimizer；此前3CPU新主线fit、旧41CPU和神经4fit2580step分别保留。
 - **下一步**：定位已存MATR原始文件/清单，核2cell的物理ID、实际cycle/容量单位/事件删失和past-only预处理，生成DataV1；原始不可得则有界评估官方NASA独立体系，不再重复旧v11/PBT审计或在同19val调窗。当前不新增预测fit/test。
+
+
+## 2026-10-18：原始NASA因果DataV1有界链完成，MATR传输停止保留
+- **已完成**：真实owner锁内接管；MATR原始第二批传输速度超预算预计而提前STOP，部分文件保留未用；一次下载NASA官方209708670bytes。两真实电芯最小验证后一次生成3颗/504次放电、train119+development42=161前缀；B0018封存MAT未读。
+- **证据**：reports/data_v1_raw_nasa_20261018_root/DATAV1_ZH.md、import_nasa.py、preprocessing_protocol_v2.json、two_cell_check.json、data_v1_summary.json；data/processed/data_v1_nasa_fy08q4/manifest.json SHA74acf85c1116cb919c5e68fdbdba901770ce3c07e973bb907adb85f3a983002e。官方archive SHA82302a7db4fc1b34e0b6676326610438d43b816bdf11a69d1d012a464ef2f92e。
+- **最小验证**：两cell共4次真实放电的独立区间积分误差<1e-10Ah、prefix20截断相等、单位与源操作对应；无重复smoke。README截止电压描述冲突保留，原Capacity不覆盖，另列共同2.7V容量80%端点B0005/B0007/B0006=74/85/62；原Capacity80%=75/86/63，原70%=125/未观测/109。
+- **阻塞/风险**：2train1development仅导入工程资产，无论文性能/物理泛化证明；共同截止不证明完整SOCspan；三颗past100全缺失，不证明长程机制。MATR完整raw未得；partial1013972992bytes未解码。new_fits=0、optimizer_steps=0、test=0，全球训练门保持false。
+- **下一步**：只读已下载NASA其它5子包目录/README，确认同电芯续段/alias与兼容工况；MAT读取前冻结分组后有界扩DataV1，不用此3颗运行论文比较、不重开MATR已消费全文件票。

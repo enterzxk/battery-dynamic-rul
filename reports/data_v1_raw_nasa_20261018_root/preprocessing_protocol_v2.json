@@ -1,0 +1,20 @@
+{
+  "roles": {
+    "B0005": "train",
+    "B0007": "train",
+    "B0006": "val",
+    "B0018": "locked_confirmation"
+  },
+  "stage": "One bounded raw NASA development asset generation",
+  "prior_protocol": "preprocessing_protocol.json retained; revised before model fitting due original README cutoff contradiction",
+  "capacity": "Integrate rectified negative measured current over raw seconds /3600 from record start to first V<=2.7 during current<-.1A; interpolate only within current completed discharge between adjacent samples",
+  "endpoint": "first observed common2.7V integral <=1.6Ah; separate unchanged original Capacity80% and NASA author70% nominal endpoints",
+  "nominal_Ah": 2,
+  "origins": "all valid observed completed discharge ordinals>=20, before event or through right censor; not charge/EIS operation count",
+  "invalid": "finite aligned I/V/Time, nondecreasing seconds; start under load above2.7V and common cutoff observed; otherwise mark missing, no future imputation",
+  "features": "age/common2.7V SOH/fixed20 and100 TheilSen by discharge ordinal; missing masks; source-operation/timestamps only provenance",
+  "physical_scope": "source battery number; full physical serial and common SOC span unverified",
+  "test_access": false,
+  "new_predictive_fits": 0,
+  "optimizer_steps": 0
+}

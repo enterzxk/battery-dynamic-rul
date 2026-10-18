@@ -1,0 +1,14 @@
+{
+  "status": "STOP_SLOW_TRANSFER_NO_RETRY",
+  "observed_progress_bytes": 939524096,
+  "observed_elapsed_seconds": 379.8,
+  "projected_total_seconds": 811.4580306293709,
+  "max_seconds": 600,
+  "partial_file_bytes": 1013972992,
+  "partial_retained": true,
+  "partial_used_as_data": false,
+  "reason": "Observed throughput no longer supports completion within600s; stop early to use smaller official NASA source; source itself remains accessible",
+  "new_fits": 0,
+  "test_access": false,
+  "at_utc": "2026-10-18T05:45:13.729889+00:00"
+}

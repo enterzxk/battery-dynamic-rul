@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-18T05:32:07.004059+00:00",
-  "content_sha256": "2486deea8b06e6ec494ef49ef150ee3fddacf5204e7a599495bb7befc09e3d4d",
-  "file_count": 445,
+  "snapshot_utc": "2026-10-18T05:52:19.372838+00:00",
+  "content_sha256": "d0e824815a0280726b0334dad267995ff7cff349ae043a3dbe30631a788fd8a1",
+  "file_count": 456,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,8 +14,8 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 50020,
-      "sha256": "7ac5da962e41f0a702911e96284d0c33992ce92e963c977b447e85c0fbc12670"
+      "bytes": 51633,
+      "sha256": "7d2982d9de0d6d6681f503e93207ec155e6a038d895ce0dbb95148ca6c8ec1e6"
     },
     {
       "path": "README.md",
@@ -32,8 +32,8 @@
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 10934,
-      "sha256": "b1e263bd6a95f52ce22f39475889c633ac32561f8b6836c563154ca9dbcff8f6"
+      "bytes": 11482,
+      "sha256": "a517bad57d67bf6277b886e2e0ceff4486b4dbead64455d8dd4d66809cc5da2a"
     },
     {
       "path": "automation/github_export/build_dynamic_A_eligible_20261017.py",
@@ -128,8 +128,8 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 37281,
-      "sha256": "0166a698bbe5c9aaba4d417a45b8e41503b73f03cbe0baf819b0f099ce9be6a2"
+      "bytes": 38894,
+      "sha256": "0bff8b94fae84bf0421ece3e9978f2a74ebc05e305463ed09eb5a50fbdd532ac"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
@@ -1738,6 +1738,72 @@
       "source_path": "reports/data_schema_audit/run_20261015T164049_918837Z/summary.json",
       "bytes": 21862,
       "sha256": "ae921f35346cb6ff03480fc6aaf7aeecc1a95e56c82fd7bd1be61c57e0639fc5"
+    },
+    {
+      "path": "reports/data_v1_raw_matr_20261018_root/acquisition_budget.json",
+      "source_path": "reports/data_v1_raw_matr_20261018_root/acquisition_budget.json",
+      "bytes": 838,
+      "sha256": "24a45e79ff1a660d853219f4782c382df23f0d78050184a72b1a9b8e6db6d77a"
+    },
+    {
+      "path": "reports/data_v1_raw_matr_20261018_root/availability_probe.json",
+      "source_path": "reports/data_v1_raw_matr_20261018_root/availability_probe.json",
+      "bytes": 698,
+      "sha256": "2213374762048d78dfb2c315c764b3dd1bc47ed70af35dcfd5d19f4c56fda449"
+    },
+    {
+      "path": "reports/data_v1_raw_matr_20261018_root/matr_batch2_stream_budget.json",
+      "source_path": "reports/data_v1_raw_matr_20261018_root/matr_batch2_stream_budget.json",
+      "bytes": 602,
+      "sha256": "383aa7f9511024c4a6d84b83de1d55f2112d1fad53c7d23ff1714379b2f7de9c"
+    },
+    {
+      "path": "reports/data_v1_raw_matr_20261018_root/matr_transfer_stop.json",
+      "source_path": "reports/data_v1_raw_matr_20261018_root/matr_transfer_stop.json",
+      "bytes": 536,
+      "sha256": "bf86b06e176d700ff8052dd89f1bb0298d0ef497dd231ff3d416069502725bea"
+    },
+    {
+      "path": "reports/data_v1_raw_matr_20261018_root/nasa_stream_budget.json",
+      "source_path": "reports/data_v1_raw_matr_20261018_root/nasa_stream_budget.json",
+      "bytes": 644,
+      "sha256": "04dc1d6bd83f12d89c226cd602384d16388ff6e0c91f34270626948927596f4a"
+    },
+    {
+      "path": "reports/data_v1_raw_nasa_20261018_root/DATAV1_ZH.md",
+      "source_path": "reports/data_v1_raw_nasa_20261018_root/DATAV1_ZH.md",
+      "bytes": 6367,
+      "sha256": "ec007828a14a14c69d293f0ae9267188dffdbfe640c2b379787ebd7fd3b6cdae"
+    },
+    {
+      "path": "reports/data_v1_raw_nasa_20261018_root/data_v1_summary.json",
+      "source_path": "reports/data_v1_raw_nasa_20261018_root/data_v1_summary.json",
+      "bytes": 3875,
+      "sha256": "5195befd290b446ded1ecc5aef66293c4f75bbfb6995889da5341715d61036b2"
+    },
+    {
+      "path": "reports/data_v1_raw_nasa_20261018_root/import_nasa.py",
+      "source_path": "reports/data_v1_raw_nasa_20261018_root/import_nasa.py",
+      "bytes": 9575,
+      "sha256": "df338e327d53a4b6bf193de2efce64ea0ca3d9da45b2d6e51e7863687502961c"
+    },
+    {
+      "path": "reports/data_v1_raw_nasa_20261018_root/preprocessing_protocol.json",
+      "source_path": "reports/data_v1_raw_nasa_20261018_root/preprocessing_protocol.json",
+      "bytes": 1855,
+      "sha256": "cb84e27378ed4b9abdc6e1d0edfff9cfe7004f4d42ad5b86e8b056bab3b3ed04"
+    },
+    {
+      "path": "reports/data_v1_raw_nasa_20261018_root/preprocessing_protocol_v2.json",
+      "source_path": "reports/data_v1_raw_nasa_20261018_root/preprocessing_protocol_v2.json",
+      "bytes": 1306,
+      "sha256": "c5377ddda74f2d6f558070d24a18704dd13ac9b49153863b4325107c68ff8f1b"
+    },
+    {
+      "path": "reports/data_v1_raw_nasa_20261018_root/two_cell_check.json",
+      "source_path": "reports/data_v1_raw_nasa_20261018_root/two_cell_check.json",
+      "bytes": 1946,
+      "sha256": "a2ce27e4a77a72ab7dae8847d0e3d387eeffd8dfed05349390e2a12efc0b27e3"
     },
     {
       "path": "reports/development_pilot/cpmlp_hust_seed42_v3/analysis.json",

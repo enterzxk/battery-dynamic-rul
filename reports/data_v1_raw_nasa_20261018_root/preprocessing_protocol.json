@@ -1,0 +1,33 @@
+{
+  "stage": "DataV1 original NASA FY08Q4 pilot assets only",
+  "frozen_before_mat_reads": true,
+  "roles": {
+    "B0005": "train",
+    "B0007": "train",
+    "B0006": "val",
+    "B0018": "locked_confirmation"
+  },
+  "two_samples": [
+    "B0005",
+    "B0006"
+  ],
+  "other_files": "No MAT decoding; archive directory and textual readme only",
+  "origin": "cumulative completed discharge ordinal>=20; source operation index and completion timestamp also retained; discharge ordinal is not total charge/EIS operation index",
+  "nominal_Ah": 2.0,
+  "endpoint": "first observed valid discharge Capacity<=1.6Ah (80% nominal), distinct from NASA original30%fade 1.4Ah endpoint; nominal/unit must be confirmed in original readme",
+  "censor": "if no observed crossing, right censor at last valid completed discharge; unknown stop reason not random censor assumption",
+  "cutoff_voltage_V": {
+    "B0005": 2.7,
+    "B0006": 2.5,
+    "B0007": 2.2
+  },
+  "cutoff_basis": "pending official archive README verification; mismatch blocks affected cells",
+  "soc_span": "unknown; capacity to cell-specific cutoff is not universally equivalent full-SOC capacity",
+  "invalid": "finite Capacity in(0,4]Ah, finite monotone within-discharge Time; preserve rebound, no whole-life smoothing/interpolation/max-capacity normalization",
+  "features": "age_discharge_ordinal,current_soh,fixed20/past100 TheilSen actual discharge ordinal difference; missing masks; no source_operation/future labels in predictor array",
+  "data_separation": "cell/endpoint manifest separate from past-only features; B0018 array remains unread; one full generation after two-cell check",
+  "new_predictive_fits": 0,
+  "optimizer_steps": 0,
+  "test_access": false,
+  "limits": "2train1development is an importer/protocol pilot, not a sufficient paper comparison or independent generalization result"
+}

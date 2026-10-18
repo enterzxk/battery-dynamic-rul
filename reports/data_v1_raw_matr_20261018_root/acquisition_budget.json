@@ -1,0 +1,23 @@
+{
+  "created_utc": "2026-10-18T05:36:59.870739+00:00",
+  "MATR": {
+    "url": "https://data.matr.io/1/api/v1/file/5c86c0b5fa2ede00015ddf66/download",
+    "range_bytes": 4096,
+    "requests": 1,
+    "timeout_s": 25,
+    "retries": 0,
+    "purpose": "Identify binary availability; no full download"
+  },
+  "NASA": {
+    "landing_page": "https://www.nasa.gov/intelligent-systems-division/discovery-and-systems-health/pcoe/pcoe-data-set-repository/",
+    "url": "https://phm-datasets.s3.amazonaws.com/NASA/5.+Battery+Data+Set.zip",
+    "head_requests": 1,
+    "max_download_bytes": 268435456,
+    "max_download_seconds": 300,
+    "retries": 0,
+    "purpose": "Fallback only if official MATR raw unavailable; inspect two development cells before full preprocessing"
+  },
+  "predictive_fits": 0,
+  "optimizer_steps": 0,
+  "test_access": false
+}
