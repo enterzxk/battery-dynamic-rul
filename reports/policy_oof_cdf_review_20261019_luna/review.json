@@ -1,0 +1,35 @@
+{
+  "status": "BLOCKED",
+  "requested_model": "gpt-6-luna/high",
+  "review_scope": "Static review only; runner not executed; no model fit, inference, checkpoint load, or historical re-review.",
+  "sha256": {
+    "runner.py": "f9d46ad77e94c4ec0fe6485aea53057ec09962d4a10f9215cea5bbddbc702ade",
+    "protocol.json": "7eaae72cef43e1b8f72e251632749651a3816a3c9c089e925621a0c9da9e7966",
+    "cohort.json": "42535de5825f6857e3aa69a596306a909a9a1b3ac087c43631032f6d293ef289"
+  },
+  "findings": [
+    {
+      "severity": "blocking",
+      "issue": "Runner requires experiments/policy_oof_cdf_seed42_v1/ROOT_GO.json at startup (runner.py: main, go=... and subsequent SHA/review assertions), but this file is absent. The experiment directory contains only runner.py, protocol.json, and cohort.json; a search found no ROOT_GO under this experiment. Therefore its referenced independent review receipt and frozen GO authorization cannot be checked and the runner would stop before invocation.claim or any fit.",
+      "evidence": "Remote directory inventory and find; static inspection of runner.py startup."
+    }
+  ],
+  "static_checks": {
+    "requested_runner_protocol_cohort_sha_match": true,
+    "cohort_fit_calibration_ids_disjoint_by_role": true,
+    "cohort_role_counts": {
+      "fit": 42,
+      "calibration": 10,
+      "development": 18
+    },
+    "cohort_total_ids": 70,
+    "folds_match_sorted42ids_rng42_single_permutation_14_each": true,
+    "manifest_sha256_matches_cohort": true,
+    "manifest_cell_roles_train26_val9_each_batch": true,
+    "cdf_left_inverse_exact_fraction_and_median_centering_code_review": "PASS_STATIC",
+    "stored_calibration_mu_only_no_cal_predict_or_checkpoint_load_code_review": "PASS_STATIC",
+    "development_test_gates_and_3_fit_start_budget_present": "PASS_STATIC",
+    "event_only_physical_identity_and_exposed_calibration_limits_frozen": "PASS_STATIC"
+  },
+  "decision": "Do not execute. Supply the missing create-only ROOT_GO authorization/review receipt, or have the coordinator re-freeze a complete experiment package; then obtain a fresh narrow review before any fit."
+}

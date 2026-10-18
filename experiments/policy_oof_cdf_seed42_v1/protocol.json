@@ -1,0 +1,137 @@
+{
+  "question": "Can fixed3fold cell-OOF residual empiricalCDF repair percell probability reliability with saved policy median unchanged?",
+  "seed": 42,
+  "max_new_CPU_fits": 3,
+  "max_seconds": 240,
+  "threads": 1,
+  "optimizer_steps": 0,
+  "development_access": false,
+  "test_access": false,
+  "global_new_fits_allowed_remains": false,
+  "owner": "01a1508e-83e9-7232-a0e4-07606110b443",
+  "source_predictions": {
+    "fit_predictions.csv": "7cd0d1c902dacacf8f519c02962eb0343c240d1be41555d96e94b4bbf17775e3",
+    "calibration_predictions.csv": "796844ff5c863a08ca7f1238c620afee39a3f22b84d68b615ec52135c48b7ea0"
+  },
+  "source_cohort_sha256": "42535de5825f6857e3aa69a596306a909a9a1b3ac087c43631032f6d293ef289",
+  "features": [
+    "age",
+    "SOH",
+    "robust20 originalunits",
+    "effectiveC_0_20",
+    "effectiveC_20_40",
+    "effectiveC_40_60",
+    "effectiveC_60_80"
+  ],
+  "target": "log(original observed event_cycle-origin), same preevent sourceorigins",
+  "weights": "each fit cell total equal; normalize mean sample_weight to1",
+  "prediction": "Saved policy exp(rawmu) point preserved; empiricalCDF analytical application only to stored10cal mu",
+  "selection_gate": {
+    "point_MAE_unchanged": true,
+    "interval_score_reduction_min": 0.05,
+    "mean_cell_absolute_coverage_error_reduction_min": 0.03,
+    "aggregate_absolute_coverage_error_must_not_increase": true,
+    "width_ratio_max": 2,
+    "coverage_error_cells_improved_min": 7,
+    "zero_any_crossing": true,
+    "pairedcell_score_bootstrap": 2000,
+    "bootstrap_seed": 42,
+    "score_difference_CI_lower_strictly_above": 0,
+    "mean_Brier100_300_increment_max": 0.002
+  },
+  "limitations": [
+    "calibration10 already exposed for development; no independent confirmation",
+    "observed-event lab complete-cycle capacity only; no censoring or conditional-distribution claim",
+    "sourceID separation only; physical serial and complete-source SHA unverified",
+    "no parameter/seed rescue; any fit start consumes budget; preserve failures"
+  ],
+  "quantiles": [
+    0.1,
+    0.5,
+    0.9
+  ],
+  "source_parameters_sha256": "ca95515be2d4977aa5160f9aa520acb996c6bd83eff5618ab72e8655f34711e5",
+  "crossing_policy": "Any q10>savedmedian or q90<savedmedian or q10>=q90 fails coherent3quantile gate. Preserve all raw endpoints; no rearrangement/clipping.",
+  "limits": [
+    "Exposed10cal is development only; no dev/test reads",
+    "Eventonly, physical serial/fullsource unknown, fixed known labpolicy",
+    "OOF models trained28 vs original42; residual transfer is reference, no innovation/conformal/conditionalcoverage guarantee",
+    "3newCPUfitstarts max; no fold/seed/scale/quantile/threshold search or retry; preserve any failure"
+  ],
+  "model_common": {
+    "max_iter": 150,
+    "max_leaf_nodes": 7,
+    "max_depth": 3,
+    "learning_rate": 0.05,
+    "min_samples_leaf": 50,
+    "l2_regularization": 1,
+    "random_state": 42,
+    "early_stopping": false
+  },
+  "source_prediction_paths": {
+    "fit_predictions.csv": "/home/yndx/zxk/rul/experiments/matr_raw_heldout_calibration_seed42_v1/fit_predictions.csv",
+    "calibration_predictions.csv": "/home/yndx/zxk/rul/experiments/policy_context_point_seed42_v1/calibration_predictions.csv"
+  },
+  "policy_features_path": "/home/yndx/zxk/rul/reports/policy_context_20261018_root/policy_features.json",
+  "policy_features_sha256": "91a6bfa3be83b403289133bd13669d36ed7a1f212ec0ca4e692efecfb85be462",
+  "semantics_path": "/home/yndx/zxk/rul/reports/policy_context_20261018_root/source_semantics.json",
+  "semantics_sha256": "c973219a60549f3ef4af0803a821eeafd2b4fe2ade552234294a25dd01e3ad32",
+  "frozen_utc": "2026-10-18T19:49:29.591887+00:00",
+  "new_scalar_estimates": "One median center; one trainOOF empiricalCDF, no cal fitting",
+  "max_checkpoint_loads": 0,
+  "max_calibration_predict_calls": 0,
+  "coverage_metric_rationale": "Old .03 aggregate absolutecoverageerror improvement is mathematically impossible from .0149838 old-policy aggregateerror. Before any current fit freeze mean-cell absolutecoverageerror improvement plus aggregateerror nonworsening, reflecting known per-cell failures. This is a new matched-input interval baseline, not retroactive revision of old gates.",
+  "baseline_distribution": "saved policy rawmu plus unchanged oldfit sigmaA=.19898311654196568",
+  "fold_cells": [
+    [
+      "MATR_b4c18",
+      "MATR_b4c1",
+      "MATR_b4c23",
+      "MATR_b2c39",
+      "MATR_b4c43",
+      "MATR_b2c18",
+      "MATR_b4c9",
+      "MATR_b4c15",
+      "MATR_b2c28",
+      "MATR_b4c21",
+      "MATR_b2c19",
+      "MATR_b2c5",
+      "MATR_b4c42",
+      "MATR_b4c30"
+    ],
+    [
+      "MATR_b2c37",
+      "MATR_b4c12",
+      "MATR_b4c24",
+      "MATR_b4c40",
+      "MATR_b2c30",
+      "MATR_b4c25",
+      "MATR_b4c38",
+      "MATR_b2c38",
+      "MATR_b4c11",
+      "MATR_b2c26",
+      "MATR_b2c36",
+      "MATR_b2c31",
+      "MATR_b4c20",
+      "MATR_b2c3"
+    ],
+    [
+      "MATR_b4c37",
+      "MATR_b4c10",
+      "MATR_b2c4",
+      "MATR_b2c17",
+      "MATR_b2c0",
+      "MATR_b2c32",
+      "MATR_b2c34",
+      "MATR_b4c8",
+      "MATR_b2c14",
+      "MATR_b4c4",
+      "MATR_b4c34",
+      "MATR_b2c10",
+      "MATR_b2c33",
+      "MATR_b2c29"
+    ]
+  ],
+  "fold_rule": "sorted42 IDs, numpy.default_rng42.permutation once, consecutive14; each model28train14OOF; original42cell model untouched",
+  "cdf_convention": "r=log(trueRUL)-OOFmu; eachcell mass1/42 and row mass1/(42*ncell). Left inverse quantile inf{x:F(x)>=q}, exact Fraction cumulative for .1/.5/.9; subtract q.5 once; F(z)=sum mass where r-center<=z; support ties inclusive. exp(savedmu+offsets); q50=exp(savedmu). No interpolation/sorting of output bounds/clipping."
+}

@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "review_stage": "PRE_GO_INDEPENDENT_NARROW_REVIEW",
+  "requested_model": "gpt-6-luna/high",
+  "scope": "Stage-resolution only. No new code/data audit and no runner, fit, inference, or checkpoint operation.",
+  "reviewed_input_sha256": {
+    "runner.py": "f9d46ad77e94c4ec0fe6485aea53057ec09962d4a10f9215cea5bbddbc702ade",
+    "protocol.json": "7eaae72cef43e1b8f72e251632749651a3816a3c9c089e925621a0c9da9e7966",
+    "cohort.json": "42535de5825f6857e3aa69a596306a909a9a1b3ac087c43631032f6d293ef289"
+  },
+  "prior_review_receipt_sha256": "236f91ffe702eb216dfda970422ce6cd30dee2af9b29589be4c8770105e698fb",
+  "resolution": "The absence of ROOT_GO.json at the time of independent pre-GO review is an expected sequencing condition, not a defect in the reviewed runner/protocol/cohort. The coordinator is responsible for signing a fresh exact GO after this review; that GO must bind this PASS receipt and the exact frozen runner, protocol, and cohort hashes.",
+  "explicit_conditions": [
+    "Coordinator must issue and hash-bind a fresh exact GO before execution.",
+    "At execution time, runner must verify GO status, this review receipt status and SHA, and all frozen input hashes.",
+    "This PASS does not waive any project, data, budget, owner/lock, fit, calibration, development/test, or execution gate.",
+    "No execution was authorized or performed by this stage resolution."
+  ],
+  "other_technical_blockers": "None identified in the already completed narrow review; no additional audit was performed."
+}

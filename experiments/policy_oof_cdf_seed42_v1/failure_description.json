@@ -1,0 +1,97 @@
+{
+  "scope": "Posthoc fixed-scheme failure description, no tuning or gate changes",
+  "cells": [
+    {
+      "cell_id": "MATR_b2c1",
+      "origins": 48,
+      "baseline_coverage": 0.1875,
+      "OOF_coverage": 0.08333333333333333,
+      "interval_score_delta": 14.501342723487461,
+      "lower_miss": 0.9166666666666666,
+      "upper_miss": 0.0
+    },
+    {
+      "cell_id": "MATR_b2c21",
+      "origins": 389,
+      "baseline_coverage": 0.9974293059125964,
+      "OOF_coverage": 0.9948586118251928,
+      "interval_score_delta": -11.051482512615095,
+      "lower_miss": 0.005141388174807198,
+      "upper_miss": 0.0
+    },
+    {
+      "cell_id": "MATR_b2c24",
+      "origins": 395,
+      "baseline_coverage": 0.9974683544303797,
+      "OOF_coverage": 0.9949367088607595,
+      "interval_score_delta": -12.486086380363162,
+      "lower_miss": 0.005063291139240506,
+      "upper_miss": 0.0
+    },
+    {
+      "cell_id": "MATR_b2c41",
+      "origins": 329,
+      "baseline_coverage": 0.9908814589665653,
+      "OOF_coverage": 0.9756838905775076,
+      "interval_score_delta": -10.067531310347675,
+      "lower_miss": 0.0243161094224924,
+      "upper_miss": 0.0
+    },
+    {
+      "cell_id": "MATR_b2c6",
+      "origins": 411,
+      "baseline_coverage": 0.29683698296836986,
+      "OOF_coverage": 0.2822384428223844,
+      "interval_score_delta": 1.9635368154515618,
+      "lower_miss": 0.004866180048661801,
+      "upper_miss": 0.7128953771289538
+    },
+    {
+      "cell_id": "MATR_b4c14",
+      "origins": 508,
+      "baseline_coverage": 0.889763779527559,
+      "OOF_coverage": 0.5826771653543307,
+      "interval_score_delta": 39.84900032501787,
+      "lower_miss": 0.4153543307086614,
+      "upper_miss": 0.001968503937007874
+    },
+    {
+      "cell_id": "MATR_b4c19",
+      "origins": 892,
+      "baseline_coverage": 0.8688340807174888,
+      "OOF_coverage": 0.827354260089686,
+      "interval_score_delta": -15.892912491797148,
+      "lower_miss": 0.028026905829596414,
+      "upper_miss": 0.1446188340807175
+    },
+    {
+      "cell_id": "MATR_b4c26",
+      "origins": 377,
+      "baseline_coverage": 0.9840848806366048,
+      "OOF_coverage": 0.9230769230769231,
+      "interval_score_delta": -6.87646778260509,
+      "lower_miss": 0.07427055702917772,
+      "upper_miss": 0.002652519893899204
+    },
+    {
+      "cell_id": "MATR_b4c29",
+      "origins": 788,
+      "baseline_coverage": 0.8629441624365483,
+      "OOF_coverage": 0.8197969543147208,
+      "interval_score_delta": -8.759483762941215,
+      "lower_miss": 0.048223350253807105,
+      "upper_miss": 0.1319796954314721
+    },
+    {
+      "cell_id": "MATR_b4c7",
+      "origins": 430,
+      "baseline_coverage": 0.7744186046511627,
+      "OOF_coverage": 0.4930232558139535,
+      "interval_score_delta": 46.06058186688995,
+      "lower_miss": 0.5069767441860465,
+      "upper_miss": 0.0
+    }
+  ],
+  "mean_cell_lower_miss": 0.20289055234591577,
+  "mean_cell_upper_miss": 0.09941149304720505
+}

@@ -1,0 +1,5 @@
+{
+  "pid": 1903354,
+  "GO_sha256": "d1092bfc885d2db51846d82de00b0e68d1e3e1bd196ba1fe9a38b67604b12888",
+  "command": "/home/yndx/miniconda3/envs/a40_env/bin/python /home/yndx/zxk/rul/experiments/policy_oof_cdf_seed42_v1/runner.py"
+}

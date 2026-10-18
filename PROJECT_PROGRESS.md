@@ -506,3 +506,11 @@
 - **最小验证**：4567独立重算差2.84e-14，crossing217lower/304upper/56bounds/512union一致；无损rawlog双列复原字节SHA通过。56倒置在3cell，真RUL136..356而非临近EOL，纯事后定位。2fit/2calpredict，0optimizer/checkpointload/新标量/devtest；累计CPU16=RUL14+辅助2，神经4fit2580steps/旧MATR41另记。
 - **阻塞/风险**：raw公式191.835875及其CI仅诊断，不当合法区间得分；原点TimeMAE36.400814完全不变。新逐电池coverage门槛fit前冻结且旧gate不追改；cal暴露/event-only/物理身份/固定policy限制保留。
 - **下一步**：准备42fit内部3折电池隔离OOF残差统一经验CDF参考，原7feature/固定HGB、每cell只被未见自身的模型预测、原policy中位数复用；最多3新CPUfit须一次窄审+fresh exactGO，当前未授权。0dev/test，不重跑/修排序当前quantile，不宣称conformal保证。
+
+
+## 2026-10-19：固定三折电池隔离OOF经验CDF真实3fit，NO_GAIN
+- **已完成**：42fit固定3折各14留出/28训练，22281条电池隔离OOF，cell等权CDF中位中心化一次解析用于10cal4567既有mu。MAE36.400814不变、0crossing；coverage78.5016%→69.7698%，IS148.489249→152.213299恶化2.5080%，逐cell覆盖误差.213265→.249444，联合gateFAIL/NO_GAIN。
+- **证据**：experiments/policy_oof_cdf_seed42_v1/RESULTS_ZH.md、runner/protocol/cohort/ROOT_GO/fit_ledger/completion、OOF和calibration_distribution原CSV、empirical_cdf、metrics/per_cell_metrics/comparison/failure_description、independent_recompute/metrics、predictions_lossless/decoder/lossless_validation/root_decision；reports/policy_oof_cdf_review_20261019_luna保留review及preGO阶段澄清PASS。
+- **最小验证**：独立Fraction/math/statistics核22281OOF排除和4567校准预测，最大预测差9.09e-13、指标差1.42e-13；两份公开预测原字节SHA解码通过。3新CPUfit/0新cal推理/0旧checkpointload/0devtest。累计CPU19=RUL17+辅助2；神经4fit2580steps、旧MATR41另记。
+- **阻塞/风险**：Brier100/300略改善不能救联合失败；下侧漏覆盖均值20.2891%，OOF28训练vs原42和cal反复开发/event-only/物理身份/固定policy限制保留。旧点PASS和概率FAIL不变；不调fold/seed/尺度/quantile。4份completed静态证据无损归档908319→217253bytes，原件/旧GitHub历史保留，12MiB不扩cap。
+- **下一步**：0fit冻结age区间[100,200)/[200,400)/[400,+inf)，已有OOF和cal标签/预测的残差与两侧漏覆盖异质性诊断；不搜索分组、不启动新模型或门控，0devtest。

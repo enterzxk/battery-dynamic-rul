@@ -1,0 +1,16 @@
+{
+  "status": "GO_THREE_CELL_OOF_FITS_CAL_SAVED_ONLY",
+  "max_new_fits": 3,
+  "max_seconds": 240,
+  "max_calibration_predict_calls": 0,
+  "max_checkpoint_loads": 0,
+  "dev_test_reads": 0,
+  "owner": "01a1508e-83e9-7232-a0e4-07606110b443",
+  "issued_utc": "2026-10-18T19:51:22.252601+00:00",
+  "review_path": "/home/yndx/zxk/rul/reports/policy_oof_cdf_review_20261019_luna/review_stage_resolution.json",
+  "review_sha256": "a1144d01b23f9ca17e89bb8ca972f591a8d6ab7f4480e02b34d7b460e85d2c68",
+  "scope": "Exactly3 fixed cellOOF HGBlog pointfits; storedcalmu analyticalCDF only; no rescue/retry; all fitstarts consumed",
+  "runner.py_sha256": "f9d46ad77e94c4ec0fe6485aea53057ec09962d4a10f9215cea5bbddbc702ade",
+  "protocol.json_sha256": "7eaae72cef43e1b8f72e251632749651a3816a3c9c089e925621a0c9da9e7966",
+  "cohort.json_sha256": "42535de5825f6857e3aa69a596306a909a9a1b3ac087c43631032f6d293ef289"
+}

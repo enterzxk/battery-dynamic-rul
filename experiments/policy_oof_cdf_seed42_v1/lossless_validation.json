@@ -1,0 +1,16 @@
+{
+  "status": "PASS_ORIGINAL_CSV_BYTES_SHA256",
+  "files": [
+    {
+      "path": "oof_predictions.csv",
+      "sha256": "cf9a5a173550013f553e53dd3b379c791956ecbf92f19c2682705ec7261da9b2",
+      "bytes": 885362
+    },
+    {
+      "path": "calibration_distribution.csv",
+      "sha256": "56a0bdec581437729dd525e3b0e7c075feef811d48ebee3eea62479fe83fd993",
+      "bytes": 589326
+    }
+  ],
+  "archive_bytes": 406298
+}

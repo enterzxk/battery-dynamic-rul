@@ -1,0 +1,13 @@
+{
+  "original_files": [
+    "reports/literature_discussion_20261017_root_v1/paper_evidence.json",
+    "reports/data_schema_audit/run_20261015T164049_918837Z/per_cell_schema_audit.jsonl",
+    "reports/pbt_val_pairing_static_v1_luna/existing_view_join_v2/prefix_projection.csv",
+    "reports/pbt_stage0_metadata_freeze_v2_root/metadata_receipt.json"
+  ],
+  "original_bytes": 908319,
+  "archive_bytes": 217253,
+  "all_original_byte_SHA_verified": true,
+  "server_originals_retained": true,
+  "GitHub_history_retained": true
+}

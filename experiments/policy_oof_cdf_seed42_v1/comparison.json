@@ -1,0 +1,26 @@
+{
+  "point_MAE_unchanged": true,
+  "interval_score_relative_reduction": -0.025079591803048418,
+  "pairedcell_score_difference_CI95": [
+    -19.14082273064004,
+    8.403278083275303
+  ],
+  "mean_cell_absolute_coverage_error_reduction": -0.0361784716412579,
+  "aggregate_coverage_error_reduction": -0.08731820641784838,
+  "coverage_error_cells_improved": 6,
+  "width_ratio": 0.883736588557108,
+  "mean_Brier_increment": -0.0008293065404200023,
+  "any_crossing_origins": 0,
+  "checks": {
+    "point": true,
+    "score": false,
+    "CI": false,
+    "cell_coverage": false,
+    "aggregate": false,
+    "cells": false,
+    "width": true,
+    "Brier": true,
+    "coherence": true
+  },
+  "gate_pass": false
+}

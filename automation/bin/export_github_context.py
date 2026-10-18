@@ -176,6 +176,12 @@ def main():
     for name in ['runner.py','protocol.json','cohort.json','ROOT_GO.json','fit_ledger.jsonl','metrics.json','per_cell_metrics.json','comparison.json','completion.json','independent_recompute.py','independent_metrics.json','prediction_delta.json','decode_prediction_delta.py','lossless_validation.json','crossing_localization.json','root_decision.json','RESULTS_ZH.md']:
         chosen.add('experiments/policy_conditional_quantiles_seed42_v1/' + name)
 
+    # Completed static evidence lossless archive; original server files/history retained.
+    chosen.difference_update(['reports/literature_discussion_20261017_root_v1/paper_evidence.json', 'reports/data_schema_audit/run_20261015T164049_918837Z/per_cell_schema_audit.jsonl', 'reports/pbt_val_pairing_static_v1_luna/existing_view_join_v2/prefix_projection.csv', 'reports/pbt_stage0_metadata_freeze_v2_root/metadata_receipt.json'])
+    chosen.update(['reports/completed_static_lossless_20261019_root/archive.json', 'reports/completed_static_lossless_20261019_root/decode.py', 'reports/completed_static_lossless_20261019_root/validation.json'])
+
+    chosen.update(['experiments/policy_oof_cdf_seed42_v1/runner.py', 'experiments/policy_oof_cdf_seed42_v1/protocol.json', 'experiments/policy_oof_cdf_seed42_v1/cohort.json', 'experiments/policy_oof_cdf_seed42_v1/ROOT_GO.json', 'experiments/policy_oof_cdf_seed42_v1/launch_receipt.json', 'experiments/policy_oof_cdf_seed42_v1/fit_ledger.jsonl', 'experiments/policy_oof_cdf_seed42_v1/completion.json', 'experiments/policy_oof_cdf_seed42_v1/metrics.json', 'experiments/policy_oof_cdf_seed42_v1/per_cell_metrics.json', 'experiments/policy_oof_cdf_seed42_v1/comparison.json', 'experiments/policy_oof_cdf_seed42_v1/failure_description.json', 'experiments/policy_oof_cdf_seed42_v1/independent_recompute.py', 'experiments/policy_oof_cdf_seed42_v1/independent_metrics.json', 'experiments/policy_oof_cdf_seed42_v1/predictions_lossless.json', 'experiments/policy_oof_cdf_seed42_v1/decode_predictions.py', 'experiments/policy_oof_cdf_seed42_v1/lossless_validation.json', 'experiments/policy_oof_cdf_seed42_v1/root_decision.json', 'experiments/policy_oof_cdf_seed42_v1/RESULTS_ZH.md', 'reports/policy_oof_cdf_review_20261019_luna/review.json', 'reports/policy_oof_cdf_review_20261019_luna/review_stage_resolution.json'])
+
     contents, files, skipped = {}, [], []
     mapping = {'README.md': 'docs/GITHUB_README_ZH.md', 'agent.md': 'AGENTS.md'}
     mapping.update({rel: rel for rel in sorted(chosen)})

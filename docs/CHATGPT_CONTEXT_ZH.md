@@ -435,3 +435,7 @@ MATR来源补充核查已完成：已存record19688272完整API（SHA 5b79e36abb
 - **最小验证**：独立重算主指标/647固定预测归零origin/48.3085%伤害更新通过，最大差1.42e-14；4557transition完整。0fit/optimizer/新模型推理/sigma/checkpoint/devtest，预算CPU14/神经4fit2580steps不变。
 - **阻塞/风险**：固定基线偏保守bias-34.98，零严重高估不是整体可靠，且不是生存条件化。动态远期RUL>300分段over10011.3577%，未来真RUL只能事后诊断。cal暴露/已知固定policy/物理身份限制保留，不因平均收益扩大训练；上一项policyvs三状态PASS不因不同对照而撤销。
 - **下一步**：0fit固定旧sigmaA，将policy早期mu100正规存活条件化vs动态policy mu_t，旧三状态动态同尺度参考；算MAE/over100及80%区间得分/覆盖/Brier100/300。不估sigma/训练/推理/devtest，保留本轮riskFAIL。
+
+
+## 当前新增：2026-10-19 V14 OOF残差CDF
+最新实际3fit及独立复算见experiments/policy_oof_cdf_seed42_v1/RESULTS_ZH.md。42fit固定三折电池隔离22281OOF，电池等权经验CDF仅中位中心化一次，对已有10cal4567mu解析应用，0新cal推理/旧checkpointload/devtest。无次序冲突，点MAE36.400814不变；coverage78.5016%→69.7698%、IS148.489249→152.213299，逐cell绝对覆盖误差.213265→.249444，6/10改善，pairedIS差CI[-19.140823,8.403278]，联合NO_GAIN。Brier100/300略改善不构成总体可靠性PASS。当前全局CDF方案停止，无fold/seed/尺度救援。累计新科研CPU19=RUL17+辅助2，神经4fit2580steps及旧MATR41另记，所有旧GO与本次3fit GO已消费，global new_fits_allowed=false。校准反复开发、28vs42训练量差、event-only/物理serial和全源SHA未知、固定labpolicy边界保留。公开predictions_lossless.json保留OOF/校准CSV字节，可重构CDF。下一项仅0fit固定age三组残差/漏覆盖诊断，不解锁dev/test。4份已完成静态文件改用无损归档，服务器原件和旧公开历史保留，上限仍12MiB。

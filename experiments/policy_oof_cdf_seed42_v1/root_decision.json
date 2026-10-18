@@ -1,0 +1,54 @@
+{
+  "decision": "NO_GAIN_FIXED_THREEFOLD_CELL_OOF_EMPIRICAL_CDF_STOP_NO_SEARCH",
+  "gate_pass": false,
+  "new_CPU_fits": 3,
+  "GO_consumed": true,
+  "optimizer_steps": 0,
+  "dev_test_reads": 0,
+  "checkpoint_loads": 0,
+  "new_calibration_predict_calls": 0,
+  "comparison": {
+    "point_MAE_unchanged": true,
+    "interval_score_relative_reduction": -0.025079591803048418,
+    "pairedcell_score_difference_CI95": [
+      -19.14082273064004,
+      8.403278083275303
+    ],
+    "mean_cell_absolute_coverage_error_reduction": -0.0361784716412579,
+    "aggregate_coverage_error_reduction": -0.08731820641784838,
+    "coverage_error_cells_improved": 6,
+    "width_ratio": 0.883736588557108,
+    "mean_Brier_increment": -0.0008293065404200023,
+    "any_crossing_origins": 0,
+    "checks": {
+      "point": true,
+      "score": false,
+      "CI": false,
+      "cell_coverage": false,
+      "aggregate": false,
+      "cells": false,
+      "width": true,
+      "Brier": true,
+      "coherence": true
+    },
+    "gate_pass": false
+  },
+  "evidence_sha256": {
+    "runner.py": "f9d46ad77e94c4ec0fe6485aea53057ec09962d4a10f9215cea5bbddbc702ade",
+    "protocol.json": "7eaae72cef43e1b8f72e251632749651a3816a3c9c089e925621a0c9da9e7966",
+    "cohort.json": "42535de5825f6857e3aa69a596306a909a9a1b3ac087c43631032f6d293ef289",
+    "ROOT_GO.json": "d1092bfc885d2db51846d82de00b0e68d1e3e1bd196ba1fe9a38b67604b12888",
+    "completion.json": "f3894ac67ae348b6e7f08d93cbc2842f7581b77aa9f88adfe870ad9e99acd969",
+    "metrics.json": "d24ae261d3e3c3782243af2c7ac993dd6fa1f32f873ebbe95912ac563d513b7f",
+    "independent_metrics.json": "f01bb21e835bbd6a679aa8c2ae0986b4c1caff24256e30654102ad5f5e9bf9fb",
+    "oof_predictions.csv": "cf9a5a173550013f553e53dd3b379c791956ecbf92f19c2682705ec7261da9b2",
+    "calibration_distribution.csv": "56a0bdec581437729dd525e3b0e7c075feef811d48ebee3eea62479fe83fd993",
+    "predictions_lossless.json": "40a8a224390bd1b19b3b6b7ffb1cc4ac54592ec3fecfa830f8bc3530d9a2619c"
+  },
+  "limitations": [
+    "Exposed10cal is development only; no dev/test reads",
+    "Eventonly, physical serial/fullsource unknown, fixed known labpolicy",
+    "OOF models trained28 vs original42; residual transfer is reference, no innovation/conformal/conditionalcoverage guarantee",
+    "3newCPUfitstarts max; no fold/seed/scale/quantile/threshold search or retry; preserve any failure"
+  ]
+}
