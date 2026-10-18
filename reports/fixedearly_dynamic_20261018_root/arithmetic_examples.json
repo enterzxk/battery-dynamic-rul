@@ -1,0 +1,242 @@
+[
+  {
+    "cell_id": "MATR_b2c1",
+    "origin": 100,
+    "true_RUL": 48.0,
+    "anchor_RUL": 61.50144180794112,
+    "fixed_prediction": 61.50144180794112,
+    "dynamic_prediction": 61.50144180794112
+  },
+  {
+    "cell_id": "MATR_b2c1",
+    "origin": 124,
+    "true_RUL": 24.0,
+    "anchor_RUL": 61.50144180794112,
+    "fixed_prediction": 37.50144180794112,
+    "dynamic_prediction": 29.50215828908252
+  },
+  {
+    "cell_id": "MATR_b2c1",
+    "origin": 147,
+    "true_RUL": 1.0,
+    "anchor_RUL": 61.50144180794112,
+    "fixed_prediction": 14.50144180794112,
+    "dynamic_prediction": 1.5778823728020828
+  },
+  {
+    "cell_id": "MATR_b2c21",
+    "origin": 100,
+    "true_RUL": 389.0,
+    "anchor_RUL": 351.1569874885148,
+    "fixed_prediction": 351.1569874885148,
+    "dynamic_prediction": 351.1569874885148
+  },
+  {
+    "cell_id": "MATR_b2c21",
+    "origin": 294,
+    "true_RUL": 195.0,
+    "anchor_RUL": 351.1569874885148,
+    "fixed_prediction": 157.1569874885148,
+    "dynamic_prediction": 169.3401270091962
+  },
+  {
+    "cell_id": "MATR_b2c21",
+    "origin": 488,
+    "true_RUL": 1.0,
+    "anchor_RUL": 351.1569874885148,
+    "fixed_prediction": 0.0,
+    "dynamic_prediction": 1.5650275150711985
+  },
+  {
+    "cell_id": "MATR_b2c24",
+    "origin": 100,
+    "true_RUL": 395.0,
+    "anchor_RUL": 388.3794538456078,
+    "fixed_prediction": 388.3794538456078,
+    "dynamic_prediction": 388.3794538456078
+  },
+  {
+    "cell_id": "MATR_b2c24",
+    "origin": 297,
+    "true_RUL": 198.0,
+    "anchor_RUL": 388.3794538456078,
+    "fixed_prediction": 191.37945384560783,
+    "dynamic_prediction": 206.84304218910918
+  },
+  {
+    "cell_id": "MATR_b2c24",
+    "origin": 494,
+    "true_RUL": 1.0,
+    "anchor_RUL": 388.3794538456078,
+    "fixed_prediction": 0.0,
+    "dynamic_prediction": 1.5767561129723693
+  },
+  {
+    "cell_id": "MATR_b2c41",
+    "origin": 100,
+    "true_RUL": 329.0,
+    "anchor_RUL": 393.5768259362723,
+    "fixed_prediction": 393.5768259362723,
+    "dynamic_prediction": 393.5768259362723
+  },
+  {
+    "cell_id": "MATR_b2c41",
+    "origin": 264,
+    "true_RUL": 165.0,
+    "anchor_RUL": 393.5768259362723,
+    "fixed_prediction": 229.57682593627231,
+    "dynamic_prediction": 200.94680170758286
+  },
+  {
+    "cell_id": "MATR_b2c41",
+    "origin": 428,
+    "true_RUL": 1.0,
+    "anchor_RUL": 393.5768259362723,
+    "fixed_prediction": 65.57682593627231,
+    "dynamic_prediction": 1.4475406981904377
+  },
+  {
+    "cell_id": "MATR_b2c6",
+    "origin": 100,
+    "true_RUL": 411.0,
+    "anchor_RUL": 288.4058355741756,
+    "fixed_prediction": 288.4058355741756,
+    "dynamic_prediction": 288.4058355741756
+  },
+  {
+    "cell_id": "MATR_b2c6",
+    "origin": 305,
+    "true_RUL": 206.0,
+    "anchor_RUL": 288.4058355741756,
+    "fixed_prediction": 83.40583557417563,
+    "dynamic_prediction": 135.75472683528304
+  },
+  {
+    "cell_id": "MATR_b2c6",
+    "origin": 510,
+    "true_RUL": 1.0,
+    "anchor_RUL": 288.4058355741756,
+    "fixed_prediction": 0.0,
+    "dynamic_prediction": 2.627540899099104
+  },
+  {
+    "cell_id": "MATR_b4c14",
+    "origin": 100,
+    "true_RUL": 508.0,
+    "anchor_RUL": 603.4640454634085,
+    "fixed_prediction": 603.4640454634085,
+    "dynamic_prediction": 603.4640454634085
+  },
+  {
+    "cell_id": "MATR_b4c14",
+    "origin": 354,
+    "true_RUL": 254.0,
+    "anchor_RUL": 603.4640454634085,
+    "fixed_prediction": 349.4640454634085,
+    "dynamic_prediction": 282.7107970414508
+  },
+  {
+    "cell_id": "MATR_b4c14",
+    "origin": 607,
+    "true_RUL": 1.0,
+    "anchor_RUL": 603.4640454634085,
+    "fixed_prediction": 96.46404546340852,
+    "dynamic_prediction": 1.539842453325566
+  },
+  {
+    "cell_id": "MATR_b4c19",
+    "origin": 100,
+    "true_RUL": 892.0,
+    "anchor_RUL": 613.9788906365804,
+    "fixed_prediction": 613.9788906365804,
+    "dynamic_prediction": 613.9788906365804
+  },
+  {
+    "cell_id": "MATR_b4c19",
+    "origin": 546,
+    "true_RUL": 446.0,
+    "anchor_RUL": 613.9788906365804,
+    "fixed_prediction": 167.97889063658045,
+    "dynamic_prediction": 355.6308515673237
+  },
+  {
+    "cell_id": "MATR_b4c19",
+    "origin": 991,
+    "true_RUL": 1.0,
+    "anchor_RUL": 613.9788906365804,
+    "fixed_prediction": 0.0,
+    "dynamic_prediction": 2.0014390033644025
+  },
+  {
+    "cell_id": "MATR_b4c26",
+    "origin": 100,
+    "true_RUL": 377.0,
+    "anchor_RUL": 555.214384829363,
+    "fixed_prediction": 555.214384829363,
+    "dynamic_prediction": 555.214384829363
+  },
+  {
+    "cell_id": "MATR_b4c26",
+    "origin": 288,
+    "true_RUL": 189.0,
+    "anchor_RUL": 555.214384829363,
+    "fixed_prediction": 367.214384829363,
+    "dynamic_prediction": 319.5083516208528
+  },
+  {
+    "cell_id": "MATR_b4c26",
+    "origin": 476,
+    "true_RUL": 1.0,
+    "anchor_RUL": 555.214384829363,
+    "fixed_prediction": 179.21438482936298,
+    "dynamic_prediction": 1.4696683353321294
+  },
+  {
+    "cell_id": "MATR_b4c29",
+    "origin": 100,
+    "true_RUL": 788.0,
+    "anchor_RUL": 474.3434194826125,
+    "fixed_prediction": 474.3434194826125,
+    "dynamic_prediction": 474.3434194826125
+  },
+  {
+    "cell_id": "MATR_b4c29",
+    "origin": 494,
+    "true_RUL": 394.0,
+    "anchor_RUL": 474.3434194826125,
+    "fixed_prediction": 80.34341948261249,
+    "dynamic_prediction": 341.41480287530607
+  },
+  {
+    "cell_id": "MATR_b4c29",
+    "origin": 887,
+    "true_RUL": 1.0,
+    "anchor_RUL": 474.3434194826125,
+    "fixed_prediction": 0.0,
+    "dynamic_prediction": 1.9041590610010335
+  },
+  {
+    "cell_id": "MATR_b4c7",
+    "origin": 100,
+    "true_RUL": 430.0,
+    "anchor_RUL": 609.2134237031399,
+    "fixed_prediction": 609.2134237031399,
+    "dynamic_prediction": 609.2134237031399
+  },
+  {
+    "cell_id": "MATR_b4c7",
+    "origin": 315,
+    "true_RUL": 215.0,
+    "anchor_RUL": 609.2134237031399,
+    "fixed_prediction": 394.21342370313994,
+    "dynamic_prediction": 322.00000580100317
+  },
+  {
+    "cell_id": "MATR_b4c7",
+    "origin": 529,
+    "true_RUL": 1.0,
+    "anchor_RUL": 609.2134237031399,
+    "fixed_prediction": 180.21342370313994,
+    "dynamic_prediction": 1.4796402064808463
+  }
+]

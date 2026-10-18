@@ -339,3 +339,11 @@ MATR来源补充核查已完成：已存record19688272完整API（SHA 5b79e36abb
 - **最小验证**：CSV独立重算最大差7.11e-15，4567origins完整；95% pairedcell旧减新MAE区间[-21.546452,3.506626]；raw负数0；无损公开新预测delta复原byteSHA通过。修复全流程180秒与首账本独占创建后同次窄审PASS。
 - **阻塞/风险**：严重over100率仅14.16005%→14.02664%，不抵主MAE恶化。b2c1主导恶化但不可事后删除；cal已暴露、event-only、物理serial/fullsourceSHA未闭合。新增1fit0optimizer/0dev/test；累计新科研CPU11=RUL9+aux2，旧MATR41与神经4fit2580steps另记；全局newfits仍false。
 - **下一步**：0fit既有预测诊断：同10cal4567，用origin100固定早期EOL递减对照与每时点directRUL更新比较，量化更新帮助/伤害；不读18dev/test、不训练、不新推理。
+
+
+## 2026-10-18：既有预测证实动态优于固定点递减，单步更新仍有伤害
+- **已完成**：同10cal4567已有directRUL预测，0fit/0新推理比较origin100固定EOL递减与逐时点更新；TimeMAE116.433422→58.113698改善50.0885%，9/10cell改善，pairedcell95%差区间[26.385867,94.524897]，开发gatePASS。
+- **证据**：reports/fixedearly_dynamic_20261018_root/protocol.json、diagnose.py、metrics/per_cell_metrics/comparison、transition_audit/phase_metrics、independent_metrics/root_decision/RESULTS_ZH.md；源CSV SHA c27dd53fce992318292397486aaff8ce02e3f8b802ee54932867517ce7c2af76。
+- **最小验证**：独立标准库重算主指标与transition帮助/伤害比例、756个固定预测归零但尚未真实EOL的origins；4557transitions无丢失。无原始数据/checkpoint/dev/test读取，训练预算CPU11与神经4fit2580steps不变。
+- **阻塞/风险**：单步更新49.8381%有害，不能用真值建门控；RUL>300分段动态严重over100达32.3047%而固定22.2222%。固定点递减不是生存条件化，动态age+健康一起变，不能独立归因新观测。cal已暴露与物理身份/源hash限制不变。
+- **下一步**：同10cal4567固定早期lognormal+旧fit-only sigma A，0fit显式存活条件中位数对照，区分仅存活与动态状态更新；稳定计算尾部，不使用cal sigma B或新调参。

@@ -1,0 +1,21 @@
+{
+  "status": "PASS_INDEPENDENT_ARITHMETIC_RECOMPUTE",
+  "metrics": {
+    "fixed_origin100_countdown": {
+      "MAE": 116.43342173422312,
+      "bias": -10.23939738619813,
+      "severe_over100": 0.2
+    },
+    "dynamic_each_origin": {
+      "MAE": 58.11369800278736,
+      "bias": 11.676224212761717,
+      "severe_over100": 0.1416005147437414
+    }
+  },
+  "max_absolute_metric_difference": 1.4210854715202004e-14,
+  "fixed_expired_origins": 756,
+  "transition_harmful_cell_equal": 0.498380830055883,
+  "transition_helpful_cell_equal": 0.501619169944117,
+  "new_fits": 0,
+  "new_model_inference": 0
+}

@@ -1,0 +1,564 @@
+{
+  "cell_equal": [
+    {
+      "phase": "RUL_le100",
+      "arm": "fixed_origin100_countdown",
+      "cells": 10,
+      "origins": 948,
+      "MAE": 71.97745330074892,
+      "bias": 34.21657104727606,
+      "severe_over100": 0.2
+    },
+    {
+      "phase": "RUL_le100",
+      "arm": "dynamic_each_origin",
+      "cells": 10,
+      "origins": 948,
+      "MAE": 7.156474730945703,
+      "bias": 3.7676345227099346,
+      "severe_over100": 0.0
+    },
+    {
+      "phase": "RUL_100to300",
+      "arm": "fixed_origin100_countdown",
+      "cells": 9,
+      "origins": 1800,
+      "MAE": 120.33815188522456,
+      "bias": -5.345111900294812,
+      "severe_over100": 0.2222222222222222
+    },
+    {
+      "phase": "RUL_100to300",
+      "arm": "dynamic_each_origin",
+      "cells": 9,
+      "origins": 1800,
+      "MAE": 50.99669753064518,
+      "bias": 19.56914181273026,
+      "severe_over100": 0.11888888888888889
+    },
+    {
+      "phase": "RUL_gt300",
+      "arm": "fixed_origin100_countdown",
+      "cells": 9,
+      "origins": 1819,
+      "MAE": 141.7807517738534,
+      "bias": -26.787711788923634,
+      "severe_over100": 0.2222222222222222
+    },
+    {
+      "phase": "RUL_gt300",
+      "arm": "dynamic_each_origin",
+      "cells": 9,
+      "origins": 1819,
+      "MAE": 108.48254113655955,
+      "bias": 24.780453128703748,
+      "severe_over100": 0.3230473884798362
+    }
+  ],
+  "per_cell": [
+    {
+      "cell_id": "MATR_b2c1",
+      "phase": "RUL_le100",
+      "arm": "fixed_origin100_countdown",
+      "origins": 48,
+      "MAE": 13.50144180794112,
+      "bias": 13.50144180794112,
+      "severe_over100": 0.0
+    },
+    {
+      "cell_id": "MATR_b2c1",
+      "phase": "RUL_le100",
+      "arm": "dynamic_each_origin",
+      "origins": 48,
+      "MAE": 5.439887947111946,
+      "bias": 5.327927483322345,
+      "severe_over100": 0.0
+    },
+    {
+      "cell_id": "MATR_b2c21",
+      "phase": "RUL_le100",
+      "arm": "fixed_origin100_countdown",
+      "origins": 100,
+      "MAE": 30.871097882235677,
+      "bias": -30.871097882235677,
+      "severe_over100": 0.0
+    },
+    {
+      "cell_id": "MATR_b2c21",
+      "phase": "RUL_le100",
+      "arm": "dynamic_each_origin",
+      "origins": 100,
+      "MAE": 2.0440388938575995,
+      "bias": 0.9632797912279674,
+      "severe_over100": 0.0
+    },
+    {
+      "cell_id": "MATR_b2c21",
+      "phase": "RUL_100to300",
+      "arm": "fixed_origin100_countdown",
+      "origins": 200,
+      "MAE": 37.8430125114852,
+      "bias": -37.8430125114852,
+      "severe_over100": 0.0
+    },
+    {
+      "cell_id": "MATR_b2c21",
+      "phase": "RUL_100to300",
+      "arm": "dynamic_each_origin",
+      "origins": 200,
+      "MAE": 11.251303185746973,
+      "bias": -9.209637553206893,
+      "severe_over100": 0.0
+    },
+    {
+      "cell_id": "MATR_b2c21",
+      "phase": "RUL_gt300",
+      "arm": "fixed_origin100_countdown",
+      "origins": 89,
+      "MAE": 37.8430125114852,
+      "bias": -37.8430125114852,
+      "severe_over100": 0.0
+    },
+    {
+      "cell_id": "MATR_b2c21",
+      "phase": "RUL_gt300",
+      "arm": "dynamic_each_origin",
+      "origins": 89,
+      "MAE": 35.90404633586546,
+      "bias": -35.90404633586546,
+      "severe_over100": 0.0
+    },
+    {
+      "cell_id": "MATR_b2c24",
+      "phase": "RUL_le100",
+      "arm": "fixed_origin100_countdown",
+      "origins": 100,
+      "MAE": 6.433313385128643,
+      "bias": -6.433313385128643,
+      "severe_over100": 0.0
+    },
+    {
+      "cell_id": "MATR_b2c24",
+      "phase": "RUL_le100",
+      "arm": "dynamic_each_origin",
+      "origins": 100,
+      "MAE": 2.5100214938433947,
+      "bias": 0.5448638656556678,
+      "severe_over100": 0.0
+    },
+    {
+      "cell_id": "MATR_b2c24",
+      "phase": "RUL_100to300",
+      "arm": "fixed_origin100_countdown",
+      "origins": 200,
+      "MAE": 6.620546154392173,
+      "bias": -6.620546154392173,
+      "severe_over100": 0.0
+    },
+    {
+      "cell_id": "MATR_b2c24",
+      "phase": "RUL_100to300",
+      "arm": "dynamic_each_origin",
+      "origins": 200,
+      "MAE": 8.745090339047948,
+      "bias": 6.875657512727771,
+      "severe_over100": 0.0
+    },
+    {
+      "cell_id": "MATR_b2c24",
+      "phase": "RUL_gt300",
+      "arm": "fixed_origin100_countdown",
+      "origins": 95,
+      "MAE": 6.620546154392173,
+      "bias": -6.620546154392173,
+      "severe_over100": 0.0
+    },
+    {
+      "cell_id": "MATR_b2c24",
+      "phase": "RUL_gt300",
+      "arm": "dynamic_each_origin",
+      "origins": 95,
+      "MAE": 14.111382289182245,
+      "bias": -1.127744048433554,
+      "severe_over100": 0.0
+    },
+    {
+      "cell_id": "MATR_b2c41",
+      "phase": "RUL_le100",
+      "arm": "fixed_origin100_countdown",
+      "origins": 100,
+      "MAE": 64.57682593627233,
+      "bias": 64.57682593627233,
+      "severe_over100": 0.0
+    },
+    {
+      "cell_id": "MATR_b2c41",
+      "phase": "RUL_le100",
+      "arm": "dynamic_each_origin",
+      "origins": 100,
+      "MAE": 3.459512776525983,
+      "bias": 3.44756424026719,
+      "severe_over100": 0.0
+    },
+    {
+      "cell_id": "MATR_b2c41",
+      "phase": "RUL_100to300",
+      "arm": "fixed_origin100_countdown",
+      "origins": 200,
+      "MAE": 64.57682593627233,
+      "bias": 64.57682593627233,
+      "severe_over100": 0.0
+    },
+    {
+      "cell_id": "MATR_b2c41",
+      "phase": "RUL_100to300",
+      "arm": "dynamic_each_origin",
+      "origins": 200,
+      "MAE": 42.58873045380548,
+      "bias": 42.58873045380548,
+      "severe_over100": 0.0
+    },
+    {
+      "cell_id": "MATR_b2c41",
+      "phase": "RUL_gt300",
+      "arm": "fixed_origin100_countdown",
+      "origins": 29,
+      "MAE": 64.57682593627233,
+      "bias": 64.57682593627233,
+      "severe_over100": 0.0
+    },
+    {
+      "cell_id": "MATR_b2c41",
+      "phase": "RUL_gt300",
+      "arm": "dynamic_each_origin",
+      "origins": 29,
+      "MAE": 58.99796748022463,
+      "bias": 58.99796748022463,
+      "severe_over100": 0.034482758620689655
+    },
+    {
+      "cell_id": "MATR_b2c6",
+      "phase": "RUL_le100",
+      "arm": "fixed_origin100_countdown",
+      "origins": 100,
+      "MAE": 50.5,
+      "bias": -50.5,
+      "severe_over100": 0.0
+    },
+    {
+      "cell_id": "MATR_b2c6",
+      "phase": "RUL_le100",
+      "arm": "dynamic_each_origin",
+      "origins": 100,
+      "MAE": 5.252511145788585,
+      "bias": -5.204599102782281,
+      "severe_over100": 0.0
+    },
+    {
+      "cell_id": "MATR_b2c6",
+      "phase": "RUL_100to300",
+      "arm": "fixed_origin100_countdown",
+      "origins": 200,
+      "MAE": 121.3738063389837,
+      "bias": -121.3738063389837,
+      "severe_over100": 0.0
+    },
+    {
+      "cell_id": "MATR_b2c6",
+      "phase": "RUL_100to300",
+      "arm": "dynamic_each_origin",
+      "origins": 200,
+      "MAE": 61.42586403616231,
+      "bias": -61.42586403616231,
+      "severe_over100": 0.0
+    },
+    {
+      "cell_id": "MATR_b2c6",
+      "phase": "RUL_gt300",
+      "arm": "fixed_origin100_countdown",
+      "origins": 111,
+      "MAE": 122.59416442582433,
+      "bias": -122.59416442582433,
+      "severe_over100": 0.0
+    },
+    {
+      "cell_id": "MATR_b2c6",
+      "phase": "RUL_gt300",
+      "arm": "dynamic_each_origin",
+      "origins": 111,
+      "MAE": 126.91203186845091,
+      "bias": -126.91203186845091,
+      "severe_over100": 0.0
+    },
+    {
+      "cell_id": "MATR_b4c14",
+      "phase": "RUL_le100",
+      "arm": "fixed_origin100_countdown",
+      "origins": 100,
+      "MAE": 95.46404546340851,
+      "bias": 95.46404546340851,
+      "severe_over100": 0.0
+    },
+    {
+      "cell_id": "MATR_b4c14",
+      "phase": "RUL_le100",
+      "arm": "dynamic_each_origin",
+      "origins": 100,
+      "MAE": 2.0220710729490197,
+      "bias": 1.7437010020816939,
+      "severe_over100": 0.0
+    },
+    {
+      "cell_id": "MATR_b4c14",
+      "phase": "RUL_100to300",
+      "arm": "fixed_origin100_countdown",
+      "origins": 200,
+      "MAE": 95.46404546340852,
+      "bias": 95.46404546340852,
+      "severe_over100": 0.0
+    },
+    {
+      "cell_id": "MATR_b4c14",
+      "phase": "RUL_100to300",
+      "arm": "dynamic_each_origin",
+      "origins": 200,
+      "MAE": 39.385759903665594,
+      "bias": 39.385759903665594,
+      "severe_over100": 0.105
+    },
+    {
+      "cell_id": "MATR_b4c14",
+      "phase": "RUL_gt300",
+      "arm": "fixed_origin100_countdown",
+      "origins": 208,
+      "MAE": 95.46404546340854,
+      "bias": 95.46404546340854,
+      "severe_over100": 0.0
+    },
+    {
+      "cell_id": "MATR_b4c14",
+      "phase": "RUL_gt300",
+      "arm": "dynamic_each_origin",
+      "origins": 208,
+      "MAE": 123.6488844494832,
+      "bias": 123.6488844494832,
+      "severe_over100": 0.8413461538461539
+    },
+    {
+      "cell_id": "MATR_b4c19",
+      "phase": "RUL_le100",
+      "arm": "fixed_origin100_countdown",
+      "origins": 100,
+      "MAE": 50.5,
+      "bias": -50.5,
+      "severe_over100": 0.0
+    },
+    {
+      "cell_id": "MATR_b4c19",
+      "phase": "RUL_le100",
+      "arm": "dynamic_each_origin",
+      "origins": 100,
+      "MAE": 3.719906962057497,
+      "bias": -3.580160107528185,
+      "severe_over100": 0.0
+    },
+    {
+      "cell_id": "MATR_b4c19",
+      "phase": "RUL_100to300",
+      "arm": "fixed_origin100_countdown",
+      "origins": 200,
+      "MAE": 199.23732202997613,
+      "bias": -199.23732202997613,
+      "severe_over100": 0.0
+    },
+    {
+      "cell_id": "MATR_b4c19",
+      "phase": "RUL_100to300",
+      "arm": "dynamic_each_origin",
+      "origins": 200,
+      "MAE": 46.825160135661044,
+      "bias": -46.825160135661044,
+      "severe_over100": 0.0
+    },
+    {
+      "cell_id": "MATR_b4c19",
+      "phase": "RUL_gt300",
+      "arm": "fixed_origin100_countdown",
+      "origins": 592,
+      "MAE": 278.0211093634196,
+      "bias": -278.0211093634196,
+      "severe_over100": 0.0
+    },
+    {
+      "cell_id": "MATR_b4c19",
+      "phase": "RUL_gt300",
+      "arm": "dynamic_each_origin",
+      "origins": 592,
+      "MAE": 131.18452469279302,
+      "bias": -115.91653287150962,
+      "severe_over100": 0.011824324324324325
+    },
+    {
+      "cell_id": "MATR_b4c26",
+      "phase": "RUL_le100",
+      "arm": "fixed_origin100_countdown",
+      "origins": 100,
+      "MAE": 178.21438482936304,
+      "bias": 178.21438482936304,
+      "severe_over100": 1.0
+    },
+    {
+      "cell_id": "MATR_b4c26",
+      "phase": "RUL_le100",
+      "arm": "dynamic_each_origin",
+      "origins": 100,
+      "MAE": 18.416982151603996,
+      "bias": 18.406375518310636,
+      "severe_over100": 0.0
+    },
+    {
+      "cell_id": "MATR_b4c26",
+      "phase": "RUL_100to300",
+      "arm": "fixed_origin100_countdown",
+      "origins": 200,
+      "MAE": 178.21438482936304,
+      "bias": 178.21438482936304,
+      "severe_over100": 1.0
+    },
+    {
+      "cell_id": "MATR_b4c26",
+      "phase": "RUL_100to300",
+      "arm": "dynamic_each_origin",
+      "origins": 200,
+      "MAE": 109.62189624237156,
+      "bias": 109.62189624237156,
+      "severe_over100": 0.46
+    },
+    {
+      "cell_id": "MATR_b4c26",
+      "phase": "RUL_gt300",
+      "arm": "fixed_origin100_countdown",
+      "origins": 77,
+      "MAE": 178.21438482936304,
+      "bias": 178.21438482936304,
+      "severe_over100": 1.0
+    },
+    {
+      "cell_id": "MATR_b4c26",
+      "phase": "RUL_gt300",
+      "arm": "dynamic_each_origin",
+      "origins": 77,
+      "MAE": 170.56346453211702,
+      "bias": 170.56346453211702,
+      "severe_over100": 0.948051948051948
+    },
+    {
+      "cell_id": "MATR_b4c29",
+      "phase": "RUL_le100",
+      "arm": "fixed_origin100_countdown",
+      "origins": 100,
+      "MAE": 50.5,
+      "bias": -50.5,
+      "severe_over100": 0.0
+    },
+    {
+      "cell_id": "MATR_b4c29",
+      "phase": "RUL_le100",
+      "arm": "dynamic_each_origin",
+      "origins": 100,
+      "MAE": 6.357594296937073,
+      "bias": -6.314828032237627,
+      "severe_over100": 0.0
+    },
+    {
+      "cell_id": "MATR_b4c29",
+      "phase": "RUL_100to300",
+      "arm": "fixed_origin100_countdown",
+      "origins": 200,
+      "MAE": 200.5,
+      "bias": -200.5,
+      "severe_over100": 0.0
+    },
+    {
+      "cell_id": "MATR_b4c29",
+      "phase": "RUL_100to300",
+      "arm": "dynamic_each_origin",
+      "origins": 200,
+      "MAE": 24.597826748748215,
+      "bias": -19.417752803565364,
+      "severe_over100": 0.0
+    },
+    {
+      "cell_id": "MATR_b4c29",
+      "phase": "RUL_gt300",
+      "arm": "fixed_origin100_countdown",
+      "origins": 488,
+      "MAE": 313.47925357737523,
+      "bias": -313.47925357737523,
+      "severe_over100": 0.0
+    },
+    {
+      "cell_id": "MATR_b4c29",
+      "phase": "RUL_gt300",
+      "arm": "dynamic_each_origin",
+      "origins": 488,
+      "MAE": 100.9151496678426,
+      "bias": -64.4313020923085,
+      "severe_over100": 0.07172131147540983
+    },
+    {
+      "cell_id": "MATR_b4c7",
+      "phase": "RUL_le100",
+      "arm": "fixed_origin100_countdown",
+      "origins": 100,
+      "MAE": 179.21342370313994,
+      "bias": 179.21342370313994,
+      "severe_over100": 1.0
+    },
+    {
+      "cell_id": "MATR_b4c7",
+      "phase": "RUL_le100",
+      "arm": "dynamic_each_origin",
+      "origins": 100,
+      "MAE": 22.342220568781936,
+      "bias": 22.342220568781936,
+      "severe_over100": 0.0
+    },
+    {
+      "cell_id": "MATR_b4c7",
+      "phase": "RUL_100to300",
+      "arm": "fixed_origin100_countdown",
+      "origins": 200,
+      "MAE": 179.21342370314,
+      "bias": 179.21342370314,
+      "severe_over100": 1.0
+    },
+    {
+      "cell_id": "MATR_b4c7",
+      "phase": "RUL_100to300",
+      "arm": "dynamic_each_origin",
+      "origins": 200,
+      "MAE": 114.52864673059752,
+      "bias": 114.52864673059752,
+      "severe_over100": 0.505
+    },
+    {
+      "cell_id": "MATR_b4c7",
+      "phase": "RUL_gt300",
+      "arm": "fixed_origin100_countdown",
+      "origins": 130,
+      "MAE": 179.21342370313994,
+      "bias": 179.21342370313994,
+      "severe_over100": 1.0
+    },
+    {
+      "cell_id": "MATR_b4c7",
+      "phase": "RUL_gt300",
+      "arm": "dynamic_each_origin",
+      "origins": 130,
+      "MAE": 214.1054189130769,
+      "bias": 214.1054189130769,
+      "severe_over100": 1.0
+    }
+  ]
+}

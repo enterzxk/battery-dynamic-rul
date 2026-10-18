@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-18T14:00:25.331139+00:00",
-  "content_sha256": "afa96d9ef040abe989feb54acf32bd24c9aae704dba1fccf5a87b577dec0c797",
-  "file_count": 597,
+  "snapshot_utc": "2026-10-18T14:15:10.857158+00:00",
+  "content_sha256": "143dd9df688ac874d85d161c1b4289a93da46735aa4af196ff8e94fde6c9b6a7",
+  "file_count": 609,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,8 +14,8 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 71971,
-      "sha256": "2e7140264c96df743d9c0655c32c036d66a48eea818f435826bafd7efaa6dad0"
+      "bytes": 73355,
+      "sha256": "7848a4a5a8e30039a329c973475cf024ec6f9e25f1d96b9dc1e4aedacfab43eb"
     },
     {
       "path": "README.md",
@@ -38,8 +38,8 @@
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 17261,
-      "sha256": "134a99526a53d6d864f808004d1b4d181237f1f2274e941fa41c8790e41f9965"
+      "bytes": 17593,
+      "sha256": "29f8b6ee018646d93e873da14ae0859c24cd30316f1bcba754219ba569fb455c"
     },
     {
       "path": "automation/bin/matr_raw_batch2_asset_worker_v1.py",
@@ -164,8 +164,8 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 59232,
-      "sha256": "4a9cbcdc01ab42791ee06c6b62c6e39737a197738f37ba69f5a896b45a06decd"
+      "bytes": 60616,
+      "sha256": "c8063bea539b0b8f634e1b572385d2c2650bfb2970017a33438efc44d41a332b"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
@@ -2470,6 +2470,78 @@
       "source_path": "reports/early_eol_filter_realization_20261018_root/filter_realization.json",
       "bytes": 3643,
       "sha256": "482f7c27aacd9f5a75de7870f03790083d7a1577f926a5ab0df87b6292df58af"
+    },
+    {
+      "path": "reports/fixedearly_dynamic_20261018_root/RESULTS_ZH.md",
+      "source_path": "reports/fixedearly_dynamic_20261018_root/RESULTS_ZH.md",
+      "bytes": 2719,
+      "sha256": "98bc4138279e761d9118aa2bd1b8e0e9d261431e756d735b8401f02898d00a95"
+    },
+    {
+      "path": "reports/fixedearly_dynamic_20261018_root/arithmetic_examples.json",
+      "source_path": "reports/fixedearly_dynamic_20261018_root/arithmetic_examples.json",
+      "bytes": 6035,
+      "sha256": "65e01caa91897c3e37006f2e48e60e269979391c70c16e4fb38ea9f2f90cbebd"
+    },
+    {
+      "path": "reports/fixedearly_dynamic_20261018_root/comparison.json",
+      "source_path": "reports/fixedearly_dynamic_20261018_root/comparison.json",
+      "bytes": 292,
+      "sha256": "66f3280da58e384a4644cec832e51aa5a3e6f9e965c15bce8c023319a93aaf39"
+    },
+    {
+      "path": "reports/fixedearly_dynamic_20261018_root/completion.json",
+      "source_path": "reports/fixedearly_dynamic_20261018_root/completion.json",
+      "bytes": 557,
+      "sha256": "cecfa542a4fbb31aeeaa41d3c23eff79a0b40e04756a4e7baad29382c093046b"
+    },
+    {
+      "path": "reports/fixedearly_dynamic_20261018_root/diagnose.py",
+      "source_path": "reports/fixedearly_dynamic_20261018_root/diagnose.py",
+      "bytes": 4632,
+      "sha256": "6f9fa13bd146757b626c9bbc3136fdffaea3ab3c03860aefec9aafb224d36162"
+    },
+    {
+      "path": "reports/fixedearly_dynamic_20261018_root/independent_metrics.json",
+      "source_path": "reports/fixedearly_dynamic_20261018_root/independent_metrics.json",
+      "bytes": 602,
+      "sha256": "fc6b8495017d8a03c2a6f1c1628b62d756947af5034882fee59c69398b1658c7"
+    },
+    {
+      "path": "reports/fixedearly_dynamic_20261018_root/metrics.json",
+      "source_path": "reports/fixedearly_dynamic_20261018_root/metrics.json",
+      "bytes": 265,
+      "sha256": "53a67c50009af845689bdb48fb04b926102acb4b6e74be256a9b27488b0a06db"
+    },
+    {
+      "path": "reports/fixedearly_dynamic_20261018_root/per_cell_metrics.json",
+      "source_path": "reports/fixedearly_dynamic_20261018_root/per_cell_metrics.json",
+      "bytes": 4236,
+      "sha256": "d939953d1a727d7087b9bb09bf52083997f1dd0456e37c66e6dc626af925b27e"
+    },
+    {
+      "path": "reports/fixedearly_dynamic_20261018_root/phase_metrics.json",
+      "source_path": "reports/fixedearly_dynamic_20261018_root/phase_metrics.json",
+      "bytes": 14134,
+      "sha256": "3506351a809e7d5781315be6478fe56505b42c37b5379f59ced53ca4a9bff2df"
+    },
+    {
+      "path": "reports/fixedearly_dynamic_20261018_root/protocol.json",
+      "source_path": "reports/fixedearly_dynamic_20261018_root/protocol.json",
+      "bytes": 1669,
+      "sha256": "6fc80199b483b92140ce3bc8d7e0d0fd5d252a8c3288542338ecab90eae06332"
+    },
+    {
+      "path": "reports/fixedearly_dynamic_20261018_root/root_decision.json",
+      "source_path": "reports/fixedearly_dynamic_20261018_root/root_decision.json",
+      "bytes": 1045,
+      "sha256": "8195e84dcbd4397d36e6dc39c3dfca3d401496ad6f75b459ab0e76acfca3283e"
+    },
+    {
+      "path": "reports/fixedearly_dynamic_20261018_root/transition_audit.json",
+      "source_path": "reports/fixedearly_dynamic_20261018_root/transition_audit.json",
+      "bytes": 3915,
+      "sha256": "bc5d74221d5ce696509e0297917c7bc9d0db6d028eaf180d02aeb85520503ad8"
     },
     {
       "path": "reports/hust_saved_source_identity_20261018_root/PUBLIC_INVENTORY_ACCESS_ZH.md",
