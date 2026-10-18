@@ -1,3 +1,15 @@
+# 当前研究主线更新：单电池在线条件 RUL（用户2026-10-18授权）
+
+最新用户全文在docs/USER_SINGLE_BATTERY_ONLINE_RUL_20261018_ZH.md。主线不再以迁移、预训练或早期总EOL为创新中心；原成果保留。最新真实结果请先读experiments/online_survival_observed_pilot_seed42_v1/RESULTS_ZH.md及root_decision.json。
+
+首轮3CPUfits/0optimizer、52train19val观测event源ID、完整100后pre-event整数origin。F0冻结/F1仅存活/F2状态/F3状态速率的cell-equal Time-MAE为71.5000/72.0725/68.2841/58.6026。F3vsF2降14.18%、19cell探索bootstrap区间4.38%–21.59%，12cell改善/7cell受损，两batch分别14.32%/14.11%。这只是event-selected processed工程lane：62自然删失源ID排除，物理serial/实际generator未核，不能宣称strict在线、删失处理收益、独立泛化或创新成立。F1没有改善，F2改善未过探索门。
+
+优先研究有害速率修正为何发生，而非先堆生存网络/门控。自然删失建模待更可辨识数据；条件生存公式是标准机制，DynamicDeepHit/电池CoxDeepHit/PEAT均为直接先例。文献阅读范围与两份十篇身份去重、P01引用冲突见本轮报告，未把41+20计为新全文。旧MATR2.68%/NO_GAIN与CALB/PBT门保持，新GO3fits已消费，全局new_fits_allowed=false、test锁保持。
+
+同一battery-rul仍ACTIVE每15min、target为当前V11；coordinator.next_action已转为新研究真实下一动作，不再因HUST单来源等待阻塞整个项目。后文是历史快照，读者须按日期和当前入口解读。
+
+---
+
 # 给网页版 GPT 的 Battery Dynamic RUL 项目入口
 
 本页帮助解释项目，不把规划、程序检查或文献作者数值当作本项目实验成果。请先查看 `public_snapshot.json` 的快照时间与文件哈希，再读 `PROJECT_PROGRESS.md`。这里记录的是发布快照，服务器当前状态可能已推进。

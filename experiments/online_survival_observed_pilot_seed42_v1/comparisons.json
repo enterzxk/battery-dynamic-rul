@@ -1,0 +1,38 @@
+[
+  {
+    "new": "F1_survival_only",
+    "old": "F0_frozen",
+    "relative_MAE_reduction": -0.008007696936660924,
+    "paired_bootstrap95CI": [
+      -0.11508240854769218,
+      0.050773835249405534
+    ],
+    "improved_cells": 6,
+    "severe_over100_increase": 0.004625861886787375,
+    "exploratory_gate": false
+  },
+  {
+    "new": "F2_current_state",
+    "old": "F1_survival_only",
+    "relative_MAE_reduction": 0.05256381975294422,
+    "paired_bootstrap95CI": [
+      -0.19354396501748006,
+      0.23392649259164605
+    ],
+    "improved_cells": 10,
+    "severe_over100_increase": 0.0012226972867988711,
+    "exploratory_gate": false
+  },
+  {
+    "new": "F3_state_rate",
+    "old": "F2_current_state",
+    "relative_MAE_reduction": 0.1417819575912822,
+    "paired_bootstrap95CI": [
+      0.0437746628480614,
+      0.2159147554418044
+    ],
+    "improved_cells": 12,
+    "severe_over100_increase": -0.007368973473818027,
+    "exploratory_gate": true
+  }
+]

@@ -1,0 +1,133 @@
+{
+  "at_utc": "2026-10-18T05:07:50.498272+00:00",
+  "status": "FIRST_REAL_OBSERVED_EVENT_CONDITIONAL_RUL_PILOT_COMPLETE",
+  "scientific_priority": [
+    "Separate survival-only conditioning from fresh state/rate information first",
+    "Natural censoring modeling awaits data with identifiable observation/censor mechanism",
+    "Reliability/selective updates require reproducible harmful-update evidence before any new mechanism"
+  ],
+  "verdicts": {
+    "survival_conditioning_alone": "NO_GAIN_IN_THIS_PILOT",
+    "new_current_state_over_survival_only": "MEAN_GAIN_WITH_WIDE_EXPLORATORY_INTERVAL_NOT_ACCEPTED",
+    "rate_over_current_state": "EXPLORATORY_GATE_PASS_14P18_PERCENT_NOT_INNOVATION_OR_CONFIRMATION",
+    "complex_model_or_update_gate_expansion": "NOT_AUTHORIZED_BY_THIS_RESULT",
+    "natural_censoring_and_strict_online": "NOT_ESTABLISHED"
+  },
+  "comparisons": [
+    {
+      "new": "F1_survival_only",
+      "old": "F0_frozen",
+      "relative_MAE_reduction": -0.008007696936660924,
+      "paired_bootstrap95CI": [
+        -0.11508240854769218,
+        0.050773835249405534
+      ],
+      "improved_cells": 6,
+      "severe_over100_increase": 0.004625861886787375,
+      "exploratory_gate": false
+    },
+    {
+      "new": "F2_current_state",
+      "old": "F1_survival_only",
+      "relative_MAE_reduction": 0.05256381975294422,
+      "paired_bootstrap95CI": [
+        -0.19354396501748006,
+        0.23392649259164605
+      ],
+      "improved_cells": 10,
+      "severe_over100_increase": 0.0012226972867988711,
+      "exploratory_gate": false
+    },
+    {
+      "new": "F3_state_rate",
+      "old": "F2_current_state",
+      "relative_MAE_reduction": 0.1417819575912822,
+      "paired_bootstrap95CI": [
+        0.0437746628480614,
+        0.2159147554418044
+      ],
+      "improved_cells": 12,
+      "severe_over100_increase": -0.007368973473818027,
+      "exploratory_gate": true
+    }
+  ],
+  "independent_metrics_sha256": "8d1f6aa2125be61ce7f69578fe7f30222fb14c002a5b3551da51bd1191e2d50e",
+  "cohort_scope": "52train19validation observed threshold-event cells from batch2/4, source-ID separated; excludes62 naturally censored cells and knownfuture-shiftIDs; not target fullpopulation",
+  "known_harms": {
+    "rate_improved_cells": 12,
+    "rate_harmed_cells": 7,
+    "worst_harmed": [
+      {
+        "cell_id": "MATR_b4c28",
+        "batch": 4,
+        "state_MAE": 26.111027135479766,
+        "rate_MAE": 41.723876764820616,
+        "improvement_cycles": -15.61284962934085,
+        "severe_over100_change": 0.0
+      },
+      {
+        "cell_id": "MATR_b2c35",
+        "batch": 2,
+        "state_MAE": 18.007051050073937,
+        "rate_MAE": 22.65133316739301,
+        "improvement_cycles": -4.644282117319072,
+        "severe_over100_change": 0.0
+      },
+      {
+        "cell_id": "MATR_b4c16",
+        "batch": 4,
+        "state_MAE": 100.73288204273634,
+        "rate_MAE": 105.28977419547536,
+        "improvement_cycles": -4.5568921527390245,
+        "severe_over100_change": 0.0
+      }
+    ],
+    "positive_gain_top3_share": 0.5930397305287263,
+    "batch_results": [
+      {
+        "batch": 2,
+        "cells": 9,
+        "state_MAE": 48.646653137474004,
+        "rate_MAE": 41.68173000620935,
+        "relative_improvement": 0.14317373718561865,
+        "improved_cells": 6
+      },
+      {
+        "batch": 4,
+        "cells": 10,
+        "state_MAE": 85.95780109206238,
+        "rate_MAE": 73.83147066024024,
+        "relative_improvement": 0.1410730646638415,
+        "improved_cells": 6
+      }
+    ]
+  },
+  "new_predictive_fits": 3,
+  "optimizer_steps": 0,
+  "historical_neural_fits_steps_unchanged": [
+    4,
+    2580
+  ],
+  "historical_MATR_CPU_fits_unchanged": 41,
+  "old_NO_GAIN_NO_GO_unchanged": true,
+  "test_access": false,
+  "new_raw_downloads": 0,
+  "new_binary_reads": 0,
+  "strict_online_claim": false,
+  "new_source_competition_scope": "3 sources only: DynamicDeepHit abstract/codeREADME, battery Cox/DeepHit authorREADME/abstract, PEAT preprint selectedfullsections; no systematicnovelty",
+  "agent_attribution": {
+    "coordinator_requested": "gpt-6.1-sol/high",
+    "literature_agent_requested": "gpt-6-luna/high",
+    "narrow_reviewer_requested": "gpt-6-luna/high",
+    "runtime_model_identity": "NOT_INDEPENDENTLY_INTROSPECTED"
+  },
+  "next_action": "Use only saved F2/F3 validation predictions plus existing causal capacity prefixes to diagnose7 harmed cells, especially MATR_b4c28: locate harmful-rate intervals and whether noise/recovery or stage transition is associated; descriptive only, no gating fit, new model/seed, raw download, final test or natural-censoring claim.",
+  "bindings": {
+    "experiments/online_survival_observed_pilot_seed42_v1/ROOT_GO.json": "a71b8adc1e8d057a984819bca65716ec958b086448bdde1319f1b09db5bba1e9",
+    "experiments/online_survival_observed_pilot_seed42_v1/completion_receipt.json": "d7927010d85c2ad1cf00e2babb6180d2fe8324d3e480302749d68eb42ec93746",
+    "docs/USER_SINGLE_BATTERY_ONLINE_RUL_20261018_ZH.md": "d2e8b517a2df4aa58c9de33d7bc4c0b21828d5a66d5ce51afb74c8a98e2985c5",
+    "reports/online_survival_competition_20261018_luna/competition_review.json": "6559466a937b91eb8978715ed0e740645732d53f1897175558ecbebf38922f9c",
+    "reports/online_survival_pilot_review_20261018_luna/review.json": "b8aade21a0f2934d7f72ce03d11507ad2ab1aa77470f737141a5c13163bb6965",
+    "reports/online_survival_pilot_review_20261018_luna/review_v2.json": "e15ae36f720a77ad153beac4ea0b502ccd5ebe7c2c6010d9c84b538519af7e8e"
+  }
+}

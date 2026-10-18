@@ -1,0 +1,70 @@
+{
+  "status": "FROZEN_PENDING_NARROW_REVIEW_AND_SCOPED_GO",
+  "question": "Does survival conditioning add value beyond frozen early EOL distribution, and do current health/rate observations add value beyond that?",
+  "task": "Single target battery prefix-time inference, offline population training permitted",
+  "seed": 42,
+  "event": "first saved processed capacity_Ah <=0.8*nominal_Ah*SOCspan; observed crossing only; no author extrapolated labels",
+  "origins": "all integer completed cycles100..T_event-1; cell-equal full observed duration after100",
+  "roles": {
+    "train": 52,
+    "validation": 19,
+    "test": 0
+  },
+  "source_identity": "Known aliases handled in prior exclusions; all other physical serial unverified; source-ID isolation only",
+  "asof": "Only saved processed capacity rows through t for features; excludes prior4 named future-shift mapping cells; actual raw v11 generator unverified",
+  "measurement_permission": "Complete-cycle laboratory measured capacity; no I/V-only deployment claim",
+  "fits": {
+    "max_predictive_fits": 3,
+    "max_optimizer_steps": 0,
+    "max_wall_seconds": 180,
+    "max_input_origins": 200000,
+    "threads": 1,
+    "Ridge_alpha": 1.0,
+    "tuning": "none",
+    "scaler": "train-only, cell-equal weighted",
+    "sigma": "train in-sample weighted log-residual RMS, floor0.05 predeclared; no validation calibration"
+  },
+  "arms": {
+    "F0_frozen": "Lognormal totalEOL from t100 SOH/rate20/batch4; future residual=max(Tpred-t,0), unchanged EOL distribution",
+    "F1_survival_only": "Same F0 fitted distribution, condition T>t exactly; zero additional fits",
+    "F2_current_state": "Lognormal remaining lifetime; Ridge logRUL from age/currentSOH/batch4",
+    "F3_state_rate": "Same direct logRUL Ridge, add past20-cycle normalized capacity slope"
+  },
+  "point": "Predictive median; zero-capped residual for F0",
+  "interval": "central80% q10,q90",
+  "brier_horizons_cycles": [
+    100,
+    300
+  ],
+  "primary": "Within-cell mean over all legal integer origins then equal mean of19 cells, native cycleTime-MAE",
+  "secondary": [
+    "cell-equal signed bias",
+    "P(overestimate>100cycles)",
+    "80%intervalcoverage and width",
+    "Brier at100/300",
+    "per-cell paired changes"
+  ],
+  "exploratory_gate": {
+    "comparisons": [
+      "F1_vs_F0",
+      "F2_vs_F1",
+      "F3_vs_F2"
+    ],
+    "minimum_relative_MAE_reduction": 0.05,
+    "paired_cell_bootstrap_95CI_lower_gt": 0,
+    "max_increase_severe_overestimate_probability": 0.02,
+    "bootstrap_samples": 2000,
+    "interpretation": "Exploratory only, not confirmatory significance; no seed/model expansion without new decision"
+  },
+  "limits": [
+    "This event-only cohort cannot establish benefit from natural right censoring",
+    "Batch2/4 event-only population, not randomized mortality/censor mechanism",
+    "No new neural model or update gating mechanism",
+    "Conditional probability algebra is standard, not novelty",
+    "Old A/MATR and CALB NO_GAIN/NO_GO retained; new labels/population/question separate",
+    "No independent-generalization or strict raw online/deployment claim"
+  ],
+  "test_access": false,
+  "global_new_fits_allowed_unchanged": false,
+  "cohort_sha256": "e9d0b79e594ed00853422569243662eb491da24921e64ac91eab868be2704494"
+}

@@ -1,0 +1,6 @@
+{"event": "fit_started", "fit": 1, "arm": "F0_shared_F1"}
+{"event": "fit_completed", "fit": 1, "arm": "F0_shared_F1", "sigma": 0.1792844401815048}
+{"event": "fit_started", "fit": 2, "arm": "F2_current_state"}
+{"event": "fit_completed", "fit": 2, "arm": "F2_current_state", "sigma": 0.4308711771097821}
+{"event": "fit_started", "fit": 3, "arm": "F3_state_rate"}
+{"event": "fit_completed", "fit": 3, "arm": "F3_state_rate", "sigma": 0.3762886997067525}

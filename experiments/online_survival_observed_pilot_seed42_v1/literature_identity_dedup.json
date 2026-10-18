@@ -1,0 +1,276 @@
+{
+  "scope": "Identifier-only reconciliation; not new full-text acceptance or complete bibliography merge",
+  "existing41_evidence_sha256": "3057c8bccce2ed836a0688b8ff9ed0f9280c8a32d9fff3b8539e3595df0a5686",
+  "records": [
+    {
+      "source_file": "reports/rul_time_prediction_literature_20261018_root/LITERATURE_REVIEW_ZH.md",
+      "source_sha256": "4e220d42634c16da592fb2e80ba994cd4036cdcc3b84a1e1771ef4b45f61c8ff",
+      "item": 1,
+      "group": "battery_ten",
+      "heading": "1. **Severson et al., Science 2019**：早期容量变化统计特征预测总循环寿命。说明早期差分/斜率有信息，简单特征应作为基线；不是逐时点动态 RUL。[DOI](https://doi.org/10.1126/science.aau7705)",
+      "identifier_keys": [
+        "10.1126/science.aau7705"
+      ],
+      "matched_existing41": [],
+      "status": "IDENTITY_CONFLICT_WITH_ACCEPTED_P01",
+      "notes": [
+        "The thematic text says Severson Science2019 and DOI10.1126/science.aau7705, whereas accepted P01 source identity is NatureEnergy2019 DOI10.1038/s41560-019-0356-8. Use accepted P01 for its actual claim; thematic citation identity unverified. Old file preserved."
+      ]
+    },
+    {
+      "source_file": "reports/rul_time_prediction_literature_20261018_root/LITERATURE_REVIEW_ZH.md",
+      "source_sha256": "4e220d42634c16da592fb2e80ba994cd4036cdcc3b84a1e1771ef4b45f61c8ff",
+      "item": 2,
+      "group": "battery_ten",
+      "heading": "2. **Su et al., IEEE Access 2018**：指数容量退化状态方程 + 粒子滤波递推估计，外推 EOL 和寿命分布并比较预测起点。更新机制与不确定性清楚；模型失配可能漏掉容量再生/阶段加速，NASA小样本不能证明跨域有效。[IEEE](https://ieeexplore.ieee.org/document/8318570/)",
+      "identifier_keys": [],
+      "matched_existing41": [],
+      "status": "NO_EXACT_IDENTIFIER_MATCH_NOT_PROOF_OF_NEW_FULL_READ",
+      "notes": []
+    },
+    {
+      "source_file": "reports/rul_time_prediction_literature_20261018_root/LITERATURE_REVIEW_ZH.md",
+      "source_sha256": "4e220d42634c16da592fb2e80ba994cd4036cdcc3b84a1e1771ef4b45f61c8ff",
+      "item": 3,
+      "group": "battery_ten",
+      "heading": "3. **Hell & Kim, Batteries 2022**：软传感器估健康状态，GRU滑窗预测退化/RUL。提醒要评价从现场信号到SOH再到EOL的整条误差链；归一化和软传感器只可用前缀。[DOI](https://doi.org/10.3390/batteries8100192)",
+      "identifier_keys": [
+        "10.3390/batteries8100192"
+      ],
+      "matched_existing41": [],
+      "status": "NO_EXACT_IDENTIFIER_MATCH_NOT_PROOF_OF_NEW_FULL_READ",
+      "notes": []
+    },
+    {
+      "source_file": "reports/rul_time_prediction_literature_20261018_root/LITERATURE_REVIEW_ZH.md",
+      "source_sha256": "4e220d42634c16da592fb2e80ba994cd4036cdcc3b84a1e1771ef4b45f61c8ff",
+      "item": 4,
+      "group": "battery_ten",
+      "heading": "4. **Ma et al., Knowledge-Based Systems 2023**：CNN粗估寿命，选相似训练电芯并以双指数/GPR个体化修正。群体先验和个体局部轨迹可分工；相似对象不得用测试电芯完整寿命挑选。[DOI](https://doi.org/10.1016/j.knosys.2022.110012)",
+      "identifier_keys": [
+        "10.1016/j.knosys.2022.110012"
+      ],
+      "matched_existing41": [],
+      "status": "NO_EXACT_IDENTIFIER_MATCH_NOT_PROOF_OF_NEW_FULL_READ",
+      "notes": []
+    },
+    {
+      "source_file": "reports/rul_time_prediction_literature_20261018_root/LITERATURE_REVIEW_ZH.md",
+      "source_sha256": "4e220d42634c16da592fb2e80ba994cd4036cdcc3b84a1e1771ef4b45f61c8ff",
+      "item": 5,
+      "group": "battery_ten",
+      "heading": "5. **Mittal et al., 2023预印本**：先识别 first prediction cycle/阶段，再预测退化并给RUL比例。预测起点本身值得建模；比例分母、事后FPC标签是关键风险。[arXiv](https://arxiv.org/abs/2308.03664)",
+      "identifier_keys": [
+        "arxiv:2308.03664"
+      ],
+      "matched_existing41": [
+        "P12"
+      ],
+      "status": "EXACT_IDENTIFIER_OVERLAP_EXISTING41",
+      "notes": []
+    },
+    {
+      "source_file": "reports/rul_time_prediction_literature_20261018_root/LITERATURE_REVIEW_ZH.md",
+      "source_sha256": "4e220d42634c16da592fb2e80ba994cd4036cdcc3b84a1e1771ef4b45f61c8ff",
+      "item": 6,
+      "group": "battery_ten",
+      "heading": "6. **Hell et al., Scientific Reports 2024**：健康指标 + SVR/GPR + 状态空间/UKF处理容量再生，外推阈值并给置信区间/SHAP。NASA B5/B6/B7固定起点T=70/80/90，B7阈值1.5Ah而另两只1.4Ah；区间必须核验覆盖率。[DOI](https://doi.org/10.1038/s41598-024-63160-2)",
+      "identifier_keys": [
+        "10.1038/s41598-024-63160-2"
+      ],
+      "matched_existing41": [],
+      "status": "NO_EXACT_IDENTIFIER_MATCH_NOT_PROOF_OF_NEW_FULL_READ",
+      "notes": []
+    },
+    {
+      "source_file": "reports/rul_time_prediction_literature_20261018_root/LITERATURE_REVIEW_ZH.md",
+      "source_sha256": "4e220d42634c16da592fb2e80ba994cd4036cdcc3b84a1e1771ef4b45f61c8ff",
+      "item": 7,
+      "group": "battery_ten",
+      "heading": "7. **Zhang et al., Nature Machine Intelligence 2025 (BatLiNet)**：结合单电芯学习和电芯对寿命差值学习。作者报告401电芯、168工况；五个数据集相对各自最佳基线RMSE降低36.5%、6.8%、20.1%、27.4%、40.1%，混合工况仍较难。是早期总寿命预测，不等于动态RUL，且需要完整寿命参考电芯。[DOI](https://doi.org/10.1038/s42256-024-00972-x)",
+      "identifier_keys": [
+        "10.1038/s42256-024-00972-x"
+      ],
+      "matched_existing41": [
+        "P05"
+      ],
+      "status": "EXACT_IDENTIFIER_OVERLAP_EXISTING41",
+      "notes": []
+    },
+    {
+      "source_file": "reports/rul_time_prediction_literature_20261018_root/LITERATURE_REVIEW_ZH.md",
+      "source_sha256": "4e220d42634c16da592fb2e80ba994cd4036cdcc3b84a1e1771ef4b45f61c8ff",
+      "item": 8,
+      "group": "battery_ten",
+      "heading": "8. **Tan et al., PBT 2025预印本**：13数据集预训练、领域条件化专家结构和迁移学习。应审计预训练/测试电芯重叠、目标标签权限与预算；核心仍是早期寿命预测，项目现有PBT门槛不因此放宽。[arXiv](https://arxiv.org/abs/2512.16334)",
+      "identifier_keys": [
+        "arxiv:2512.16334"
+      ],
+      "matched_existing41": [
+        "P07"
+      ],
+      "status": "EXACT_IDENTIFIER_OVERLAP_EXISTING41",
+      "notes": []
+    },
+    {
+      "source_file": "reports/rul_time_prediction_literature_20261018_root/LITERATURE_REVIEW_ZH.md",
+      "source_sha256": "4e220d42634c16da592fb2e80ba994cd4036cdcc3b84a1e1771ef4b45f61c8ff",
+      "item": 9,
+      "group": "battery_ten",
+      "heading": "9. **Che et al., Reliability Engineering & System Safety 2024**：概率多任务预测膝点/寿命、SOH轨迹、老化速率并识别加速老化。说明速率变化和寿命风险有关；阶段识别好不自动意味着RUL准确。[DOI](https://doi.org/10.1016/j.ress.2023.109603)",
+      "identifier_keys": [
+        "10.1016/j.ress.2023.109603"
+      ],
+      "matched_existing41": [],
+      "status": "NO_EXACT_IDENTIFIER_MATCH_NOT_PROOF_OF_NEW_FULL_READ",
+      "notes": []
+    },
+    {
+      "source_file": "reports/rul_time_prediction_literature_20261018_root/LITERATURE_REVIEW_ZH.md",
+      "source_sha256": "4e220d42634c16da592fb2e80ba994cd4036cdcc3b84a1e1771ef4b45f61c8ff",
+      "item": 10,
+      "group": "battery_ten",
+      "heading": "10. **Huang et al., Journal of Power Sources 2026 (IC²ML)**：融合单循环电压曲线和跨循环特征，联合估SOH、退化轨迹及阈值推导RUL。出版页面报告121电芯/10工况，SOH/轨迹/RUL RMSE为1.85%/2.36%/23.90 cycles；电芯拆分、EOL及逐前缀聚合尚需正文核实，故只称作者页面报告。[DOI](https://doi.org/10.1016/j.jpowsour.2025.239148)",
+      "identifier_keys": [
+        "10.1016/j.jpowsour.2025.239148"
+      ],
+      "matched_existing41": [],
+      "status": "NO_EXACT_IDENTIFIER_MATCH_NOT_PROOF_OF_NEW_FULL_READ",
+      "notes": []
+    },
+    {
+      "source_file": "reports/cross_domain_rul_literature_20261018_root/CROSS_DOMAIN_RUL_REVIEW_ZH.md",
+      "source_sha256": "4e9f9463b676ccdee8b044fbe1626abc95d3cfba0bbfb3098e855e321ce0526a",
+      "item": 1,
+      "group": "cross_domain_ten",
+      "heading": "### 1. Si et al. (2011), “Remaining useful life estimation – A review on the statistical data driven approaches”",
+      "identifier_keys": [
+        "10.1016/j.ejor.2010.11.018"
+      ],
+      "matched_existing41": [],
+      "status": "NO_EXACT_IDENTIFIER_MATCH_NOT_PROOF_OF_NEW_FULL_READ",
+      "notes": []
+    },
+    {
+      "source_file": "reports/cross_domain_rul_literature_20261018_root/CROSS_DOMAIN_RUL_REVIEW_ZH.md",
+      "source_sha256": "4e9f9463b676ccdee8b044fbe1626abc95d3cfba0bbfb3098e855e321ce0526a",
+      "item": 2,
+      "group": "cross_domain_ten",
+      "heading": "### 2. Heimes (2008), “Recurrent neural networks for remaining useful life estimation”",
+      "identifier_keys": [
+        "10.1109/phm.2008.4711422"
+      ],
+      "matched_existing41": [],
+      "status": "NO_EXACT_IDENTIFIER_MATCH_NOT_PROOF_OF_NEW_FULL_READ",
+      "notes": []
+    },
+    {
+      "source_file": "reports/cross_domain_rul_literature_20261018_root/CROSS_DOMAIN_RUL_REVIEW_ZH.md",
+      "source_sha256": "4e9f9463b676ccdee8b044fbe1626abc95d3cfba0bbfb3098e855e321ce0526a",
+      "item": 3,
+      "group": "cross_domain_ten",
+      "heading": "### 3. Li, Ding & Sun (2018), “Remaining useful life estimation in prognostics using deep convolutional neural networks”",
+      "identifier_keys": [
+        "10.1016/j.ress.2017.11.021"
+      ],
+      "matched_existing41": [],
+      "status": "NO_EXACT_IDENTIFIER_MATCH_NOT_PROOF_OF_NEW_FULL_READ",
+      "notes": []
+    },
+    {
+      "source_file": "reports/cross_domain_rul_literature_20261018_root/CROSS_DOMAIN_RUL_REVIEW_ZH.md",
+      "source_sha256": "4e9f9463b676ccdee8b044fbe1626abc95d3cfba0bbfb3098e855e321ce0526a",
+      "item": 4,
+      "group": "cross_domain_ten",
+      "heading": "### 4. Ellefsen et al. (2019), “Remaining useful life predictions for turbofan engine degradation using semi-supervised deep architecture”",
+      "identifier_keys": [
+        "10.1016/j.ress.2018.11.027"
+      ],
+      "matched_existing41": [],
+      "status": "NO_EXACT_IDENTIFIER_MATCH_NOT_PROOF_OF_NEW_FULL_READ",
+      "notes": []
+    },
+    {
+      "source_file": "reports/cross_domain_rul_literature_20261018_root/CROSS_DOMAIN_RUL_REVIEW_ZH.md",
+      "source_sha256": "4e9f9463b676ccdee8b044fbe1626abc95d3cfba0bbfb3098e855e321ce0526a",
+      "item": 5,
+      "group": "cross_domain_ten",
+      "heading": "### 5. Hu et al. (2018), “A prediction method for the real-time remaining useful life of wind turbine bearings based on the Wiener process”",
+      "identifier_keys": [
+        "10.1016/j.renene.2018.04.033"
+      ],
+      "matched_existing41": [],
+      "status": "NO_EXACT_IDENTIFIER_MATCH_NOT_PROOF_OF_NEW_FULL_READ",
+      "notes": []
+    },
+    {
+      "source_file": "reports/cross_domain_rul_literature_20261018_root/CROSS_DOMAIN_RUL_REVIEW_ZH.md",
+      "source_sha256": "4e9f9463b676ccdee8b044fbe1626abc95d3cfba0bbfb3098e855e321ce0526a",
+      "item": 6,
+      "group": "cross_domain_ten",
+      "heading": "### 6. Li et al. (2022), “A self-data-driven method for remaining useful life prediction of wind turbines considering continuously varying speeds”",
+      "identifier_keys": [
+        "10.1016/j.ymssp.2021.108315"
+      ],
+      "matched_existing41": [],
+      "status": "NO_EXACT_IDENTIFIER_MATCH_NOT_PROOF_OF_NEW_FULL_READ",
+      "notes": []
+    },
+    {
+      "source_file": "reports/cross_domain_rul_literature_20261018_root/CROSS_DOMAIN_RUL_REVIEW_ZH.md",
+      "source_sha256": "4e9f9463b676ccdee8b044fbe1626abc95d3cfba0bbfb3098e855e321ce0526a",
+      "item": 7,
+      "group": "cross_domain_ten",
+      "heading": "### 7. Ding et al. (2021), “A remaining useful life prediction method for bearing based on deep neural networks”",
+      "identifier_keys": [
+        "10.1016/j.measurement.2020.108878"
+      ],
+      "matched_existing41": [],
+      "status": "NO_EXACT_IDENTIFIER_MATCH_NOT_PROOF_OF_NEW_FULL_READ",
+      "notes": []
+    },
+    {
+      "source_file": "reports/cross_domain_rul_literature_20261018_root/CROSS_DOMAIN_RUL_REVIEW_ZH.md",
+      "source_sha256": "4e9f9463b676ccdee8b044fbe1626abc95d3cfba0bbfb3098e855e321ce0526a",
+      "item": 8,
+      "group": "cross_domain_ten",
+      "heading": "### 8. Lee et al. (2018), “DeepHit: A Deep Learning Approach to Survival Analysis With Competing Risks”",
+      "identifier_keys": [
+        "10.1609/aaai.v32i1.11842"
+      ],
+      "matched_existing41": [],
+      "status": "NO_EXACT_IDENTIFIER_MATCH_NOT_PROOF_OF_NEW_FULL_READ",
+      "notes": []
+    },
+    {
+      "source_file": "reports/cross_domain_rul_literature_20261018_root/CROSS_DOMAIN_RUL_REVIEW_ZH.md",
+      "source_sha256": "4e9f9463b676ccdee8b044fbe1626abc95d3cfba0bbfb3098e855e321ce0526a",
+      "item": 9,
+      "group": "cross_domain_ten",
+      "heading": "### 9. Lee, Yoon & van der Schaar (2020), “Dynamic-DeepHit: A Deep Learning Approach for Dynamic Survival Analysis With Competing Risks Based on Longitudinal Data”",
+      "identifier_keys": [
+        "10.1109/tbme.2019.2909027"
+      ],
+      "matched_existing41": [],
+      "status": "NO_EXACT_IDENTIFIER_MATCH_NOT_PROOF_OF_NEW_FULL_READ",
+      "notes": []
+    },
+    {
+      "source_file": "reports/cross_domain_rul_literature_20261018_root/CROSS_DOMAIN_RUL_REVIEW_ZH.md",
+      "source_sha256": "4e9f9463b676ccdee8b044fbe1626abc95d3cfba0bbfb3098e855e321ce0526a",
+      "item": 10,
+      "group": "cross_domain_ten",
+      "heading": "### 10. Liu et al. (2024), “Uncertainty Quantification and Interval Prediction of Equipment Remaining Useful Life Based on Semisupervised Learning”",
+      "identifier_keys": [
+        "10.1109/tim.2023.3334339"
+      ],
+      "matched_existing41": [],
+      "status": "NO_EXACT_IDENTIFIER_MATCH_NOT_PROOF_OF_NEW_FULL_READ",
+      "notes": []
+    }
+  ],
+  "no_sum_of41_plus20_full_read_claim": true,
+  "exact_battery_overlap_items": 3,
+  "identity_conflicts": 1,
+  "competition_DynamicDeepHit_already_cross_domain_item9": true
+}

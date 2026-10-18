@@ -279,3 +279,12 @@
 - **最小验证**：对照出版方/会议原文页面核对任务、方法与已披露实验结论；部分全文协议未读到的细节留待核实。
 - **阻塞/风险**：不是系统综述；“跨领域方法首次用于电池”尚未完成新颖性检索；领域间数据和事件定义不可直接横向比指标。
 - **下一步**：将本稿交给GPT讨论动态生存/删失感知RUL候选；不改变项目训练门，本轮训练0、推理0。
+
+
+## 2026-10-18 13:07 北京时间：新主线首轮真实条件RUL对照完成
+
+- **已完成**：按用户新指令将主线转向单电池在线条件RUL；阅读既有三综合/逐篇选段，两份十篇做身份去重边界，三篇竞争窄核。独审修复显式排除清单后独立scopedGO，一次3CPUfit完成F0冻结/F1仅存活/F2状态/F3状态速率。
+- **证据**：experiments/online_survival_observed_pilot_seed42_v1/RESULTS_ZH.md、ROOT_GO/protocol/cohort、validation_predictions19份、metrics/comparisons/independent_metrics/root_decision；竞争reports/online_survival_competition_20261018_luna/，窄审reports/online_survival_pilot_review_20261018_luna/。52train/19val、26796/10002整数origin；Time-MAE71.499956/72.072506/68.284099/58.602646。
+- **最小验证**：条件分位数单例、past-only索引和4riskID排除窄审；真实一次3fit及连续账本；从40008预测行独立重算7指标匹配<1e-9。F3vsF2降14.1782%、探索区间[4.3775%,21.5915%]、12/19改善，严重高估比例下降0.7369个百分点。
+- **阻塞/风险**：event-only/batch2/4的processed-source工程pilot，非自然删失收益/strict在线/独立物理泛化/创新确认。F1无增益，F2增益区间跨0；F3仍7cell受损、前三贡献59.3%。旧MATR/CALB/PBT结论保持；本轮3CPUfit0optimizer，历史神经4fit2580step与旧MATR41CPUfit另记。
+- **下一步**：仅已存F2/F3预测+前缀诊断7受损cell的有害速率区间，判断噪声/恢复/阶段变化是否构成可靠更新需求；不预设门控、不加模型/seed/test。
