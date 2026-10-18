@@ -482,3 +482,11 @@
 - **最小验证**：独立全部22281fit残差及4567cal复算，sigma差0、指标差1.99e-13；公开四列训练标签/预测无损CSV字节SHA通过。0fit/optimizer，1checkpointload/1fit-onlypredict/1scalar，0calforward/devtest；本次预算消费，累计CPU14不变。
 - **阻塞/风险**：训练内残差尺度乐观，缩窄区间没有修复概率可靠性；cal反复暴露、event-only/物理身份/固定labpolicy限制保留。旧点PASS与概率联合FAIL均保留，不调sigma/偏置/seed救结果。
 - **下一步**：0fit已有工况预测，固定alpha2/21、origin100初始化的绝对EOL因果EMA强简单对照；同4567评TimeMAE/over100/延迟/归零，不用未来或真误差回滚，不搜窗口/alpha，不估尺度/模型推理/devtest。
+
+
+## 2026-10-19：固定因果EMA平滑实际对照，主指标NO_GAIN
+- **已完成**：0fit已有10cal4567工况预测，固定alpha2/21绝对EOL因果EMA；TimeMAE36.400814→35.804016仅降1.6395%，5/10改善、paired95%差[-1.089981,2.303030]跨零；over1004.2582%→3.8189%，gateFAIL/NO_GAIN，停止本固定方案不搜alpha/窗口。
+- **证据**：reports/policy_causal_ema20_20261019_root/RESULTS_ZH.md、protocol/diagnose_v1、metrics/per_cell_metrics/comparison、transition_audit/arithmetic_examples/completion、independent_recompute/independent_metrics/root_decision及v0失败文件；派生CSV服务器保存。
+- **最小验证**：4567独立闭式卷积复算，预测差4.55e-13、指标差1.42e-14，3个归零完整。v0严格浮点相等差1.42e-14失败在指标前，原件保留，仅初始化容差修复；无算法/门槛变更。0fit/optimizer/推理/尺度/checkpoint/原始特征/devtest，累计CPU14不变。
+- **阻塞/风险**：EOL修订3.1988→1.0331循环、有害更新48.31%→36.50%并不等价精度提升；平均追踪差9.7932、理论低频延迟9.5cycle不能当实测事件延迟。cal暴露/物理身份/event-only限制及原概率FAIL保留。
+- **下一步**：0fit新42fit已存预测冻结绝对EOL修订的电池等权q90阈值，10cal4557更新仅一次大修订vs其余的有害率/误差增益诊断；不搜索阈值、不启动预测门控/新模型，检验抑制大更新是否有依据。

@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-18T16:18:47.762184+00:00",
-  "content_sha256": "3f531dd3d21d4f411813c0179ae009c45d8537725646e4d0ddcc6b76fdf19034",
-  "file_count": 696,
+  "snapshot_utc": "2026-10-18T16:31:07.115646+00:00",
+  "content_sha256": "0d418f9f6637fcaeb182ddf732220a7215ddcb4c9e51bfb9e0232cdd0c742b45",
+  "file_count": 710,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,8 +14,8 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 85443,
-      "sha256": "6a9170c1c94b73fd44eb342582d879c2458bc996b7f7d800e09c202e7f54c03e"
+      "bytes": 86901,
+      "sha256": "6a1b0d3f377a5d41ed03d6f54b60689d13db90128f10216952190605c748a9c9"
     },
     {
       "path": "README.md",
@@ -38,8 +38,8 @@
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 24430,
-      "sha256": "d9b94785a9eaf10140686064f6a6394eab297d838755a554336ac0bc2e6ba262"
+      "bytes": 24804,
+      "sha256": "abb0f50d2d537085457f9e04a410586e6e66ce4cf91e1dd4dfd61391af333d9a"
     },
     {
       "path": "automation/bin/matr_raw_batch2_asset_worker_v1.py",
@@ -164,8 +164,8 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 72704,
-      "sha256": "40f3105fae91cebf3f9fe974f632dec5837029717ad32910cc530764cd03982e"
+      "bytes": 74162,
+      "sha256": "f01eafbd5f106365f220e740f1c9ab9d423e261df0e0de6c0e706c9f0bede900"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
@@ -3772,6 +3772,90 @@
       "source_path": "reports/persistent_capacity_feedback_20261018_root/root_decision.json",
       "bytes": 201,
       "sha256": "368f4d8a3b4b2cadb7132286956203064f1db79d7b6d17674d36ce0d01710b9f"
+    },
+    {
+      "path": "reports/policy_causal_ema20_20261019_root/RESULTS_ZH.md",
+      "source_path": "reports/policy_causal_ema20_20261019_root/RESULTS_ZH.md",
+      "bytes": 3115,
+      "sha256": "cf8a137b328a290b4237d4708848cea230aa1521255a3e6d90d731cd7c196256"
+    },
+    {
+      "path": "reports/policy_causal_ema20_20261019_root/arithmetic_examples.json",
+      "source_path": "reports/policy_causal_ema20_20261019_root/arithmetic_examples.json",
+      "bytes": 5754,
+      "sha256": "cdebbb27602e2f5683aa8d326a866a08c9155aa1c296689d4d7326c98b92d36c"
+    },
+    {
+      "path": "reports/policy_causal_ema20_20261019_root/comparison.json",
+      "source_path": "reports/policy_causal_ema20_20261019_root/comparison.json",
+      "bytes": 267,
+      "sha256": "f141f6bd261d558e5c906b32d771555de7e8bc29375f55e6158e37d4ad8c24eb"
+    },
+    {
+      "path": "reports/policy_causal_ema20_20261019_root/completion.json",
+      "source_path": "reports/policy_causal_ema20_20261019_root/completion.json",
+      "bytes": 669,
+      "sha256": "b535903f484816fef1f3fbaf4ccdb40ec4db41da742ee33b7856c05a143bd5c5"
+    },
+    {
+      "path": "reports/policy_causal_ema20_20261019_root/diagnose.py",
+      "source_path": "reports/policy_causal_ema20_20261019_root/diagnose.py",
+      "bytes": 4487,
+      "sha256": "2bfe97c89edb0a99061948053f655b0fe0f05879c6453820c36434919e152f9b"
+    },
+    {
+      "path": "reports/policy_causal_ema20_20261019_root/diagnose_v1.py",
+      "source_path": "reports/policy_causal_ema20_20261019_root/diagnose_v1.py",
+      "bytes": 4497,
+      "sha256": "69ac8e1ab240934b22346fe29a87735e1897a12c531e32325993181c5c1ceceb"
+    },
+    {
+      "path": "reports/policy_causal_ema20_20261019_root/failure_v0.json",
+      "source_path": "reports/policy_causal_ema20_20261019_root/failure_v0.json",
+      "bytes": 552,
+      "sha256": "e286f27bc4bf43fb5f4243c882f276cbd2b66edd54b07a675d4bb7269eaa5031"
+    },
+    {
+      "path": "reports/policy_causal_ema20_20261019_root/independent_metrics.json",
+      "source_path": "reports/policy_causal_ema20_20261019_root/independent_metrics.json",
+      "bytes": 573,
+      "sha256": "1bcb17b5f2c1ed14d86dc07e24af6478549933a1464550e23e92b1c6ee17255b"
+    },
+    {
+      "path": "reports/policy_causal_ema20_20261019_root/independent_recompute.py",
+      "source_path": "reports/policy_causal_ema20_20261019_root/independent_recompute.py",
+      "bytes": 1893,
+      "sha256": "7409c90a0e94dbc6350dadfb70f49a90dcfbe7f9de237030d480e925804c7570"
+    },
+    {
+      "path": "reports/policy_causal_ema20_20261019_root/metrics.json",
+      "source_path": "reports/policy_causal_ema20_20261019_root/metrics.json",
+      "bytes": 275,
+      "sha256": "38badb163c2d851ab453d526b48fe19d89e2db66baad37ef6ac93d8bf2055745"
+    },
+    {
+      "path": "reports/policy_causal_ema20_20261019_root/per_cell_metrics.json",
+      "source_path": "reports/policy_causal_ema20_20261019_root/per_cell_metrics.json",
+      "bytes": 4173,
+      "sha256": "eeaad47fc2a9b1787479b5fa42538fd5ad94b971b3944b505ea06da99b920c2e"
+    },
+    {
+      "path": "reports/policy_causal_ema20_20261019_root/protocol.json",
+      "source_path": "reports/policy_causal_ema20_20261019_root/protocol.json",
+      "bytes": 1606,
+      "sha256": "211ea7a4c83dad983cdaae69fe0dca2901c1060ac0719d2ea8dc65aec913fdcd"
+    },
+    {
+      "path": "reports/policy_causal_ema20_20261019_root/root_decision.json",
+      "source_path": "reports/policy_causal_ema20_20261019_root/root_decision.json",
+      "bytes": 2968,
+      "sha256": "aa0e3b0b2f3e562d516490b12c585bfe79b183c463974c2da281c05ca4062034"
+    },
+    {
+      "path": "reports/policy_causal_ema20_20261019_root/transition_audit.json",
+      "source_path": "reports/policy_causal_ema20_20261019_root/transition_audit.json",
+      "bytes": 12003,
+      "sha256": "7b11b90844c41c2950bf436034c1d0d558ad1546d1a7149119ca50d52d93b55a"
     },
     {
       "path": "reports/policy_context_20261018_root/ENCODING_ZH.md",

@@ -1,0 +1,12 @@
+{
+  "status": "FAILED_BEFORE_METRICS_FLOAT_EXACT_EQUALITY",
+  "source_version": "diagnose.py",
+  "source_sha256": "2bfe97c89edb0a99061948053f655b0fe0f05879c6453820c36434919e152f9b",
+  "expression": "(100+savedRUL)-100 == savedRUL",
+  "first_saved_RUL": 66.70186313872254,
+  "roundtrip_difference": 1.4210854715202004e-14,
+  "outputs": "derived_predictions.v0_failed.csv header only; no metrics or completion",
+  "new_fits": 0,
+  "new_model_inference": 0,
+  "fix": "Only initialization equality tolerance1e-10, no recurrence/alpha/source/gate change"
+}

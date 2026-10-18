@@ -1,0 +1,17 @@
+{
+  "status": "COMPLETE_ONE_FIXED_CAUSAL_EMA20_DIAGNOSTIC",
+  "cells": 10,
+  "rows": 4567,
+  "new_fits": 0,
+  "optimizer_steps": 0,
+  "new_model_inference": 0,
+  "new_scalar_estimates": 0,
+  "checkpoint_loads": 0,
+  "raw_feature_reads": 0,
+  "dev_test_reads": 0,
+  "source_sha256": "796844ff5c863a08ca7f1238c620afee39a3f22b84d68b615ec52135c48b7ea0",
+  "script_sha256": "69ac8e1ab240934b22346fe29a87735e1897a12c531e32325993181c5c1ceceb",
+  "protocol_sha256": "211ea7a4c83dad983cdaae69fe0dca2901c1060ac0719d2ea8dc65aec913fdcd",
+  "derived_prediction_sha256": "b2a33e91b026284836047131242aec29d7d73cec57be7b70e20ef3d0f0640855",
+  "elapsed_seconds": 0.057696230709552765
+}

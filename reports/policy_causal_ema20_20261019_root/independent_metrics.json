@@ -1,0 +1,21 @@
+{
+  "status": "PASS_ALL4567_INDEPENDENT_CLOSED_FORM_CONVOLUTION",
+  "rows": 4567,
+  "maximum_prediction_difference": 4.547473508864641e-13,
+  "maximum_metric_difference": 1.4210854715202004e-14,
+  "expired_count": 3,
+  "metrics": {
+    "saved_policy_dynamic": {
+      "MAE": 36.40081434267988,
+      "bias": -3.523895114808489,
+      "severe_over100": 0.04258246537928911
+    },
+    "causal_EOL_EMA20": {
+      "MAE": 35.80401622107391,
+      "bias": -3.8228576032480475,
+      "severe_over100": 0.03818880441562087
+    }
+  },
+  "new_fits": 0,
+  "new_model_inference": 0
+}

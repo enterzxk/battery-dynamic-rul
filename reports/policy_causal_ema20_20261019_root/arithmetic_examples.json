@@ -1,0 +1,242 @@
+[
+  {
+    "cell_id": "MATR_b2c1",
+    "origin": 100,
+    "true_RUL": 48.0,
+    "saved_RUL": 66.70186313872254,
+    "EMA_absolute_EOL": 166.70186313872256,
+    "EMA_RUL": 66.70186313872256
+  },
+  {
+    "cell_id": "MATR_b2c1",
+    "origin": 124,
+    "true_RUL": 24.0,
+    "saved_RUL": 33.26788059664838,
+    "EMA_absolute_EOL": 160.61631485507488,
+    "EMA_RUL": 36.616314855074876
+  },
+  {
+    "cell_id": "MATR_b2c1",
+    "origin": 147,
+    "true_RUL": 1.0,
+    "saved_RUL": 2.075350883945774,
+    "EMA_absolute_EOL": 151.43132342982364,
+    "EMA_RUL": 4.431323429823635
+  },
+  {
+    "cell_id": "MATR_b2c21",
+    "origin": 100,
+    "true_RUL": 389.0,
+    "saved_RUL": 345.3997405248274,
+    "EMA_absolute_EOL": 445.3997405248274,
+    "EMA_RUL": 345.3997405248274
+  },
+  {
+    "cell_id": "MATR_b2c21",
+    "origin": 294,
+    "true_RUL": 195.0,
+    "saved_RUL": 174.52453520160546,
+    "EMA_absolute_EOL": 479.4701288741335,
+    "EMA_RUL": 185.47012887413348
+  },
+  {
+    "cell_id": "MATR_b2c21",
+    "origin": 488,
+    "true_RUL": 1.0,
+    "saved_RUL": 1.6473117895295426,
+    "EMA_absolute_EOL": 489.7717500134293,
+    "EMA_RUL": 1.7717500134293118
+  },
+  {
+    "cell_id": "MATR_b2c24",
+    "origin": 100,
+    "true_RUL": 395.0,
+    "saved_RUL": 411.40728799634945,
+    "EMA_absolute_EOL": 511.40728799634945,
+    "EMA_RUL": 411.40728799634945
+  },
+  {
+    "cell_id": "MATR_b2c24",
+    "origin": 297,
+    "true_RUL": 198.0,
+    "saved_RUL": 213.85800769883758,
+    "EMA_absolute_EOL": 504.7868772993616,
+    "EMA_RUL": 207.7868772993616
+  },
+  {
+    "cell_id": "MATR_b2c24",
+    "origin": 494,
+    "true_RUL": 1.0,
+    "saved_RUL": 1.663462058734734,
+    "EMA_absolute_EOL": 495.0950526620434,
+    "EMA_RUL": 1.095052662043372
+  },
+  {
+    "cell_id": "MATR_b2c41",
+    "origin": 100,
+    "true_RUL": 329.0,
+    "saved_RUL": 332.7776126562383,
+    "EMA_absolute_EOL": 432.7776126562383,
+    "EMA_RUL": 332.7776126562383
+  },
+  {
+    "cell_id": "MATR_b2c41",
+    "origin": 264,
+    "true_RUL": 165.0,
+    "saved_RUL": 177.30474136739394,
+    "EMA_absolute_EOL": 436.1170594666133,
+    "EMA_RUL": 172.11705946661328
+  },
+  {
+    "cell_id": "MATR_b2c41",
+    "origin": 428,
+    "true_RUL": 1.0,
+    "saved_RUL": 1.5989747019629648,
+    "EMA_absolute_EOL": 430.36702190014023,
+    "EMA_RUL": 2.36702190014023
+  },
+  {
+    "cell_id": "MATR_b2c6",
+    "origin": 100,
+    "true_RUL": 411.0,
+    "saved_RUL": 278.87163976574516,
+    "EMA_absolute_EOL": 378.87163976574516,
+    "EMA_RUL": 278.87163976574516
+  },
+  {
+    "cell_id": "MATR_b2c6",
+    "origin": 305,
+    "true_RUL": 206.0,
+    "saved_RUL": 143.18812261731586,
+    "EMA_absolute_EOL": 446.4878450805316,
+    "EMA_RUL": 141.4878450805316
+  },
+  {
+    "cell_id": "MATR_b2c6",
+    "origin": 510,
+    "true_RUL": 1.0,
+    "saved_RUL": 2.5030906613591273,
+    "EMA_absolute_EOL": 508.6728692355262,
+    "EMA_RUL": 0.0
+  },
+  {
+    "cell_id": "MATR_b4c14",
+    "origin": 100,
+    "true_RUL": 508.0,
+    "saved_RUL": 595.5011611077683,
+    "EMA_absolute_EOL": 695.5011611077683,
+    "EMA_RUL": 595.5011611077683
+  },
+  {
+    "cell_id": "MATR_b4c14",
+    "origin": 354,
+    "true_RUL": 254.0,
+    "saved_RUL": 264.22230469981855,
+    "EMA_absolute_EOL": 613.5145394793196,
+    "EMA_RUL": 259.51453947931964
+  },
+  {
+    "cell_id": "MATR_b4c14",
+    "origin": 607,
+    "true_RUL": 1.0,
+    "saved_RUL": 1.4973611875338917,
+    "EMA_absolute_EOL": 607.753417220292,
+    "EMA_RUL": 0.7534172202920217
+  },
+  {
+    "cell_id": "MATR_b4c19",
+    "origin": 100,
+    "true_RUL": 892.0,
+    "saved_RUL": 738.4225515656336,
+    "EMA_absolute_EOL": 838.4225515656336,
+    "EMA_RUL": 738.4225515656336
+  },
+  {
+    "cell_id": "MATR_b4c19",
+    "origin": 546,
+    "true_RUL": 446.0,
+    "saved_RUL": 367.6249719213241,
+    "EMA_absolute_EOL": 915.6298149918945,
+    "EMA_RUL": 369.6298149918945
+  },
+  {
+    "cell_id": "MATR_b4c19",
+    "origin": 991,
+    "true_RUL": 1.0,
+    "saved_RUL": 2.0352422579019382,
+    "EMA_absolute_EOL": 991.4337542221838,
+    "EMA_RUL": 0.43375422218377935
+  },
+  {
+    "cell_id": "MATR_b4c26",
+    "origin": 100,
+    "true_RUL": 377.0,
+    "saved_RUL": 362.2911397238069,
+    "EMA_absolute_EOL": 462.2911397238069,
+    "EMA_RUL": 362.2911397238069
+  },
+  {
+    "cell_id": "MATR_b4c26",
+    "origin": 288,
+    "true_RUL": 189.0,
+    "saved_RUL": 214.30610509050848,
+    "EMA_absolute_EOL": 487.803050751411,
+    "EMA_RUL": 199.80305075141098
+  },
+  {
+    "cell_id": "MATR_b4c26",
+    "origin": 476,
+    "true_RUL": 1.0,
+    "saved_RUL": 1.3745074374107782,
+    "EMA_absolute_EOL": 477.40911418140297,
+    "EMA_RUL": 1.4091141814029697
+  },
+  {
+    "cell_id": "MATR_b4c29",
+    "origin": 100,
+    "true_RUL": 788.0,
+    "saved_RUL": 482.5152540493917,
+    "EMA_absolute_EOL": 582.5152540493916,
+    "EMA_RUL": 482.5152540493916
+  },
+  {
+    "cell_id": "MATR_b4c29",
+    "origin": 494,
+    "true_RUL": 394.0,
+    "saved_RUL": 343.2399326491215,
+    "EMA_absolute_EOL": 908.9863028461407,
+    "EMA_RUL": 414.9863028461407
+  },
+  {
+    "cell_id": "MATR_b4c29",
+    "origin": 887,
+    "true_RUL": 1.0,
+    "saved_RUL": 1.9037590407960003,
+    "EMA_absolute_EOL": 887.0306380124324,
+    "EMA_RUL": 0.03063801243240505
+  },
+  {
+    "cell_id": "MATR_b4c7",
+    "origin": 100,
+    "true_RUL": 430.0,
+    "saved_RUL": 507.40185004499665,
+    "EMA_absolute_EOL": 607.4018500449966,
+    "EMA_RUL": 507.40185004499665
+  },
+  {
+    "cell_id": "MATR_b4c7",
+    "origin": 315,
+    "true_RUL": 215.0,
+    "saved_RUL": 247.30676003636972,
+    "EMA_absolute_EOL": 571.6484186173908,
+    "EMA_RUL": 256.6484186173908
+  },
+  {
+    "cell_id": "MATR_b4c7",
+    "origin": 529,
+    "true_RUL": 1.0,
+    "saved_RUL": 1.396904530281256,
+    "EMA_absolute_EOL": 532.9131694064195,
+    "EMA_RUL": 3.913169406419456
+  }
+]

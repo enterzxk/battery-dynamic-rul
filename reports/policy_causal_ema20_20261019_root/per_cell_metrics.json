@@ -1,0 +1,182 @@
+[
+  {
+    "cell_id": "MATR_b2c1",
+    "arm": "saved_policy_dynamic",
+    "origins": 48,
+    "MAE": 8.787635210391317,
+    "bias": 8.787635210391317,
+    "severe_over100": 0.0,
+    "expired_count": 0
+  },
+  {
+    "cell_id": "MATR_b2c1",
+    "arm": "causal_EOL_EMA20",
+    "origins": 48,
+    "MAE": 11.809929527777593,
+    "bias": 11.809929527777593,
+    "severe_over100": 0.0,
+    "expired_count": 0
+  },
+  {
+    "cell_id": "MATR_b2c21",
+    "arm": "saved_policy_dynamic",
+    "origins": 389,
+    "MAE": 12.778891242119288,
+    "bias": -10.563428020657234,
+    "severe_over100": 0.0,
+    "expired_count": 0
+  },
+  {
+    "cell_id": "MATR_b2c21",
+    "arm": "causal_EOL_EMA20",
+    "origins": 389,
+    "MAE": 12.824674540894492,
+    "bias": -11.647063213823596,
+    "severe_over100": 0.0,
+    "expired_count": 0
+  },
+  {
+    "cell_id": "MATR_b2c24",
+    "arm": "saved_policy_dynamic",
+    "origins": 395,
+    "MAE": 13.419610119587382,
+    "bias": 10.397450422915455,
+    "severe_over100": 0.0,
+    "expired_count": 0
+  },
+  {
+    "cell_id": "MATR_b2c24",
+    "arm": "causal_EOL_EMA20",
+    "origins": 395,
+    "MAE": 11.408305198299445,
+    "bias": 10.789770006905115,
+    "severe_over100": 0.0,
+    "expired_count": 0
+  },
+  {
+    "cell_id": "MATR_b2c41",
+    "arm": "saved_policy_dynamic",
+    "origins": 329,
+    "MAE": 13.157279791258796,
+    "bias": 4.282933476551268,
+    "severe_over100": 0.0,
+    "expired_count": 0
+  },
+  {
+    "cell_id": "MATR_b2c41",
+    "arm": "causal_EOL_EMA20",
+    "origins": 329,
+    "MAE": 11.302356054370714,
+    "bias": 4.352540200511536,
+    "severe_over100": 0.0,
+    "expired_count": 0
+  },
+  {
+    "cell_id": "MATR_b2c6",
+    "arm": "saved_policy_dynamic",
+    "origins": 411,
+    "MAE": 59.18844802250685,
+    "bias": -59.178657697547095,
+    "severe_over100": 0.0,
+    "expired_count": 0
+  },
+  {
+    "cell_id": "MATR_b2c6",
+    "arm": "causal_EOL_EMA20",
+    "origins": 411,
+    "MAE": 62.17375153475543,
+    "bias": -62.17375153475543,
+    "severe_over100": 0.0,
+    "expired_count": 3
+  },
+  {
+    "cell_id": "MATR_b4c14",
+    "arm": "saved_policy_dynamic",
+    "origins": 508,
+    "MAE": 51.40949727354891,
+    "bias": 50.35557537218969,
+    "severe_over100": 0.2263779527559055,
+    "expired_count": 0
+  },
+  {
+    "cell_id": "MATR_b4c14",
+    "arm": "causal_EOL_EMA20",
+    "origins": 508,
+    "MAE": 52.554950160963564,
+    "bias": 51.99652727559725,
+    "severe_over100": 0.23622047244094488,
+    "expired_count": 0
+  },
+  {
+    "cell_id": "MATR_b4c19",
+    "arm": "saved_policy_dynamic",
+    "origins": 892,
+    "MAE": 74.02739399254645,
+    "bias": -60.94010595063588,
+    "severe_over100": 0.01233183856502242,
+    "expired_count": 0
+  },
+  {
+    "cell_id": "MATR_b4c19",
+    "arm": "causal_EOL_EMA20",
+    "origins": 892,
+    "MAE": 68.00661956141846,
+    "bias": -62.569709566372715,
+    "severe_over100": 0.0,
+    "expired_count": 0
+  },
+  {
+    "cell_id": "MATR_b4c26",
+    "arm": "saved_policy_dynamic",
+    "origins": 377,
+    "MAE": 16.141521171105772,
+    "bias": 12.1828178197281,
+    "severe_over100": 0.0,
+    "expired_count": 0
+  },
+  {
+    "cell_id": "MATR_b4c26",
+    "arm": "causal_EOL_EMA20",
+    "origins": 377,
+    "MAE": 14.12260373963211,
+    "bias": 11.801860903687889,
+    "severe_over100": 0.0,
+    "expired_count": 0
+  },
+  {
+    "cell_id": "MATR_b4c29",
+    "arm": "saved_policy_dynamic",
+    "origins": 788,
+    "MAE": 63.79213712742051,
+    "bias": -41.868901257334045,
+    "severe_over100": 0.0266497461928934,
+    "expired_count": 0
+  },
+  {
+    "cell_id": "MATR_b4c29",
+    "arm": "causal_EOL_EMA20",
+    "origins": 788,
+    "MAE": 60.88556226267089,
+    "bias": -45.540089261964624,
+    "severe_over100": 0.0038071065989847717,
+    "expired_count": 0
+  },
+  {
+    "cell_id": "MATR_b4c7",
+    "arm": "saved_policy_dynamic",
+    "origins": 430,
+    "MAE": 51.30572947631355,
+    "bias": 51.30572947631355,
+    "severe_over100": 0.16046511627906976,
+    "expired_count": 0
+  },
+  {
+    "cell_id": "MATR_b4c7",
+    "arm": "causal_EOL_EMA20",
+    "origins": 430,
+    "MAE": 52.95140962995656,
+    "bias": 52.95140962995656,
+    "severe_over100": 0.14186046511627906,
+    "expired_count": 0
+  }
+]
