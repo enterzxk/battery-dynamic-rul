@@ -134,6 +134,13 @@ def main():
     for name in ['protocol.json','diagnose.py','metrics.json','per_cell_metrics.json','comparison.json','numeric_validation.json','arithmetic_examples.json','completion.json','independent_recompute.py','independent_metrics.json','root_decision.json','RESULTS_ZH.md']:
         chosen.add('reports/early_survival_conditioning_20261018_root/' + name)
 
+    for name in ['protocol.json','diagnose.py','results.json','completion.json','independent_recompute.py','independent_metrics.json','root_decision.json','RESULTS_ZH.md']:
+        chosen.add('reports/frozen_probability_audit_20261018_root/' + name)
+
+    # Lossless archive replaces duplicated example JSONs in current snapshot; originals retained.
+    chosen.difference_update(['reports/fixedearly_dynamic_20261018_root/arithmetic_examples.json', 'reports/early_survival_conditioning_20261018_root/arithmetic_examples.json'])
+    chosen.update(['reports/saved_examples_lossless_20261018_root/examples_lossless.json','reports/saved_examples_lossless_20261018_root/decode.py','reports/frozen_probability_audit_20261018_root/export_cap_failure.json'])
+
     contents, files, skipped = {}, [], []
     mapping = {'README.md': 'docs/GITHUB_README_ZH.md', 'agent.md': 'AGENTS.md'}
     mapping.update({rel: rel for rel in sorted(chosen)})

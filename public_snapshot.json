@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-18T14:30:28.511836+00:00",
-  "content_sha256": "41235ef3ca9938a2101e7f889edc906db338ae17041f302b16db107135b13adb",
-  "file_count": 621,
+  "snapshot_utc": "2026-10-18T14:45:57.761467+00:00",
+  "content_sha256": "efbded2388d04ae539f38ece2a3a843201003fcedd6cda8a3c6bf21a97b4024b",
+  "file_count": 630,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,8 +14,8 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 74871,
-      "sha256": "f38300d3179a5923c97aa136029b0b1252082bfbc78b3f9e9fe023a3d3d9994c"
+      "bytes": 76054,
+      "sha256": "a8b114fc0e959af21aa37a7b44b58f24aedf899e2d7935c2a57e8cd37ef52821"
     },
     {
       "path": "README.md",
@@ -38,8 +38,8 @@
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 17942,
-      "sha256": "51db222aa6d26d37154c84702ebbee6f8f9714ba05abdbf444475c5b1311f801"
+      "bytes": 18693,
+      "sha256": "d01bc80c57c92739b70dfefbc98f7e7504edbea30e37e47a4e8fe02c7b39ad06"
     },
     {
       "path": "automation/bin/matr_raw_batch2_asset_worker_v1.py",
@@ -164,8 +164,8 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 62132,
-      "sha256": "333ab3dbf2bf78723668f2f221c64cb9a61781fa4a55887a8ce71c810e1366e9"
+      "bytes": 63315,
+      "sha256": "b0ebe48d3990aac4d051770deb375216edd578ca125c1882601b2d59e37bddc5"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
@@ -2478,12 +2478,6 @@
       "sha256": "45dae19edbfec0aca746a9363a21fb4fbaf7e7fa7229c58b975117d662eb0cd9"
     },
     {
-      "path": "reports/early_survival_conditioning_20261018_root/arithmetic_examples.json",
-      "source_path": "reports/early_survival_conditioning_20261018_root/arithmetic_examples.json",
-      "bytes": 10038,
-      "sha256": "ff48f0a3970368cbf55e97898ac836468aa7c341ac1bef08342deb963bebb6f6"
-    },
-    {
       "path": "reports/early_survival_conditioning_20261018_root/comparison.json",
       "source_path": "reports/early_survival_conditioning_20261018_root/comparison.json",
       "bytes": 592,
@@ -2550,12 +2544,6 @@
       "sha256": "98bc4138279e761d9118aa2bd1b8e0e9d261431e756d735b8401f02898d00a95"
     },
     {
-      "path": "reports/fixedearly_dynamic_20261018_root/arithmetic_examples.json",
-      "source_path": "reports/fixedearly_dynamic_20261018_root/arithmetic_examples.json",
-      "bytes": 6035,
-      "sha256": "65e01caa91897c3e37006f2e48e60e269979391c70c16e4fb38ea9f2f90cbebd"
-    },
-    {
       "path": "reports/fixedearly_dynamic_20261018_root/comparison.json",
       "source_path": "reports/fixedearly_dynamic_20261018_root/comparison.json",
       "bytes": 292,
@@ -2614,6 +2602,60 @@
       "source_path": "reports/fixedearly_dynamic_20261018_root/transition_audit.json",
       "bytes": 3915,
       "sha256": "bc5d74221d5ce696509e0297917c7bc9d0db6d028eaf180d02aeb85520503ad8"
+    },
+    {
+      "path": "reports/frozen_probability_audit_20261018_root/RESULTS_ZH.md",
+      "source_path": "reports/frozen_probability_audit_20261018_root/RESULTS_ZH.md",
+      "bytes": 1979,
+      "sha256": "c98981aa8978dcceaf9753bda3c1cb16bb2363a879493cbf7953b1ea0f12cc84"
+    },
+    {
+      "path": "reports/frozen_probability_audit_20261018_root/completion.json",
+      "source_path": "reports/frozen_probability_audit_20261018_root/completion.json",
+      "bytes": 661,
+      "sha256": "35d15efa8573c38a2d618d5fe0b8678eb743ff9b2d629ef7afd5dbc7f92907ed"
+    },
+    {
+      "path": "reports/frozen_probability_audit_20261018_root/diagnose.py",
+      "source_path": "reports/frozen_probability_audit_20261018_root/diagnose.py",
+      "bytes": 3962,
+      "sha256": "efc7a9000fbcf2bfd6dccfb6cb75a1341df95f6559921269412dc84b5819fc25"
+    },
+    {
+      "path": "reports/frozen_probability_audit_20261018_root/export_cap_failure.json",
+      "source_path": "reports/frozen_probability_audit_20261018_root/export_cap_failure.json",
+      "bytes": 378,
+      "sha256": "6c72547411864873d700dd463f8519519c8cf942d0d690ace6adb915f5179259"
+    },
+    {
+      "path": "reports/frozen_probability_audit_20261018_root/independent_metrics.json",
+      "source_path": "reports/frozen_probability_audit_20261018_root/independent_metrics.json",
+      "bytes": 526,
+      "sha256": "795a213efe370c38d9dcf425292191947366d134cabdf5e98b636f2a0ebf3d4f"
+    },
+    {
+      "path": "reports/frozen_probability_audit_20261018_root/independent_recompute.py",
+      "source_path": "reports/frozen_probability_audit_20261018_root/independent_recompute.py",
+      "bytes": 1931,
+      "sha256": "a2ce5838768b8b841a39bb888d3d3b2316c13579bb60b27ff0dfe0e3bae27acc"
+    },
+    {
+      "path": "reports/frozen_probability_audit_20261018_root/protocol.json",
+      "source_path": "reports/frozen_probability_audit_20261018_root/protocol.json",
+      "bytes": 1451,
+      "sha256": "c1d453c2a50e42f9c8308db4db41a6e9f6e0f50e8af6cb0c1a734b3bf9da8810"
+    },
+    {
+      "path": "reports/frozen_probability_audit_20261018_root/results.json",
+      "source_path": "reports/frozen_probability_audit_20261018_root/results.json",
+      "bytes": 10548,
+      "sha256": "0915409542f1a0cd239b5208d677e029093770abeae64359024612ac90d361c0"
+    },
+    {
+      "path": "reports/frozen_probability_audit_20261018_root/root_decision.json",
+      "source_path": "reports/frozen_probability_audit_20261018_root/root_decision.json",
+      "bytes": 874,
+      "sha256": "3733fc9ac0c8861ff65f801a2eb9707547fbe83cfe89701a0718ad59e26d7bc7"
     },
     {
       "path": "reports/hust_saved_source_identity_20261018_root/PUBLIC_INVENTORY_ACCESS_ZH.md",
@@ -3568,6 +3610,18 @@
       "source_path": "reports/persistent_capacity_feedback_20261018_root/root_decision.json",
       "bytes": 201,
       "sha256": "368f4d8a3b4b2cadb7132286956203064f1db79d7b6d17674d36ce0d01710b9f"
+    },
+    {
+      "path": "reports/saved_examples_lossless_20261018_root/decode.py",
+      "source_path": "reports/saved_examples_lossless_20261018_root/decode.py",
+      "bytes": 603,
+      "sha256": "e47f47d002e1293b73d1bfd734cfe9e4e213054eea043da453ffbf35fe08af42"
+    },
+    {
+      "path": "reports/saved_examples_lossless_20261018_root/examples_lossless.json",
+      "source_path": "reports/saved_examples_lossless_20261018_root/examples_lossless.json",
+      "bytes": 3934,
+      "sha256": "5f08456bda4a22c516a5cf69e09ad9d14da36380a19d4e059cdc1015ba83c32d"
     },
     {
       "path": "results/development_calb_cpmlp_recipe_adapt_seed2021_v1.csv",

@@ -426,3 +426,11 @@
 - **最小验证**：全部4567条件中位数正/有限，条件生存中位数恒等式最大log误差7.22e-15；独立erfc二分重算全部中位数与指标，最大差1.62e-14。0fit/新推理/新标量估计/checkpoint/dev/test，训练预算不变。
 - **阻塞/风险**：存活条件严重over100增加1.8110个百分点，MAE差95%区间[-.341363,11.577509]跨零；动态相对存活条件差区间[25.800289,83.668108]。早期lognormal是参数假设，尚无校准证明；动态age与健康并变，不能仅归因健康；cal暴露/物理身份/源hash限制保留。
 - **下一步**：0fit同10cal4567固定earlyconditioned与dynamic两个分布，用sigmaA计算80%区间得分/覆盖/宽度与Brier100/300，判断点精度收益是否伴随概率可靠性；不使用sigmaB、不估参/调阈值、不读dev/test。
+
+
+## 2026-10-18：固定sigma概率相对改善但可靠性NO_GO
+- **已完成**：0fit同10cal4567，动态相对早期存活条件区间得分515.469169→264.570734，Brier100 .126974→.023732、Brier300 .168563→.090241；名义80%覆盖仅52.2912%→62.0234%，6/10覆盖误差改善，联合gateFAIL。
+- **证据**：reports/frozen_probability_audit_20261018_root/{protocol,diagnose,results,completion,independent_recompute,independent_metrics,root_decision,RESULTS_ZH}；仅旧calCSV与fit-only sigmaA，未用sigmaB。
+- **最小验证**：全部4567独立erfc二分复算区间/Brier，最大差5.68e-14；概率[0,1]且区间有序。0fit/新模型推理/尺度估计/checkpoint/dev/test，旧预算不变。
+- **阻塞/风险**：动态lower-miss24.5237%、upper-miss13.4528%，不能把相对改善称概率已可靠，不能在cal调sigma救覆盖；cal暴露/event-only/物理serial限制保留。
+- **下一步**：fresh有界条件分位数基线，同42fit/10cal固定logRUL q.1/q.9两CPUfit、已有中位数不变；先冻结protocol、一次独立窄审及主控exactGO。禁止排序/clipping掩盖crossing、参数/seed救援或dev/test，尚未开始fit。
