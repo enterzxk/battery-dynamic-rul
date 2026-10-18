@@ -1,0 +1,29 @@
+{
+  "status": "FAILED_STOP",
+  "error": "Python int too large to convert to C int",
+  "type": "OverflowError",
+  "bytes_read": 3502419,
+  "ranges": [
+    {
+      "offset": 0,
+      "bytes": 1048576,
+      "sha256": "c564c2d49410fc42be40252fc872c35efe3f06e82bbb3d281a54a07f1f768c79"
+    },
+    {
+      "offset": 2006974464,
+      "bytes": 356691,
+      "sha256": "8d3b95410ebbb02379fdb6bc75febc89556cbf442293314266f17148ff8c0382"
+    },
+    {
+      "offset": 2004877312,
+      "bytes": 1048576,
+      "sha256": "d4cfe860bc869a807ab04fc4379ab2cfc09d5305d7bfc6a43871d3a37beb3acf"
+    },
+    {
+      "offset": 2005925888,
+      "bytes": 1048576,
+      "sha256": "5e8dd19ebd83630772fb69648ce4c1fcf95a95cf98826ed5d1f51ec53140572b"
+    }
+  ],
+  "elapsed_seconds": 7.424065301194787
+}

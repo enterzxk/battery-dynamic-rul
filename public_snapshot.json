@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-18T05:57:50.769432+00:00",
-  "content_sha256": "a6da58ef395c86eee02fb681a4034af7bb8756f194227e21a119cbdc3538d181",
-  "file_count": 460,
+  "snapshot_utc": "2026-10-18T08:56:32.266530+00:00",
+  "content_sha256": "200e020c610c835d065566ebc91122cdf2191fbf995d0028e6ac39a035ace6a7",
+  "file_count": 469,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,8 +14,8 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 52853,
-      "sha256": "a80618a918b3dc4d4dd900b469bbeeb8b19e8a872317618443539f210a9498ee"
+      "bytes": 54644,
+      "sha256": "1a0e5a06366a6a82c09f25d1bffcb6953d94e8e94ddf2122d6cdd66d71a56026"
     },
     {
       "path": "README.md",
@@ -32,8 +32,20 @@
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 11675,
-      "sha256": "ac8d155272fb5471f362a0832df7b2df7cd543579d1446189a75c8b8a81699c7"
+      "bytes": 12132,
+      "sha256": "b23c1b24df359f5e303839d7e64a49690c151352975b1c0f1b51999eeb8e779d"
+    },
+    {
+      "path": "automation/bin/matr_selected_range_worker_v1.py",
+      "source_path": "automation/bin/matr_selected_range_worker_v1.py",
+      "bytes": 4247,
+      "sha256": "c04b9191a628be0aa6141ced982812f5cd4395681f338047fc01e7aedcffb1c2"
+    },
+    {
+      "path": "automation/bin/matr_selected_range_worker_v2.py",
+      "source_path": "automation/bin/matr_selected_range_worker_v2.py",
+      "bytes": 4534,
+      "sha256": "e29ad8f455396db7184f8928c72cc52297447899c4d14e3bb42d76763d88c67e"
     },
     {
       "path": "automation/github_export/build_dynamic_A_eligible_20261017.py",
@@ -128,8 +140,8 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 40114,
-      "sha256": "b678439c98f2b75f31dff726a95ced0872f34f3bcc16cc64e229658b67107a4c"
+      "bytes": 41905,
+      "sha256": "009946b7a568fc3cd10612e98d9d33f8792ef9c774f734dad506c11c24cd378c"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
@@ -1980,6 +1992,30 @@
       "sha256": "38576d3cdf1cedf11531dbd6e34c0c8ebeb367e20824235188f4c66b486c692c"
     },
     {
+      "path": "reports/matr_raw_range_20261018_root/RANGE_BREAKTHROUGH_ZH.md",
+      "source_path": "reports/matr_raw_range_20261018_root/RANGE_BREAKTHROUGH_ZH.md",
+      "bytes": 1789,
+      "sha256": "8827c5e848d9e129d814db2fdab5ca713b0ded02cf68fbc33331c2c6302c42f3"
+    },
+    {
+      "path": "reports/matr_raw_range_20261018_root/completion.json",
+      "source_path": "reports/matr_raw_range_20261018_root/completion.json",
+      "bytes": 2011,
+      "sha256": "8fba6b715bc1ac50e49635008a8aed9e2724b0a1b6bd33163718fa848bc76fe1"
+    },
+    {
+      "path": "reports/matr_raw_range_20261018_root/failure.json",
+      "source_path": "reports/matr_raw_range_20261018_root/failure.json",
+      "bytes": 776,
+      "sha256": "c72945537a84ff225d4915bf3c949c13d606951bfe50b5504c8a40c2564047c8"
+    },
+    {
+      "path": "reports/matr_raw_range_20261018_root/range_budget.json",
+      "source_path": "reports/matr_raw_range_20261018_root/range_budget.json",
+      "bytes": 592,
+      "sha256": "bbce7e9ef5e5193ef23d16bb2da6d9c0c62bcd78ef86e30c00b614a1a098d40c"
+    },
+    {
       "path": "reports/matr_v11_release_provenance_20261018_root/PROVENANCE_CHECK_ZH.md",
       "source_path": "reports/matr_v11_release_provenance_20261018_root/PROVENANCE_CHECK_ZH.md",
       "bytes": 2668,
@@ -2050,6 +2086,24 @@
       "source_path": "reports/nasa_remaining_source_inventory_20261018_root/prospective_split.json",
       "bytes": 1038,
       "sha256": "1d6ae025583d86655e97003ffd31d54d1990bddea98b8b9305f9e2e050521617"
+    },
+    {
+      "path": "reports/nasa_remaining_source_inventory_20261018_root/two_raw_read.py",
+      "source_path": "reports/nasa_remaining_source_inventory_20261018_root/two_raw_read.py",
+      "bytes": 3744,
+      "sha256": "7334618b840bfc0eade71441f03f0b2b12a14d1f768909fcb44306dcaf811bb0"
+    },
+    {
+      "path": "reports/nasa_remaining_source_inventory_20261018_root/two_raw_summary.json",
+      "source_path": "reports/nasa_remaining_source_inventory_20261018_root/two_raw_summary.json",
+      "bytes": 1420,
+      "sha256": "5eac9fd38690d2aa3b48654a0b04420f8e905dd1d43db7835e21be169962b256"
+    },
+    {
+      "path": "reports/nasa_remaining_source_inventory_20261018_root/two_reads_failure.json",
+      "source_path": "reports/nasa_remaining_source_inventory_20261018_root/two_reads_failure.json",
+      "bytes": 366,
+      "sha256": "7cc7e01a07601b75001b51cd8fbd588f00b4df72fa50a99ea10dbe3ad6724e8d"
     },
     {
       "path": "reports/online_rate_harm_diagnosis_20261018_root/DIAGNOSIS_ZH.md",

@@ -1,0 +1,21 @@
+{
+  "source_url": "https://data.matr.io/assetstore/f7/eb/f7eb42ebc0584cba855a98d127fc6842",
+  "source_bytes": 2007331155,
+  "source_etag": "e350d061ae571ba32cf16b7962b40a71-120",
+  "max_bytes": 33554432,
+  "max_range_requests": 32,
+  "max_seconds": 180,
+  "cells": [
+    "MATR_b2c0",
+    "MATR_b2c22"
+  ],
+  "fields": [
+    "summary.cycle",
+    "summary.QDischarge",
+    "barcode",
+    "policy_readable"
+  ],
+  "new_fits": 0,
+  "test_cell_reads": 0,
+  "old_full_download_budget": "Consumed/stopped immutable; this is a distinct selected-field range-read protocol, not a full-download retry"
+}

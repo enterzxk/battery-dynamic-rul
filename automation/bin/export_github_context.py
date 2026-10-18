@@ -78,6 +78,12 @@ def main():
     for name in ['SOURCE_INVENTORY_ZH.md','inventory_summary.json','prospective_split.json','budget.json']:
         chosen.add('reports/nasa_remaining_source_inventory_20261018_root/' + name)
 
+    for name in ['RANGE_BREAKTHROUGH_ZH.md','range_budget.json','completion.json','failure.json']:
+        chosen.add('reports/matr_raw_range_20261018_root/' + name)
+    for name in ['two_reads_failure.json','two_raw_summary.json','two_raw_read.py']:
+        chosen.add('reports/nasa_remaining_source_inventory_20261018_root/' + name)
+    chosen.update(['automation/bin/matr_selected_range_worker_v1.py','automation/bin/matr_selected_range_worker_v2.py'])
+
     contents, files, skipped = {}, [], []
     mapping = {'README.md': 'docs/GITHUB_README_ZH.md', 'agent.md': 'AGENTS.md'}
     mapping.update({rel: rel for rel in sorted(chosen)})

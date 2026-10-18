@@ -1,0 +1,10 @@
+{
+  "error": "IndexError on source Capacity empty array; no result emitted",
+  "read_cells_before_failure": [
+    "B0036"
+  ],
+  "read_bytes": 11404549,
+  "repair": "Treat absent/empty optional author Capacity as unavailable; compute declared I/V/time endpoint independently; no label fabrication",
+  "cumulative_bytes_after_two_cell_repair": 24973571,
+  "fits": 0
+}

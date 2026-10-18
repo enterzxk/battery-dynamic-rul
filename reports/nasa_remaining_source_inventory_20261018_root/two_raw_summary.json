@@ -1,0 +1,51 @@
+{
+  "status": "COMPLETE_TWO_FROZEN_RAW_READS_AFTER_EMPTY_OPTIONAL_FIELD_REPAIR",
+  "cells": [
+    {
+      "cell_id": "B0036",
+      "source_SHA256": "40511cccf0262d61b8345fdfe6c4e0a67ccc42e7f5e869ec32c7f33619e7dc15",
+      "source_bytes": 11404549,
+      "discharges": 197,
+      "valid_common_cutoff": 197,
+      "empty_author_capacity": 0,
+      "invalid_counts": {},
+      "ambient_levels": [
+        24.0
+      ],
+      "active_current_median_range_A": [
+        -1.9990242012132085,
+        -1.9951631052559036
+      ],
+      "first_valid_capacity_Ah": 1.001157399302151,
+      "event80": 1,
+      "available_origins_ge20": 0
+    },
+    {
+      "cell_id": "B0050",
+      "source_SHA256": "4dcb2475a8e689d54ac231832b40be0bf081805f28f69524e1c46f4c1d153d4e",
+      "source_bytes": 2164473,
+      "discharges": 25,
+      "valid_common_cutoff": 17,
+      "empty_author_capacity": 4,
+      "invalid_counts": {
+        "common_cutoff_not_observed": 4,
+        "no_load_or_begins_below_cutoff": 4
+      },
+      "ambient_levels": [
+        4.0
+      ],
+      "active_current_median_range_A": [
+        -2.0127416798060955,
+        -2.008444341193493
+      ],
+      "first_valid_capacity_Ah": 0.8614382063772741,
+      "event80": 1,
+      "available_origins_ge20": 0
+    }
+  ],
+  "cumulative_MAT_bytes_read": 24973571,
+  "elapsed_seconds": 0.3278186749666929,
+  "new_fits": 0,
+  "optimizer_steps": 0,
+  "test_MAT_reads": 0
+}
