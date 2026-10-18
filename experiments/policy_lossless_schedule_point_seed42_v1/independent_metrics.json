@@ -1,0 +1,25 @@
+{
+  "status": "PASS_ALL4567_INDEPENDENT_POINT_METRICS_AND_GATE",
+  "rows": 4567,
+  "cells": 10,
+  "maximum_metric_difference": 2.220446049250313e-15,
+  "pairedCI95": [
+    -0.75278909375051,
+    8.35066028038212
+  ],
+  "gate_pass": false,
+  "metrics": {
+    "saved_compressed_policy": {
+      "MAE": 36.40081434267988,
+      "bias": -3.5238951148084894,
+      "severe_over100": 0.04258246537928911
+    },
+    "lossless_schedule": {
+      "MAE": 33.0272391729779,
+      "bias": -2.5547090431509094,
+      "severe_over100": 0.031630918641367446
+    }
+  },
+  "new_fits": 0,
+  "new_model_inference": 0
+}

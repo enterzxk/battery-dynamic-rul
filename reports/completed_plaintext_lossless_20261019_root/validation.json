@@ -1,0 +1,19 @@
+{
+  "status": "PASS_ORIGINAL_BYTES_SHA256",
+  "files": [
+    {
+      "path": "reports/cpmlp_recipe_error_diagnosis_20261018_root/paired_prediction_deltas.csv",
+      "sha256": "728c1da702c64cb58818667b2d50fe43d258e1c09191780044c050d881e53fea",
+      "bytes": 238550
+    },
+    {
+      "path": "reports/literature_discussion_20261017_root_v1/PAPER_BY_PAPER_ZH.md",
+      "sha256": "326e6022e6fd4b16b802a85e11ebbdb0d7207b6ab2abcfafdb8e05a2852574d9",
+      "bytes": 159145
+    }
+  ],
+  "original_bytes": 397695,
+  "archive_bytes": 146658,
+  "server_originals_retained": true,
+  "GitHub_history_retained": true
+}

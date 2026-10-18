@@ -451,3 +451,7 @@ experiments/policy_local_oof_cdf_fixed5_v1/RESULTS_ZH.md。42fit-only4policy mea
 
 ## 当前发现：压缩policy表示有1对精确碰撞，未证明预测影响
 reports/policy_encoding_collision_20261019_root/RESULTS_ZH.md。0fit/0标签读取审计52行：34不同实际schedule映射33种effectiveC，唯一b2c0 fit(1C4%-6C)与b2c1 cal(2C10%-6C)都[3,6,6,6]，首20%SOC时间均精确1/15h；其余无不同schedule碰撞，fit-fit0对。1326pairs与52行有理数原积分、组直径通过，最大浮点差2.66e-15。当前source_semantics绑定encode_policy_v1，旧无后缀源码为保留v0。本次没改编码或训练；数学信息丢失不等于RUL原因/收益，CPU19不变。下一项仅固定HGB强简单对照：可逆canonical4电流+3SOC切点取代4effectiveC，与3state共10输入；同42fit10cal/seed42/logtarget，最多1新CPUfit/1calpredict，旧policy点36.400814为主参考，需最小可逆性检查+一次窄审+freshGO，当前未授权。禁止feature/seed/尺度搜索；校准反复开发等边界保留。
+
+
+## 最新真实1fit：可逆schedule点均值收益，联合门槛未通过
+experiments/policy_lossless_schedule_point_seed42_v1/RESULTS_ZH.md。同42fit/10cal、3state+可逆4电流3SOC切点10输入、固定HGBseed42/logtarget真实1fit+1calpredict：MAE36.400814→33.027239降9.2679%，over1004.2582%→3.1631%；6/10改善、paired95%差[-.752789,8.350660]，gateFAIL/NO_GO_FOR_LOSSLESS_POLICY_MODEL_OR_SEED_EXPANSION_SINGLEFIT_MEAN_GAIN_ONLY。b4c14/b4c29贡献99.8365%净MAE收益，碰撞cal b2c1反而变差；b4c7风险增加，不作碰撞因果解释。52精确schedule roundtrip和4567指标独立重算通过差2.22e-15，CSV无损SHA通过，0旧checkpointload/新scale/devtest。累计CPU20=RUL18+aux2，旧GO和本次GO已消费，globalnewfitsfalse。新编码/模型不是创新或独立确认。下一项0fit新lossless初始条件存活vs逐时动态+旧compressed参考，统一固定旧sigma，仅概率参考诊断，不追加校准/seed/模型。

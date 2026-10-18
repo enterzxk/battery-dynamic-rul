@@ -538,3 +538,11 @@
 - **最小验证**：1326pair、全组直径<=冻结1e-12C、52行Fraction原积分核对最大差2.66e-15、1手算例；fit-fit0/fit-cal1/cal-cal0碰撞。未读RUL标签、未改/重建预测编码，0fit/推理/raw电池/checkpoint/devtest，CPU19不变。
 - **阻塞/风险**：仅一对且训练内无碰撞，数学非单射不等于RUL重要性；旧pointPASS和概率/全局/局部CDF NO_GAIN保留。现有工况只能称压缩表示。encode_policy.py是旧v0，source_semantics哈希绑定v1当前，不改旧失败记录。
 - **下一步**：最小可逆canonical schedule(4电流+3SOC切点)替换旧4积分C，与age/SOH/rate组成10输入；同固定42fit/10cal/HGBseed42/logtarget，最多1新CPUfit+1cal推理，旧point36.400814为主参考。输入可逆性核验+一次窄审+freshGO后仅一次，当前无GO；不搜feature/seed/尺度。
+
+
+## 2026-10-19：可逆schedule点对照真实1fit，平均改善但扩展NO_GO
+- **已完成**：52行schedule4电流3SOC切点精确可逆，替代旧4积分C；同42fit/10cal/HGB/seed42/logtarget真实1CPUfit+1calpredict。TimeMAE36.400814→33.027239改善9.2679%，over1004.2582%→3.1631%；仅6/10改善、pairedCI[-.752789,8.350660]跨0，联合gateFAIL，不扩模型/seed。
+- **证据**：experiments/policy_lossless_schedule_point_seed42_v1/RESULTS_ZH、encoder/policy/最小可逆验证、protocol/cohort/runner/ROOT_GO/fit_ledger/completion、metrics/per_cell_metrics/comparison/per_cell_change/gain_concentration、independent_recompute/metrics、predictions_lossless/decoder/lossless_validation/root_decision；窄审reports/policy_lossless_schedule_point_review_20261019_luna/review。
+- **最小验证**：52行Fraction回原schedule、34unique保留34；4567独立点指标/CI/gate重算最大差2.22e-15、原CSV字节SHA归档通过。1fit/1calpredict/0旧checkpointload/新尺度/devtest；累计CPU20=RUL18+辅助2，神经4fit2580steps/旧MATR41另记。
+- **阻塞/风险**：b4c14/b4c29贡献99.8365%净收益，碰撞cal b2c1反而变差；b4c7 severeover10016.05%→23.72%。不把平均收益归因碰撞或当稳定确认，cal暴露/物理ID/eventonly限制保留。两份历史明文无损397695→146658bytes，原件/历史保留；已压缩JSON无空间收益尝试回执保留，无cap扩张。
+- **下一步**：0fit新lossless origin100条件存活vs动态，旧compressed动态作参考；固定旧sigmaA，不新估尺度/推理/checkpoint/devtest；一次冻结点/风险/概率参考诊断，新点扩展NO_GO不变。

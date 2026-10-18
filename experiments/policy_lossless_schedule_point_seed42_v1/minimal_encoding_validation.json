@@ -1,0 +1,33 @@
+{
+  "status": "PASS_ALL52_EXACT_SCHEDULE_ROUNDTRIP",
+  "rows": 52,
+  "fit": 42,
+  "cal": 10,
+  "canonical_unique_schedules": 34,
+  "feature_unique_vectors": 34,
+  "no_outcome_reads": true,
+  "no_model_construct_or_fit": true,
+  "encoder_sha256": "d454158c99603533ec8e573284057e27f111322c72ac8da999f3fd7388a46d72",
+  "source_sha256": "91a6bfa3be83b403289133bd13669d36ed7a1f212ec0ca4e692efecfb85be462",
+  "derived_policy_sha256": "d04355dd41069dfd30153fafae4af4d4231af44d14636b00944b53c8de348393",
+  "example": {
+    "MATR_b2c0": {
+      "current_C_1": 1.0,
+      "current_C_2": 6.0,
+      "current_C_3": 6.0,
+      "current_C_4": 6.0,
+      "switch_SOC_1": 0.04,
+      "switch_SOC_2": 0.8,
+      "switch_SOC_3": 0.8
+    },
+    "MATR_b2c1": {
+      "current_C_1": 2.0,
+      "current_C_2": 6.0,
+      "current_C_3": 6.0,
+      "current_C_4": 6.0,
+      "switch_SOC_1": 0.1,
+      "switch_SOC_2": 0.8,
+      "switch_SOC_3": 0.8
+    }
+  }
+}

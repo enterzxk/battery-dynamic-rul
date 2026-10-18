@@ -1,0 +1,17 @@
+{
+  "status": "GO_ONE_LOSSLESS_SCHEDULE_POINT_FIT_CAL_ONLY",
+  "max_new_fits": 1,
+  "max_calibration_predict_calls": 1,
+  "max_checkpoint_loads": 0,
+  "max_dev_test_reads": 0,
+  "max_new_scale_estimates": 0,
+  "max_seconds": 180,
+  "owner": "01a1508e-83e9-7232-a0e4-07606110b443",
+  "issued_utc": "2026-10-18T20:45:29.155862+00:00",
+  "review_path": "/home/yndx/zxk/rul/reports/policy_lossless_schedule_point_review_20261019_luna/review.json",
+  "review_sha256": "43495093b64b87bb4fa3a2f1bd848d177150cdb65b86c8a96d05b8c30ff3b39d",
+  "runner.py_sha256": "91e0fe3bf392c7d2c34fcef3196eca0b2474ca456a47d6067ad1a95ffdf99ab9",
+  "protocol.json_sha256": "459e0c2a0a8068a1752446fe1b4b075903048eccefebc113c4de3b80bed2c59a",
+  "cohort.json_sha256": "42535de5825f6857e3aa69a596306a909a9a1b3ac087c43631032f6d293ef289",
+  "scope": "Onefixed HGBloglosslesspolicy10input fit and calpredict; priorcompressedpolicy reference; no rescue/search"
+}

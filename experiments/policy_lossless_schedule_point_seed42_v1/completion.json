@@ -1,0 +1,23 @@
+{
+  "status": "COMPLETE",
+  "new_CPU_predictive_fits": 1,
+  "optimizer_steps": 0,
+  "development_reads": 0,
+  "test_reads": 0,
+  "fit_origins": 22281,
+  "calibration_origins": 4567,
+  "checkpoint_sha256": "3152d116e396940688aa11e7ba8a5fe11d61d306ce382bf522bd12634e6b2cb8",
+  "checkpoint_loads": 0,
+  "new_calibration_predict_calls": 1,
+  "new_scale_estimates": 0,
+  "prediction_sha256": "98a0ef87f4ab9ea2a9ff0588dbde2890f56768cae5be3585cba4510eeb55aa0c",
+  "source_prediction_sha256": {
+    "fit_predictions.csv": "7cd0d1c902dacacf8f519c02962eb0343c240d1be41555d96e94b4bbf17775e3",
+    "calibration_predictions.csv": "796844ff5c863a08ca7f1238c620afee39a3f22b84d68b615ec52135c48b7ea0"
+  },
+  "runner_sha256": "91e0fe3bf392c7d2c34fcef3196eca0b2474ca456a47d6067ad1a95ffdf99ab9",
+  "protocol_sha256": "459e0c2a0a8068a1752446fe1b4b075903048eccefebc113c4de3b80bed2c59a",
+  "GO_sha256": "2c0f72a674d4d5b1277ee235e2360b23a6e2cd1e11b4b99022ed647e2e317bcb",
+  "elapsed_seconds": 0.4236559234559536,
+  "within_budget": true
+}

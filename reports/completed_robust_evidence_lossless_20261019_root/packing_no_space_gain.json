@@ -1,0 +1,8 @@
+{
+  "status": "NO_SPACE_GAIN_ALREADY_COMPRESSED_SOURCE_STOP_THIS_PACKING",
+  "original_path": "experiments/online_survival_robust_rate_seed42_v1/published_predictions_columnar.json",
+  "original_bytes": 508521,
+  "archive_bytes": 512857,
+  "science_or_budget_changed": false,
+  "original_server_and_public_file_retained": true
+}

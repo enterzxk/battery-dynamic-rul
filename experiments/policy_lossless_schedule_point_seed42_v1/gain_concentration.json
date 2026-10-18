@@ -1,0 +1,35 @@
+{
+  "scope": "Posthoc contribution accounting, not causal attribution",
+  "total_sum_cell_MAE_gain": 33.735751697019836,
+  "largest_two_cell_MAE_gain_sum": 33.68059381167014,
+  "largest_two_net_gain_fraction": 0.9983650020356722,
+  "contributors": [
+    {
+      "cell_id": "MATR_b4c14",
+      "origins": 508,
+      "old_MAE": 51.40949727354891,
+      "lossless_MAE": 40.50993411966049,
+      "MAE_gain": 10.899563153888415,
+      "old_over100": 0.2263779527559055,
+      "lossless_over100": 0.051181102362204724
+    },
+    {
+      "cell_id": "MATR_b4c29",
+      "origins": 788,
+      "old_MAE": 63.79213712742051,
+      "lossless_MAE": 41.01110646963878,
+      "MAE_gain": 22.781030657781727,
+      "old_over100": 0.0266497461928934,
+      "lossless_over100": 0.027918781725888325
+    }
+  ],
+  "collision_cal_b2c1": {
+    "cell_id": "MATR_b2c1",
+    "origins": 48,
+    "old_MAE": 8.787635210391317,
+    "lossless_MAE": 10.699251467886503,
+    "MAE_gain": -1.9116162574951865,
+    "old_over100": 0.0,
+    "lossless_over100": 0.0
+  }
+}

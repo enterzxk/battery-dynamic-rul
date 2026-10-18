@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "review_stage": "PRE_GO_INDEPENDENT_NARROW_REVIEW",
+  "requested_model": "gpt-6-luna/high",
+  "scope": "Static critical review only. No runner/model/fit/inference/metrics/checkpoint operation.",
+  "bound_sha256": {
+    "runner.py": "91e0fe3bf392c7d2c34fcef3196eca0b2474ca456a47d6067ad1a95ffdf99ab9",
+    "protocol.json": "459e0c2a0a8068a1752446fe1b4b075903048eccefebc113c4de3b80bed2c59a",
+    "cohort.json": "42535de5825f6857e3aa69a596306a909a9a1b3ac087c43631032f6d293ef289",
+    "encode_schedule.py": "d454158c99603533ec8e573284057e27f111322c72ac8da999f3fd7388a46d72",
+    "policy_features.json": "d04355dd41069dfd30153fafae4af4d4231af44d14636b00944b53c8de348393",
+    "minimal_encoding_validation.json": "1a27a250930663e9735bc5cca3751ace65e50c64d39793e532294a684878558f"
+  },
+  "evidence": [
+    "Requested SHA values for runner, protocol, cohort, encoder, and policy match. Minimal validation receipt is hash-bound by protocol and reports PASS_ALL52_EXACT_SCHEDULE_ROUNDTRIP, with 52 rows, 42 fit, 10 calibration, 34 distinct schedules/vectors, and no outcome reads or model fit.",
+    "Encoder canonicalizes positive-length schedules, merges adjacent equal-current segments, encodes up to four currents and three SOC breakpoints padded with final current and 0.8, and uses no raw format, batch, cell ID, or outcome as a model feature. Exact Fraction parsing/roundtrip evidence is bound to encoder and source hashes.",
+    "Protocol model and fixed target/weighting match the requested comparison: 10 inputs (age, SOH, robust20, plus 7 canonical schedule values), log observed event_cycle-origin target, equal total weight per fit cell, HGB seed 42 with the specified fixed 150-iteration/7-leaf/depth-3/lr-.05/min_leaf-50/l2-1 settings.",
+    "Runner binds fit/calibration prediction sources and cohort/manifests; verifies role separation (42 fit, 10 calibration), event-cycle label equality, visible_through_cycle=origin<event, and only nonmissing causal rate20 plus same-origin features. Fit origins and calibration origins are 22281/4567; source SHA and CSV headers match the frozen protocol.",
+    "Baseline reads existing calibration context_RUL_raw_log and leaves its point prediction as the comparator. The only new model work is one equal-cell-weight fit and one calibration prediction call. Runtime guardrails are zero checkpoint loads, zero new scale estimates, no dev/test reads, no parameter or seed search, and a create-only one-shot failure stop. Primary gates are the frozen >=5% MAE reduction, >=7 cells improved, paired-cell CI lower>0, severe-over100 increment<=.01; no substitution with the 3-state baseline.",
+    "Protocol preserves scope limits: exposed calibration is repeated development only; event-only lab data; physical serial and complete-source identity unknown; one fit/one prediction does not establish independent confirmation or causal-RUL/innovation claims."
+  ],
+  "technical_blockers": [],
+  "preGO_condition": "This PASS precedes GO by design. Coordinator must sign the exact GO after this review. At execution, runner must verify GO status and SHA-bound PASS receipt, all source/input hashes, project owner/lock, budget, and every existing data/development/test gate. This review waives none of them; no experiment was run."
+}
