@@ -1,0 +1,21 @@
+{
+  "status": "PASS_ORIGINAL_CSV_METRIC_RECOMPUTATION_NO_MODEL",
+  "metrics": {
+    "direct_RUL_saved": {
+      "MAE": 58.11369800278736,
+      "bias": 11.676224212761715,
+      "severe_over100": 0.1416005147437414
+    },
+    "capacity_firstpassage": {
+      "MAE": 139.2066799622145,
+      "bias": 65.25969821587942,
+      "severe_over100": 0.07016624910886168
+    }
+  },
+  "maximum_delta": 1.4210854715202004e-14,
+  "noncross_or_invalid": 191,
+  "all_origins_retained": true,
+  "new_fits": 0,
+  "new_forwards": 0,
+  "warning": "Noncross lowerbound cap is diagnostic only, any noncross fails gate"
+}

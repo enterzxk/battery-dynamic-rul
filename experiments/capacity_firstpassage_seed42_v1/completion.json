@@ -1,0 +1,27 @@
+{
+  "status": "COMPLETE_CAL_ONLY_FIXED_FIRSTPASSAGE_ROLLOUT",
+  "new_fits": 0,
+  "checkpoint_loads": 1,
+  "calibration_cells": 10,
+  "origins": 4567,
+  "optimizer_steps": 0,
+  "development_or_test_reads": 0,
+  "batch_forward_calls": 100,
+  "row_forwards": 75031,
+  "generated_SOH_min_max": [
+    0.7630477019195308,
+    0.9787688181818182
+  ],
+  "generated_rate_mSOH_per_cycle_min_max": [
+    -2.6985280991735494,
+    1.0127432076534393
+  ],
+  "checkpoint_sha256": "5022a619e9cc86c725be57faabc8ab0a191e084d58c342f67ac303f6fb9ea006",
+  "runner_sha256": "dce6e03cad7ace4ca09837b564667eb54d22a84cce1125b4b80fbd764e8c7455",
+  "protocol_sha256": "85b44f9110d4ad94c4a4610326296266edae2e15c6e52c31e231ec96473aef38",
+  "GO_sha256": "42cba6175f1b787a9d39fd81a7b641fc4cbace47467213e0c3cbda35e7c15e19",
+  "prediction_sha256": "000bf2d8cac2e61c784ee981bd173f5378eb7e5bfa99889244c49cd5da2551f4",
+  "elapsed_seconds": 0.40588915906846523,
+  "uncertainty_distribution_implemented": false,
+  "source_support_note": "Age support marker only; full covariate/joint support unverified; generated future slopes use piecewise-linear model path."
+}

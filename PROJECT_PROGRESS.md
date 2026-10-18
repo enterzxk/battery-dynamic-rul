@@ -386,3 +386,11 @@
 - **最小验证**：原容量/RUL预测SHA、目标t=s+20单一配对、signal到t才可见、全部4367对齐、手算-2-(-3)=+1；累计[1,-1,3]→[1,0,1]以及10真实cell截断一致。无未来目标RUL进入反馈状态。
 - **阻塞/风险**：累计状态方向准确率49.32%、等cell全局balanced51.62%、cell内balanced39.56%，不优于简单斜率累计控制；只5/10平均状态方向一致。此前8/10全历史平均方向不能替代在线可实现状态。关闭即时和累计容量残差RUL修正，不反号/调窗口/seed救结果，容量MAE能力结果仍有效但不是主任务。
 - **下一步**：更换预测机制，不做残差修正：在fresh独立窄审/精确GO后，仅加载已存自训容量checkpoint一次，对10cal已有前缀作固定20cycle分段线性生成轨迹至0.8SOH首次通过；最多100step/2000cycle、180秒、0fit、0dev/test。与同10cal原直接RUL预测比较，完整报告未通过端点/外推/生成斜率假设；这是动态first-passage点预测工程诊断，非条件分布完成或创新证明。
+
+
+## 2026-10-18：真实first-passage rollout失败，已实际修复训练端点标签覆盖
+- **已完成**：freshGO复用自训checkpoint一次，0fit，对10cal4567前缀作固定20step/2000cycle首过预测；100batch/75031row forward，191noncross，原gateFAIL。随后只审42fit源数据，确认原容量训练遗漏EOL及之后840个合法target；新建端点标签DataV2，22281pair，未修改任何旧结果。
+- **证据**：experiments/capacity_firstpassage_seed42_v1/RESULTS_ZH.md、protocol/ROOT_GO/completion/calibration_predictions/independent_metrics/comparison/training_endpoint_coverage；审查reports/capacity_firstpassage_review_20261018_luna/review.json SHA634ecb543db58e6e770b3878bdd58f19daeea84b9c76820e9cb98f99789c64fe。新data/processed/capacity20_endpoint_targets_v2/fit_pairs.csv SHA47fb353d8788c74b515a10bbd250c6b93ed7393cfcc0df6faf44f7067cb1f679及manifest；构建automation/bin/build_capacity20_endpoint_targets_v2.py。
+- **最小验证**：独立CSV重算差1.42e-14、保留全部4567；不读取真实未来作为rollout输入。42训练cell源hash一致，21441旧preEOL target逐值差0，新增42target在EOL、798target在EOL之后，全部真实存在且有效；输入只到s，未来s+20容量仅监督label，target_phase绝不能进入特征。新标签构建0fit/forward，未读calraw/dev/test。
+- **阻塞/风险**：原directRUL TimeMAE58.113698；rollout139.206680只是包含191个2000cycle非端点下界cap的全样本诊断分数，不是有效完整point MAE；5/10改善，193前缀未来age越训练source范围。短期容量PASS未变，长程首过FAIL。EOL训练域缺口已证实，但补齐是否修复rollout尚未证明；生成线性轨迹/外推假设和既有cal暴露仍限制结论。
+- **下一步**：新端点target数据下仅1CPUfit的匹配v2（同42fit/10cal、相同HGB/seed/20step/100call），一次窄审+fresh exactGO后立即执行容量比较及同10cal首过比较；不得再训v1或调horizon/强制下降。新fit回答标签覆盖修复，不是已消费预算重跑；0dev/test，保留所有noncross与原始EOL。

@@ -1,0 +1,35 @@
+{
+  "decision": "NO_GO_ORIGINAL_CAPACITY_FIRSTPASSAGE_191_NONCROSS",
+  "new_fits": 0,
+  "checkpoint_loads": 1,
+  "batch_forward_calls": 100,
+  "row_forwards": 75031,
+  "GO_consumed": true,
+  "noncross_origins": 191,
+  "original_rollout_timeMAE_is_capped_diagnostic_only": true,
+  "next_bounded_action": {
+    "task": "Prepare and narrow-review one fresh endpoint-label capacity20 fit on realDataV2 then same fixedcal capacity and first-passage evaluation; immediately execute after exacthashGO, no new broad audit/smoke. Only trainingtarget coverage differs vsoldmodel; no v1checkpoint refit/reuseGO. No residual-correction model.",
+    "dataset": "data/processed/capacity20_endpoint_targets_v2/fit_pairs.csv",
+    "dataset_sha256": "47fb353d8788c74b515a10bbd250c6b93ed7393cfcc0df6faf44f7067cb1f679",
+    "input_columns": [
+      "age",
+      "SOH",
+      "rate20_mSOH_per_cycle"
+    ],
+    "forbidden_feature_columns": [
+      "target_cycle",
+      "target_phase_audit_only_not_feature"
+    ],
+    "fit_cells": 42,
+    "fit_pairs": 22281,
+    "calibration_cells": 10,
+    "same_cal_capacity_pairs": 4367,
+    "same_cal_RUL_origins": 4567,
+    "max_new_CPU_fits": 1,
+    "max_rollout_batch_forward_calls": 100,
+    "max_rollout_horizon": 2000,
+    "max_seconds": 180,
+    "development_or_test_access": false,
+    "status": "DATA_COMPLETE_MODEL_NOT_STARTED_REQUIRES_SCOPED_GO"
+  }
+}

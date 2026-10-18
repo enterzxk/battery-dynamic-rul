@@ -1,0 +1,309 @@
+{
+  "status": "COMPLETE42FIT_SOURCE_LABEL_DOMAIN_AUDIT",
+  "cells": 42,
+  "current_preEOL_target_pairs": 21441,
+  "available_target_at_event_pairs": 42,
+  "available_target_after_event_pairs": 798,
+  "cells_with_observed_post_event_rows": 42,
+  "per_cell": [
+    {
+      "cell_id": "MATR_b2c0",
+      "current_preEOL_target_pairs": 180,
+      "available_target_at_event_pairs": 1,
+      "available_target_after_event_pairs": 19,
+      "source_post_event_rows": 26
+    },
+    {
+      "cell_id": "MATR_b2c3",
+      "current_preEOL_target_pairs": 215,
+      "available_target_at_event_pairs": 1,
+      "available_target_after_event_pairs": 19,
+      "source_post_event_rows": 26
+    },
+    {
+      "cell_id": "MATR_b2c4",
+      "current_preEOL_target_pairs": 324,
+      "available_target_at_event_pairs": 1,
+      "available_target_after_event_pairs": 19,
+      "source_post_event_rows": 27
+    },
+    {
+      "cell_id": "MATR_b2c5",
+      "current_preEOL_target_pairs": 360,
+      "available_target_at_event_pairs": 1,
+      "available_target_after_event_pairs": 19,
+      "source_post_event_rows": 27
+    },
+    {
+      "cell_id": "MATR_b2c10",
+      "current_preEOL_target_pairs": 441,
+      "available_target_at_event_pairs": 1,
+      "available_target_after_event_pairs": 19,
+      "source_post_event_rows": 35
+    },
+    {
+      "cell_id": "MATR_b2c14",
+      "current_preEOL_target_pairs": 365,
+      "available_target_at_event_pairs": 1,
+      "available_target_after_event_pairs": 19,
+      "source_post_event_rows": 24
+    },
+    {
+      "cell_id": "MATR_b2c17",
+      "current_preEOL_target_pairs": 374,
+      "available_target_at_event_pairs": 1,
+      "available_target_after_event_pairs": 19,
+      "source_post_event_rows": 31
+    },
+    {
+      "cell_id": "MATR_b2c18",
+      "current_preEOL_target_pairs": 367,
+      "available_target_at_event_pairs": 1,
+      "available_target_after_event_pairs": 19,
+      "source_post_event_rows": 36
+    },
+    {
+      "cell_id": "MATR_b2c19",
+      "current_preEOL_target_pairs": 341,
+      "available_target_at_event_pairs": 1,
+      "available_target_after_event_pairs": 19,
+      "source_post_event_rows": 28
+    },
+    {
+      "cell_id": "MATR_b2c26",
+      "current_preEOL_target_pairs": 351,
+      "available_target_at_event_pairs": 1,
+      "available_target_after_event_pairs": 19,
+      "source_post_event_rows": 27
+    },
+    {
+      "cell_id": "MATR_b2c28",
+      "current_preEOL_target_pairs": 389,
+      "available_target_at_event_pairs": 1,
+      "available_target_after_event_pairs": 19,
+      "source_post_event_rows": 32
+    },
+    {
+      "cell_id": "MATR_b2c29",
+      "current_preEOL_target_pairs": 378,
+      "available_target_at_event_pairs": 1,
+      "available_target_after_event_pairs": 19,
+      "source_post_event_rows": 24
+    },
+    {
+      "cell_id": "MATR_b2c30",
+      "current_preEOL_target_pairs": 361,
+      "available_target_at_event_pairs": 1,
+      "available_target_after_event_pairs": 19,
+      "source_post_event_rows": 26
+    },
+    {
+      "cell_id": "MATR_b2c31",
+      "current_preEOL_target_pairs": 372,
+      "available_target_at_event_pairs": 1,
+      "available_target_after_event_pairs": 19,
+      "source_post_event_rows": 27
+    },
+    {
+      "cell_id": "MATR_b2c32",
+      "current_preEOL_target_pairs": 399,
+      "available_target_at_event_pairs": 1,
+      "available_target_after_event_pairs": 19,
+      "source_post_event_rows": 25
+    },
+    {
+      "cell_id": "MATR_b2c33",
+      "current_preEOL_target_pairs": 400,
+      "available_target_at_event_pairs": 1,
+      "available_target_after_event_pairs": 19,
+      "source_post_event_rows": 26
+    },
+    {
+      "cell_id": "MATR_b2c34",
+      "current_preEOL_target_pairs": 379,
+      "available_target_at_event_pairs": 1,
+      "available_target_after_event_pairs": 19,
+      "source_post_event_rows": 27
+    },
+    {
+      "cell_id": "MATR_b2c36",
+      "current_preEOL_target_pairs": 415,
+      "available_target_at_event_pairs": 1,
+      "available_target_after_event_pairs": 19,
+      "source_post_event_rows": 25
+    },
+    {
+      "cell_id": "MATR_b2c37",
+      "current_preEOL_target_pairs": 358,
+      "available_target_at_event_pairs": 1,
+      "available_target_after_event_pairs": 19,
+      "source_post_event_rows": 24
+    },
+    {
+      "cell_id": "MATR_b2c38",
+      "current_preEOL_target_pairs": 345,
+      "available_target_at_event_pairs": 1,
+      "available_target_after_event_pairs": 19,
+      "source_post_event_rows": 22
+    },
+    {
+      "cell_id": "MATR_b2c39",
+      "current_preEOL_target_pairs": 339,
+      "available_target_at_event_pairs": 1,
+      "available_target_after_event_pairs": 19,
+      "source_post_event_rows": 21
+    },
+    {
+      "cell_id": "MATR_b4c1",
+      "current_preEOL_target_pairs": 641,
+      "available_target_at_event_pairs": 1,
+      "available_target_after_event_pairs": 19,
+      "source_post_event_rows": 101
+    },
+    {
+      "cell_id": "MATR_b4c4",
+      "current_preEOL_target_pairs": 537,
+      "available_target_at_event_pairs": 1,
+      "available_target_after_event_pairs": 19,
+      "source_post_event_rows": 256
+    },
+    {
+      "cell_id": "MATR_b4c8",
+      "current_preEOL_target_pairs": 558,
+      "available_target_at_event_pairs": 1,
+      "available_target_after_event_pairs": 19,
+      "source_post_event_rows": 41
+    },
+    {
+      "cell_id": "MATR_b4c9",
+      "current_preEOL_target_pairs": 323,
+      "available_target_at_event_pairs": 1,
+      "available_target_after_event_pairs": 19,
+      "source_post_event_rows": 87
+    },
+    {
+      "cell_id": "MATR_b4c10",
+      "current_preEOL_target_pairs": 753,
+      "available_target_at_event_pairs": 1,
+      "available_target_after_event_pairs": 19,
+      "source_post_event_rows": 210
+    },
+    {
+      "cell_id": "MATR_b4c11",
+      "current_preEOL_target_pairs": 744,
+      "available_target_at_event_pairs": 1,
+      "available_target_after_event_pairs": 19,
+      "source_post_event_rows": 67
+    },
+    {
+      "cell_id": "MATR_b4c12",
+      "current_preEOL_target_pairs": 699,
+      "available_target_at_event_pairs": 1,
+      "available_target_after_event_pairs": 19,
+      "source_post_event_rows": 80
+    },
+    {
+      "cell_id": "MATR_b4c15",
+      "current_preEOL_target_pairs": 556,
+      "available_target_at_event_pairs": 1,
+      "available_target_after_event_pairs": 19,
+      "source_post_event_rows": 196
+    },
+    {
+      "cell_id": "MATR_b4c18",
+      "current_preEOL_target_pairs": 787,
+      "available_target_at_event_pairs": 1,
+      "available_target_after_event_pairs": 19,
+      "source_post_event_rows": 151
+    },
+    {
+      "cell_id": "MATR_b4c20",
+      "current_preEOL_target_pairs": 628,
+      "available_target_at_event_pairs": 1,
+      "available_target_after_event_pairs": 19,
+      "source_post_event_rows": 57
+    },
+    {
+      "cell_id": "MATR_b4c21",
+      "current_preEOL_target_pairs": 654,
+      "available_target_at_event_pairs": 1,
+      "available_target_after_event_pairs": 19,
+      "source_post_event_rows": 130
+    },
+    {
+      "cell_id": "MATR_b4c23",
+      "current_preEOL_target_pairs": 919,
+      "available_target_at_event_pairs": 1,
+      "available_target_after_event_pairs": 19,
+      "source_post_event_rows": 56
+    },
+    {
+      "cell_id": "MATR_b4c24",
+      "current_preEOL_target_pairs": 869,
+      "available_target_at_event_pairs": 1,
+      "available_target_after_event_pairs": 19,
+      "source_post_event_rows": 127
+    },
+    {
+      "cell_id": "MATR_b4c25",
+      "current_preEOL_target_pairs": 334,
+      "available_target_at_event_pairs": 1,
+      "available_target_after_event_pairs": 19,
+      "source_post_event_rows": 114
+    },
+    {
+      "cell_id": "MATR_b4c30",
+      "current_preEOL_target_pairs": 496,
+      "available_target_at_event_pairs": 1,
+      "available_target_after_event_pairs": 19,
+      "source_post_event_rows": 104
+    },
+    {
+      "cell_id": "MATR_b4c34",
+      "current_preEOL_target_pairs": 772,
+      "available_target_at_event_pairs": 1,
+      "available_target_after_event_pairs": 19,
+      "source_post_event_rows": 106
+    },
+    {
+      "cell_id": "MATR_b4c37",
+      "current_preEOL_target_pairs": 744,
+      "available_target_at_event_pairs": 1,
+      "available_target_after_event_pairs": 19,
+      "source_post_event_rows": 142
+    },
+    {
+      "cell_id": "MATR_b4c38",
+      "current_preEOL_target_pairs": 936,
+      "available_target_at_event_pairs": 1,
+      "available_target_after_event_pairs": 19,
+      "source_post_event_rows": 175
+    },
+    {
+      "cell_id": "MATR_b4c40",
+      "current_preEOL_target_pairs": 752,
+      "available_target_at_event_pairs": 1,
+      "available_target_after_event_pairs": 19,
+      "source_post_event_rows": 251
+    },
+    {
+      "cell_id": "MATR_b4c42",
+      "current_preEOL_target_pairs": 655,
+      "available_target_at_event_pairs": 1,
+      "available_target_after_event_pairs": 19,
+      "source_post_event_rows": 141
+    },
+    {
+      "cell_id": "MATR_b4c43",
+      "current_preEOL_target_pairs": 631,
+      "available_target_at_event_pairs": 1,
+      "available_target_after_event_pairs": 19,
+      "source_post_event_rows": 201
+    }
+  ],
+  "observed_event_row_verified_for_all42": true,
+  "reason": "Old auxiliary runner requires target<event, so every training target stays above0.8 and no target is at or after threshold. Real raw training endpoints/postevent labels exist; inputs remain preevent. This is label-domain limitation, not proof it caused rollout failure. No data/model changed.",
+  "new_fits": 0,
+  "new_forwards": 0,
+  "cal_or_dev_or_test_raw_reads": 0
+}

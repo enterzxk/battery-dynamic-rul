@@ -1,0 +1,13 @@
+{
+  "relative_Time_MAE_reduction": -1.3954194062050163,
+  "paired_cell_bootstrap95": [
+    -4.968162141419921,
+    0.38917084768936433
+  ],
+  "improved_cells": 5,
+  "noncross_or_invalid_origins": 191,
+  "future_age_support_exceeded_origins": 193,
+  "severe_over100_increase": -0.07143426563487973,
+  "frozen_calibration_gate_passed": false,
+  "metric_warning": "Any noncross/invalid uses2000cycle lower-bound cap ONLY for diagnostic all-origin MAE, not valid point estimate; any such case fails gate. No subset filtering."
+}

@@ -1,0 +1,23 @@
+{
+  "status": "GO_ONE_TRUSTED_CHECKPOINT_LOAD_CAL_ROLLOUT_NO_FIT",
+  "owner": "01a14d81-fffd-7092-9a86-45704ca86840",
+  "issued_utc": "2026-10-18T10:06:55.304084+00:00",
+  "actual_cwd": "/home/yndx/zxk/rul",
+  "max_new_fits": 0,
+  "max_checkpoint_loads": 1,
+  "max_batch_forward_calls": 100,
+  "max_row_forwards": 456700,
+  "max_horizon": 2000,
+  "max_seconds": 180,
+  "development_access": false,
+  "test_access": false,
+  "global_new_fits_allowed_remains": false,
+  "review_path": "/home/yndx/zxk/rul/reports/capacity_firstpassage_review_20261018_luna/review.json",
+  "review_sha256": "634ecb543db58e6e770b3878bdd58f19daeea84b9c76820e9cb98f99789c64fe",
+  "reviewer_requested_model": "gpt-6-luna/high",
+  "checkpoint_sha256": "5022a619e9cc86c725be57faabc8ab0a191e084d58c342f67ac303f6fb9ea006",
+  "scope": "Own exactSHA auxiliary checkpoint only; fixed generated-capacity firstpassage pointRUL, no actual future input; every noncross retained and gateFAIL. No uncertainty, novelty or confirmation claim.",
+  "runner.py_sha256": "dce6e03cad7ace4ca09837b564667eb54d22a84cce1125b4b80fbd764e8c7455",
+  "protocol.json_sha256": "85b44f9110d4ad94c4a4610326296266edae2e15c6e52c31e231ec96473aef38",
+  "cohort.json_sha256": "42535de5825f6857e3aa69a596306a909a9a1b3ac087c43631032f6d293ef289"
+}
