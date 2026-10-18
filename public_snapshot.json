@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-18T20:17:42.127088+00:00",
-  "content_sha256": "8d2bc8036a567c3137f239ab67525c1beab12a95955ed6f4f8f59e05ac152f06",
-  "file_count": 793,
+  "snapshot_utc": "2026-10-18T20:30:53.379428+00:00",
+  "content_sha256": "1432397c65c5b9423a9b5813e16c144cff3b45c550cb9e04715b4cecbd5257e3",
+  "file_count": 803,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,8 +14,8 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 95056,
-      "sha256": "6b25b94e190c5d148794b1d8849ed41414142c56e5636ef82747ee9e12dbee87"
+      "bytes": 96510,
+      "sha256": "b12e0512934e652b6bd72e647839ea162a42c5c69b10d8895c9929e7df92f5d6"
     },
     {
       "path": "README.md",
@@ -38,8 +38,8 @@
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 29936,
-      "sha256": "24510c0ff5f8c3eb346f24c75502bb5b377a8285df8c58aee9fed1981435c817"
+      "bytes": 30642,
+      "sha256": "1b7aca536ff6ec205f530ef37684531f0434e2fe9380fd6a1ffd271b4b51111e"
     },
     {
       "path": "automation/bin/matr_raw_batch2_asset_worker_v1.py",
@@ -164,8 +164,8 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 80452,
-      "sha256": "f170b549675e30203747d906f1f53b140c8533f0b62e6e7931b2dcf5cba676a6"
+      "bytes": 81416,
+      "sha256": "6a31be63bca5029934b76085386438f10847c0224b85cca1382d431efbb65e1a"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
@@ -4252,6 +4252,66 @@
       "source_path": "reports/policy_context_point_seed42_v1_luna/review_v0_hash_transcription_error.json",
       "bytes": 3754,
       "sha256": "0d25739245edeb5e8b167e999d77ad6aa07ca941258b1416734f685121ac9686"
+    },
+    {
+      "path": "reports/policy_encoding_collision_20261019_root/RESULTS_ZH.md",
+      "source_path": "reports/policy_encoding_collision_20261019_root/RESULTS_ZH.md",
+      "bytes": 4161,
+      "sha256": "0889e2cad817e002f5f1feefd4ec9fb4c2d88187796c62958d0f1408f0f7d4ac"
+    },
+    {
+      "path": "reports/policy_encoding_collision_20261019_root/arithmetic_example.json",
+      "source_path": "reports/policy_encoding_collision_20261019_root/arithmetic_example.json",
+      "bytes": 854,
+      "sha256": "a58b86bb20441e78c1b9a58c2fff96cfa51d794b642b8b15733418b7924222b8"
+    },
+    {
+      "path": "reports/policy_encoding_collision_20261019_root/audit.py",
+      "source_path": "reports/policy_encoding_collision_20261019_root/audit.py",
+      "bytes": 6624,
+      "sha256": "06d0a70759b078ce0bf0180c98457c7638cfa70e734f8aacf3b9e20dc40e10f7"
+    },
+    {
+      "path": "reports/policy_encoding_collision_20261019_root/collision_pairs.json",
+      "source_path": "reports/policy_encoding_collision_20261019_root/collision_pairs.json",
+      "bytes": 443,
+      "sha256": "4c358b133752ecbf94e3f69c20c40db0bbf00ba79e7a8458db4e5914da346399"
+    },
+    {
+      "path": "reports/policy_encoding_collision_20261019_root/completion.json",
+      "source_path": "reports/policy_encoding_collision_20261019_root/completion.json",
+      "bytes": 399,
+      "sha256": "eb1adcabae3220f76ce10f061f0c3ac7e319c4fbe7e888ee1d11caf405cd441b"
+    },
+    {
+      "path": "reports/policy_encoding_collision_20261019_root/encoding_groups.json",
+      "source_path": "reports/policy_encoding_collision_20261019_root/encoding_groups.json",
+      "bytes": 8724,
+      "sha256": "b64788d9dd9f6b2882afe87e296cc6d5b5b4c90c4a86cd40b1463de0d7b24d75"
+    },
+    {
+      "path": "reports/policy_encoding_collision_20261019_root/minimal_validation.json",
+      "source_path": "reports/policy_encoding_collision_20261019_root/minimal_validation.json",
+      "bytes": 465,
+      "sha256": "0a3cc42fc2ce53ba01b10e659a8ac8718c838336268f1af829b1015b03df07a2"
+    },
+    {
+      "path": "reports/policy_encoding_collision_20261019_root/protocol.json",
+      "source_path": "reports/policy_encoding_collision_20261019_root/protocol.json",
+      "bytes": 2187,
+      "sha256": "b302b4d0249970ef54d3dab62421ad7d1342d75a79a9b09dbafe54fc5abb8ed6"
+    },
+    {
+      "path": "reports/policy_encoding_collision_20261019_root/root_decision.json",
+      "source_path": "reports/policy_encoding_collision_20261019_root/root_decision.json",
+      "bytes": 1571,
+      "sha256": "d000b153cec41c7df27ebdf398055be7a1e2240f67902f5ffb23797fa57b0c1c"
+    },
+    {
+      "path": "reports/policy_encoding_collision_20261019_root/summary.json",
+      "source_path": "reports/policy_encoding_collision_20261019_root/summary.json",
+      "bytes": 487,
+      "sha256": "66afa9f29445bfc54802aab60733cf841570d5305c7c6e3aa2aaa6e9de2d6b17"
     },
     {
       "path": "reports/policy_fit_scale_review_20261019_luna/review.json",

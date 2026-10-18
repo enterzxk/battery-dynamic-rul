@@ -1,0 +1,11 @@
+{
+  "status": "COMPLETE_EXISTING_POLICY_ENCODING_COLLISION_AUDIT",
+  "new_fits": 0,
+  "new_model_inference": 0,
+  "new_predictive_encodings": 0,
+  "raw_battery_reads": 0,
+  "dev_test_reads": 0,
+  "outcome_label_reads": 0,
+  "protocol_sha256": "b302b4d0249970ef54d3dab62421ad7d1342d75a79a9b09dbafe54fc5abb8ed6",
+  "script_sha256": "06d0a70759b078ce0bf0180c98457c7638cfa70e734f8aacf3b9e20dc40e10f7"
+}

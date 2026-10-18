@@ -447,3 +447,7 @@ reports/policy_oof_age_residual_20261019_root/RESULTS_ZH.md为当前诊断。OOF
 
 ## 最新实际0fit比较：固定5工况近邻OOF CDF仍NO_GAIN
 experiments/policy_local_oof_cdf_fixed5_v1/RESULTS_ZH.md。42fit-only4policy mean/SD，各10cal固定5sourcecell残差CDF、median中心化保留点，预GO窄审PASS及freshGO消费。MAE36.400814/severeover1004.2582%不变；coverage62.5373%，IS190.184645，比原fixedsigma恶化28.0797%；4/10coverage误差改善，平均Brier增量.00206106超过.002，0crossing仍联合FAIL。相对globalOOF亦失败。0新fit/模型推理/rawfeatures/checkpoint/devtest，CPU19不变。1变换(4mean4SD)+10CDF预算消费，不搜k/距离/尺度。cal暴露/event-only/physicalserial/fullsource未知/OOF28vs42与局部5cell限制保留。下一项仅0fit现有52policy与encoder表示碰撞审计：b2c1与b2c0距离0但rawpolicy不同；不提前宣称是失败原因或新模型收益，不继续盲校准救援。
+
+
+## 当前发现：压缩policy表示有1对精确碰撞，未证明预测影响
+reports/policy_encoding_collision_20261019_root/RESULTS_ZH.md。0fit/0标签读取审计52行：34不同实际schedule映射33种effectiveC，唯一b2c0 fit(1C4%-6C)与b2c1 cal(2C10%-6C)都[3,6,6,6]，首20%SOC时间均精确1/15h；其余无不同schedule碰撞，fit-fit0对。1326pairs与52行有理数原积分、组直径通过，最大浮点差2.66e-15。当前source_semantics绑定encode_policy_v1，旧无后缀源码为保留v0。本次没改编码或训练；数学信息丢失不等于RUL原因/收益，CPU19不变。下一项仅固定HGB强简单对照：可逆canonical4电流+3SOC切点取代4effectiveC，与3state共10输入；同42fit10cal/seed42/logtarget，最多1新CPUfit/1calpredict，旧policy点36.400814为主参考，需最小可逆性检查+一次窄审+freshGO，当前未授权。禁止feature/seed/尺度搜索；校准反复开发等边界保留。

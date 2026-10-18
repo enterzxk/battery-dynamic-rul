@@ -530,3 +530,11 @@
 - **最小验证**：独立训练统计差1.78e-15，邻居/CDF及4567条预测重算差1.14e-13、指标差2.84e-14；CSV原字节SHA归档通过。0新fit/推理/旧checkpoint/原始特征/devtest，1变换(4mean4SD)+10局部CDF消费；CPU19不变。
 - **阻塞/风险**：少数电池继续大幅漏覆盖，b2c1/b2c6仅约4–5%；局部5cell与OOF28vs42限制不能消除。b2c1/b2c0工况距离0但rawpolicy不同，提示积分表示可能丢细分schedule信息，尚未确认与失败的因果关系。cal暴露/event-only/物理身份边界保留。已完成预算ledger原字节无损213611→52701bytes，server原件/旧GitHub历史保留，上限12MiB不扩。
 - **下一步**：0fit固定52policy及原encoder审计raw_schedule→4effectiveC表示碰撞，冻结1e-12C容差，不搜容差/重编码/新模型，不读取raw电池/devtest；判断输入表征是否真实缺失信息。
+
+
+## 2026-10-19：工况积分编码审计确认唯一精确碰撞
+- **已完成**：0fit审计52policy与当前v1 encoder：34不同raw/规范schedule→33种4effectiveC表示；唯一b2c0 fit vs b2c1 cal精确碰撞[3,6,6,6]，不同电流路径/切换位置，同首20%SOC时间1/15小时。确认信息丢失，不归因整体失败或宣称预测收益。
+- **证据**：reports/policy_encoding_collision_20261019_root/protocol/audit、summary/collision_pairs/encoding_groups/arithmetic_example/minimal_validation/completion/root_decision/RESULTS_ZH；输入52行与v1源码SHA绑定。
+- **最小验证**：1326pair、全组直径<=冻结1e-12C、52行Fraction原积分核对最大差2.66e-15、1手算例；fit-fit0/fit-cal1/cal-cal0碰撞。未读RUL标签、未改/重建预测编码，0fit/推理/raw电池/checkpoint/devtest，CPU19不变。
+- **阻塞/风险**：仅一对且训练内无碰撞，数学非单射不等于RUL重要性；旧pointPASS和概率/全局/局部CDF NO_GAIN保留。现有工况只能称压缩表示。encode_policy.py是旧v0，source_semantics哈希绑定v1当前，不改旧失败记录。
+- **下一步**：最小可逆canonical schedule(4电流+3SOC切点)替换旧4积分C，与age/SOH/rate组成10输入；同固定42fit/10cal/HGBseed42/logtarget，最多1新CPUfit+1cal推理，旧point36.400814为主参考。输入可逆性核验+一次窄审+freshGO后仅一次，当前无GO；不搜feature/seed/尺度。

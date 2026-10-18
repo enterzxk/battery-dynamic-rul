@@ -1,0 +1,52 @@
+{
+  "pair": {
+    "cell_a": "MATR_b2c0",
+    "role_a": "fit",
+    "cell_b": "MATR_b2c1",
+    "role_b": "calibration",
+    "raw_policy_a": "1C(4%)-6C",
+    "raw_policy_b": "2C(10%)-6C",
+    "raw_strings_equal": false,
+    "canonical_schedules_equal": false,
+    "exact_rational_effective_vector_equal": true,
+    "max_stored_vector_delta": 0.0,
+    "encoded_vector": [
+      3.0,
+      6.0,
+      5.999999999999998,
+      6.000000000000002
+    ]
+  },
+  "first20_SOC_hours_A": "1/15",
+  "first20_SOC_hours_B": "1/15",
+  "first20_SOC_effectiveC": "3",
+  "remaining_bins_effectiveC": [
+    "6",
+    "6",
+    "6"
+  ],
+  "schedule_A": [
+    [
+      "0",
+      "1/25",
+      "1"
+    ],
+    [
+      "1/25",
+      "4/5",
+      "6"
+    ]
+  ],
+  "schedule_B": [
+    [
+      "0",
+      "1/10",
+      "2"
+    ],
+    [
+      "1/10",
+      "4/5",
+      "6"
+    ]
+  ]
+}

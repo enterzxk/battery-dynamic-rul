@@ -1,0 +1,37 @@
+{
+  "decision": "CONFIRMED_ONE_EXACT_POLICY_ENCODING_COLLISION_NO_PERFORMANCE_CLAIM",
+  "new_fits": 0,
+  "new_model_inference": 0,
+  "new_predictive_encodings": 0,
+  "outcome_label_reads": 0,
+  "raw_battery_reads": 0,
+  "dev_test_reads": 0,
+  "CPUfits_unchanged": 19,
+  "summary": {
+    "cells": 52,
+    "fit_cells": 42,
+    "cal_cells": 10,
+    "raw_policy_strings": 34,
+    "canonical_schedules": 34,
+    "effectiveC_groups": 33,
+    "raw_different_same_encoding_pairs": 1,
+    "distinct_schedule_collision_pairs": 1,
+    "exact_rational_collision_pairs": 1,
+    "collision_groups": 1,
+    "collision_involved_cells": 2,
+    "fit_fit_collision_pairs": 0,
+    "fit_cal_collision_pairs": 1,
+    "cal_cal_collision_pairs": 0,
+    "maximum_stored_vs_exact_effectiveC_error": 2.6645352591003757e-15
+  },
+  "evidence_sha256": {
+    "protocol.json": "b302b4d0249970ef54d3dab62421ad7d1342d75a79a9b09dbafe54fc5abb8ed6",
+    "audit.py": "06d0a70759b078ce0bf0180c98457c7638cfa70e734f8aacf3b9e20dc40e10f7",
+    "summary.json": "66afa9f29445bfc54802aab60733cf841570d5305c7c6e3aa2aaa6e9de2d6b17",
+    "collision_pairs.json": "4c358b133752ecbf94e3f69c20c40db0bbf00ba79e7a8458db4e5914da346399",
+    "encoding_groups.json": "b64788d9dd9f6b2882afe87e296cc6d5b5b4c90c4a86cd40b1463de0d7b24d75",
+    "arithmetic_example.json": "a58b86bb20441e78c1b9a58c2fff96cfa51d794b642b8b15733418b7924222b8",
+    "minimal_validation.json": "0a3cc42fc2ce53ba01b10e659a8ac8718c838336268f1af829b1015b03df07a2",
+    "completion.json": "eb1adcabae3220f76ce10f061f0c3ac7e319c4fbe7e888ee1d11caf405cd441b"
+  }
+}
