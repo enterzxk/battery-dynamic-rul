@@ -1,0 +1,24 @@
+{
+  "status": "GO_TWO_POLICY_CONDITIONAL_QUANTILE_FITS_CAL_ONLY",
+  "max_new_fits": 2,
+  "max_checkpoint_loads": 0,
+  "max_calibration_predict_calls": 2,
+  "new_scalar_estimates": 0,
+  "max_seconds": 180,
+  "review_path": "/home/yndx/zxk/rul/reports/policy_conditional_quantiles_review_20261019_luna/review.json",
+  "review_sha256": "d32faa5912add79595b8295e361fd625bc02137581adf525db2d3f500a699e27",
+  "reviewed_hashes": {
+    "experiments/policy_conditional_quantiles_seed42_v1/runner.py": "69902e3ad4b2de44bfdbdedacdd83adca923c3003603c2ca4692fcf17d8833b1",
+    "experiments/policy_conditional_quantiles_seed42_v1/protocol.json": "f4c52b9a0001c2a494fdaa78ba1c398eb22673f47b9316e588e4f6d605163c5b",
+    "experiments/policy_conditional_quantiles_seed42_v1/cohort.json": "42535de5825f6857e3aa69a596306a909a9a1b3ac087c43631032f6d293ef289"
+  },
+  "owner": "01a14e92-ea7a-7cc3-8007-67b4d16a873a",
+  "issued_utc": "2026-10-18T19:30:57.527695+00:00",
+  "development_access": false,
+  "test_access": false,
+  "global_new_fits_allowed_remains": false,
+  "root_rationale": "Necessary matched known-policy conditionaltail baseline: uncertainty failures after meaningful pointcontext gain, globalfit-scale and blindmagnitude proxy failed. Original3state quantilefits remain consumed. Current pre-fit mean-cell coverage gate explicitly differs, old results not rejudged; any crossing preserved. No model/seed expansion after failure.",
+  "runner.py_sha256": "69902e3ad4b2de44bfdbdedacdd83adca923c3003603c2ca4692fcf17d8833b1",
+  "protocol.json_sha256": "f4c52b9a0001c2a494fdaa78ba1c398eb22673f47b9316e588e4f6d605163c5b",
+  "cohort.json_sha256": "42535de5825f6857e3aa69a596306a909a9a1b3ac087c43631032f6d293ef289"
+}

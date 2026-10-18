@@ -1,0 +1,4 @@
+{"event": "fit_started", "number": 1, "quantile": 0.1, "cells": 42, "origins": 22281}
+{"event": "fit_completed", "number": 1, "quantile": 0.1}
+{"event": "fit_started", "number": 2, "quantile": 0.9, "cells": 42, "origins": 22281}
+{"event": "fit_completed", "number": 2, "quantile": 0.9}

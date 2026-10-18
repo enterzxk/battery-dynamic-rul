@@ -1,0 +1,60 @@
+{
+  "decision": "NO_GAIN_KNOWN_POLICY_INDEPENDENT_TAIL_QUANTILES_STOP_NO_REARRANGEMENT",
+  "point_MAE_unchanged": true,
+  "comparison": {
+    "interval_score_relative_reduction": null,
+    "absolute_coverage_error_reduction": -0.1914931095869299,
+    "width_ratio": 0.8524615087496575,
+    "coverage_error_cells_improved": 5,
+    "point_MAE_unchanged": true,
+    "lower_above_median": 217,
+    "upper_below_median": 304,
+    "lower_ge_upper": 56,
+    "any_crossing_origins": 512,
+    "pairedcell_raw_score_difference_CI95": [
+      -91.09756174254741,
+      3.9103926154399393
+    ],
+    "valid_allorigin_interval_score": false,
+    "mean_cell_absolute_coverage_error_reduction": -0.012911895094272902,
+    "gate_pass": false
+  },
+  "valid_allorigin_interval_score": false,
+  "raw_formula_score_not_valid_performance": true,
+  "new_CPU_predictive_fits": 2,
+  "optimizer_steps": 0,
+  "checkpoint_loads": 0,
+  "calibration_predict_calls": 2,
+  "calibration_rows_per_call": 4567,
+  "new_scalar_estimates": 0,
+  "dev_test_reads": 0,
+  "independent_metric_difference": 2.842170943040401e-14,
+  "previous_results_preserved": true,
+  "evidence": {
+    "protocol.json": "f4c52b9a0001c2a494fdaa78ba1c398eb22673f47b9316e588e4f6d605163c5b",
+    "runner.py": "69902e3ad4b2de44bfdbdedacdd83adca923c3003603c2ca4692fcf17d8833b1",
+    "cohort.json": "42535de5825f6857e3aa69a596306a909a9a1b3ac087c43631032f6d293ef289",
+    "ROOT_GO.json": "8595d5fc902f20a3a28bff53bb54b3b2d80b790efec76faf2f1e737cb9d035c0",
+    "fit_ledger.jsonl": "23470e43142e263dc271d5ebf16e29f22c081abbbed902b386d045b336366a07",
+    "completion.json": "ee5fa124766cedf25273fdca7b39c6eeaa9850f405e29a0757b59db811ddcdba",
+    "metrics.json": "fb38567e1a34d878a93fc4a4ec9b30fe209e2253e60dd472720af02bc76705c0",
+    "comparison.json": "d660f24a09b60ff23f3b299baa8f95d718c4e429abda2a33adc7a3b7c8412cc6",
+    "crossing_localization.json": "eb20e0830e13a4c39bd59f7cfa738db0f71c171dd6bbdd83e57e0255fecb366e",
+    "independent_metrics.json": "f79e8178bf61f4c24f2fead1fb47132a27d2e3930958e4ae49784cdb34cf54e4",
+    "prediction_delta.json": "89387b4b061d17f5d6e1990904f368669e909f3a58b53e120186532dfc7bc7de",
+    "lossless_validation.json": "15b974b8bb4dea9b979aca8537e01f2399f89835a5a678570038e23b7443b2e1"
+  },
+  "next_bounded_action": {
+    "status": "NOT_STARTED",
+    "question": "Can an honest cell-OOF empirical residual distribution give a coherent reference after in-sample scale and independently trained tails failed?",
+    "action": "Prepare exactly3fold source-cell isolated OOF HGB point models on the42fit cells, same7features/fixedparams/seed42; eachcell predicted once while excluded from that fold training, all22281 OOF rows. Use equal-cell weighted OOF log-residual empiricalCDF, median-center once to preserve original saved policy pointmedian. Apply to existing10cal mu analytically; no refit of original42cell checkpoint or newcal inference. Independent narrow review and fresh exactGO before any model construction/fit.",
+    "proposed_max_new_CPU_fits_after_GO": 3,
+    "max_new_fits_allowed_now": 0,
+    "folds": "sorted42fit IDs shuffled once seed42 and partitioned14/14/14; no cell-prefix leakage; eachfit trains28cells",
+    "no_development_or_test": true,
+    "checkpoint_loads": 0,
+    "scope": "Coherent fullCDF reference, not innovation or conditional-coverage/conformal guarantee; OOF models have reduced training size, exposedcal remains development only.",
+    "selection_to_freeze": "same saved pointmedian unchanged, >=5pct intervalscore reduction/pairedcellCIlo>0,mean-cell absolute80coverageerror reduction>=.03 and aggregateerror nonworse,>=7cells,width<=2x,meanBrier100/300increment<=.002; no crossing/degeneratebounds; old gates remain unchanged.",
+    "stop": "No fold/seed/quantile search or output sorting/clipping rescue; current independenttail models closed. Public bundle remaining budget must be checked, use create-only lossless archive of completed static evidence if needed, never expand12MiB cap."
+  }
+}

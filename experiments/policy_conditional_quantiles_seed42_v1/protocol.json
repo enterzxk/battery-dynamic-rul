@@ -1,0 +1,84 @@
+{
+  "question": "Does a matched known-policy7feature conditional q10/q90 interval baseline repair per-cell probability failures beyond fixed global sigma with existing median unchanged?",
+  "seed": 42,
+  "max_new_CPU_fits": 2,
+  "max_seconds": 180,
+  "threads": 1,
+  "optimizer_steps": 0,
+  "development_access": false,
+  "test_access": false,
+  "global_new_fits_allowed_remains": false,
+  "owner": "01a14e92-ea7a-7cc3-8007-67b4d16a873a",
+  "source_predictions": {
+    "fit_predictions.csv": "7cd0d1c902dacacf8f519c02962eb0343c240d1be41555d96e94b4bbf17775e3",
+    "calibration_predictions.csv": "796844ff5c863a08ca7f1238c620afee39a3f22b84d68b615ec52135c48b7ea0"
+  },
+  "source_cohort_sha256": "42535de5825f6857e3aa69a596306a909a9a1b3ac087c43631032f6d293ef289",
+  "features": [
+    "age",
+    "SOH",
+    "robust20 originalunits",
+    "effectiveC_0_20",
+    "effectiveC_20_40",
+    "effectiveC_40_60",
+    "effectiveC_60_80"
+  ],
+  "target": "log(original observed event_cycle-origin), same preevent sourceorigins",
+  "weights": "each fit cell total equal; normalize mean sample_weight to1",
+  "prediction": "exp(q10log),exp(q90log),unchanged saved policy exp(context_RUL_raw_log) median; all4567, no sorting/clipping/centering",
+  "selection_gate": {
+    "point_MAE_unchanged": true,
+    "interval_score_reduction_min": 0.05,
+    "mean_cell_absolute_coverage_error_reduction_min": 0.03,
+    "aggregate_absolute_coverage_error_must_not_increase": true,
+    "width_ratio_max": 2,
+    "coverage_error_cells_improved_min": 7,
+    "zero_any_crossing": true,
+    "pairedcell_score_bootstrap": 2000,
+    "bootstrap_seed": 42,
+    "score_difference_CI_lower_strictly_above": 0
+  },
+  "limitations": [
+    "calibration10 already exposed for development; no independent confirmation",
+    "observed-event lab complete-cycle capacity only; no censoring or conditional-distribution claim",
+    "sourceID separation only; physical serial and complete-source SHA unverified",
+    "no parameter/seed rescue; any fit start consumes budget; preserve failures"
+  ],
+  "quantiles": [
+    0.1,
+    0.9
+  ],
+  "source_parameters_sha256": "ca95515be2d4977aa5160f9aa520acb996c6bd83eff5618ab72e8655f34711e5",
+  "crossing_policy": "Any q10>savedmedian or q90<savedmedian or q10>=q90 fails coherent3quantile gate. Preserve all raw endpoints; no rearrangement/clipping.",
+  "limits": [
+    "exposedcal10, no independentconfirmation or finaltest",
+    "known fixedlabpolicy7features; physicalserial/fullsourceSHA unresolved",
+    "pointmedian unchanged; intervalbaseline not novelty or complete conditionalCDF/Brier model",
+    "new2fits distinct from closed3state q10/q90 because inputcontext changed; no repeat of old GO/checkpoint",
+    "any fitstart consumes allowance, failureSTOP no retry/parameter/seed/quantile/crossing rescue"
+  ],
+  "model_common": {
+    "max_iter": 150,
+    "max_leaf_nodes": 7,
+    "max_depth": 3,
+    "learning_rate": 0.05,
+    "min_samples_leaf": 50,
+    "l2_regularization": 1,
+    "random_state": 42,
+    "early_stopping": false
+  },
+  "source_prediction_paths": {
+    "fit_predictions.csv": "/home/yndx/zxk/rul/experiments/matr_raw_heldout_calibration_seed42_v1/fit_predictions.csv",
+    "calibration_predictions.csv": "/home/yndx/zxk/rul/experiments/policy_context_point_seed42_v1/calibration_predictions.csv"
+  },
+  "policy_features_path": "/home/yndx/zxk/rul/reports/policy_context_20261018_root/policy_features.json",
+  "policy_features_sha256": "91a6bfa3be83b403289133bd13669d36ed7a1f212ec0ca4e692efecfb85be462",
+  "semantics_path": "/home/yndx/zxk/rul/reports/policy_context_20261018_root/source_semantics.json",
+  "semantics_sha256": "c973219a60549f3ef4af0803a821eeafd2b4fe2ade552234294a25dd01e3ad32",
+  "frozen_utc": "2026-10-18T19:29:23.136140+00:00",
+  "new_scalar_estimates": 0,
+  "max_checkpoint_loads": 0,
+  "max_calibration_predict_calls": 2,
+  "coverage_metric_rationale": "Old .03 aggregate absolutecoverageerror improvement is mathematically impossible from .0149838 old-policy aggregateerror. Before any current fit freeze mean-cell absolutecoverageerror improvement plus aggregateerror nonworsening, reflecting known per-cell failures. This is a new matched-input interval baseline, not retroactive revision of old gates.",
+  "baseline_distribution": "saved policy rawmu plus unchanged oldfit sigmaA=.19898311654196568"
+}

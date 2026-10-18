@@ -172,6 +172,10 @@ def main():
     for name in ['protocol.json','diagnose.py','train_cutoff.json','summary.json','paired_calibration.json','examples.json','completion.json','independent_recompute.py','independent_validation.json','independent_public_recompute.py','public_independent_validation.json','per_cell_metrics_lossless.json','decode_per_cell_metrics.py','root_decision.json','RESULTS_ZH.md']:
         chosen.add('reports/policy_revision_reliability_20261019_root/' + name)
 
+    chosen.add('reports/policy_conditional_quantiles_review_20261019_luna/review.json')
+    for name in ['runner.py','protocol.json','cohort.json','ROOT_GO.json','fit_ledger.jsonl','metrics.json','per_cell_metrics.json','comparison.json','completion.json','independent_recompute.py','independent_metrics.json','prediction_delta.json','decode_prediction_delta.py','lossless_validation.json','crossing_localization.json','root_decision.json','RESULTS_ZH.md']:
+        chosen.add('experiments/policy_conditional_quantiles_seed42_v1/' + name)
+
     contents, files, skipped = {}, [], []
     mapping = {'README.md': 'docs/GITHUB_README_ZH.md', 'agent.md': 'AGENTS.md'}
     mapping.update({rel: rel for rel in sorted(chosen)})

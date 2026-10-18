@@ -1,0 +1,36 @@
+{
+  "status": "PASS_ALL4567_INDEPENDENT_RAW_CSV_INTERVAL_METRICS",
+  "rows": 4567,
+  "cells": 10,
+  "maximum_metric_difference": 2.842170943040401e-14,
+  "crossing_counts": [
+    217,
+    304,
+    56,
+    512
+  ],
+  "metrics": {
+    "saved_fixed_sigma": {
+      "MAE": 36.40081434267988,
+      "coverage80": 0.7850161610247275,
+      "width80": 116.16909007664155,
+      "raw_formula_score_diagnostic_only": 148.48924887864771,
+      "lower_miss": 0.11989603623626532,
+      "upper_miss": 0.09508780273900717,
+      "interval_score80": 148.48924887864771,
+      "mean_cell_absolute_coverage_error80": 0.21326504350082096
+    },
+    "direct_conditional_quantiles": {
+      "MAE": 36.40081434267988,
+      "coverage80": 0.5935230514377977,
+      "width80": 99.02967779680873,
+      "raw_formula_score_diagnostic_only": 191.8358752003379,
+      "lower_miss": 0.24473746193327695,
+      "upper_miss": 0.16173948662892537,
+      "interval_score80": null,
+      "mean_cell_absolute_coverage_error80": 0.2261769385950938
+    }
+  },
+  "new_fits": 0,
+  "new_model_inference": 0
+}

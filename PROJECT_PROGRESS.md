@@ -498,3 +498,11 @@
 - **最小验证**：精确Fraction加权CDF与独立标量复算，q90差0、465分组差3.38e-14；22239fit/4557cal转换完整，公开四列预测另复算及分组无损解码通过。0fit/optimizer/模型推理/checkpoint/rawfeatures/devtest，唯一train-only q90统计，累计CPU14不变。
 - **阻塞/风险**：大小/符号效果非单调，不从暴露cal追加符号门控；没有激活预测过滤或证明反事实性能。cal反复暴露/训练内预测/event-only/物理身份/固定policy限制保留。正常quota100%→1%已观察，排队wake不冒充执行；原点PASS/概率FAIL/EMA_NO_GAIN不变。
 - **下一步**：准备已知policy7输入匹配HGB q.1/.9强区间基线，最多2新CPUfit且中位数复用；先冻结逐电池覆盖误差/score/crossing规则、一次窄审+fresh exactGO，当前未授权fit。0dev/test，不重复旧3state分位数、不调参数/seed或排序救援。
+
+
+## 2026-10-19：工况匹配分位数2fit完成，端点倒置，NO_GAIN
+- **已完成**：相同42fit/10cal及7工况输入固定HGB q.1/.9真实2CPUfit，中位数复用；原始端点覆盖78.5016%→59.3523%，逐电池覆盖绝对误差均值.213265→.226177，5/10改善。512次序冲突，其中56端点倒置，全时段有效intervalscore=null，gateFAIL/NO_GAIN，不排序/clipping救援。
+- **证据**：experiments/policy_conditional_quantiles_seed42_v1/RESULTS_ZH.md、protocol/cohort/runner/ROOT_GO/fit_ledger/completion、calibration_predictions/checkpoints、metrics/per_cell_metrics/comparison/crossing_localization、independent_recompute/metrics、prediction_delta/decoder/lossless_validation/root_decision；独审reports/policy_conditional_quantiles_review_20261019_luna/review.json。
+- **最小验证**：4567独立重算差2.84e-14，crossing217lower/304upper/56bounds/512union一致；无损rawlog双列复原字节SHA通过。56倒置在3cell，真RUL136..356而非临近EOL，纯事后定位。2fit/2calpredict，0optimizer/checkpointload/新标量/devtest；累计CPU16=RUL14+辅助2，神经4fit2580steps/旧MATR41另记。
+- **阻塞/风险**：raw公式191.835875及其CI仅诊断，不当合法区间得分；原点TimeMAE36.400814完全不变。新逐电池coverage门槛fit前冻结且旧gate不追改；cal暴露/event-only/物理身份/固定policy限制保留。
+- **下一步**：准备42fit内部3折电池隔离OOF残差统一经验CDF参考，原7feature/固定HGB、每cell只被未见自身的模型预测、原policy中位数复用；最多3新CPUfit须一次窄审+fresh exactGO，当前未授权。0dev/test，不重跑/修排序当前quantile，不宣称conformal保证。

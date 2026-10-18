@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "review_type": "independent_static_narrow_review",
+  "reviewed_at_utc": "2026-10-18T19:30:00Z",
+  "reviewed_hashes": {
+    "experiments/policy_conditional_quantiles_seed42_v1/runner.py": "69902e3ad4b2de44bfdbdedacdd83adca923c3003603c2ca4692fcf17d8833b1",
+    "experiments/policy_conditional_quantiles_seed42_v1/protocol.json": "f4c52b9a0001c2a494fdaa78ba1c398eb22673f47b9316e588e4f6d605163c5b",
+    "experiments/policy_conditional_quantiles_seed42_v1/cohort.json": "42535de5825f6857e3aa69a596306a909a9a1b3ac087c43631032f6d293ef289"
+  },
+  "comparison_evidence": {
+    "experiments/conditional_quantiles_seed42_v1/runner.py": "eddc921082b012adb4bf6e033ab44ae88e137dd420068cd9b271e760e66ca91b",
+    "experiments/conditional_quantiles_seed42_v1/protocol.json": "c05c7218c7079ab9408031f9957f9699835d63ffb4af10db42ecf08a4536a0ff",
+    "experiments/policy_fit_scale_seed42_v1/point_model_protocol.json": "30b37abb94065144c18c98c170cd30a09f2edb732f6b2a27c8a21606dfbdb85d"
+  },
+  "checks": {
+    "inputs_roles_and_units": "PASS: one age/origin-cycle, SOH, rate20_per_cycle (robust20 in original units) plus four static policy effective-C features; target is log(event_cycle-origin). Fit and calibration role assertions, disjoint IDs and manifest/feature/policy hashes are enforced. Visibility requires visible_through_cycle==origin<event. We did not read feature data.",
+    "fit_and_prediction_budget": "PASS_STATIC: exactly two quantile models q=.1/.9, shared fixed HGB parameters, one thread, 180s total alarm; equal-cell fit weights. Saved policy median exp(context_RUL_raw_log) is reused; no refit or checkpoint load. Exactly two calibration prediction calls (one per quantile model) are bounded by protocol.",
+    "calibration_and_point_metrics": "PASS: source calibration predictions are hash checked; 4567 rows across 10 calibration cells are checked against manifest role and event labels. The saved raw log-median is exponentiated unchanged; both arms use it, and exact equality of point MAE is required.",
+    "crossing_and_invalid_bounds": "PASS: q10 above saved median, q90 below median, or q10>=q90 are counted as crossings; all raw endpoints are preserved, with no sorting or clipping. Per-cell valid interval_score80 is null whenever lower>=upper; aggregate valid interval score is null if any cell is invalid, and gate_pass requires zero crossings. A raw formula score is separately named diagnostic_only and cannot produce gate PASS when bounds cross.",
+    "selection_gate": "PASS: runner requires zero any crossing, unchanged point MAE, valid interval scores, >=5% interval-score reduction, mean per-cell absolute coverage-error improvement >=.03, aggregate absolute coverage error non-increase (tolerance 1e-12), >=7/10 cell coverage-error improvements, width ratio <=2, and paired-cell bootstrap 95% lower bound >0 with seed 42/2000 replicates. This matches the frozen protocol and addresses the old aggregate-error floor being impossible from prior error .0149838; it does not rewrite or replace previous gates.",
+    "go_lock_ledger_createonly": "PASS_STATIC: before execution runner requires hash-bound GO with exact two-fit and quantile limits, all three reviewed input hashes, PASS review receipt, fixed software versions, no dev/test. It requires exclusive nonblocking project CPU lock, owner/thread match, takeover_verified and global new_fits_allowed=false. Claim, ledger, checkpoints and outputs use exclusive create; fit-starts are flushed/fsynced and failure stops without retry."
+  },
+  "risks": [
+    "Calibration cohort has already been exposed for development; this screen cannot establish independent confirmation, final test performance, or a general conditional distribution.",
+    "The 4 policy features are limited to known predeclared fixed laboratory policy metadata; physical serial identity and complete raw-source SHA remain unverified.",
+    "This approval is static review only. No ROOT_GO was inspected or consumed, no runner was executed, and no checkpoint or feature data was read; execution still requires the main controller fresh exact GO and live lock/owner check."
+  ],
+  "action": "No scientific blocking issue found in the reviewed implementation and protocol. Root may issue its own fresh exact GO if prior closed gates are preserved; this review is not performance evidence or independent run authorization."
+}

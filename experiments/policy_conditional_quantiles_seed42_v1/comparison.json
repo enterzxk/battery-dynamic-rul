@@ -1,0 +1,18 @@
+{
+  "interval_score_relative_reduction": null,
+  "absolute_coverage_error_reduction": -0.1914931095869299,
+  "width_ratio": 0.8524615087496575,
+  "coverage_error_cells_improved": 5,
+  "point_MAE_unchanged": true,
+  "lower_above_median": 217,
+  "upper_below_median": 304,
+  "lower_ge_upper": 56,
+  "any_crossing_origins": 512,
+  "pairedcell_raw_score_difference_CI95": [
+    -91.09756174254741,
+    3.9103926154399393
+  ],
+  "valid_allorigin_interval_score": false,
+  "mean_cell_absolute_coverage_error_reduction": -0.012911895094272902,
+  "gate_pass": false
+}

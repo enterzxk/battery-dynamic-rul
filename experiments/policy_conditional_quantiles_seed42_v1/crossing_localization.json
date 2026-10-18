@@ -1,0 +1,140 @@
+{
+  "scope": "posthoc failure localization of current completed experiment only; truth phase never inputs",
+  "by_cell": {
+    "MATR_b2c1": {
+      "lower_above_point": 2,
+      "upper_below_point": 0,
+      "bounds_invalid": 0,
+      "any_crossing": 2
+    },
+    "MATR_b2c6": {
+      "lower_above_point": 13,
+      "upper_below_point": 50,
+      "bounds_invalid": 3,
+      "any_crossing": 63
+    },
+    "MATR_b2c21": {
+      "lower_above_point": 24,
+      "upper_below_point": 66,
+      "bounds_invalid": 1,
+      "any_crossing": 90
+    },
+    "MATR_b2c24": {
+      "lower_above_point": 1,
+      "upper_below_point": 42,
+      "bounds_invalid": 0,
+      "any_crossing": 43
+    },
+    "MATR_b2c41": {
+      "lower_above_point": 105,
+      "upper_below_point": 91,
+      "bounds_invalid": 52,
+      "any_crossing": 187
+    },
+    "MATR_b4c7": {
+      "lower_above_point": 2,
+      "upper_below_point": 1,
+      "bounds_invalid": 0,
+      "any_crossing": 3
+    },
+    "MATR_b4c14": {
+      "lower_above_point": 16,
+      "upper_below_point": 42,
+      "bounds_invalid": 0,
+      "any_crossing": 58
+    },
+    "MATR_b4c19": {
+      "lower_above_point": 0,
+      "upper_below_point": 0,
+      "bounds_invalid": 0,
+      "any_crossing": 0
+    },
+    "MATR_b4c26": {
+      "lower_above_point": 19,
+      "upper_below_point": 0,
+      "bounds_invalid": 0,
+      "any_crossing": 19
+    },
+    "MATR_b4c29": {
+      "lower_above_point": 35,
+      "upper_below_point": 12,
+      "bounds_invalid": 0,
+      "any_crossing": 47
+    }
+  },
+  "by_true_RUL_phase": {
+    "RUL_le100": {
+      "lower_above_point": 44,
+      "upper_below_point": 28,
+      "bounds_invalid": 0,
+      "any_crossing": 72
+    },
+    "RUL_gt300": {
+      "lower_above_point": 37,
+      "upper_below_point": 134,
+      "bounds_invalid": 3,
+      "any_crossing": 171
+    },
+    "RUL_100to300": {
+      "lower_above_point": 136,
+      "upper_below_point": 142,
+      "bounds_invalid": 53,
+      "any_crossing": 269
+    }
+  },
+  "bounds_invalid_origins": 56,
+  "bounds_invalid_true_RUL_range": [
+    136.0,
+    356.0
+  ],
+  "examples": [
+    {
+      "cell_id": "MATR_b2c6",
+      "origin": 155,
+      "true_RUL": 356.0,
+      "q10": 209.81580413969334,
+      "point": 234.26779108639036,
+      "q90": 205.87011085144306
+    },
+    {
+      "cell_id": "MATR_b2c6",
+      "origin": 156,
+      "true_RUL": 355.0,
+      "q10": 209.81580413969334,
+      "point": 234.26779108639036,
+      "q90": 205.87011085144306
+    },
+    {
+      "cell_id": "MATR_b2c6",
+      "origin": 184,
+      "true_RUL": 327.0,
+      "q10": 200.42715665264785,
+      "point": 211.44028643408453,
+      "q90": 196.34245177932445
+    },
+    {
+      "cell_id": "MATR_b2c41",
+      "origin": 291,
+      "true_RUL": 138.0,
+      "q10": 146.47436493930883,
+      "point": 152.31477885782436,
+      "q90": 146.00869679985163
+    },
+    {
+      "cell_id": "MATR_b2c41",
+      "origin": 292,
+      "true_RUL": 137.0,
+      "q10": 146.47436493930883,
+      "point": 147.05008580341,
+      "q90": 146.00869679985163
+    },
+    {
+      "cell_id": "MATR_b2c41",
+      "origin": 293,
+      "true_RUL": 136.0,
+      "q10": 141.38999299496288,
+      "point": 143.57551688091,
+      "q90": 140.6013973116645
+    }
+  ]
+}

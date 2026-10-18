@@ -1,0 +1,6 @@
+{
+  "status": "PASS_BYTE_EXACT",
+  "rows": 4567,
+  "prediction_sha256": "f40d8f0469f2386f3824d619fe5d4fab12439fa6a0c9300ee566e7ca96276cd7",
+  "delta_bytes": 32474
+}

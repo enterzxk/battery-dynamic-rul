@@ -1,3 +1,11 @@
+## 2026-10-19：工况匹配分位数2fit完成，端点倒置，NO_GAIN
+- **已完成**：相同42fit/10cal及7工况输入固定HGB q.1/.9真实2CPUfit，中位数复用；原始端点覆盖78.5016%→59.3523%，逐电池覆盖绝对误差均值.213265→.226177，5/10改善。512次序冲突，其中56端点倒置，全时段有效intervalscore=null，gateFAIL/NO_GAIN，不排序/clipping救援。
+- **证据**：experiments/policy_conditional_quantiles_seed42_v1/RESULTS_ZH.md、protocol/cohort/runner/ROOT_GO/fit_ledger/completion、calibration_predictions/checkpoints、metrics/per_cell_metrics/comparison/crossing_localization、independent_recompute/metrics、prediction_delta/decoder/lossless_validation/root_decision；独审reports/policy_conditional_quantiles_review_20261019_luna/review.json。
+- **最小验证**：4567独立重算差2.84e-14，crossing217lower/304upper/56bounds/512union一致；无损rawlog双列复原字节SHA通过。56倒置在3cell，真RUL136..356而非临近EOL，纯事后定位。2fit/2calpredict，0optimizer/checkpointload/新标量/devtest；累计CPU16=RUL14+辅助2，神经4fit2580steps/旧MATR41另记。
+- **阻塞/风险**：raw公式191.835875及其CI仅诊断，不当合法区间得分；原点TimeMAE36.400814完全不变。新逐电池coverage门槛fit前冻结且旧gate不追改；cal暴露/event-only/物理身份/固定policy限制保留。
+- **下一步**：准备42fit内部3折电池隔离OOF残差统一经验CDF参考，原7feature/固定HGB、每cell只被未见自身的模型预测、原policy中位数复用；最多3新CPUfit须一次窄审+fresh exactGO，当前未授权。0dev/test，不重跑/修排序当前quantile，不宣称conformal保证。
+
+
 ## 2026-10-19：额度恢复后完成大修订可靠性检验，幅度抑制代理NO_GO
 - **已完成**：0fit，仅42fit已存预测冻结电池等权q90绝对EOL修订阈值12.386630cycle；10cal4557更新中405大修订/9cell。同9cell大vs其余有害率42.6219%vs49.0847%，平均每步误差增益+2.255252vs+.014526；7/9大修订均值为正，不支持抑制大更新，关闭幅度代理。
 - **证据**：reports/policy_revision_reliability_20261019_root/RESULTS_ZH.md、protocol/diagnose/train_cutoff、summary/paired_calibration/examples/completion、per_cell_metrics_lossless/decoder、independent_recompute/validation、independent_public_recompute/public_validation/root_decision；全transitionCSV服务器保存。

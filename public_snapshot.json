@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-18T19:17:56.738954+00:00",
-  "content_sha256": "9e155f4050e46a6784123d76597105ae37bbf090c516a7b7165f24e89fa7b6a9",
-  "file_count": 725,
+  "snapshot_utc": "2026-10-18T19:35:38.442559+00:00",
+  "content_sha256": "b9e5228647fd06627cf6dd642eedeefef9b9a3378d9ea8a842477cc8fa1256b3",
+  "file_count": 743,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,8 +14,8 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 88559,
-      "sha256": "741c9ffc24ef614f7f19d438b19a30c1cd8bd7f6c2d38a2d7318a6330a4119c5"
+      "bytes": 90285,
+      "sha256": "d39257e54dcd216eb3cfa82559ca62e5f13a3ec49c15bcfe36f6081a741dbb71"
     },
     {
       "path": "README.md",
@@ -38,8 +38,8 @@
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 25256,
-      "sha256": "00ec3a6fcaff94510d0a711109ff55440e54c19ba1046d31d03b7c10e78dc112"
+      "bytes": 25796,
+      "sha256": "d7e41a53f3438074a1a8f7cb5c643e3e18096c378abbf587c80bcd828d35a41e"
     },
     {
       "path": "automation/bin/matr_raw_batch2_asset_worker_v1.py",
@@ -164,8 +164,8 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 75820,
-      "sha256": "c095acaf1ed7e26566bc61ff4724a953fc3d3ecfccc3b01f1700fc2c7ef16ab6"
+      "bytes": 77546,
+      "sha256": "f60409c6c6ff757824ce2f5bd8ff782c3b39fe72ce95edb00763552bd2c2cacd"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
@@ -1570,6 +1570,108 @@
       "source_path": "experiments/online_survival_robust_rate_seed42_v1/runner.py",
       "bytes": 7408,
       "sha256": "e17933d204cd99a4bca8a3a1d753b1cf310c1e6332e13becb75f20df6e9979a2"
+    },
+    {
+      "path": "experiments/policy_conditional_quantiles_seed42_v1/RESULTS_ZH.md",
+      "source_path": "experiments/policy_conditional_quantiles_seed42_v1/RESULTS_ZH.md",
+      "bytes": 3699,
+      "sha256": "85ae8548596257ee9056025beb478d7068a07b7df0ca1b3e9ef65d852e30f8c2"
+    },
+    {
+      "path": "experiments/policy_conditional_quantiles_seed42_v1/ROOT_GO.json",
+      "source_path": "experiments/policy_conditional_quantiles_seed42_v1/ROOT_GO.json",
+      "bytes": 1701,
+      "sha256": "8595d5fc902f20a3a28bff53bb54b3b2d80b790efec76faf2f1e737cb9d035c0"
+    },
+    {
+      "path": "experiments/policy_conditional_quantiles_seed42_v1/cohort.json",
+      "source_path": "experiments/policy_conditional_quantiles_seed42_v1/cohort.json",
+      "bytes": 2573,
+      "sha256": "42535de5825f6857e3aa69a596306a909a9a1b3ac087c43631032f6d293ef289"
+    },
+    {
+      "path": "experiments/policy_conditional_quantiles_seed42_v1/comparison.json",
+      "source_path": "experiments/policy_conditional_quantiles_seed42_v1/comparison.json",
+      "bytes": 560,
+      "sha256": "d660f24a09b60ff23f3b299baa8f95d718c4e429abda2a33adc7a3b7c8412cc6"
+    },
+    {
+      "path": "experiments/policy_conditional_quantiles_seed42_v1/completion.json",
+      "source_path": "experiments/policy_conditional_quantiles_seed42_v1/completion.json",
+      "bytes": 849,
+      "sha256": "ee5fa124766cedf25273fdca7b39c6eeaa9850f405e29a0757b59db811ddcdba"
+    },
+    {
+      "path": "experiments/policy_conditional_quantiles_seed42_v1/crossing_localization.json",
+      "source_path": "experiments/policy_conditional_quantiles_seed42_v1/crossing_localization.json",
+      "bytes": 3230,
+      "sha256": "eb20e0830e13a4c39bd59f7cfa738db0f71c171dd6bbdd83e57e0255fecb366e"
+    },
+    {
+      "path": "experiments/policy_conditional_quantiles_seed42_v1/decode_prediction_delta.py",
+      "source_path": "experiments/policy_conditional_quantiles_seed42_v1/decode_prediction_delta.py",
+      "bytes": 896,
+      "sha256": "4333fc59c1deebf16b8ccbf9cfa6b06fb30f01d737031928c5f604f0aff48d60"
+    },
+    {
+      "path": "experiments/policy_conditional_quantiles_seed42_v1/fit_ledger.jsonl",
+      "source_path": "experiments/policy_conditional_quantiles_seed42_v1/fit_ledger.jsonl",
+      "bytes": 286,
+      "sha256": "23470e43142e263dc271d5ebf16e29f22c081abbbed902b386d045b336366a07"
+    },
+    {
+      "path": "experiments/policy_conditional_quantiles_seed42_v1/independent_metrics.json",
+      "source_path": "experiments/policy_conditional_quantiles_seed42_v1/independent_metrics.json",
+      "bytes": 1071,
+      "sha256": "f79e8178bf61f4c24f2fead1fb47132a27d2e3930958e4ae49784cdb34cf54e4"
+    },
+    {
+      "path": "experiments/policy_conditional_quantiles_seed42_v1/independent_recompute.py",
+      "source_path": "experiments/policy_conditional_quantiles_seed42_v1/independent_recompute.py",
+      "bytes": 2726,
+      "sha256": "0eeb44dc33069e5521cc5958bce2b870464362b28fc66d03e6a219f1c026ffd9"
+    },
+    {
+      "path": "experiments/policy_conditional_quantiles_seed42_v1/lossless_validation.json",
+      "source_path": "experiments/policy_conditional_quantiles_seed42_v1/lossless_validation.json",
+      "bytes": 165,
+      "sha256": "15b974b8bb4dea9b979aca8537e01f2399f89835a5a678570038e23b7443b2e1"
+    },
+    {
+      "path": "experiments/policy_conditional_quantiles_seed42_v1/metrics.json",
+      "source_path": "experiments/policy_conditional_quantiles_seed42_v1/metrics.json",
+      "bytes": 751,
+      "sha256": "fb38567e1a34d878a93fc4a4ec9b30fe209e2253e60dd472720af02bc76705c0"
+    },
+    {
+      "path": "experiments/policy_conditional_quantiles_seed42_v1/per_cell_metrics.json",
+      "source_path": "experiments/policy_conditional_quantiles_seed42_v1/per_cell_metrics.json",
+      "bytes": 7401,
+      "sha256": "45964392d8c4f5bd8fcd1133303fb9e1b6ece20448d8a859e67bfeceb945eb87"
+    },
+    {
+      "path": "experiments/policy_conditional_quantiles_seed42_v1/prediction_delta.json",
+      "source_path": "experiments/policy_conditional_quantiles_seed42_v1/prediction_delta.json",
+      "bytes": 32474,
+      "sha256": "89387b4b061d17f5d6e1990904f368669e909f3a58b53e120186532dfc7bc7de"
+    },
+    {
+      "path": "experiments/policy_conditional_quantiles_seed42_v1/protocol.json",
+      "source_path": "experiments/policy_conditional_quantiles_seed42_v1/protocol.json",
+      "bytes": 4346,
+      "sha256": "f4c52b9a0001c2a494fdaa78ba1c398eb22673f47b9316e588e4f6d605163c5b"
+    },
+    {
+      "path": "experiments/policy_conditional_quantiles_seed42_v1/root_decision.json",
+      "source_path": "experiments/policy_conditional_quantiles_seed42_v1/root_decision.json",
+      "bytes": 4001,
+      "sha256": "6f606b42581a20446e95c94c1e99309d5724aa95a67e3fe316ac4ef0c06da99e"
+    },
+    {
+      "path": "experiments/policy_conditional_quantiles_seed42_v1/runner.py",
+      "source_path": "experiments/policy_conditional_quantiles_seed42_v1/runner.py",
+      "bytes": 9743,
+      "sha256": "69902e3ad4b2de44bfdbdedacdd83adca923c3003603c2ca4692fcf17d8833b1"
     },
     {
       "path": "experiments/policy_context_point_seed42_v1/RESULTS_ZH.md",
@@ -3856,6 +3958,12 @@
       "source_path": "reports/policy_causal_ema20_20261019_root/transition_audit.json",
       "bytes": 12003,
       "sha256": "7b11b90844c41c2950bf436034c1d0d558ad1546d1a7149119ca50d52d93b55a"
+    },
+    {
+      "path": "reports/policy_conditional_quantiles_review_20261019_luna/review.json",
+      "source_path": "reports/policy_conditional_quantiles_review_20261019_luna/review.json",
+      "bytes": 4388,
+      "sha256": "d32faa5912add79595b8295e361fd625bc02137581adf525db2d3f500a699e27"
     },
     {
       "path": "reports/policy_context_20261018_root/ENCODING_ZH.md",
