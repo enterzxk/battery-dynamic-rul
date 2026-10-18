@@ -1,0 +1,27 @@
+{
+  "status": "FROZEN_DESCRIPTIVE_DIAGNOSIS_NO_GATE_SELECTION",
+  "at_utc": "2026-10-18T05:16:02.658654+00:00",
+  "scope": "All19 fixed validation cells, then report7 harmed cells without selecting them for aggregate analysis",
+  "base": "Saved F2/F3 predictions; no new inference or fitting",
+  "definition": "harm=abs(predF3-trueRUL)-abs(predF2-trueRUL)>0; useful-rate correction is negative harm",
+  "observable_tags": {
+    "positive_slope20": "OLS normalized-capacity slope over last20 completed cycles >0; local recovery pattern, not proof of mechanism",
+    "short_long_sign_disagreement": "past5 slope times past20 slope <0",
+    "high_roughness_ratio": "MAD(past19 one-cycle capacity changes)/max(abs(past20 slope),1e-6) >train-only cell-duration-weighted75th percentile",
+    "recent_decline_twice_previous": "last20 and preceding20 slopes negative and last20<=2*preceding20",
+    "current_SOH_le85": "current measured capacity/nominal_SOCspan <=.85",
+    "large_prediction_correction": "abs(F3median-F2median)>20cycles; both outputs already available"
+  },
+  "train_threshold": "52 training cells only, same event-only origin ranges and inverse within-cell duration weights; one descriptive threshold estimation, no predictive fit",
+  "aggregation": "Original19-cell equal weights, each query weight1/Ncell; tag averages conditional on selected-query weights; do not renormalize each cell inside tag",
+  "interval_rule": "Consecutive harm>0 for at least10 cycles; report same frozen rule all19cells",
+  "interpretation": "Descriptive validation analysis only. No causal noise/phase attribution and no trained/picked update gate or heldout predictive reliability claim",
+  "cohort_sha256": "7ee7d1859d1c72d79d1dff863695ab861ab81aed69712c5ebff60a8053717df4",
+  "completion_sha256": "d7927010d85c2ad1cf00e2babb6180d2fe8324d3e480302749d68eb42ec93746",
+  "independent_metrics_sha256": "8d1f6aa2125be61ce7f69578fe7f30222fb14c002a5b3551da51bd1191e2d50e",
+  "predictive_fits": 0,
+  "optimizer_steps": 0,
+  "model_loads": 0,
+  "new_inference": 0,
+  "test_access": false
+}

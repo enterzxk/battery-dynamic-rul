@@ -56,6 +56,7 @@ def main():
     for directory in ['online_survival_competition_20261018_luna', 'online_survival_pilot_review_20261018_luna']:
         chosen.update(str(p.relative_to(ROOT)) for p in (ROOT / 'reports' / directory).rglob('*') if p.is_file())
     chosen.update(str(p.relative_to(ROOT)) for p in (ROOT / 'experiments/online_survival_observed_pilot_seed42_v1').rglob('*') if p.is_file())
+    chosen.update(str(p.relative_to(ROOT)) for p in (ROOT / 'reports/online_rate_harm_diagnosis_20261018_root').rglob('*') if p.is_file())
     chosen.add('reports/p1_cpmlp_recipe_review_20261018_luna/review.json')
     for name in ['runner.py', 'config.json', 'ROOT_GO.json', 'stopping_check.json', 'deadline_boundary_check.json', 'failure_receipt.json', 'launch_receipt.json']:
         chosen.add('experiments/cpmlp_hust_recipe_adapt_seed42_v1/' + name)

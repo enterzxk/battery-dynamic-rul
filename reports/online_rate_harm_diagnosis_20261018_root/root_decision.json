@@ -1,0 +1,32 @@
+{
+  "at_utc": "2026-10-18T05:18:20.032776+00:00",
+  "verdict": "NO_GO_FOR_NAIVE_NOISE_OR_LARGE_CORRECTION_HOLD_RULE_FROM_THIS_DIAGNOSIS",
+  "findings": [
+    "Paired rate correction increases absolute error on33.8936% of cell-duration-weighted queries despite mean benefit",
+    "Rare positive slope20 patterns have large added errors; worst1439.5 vs actual247cycles",
+    "Worst mean-harmed cell also has a327cycle persistent early-stage harm interval, not only transient spikes",
+    "High-roughness group retains average benefit; large-correction group accounts for87.92% of overall net benefit",
+    "All28 validation positive-rate origins lie inside the52train marginal slope range; no simple marginal OOD explanation"
+  ],
+  "cause_status": "Capacity-recovery/noise/phase mechanisms not identified causally; fitted F2/F3 also differ in coefficients, so paired error is not pure causal coefficient attribution",
+  "next_priority": "Strong simple robust rate feature baseline before learned gating",
+  "observable_tag_selection_for_gate_performed": false,
+  "predictive_reliability_validated": false,
+  "predictive_fits": 0,
+  "optimizer_steps": 0,
+  "new_inference": 0,
+  "model_loads": 0,
+  "dataset_binary_reads": 0,
+  "training_only_descriptive_threshold_estimations": 1,
+  "test_access": false,
+  "next_action": "Prepare and execute only after exact new scoped GO one fixed robust20-cycle slope baseline (Theil-Sen median pairwise slope) replacing F3 OLS slope; same52train19val origins/alpha/scaler/sigma and metrics, max1CPU predictive fit, no tuning/seed/model-family/gating expansion or test. Reuse existing source and narrow-review constraints; compare rare-spike harms, overallTime-MAE and severe overestimation, preserve negative results.",
+  "bindings": {
+    "protocol.json": "c1a6c740b8f10b221ecbdce0bec53a36e572098a1fded4767e31d2947e7dbc45",
+    "diagnose.py": "b6063f0e641e6b9ca853be7c3292f9ed25eb95e755886d4c36522eaaf053a1d9",
+    "diagnosis.json": "6ea2541ef8ae1d15a9848dfc7d87807a4e04c47a332a213475b50906412e7681",
+    "tag_comparisons.json": "f3cb6bac5224187ab8162535a83e8a8377000103e487d2f69e2f6f410aeab5db",
+    "harm_intervals.csv": "0bd89363de37255f75f9ac76823e52e25bf649471df2c625996b970ebd215da6",
+    "per_cell_diagnosis.csv": "d15ca69cb88018b3a8e4c89c37afd707bba202ab8b0370ffd5f86363f3be8825",
+    "marginal_rate_support_followup.json": "36154a7964a229f17759dc49bb0f3e7c5a5833e427ba2b8bc8a0401ff18bec92"
+  }
+}

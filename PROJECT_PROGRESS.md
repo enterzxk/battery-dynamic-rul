@@ -288,3 +288,12 @@
 - **最小验证**：条件分位数单例、past-only索引和4riskID排除窄审；真实一次3fit及连续账本；从40008预测行独立重算7指标匹配<1e-9。F3vsF2降14.1782%、探索区间[4.3775%,21.5915%]、12/19改善，严重高估比例下降0.7369个百分点。
 - **阻塞/风险**：event-only/batch2/4的processed-source工程pilot，非自然删失收益/strict在线/独立物理泛化/创新确认。F1无增益，F2增益区间跨0；F3仍7cell受损、前三贡献59.3%。旧MATR/CALB/PBT结论保持；本轮3CPUfit0optimizer，历史神经4fit2580step与旧MATR41CPUfit另记。
 - **下一步**：仅已存F2/F3预测+前缀诊断7受损cell的有害速率区间，判断噪声/恢复/阶段变化是否构成可靠更新需求；不预设门控、不加模型/seed/test。
+
+
+## 2026-10-18 13:18 北京时间：速率修正有害区间诊断，不支持粗暴暂停/回滚
+
+- **已完成**：只用既有F2/F3预测及past-only容量文本，冻结6标签后分析原19cell/10002query，定位7整体受损cell与连续受损区间。
+- **证据**：reports/online_rate_harm_diagnosis_20261018_root/DIAGNOSIS_ZH.md、diagnosis/root_decision、tag_comparisons、per_cell_diagnosis/harm_intervals；b2c22 origin265预测1439.50而真实247，b4c28连续100–426受损。
+- **最小验证**：原预测/源摘要SHA、精确配对/7cell与既有结果一致，每标签与补集重构总净差值<1e-9；粗糙度阈值只由52train估计一次。无需再跑模型/smoke。
+- **阻塞/风险**：正速率只有28时点且全部在train边际范围内，不能推因果恢复/噪声；高粗糙度仍平均获益，大幅修正贡献87.92%净增益，NO_GO粗暴噪声暂停/大修正回滚。未建立预测时可靠判别器；同19val描述非独立确认。new_fits=0、steps/model/inference/binary/test=0。
+- **下一步**：固定20cycle Theil–Sen稳健速率替代OLS的强简单对照，新exactGO下最多1CPUfit，保持其他F3协议，不开发门控或加seed/test。

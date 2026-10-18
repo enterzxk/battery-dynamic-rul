@@ -1,3 +1,7 @@
+## 最新增量：2026-10-18 13:18 北京时间，速率有害区间诊断
+
+整体速率收益保留，但33.89%查询绝对误差增加，7cell整体受损。b2c22出现13cycle容量回升样式伴极端RUL修正（origin265：F3=1439.50、F2=280.54、真247）；b4c28另有327cycle持久受损。高粗糙度组仍平均获益，大幅修正贡献87.92%净改善，因此不支持“噪声大就暂停/修正大就回滚”。这只是既有19cell描述，未识别因果或验证可靠性门。见reports/online_rate_harm_diagnosis_20261018_root/DIAGNOSIS_ZH.md；本轮fit/steps/model/inference/binary/test=0。下一项是在新限定GO后至多1CPUfit的固定20cycle Theil–Sen稳健速率简单对照，非新架构/创新确认。
+
 # 当前研究主线更新：单电池在线条件 RUL（用户2026-10-18授权）
 
 最新用户全文在docs/USER_SINGLE_BATTERY_ONLINE_RUL_20261018_ZH.md。主线不再以迁移、预训练或早期总EOL为创新中心；原成果保留。最新真实结果请先读experiments/online_survival_observed_pilot_seed42_v1/RESULTS_ZH.md及root_decision.json。

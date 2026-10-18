@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-18T05:08:35.155319+00:00",
-  "content_sha256": "9090fddbed2ac5613c09bb0336411d331363dc47711f6c9c364234deb77b5146",
-  "file_count": 419,
+  "snapshot_utc": "2026-10-18T05:18:53.963986+00:00",
+  "content_sha256": "20e8500c81b42887ee9403e74c8567b28684be1d37e60e8ac13527e3a1a7de67",
+  "file_count": 428,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,8 +14,8 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 47356,
-      "sha256": "396e23656eb3429332ce19c2148fcae0cc8bbe961a32ecb62a7cf773cbd8a891"
+      "bytes": 48565,
+      "sha256": "f46e0e6b0adc6da840e2fd5ee798b413ab484632dafa49a0bbbb881ba07cc10e"
     },
     {
       "path": "README.md",
@@ -32,8 +32,8 @@
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 10280,
-      "sha256": "908044e35e6b24f09397778e23a29dcf08ca0034273b39f4056207aa6620ca72"
+      "bytes": 10419,
+      "sha256": "298d32e13026381f0d3525b5355066d3feee83ee661a4c1b86d4f68996f3ed99"
     },
     {
       "path": "automation/github_export/build_dynamic_A_eligible_20261017.py",
@@ -128,8 +128,8 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 35081,
-      "sha256": "f1666424090e01b14715034cd252712c8d8910e6f4a6e597eeb1f2cd65c6b8e6"
+      "bytes": 35824,
+      "sha256": "ee171b875a933a050fb639ae6660abe1604b1c334b49a5fc9da89c96011b3ff3"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
@@ -1860,6 +1860,60 @@
       "sha256": "b6dac0cad0c771be6fb1bc119a7065ce7a5d97496e14893677c5b30ab2623deb"
     },
     {
+      "path": "reports/online_rate_harm_diagnosis_20261018_root/DIAGNOSIS_ZH.md",
+      "source_path": "reports/online_rate_harm_diagnosis_20261018_root/DIAGNOSIS_ZH.md",
+      "bytes": 4252,
+      "sha256": "d79004c022cc709019fce6d160bc763ff5248c0119e334a6571f7aba16594714"
+    },
+    {
+      "path": "reports/online_rate_harm_diagnosis_20261018_root/diagnose.py",
+      "source_path": "reports/online_rate_harm_diagnosis_20261018_root/diagnose.py",
+      "bytes": 7038,
+      "sha256": "b6063f0e641e6b9ca853be7c3292f9ed25eb95e755886d4c36522eaaf053a1d9"
+    },
+    {
+      "path": "reports/online_rate_harm_diagnosis_20261018_root/diagnosis.json",
+      "source_path": "reports/online_rate_harm_diagnosis_20261018_root/diagnosis.json",
+      "bytes": 15336,
+      "sha256": "6ea2541ef8ae1d15a9848dfc7d87807a4e04c47a332a213475b50906412e7681"
+    },
+    {
+      "path": "reports/online_rate_harm_diagnosis_20261018_root/harm_intervals.csv",
+      "source_path": "reports/online_rate_harm_diagnosis_20261018_root/harm_intervals.csv",
+      "bytes": 7430,
+      "sha256": "0bd89363de37255f75f9ac76823e52e25bf649471df2c625996b970ebd215da6"
+    },
+    {
+      "path": "reports/online_rate_harm_diagnosis_20261018_root/marginal_rate_support_followup.json",
+      "source_path": "reports/online_rate_harm_diagnosis_20261018_root/marginal_rate_support_followup.json",
+      "bytes": 12433,
+      "sha256": "36154a7964a229f17759dc49bb0f3e7c5a5833e427ba2b8bc8a0401ff18bec92"
+    },
+    {
+      "path": "reports/online_rate_harm_diagnosis_20261018_root/per_cell_diagnosis.csv",
+      "source_path": "reports/online_rate_harm_diagnosis_20261018_root/per_cell_diagnosis.csv",
+      "bytes": 2668,
+      "sha256": "d15ca69cb88018b3a8e4c89c37afd707bba202ab8b0370ffd5f86363f3be8825"
+    },
+    {
+      "path": "reports/online_rate_harm_diagnosis_20261018_root/protocol.json",
+      "source_path": "reports/online_rate_harm_diagnosis_20261018_root/protocol.json",
+      "bytes": 2073,
+      "sha256": "c1a6c740b8f10b221ecbdce0bec53a36e572098a1fded4767e31d2947e7dbc45"
+    },
+    {
+      "path": "reports/online_rate_harm_diagnosis_20261018_root/root_decision.json",
+      "source_path": "reports/online_rate_harm_diagnosis_20261018_root/root_decision.json",
+      "bytes": 2443,
+      "sha256": "fe16a0abc5ab202f7d885c92ed66967ac89cecfa484153bd11b4e8165ad1a1b9"
+    },
+    {
+      "path": "reports/online_rate_harm_diagnosis_20261018_root/tag_comparisons.json",
+      "source_path": "reports/online_rate_harm_diagnosis_20261018_root/tag_comparisons.json",
+      "bytes": 5851,
+      "sha256": "f3cb6bac5224187ab8162535a83e8a8377000103e487d2f69e2f6f410aeab5db"
+    },
+    {
       "path": "reports/online_survival_competition_20261018_luna/COMPETITION_REVIEW_ZH.md",
       "source_path": "reports/online_survival_competition_20261018_luna/COMPETITION_REVIEW_ZH.md",
       "bytes": 3403,
@@ -2591,6 +2645,10 @@
     },
     {
       "path": "reports/literature_discussion_20261017_root_v1/reading_part_28.json",
+      "reason": "not_small_allowlisted_text"
+    },
+    {
+      "path": "reports/online_rate_harm_diagnosis_20261018_root/invocation.claim",
       "reason": "not_small_allowlisted_text"
     },
     {
