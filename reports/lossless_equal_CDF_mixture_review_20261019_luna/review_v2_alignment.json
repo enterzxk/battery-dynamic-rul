@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "review_stage": "ENGINEERING_DELTA_NARROW_REVIEW_PRE_GO",
+  "requested_model": "gpt-6-luna/high",
+  "review_scope": "Only v1/v2 runner and protocol delta, key-alignment validation receipt, and specified hashes. No math/data re-review; no runner, metric, CDF, model, or checkpoint execution.",
+  "bound_sha256": {
+    "v2_runner.py": "4ed0b0fdd4cf1765a919f3b62a9c30a1d9a55802e8f7c0699e6f17437445cba9",
+    "v2_protocol.json": "c42b7412242819e4d07b3b54cbafaffc7044b2d2e68aefbcbaa573b65556dd79",
+    "key_alignment_validation.json": "22709a9cbde4eda6b5d35e9eb4a71358decdd9982acace9523237a5753f9a200"
+  },
+  "referenced_sha256": {
+    "prior_mixture_review.json": "7850d777a340597a380bffeb38c0f3ef04c2396081b108debfbe69bab1106289",
+    "v1_runner.py": "2d02097b197f3318e0299a277319b018407e7a97a5cd482b345720112dbbd9a9",
+    "v1_failure.json": "68e8b4fe3015fb10e9e807ec0b39e5ca2f2aad99c0129516b05854db510431c4"
+  },
+  "engineering_reason": "The v1 failure was caused by requiring exact row-order equality across saved component tables even though both tables contained the same unique (cell_id, origin) keys and labels in a different order. v2 aligns each arm to point-source order by unique key before downstream use.",
+  "delta_checks": [
+    "Diff adds key construction and keyed alignment for the early-survival and dynamic arms, rejects duplicate/missing/extra keys by cardinality and exact key-set assertions, and checks true_RUL equality after alignment.",
+    "The protocol delta only refreshes frozen_utc and records the engineering-repair receipt and v1 failure/GO-consumed evidence.",
+    "No mathematical CDF, 64-step inversion, mixture weight, risk formula, metric/gate logic, model, sigma, calibration, or fit behavior changed in the runner delta.",
+    "The key-alignment validation receipt is hash-bound and reports PASS_KEY_ALIGNMENT_ONLY_NO_CDF_EXECUTION for 4567 rows per component arm; it states original order differs while keys and labels match.",
+    "The v1 runner identity and consumed GO remain referenced; this review authorizes no rerun of v1 and no execution of v2."
+  ],
+  "technical_blockers": [],
+  "execution_boundary": "This is a delta-only engineering PASS, not an execution GO and not a renewed review of mixture mathematics or data. The coordinator must sign fresh exact GO for v2 before its one execution. Preserve v1 failure and consumed budget/GO; do not rerun v1."
+}

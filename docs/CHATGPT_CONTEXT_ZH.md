@@ -459,3 +459,7 @@ experiments/policy_lossless_schedule_point_seed42_v1/RESULTS_ZH.md。同42fit/10
 
 ## 最新0fit强对照：新观测点收益与严重高估冲突
 reports/lossless_survival_probability_20261019_root/RESULTS_ZH.md。固定旧sigmaA，新lossless第100循环分布条件存活vs动态：MAE55.242118→33.027239降40.2137%，9/10、pairedCI[10.098087,35.133490]；over100.2791%→3.1631%增2.8840pp超过+1pp，点/概率联合FAIL。IS266.317886→149.873353、Brier改善不救风险；逐cell覆盖误差仅6/10。b4c7同cell MAE81.598→55.713改善而over1002.79%→23.72%，说明同cell也有精度/尾部风险冲突。旧sigma并非新模型独立校准，所有概率均为该尺度条件下参考诊断；cal暴露/eventonly/身份限制保留。0fit，CPU20不变；旧lossless点扩展NO_GO保留。下一项固定等权CDF混合.5surv+.5dynamic，实际混合分位数，0fit/新推理/尺度/devtest；一次窄审+freshGO后仅一次，不搜权重，不当创新。
+
+
+## 最新0fit：固定50/50CDF强基线通过点/风险筛选，概率联合仍失败
+experiments/lossless_equal_CDF_mixture_v2/RESULTS_ZH.md。Fmix=.5早期存活+.5动态，真实CDF逆分位数，不平均medians；MAE35.452043，vs早期55.242118降35.8243%、10/10、CI[11.107744,28.785172]；over100.6047%，vs早期.2791%增.3256pp<1pp，原点/风险gatePASS。vs纯动态33.027239牺牲7.3418%MAE，风险3.1631%→.6047%；coverage83.31%、3/10cellcoverage改善，完整概率FAIL。0fit/推理/权重或尺度估计/devtest，CPU20不变。v1在行序对齐断言CDF前失败，v2仅按唯一cellID+origin重排，保留失败，delta窄审+freshGO后一次实际CDF，两个GO消费。不搜权重，不当创新/独立确认，旧sigma不是新模型校准。公开3分位列原字节无损，完整8列CSV/archive只服务器并给SHA。下一步最多2篇最近主文Methods/公式创新冲突审查，明确等权强基线后还有何非重复最小问题，0训练/test、不重读全库。

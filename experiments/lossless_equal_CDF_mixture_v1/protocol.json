@@ -1,0 +1,49 @@
+{
+  "owner": "01a1508e-83e9-7232-a0e4-07606110b443",
+  "question": "Can one fixedequal probability mixture of earlysurvival and newdynamic reduce severeover without giving up the frozen primary pointgate vs earlysurvival?",
+  "mixture_weight": 0.5,
+  "weight_policy": "Unique equalweight fixedbefore outcomes; no search or learning",
+  "sigma": 0.19898311654196568,
+  "new_fits": 0,
+  "new_model_inference": 0,
+  "new_scale_estimates": 0,
+  "new_weight_estimates": 0,
+  "dev_test_reads": 0,
+  "checkpoint_loads": 0,
+  "raw_feature_reads": 0,
+  "max_seconds": 60,
+  "sources": {
+    "point_predictions": {
+      "path": "experiments/policy_lossless_schedule_point_seed42_v1/calibration_predictions.csv",
+      "sha256": "98a0ef87f4ab9ea2a9ff0588dbde2890f56768cae5be3585cba4510eeb55aa0c"
+    },
+    "component_predictions": {
+      "path": "reports/lossless_survival_probability_20261019_root/derived_distribution_predictions.csv",
+      "sha256": "2874159abbe8bfbe3c03a434b5182c9472874d1994f1db67a3cac37c2e43e781"
+    },
+    "parameters": {
+      "path": "experiments/matr_raw_heldout_calibration_seed42_v1/fit_parameters.json",
+      "sha256": "ca95515be2d4977aa5160f9aa520acb996c6bd83eff5618ab72e8655f34711e5"
+    }
+  },
+  "quantiles": "Actual inverse(.5Fsurv+.5Fdynamic), q.1/.5/.9 with64 bisections bracketed by samequantile of two components; positive support and all4567 CDFresidual<1e-10. Not averagedmedians.",
+  "risk": "Fmix100/300=.5componentrisk+.5componentrisk; verifydirect CDF",
+  "point_gate": {
+    "primary_reference": "early_survival",
+    "relative_MAE_reduction_min": 0.05,
+    "cells_improved_min": 7,
+    "paired_CI_lower_strictly_above": 0,
+    "severe_over100_increment_max": 0.01,
+    "bootstrap": 2000,
+    "seed": 42
+  },
+  "probability_gate": "Samelegacy .05IS/.03aggregatecoverageerror/2width/.002Brier/7cellcoverage and pointgate; not retroactively changed",
+  "limits": [
+    "Existing10cal4567 exposeddevelopment, not independentconfirmation",
+    "Fixedold sigma not newmodel independentcalibration; fullCDFcoherence does not implycoverage guarantee",
+    "Eventonly physicalserial/fullsource unknown knownfixedpolicy",
+    "No weighting/scale/feature/seed or mixturemodule rescue; oneinvocation; alloldNO_GOs remain",
+    "Ordinary equalprobabilitymixture is strongsimple baseline, not innovation"
+  ],
+  "frozen_utc": "2026-10-18T21:14:08.666932+00:00"
+}

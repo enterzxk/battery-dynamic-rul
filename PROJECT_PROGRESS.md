@@ -554,3 +554,11 @@
 - **最小验证**：13701独立指标/CDF/风险复算差2.84e-14/1.40e-14/3.77e-15，3代表时点分位数独立二分差4.55e-13通过。0fit/推理/旧checkpoint/新尺度/rawfeatures/devtest，CPU20不变。
 - **阻塞/风险**：b4c7同cell MAE81.598→55.713改善而over1002.79%→23.72%，冲突不只是跨cell混合；新动态coverage79.43%仍不能称条件覆盖。旧sigma不是新模型独立校准，cal暴露/eventonly/物理身份限制保留。上一点对照6/10CI跨0的扩展NO_GO不变。
 - **下一步**：已有分布唯一等权Fmix=.5Fsurv+.5Fdyn强参考，真实混合CDF分位数；0fit/推理/新尺度/devtest，冻结门槛+一次窄审+freshGO后一次，不搜权重，不把普通混合当创新。
+
+
+## 2026-10-19：唯一等权完整CDF混合，点/风险开发PASS但概率联合FAIL
+- **已完成**：Fmix=.5Fsurv+.5Fdynamic真实分位数，MAE35.452043 vs早期55.242118改善35.8243%，10/10、CI[11.107744,28.785172]；over100.6047% vs早期.2791%增.3256pp<1pp，原点/风险gatePASS。vs纯动态MAE33.027239牺牲7.3418%，over1003.1631%降至.6047%；coverage83.31%、仅3/10覆盖误差改善，完整概率FAIL。
+- **证据**：experiments/lossless_equal_CDF_mixture_v2/RESULTS_ZH、protocol/runner/ROOT_GO/key_alignment_validation、metrics/per_cell_metrics/comparisons/numeric_validation/completion、independent_recompute/metrics、public_quantiles_lossless/decoder/validation/root_decision；完整8列CSV及archive服务器保存。审查reports/lossless_equal_CDF_mixture_review_20261019_luna，v1失败保留。
+- **最小验证**：4567独立指标差2.84e-14、quantileCDF6.61e-15、risk2.55e-15，3标量二分差2.27e-13；3分位列原字节SHA通过。v1源行序断言在CDF前失败，v2仅key对齐修复+delta窄审+freshGO，无数学/权重/门槛变更。0fit/新推理/尺度/权重估计/devtest，CPU20不变，两GO消费。
+- **阻塞/风险**：普通混合已给点/尾部风险折中，不能称创新或完整概率可靠性；固定旧sigma/cal暴露/eventonly/身份限制保留。原lossless点扩展NO_GO不撤销，不搜权重/新校准模块。3份历史静态证据无损271252→39406bytes，原件/历史保留，不扩12MiB。
+- **下一步**：最多2篇已有主文的最近动态分布/可靠性融合论文，Methods/公式及阅读范围窄核，输出冲突与最小未证增量表；0训练/test，不重读41篇，不从摘要推断。

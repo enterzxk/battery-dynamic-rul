@@ -1,0 +1,16 @@
+{
+  "status": "PASS_KEY_ALIGNMENT_ONLY_NO_CDF_EXECUTION",
+  "source_rows": 4567,
+  "component_rows": 13701,
+  "source_order_reused_for_output": true,
+  "arms": {
+    "lossless_early_survival_conditioned": {
+      "original_order_identical": false,
+      "keys_and_labels_match": true
+    },
+    "lossless_dynamic": {
+      "original_order_identical": false,
+      "keys_and_labels_match": true
+    }
+  }
+}

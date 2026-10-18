@@ -1,0 +1,8 @@
+{
+  "status": "PASS_EXACT_THREECOLUMN_CSV_BYTES_SHA256",
+  "rows": 4567,
+  "quantile_csv_sha256": "bd8d9bed68b36d24047abfc5b4c9d07f2674ccba4c085b0f13d04a9523b9e4d7",
+  "source_order_sha256": "98a0ef87f4ab9ea2a9ff0588dbde2890f56768cae5be3585cba4510eeb55aa0c",
+  "full_mixture_server_csv_sha256": "6af2d8605428e18fc396b6e159ef00329bd1dfce04510210952f524a7adf700d",
+  "public_archive_bytes": 165852
+}

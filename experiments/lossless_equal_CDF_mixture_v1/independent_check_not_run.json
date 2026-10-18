@@ -1,0 +1,6 @@
+{
+  "status": "NO_PREDICTIONS_AVAILABLE_AFTER_PRECOMPUTE_ALIGNMENT_FAILURE",
+  "missing": "mixture_predictions.csv",
+  "new_fits": 0,
+  "new_model_inference": 0
+}

@@ -1,0 +1,23 @@
+{
+  "status": "PASS_ORIGINAL_BYTES_SHA256",
+  "original_bytes": 271252,
+  "archive_bytes": 39406,
+  "files": [
+    {
+      "path": "reports/dynamic_A_eligible_20261017_root/eligible_origins.csv",
+      "sha256": "e6e0a9903cb0401af5ed0b535f831430c0edf1c5f25f6495fd2561c8756ca4a2",
+      "bytes": 121818
+    },
+    {
+      "path": "reports/dynamic_A_eligible_20261017_root/cohort_receipt.json",
+      "sha256": "e5f0f1390bbd3b0f12680a9eac894cb738eea8909523afcc7971ea9e33dcd9ea",
+      "bytes": 82175
+    },
+    {
+      "path": "reports/data_schema_audit/run_20261015T164049_918837Z/index_capacity_clarification.json",
+      "sha256": "6aed0475f0b7d30f565e842a53352c582a8645315d6f302c77b0b414725f6efc",
+      "bytes": 67259
+    }
+  ],
+  "server_originals_and_GitHub_history_retained": true
+}

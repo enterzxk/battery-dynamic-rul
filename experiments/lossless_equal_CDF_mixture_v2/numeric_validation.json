@@ -1,0 +1,9 @@
+{
+  "status": "PASS_COHERENT_MIXTURE_CDF_INVERSION",
+  "maximum_quantile_CDF_error": 4.884981308350689e-15,
+  "maximum_bracket_width": 1.1368683772161603e-13,
+  "maximum_risk_difference": 0.0,
+  "positive_ordered_all4567": true,
+  "weight": 0.5,
+  "iterations": 64
+}

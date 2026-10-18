@@ -1,0 +1,17 @@
+{
+  "status": "GO_ONE_FIXED_HALF_CDF_MIXTURE_ZERO_FIT",
+  "max_new_fits": 0,
+  "max_new_model_inference": 0,
+  "max_new_scale_estimates": 0,
+  "max_new_weight_estimates": 0,
+  "max_checkpoint_loads": 0,
+  "max_dev_test_reads": 0,
+  "max_seconds": 60,
+  "owner": "01a1508e-83e9-7232-a0e4-07606110b443",
+  "issued_utc": "2026-10-18T21:17:07.331533+00:00",
+  "review_path": "/home/yndx/zxk/rul/reports/lossless_equal_CDF_mixture_review_20261019_luna/review_v2_alignment.json",
+  "review_sha256": "8e3c82eb632dc6d805ffd79c93c46bb3c04da39e4377b1f3b4d68da25325ed75",
+  "runner.py_sha256": "4ed0b0fdd4cf1765a919f3b62a9c30a1d9a55802e8f7c0699e6f17437445cba9",
+  "protocol.json_sha256": "c42b7412242819e4d07b3b54cbafaffc7044b2d2e68aefbcbaa573b65556dd79",
+  "scope": "One actualequalCDFcomparison after pure keyalignment repair; v1failed before CDF output, v1GO not reused; no weight/scale rescue"
+}

@@ -1,0 +1,16 @@
+{
+  "status": "COMPLETE_ONE_FIXED_HALF_CDF_MIXTURE",
+  "new_fits": 0,
+  "new_model_inference": 0,
+  "new_scale_estimates": 0,
+  "new_weight_estimates": 0,
+  "checkpoint_loads": 0,
+  "raw_feature_reads": 0,
+  "dev_test_reads": 0,
+  "rows": 4567,
+  "prediction_sha256": "6af2d8605428e18fc396b6e159ef00329bd1dfce04510210952f524a7adf700d",
+  "runner_sha256": "4ed0b0fdd4cf1765a919f3b62a9c30a1d9a55802e8f7c0699e6f17437445cba9",
+  "protocol_sha256": "c42b7412242819e4d07b3b54cbafaffc7044b2d2e68aefbcbaa573b65556dd79",
+  "GO_sha256": "1a7c1260447ec2b647e32ddbe2d7a054247d602c06bc4eae2b5b9adba81410f9",
+  "elapsed_seconds": 0.18719716742634773
+}

@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-18T21:01:23.846434+00:00",
-  "content_sha256": "518ee1fcbb9d39b98983aa9b37647bd7c53a24282694e646711b76d7a0101329",
-  "file_count": 839,
+  "snapshot_utc": "2026-10-18T21:19:23.773399+00:00",
+  "content_sha256": "318917e7e7f31b4762fa04a7e6b791c660de0e0bf0788e55581f61a04a1a013e",
+  "file_count": 862,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,8 +14,8 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 99549,
-      "sha256": "2291ae8d22fdec21d97733f1ae682a08774b815bee8308dae314b844fb17b00e"
+      "bytes": 101250,
+      "sha256": "93ca9a5373738781ebf93177a8712c7bb7f24d348f26a7a52670bb86d3b223cf"
     },
     {
       "path": "README.md",
@@ -38,8 +38,8 @@
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 33716,
-      "sha256": "f150dc636c164f5c74dee385985f1e05a3b126e1ad38d4b882751243f958df66"
+      "bytes": 35730,
+      "sha256": "58296cda535fe7f25a304ff5278449430870662b41725c2b63f5d7472c9e3476"
     },
     {
       "path": "automation/bin/matr_raw_batch2_asset_worker_v1.py",
@@ -164,8 +164,8 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 83291,
-      "sha256": "4df346564c1658bde73abdb24c078ba3b094fdc0a382f6e3799f8b2be79ad51f"
+      "bytes": 84302,
+      "sha256": "2de3b9c69e16a74f305cecbca81f6948ae498377af4f2d4f72b4bed55b333123"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
@@ -1120,6 +1120,132 @@
       "source_path": "experiments/dynamic_A_matr_retrospective_seed42_v1/validation_predictions.csv",
       "bytes": 77048,
       "sha256": "b336f3b69219d9f8c1a4044e68bb8e6b9a365b7227673d722118e3b750ca0c22"
+    },
+    {
+      "path": "experiments/lossless_equal_CDF_mixture_v1/ROOT_GO.json",
+      "source_path": "experiments/lossless_equal_CDF_mixture_v1/ROOT_GO.json",
+      "bytes": 822,
+      "sha256": "97ded71b25781f0478ae370e7bacf708d55d58e703bd38c39bd99854863796ad"
+    },
+    {
+      "path": "experiments/lossless_equal_CDF_mixture_v1/failure.json",
+      "source_path": "experiments/lossless_equal_CDF_mixture_v1/failure.json",
+      "bytes": 82,
+      "sha256": "68e8b4fe3015fb10e9e807ec0b39e5ca2f2aad99c0129516b05854db510431c4"
+    },
+    {
+      "path": "experiments/lossless_equal_CDF_mixture_v1/independent_check_not_run.json",
+      "source_path": "experiments/lossless_equal_CDF_mixture_v1/independent_check_not_run.json",
+      "bytes": 162,
+      "sha256": "acd9a7b1bc422420c1c0580185eccf46fc3e8226289a026f15c0cbf5370806b9"
+    },
+    {
+      "path": "experiments/lossless_equal_CDF_mixture_v1/protocol.json",
+      "source_path": "experiments/lossless_equal_CDF_mixture_v1/protocol.json",
+      "bytes": 2390,
+      "sha256": "0423c09b008a9b2a9c2a7ed931fc786053135e689fcb53295966b9b94872b364"
+    },
+    {
+      "path": "experiments/lossless_equal_CDF_mixture_v1/runner.py",
+      "source_path": "experiments/lossless_equal_CDF_mixture_v1/runner.py",
+      "bytes": 7580,
+      "sha256": "2d02097b197f3318e0299a277319b018407e7a97a5cd482b345720112dbbd9a9"
+    },
+    {
+      "path": "experiments/lossless_equal_CDF_mixture_v2/RESULTS_ZH.md",
+      "source_path": "experiments/lossless_equal_CDF_mixture_v2/RESULTS_ZH.md",
+      "bytes": 4517,
+      "sha256": "0750a44db15a3be616c010ca65a13b23effed21d13aeb8b58ae48ceebcd7688d"
+    },
+    {
+      "path": "experiments/lossless_equal_CDF_mixture_v2/ROOT_GO.json",
+      "source_path": "experiments/lossless_equal_CDF_mixture_v2/ROOT_GO.json",
+      "bytes": 889,
+      "sha256": "1a7c1260447ec2b647e32ddbe2d7a054247d602c06bc4eae2b5b9adba81410f9"
+    },
+    {
+      "path": "experiments/lossless_equal_CDF_mixture_v2/comparisons.json",
+      "source_path": "experiments/lossless_equal_CDF_mixture_v2/comparisons.json",
+      "bytes": 1602,
+      "sha256": "07cb84d7f434b432462bb918959705603d8d2ec37ee69912c985376cee77f610"
+    },
+    {
+      "path": "experiments/lossless_equal_CDF_mixture_v2/completion.json",
+      "source_path": "experiments/lossless_equal_CDF_mixture_v2/completion.json",
+      "bytes": 638,
+      "sha256": "d247873908f3fbf866ad7adf9ad333154d322286bba7533cb62ae976cad665e6"
+    },
+    {
+      "path": "experiments/lossless_equal_CDF_mixture_v2/decode_public_quantiles.py",
+      "source_path": "experiments/lossless_equal_CDF_mixture_v2/decode_public_quantiles.py",
+      "bytes": 388,
+      "sha256": "12c75f01bf3c6af399717d92aae62da1e87988f27a3bc8996cca69a0267dee97"
+    },
+    {
+      "path": "experiments/lossless_equal_CDF_mixture_v2/independent_metrics.json",
+      "source_path": "experiments/lossless_equal_CDF_mixture_v2/independent_metrics.json",
+      "bytes": 1804,
+      "sha256": "e542c9ae2862dd9400ae8c2d7dae58a591c5b0aa886b5adb9dd8f1781b5f1b51"
+    },
+    {
+      "path": "experiments/lossless_equal_CDF_mixture_v2/independent_recompute.py",
+      "source_path": "experiments/lossless_equal_CDF_mixture_v2/independent_recompute.py",
+      "bytes": 2810,
+      "sha256": "821ac1d1d67ebf0245c5335d7597f1731780ca7a70ffe046898627e91b727575"
+    },
+    {
+      "path": "experiments/lossless_equal_CDF_mixture_v2/key_alignment_validation.json",
+      "source_path": "experiments/lossless_equal_CDF_mixture_v2/key_alignment_validation.json",
+      "bytes": 406,
+      "sha256": "22709a9cbde4eda6b5d35e9eb4a71358decdd9982acace9523237a5753f9a200"
+    },
+    {
+      "path": "experiments/lossless_equal_CDF_mixture_v2/metrics.json",
+      "source_path": "experiments/lossless_equal_CDF_mixture_v2/metrics.json",
+      "bytes": 971,
+      "sha256": "2ea4f08b2fe4007b211c29e8fc1f5ecab9e7179fba68303e1b5078755258508a"
+    },
+    {
+      "path": "experiments/lossless_equal_CDF_mixture_v2/numeric_validation.json",
+      "source_path": "experiments/lossless_equal_CDF_mixture_v2/numeric_validation.json",
+      "bytes": 267,
+      "sha256": "49738938931fdd5dbe4651a78904baf5d188aeeb5a62d9c298ca230e71b2a146"
+    },
+    {
+      "path": "experiments/lossless_equal_CDF_mixture_v2/per_cell_metrics.json",
+      "source_path": "experiments/lossless_equal_CDF_mixture_v2/per_cell_metrics.json",
+      "bytes": 11039,
+      "sha256": "b31f760c4d646c32713c000c9c71bf7d5ea0f3d8dc8ac366bde38fefc8ab5c20"
+    },
+    {
+      "path": "experiments/lossless_equal_CDF_mixture_v2/protocol.json",
+      "source_path": "experiments/lossless_equal_CDF_mixture_v2/protocol.json",
+      "bytes": 3067,
+      "sha256": "c42b7412242819e4d07b3b54cbafaffc7044b2d2e68aefbcbaa573b65556dd79"
+    },
+    {
+      "path": "experiments/lossless_equal_CDF_mixture_v2/public_quantiles_lossless.json",
+      "source_path": "experiments/lossless_equal_CDF_mixture_v2/public_quantiles_lossless.json",
+      "bytes": 165852,
+      "sha256": "7041b6ca6aedc89f7d6a4d304b3549ed3edf63f055671e95ae02708cdaac7e7e"
+    },
+    {
+      "path": "experiments/lossless_equal_CDF_mixture_v2/public_quantiles_validation.json",
+      "source_path": "experiments/lossless_equal_CDF_mixture_v2/public_quantiles_validation.json",
+      "bytes": 397,
+      "sha256": "5dc8a8eb8d02c063a61b7b80e135b737a9b71b5d886a2943d11c4b9a8459df3a"
+    },
+    {
+      "path": "experiments/lossless_equal_CDF_mixture_v2/root_decision.json",
+      "source_path": "experiments/lossless_equal_CDF_mixture_v2/root_decision.json",
+      "bytes": 3165,
+      "sha256": "92ab57f118497c828109c17289b3b869c36dda13a2af79d56b8f1f2337c34e4b"
+    },
+    {
+      "path": "experiments/lossless_equal_CDF_mixture_v2/runner.py",
+      "source_path": "experiments/lossless_equal_CDF_mixture_v2/runner.py",
+      "bytes": 7970,
+      "sha256": "4ed0b0fdd4cf1765a919f3b62a9c30a1d9a55802e8f7c0699e6f17437445cba9"
     },
     {
       "path": "experiments/matr_raw_batch2_longtrend_seed42_v1/RESULTS_ZH.md",
@@ -2874,6 +3000,24 @@
       "sha256": "f231ed562dcff152eae0670471fb06f0e8108ba04947f64113b46c2ca94fb691"
     },
     {
+      "path": "reports/completed_eligibility_lossless_20261019_root/archive.json",
+      "source_path": "reports/completed_eligibility_lossless_20261019_root/archive.json",
+      "bytes": 39406,
+      "sha256": "bfa2610dfc720dbef3ee0f620f1c4021381afeadfc9e8617389efb3aaad4091f"
+    },
+    {
+      "path": "reports/completed_eligibility_lossless_20261019_root/decode.py",
+      "source_path": "reports/completed_eligibility_lossless_20261019_root/decode.py",
+      "bytes": 524,
+      "sha256": "b55ef9550c9c59bce9e5fd18ad8022430317cec5ac1a240ce79118fccce84c45"
+    },
+    {
+      "path": "reports/completed_eligibility_lossless_20261019_root/validation.json",
+      "source_path": "reports/completed_eligibility_lossless_20261019_root/validation.json",
+      "bytes": 788,
+      "sha256": "e3501f83f61b9eab9befc8a8cf4cf86dd10a4f413ac0381f66262501d9d7b0d4"
+    },
+    {
       "path": "reports/completed_ledger_lossless_20261019_root/archive.json",
       "source_path": "reports/completed_ledger_lossless_20261019_root/archive.json",
       "bytes": 52701,
@@ -3066,12 +3210,6 @@
       "sha256": "4f729232e23a3da8e6a4b626b291e0bcc4ac9b1cb034510b2ee60315313aaa74"
     },
     {
-      "path": "reports/data_schema_audit/run_20261015T164049_918837Z/index_capacity_clarification.json",
-      "source_path": "reports/data_schema_audit/run_20261015T164049_918837Z/index_capacity_clarification.json",
-      "bytes": 67259,
-      "sha256": "6aed0475f0b7d30f565e842a53352c582a8645315d6f302c77b0b414725f6efc"
-    },
-    {
       "path": "reports/data_schema_audit/run_20261015T164049_918837Z/index_capacity_clarification_zh.md",
       "source_path": "reports/data_schema_audit/run_20261015T164049_918837Z/index_capacity_clarification_zh.md",
       "bytes": 3047,
@@ -3172,18 +3310,6 @@
       "source_path": "reports/dynamic_A_eligible_20261017_root/candidate_features.csv",
       "bytes": 69185,
       "sha256": "b6a4dd686ce922cbbf964e40fcf610612a6e4388078b7f54cec256a18f27d211"
-    },
-    {
-      "path": "reports/dynamic_A_eligible_20261017_root/cohort_receipt.json",
-      "source_path": "reports/dynamic_A_eligible_20261017_root/cohort_receipt.json",
-      "bytes": 82175,
-      "sha256": "e5f0f1390bbd3b0f12680a9eac894cb738eea8909523afcc7971ea9e33dcd9ea"
-    },
-    {
-      "path": "reports/dynamic_A_eligible_20261017_root/eligible_origins.csv",
-      "source_path": "reports/dynamic_A_eligible_20261017_root/eligible_origins.csv",
-      "bytes": 121818,
-      "sha256": "e6e0a9903cb0401af5ed0b535f831430c0edf1c5f25f6495fd2561c8756ca4a2"
     },
     {
       "path": "reports/dynamic_A_eligible_20261017_root/protocol_candidate.json",
@@ -3448,6 +3574,18 @@
       "source_path": "reports/local_state_support_20261018_root/summary.json",
       "bytes": 2114,
       "sha256": "3e5108280a7f7c52f0bb6a932d49b266e627321a27bca9fde90ec1925198822e"
+    },
+    {
+      "path": "reports/lossless_equal_CDF_mixture_review_20261019_luna/review.json",
+      "source_path": "reports/lossless_equal_CDF_mixture_review_20261019_luna/review.json",
+      "bytes": 2924,
+      "sha256": "7850d777a340597a380bffeb38c0f3ef04c2396081b108debfbe69bab1106289"
+    },
+    {
+      "path": "reports/lossless_equal_CDF_mixture_review_20261019_luna/review_v2_alignment.json",
+      "source_path": "reports/lossless_equal_CDF_mixture_review_20261019_luna/review_v2_alignment.json",
+      "bytes": 2427,
+      "sha256": "8e3c82eb632dc6d805ffd79c93c46bb3c04da39e4377b1f3b4d68da25325ed75"
     },
     {
       "path": "reports/lossless_survival_probability_20261019_root/RESULTS_ZH.md",

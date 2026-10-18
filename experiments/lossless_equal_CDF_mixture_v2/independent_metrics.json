@@ -1,0 +1,77 @@
+{
+  "status": "PASS_ALL4567_INDEPENDENT_CDF_METRICS_AND_THREE_BISECTIONS",
+  "rows": 4567,
+  "cells": 10,
+  "maximum_metric_difference": 2.842170943040401e-14,
+  "maximum_quantile_CDF_error": 6.6058269965196814e-15,
+  "maximum_risk_difference": 2.55351295663786e-15,
+  "maximum_bisection_difference": 2.2737367544323206e-13,
+  "metrics": {
+    "MAE": 35.452042541685934,
+    "bias": -8.4280370665516,
+    "severe_over100": 0.0060465116279069765,
+    "coverage80": 0.8331033540899376,
+    "width80": 176.21274517388073,
+    "interval_score80": 209.49593392336112,
+    "Brier100": 0.03419614376195424,
+    "Brier300": 0.06312133526318943
+  },
+  "examples": [
+    {
+      "cell_id": "MATR_b2c1",
+      "origin": 100,
+      "quantile": 0.1,
+      "difference": 1.4210854715202004e-14
+    },
+    {
+      "cell_id": "MATR_b2c1",
+      "origin": 100,
+      "quantile": 0.5,
+      "difference": 2.842170943040401e-14
+    },
+    {
+      "cell_id": "MATR_b2c1",
+      "origin": 100,
+      "quantile": 0.9,
+      "difference": 2.842170943040401e-14
+    },
+    {
+      "cell_id": "MATR_b4c14",
+      "origin": 381,
+      "quantile": 0.1,
+      "difference": 0.0
+    },
+    {
+      "cell_id": "MATR_b4c14",
+      "origin": 381,
+      "quantile": 0.5,
+      "difference": 0.0
+    },
+    {
+      "cell_id": "MATR_b4c14",
+      "origin": 381,
+      "quantile": 0.9,
+      "difference": 0.0
+    },
+    {
+      "cell_id": "MATR_b4c29",
+      "origin": 887,
+      "quantile": 0.1,
+      "difference": 0.0
+    },
+    {
+      "cell_id": "MATR_b4c29",
+      "origin": 887,
+      "quantile": 0.5,
+      "difference": 6.394884621840902e-14
+    },
+    {
+      "cell_id": "MATR_b4c29",
+      "origin": 887,
+      "quantile": 0.9,
+      "difference": 2.2737367544323206e-13
+    }
+  ],
+  "new_fits": 0,
+  "new_model_inference": 0
+}
