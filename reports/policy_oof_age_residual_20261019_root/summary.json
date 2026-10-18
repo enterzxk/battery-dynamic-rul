@@ -1,0 +1,66 @@
+{
+  "OOF": {
+    "100_199": {
+      "rows": 4200,
+      "cells": 42,
+      "mean_raw_log_residual": 0.03417141488952173,
+      "mean_reference_log_residual": 0.049672024238829035,
+      "median_reference_log_residual": 0.006967873725484353,
+      "lower_miss": 0.08452380952380953,
+      "upper_miss": 0.17761904761904762,
+      "coverage80": 0.7378571428571429
+    },
+    "200_399": {
+      "rows": 8235,
+      "cells": 42,
+      "mean_raw_log_residual": 0.023634960763616524,
+      "mean_reference_log_residual": 0.03913557011292383,
+      "median_reference_log_residual": 0.0054819898058608985,
+      "lower_miss": 0.07517195767195767,
+      "upper_miss": 0.15493827160493828,
+      "coverage80": 0.769889770723104
+    },
+    "400_plus": {
+      "rows": 9846,
+      "cells": 40,
+      "mean_raw_log_residual": -0.02148031637886546,
+      "mean_reference_log_residual": -0.005979707029558157,
+      "median_reference_log_residual": 0.006381188674762228,
+      "lower_miss": 0.1080684632141941,
+      "upper_miss": 0.06375131760360406,
+      "coverage80": 0.8281802191822019
+    }
+  },
+  "calibration": {
+    "100_199": {
+      "rows": 948,
+      "cells": 10,
+      "mean_raw_log_residual": 0.017619232038831156,
+      "mean_reference_log_residual": 0.017619232038831156,
+      "median_reference_log_residual": 0.026445712305144475,
+      "lower_miss": 0.25466666666666665,
+      "upper_miss": 0.155,
+      "coverage80": 0.5903333333333334
+    },
+    "200_399": {
+      "rows": 1800,
+      "cells": 9,
+      "mean_raw_log_residual": 0.013249327400055052,
+      "mean_reference_log_residual": 0.013249327400055052,
+      "median_reference_log_residual": -0.013296792110041977,
+      "lower_miss": 0.13,
+      "upper_miss": 0.12111111111111111,
+      "coverage80": 0.7488888888888889
+    },
+    "400_plus": {
+      "rows": 1819,
+      "cells": 9,
+      "mean_raw_log_residual": -0.010021136613574688,
+      "mean_reference_log_residual": -0.010021136613574688,
+      "median_reference_log_residual": -0.024632527073841892,
+      "lower_miss": 0.08657778316763354,
+      "upper_miss": 0.061785973671219574,
+      "coverage80": 0.8516362431611469
+    }
+  }
+}

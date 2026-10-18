@@ -1,0 +1,162 @@
+{
+  "OOF": {
+    "lower": {
+      "cells_with_decrease": 10,
+      "cells_with_increase": 29,
+      "median_paired_difference": 0.012924606462303232,
+      "mean_paired_difference": 0.019318463214194097,
+      "negative_contributors": [
+        {
+          "cell_id": "MATR_b2c17",
+          "contribution": -0.0024840425531914893
+        },
+        {
+          "cell_id": "MATR_b2c29",
+          "contribution": -0.0032448979591836735
+        },
+        {
+          "cell_id": "MATR_b2c32",
+          "contribution": -0.0002899159663865546
+        },
+        {
+          "cell_id": "MATR_b2c33",
+          "contribution": -0.004083333333333333
+        },
+        {
+          "cell_id": "MATR_b2c34",
+          "contribution": -0.005494949494949495
+        },
+        {
+          "cell_id": "MATR_b2c37",
+          "contribution": -0.01505128205128205
+        },
+        {
+          "cell_id": "MATR_b2c38",
+          "contribution": -0.00296153846153846
+        },
+        {
+          "cell_id": "MATR_b4c30",
+          "contribution": -0.012268518518518519
+        },
+        {
+          "cell_id": "MATR_b4c8",
+          "contribution": -0.006410071942446044
+        },
+        {
+          "cell_id": "MATR_b4c9",
+          "contribution": -0.015168604651162789
+        }
+      ],
+      "sum_negative_contributions": -0.0674571549319924,
+      "sum_remaining_contributions": 0.08677561814618649
+    },
+    "upper": {
+      "cells_with_decrease": 14,
+      "cells_with_increase": 13,
+      "median_paired_difference": 0.0,
+      "mean_paired_difference": -0.12274868239639594,
+      "negative_contributors": [
+        {
+          "cell_id": "MATR_b2c10",
+          "contribution": -0.01586801242236025
+        },
+        {
+          "cell_id": "MATR_b2c17",
+          "contribution": -0.0034521276595744685
+        },
+        {
+          "cell_id": "MATR_b2c28",
+          "contribution": -0.00425
+        },
+        {
+          "cell_id": "MATR_b4c10",
+          "contribution": -0.011731501057082452
+        },
+        {
+          "cell_id": "MATR_b4c18",
+          "contribution": -0.00021794871794871793
+        },
+        {
+          "cell_id": "MATR_b4c20",
+          "contribution": -0.00125
+        },
+        {
+          "cell_id": "MATR_b4c23",
+          "contribution": -0.00970266040688576
+        },
+        {
+          "cell_id": "MATR_b4c24",
+          "contribution": -0.020118845500848897
+        },
+        {
+          "cell_id": "MATR_b4c25",
+          "contribution": -0.00225
+        },
+        {
+          "cell_id": "MATR_b4c34",
+          "contribution": -0.0030406504065040654
+        },
+        {
+          "cell_id": "MATR_b4c37",
+          "contribution": -0.018049568965517244
+        },
+        {
+          "cell_id": "MATR_b4c38",
+          "contribution": -0.021303353658536587
+        },
+        {
+          "cell_id": "MATR_b4c4",
+          "contribution": -0.013750000000000002
+        },
+        {
+          "cell_id": "MATR_b4c40",
+          "contribution": -0.014773305084745763
+        }
+      ],
+      "sum_negative_contributions": -0.1397579738800042,
+      "sum_remaining_contributions": 0.01700929148360826
+    }
+  },
+  "calibration": {
+    "lower": {
+      "cells_with_decrease": 3,
+      "cells_with_increase": 6,
+      "median_paired_difference": 0.021052631578947368,
+      "mean_paired_difference": -0.09453332794347757,
+      "negative_contributors": [
+        {
+          "cell_id": "MATR_b4c14",
+          "contribution": -0.07532051282051283
+        },
+        {
+          "cell_id": "MATR_b4c26",
+          "contribution": -0.0037806637806637802
+        },
+        {
+          "cell_id": "MATR_b4c7",
+          "contribution": -0.050940170940170934
+        }
+      ],
+      "sum_negative_contributions": -0.13004134754134755,
+      "sum_remaining_contributions": 0.035508019597869964
+    },
+    "upper": {
+      "cells_with_decrease": 2,
+      "cells_with_increase": 3,
+      "median_paired_difference": 0,
+      "mean_paired_difference": -0.11043624855100265,
+      "negative_contributors": [
+        {
+          "cell_id": "MATR_b2c6",
+          "contribution": -0.07407407407407408
+        },
+        {
+          "cell_id": "MATR_b4c29",
+          "contribution": -0.046530054644808735
+        }
+      ],
+      "sum_negative_contributions": -0.12060412871888282,
+      "sum_remaining_contributions": 0.010167880167880169
+    }
+  }
+}

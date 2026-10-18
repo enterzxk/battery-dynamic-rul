@@ -1,0 +1,47 @@
+{
+  "owner": "01a1508e-83e9-7232-a0e4-07606110b443",
+  "question": "Does fixed global residual CDF hide visible-age heterogeneity, and does pattern persist when cell composition is fixed?",
+  "age_boundaries": [
+    100,
+    200,
+    400
+  ],
+  "age_bands": [
+    "100_199",
+    "200_399",
+    "400_plus"
+  ],
+  "age_variable": "actual origin cycle, known as-of; never lifetimefraction or eventbased age",
+  "new_fits": 0,
+  "new_model_inference": 0,
+  "dev_test_reads": 0,
+  "raw_feature_reads": 0,
+  "sources": {
+    "oof_predictions.csv": {
+      "path": "experiments/policy_oof_cdf_seed42_v1/oof_predictions.csv",
+      "sha256": "cf9a5a173550013f553e53dd3b379c791956ecbf92f19c2682705ec7261da9b2"
+    },
+    "calibration_distribution.csv": {
+      "path": "experiments/policy_oof_cdf_seed42_v1/calibration_distribution.csv",
+      "sha256": "56a0bdec581437729dd525e3b0e7c075feef811d48ebee3eea62479fe83fd993"
+    },
+    "empirical_cdf.json": {
+      "path": "experiments/policy_oof_cdf_seed42_v1/empirical_cdf.json",
+      "sha256": "c8cf21632f16ed8471725eed3a8c0190137c1ab9f5368a982311a8dbc5196e1f"
+    },
+    "failure_description.json": {
+      "path": "experiments/policy_oof_cdf_seed42_v1/failure_description.json",
+      "sha256": "39f19b6983b3b6219faaf18537e8dbdd66b946558826668d76e65b343db40a4a"
+    }
+  },
+  "aggregation": "Each band: average each cell first, then equal present cells. Report present cells/rows; exactFraction inverseCDF for cell-equal median. Separately global population cell-equal weights1/(Ncell*ncell) age-contributions recompose overall. All3band common-cell comparison fixes cell membership; prefix composition/event proximity still differs.",
+  "reference_residual": "OOF uses logy-OOFmu minus original frozen OOFmedian center; calibration uses raw logy-savedmu. Both compared with same already frozen centeredCDF q10/q90 offsets. Also report raw residual means. No centering fit on cal.",
+  "interpretation": "Descriptive only; global OOF tail coverage near .1 by construction; common-cell comparison does not imply causal ageeffect; survivor selection and event proximity not removed. No conditionalcoverage guarantee/innovation/methodpromotion.",
+  "limits": [
+    "exposedcal, no independentconfirmation",
+    "eventonly, physicalserial/fullsource unknown, fixedknownpolicy",
+    "OOF28training vs savedpoint42; no refit/parametersearch",
+    "No groupsearch or selection of a new prediction rule from these diagnostics"
+  ],
+  "frozen_utc": "2026-10-18T19:59:26.115892+00:00"
+}

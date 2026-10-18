@@ -1,0 +1,18 @@
+{
+  "decision": "NO_GO_FOR_AGE_ONLY_CALIBRATION_FROM_GROUP_MEANS",
+  "new_fits": 0,
+  "new_model_inference": 0,
+  "dev_test_reads": 0,
+  "CPUfits_unchanged": 19,
+  "interpretation": "Descriptive ageheterogeneity is not uniform cellwise or causal; no new predictionrule is activated",
+  "evidence_sha256": {
+    "protocol.json": "6381a6574f84407f2004a131c7cc17ae321eed8f26fc664165674efd0983ea89",
+    "diagnose.py": "4a68f87185b6eb7ab3414a5cd2526664dba3d61856c935a9af05b1055622ea85",
+    "summary.json": "423f6c6956044d16998f548011d674c6b4627ca8386a846e17b44bc029be85a1",
+    "common_cell_comparison.json": "8d84d4d3aa86183d2c4105b08d52cee108b96db0c4f4f70a796d6be92cecbd9f",
+    "paired_concentration.json": "cadcb17df17145d3bff05b7eb3e0c53d5d5d441a77c35f8617de9ff91d22f299",
+    "population_contribution.json": "92e231bda5e6d23aadcb1fbf1ac4860b07329e821b41eaabafaebd298915e795",
+    "minimal_validation.json": "e4a570bd8f2340358c3b20ff4a2578b4c505ad8a682c47cb482d37d73f7f637c",
+    "completion.json": "73609943405758b3fd53f43139dfe1e84109007932a42345923ec8dc3effa443"
+  }
+}

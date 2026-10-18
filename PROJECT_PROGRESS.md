@@ -514,3 +514,11 @@
 - **最小验证**：独立Fraction/math/statistics核22281OOF排除和4567校准预测，最大预测差9.09e-13、指标差1.42e-13；两份公开预测原字节SHA解码通过。3新CPUfit/0新cal推理/0旧checkpointload/0devtest。累计CPU19=RUL17+辅助2；神经4fit2580steps、旧MATR41另记。
 - **阻塞/风险**：Brier100/300略改善不能救联合失败；下侧漏覆盖均值20.2891%，OOF28训练vs原42和cal反复开发/event-only/物理身份/固定policy限制保留。旧点PASS和概率FAIL不变；不调fold/seed/尺度/quantile。4份completed静态证据无损归档908319→217253bytes，原件/旧GitHub历史保留，12MiB不扩cap。
 - **下一步**：0fit冻结age区间[100,200)/[200,400)/[400,+inf)，已有OOF和cal标签/预测的残差与两侧漏覆盖异质性诊断；不搜索分组、不启动新模型或门控，0devtest。
+
+
+## 2026-10-19：固定年龄三组残差诊断完成，关闭年龄均值直接修正
+- **已完成**：0fit已有22281OOF/4567cal，固定origin100–199/200–399/≥400；cal组覆盖59.0333/74.8889/85.1636%。固定同40OOF/9cal后，OOF29/40与cal6/9的下侧漏覆盖增加；cal均值却下降，主要由b4c14/b4c7贡献。cal上侧下降仅2/9，集中b2c6/b4c29。NO_GO_FOR_AGE_ONLY_CALIBRATION_FROM_GROUP_MEANS。
+- **证据**：reports/policy_oof_age_residual_20261019_root/protocol/diagnose、summary/per_cell_age_metrics/population_contribution/common_cell_comparison/paired_concentration/minimal_validation/completion/root_decision/RESULTS_ZH。
+- **最小验证**：源SHA、三组条数总和22281/4567、Fraction总体电池等权漏覆盖贡献重组及b2c1单例44/48通过；0fit/新推理/旧checkpoint/原特征/devtest，累计CPU19=RUL17+辅助2不变。
+- **阻塞/风险**：固定成员后仍有时间窗、终点临近性/存活选择；每组cell等权与总体贡献分母不同，不能拼接。OOF总体80%是构造性质；均值/中位数/逐cell方向不一致，不把年龄关联当因果机制。旧OOFCDF NO_GAIN和原点PASS/概率FAIL保留。
+- **下一步**：准备仅已有OOF+4policy的固定5近邻sourcecell经验CDF强参考，train-only标准差距离/中位中心化保留点；0新fit/推理/devtest，先冻结一次窄审+freshGO，禁止邻居数/距离/尺度搜索，目前未执行。

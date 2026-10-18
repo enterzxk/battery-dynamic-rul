@@ -439,3 +439,7 @@ MATR来源补充核查已完成：已存record19688272完整API（SHA 5b79e36abb
 
 ## 当前新增：2026-10-19 V14 OOF残差CDF
 最新实际3fit及独立复算见experiments/policy_oof_cdf_seed42_v1/RESULTS_ZH.md。42fit固定三折电池隔离22281OOF，电池等权经验CDF仅中位中心化一次，对已有10cal4567mu解析应用，0新cal推理/旧checkpointload/devtest。无次序冲突，点MAE36.400814不变；coverage78.5016%→69.7698%、IS148.489249→152.213299，逐cell绝对覆盖误差.213265→.249444，6/10改善，pairedIS差CI[-19.140823,8.403278]，联合NO_GAIN。Brier100/300略改善不构成总体可靠性PASS。当前全局CDF方案停止，无fold/seed/尺度救援。累计新科研CPU19=RUL17+辅助2，神经4fit2580steps及旧MATR41另记，所有旧GO与本次3fit GO已消费，global new_fits_allowed=false。校准反复开发、28vs42训练量差、event-only/物理serial和全源SHA未知、固定labpolicy边界保留。公开predictions_lossless.json保留OOF/校准CSV字节，可重构CDF。下一项仅0fit固定age三组残差/漏覆盖诊断，不解锁dev/test。4份已完成静态文件改用无损归档，服务器原件和旧公开历史保留，上限仍12MiB。
+
+
+## 最新0fit发现：年龄分组不足以支持统一修正
+reports/policy_oof_age_residual_20261019_root/RESULTS_ZH.md为当前诊断。OOF/cal固定origin100–199/200–399/≥400三组；cal覆盖59.03/74.89/85.16%，但同9cell的下侧漏覆盖均值虽下降，6/9反而增加，下降集中b4c14/b4c7；上侧下降仅2/9，集中b2c6/b4c29。同40OOF下侧29/40增加；OOF残差均值早晚下降而混合中位数基本平稳。NO_GO从组均值直接扩展age-only校准/修正，未实施任何预测改变。0fit，CPU19不变；组内存在cell等权与总体权重贡献分母分开，终点临近性/存活选择未消除，cal暴露等限制保留。下一项准备已有OOF残差按4policy train-only距离固定5近邻cell的条件分布简单参考，0新fit/推理/devtest；须冻结+一次窄审+fresh exactGO，不调k/距离/尺度，不当创新结论。

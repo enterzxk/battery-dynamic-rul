@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-18T19:53:04.745260+00:00",
-  "content_sha256": "57c8fe0ce37651e9cd89c2912aac9c4db426053e3362e2f1ffa5b9df5c9fd8bf",
-  "file_count": 762,
+  "snapshot_utc": "2026-10-18T20:01:05.469921+00:00",
+  "content_sha256": "6f820f4f47f821bea56acdf10c4d6b5caed809dc6ec52c2beae4594214ff4d80",
+  "file_count": 773,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,8 +14,8 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 91963,
-      "sha256": "fb56855d0a017f42c45e6ae65968475ca259359b4c15967329060f37b84cd996"
+      "bytes": 93409,
+      "sha256": "6fe85b38bf9d0baca5b0bcc03c1485df720b77359d64b83e8fa9a1aeb210484a"
     },
     {
       "path": "README.md",
@@ -38,8 +38,8 @@
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 27649,
-      "sha256": "b60765d7c7f3cda397c35fefc919652387da09d045ea8bf6517609912c272558"
+      "bytes": 28430,
+      "sha256": "47d9aefa5cef549ffc6cce4b02671dcbef2362b43f1dea4a4697364ddf23645d"
     },
     {
       "path": "automation/bin/matr_raw_batch2_asset_worker_v1.py",
@@ -164,8 +164,8 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 78687,
-      "sha256": "f00c562f12867023d460c9ddbb6cac241b90658e70b59e0d5a067547a0fdeaa3"
+      "bytes": 79573,
+      "sha256": "174548fa17309c4bda214b281744c6a5a328ea5548a15a72353efe9456a009a5"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
@@ -4222,6 +4222,72 @@
       "source_path": "reports/policy_fixedearly_dynamic_20261018_root/transition_audit.json",
       "bytes": 3922,
       "sha256": "a09e61cc78d6429320f7b97dcb77cd181504283ed705f3800b6a0ac68d04f4bc"
+    },
+    {
+      "path": "reports/policy_oof_age_residual_20261019_root/RESULTS_ZH.md",
+      "source_path": "reports/policy_oof_age_residual_20261019_root/RESULTS_ZH.md",
+      "bytes": 4143,
+      "sha256": "e73bb28c0aa90c024378043e94c59eadefb40f67f35906fdf6ca63ff00aa697b"
+    },
+    {
+      "path": "reports/policy_oof_age_residual_20261019_root/common_cell_comparison.json",
+      "source_path": "reports/policy_oof_age_residual_20261019_root/common_cell_comparison.json",
+      "bytes": 15454,
+      "sha256": "8d84d4d3aa86183d2c4105b08d52cee108b96db0c4f4f70a796d6be92cecbd9f"
+    },
+    {
+      "path": "reports/policy_oof_age_residual_20261019_root/completion.json",
+      "source_path": "reports/policy_oof_age_residual_20261019_root/completion.json",
+      "bytes": 435,
+      "sha256": "73609943405758b3fd53f43139dfe1e84109007932a42345923ec8dc3effa443"
+    },
+    {
+      "path": "reports/policy_oof_age_residual_20261019_root/diagnose.py",
+      "source_path": "reports/policy_oof_age_residual_20261019_root/diagnose.py",
+      "bytes": 7237,
+      "sha256": "4a68f87185b6eb7ab3414a5cd2526664dba3d61856c935a9af05b1055622ea85"
+    },
+    {
+      "path": "reports/policy_oof_age_residual_20261019_root/minimal_validation.json",
+      "source_path": "reports/policy_oof_age_residual_20261019_root/minimal_validation.json",
+      "bytes": 370,
+      "sha256": "e4a570bd8f2340358c3b20ff4a2578b4c505ad8a682c47cb482d37d73f7f637c"
+    },
+    {
+      "path": "reports/policy_oof_age_residual_20261019_root/paired_concentration.json",
+      "source_path": "reports/policy_oof_age_residual_20261019_root/paired_concentration.json",
+      "bytes": 4391,
+      "sha256": "cadcb17df17145d3bff05b7eb3e0c53d5d5d441a77c35f8617de9ff91d22f299"
+    },
+    {
+      "path": "reports/policy_oof_age_residual_20261019_root/per_cell_age_metrics.json",
+      "source_path": "reports/policy_oof_age_residual_20261019_root/per_cell_age_metrics.json",
+      "bytes": 43389,
+      "sha256": "83e24f376f650c782e2c7ff040a5e305383f8cd74dd6809c8ba24d64354f48cb"
+    },
+    {
+      "path": "reports/policy_oof_age_residual_20261019_root/population_contribution.json",
+      "source_path": "reports/policy_oof_age_residual_20261019_root/population_contribution.json",
+      "bytes": 2619,
+      "sha256": "92e231bda5e6d23aadcb1fbf1ac4860b07329e821b41eaabafaebd298915e795"
+    },
+    {
+      "path": "reports/policy_oof_age_residual_20261019_root/protocol.json",
+      "source_path": "reports/policy_oof_age_residual_20261019_root/protocol.json",
+      "bytes": 2519,
+      "sha256": "6381a6574f84407f2004a131c7cc17ae321eed8f26fc664165674efd0983ea89"
+    },
+    {
+      "path": "reports/policy_oof_age_residual_20261019_root/root_decision.json",
+      "source_path": "reports/policy_oof_age_residual_20261019_root/root_decision.json",
+      "bytes": 1074,
+      "sha256": "07b034edbc531bc935635fe4aadbbc3fc726d0e11fc2bdcbddd9753770c17b0c"
+    },
+    {
+      "path": "reports/policy_oof_age_residual_20261019_root/summary.json",
+      "source_path": "reports/policy_oof_age_residual_20261019_root/summary.json",
+      "bytes": 2156,
+      "sha256": "423f6c6956044d16998f548011d674c6b4627ca8386a846e17b44bc029be85a1"
     },
     {
       "path": "reports/policy_oof_cdf_review_20261019_luna/review.json",
