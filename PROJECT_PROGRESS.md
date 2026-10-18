@@ -418,3 +418,11 @@
 - **最小验证**：独立标准库重算主指标与transition帮助/伤害比例、756个固定预测归零但尚未真实EOL的origins；4557transitions无丢失。无原始数据/checkpoint/dev/test读取，训练预算CPU11与神经4fit2580steps不变。
 - **阻塞/风险**：单步更新49.8381%有害，不能用真值建门控；RUL>300分段动态严重over100达32.3047%而固定22.2222%。固定点递减不是生存条件化，动态age+健康一起变，不能独立归因新观测。cal已暴露与物理身份/源hash限制不变。
 - **下一步**：同10cal4567固定早期lognormal+旧fit-only sigma A，0fit显式存活条件中位数对照，区分仅存活与动态状态更新；稳定计算尾部，不使用cal sigma B或新调参。
+
+
+## 2026-10-18：显式存活条件化不足以解释动态收益，零训练对照完成
+- **已完成**：同10cal4567固定origin100 lognormal及旧fit-only sigmaA，显式条件化存活。TimeMAE固定递减116.433422→存活条件111.015099（4.6536%，4/10，gateFAIL）；既有动态58.113698较存活条件改善47.6524%，10/10，开发gatePASS。
+- **证据**：reports/early_survival_conditioning_20261018_root/protocol/diagnose、metrics/per_cell_metrics/comparison、numeric_validation、independent_recompute/independent_metrics、completion/root_decision/RESULTS_ZH.md。只读旧cal预测与fit_parameters，原sourceSHA及sigmaA=0.19898311654196568冻结。
+- **最小验证**：全部4567条件中位数正/有限，条件生存中位数恒等式最大log误差7.22e-15；独立erfc二分重算全部中位数与指标，最大差1.62e-14。0fit/新推理/新标量估计/checkpoint/dev/test，训练预算不变。
+- **阻塞/风险**：存活条件严重over100增加1.8110个百分点，MAE差95%区间[-.341363,11.577509]跨零；动态相对存活条件差区间[25.800289,83.668108]。早期lognormal是参数假设，尚无校准证明；动态age与健康并变，不能仅归因健康；cal暴露/物理身份/源hash限制保留。
+- **下一步**：0fit同10cal4567固定earlyconditioned与dynamic两个分布，用sigmaA计算80%区间得分/覆盖/宽度与Brier100/300，判断点精度收益是否伴随概率可靠性；不使用sigmaB、不估参/调阈值、不读dev/test。

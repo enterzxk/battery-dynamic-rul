@@ -1,0 +1,22 @@
+{
+  "survival_vs_fixed": {
+    "relative_MAE_reduction": 0.046535805002339004,
+    "cells_improved": 4,
+    "pairedcell_MAE_difference_CI95": [
+      -0.34136306465172417,
+      11.577508829519637
+    ],
+    "severe_over100_increment": 0.018110236220472448,
+    "development_gate_pass": false
+  },
+  "dynamic_vs_survival": {
+    "relative_MAE_reduction": 0.4765243766802443,
+    "cells_improved": 10,
+    "pairedcell_MAE_difference_CI95": [
+      25.800289232328133,
+      83.66810776505265
+    ],
+    "severe_over100_increment": -0.07650972147673105,
+    "development_gate_pass": true
+  }
+}

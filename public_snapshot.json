@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-18T14:15:10.857158+00:00",
-  "content_sha256": "143dd9df688ac874d85d161c1b4289a93da46735aa4af196ff8e94fde6c9b6a7",
-  "file_count": 609,
+  "snapshot_utc": "2026-10-18T14:30:28.511836+00:00",
+  "content_sha256": "41235ef3ca9938a2101e7f889edc906db338ae17041f302b16db107135b13adb",
+  "file_count": 621,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,8 +14,8 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 73355,
-      "sha256": "7848a4a5a8e30039a329c973475cf024ec6f9e25f1d96b9dc1e4aedacfab43eb"
+      "bytes": 74871,
+      "sha256": "f38300d3179a5923c97aa136029b0b1252082bfbc78b3f9e9fe023a3d3d9994c"
     },
     {
       "path": "README.md",
@@ -38,8 +38,8 @@
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 17593,
-      "sha256": "29f8b6ee018646d93e873da14ae0859c24cd30316f1bcba754219ba569fb455c"
+      "bytes": 17942,
+      "sha256": "51db222aa6d26d37154c84702ebbee6f8f9714ba05abdbf444475c5b1311f801"
     },
     {
       "path": "automation/bin/matr_raw_batch2_asset_worker_v1.py",
@@ -164,8 +164,8 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 60616,
-      "sha256": "c8063bea539b0b8f634e1b572385d2c2650bfb2970017a33438efc44d41a332b"
+      "bytes": 62132,
+      "sha256": "333ab3dbf2bf78723668f2f221c64cb9a61781fa4a55887a8ce71c810e1366e9"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
@@ -2470,6 +2470,78 @@
       "source_path": "reports/early_eol_filter_realization_20261018_root/filter_realization.json",
       "bytes": 3643,
       "sha256": "482f7c27aacd9f5a75de7870f03790083d7a1577f926a5ab0df87b6292df58af"
+    },
+    {
+      "path": "reports/early_survival_conditioning_20261018_root/RESULTS_ZH.md",
+      "source_path": "reports/early_survival_conditioning_20261018_root/RESULTS_ZH.md",
+      "bytes": 2764,
+      "sha256": "45dae19edbfec0aca746a9363a21fb4fbaf7e7fa7229c58b975117d662eb0cd9"
+    },
+    {
+      "path": "reports/early_survival_conditioning_20261018_root/arithmetic_examples.json",
+      "source_path": "reports/early_survival_conditioning_20261018_root/arithmetic_examples.json",
+      "bytes": 10038,
+      "sha256": "ff48f0a3970368cbf55e97898ac836468aa7c341ac1bef08342deb963bebb6f6"
+    },
+    {
+      "path": "reports/early_survival_conditioning_20261018_root/comparison.json",
+      "source_path": "reports/early_survival_conditioning_20261018_root/comparison.json",
+      "bytes": 592,
+      "sha256": "1863af3b97b719fec3ad6b93a51564ae2fa1c7081cbd5ac0bed12fef470fecdf"
+    },
+    {
+      "path": "reports/early_survival_conditioning_20261018_root/completion.json",
+      "source_path": "reports/early_survival_conditioning_20261018_root/completion.json",
+      "bytes": 677,
+      "sha256": "364d5f933f02f9b7e8e17a8a9b4d5be25c90821e7eef16ff2691673c65d21a4c"
+    },
+    {
+      "path": "reports/early_survival_conditioning_20261018_root/diagnose.py",
+      "source_path": "reports/early_survival_conditioning_20261018_root/diagnose.py",
+      "bytes": 4205,
+      "sha256": "a2aea4b553190a62b7b348da907fecced0e06a3a4591a6dbd1b57c999009f090"
+    },
+    {
+      "path": "reports/early_survival_conditioning_20261018_root/independent_metrics.json",
+      "source_path": "reports/early_survival_conditioning_20261018_root/independent_metrics.json",
+      "bytes": 631,
+      "sha256": "82d9362283750e7ac2fdb5bb4dd5f7645a0ef5fcc78441a53bf3a9a6cce80fcc"
+    },
+    {
+      "path": "reports/early_survival_conditioning_20261018_root/independent_recompute.py",
+      "source_path": "reports/early_survival_conditioning_20261018_root/independent_recompute.py",
+      "bytes": 1753,
+      "sha256": "9c9b354b85baf06cca37cc20d6964dbe1026860ed8a70d2e29b0079ed300b1ca"
+    },
+    {
+      "path": "reports/early_survival_conditioning_20261018_root/metrics.json",
+      "source_path": "reports/early_survival_conditioning_20261018_root/metrics.json",
+      "bytes": 406,
+      "sha256": "9cdd4a922ccc0ef0d76090e55608f0e2b39022db57d1b2bed93199c7981cfbfe"
+    },
+    {
+      "path": "reports/early_survival_conditioning_20261018_root/numeric_validation.json",
+      "source_path": "reports/early_survival_conditioning_20261018_root/numeric_validation.json",
+      "bytes": 256,
+      "sha256": "884bf1f599e0654e1ff8dbe87c009c0d66ad3e5c59fa16f662d14a564208048d"
+    },
+    {
+      "path": "reports/early_survival_conditioning_20261018_root/per_cell_metrics.json",
+      "source_path": "reports/early_survival_conditioning_20261018_root/per_cell_metrics.json",
+      "bytes": 5595,
+      "sha256": "7467c115b294eae7d144deff0cf0b3d3293f50f6f3d72efc4da8148b02ccca3e"
+    },
+    {
+      "path": "reports/early_survival_conditioning_20261018_root/protocol.json",
+      "source_path": "reports/early_survival_conditioning_20261018_root/protocol.json",
+      "bytes": 2010,
+      "sha256": "139ad658c5d69ed503472f56c65661d579cb021a9227c1f2e929f5edaeb39aa6"
+    },
+    {
+      "path": "reports/early_survival_conditioning_20261018_root/root_decision.json",
+      "source_path": "reports/early_survival_conditioning_20261018_root/root_decision.json",
+      "bytes": 1397,
+      "sha256": "d63bef4dc92e2e55e4586ac20ee9005234e03a7016da1ade8bbc6182f8a41569"
     },
     {
       "path": "reports/fixedearly_dynamic_20261018_root/RESULTS_ZH.md",

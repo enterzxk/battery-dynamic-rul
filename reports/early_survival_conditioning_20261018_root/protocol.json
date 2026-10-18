@@ -1,0 +1,33 @@
+{
+  "question": "Does explicit survival-conditioning of the fixed origin100 lognormal explain the gain of saved per-origin dynamic RUL?",
+  "source_predictions": "experiments/matr_raw_heldout_calibration_seed42_v1/calibration_predictions.csv",
+  "source_prediction_sha256": "c27dd53fce992318292397486aaff8ce02e3f8b802ee54932867517ce7c2af76",
+  "source_parameters": "experiments/matr_raw_heldout_calibration_seed42_v1/fit_parameters.json",
+  "source_parameter_sha256": "ca95515be2d4977aa5160f9aa520acb996c6bd83eff5618ab72e8655f34711e5",
+  "sigma_key": "A_fit_residual_scale",
+  "sigma": 0.19898311654196568,
+  "anchor": 100,
+  "conditional_definition": "R0~Lognormal(mu100,sigma_A), d=t-100. Scond(r)=S0(d+r)/S0(d). Conditional median r=exp(mu100-sigma_A*ndtri_exp(log(S0(d))-log2))-d. d=0 returns exp(mu100).",
+  "arms": [
+    "fixed_point_countdown",
+    "fixed_early_survival_conditioned",
+    "saved_dynamic"
+  ],
+  "comparison": "survival vs fixed and dynamic vs survival separately; point MAE/bias/severeover100 cell-equal",
+  "development_gate": "each comparison:>=5%MAE reduction,>=7/10cell improve,pairedcell2000seed42CI lower>0,severeover100 increment<=.01; no downstream fit authorization",
+  "numeric_validation": "all conditional medians finite/positive; conditional survival at median=.5; independent normal-tail bisection and metrics from original savedCSV",
+  "new_fits": 0,
+  "optimizer_steps": 0,
+  "new_model_inference": 0,
+  "new_scalar_estimates": 0,
+  "checkpoint_loads": 0,
+  "development_reads": 0,
+  "test_reads": 0,
+  "limits": [
+    "frozen early lognormal and fit-residual sigma assume a form; not a validated true survival distribution",
+    "calibration10 already exposed; no independent confirmation or individualconditional guarantee",
+    "dynamic changes both age and currenthealth; remaining gain cannot exclusively be attributed to health",
+    "observed-event/sourceID lane; physicalserial/fullsourceSHA unverified"
+  ],
+  "frozen_utc": "2026-10-18T14:28:58.570905+00:00"
+}

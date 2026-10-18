@@ -131,6 +131,9 @@ def main():
     for name in ['protocol.json','diagnose.py','metrics.json','per_cell_metrics.json','comparison.json','transition_audit.json','phase_metrics.json','arithmetic_examples.json','completion.json','independent_metrics.json','root_decision.json','RESULTS_ZH.md']:
         chosen.add('reports/fixedearly_dynamic_20261018_root/' + name)
 
+    for name in ['protocol.json','diagnose.py','metrics.json','per_cell_metrics.json','comparison.json','numeric_validation.json','arithmetic_examples.json','completion.json','independent_recompute.py','independent_metrics.json','root_decision.json','RESULTS_ZH.md']:
+        chosen.add('reports/early_survival_conditioning_20261018_root/' + name)
+
     contents, files, skipped = {}, [], []
     mapping = {'README.md': 'docs/GITHUB_README_ZH.md', 'agent.md': 'AGENTS.md'}
     mapping.update({rel: rel for rel in sorted(chosen)})

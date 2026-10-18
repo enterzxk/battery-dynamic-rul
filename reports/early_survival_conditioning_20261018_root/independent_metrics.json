@@ -1,0 +1,24 @@
+{
+  "status": "PASS_ALL_ROWS_INDEPENDENT_ERFC_BISECTION",
+  "rows": 4567,
+  "metrics": {
+    "fixed_point_countdown": {
+      "MAE": 116.43342173422312,
+      "bias": -10.23939738619813,
+      "severe_over100": 0.2
+    },
+    "fixed_early_survival_conditioned": {
+      "MAE": 111.0150987246442,
+      "bias": -1.2836709439614744,
+      "severe_over100": 0.21811023622047243
+    },
+    "saved_dynamic": {
+      "MAE": 58.11369800278736,
+      "bias": 11.676224212761717,
+      "severe_over100": 0.1416005147437414
+    }
+  },
+  "max_absolute_metric_difference": 1.6209256159527285e-14,
+  "new_fits": 0,
+  "new_model_inference": 0
+}
