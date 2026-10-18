@@ -191,3 +191,8 @@ MATR来源补充核查已完成：已存record19688272完整API（SHA 5b79e36abb
 ## 2026-10-18 11:44 北京时间：CALB选模目标一致
 
 额度恢复首次可执行检查后完成已保存动作：10epoch的prefix-MAPE/cell-MAE/prefix-MAE/cell-MAPE最优均epoch2；cell-MAE61.634743，次优epoch4为64.673063。原选模没有与整体cell-MAE冲突，不能靠重选既有epoch得到更低整体MAE。原预测/回执保持，CALB当前5cell扩展NO_GO不变，per-cell事后选epoch不允许。见reports/calb_selection_diagnosis_20261018_root/SELECTION_DIAGNOSIS_ZH.md及机器记录。新fit/step/model/inference/binary/test均0。下一项仅HUST既有原始来源metadata身份凭证核对。
+
+
+## 2026-10-18 11:47 北京时间：HUST来源身份仍缺独立映射
+
+已存Mendeley公开metadata可核原始DOI/版本，但没有files键、size0不能解释为空数据；旧manifest记录文件清单接口400。pinned preprocess_HUST以原file.stem拼HUST_后赋cell_id，不提供独立serial。当前只在已读保存材料中缺证，不声称所有原始材料都无映射。见reports/hust_saved_source_identity_20261018_root/SOURCE_IDENTITY_ZH.md和机器回执。原门控保持、本轮fit/steps/model/inference/binary/test/network均0。下一项一次公开v2文件清单metadata查询，不下载raw或改权限。

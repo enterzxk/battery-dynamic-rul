@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-18T03:45:05.248069+00:00",
-  "content_sha256": "07c24e88c3a6e6f3063a64cd888b93a8b48d4bcca189f65383a4c2800f4756cd",
-  "file_count": 374,
+  "snapshot_utc": "2026-10-18T03:47:35.344934+00:00",
+  "content_sha256": "94dab62eb6bf971b7c44fc87ffddc7a9a693bd20b4cb3301eccc488f9dc439c0",
+  "file_count": 376,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,8 +14,8 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 41407,
-      "sha256": "be02a26982d984d1ec1c3d9fefb786947b6f36909205512fb30f462a48e468e4"
+      "bytes": 42531,
+      "sha256": "4a13cc7f8c20996d6840d91fc0fd6b74d6294796801dafbddf989ac9891e72ac"
     },
     {
       "path": "README.md",
@@ -32,8 +32,8 @@
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 9701,
-      "sha256": "0d7ea55edadc4cbf200b4336cd177f6903af1c4a767df7229046dd3da596d393"
+      "bytes": 9840,
+      "sha256": "458a1fedd02d81c0db450ce8b7f5230dc0217d56575a1f8d8808094d9f1ab6c9"
     },
     {
       "path": "automation/github_export/build_dynamic_A_eligible_20261017.py",
@@ -128,8 +128,8 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 30983,
-      "sha256": "d78ed680d2980b6dbdb7095df4d02f14686ad4e8c0cb1bbcdf98f1de29c7cfca"
+      "bytes": 31618,
+      "sha256": "99e3f8e600073835746a663d416c553be91d771893a9a1877c97543b8dfa4fc6"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
@@ -1468,6 +1468,18 @@
       "source_path": "reports/early_eol_filter_realization_20261018_root/filter_realization.json",
       "bytes": 3643,
       "sha256": "482f7c27aacd9f5a75de7870f03790083d7a1577f926a5ab0df87b6292df58af"
+    },
+    {
+      "path": "reports/hust_saved_source_identity_20261018_root/SOURCE_IDENTITY_ZH.md",
+      "source_path": "reports/hust_saved_source_identity_20261018_root/SOURCE_IDENTITY_ZH.md",
+      "bytes": 2132,
+      "sha256": "c36d48709181664e0410298474578de403e0a2b9a221f3c4689446170eb8db44"
+    },
+    {
+      "path": "reports/hust_saved_source_identity_20261018_root/source_identity_review.json",
+      "source_path": "reports/hust_saved_source_identity_20261018_root/source_identity_review.json",
+      "bytes": 4398,
+      "sha256": "21d5356c053ebe46bbe873e8563415ad6c3fd587a8426ef82772c721f532b842"
     },
     {
       "path": "reports/literature_discussion_20261017_root_v1/LITERATURE_DISCUSSION_ZH.md",

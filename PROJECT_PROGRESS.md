@@ -245,3 +245,12 @@
 - **最小验证**：10完整epoch/5cell/497prefix，逐cell摘要独立重构四聚合，原选模/预测SHA与completion吻合；旧四文件SHA不变。不声称额度阻断期间的排队唤醒均已执行。
 - **阻塞/风险**：同5cell开发集，per-cell最优不同不能事后分cell选模；原native/精确标签口径分开，原CALB扩展NO_GO保持。new_fits=0、optimizer_steps=0、model/inference/binary/test=0。
 - **下一步**：P0只核已有HUST原始Mendeley metadata和source manifest是否含row/column到物理电芯的凭证；缺证不猜、不下载/训练，不重做CALB诊断。
+
+
+## 2026-10-18 11:47 北京时间：HUST已存原始来源身份凭证未闭合
+
+- **已完成**：核原始Mendeley v2保存公开metadata、旧source manifest与pinned预处理身份链；DOI/版本一致，未发现独立serial/跨来源alias映射，保留STOP。
+- **证据**：reports/hust_saved_source_identity_20261018_root/SOURCE_IDENTITY_ZH.md、source_identity_review.json；绑定三份保存JSON及preprocess_HUST.py:23–44/82–84 SHA。
+- **最小验证**：原始ID nsc7hnsg4s/version2/DOI10.17632/nsc7hnsg4s.2与manifest一致；完整对象无files键、size0不解释为空数据；另API文件实际仅路由错误，旧清单接口400不冒充实时结果。
+- **阻塞/风险**：原始文件库存、row/column-serial及跨来源身份未证；pinned cell_id由文件stem生成。发布说明77cell不证明独立物理身份；旧manifest状态不作当前执行状态。new_fits=0、steps/model/inference/binary/test/network=0。
+- **下一步**：一次官方公开v2文件库存metadata查询，只找README/映射文件入口；不下载原始数据/改权限/认证，失败不循环重试。

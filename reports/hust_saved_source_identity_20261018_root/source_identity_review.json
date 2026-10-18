@@ -1,0 +1,89 @@
+{
+  "at_utc": "2026-10-18T03:47:13.781984+00:00",
+  "decision": "STOP_HUST_PHYSICAL_IDENTITY_NOT_CLOSED_BY_SAVED_SOURCE_METADATA",
+  "scope": "Existing saved original-source public metadata, historical source manifest and pinned preprocessing text only",
+  "source_url": "https://data.mendeley.com/datasets/nsc7hnsg4s/2",
+  "source_doi": "https://doi.org/10.17632/nsc7hnsg4s.2",
+  "saved_identity": {
+    "id": "nsc7hnsg4s",
+    "version": 2,
+    "name": "The Dataset for: Real-time personalized health status prediction of lithium-ion batteries using deep transfer learning ",
+    "publish_date": "2022-05-24T13:06:43.736Z",
+    "metadata_description": "A dataset with 77 LFP/graphite cells (1.1 Ah nominal capacity and 3.3 V nominal voltage). The cells were cycled with an identical charge protocol but different multi-stage discharge protocols at a constant temperature of 30°C. \n\n",
+    "license": "CC BY 4.0"
+  },
+  "checked_field_status": {
+    "full_saved_metadata_keys": [
+      "articles",
+      "available",
+      "categories",
+      "channel",
+      "confidential",
+      "contributors",
+      "created_on",
+      "customer_id",
+      "data_licence",
+      "description",
+      "doi",
+      "funders",
+      "id",
+      "institutions",
+      "links",
+      "modified_on",
+      "name",
+      "owner",
+      "owner_id",
+      "publish_date",
+      "related_links",
+      "repository",
+      "size",
+      "version",
+      "versions"
+    ],
+    "files_key_present": false,
+    "size_value": 0,
+    "size_interpretation": "No confirmed raw inventory/bytes; size0 is not proof of zero files or empty dataset",
+    "related_links": [],
+    "articles": [],
+    "physical_serial_map_found_in_inspected_text": false,
+    "raw_row_column_map_found_in_inspected_text": false
+  },
+  "saved_error_response": {
+    "message": "no Route matched with those values",
+    "not_a_dataset_response": true
+  },
+  "historical_manifest_inventory": {
+    "raw_file_inventory": "not confirmed from public metadata endpoint; no Mendeley original files downloaded",
+    "file_list_endpoint_http_status": 400,
+    "inventory_limitation": "Public metadata returns size=0 and public files listing endpoint returned error 400; raw file names and actual size remain unverified."
+  },
+  "pinned_source_claims": [
+    {
+      "url": "https://github.com/Ruifeng-Tan/BatteryLife/blob/3b17bb53202e10711deae0448c91f84144bb3dd9/process_scripts/preprocess_HUST.py#L23-L44",
+      "claim": "Expects hust_data.zip/our_data/*.pkl; output name HUST_ plus raw file stem"
+    },
+    {
+      "url": "https://github.com/Ruifeng-Tan/BatteryLife/blob/3b17bb53202e10711deae0448c91f84144bb3dd9/process_scripts/preprocess_HUST.py#L82-L84",
+      "claim": "BatteryData.cell_id receives filename-derived cell_name; not independent physical serial"
+    }
+  ],
+  "negative_evidence_boundary": "Only these saved sources inspected. No assertion that publisher raw data or current public API cannot contain serial/alias records. Original acquisition timestamp not verified from publication/modified times.",
+  "source_identity_vs_population": "Published description of77 cells is source metadata, not project verification of77 independent physical identities or pretraining disjointness",
+  "prior_manifest_is_historical": true,
+  "current_release_or_runtime_claims_from_old_manifest": false,
+  "bindings": {
+    "data/source_audit/mendeley_hust_v2_public_api.json": "7dcad6f7f8ee5d6426cbd3472e27b78368fa8350b3216b1052aeac0a20e2a49c",
+    "data/source_audit/mendeley_hust_v2_api.json": "8f1fd226e253901576171490dc2940be1b4352a828eb9686cbda64e5ef40e13b",
+    "data/source_audit/data_source_manifest.json": "47aff628a5aee00a948abd8806e863ebad6ba67207f79a647176d36e95cab712",
+    "repos/pinned/BatteryLife_3b17bb53202e10711deae0448c91f84144bb3dd9/process_scripts/preprocess_HUST.py": "de0c0c9f48f88feda73a3886393b543cff03cd7cce2f089e4bac86ecdb24fa37"
+  },
+  "new_fits": 0,
+  "optimizer_steps": 0,
+  "model_loads": 0,
+  "new_inference": 0,
+  "binary_reads": 0,
+  "test_access": false,
+  "network_requests": 0,
+  "gates_changed": false,
+  "next_action": "One bounded official public Mendeley v2 file-inventory metadata request for dataset nsc7hnsg4s, using supported public route; no raw data download, auth/terms changes, retries on error or credential access. Seek available README/serial-map inventory only, preserve identity STOP if absent."
+}
