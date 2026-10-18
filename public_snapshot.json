@@ -4,8 +4,8 @@ Total output lines: 2408
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-18T04:22:38.186163+00:00",
-  "content_sha256": "38d944b1de0ef3b9d35623bd90e338d42966d47077bf3ad3e4a1fd6679bda044",
+  "snapshot_utc": "2026-10-18T04:36:07.582084+00:00",
+  "content_sha256": "8318a059bf558e82d4444498cd66220129a364ecfb03489bc8de13edf2b55be0",
   "file_count": 378,
   "files": [
     {
@@ -17,8 +17,8 @@ Total output lines: 2408
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 44698,
-      "sha256": "61d7614719dad3a69b874f6e874b6e6190cbcaeb459cb5d94037693e675921de"
+      "bytes": 45775,
+      "sha256": "fcbcc48742b3079ac5c79da09143e21e6f103e72298893a05368951407821375"
     },
     {
       "path": "README.md",
@@ -131,8 +131,8 @@ Total output lines: 2408
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 32876,
-      "sha256": "5731387cbd928d8d519a7e5e1ae97befa20b41eeef87b68e37115756b1c6c6e2"
+      "bytes": 33490,
+      "sha256": "314a87693a71f9e35bee3203b6f62abfc749702ea38bf6f0e4fb425da9d5f706"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
