@@ -1,0 +1,50 @@
+{
+  "question": "Does native-cycle absolute-error HGB improve cell-equal RUL MAE against saved log-RUL squared-error HGB?",
+  "seed": 42,
+  "max_new_CPU_fits": 1,
+  "max_seconds": 180,
+  "threads": 1,
+  "optimizer_steps": 0,
+  "development_access": false,
+  "test_access": false,
+  "global_new_fits_allowed_remains": false,
+  "owner": "01a14e92-ea7a-7cc3-8007-67b4d16a873a",
+  "source_predictions": {
+    "fit_predictions.csv": "7cd0d1c902dacacf8f519c02962eb0343c240d1be41555d96e94b4bbf17775e3",
+    "calibration_predictions.csv": "c27dd53fce992318292397486aaff8ce02e3f8b802ee54932867517ce7c2af76"
+  },
+  "source_cohort_sha256": "42535de5825f6857e3aa69a596306a909a9a1b3ac087c43631032f6d293ef289",
+  "model": {
+    "loss": "absolute_error",
+    "max_iter": 150,
+    "max_leaf_nodes": 7,
+    "max_depth": 3,
+    "learning_rate": 0.05,
+    "min_samples_leaf": 50,
+    "l2_regularization": 1,
+    "random_state": 42,
+    "early_stopping": false
+  },
+  "features": [
+    "origin age",
+    "current SOH",
+    "past20 TheilSen rate20_per_cycle in original SOH/cycle units"
+  ],
+  "target": "observed event_cycle-origin, same pre-event origins and original labels; no transformation",
+  "weights": "each fit cell total equal; normalize mean sample_weight to1",
+  "prediction": "floor0; preserve raw prediction and negative count",
+  "selection_gate": {
+    "relative_MAE_reduction_min": 0.05,
+    "cells_improved_min": 7,
+    "pairedcell_bootstrap": 2000,
+    "bootstrap_seed": 42,
+    "CI_lower_strictly_above": 0,
+    "severe_over100_increment_max": 0.01
+  },
+  "limitations": [
+    "calibration10 already exposed for development; no independent confirmation",
+    "observed-event lab complete-cycle capacity only; no censoring or conditional-distribution claim",
+    "sourceID separation only; physical serial and complete-source SHA unverified",
+    "no parameter/seed rescue; any fit start consumes budget; preserve failures"
+  ]
+}

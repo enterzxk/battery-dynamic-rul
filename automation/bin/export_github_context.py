@@ -124,6 +124,10 @@ def main():
     for name in ['runner.py', 'protocol.json', 'cohort.json', 'ROOT_GO.json', 'fit_ledger.jsonl', 'completion.json', 'capacity_comparison.json', 'metrics.json', 'per_cell_metrics.json', 'comparison.json', 'independent_metric_recompute.py', 'independent_metrics.json', 'published_predictions.json', 'decode_public_predictions.py', 'capacity_prediction_delta.json', 'decode_capacity_delta.py', 'preGO_control_failure.json', 'preGO_control_resolution.json', 'root_decision.json', 'RESULTS_ZH.md']:
         chosen.add('experiments/capacity_endpoint_firstpassage_seed42_v2/' + name)
 
+    chosen.add('reports/native_rul_mae_review_20261018_luna/review.json')
+    for name in ['runner.py','protocol.json','cohort.json','ROOT_GO.json','fit_ledger.jsonl','completion.json','metrics.json','per_cell_metrics.json','comparison.json','independent_metric_recompute.py','independent_metrics.json','prediction_delta.json','decode_prediction_delta.py','failure_diagnosis.json','root_decision.json','RESULTS_ZH.md']:
+        chosen.add('experiments/native_rul_mae_seed42_v1/' + name)
+
     contents, files, skipped = {}, [], []
     mapping = {'README.md': 'docs/GITHUB_README_ZH.md', 'agent.md': 'AGENTS.md'}
     mapping.update({rel: rel for rel in sorted(chosen)})

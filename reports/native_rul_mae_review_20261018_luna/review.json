@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "reviewed_hashes": {
+    "experiments/native_rul_mae_seed42_v1/runner.py": "ae5732d80d99566abe39a330893009770502ceaf66a19cfc0be858b7b708b7c3",
+    "experiments/native_rul_mae_seed42_v1/protocol.json": "e9ea8edc608b208c212db86c77926aa29589d938593a6b3edc48e30d80f48a2c",
+    "experiments/native_rul_mae_seed42_v1/cohort.json": "42535de5825f6857e3aa69a596306a909a9a1b3ac087c43631032f6d293ef289"
+  },
+  "requested_model": "gpt-6-luna/high",
+  "actual_model": "不可独立内省；未作运行时模型身份认证",
+  "scope": "指定文件静态窄审；定向复核先前两项修复。未训练、未运行runner、未加载checkpoint、未读取development/test预测、未更改共享状态。",
+  "initial_findings": [
+    {
+      "issue": "初版仅拟合前检查180秒，未强制限制全流程时间。",
+      "resolution": "已修复：runner第25行使用ITIMER_REAL并以180秒减去main入口至启动定时器的已耗时间设定剩余预算；第51行及第70行在拟合前和completion写入前检查总elapsed。"
+    },
+    {
+      "issue": "初版fit_ledger.jsonl以追加方式创建，存在与旧账本混写风险。",
+      "resolution": "已修复：runner第53行首次fit_started以open('x')独占创建并flush/fsync，fit_completed随后追加至这次新建的账本。"
+    }
+  ],
+  "findings": [
+    "两项先前阻塞均在当前runner hash中完成定向确认。",
+    "数据范围、特征、标签、等cell权重、固定HGB absolute_error及预设calibration gate与委托审查范围一致。",
+    "protocol记录calibration集已用于开发，且physical serial及complete-source SHA未验证；结果仅能作为该协议下的校准比较，不能作为独立确认或物理电芯泛化结论。"
+  ],
+  "permitted_scope": "本PASS只满足本轮静态窄审门槛；拟合仍须由主控在重新核验owner/锁及来源CSV指标后签发fresh精确hash GO。GO最多允许1次CPU fit（42 cells/22281 origins），calibration 10 cells/4567 origins；不得读取dev/test，不得重训或进行参数/seed救援。",
+  "next_action": "主控将此review.json及三个精确SHA纳入fresh GO决定；本审查本身没有建立claim或启动fit。"
+}

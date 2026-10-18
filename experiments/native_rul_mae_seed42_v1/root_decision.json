@@ -1,0 +1,38 @@
+{
+  "decision": "NO_GAIN_NATIVE_CYCLE_ABSOLUTE_ERROR_FIXED_HGB",
+  "gate_pass": false,
+  "metrics": {
+    "saved_log_squared": {
+      "MAE": 58.11369800278736,
+      "bias": 11.676224212761717,
+      "severe_over100": 0.1416005147437414
+    },
+    "native_absolute": {
+      "MAE": 64.52446672083731,
+      "bias": 17.809011030925152,
+      "severe_over100": 0.1402663646286486
+    }
+  },
+  "comparison": {
+    "relative_MAE_reduction": -0.1103142449778789,
+    "cells_improved": 4,
+    "pairedcell_MAE_difference_CI95": [
+      -21.54645205130244,
+      3.506626045511239
+    ],
+    "severe_over100_increment": -0.0013341501150928026,
+    "negative_raw_outputs": 0,
+    "gate_pass": false
+  },
+  "new_CPU_fits": 1,
+  "optimizer_steps": 0,
+  "development_reads": 0,
+  "test_reads": 0,
+  "review_sha256": "b9c67cfd01e146fb5d2234db35b7ae42317b645fe40972ad0af17900ca3cdbf6",
+  "GO_sha256": "8bc1fda869052fe2328517d0fce3dc9deb5336e1183e8812ab5e2c0de5ebc3a1",
+  "checkpoint_sha256": "7696b53075addfe6a06b1a449e87f11b0cfac532f72fd0b2410236b813295954",
+  "prediction_sha256": "a7ecaf89ea350ff05a19e16f9df52c23a6a58b23f48e93aee04fede2c9e6d261",
+  "independent_metrics_sha256": "b172e771f44374277f3ba8a5f704c8ebace17770a29aadc09f92f267de5fa7d5",
+  "no_seed_parameter_rescue": true,
+  "next_action": "0fit saved-prediction diagnostic: fixed origin100 EOL countdown vs existing per-origin dynamic directRUL, same10cal4567, frozen baseline; identify when updates help/harm. Do not read dev/test."
+}

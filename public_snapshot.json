@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-18T10:21:04.794483+00:00",
-  "content_sha256": "cf9f28ef7e67959de7397699af834485c32d4b1a2e3a9ab97bcd8b0bf603a019",
-  "file_count": 580,
+  "snapshot_utc": "2026-10-18T14:00:25.331139+00:00",
+  "content_sha256": "afa96d9ef040abe989feb54acf32bd24c9aae704dba1fccf5a87b577dec0c797",
+  "file_count": 597,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,8 +14,8 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 70586,
-      "sha256": "1b1538d9c26185dd902c9de72c9d895c7990ae437f15ca0682f67801d8def392"
+      "bytes": 71971,
+      "sha256": "2e7140264c96df743d9c0655c32c036d66a48eea818f435826bafd7efaa6dad0"
     },
     {
       "path": "README.md",
@@ -38,8 +38,8 @@
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 16773,
-      "sha256": "bd0c2c3b14545ee11b03facaf144c4e785e6788adae7112b85dc7ef99344d6e4"
+      "bytes": 17261,
+      "sha256": "134a99526a53d6d864f808004d1b4d181237f1f2274e941fa41c8790e41f9965"
     },
     {
       "path": "automation/bin/matr_raw_batch2_asset_worker_v1.py",
@@ -164,8 +164,8 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 57847,
-      "sha256": "40a0160bc217757c7790c782ca755049405edeb269e049e5ec19ce2e3fc234e4"
+      "bytes": 59232,
+      "sha256": "4a9cbcdc01ab42791ee06c6b62c6e39737a197738f37ba69f5a896b45a06decd"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
@@ -1240,6 +1240,102 @@
       "source_path": "experiments/matr_raw_heldout_calibration_seed42_v1/scale_failure_diagnosis.json",
       "bytes": 1479,
       "sha256": "42c15c18855379e9429a71269b8824c3db579fe21ea7a8829d4db5f1c28c6bd6"
+    },
+    {
+      "path": "experiments/native_rul_mae_seed42_v1/RESULTS_ZH.md",
+      "source_path": "experiments/native_rul_mae_seed42_v1/RESULTS_ZH.md",
+      "bytes": 2354,
+      "sha256": "c220bfef2aefe7f9e25dd453583d1641b7e0e1ac58a4a274c7ec142dbcaca088"
+    },
+    {
+      "path": "experiments/native_rul_mae_seed42_v1/ROOT_GO.json",
+      "source_path": "experiments/native_rul_mae_seed42_v1/ROOT_GO.json",
+      "bytes": 899,
+      "sha256": "8bc1fda869052fe2328517d0fce3dc9deb5336e1183e8812ab5e2c0de5ebc3a1"
+    },
+    {
+      "path": "experiments/native_rul_mae_seed42_v1/cohort.json",
+      "source_path": "experiments/native_rul_mae_seed42_v1/cohort.json",
+      "bytes": 2573,
+      "sha256": "42535de5825f6857e3aa69a596306a909a9a1b3ac087c43631032f6d293ef289"
+    },
+    {
+      "path": "experiments/native_rul_mae_seed42_v1/comparison.json",
+      "source_path": "experiments/native_rul_mae_seed42_v1/comparison.json",
+      "bytes": 269,
+      "sha256": "e5a141737976a7532a7fd80d2a906803de47c8eb52cbd97c19dd5ce9454abd82"
+    },
+    {
+      "path": "experiments/native_rul_mae_seed42_v1/completion.json",
+      "source_path": "experiments/native_rul_mae_seed42_v1/completion.json",
+      "bytes": 924,
+      "sha256": "5fb0b8083aa6ae96d568287015009b055253537e8ab36c4ed637101595013bfa"
+    },
+    {
+      "path": "experiments/native_rul_mae_seed42_v1/decode_prediction_delta.py",
+      "source_path": "experiments/native_rul_mae_seed42_v1/decode_prediction_delta.py",
+      "bytes": 1059,
+      "sha256": "1534ef85c5c9006d43c40b32e9e130819b0e55417deaf6d1004563fa5549eebe"
+    },
+    {
+      "path": "experiments/native_rul_mae_seed42_v1/failure_diagnosis.json",
+      "source_path": "experiments/native_rul_mae_seed42_v1/failure_diagnosis.json",
+      "bytes": 925,
+      "sha256": "0ee93ff3e4b2d5b12d7258589e5e505098a32fc0b35f0ba720c60ba9a3fedcb9"
+    },
+    {
+      "path": "experiments/native_rul_mae_seed42_v1/fit_ledger.jsonl",
+      "source_path": "experiments/native_rul_mae_seed42_v1/fit_ledger.jsonl",
+      "bytes": 109,
+      "sha256": "c64a04f9c77404909494fec8fe7aa17a2d89fbbd4d6ad03b0c55aa40a387f37d"
+    },
+    {
+      "path": "experiments/native_rul_mae_seed42_v1/independent_metric_recompute.py",
+      "source_path": "experiments/native_rul_mae_seed42_v1/independent_metric_recompute.py",
+      "bytes": 1944,
+      "sha256": "5c2347de9a6e63c765f50215b648482b0e0ec88f036c0b0a9b82801b673f2332"
+    },
+    {
+      "path": "experiments/native_rul_mae_seed42_v1/independent_metrics.json",
+      "source_path": "experiments/native_rul_mae_seed42_v1/independent_metrics.json",
+      "bytes": 1041,
+      "sha256": "b172e771f44374277f3ba8a5f704c8ebace17770a29aadc09f92f267de5fa7d5"
+    },
+    {
+      "path": "experiments/native_rul_mae_seed42_v1/metrics.json",
+      "source_path": "experiments/native_rul_mae_seed42_v1/metrics.json",
+      "bytes": 266,
+      "sha256": "d5a5804a37d4f398099ef8ad5409a304c4ff362faf71e5b8a941c1e2f0c3aade"
+    },
+    {
+      "path": "experiments/native_rul_mae_seed42_v1/per_cell_metrics.json",
+      "source_path": "experiments/native_rul_mae_seed42_v1/per_cell_metrics.json",
+      "bytes": 3710,
+      "sha256": "31ad3890ed3b15a41bc7317ffd704938aa5a955624530fa61a2de4762683425c"
+    },
+    {
+      "path": "experiments/native_rul_mae_seed42_v1/prediction_delta.json",
+      "source_path": "experiments/native_rul_mae_seed42_v1/prediction_delta.json",
+      "bytes": 17079,
+      "sha256": "20580f159e03400c2ef99a21e0dd4856f4c012b4622dcceb55d6d2c5f6705f41"
+    },
+    {
+      "path": "experiments/native_rul_mae_seed42_v1/protocol.json",
+      "source_path": "experiments/native_rul_mae_seed42_v1/protocol.json",
+      "bytes": 1929,
+      "sha256": "e9ea8edc608b208c212db86c77926aa29589d938593a6b3edc48e30d80f48a2c"
+    },
+    {
+      "path": "experiments/native_rul_mae_seed42_v1/root_decision.json",
+      "source_path": "experiments/native_rul_mae_seed42_v1/root_decision.json",
+      "bytes": 1488,
+      "sha256": "ee61afb90bf58bccef73536145ab07922cd4eed63d8d5453951a36167310f8b3"
+    },
+    {
+      "path": "experiments/native_rul_mae_seed42_v1/runner.py",
+      "source_path": "experiments/native_rul_mae_seed42_v1/runner.py",
+      "bytes": 6800,
+      "sha256": "ae5732d80d99566abe39a330893009770502ceaf66a19cfc0be858b7b708b7c3"
     },
     {
       "path": "experiments/online_survival_observed_pilot_seed42_v1/RESULTS_ZH.md",
@@ -2740,6 +2836,12 @@
       "source_path": "reports/nasa_remaining_source_inventory_20261018_root/two_reads_failure.json",
       "bytes": 366,
       "sha256": "7cc7e01a07601b75001b51cd8fbd588f00b4df72fa50a99ea10dbe3ad6724e8d"
+    },
+    {
+      "path": "reports/native_rul_mae_review_20261018_luna/review.json",
+      "source_path": "reports/native_rul_mae_review_20261018_luna/review.json",
+      "bytes": 2226,
+      "sha256": "b9c67cfd01e146fb5d2234db35b7ae42317b645fe40972ad0af17900ca3cdbf6"
     },
     {
       "path": "reports/online_rate_harm_diagnosis_20261018_root/DIAGNOSIS_ZH.md",

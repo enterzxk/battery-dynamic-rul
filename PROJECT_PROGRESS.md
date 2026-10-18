@@ -402,3 +402,11 @@
 - **最小验证**：CSV独立重算首过指标最大差2.84e-14，容量指标差4.44e-16；保留全4567origins及163noncross，原EOL不变。RUL预测无损压缩，容量v2用旧CSV+精确delta复原SHA通过。签发脚本曾因review字段名不一致而在GO前拒绝，0claim/fit，失败日志与preGO_control_failure/resolution保留；核哈希签发后真实fit账本仅1次。
 - **阻塞/风险**：129.644624是把未到端点赋2000cycle下界cap的全样本诊断分数，不是有效完整点预测MAE；直接RUL在同10cal有效MAE58.113698。修复数据覆盖不足以修复长程预测；capacity能力不能当RUL/分布/新方法证据。新增1fit0optimizer、0checkpointload、100rolloutcalls73060rows+1capacitycall4367rows、0dev/test；旧预算不变。
 - **下一步**：做一个缺失的强简单基线：同42fit/10cal、相同age/SOH/robust20与固定HGB参数，仅将log-RUL平方损失改为native-cycle RUL absolute_error；1CPUfit，独立窄审+fresh exactGO后直接执行。同4567cal预测与旧directRUL比较，先解决训练目标和主MAE口径的差异，不开发新模块。0dev/test、不重训旧checkpoint，cal暴露不得当独立确认。
+
+
+## 2026-10-18：原生循环数MAE单次对照完成，NO_GAIN
+- **已完成**：同42fit/10cal固定HGB仅改nativeRUL absolute_error，真实1CPUfit完成；MAE58.113698→64.524467，恶化11.0314%，4/10改善，冻结gateFAIL，不调参/seed救援。
+- **证据**：experiments/native_rul_mae_seed42_v1/RESULTS_ZH.md、ROOT_GO/fit_ledger/completion、metrics/comparison、calibration_predictions.csv、checkpoint及root_decision；独立审查reports/native_rul_mae_review_20261018_luna/review.json。完整预测SHA a7ecaf89ea350ff05a19e16f9df52c23a6a58b23f48e93aee04fede2c9e6d261。
+- **最小验证**：CSV独立重算最大差7.11e-15，4567origins完整；95% pairedcell旧减新MAE区间[-21.546452,3.506626]；raw负数0；无损公开新预测delta复原byteSHA通过。修复全流程180秒与首账本独占创建后同次窄审PASS。
+- **阻塞/风险**：严重over100率仅14.16005%→14.02664%，不抵主MAE恶化。b2c1主导恶化但不可事后删除；cal已暴露、event-only、物理serial/fullsourceSHA未闭合。新增1fit0optimizer/0dev/test；累计新科研CPU11=RUL9+aux2，旧MATR41与神经4fit2580steps另记；全局newfits仍false。
+- **下一步**：0fit既有预测诊断：同10cal4567，用origin100固定早期EOL递减对照与每时点directRUL更新比较，量化更新帮助/伤害；不读18dev/test、不训练、不新推理。

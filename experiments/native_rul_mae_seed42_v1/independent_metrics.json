@@ -1,0 +1,35 @@
+{
+  "status": "PASS_INDEPENDENT_CSV_RECOMPUTE",
+  "rows": 4567,
+  "cells": 10,
+  "metrics": {
+    "saved_log_squared": {
+      "MAE": 58.11369800278736,
+      "bias": 11.676224212761717,
+      "severe_over100": 0.1416005147437414
+    },
+    "native_absolute": {
+      "MAE": 64.52446672083731,
+      "bias": 17.809011030925152,
+      "severe_over100": 0.1402663646286486
+    }
+  },
+  "max_absolute_metric_difference": 7.105427357601002e-15,
+  "pairedcell_MAE_difference_CI95": [
+    -21.546452051302442,
+    3.5066260455112412
+  ],
+  "prediction_sha256": "a7ecaf89ea350ff05a19e16f9df52c23a6a58b23f48e93aee04fede2c9e6d261",
+  "per_cell_MAE_improvement": {
+    "MATR_b2c1": -66.34658931106694,
+    "MATR_b2c21": -0.6878710841474511,
+    "MATR_b2c24": -1.1103007235211848,
+    "MATR_b2c41": 0.08701251748264127,
+    "MATR_b2c6": 3.9746081486424245,
+    "MATR_b4c14": 6.338648893385184,
+    "MATR_b4c19": -4.759122746144101,
+    "MATR_b4c26": -12.098228516122518,
+    "MATR_b4c29": -2.7827169310978235,
+    "MATR_b4c7": 13.276872572090213
+  }
+}

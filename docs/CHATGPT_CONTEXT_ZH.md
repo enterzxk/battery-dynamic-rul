@@ -331,3 +331,11 @@ MATR来源补充核查已完成：已存record19688272完整API（SHA 5b79e36abb
 ## 2026-10-18：跨领域 RUL 精读（纠正范围）
 
 用户澄清需超出电池领域。新的正式阅读入口为 `reports/cross_domain_rul_literature_20261018_root/CROSS_DOMAIN_RUL_REVIEW_ZH.md`，覆盖航空发动机、风机轴承、旋转机械、CNC及医疗纵向生存分析十篇。原电池十篇总结仍保留历史，但不作为这次跨领域任务的交付。跨域候选为删失感知、随新纵向观测更新的条件RUL生存分布；尚未检索确认创新性，不授权训练。训练/推理均为0。SHA256：`4e9f9463b676ccdee8b044fbe1626abc95d3cfba0bbfb3098e855e321ce0526a`。
+
+
+## 2026-10-18：原生循环数MAE单次对照完成，NO_GAIN
+- **已完成**：同42fit/10cal固定HGB仅改nativeRUL absolute_error，真实1CPUfit完成；MAE58.113698→64.524467，恶化11.0314%，4/10改善，冻结gateFAIL，不调参/seed救援。
+- **证据**：experiments/native_rul_mae_seed42_v1/RESULTS_ZH.md、ROOT_GO/fit_ledger/completion、metrics/comparison、calibration_predictions.csv、checkpoint及root_decision；独立审查reports/native_rul_mae_review_20261018_luna/review.json。完整预测SHA a7ecaf89ea350ff05a19e16f9df52c23a6a58b23f48e93aee04fede2c9e6d261。
+- **最小验证**：CSV独立重算最大差7.11e-15，4567origins完整；95% pairedcell旧减新MAE区间[-21.546452,3.506626]；raw负数0；无损公开新预测delta复原byteSHA通过。修复全流程180秒与首账本独占创建后同次窄审PASS。
+- **阻塞/风险**：严重over100率仅14.16005%→14.02664%，不抵主MAE恶化。b2c1主导恶化但不可事后删除；cal已暴露、event-only、物理serial/fullsourceSHA未闭合。新增1fit0optimizer/0dev/test；累计新科研CPU11=RUL9+aux2，旧MATR41与神经4fit2580steps另记；全局newfits仍false。
+- **下一步**：0fit既有预测诊断：同10cal4567，用origin100固定早期EOL递减对照与每时点directRUL更新比较，量化更新帮助/伤害；不读18dev/test、不训练、不新推理。
