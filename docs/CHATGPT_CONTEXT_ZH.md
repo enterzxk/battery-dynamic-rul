@@ -443,3 +443,7 @@ MATR来源补充核查已完成：已存record19688272完整API（SHA 5b79e36abb
 
 ## 最新0fit发现：年龄分组不足以支持统一修正
 reports/policy_oof_age_residual_20261019_root/RESULTS_ZH.md为当前诊断。OOF/cal固定origin100–199/200–399/≥400三组；cal覆盖59.03/74.89/85.16%，但同9cell的下侧漏覆盖均值虽下降，6/9反而增加，下降集中b4c14/b4c7；上侧下降仅2/9，集中b2c6/b4c29。同40OOF下侧29/40增加；OOF残差均值早晚下降而混合中位数基本平稳。NO_GO从组均值直接扩展age-only校准/修正，未实施任何预测改变。0fit，CPU19不变；组内存在cell等权与总体权重贡献分母分开，终点临近性/存活选择未消除，cal暴露等限制保留。下一项准备已有OOF残差按4policy train-only距离固定5近邻cell的条件分布简单参考，0新fit/推理/devtest；须冻结+一次窄审+fresh exactGO，不调k/距离/尺度，不当创新结论。
+
+
+## 最新实际0fit比较：固定5工况近邻OOF CDF仍NO_GAIN
+experiments/policy_local_oof_cdf_fixed5_v1/RESULTS_ZH.md。42fit-only4policy mean/SD，各10cal固定5sourcecell残差CDF、median中心化保留点，预GO窄审PASS及freshGO消费。MAE36.400814/severeover1004.2582%不变；coverage62.5373%，IS190.184645，比原fixedsigma恶化28.0797%；4/10coverage误差改善，平均Brier增量.00206106超过.002，0crossing仍联合FAIL。相对globalOOF亦失败。0新fit/模型推理/rawfeatures/checkpoint/devtest，CPU19不变。1变换(4mean4SD)+10CDF预算消费，不搜k/距离/尺度。cal暴露/event-only/physicalserial/fullsource未知/OOF28vs42与局部5cell限制保留。下一项仅0fit现有52policy与encoder表示碰撞审计：b2c1与b2c0距离0但rawpolicy不同；不提前宣称是失败原因或新模型收益，不继续盲校准救援。

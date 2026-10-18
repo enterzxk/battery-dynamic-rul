@@ -1,0 +1,6 @@
+{
+  "status": "PASS_ORIGINAL_CSV_BYTES_SHA256",
+  "prediction_sha256": "7f4c229603fba1ddd43619f74f7bdd2952aaab35300dbb049be8e9e06fb7643a",
+  "original_bytes": 554843,
+  "archive_bytes": 146948
+}

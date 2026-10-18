@@ -522,3 +522,11 @@
 - **最小验证**：源SHA、三组条数总和22281/4567、Fraction总体电池等权漏覆盖贡献重组及b2c1单例44/48通过；0fit/新推理/旧checkpoint/原特征/devtest，累计CPU19=RUL17+辅助2不变。
 - **阻塞/风险**：固定成员后仍有时间窗、终点临近性/存活选择；每组cell等权与总体贡献分母不同，不能拼接。OOF总体80%是构造性质；均值/中位数/逐cell方向不一致，不把年龄关联当因果机制。旧OOFCDF NO_GAIN和原点PASS/概率FAIL保留。
 - **下一步**：准备仅已有OOF+4policy的固定5近邻sourcecell经验CDF强参考，train-only标准差距离/中位中心化保留点；0新fit/推理/devtest，先冻结一次窄审+freshGO，禁止邻居数/距离/尺度搜索，目前未执行。
+
+
+## 2026-10-19：工况局部固定5邻居OOF CDF完成，NO_GAIN
+- **已完成**：0fit用42fit4policy train-only mean/SD、10cal各固定5sourcecell等权OOF CDF，中位中心化保留点；coverage62.5373%、IS190.184645，比原固定sigma恶化28.0797%，mean-cell覆盖误差.271472，4/10改善。平均Brier增量.00206106>.002，联合FAIL，不调k/距离/尺度。
+- **证据**：experiments/policy_local_oof_cdf_fixed5_v1/RESULTS_ZH、protocol/runner/ROOT_GO/estimate_ledger、train_transform/local_CDF_parameters、metrics/per_cell_metrics/comparisons、completion/independent_recompute/metrics、predictions_lossless/decoder/lossless_validation/root_decision；reports/policy_local_oof_cdf_fixed5_review_20261019_luna/review。
+- **最小验证**：独立训练统计差1.78e-15，邻居/CDF及4567条预测重算差1.14e-13、指标差2.84e-14；CSV原字节SHA归档通过。0新fit/推理/旧checkpoint/原始特征/devtest，1变换(4mean4SD)+10局部CDF消费；CPU19不变。
+- **阻塞/风险**：少数电池继续大幅漏覆盖，b2c1/b2c6仅约4–5%；局部5cell与OOF28vs42限制不能消除。b2c1/b2c0工况距离0但rawpolicy不同，提示积分表示可能丢细分schedule信息，尚未确认与失败的因果关系。cal暴露/event-only/物理身份边界保留。已完成预算ledger原字节无损213611→52701bytes，server原件/旧GitHub历史保留，上限12MiB不扩。
+- **下一步**：0fit固定52policy及原encoder审计raw_schedule→4effectiveC表示碰撞，冻结1e-12C容差，不搜容差/重编码/新模型，不读取raw电池/devtest；判断输入表征是否真实缺失信息。

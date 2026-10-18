@@ -1,0 +1,17 @@
+{
+  "status": "COMPLETE_FIXED5_POLICY_LOCAL_OOF_CDF",
+  "new_fits": 0,
+  "new_model_inference": 0,
+  "checkpoint_loads": 0,
+  "raw_feature_reads": 0,
+  "dev_test_reads": 0,
+  "train_policy_transform_estimates": 1,
+  "local_CDF_estimates": 10,
+  "OOF_rows": 22281,
+  "calibration_rows": 4567,
+  "runner_sha256": "9e21a954c9b9eb26584dc75e376598aecf1939195c3a8b6976112ec4d210875c",
+  "protocol_sha256": "383692a8c1f1057dfc176b9a7dacd5922aba14b753ed4beeee5ce05f56104691",
+  "GO_sha256": "5b624efca3f75777e42ed618e8ed656f8552561dbc5539a31c963e0c35ae6a58",
+  "prediction_sha256": "7f4c229603fba1ddd43619f74f7bdd2952aaab35300dbb049be8e9e06fb7643a",
+  "elapsed_seconds": 0.31262791715562344
+}

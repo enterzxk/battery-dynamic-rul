@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "review_stage": "PRE_GO_INDEPENDENT_NARROW_REVIEW",
+  "requested_model": "gpt-6-luna/high",
+  "review_scope": "Static narrow review only; runner not executed; no model, fit, inference, metric calculation, checkpoint load, or raw-feature read.",
+  "input_sha256": {
+    "runner.py": "9e21a954c9b9eb26584dc75e376598aecf1939195c3a8b6976112ec4d210875c",
+    "protocol.json": "383692a8c1f1057dfc176b9a7dacd5922aba14b753ed4beeee5ce05f56104691"
+  },
+  "source_sha256": {
+    "OOF": "cf9a5a173550013f553e53dd3b379c791956ecbf92f19c2682705ec7261da9b2",
+    "calibration": "56a0bdec581437729dd525e3b0e7c075feef811d48ebee3eea62479fe83fd993",
+    "cohort": "42535de5825f6857e3aa69a596306a909a9a1b3ac087c43631032f6d293ef289",
+    "policy": "91a6bfa3be83b403289133bd13669d36ed7a1f212ec0ca4e692efecfb85be462",
+    "semantics": "c973219a60549f3ef4af0803a821eeafd2b4fe2ade552234294a25dd01e3ad32",
+    "parameters": "ca95515be2d4977aa5160f9aa520acb996c6bd83eff5618ab72e8655f34711e5"
+  },
+  "review_basis": [
+    "The frozen runner/protocol SHA values match the requested values; all six source SHA values match protocol bindings. OOF and calibration CSV headers match the fields consumed; source lengths/cell counts are 22281/42 and 4567/10, and true_RUL values are positive.",
+    "Static logic uses exactly 42 fit-cell policy vectors for equal-cell mean and population SD (ddof=0), drops SD<=1e-12 columns and stops on calibration deviation >1e-10 C, then sorts exact float64 squared standardized distances by (distance, cell ID) and selects five source cells per calibration cell.",
+    "Each local residual distribution is built only from OOF rows of the selected five source cells with cell mass 1/5 and row mass 1/(5*ncell); exact Fraction left-inverse quantiles .1/.5/.9 are median-centered once, preserving saved point median. Calibration labels are only used in the final per-cell metrics and gate calculations.",
+    "Primary gate is the frozen saved-fixed-sigma comparison with unchanged point MAE, interval-score reduction >=5%, paired-cell bootstrap CI lower bound >0, mean per-cell coverage-error reduction >=.03, aggregate coverage error nonworsening, >=7 improved cells, width ratio <=2, mean Brier increment <=.002, and coherent bounds/no crossings. Global OOF CDF is secondary and cannot rescue primary failure.",
+    "Protocol explicitly limits estimates to one train-only transform and ten neighbor/CDF estimates, with zero fits, inference, raw-feature/checkpoint/development/test reads; limitations identify exposed calibration, event-only scope, unknown physical/source identity, and 28-fit versus 42-fit residual transfer."
+  ],
+  "technical_blockers": [],
+  "preGO_execution_conditions": "This is a pre-GO review. The coordinator must issue a fresh exact GO after this PASS; before execution the runner must validate GO status, this receipt status and SHA, frozen source/input hashes, owner/lock and all project gates. This PASS waives none of those gates. The prior three OOF fit starts remain consumed and are not repeated."
+}

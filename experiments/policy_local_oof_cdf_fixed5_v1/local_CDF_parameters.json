@@ -1,0 +1,312 @@
+[
+  {
+    "cell_id": "MATR_b2c1",
+    "source_cells": [
+      "MATR_b2c0",
+      "MATR_b2c3",
+      "MATR_b2c4",
+      "MATR_b4c1",
+      "MATR_b4c18"
+    ],
+    "squared_standardized_distances": [
+      0.0,
+      2.9690421851583184,
+      4.142631920893139,
+      4.2604733117557325,
+      4.2604733117557325
+    ],
+    "median_center": 0.01778744135063226,
+    "quantile_offsets": [
+      -0.13142618738186096,
+      0.0,
+      0.22767857405881964
+    ],
+    "source_origin_counts": {
+      "MATR_b2c0": 200,
+      "MATR_b2c3": 235,
+      "MATR_b2c4": 344,
+      "MATR_b4c1": 661,
+      "MATR_b4c18": 807
+    },
+    "OOF_rows": 2247
+  },
+  {
+    "cell_id": "MATR_b2c21",
+    "source_cells": [
+      "MATR_b2c14",
+      "MATR_b2c5",
+      "MATR_b2c26",
+      "MATR_b2c30",
+      "MATR_b2c17"
+    ],
+    "squared_standardized_distances": [
+      3.560711471169624e-05,
+      0.0005064310463082965,
+      0.041636385256676164,
+      0.17603554927126025,
+      0.23574079098866374
+    ],
+    "median_center": -0.021771760270583584,
+    "quantile_offsets": [
+      -0.08830898041656532,
+      0.0,
+      0.09909372260798133
+    ],
+    "source_origin_counts": {
+      "MATR_b2c5": 380,
+      "MATR_b2c14": 385,
+      "MATR_b2c17": 394,
+      "MATR_b2c26": 371,
+      "MATR_b2c30": 381
+    },
+    "OOF_rows": 1911
+  },
+  {
+    "cell_id": "MATR_b2c24",
+    "source_cells": [
+      "MATR_b2c26",
+      "MATR_b2c5",
+      "MATR_b2c14",
+      "MATR_b2c30",
+      "MATR_b2c29"
+    ],
+    "squared_standardized_distances": [
+      0.0,
+      0.03699832441756447,
+      0.043036106532514135,
+      0.0465792178584347,
+      0.2524823381789086
+    ],
+    "median_center": -0.031699485702337604,
+    "quantile_offsets": [
+      -0.10413107595525428,
+      0.0,
+      0.09766119523509298
+    ],
+    "source_origin_counts": {
+      "MATR_b2c5": 380,
+      "MATR_b2c14": 385,
+      "MATR_b2c26": 371,
+      "MATR_b2c29": 398,
+      "MATR_b2c30": 381
+    },
+    "OOF_rows": 1915
+  },
+  {
+    "cell_id": "MATR_b2c41",
+    "source_cells": [
+      "MATR_b2c39",
+      "MATR_b2c34",
+      "MATR_b4c10",
+      "MATR_b4c11",
+      "MATR_b4c21"
+    ],
+    "squared_standardized_distances": [
+      0.6779241408445259,
+      2.0821917412335127,
+      3.072537268326718,
+      3.072537268326718,
+      3.072537268326718
+    ],
+    "median_center": -0.05139438183272205,
+    "quantile_offsets": [
+      -0.1324964055930593,
+      0.0,
+      0.2328966066686755
+    ],
+    "source_origin_counts": {
+      "MATR_b2c34": 399,
+      "MATR_b2c39": 359,
+      "MATR_b4c10": 773,
+      "MATR_b4c11": 764,
+      "MATR_b4c21": 674
+    },
+    "OOF_rows": 2969
+  },
+  {
+    "cell_id": "MATR_b2c6",
+    "source_cells": [
+      "MATR_b2c4",
+      "MATR_b2c3",
+      "MATR_b2c18",
+      "MATR_b2c0",
+      "MATR_b2c17"
+    ],
+    "squared_standardized_distances": [
+      3.674317540400177,
+      5.112960969387259,
+      6.736913082009978,
+      6.934907138758928,
+      9.278123893792905
+    ],
+    "median_center": -0.0008438805567854146,
+    "quantile_offsets": [
+      -0.12304972864488595,
+      0.0,
+      0.08722105100686761
+    ],
+    "source_origin_counts": {
+      "MATR_b2c0": 200,
+      "MATR_b2c3": 235,
+      "MATR_b2c4": 344,
+      "MATR_b2c17": 394,
+      "MATR_b2c18": 387
+    },
+    "OOF_rows": 1560
+  },
+  {
+    "cell_id": "MATR_b4c14",
+    "source_cells": [
+      "MATR_b4c15",
+      "MATR_b4c37",
+      "MATR_b2c36",
+      "MATR_b4c12",
+      "MATR_b4c23"
+    ],
+    "squared_standardized_distances": [
+      0.0,
+      2.343448817261709,
+      4.814414792285457,
+      6.9586048115975565,
+      6.9586048115975565
+    ],
+    "median_center": 0.02272978943503201,
+    "quantile_offsets": [
+      -0.14761745754402522,
+      0.0,
+      0.383113213392849
+    ],
+    "source_origin_counts": {
+      "MATR_b2c36": 435,
+      "MATR_b4c12": 719,
+      "MATR_b4c15": 576,
+      "MATR_b4c23": 939,
+      "MATR_b4c37": 764
+    },
+    "OOF_rows": 3433
+  },
+  {
+    "cell_id": "MATR_b4c19",
+    "source_cells": [
+      "MATR_b4c37",
+      "MATR_b4c15",
+      "MATR_b4c34",
+      "MATR_b4c38",
+      "MATR_b4c42"
+    ],
+    "squared_standardized_distances": [
+      0.0,
+      2.343448817261709,
+      3.119414300076483,
+      3.119414300076483,
+      3.119414300076483
+    ],
+    "median_center": 0.0652764380609403,
+    "quantile_offsets": [
+      -0.23294031488602673,
+      0.0,
+      0.3402572156113566
+    ],
+    "source_origin_counts": {
+      "MATR_b4c15": 576,
+      "MATR_b4c34": 792,
+      "MATR_b4c37": 764,
+      "MATR_b4c38": 956,
+      "MATR_b4c42": 675
+    },
+    "OOF_rows": 3763
+  },
+  {
+    "cell_id": "MATR_b4c26",
+    "source_cells": [
+      "MATR_b4c25",
+      "MATR_b4c9",
+      "MATR_b4c4",
+      "MATR_b2c39",
+      "MATR_b4c12"
+    ],
+    "squared_standardized_distances": [
+      0.0,
+      0.0,
+      4.217905626496742,
+      10.987549286297522,
+      15.22259680442991
+    ],
+    "median_center": -0.084971383300247,
+    "quantile_offsets": [
+      -0.17210712816894702,
+      0.0,
+      0.1904436675835539
+    ],
+    "source_origin_counts": {
+      "MATR_b2c39": 359,
+      "MATR_b4c4": 557,
+      "MATR_b4c9": 343,
+      "MATR_b4c12": 719,
+      "MATR_b4c25": 354
+    },
+    "OOF_rows": 2332
+  },
+  {
+    "cell_id": "MATR_b4c29",
+    "source_cells": [
+      "MATR_b4c34",
+      "MATR_b4c38",
+      "MATR_b4c42",
+      "MATR_b2c32",
+      "MATR_b2c33"
+    ],
+    "squared_standardized_distances": [
+      0.0,
+      0.0,
+      0.0,
+      0.11397976066012006,
+      0.4526739702991275
+    ],
+    "median_center": 0.0003836997656287977,
+    "quantile_offsets": [
+      -0.25263009390288715,
+      0.0,
+      0.32641015991893685
+    ],
+    "source_origin_counts": {
+      "MATR_b2c32": 419,
+      "MATR_b2c33": 420,
+      "MATR_b4c34": 792,
+      "MATR_b4c38": 956,
+      "MATR_b4c42": 675
+    },
+    "OOF_rows": 3262
+  },
+  {
+    "cell_id": "MATR_b4c7",
+    "source_cells": [
+      "MATR_b4c4",
+      "MATR_b4c25",
+      "MATR_b4c9",
+      "MATR_b4c12",
+      "MATR_b4c23"
+    ],
+    "squared_standardized_distances": [
+      0.0,
+      4.217905626496742,
+      4.217905626496742,
+      5.508484132878589,
+      5.508484132878589
+    ],
+    "median_center": -0.0655466709270307,
+    "quantile_offsets": [
+      -0.19021299272860226,
+      0.0,
+      0.43507873793920915
+    ],
+    "source_origin_counts": {
+      "MATR_b4c4": 557,
+      "MATR_b4c9": 343,
+      "MATR_b4c12": 719,
+      "MATR_b4c23": 939,
+      "MATR_b4c25": 354
+    },
+    "OOF_rows": 2912
+  }
+]

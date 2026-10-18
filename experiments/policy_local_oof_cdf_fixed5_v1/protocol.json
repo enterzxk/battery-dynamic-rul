@@ -1,0 +1,79 @@
+{
+  "owner": "01a1508e-83e9-7232-a0e4-07606110b443",
+  "question": "Can fixed knownpolicy-local cellOOF residualCDF repair global residual probability failure with savedpoint unchanged?",
+  "new_fits": 0,
+  "new_model_inference": 0,
+  "raw_feature_reads": 0,
+  "checkpoint_loads": 0,
+  "dev_test_reads": 0,
+  "max_seconds": 30,
+  "k": 5,
+  "policy_columns": [
+    "effective_C_0_20",
+    "effective_C_20_40",
+    "effective_C_40_60",
+    "effective_C_60_80"
+  ],
+  "distance": "float64 squaredEuclidean on42fitcell standardized4policy; train-only equalcell mean/populationSDddof0, no label orcaltransform fitting",
+  "constant_SD_C_threshold": 1e-12,
+  "constant_target_tolerance_C": 1e-10,
+  "zero_variance_rule": "Drop columns with train populationSD<=1e-12 C; if cal differs from trainmean>1e-10 C on any such column STOP without rescue",
+  "tie_rule": "Sort by (unrounded float64 squared distance, sourcecell ID lexicographic), select exactly first5; no rounded tie/neighborsearch",
+  "cdf": "OOF raw logRUL-mu only from selected5sourcecells; eachcell mass1/5 and rowmass1/(5*ncell). exactFraction leftinverse q.1/.5/.9; subtract selectedOOF median once, never cal labels; q50=savedexpMu. F(z)=mass support<=z, ties inclusive, no interpolation/outputsorting/clipping.",
+  "estimate_budget": {
+    "train_policy_transform": 1,
+    "means": 4,
+    "populationSDs": 4,
+    "target_neighbor_selections": 10,
+    "train_only_selected_residual_CDFs": 10,
+    "cal_label_based_estimates": 0
+  },
+  "sources": {
+    "OOF": {
+      "path": "experiments/policy_oof_cdf_seed42_v1/oof_predictions.csv",
+      "sha256": "cf9a5a173550013f553e53dd3b379c791956ecbf92f19c2682705ec7261da9b2"
+    },
+    "calibration": {
+      "path": "experiments/policy_oof_cdf_seed42_v1/calibration_distribution.csv",
+      "sha256": "56a0bdec581437729dd525e3b0e7c075feef811d48ebee3eea62479fe83fd993"
+    },
+    "cohort": {
+      "path": "experiments/policy_oof_cdf_seed42_v1/cohort.json",
+      "sha256": "42535de5825f6857e3aa69a596306a909a9a1b3ac087c43631032f6d293ef289"
+    },
+    "policy": {
+      "path": "reports/policy_context_20261018_root/policy_features.json",
+      "sha256": "91a6bfa3be83b403289133bd13669d36ed7a1f212ec0ca4e692efecfb85be462"
+    },
+    "semantics": {
+      "path": "reports/policy_context_20261018_root/source_semantics.json",
+      "sha256": "c973219a60549f3ef4af0803a821eeafd2b4fe2ade552234294a25dd01e3ad32"
+    },
+    "parameters": {
+      "path": "experiments/matr_raw_heldout_calibration_seed42_v1/fit_parameters.json",
+      "sha256": "ca95515be2d4977aa5160f9aa520acb996c6bd83eff5618ab72e8655f34711e5"
+    }
+  },
+  "selection_gate": {
+    "point_MAE_unchanged": true,
+    "interval_score_reduction_min": 0.05,
+    "mean_cell_absolute_coverage_error_reduction_min": 0.03,
+    "aggregate_absolute_coverage_error_must_not_increase": true,
+    "width_ratio_max": 2,
+    "coverage_error_cells_improved_min": 7,
+    "zero_any_crossing": true,
+    "pairedcell_score_bootstrap": 2000,
+    "bootstrap_seed": 42,
+    "score_difference_CI_lower_strictly_above": 0,
+    "mean_Brier100_300_increment_max": 0.002
+  },
+  "primary_reference": "saved fixedsigma same as prior frozen gate; globalOOF is secondary description and cannot rescue primaryFAIL",
+  "limits": [
+    "Exposedcal10 is development only, no independentconfirmation",
+    "eventonly physicalserial/fullsource unknown fixedknownpolicy",
+    "OOF28fit models vs saved42fit point; residualtransfer not guaranteed",
+    "Fixed5/local4policy is a strongsimple conditionaldistribution reference, not innovation/conformal/conditionalcoverage guarantee",
+    "No k/distance/scale/seed/quantile rescue; one invocation; preserve failures"
+  ],
+  "frozen_utc": "2026-10-18T20:14:34.714915+00:00"
+}

@@ -1,0 +1,9 @@
+{
+  "status": "PASS_ORIGINAL_BYTES_SHA256",
+  "path": "experiments/cpmlp_hust_recipe_adapt_seed42_v2/budget_ledger.jsonl",
+  "sha256": "936a0c48f6c8b3b80b6321f042b4229e932b82e0b26b75f5b91a011a1169d7b4",
+  "original_bytes": 213611,
+  "archive_bytes": 52701,
+  "server_original_retained": true,
+  "GitHub_history_retained": true
+}

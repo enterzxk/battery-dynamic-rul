@@ -1,0 +1,56 @@
+{
+  "saved_fixed_sigma": {
+    "point_MAE_unchanged": true,
+    "interval_score_relative_reduction": -0.28079740772097805,
+    "pairedcell_score_difference_CI95": [
+      -101.81626335469528,
+      10.566923718342855
+    ],
+    "mean_cell_absolute_coverage_error_reduction": -0.05820682503249755,
+    "aggregate_coverage_error_reduction": -0.15964278455179437,
+    "coverage_error_cells_improved": 4,
+    "width_ratio": 0.935037663746296,
+    "mean_Brier_increment": 0.0020610597882339404,
+    "any_crossing_origins": 0,
+    "checks": {
+      "point": true,
+      "score": false,
+      "CI": false,
+      "cell_coverage": false,
+      "aggregate": false,
+      "cells": false,
+      "width": true,
+      "Brier": false,
+      "coherence": true
+    },
+    "gate_pass": false,
+    "primary_reference": true
+  },
+  "global_OOF_CDF": {
+    "point_MAE_unchanged": true,
+    "interval_score_relative_reduction": -0.2494614252032259,
+    "pairedcell_score_difference_CI95": [
+      -88.5918120628218,
+      5.911623532939256
+    ],
+    "mean_cell_absolute_coverage_error_reduction": -0.022028353391239652,
+    "aggregate_coverage_error_reduction": -0.072324578133946,
+    "coverage_error_cells_improved": 4,
+    "width_ratio": 1.0580501880916215,
+    "mean_Brier_increment": 0.0028903663286539392,
+    "any_crossing_origins": 0,
+    "checks": {
+      "point": true,
+      "score": false,
+      "CI": false,
+      "cell_coverage": false,
+      "aggregate": false,
+      "cells": false,
+      "width": true,
+      "Brier": false,
+      "coherence": true
+    },
+    "gate_pass": false,
+    "primary_reference": false
+  }
+}

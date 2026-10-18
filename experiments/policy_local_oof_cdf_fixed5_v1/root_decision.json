@@ -1,0 +1,81 @@
+{
+  "decision": "NO_GAIN_FIXED5_POLICY_LOCAL_OOF_CDF_STOP_NO_NEIGHBOR_OR_SCALE_SEARCH",
+  "primary_gate_pass": false,
+  "new_fits": 0,
+  "new_model_inference": 0,
+  "checkpoint_loads": 0,
+  "raw_feature_reads": 0,
+  "dev_test_reads": 0,
+  "GO_consumed": true,
+  "train_policy_transform_estimates": 1,
+  "local_CDF_estimates": 10,
+  "CPUfits_unchanged": 19,
+  "comparisons": {
+    "saved_fixed_sigma": {
+      "point_MAE_unchanged": true,
+      "interval_score_relative_reduction": -0.28079740772097805,
+      "pairedcell_score_difference_CI95": [
+        -101.81626335469528,
+        10.566923718342855
+      ],
+      "mean_cell_absolute_coverage_error_reduction": -0.05820682503249755,
+      "aggregate_coverage_error_reduction": -0.15964278455179437,
+      "coverage_error_cells_improved": 4,
+      "width_ratio": 0.935037663746296,
+      "mean_Brier_increment": 0.0020610597882339404,
+      "any_crossing_origins": 0,
+      "checks": {
+        "point": true,
+        "score": false,
+        "CI": false,
+        "cell_coverage": false,
+        "aggregate": false,
+        "cells": false,
+        "width": true,
+        "Brier": false,
+        "coherence": true
+      },
+      "gate_pass": false,
+      "primary_reference": true
+    },
+    "global_OOF_CDF": {
+      "point_MAE_unchanged": true,
+      "interval_score_relative_reduction": -0.2494614252032259,
+      "pairedcell_score_difference_CI95": [
+        -88.5918120628218,
+        5.911623532939256
+      ],
+      "mean_cell_absolute_coverage_error_reduction": -0.022028353391239652,
+      "aggregate_coverage_error_reduction": -0.072324578133946,
+      "coverage_error_cells_improved": 4,
+      "width_ratio": 1.0580501880916215,
+      "mean_Brier_increment": 0.0028903663286539392,
+      "any_crossing_origins": 0,
+      "checks": {
+        "point": true,
+        "score": false,
+        "CI": false,
+        "cell_coverage": false,
+        "aggregate": false,
+        "cells": false,
+        "width": true,
+        "Brier": false,
+        "coherence": true
+      },
+      "gate_pass": false,
+      "primary_reference": false
+    }
+  },
+  "evidence_sha256": {
+    "protocol.json": "383692a8c1f1057dfc176b9a7dacd5922aba14b753ed4beeee5ce05f56104691",
+    "runner.py": "9e21a954c9b9eb26584dc75e376598aecf1939195c3a8b6976112ec4d210875c",
+    "ROOT_GO.json": "5b624efca3f75777e42ed618e8ed656f8552561dbc5539a31c963e0c35ae6a58",
+    "completion.json": "af3d66e10637faa5d134d96322b23414d81d5cd58bcaf7137fd03c99c6dc4889",
+    "train_transform.json": "80dedb84d83265559e24cb7b5ab6be32c755f7e238f4b69880f231e557371a55",
+    "local_CDF_parameters.json": "2b77bb577c7248f56cf4064d7c7ad09ceb9536f37a78f53e0d685289027b3f3d",
+    "metrics.json": "b1233b90cba0e64b0c34aa8fa990b7e209b579b38ca1b29aa8af1292846a7e1d",
+    "independent_metrics.json": "a3b34d28d362682c848bc203b8c1d246f03fa38d2a3186d4e7e36285a1657ac5",
+    "calibration_distribution.csv": "7f4c229603fba1ddd43619f74f7bdd2952aaab35300dbb049be8e9e06fb7643a",
+    "predictions_lossless.json": "4199febcf87882a46b336385b1e474bbf33100f3e6146158f6f4104ab98367f0"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "status": "GO_ONE_FIXED5_POLICY_LOCAL_OOF_CDF_ZERO_FIT",
+  "max_new_fits": 0,
+  "max_model_inference": 0,
+  "max_checkpoint_loads": 0,
+  "max_raw_feature_reads": 0,
+  "max_dev_test_reads": 0,
+  "max_seconds": 30,
+  "estimate_budget": {
+    "train_policy_transform": 1,
+    "means": 4,
+    "populationSDs": 4,
+    "target_neighbor_selections": 10,
+    "train_only_selected_residual_CDFs": 10,
+    "cal_label_based_estimates": 0
+  },
+  "owner": "01a1508e-83e9-7232-a0e4-07606110b443",
+  "issued_utc": "2026-10-18T20:16:00.662820+00:00",
+  "review_path": "/home/yndx/zxk/rul/reports/policy_local_oof_cdf_fixed5_review_20261019_luna/review.json",
+  "review_sha256": "856f67fae3a4ce2fd2b3e6e53188b9a1db18a01efa5fce60ade78997c694db1c",
+  "runner.py_sha256": "9e21a954c9b9eb26584dc75e376598aecf1939195c3a8b6976112ec4d210875c",
+  "protocol.json_sha256": "383692a8c1f1057dfc176b9a7dacd5922aba14b753ed4beeee5ce05f56104691",
+  "scope": "One fixed5 policy-local CDF comparison; no k/distance/scale rescue; all previous model budgets consumed"
+}
