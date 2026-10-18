@@ -1,0 +1,84 @@
+{
+  "decision": "NO_GO_FOR_PROBABILITY_RELIABILITY_OR_MODEL_SEED_EXPANSION_FROM_THIS_FROZEN_SCALE_AUDIT",
+  "known_policy_point_gain_preserved": true,
+  "policy_dynamic_vs_proper_early": {
+    "point_MAE_reduction": 0.4921122404938647,
+    "cells_MAE_improved": 8,
+    "pairedcell_MAE_difference_CI95": [
+      13.659584705614813,
+      64.82314072877959
+    ],
+    "severe_over100_increment": 0.029662670469931852,
+    "interval_score_reduction": 0.5710490746113697,
+    "absolute_coverage_error_reduction": 0.07081935763340963,
+    "width_ratio": 0.5945116502946779,
+    "mean_Brier_increment": -0.062495804275138504,
+    "cells_coverage_error_improved": 6,
+    "point_development_gate_pass": false,
+    "probability_checks": {
+      "point_gate": false,
+      "interval_score": true,
+      "coverage_error": true,
+      "width": true,
+      "Brier": true,
+      "cell_coverage": false
+    },
+    "joint_probability_gate_pass": false
+  },
+  "policy_dynamic_vs_three_state": {
+    "point_MAE_reduction": 0.3736276369654886,
+    "cells_MAE_improved": 8,
+    "pairedcell_MAE_difference_CI95": [
+      5.583948589166248,
+      41.35450219632845
+    ],
+    "severe_over100_increment": -0.0990180493644523,
+    "interval_score_reduction": 0.4387540650574644,
+    "absolute_coverage_error_reduction": 0.1647817420368516,
+    "width_ratio": 0.936804731470259,
+    "mean_Brier_increment": -0.021722380325063125,
+    "cells_coverage_error_improved": 5,
+    "point_development_gate_pass": true,
+    "probability_checks": {
+      "point_gate": true,
+      "interval_score": true,
+      "coverage_error": true,
+      "width": true,
+      "Brier": true,
+      "cell_coverage": false
+    },
+    "joint_probability_gate_pass": false
+  },
+  "interpretation": "Aggregate point/probability metrics improve; relative severeover100 and across-cell coverage guards fail. 78.5016% aggregate nominal80 coverage is not per-cell calibration or independent confirmation.",
+  "sigma_scope": "old three-state fit-only sigmaA held unchanged, not fit to policy model residuals",
+  "new_fits": 0,
+  "optimizer_steps": 0,
+  "new_scalar_estimates": 0,
+  "new_model_inference": 0,
+  "dev_test_reads": 0,
+  "independent_metric_max_difference": 5.684341886080802e-14,
+  "next_bounded_action": {
+    "status": "NOT_STARTED",
+    "question": "Is the transferred old-model sigmaA the remaining misspecification in the policy uncertainty baseline?",
+    "action": "Prepare one bounded load of the already saved self-trained policy checkpoint and one predict call on42fit22281 causal prefixes, then one policy-fit-only equalcell RMSlogresidual sigma with old .05floor; apply unchanged saved10cal mu once. No refit or calibration-label tuning. Independent narrow review and fresh exact hash GO required before checkpoint load or predict.",
+    "max_new_fits": 0,
+    "max_new_scalar_estimates": 1,
+    "max_fit_only_predict_calls_after_GO": 1,
+    "max_fit_only_prediction_rows": 22281,
+    "checkpoint_load_allowed_now": false,
+    "model_inference_allowed_now": false,
+    "development_or_test_access": false,
+    "why_needed": "This audit deliberately reuses old three-state sigmaA, not policy residualscale. Current policy fit predictions were never generated or saved; do not refit to restore them.",
+    "preserve": "both current joint probability FAIL and policy-vs-three-state pointPASS; no model/seed expansion"
+  },
+  "evidence": {
+    "protocol.json": "a9a35ebb4fbd9177a1b240d657f05ec2485fc87e0ac29727779fbb5dcb37f61b",
+    "diagnose.py": "7721e3837d9b2d5972222d11266675aee502aad92e217015227525c518611a31",
+    "metrics.json": "96fc85ae7fe7468a09019ca0e25cba895eaaf3fb060043f7e1d2fc3275a946bd",
+    "per_cell_metrics.json": "fb96fe77b4ee886a74d4f7762a73471df8e856379dbda6b708476da316c99084",
+    "comparisons.json": "11d941e58b86586daabb908cebb5c1da0aae6cfef85bc21ca61fa4d11cf27728",
+    "completion.json": "6b69c2138f95754580f5fdc2da6ec16af5ceab782a38324098c791b32d9a5ae0",
+    "independent_recompute.py": "92ee77b98be8d94bca995bc46816cdafdcf32d1a3aeeeb55baba67f00395469b",
+    "independent_metrics.json": "f9ea8e006017f5e522dd93bc11dc56bb9d1ccfb7ca12b5f51e3c5fb836f69523"
+  }
+}

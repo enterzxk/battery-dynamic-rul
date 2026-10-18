@@ -1,0 +1,21 @@
+{
+  "status": "COMPLETE_FROZEN_POLICY_SURVIVAL_PROBABILITY_DIAGNOSTIC",
+  "cells": 10,
+  "origins": 4567,
+  "derived_rows": 13701,
+  "new_fits": 0,
+  "optimizer_steps": 0,
+  "new_scalar_estimates": 0,
+  "new_model_inference": 0,
+  "checkpoint_loads": 0,
+  "dev_test_reads": 0,
+  "prediction_sha256": "796844ff5c863a08ca7f1238c620afee39a3f22b84d68b615ec52135c48b7ea0",
+  "parameter_sha256": "ca95515be2d4977aa5160f9aa520acb996c6bd83eff5618ab72e8655f34711e5",
+  "protocol_sha256": "a9a35ebb4fbd9177a1b240d657f05ec2485fc87e0ac29727779fbb5dcb37f61b",
+  "script_sha256": "7721e3837d9b2d5972222d11266675aee502aad92e217015227525c518611a31",
+  "derived_predictions_sha256": "57d461ca4c9f26d7f8b74756626b725ff7a636831703c675b61d48aa87262a76",
+  "minimum_q10": 1.0651209013162395,
+  "max_conditional_quantile_survival_error": 5.995204332975845e-15,
+  "elapsed_seconds": 0.15305607952177525,
+  "finished_utc": "2026-10-18T16:02:12.252477+00:00"
+}

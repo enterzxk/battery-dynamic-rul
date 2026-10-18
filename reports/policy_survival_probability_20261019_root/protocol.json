@@ -1,0 +1,60 @@
+{
+  "question": "Does known-policy dynamic RUL retain point and probability gains against a proper survival-conditioned origin100 baseline under one frozen oldfit sigmaA?",
+  "source_predictions": "experiments/policy_context_point_seed42_v1/calibration_predictions.csv",
+  "prediction_sha256": "796844ff5c863a08ca7f1238c620afee39a3f22b84d68b615ec52135c48b7ea0",
+  "source_parameters": "experiments/matr_raw_heldout_calibration_seed42_v1/fit_parameters.json",
+  "parameter_sha256": "ca95515be2d4977aa5160f9aa520acb996c6bd83eff5618ab72e8655f34711e5",
+  "sigma_key": "A_fit_residual_scale",
+  "sigma": 0.19898311654196568,
+  "arms": [
+    "policy_early_survival_conditioned",
+    "policy_dynamic",
+    "three_state_dynamic_reference"
+  ],
+  "anchor": 100,
+  "interval": [
+    0.1,
+    0.9
+  ],
+  "horizons": [
+    100,
+    300
+  ],
+  "aggregate": "equal-cell means, all4567 saved calibration origins from10cells",
+  "point_gate": {
+    "MAE_reduction_min": 0.05,
+    "cells_improved_min": 7,
+    "paired_cell_bootstrap_replicates": 2000,
+    "bootstrap_seed": 42,
+    "CI95_lower_gt": 0,
+    "severe_over100_increment_max": 0.01
+  },
+  "probability_gate": {
+    "require_point_gate": true,
+    "interval_score_reduction_min": 0.05,
+    "absolute_coverage_error_reduction_min": 0.03,
+    "width_ratio_max": 2,
+    "mean_Brier_increment_max": 0.002,
+    "cells_coverage_error_improved_min": 7
+  },
+  "metrics_definition": {
+    "TimeMAE": "mean over cells of mean abs(q50-true_RUL)",
+    "severe_over100": "mean over cells of fraction(q50-true_RUL>100)",
+    "interval_score80": "hi-lo+10*max(lo-y,0)+10*max(y-hi,0)",
+    "Brier": "mean over cells of mean((P(RUL<=h)-I(true_RUL<=h))**2)"
+  },
+  "new_fits": 0,
+  "new_scalar_estimates": 0,
+  "new_model_inference": 0,
+  "checkpoint_loads": 0,
+  "dev_test_reads": 0,
+  "limits": [
+    "same repeatedly exposed calibration cohort; development only",
+    "event-only no natural censoring/IPCW claim",
+    "sigmaA from old three-state fit residuals transferred unchanged to policy model; NOT a new policy uncertainty estimate",
+    "known fixed laboratory policy assumption only; unknown physical serial/fullsourceSHA",
+    "do not rescind previous policy-vs-three-state pointPASS or countdown riskFAIL; comparisons distinct",
+    "no automatic budget expansion regardless outcome"
+  ],
+  "frozen_utc": "2026-10-18T16:02:11.942455+00:00"
+}

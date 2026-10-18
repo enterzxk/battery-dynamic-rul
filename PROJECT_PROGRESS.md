@@ -466,3 +466,11 @@
 - **最小验证**：独立重算主指标/647固定预测归零origin/48.3085%伤害更新通过，最大差1.42e-14；4557transition完整。0fit/optimizer/新模型推理/sigma/checkpoint/devtest，预算CPU14/神经4fit2580steps不变。
 - **阻塞/风险**：固定基线偏保守bias-34.98，零严重高估不是整体可靠，且不是生存条件化。动态远期RUL>300分段over10011.3577%，未来真RUL只能事后诊断。cal暴露/已知固定policy/物理身份限制保留，不因平均收益扩大训练；上一项policyvs三状态PASS不因不同对照而撤销。
 - **下一步**：0fit固定旧sigmaA，将policy早期mu100正规存活条件化vs动态policy mu_t，旧三状态动态同尺度参考；算MAE/over100及80%区间得分/覆盖/Brier100/300。不估sigma/训练/推理/devtest，保留本轮riskFAIL。
+
+
+## 2026-10-19：工况正规存活对照保留精度收益，概率联合门槛仍FAIL
+- **已完成**：0fit同10cal4567，固定旧sigmaA。正规早期存活条件vs工况动态TimeMAE71.670982→36.400814下降49.2112%，8/10、pairedcell95%差[13.659585,64.823141]；区间得分346.168385→148.489249、覆盖71.4197%→78.5016%，Brier100/300均改善，但over1001.2920%→4.2582%超护栏、仅6/10覆盖误差改善，联合FAIL。相对旧三状态点PASS保留，概率仅5/10改善也FAIL。
+- **证据**：reports/policy_survival_probability_20261019_root/RESULTS_ZH.md、protocol/diagnose、metrics/per_cell_metrics/comparisons、arithmetic_examples、completion/independent_recompute/independent_metrics/root_decision；派生13701行CSV只在服务器，可由公开旧预测与脚本复算。
+- **最小验证**：全部4567独立math.erfc二分复算，预测差1.14e-12、指标差5.68e-14；区间有序/概率合法，原时点完整。0fit/optimizer/新尺度估计/模型推理/checkpoint/devtest；累计CPU14/神经4fit2580steps不变。V13第一次真实压缩16:00:34.346Z仅本地SHA检查点，未建新聊。
+- **阻塞/风险**：聚合78.50%掩盖b2c1覆盖18.75%与b2c6覆盖29.6837%；b4c14/b4c7高估风险保留。共用旧三状态sigma不是policy自身估计，不能把控制比较当可靠分布。cal暴露/event-only/物理身份/固定labpolicy限制保留，不扩模型或seed。
+- **下一步**：0fit准备policy自身fit-only尺度实验：现有自训checkpoint一次42fit/22281prefix predict，再唯一原RMSlogresidual尺度估计，既有10cal mu一次评估；独立窄审+fresh exactGO前不读checkpoint/forward，不重训或用cal调尺度，0dev/test。

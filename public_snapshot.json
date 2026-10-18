@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-18T15:45:44.665652+00:00",
-  "content_sha256": "05ca0b664f52d431897f2e108f8aa457e9cdb8c0a07966b54de769178ed4274a",
-  "file_count": 663,
+  "snapshot_utc": "2026-10-18T16:04:32.689516+00:00",
+  "content_sha256": "f9292b7c9f662712ed553f4c8372a946bb33059c8692b103b97d83f4c187ede7",
+  "file_count": 674,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,8 +14,8 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 82020,
-      "sha256": "2de45eaed15f3ba4abaff5ec6bc8c85aa9e4ea41918b85e1b096379ae4317437"
+      "bytes": 83738,
+      "sha256": "e0cf86cdf62c24311abc246f8e6ff2af77b46dd84ed5e55df7ddf0da84f7158d"
     },
     {
       "path": "README.md",
@@ -38,8 +38,8 @@
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 23450,
-      "sha256": "e23d8780c435d066fb2de086509d6f46fda4b5a562af1a79d2ce97992b8bf263"
+      "bytes": 23774,
+      "sha256": "eb128ae1aa037c18e0d65470b52660016c70a19283839a6d4391a1ff97f2d35e"
     },
     {
       "path": "automation/bin/matr_raw_batch2_asset_worker_v1.py",
@@ -164,8 +164,8 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 69281,
-      "sha256": "8a92378c2cc9df26e6e9daa27f1ae6c3da01753b5e846539e26550b4484fa7e1"
+      "bytes": 70999,
+      "sha256": "a60a3c820f94a09ab5ce768957e38fa43d73d0d639c023b82daa01dc955f986d"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
@@ -3796,6 +3796,72 @@
       "source_path": "reports/policy_fixedearly_dynamic_20261018_root/transition_audit.json",
       "bytes": 3922,
       "sha256": "a09e61cc78d6429320f7b97dcb77cd181504283ed705f3800b6a0ac68d04f4bc"
+    },
+    {
+      "path": "reports/policy_survival_probability_20261019_root/RESULTS_ZH.md",
+      "source_path": "reports/policy_survival_probability_20261019_root/RESULTS_ZH.md",
+      "bytes": 4164,
+      "sha256": "fad4604e8f14e4e33da1c37a4b4110f38826bbac8f97d06e1f266be0dc3fdddd"
+    },
+    {
+      "path": "reports/policy_survival_probability_20261019_root/arithmetic_examples.json",
+      "source_path": "reports/policy_survival_probability_20261019_root/arithmetic_examples.json",
+      "bytes": 24736,
+      "sha256": "d3b4e366973f17d4f4d98254658317a3501b26549e1abfbe4343ab9658f1cea5"
+    },
+    {
+      "path": "reports/policy_survival_probability_20261019_root/comparisons.json",
+      "source_path": "reports/policy_survival_probability_20261019_root/comparisons.json",
+      "bytes": 1615,
+      "sha256": "11d941e58b86586daabb908cebb5c1da0aae6cfef85bc21ca61fa4d11cf27728"
+    },
+    {
+      "path": "reports/policy_survival_probability_20261019_root/completion.json",
+      "source_path": "reports/policy_survival_probability_20261019_root/completion.json",
+      "bytes": 936,
+      "sha256": "6b69c2138f95754580f5fdc2da6ec16af5ceab782a38324098c791b32d9a5ae0"
+    },
+    {
+      "path": "reports/policy_survival_probability_20261019_root/diagnose.py",
+      "source_path": "reports/policy_survival_probability_20261019_root/diagnose.py",
+      "bytes": 6228,
+      "sha256": "7721e3837d9b2d5972222d11266675aee502aad92e217015227525c518611a31"
+    },
+    {
+      "path": "reports/policy_survival_probability_20261019_root/independent_metrics.json",
+      "source_path": "reports/policy_survival_probability_20261019_root/independent_metrics.json",
+      "bytes": 2364,
+      "sha256": "f9ea8e006017f5e522dd93bc11dc56bb9d1ccfb7ca12b5f51e3c5fb836f69523"
+    },
+    {
+      "path": "reports/policy_survival_probability_20261019_root/independent_recompute.py",
+      "source_path": "reports/policy_survival_probability_20261019_root/independent_recompute.py",
+      "bytes": 3063,
+      "sha256": "92ee77b98be8d94bca995bc46816cdafdcf32d1a3aeeeb55baba67f00395469b"
+    },
+    {
+      "path": "reports/policy_survival_probability_20261019_root/metrics.json",
+      "source_path": "reports/policy_survival_probability_20261019_root/metrics.json",
+      "bytes": 1798,
+      "sha256": "96fc85ae7fe7468a09019ca0e25cba895eaaf3fb060043f7e1d2fc3275a946bd"
+    },
+    {
+      "path": "reports/policy_survival_probability_20261019_root/per_cell_metrics.json",
+      "source_path": "reports/policy_survival_probability_20261019_root/per_cell_metrics.json",
+      "bytes": 19082,
+      "sha256": "fb96fe77b4ee886a74d4f7762a73471df8e856379dbda6b708476da316c99084"
+    },
+    {
+      "path": "reports/policy_survival_probability_20261019_root/protocol.json",
+      "source_path": "reports/policy_survival_probability_20261019_root/protocol.json",
+      "bytes": 2380,
+      "sha256": "a9a35ebb4fbd9177a1b240d657f05ec2485fc87e0ac29727779fbb5dcb37f61b"
+    },
+    {
+      "path": "reports/policy_survival_probability_20261019_root/root_decision.json",
+      "source_path": "reports/policy_survival_probability_20261019_root/root_decision.json",
+      "bytes": 4150,
+      "sha256": "ae50401af579a46a714552a60069c3aeb98fc1dad502423bb5297c26bbedc707"
     },
     {
       "path": "reports/saved_examples_lossless_20261018_root/completed_details_lossless.json",

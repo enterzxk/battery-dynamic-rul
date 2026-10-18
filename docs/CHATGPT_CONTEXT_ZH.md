@@ -1,3 +1,11 @@
+## 2026-10-19：工况正规存活对照保留精度收益，概率联合门槛仍FAIL
+- **已完成**：0fit同10cal4567，固定旧sigmaA。正规早期存活条件vs工况动态TimeMAE71.670982→36.400814下降49.2112%，8/10、pairedcell95%差[13.659585,64.823141]；区间得分346.168385→148.489249、覆盖71.4197%→78.5016%，Brier100/300均改善，但over1001.2920%→4.2582%超护栏、仅6/10覆盖误差改善，联合FAIL。相对旧三状态点PASS保留，概率仅5/10改善也FAIL。
+- **证据**：reports/policy_survival_probability_20261019_root/RESULTS_ZH.md、protocol/diagnose、metrics/per_cell_metrics/comparisons、arithmetic_examples、completion/independent_recompute/independent_metrics/root_decision；派生13701行CSV只在服务器，可由公开旧预测与脚本复算。
+- **最小验证**：全部4567独立math.erfc二分复算，预测差1.14e-12、指标差5.68e-14；区间有序/概率合法，原时点完整。0fit/optimizer/新尺度估计/模型推理/checkpoint/devtest；累计CPU14/神经4fit2580steps不变。V13第一次真实压缩16:00:34.346Z仅本地SHA检查点，未建新聊。
+- **阻塞/风险**：聚合78.50%掩盖b2c1覆盖18.75%与b2c6覆盖29.6837%；b4c14/b4c7高估风险保留。共用旧三状态sigma不是policy自身估计，不能把控制比较当可靠分布。cal暴露/event-only/物理身份/固定labpolicy限制保留，不扩模型或seed。
+- **下一步**：0fit准备policy自身fit-only尺度实验：现有自训checkpoint一次42fit/22281prefix predict，再唯一原RMSlogresidual尺度估计，既有10cal mu一次评估；独立窄审+fresh exactGO前不读checkpoint/forward，不重训或用cal调尺度，0dev/test。
+
+
 ## 2026-10-18：端点标签修复匹配fit已完成，递归首过路线仍NO_GO
 - **已完成**：新DataV2下执行且仅执行1辅助CPUfit，相同42fit/10cal、模型/seed/生成规则；容量MAE1.031446→0.974923mSOH改善5.4800%，但4567首过预测仍163noncross（旧191），全部b2c6；4/10cell改善，冻结gateFAIL。关闭本固定20cycle递归首过路线，不加horizon/强制下降/seed。
 - **证据**：experiments/capacity_endpoint_firstpassage_seed42_v2/RESULTS_ZH.md、protocol/cohort/ROOT_GO/fit_ledger/completion、capacity_comparison/calibration_predictions/independent_metrics/root_decision；checkpoint SHA0980e4c7898a18de7562c20679ebbd60000a03bd9c7ebb1a976dad46c75dd127只在服务器；审查reports/capacity_endpoint_v2_review_20261018_luna/review.json SHA42bb9de27515bbb658f1af7af9d7d4ed149ee067745e8e67c5b2aea64d2a6d53。

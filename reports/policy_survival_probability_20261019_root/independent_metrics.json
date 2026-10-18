@@ -1,0 +1,62 @@
+{
+  "status": "PASS_ALL_ROWS_INDEPENDENT_STANDARD_MATH_ERFC_BISECTION",
+  "origins": 4567,
+  "distribution_rows": 13701,
+  "new_fits": 0,
+  "new_model_inference": 0,
+  "new_scalar_estimates": 0,
+  "maximum_prediction_difference": 1.1368683772161603e-12,
+  "maximum_metric_difference": 5.684341886080802e-14,
+  "minimum_early_survival_probability": 0.006974403999241243,
+  "metrics": {
+    "policy_early_survival_conditioned": {
+      "MAE": 71.67098175013244,
+      "bias": -24.887319859206656,
+      "severe_over100": 0.012919794909357261,
+      "coverage80": 0.714196803391318,
+      "width80": 195.40254597039564,
+      "interval_score80": 346.1683845165182,
+      "lower_miss": 0.1260705277435889,
+      "upper_miss": 0.15973266886509319,
+      "Brier100": 0.09265174686115218,
+      "mean_risk100": 0.33491410632227403,
+      "observed_event_fraction100": 0.29911660351601,
+      "Brier300": 0.102868204716474,
+      "mean_risk300": 0.7270819331748489,
+      "observed_event_fraction300": 0.6973498105480299
+    },
+    "policy_dynamic": {
+      "MAE": 36.40081434267988,
+      "bias": -3.5238951148084894,
+      "severe_over100": 0.04258246537928911,
+      "coverage80": 0.7850161610247275,
+      "width80": 116.16909007664155,
+      "interval_score80": 148.48924887864771,
+      "lower_miss": 0.11989603623626532,
+      "upper_miss": 0.09508780273900717,
+      "Brier100": 0.014017516501594336,
+      "mean_risk100": 0.30635277803080974,
+      "observed_event_fraction100": 0.29911660351601,
+      "Brier300": 0.05651082652575491,
+      "mean_risk300": 0.6991772960805062,
+      "observed_event_fraction300": 0.6973498105480299
+    },
+    "three_state_dynamic_reference": {
+      "MAE": 58.11369800278736,
+      "bias": 11.676224212761717,
+      "severe_over100": 0.1416005147437414,
+      "coverage80": 0.620234418987876,
+      "width80": 124.00566113102475,
+      "interval_score80": 264.57073385101853,
+      "lower_miss": 0.24523740060942714,
+      "upper_miss": 0.13452818040269687,
+      "Brier100": 0.02373181492523491,
+      "mean_risk100": 0.2960514607468945,
+      "observed_event_fraction100": 0.29911660351601,
+      "Brier300": 0.09024128875224058,
+      "mean_risk300": 0.6578391052984618,
+      "observed_event_fraction300": 0.6973498105480299
+    }
+  },
+  "script_sha256": "92ee77b98be8d94bca995bc46816cdafdcf32d1a3aeeeb55baba67f00395469b"
+}
