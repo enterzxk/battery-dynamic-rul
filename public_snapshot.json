@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-19T01:40:40.506491+00:00",
-  "content_sha256": "f97a4f8dd803545de851affd03ef98a90e46a8372df48f6d719e649dc2495742",
+  "snapshot_utc": "2026-10-19T01:42:38.501386+00:00",
+  "content_sha256": "bdbbf36926eed3387beec401ac3cea38ee2dd8d8e70d45849b480800801fdc2b",
   "file_count": 929,
   "files": [
     {
@@ -2852,8 +2852,8 @@
     {
       "path": "paper/validation.json",
       "source_path": "paper/validation.json",
-      "bytes": 867,
-      "sha256": "ec72a4e5f797c5b25491c7b7647e0c1c02599b0ee1c631e40416c82c4277c45b"
+      "bytes": 1188,
+      "sha256": "6eb5c6d6149c642f6e4b9dd746c46bb6f5a97aaa0c3f7265fb0f0212b80a595b"
     },
     {
       "path": "reports/asof_preprocessing_audit_v1/REPORT.md",
