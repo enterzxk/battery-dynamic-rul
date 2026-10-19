@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-19T02:17:31.127811+00:00",
-  "content_sha256": "678eaf189e879df13de0849e177872dc5d494bd5e6fbc3fe7b0c180645bd42f0",
-  "file_count": 947,
+  "snapshot_utc": "2026-10-19T02:32:04.276306+00:00",
+  "content_sha256": "a53d83507000dcaf753479a7dbf610cf71d9a491fd3e63eb849a84755b3843d4",
+  "file_count": 952,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,8 +14,8 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 115630,
-      "sha256": "ace86d6a19d5659405ad8460b1bb99f68c1e7de596c1f96a621b9baf139aba6e"
+      "bytes": 116950,
+      "sha256": "0be4608df0f531abd87a6ed67938576a146166a43b54357c2bfdfa64de2c6550"
     },
     {
       "path": "README.md",
@@ -38,8 +38,8 @@
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 42121,
-      "sha256": "26ad337f5f20dc70bd7b6ca8c342552e58a4d194b4354fb69d27451f2219e85a"
+      "bytes": 42316,
+      "sha256": "480e09b6e92e85946ed07894b9e28ceab419cb30309b72a9eef9e6b2050e808b"
     },
     {
       "path": "automation/bin/matr_raw_batch2_asset_worker_v1.py",
@@ -164,8 +164,8 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 96097,
-      "sha256": "90776884a0f5a19b5440615f414afa2f3abfd48d1472125197f742af0e9174b1"
+      "bytes": 97417,
+      "sha256": "5661d24e8f8429d5e871401c8d5cdd4f7d8a086e629e5a49d5621dd132275d26"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
@@ -3178,6 +3178,36 @@
       "source_path": "reports/calb_two_sample_preprocessing_20261018_root/source_identity_verification.json",
       "bytes": 513,
       "sha256": "68cdc69ea9aa8c8e350d5408cac6240c684c4ce19fc5f6aa3cddc651222bba4c"
+    },
+    {
+      "path": "reports/calce_cs2_metadata_20261019_root/RESULTS_ZH.md",
+      "source_path": "reports/calce_cs2_metadata_20261019_root/RESULTS_ZH.md",
+      "bytes": 2131,
+      "sha256": "4321244dda428ca1fb1ee42758dfe1638abfbc050e4eaf6e5f1b1d7fc416f81e"
+    },
+    {
+      "path": "reports/calce_cs2_metadata_20261019_root/decision.json",
+      "source_path": "reports/calce_cs2_metadata_20261019_root/decision.json",
+      "bytes": 278,
+      "sha256": "9465adc25397405db2118434ee6bf0d3d92b322e0b3b10a28db3d07d91c2fb6d"
+    },
+    {
+      "path": "reports/calce_cs2_metadata_20261019_root/evidence.json",
+      "source_path": "reports/calce_cs2_metadata_20261019_root/evidence.json",
+      "bytes": 1328,
+      "sha256": "dd5a3df65be1febd48e0892f8f1691a18280640202e3b5c468d3857013bbb0eb"
+    },
+    {
+      "path": "reports/calce_cs2_metadata_20261019_root/header_preflight_budget.json",
+      "source_path": "reports/calce_cs2_metadata_20261019_root/header_preflight_budget.json",
+      "bytes": 450,
+      "sha256": "dfea2371f45d16818f94b98559d669821f481009250193faa8f38a26e7c48bfe"
+    },
+    {
+      "path": "reports/calce_cs2_metadata_20261019_root/prospective_roles.json",
+      "source_path": "reports/calce_cs2_metadata_20261019_root/prospective_roles.json",
+      "bytes": 336,
+      "sha256": "d71e3b12ffe9b921f53b952b98b303ead21ec2f86ac5067fd68457729a5e91b7"
     },
     {
       "path": "reports/capacity20_forecast_review_20261018_luna/review.json",

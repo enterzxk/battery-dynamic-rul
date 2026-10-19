@@ -523,3 +523,11 @@ paper/figures/empirical_reliability_v1/figure.svg为可编辑四面板经验图�
 - 最小验证：只比较官方实验室目录与官方索引的记录身份；完整充放电容量资格/首循环/实际采样间隔/事件删失/物理身份均unverified，不能从简介或摘要推断。2查询/2页面打开，无raw下载/MAT解码/fit/推理/checkpoint/devtest/权限变更。
 - 阻塞/风险：403是实际文档访问限制，索引可见不等于协议可读，候选未成为独立确认集；raw_download_allowed=false、execution_allowed=false。不循环访问、不借镜像补造官方读取，旧NASA STOP与所有预算保持。
 - 下一步：仅在出现可访问官方Readme/等价原始协议新证据时做文本核验，关闭首段容量资格与实际循环定义；无新增证据时本候选停止自动派发、保持安静，不以元数据冒充数据准备完成或打开模型门。
+
+
+## 2026-10-19：CALCE CS2官方协议可读，四电芯候选完成元数据登记
+- 已完成：官方battery-data的CS2小节246–263行直接核对1100mAh、0.5C CC/CV至4.2V及<0.05A终止、默认2.7V放电截止，35–38为1C放电同组；METADATA_PASS_FOR_PREFLIGHT_ONLY，不是数据准备或独立确认完成。
+- 证据：reports/calce_cs2_metadata_20261019_root的RESULTS_ZH/evidence/decision/prospective_roles/header_preflight_budget；https://calce.umd.edu/battery-data 。35候选train、36候选dev、37/38locked，任何读取前登记，不以编号替代物理serial。
+- 最小验证：CS2协议与同页INR/partial-cycle段落明确区分，未借其他小节证明起始测量；1搜索+1官方页面读取，0raw下载/解码/fit/推理/checkpoint/devtest，CPU20不变。
+- 阻塞/风险：实际完整首容量/跨日期循环编号/文件完整性/实际EOL或删失/身份重叠/现模型policy输入适配未核；0.88Ah只是80%nominal候选项目定义，不预判事件。raw_download_allowed=false、fit_allowed=false、confirmation_ready=false。
+- 下一步：仅官方HTML解析35的链接+单次HEAD，HTML<=262144bytes/15秒、最多2请求、rawbody0；未知/错误STOP，不转GET或接触其他电芯，后续获取/解码/模型仍需fresh exactGO，不重访Oxford403。

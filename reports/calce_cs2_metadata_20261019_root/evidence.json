@@ -1,0 +1,41 @@
+{
+  "source_url": "https://calce.umd.edu/battery-data",
+  "status": "OFFICIAL_PAGE_READ",
+  "section": "CS2 Battery",
+  "positions": {
+    "specifications": "246-253",
+    "charging_identity_and_date_files": "254-256",
+    "constant1C_group": "261-263"
+  },
+  "facts": {
+    "nominal_mAh": 1100,
+    "charge_CC_rate_C": 0.5,
+    "charge_CV_V": 4.2,
+    "charge_termination_current_A": 0.05,
+    "default_discharge_cutoff_V": 2.7,
+    "source_ids_1C": [
+      "CS2-35",
+      "CS2-36",
+      "CS2-37",
+      "CS2-38"
+    ],
+    "identity": "Source page says randomly numbered individual CS2 cells; no physicalserial/alias mapping audited",
+    "file_layout": "Collections of Excel logs named by testing dates"
+  },
+  "unverified": [
+    "Exact raw link URLs and actual Content-Length",
+    "First observed measurement full-charge qualification",
+    "Across-file cycle identity/reset handling and actual EOL/censoring",
+    "Per-file hashes and scientific sample integrity",
+    "Physicalserial/aliases and previous project/pretraining overlap",
+    "Applicability of existing MATR policy features"
+  ],
+  "raw_HTTP_snapshot_saved": false,
+  "search_queries": 1,
+  "page_opens": 1,
+  "raw_downloads": 0,
+  "new_fits": 0,
+  "new_model_inference": 0,
+  "devtest_reads": 0,
+  "recorded_at_utc": "2026-10-19T02:32:03.572783+00:00"
+}
