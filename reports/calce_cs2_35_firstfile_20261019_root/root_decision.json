@@ -1,0 +1,13 @@
+{
+  "decision": "FIRSTFILE_DESCRIPTIVE_MEASUREMENT_PASS_NOT_LIFETIME_OR_TRAINING",
+  "full_capacity_qualified": false,
+  "boundary_samples_consistent_with_official_protocol": true,
+  "exact_charger_termination_proven": false,
+  "next_scope": "same35 remaining24 date files causal capacity series only after new frozen budget/review/GO",
+  "new_fits": 0,
+  "cpu_fits_cumulative": 20,
+  "neural_fits_cumulative": 4,
+  "neural_steps_cumulative": 2580,
+  "GO_consumed": true,
+  "summary_sha256": "8d3097640410074962f2b36ac3c3d3c69c26f8ab527519757095711d82cc40f5"
+}

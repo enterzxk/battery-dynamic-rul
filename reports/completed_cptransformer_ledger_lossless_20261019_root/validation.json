@@ -1,0 +1,9 @@
+{
+  "status": "PASS_BYTE_EXACT",
+  "original_path": "experiments/cptransformer_hust_pilot_seed42/fit_runs/fit_20261016T040414_680559Z/budget_ledger.jsonl",
+  "original_bytes": 61672,
+  "archive_bytes": 13723,
+  "original_sha256": "360fea578e2c0fdd5f749cd3cc0f1e3cc728c89ed0ee7a511c327ce86bc5e91f",
+  "server_original_and_old_git_history_retained": true,
+  "no_training_or_metric_recompute": true
+}

@@ -666,3 +666,11 @@
 - 最小验证：GET头大小/ETag/ZIP类型一致，双方流式SHA和37056519bytes一致，接收create-only部分文件完整后rename，约59.47秒；1GET/无重定向/解压/表格/模型/fit/checkpoint/devtest/其他电芯0，旧服务器DNS失败预算保留，未改网络配置。
 - 阻塞/风险：实测归档SHA不是发布者独立SHA；完整容量/首循环/cycle连续性/EOL删失/物理serial/来源重叠/policy适配未核，不能称RUL结果或独立确认。36dev与37/38locked未读，CPU20不变。
 - 下一步：仅固定SHA35ZIP中央目录元数据，冻结首文件/大小CRC/日期顺序，再为一个首文件的schema和完整容量资格最小读取另定预算/窄审/freshGO；不扩电芯/模型，不重跑下载或旧失败请求。
+
+
+## 2026-10-19：CALCE CS2-35最早Excel真实读取，首段容量边界相容
+- 已完成：固定ZIP中央目录25个XLSX按文件名日期冻结，只读2010-08-17首文件182399bytes；2sheet/17字段/1091记录，源Cycle_Index=1一个连续occurrence，0.113秒，不是全寿命DataV1或RUL实验。
+- 证据：reports/calce_cs2_35_firstfile_20261019_root的protocol/read_firstfile/原BLOCK与fixed PASS/ROOT_READ_GO/public_summary/minimal_validation/root_decision/RESULTS_ZH；XLSX SHA86cc96deea07eaa9f29007a2260f03cea09332ccebf770af36ebfa443e86ca2d，原ZIP与完整summary服务器保留。
+- 最小验证：单member大小CRC/归档SHA/claim/owner一致；先行充电尾样本4.199653V与0.049829A、末次放电2.699944V与−1.099749A，放电计数1.138460076Ah，部分积分1.138450440Ah，差9.6363e−6Ah。修复重复Cycle_Index合并与末样本字段缺口后独立deltaPASS再freshGO一次，GO已消费。0fit/模型推理/其他日期payload/其他cell/devtest；CPU20不变。
+- 阻塞/风险：采样边界相容不证明设备精确终止，部分积分不当完整参考容量；仅一个循环，跨日期连续性/生命周期/EOL删失/serial/重叠未核。文件名8/17而首Date_Time8/16，不混用。原始表与summary含首行数据不公开，36dev与37/38locked未读；神经4fit2580steps及所有旧NO_GO保持。CPTransformer历史ledger61672→13723bytes无损归档，原件与Git历史保留、不扩cap。
+- 下一步：冻结同35剩余24日期文件一次有界因果容量解析，保留源时间/cycle/重启，窄审+fresh数据GO后形成单电芯序列；不扩电芯/模型/fit，不用未来反弹删早期记录。

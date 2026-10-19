@@ -250,6 +250,12 @@ def main():
     for name in ['ROOT_ACQUISITION_GO.json','receive_archive.py','receipt.json','root_decision.json','RESULTS_ZH.md']:
         chosen.add('reports/calce_cs2_35_acquisition_20261019_root/' + name)
 
+    chosen.discard('experiments/cptransformer_hust_pilot_seed42/fit_runs/fit_20261016T040414_680559Z/budget_ledger.jsonl')
+    for name in ['archive.json','decode.py','validation.json']:
+        chosen.add('reports/completed_cptransformer_ledger_lossless_20261019_root/' + name)
+    for name in ['archive_directory.json','protocol.json','read_firstfile.py','independent_review.json','independent_review_fixed.json','read_firstfile_pre_review.py','ROOT_READ_GO.json','public_summary.json','minimal_validation.json','root_decision.json','RESULTS_ZH.md']:
+        chosen.add('reports/calce_cs2_35_firstfile_20261019_root/' + name)
+
     contents, files, skipped = {}, [], []
     mapping = {'README.md': 'docs/GITHUB_README_ZH.md', 'agent.md': 'AGENTS.md'}
     mapping.update({rel: rel for rel in sorted(chosen)})

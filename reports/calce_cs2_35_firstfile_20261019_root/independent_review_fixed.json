@@ -1,0 +1,34 @@
+{
+  "review_type": "INDEPENDENT_DELTA_REVIEW_OF_PREVIOUS_BLOCKERS",
+  "decision": "PASS",
+  "scope": "Delta review only: verify the three fixes identified in independent_review_pre_fix.json. No broader audit, runner execution, or battery member/data payload read.",
+  "bound_files": {
+    "protocol": {
+      "path": "reports/calce_cs2_35_firstfile_20261019_root/protocol.json",
+      "sha256": "d388ff527954cee613864e06a19ab678f129cd58041baa52009b00b7e92627a6"
+    },
+    "runner": {
+      "path": "reports/calce_cs2_35_firstfile_20261019_root/read_firstfile.py",
+      "sha256": "767ca2f4d3d080e4280771cae4dbaa728063537a8d479fbbb8618dc10441dbe8"
+    }
+  },
+  "reviewed_at_utc": "2026-10-19",
+  "fixes_verified": [
+    {
+      "issue": "Separated source runs with a repeated cycle ID could previously be merged.",
+      "result": "RESOLVED",
+      "evidence": "The runner now accumulates contiguous cycle occurrences in a list, starts a new occurrence when the source cycle index changes, and reports source_occurrence in source order."
+    },
+    {
+      "issue": "Final negative-current sample time and current were missing.",
+      "result": "RESOLVED",
+      "evidence": "For each occurrence with negative-current samples, the runner emits last_negative_time_s and last_negative_current_A alongside voltage and discharge counter."
+    },
+    {
+      "issue": "The negative-current integral could be mistaken for a complete capacity measurement.",
+      "result": "RESOLVED",
+      "evidence": "The field is named adjacent_negative_intervals_partial_integral_Ah; limitations explicitly say it excludes transitions/gaps and is not complete reference capacity."
+    }
+  ],
+  "decision_boundary": "PASS applies only to closure of the three previously identified review blockers and does not itself authorize a data read; execution remains subject to the separate ROOT_READ_GO and coordinator checks."
+}

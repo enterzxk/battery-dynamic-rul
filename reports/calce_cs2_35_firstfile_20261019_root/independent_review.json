@@ -1,0 +1,38 @@
+{
+  "review_type": "INDEPENDENT_NARROW_PROTOCOL_RUNNER_REVIEW",
+  "decision": "BLOCK",
+  "scope": "Only protocol.json and read_firstfile.py reviewed. No runner execution and no battery member/data payload read.",
+  "bound_files": {
+    "protocol": {
+      "path": "reports/calce_cs2_35_firstfile_20261019_root/protocol.json",
+      "sha256": "d388ff527954cee613864e06a19ab678f129cd58041baa52009b00b7e92627a6"
+    },
+    "runner": {
+      "path": "reports/calce_cs2_35_firstfile_20261019_root/read_firstfile.py",
+      "sha256": "feced254dac8634e97ebcf3994814e6c282879583897eb24f7648b94143cfeb0"
+    }
+  },
+  "reviewed_at_utc": "2026-10-19",
+  "material_reasons": [
+    {
+      "issue": "The protocol requires reporting the final negative-current sample, but the runner only emits its voltage and discharge-capacity counter. It omits that sample's time and current, so the requested boundary observation is incomplete.",
+      "locations": "protocol.json rules; read_firstfile.py last_negative_voltage_V assignment"
+    },
+    {
+      "issue": "Cycles are accumulated in a dictionary keyed by cycle index. If a cycle index reappears after another index, separated source runs are merged, so the output would not preserve every cycle occurrence in source order as required. No assertion rejects this case.",
+      "locations": "read_firstfile.py cycles.setdefault(c, []).append(vals)"
+    }
+  ],
+  "bounded_observations": [
+    "Protocol correctly limits the action to one fixed archive member and explicitly disallows EOL creation, full-life normalization, model inference, fitting, and other cell/date reads.",
+    "Runner checks the acquired archive hash and fixed member size/CRC before reading the member payload; the one-time claim is created before that payload read; missing or ambiguous schema fails closed.",
+    "The reported negative-segment integral uses only adjacent samples both below the negative-current threshold, omitting transition intervals. It must remain described as a sampled partial integral and not as complete discharge capacity evidence. Existing labels make it an integral estimate; preserve that limitation in output interpretation."
+  ],
+  "required_before_go": [
+    "Emit final negative sample time and current (alongside the existing voltage/capacity fields).",
+    "Preserve contiguous source cycle runs or fail closed when an index reappears after another cycle; do not silently merge separated runs.",
+    "Keep the internal-sample-only integral explicitly partial in the result limitations."
+  ],
+  "go_file_status": "Not assessed and not required for this review decision; absence of a future GO was not treated as a blocker.",
+  "recommendation": "Correct the narrow runner issues, then bind any new review/GO to the revised protocol and runner hashes. No data read is authorized by this review."
+}

@@ -1,0 +1,74 @@
+{
+  "new_fits": 0,
+  "other_cell_reads": 0,
+  "other_date_payload_reads": 0,
+  "model_inference": 0,
+  "member_payload_reads": 1,
+  "member_sha256": "86cc96deea07eaa9f29007a2260f03cea09332ccebf770af36ebfa443e86ca2d",
+  "sheets": [
+    {
+      "name": "Info",
+      "rows": 5,
+      "columns": 23,
+      "header_row_1based": null
+    },
+    {
+      "name": "Channel_1-008",
+      "rows": 1092,
+      "columns": 17,
+      "header_row_1based": 1
+    }
+  ],
+  "status": "READ_COMPLETE_DESCRIPTIVE_ONLY",
+  "data_sheet": "Channel_1-008",
+  "source_cycle_count": 1,
+  "cycles": [
+    {
+      "source_occurrence": 0,
+      "source_cycle_index": 1,
+      "rows": 1091,
+      "negative_rows": 374,
+      "positive_rows": 694,
+      "first_negative_time_s": 9362.584464650772,
+      "last_negative_time_s": 13089.3891074698,
+      "last_negative_current_A": -1.0997490882873535,
+      "last_negative_voltage_V": 2.699943780899048,
+      "discharge_counter_Ah": 1.138460076200415,
+      "adjacent_negative_intervals_partial_integral_Ah": 1.1384504398687914,
+      "negative_current_median_A": -1.0997490882873535,
+      "prior_positive_sample": {
+        "testtimes": 9297.568632257637,
+        "currenta": 0.049828916788101196,
+        "voltagev": 4.199653148651123,
+        "chargecapacityah": 1.158336863453055
+      },
+      "counter_minus_partial_integral_Ah": 9.636331623541494e-06
+    }
+  ],
+  "raw_data_publication": false,
+  "full_capacity_qualified": false,
+  "EOL_created": false,
+  "limitations": "Integral covers only adjacent negative-negative sampled intervals, excluding transitions/gaps outside them; it is not complete reference capacity. Recorded boundary samples are not exact termination proof. First file cannot establish lifetime, cycle continuity across dates, identity or generalization.",
+  "elapsed_seconds": 0.11290811002254486,
+  "source_headers": [
+    "Data_Point",
+    "Test_Time(s)",
+    "Date_Time",
+    "Step_Time(s)",
+    "Step_Index",
+    "Cycle_Index",
+    "Current(A)",
+    "Voltage(V)",
+    "Charge_Capacity(Ah)",
+    "Discharge_Capacity(Ah)",
+    "Charge_Energy(Wh)",
+    "Discharge_Energy(Wh)",
+    "dV/dt(V/s)",
+    "Internal_Resistance(Ohm)",
+    "Is_FC_Data",
+    "AC_Impedance(Ohm)",
+    "ACI_Phase_Angle(Deg)"
+  ],
+  "file_date": "2010-08-17",
+  "first_record_Date_Time": "2010-08-16 13:44:57"
+}
