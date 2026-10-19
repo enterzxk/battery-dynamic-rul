@@ -658,3 +658,11 @@
 - 最小验证：1HTML尝试/0HEAD/无重定向，0.0074秒；raw下载/解码/fit/推理/checkpoint/devtest0；未改DNS/代理或认证，预算已消费，不重试。
 - 阻塞/风险：服务器名称解析依赖，不能扩大成CALCE源站离线或数据不存在；35链接/Content-Length仍UNKNOWN，官方协议先前成功读取证据保留，raw/模型门不变。
 - 下一步：等名称解析恢复外部证据或可信官方响应头证据后，另签未完成单文件header预算；不循环失败请求、不GET下载fallback；额度恢复不替代网络修复。
+
+
+## 2026-10-19：CALCE CS2-35单文件官方归档真实获取完成，未解压
+- 已完成：先补回读上轮DNS失败发布b7c71b5；独立本地控制metadata票据取得HTML81431bytes与HEAD200，随后fresh exact单GET预算将37056519bytes直接流写服务器，Windows无raw文件；尚未解析Excel，不是DataV1/确认实验完成。
+- 证据：data/raw/CALCE/cs2_35_official_v1/CS2_35.zip，SHA84d88cb98a43c02049f16c78806a78ec19084776ea5df8a4b7c2f8f7ba4589e5；reports/calce_cs2_local_head_20261019_root/receipt及ROOT_METADATA_GO；reports/calce_cs2_35_acquisition_20261019_root的最终GO/receive_archive/receipt/root_decision/RESULTS_ZH。
+- 最小验证：GET头大小/ETag/ZIP类型一致，双方流式SHA和37056519bytes一致，接收create-only部分文件完整后rename，约59.47秒；1GET/无重定向/解压/表格/模型/fit/checkpoint/devtest/其他电芯0，旧服务器DNS失败预算保留，未改网络配置。
+- 阻塞/风险：实测归档SHA不是发布者独立SHA；完整容量/首循环/cycle连续性/EOL删失/物理serial/来源重叠/policy适配未核，不能称RUL结果或独立确认。36dev与37/38locked未读，CPU20不变。
+- 下一步：仅固定SHA35ZIP中央目录元数据，冻结首文件/大小CRC/日期顺序，再为一个首文件的schema和完整容量资格最小读取另定预算/窄审/freshGO；不扩电芯/模型，不重跑下载或旧失败请求。

@@ -1,0 +1,14 @@
+{
+  "status": "COMPLETE_ARCHIVE_STREAM_ONLY_NOT_PARSED",
+  "path": "/home/yndx/zxk/rul/data/raw/CALCE/cs2_35_official_v1/CS2_35.zip",
+  "bytes": 37056519,
+  "sha256": "84d88cb98a43c02049f16c78806a78ec19084776ea5df8a4b7c2f8f7ba4589e5",
+  "elapsed_seconds": 57.55938073992729,
+  "archive_extracts": 0,
+  "spreadsheet_reads": 0,
+  "new_fits": 0,
+  "model_calls": 0,
+  "other_cell_reads": 0,
+  "source_url": "https://web.calce.umd.edu/batteries/data/CS2_35.zip",
+  "GO_consumed": true
+}

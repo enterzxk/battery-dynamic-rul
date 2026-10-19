@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-19T02:46:20.354805+00:00",
-  "content_sha256": "73ccaa4e18120fc19a0d837f75cc5a53382ee1d0a4db2015accef0202dea724d",
-  "file_count": 954,
+  "snapshot_utc": "2026-10-19T05:25:04.989763+00:00",
+  "content_sha256": "7a605e7ca94e56bb327cd177a5971bf80135907aa6a4b7c83716b40549ad34f3",
+  "file_count": 961,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,8 +14,8 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 118002,
-      "sha256": "305d01a43aa33981d0caeed05cd1eae397653b36a657bd81e233845e15647084"
+      "bytes": 119434,
+      "sha256": "9566223445a97d785824845367a662c677408eb47b2cb3f2d8e26b7b1f18ebdc"
     },
     {
       "path": "README.md",
@@ -38,8 +38,8 @@
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 42444,
-      "sha256": "051d10ca828358e16694956dcdc21d96f0759afcfca778f8fd93354db3a556eb"
+      "bytes": 42772,
+      "sha256": "4ae886d6cc16671ec0da0e5e2633a72f7a408f9816fb0b31560e266eaf0f051c"
     },
     {
       "path": "automation/bin/matr_raw_batch2_asset_worker_v1.py",
@@ -164,8 +164,8 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 98469,
-      "sha256": "bade730e4eb5480cc9ea7f5ce7dfb556eaf6aa717be4b86bc06ecd1a1e4c84d9"
+      "bytes": 99901,
+      "sha256": "037495f63482aa66e2c63e59cc938236c0e2afda680373e91115421fefa46086"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
@@ -3180,6 +3180,36 @@
       "sha256": "68cdc69ea9aa8c8e350d5408cac6240c684c4ce19fc5f6aa3cddc651222bba4c"
     },
     {
+      "path": "reports/calce_cs2_35_acquisition_20261019_root/RESULTS_ZH.md",
+      "source_path": "reports/calce_cs2_35_acquisition_20261019_root/RESULTS_ZH.md",
+      "bytes": 2775,
+      "sha256": "015b874465e5b53853147730ca35d52ba9256fbf9a32cd8ff74b307d811bad93"
+    },
+    {
+      "path": "reports/calce_cs2_35_acquisition_20261019_root/ROOT_ACQUISITION_GO.json",
+      "source_path": "reports/calce_cs2_35_acquisition_20261019_root/ROOT_ACQUISITION_GO.json",
+      "bytes": 1343,
+      "sha256": "2fbb7768472dddabfed7ed6a44fec6182e56ffd8502988206e49e43262e453c3"
+    },
+    {
+      "path": "reports/calce_cs2_35_acquisition_20261019_root/receipt.json",
+      "source_path": "reports/calce_cs2_35_acquisition_20261019_root/receipt.json",
+      "bytes": 483,
+      "sha256": "53c1948fa03a5604419ec6f42bef553069b56969b4da00e1e08e38d07a1c410b"
+    },
+    {
+      "path": "reports/calce_cs2_35_acquisition_20261019_root/receive_archive.py",
+      "source_path": "reports/calce_cs2_35_acquisition_20261019_root/receive_archive.py",
+      "bytes": 1960,
+      "sha256": "7908706e65d5e025f22e774850338468e09f832d1047d4f0fdd0a378ff525901"
+    },
+    {
+      "path": "reports/calce_cs2_35_acquisition_20261019_root/root_decision.json",
+      "source_path": "reports/calce_cs2_35_acquisition_20261019_root/root_decision.json",
+      "bytes": 937,
+      "sha256": "47bd77cc69d47aa18eb80bc5b15b63e13773570aeb8b72efc9a62599f9ff357e"
+    },
+    {
       "path": "reports/calce_cs2_head_preflight_20261019_root/RESULTS_ZH.md",
       "source_path": "reports/calce_cs2_head_preflight_20261019_root/RESULTS_ZH.md",
       "bytes": 1247,
@@ -3190,6 +3220,18 @@
       "source_path": "reports/calce_cs2_head_preflight_20261019_root/receipt.json",
       "bytes": 626,
       "sha256": "628bcae6073215c2c4323dae20e338fd73521d561b01710d9dc7a4d24ff9d7e3"
+    },
+    {
+      "path": "reports/calce_cs2_local_head_20261019_root/ROOT_METADATA_GO.json",
+      "source_path": "reports/calce_cs2_local_head_20261019_root/ROOT_METADATA_GO.json",
+      "bytes": 1091,
+      "sha256": "f59b147168ccdf08f48a922543d6049b061ef765e6f18185186b9dad010d4801"
+    },
+    {
+      "path": "reports/calce_cs2_local_head_20261019_root/receipt.json",
+      "source_path": "reports/calce_cs2_local_head_20261019_root/receipt.json",
+      "bytes": 992,
+      "sha256": "9849a2307939bece63d422b8e3105accc5383c6cf2ff081f9ccdc28e3358c3c5"
     },
     {
       "path": "reports/calce_cs2_metadata_20261019_root/RESULTS_ZH.md",

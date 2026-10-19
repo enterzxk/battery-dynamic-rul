@@ -1,0 +1,28 @@
+{
+  "status": "PASS_LOCAL_HEADER_ONLY_NO_RAW_PERMISSION",
+  "transport": "local Windows control, default network unchanged",
+  "HTML_requests": 1,
+  "HEAD_requests": 1,
+  "HTML_bytes": 81431,
+  "raw_file_body_bytes": 0,
+  "new_fits": 0,
+  "raw_decodes": 0,
+  "model_calls": 0,
+  "devtest_reads": 0,
+  "redirects_followed": 0,
+  "HTML_status": 200,
+  "HTML_sha256": "58a9bc3e24b2a0fa85d8a4c4abfb4e41fbfc92cfda2f1f4cb11187826d26a858",
+  "data_url": "https://web.calce.umd.edu/batteries/data/CS2_35.zip",
+  "HEAD_status": 200,
+  "headers": {
+    "Content-Length": "37056519",
+    "Content-Type": "application/zip",
+    "ETag": "\"2e2a46-2357007-51cf5ec534a40\"",
+    "Last-Modified": "Mon, 10 Aug 2015 14:37:21 GMT",
+    "Accept-Ranges": "bytes"
+  },
+  "Content_Length": 37056519,
+  "elapsed_seconds": 4.796999999991385,
+  "recorded_utc": "2026-10-19T05:21:03.563309+00:00",
+  "controller_sha256": "06325816fd4e98ab1eb26f5e82959ae048985608d101d3ca24e3398525b99ab1"
+}
