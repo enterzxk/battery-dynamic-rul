@@ -1,0 +1,25 @@
+{
+  "status": "PASS_TARGETED_SOURCE_AND_MATH_CHECK",
+  "source_hashes_verified": true,
+  "P20_formula8_quantile_pool_not_CDF_pool": true,
+  "pointmass_counterexample": {
+    "A": 0,
+    "B": 10,
+    "weights": [
+      0.5,
+      0.5
+    ],
+    "quantile_pool_q10_q90": [
+      5,
+      5
+    ],
+    "CDF_mixture_q10_q90": [
+      0,
+      10
+    ]
+  },
+  "read_scope_only": true,
+  "novelty_proven": false,
+  "training_authorized": false,
+  "new_fits": 0
+}

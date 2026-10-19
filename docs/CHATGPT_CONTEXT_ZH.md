@@ -463,3 +463,7 @@ reports/lossless_survival_probability_20261019_root/RESULTS_ZH.md。固定旧sig
 
 ## 最新0fit：固定50/50CDF强基线通过点/风险筛选，概率联合仍失败
 experiments/lossless_equal_CDF_mixture_v2/RESULTS_ZH.md。Fmix=.5早期存活+.5动态，真实CDF逆分位数，不平均medians；MAE35.452043，vs早期55.242118降35.8243%、10/10、CI[11.107744,28.785172]；over100.6047%，vs早期.2791%增.3256pp<1pp，原点/风险gatePASS。vs纯动态33.027239牺牲7.3418%MAE，风险3.1631%→.6047%；coverage83.31%、3/10cellcoverage改善，完整概率FAIL。0fit/推理/权重或尺度估计/devtest，CPU20不变。v1在行序对齐断言CDF前失败，v2仅按唯一cellID+origin重排，保留失败，delta窄审+freshGO后一次实际CDF，两个GO消费。不搜权重，不当创新/独立确认，旧sigma不是新模型校准。公开3分位列原字节无损，完整8列CSV/archive只服务器并给SHA。下一步最多2篇最近主文Methods/公式创新冲突审查，明确等权强基线后还有何非重复最小问题，0训练/test、不重读全库。
+
+
+## 最新：等权强基线后的方法冲突已核两篇
+reports/post_mixture_methods_conflict_20261019_root/RESULTS_ZH.md。P20主文/附录式(3)/(8)/(9)/(11)–(14)已有非交叉概率RUL专家融合，但为分位数加权，区别于本项目完整CDF混合；P40§3.2.3式(17)–(21)已有下一步SOH残差区间，不能迁移成首次EOL分布覆盖保证。两份保存主文原SHA与版本页核对，不从摘要推断、不声称系统新颖性。普通混合/非交叉/校准不作创新；固定等权CDF仍是强开发参考，点/风险PASS不解概率FAIL。下一项只读现有20cycle容量预测，核在s可见的s−20→s残差能否对齐并与动态相对等权损失差有逐cell关联；未实施，0fit/新推理/devtest，不搜门控/权重，无对齐证据STOP。CPU20、神经4fit2580steps不变。

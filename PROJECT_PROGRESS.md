@@ -562,3 +562,11 @@
 - **最小验证**：4567独立指标差2.84e-14、quantileCDF6.61e-15、risk2.55e-15，3标量二分差2.27e-13；3分位列原字节SHA通过。v1源行序断言在CDF前失败，v2仅key对齐修复+delta窄审+freshGO，无数学/权重/门槛变更。0fit/新推理/尺度/权重估计/devtest，CPU20不变，两GO消费。
 - **阻塞/风险**：普通混合已给点/尾部风险折中，不能称创新或完整概率可靠性；固定旧sigma/cal暴露/eventonly/身份限制保留。原lossless点扩展NO_GO不撤销，不搜权重/新校准模块。3份历史静态证据无损271252→39406bytes，原件/历史保留，不扩12MiB。
 - **下一步**：最多2篇已有主文的最近动态分布/可靠性融合论文，Methods/公式及阅读范围窄核，输出冲突与最小未证增量表；0训练/test，不重读41篇，不从摘要推断。
+
+
+## 2026-10-19：两篇保存主文的公式冲突核查完成
+- **已完成**：P20 RUL-QMoE与P40 Conformalized Transfer Learning指定Methods/附录核查，NO_GO_GENERIC_MIXTURE_OR_CONFORMAL_NOVELTY_CLAIM；区分分位数池化/CDF混合、下一步SOH覆盖/首次EOL分布。未证明更窄问题新颖。
+- **证据**：reports/post_mixture_methods_conflict_20261019_root/RESULTS_ZH.md、evidence.json、validation.json；源版本arxiv2512.23725v1与2603.24475v1，原PDF/文本SHA和页/节/行范围已绑定。方法来自主文，不从摘要推断。
+- **最小验证**：两源原字节SHA、公式关键位置及分位数池化与CDF混合的点质量反例核对；版本元数据回读。0fit/新推理/devtest，CPU20不变，未新增或消费训练GO。
+- **阻塞/风险**：普通融合/非交叉/残差校准已有先例；本项目等权CDF仅点/风险开发PASS、概率FAIL，cal反复暴露/旧sigma/event-only/物理身份限制保留。两篇非系统新颖性证明。
+- **下一步**：仅现有capacity20预测的s−20→s延迟可见容量残差与动态相对等权CDF损失差的0fit关联诊断；先核键/role/target_cycle可对齐性，无证据STOP，不补训/搜权重阈值/启用门控，不重开recursiveEOL。

@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-18T21:19:23.773399+00:00",
-  "content_sha256": "318917e7e7f31b4762fa04a7e6b791c660de0e0bf0788e55581f61a04a1a013e",
-  "file_count": 862,
+  "snapshot_utc": "2026-10-19T00:18:21.371050+00:00",
+  "content_sha256": "63ebf32823ee88c7921f4552e11859a025d4e98deafe3df1fc430d09080d8959",
+  "file_count": 865,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,8 +14,8 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 101250,
-      "sha256": "93ca9a5373738781ebf93177a8712c7bb7f24d348f26a7a52670bb86d3b223cf"
+      "bytes": 102511,
+      "sha256": "2b592edd15fed6ce29bdfca12f3602706c6d3694497e9b6bb261a0ffc94751e3"
     },
     {
       "path": "README.md",
@@ -38,8 +38,8 @@
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 35730,
-      "sha256": "58296cda535fe7f25a304ff5278449430870662b41725c2b63f5d7472c9e3476"
+      "bytes": 35958,
+      "sha256": "8aaa6d54b923e6c8409d5f3b95aa0576c3da716cc16d6c50a17cbff822c6576f"
     },
     {
       "path": "automation/bin/matr_raw_batch2_asset_worker_v1.py",
@@ -164,8 +164,8 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 84302,
-      "sha256": "2de3b9c69e16a74f305cecbca81f6948ae498377af4f2d4f72b4bed55b333123"
+      "bytes": 85139,
+      "sha256": "3af0e171312a63b605795bc5d8b4448632910a3fb8e07a7d5151083acd9c68ed"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
@@ -4990,6 +4990,24 @@
       "source_path": "reports/policy_survival_probability_20261019_root/root_decision.json",
       "bytes": 4150,
       "sha256": "ae50401af579a46a714552a60069c3aeb98fc1dad502423bb5297c26bbedc707"
+    },
+    {
+      "path": "reports/post_mixture_methods_conflict_20261019_root/RESULTS_ZH.md",
+      "source_path": "reports/post_mixture_methods_conflict_20261019_root/RESULTS_ZH.md",
+      "bytes": 7149,
+      "sha256": "d28b2cb5d00679c5c01c11ac52ea57e670d8f652e33f4266d5e3fd40d60fa4fc"
+    },
+    {
+      "path": "reports/post_mixture_methods_conflict_20261019_root/evidence.json",
+      "source_path": "reports/post_mixture_methods_conflict_20261019_root/evidence.json",
+      "bytes": 2574,
+      "sha256": "aba5a7e47d55a230a4019aa5aa7c467cbbd3e40d841393ba30510ac796a0c542"
+    },
+    {
+      "path": "reports/post_mixture_methods_conflict_20261019_root/validation.json",
+      "source_path": "reports/post_mixture_methods_conflict_20261019_root/validation.json",
+      "bytes": 457,
+      "sha256": "eb3937fc360a847f86f64afc63913db18d2ead2a27301754da36464d44cd3335"
     },
     {
       "path": "reports/saved_examples_lossless_20261018_root/completed_details_lossless.json",
