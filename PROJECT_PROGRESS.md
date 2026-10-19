@@ -578,3 +578,11 @@
 - **最小验证**：SHA/唯一键/cal角色/RUL真值/实际20cycle与as-of断言通过，独立平均秩重算相关最大差8.33e−17。0fit/新模型推理/checkpoint/rawfeatures/devtest；一次0fit诊断GO消费，CPU20不变。
 - **阻塞/风险**：平均相关.033578、一阶差分.019400，方向不稳；次要严重高估差7/10常数记null。cal暴露/时序依赖/存活选择/物理身份限制保留；不能作因果或独立确认，不以新阈值/horizon救援。
 - **下一步**：停止扩展代理，写中文论文实验结果与局限草稿及来源证据表，仅复用固定早期存活/动态/等权CDF/失败结果；不训练/test，不称可投稿完成或创新已证。
+
+
+## 2026-10-19：中文实验结果与局限草稿已交付
+- **已完成**：paper/EMPIRICAL_RESULTS_DRAFT_ZH.md含协议、三臂宏指标、10cell配对表、负结果和局限；evidence_table.json绑定14份源SHA。区分开发/正式复现/独立确认，未宣称新方法或投稿完成。
+- **证据**：paper/EMPIRICAL_RESULTS_DRAFT_ZH.md、evidence_table.json、validation.json。草稿SHA70a920f48437ec2ae00ff5c436b8ab915bb92aff25c9f078467e043dc7ba5fef；原始预测和根决策均复用。
+- **最小验证**：三臂指标从30条逐cellJSON重新求宏均值一致、4567前缀/10cell、12个相对证据链接存在。0fit/推理/rawfeatures/devtest。已完成finite静态回执26756→3485bytes原字节无损归档，服务器/旧历史保留，不扩cap。
+- **阻塞/风险**：宏风险PASS掩盖b4c7混合vs早期严重高估增3.2558pp；混合覆盖b2c1仅8.33%、b2c6仅32.85%。早期宏覆盖误差仅.748pp，遗留要求减少3pp不可达，保留冻结FAIL，不事后改门槛；逐cell覆盖仍独立失败。新颖性/独立确认未闭合。
+- **下一步**：标准无需fit因果直线阈值外推同协议对照；先核无现有有效重复结果，冻结SOH与past20速率单位、不可有限预测规则、一次必要窄审+fresh0fitGO后仅10cal读取/计算。不能clip速率、调window/horizon或子集MAE冒充全量，不重开学习式recursiveEOL。

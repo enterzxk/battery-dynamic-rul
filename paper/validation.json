@@ -1,0 +1,18 @@
+{
+  "status": "PASS_SOURCE_BOUND_DRAFT",
+  "table_rows": {
+    "arms": 3,
+    "cells": 10,
+    "prefixes": 4567
+  },
+  "macro_mean_recomputed_from_existing_percell_JSON": true,
+  "b4c7_mixture_vs_early_severe_over100_increment_pp": 3.255813953488372,
+  "legacy_aggregate_coverage_improvement_requirement_unattainable_for_this_reference": true,
+  "relative_evidence_links_exist": 12,
+  "new_fits": 0,
+  "new_model_inference": 0,
+  "raw_feature_reads": 0,
+  "dev_test_reads": 0,
+  "draft_sha256": "70a920f48437ec2ae00ff5c436b8ab915bb92aff25c9f078467e043dc7ba5fef",
+  "not_submission_ready": true
+}

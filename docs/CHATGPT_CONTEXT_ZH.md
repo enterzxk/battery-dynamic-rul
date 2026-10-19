@@ -471,3 +471,7 @@ reports/post_mixture_methods_conflict_20261019_root/RESULTS_ZH.md。P20主文/�
 
 ## 最新0fit诊断：容量延迟反馈不足以支持可靠性门控
 reports/delayed_capacity_reliability_20261019_root/RESULTS_ZH.md。只用已存s−20发出且在s已观测的容量误差，4367行/10cal；早20cycle共200无反馈行排除不补。与动态相对等权CDF绝对RUL损失差逐cell相关：6/10正、均值.033578；一阶差分6/10正、均值.019400；同时4/10，预先冻结7/10筛选失败，NO_GO当前残差代理门控，不改预测/搜阈值或horizon。次要严重高估差7cell常数记null。独立平均秩重算差8.33e−17；0fit/推理/checkpoint/rawfeatures/devtest，CPU20不变。下一项只写论文实验结果/局限草稿与证据表，停止代理堆叠；开发cal反复暴露、独立确认与新颖性未闭合，不能称投稿完成。
+
+
+## 最新论文写作交付：开发结果与个体失败同时呈现
+paper/EMPIRICAL_RESULTS_DRAFT_ZH.md含同42fit/10cal协议、三臂宏指标和10cell表，evidence_table.json绑定14源SHA，validation.json验证现有逐cell均值/4567行/12证据链接。固定等权CDF点/宏风险PASS不能当个体安全：b4c7过高估2.79%→6.05%增3.2558pp；宏覆盖83.31%掩盖b2c1 8.33%、b2c6 32.85%。遗留宏coverageerror减少3pp门对早期误差.748pp数学不可达，保留原FAIL不追改，且逐cell覆盖也失败。草稿不是独立确认/正式复现/创新成立或投稿完成。0fit/推理/rawfeatures/devtest。下一项只准备标准无需fit的当前SOH与固定past20速率解析直线RUL对照，需去重、冻结一次窄审+freshGO；非负速率如实无有限值，不clip/horizon救援，不重开已NO_GO递归容量路线。静态finite回执无损归档，原件与历史保留。

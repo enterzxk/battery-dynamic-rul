@@ -1,0 +1,9 @@
+{
+  "status": "EXACT_BYTES_SHA256_VERIFIED",
+  "original_path": "reports/pbt_validation_finite_static_v1/finite_static_receipt.json",
+  "original_bytes": 26756,
+  "sha256": "5c4b6ca92e0bd7f1465d345b132717e8e6647ccefb65a895d66f8d9a016c8605",
+  "original_server_retained": true,
+  "prior_public_history_retained": true,
+  "no_science_modified": true
+}

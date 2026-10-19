@@ -208,6 +208,9 @@ def main():
 
     chosen.update(['reports/delayed_capacity_reliability_20261019_root/RESULTS_ZH.md', 'reports/delayed_capacity_reliability_20261019_root/protocol.json', 'reports/delayed_capacity_reliability_20261019_root/diagnose.py', 'reports/delayed_capacity_reliability_20261019_root/ROOT_GO.json', 'reports/delayed_capacity_reliability_20261019_root/metrics.json', 'reports/delayed_capacity_reliability_20261019_root/per_cell_metrics.json', 'reports/delayed_capacity_reliability_20261019_root/root_decision.json', 'reports/delayed_capacity_reliability_20261019_root/validation.json', 'reports/delayed_capacity_reliability_20261019_root/completion.json'])
 
+    chosen.discard('reports/pbt_validation_finite_static_v1/finite_static_receipt.json')
+    chosen.update(['paper/EMPIRICAL_RESULTS_DRAFT_ZH.md', 'paper/evidence_table.json', 'paper/validation.json', 'reports/completed_finite_receipt_lossless_20261019_root/archive.json', 'reports/completed_finite_receipt_lossless_20261019_root/decode.py', 'reports/completed_finite_receipt_lossless_20261019_root/validation.json'])
+
     contents, files, skipped = {}, [], []
     mapping = {'README.md': 'docs/GITHUB_README_ZH.md', 'agent.md': 'AGENTS.md'}
     mapping.update({rel: rel for rel in sorted(chosen)})

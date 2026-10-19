@@ -1,0 +1,94 @@
+{
+  "scope": "Completed development evidence only; not new fit/formal replication/confirmation",
+  "sources": [
+    {
+      "path": "experiments/matr_raw_heldout_calibration_seed42_v1/cohort.json",
+      "sha256": "42535de5825f6857e3aa69a596306a909a9a1b3ac087c43631032f6d293ef289"
+    },
+    {
+      "path": "experiments/matr_raw_heldout_calibration_seed42_v1/protocol.json",
+      "sha256": "9788eaf1c28271f8d1702727d28adccda6251511771f237a68ec7ee484f33347"
+    },
+    {
+      "path": "experiments/lossless_equal_CDF_mixture_v2/metrics.json",
+      "sha256": "2ea4f08b2fe4007b211c29e8fc1f5ecab9e7179fba68303e1b5078755258508a"
+    },
+    {
+      "path": "experiments/lossless_equal_CDF_mixture_v2/per_cell_metrics.json",
+      "sha256": "b31f760c4d646c32713c000c9c71bf7d5ea0f3d8dc8ac366bde38fefc8ab5c20"
+    },
+    {
+      "path": "experiments/lossless_equal_CDF_mixture_v2/comparisons.json",
+      "sha256": "07cb84d7f434b432462bb918959705603d8d2ec37ee69912c985376cee77f610"
+    },
+    {
+      "path": "experiments/lossless_equal_CDF_mixture_v2/protocol.json",
+      "sha256": "c42b7412242819e4d07b3b54cbafaffc7044b2d2e68aefbcbaa573b65556dd79"
+    },
+    {
+      "path": "experiments/lossless_equal_CDF_mixture_v2/root_decision.json",
+      "sha256": "92ab57f118497c828109c17289b3b869c36dda13a2af79d56b8f1f2337c34e4b"
+    },
+    {
+      "path": "experiments/lossless_equal_CDF_mixture_v2/independent_metrics.json",
+      "sha256": "e542c9ae2862dd9400ae8c2d7dae58a591c5b0aa886b5adb9dd8f1781b5f1b51"
+    },
+    {
+      "path": "experiments/policy_lossless_schedule_point_seed42_v1/root_decision.json",
+      "sha256": "b5a0bea158fa566d299c83d20ea43ad80f8e7a4e1bfa3ce1d2a5b8aa1df291ad"
+    },
+    {
+      "path": "experiments/policy_conditional_quantiles_seed42_v1/root_decision.json",
+      "sha256": "6f606b42581a20446e95c94c1e99309d5724aa95a67e3fe316ac4ef0c06da99e"
+    },
+    {
+      "path": "experiments/policy_oof_cdf_seed42_v1/root_decision.json",
+      "sha256": "bb83486803d53118d82835b1629d0c50a46ee3159f5910b2e76149e07e2717dc"
+    },
+    {
+      "path": "experiments/capacity_endpoint_firstpassage_seed42_v2/root_decision.json",
+      "sha256": "9475074d8a750b8110663a60ba1aed86c04d3f7d38b595895e0d542bb2e56363"
+    },
+    {
+      "path": "reports/delayed_capacity_reliability_20261019_root/root_decision.json",
+      "sha256": "dbe2eae86bd4ad68d8a0798f65dea42fb697ae3b194cef6dd8a31e393b3c921a"
+    },
+    {
+      "path": "reports/post_mixture_methods_conflict_20261019_root/RESULTS_ZH.md",
+      "sha256": "d28b2cb5d00679c5c01c11ac52ea57e670d8f652e33f4266d5e3fd40d60fa4fc"
+    }
+  ],
+  "macro_metrics": {
+    "early_survival": {
+      "MAE": 55.24211818389968,
+      "bias": -12.656288986105894,
+      "severe_over100": 0.0027906976744186047,
+      "coverage80": 0.7925203366679463,
+      "width80": 205.78449411518721,
+      "interval_score80": 266.31788597656606,
+      "Brier100": 0.08211333375614953,
+      "Brier300": 0.0797375532896791
+    },
+    "dynamic": {
+      "MAE": 33.0272391729779,
+      "bias": -2.554709043150911,
+      "severe_over100": 0.031630918641367446,
+      "coverage80": 0.7943092707052315,
+      "width80": 116.66876349050003,
+      "interval_score80": 149.87335344261498,
+      "Brier100": 0.0139104616674556,
+      "Brier300": 0.05652743680196063
+    },
+    "fixed_half_CDF_mixture": {
+      "MAE": 35.452042541685934,
+      "bias": -8.4280370665516,
+      "severe_over100": 0.0060465116279069765,
+      "coverage80": 0.8331033540899376,
+      "width80": 176.21274517388073,
+      "interval_score80": 209.4959339233611,
+      "Brier100": 0.03419614376195424,
+      "Brier300": 0.06312133526318944
+    }
+  },
+  "prospective_analytic_baseline_status": "NOT_RUN_REQUIRES_SEPARATE_SCOPED_GO"
+}
