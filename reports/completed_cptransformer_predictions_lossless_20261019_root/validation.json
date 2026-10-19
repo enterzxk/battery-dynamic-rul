@@ -1,0 +1,18 @@
+{
+  "status": "EXACT_BYTES_SHA256_VERIFIED",
+  "files": [
+    {
+      "path": "experiments/cptransformer_hust_pilot_seed42/fit_runs/fit_20261016T040414_680559Z/val_predictions_epoch_001.csv",
+      "bytes": 118063,
+      "sha256": "8f06cb1566875b102bd75d4c44d5ed044ed4de89fbebc1b358984c8fec777ce6"
+    },
+    {
+      "path": "experiments/cptransformer_hust_pilot_seed42/fit_runs/fit_20261016T040414_680559Z/val_predictions_epoch_003.csv",
+      "bytes": 117729,
+      "sha256": "0606f7f3f89cc145d08dfde5aa222dc08b6c6265b244d8e71052d2cd2163ab67"
+    }
+  ],
+  "server_originals_retained": true,
+  "prior_public_history_retained": true,
+  "no_new_dev_test_features_or_evaluation": true
+}

@@ -8,11 +8,13 @@
   "macro_mean_recomputed_from_existing_percell_JSON": true,
   "b4c7_mixture_vs_early_severe_over100_increment_pp": 3.255813953488372,
   "legacy_aggregate_coverage_improvement_requirement_unattainable_for_this_reference": true,
-  "relative_evidence_links_exist": 12,
+  "relative_evidence_links_exist": 15,
   "new_fits": 0,
   "new_model_inference": 0,
   "raw_feature_reads": 0,
   "dev_test_reads": 0,
-  "draft_sha256": "70a920f48437ec2ae00ff5c436b8ab915bb92aff25c9f078467e043dc7ba5fef",
-  "not_submission_ready": true
+  "draft_sha256": "15fec8a4a69d3ba65d7ef0e6a1fe17bd6eeebbb37504bf2b705f129931c5a6a6",
+  "not_submission_ready": true,
+  "linear_baseline_completed": true,
+  "linear_independent_validation_sha256": "a2704149d3f7af617a3b9fbeb750d25ff4217e64c5f7103603d9197cea29e0a7"
 }

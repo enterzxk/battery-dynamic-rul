@@ -1,0 +1,24 @@
+{
+  "decision": "NO_GO_STANDARD_FIXED20_LINEAR_THRESHOLD_AS_COMPETITIVE_BASELINE_NO_RESCUE",
+  "complete_allorigin_predictions": true,
+  "full_metrics": {
+    "MAE": 1488.7459412546182,
+    "bias": 1488.6599461500082,
+    "severe_over100": 0.691636403725688
+  },
+  "finite_origins": 4567,
+  "cells": 10,
+  "linear_MAE_better_than_dynamic_cells": 1,
+  "linear_MAE_better_than_mixture_cells": 1,
+  "max_RUL": 109335.8352956659,
+  "new_fits": 0,
+  "new_model_inference": 0,
+  "checkpoint_loads": 0,
+  "raw_feature_files_read": 10,
+  "raw_feature_rows": 4567,
+  "dev_test_reads": 0,
+  "GO_consumed": true,
+  "no_clip_horizon_window_or_seed_rescue": true,
+  "CPUfits_unchanged": 20,
+  "independent_validation_sha256": "a2704149d3f7af617a3b9fbeb750d25ff4217e64c5f7103603d9197cea29e0a7"
+}

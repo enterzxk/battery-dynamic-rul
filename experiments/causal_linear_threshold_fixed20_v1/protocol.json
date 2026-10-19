@@ -1,0 +1,26 @@
+{
+  "owner": "01a1508e-83e9-7232-a0e4-07606110b443",
+  "question": "How does the standard causal nofit linear threshold extrapolation perform and when can it not give finite RUL on exactly the existing10cal4567?",
+  "cohort": "experiments/matr_raw_heldout_calibration_seed42_v1/cohort.json",
+  "mixture": "experiments/lossless_equal_CDF_mixture_v2/mixture_predictions.csv",
+  "distributions": "reports/lossless_survival_probability_20261019_root/derived_distribution_predictions.csv",
+  "formula": "RUL=(SOH_s-.8)/(-rate20_per_cycle_s), only finite negative SOH/cycle rate and finite SOH>.8. No fit, integer rounding, rate clip, window change, bias/scale calibration, horizon or cap.",
+  "feature_unit": "SOH=QDischarge/1.1Ah; past20 TheilSen rate in SOH/actualcycle, not milliSOH. EOLfirst actual Q<=.88Ah; origins100..event-1",
+  "nonfinite": "rate>=0 -> nonnegative_rate; missing flag -> missing_rate; nonfinite inputs/output -> explicit status; SOH<=.8 preevent invalid. CSV prediction blank/JSON null; do not replace with zero/cap/infinity for scoring.",
+  "evaluation": "All4567 statuses and percell finite availability. Full linear pointMAE null if any unavailable. Finite common-subset fourarm macro metrics explicitly subset-only, same origins percell; no claim it is fullallorigin improvement.",
+  "max_runs": 1,
+  "max_new_fits": 0,
+  "max_modelinference": 0,
+  "max_checkpointloads": 0,
+  "max_feature_files": 10,
+  "max_feature_rows": 4567,
+  "max_seconds": 60,
+  "dev_test_access": false,
+  "source_scope": "Only10cal featurefiles audited hashes from2DataV1 manifests; no fitcell data or18dev/test featurefiles. Source metadata/cohort may contain split IDs only.",
+  "stop": "Failure consumes one invocation; no rerun/seed/horizon/clip rescue. Standard baseline not newmodel, no probability distribution/innovation/independentconfirmation. Recursive learnedcapacityEOL remains NO_GO.",
+  "source_sha256": {
+    "experiments/matr_raw_heldout_calibration_seed42_v1/cohort.json": "42535de5825f6857e3aa69a596306a909a9a1b3ac087c43631032f6d293ef289",
+    "experiments/lossless_equal_CDF_mixture_v2/mixture_predictions.csv": "6af2d8605428e18fc396b6e159ef00329bd1dfce04510210952f524a7adf700d",
+    "reports/lossless_survival_probability_20261019_root/derived_distribution_predictions.csv": "2874159abbe8bfbe3c03a434b5182c9472874d1994f1db67a3cac37c2e43e781"
+  }
+}

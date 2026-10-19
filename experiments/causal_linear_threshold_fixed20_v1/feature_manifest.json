@@ -1,0 +1,84 @@
+{
+  "cells": {
+    "MATR_b2c1": {
+      "features_path": "data/processed/data_v1_matr_raw_batch2/MATR_b2c1_features.csv",
+      "features_sha256": "68c7e111ba87ae9d9eec0375a6ba4d3bb553a5b01dc63571ac2d5d3e94d8f6cb",
+      "prefix_count": 48,
+      "event_cycle": 148,
+      "source_role": "train"
+    },
+    "MATR_b2c6": {
+      "features_path": "data/processed/data_v1_matr_raw_batch2/MATR_b2c6_features.csv",
+      "features_sha256": "067c73a09ced74171125eb5219dbfc9ea539be423019b7c525e9d71ed1a2e965",
+      "prefix_count": 411,
+      "event_cycle": 511,
+      "source_role": "train"
+    },
+    "MATR_b2c21": {
+      "features_path": "data/processed/data_v1_matr_raw_batch2/MATR_b2c21_features.csv",
+      "features_sha256": "ae884d4c08abdd60f6adc81366c31d9308d9c2c83573aaabcbd37f01b35f3c26",
+      "prefix_count": 389,
+      "event_cycle": 489,
+      "source_role": "train"
+    },
+    "MATR_b2c24": {
+      "features_path": "data/processed/data_v1_matr_raw_batch2/MATR_b2c24_features.csv",
+      "features_sha256": "84b5b399dd85b705e98531dd6e7c5272f1bb24d4f8b931f624760fd0a7bcec8f",
+      "prefix_count": 395,
+      "event_cycle": 495,
+      "source_role": "train"
+    },
+    "MATR_b2c41": {
+      "features_path": "data/processed/data_v1_matr_raw_batch2/MATR_b2c41_features.csv",
+      "features_sha256": "5c2d3a1bb14826928807d484ed4fe5c9f7201c517fd1ca5eed877990b1681d0d",
+      "prefix_count": 329,
+      "event_cycle": 429,
+      "source_role": "train"
+    },
+    "MATR_b4c7": {
+      "features_path": "data/processed/data_v1_matr_raw_batch4/MATR_b4c7_features.csv",
+      "features_sha256": "2fde29ddbaa69cd6da84fa402ba95bd0c83efef37cf7877db3af047a436d8da1",
+      "prefix_count": 430,
+      "event_cycle": 530,
+      "source_role": "train"
+    },
+    "MATR_b4c14": {
+      "features_path": "data/processed/data_v1_matr_raw_batch4/MATR_b4c14_features.csv",
+      "features_sha256": "00aff317691cb618f9062ca6709c320c7d5622461e4b10453e2e0fb4f7e2fa7c",
+      "prefix_count": 508,
+      "event_cycle": 608,
+      "source_role": "train"
+    },
+    "MATR_b4c19": {
+      "features_path": "data/processed/data_v1_matr_raw_batch4/MATR_b4c19_features.csv",
+      "features_sha256": "38113665e893a6bfd9d209fda6e0e655b49f399db3ee5ddc4ce0292f4df9d86f",
+      "prefix_count": 892,
+      "event_cycle": 992,
+      "source_role": "train"
+    },
+    "MATR_b4c26": {
+      "features_path": "data/processed/data_v1_matr_raw_batch4/MATR_b4c26_features.csv",
+      "features_sha256": "79c864c87056c2228f9a62fcf1709cba030601d84ac86a16c56b8f3be7c8ef91",
+      "prefix_count": 377,
+      "event_cycle": 477,
+      "source_role": "train"
+    },
+    "MATR_b4c29": {
+      "features_path": "data/processed/data_v1_matr_raw_batch4/MATR_b4c29_features.csv",
+      "features_sha256": "55fedd6f6bed3e33c9a995740dc8534a3b5ccb89629df0a70f18923c8ba995f8",
+      "prefix_count": 788,
+      "event_cycle": 888,
+      "source_role": "train"
+    }
+  },
+  "manifests": [
+    {
+      "path": "/home/yndx/zxk/rul/data/processed/data_v1_matr_raw_batch2/manifest.json",
+      "sha256": "fcbedb9ee4ea9da83efe3239cda3d56d629678b3dbbd90b675039f6456ad32c1"
+    },
+    {
+      "path": "/home/yndx/zxk/rul/data/processed/data_v1_matr_raw_batch4/manifest.json",
+      "sha256": "862d796f8b1ba2d0d865884de1d77e32f2e7ce00480327299209d966c73bbe8e"
+    }
+  ]
+}

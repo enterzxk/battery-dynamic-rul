@@ -1,0 +1,17 @@
+{
+  "status": "PASS_TARGETED_EMPTY_RATE_MISSING_ROW",
+  "source_runner_old_sha256": "b39545fa976abdd407f95f9f0dc1d4270c0df351786554b457c2dc43feca4633",
+  "runner_sha256": "2ea8bb5877c72a6db7ceda3b18e0ab3d45019dd0b256627aa3d03ab2536f81d2",
+  "input": {
+    "soh": ".9",
+    "rate20_per_cycle": "",
+    "rate20_missing": "True"
+  },
+  "output": [
+    null,
+    "missing_rate"
+  ],
+  "feature_files_read": 0,
+  "new_predictions": 0,
+  "protocol_unchanged": true
+}

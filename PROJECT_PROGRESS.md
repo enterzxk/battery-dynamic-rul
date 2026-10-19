@@ -586,3 +586,11 @@
 - **最小验证**：三臂指标从30条逐cellJSON重新求宏均值一致、4567前缀/10cell、12个相对证据链接存在。0fit/推理/rawfeatures/devtest。已完成finite静态回执26756→3485bytes原字节无损归档，服务器/旧历史保留，不扩cap。
 - **阻塞/风险**：宏风险PASS掩盖b4c7混合vs早期严重高估增3.2558pp；混合覆盖b2c1仅8.33%、b2c6仅32.85%。早期宏覆盖误差仅.748pp，遗留要求减少3pp不可达，保留冻结FAIL，不事后改门槛；逐cell覆盖仍独立失败。新颖性/独立确认未闭合。
 - **下一步**：标准无需fit因果直线阈值外推同协议对照；先核无现有有效重复结果，冻结SOH与past20速率单位、不可有限预测规则、一次必要窄审+fresh0fitGO后仅10cal读取/计算。不能clip速率、调window/horizon或子集MAE冒充全量，不重开学习式recursiveEOL。
+
+
+## 2026-10-19：标准因果直线阈值基线真实0fit完成，强负结果
+- **已完成**：同10cal/4567前缀，固定past20 TheilSen SOH/cycle解析RUL，全部有限；TimeMAE1488.745941cycle、bias+1488.659946、严重高估69.1636%、最大109335.8353cycle。9/10cell劣于动态和等权CDF，b2c1例外4.9885cycle；NO_GO标准直线作为有竞争力基线，不clip/window/horizon救援。
+- **证据**：experiments/causal_linear_threshold_fixed20_v1/RESULTS_ZH.md、runner/protocol/feature_manifest/ROOT_GO、metrics/per_cell_metrics/independent_validation/completion/root_decision、公开四列predictions无损包；完整8列CSV只服务器。根决策SHAc252aebca9845dc87d6f1533e2ed52e2c8031ef62dd8897fb1ed7a2eed37ba04；paper草稿v2及20源证据表已更新。
+- **最小验证**：一次静态窄审发现missing解析顺序，真实运行前修复+单例+delta审查PASS后freshGO，一次执行。独立宏指标差1.14e−12、3组容量变化代数差2.78e−17。只10cal特征文件4567行，0fit/学习模型推理/checkpoint/devtest，CPU20不变，GO消费。
+- **阻塞/风险**：不证明所有趋势/物理模型无效；10cal暴露/身份/event-only/旧sigma与独立确认限制保留。已有CPTransformer历史验证预测2文件235792→97772bytes无损归档，原件/历史不丢，不重评估、不扩cap。
+- **下一步**：仅既有预测与逐cell统计制作论文描述性经验图，预指定b2c1/b4c7，四臂精度/覆盖与真实RUL轨迹，极端线性值保留并明示log尺度；0fit/推理/特征读取/test，不挑有利窗口。

@@ -1,0 +1,39 @@
+{
+  "cells": 10,
+  "origins": 4567,
+  "finite_origins": 4567,
+  "status_counts": {
+    "finite": 4567
+  },
+  "macro_finite_fraction": 1.0,
+  "complete_allorigin_point_predictions": true,
+  "full_linear_metrics": {
+    "MAE": 1488.7459412546182,
+    "bias": 1488.6599461500082,
+    "severe_over100": 0.691636403725688
+  },
+  "common_finite_subset_metrics": {
+    "linear": {
+      "MAE": 1488.7459412546182,
+      "bias": 1488.6599461500082,
+      "severe_over100": 0.691636403725688
+    },
+    "early": {
+      "MAE": 55.242118183899684,
+      "bias": -12.656288986105867,
+      "severe_over100": 0.0027906976744186047
+    },
+    "dynamic": {
+      "MAE": 33.02723917297784,
+      "bias": -2.5547090431508876,
+      "severe_over100": 0.031630918641367446
+    },
+    "mixture": {
+      "MAE": 35.45204254168592,
+      "bias": -8.428037066551585,
+      "severe_over100": 0.0060465116279069765
+    }
+  },
+  "common_subset_cannot_replace_full_metrics": true,
+  "max_finite_RUL": 109335.8352956659
+}

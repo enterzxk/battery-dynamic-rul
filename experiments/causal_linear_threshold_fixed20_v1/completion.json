@@ -1,0 +1,25 @@
+{
+  "status": "COMPLETE_ONE_NOFIT_STANDARD_LINEAR_BASELINE",
+  "new_fits": 0,
+  "new_model_inference": 0,
+  "checkpoint_loads": 0,
+  "feature_files_read": [
+    "/home/yndx/zxk/rul/data/processed/data_v1_matr_raw_batch2/MATR_b2c1_features.csv",
+    "/home/yndx/zxk/rul/data/processed/data_v1_matr_raw_batch2/MATR_b2c21_features.csv",
+    "/home/yndx/zxk/rul/data/processed/data_v1_matr_raw_batch2/MATR_b2c24_features.csv",
+    "/home/yndx/zxk/rul/data/processed/data_v1_matr_raw_batch2/MATR_b2c41_features.csv",
+    "/home/yndx/zxk/rul/data/processed/data_v1_matr_raw_batch2/MATR_b2c6_features.csv",
+    "/home/yndx/zxk/rul/data/processed/data_v1_matr_raw_batch4/MATR_b4c14_features.csv",
+    "/home/yndx/zxk/rul/data/processed/data_v1_matr_raw_batch4/MATR_b4c19_features.csv",
+    "/home/yndx/zxk/rul/data/processed/data_v1_matr_raw_batch4/MATR_b4c26_features.csv",
+    "/home/yndx/zxk/rul/data/processed/data_v1_matr_raw_batch4/MATR_b4c29_features.csv",
+    "/home/yndx/zxk/rul/data/processed/data_v1_matr_raw_batch4/MATR_b4c7_features.csv"
+  ],
+  "feature_rows": 4567,
+  "dev_test_reads": 0,
+  "runner_sha256": "2ea8bb5877c72a6db7ceda3b18e0ab3d45019dd0b256627aa3d03ab2536f81d2",
+  "protocol_sha256": "bea607b27bc47c2cd8240e1ab255bce65da16e65ca4a7bd03d89856b9d03c80d",
+  "feature_manifest_sha256": "5bba4bdaa685e77ff4dcad5df8eff083c5ecc2f44bf5e81a5037a42347d7ca2b",
+  "GO_sha256": "8d7d1b8a10e52a1d3b4683e08e2daa752bc248be39f7dcc1176c3dee685bbad6",
+  "predictions_sha256": "2baddd17503e5a20ecd33d2464d07a5b35b947a65363ab6a1fad0cc5c5b5eaf6"
+}

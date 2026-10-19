@@ -1,0 +1,372 @@
+[
+  {
+    "cell_id": "MATR_b2c1",
+    "all_origins": 48,
+    "finite_origins": 48,
+    "finite_fraction": 1.0,
+    "status_counts": {
+      "finite": 48
+    },
+    "full_linear": {
+      "MAE": 4.9884884423215405,
+      "bias": 4.57086071137703,
+      "severe_over100": 0.0
+    },
+    "common_finite_subset": {
+      "linear": {
+        "MAE": 4.9884884423215405,
+        "bias": 4.57086071137703,
+        "severe_over100": 0.0
+      },
+      "early": {
+        "MAE": 20.396519399003633,
+        "bias": 20.396519399003633,
+        "severe_over100": 0.0
+      },
+      "dynamic": {
+        "MAE": 10.699251467886507,
+        "bias": 10.699251467886507,
+        "severe_over100": 0.0
+      },
+      "mixture": {
+        "MAE": 13.047818246468324,
+        "bias": 13.047818246468324,
+        "severe_over100": 0.0
+      }
+    },
+    "max_finite_linear_RUL": 63.30084240385398
+  },
+  {
+    "cell_id": "MATR_b2c21",
+    "all_origins": 389,
+    "finite_origins": 389,
+    "finite_fraction": 1.0,
+    "status_counts": {
+      "finite": 389
+    },
+    "full_linear": {
+      "MAE": 480.08038633823304,
+      "bias": 480.0571309686196,
+      "severe_over100": 0.7377892030848329
+    },
+    "common_finite_subset": {
+      "linear": {
+        "MAE": 480.08038633823304,
+        "bias": 480.0571309686196,
+        "severe_over100": 0.7377892030848329
+      },
+      "early": {
+        "MAE": 10.838852405093787,
+        "bias": 0.5265789678895789,
+        "severe_over100": 0.0
+      },
+      "dynamic": {
+        "MAE": 8.538025812536558,
+        "bias": -5.069683825932012,
+        "severe_over100": 0.0
+      },
+      "mixture": {
+        "MAE": 6.976923751116619,
+        "bias": -4.375897644194831,
+        "severe_over100": 0.0
+      }
+    },
+    "max_finite_linear_RUL": 2106.7536241597163
+  },
+  {
+    "cell_id": "MATR_b2c24",
+    "all_origins": 395,
+    "finite_origins": 395,
+    "finite_fraction": 1.0,
+    "status_counts": {
+      "finite": 395
+    },
+    "full_linear": {
+      "MAE": 892.3950807883674,
+      "bias": 892.3432575078612,
+      "severe_over100": 0.7822784810126582
+    },
+    "common_finite_subset": {
+      "linear": {
+        "MAE": 892.3950807883674,
+        "bias": 892.3432575078612,
+        "severe_over100": 0.7822784810126582
+      },
+      "early": {
+        "MAE": 35.51924558329649,
+        "bias": 35.51924558329649,
+        "severe_over100": 0.0
+      },
+      "dynamic": {
+        "MAE": 14.181574054113556,
+        "bias": 12.827493391661898,
+        "severe_over100": 0.0
+      },
+      "mixture": {
+        "MAE": 18.055515348490434,
+        "bias": 18.055515348490434,
+        "severe_over100": 0.0
+      }
+    },
+    "max_finite_linear_RUL": 4928.300733557445
+  },
+  {
+    "cell_id": "MATR_b2c41",
+    "all_origins": 329,
+    "finite_origins": 329,
+    "finite_fraction": 1.0,
+    "status_counts": {
+      "finite": 329
+    },
+    "full_linear": {
+      "MAE": 864.2389063104857,
+      "bias": 864.2196283160949,
+      "severe_over100": 0.756838905775076
+    },
+    "common_finite_subset": {
+      "linear": {
+        "MAE": 864.2389063104857,
+        "bias": 864.2196283160949,
+        "severe_over100": 0.756838905775076
+      },
+      "early": {
+        "MAE": 9.692256409214988,
+        "bias": 9.692256409214988,
+        "severe_over100": 0.0
+      },
+      "dynamic": {
+        "MAE": 11.82204645504723,
+        "bias": -6.744473419250595,
+        "severe_over100": 0.0
+      },
+      "mixture": {
+        "MAE": 7.022324525014192,
+        "bias": -2.6260247700059116,
+        "severe_over100": 0.0
+      }
+    },
+    "max_finite_linear_RUL": 5259.94386600793
+  },
+  {
+    "cell_id": "MATR_b2c6",
+    "all_origins": 411,
+    "finite_origins": 411,
+    "finite_fraction": 1.0,
+    "status_counts": {
+      "finite": 411
+    },
+    "full_linear": {
+      "MAE": 90.8377121876379,
+      "bias": 90.54484762510286,
+      "severe_over100": 0.40632603406326034
+    },
+    "common_finite_subset": {
+      "linear": {
+        "MAE": 90.8377121876379,
+        "bias": 90.54484762510286,
+        "severe_over100": 0.40632603406326034
+      },
+      "early": {
+        "MAE": 113.85003231504487,
+        "bias": -112.826613258677,
+        "severe_over100": 0.0
+      },
+      "dynamic": {
+        "MAE": 61.3576427510536,
+        "bias": -61.20991423627593,
+        "severe_over100": 0.0
+      },
+      "mixture": {
+        "MAE": 79.01255534592558,
+        "bias": -78.9739980754637,
+        "severe_over100": 0.0
+      }
+    },
+    "max_finite_linear_RUL": 562.2687881801052
+  },
+  {
+    "cell_id": "MATR_b4c14",
+    "all_origins": 508,
+    "finite_origins": 508,
+    "finite_fraction": 1.0,
+    "status_counts": {
+      "finite": 508
+    },
+    "full_linear": {
+      "MAE": 2696.1883804990343,
+      "bias": 2696.1657662675243,
+      "severe_over100": 0.8208661417322834
+    },
+    "common_finite_subset": {
+      "linear": {
+        "MAE": 2696.1883804990343,
+        "bias": 2696.1657662675243,
+        "severe_over100": 0.8208661417322834
+      },
+      "early": {
+        "MAE": 47.485183642075114,
+        "bias": 47.485183642075114,
+        "severe_over100": 0.0
+      },
+      "dynamic": {
+        "MAE": 40.509934119660514,
+        "bias": 39.90759941048349,
+        "severe_over100": 0.051181102362204724
+      },
+      "mixture": {
+        "MAE": 37.011545770693054,
+        "bias": 37.011545770693054,
+        "severe_over100": 0.0
+      }
+    },
+    "max_finite_linear_RUL": 40954.68156383011
+  },
+  {
+    "cell_id": "MATR_b4c19",
+    "all_origins": 892,
+    "finite_origins": 892,
+    "finite_fraction": 1.0,
+    "status_counts": {
+      "finite": 892
+    },
+    "full_linear": {
+      "MAE": 2925.5528330060292,
+      "bias": 2925.5503191185953,
+      "severe_over100": 0.8677130044843049
+    },
+    "common_finite_subset": {
+      "linear": {
+        "MAE": 2925.5528330060292,
+        "bias": 2925.5503191185953,
+        "severe_over100": 0.8677130044843049
+      },
+      "early": {
+        "MAE": 135.26168839376805,
+        "bias": -128.54744157857724,
+        "severe_over100": 0.0
+      },
+      "dynamic": {
+        "MAE": 73.73717930728226,
+        "bias": -64.19335243337805,
+        "severe_over100": 0.0
+      },
+      "mixture": {
+        "MAE": 87.58949659705846,
+        "bias": -87.31870162286909,
+        "severe_over100": 0.0
+      }
+    },
+    "max_finite_linear_RUL": 109335.8352956659
+  },
+  {
+    "cell_id": "MATR_b4c26",
+    "all_origins": 377,
+    "finite_origins": 377,
+    "finite_fraction": 1.0,
+    "status_counts": {
+      "finite": 377
+    },
+    "full_linear": {
+      "MAE": 1682.5742380471631,
+      "bias": 1682.5594945248235,
+      "severe_over100": 0.830238726790451
+    },
+    "common_finite_subset": {
+      "linear": {
+        "MAE": 1682.5742380471631,
+        "bias": 1682.5594945248235,
+        "severe_over100": 0.830238726790451
+      },
+      "early": {
+        "MAE": 19.641566563108807,
+        "bias": -11.948779394573462,
+        "severe_over100": 0.0
+      },
+      "dynamic": {
+        "MAE": 12.702339308885334,
+        "bias": 7.37248447625505,
+        "severe_over100": 0.0
+      },
+      "mixture": {
+        "MAE": 7.209402924548374,
+        "bias": -1.3702918848645163,
+        "severe_over100": 0.0
+      }
+    },
+    "max_finite_linear_RUL": 8229.11543451266
+  },
+  {
+    "cell_id": "MATR_b4c29",
+    "all_origins": 788,
+    "finite_origins": 788,
+    "finite_fraction": 1.0,
+    "status_counts": {
+      "finite": 788
+    },
+    "full_linear": {
+      "MAE": 2470.108829269267,
+      "bias": 2470.093834677718,
+      "severe_over100": 0.8515228426395939
+    },
+    "common_finite_subset": {
+      "linear": {
+        "MAE": 2470.108829269267,
+        "bias": 2470.093834677718,
+        "severe_over100": 0.8515228426395939
+      },
+      "early": {
+        "MAE": 78.13771067748498,
+        "bias": -68.45796608161695,
+        "severe_over100": 0.0
+      },
+      "dynamic": {
+        "MAE": 41.011106469638605,
+        "bias": -14.849787246633541,
+        "severe_over100": 0.027918781725888325
+      },
+      "mixture": {
+        "MAE": 40.27438692944377,
+        "bias": -36.05079201187009,
+        "severe_over100": 0.0
+      }
+    },
+    "max_finite_linear_RUL": 14706.35999996486
+  },
+  {
+    "cell_id": "MATR_b4c7",
+    "all_origins": 430,
+    "finite_origins": 430,
+    "finite_fraction": 1.0,
+    "status_counts": {
+      "finite": 430
+    },
+    "full_linear": {
+      "MAE": 2780.4945576576415,
+      "bias": 2780.4943217823643,
+      "severe_over100": 0.8627906976744186
+    },
+    "common_finite_subset": {
+      "linear": {
+        "MAE": 2780.4945576576415,
+        "bias": 2780.4943217823643,
+        "severe_over100": 0.8627906976744186
+      },
+      "early": {
+        "MAE": 81.59812645090615,
+        "bias": 81.59812645090615,
+        "severe_over100": 0.027906976744186046
+      },
+      "dynamic": {
+        "MAE": 55.71329198367431,
+        "bias": 55.71329198367431,
+        "severe_over100": 0.2372093023255814
+      },
+      "mixture": {
+        "MAE": 58.32045597810045,
+        "bias": 58.32045597810045,
+        "severe_over100": 0.06046511627906977
+      }
+    },
+    "max_finite_linear_RUL": 28688.297979385938
+  }
+]

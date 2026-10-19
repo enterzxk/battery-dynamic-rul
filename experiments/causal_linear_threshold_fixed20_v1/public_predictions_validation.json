@@ -1,0 +1,7 @@
+{
+  "status": "EXACT_FOUR_PREDICTION_COLUMNS_BYTES_VERIFIED",
+  "rows": 4567,
+  "sha256": "4721a71950ea8c98d055b8ca1d8565678f4ec172dc8fce700e51471957db35f6",
+  "full_server_predictions_sha256": "2baddd17503e5a20ecd33d2464d07a5b35b947a65363ab6a1fad0cc5c5b5eaf6",
+  "raw_battery_features_published": false
+}

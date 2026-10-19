@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-19T00:46:33.785585+00:00",
-  "content_sha256": "b4560a80ebbf6684c1b66acb3e6740244c5624dca72a65aaf08207d3d6d0b2ff",
-  "file_count": 879,
+  "snapshot_utc": "2026-10-19T01:04:37.111112+00:00",
+  "content_sha256": "3102656b5b57950b488b40ce727235daa2746928a83213899717f797b7f7af04",
+  "file_count": 898,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,8 +14,8 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 105269,
-      "sha256": "15126332dd1fa9da2dab7484622ce178f24228b0f144439f5c54874f619e5741"
+      "bytes": 106865,
+      "sha256": "85b4360bad31e5af154a7d30989907db021e52f0a216eb20d3d638c22e5d0094"
     },
     {
       "path": "README.md",
@@ -38,8 +38,8 @@
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 37023,
-      "sha256": "0ee32a147cc591c14a4ea235dda63eb099d03351b75817e8b87885ebc6e3fb17"
+      "bytes": 38852,
+      "sha256": "1318bb281a0a97fe768bc1bd81070812022be43f709f654d1d32ccfc22dcb012"
     },
     {
       "path": "automation/bin/matr_raw_batch2_asset_worker_v1.py",
@@ -164,8 +164,8 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 86855,
-      "sha256": "0a691fdc736367ebb17361fce92bd402348a2d308466f78c19eed11a925cc992"
+      "bytes": 87874,
+      "sha256": "6d90f8c49369fa9733ba2477dcf47f6aeeb3a10e0b2a67241b3ce4b59f69be77"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
@@ -538,6 +538,102 @@
       "source_path": "experiments/capacity_firstpassage_seed42_v1/training_endpoint_coverage.json",
       "bytes": 9648,
       "sha256": "4b501419117e081418c9f01df17022f31d2d3cbeabb942a83f5c06c936d02437"
+    },
+    {
+      "path": "experiments/causal_linear_threshold_fixed20_v1/RESULTS_ZH.md",
+      "source_path": "experiments/causal_linear_threshold_fixed20_v1/RESULTS_ZH.md",
+      "bytes": 4006,
+      "sha256": "86bb1ca19af95f62b7fc078909ce6b1f12423a9df3ffa35c23ca5833e3130fc4"
+    },
+    {
+      "path": "experiments/causal_linear_threshold_fixed20_v1/ROOT_GO.json",
+      "source_path": "experiments/causal_linear_threshold_fixed20_v1/ROOT_GO.json",
+      "bytes": 757,
+      "sha256": "8d7d1b8a10e52a1d3b4683e08e2daa752bc248be39f7dcc1176c3dee685bbad6"
+    },
+    {
+      "path": "experiments/causal_linear_threshold_fixed20_v1/completion.json",
+      "source_path": "experiments/causal_linear_threshold_fixed20_v1/completion.json",
+      "bytes": 1544,
+      "sha256": "86fbaab99e45b247622a915acaee6f8f4a7797cc20f204d6948f14c91b2e7ee3"
+    },
+    {
+      "path": "experiments/causal_linear_threshold_fixed20_v1/decode_public_predictions.py",
+      "source_path": "experiments/causal_linear_threshold_fixed20_v1/decode_public_predictions.py",
+      "bytes": 336,
+      "sha256": "89c2ddb77e70dcb5bf6b4fe1670ab153252107e5a34f07f165766d400cd11b5b"
+    },
+    {
+      "path": "experiments/causal_linear_threshold_fixed20_v1/dedup_static_receipt.json",
+      "source_path": "experiments/causal_linear_threshold_fixed20_v1/dedup_static_receipt.json",
+      "bytes": 243,
+      "sha256": "f7e23d808a3cac40cd8c73a3354c81be97ef50a10254a4524d9b8d8b249be37f"
+    },
+    {
+      "path": "experiments/causal_linear_threshold_fixed20_v1/feature_manifest.json",
+      "source_path": "experiments/causal_linear_threshold_fixed20_v1/feature_manifest.json",
+      "bytes": 3314,
+      "sha256": "5bba4bdaa685e77ff4dcad5df8eff083c5ecc2f44bf5e81a5037a42347d7ca2b"
+    },
+    {
+      "path": "experiments/causal_linear_threshold_fixed20_v1/independent_validation.json",
+      "source_path": "experiments/causal_linear_threshold_fixed20_v1/independent_validation.json",
+      "bytes": 2134,
+      "sha256": "a2704149d3f7af617a3b9fbeb750d25ff4217e64c5f7103603d9197cea29e0a7"
+    },
+    {
+      "path": "experiments/causal_linear_threshold_fixed20_v1/metrics.json",
+      "source_path": "experiments/causal_linear_threshold_fixed20_v1/metrics.json",
+      "bytes": 995,
+      "sha256": "60caf3cfa9c11d175f4cd06c0f67116648a52b7748cb637bcd832a7c7bcc415b"
+    },
+    {
+      "path": "experiments/causal_linear_threshold_fixed20_v1/missing_input_fix_validation.json",
+      "source_path": "experiments/causal_linear_threshold_fixed20_v1/missing_input_fix_validation.json",
+      "bytes": 461,
+      "sha256": "c2deadf669cdd205c82df0ddd59ffb7d56027cf8aa7e20ec43e036201d812bfd"
+    },
+    {
+      "path": "experiments/causal_linear_threshold_fixed20_v1/per_cell_metrics.json",
+      "source_path": "experiments/causal_linear_threshold_fixed20_v1/per_cell_metrics.json",
+      "bytes": 9161,
+      "sha256": "39ea79a07bea9fbae85daa03b1ffe54bb96faac25f7cd9fd69759d594a8d9ca6"
+    },
+    {
+      "path": "experiments/causal_linear_threshold_fixed20_v1/protocol.json",
+      "source_path": "experiments/causal_linear_threshold_fixed20_v1/protocol.json",
+      "bytes": 2369,
+      "sha256": "bea607b27bc47c2cd8240e1ab255bce65da16e65ca4a7bd03d89856b9d03c80d"
+    },
+    {
+      "path": "experiments/causal_linear_threshold_fixed20_v1/public_predictions_lossless.json",
+      "source_path": "experiments/causal_linear_threshold_fixed20_v1/public_predictions_lossless.json",
+      "bytes": 77653,
+      "sha256": "1faf3447b630d8892e094ea95b6d412664198c0bd9884cb66fa423877795af68"
+    },
+    {
+      "path": "experiments/causal_linear_threshold_fixed20_v1/public_predictions_validation.json",
+      "source_path": "experiments/causal_linear_threshold_fixed20_v1/public_predictions_validation.json",
+      "bytes": 306,
+      "sha256": "623680107c4808b742b4cf27cc7fbc616af2da3e3d2c5a59eda33818d9c9fb00"
+    },
+    {
+      "path": "experiments/causal_linear_threshold_fixed20_v1/root_decision.json",
+      "source_path": "experiments/causal_linear_threshold_fixed20_v1/root_decision.json",
+      "bytes": 782,
+      "sha256": "c252aebca9845dc87d6f1533e2ed52e2c8031ef62dd8897fb1ed7a2eed37ba04"
+    },
+    {
+      "path": "experiments/causal_linear_threshold_fixed20_v1/runner.py",
+      "source_path": "experiments/causal_linear_threshold_fixed20_v1/runner.py",
+      "bytes": 6086,
+      "sha256": "2ea8bb5877c72a6db7ceda3b18e0ab3d45019dd0b256627aa3d03ab2536f81d2"
+    },
+    {
+      "path": "experiments/causal_linear_threshold_fixed20_v1/runner_pre_missingfix.py",
+      "source_path": "experiments/causal_linear_threshold_fixed20_v1/runner_pre_missingfix.py",
+      "bytes": 5870,
+      "sha256": "b39545fa976abdd407f95f9f0dc1d4270c0df351786554b457c2dc43feca4633"
     },
     {
       "path": "experiments/conditional_quantiles_seed42_v1/RESULTS_ZH.md",
@@ -948,22 +1044,10 @@
       "sha256": "e5bc14bc1bb85a04fd1b581530137aaaac17ab79e84758e48974cae107ddb0ba"
     },
     {
-      "path": "experiments/cptransformer_hust_pilot_seed42/fit_runs/fit_20261016T040414_680559Z/val_predictions_epoch_001.csv",
-      "source_path": "experiments/cptransformer_hust_pilot_seed42/fit_runs/fit_20261016T040414_680559Z/val_predictions_epoch_001.csv",
-      "bytes": 118063,
-      "sha256": "8f06cb1566875b102bd75d4c44d5ed044ed4de89fbebc1b358984c8fec777ce6"
-    },
-    {
       "path": "experiments/cptransformer_hust_pilot_seed42/fit_runs/fit_20261016T040414_680559Z/val_predictions_epoch_002.csv",
       "source_path": "experiments/cptransformer_hust_pilot_seed42/fit_runs/fit_20261016T040414_680559Z/val_predictions_epoch_002.csv",
       "bytes": 117540,
       "sha256": "7df51fb8370fdd6b3cbf0f7ae5742da029c662c9ba9a0105a7a1a78e0efc54ae"
-    },
-    {
-      "path": "experiments/cptransformer_hust_pilot_seed42/fit_runs/fit_20261016T040414_680559Z/val_predictions_epoch_003.csv",
-      "source_path": "experiments/cptransformer_hust_pilot_seed42/fit_runs/fit_20261016T040414_680559Z/val_predictions_epoch_003.csv",
-      "bytes": 117729,
-      "sha256": "0606f7f3f89cc145d08dfde5aa222dc08b6c6265b244d8e71052d2cd2163ab67"
     },
     {
       "path": "experiments/dynamic_A_matr_retrospective_seed42_v1/CENSORED_FAILURE_ZH.md",
@@ -2618,20 +2702,20 @@
     {
       "path": "paper/EMPIRICAL_RESULTS_DRAFT_ZH.md",
       "source_path": "paper/EMPIRICAL_RESULTS_DRAFT_ZH.md",
-      "bytes": 11138,
-      "sha256": "70a920f48437ec2ae00ff5c436b8ab915bb92aff25c9f078467e043dc7ba5fef"
+      "bytes": 11939,
+      "sha256": "15fec8a4a69d3ba65d7ef0e6a1fe17bd6eeebbb37504bf2b705f129931c5a6a6"
     },
     {
       "path": "paper/evidence_table.json",
       "source_path": "paper/evidence_table.json",
-      "bytes": 3729,
-      "sha256": "a5373e683bd0eb7daa4fe28c3aa9f658621faf96eef85525fe62cab40cb02147"
+      "bytes": 4947,
+      "sha256": "bf47105380547188239b443defeacb48f5de581ed50b5ed364834a36c2005da5"
     },
     {
       "path": "paper/validation.json",
       "source_path": "paper/validation.json",
-      "bytes": 596,
-      "sha256": "9b134ce931d4144038cf27129328a9aca3248f7a0db1d8e3e016d77ed05dac57"
+      "bytes": 743,
+      "sha256": "718f93cead9c4d92f5204401fb7213cfa2a96baaac49bbeb4d9fa1e82d2d307a"
     },
     {
       "path": "reports/asof_preprocessing_audit_v1/REPORT.md",
@@ -3016,6 +3100,36 @@
       "source_path": "reports/causal_capacity_feedback_20261018_root/root_decision.json",
       "bytes": 2077,
       "sha256": "f231ed562dcff152eae0670471fb06f0e8108ba04947f64113b46c2ca94fb691"
+    },
+    {
+      "path": "reports/causal_linear_threshold_review_20261019_luna/review.json",
+      "source_path": "reports/causal_linear_threshold_review_20261019_luna/review.json",
+      "bytes": 2963,
+      "sha256": "46c204b751980bd3c99d91708577667fb4695dde5e1f0a49f64c71e3ca98edd2"
+    },
+    {
+      "path": "reports/causal_linear_threshold_review_20261019_luna/review_v2_missing.json",
+      "source_path": "reports/causal_linear_threshold_review_20261019_luna/review_v2_missing.json",
+      "bytes": 2227,
+      "sha256": "351a587783e62c5d0d355f2387e695551871da536a9609fee83d2b2537b5cabb"
+    },
+    {
+      "path": "reports/completed_cptransformer_predictions_lossless_20261019_root/archive.json",
+      "source_path": "reports/completed_cptransformer_predictions_lossless_20261019_root/archive.json",
+      "bytes": 96686,
+      "sha256": "356bdee1ecea4908af965728cedcff9be1529bf4ccf39bfc73fd27de3fec001b"
+    },
+    {
+      "path": "reports/completed_cptransformer_predictions_lossless_20261019_root/decode.py",
+      "source_path": "reports/completed_cptransformer_predictions_lossless_20261019_root/decode.py",
+      "bytes": 401,
+      "sha256": "41c98bada4c8192c8e02a447173c1788c0c3f5271e531ecbed75437967f3ccb7"
+    },
+    {
+      "path": "reports/completed_cptransformer_predictions_lossless_20261019_root/validation.json",
+      "source_path": "reports/completed_cptransformer_predictions_lossless_20261019_root/validation.json",
+      "bytes": 685,
+      "sha256": "4f1cb3c78254577eb147009a3c4a1778437d1ef5aa53d38dcbb49db374409484"
     },
     {
       "path": "reports/completed_eligibility_lossless_20261019_root/archive.json",

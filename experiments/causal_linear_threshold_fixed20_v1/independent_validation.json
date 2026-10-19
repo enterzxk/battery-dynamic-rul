@@ -1,0 +1,65 @@
+{
+  "status": "PASS_INDEPENDENT_METRIC_AND_THREE_CAPACITY_DELTA_IDENTITIES",
+  "new_fits": 0,
+  "new_inference": 0,
+  "new_raw_feature_reads": 0,
+  "dev_test_reads": 0,
+  "maximum_macro_metric_difference": 1.1368683772161603e-12,
+  "identity_examples": [
+    {
+      "cell_id": "MATR_b2c1",
+      "origin_pair": [
+        100,
+        120
+      ],
+      "capacity_delta_algebra_abs_error": 6.938893903907228e-18,
+      "scope": "Independent consistency via existing capacity20 slope/delta predictions; not re-reading raw features"
+    },
+    {
+      "cell_id": "MATR_b4c19",
+      "origin_pair": [
+        343,
+        363
+      ],
+      "capacity_delta_algebra_abs_error": 0.0,
+      "scope": "Independent consistency via existing capacity20 slope/delta predictions; not re-reading raw features"
+    },
+    {
+      "cell_id": "MATR_b4c7",
+      "origin_pair": [
+        489,
+        509
+      ],
+      "capacity_delta_algebra_abs_error": 2.7755575615628914e-17,
+      "scope": "Independent consistency via existing capacity20 slope/delta predictions; not re-reading raw features"
+    }
+  ],
+  "identity_limitation": "Threshold cancels in delta identity; absolute .8 endpoint correctness relies separately on reviewed formula and frozen source manifests/synthetic check",
+  "validation_capacity_source": {
+    "path": "experiments/capacity20_forecast_seed42_v1/calibration_predictions.csv",
+    "sha256": "835ef130cfeef6a81e9c6f5860065945260e253550a61f9f626fe71931d4e0c5"
+  },
+  "predictions_sha256": "2baddd17503e5a20ecd33d2464d07a5b35b947a65363ab6a1fad0cc5c5b5eaf6",
+  "macro_metrics": {
+    "linear": {
+      "MAE": 1488.745941254619,
+      "bias": 1488.6599461500093,
+      "severe_over100": 0.6916364037256879
+    },
+    "early": {
+      "MAE": 55.24211818389968,
+      "bias": -12.656288986105888,
+      "severe_over100": 0.0027906976744186047
+    },
+    "dynamic": {
+      "MAE": 33.0272391729779,
+      "bias": -2.5547090431509103,
+      "severe_over100": 0.031630918641367446
+    },
+    "mixture": {
+      "MAE": 35.452042541685934,
+      "bias": -8.428037066551598,
+      "severe_over100": 0.0060465116279069765
+    }
+  }
+}

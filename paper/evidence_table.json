@@ -56,6 +56,30 @@
     {
       "path": "reports/post_mixture_methods_conflict_20261019_root/RESULTS_ZH.md",
       "sha256": "d28b2cb5d00679c5c01c11ac52ea57e670d8f652e33f4266d5e3fd40d60fa4fc"
+    },
+    {
+      "path": "experiments/causal_linear_threshold_fixed20_v1/protocol.json",
+      "sha256": "bea607b27bc47c2cd8240e1ab255bce65da16e65ca4a7bd03d89856b9d03c80d"
+    },
+    {
+      "path": "experiments/causal_linear_threshold_fixed20_v1/root_decision.json",
+      "sha256": "c252aebca9845dc87d6f1533e2ed52e2c8031ef62dd8897fb1ed7a2eed37ba04"
+    },
+    {
+      "path": "experiments/causal_linear_threshold_fixed20_v1/metrics.json",
+      "sha256": "60caf3cfa9c11d175f4cd06c0f67116648a52b7748cb637bcd832a7c7bcc415b"
+    },
+    {
+      "path": "experiments/causal_linear_threshold_fixed20_v1/per_cell_metrics.json",
+      "sha256": "39ea79a07bea9fbae85daa03b1ffe54bb96faac25f7cd9fd69759d594a8d9ca6"
+    },
+    {
+      "path": "experiments/causal_linear_threshold_fixed20_v1/independent_validation.json",
+      "sha256": "a2704149d3f7af617a3b9fbeb750d25ff4217e64c5f7103603d9197cea29e0a7"
+    },
+    {
+      "path": "experiments/causal_linear_threshold_fixed20_v1/completion.json",
+      "sha256": "86fbaab99e45b247622a915acaee6f8f4a7797cc20f204d6948f14c91b2e7ee3"
     }
   ],
   "macro_metrics": {
@@ -90,5 +114,10 @@
       "Brier300": 0.06312133526318944
     }
   },
-  "prospective_analytic_baseline_status": "NOT_RUN_REQUIRES_SEPARATE_SCOPED_GO"
+  "prospective_analytic_baseline_status": "COMPLETE_ALL4567_FINITE_NEGATIVE_BASELINE_NO_RESCUE",
+  "linear_metrics": {
+    "MAE": 1488.7459412546182,
+    "bias": 1488.6599461500082,
+    "severe_over100": 0.691636403725688
+  }
 }

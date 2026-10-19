@@ -475,3 +475,7 @@ reports/delayed_capacity_reliability_20261019_root/RESULTS_ZH.md。只用已存s
 
 ## 最新论文写作交付：开发结果与个体失败同时呈现
 paper/EMPIRICAL_RESULTS_DRAFT_ZH.md含同42fit/10cal协议、三臂宏指标和10cell表，evidence_table.json绑定14源SHA，validation.json验证现有逐cell均值/4567行/12证据链接。固定等权CDF点/宏风险PASS不能当个体安全：b4c7过高估2.79%→6.05%增3.2558pp；宏覆盖83.31%掩盖b2c1 8.33%、b2c6 32.85%。遗留宏coverageerror减少3pp门对早期误差.748pp数学不可达，保留原FAIL不追改，且逐cell覆盖也失败。草稿不是独立确认/正式复现/创新成立或投稿完成。0fit/推理/rawfeatures/devtest。下一项只准备标准无需fit的当前SOH与固定past20速率解析直线RUL对照，需去重、冻结一次窄审+freshGO；非负速率如实无有限值，不clip/horizon救援，不重开已NO_GO递归容量路线。静态finite回执无损归档，原件与历史保留。
+
+
+## 最新标准强简单对照：固定20速率直线外推完整失败
+experiments/causal_linear_threshold_fixed20_v1/RESULTS_ZH.md。同10cal4567全部有限、无需fit的RUL=(SOH−.8)/(−past20rate)：宏MAE1488.745941cycle、bias+1488.659946、over10069.1636%、max109335.8353。9/10比动态33.0272与等权35.4520差，b2c1例外MAE4.9885；不clip速率/设horizon/改window救援。预GO missing顺序缺陷已修复并窄deltaPASS，freshGO一次实际计算；独立指标差1.14e−12、3容量delta代数差2.78e−17，0fit/学习模型推理/checkpoint/devtest、CPU20不变。公开无损包精确四列，完整8列预测只服务器；paper/EMPIRICAL_RESULTS_DRAFT_ZH.md已v2，仍开发稿而非创新/独立确认。两份CPTransformer历史validation预测改存reports/completed_cptransformer_predictions_lossless_20261019_root/archive.json+decoder，原CSV服务器/历史保留。下一项只用既有预测做描述图，预指定b2c1/b4c7、保留极值、无新训练/datafeature/test。

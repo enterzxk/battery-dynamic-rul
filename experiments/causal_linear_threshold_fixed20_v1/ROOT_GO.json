@@ -1,0 +1,15 @@
+{
+  "status": "GO_ONE_STANDARD_NOFIT_LINEAR_THRESHOLD_10CAL",
+  "owner": "01a1508e-83e9-7232-a0e4-07606110b443",
+  "max_runs": 1,
+  "max_new_fits": 0,
+  "max_feature_files": 10,
+  "max_feature_rows": 4567,
+  "no_dev_test": true,
+  "review_path": "/home/yndx/zxk/rul/reports/causal_linear_threshold_review_20261019_luna/review_v2_missing.json",
+  "review_sha256": "351a587783e62c5d0d355f2387e695551871da536a9609fee83d2b2537b5cabb",
+  "signed_utc": "2026-10-19T01:01:22.357100+00:00",
+  "runner_sha256": "2ea8bb5877c72a6db7ceda3b18e0ab3d45019dd0b256627aa3d03ab2536f81d2",
+  "protocol_sha256": "bea607b27bc47c2cd8240e1ab255bce65da16e65ca4a7bd03d89856b9d03c80d",
+  "feature_manifest_sha256": "5bba4bdaa685e77ff4dcad5df8eff083c5ecc2f44bf5e81a5037a42347d7ca2b"
+}
