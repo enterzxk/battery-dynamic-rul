@@ -1,0 +1,11 @@
+{
+  "status": "PASS_SAVED_ROWS_ENDPOINT_AND_BUDGET_RECOMPUTE",
+  "source_discharge_rows": 197,
+  "valid_common_cutoff_rows": 197,
+  "event80_recomputed": 1,
+  "origins_ge100_recomputed": 0,
+  "summary_sha256": "3fb39f969db22211557759981f7a68cb3fc46189b5c13637e1b202dbda9ac8a4",
+  "canonical_rows_sha256": "1c710747b6d1627d0e3d4e1689a264d5d605b47b59fa08ec5a6eb86927f21fa7",
+  "MAT_reloads": 0,
+  "new_fits": 0
+}

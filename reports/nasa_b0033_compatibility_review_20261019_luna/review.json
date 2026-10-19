@@ -1,0 +1,57 @@
+{
+  "status": "PASS",
+  "review_type": "independent_pre_GO_narrow_review",
+  "reviewed_utc": "2026-10-19",
+  "candidate": "B0033",
+  "role": "train",
+  "decision_scope": "PASS permits the owner to issue a new exact ROOT_GO for one bounded compatibility read; it does not authorize this reviewer to run the runner and is not independent confirmation, model applicability evidence, or performance evidence.",
+  "inputs": {
+    "runner": {"path": "reports/nasa_b0033_compatibility_20261019_root/runner.py", "sha256": "e6227982ba535e6239037dfe6a7b3d1c875c16f56aa907f61da601a27a0dd4b3", "sha256_verified": true},
+    "protocol": {"path": "reports/nasa_b0033_compatibility_20261019_root/protocol.json", "sha256": "ee051ab7f020d8b229aecdfb9bb0ddf6a9a59709e1dab3f664b9ecad02578946", "sha256_verified": true}
+  },
+  "source_and_role_evidence": {
+    "inventory": "reports/nasa_remaining_source_inventory_20261018_root/inventory.json",
+    "inventory_sha256": "c5421db9f75a07d11621e59a7fdd7fb5efecf2fa0913bd2a1f39e9da8498a0b6",
+    "inventory_hash_verified": true,
+    "inventory_source_sha256": "82302a7db4fc1b34e0b6676326610438d43b816bdf11a69d1d012a464ef2f92e",
+    "nested_container": "5. Battery Data Set/3. BatteryAgingARC_25-44.zip",
+    "nested_container_sha256": "da983014699f3cc8d6a431863ef83957c838ac62e3d391b9f383b04c2e6a53bb",
+    "nested_hash_matches_inventory_metadata": true,
+    "member": "B0033.mat",
+    "member_inventory_count": 1,
+    "member_bytes": 11057919,
+    "member_crc32": "aaacd800",
+    "prospective_split": "reports/nasa_remaining_source_inventory_20261018_root/prospective_split.json",
+    "prospective_split_sha256": "1d6ae025583d86655e97003ffd31d54d1990bddea98b8b9305f9e2e050521617",
+    "split_hash_verified": true,
+    "role_check": "B0033 is train; B0034 is development and remains unread; B0036 is train in the split but closed by the present instruction, so this review authorizes no B0036 read. Locked cells remain unread."
+  },
+  "compatibility_and_protocol_review": {
+    "existing_importer": "reports/data_v1_raw_nasa_20261018_root/import_nasa.py",
+    "importer_sha256": "df338e327d53a4b6bf193de2efce64ea0ca3d9da45b2d6e51e7863687502961c",
+    "importer_hash_verified": true,
+    "reused_function": "cutoff_capacity(t, i, v)",
+    "import_behavior": "runner imports the existing module without invoking its main routine and calls only the existing common 2.7 V integration function; finite vectors, monotone time, crossing interpolation, and physical capacity bounds are guarded there.",
+    "endpoint": "EOL remains 1.6 Ah with nominal 2.0 Ah, supported by the saved README_33_34_36 text stating experiments stopped at 1.6 Ah (20% fade). The common 2.7 V endpoint is the frozen project endpoint, not the README's author cutoff for B0033 (2.0 V).",
+    "eligibility_gate": "At least one valid origin at discharge ordinal >=100 before the first observed common-2.7-V 1.6-Ah event. Origins >=20 are descriptive only. No fallback to 20 and no endpoint change after failure.",
+    "claim_limit": "A successful result establishes only data compatibility for this one train cell under the frozen adapter; it does not establish independent confirmation, physical serial uniqueness, generalization, or MATR/model suitability."
+  },
+  "budget_and_controls": {
+    "max_runs": 1,
+    "max_new_MAT_cells": 1,
+    "max_MAT_bytes": 11057919,
+    "max_nested_container_bytes": 220000000,
+    "max_seconds": 30,
+    "new_fits": 0,
+    "new_model_inference": 0,
+    "checkpoint_loads": 0,
+    "locked_MAT_reads": 0,
+    "new_downloads": 0,
+    "historical_NASA_budget_reset": false,
+    "control_review": "coordinator owner/thread match the protocol owner; takeover_verified=true; new_fits_allowed=false; lock file exists. Runner obtains a nonblocking exclusive project lock, checks coordinator ownership and no-fit gate, then creates an exclusive invocation claim before the bounded read. It writes a failure receipt on any caught failure and does not retry.",
+    "exact_GO": "ROOT_GO is intentionally a later control artifact: it must bind these exact runner/protocol/review hashes and one-run limits before execution. The absence of ROOT_GO at pre-GO review time is the correct sequence, not a defect."
+  },
+  "execution": {"runner_executed": false, "MAT_or_ZIP_binary_read": false, "model_fit_or_inference": false, "new_checkpoint": false, "result_metrics": null},
+  "remaining_boundary": "The frozen runner verifies the source archive byte length, then hashes the extracted nested container during its one authorized invocation. This review verified referenced metadata hashes and the prior inventory record; it did not rehash or open the source archive or nested ZIP bytes.",
+  "reviewer": "independent narrow pre-GO review"
+}

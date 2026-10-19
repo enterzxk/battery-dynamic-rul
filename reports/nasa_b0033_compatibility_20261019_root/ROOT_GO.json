@@ -1,0 +1,18 @@
+{
+  "status": "GO_ONE_NEW_B0033_TRAIN_COMPATIBILITY_ZERO_FIT",
+  "owner": "01a151cb-bf57-7113-bd9d-a58035e14194",
+  "scope": "New metadata-selected B0033 train cell only; not a retry or expansion of old closed B0036/B0050 task. Human autonomous data-audit scope, independent narrow review now satisfied. No model or confirmation GO.",
+  "max_runs": 1,
+  "max_new_MAT_cells": 1,
+  "max_MAT_bytes": 11057919,
+  "max_nested_container_bytes": 220000000,
+  "max_seconds": 30,
+  "max_new_fits": 0,
+  "locked_dev_test_MAT_reads": 0,
+  "old_B0036_B0050_reads": 0,
+  "runner.py_sha256": "e6227982ba535e6239037dfe6a7b3d1c875c16f56aa907f61da601a27a0dd4b3",
+  "protocol.json_sha256": "ee051ab7f020d8b229aecdfb9bb0ddf6a9a59709e1dab3f664b9ecad02578946",
+  "review_path": "/home/yndx/zxk/rul/reports/nasa_b0033_compatibility_review_20261019_luna/review.json",
+  "review_sha256": "749cf676b5c62cf434fb57b0dadaec48fbfb9e0c80579326d25ca10ffc6eb822",
+  "signed_utc": "2026-10-19T02:04:06.870796+00:00"
+}

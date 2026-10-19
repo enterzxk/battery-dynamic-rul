@@ -229,6 +229,13 @@ def main():
     for name in ['RESULTS_ZH.md','protocol_candidate.json','evidence.json','readiness.json']:
         chosen.add('reports/independent_confirmation_readiness_20261019_root/' + name)
 
+    for name in ['runner.py','protocol.json','ROOT_GO.json','summary.json','failure.json','minimal_validation.json','startup_capacity_diagnostic.json','root_decision.json','RESULTS_ZH.md']:
+        chosen.add('reports/nasa_b0033_compatibility_20261019_root/' + name)
+    chosen.add('reports/nasa_b0033_compatibility_review_20261019_luna/review.json')
+    chosen.discard('experiments/cpmlp_hust_pilot_seed42/fit_runs/fit_20261016T034610_311103Z/budget_ledger.jsonl')
+    for name in ['archive.json','decode.py','validation.json']:
+        chosen.add('reports/completed_hust_pilot_ledger_lossless_20261019_root/' + name)
+
     contents, files, skipped = {}, [], []
     mapping = {'README.md': 'docs/GITHUB_README_ZH.md', 'agent.md': 'AGENTS.md'}
     mapping.update({rel: rel for rel in sorted(chosen)})

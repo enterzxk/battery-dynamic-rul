@@ -626,3 +626,11 @@
 - 最小验证：角色70=42+10+18且集合互斥、18dev与既有combined摘要及completion一致；源SHA/完成回执runner/cohort绑定核对。0fit/新推理/新devtestdata/rawfeatures/checkpoint/网络下载，CPU20与旧GO不变。
 - 阻塞/风险：没有已证明未暴露且身份合格的当前确认cohort，也未冻结确认可执行预测器/适配与新GO。仅复用旧NASA两cell摘要：B0036/B0050在原冻结规则下available_origins_ge20=0，不能直接替补；不改EOL/额定归一化救援。processed generator与raw身份边界分开，不作全数据无效结论。
 - 下一步：仅既有source inventory上选择新的未暴露候选cohort与精确读取预算，元数据可行性先行；不重读已关闭NASA两cell、不把MATR18dev改名确认、不读取locked/test或加10cal调参。
+
+
+## 2026-10-19：NASA B0033新train电芯单次兼容性读取真实STOP
+- 已完成：按既存metadata选择24°C/4A B0033/B0034组，冻结B0033一cell新预算，独立窄审+fresh exactGO后一次解码；197放电工程积分有效，冻结event80=1、origin>=100和>=20均0，STOP，不扩读B0034。
+- 证据：reports/nasa_b0033_compatibility_20261019_root的runner/protocol/ROOT_GO/summary/minimal_validation/startup_capacity_diagnostic/root_decision/RESULTS_ZH；canonical_rows仅服务器。MAT SHA3f6b44d7e123b9e9e4a26c3651acd0b9f38ca4d21aac3930bd9197ccf8b04426。
+- 最小验证：嵌套ZIP SHA/单member大小CRC/原train角色/owner与一次claim核验；实际nested93662572bytes、MAT11057919bytes/1cell、约0.323秒，保存197行独立重算首次事件与前缀计数一致，无MAT重载。0fit/推理/checkpoint/下载/devtest/locked/旧36和50读取，旧预算不重置，新GO消费。
+- 阻塞/风险：首operation1共同容量0.05934Ah/原始Capacity0.06843Ah，后续原始Capacity最高1.88514Ah；首低容量不能直接当正常退化EOL，既存canonical无charge字段，启动/部分放电机制未证。不能用未来反弹删除早期样本、最大容量归一化、换EOL或扩大同组读取救援。原HUST pilot旧ledger61839→13766bytes无损归档，原件/历史保留，不扩cap。
+- 下一步：停止NASA同组盲扫；有界查另一未暴露原始来源的官方元数据，先核完整充放电容量测量/起始循环及独立身份可得性，不下载/fit/lockedtest；新预算前先关闭首段测量资格问题。

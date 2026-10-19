@@ -1,0 +1,21 @@
+{
+  "status": "SAVED_ROW_DIAGNOSTIC_NOT_NEW_ENDPOINT",
+  "first_record": {
+    "discharge": 1,
+    "operation": 1,
+    "ambient_C": 24.0,
+    "median_active_current_A": -4.024611742027007,
+    "capacity_common2p7V_Ah": 0.05934176358570904,
+    "capacity_original_Ah": 0.06842572240601812,
+    "valid": true,
+    "reason": null
+  },
+  "author80_first_event": 1,
+  "max_author_capacity_diagnostic_not_feature": 1.8851401699720662,
+  "first_later_above1p6_discharge": 8,
+  "later_above_threshold_count": 38,
+  "full_charge_operation_fields_saved": false,
+  "startup_partial_discharge_explanation": "UNVERIFIED",
+  "no_future_based_exclusion_or_normalization": true,
+  "new_MAT_reads": 0
+}

@@ -1,0 +1,9 @@
+{
+  "status": "PASS_BYTE_EXACT",
+  "original_path": "experiments/cpmlp_hust_pilot_seed42/fit_runs/fit_20261016T034610_311103Z/budget_ledger.jsonl",
+  "original_bytes": 61839,
+  "archive_bytes": 13766,
+  "original_sha256": "743e7b58c76367a209debe7aa2c614cf4de3e8e7510ceefdeb51d30b53b457ae",
+  "server_original_and_old_git_history_retained": true,
+  "no_training_or_metric_recompute": true
+}
