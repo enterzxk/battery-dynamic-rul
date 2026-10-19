@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-19T01:21:45.076138+00:00",
-  "content_sha256": "c9c042835c299ebf2b6f9e04ad76c9711c610c5714b430615325bd66c6f3073a",
-  "file_count": 911,
+  "snapshot_utc": "2026-10-19T01:32:46.477121+00:00",
+  "content_sha256": "b5bd7c03e509aa48f1b87b1b5d26a00d038beaf1afe8ca7a61d9fc8910f97e27",
+  "file_count": 912,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,8 +14,8 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 108449,
-      "sha256": "d53192ba783c56347fb2a59fd8bbed9732a96dcc499dcdca0a413e28acf0104c"
+      "bytes": 109337,
+      "sha256": "d2c77e1645071ed157c6af7b1a0fc9d27adddd9c2a7ae1a3d47faca15a175214"
     },
     {
       "path": "README.md",
@@ -38,8 +38,8 @@
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 40248,
-      "sha256": "b9a51b90c30e1eebd3c4dd0ed0f2ff5285028d1a0772c7314302163195269ff3"
+      "bytes": 40310,
+      "sha256": "34a5216aa7c7933e0f17fc32681d007dd63461926852e27681326d9cb6f6a9ad"
     },
     {
       "path": "automation/bin/matr_raw_batch2_asset_worker_v1.py",
@@ -164,8 +164,8 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 88916,
-      "sha256": "f337c86f580c45ddd39fd20c948917494778167fa22bb2e87e102fe0b9a36404"
+      "bytes": 89804,
+      "sha256": "ada4ab5fa390bf0ffca24f6f8968ac8ab7d1d4776dd7dad719a57b9c7e5f284f"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
@@ -178,6 +178,12 @@
       "source_path": "docs/COORDINATOR_HANDOFF_20261017_V9_ZH.md",
       "bytes": 5669,
       "sha256": "014d86054688364bc7f4aca8bf415b13aba56e954ed7a9003e145fb81a0b7e4f"
+    },
+    {
+      "path": "docs/COORDINATOR_HANDOFF_20261019_V15_ZH.md",
+      "source_path": "docs/COORDINATOR_HANDOFF_20261019_V15_ZH.md",
+      "bytes": 10467,
+      "sha256": "82dfcbe79cc39ec85477398901cf4eee1ec2b77095c094cbf18a8555768d30be"
     },
     {
       "path": "docs/DYNAMIC_RUL_ASOF_FREEZE_CANDIDATE_v3_ZH.md",

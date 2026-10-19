@@ -13,6 +13,7 @@ SECRET = re.compile(r'(?:gh[pousr]_[A-Za-z0-9]{25,}|github_pat_[A-Za-z0-9_]{30,}
 
 def main():
     chosen = {'AGENTS.md', 'PROJECT_PROGRESS.md', 'automation/bin/export_github_context.py'}
+    chosen.add('docs/COORDINATOR_HANDOFF_20261019_V15_ZH.md')
     for directory in ['src', 'configs', 'results', 'literature/accepted']:
         chosen.update(str(p.relative_to(ROOT)) for p in (ROOT / directory).rglob('*') if p.is_file())
     chosen.update('docs/' + name for name in [

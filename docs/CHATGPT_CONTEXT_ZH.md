@@ -483,3 +483,11 @@ experiments/causal_linear_threshold_fixed20_v1/RESULTS_ZH.md。同10cal4567全�
 
 ## 最新论文图：平均收益与个体失效同时可见
 paper/figures/empirical_reliability_v1/figure.svg为可编辑四面板经验图，PDF/600dpiPNG仅服务器；双语CAPTION/40条cell-method与478条b2c1/b4c7完整轨迹源CSV、SHA和QA公开。10cell全部配对误差及覆盖；预指定b2c1是linear例外、b4c7是高估失败。对数轴保留亚周期及极大预测，图c/d范围不同，未平滑/删点/挑窗口；最终对齐/字体6.2pt/遮挡审计通过，彩色和灰度逐面板核看。0fit/推理/rawfeatures/devtest、CPU20不变，不是独立确认/条件覆盖。三份CPMLP历史验证预测改存reports/completed_cpmlp_predictions_lossless_20261019_root/archive.json+decoder，原件/历史保留。下一项仅固定20cycle观测上报延迟压力测试：已有mu_(s−20)与当前存活构成合法剩余分布，所有臂统一origin>=120/4367，0fit/新模型推理/新尺度/rawfeatures/test；须另冻结窄审freshGO，不搜delay/权重，不把此当容量递归救援或新方法创新。
+
+
+## 2026-10-19：V14第二次实际压缩，V15接续交接落盘
+- 已完成：2026-10-19T01:30:56.688Z第二次压缩元数据已核，fresh接续交接已保存；创建/迁移/接管状态以实际事务回执为准。
+- 证据：docs/COORDINATOR_HANDOFF_20261019_V15_ZH.md，request V15-second-compaction-20261019T013056Z；上一科学发布d6ff31a275d0adc31b07daf69527f19b43ffa7d1。
+- 最小验证：旧交接SHA一致，owner/thread为V14自身，两项目锁可独占，pending_experiment=null，CPU20不变。
+- 阻塞/风险：固定20cycle观测上报延迟实验尚未实现/冻结/窄审/GO/执行；迁移不能当实验完成，cal暴露与旧NO_GO保留。
+- 下一步：V15核额度/锁后冻结仅保存mu_(s-20)+存活条件化的共同4367origin压力测试，一次必要窄审+fresh0fitGO后实际一次；无fit/新模型推理/checkpoint/rawfeatures/devtest。
