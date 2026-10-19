@@ -226,6 +226,9 @@ def main():
     for name in ['archive.json','decode.py','validation.json']:
         chosen.add('reports/completed_calb_ledger_lossless_20261019_root/' + name)
 
+    for name in ['RESULTS_ZH.md','protocol_candidate.json','evidence.json','readiness.json']:
+        chosen.add('reports/independent_confirmation_readiness_20261019_root/' + name)
+
     contents, files, skipped = {}, [], []
     mapping = {'README.md': 'docs/GITHUB_README_ZH.md', 'agent.md': 'AGENTS.md'}
     mapping.update({rel: rel for rel in sorted(chosen)})

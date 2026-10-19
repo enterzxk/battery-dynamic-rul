@@ -1,0 +1,40 @@
+{
+  "status": "SPECIFICATION_CANDIDATE_NOT_EXECUTABLE",
+  "execution_allowed": false,
+  "question": "Independent empirical point/risk comparison of fixed equalCDF vs earlysurvival; not novel method validation",
+  "fixed_method": {
+    "primary": "timely equal CDF mixture vs early survival",
+    "sigma": 0.19898311654196568,
+    "weight": 0.5,
+    "model_config_source": "experiments/lossless_equal_CDF_mixture_v2/protocol.json",
+    "delay_secondary": 20,
+    "common_origins_for_delay": ">=120 for all arms",
+    "primary_origins": ">=100 to actual first80%-1; exact valid range fixed before outcome access"
+  },
+  "cohort": null,
+  "exclusion_rules": "before outcome access, no redefinition of EOL/maxlife normalization; physical/source aliases isolated; no adaptive stopping or outcome-based cell replacement",
+  "primary_gate": {
+    "relative_MAE_reduction_min": 0.05,
+    "fraction_cells_improved_min": 0.7,
+    "paired_cell_CI95_lower_strictly_above": 0,
+    "bootstrap_replicates": 2000,
+    "bootstrap_seed": 42,
+    "severe_over100_increment_max": 0.01
+  },
+  "probability_metrics": "descriptive percell+macro coverage80/width80/IS80/Brier100,300 only; no legacy unattainable coverage gate or probability guarantee",
+  "pending_before_any_execution": [
+    "unexposed cohort and exact sample size/identity/asof/nominal/EOL assumptions frozen",
+    "frozen executable predictor and hash/provenance, or separately reviewed fixed training plan and fit budget; do not assume checkpoint exists",
+    "prospective fitting/normalization permissions and applicable policy information fixed",
+    "one necessary independent narrow review and new exact GO, no consumed GO reuse"
+  ],
+  "censoring_scope": "This eventobserved RUL point protocol does not authorize censoring benefit claim; censored observations require separate prospective evaluation protocol",
+  "current_budget": {
+    "new_fits": 0,
+    "inference": 0,
+    "checkpoint": 0,
+    "rawfeatures": 0,
+    "devtest": 0
+  },
+  "frozen_specification_utc": "2026-10-19T01:47:15.347066+00:00"
+}

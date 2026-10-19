@@ -618,3 +618,11 @@
 - 最小验证：独立窄审（保留流程更正前审查）+fresh exactGO后一次0.27秒执行；独立50组宏评分差5.68e−14，150项CDF差1.92e−15。0fit/学习模型推理/checkpoint/rawfeatures/devtest，累计CPU20/神经4fit2580steps不变，GO消费。
 - 阻塞/风险：延迟相对及时观测使动态/混合MAE恶化10.5160%/8.6434%，各0/10改善；混合宏覆盖82.5981%掩盖b2c1覆盖0%与b2c6仅30.9463%。仅重复暴露开发稳健性，旧sigma/物理身份/event-only/policy边界及旧概率FAIL保留，非无损延迟、个体保证或新颖性证明。完成CALB历史ledger77135→20173bytes原字节无损归档，服务器/旧Git历史保留，不扩12MiBcap。
 - 下一步：固定方法独立确认的窄协议与身份适用范围；复用已有审计，不以更多10cal调参替代确认，单独授权/数据身份门槛关闭前不读18dev/test、不训练或搜索delay/权重/尺度。
+
+
+## 2026-10-19：独立确认规范与暴露边界闭合，当前18dev为NO_GO
+- 已完成：仅既有文本元数据核对，确认MATR raw42fit+10暴露cal+18已暴露dev；早期heldout-scale完成回执已记录18dev/9561前缀预测及选择。NO_GO_CURRENT_18DEV_AS_FIRST_INDEPENDENT_CONFIRMATION，防止把本轮未读误当从未暴露。
+- 证据：reports/independent_confirmation_readiness_20261019_root的RESULTS_ZH.md、protocol_candidate.json、evidence.json、readiness.json；源heldout-scale completion/protocol/cohort和runner48–64行，combined_cohort_summary角色集合。固定混合经验确认规范已列候选方法、指标及必要前置条件，execution_allowed=false。
+- 最小验证：角色70=42+10+18且集合互斥、18dev与既有combined摘要及completion一致；源SHA/完成回执runner/cohort绑定核对。0fit/新推理/新devtestdata/rawfeatures/checkpoint/网络下载，CPU20与旧GO不变。
+- 阻塞/风险：没有已证明未暴露且身份合格的当前确认cohort，也未冻结确认可执行预测器/适配与新GO。仅复用旧NASA两cell摘要：B0036/B0050在原冻结规则下available_origins_ge20=0，不能直接替补；不改EOL/额定归一化救援。processed generator与raw身份边界分开，不作全数据无效结论。
+- 下一步：仅既有source inventory上选择新的未暴露候选cohort与精确读取预算，元数据可行性先行；不重读已关闭NASA两cell、不把MATR18dev改名确认、不读取locked/test或加10cal调参。

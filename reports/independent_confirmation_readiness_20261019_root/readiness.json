@@ -1,0 +1,40 @@
+{
+  "status": "NO_GO_CURRENT_18DEV_AS_FIRST_INDEPENDENT_CONFIRMATION",
+  "execution_allowed": false,
+  "role_counts": {
+    "fit": 42,
+    "calibration": 10,
+    "development": 18
+  },
+  "development_source_ids": [
+    "MATR_b2c13",
+    "MATR_b2c2",
+    "MATR_b2c22",
+    "MATR_b2c25",
+    "MATR_b2c35",
+    "MATR_b2c40",
+    "MATR_b2c45",
+    "MATR_b2c46",
+    "MATR_b2c47",
+    "MATR_b4c13",
+    "MATR_b4c16",
+    "MATR_b4c22",
+    "MATR_b4c28",
+    "MATR_b4c3",
+    "MATR_b4c32",
+    "MATR_b4c33",
+    "MATR_b4c39",
+    "MATR_b4c5"
+  ],
+  "prior_dev_prediction_origins_from_receipt": 9561,
+  "new_prediction_or_metric_recalculation": 0,
+  "new_fits": 0,
+  "new_model_inference": 0,
+  "new_devtestdata_reads": 0,
+  "rawfeature_reads": 0,
+  "checkpoint_loads": 0,
+  "network_downloads": 0,
+  "test_gate_unchanged": true,
+  "source_id_disjoint_not_physical_serial_proof": true,
+  "next_action": "Choose one new nonexposed candidate cohort from existing source inventory; metadata scope and exact budget only; no closed NASA2cell or MATR18dev reuse"
+}

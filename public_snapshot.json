@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-19T01:42:38.501386+00:00",
-  "content_sha256": "bdbbf36926eed3387beec401ac3cea38ee2dd8d8e70d45849b480800801fdc2b",
-  "file_count": 929,
+  "snapshot_utc": "2026-10-19T01:47:24.156598+00:00",
+  "content_sha256": "d80873bcf50dab061da5f330ffaa66e47d980250294c9bfd995a55eb16fab134",
+  "file_count": 933,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,8 +14,8 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 110980,
-      "sha256": "ba7d2658979852cbaccbb396300f54058d15e6a6621e1ce586ffcef4f4350f99"
+      "bytes": 112512,
+      "sha256": "b883a90055e475b901c35d611e21d6810562bb8e86b1d8375a851e0e34a4d4ac"
     },
     {
       "path": "README.md",
@@ -38,8 +38,8 @@
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 41174,
-      "sha256": "317246b3ba227e365243e1ee861277226561c5b3b7889e34db0d9b897a2d051f"
+      "bytes": 41356,
+      "sha256": "b6caf971bba3e6d41f034f0dd9c2c331d04774e98f7adb717631721c54e2e3b8"
     },
     {
       "path": "automation/bin/matr_raw_batch2_asset_worker_v1.py",
@@ -164,8 +164,8 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 91447,
-      "sha256": "39583e0689727df954fd4bb3409ce77667dbbfbf2d209dbd2e84d7e9c53bfc54"
+      "bytes": 92979,
+      "sha256": "0733362a7a0fc3e867742745cbbaa68f294815e3c1bffad42bda3a2a03fefd24"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
@@ -3772,6 +3772,30 @@
       "source_path": "reports/hust_saved_source_identity_20261018_root/source_identity_review.json",
       "bytes": 4398,
       "sha256": "21d5356c053ebe46bbe873e8563415ad6c3fd587a8426ef82772c721f532b842"
+    },
+    {
+      "path": "reports/independent_confirmation_readiness_20261019_root/RESULTS_ZH.md",
+      "source_path": "reports/independent_confirmation_readiness_20261019_root/RESULTS_ZH.md",
+      "bytes": 4639,
+      "sha256": "fbb3c93363149f8c96e93cebcc3f2c2b00c10b137c898e8be93729b8efe09acc"
+    },
+    {
+      "path": "reports/independent_confirmation_readiness_20261019_root/evidence.json",
+      "source_path": "reports/independent_confirmation_readiness_20261019_root/evidence.json",
+      "bytes": 2238,
+      "sha256": "6916a873f7abaa0bcd31efd31877367ddece48798112d3b9a9f185918f526b92"
+    },
+    {
+      "path": "reports/independent_confirmation_readiness_20261019_root/protocol_candidate.json",
+      "source_path": "reports/independent_confirmation_readiness_20261019_root/protocol_candidate.json",
+      "bytes": 2056,
+      "sha256": "77a7930d56bc6ca31e11f35947029d94f443fabf6ec68823e5c40040d15d62c4"
+    },
+    {
+      "path": "reports/independent_confirmation_readiness_20261019_root/readiness.json",
+      "source_path": "reports/independent_confirmation_readiness_20261019_root/readiness.json",
+      "bytes": 1051,
+      "sha256": "7362a597b252fe0bfbce94edd5ada46ad975247e666b85929132625d323a55b4"
     },
     {
       "path": "reports/learned_capacity_feedback_20261018_root/RESULTS_ZH.md",
