@@ -634,3 +634,11 @@
 - 最小验证：嵌套ZIP SHA/单member大小CRC/原train角色/owner与一次claim核验；实际nested93662572bytes、MAT11057919bytes/1cell、约0.323秒，保存197行独立重算首次事件与前缀计数一致，无MAT重载。0fit/推理/checkpoint/下载/devtest/locked/旧36和50读取，旧预算不重置，新GO消费。
 - 阻塞/风险：首operation1共同容量0.05934Ah/原始Capacity0.06843Ah，后续原始Capacity最高1.88514Ah；首低容量不能直接当正常退化EOL，既存canonical无charge字段，启动/部分放电机制未证。不能用未来反弹删除早期样本、最大容量归一化、换EOL或扩大同组读取救援。原HUST pilot旧ledger61839→13766bytes无损归档，原件/历史保留，不扩cap。
 - 下一步：停止NASA同组盲扫；有界查另一未暴露原始来源的官方元数据，先核完整充放电容量测量/起始循环及独立身份可得性，不下载/fit/lockedtest；新预算前先关闭首段测量资格问题。
+
+
+## 2026-10-19：Oxford单一候选官方元数据核查，ORA403协议门未闭合
+- 已完成：一次有界官方来源筛查，Oxford实验室Data and code第19行确认Dataset1为8颗Kokam SLPB533459H4/740mAh；ORA搜索索引出现DOI/Readme条目，但官方记录正文访问403、限定官方域Readme链接查询无结果。METADATA_IDENTITY_ONLY_PROTOCOL_UNVERIFIED_NO_RAW_DOWNLOAD。
+- 证据：reports/oxford_official_metadata_20261019_root的RESULTS_ZH.md、evidence.json、decision.json；成功官方页https://battery-intelligence-lab.github.io/data-and-code/，受限记录uuid03ba4b01-cfed-46d3-9b1a-7d4a7bdf6fac。来源位置与访问范围已区分，不伪造Readme/文件SHA。
+- 最小验证：只比较官方实验室目录与官方索引的记录身份；完整充放电容量资格/首循环/实际采样间隔/事件删失/物理身份均unverified，不能从简介或摘要推断。2查询/2页面打开，无raw下载/MAT解码/fit/推理/checkpoint/devtest/权限变更。
+- 阻塞/风险：403是实际文档访问限制，索引可见不等于协议可读，候选未成为独立确认集；raw_download_allowed=false、execution_allowed=false。不循环访问、不借镜像补造官方读取，旧NASA STOP与所有预算保持。
+- 下一步：仅在出现可访问官方Readme/等价原始协议新证据时做文本核验，关闭首段容量资格与实际循环定义；无新增证据时本候选停止自动派发、保持安静，不以元数据冒充数据准备完成或打开模型门。

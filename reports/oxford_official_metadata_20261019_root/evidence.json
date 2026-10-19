@@ -1,0 +1,59 @@
+{
+  "observed_at_utc": "2026-10-19T02:16:00Z",
+  "observation_time_scope": "Approximate tool-observation interval, not raw HTTP Date header",
+  "candidate": "Oxford Battery Degradation Dataset1",
+  "sources": [
+    {
+      "url": "https://battery-intelligence-lab.github.io/data-and-code/",
+      "status": "OFFICIAL_PAGE_FETCHED",
+      "position": "Data item1, tool-extracted line19",
+      "facts": {
+        "cell_count": 8,
+        "manufacturer_model": "Kokam SLPB533459H4",
+        "nominal_capacity_mAh": 740
+      },
+      "raw_HTTP_snapshot_saved": false
+    },
+    {
+      "url": "https://ora.ox.ac.uk/objects/uuid%3A03ba4b01-cfed-46d3-9b1a-7d4a7bdf6fac",
+      "status": "SEARCH_INDEX_OBSERVED_DIRECT_FETCH_403",
+      "facts_observed_in_index": {
+        "creators": [
+          "D.Howey",
+          "C.Birkl"
+        ],
+        "year": 2017,
+        "version": 1,
+        "DOI": "10.5287/bodleian:KO2kdmYGg",
+        "files_listed": [
+          "ExampleDC_C1.mat",
+          "Oxford_Battery_Degradation_Dataset_1.mat",
+          "Readme.txt"
+        ],
+        "licence_label": "ODC Open Database License (ODC-ODbL)"
+      },
+      "facts_scope": "Indexed official metadata only; not independently read current record/Readme/licence or files",
+      "raw_HTTP_snapshot_saved": false,
+      "readme_sha256": null
+    }
+  ],
+  "queries": [
+    {
+      "query": "site.ora.ox.ac.uk \"Oxford Battery Degradation Dataset\" \"Description\"",
+      "result": "Official record indexed metadata found"
+    },
+    {
+      "query": "site:ora.ox.ac.uk \"03ba4b01\" \"Readme.txt\" \"download\"",
+      "result": "EMPTY"
+    }
+  ],
+  "direct_fetches": 2,
+  "search_queries": 2,
+  "raw_downloads": 0,
+  "MAT_decodes": 0,
+  "new_fits": 0,
+  "new_model_inference": 0,
+  "checkpoint_loads": 0,
+  "devtest_reads": 0,
+  "permission_changes": 0
+}

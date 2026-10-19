@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-19T02:06:19.550117+00:00",
-  "content_sha256": "4b95bf963bda0a30de4963cfd47263535ce283798a5e26a10f685e290e5c3ace",
-  "file_count": 944,
+  "snapshot_utc": "2026-10-19T02:17:31.127811+00:00",
+  "content_sha256": "678eaf189e879df13de0849e177872dc5d494bd5e6fbc3fe7b0c180645bd42f0",
+  "file_count": 947,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,8 +14,8 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 114092,
-      "sha256": "394e9b07b1d6b71bda91f0b9987a559a3cb2d8b74887669026f9732fe6e1cd0d"
+      "bytes": 115630,
+      "sha256": "ace86d6a19d5659405ad8460b1bb99f68c1e7de596c1f96a621b9baf139aba6e"
     },
     {
       "path": "README.md",
@@ -38,8 +38,8 @@
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 41976,
-      "sha256": "93794d648f9412b8eb7bc73d1a5d2b2a43202c1f265fd84009a7c1fa0446623b"
+      "bytes": 42121,
+      "sha256": "26ad337f5f20dc70bd7b6ca8c342552e58a4d194b4354fb69d27451f2219e85a"
     },
     {
       "path": "automation/bin/matr_raw_batch2_asset_worker_v1.py",
@@ -164,8 +164,8 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 94559,
-      "sha256": "bc9d46cb0b81cec85fa4b26af1962a9e2a171a7b57993fc2ea2d779a0f79287f"
+      "bytes": 96097,
+      "sha256": "90776884a0f5a19b5440615f414afa2f3abfd48d1472125197f742af0e9174b1"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
@@ -4420,6 +4420,24 @@
       "source_path": "reports/online_survival_pilot_review_20261018_luna/review_v2.json",
       "bytes": 1973,
       "sha256": "e15ae36f720a77ad153beac4ea0b502ccd5ebe7c2c6010d9c84b538519af7e8e"
+    },
+    {
+      "path": "reports/oxford_official_metadata_20261019_root/RESULTS_ZH.md",
+      "source_path": "reports/oxford_official_metadata_20261019_root/RESULTS_ZH.md",
+      "bytes": 3197,
+      "sha256": "629db4b49b69d76d946a6932a84608b990c2442cc5429eb63a65347d4e114b2a"
+    },
+    {
+      "path": "reports/oxford_official_metadata_20261019_root/decision.json",
+      "source_path": "reports/oxford_official_metadata_20261019_root/decision.json",
+      "bytes": 818,
+      "sha256": "82a71b5a354d1ee28f5d19f6a3295b3413f37a2597c5f6b27f9e1ca11cb642a9"
+    },
+    {
+      "path": "reports/oxford_official_metadata_20261019_root/evidence.json",
+      "source_path": "reports/oxford_official_metadata_20261019_root/evidence.json",
+      "bytes": 1839,
+      "sha256": "0fb1baae03faaa8231d9d28bb05c219bb3136b3acecbf54b67d353fa543cca33"
     },
     {
       "path": "reports/p1_calb_reproduction_gap_20261018_root/GAP_REVIEW_ZH.md",

@@ -1,0 +1,16 @@
+{
+  "status": "METADATA_IDENTITY_ONLY_PROTOCOL_UNVERIFIED_NO_RAW_DOWNLOAD",
+  "raw_download_allowed": false,
+  "execution_allowed": false,
+  "identity_scope": "Official lab documents source cellcount/model/nominal; physicalserial/source aliases and project exposure overlap not audited in this bounded stage",
+  "pending": [
+    "Accessible official Readme or equivalent original experimental protocol",
+    "Capacity full-charge/discharge qualification and startup-record meaning",
+    "Actual-cycle sampling and event/censoring definition",
+    "File integrity/format and identity/alias bounds",
+    "Currentmodel policyfeature applicability"
+  ],
+  "next_action": "WAIT_NEW_OFFICIAL_PROTOCOL_EVIDENCE_NO_REPEAT403_NO_RAWDOWNLOAD_FIT_OR_TEST",
+  "project_complete": false,
+  "source_route_dispatch_allowed": false
+}
