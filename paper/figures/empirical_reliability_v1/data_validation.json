@@ -1,0 +1,33 @@
+{
+  "status": "PLOTTED_ALL_FROZEN_OBSERVATIONS",
+  "paired_cell_metrics": 40,
+  "coverage_values": 30,
+  "trajectory_rows": 478,
+  "trajectory_cells": {
+    "MATR_b2c1": 48,
+    "MATR_b4c7": 430
+  },
+  "prediction_rows_read": 4567,
+  "all_points_used": true,
+  "path_simplification": false,
+  "no_curve_smoothing_or_window_selection": true,
+  "linear_coverage_not_defined_not_plotted": true,
+  "prediction_values_changed": false,
+  "new_fits": 0,
+  "new_model_inference": 0,
+  "new_raw_feature_reads": 0,
+  "dev_test_reads": 0,
+  "figure_mm": [
+    180,
+    140
+  ],
+  "sources_verified": true,
+  "alignment_status": "PASS",
+  "outputs": {
+    "figure.svg": "8383db6c2d0dd178f9d141ca0cebd3b74db2ba905bfc2d6092293cddd966252e",
+    "figure.pdf": "9d662892dfdd93e9f91e190b438acdf5c87277fd9d4f68cb1ad44fbe5f57bdb6",
+    "figure.png": "737a7c902464db9e740cd2b83012e8d713823c7674afce976a2018db79909378",
+    "source_cell_metrics.csv": "52d6d2fc92a486c3c9bdc9121732496bb77faa5912a06a4cb55f4f9b77e60e82",
+    "source_trajectories.csv": "2e7dd94f73a372f1cbe8f63d34a94fe9cb4cce9ca10317aa2d55b21f0ad0bc54"
+  }
+}

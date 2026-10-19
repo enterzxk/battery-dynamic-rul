@@ -594,3 +594,11 @@
 - **最小验证**：一次静态窄审发现missing解析顺序，真实运行前修复+单例+delta审查PASS后freshGO，一次执行。独立宏指标差1.14e−12、3组容量变化代数差2.78e−17。只10cal特征文件4567行，0fit/学习模型推理/checkpoint/devtest，CPU20不变，GO消费。
 - **阻塞/风险**：不证明所有趋势/物理模型无效；10cal暴露/身份/event-only/旧sigma与独立确认限制保留。已有CPTransformer历史验证预测2文件235792→97772bytes无损归档，原件/历史不丢，不重评估、不扩cap。
 - **下一步**：仅既有预测与逐cell统计制作论文描述性经验图，预指定b2c1/b4c7，四臂精度/覆盖与真实RUL轨迹，极端线性值保留并明示log尺度；0fit/推理/特征读取/test，不挑有利窗口。
+
+
+## 2026-10-19：论文四面板经验图已实际生成并通过渲染检查
+- **已完成**：paper/figures/empirical_reliability_v1/figure.svg、PDF、600dpi PNG与双语图注；a为10cell四臂配对MAE，b为10cell三参考覆盖，c/d完整b2c1(48origin)/b4c7(430origin)轨迹。全部点与极值保留，无平滑/有利窗口选择。
+- **证据**：同目录plot_figure.py、figure_contract.json、source_cell_metrics.csv(40条)、source_trajectories.csv(478条)、data_validation、alignment/text/collision/visual_qa。最终SVG SHA8383db6c2d0dd178f9d141ca0cebd3b74db2ba905bfc2d6092293cddd966252e；PDF/PNG原件只服务器，SVG公开。
+- **最小验证**：源SHA/4567输入、40指标/30覆盖/478轨迹、正值/曲线完整extent断言。初版b2c1亚周期值被显示轴裁出的问题已修复并保留旧图/失败审计；最终1.5pt对齐PASS、最小字体6.2pt、遮挡0FAIL0WARN，彩色/灰度逐面板复核。0fit/推理/rawfeatures/devtest，CPU20不变。
+- **阻塞/风险**：图仅描述反复暴露开发集；不构造linear覆盖或seed误差条，不称独立确认/个体覆盖保证。三份已完成CPMLP历史验证预测352185→146528bytes无损归档，原件/历史保留，不扩cap、不重评估。
+- **下一步**：单次固定20cycle观测上报延迟压力测试，仅用已有mu_(s−20)与已知当前存活条件化，对所有臂统一s>=120的4367origin；不得使用s−20之后特征/再估sigma/调delay或权重。当前未实现，需冻结+一次必要窄审+fresh0fitGO后一次，非容量递归/旧NO_GO救援。

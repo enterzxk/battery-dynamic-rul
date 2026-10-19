@@ -1,0 +1,44 @@
+{
+  "question": "Do average gains establish reliability for an individual target battery?",
+  "claim": "Paired development gains coexist with severe cell heterogeneity and an elementary linear-extrapolation failure; no individual coverage guarantee.",
+  "archetype": "quantitative grid",
+  "backend": "Python/matplotlib; existing Python project workflow",
+  "example_cells": [
+    "MATR_b2c1",
+    "MATR_b4c7"
+  ],
+  "selection": "Fixed in preceding coordinator state before figure generation; retrospective explanatory exception and failure case, not random representative selection",
+  "panels": {
+    "a": "All10 source-cell paired TimeMAE, four point predictors, log scale, paired connectors",
+    "b": "All10 source-cell coverage, three probability references only; dashed nominal80, no linear interval claim",
+    "c": "Entire b2c1 origins100..147, observed and fourpoint predictors, log RUL axis",
+    "d": "Entire b4c7 origins100..529, observed and fourpoint predictors, log RUL axis; preserve huge linear predictions"
+  },
+  "no_exclusion": "All10cell metrics and everyorigin for two preselected sourcecells. No sampling, smoothing, clipping or favorable windows.",
+  "uncertainty": "Raw per-cell estimates and observed/predicted trajectories; no repeatedseed/fold variability bars or new statistical tests",
+  "split": "Existing42fit/10exposedcal, singlefixedseed42; no independent confirmation",
+  "size_mm": [
+    180,
+    140
+  ],
+  "minimum_font_pt": 6.2,
+  "exports": [
+    "editable SVG",
+    "TrueType PDF",
+    "600dpi PNG",
+    "CSV source data",
+    "QA alignment/text/collision/visual receipts"
+  ],
+  "new_fits": 0,
+  "new_model_inference": 0,
+  "raw_feature_reads": 0,
+  "dev_test_reads": 0,
+  "prediction_source": "experiments/causal_linear_threshold_fixed20_v1/predictions.csv",
+  "mixture_cell_metrics": "experiments/lossless_equal_CDF_mixture_v2/per_cell_metrics.json",
+  "linear_cell_metrics": "experiments/causal_linear_threshold_fixed20_v1/per_cell_metrics.json",
+  "source_sha256": {
+    "experiments/causal_linear_threshold_fixed20_v1/predictions.csv": "2baddd17503e5a20ecd33d2464d07a5b35b947a65363ab6a1fad0cc5c5b5eaf6",
+    "experiments/lossless_equal_CDF_mixture_v2/per_cell_metrics.json": "b31f760c4d646c32713c000c9c71bf7d5ea0f3d8dc8ac366bde38fefc8ab5c20",
+    "experiments/causal_linear_threshold_fixed20_v1/per_cell_metrics.json": "39ea79a07bea9fbae85daa03b1ffe54bb96faac25f7cd9fd69759d594a8d9ca6"
+  }
+}

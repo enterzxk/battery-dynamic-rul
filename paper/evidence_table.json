@@ -80,6 +80,22 @@
     {
       "path": "experiments/causal_linear_threshold_fixed20_v1/completion.json",
       "sha256": "86fbaab99e45b247622a915acaee6f8f4a7797cc20f204d6948f14c91b2e7ee3"
+    },
+    {
+      "path": "paper/figures/empirical_reliability_v1/figure_contract.json",
+      "sha256": "8707f05f3d44aa65b34e57ae80cbc0ef8b27f78916a0ff17daf4279df585c760"
+    },
+    {
+      "path": "paper/figures/empirical_reliability_v1/data_validation.json",
+      "sha256": "4b45254ad79637cd6ddb7efa59b520a18adbe002f794349794dd21dbbdc9de5e"
+    },
+    {
+      "path": "paper/figures/empirical_reliability_v1/visual_qa.json",
+      "sha256": "c30cf772c132fccd6c9ded0523aabbd11d88a65f81955909d771b49e7935c202"
+    },
+    {
+      "path": "paper/figures/empirical_reliability_v1/figure.svg",
+      "sha256": "8383db6c2d0dd178f9d141ca0cebd3b74db2ba905bfc2d6092293cddd966252e"
     }
   ],
   "macro_metrics": {

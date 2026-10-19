@@ -479,3 +479,7 @@ paper/EMPIRICAL_RESULTS_DRAFT_ZH.md含同42fit/10cal协议、三臂宏指标和1
 
 ## 最新标准强简单对照：固定20速率直线外推完整失败
 experiments/causal_linear_threshold_fixed20_v1/RESULTS_ZH.md。同10cal4567全部有限、无需fit的RUL=(SOH−.8)/(−past20rate)：宏MAE1488.745941cycle、bias+1488.659946、over10069.1636%、max109335.8353。9/10比动态33.0272与等权35.4520差，b2c1例外MAE4.9885；不clip速率/设horizon/改window救援。预GO missing顺序缺陷已修复并窄deltaPASS，freshGO一次实际计算；独立指标差1.14e−12、3容量delta代数差2.78e−17，0fit/学习模型推理/checkpoint/devtest、CPU20不变。公开无损包精确四列，完整8列预测只服务器；paper/EMPIRICAL_RESULTS_DRAFT_ZH.md已v2，仍开发稿而非创新/独立确认。两份CPTransformer历史validation预测改存reports/completed_cptransformer_predictions_lossless_20261019_root/archive.json+decoder，原CSV服务器/历史保留。下一项只用既有预测做描述图，预指定b2c1/b4c7、保留极值、无新训练/datafeature/test。
+
+
+## 最新论文图：平均收益与个体失效同时可见
+paper/figures/empirical_reliability_v1/figure.svg为可编辑四面板经验图，PDF/600dpiPNG仅服务器；双语CAPTION/40条cell-method与478条b2c1/b4c7完整轨迹源CSV、SHA和QA公开。10cell全部配对误差及覆盖；预指定b2c1是linear例外、b4c7是高估失败。对数轴保留亚周期及极大预测，图c/d范围不同，未平滑/删点/挑窗口；最终对齐/字体6.2pt/遮挡审计通过，彩色和灰度逐面板核看。0fit/推理/rawfeatures/devtest、CPU20不变，不是独立确认/条件覆盖。三份CPMLP历史验证预测改存reports/completed_cpmlp_predictions_lossless_20261019_root/archive.json+decoder，原件/历史保留。下一项仅固定20cycle观测上报延迟压力测试：已有mu_(s−20)与当前存活构成合法剩余分布，所有臂统一origin>=120/4367，0fit/新模型推理/新尺度/rawfeatures/test；须另冻结窄审freshGO，不搜delay/权重，不把此当容量递归救援或新方法创新。

@@ -1,5 +1,5 @@
 # 动态RUL更新的点误差与个体风险权衡：实验结果及局限草稿
-版本：2026-10-19 v2。**开发实验草稿；不是独立确认、正式方法复现或可投稿完成稿。**
+版本：2026-10-19 v3。**开发实验草稿；不是独立确认、正式方法复现或可投稿完成稿。**
 本节仅归纳已经完成的实验，不据写作新增训练或改变选择规则。
 
 ## 1 实验范围与评价口径
@@ -82,3 +82,4 @@ b4c7的早期/动态/混合MAE分别为81.598、55.713、58.320循环；相应�
 - [E7 主文方法冲突范围](../reports/post_mixture_methods_conflict_20261019_root/RESULTS_ZH.md)；本节不扩展外部文献论断。
 
 - [E8 标准因果直线基线](../experiments/causal_linear_threshold_fixed20_v1/root_decision.json)、[独立验证](../experiments/causal_linear_threshold_fixed20_v1/independent_validation.json)、[逐cell结果](../experiments/causal_linear_threshold_fixed20_v1/per_cell_metrics.json)。
+\n\n## 9 描述性经验图\n![Fig.1 个体可靠性经验边界](figures/empirical_reliability_v1/figure.svg)\n\n完整[双语图注](figures/empirical_reliability_v1/CAPTION.md)及源CSV/QA在同目录。图a配对10cell四臂MAE，图b展示平均覆盖掩盖个体失败，c/d完整展示预先指定b2c1与b4c7；对数轴与不同范围明确标出。没有重新生成预测、平滑或挑窗口。本图只整理已有开发证据，不新增独立确认或创新证明。\n

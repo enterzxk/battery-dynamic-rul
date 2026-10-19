@@ -1,0 +1,74 @@
+{
+  "status": "PASS_FINAL_RENDER_AND_VISUAL_REVIEW",
+  "backend": "Python/matplotlib only",
+  "rendered_font_min_pt": 6.2,
+  "alignment": "PASS at1.5pt default tolerance; no exemptions",
+  "collision": "PASS:0fail0warn on finalPDF",
+  "grayscale": "Inspected final grayscale: markers and line styles preserve method distinctions",
+  "source_preflight_warnings": {
+    "EXPORT_RASTER": "SVG/PDF are authoritative vectors; PNG600dpi preview. TIFF not requested; no accepted-journal submission claim.",
+    "FINAL_WIDTH": "Width180mm,height140mm explicitly recorded in contract and finalPDF geometry; static validator did not infer variable assignments.",
+    "LOG_GUARD": "All plotted MAEs and RUL values asserted strictlypositive. Every curve extent asserted inside finalaxes; no clipping or pseudocount.",
+    "UNCERTAINTY_ENCODING": "Points are per-source-cell estimates; trajectories are individual deterministic predictions. No acrossseed/fold aggregate or inferred errorbars."
+  },
+  "initial_render": {
+    "status": "FAILED_COLLISION_AND_SUBCYCLE_DISPLAY_BOUNDS",
+    "preserved": "_qa/initial_render",
+    "repair": "Extend b2c1 logrange to include minimum0.213129cycle; add coverage marker margin, preserve predictions. Final complete geometry/text/collision audits rerun."
+  },
+  "panels": [
+    {
+      "panel": "a",
+      "role": "Paired baseline comparison",
+      "n": "10sourcecells x4methods",
+      "summary": "percell meanabsoluteerror",
+      "uncertainty": "none:individual cellestimate, no seedaggregate",
+      "visual": "All40points and10paired connectors visible, positive logaxis, labels clear",
+      "pass": true
+    },
+    {
+      "panel": "b",
+      "role": "Individual probability failure",
+      "n": "10sourcecells x3reference distributions",
+      "summary": "within-cell empiricalcoverage",
+      "uncertainty": "none:descriptive temporal-origin fraction",
+      "visual": "All30markers including0percent visible; nominal80 separate; no linearcoverage fabricated",
+      "pass": true
+    },
+    {
+      "panel": "c",
+      "role": "Exception boundary",
+      "n": "all48origins b2c1 x5curves",
+      "summary": "observedRUL and4pointpredictions",
+      "uncertainty": "none:individual trajectories",
+      "visual": "Complete100..147 range, subcycle prediction retained; colors/styles distinguishable",
+      "pass": true
+    },
+    {
+      "panel": "d",
+      "role": "Failure boundary",
+      "n": "all430origins b4c7 x5curves",
+      "summary": "observedRUL and4pointpredictions",
+      "uncertainty": "none:individual trajectories",
+      "visual": "Complete100..529 range, large linearpeak retained; logaxis explicit",
+      "pass": true
+    }
+  ],
+  "data_integrity": "All10 cellestimates and all478 origins for two preselected cases; source bytes unchanged, path.simplifyFalse, no point deletion/smoothing",
+  "new_fits": 0,
+  "new_model_inference": 0,
+  "new_raw_feature_reads": 0,
+  "dev_test_reads": 0,
+  "scope": "Descriptive development figure, not journal acceptance/submission compliance or independent confirmation",
+  "qa_runtime": "Pinned PyMuPDF1.24.14 installed only into project-private QA target; no global environment change",
+  "source_data_hashes": {
+    "source_cell_metrics.csv": "52d6d2fc92a486c3c9bdc9121732496bb77faa5912a06a4cb55f4f9b77e60e82",
+    "source_trajectories.csv": "2e7dd94f73a372f1cbe8f63d34a94fe9cb4cce9ca10317aa2d55b21f0ad0bc54"
+  },
+  "final_artifact_sha256": {
+    "figure.svg": "8383db6c2d0dd178f9d141ca0cebd3b74db2ba905bfc2d6092293cddd966252e",
+    "figure.pdf": "9d662892dfdd93e9f91e190b438acdf5c87277fd9d4f68cb1ad44fbe5f57bdb6",
+    "figure.png": "737a7c902464db9e740cd2b83012e8d713823c7674afce976a2018db79909378",
+    "plot_figure.py": "41896b0b802d7d117dd4cdd305c091fcc78cfd57f23caf06d86c482f472e48a9"
+  }
+}

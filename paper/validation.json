@@ -13,8 +13,10 @@
   "new_model_inference": 0,
   "raw_feature_reads": 0,
   "dev_test_reads": 0,
-  "draft_sha256": "15fec8a4a69d3ba65d7ef0e6a1fe17bd6eeebbb37504bf2b705f129931c5a6a6",
+  "draft_sha256": "dfb8eaf101273ae33405b7106607537c0e2209127039dfe3b37c8d90d7f42868",
   "not_submission_ready": true,
   "linear_baseline_completed": true,
-  "linear_independent_validation_sha256": "a2704149d3f7af617a3b9fbeb750d25ff4217e64c5f7103603d9197cea29e0a7"
+  "linear_independent_validation_sha256": "a2704149d3f7af617a3b9fbeb750d25ff4217e64c5f7103603d9197cea29e0a7",
+  "figure_visual_qa_sha256": "c30cf772c132fccd6c9ded0523aabbd11d88a65f81955909d771b49e7935c202",
+  "figure_embedded": true
 }
