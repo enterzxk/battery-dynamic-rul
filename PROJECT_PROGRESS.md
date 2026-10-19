@@ -650,3 +650,11 @@
 - 最小验证：CS2协议与同页INR/partial-cycle段落明确区分，未借其他小节证明起始测量；1搜索+1官方页面读取，0raw下载/解码/fit/推理/checkpoint/devtest，CPU20不变。
 - 阻塞/风险：实际完整首容量/跨日期循环编号/文件完整性/实际EOL或删失/身份重叠/现模型policy输入适配未核；0.88Ah只是80%nominal候选项目定义，不预判事件。raw_download_allowed=false、fit_allowed=false、confirmation_ready=false。
 - 下一步：仅官方HTML解析35的链接+单次HEAD，HTML<=262144bytes/15秒、最多2请求、rawbody0；未知/错误STOP，不转GET或接触其他电芯，后续获取/解码/模型仍需fresh exactGO，不重访Oxford403。
+
+
+## 2026-10-19：CALCE单次header前置请求域名解析失败，保留STOP
+- 已完成：冻结metadata预算仅执行一次；首个HTML请求URLError/Temporary failure in name resolution，HTML0bytes、HEAD0次、rawbody0，STOP_NO_RETRY_NO_GET_FALLBACK。不是成功获取文件头。
+- 证据：reports/calce_cs2_head_preflight_20261019_root/receipt.json及RESULTS_ZH.md；绑定原budget SHA dfea2371f45d16818f94b98559d669821f481009250193faa8f38a26e7c48bfe。
+- 最小验证：1HTML尝试/0HEAD/无重定向，0.0074秒；raw下载/解码/fit/推理/checkpoint/devtest0；未改DNS/代理或认证，预算已消费，不重试。
+- 阻塞/风险：服务器名称解析依赖，不能扩大成CALCE源站离线或数据不存在；35链接/Content-Length仍UNKNOWN，官方协议先前成功读取证据保留，raw/模型门不变。
+- 下一步：等名称解析恢复外部证据或可信官方响应头证据后，另签未完成单文件header预算；不循环失败请求、不GET下载fallback；额度恢复不替代网络修复。

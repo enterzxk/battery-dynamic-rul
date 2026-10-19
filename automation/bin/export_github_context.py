@@ -242,6 +242,9 @@ def main():
     for name in ['RESULTS_ZH.md','evidence.json','decision.json','prospective_roles.json','header_preflight_budget.json']:
         chosen.add('reports/calce_cs2_metadata_20261019_root/' + name)
 
+    for name in ['receipt.json','RESULTS_ZH.md']:
+        chosen.add('reports/calce_cs2_head_preflight_20261019_root/' + name)
+
     contents, files, skipped = {}, [], []
     mapping = {'README.md': 'docs/GITHUB_README_ZH.md', 'agent.md': 'AGENTS.md'}
     mapping.update({rel: rel for rel in sorted(chosen)})
