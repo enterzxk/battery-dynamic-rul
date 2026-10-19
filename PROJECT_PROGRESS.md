@@ -570,3 +570,11 @@
 - **最小验证**：两源原字节SHA、公式关键位置及分位数池化与CDF混合的点质量反例核对；版本元数据回读。0fit/新推理/devtest，CPU20不变，未新增或消费训练GO。
 - **阻塞/风险**：普通融合/非交叉/残差校准已有先例；本项目等权CDF仅点/风险开发PASS、概率FAIL，cal反复暴露/旧sigma/event-only/物理身份限制保留。两篇非系统新颖性证明。
 - **下一步**：仅现有capacity20预测的s−20→s延迟可见容量残差与动态相对等权CDF损失差的0fit关联诊断；先核键/role/target_cycle可对齐性，无证据STOP，不补训/搜权重阈值/启用门控，不重开recursiveEOL。
+
+
+## 2026-10-19：已到达20cycle容量残差代理诊断NO_GO
+- **已完成**：仅保存预测按s−20→s因果对齐4367行/10cal，排除每cell100–119共200无反馈行。容量绝对误差与动态相对等权CDF绝对RUL损失差的cell内Spearman：原始6/10正、一阶差分6/10正、同时4/10，冻结7/10筛选FAIL；不启用门控。
+- **证据**：reports/delayed_capacity_reliability_20261019_root/RESULTS_ZH.md、protocol/diagnose/ROOT_GO、metrics/per_cell_metrics/root_decision/validation/completion；完整aligned_diagnostic_rows.csv留服务器，SHA9d6a260987ad40f9f5d818544c4b03574df946bb356a08d96079cf86f99a7710。
+- **最小验证**：SHA/唯一键/cal角色/RUL真值/实际20cycle与as-of断言通过，独立平均秩重算相关最大差8.33e−17。0fit/新模型推理/checkpoint/rawfeatures/devtest；一次0fit诊断GO消费，CPU20不变。
+- **阻塞/风险**：平均相关.033578、一阶差分.019400，方向不稳；次要严重高估差7/10常数记null。cal暴露/时序依赖/存活选择/物理身份限制保留；不能作因果或独立确认，不以新阈值/horizon救援。
+- **下一步**：停止扩展代理，写中文论文实验结果与局限草稿及来源证据表，仅复用固定早期存活/动态/等权CDF/失败结果；不训练/test，不称可投稿完成或创新已证。

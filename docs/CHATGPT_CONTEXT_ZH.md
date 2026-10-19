@@ -467,3 +467,7 @@ experiments/lossless_equal_CDF_mixture_v2/RESULTS_ZH.md。Fmix=.5早期存活+.5
 
 ## 最新：等权强基线后的方法冲突已核两篇
 reports/post_mixture_methods_conflict_20261019_root/RESULTS_ZH.md。P20主文/附录式(3)/(8)/(9)/(11)–(14)已有非交叉概率RUL专家融合，但为分位数加权，区别于本项目完整CDF混合；P40§3.2.3式(17)–(21)已有下一步SOH残差区间，不能迁移成首次EOL分布覆盖保证。两份保存主文原SHA与版本页核对，不从摘要推断、不声称系统新颖性。普通混合/非交叉/校准不作创新；固定等权CDF仍是强开发参考，点/风险PASS不解概率FAIL。下一项只读现有20cycle容量预测，核在s可见的s−20→s残差能否对齐并与动态相对等权损失差有逐cell关联；未实施，0fit/新推理/devtest，不搜门控/权重，无对齐证据STOP。CPU20、神经4fit2580steps不变。
+
+
+## 最新0fit诊断：容量延迟反馈不足以支持可靠性门控
+reports/delayed_capacity_reliability_20261019_root/RESULTS_ZH.md。只用已存s−20发出且在s已观测的容量误差，4367行/10cal；早20cycle共200无反馈行排除不补。与动态相对等权CDF绝对RUL损失差逐cell相关：6/10正、均值.033578；一阶差分6/10正、均值.019400；同时4/10，预先冻结7/10筛选失败，NO_GO当前残差代理门控，不改预测/搜阈值或horizon。次要严重高估差7cell常数记null。独立平均秩重算差8.33e−17；0fit/推理/checkpoint/rawfeatures/devtest，CPU20不变。下一项只写论文实验结果/局限草稿与证据表，停止代理堆叠；开发cal反复暴露、独立确认与新颖性未闭合，不能称投稿完成。

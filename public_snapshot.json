@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-19T00:18:21.371050+00:00",
-  "content_sha256": "63ebf32823ee88c7921f4552e11859a025d4e98deafe3df1fc430d09080d8959",
-  "file_count": 865,
+  "snapshot_utc": "2026-10-19T00:30:37.171538+00:00",
+  "content_sha256": "359d6f9d5e3d477cea626efd607496a859ead3160e544a31472030b0d5e4e432",
+  "file_count": 874,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,8 +14,8 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 102511,
-      "sha256": "2b592edd15fed6ce29bdfca12f3602706c6d3694497e9b6bb261a0ffc94751e3"
+      "bytes": 103864,
+      "sha256": "70b3e2be3d08f0e38e06481689b1c1b7e4e539cd8795dc77590bd50600058327"
     },
     {
       "path": "README.md",
@@ -38,8 +38,8 @@
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 35958,
-      "sha256": "8aaa6d54b923e6c8409d5f3b95aa0576c3da716cc16d6c50a17cbff822c6576f"
+      "bytes": 36604,
+      "sha256": "4bfefd460af274bcde5a375a953aeac89acbc6c9e5f8ca339d374c62343f8375"
     },
     {
       "path": "automation/bin/matr_raw_batch2_asset_worker_v1.py",
@@ -164,8 +164,8 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 85139,
-      "sha256": "3af0e171312a63b605795bc5d8b4448632910a3fb8e07a7d5151083acd9c68ed"
+      "bytes": 85934,
+      "sha256": "3fd50529eef8cef7a0d0d55a4c2d18924b45adf13227a39a2e7131973e601671"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
@@ -3292,6 +3292,60 @@
       "source_path": "reports/data_v1_raw_nasa_20261018_root/two_cell_check.json",
       "bytes": 1946,
       "sha256": "a2ce27e4a77a72ab7dae8847d0e3d387eeffd8dfed05349390e2a12efc0b27e3"
+    },
+    {
+      "path": "reports/delayed_capacity_reliability_20261019_root/RESULTS_ZH.md",
+      "source_path": "reports/delayed_capacity_reliability_20261019_root/RESULTS_ZH.md",
+      "bytes": 4104,
+      "sha256": "2e10419d41e2a40ea0da498219cbed618b17e4f6e43594b145ebcef9ab9a6e98"
+    },
+    {
+      "path": "reports/delayed_capacity_reliability_20261019_root/ROOT_GO.json",
+      "source_path": "reports/delayed_capacity_reliability_20261019_root/ROOT_GO.json",
+      "bytes": 422,
+      "sha256": "cbecbba6d11ad83e38012432c42bb1d7fe806c39785e1dd90f5efadb07a4f722"
+    },
+    {
+      "path": "reports/delayed_capacity_reliability_20261019_root/completion.json",
+      "source_path": "reports/delayed_capacity_reliability_20261019_root/completion.json",
+      "bytes": 527,
+      "sha256": "6ef148587933205f07740a86a91ec839081fb5e14bcf861aa6d8fb06e0dc3f64"
+    },
+    {
+      "path": "reports/delayed_capacity_reliability_20261019_root/diagnose.py",
+      "source_path": "reports/delayed_capacity_reliability_20261019_root/diagnose.py",
+      "bytes": 6471,
+      "sha256": "22151c2d5642e9fd868b8a1c1daa5ba6b806910ae5f9ca765f7adf14c8fe675e"
+    },
+    {
+      "path": "reports/delayed_capacity_reliability_20261019_root/metrics.json",
+      "source_path": "reports/delayed_capacity_reliability_20261019_root/metrics.json",
+      "bytes": 526,
+      "sha256": "a601c21ff8c4da59c04b474a7eeb51552f4644cf526b3fd3d0fc6dbc46c06789"
+    },
+    {
+      "path": "reports/delayed_capacity_reliability_20261019_root/per_cell_metrics.json",
+      "source_path": "reports/delayed_capacity_reliability_20261019_root/per_cell_metrics.json",
+      "bytes": 2279,
+      "sha256": "64f0bcfed948a0534e2abb4bbc2e05f8ee31a4655e42e660a58b4a7b025f291d"
+    },
+    {
+      "path": "reports/delayed_capacity_reliability_20261019_root/protocol.json",
+      "source_path": "reports/delayed_capacity_reliability_20261019_root/protocol.json",
+      "bytes": 2592,
+      "sha256": "3876cc8cc1657229d29953a7fc1d28deaf8d5301768d855c7b0851854d8a956a"
+    },
+    {
+      "path": "reports/delayed_capacity_reliability_20261019_root/root_decision.json",
+      "source_path": "reports/delayed_capacity_reliability_20261019_root/root_decision.json",
+      "bytes": 1162,
+      "sha256": "dbe2eae86bd4ad68d8a0798f65dea42fb697ae3b194cef6dd8a31e393b3c921a"
+    },
+    {
+      "path": "reports/delayed_capacity_reliability_20261019_root/validation.json",
+      "source_path": "reports/delayed_capacity_reliability_20261019_root/validation.json",
+      "bytes": 1751,
+      "sha256": "b135f33a02dcb585e63869f7d66c466f446874c68952f8cedca788e9c1c41095"
     },
     {
       "path": "reports/development_pilot/cpmlp_hust_seed42_v3/analysis.json",

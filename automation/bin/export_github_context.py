@@ -206,6 +206,8 @@ def main():
 
     chosen.update(['reports/post_mixture_methods_conflict_20261019_root/RESULTS_ZH.md','reports/post_mixture_methods_conflict_20261019_root/evidence.json','reports/post_mixture_methods_conflict_20261019_root/validation.json'])
 
+    chosen.update(['reports/delayed_capacity_reliability_20261019_root/RESULTS_ZH.md', 'reports/delayed_capacity_reliability_20261019_root/protocol.json', 'reports/delayed_capacity_reliability_20261019_root/diagnose.py', 'reports/delayed_capacity_reliability_20261019_root/ROOT_GO.json', 'reports/delayed_capacity_reliability_20261019_root/metrics.json', 'reports/delayed_capacity_reliability_20261019_root/per_cell_metrics.json', 'reports/delayed_capacity_reliability_20261019_root/root_decision.json', 'reports/delayed_capacity_reliability_20261019_root/validation.json', 'reports/delayed_capacity_reliability_20261019_root/completion.json'])
+
     contents, files, skipped = {}, [], []
     mapping = {'README.md': 'docs/GITHUB_README_ZH.md', 'agent.md': 'AGENTS.md'}
     mapping.update({rel: rel for rel in sorted(chosen)})
