@@ -96,6 +96,34 @@
     {
       "path": "paper/figures/empirical_reliability_v1/figure.svg",
       "sha256": "8383db6c2d0dd178f9d141ca0cebd3b74db2ba905bfc2d6092293cddd966252e"
+    },
+    {
+      "path": "experiments/reporting_delay_fixed20_v1/protocol.json",
+      "sha256": "d73f8c07578129de75dc0a00a316454d4dbf5a905ab5fd6b9c18588de4f8033e"
+    },
+    {
+      "path": "experiments/reporting_delay_fixed20_v1/metrics.json",
+      "sha256": "746c257eccf3d1c710c2c9e768cfbb86d2fa8f430229f0b8ff6e7e2790530f59"
+    },
+    {
+      "path": "experiments/reporting_delay_fixed20_v1/per_cell_metrics.json",
+      "sha256": "ae8cc63c5849e0d157bc61a47bc4168526eb6dc44a330b9f0ebbaea674e97c3c"
+    },
+    {
+      "path": "experiments/reporting_delay_fixed20_v1/comparisons.json",
+      "sha256": "52d94c93931ba2a8d09589221372c1ddde88fccdba5391d4a67e622e490bac6f"
+    },
+    {
+      "path": "experiments/reporting_delay_fixed20_v1/root_decision.json",
+      "sha256": "9ee7fd0ccb6f8d6935504580564c04c55a1e56b07b3f8d10475d1a05c80f7b8f"
+    },
+    {
+      "path": "experiments/reporting_delay_fixed20_v1/completion.json",
+      "sha256": "635f7786c743b1824e76c11aaf635ace431bd0b3c2bd8f377078ffd6c35bf96e"
+    },
+    {
+      "path": "experiments/reporting_delay_fixed20_v1/independent_validation.json",
+      "sha256": "06f034d1b9b8953c2c24fb2094ec01dedda69f924c6c79a7b0be998d30df5344"
     }
   ],
   "macro_metrics": {
@@ -135,5 +163,6 @@
     "MAE": 1488.7459412546182,
     "bias": 1488.6599461500082,
     "severe_over100": 0.691636403725688
-  }
+  },
+  "reporting_delay_scope": "5arms common4367 origins, development only"
 }

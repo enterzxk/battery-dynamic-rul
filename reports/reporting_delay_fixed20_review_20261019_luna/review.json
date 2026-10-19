@@ -1,0 +1,25 @@
+{
+  "status": "NEEDS_FIX",
+  "reviewed_at_utc": "2026-10-19T01:45:00Z",
+  "reviewed_files": {
+    "runner": {"path": "/home/yndx/zxk/rul/experiments/reporting_delay_fixed20_v1/runner.py", "sha256": "44d791ae962a32c5abeebb7b97cf8789dca8e06282c125030330edd9b7d1d7cb"},
+    "protocol": {"path": "/home/yndx/zxk/rul/experiments/reporting_delay_fixed20_v1/protocol.json", "sha256": "d73f8c07578129de75dc0a00a316454d4dbf5a905ab5fd6b9c18588de4f8033e"}
+  },
+  "scope": "Static narrow review only. Runner was not executed; no new CDF or metrics were computed; no rawfeatures, checkpoints, or dev/test data were read.",
+  "checks": {
+    "frozen_runner_and_protocol_hashes": "PASS; actual SHA256 values match the supplied frozen values.",
+    "survival_lag_distribution_and_quantile_inverse": "PASS by static derivation: F(r)=1-S_a(20+r)/S_a(20), a=s-20; inverse uses ndtri_exp(log S_a(20)+log(1-q)) and subtracts 20.",
+    "equal_weight_full_cdf_mixture": "PASS: protocol and runner combine .5*F_early + .5*F_lag, invert by bisection, and do not average component medians.",
+    "common_cohort_and_causal_actual_cycle_alignment": "PASS by static checks: origin>=120; lag lookup uses exact (cell_id, origin-20); schedule mu is taken at that actual lag cycle; truth values are checked for alignment; first 20 origins per cell are excluded.",
+    "source_hashes_and_schema_metadata": "PASS: all five frozen source hashes match protocol. Point source has role/origin/event_cycle/true_RUL/schedule_RUL_raw_log fields; component and mixture tables expose unique-join fields and quantile/risk outputs; parameter and cohort JSON metadata identify the A residual sigma and calibration roles. Cohort metadata marks lifetime_values_used_for_split=false.",
+    "owner": "PASS: protocol owner matches coordinator owner and thread_id; takeover_verified=true; new_fits_allowed=false.",
+    "single_claim_budget_and_failure_receipt": "PASS by static inspection: nonblocking project lock, exclusive invocation.claim, 60-second alarm, zero-fit/read budget assertions, exclusive output creation, and FAILED_STOP_NO_RETRY failure receipt. No invocation.claim or result receipt currently exists in the task directory.",
+    "decision_gate_and_probability_language": "PASS by static inspection: primary comparison uses >=5% relative MAE reduction, >=7 improved cells, paired-cell bootstrap CI lower bound >0, and severe-over-100 increment <=1 percentage point. Probability metrics are descriptive; prior probability FAIL is explicitly retained. Repeatedly exposed 10-cell calibration cohort, old sigma, event-only cohort, and unknown physical identity are qualified in protocol limits."
+  },
+  "blocking_issue": {
+    "path": "/home/yndx/zxk/rul/experiments/reporting_delay_fixed20_v1/ROOT_GO.json",
+    "finding": "The required execution ticket is absent. Runner requires this ticket to authorize one fixed-20 run, bind runner/protocol hashes, specify and hash the prior review, and confirm max_runs=1/max_new_fits=0. The referenced prior-review file therefore could not be resolved or verified.",
+    "impact": "No execution authorization can be verified from the current directory state; do not run this runner until the authorized GO ticket and its referenced review are present and hash-verified."
+  },
+  "review_result": "The reviewed formulas, cohort alignment, source bindings, decision gate, and runner's one-shot/failure-preservation structure pass static inspection. Overall NEEDS_FIX is due solely to the absent ROOT_GO authorization ticket and unverifiable ticket-bound prior review."
+}

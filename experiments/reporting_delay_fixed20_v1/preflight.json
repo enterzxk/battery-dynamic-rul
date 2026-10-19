@@ -1,0 +1,20 @@
+{
+  "status": "PASS_KEY_AND_SOURCE_PREFLIGHT_NO_CDF",
+  "unique_source_keys": 4567,
+  "common_origin_keys": 4367,
+  "excluded_keys": 200,
+  "cal_cells": [
+    "MATR_b2c1",
+    "MATR_b2c21",
+    "MATR_b2c24",
+    "MATR_b2c41",
+    "MATR_b2c6",
+    "MATR_b4c14",
+    "MATR_b4c19",
+    "MATR_b4c26",
+    "MATR_b4c29",
+    "MATR_b4c7"
+  ],
+  "new_CDF_evaluations": 0,
+  "note": "Handoff transcribed component SHA as mixture SHA. Protocol binds actual distinct mixture6af2d860 and component2874159a. Source files unchanged."
+}

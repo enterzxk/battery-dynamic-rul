@@ -1,0 +1,11 @@
+{
+  "status": "PASS_INDEPENDENT_SAVED_OUTPUT_RECOMPUTE",
+  "rows": 21835,
+  "groups": 50,
+  "maximum_macro_metric_difference": 5.684341886080802e-14,
+  "scalar_lognormal_CDF_examples": 150,
+  "maximum_scalar_CDF_difference": 1.915134717478395e-15,
+  "primary_gate_agrees": true,
+  "new_fit_or_model_inference": 0,
+  "raw_features_or_devtest": 0
+}

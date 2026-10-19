@@ -1,0 +1,10 @@
+{
+  "status": "PASS_BYTE_EXACT",
+  "original_path": "experiments/cpmlp_calb_recipe_adapt_seed2021_v1/budget_ledger.jsonl",
+  "original_bytes": 77135,
+  "archive_bytes": 20173,
+  "sha256": "42e38ab412da36a2a0fc81f138635f6faf301f101b2cb791ce677beec2a624f7",
+  "original_server_file_retained": true,
+  "old_git_history_retained": true,
+  "no_metric_or_prediction_recalculation": true
+}

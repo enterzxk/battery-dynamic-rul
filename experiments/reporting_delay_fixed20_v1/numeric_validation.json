@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "max_quantile_CDF_error": 4.3021142204224816e-15,
+  "all_arms_same4367": true,
+  "cells": [
+    "MATR_b2c1",
+    "MATR_b2c21",
+    "MATR_b2c24",
+    "MATR_b2c41",
+    "MATR_b2c6",
+    "MATR_b4c14",
+    "MATR_b4c19",
+    "MATR_b4c26",
+    "MATR_b4c29",
+    "MATR_b4c7"
+  ],
+  "excluded_rows": 200,
+  "lag_actual_cycles": 20,
+  "source_roles": "calibration_only",
+  "labels_scoring_only": true
+}

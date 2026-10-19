@@ -1,0 +1,48 @@
+{
+  "lag20_half_CDF_vs_early_survival": {
+    "relative_MAE_reduction": 0.3271761644103969,
+    "cells_MAE_improved": 10,
+    "pairedcell_MAE_difference_CI95": [
+      9.623447442674996,
+      26.635523074980462
+    ],
+    "severe_over100_increment": 0.003414634146341464,
+    "coverage80_change": 0.03377291874344934,
+    "interval_score80_change": -51.26408348981181,
+    "point_risk_retention_gate_pass": true
+  },
+  "lag20_dynamic_survival_vs_early_survival": {
+    "relative_MAE_reduction": 0.3680019681505132,
+    "cells_MAE_improved": 9,
+    "pairedcell_MAE_difference_CI95": [
+      8.583747205404203,
+      32.30561449917568
+    ],
+    "severe_over100_increment": 0.030143671697987474,
+    "coverage80_change": -0.0050747606787320265,
+    "interval_score80_change": -106.32732191395382,
+    "point_risk_retention_gate_pass": false
+  },
+  "lag20_half_CDF_vs_current_half_CDF": {
+    "relative_MAE_reduction": -0.08643389804173074,
+    "cells_MAE_improved": 0,
+    "pairedcell_MAE_difference_CI95": [
+      -4.697186053445199,
+      -1.5307360296615626
+    ],
+    "severe_over100_increment": 0.0,
+    "coverage80_change": -0.014397673005237865,
+    "interval_score80_change": 9.403735685209796
+  },
+  "lag20_dynamic_survival_vs_current_dynamic": {
+    "relative_MAE_reduction": -0.10515952930489525,
+    "cells_MAE_improved": 0,
+    "pairedcell_MAE_difference_CI95": [
+      -5.387984667104762,
+      -1.6276136935633037
+    ],
+    "severe_over100_increment": 0.0,
+    "coverage80_change": -0.014393469076186105,
+    "interval_score80_change": 17.189623471241987
+  }
+}

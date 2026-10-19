@@ -1,0 +1,82 @@
+{
+  "owner": "01a151cb-bf57-7113-bd9d-a58035e14194",
+  "question": "At fixed 20 actual-cycle reporting lag, does saved-history distribution plus survival retain point/risk benefit over early survival on common origins?",
+  "delay_cycles": 20,
+  "sigma": 0.19898311654196568,
+  "weight": 0.5,
+  "common_cohort": {
+    "role": "calibration",
+    "cells": 10,
+    "origins": 4367,
+    "origin_min": 120,
+    "excluded_first20_per_cell": 200,
+    "join": "unique (cell_id, actual origin); no fill; a=s-20>=100"
+  },
+  "arms": [
+    "early_survival",
+    "current_dynamic",
+    "current_half_CDF",
+    "lag20_dynamic_survival",
+    "lag20_half_CDF"
+  ],
+  "primary": "lag20_half_CDF vs early_survival",
+  "secondary": "lag20_dynamic_survival vs early_survival; each lag arm vs matched current arm descriptive",
+  "point_risk_retention_gate": {
+    "relative_MAE_reduction_min": 0.05,
+    "cells_MAE_improved_min": 7,
+    "severe_over100_increment_max": 0.01,
+    "paired_bootstrap_CI_lower_strictly_above": 0,
+    "bootstrap_replicates": 2000,
+    "bootstrap_seed": 42
+  },
+  "probability_policy": "Report coverage80, intervalscore80, width80, Brier100/300 descriptively. No probability gate or reliability claim; previous probability FAIL remains. This new question does not change legacy gates.",
+  "formulas": {
+    "lag_CDF": "1-S_a(20+r)/S_a(20) with R_a lognormal(mu_a,sigma), mu_a=saved schedule_RUL_raw_log at a=s-20",
+    "lag_quantile": "exp(mu_a-sigma*ndtri_exp(logS_a(20)+log(1-q)))-20",
+    "mixture_CDF": ".5F_early_at_s+.5F_lag_at_s; invert CDF with64 bisections bracketed by same component quantiles; no averaged medians"
+  },
+  "budget": {
+    "max_runs": 1,
+    "max_seconds": 60,
+    "new_fits": 0,
+    "model_construction": 0,
+    "new_model_inference": 0,
+    "checkpoint_loads": 0,
+    "raw_feature_reads": 0,
+    "dev_test_reads": 0,
+    "new_scale_estimates": 0,
+    "new_weight_estimates": 0,
+    "delay_search": 0
+  },
+  "stop": "Any hash/key/role/label/as-of/numeric/lock/budget mismatch stops. Failure receipt retained; no silent retry.",
+  "limits": [
+    "Repeatedly exposed10cal development only; not independent confirmation",
+    "Old fixed sigma not independently calibrated for delayed forecast",
+    "Event-only, survival-selected, unknown physical serial/source identity, known fixed policy",
+    "No unknown-policy claim, conformal guarantee, innovation claim or complex gate expansion",
+    "All prior NO_GO and cumulative CPU20/neural4fit2580steps preserved"
+  ],
+  "sources": {
+    "point": {
+      "path": "experiments/policy_lossless_schedule_point_seed42_v1/calibration_predictions.csv",
+      "sha256": "98a0ef87f4ab9ea2a9ff0588dbde2890f56768cae5be3585cba4510eeb55aa0c"
+    },
+    "components": {
+      "path": "reports/lossless_survival_probability_20261019_root/derived_distribution_predictions.csv",
+      "sha256": "2874159abbe8bfbe3c03a434b5182c9472874d1994f1db67a3cac37c2e43e781"
+    },
+    "mixture": {
+      "path": "experiments/lossless_equal_CDF_mixture_v2/mixture_predictions.csv",
+      "sha256": "6af2d8605428e18fc396b6e159ef00329bd1dfce04510210952f524a7adf700d"
+    },
+    "parameters": {
+      "path": "experiments/matr_raw_heldout_calibration_seed42_v1/fit_parameters.json",
+      "sha256": "ca95515be2d4977aa5160f9aa520acb996c6bd83eff5618ab72e8655f34711e5"
+    },
+    "cohort": {
+      "path": "experiments/matr_raw_heldout_calibration_seed42_v1/cohort.json",
+      "sha256": "42535de5825f6857e3aa69a596306a909a9a1b3ac087c43631032f6d293ef289"
+    }
+  },
+  "frozen_utc": "2026-10-19T01:36:14.960031+00:00"
+}

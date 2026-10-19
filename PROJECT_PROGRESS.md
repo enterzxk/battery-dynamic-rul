@@ -610,3 +610,11 @@
 - 最小验证：旧交接SHA一致，owner/thread为V14自身，两项目锁可独占，pending_experiment=null，CPU20不变。
 - 阻塞/风险：固定20cycle观测上报延迟实验尚未实现/冻结/窄审/GO/执行；迁移不能当实验完成，cal暴露与旧NO_GO保留。
 - 下一步：V15核额度/锁后冻结仅保存mu_(s-20)+存活条件化的共同4367origin压力测试，一次必要窄审+fresh0fitGO后实际一次；无fit/新模型推理/checkpoint/rawfeatures/devtest。
+
+
+## 2026-10-19：V15固定20cycle观测上报延迟真实0fit完成
+- 已完成：五臂统一10cal/4367共同前缀；延迟等权CDF MAE37.011914 vs早期55.009813，改善32.7176%、10/10、差CI95[9.623447,26.635523]cycle，严重高估增0.341463个百分点，冻结点/风险保留PASS；纯延迟动态MAE34.766094但风险增3.014367个百分点，联合FAIL。
+- 证据：experiments/reporting_delay_fixed20_v1的RESULTS_ZH/protocol/runner/ROOT_GO/metrics/per_cell_metrics/comparisons/numeric_validation/independent_validation/completion/root_decision；完整21835行predictions.csv仅服务器，SHAa42db19b030793f5570e5a70e865cb637526f11f35ee9b0568bca9f349877fd5；paper草稿v4纳入结果。
+- 最小验证：独立窄审（保留流程更正前审查）+fresh exactGO后一次0.27秒执行；独立50组宏评分差5.68e−14，150项CDF差1.92e−15。0fit/学习模型推理/checkpoint/rawfeatures/devtest，累计CPU20/神经4fit2580steps不变，GO消费。
+- 阻塞/风险：延迟相对及时观测使动态/混合MAE恶化10.5160%/8.6434%，各0/10改善；混合宏覆盖82.5981%掩盖b2c1覆盖0%与b2c6仅30.9463%。仅重复暴露开发稳健性，旧sigma/物理身份/event-only/policy边界及旧概率FAIL保留，非无损延迟、个体保证或新颖性证明。完成CALB历史ledger77135→20173bytes原字节无损归档，服务器/旧Git历史保留，不扩12MiBcap。
+- 下一步：固定方法独立确认的窄协议与身份适用范围；复用已有审计，不以更多10cal调参替代确认，单独授权/数据身份门槛关闭前不读18dev/test、不训练或搜索delay/权重/尺度。

@@ -1,0 +1,17 @@
+{
+  "status": "COMPLETE_ONE_FIXED20_REPORTING_DELAY",
+  "rows_per_arm": 4367,
+  "arms": 5,
+  "new_fits": 0,
+  "new_model_inference": 0,
+  "checkpoint_loads": 0,
+  "raw_feature_reads": 0,
+  "dev_test_reads": 0,
+  "new_scale_estimates": 0,
+  "new_weight_estimates": 0,
+  "elapsed_seconds": 0.27015383914113045,
+  "runner_sha256": "44d791ae962a32c5abeebb7b97cf8789dca8e06282c125030330edd9b7d1d7cb",
+  "protocol_sha256": "d73f8c07578129de75dc0a00a316454d4dbf5a905ab5fd6b9c18588de4f8033e",
+  "GO_sha256": "b1c8eb7122f2496db8aa563b5a72b115aa0b351e4c8db930f4f42c0095c9dab2",
+  "predictions_sha256": "a42db19b030793f5570e5a70e865cb637526f11f35ee9b0568bca9f349877fd5"
+}

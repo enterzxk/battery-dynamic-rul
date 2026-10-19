@@ -218,6 +218,14 @@ def main():
     chosen.difference_update(['experiments/cpmlp_hust_pilot_seed42/fit_runs/fit_20261016T034610_311103Z/val_predictions_epoch_001.csv', 'experiments/cpmlp_hust_pilot_seed42/fit_runs/fit_20261016T034610_311103Z/val_predictions_epoch_002.csv', 'experiments/cpmlp_hust_pilot_seed42/fit_runs/fit_20261016T034610_311103Z/val_predictions_epoch_003.csv'])
     chosen.update(['paper/figures/empirical_reliability_v1/figure.svg', 'paper/figures/empirical_reliability_v1/plot_figure.py', 'paper/figures/empirical_reliability_v1/figure_contract.json', 'paper/figures/empirical_reliability_v1/CAPTION.md', 'paper/figures/empirical_reliability_v1/README.md', 'paper/figures/empirical_reliability_v1/source_cell_metrics.csv', 'paper/figures/empirical_reliability_v1/source_trajectories.csv', 'paper/figures/empirical_reliability_v1/data_validation.json', 'paper/figures/empirical_reliability_v1/figure.alignment.json', 'paper/figures/empirical_reliability_v1/figure.preflight.json', 'paper/figures/empirical_reliability_v1/figure.text-audit.json', 'paper/figures/empirical_reliability_v1/figure.collision-audit.json', 'paper/figures/empirical_reliability_v1/visual_qa.json', 'reports/completed_cpmlp_predictions_lossless_20261019_root/archive.json', 'reports/completed_cpmlp_predictions_lossless_20261019_root/decode.py', 'reports/completed_cpmlp_predictions_lossless_20261019_root/validation.json'])
 
+    # Fixed20 reporting-delay: saved predictions on server; publish reproducible code and full cell metrics.
+    for name in ['runner.py','protocol.json','preflight.json','ROOT_GO.json','metrics.json','per_cell_metrics.json','comparisons.json','numeric_validation.json','independent_recompute.py','independent_validation.json','completion.json','root_decision.json','RESULTS_ZH.md']:
+        chosen.add('experiments/reporting_delay_fixed20_v1/' + name)
+    chosen.update(['reports/reporting_delay_fixed20_review_20261019_luna/review.json', 'reports/reporting_delay_fixed20_review_20261019_luna/review_preGO_resolution.json'])
+    chosen.discard('experiments/cpmlp_calb_recipe_adapt_seed2021_v1/budget_ledger.jsonl')
+    for name in ['archive.json','decode.py','validation.json']:
+        chosen.add('reports/completed_calb_ledger_lossless_20261019_root/' + name)
+
     contents, files, skipped = {}, [], []
     mapping = {'README.md': 'docs/GITHUB_README_ZH.md', 'agent.md': 'AGENTS.md'}
     mapping.update({rel: rel for rel in sorted(chosen)})

@@ -1,0 +1,14 @@
+{
+  "status": "GO_ONCE_FIXED20_REPORTING_DELAY_ZERO_FIT",
+  "owner": "01a151cb-bf57-7113-bd9d-a58035e14194",
+  "max_runs": 1,
+  "max_new_fits": 0,
+  "max_seconds": 60,
+  "max_common_origins": 4367,
+  "no_new_model_inference_checkpoint_rawfeatures_devtest": true,
+  "review_path": "/home/yndx/zxk/rul/reports/reporting_delay_fixed20_review_20261019_luna/review_preGO_resolution.json",
+  "review_sha256": "6f12c1aed4896c3cc343f827d8987a51efa67e30ff4dc91418d437e95d80fcd7",
+  "runner.py_sha256": "44d791ae962a32c5abeebb7b97cf8789dca8e06282c125030330edd9b7d1d7cb",
+  "protocol.json_sha256": "d73f8c07578129de75dc0a00a316454d4dbf5a905ab5fd6b9c18588de4f8033e",
+  "signed_utc": "2026-10-19T01:39:00.455031+00:00"
+}

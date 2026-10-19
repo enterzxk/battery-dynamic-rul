@@ -1,5 +1,5 @@
 # 动态RUL更新的点误差与个体风险权衡：实验结果及局限草稿
-版本：2026-10-19 v3。**开发实验草稿；不是独立确认、正式方法复现或可投稿完成稿。**
+版本：2026-10-19 v4。**开发实验草稿；不是独立确认、正式方法复现或可投稿完成稿。**
 本节仅归纳已经完成的实验，不据写作新增训练或改变选择规则。
 
 ## 1 实验范围与评价口径
@@ -82,4 +82,16 @@ b4c7的早期/动态/混合MAE分别为81.598、55.713、58.320循环；相应�
 - [E7 主文方法冲突范围](../reports/post_mixture_methods_conflict_20261019_root/RESULTS_ZH.md)；本节不扩展外部文献论断。
 
 - [E8 标准因果直线基线](../experiments/causal_linear_threshold_fixed20_v1/root_decision.json)、[独立验证](../experiments/causal_linear_threshold_fixed20_v1/independent_validation.json)、[逐cell结果](../experiments/causal_linear_threshold_fixed20_v1/per_cell_metrics.json)。
-\n\n## 9 描述性经验图\n![Fig.1 个体可靠性经验边界](figures/empirical_reliability_v1/figure.svg)\n\n完整[双语图注](figures/empirical_reliability_v1/CAPTION.md)及源CSV/QA在同目录。图a配对10cell四臂MAE，图b展示平均覆盖掩盖个体失败，c/d完整展示预先指定b2c1与b4c7；对数轴与不同范围明确标出。没有重新生成预测、平滑或挑窗口。本图只整理已有开发证据，不新增独立确认或创新证明。\n
+
+
+## 9 描述性经验图
+![Fig.1 个体可靠性经验边界](figures/empirical_reliability_v1/figure.svg)
+
+完整[双语图注](figures/empirical_reliability_v1/CAPTION.md)及源CSV/QA在同目录。图a配对10cell四臂MAE，图b展示平均覆盖掩盖个体失败，c/d完整展示预先指定b2c1与b4c7；对数轴与不同范围明确标出。没有重新生成预测、平滑或挑窗口。本图只整理已有开发证据，不新增独立确认或创新证明。
+
+
+## 10 固定20cycle观测上报延迟压力测试
+本项另用所有臂共同s>=120的4,367前缀，排除每cell前20共200行，不与前文4,567宏指标混比。假设容量历史仅可见至a=s−20、当前存活仍可确认，仅保存mu_a与旧sigma进行S_a(20+r)/S_a(20)条件化，并固定与早期存活CDF等权混合；没有新fit、学习模型推理或特征读取。
+共同前缀的早期/及时动态/及时混合/延迟动态/延迟混合TimeMAE依次为55.0098/31.4580/34.0673/34.7661/37.0119cycle。延迟混合相对早期降32.7176%，10/10cell改善，配对cell差CI95为[9.6234,26.6355]cycle，严重高估宏比例从0.2927%至0.6341%、增0.3415个百分点，通过预先冻结的点/风险保留判据。延迟动态MAE较早期降36.8002%，但严重高估增3.0144个百分点，联合判据失败。
+相比相同键上的及时观测，延迟使动态/混合MAE恶化10.5160%/8.6434%，均无cell改善。因此只能描述为部分收益保留，并非无损抗延迟。延迟混合宏覆盖82.5981%，但b2c1仅28前缀覆盖0%、b2c6覆盖30.9463%，概率可靠性与个体保证仍不成立；本次概率指标仅描述，旧概率FAIL继续保留。
+一次fresh exact-hash 0fit票据消费；21835行五臂保存预测，独立宏指标重算最大差5.68e−14、150项标量CDF检查最大差1.92e−15。完整[结果及局限](../experiments/reporting_delay_fixed20_v1/RESULTS_ZH.md)、[逐cell统计](../experiments/reporting_delay_fixed20_v1/per_cell_metrics.json)、[根决策](../experiments/reporting_delay_fixed20_v1/root_decision.json)绑定证据SHA。完整预测CSV仅服务器；开发PASS不解除独立确认、物理来源身份、新模型或18dev/test门槛。

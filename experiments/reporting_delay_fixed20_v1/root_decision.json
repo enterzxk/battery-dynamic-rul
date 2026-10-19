@@ -1,0 +1,22 @@
+{
+  "status": "DEVELOPMENT_POINT_RISK_RETENTION_PASS_WITH_DELAY_COST",
+  "primary_gate_pass": true,
+  "pure_dynamic_point_risk_gate_pass": false,
+  "probability_status": "DESCRIPTIVE_ONLY_PREVIOUS_FAIL_PRESERVED",
+  "new_fits": 0,
+  "GO_consumed": true,
+  "scope": "10 exposedcal4367 sharedorigins; no independent confirmation or innovation claim",
+  "sources": {
+    "protocol.json": "d73f8c07578129de75dc0a00a316454d4dbf5a905ab5fd6b9c18588de4f8033e",
+    "runner.py": "44d791ae962a32c5abeebb7b97cf8789dca8e06282c125030330edd9b7d1d7cb",
+    "ROOT_GO.json": "b1c8eb7122f2496db8aa563b5a72b115aa0b351e4c8db930f4f42c0095c9dab2",
+    "metrics.json": "746c257eccf3d1c710c2c9e768cfbb86d2fa8f430229f0b8ff6e7e2790530f59",
+    "per_cell_metrics.json": "ae8cc63c5849e0d157bc61a47bc4168526eb6dc44a330b9f0ebbaea674e97c3c",
+    "comparisons.json": "52d94c93931ba2a8d09589221372c1ddde88fccdba5391d4a67e622e490bac6f",
+    "numeric_validation.json": "a46c9b0ed9e8f917ae102160a59801e474ec8ca08804bf5fd73bda225c701b5c",
+    "independent_validation.json": "06f034d1b9b8953c2c24fb2094ec01dedda69f924c6c79a7b0be998d30df5344",
+    "completion.json": "635f7786c743b1824e76c11aaf635ace431bd0b3c2bd8f377078ffd6c35bf96e",
+    "predictions.csv": "a42db19b030793f5570e5a70e865cb637526f11f35ee9b0568bca9f349877fd5"
+  },
+  "next_action": "Narrow fixed-method independent-confirmation protocol and identity scope; no devtest access or fit before separate GO"
+}
