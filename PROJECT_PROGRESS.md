@@ -674,3 +674,11 @@
 - 最小验证：单member大小CRC/归档SHA/claim/owner一致；先行充电尾样本4.199653V与0.049829A、末次放电2.699944V与−1.099749A，放电计数1.138460076Ah，部分积分1.138450440Ah，差9.6363e−6Ah。修复重复Cycle_Index合并与末样本字段缺口后独立deltaPASS再freshGO一次，GO已消费。0fit/模型推理/其他日期payload/其他cell/devtest；CPU20不变。
 - 阻塞/风险：采样边界相容不证明设备精确终止，部分积分不当完整参考容量；仅一个循环，跨日期连续性/生命周期/EOL删失/serial/重叠未核。文件名8/17而首Date_Time8/16，不混用。原始表与summary含首行数据不公开，36dev与37/38locked未读；神经4fit2580steps及所有旧NO_GO保持。CPTransformer历史ledger61672→13723bytes无损归档，原件与Git历史保留、不扩cap。
 - 下一步：冻结同35剩余24日期文件一次有界因果容量解析，保留源时间/cycle/重启，窄审+fresh数据GO后形成单电芯序列；不扩电芯/模型/fit，不用未来反弹删早期记录。
+
+
+## 2026-10-19：CS2-35剩余日期读取在第10文件STOP，容量末计数不能当单循环容量
+- 已完成：24文件预算独立窄审+fresh数据GO后一次6.981秒；实际读10文件19191767bytes，前9文件解析105207记录/304连续源循环片段，第10个CS2_35_10_29_10.xlsx字段结构缺失或不唯一断言失败，STOP不重跑。不是完整DataV1。
+- 证据：reports/calce_cs2_35_series_20261019_root的protocol/runner/原BLOCK与最终deltaPASS/ROOT_READ_GO/summary/minimal_validation/counter_semantics_diagnostic/root_decision/RESULTS_ZH；canonical_occurrences.csv服务器SHA c66c5c1458167fdf055e46373fa39630c9c56faee2f499a2e653171bf06047ac。GO已消费，首文件payload未重读、其他电芯未读。
+- 最小验证：固定SHA/成员大小CRC/逐行预算/owner/claim一致，保存输出304行及源105207条独立计数一致，无raw重载。源放电counter端点1.002043–54.264202Ah，不能当1.1Ah电芯单循环容量；294相邻对计数差中位1.025143Ah，部分积分中位1.015981Ah，差绝对中位0.009167Ah，仅提示累计计数语义。0fit/推理/checkpoint/devtest，CPU20/神经4fit2580steps不变。
+- 阻塞/风险：失败文件表头未落盘，具体schema原因未知；counter重置/step边界未核，禁止直接生成SOH/EOL或静默以差分/部分积分替换参考容量。未跨文件merge/重编号，首到第二文件墙钟间隔UNVERIFIED；其余14日期及36dev/37–38locked未读，身份/独立确认门保持。CPTransformer epoch2旧预测117540→47894bytes无损归档，原件/历史保留不扩cap。
+- 下一步：失败10/29单文件一次有界sheet表头和counter/step边界诊断，冻结+fresh数据GO后最少记录定位；不重跑24、不复用GO，不以未来反弹删早期记录或改EOL。

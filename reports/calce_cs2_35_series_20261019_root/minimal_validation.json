@@ -1,0 +1,16 @@
+{
+  "status": "PASS_SAVED_PARTIAL_OUTPUT_COUNTS_NO_RAW_RELOAD",
+  "source_rows": 105207,
+  "saved_occurrences": 304,
+  "completed_files": 9,
+  "member_reads_consumed": 10,
+  "failed_member": "CS2_35/CS2_35_10_29_10.xlsx",
+  "capacity_counter_range_Ah": [
+    1.002042855709979,
+    54.26420239146216
+  ],
+  "canonical_sha256": "c66c5c1458167fdf055e46373fa39630c9c56faee2f499a2e653171bf06047ac",
+  "not_full_sequence": true,
+  "specific_schema_cause": "UNVERIFIED_NO_FAILING_SHEET_HEADERS_SAVED",
+  "no_raw_reread": true
+}

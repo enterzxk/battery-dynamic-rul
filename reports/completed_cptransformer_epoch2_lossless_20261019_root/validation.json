@@ -1,0 +1,9 @@
+{
+  "status": "PASS_BYTE_EXACT",
+  "original_path": "experiments/cptransformer_hust_pilot_seed42/fit_runs/fit_20261016T040414_680559Z/val_predictions_epoch_002.csv",
+  "original_bytes": 117540,
+  "archive_bytes": 47894,
+  "original_sha256": "7df51fb8370fdd6b3cbf0f7ae5742da029c662c9ba9a0105a7a1a78e0efc54ae",
+  "server_original_and_old_git_history_retained": true,
+  "no_prediction_or_metric_recompute": true
+}

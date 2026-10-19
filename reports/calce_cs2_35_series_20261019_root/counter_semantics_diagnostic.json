@@ -1,0 +1,9 @@
+{
+  "status": "COUNTER_SEMANTICS_BLOCK_PER_CYCLE_CAPACITY_CLAIM",
+  "saved_rows_only": true,
+  "pairs_within_file_adjacent_source_cycle": 294,
+  "median_delta_counter_Ah": 1.0251430471277132,
+  "median_partial_integral_Ah": 1.0159808451997159,
+  "median_abs_difference_Ah": 0.009166743266012523,
+  "interpretation": "Counter endpoints up to54.264Ah cannot be treated as1.1Ah-cell per-cycle capacity. Adjacent counter differences are diagnostic only; do not silently relabel/use as capacity or create EOL. Need as-of counter reset/step boundary semantics before capacity series qualification."
+}

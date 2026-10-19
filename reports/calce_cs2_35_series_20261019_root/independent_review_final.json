@@ -1,0 +1,24 @@
+{
+  "review_type": "independent_narrow_pre_go_final_delta_review",
+  "status": "PASS",
+  "inputs": {
+    "protocol_path": "reports/calce_cs2_35_series_20261019_root/protocol.json",
+    "protocol_sha256": "e519329c298998b3b962084c8770868ca4894a6a724515b8261c7bac2af9ba2c",
+    "protocol_hash_basis": "unchanged from prior review",
+    "runner_path": "reports/calce_cs2_35_series_20261019_root/runner.py",
+    "runner_sha256": "c19927d9880e48fa26328d2a9ec7c3722cc26625a87f45788edc81af9816fee1"
+  },
+  "scope": "Final delta review limited to reset_dimensions() and the existing streaming row/column bounds. Runner excerpt and hash checked; no payload reads, execution, protocol reread, or broader audit.",
+  "finding": {
+    "status": "resolved",
+    "detail": "After checking declared worksheet dimensions against configured limits, the runner calls ws.reset_dimensions() before iterating. This clears declared dimensions so an understated worksheet row dimension cannot silently truncate XML-stream rows. Rows are yielded incrementally; the per-sheet and cumulative scanned-row limits and yielded tuple width are checked before each row is appended."
+  },
+  "prior_boundary_qualification": {
+    "status": "UNVERIFIED",
+    "detail": "The reused first-file summary lacks its last actual Date_Time, so its wall-time gap to the first newly read file remains unverified. The 23 transitions among the 24 newly read files remain measurable; this is a descriptive occurrence series only."
+  },
+  "decision": "The final runner resolves the prior row-budget concern, including understated declared dimensions. PASS is limited to this row-bound fix and does not attest execution or data results.",
+  "review_artifacts": {
+    "previous_fixed_review_preserved_as": "reports/calce_cs2_35_series_20261019_root/independent_review_fixed_before_reset.json"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "decision": "PARTIAL_SERIES_FAILED_STOP_SCHEMA_NO_RETRY",
+  "GO_consumed": true,
+  "complete_DataV1": false,
+  "EOL_created": false,
+  "new_fits": 0,
+  "new_inference": 0,
+  "other_cell_reads": 0,
+  "cpu_fits_cumulative": 20,
+  "neural_fits_cumulative": 4,
+  "neural_steps_cumulative": 2580,
+  "failed_member": "CS2_35/CS2_35_10_29_10.xlsx",
+  "next_action": "one bounded failed-file schema and counter/step-boundary diagnostic under fresh dataGO, no rerun24; reuse saved304 occurrence diagnostics, no EOL/fit",
+  "summary_sha256": "57999c434013753857184d35a5babcf9dfba8db430b285a37d70a3fad664508a",
+  "additional_blocker": "counter endpoint cumulative/reset semantics; not physical per-cycle capacity"
+}
