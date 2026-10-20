@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "raw_correct_equals_naive": true,
+  "all_audit_sample_arrival_query_barriers": true,
+  "new_fits": 0,
+  "new_inference_calls": 0
+}

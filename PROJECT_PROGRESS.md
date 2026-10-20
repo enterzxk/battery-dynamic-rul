@@ -748,3 +748,10 @@
 - 最小验证：独立窄审发现owner锁后复核缺口，单行修复后delta PASS；精确源哈希绑定新GO。21项MAE从保存预测独立重算，最大差1.776e-15 PASS。scalar各臂未出现相对HGB电芯MAE恶化>2周，最差5cell均保留在root_decision.json。
 - 阻塞/风险：回执SUCCESS仅代表scalar，候选/scalar成对性能比较未成立；固定候选未通过使用门不等于证明所有双状态模型不可辨识。scalar噪声接近边界、Hessian条件数较高，不能解释为可靠物理分解。源实测端点/pre-event开发概率不等于潜在EOL/未知事件可靠性。CPU调用累计36=旧20+基线7+参数6+scalar头3（MATR41另记）；神经6fit/2681steps，候选未用3头预算不复用。C4读取0，不新增独立确认/种子预算。
 - 下一步：先公开本次决定性停止证据与普通scalar逐cell结果；完整六基线预测按字节级无损归档在12MiB内发布。随后以已存权重对完整record-end和arrival前后做unknown-event更新诊断，另签0fit/newinference GO，不救援原候选参数或以平均微增益宣称创新。
+
+## 2026-10-21 V17：完整源窗口/迟到更新真实诊断完成
+- 已完成：保存HGB/scalar权重0fit、22590预测/62cell/1255共同query，28.223秒；含postT与1个无端点cell，C4读取0。
+- 证据：experiments/isu_irregular_rul_seed42_v1/unknown_event_probe_v17/PUBLIC_EVIDENCE_ZH.md；完整代码/GO/7.09MB预测/逐cell配对仅server。延迟臂HGB正确采样时钟较naive-current少1.286758周MAE；强HGB本身已有该收益，未证明新滤波增益。
+- 最小验证：18个Brier独立重算最大差2.776e-17，raw时钟control相等、arrival边界PASS；744逐cell配对差+seed42/2000次bootstrap保留。
+- 风险：已知健康端点闭合是逻辑修正；事后事件分层不能单独证明校准。CPU36/神经6fit2681steps不变；candidate STOP/scalar未过5%门保留，无确认/扩seed新GO。
+- 下一步：训练侧核查迟到端点未到达状态的目标与暴露支持，再考虑新结构；不救参数。镜像12MiB cap保持。

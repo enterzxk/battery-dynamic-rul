@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "method": "independent statistics cell-equal Brier from saved CSV",
+  "prediction_rows": 22590,
+  "common_cell_queries": 1255,
+  "cells": 62,
+  "unknown_T_cells": [
+    "G9C3"
+  ],
+  "all18_Brier_max_absolute_difference": 2.7755575615628914e-17,
+  "new_fits": 0,
+  "new_inference_calls": 0
+}

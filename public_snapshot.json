@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-20T17:28:14.551439+00:00",
-  "content_sha256": "e792ebec0259eeeae376deaf39a6ffb6f86ba678fdf0911a7d5ff52b65289458",
-  "file_count": 1147,
+  "snapshot_utc": "2026-10-20T17:40:17.287122+00:00",
+  "content_sha256": "f8592cbe69043c1aaa2b6aa3efefb3304c8778018aede0ec3eb1e52fbadc2338",
+  "file_count": 1150,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,8 +14,8 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 136551,
-      "sha256": "58acbc3001864ba289530d8f08ebfc751f48d547d2645082d0a3381308aff1e2"
+      "bytes": 137533,
+      "sha256": "df72b4bae25f0b476cb9edfa9b7fbd4dc682b26434a3e6998f26fff37a76f93b"
     },
     {
       "path": "README.md",
@@ -38,8 +38,8 @@
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 52490,
-      "sha256": "6a0fa1e278b1b78336b5edb1472080d4d9e5c0d92f7bffb9d1052b5c09cbbfd3"
+      "bytes": 52683,
+      "sha256": "b1e3992014a1e2a24d9b3800de2f2311452434ee17623764bab59505ed0d2462"
     },
     {
       "path": "automation/bin/matr_raw_batch2_asset_worker_v1.py",
@@ -164,8 +164,8 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 117018,
-      "sha256": "71f64dee282eaa7516255fd551ec51a63ca40907611ab9be872c3fd2e6b25ef8"
+      "bytes": 118000,
+      "sha256": "48f90f24c5d3d10bcf59d0439cd1beced5f2203eee7e6f21dd207d803ae97127"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
@@ -1468,6 +1468,24 @@
       "source_path": "experiments/isu_irregular_rul_seed42_v1/train_eval_pre_gru_epoch_fix.py",
       "bytes": 16377,
       "sha256": "174d00d8d207627f29aa04297f5acccf421aa09c01cbe05a8f036f503ddefef0"
+    },
+    {
+      "path": "experiments/isu_irregular_rul_seed42_v1/unknown_event_probe_v17/PUBLIC_EVIDENCE_ZH.md",
+      "source_path": "experiments/isu_irregular_rul_seed42_v1/unknown_event_probe_v17/PUBLIC_EVIDENCE_ZH.md",
+      "bytes": 2969,
+      "sha256": "787d97638890ea5e744dba892777dd7749946277b527ae644514aa8f9a204c28"
+    },
+    {
+      "path": "experiments/isu_irregular_rul_seed42_v1/unknown_event_probe_v17/run1/root_invariants.json",
+      "source_path": "experiments/isu_irregular_rul_seed42_v1/unknown_event_probe_v17/run1/root_invariants.json",
+      "bytes": 154,
+      "sha256": "d707d54490a7464e59a243c50f915aed0dd1153ea01ca47bdb3d40242f71971e"
+    },
+    {
+      "path": "experiments/isu_irregular_rul_seed42_v1/unknown_event_probe_v17/run1/root_recompute.json",
+      "source_path": "experiments/isu_irregular_rul_seed42_v1/unknown_event_probe_v17/run1/root_recompute.json",
+      "bytes": 315,
+      "sha256": "9d747cf15bdc1b85125ebb34376fc139306a8333d5c02e49252f6d6300d70935"
     },
     {
       "path": "experiments/isu_irregular_rul_seed42_v1/update_probe_candidate.json",

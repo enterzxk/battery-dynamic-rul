@@ -340,6 +340,9 @@ def main():
     for name in ['RESULTS_ZH.md','root_decision.json','summary/RESULTS_ZH.md','summary/arm_model_summary.csv','summary/scalar_cell_metrics.csv','summary/paired_differences.csv','summary/root_metric_recompute.json']:
         chosen.add('experiments/isu_irregular_rul_seed42_v1/filter_comparison_v17_run1/' + name)
 
+    for name in ['PUBLIC_EVIDENCE_ZH.md','run1/root_recompute.json','run1/root_invariants.json']:
+        chosen.add('experiments/isu_irregular_rul_seed42_v1/unknown_event_probe_v17/' + name)
+
     contents, files, skipped, binary_blobs = {}, [], [], {}
     mapping = {'README.md': 'docs/GITHUB_README_ZH.md', 'agent.md': 'AGENTS.md'}
     mapping.update({rel: rel for rel in sorted(chosen)})
