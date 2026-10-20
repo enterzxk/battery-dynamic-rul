@@ -1,0 +1,51 @@
+{
+  "status": "TWO_TRAIN_MEMBERS_DECODED",
+  "members": [
+    {
+      "cell_id": "G1C1",
+      "role": "train",
+      "raw_json_sha256": "dae6ddc2eb9c4ba0269082c0b3cea5d017e13be9b37ea639a80fea6181d6d4ca",
+      "compressed_bytes": 11178398,
+      "uncompressed_bytes": 98549526,
+      "crc32": "17131c9f",
+      "records": 52,
+      "source_top_level_keys": [
+        "capacity_discharge_C_5",
+        "capacity_discharge_C_2",
+        "capacity_charge_C_5",
+        "capacity_charge_C_2",
+        "QV_discharge_C_5",
+        "QV_charge_C_5",
+        "QV_discharge_C_2",
+        "QV_charge_C_2",
+        "start_stop_time"
+      ],
+      "native_cycle_or_efc_status": "UNKNOWN_NOT_PRESENT_AT_TOP_LEVEL"
+    },
+    {
+      "cell_id": "G20C1",
+      "role": "train",
+      "raw_json_sha256": "efa2371d4f2622bad714f16f38c0d8712b3f72e9964663e70ade6b8030c0ff1d",
+      "compressed_bytes": 1225534,
+      "uncompressed_bytes": 7562934,
+      "crc32": "46465cd0",
+      "records": 10,
+      "source_top_level_keys": [
+        "capacity_discharge_C_5",
+        "capacity_discharge_C_2",
+        "capacity_charge_C_5",
+        "capacity_charge_C_2",
+        "QV_discharge_C_5",
+        "QV_charge_C_5",
+        "QV_discharge_C_2",
+        "QV_charge_C_2",
+        "start_stop_time"
+      ],
+      "native_cycle_or_efc_status": "UNKNOWN_NOT_PRESENT_AT_TOP_LEVEL"
+    }
+  ],
+  "network_body_bytes": 12404079,
+  "uncompressed_bytes": 106112460,
+  "locked_decodes": 0,
+  "fits": 0
+}

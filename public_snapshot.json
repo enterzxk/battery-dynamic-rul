@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-20T12:35:01.628711+00:00",
-  "content_sha256": "60c8c306f94ebe7f34da87f433d89b7a22d5d162ef9323aafcf793ba5ceb5173",
-  "file_count": 1067,
+  "snapshot_utc": "2026-10-20T12:49:19.668466+00:00",
+  "content_sha256": "ac2f465f7089ccf2c8aa5ea3038dcfc8935ff1b8cd8a3ded590f68bd88cb52c9",
+  "file_count": 1082,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,8 +14,8 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 128550,
-      "sha256": "824b5132354e2b2bc1ec312a80091d483a504a5dda5ba9561b40655201fe19a3"
+      "bytes": 130502,
+      "sha256": "55726a1bf60668feb646696442df27995d8dee0d07bd3c5bcd2ff96d3b837b58"
     },
     {
       "path": "README.md",
@@ -38,8 +38,8 @@
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 47540,
-      "sha256": "399eacdafc20ffe56b601a5e63f901212f3002fcf7aafe87de0278b8ee6a08f5"
+      "bytes": 48249,
+      "sha256": "0ebbddade15a99ab64d40c62411e193d98238e891aaf67a34848b74a14db04c3"
     },
     {
       "path": "automation/bin/matr_raw_batch2_asset_worker_v1.py",
@@ -164,8 +164,8 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 109017,
-      "sha256": "6e96ddbf7033a420d953d3ee2d5fa66b6aceacc962923a879f84052e0b6e17a0"
+      "bytes": 110969,
+      "sha256": "4091cca72ce27b83b402871c8707bd3082999dfa17c49b71077da70ad8fdc298"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
@@ -4326,6 +4326,12 @@
       "sha256": "53c6f8c16fa7cc7d194ad6a1033a89a182099f57afaccebef61fe11fdfcdbf85"
     },
     {
+      "path": "reports/irregular_rul_competition_20261020_root/eswa_primary_preview.json",
+      "source_path": "reports/irregular_rul_competition_20261020_root/eswa_primary_preview.json",
+      "bytes": 1143,
+      "sha256": "b44d71907826821a194ca39df6120cb931ca129581fa1108a08dfc8fd9f40711"
+    },
+    {
       "path": "reports/isu_ilcc_capacity_probe_20261020_root/RESULTS_ZH.md",
       "source_path": "reports/isu_ilcc_capacity_probe_20261020_root/RESULTS_ZH.md",
       "bytes": 2096,
@@ -4420,6 +4426,90 @@
       "source_path": "reports/isu_ilcc_clock_source_20261020_root/next_clock_recovery_scope.json",
       "bytes": 1713,
       "sha256": "a996ff82e1e7475042cd8fd19c4bfb0a0bcaf0493ba02524b651eded0e3e8b65"
+    },
+    {
+      "path": "reports/isu_ilcc_datav2_20261020_data/two_sample_failure.json",
+      "source_path": "reports/isu_ilcc_datav2_20261020_data/two_sample_failure.json",
+      "bytes": 397,
+      "sha256": "7cf389fcda34beff5f4afc60cd9eb700a09d336a0928267fc7a06a841906254d"
+    },
+    {
+      "path": "reports/isu_ilcc_datav2_20261020_root_review/ROOT_GO.json",
+      "source_path": "reports/isu_ilcc_datav2_20261020_root_review/ROOT_GO.json",
+      "bytes": 1451,
+      "sha256": "768629729f918abb93cc83b5ee37567efa90f3a93674233a7acca208f5b6f04f"
+    },
+    {
+      "path": "reports/isu_ilcc_datav2_20261020_root_review/ROOT_GO_REPAIR.json",
+      "source_path": "reports/isu_ilcc_datav2_20261020_root_review/ROOT_GO_REPAIR.json",
+      "bytes": 1706,
+      "sha256": "fdb174dc18544cfe36b809d72859a387f696e4e42084b34016c6587338c2246c"
+    },
+    {
+      "path": "reports/isu_ilcc_datav2_20261020_root_review/delta_review.json",
+      "source_path": "reports/isu_ilcc_datav2_20261020_root_review/delta_review.json",
+      "bytes": 1128,
+      "sha256": "95847ec117e5b1d8e6ab119c8de39f7d3b6569ad8ad99fd41f954ba583550fc7"
+    },
+    {
+      "path": "reports/isu_ilcc_datav2_20261020_root_review/delta_review_repair.json",
+      "source_path": "reports/isu_ilcc_datav2_20261020_root_review/delta_review_repair.json",
+      "bytes": 880,
+      "sha256": "ead2457fb678ffa6922e3f7dc6c5c870683354651627fa6c82a5e17abc0d82c0"
+    },
+    {
+      "path": "reports/isu_ilcc_datav2_20261020_root_review/review_v1.json",
+      "source_path": "reports/isu_ilcc_datav2_20261020_root_review/review_v1.json",
+      "bytes": 931,
+      "sha256": "acaf52d9ce004b645056ca30dc9055524e10aef99744b531095289244b7a7fa4"
+    },
+    {
+      "path": "reports/isu_ilcc_datav2_full_20261020_root/scope_candidate.json",
+      "source_path": "reports/isu_ilcc_datav2_full_20261020_root/scope_candidate.json",
+      "bytes": 58089,
+      "sha256": "1dfd1a4be9fbba2f2ce5998689358e375856bf8595b7b6fd05d153b20dd4be5a"
+    },
+    {
+      "path": "reports/isu_ilcc_datav2_two_sample_repair_20261020_root/minimal_validation.json",
+      "source_path": "reports/isu_ilcc_datav2_two_sample_repair_20261020_root/minimal_validation.json",
+      "bytes": 1538,
+      "sha256": "151b7ff0b5ad2f26326c81546182da5ace88a4fede2e94b33bcece2809b8bd86"
+    },
+    {
+      "path": "reports/isu_ilcc_datav2_two_sample_repair_20261020_root/prepare_datav2.py",
+      "source_path": "reports/isu_ilcc_datav2_two_sample_repair_20261020_root/prepare_datav2.py",
+      "bytes": 12186,
+      "sha256": "36c6d0234f97cd89b124de64cd491041e2fd0b52448d8bbf4a32a42ad18b141d"
+    },
+    {
+      "path": "reports/isu_ilcc_datav2_two_sample_repair_20261020_root/protocol.md",
+      "source_path": "reports/isu_ilcc_datav2_two_sample_repair_20261020_root/protocol.md",
+      "bytes": 5536,
+      "sha256": "94e0b2b4b810233a9e472f6383d8d45356970ed4df63fe7eeb00abcfa10d7c3e"
+    },
+    {
+      "path": "reports/isu_ilcc_datav2_two_sample_repair_20261020_root/receive_datav2.py",
+      "source_path": "reports/isu_ilcc_datav2_two_sample_repair_20261020_root/receive_datav2.py",
+      "bytes": 12186,
+      "sha256": "36c6d0234f97cd89b124de64cd491041e2fd0b52448d8bbf4a32a42ad18b141d"
+    },
+    {
+      "path": "reports/isu_ilcc_datav2_two_sample_repair_20261020_root/root_decision.json",
+      "source_path": "reports/isu_ilcc_datav2_two_sample_repair_20261020_root/root_decision.json",
+      "bytes": 325,
+      "sha256": "f1c89e6747ecde8b44e9885d713b2ca9470511ba5067ae3cd5847a1d260d7edb"
+    },
+    {
+      "path": "reports/isu_ilcc_datav2_two_sample_repair_20261020_root/two_sample_result.json",
+      "source_path": "reports/isu_ilcc_datav2_two_sample_repair_20261020_root/two_sample_result.json",
+      "bytes": 1469,
+      "sha256": "4e9ad05dcb021bf56e1674ac2f6e4c9d0c738a67f3859a0ef211a9e60a30f6f8"
+    },
+    {
+      "path": "reports/isu_ilcc_datav2_two_sample_repair_20261020_root/two_train_once.claim.json",
+      "source_path": "reports/isu_ilcc_datav2_two_sample_repair_20261020_root/two_train_once.claim.json",
+      "bytes": 1547,
+      "sha256": "3c4c4b8ec1426174e7b6331fee7d748a558310e4ecf8c9354cc64e26f45e78d5"
     },
     {
       "path": "reports/isu_ilcc_metadata_20261020_root/README_V2.0.pdf.receipt.json",

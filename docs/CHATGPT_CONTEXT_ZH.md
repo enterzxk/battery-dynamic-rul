@@ -596,3 +596,12 @@ paper/figures/empirical_reliability_v1/figure.svg为可编辑四面板经验图�
 - Minimal validation:size/MD5/SHA/cohort/schema/order/finite values PASS;0fit/model inference/dev/locked decode.65536byte exact RPTZIPtail Range206/ETag verified,252directory entries,no member read.
 - Blocker/risk:author Time has future-neighbor missing-duration filling;source summary is not strict asof clock or exact latentEOL.Original BLOCK/preGO stage correction preserved.
 - Next:exact scoped2train RPT header/member range recovery12403932compressedbytes;implement/review/freshGO,extract stop timestamps without imputation before any model fit.
+
+
+## 2026-10-20：新冲刺与两颗训练电芯原始 RPT 时钟打通
+
+- 已完成：并行落实 ISU-ILCC 数据、强基线及异步观测候选机制；原始 RPT G1C1/G20C1 已实际读取并生成 DataV2 逐电芯契约。G1C1 52/52 有效，G20C1 10 个源位置/9 有效、缺失 index5 保留。独立确认63电芯未读取，新增拟合0。
+- 证据：reports/isu_ilcc_datav2_two_sample_repair_20261020_root/{two_sample_result.json,minimal_validation.json,root_decision.json}；原始压缩范围仅存服务器 data/processed/ISU_ILCC_DataV2_v1/.raw_members。G1C1 首次源观测阈值日历年龄54.563014周，作者累计on-test摘要49.245139周，不能混用。G20C1为9.502794日历周。源码和许可见同目录及reports/isu_ilcc_datav2_20261020_root_review/。
+- 最小验证：106112460解压字节均通过中央目录CRC/长度；两颗首末容量及事件容量与先前摘要一致；日期严格递增、完成后可见、缺失位置保留。首轮SSH空格传输失败仅消耗30字节ZIP头，旧失败和GO保留；修复采用单独新GO明确一次30字节元数据重取，累计5 GET/12404109响应体字节，未重复读取成员payload。
+- 阻塞/风险：日历时间不等于实际cycle/EFC或持续运行时间，后两者在RPT顶层不存在；事件仅为首次实际源RPT容量<=0.20Ah，不能当潜在真实EOL。物理serial未知、非越阈停测原因未知，不能自动宣称独立删失。竞争主源已有随机退化+liquid+online方案；候选核心及基线仍为待正式数据运行的实现，合成检查不是性能证据。
+- 下一步：复用相同解析器构建125训练/63开发的完整DataV2，复用已存两成员而不重新取；另经完整范围审查和新GO后执行剩余186成员。基线修正完成后，以6 HGB+1 AFT+1 GRU固定seed42预算提案进入正式比较；现在训练门仍关闭，封存63电芯只在方法及选择规则冻结后确认。

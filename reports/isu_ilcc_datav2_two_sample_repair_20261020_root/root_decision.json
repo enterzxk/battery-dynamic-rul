@@ -1,0 +1,8 @@
+{
+  "status": "PASS_TWO_SAMPLE_DATA_CONTRACT_FULL188_NEXT",
+  "evidence": "reports/isu_ilcc_datav2_two_sample_repair_20261020_root/minimal_validation.json",
+  "new_fits": 0,
+  "locked_reads": 0,
+  "new_fit_gate": false,
+  "next": "same-parser full188 range receive with separate exactGO and budgets; no two-member refetch"
+}

@@ -297,6 +297,14 @@ def main():
     for name in ['competition_report.md','evidence.json','lfp_feasibility.json']:
         chosen.add('reports/irregular_rul_competition_20261020_luna/' + name)
 
+    for name in ['prepare_datav2.py','receive_datav2.py','protocol.md','two_train_once.claim.json','two_sample_result.json','minimal_validation.json','root_decision.json']:
+        chosen.add('reports/isu_ilcc_datav2_two_sample_repair_20261020_root/' + name)
+    for name in ['review_v1.json','delta_review.json','ROOT_GO.json','delta_review_repair.json','ROOT_GO_REPAIR.json']:
+        chosen.add('reports/isu_ilcc_datav2_20261020_root_review/' + name)
+    chosen.add('reports/isu_ilcc_datav2_20261020_data/two_sample_failure.json')
+    chosen.add('reports/isu_ilcc_datav2_full_20261020_root/scope_candidate.json')
+    chosen.add('reports/irregular_rul_competition_20261020_root/eswa_primary_preview.json')
+
     contents, files, skipped = {}, [], []
     mapping = {'README.md': 'docs/GITHUB_README_ZH.md', 'agent.md': 'AGENTS.md'}
     mapping.update({rel: rel for rel in sorted(chosen)})
