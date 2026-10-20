@@ -1,0 +1,41 @@
+{
+  "owner": "01a15846-1ade-7623-88ff-98dd7f94f4fd",
+  "question": "Are existing source summary fields/clock/first observed nominal80 crossing usable under explicitly limited scope?",
+  "acquisition": {
+    "id": 43755582,
+    "name": "capacity_fade.zip",
+    "size": 140256,
+    "download_url": "https://ndownloader.figshare.com/files/43755582",
+    "supplied_md5": "a25a6f717d51992f30abbb3d9046909f",
+    "computed_md5": "a25a6f717d51992f30abbb3d9046909f"
+  },
+  "cohort_sha256": "4469f7f5b6eb8c26a522fa46c4291ec6d03d98e7ae5c20ce7ae77e835b849ae0",
+  "probe_ids": [
+    "G1C1",
+    "G20C1"
+  ],
+  "selection_reason": "first ordinary weekly group;first documented halfweek group with known missingweek4; chosen from README before curves",
+  "max_logical_GET": 1,
+  "max_archive_bytes": 140256,
+  "max_probe_members": 2,
+  "max_member_bytes": 100000,
+  "max_decompressed_total_bytes": 200000,
+  "metadata_directory_entries_allowed": true,
+  "max_seconds": 30,
+  "read_locked_member_payloads": false,
+  "read_development_member_payloads": false,
+  "execute_author_code": false,
+  "nominal_Ah": 0.25,
+  "candidate_threshold_Ah": 0.2,
+  "candidate_endpoint": "first observed qualifying RPT at/below nominal80; not exact latent physical crossing",
+  "clock_policy": "source Time is reported cumulative time on test; missing durations may be imputed using future neighbors in author code. No strict as-of time claim unless verified. No interpolation, synthetic dates or renumbering in probe.",
+  "checks": [
+    "unique ascending source Time, finite capacity range, actual rows/first/last and first observed crossing",
+    "source missing/RPT cadence and future clock construction explicitly qualified",
+    "schema ambiguity or size/hash/role mismatch STOP with receipt, no retries"
+  ],
+  "new_fits": 0,
+  "model_inference": 0,
+  "raw_time_series_files": 0,
+  "status": "FROZEN_BEFORE_CAPACITY_ARCHIVE_ACQUISITION"
+}

@@ -1,0 +1,40 @@
+[
+  {
+    "cell_id": "G1C1",
+    "role": "train",
+    "source_member": "capacity_fade/Release 1.0/G1C1.csv",
+    "source_sha256": "f62856d2d8b5fecce31f24812a5ca665e51c0ed24f0d7722aa69cb647dd04d9a",
+    "rows": 52,
+    "first_time": 0.0,
+    "last_time": 57.57712301587302,
+    "first_capacity_Ah": 0.28045655555555554,
+    "last_capacity_Ah": 0.12813577777777777,
+    "min_capacity_Ah": 0.12813577777777777,
+    "max_capacity_Ah": 0.28045655555555554,
+    "first_observed_nominal80_time": 49.2451388888889,
+    "first_observed_nominal80_row": 44,
+    "event_capacity_Ah": 0.19375691666666667,
+    "full_prefixes_before_observed_event": 43,
+    "strict_asof_clock_verified": false,
+    "interpretation": "Source-reported Time/Capacity only. First observed RPT threshold is not latent exact EOL; no legal right-censor assertion for no-event records."
+  },
+  {
+    "cell_id": "G20C1",
+    "role": "train",
+    "source_member": "capacity_fade/Release 1.0/G20C1.csv",
+    "source_sha256": "0ce80c9fc73781264496ccfc5fb9680d7af0b0a6c7bd5e3ec1d1ea4fb38e8b22",
+    "rows": 9,
+    "first_time": 0.0,
+    "last_time": 9.086204530423279,
+    "first_capacity_Ah": 0.283018151111111,
+    "last_capacity_Ah": 0.127979173333333,
+    "min_capacity_Ah": 0.127979173333333,
+    "max_capacity_Ah": 0.283018151111111,
+    "first_observed_nominal80_time": 9.086204530423279,
+    "first_observed_nominal80_row": 9,
+    "event_capacity_Ah": 0.127979173333333,
+    "full_prefixes_before_observed_event": 8,
+    "strict_asof_clock_verified": false,
+    "interpretation": "Source-reported Time/Capacity only. First observed RPT threshold is not latent exact EOL; no legal right-censor assertion for no-event records."
+  }
+]

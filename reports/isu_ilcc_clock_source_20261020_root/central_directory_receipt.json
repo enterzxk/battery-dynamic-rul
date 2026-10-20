@@ -1,0 +1,2280 @@
+{
+  "scope": "central metadata only",
+  "member_payload_reads": 0,
+  "body_bytes": 65536,
+  "HTTP_status": 206,
+  "Content_Range": "bytes 929341394-929406929/929406930",
+  "ETag": "\"36331bf80f21d00e19a9a45095f542e8\"",
+  "status": "PASS_RANGE_AND_CENTRAL_METADATA",
+  "tail_sha256": "8d165afa45716613e0f42e128193515952b5f6f1ab4b35f8835b21d8b922630f",
+  "entries": [
+    {
+      "name": "RPT_json/Example_Load_Matlab.m",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "fe93d148",
+      "compressed_bytes": 163,
+      "bytes": 238,
+      "local_header_offset": 0
+    },
+    {
+      "name": "RPT_json/Release 1.0/G10C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "08f9799c",
+      "compressed_bytes": 6636789,
+      "bytes": 66110299,
+      "local_header_offset": 252
+    },
+    {
+      "name": "RPT_json/Release 1.0/G10C2.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "cc97cfa7",
+      "compressed_bytes": 7838894,
+      "bytes": 70439432,
+      "local_header_offset": 6637131
+    },
+    {
+      "name": "RPT_json/Release 1.0/G10C3.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "4fa3bd22",
+      "compressed_bytes": 7316108,
+      "bytes": 69931273,
+      "local_header_offset": 14476115
+    },
+    {
+      "name": "RPT_json/Release 1.0/G10C4.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "3ddc3117",
+      "compressed_bytes": 3876677,
+      "bytes": 25980497,
+      "local_header_offset": 21792313
+    },
+    {
+      "name": "RPT_json/Release 1.0/G11C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "df71a985",
+      "compressed_bytes": 4874344,
+      "bytes": 53646267,
+      "local_header_offset": 25669080
+    },
+    {
+      "name": "RPT_json/Release 1.0/G11C2.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "192a4cc8",
+      "compressed_bytes": 5259312,
+      "bytes": 55387178,
+      "local_header_offset": 30543514
+    },
+    {
+      "name": "RPT_json/Release 1.0/G11C3.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "aacd9369",
+      "compressed_bytes": 5336564,
+      "bytes": 57010924,
+      "local_header_offset": 35802916
+    },
+    {
+      "name": "RPT_json/Release 1.0/G11C4.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "746289f5",
+      "compressed_bytes": 5270651,
+      "bytes": 56735886,
+      "local_header_offset": 41139570
+    },
+    {
+      "name": "RPT_json/Release 1.0/G12C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "c795b650",
+      "compressed_bytes": 6966071,
+      "bytes": 68487535,
+      "local_header_offset": 46410311
+    },
+    {
+      "name": "RPT_json/Release 1.0/G12C2.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "874e4b05",
+      "compressed_bytes": 6558849,
+      "bytes": 62501818,
+      "local_header_offset": 53376472
+    },
+    {
+      "name": "RPT_json/Release 1.0/G12C3.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "5b859102",
+      "compressed_bytes": 6658282,
+      "bytes": 66261733,
+      "local_header_offset": 59935411
+    },
+    {
+      "name": "RPT_json/Release 1.0/G12C4.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "4b0bb767",
+      "compressed_bytes": 8038004,
+      "bytes": 76068127,
+      "local_header_offset": 66593783
+    },
+    {
+      "name": "RPT_json/Release 1.0/G13C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "15f6bad0",
+      "compressed_bytes": 1870833,
+      "bytes": 13008851,
+      "local_header_offset": 74631877
+    },
+    {
+      "name": "RPT_json/Release 1.0/G13C2.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "ec372047",
+      "compressed_bytes": 3077689,
+      "bytes": 21421506,
+      "local_header_offset": 76502800
+    },
+    {
+      "name": "RPT_json/Release 1.0/G13C3.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "ab23fe62",
+      "compressed_bytes": 1976230,
+      "bytes": 13771840,
+      "local_header_offset": 79580579
+    },
+    {
+      "name": "RPT_json/Release 1.0/G13C4.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "a4320cb0",
+      "compressed_bytes": 1920950,
+      "bytes": 13565902,
+      "local_header_offset": 81556899
+    },
+    {
+      "name": "RPT_json/Release 1.0/G14C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "5830282b",
+      "compressed_bytes": 753794,
+      "bytes": 5228263,
+      "local_header_offset": 83477939
+    },
+    {
+      "name": "RPT_json/Release 1.0/G14C2.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "b04c9bd6",
+      "compressed_bytes": 508754,
+      "bytes": 3460786,
+      "local_header_offset": 84231823
+    },
+    {
+      "name": "RPT_json/Release 1.0/G14C4.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "f50b38e2",
+      "compressed_bytes": 393558,
+      "bytes": 2612639,
+      "local_header_offset": 84740667
+    },
+    {
+      "name": "RPT_json/Release 1.0/G14C3.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "e3b3bf06",
+      "compressed_bytes": 389749,
+      "bytes": 2655751,
+      "local_header_offset": 85134315
+    },
+    {
+      "name": "RPT_json/Release 1.0/G16C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "330c3f43",
+      "compressed_bytes": 2155100,
+      "bytes": 15049190,
+      "local_header_offset": 85524154
+    },
+    {
+      "name": "RPT_json/Release 1.0/G16C2.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "6d571f96",
+      "compressed_bytes": 2313681,
+      "bytes": 16019729,
+      "local_header_offset": 87679344
+    },
+    {
+      "name": "RPT_json/Release 1.0/G16C3.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "944751fb",
+      "compressed_bytes": 2228915,
+      "bytes": 15663350,
+      "local_header_offset": 89993115
+    },
+    {
+      "name": "RPT_json/Release 1.0/G16C4.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "40e21ccd",
+      "compressed_bytes": 2232106,
+      "bytes": 15772381,
+      "local_header_offset": 92222120
+    },
+    {
+      "name": "RPT_json/Release 1.0/G17C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "e8738774",
+      "compressed_bytes": 2429696,
+      "bytes": 16779401,
+      "local_header_offset": 94454316
+    },
+    {
+      "name": "RPT_json/Release 1.0/G17C2.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "0ebefef9",
+      "compressed_bytes": 2292218,
+      "bytes": 15840984,
+      "local_header_offset": 96884102
+    },
+    {
+      "name": "RPT_json/Release 1.0/G17C3.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "8bc481de",
+      "compressed_bytes": 2589260,
+      "bytes": 18306395,
+      "local_header_offset": 99176410
+    },
+    {
+      "name": "RPT_json/Release 1.0/G17C4.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "1c494160",
+      "compressed_bytes": 2032799,
+      "bytes": 14295230,
+      "local_header_offset": 101765760
+    },
+    {
+      "name": "RPT_json/Release 1.0/G18C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "ea5504a7",
+      "compressed_bytes": 8508463,
+      "bytes": 57576455,
+      "local_header_offset": 103798649
+    },
+    {
+      "name": "RPT_json/Release 1.0/G18C2.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "9ab21a85",
+      "compressed_bytes": 2867457,
+      "bytes": 20373365,
+      "local_header_offset": 112307202
+    },
+    {
+      "name": "RPT_json/Release 1.0/G18C3.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "41c20008",
+      "compressed_bytes": 2866800,
+      "bytes": 20608426,
+      "local_header_offset": 115174749
+    },
+    {
+      "name": "RPT_json/Release 1.0/G18C4.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "396fd43a",
+      "compressed_bytes": 2568152,
+      "bytes": 18047717,
+      "local_header_offset": 118041639
+    },
+    {
+      "name": "RPT_json/Release 1.0/G19C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "2f411803",
+      "compressed_bytes": 1443383,
+      "bytes": 10015767,
+      "local_header_offset": 120609881
+    },
+    {
+      "name": "RPT_json/Release 1.0/G19C2.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "c1ee60ca",
+      "compressed_bytes": 1193113,
+      "bytes": 8460953,
+      "local_header_offset": 122053354
+    },
+    {
+      "name": "RPT_json/Release 1.0/G19C3.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "8b35a091",
+      "compressed_bytes": 1612288,
+      "bytes": 11213569,
+      "local_header_offset": 123246557
+    },
+    {
+      "name": "RPT_json/Release 1.0/G1C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "17131c9f",
+      "compressed_bytes": 11178398,
+      "bytes": 98549526,
+      "local_header_offset": 124858935
+    },
+    {
+      "name": "RPT_json/Release 1.0/G19C4.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "95e8e348",
+      "compressed_bytes": 828871,
+      "bytes": 5216540,
+      "local_header_offset": 136037422
+    },
+    {
+      "name": "RPT_json/Release 1.0/G1C2.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "1fe1e6ec",
+      "compressed_bytes": 12614681,
+      "bytes": 105179769,
+      "local_header_offset": 136866383
+    },
+    {
+      "name": "RPT_json/Release 1.0/G1C3.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "fd91fca4",
+      "compressed_bytes": 12979264,
+      "bytes": 109774072,
+      "local_header_offset": 149481153
+    },
+    {
+      "name": "RPT_json/Release 1.0/G1C4.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "8c8ef424",
+      "compressed_bytes": 8768314,
+      "bytes": 82184500,
+      "local_header_offset": 162460506
+    },
+    {
+      "name": "RPT_json/Release 1.0/G20C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "46465cd0",
+      "compressed_bytes": 1225534,
+      "bytes": 7562934,
+      "local_header_offset": 171228909
+    },
+    {
+      "name": "RPT_json/Release 1.0/G20C2.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "61264068",
+      "compressed_bytes": 1509967,
+      "bytes": 9603220,
+      "local_header_offset": 172454533
+    },
+    {
+      "name": "RPT_json/Release 1.0/G20C3.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "4229c445",
+      "compressed_bytes": 2190983,
+      "bytes": 13870646,
+      "local_header_offset": 173964590
+    },
+    {
+      "name": "RPT_json/Release 1.0/G20C4.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "a759bcc4",
+      "compressed_bytes": 2323618,
+      "bytes": 14835817,
+      "local_header_offset": 176155663
+    },
+    {
+      "name": "RPT_json/Release 1.0/G21C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "0a2f1aa8",
+      "compressed_bytes": 1730637,
+      "bytes": 10880394,
+      "local_header_offset": 178479371
+    },
+    {
+      "name": "RPT_json/Release 1.0/G21C2.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "38c3b771",
+      "compressed_bytes": 2537274,
+      "bytes": 15736565,
+      "local_header_offset": 180210098
+    },
+    {
+      "name": "RPT_json/Release 1.0/G21C3.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "fc0707b9",
+      "compressed_bytes": 2025958,
+      "bytes": 12761085,
+      "local_header_offset": 182747462
+    },
+    {
+      "name": "RPT_json/Release 1.0/G21C4.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "90dcbdf0",
+      "compressed_bytes": 1868779,
+      "bytes": 11478243,
+      "local_header_offset": 184773510
+    },
+    {
+      "name": "RPT_json/Release 1.0/G22C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "54c9cb32",
+      "compressed_bytes": 1779624,
+      "bytes": 10926367,
+      "local_header_offset": 186642379
+    },
+    {
+      "name": "RPT_json/Release 1.0/G22C3.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "303a0bf9",
+      "compressed_bytes": 1861009,
+      "bytes": 11816718,
+      "local_header_offset": 188422093
+    },
+    {
+      "name": "RPT_json/Release 1.0/G22C2.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "6c8edf68",
+      "compressed_bytes": 1271871,
+      "bytes": 7943889,
+      "local_header_offset": 190283192
+    },
+    {
+      "name": "RPT_json/Release 1.0/G22C4.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "4da7986c",
+      "compressed_bytes": 1664245,
+      "bytes": 10235549,
+      "local_header_offset": 191555153
+    },
+    {
+      "name": "RPT_json/Release 1.0/G23C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "6f811fda",
+      "compressed_bytes": 1815136,
+      "bytes": 11411487,
+      "local_header_offset": 193219488
+    },
+    {
+      "name": "RPT_json/Release 1.0/G23C2.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "05ac2372",
+      "compressed_bytes": 1945073,
+      "bytes": 12283954,
+      "local_header_offset": 195034714
+    },
+    {
+      "name": "RPT_json/Release 1.0/G23C3.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "40e88348",
+      "compressed_bytes": 1667587,
+      "bytes": 10533090,
+      "local_header_offset": 196979877
+    },
+    {
+      "name": "RPT_json/Release 1.0/G23C4.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "c142abc1",
+      "compressed_bytes": 1960538,
+      "bytes": 12427311,
+      "local_header_offset": 198647554
+    },
+    {
+      "name": "RPT_json/Release 1.0/G24C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "0316f050",
+      "compressed_bytes": 1672763,
+      "bytes": 10623741,
+      "local_header_offset": 200608182
+    },
+    {
+      "name": "RPT_json/Release 1.0/G24C2.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "78d608f9",
+      "compressed_bytes": 1938353,
+      "bytes": 11950920,
+      "local_header_offset": 202281035
+    },
+    {
+      "name": "RPT_json/Release 1.0/G24C3.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "ac551d83",
+      "compressed_bytes": 1567040,
+      "bytes": 9926927,
+      "local_header_offset": 204219478
+    },
+    {
+      "name": "RPT_json/Release 1.0/G24C4.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "e20eb6ae",
+      "compressed_bytes": 1636006,
+      "bytes": 10189321,
+      "local_header_offset": 205786608
+    },
+    {
+      "name": "RPT_json/Release 1.0/G25C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "007a2aaf",
+      "compressed_bytes": 1876090,
+      "bytes": 11586170,
+      "local_header_offset": 207422704
+    },
+    {
+      "name": "RPT_json/Release 1.0/G25C2.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "993fb005",
+      "compressed_bytes": 2204904,
+      "bytes": 13874786,
+      "local_header_offset": 209298884
+    },
+    {
+      "name": "RPT_json/Release 1.0/G25C3.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "a7ce1ad8",
+      "compressed_bytes": 2828376,
+      "bytes": 17523471,
+      "local_header_offset": 211503878
+    },
+    {
+      "name": "RPT_json/Release 1.0/G25C4.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "5bb96095",
+      "compressed_bytes": 5728684,
+      "bytes": 35866587,
+      "local_header_offset": 214332344
+    },
+    {
+      "name": "RPT_json/Release 1.0/G26C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "34e9de17",
+      "compressed_bytes": 4124227,
+      "bytes": 25647684,
+      "local_header_offset": 220061118
+    },
+    {
+      "name": "RPT_json/Release 1.0/G26C2.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "fb09c109",
+      "compressed_bytes": 6410123,
+      "bytes": 40812579,
+      "local_header_offset": 224185435
+    },
+    {
+      "name": "RPT_json/Release 1.0/G26C4.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "46df51e0",
+      "compressed_bytes": 5276235,
+      "bytes": 33277964,
+      "local_header_offset": 230595648
+    },
+    {
+      "name": "RPT_json/Release 1.0/G27C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "5cbd6014",
+      "compressed_bytes": 3080235,
+      "bytes": 19248549,
+      "local_header_offset": 235871973
+    },
+    {
+      "name": "RPT_json/Release 1.0/G27C2.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "ea80338e",
+      "compressed_bytes": 2900277,
+      "bytes": 18389240,
+      "local_header_offset": 238952298
+    },
+    {
+      "name": "RPT_json/Release 1.0/G27C3.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "fbc19453",
+      "compressed_bytes": 2023980,
+      "bytes": 12549146,
+      "local_header_offset": 241852665
+    },
+    {
+      "name": "RPT_json/Release 1.0/G27C4.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "f6805221",
+      "compressed_bytes": 3017386,
+      "bytes": 19054606,
+      "local_header_offset": 243876735
+    },
+    {
+      "name": "RPT_json/Release 1.0/G28C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "92ef5523",
+      "compressed_bytes": 1560505,
+      "bytes": 9499678,
+      "local_header_offset": 246894211
+    },
+    {
+      "name": "RPT_json/Release 1.0/G28C2.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "cf2c1f9c",
+      "compressed_bytes": 1989939,
+      "bytes": 12461158,
+      "local_header_offset": 248454806
+    },
+    {
+      "name": "RPT_json/Release 1.0/G28C3.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "00ee4773",
+      "compressed_bytes": 1968964,
+      "bytes": 12315608,
+      "local_header_offset": 250444835
+    },
+    {
+      "name": "RPT_json/Release 1.0/G29C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "20bc3e30",
+      "compressed_bytes": 1948625,
+      "bytes": 11346231,
+      "local_header_offset": 252413889
+    },
+    {
+      "name": "RPT_json/Release 1.0/G28C4.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "f0e1ebfb",
+      "compressed_bytes": 1254717,
+      "bytes": 7345512,
+      "local_header_offset": 254362604
+    },
+    {
+      "name": "RPT_json/Release 1.0/G29C2.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "0b4209ab",
+      "compressed_bytes": 3022683,
+      "bytes": 18595732,
+      "local_header_offset": 255617411
+    },
+    {
+      "name": "RPT_json/Release 1.0/G29C3.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "1131a369",
+      "compressed_bytes": 2396879,
+      "bytes": 14935562,
+      "local_header_offset": 258640184
+    },
+    {
+      "name": "RPT_json/Release 1.0/G29C4.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "10a98a20",
+      "compressed_bytes": 2044069,
+      "bytes": 12174002,
+      "local_header_offset": 261037153
+    },
+    {
+      "name": "RPT_json/Release 1.0/G2C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "7ba6906b",
+      "compressed_bytes": 7998782,
+      "bytes": 74676855,
+      "local_header_offset": 263081312
+    },
+    {
+      "name": "RPT_json/Release 1.0/G2C2.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "02e0911d",
+      "compressed_bytes": 9102864,
+      "bytes": 79712269,
+      "local_header_offset": 271080183
+    },
+    {
+      "name": "RPT_json/Release 1.0/G2C3.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "b49e7b63",
+      "compressed_bytes": 8386889,
+      "bytes": 78066097,
+      "local_header_offset": 280183136
+    },
+    {
+      "name": "RPT_json/Release 1.0/G2C4.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "f92b9b2c",
+      "compressed_bytes": 8388047,
+      "bytes": 77176693,
+      "local_header_offset": 288570114
+    },
+    {
+      "name": "RPT_json/Release 1.0/G30C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "817eb3a4",
+      "compressed_bytes": 2101154,
+      "bytes": 12618160,
+      "local_header_offset": 296958250
+    },
+    {
+      "name": "RPT_json/Release 1.0/G30C2.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "42d5cd40",
+      "compressed_bytes": 2283723,
+      "bytes": 13608732,
+      "local_header_offset": 299059494
+    },
+    {
+      "name": "RPT_json/Release 1.0/G30C3.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "4ff38d33",
+      "compressed_bytes": 3067107,
+      "bytes": 18689628,
+      "local_header_offset": 301343307
+    },
+    {
+      "name": "RPT_json/Release 1.0/G30C4.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "1281ada6",
+      "compressed_bytes": 1742105,
+      "bytes": 10591170,
+      "local_header_offset": 304410504
+    },
+    {
+      "name": "RPT_json/Release 1.0/G31C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "42ecb87d",
+      "compressed_bytes": 2435370,
+      "bytes": 14693891,
+      "local_header_offset": 306152699
+    },
+    {
+      "name": "RPT_json/Release 1.0/G31C2.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "421e1b17",
+      "compressed_bytes": 2133250,
+      "bytes": 13307249,
+      "local_header_offset": 308588159
+    },
+    {
+      "name": "RPT_json/Release 1.0/G31C3.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "8ddf959b",
+      "compressed_bytes": 2119333,
+      "bytes": 13479603,
+      "local_header_offset": 310721499
+    },
+    {
+      "name": "RPT_json/Release 1.0/G31C4.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "cccfb879",
+      "compressed_bytes": 2035814,
+      "bytes": 12687435,
+      "local_header_offset": 312840922
+    },
+    {
+      "name": "RPT_json/Release 1.0/G32C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "669452cb",
+      "compressed_bytes": 3387223,
+      "bytes": 21537605,
+      "local_header_offset": 314876826
+    },
+    {
+      "name": "RPT_json/Release 1.0/G32C2.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "11955cc1",
+      "compressed_bytes": 2722022,
+      "bytes": 17548027,
+      "local_header_offset": 318264139
+    },
+    {
+      "name": "RPT_json/Release 1.0/G32C3.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "f2e2801d",
+      "compressed_bytes": 3109824,
+      "bytes": 19163067,
+      "local_header_offset": 320986251
+    },
+    {
+      "name": "RPT_json/Release 1.0/G32C4.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "38efac64",
+      "compressed_bytes": 2841967,
+      "bytes": 17971392,
+      "local_header_offset": 324096165
+    },
+    {
+      "name": "RPT_json/Release 1.0/G33C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "4ac124f2",
+      "compressed_bytes": 3202169,
+      "bytes": 20242430,
+      "local_header_offset": 326938222
+    },
+    {
+      "name": "RPT_json/Release 1.0/G33C2.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "a5df4b56",
+      "compressed_bytes": 2819304,
+      "bytes": 17922359,
+      "local_header_offset": 330140481
+    },
+    {
+      "name": "RPT_json/Release 1.0/G33C3.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "c17bc24d",
+      "compressed_bytes": 3425501,
+      "bytes": 21326722,
+      "local_header_offset": 332959875
+    },
+    {
+      "name": "RPT_json/Release 1.0/G33C4.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "77d69d90",
+      "compressed_bytes": 2782081,
+      "bytes": 17825752,
+      "local_header_offset": 336385466
+    },
+    {
+      "name": "RPT_json/Release 1.0/G34C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "823366de",
+      "compressed_bytes": 3837947,
+      "bytes": 24562328,
+      "local_header_offset": 339167637
+    },
+    {
+      "name": "RPT_json/Release 1.0/G34C2.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "7bb7cab0",
+      "compressed_bytes": 4001032,
+      "bytes": 25744262,
+      "local_header_offset": 343005674
+    },
+    {
+      "name": "RPT_json/Release 1.0/G34C3.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "1b338177",
+      "compressed_bytes": 3438382,
+      "bytes": 21780803,
+      "local_header_offset": 347006796
+    },
+    {
+      "name": "RPT_json/Release 1.0/G34C4.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "3096d93f",
+      "compressed_bytes": 3791599,
+      "bytes": 23874273,
+      "local_header_offset": 350445268
+    },
+    {
+      "name": "RPT_json/Release 1.0/G35C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "4e5373c5",
+      "compressed_bytes": 2949095,
+      "bytes": 18908027,
+      "local_header_offset": 354236957
+    },
+    {
+      "name": "RPT_json/Release 1.0/G35C2.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "90c8be65",
+      "compressed_bytes": 1407185,
+      "bytes": 9107293,
+      "local_header_offset": 357186142
+    },
+    {
+      "name": "RPT_json/Release 1.0/G35C3.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "29f26f96",
+      "compressed_bytes": 1915527,
+      "bytes": 12820948,
+      "local_header_offset": 358593417
+    },
+    {
+      "name": "RPT_json/Release 1.0/G35C4.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "03088286",
+      "compressed_bytes": 1701299,
+      "bytes": 11328034,
+      "local_header_offset": 360509034
+    },
+    {
+      "name": "RPT_json/Release 1.0/G36C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "860039fe",
+      "compressed_bytes": 1980225,
+      "bytes": 13731085,
+      "local_header_offset": 362210423
+    },
+    {
+      "name": "RPT_json/Release 1.0/G36C2.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "dcddba23",
+      "compressed_bytes": 2363293,
+      "bytes": 15234581,
+      "local_header_offset": 364190738
+    },
+    {
+      "name": "RPT_json/Release 1.0/G36C3.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "e7a7442b",
+      "compressed_bytes": 2452724,
+      "bytes": 16315352,
+      "local_header_offset": 366554121
+    },
+    {
+      "name": "RPT_json/Release 1.0/G36C4.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "81b85501",
+      "compressed_bytes": 1216135,
+      "bytes": 7725601,
+      "local_header_offset": 369006935
+    },
+    {
+      "name": "RPT_json/Release 1.0/G37C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "ea6097e0",
+      "compressed_bytes": 2980868,
+      "bytes": 20096121,
+      "local_header_offset": 370223160
+    },
+    {
+      "name": "RPT_json/Release 1.0/G37C2.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "868acd22",
+      "compressed_bytes": 2816775,
+      "bytes": 17922144,
+      "local_header_offset": 373204118
+    },
+    {
+      "name": "RPT_json/Release 1.0/G37C3.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "bcd13665",
+      "compressed_bytes": 2479998,
+      "bytes": 16771139,
+      "local_header_offset": 376020983
+    },
+    {
+      "name": "RPT_json/Release 1.0/G37C4.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "2221952d",
+      "compressed_bytes": 2084736,
+      "bytes": 14647555,
+      "local_header_offset": 378501071
+    },
+    {
+      "name": "RPT_json/Release 1.0/G38C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "5574e09b",
+      "compressed_bytes": 1633269,
+      "bytes": 11259345,
+      "local_header_offset": 380585897
+    },
+    {
+      "name": "RPT_json/Release 1.0/G38C2.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "734bfaeb",
+      "compressed_bytes": 1660094,
+      "bytes": 10730483,
+      "local_header_offset": 382219256
+    },
+    {
+      "name": "RPT_json/Release 1.0/G38C3.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "bf6230b7",
+      "compressed_bytes": 2185225,
+      "bytes": 15307505,
+      "local_header_offset": 383879440
+    },
+    {
+      "name": "RPT_json/Release 1.0/G38C4.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "443030b3",
+      "compressed_bytes": 2350283,
+      "bytes": 16547773,
+      "local_header_offset": 386064755
+    },
+    {
+      "name": "RPT_json/Release 1.0/G39C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "f3431148",
+      "compressed_bytes": 2097230,
+      "bytes": 13433768,
+      "local_header_offset": 388415128
+    },
+    {
+      "name": "RPT_json/Release 1.0/G39C2.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "72d039f6",
+      "compressed_bytes": 1954267,
+      "bytes": 13449111,
+      "local_header_offset": 390512448
+    },
+    {
+      "name": "RPT_json/Release 1.0/G39C3.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "615cc771",
+      "compressed_bytes": 1900276,
+      "bytes": 13372572,
+      "local_header_offset": 392466805
+    },
+    {
+      "name": "RPT_json/Release 1.0/G39C4.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "1631244c",
+      "compressed_bytes": 2172169,
+      "bytes": 15303188,
+      "local_header_offset": 394367171
+    },
+    {
+      "name": "RPT_json/Release 1.0/G3C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "927ae1f8",
+      "compressed_bytes": 9340320,
+      "bytes": 80844832,
+      "local_header_offset": 396539430
+    },
+    {
+      "name": "RPT_json/Release 1.0/G3C2.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "73d8c0ea",
+      "compressed_bytes": 7025961,
+      "bytes": 68603920,
+      "local_header_offset": 405879839
+    },
+    {
+      "name": "RPT_json/Release 1.0/G3C3.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "0b19732b",
+      "compressed_bytes": 8241435,
+      "bytes": 78135747,
+      "local_header_offset": 412905889
+    },
+    {
+      "name": "RPT_json/Release 1.0/G3C4.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "71c50a3a",
+      "compressed_bytes": 7386562,
+      "bytes": 70120436,
+      "local_header_offset": 421147413
+    },
+    {
+      "name": "RPT_json/Release 1.0/G40C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "7f676798",
+      "compressed_bytes": 4743176,
+      "bytes": 32881115,
+      "local_header_offset": 428534064
+    },
+    {
+      "name": "RPT_json/Release 1.0/G40C2.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "92e41dc8",
+      "compressed_bytes": 4197022,
+      "bytes": 28849203,
+      "local_header_offset": 433277330
+    },
+    {
+      "name": "RPT_json/Release 1.0/G40C3.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "0645519b",
+      "compressed_bytes": 4415392,
+      "bytes": 28609500,
+      "local_header_offset": 437474442
+    },
+    {
+      "name": "RPT_json/Release 1.0/G40C4.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "3273d025",
+      "compressed_bytes": 4987073,
+      "bytes": 32249545,
+      "local_header_offset": 441889924
+    },
+    {
+      "name": "RPT_json/Release 1.0/G41C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "4541c856",
+      "compressed_bytes": 3793367,
+      "bytes": 26570179,
+      "local_header_offset": 446877087
+    },
+    {
+      "name": "RPT_json/Release 1.0/G41C2.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "0aa67325",
+      "compressed_bytes": 2659654,
+      "bytes": 17051756,
+      "local_header_offset": 450670544
+    },
+    {
+      "name": "RPT_json/Release 1.0/G41C3.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "17aa38ad",
+      "compressed_bytes": 3188002,
+      "bytes": 22534324,
+      "local_header_offset": 453330288
+    },
+    {
+      "name": "RPT_json/Release 1.0/G41C4.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "a624a9c0",
+      "compressed_bytes": 3115103,
+      "bytes": 21946311,
+      "local_header_offset": 456518380
+    },
+    {
+      "name": "RPT_json/Release 1.0/G42C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "322a6d02",
+      "compressed_bytes": 3564051,
+      "bytes": 24664941,
+      "local_header_offset": 459633573
+    },
+    {
+      "name": "RPT_json/Release 1.0/G42C2.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "958ac83d",
+      "compressed_bytes": 3370381,
+      "bytes": 24180926,
+      "local_header_offset": 463197714
+    },
+    {
+      "name": "RPT_json/Release 1.0/G42C3.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "a6ea4be7",
+      "compressed_bytes": 2809896,
+      "bytes": 19653320,
+      "local_header_offset": 466568185
+    },
+    {
+      "name": "RPT_json/Release 1.0/G42C4.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "49e9cdd3",
+      "compressed_bytes": 3930962,
+      "bytes": 27752824,
+      "local_header_offset": 469378171
+    },
+    {
+      "name": "RPT_json/Release 1.0/G43C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "913287f0",
+      "compressed_bytes": 3997205,
+      "bytes": 26961224,
+      "local_header_offset": 473309223
+    },
+    {
+      "name": "RPT_json/Release 1.0/G43C2.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "dc4624e4",
+      "compressed_bytes": 3242762,
+      "bytes": 20912931,
+      "local_header_offset": 477306518
+    },
+    {
+      "name": "RPT_json/Release 1.0/G43C3.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "7c68135a",
+      "compressed_bytes": 4302361,
+      "bytes": 28153427,
+      "local_header_offset": 480549370
+    },
+    {
+      "name": "RPT_json/Release 1.0/G43C4.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "d01a8656",
+      "compressed_bytes": 3597711,
+      "bytes": 24110482,
+      "local_header_offset": 484851821
+    },
+    {
+      "name": "RPT_json/Release 1.0/G44C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "43609c53",
+      "compressed_bytes": 2507277,
+      "bytes": 15799876,
+      "local_header_offset": 488449622
+    },
+    {
+      "name": "RPT_json/Release 1.0/G44C2.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "9f6af1d0",
+      "compressed_bytes": 3624546,
+      "bytes": 22653179,
+      "local_header_offset": 490956989
+    },
+    {
+      "name": "RPT_json/Release 1.0/G44C3.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "ddf94091",
+      "compressed_bytes": 4040580,
+      "bytes": 25760455,
+      "local_header_offset": 494581625
+    },
+    {
+      "name": "RPT_json/Release 1.0/G44C4.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "67f6c510",
+      "compressed_bytes": 3533620,
+      "bytes": 22762879,
+      "local_header_offset": 498622295
+    },
+    {
+      "name": "RPT_json/Release 1.0/G45C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "139f49e0",
+      "compressed_bytes": 1883580,
+      "bytes": 11394243,
+      "local_header_offset": 502156005
+    },
+    {
+      "name": "RPT_json/Release 1.0/G45C2.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "420ea8ed",
+      "compressed_bytes": 1961816,
+      "bytes": 12289143,
+      "local_header_offset": 504039675
+    },
+    {
+      "name": "RPT_json/Release 1.0/G45C3.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "07d6501a",
+      "compressed_bytes": 2035694,
+      "bytes": 12817869,
+      "local_header_offset": 506001581
+    },
+    {
+      "name": "RPT_json/Release 1.0/G45C4.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "6c94e3f2",
+      "compressed_bytes": 1955216,
+      "bytes": 12378115,
+      "local_header_offset": 508037365
+    },
+    {
+      "name": "RPT_json/Release 1.0/G46C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "b31452ce",
+      "compressed_bytes": 2070759,
+      "bytes": 13044438,
+      "local_header_offset": 509992671
+    },
+    {
+      "name": "RPT_json/Release 1.0/G46C2.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "484f71c5",
+      "compressed_bytes": 2095512,
+      "bytes": 13247904,
+      "local_header_offset": 512063520
+    },
+    {
+      "name": "RPT_json/Release 1.0/G46C3.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "9da356fe",
+      "compressed_bytes": 1673700,
+      "bytes": 10227922,
+      "local_header_offset": 514159122
+    },
+    {
+      "name": "RPT_json/Release 1.0/G46C4.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "44ff1940",
+      "compressed_bytes": 2048223,
+      "bytes": 12984909,
+      "local_header_offset": 515832912
+    },
+    {
+      "name": "RPT_json/Release 1.0/G47C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "d8d51775",
+      "compressed_bytes": 1896082,
+      "bytes": 11910875,
+      "local_header_offset": 517881225
+    },
+    {
+      "name": "RPT_json/Release 1.0/G47C2.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "e535d609",
+      "compressed_bytes": 2597827,
+      "bytes": 15938604,
+      "local_header_offset": 519777397
+    },
+    {
+      "name": "RPT_json/Release 1.0/G47C3.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "1c461807",
+      "compressed_bytes": 2176265,
+      "bytes": 13650111,
+      "local_header_offset": 522375314
+    },
+    {
+      "name": "RPT_json/Release 1.0/G47C4.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "524136d4",
+      "compressed_bytes": 1916277,
+      "bytes": 11844297,
+      "local_header_offset": 524551669
+    },
+    {
+      "name": "RPT_json/Release 1.0/G48C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "d5ae82f6",
+      "compressed_bytes": 1691839,
+      "bytes": 10320033,
+      "local_header_offset": 526468036
+    },
+    {
+      "name": "RPT_json/Release 1.0/G48C2.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "50f31fa6",
+      "compressed_bytes": 1838597,
+      "bytes": 11471811,
+      "local_header_offset": 528159965
+    },
+    {
+      "name": "RPT_json/Release 1.0/G48C3.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "e1b5131b",
+      "compressed_bytes": 2113710,
+      "bytes": 13141924,
+      "local_header_offset": 529998652
+    },
+    {
+      "name": "RPT_json/Release 1.0/G48C4.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "bcfd0c86",
+      "compressed_bytes": 1608694,
+      "bytes": 9866336,
+      "local_header_offset": 532112452
+    },
+    {
+      "name": "RPT_json/Release 1.0/G4C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "ae4046eb",
+      "compressed_bytes": 8431371,
+      "bytes": 77223704,
+      "local_header_offset": 533721236
+    },
+    {
+      "name": "RPT_json/Release 1.0/G4C2.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "1c462a96",
+      "compressed_bytes": 8071053,
+      "bytes": 75902483,
+      "local_header_offset": 542152696
+    },
+    {
+      "name": "RPT_json/Release 1.0/G4C3.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "f86313b7",
+      "compressed_bytes": 9244186,
+      "bytes": 81578083,
+      "local_header_offset": 550223838
+    },
+    {
+      "name": "RPT_json/Release 1.0/G4C4.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "ff816d48",
+      "compressed_bytes": 8191571,
+      "bytes": 72439958,
+      "local_header_offset": 559468113
+    },
+    {
+      "name": "RPT_json/Release 1.0/G50C2.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "d21d190e",
+      "compressed_bytes": 3193595,
+      "bytes": 19105199,
+      "local_header_offset": 567659773
+    },
+    {
+      "name": "RPT_json/Release 1.0/G51C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "5f50c803",
+      "compressed_bytes": 2056573,
+      "bytes": 12162732,
+      "local_header_offset": 570853458
+    },
+    {
+      "name": "RPT_json/Release 1.0/G51C2.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "0146fd51",
+      "compressed_bytes": 2300173,
+      "bytes": 14668691,
+      "local_header_offset": 572910121
+    },
+    {
+      "name": "RPT_json/Release 1.0/G51C3.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "4298234d",
+      "compressed_bytes": 1936972,
+      "bytes": 11808703,
+      "local_header_offset": 575210384
+    },
+    {
+      "name": "RPT_json/Release 1.0/G51C4.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "c5da86e7",
+      "compressed_bytes": 2271020,
+      "bytes": 14219871,
+      "local_header_offset": 577147446
+    },
+    {
+      "name": "RPT_json/Release 1.0/G52C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "684818f3",
+      "compressed_bytes": 3098013,
+      "bytes": 21920071,
+      "local_header_offset": 579418556
+    },
+    {
+      "name": "RPT_json/Release 1.0/G52C2.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "2656cf9e",
+      "compressed_bytes": 2773840,
+      "bytes": 17909689,
+      "local_header_offset": 582516659
+    },
+    {
+      "name": "RPT_json/Release 1.0/G52C3.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "a38049f4",
+      "compressed_bytes": 2639876,
+      "bytes": 17657665,
+      "local_header_offset": 585290589
+    },
+    {
+      "name": "RPT_json/Release 1.0/G52C4.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "656d29f2",
+      "compressed_bytes": 2898241,
+      "bytes": 19569014,
+      "local_header_offset": 587930555
+    },
+    {
+      "name": "RPT_json/Release 1.0/G53C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "f8abee31",
+      "compressed_bytes": 880637,
+      "bytes": 5639347,
+      "local_header_offset": 590828886
+    },
+    {
+      "name": "RPT_json/Release 1.0/G53C2.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "f38821ec",
+      "compressed_bytes": 945136,
+      "bytes": 6418926,
+      "local_header_offset": 591709613
+    },
+    {
+      "name": "RPT_json/Release 1.0/G53C3.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "980235fa",
+      "compressed_bytes": 913244,
+      "bytes": 6259704,
+      "local_header_offset": 592654839
+    },
+    {
+      "name": "RPT_json/Release 1.0/G53C4.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "ea566ac5",
+      "compressed_bytes": 2283847,
+      "bytes": 15346596,
+      "local_header_offset": 593568173
+    },
+    {
+      "name": "RPT_json/Release 1.0/G54C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "66a3d040",
+      "compressed_bytes": 4127342,
+      "bytes": 27352807,
+      "local_header_offset": 595852110
+    },
+    {
+      "name": "RPT_json/Release 1.0/G54C2.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "672e2f63",
+      "compressed_bytes": 4346280,
+      "bytes": 30496975,
+      "local_header_offset": 599979542
+    },
+    {
+      "name": "RPT_json/Release 1.0/G54C3.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "83efc392",
+      "compressed_bytes": 4518458,
+      "bytes": 29641798,
+      "local_header_offset": 604325912
+    },
+    {
+      "name": "RPT_json/Release 1.0/G54C4.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "1d154f24",
+      "compressed_bytes": 3969286,
+      "bytes": 25845559,
+      "local_header_offset": 608844460
+    },
+    {
+      "name": "RPT_json/Release 1.0/G55C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "ef986a60",
+      "compressed_bytes": 2579505,
+      "bytes": 17152527,
+      "local_header_offset": 612813836
+    },
+    {
+      "name": "RPT_json/Release 1.0/G55C2.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "61d0154c",
+      "compressed_bytes": 2675448,
+      "bytes": 17458683,
+      "local_header_offset": 615393431
+    },
+    {
+      "name": "RPT_json/Release 1.0/G55C3.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "da0cea41",
+      "compressed_bytes": 2427761,
+      "bytes": 15468681,
+      "local_header_offset": 618068969
+    },
+    {
+      "name": "RPT_json/Release 1.0/G55C4.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "a83be0c7",
+      "compressed_bytes": 2539369,
+      "bytes": 17026720,
+      "local_header_offset": 620496820
+    },
+    {
+      "name": "RPT_json/Release 1.0/G56C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "4e8f93de",
+      "compressed_bytes": 3878316,
+      "bytes": 26190603,
+      "local_header_offset": 623036279
+    },
+    {
+      "name": "RPT_json/Release 1.0/G56C2.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "3e7775f0",
+      "compressed_bytes": 3551484,
+      "bytes": 24909506,
+      "local_header_offset": 626914685
+    },
+    {
+      "name": "RPT_json/Release 1.0/G56C3.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "12ee0336",
+      "compressed_bytes": 2977517,
+      "bytes": 19225784,
+      "local_header_offset": 630466259
+    },
+    {
+      "name": "RPT_json/Release 1.0/G56C4.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "5f900f9b",
+      "compressed_bytes": 3220340,
+      "bytes": 22341286,
+      "local_header_offset": 633443866
+    },
+    {
+      "name": "RPT_json/Release 1.0/G58C2.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "05821cd6",
+      "compressed_bytes": 3116908,
+      "bytes": 20306745,
+      "local_header_offset": 636664296
+    },
+    {
+      "name": "RPT_json/Release 1.0/G58C3.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "09367544",
+      "compressed_bytes": 3517827,
+      "bytes": 23669370,
+      "local_header_offset": 639781294
+    },
+    {
+      "name": "RPT_json/Release 1.0/G58C4.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "c3eaf2bd",
+      "compressed_bytes": 3549732,
+      "bytes": 24338815,
+      "local_header_offset": 643299211
+    },
+    {
+      "name": "RPT_json/Release 1.0/G59C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "ddad24b6",
+      "compressed_bytes": 4257628,
+      "bytes": 30091422,
+      "local_header_offset": 646849033
+    },
+    {
+      "name": "RPT_json/Release 1.0/G59C2.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "4e06ff1f",
+      "compressed_bytes": 3934345,
+      "bytes": 27797327,
+      "local_header_offset": 651106751
+    },
+    {
+      "name": "RPT_json/Release 1.0/G59C3.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "054d7e29",
+      "compressed_bytes": 3200029,
+      "bytes": 22824627,
+      "local_header_offset": 655041186
+    },
+    {
+      "name": "RPT_json/Release 1.0/G59C4.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "30de70ab",
+      "compressed_bytes": 3648613,
+      "bytes": 26005283,
+      "local_header_offset": 658241305
+    },
+    {
+      "name": "RPT_json/Release 1.0/G5C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "9eaf9336",
+      "compressed_bytes": 6609345,
+      "bytes": 63716531,
+      "local_header_offset": 661890008
+    },
+    {
+      "name": "RPT_json/Release 1.0/G5C2.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "25de4f1c",
+      "compressed_bytes": 6534195,
+      "bytes": 65568099,
+      "local_header_offset": 668499442
+    },
+    {
+      "name": "RPT_json/Release 1.0/G5C3.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "8783b9a8",
+      "compressed_bytes": 6710595,
+      "bytes": 66497776,
+      "local_header_offset": 675033726
+    },
+    {
+      "name": "RPT_json/Release 1.0/G5C4.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "ba542578",
+      "compressed_bytes": 6510660,
+      "bytes": 61696053,
+      "local_header_offset": 681744410
+    },
+    {
+      "name": "RPT_json/Release 1.0/G60C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "bd00c2f2",
+      "compressed_bytes": 2586032,
+      "bytes": 15901506,
+      "local_header_offset": 688255159
+    },
+    {
+      "name": "RPT_json/Release 1.0/G60C2.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "c5d42e55",
+      "compressed_bytes": 2051912,
+      "bytes": 12724533,
+      "local_header_offset": 690841281
+    },
+    {
+      "name": "RPT_json/Release 1.0/G60C3.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "0026504f",
+      "compressed_bytes": 1854529,
+      "bytes": 11502414,
+      "local_header_offset": 692893283
+    },
+    {
+      "name": "RPT_json/Release 1.0/G60C4.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "0c812610",
+      "compressed_bytes": 2089306,
+      "bytes": 13184108,
+      "local_header_offset": 694747902
+    },
+    {
+      "name": "RPT_json/Release 1.0/G61C2.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "a145b9ef",
+      "compressed_bytes": 2580858,
+      "bytes": 16859805,
+      "local_header_offset": 696837298
+    },
+    {
+      "name": "RPT_json/Release 1.0/G61C3.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "48c693f4",
+      "compressed_bytes": 1476911,
+      "bytes": 9796524,
+      "local_header_offset": 699418246
+    },
+    {
+      "name": "RPT_json/Release 1.0/G61C4.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "f14698aa",
+      "compressed_bytes": 2335318,
+      "bytes": 16331086,
+      "local_header_offset": 700895247
+    },
+    {
+      "name": "RPT_json/Release 1.0/G62C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "686a8393",
+      "compressed_bytes": 2573530,
+      "bytes": 17240004,
+      "local_header_offset": 703230655
+    },
+    {
+      "name": "RPT_json/Release 1.0/G62C2.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "22406fb2",
+      "compressed_bytes": 2107411,
+      "bytes": 13668496,
+      "local_header_offset": 705804275
+    },
+    {
+      "name": "RPT_json/Release 1.0/G62C3.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "7ff12066",
+      "compressed_bytes": 2163923,
+      "bytes": 14537158,
+      "local_header_offset": 707911776
+    },
+    {
+      "name": "RPT_json/Release 1.0/G62C4.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "733e4aaa",
+      "compressed_bytes": 1526364,
+      "bytes": 10240922,
+      "local_header_offset": 710075789
+    },
+    {
+      "name": "RPT_json/Release 1.0/G63C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "add1c463",
+      "compressed_bytes": 1562831,
+      "bytes": 10074776,
+      "local_header_offset": 711602243
+    },
+    {
+      "name": "RPT_json/Release 1.0/G63C2.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "2f031dfe",
+      "compressed_bytes": 1417628,
+      "bytes": 9886480,
+      "local_header_offset": 713165164
+    },
+    {
+      "name": "RPT_json/Release 1.0/G63C3.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "3cdb0b5c",
+      "compressed_bytes": 2045919,
+      "bytes": 14466587,
+      "local_header_offset": 714582882
+    },
+    {
+      "name": "RPT_json/Release 1.0/G63C4.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "e977ccda",
+      "compressed_bytes": 2678174,
+      "bytes": 18668047,
+      "local_header_offset": 716628891
+    },
+    {
+      "name": "RPT_json/Release 1.0/G64C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "4fbf9bf9",
+      "compressed_bytes": 1389293,
+      "bytes": 9814296,
+      "local_header_offset": 719307155
+    },
+    {
+      "name": "RPT_json/Release 1.0/G64C2.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "9e6254f8",
+      "compressed_bytes": 1312388,
+      "bytes": 9071367,
+      "local_header_offset": 720696538
+    },
+    {
+      "name": "RPT_json/Release 1.0/G64C3.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "216a26af",
+      "compressed_bytes": 1391116,
+      "bytes": 9698417,
+      "local_header_offset": 722009016
+    },
+    {
+      "name": "RPT_json/Release 1.0/G64C4.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "0691d5db",
+      "compressed_bytes": 2367523,
+      "bytes": 15582404,
+      "local_header_offset": 723400222
+    },
+    {
+      "name": "RPT_json/Release 1.0/G6C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "cb75023e",
+      "compressed_bytes": 9757231,
+      "bytes": 85246049,
+      "local_header_offset": 725767835
+    },
+    {
+      "name": "RPT_json/Release 1.0/G6C2.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "df6d96b6",
+      "compressed_bytes": 12126827,
+      "bytes": 100555965,
+      "local_header_offset": 735525155
+    },
+    {
+      "name": "RPT_json/Release 1.0/G6C3.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "f85e28e7",
+      "compressed_bytes": 14262974,
+      "bytes": 118703961,
+      "local_header_offset": 747652071
+    },
+    {
+      "name": "RPT_json/Release 1.0/G6C4.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "6f28fbe2",
+      "compressed_bytes": 11418925,
+      "bytes": 98815332,
+      "local_header_offset": 761915134
+    },
+    {
+      "name": "RPT_json/Release 1.0/G7C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "9d7f37a2",
+      "compressed_bytes": 7836850,
+      "bytes": 74403479,
+      "local_header_offset": 773334148
+    },
+    {
+      "name": "RPT_json/Release 1.0/G7C2.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "07d2d6b2",
+      "compressed_bytes": 7674135,
+      "bytes": 75349483,
+      "local_header_offset": 781171087
+    },
+    {
+      "name": "RPT_json/Release 1.0/G7C3.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "7ea5b944",
+      "compressed_bytes": 12462474,
+      "bytes": 101350956,
+      "local_header_offset": 788845311
+    },
+    {
+      "name": "RPT_json/Release 1.0/G7C4.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "dcb221b3",
+      "compressed_bytes": 8946949,
+      "bytes": 79363344,
+      "local_header_offset": 801307874
+    },
+    {
+      "name": "RPT_json/Release 1.0/G8C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "25c3702b",
+      "compressed_bytes": 6331382,
+      "bytes": 65453381,
+      "local_header_offset": 810254912
+    },
+    {
+      "name": "RPT_json/Release 1.0/G8C2.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "0a9f7726",
+      "compressed_bytes": 6990975,
+      "bytes": 67159856,
+      "local_header_offset": 816586383
+    },
+    {
+      "name": "RPT_json/Release 1.0/G8C3.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "4c5043da",
+      "compressed_bytes": 8401845,
+      "bytes": 77217583,
+      "local_header_offset": 823577447
+    },
+    {
+      "name": "RPT_json/Release 1.0/G8C4.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "db09ccbe",
+      "compressed_bytes": 8032401,
+      "bytes": 76499633,
+      "local_header_offset": 831979381
+    },
+    {
+      "name": "RPT_json/Release 1.0/G9C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "6dddecb9",
+      "compressed_bytes": 5365282,
+      "bytes": 57059841,
+      "local_header_offset": 840011871
+    },
+    {
+      "name": "RPT_json/Release 1.0/G9C2.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "b941b658",
+      "compressed_bytes": 5519879,
+      "bytes": 58048186,
+      "local_header_offset": 845377242
+    },
+    {
+      "name": "RPT_json/Release 1.0/G9C3.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "eef95eca",
+      "compressed_bytes": 5784351,
+      "bytes": 60604140,
+      "local_header_offset": 850897210
+    },
+    {
+      "name": "RPT_json/Release 1.0/G9C4.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "f6465abe",
+      "compressed_bytes": 5411077,
+      "bytes": 57882881,
+      "local_header_offset": 856681650
+    },
+    {
+      "name": "RPT_json/Release 2.0/G26C3.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "5b283fb9",
+      "compressed_bytes": 9087806,
+      "bytes": 56541082,
+      "local_header_offset": 862092816
+    },
+    {
+      "name": "RPT_json/Release 2.0/G49C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "c17ab3bf",
+      "compressed_bytes": 5300535,
+      "bytes": 33954836,
+      "local_header_offset": 871180712
+    },
+    {
+      "name": "RPT_json/Release 2.0/G49C2.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "5b7c1386",
+      "compressed_bytes": 5189741,
+      "bytes": 32328785,
+      "local_header_offset": 876481337
+    },
+    {
+      "name": "RPT_json/Release 2.0/G49C3.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "dd11e3f4",
+      "compressed_bytes": 5214854,
+      "bytes": 33215473,
+      "local_header_offset": 881671168
+    },
+    {
+      "name": "RPT_json/Release 2.0/G49C4.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "bfb32aed",
+      "compressed_bytes": 5193771,
+      "bytes": 33167194,
+      "local_header_offset": 886886112
+    },
+    {
+      "name": "RPT_json/Release 2.0/G50C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "be631b1f",
+      "compressed_bytes": 4046615,
+      "bytes": 24252528,
+      "local_header_offset": 892079973
+    },
+    {
+      "name": "RPT_json/Release 2.0/G50C3.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "4402f342",
+      "compressed_bytes": 4751559,
+      "bytes": 29490347,
+      "local_header_offset": 896126678
+    },
+    {
+      "name": "RPT_json/Release 2.0/G50C4.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "e6a96a33",
+      "compressed_bytes": 4194935,
+      "bytes": 25951457,
+      "local_header_offset": 900878327
+    },
+    {
+      "name": "RPT_json/Release 2.0/G57C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "aeb9e740",
+      "compressed_bytes": 5097856,
+      "bytes": 33769539,
+      "local_header_offset": 905073352
+    },
+    {
+      "name": "RPT_json/Release 2.0/G57C2.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "b45f5972",
+      "compressed_bytes": 5091206,
+      "bytes": 33863665,
+      "local_header_offset": 910171298
+    },
+    {
+      "name": "RPT_json/Release 2.0/G57C3.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "6ab8d021",
+      "compressed_bytes": 4886091,
+      "bytes": 33168784,
+      "local_header_offset": 915262594
+    },
+    {
+      "name": "RPT_json/Release 2.0/G57C4.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "1713bfe3",
+      "compressed_bytes": 4876450,
+      "bytes": 34166269,
+      "local_header_offset": 920148775
+    },
+    {
+      "name": "RPT_json/Release 2.0/G58C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "a01d1ffa",
+      "compressed_bytes": 4359868,
+      "bytes": 30770155,
+      "local_header_offset": 925025315
+    }
+  ]
+}

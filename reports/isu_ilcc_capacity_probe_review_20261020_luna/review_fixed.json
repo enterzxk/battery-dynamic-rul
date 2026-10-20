@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "phase": "PRE_GO_ACQUISITION_AND_PARSE",
+  "reviewed_utc": "2026-10-20T08:22:00Z",
+  "scope": "Static dependency-order review only. No network, archive, capacity payload or curve access; no runner execution.",
+  "inputs": {
+    "protocol_path": "/home/yndx/zxk/rul/reports/isu_ilcc_capacity_probe_20261020_root/protocol.json",
+    "protocol_sha256": "985ba4d969db9ac3a7b445cafadd78b26a8cbe44047a5e77cd76803d7a48a6c3",
+    "cohort_path": "/home/yndx/zxk/rul/reports/isu_ilcc_capacity_probe_20261020_root/cohort.json",
+    "cohort_sha256": "4469f7f5b6eb8c26a522fa46c4291ec6d03d98e7ae5c20ce7ae77e835b849ae0",
+    "runner_path": "/home/yndx/zxk/rul/reports/isu_ilcc_capacity_probe_20261020_root/runner.py",
+    "runner_sha256": "3a4e3b9330de9467f9b5bec772969a6a993df399a79bad44b9aafab756d43498",
+    "receive_archive_path": "/home/yndx/zxk/rul/reports/isu_ilcc_capacity_probe_20261020_root/receive_archive.py",
+    "receive_archive_sha256": "cab30dae305377d7aee43173abed9258200ac3a94530fb751eff3dceba5c1c65"
+  },
+  "dependency_order": [
+    "Root signs GO_ONE_ARCHIVE_AND_TWO_TRAIN_SUMMARIES with exact protocol/runner/receive_archive hashes and this review_fixed.json path plus SHA-256. Both receiver and runner require that GO status.",
+    "Only after GO, local control performs the single logical GET for the fixed URL with the 140256-byte cap; this review does not perform or request that GET.",
+    "receive_archive.py receives the returned payload and validates fixed URL, exact byte count, protocol MD5 and supplied SHA-256, then checks coordinator ownership/lock and creates the archive and acquisition_receipt.json exclusively.",
+    "runner.py then verifies GO and review hashes/status, current owner/fit gate, CPU lock, exclusive one-shot invocation.claim, frozen cohort hash, archive byte count/MD5 and receipt SHA before listing archive metadata and reading only the two preselected train member payloads."
+  ],
+  "findings": {
+    "pre_GO_state": "The absence of the archive, acquisition receipt, GO and invocation claim at this stage is expected: the authorized single acquisition has not yet been consumed. It is not an execution failure and is not a reason to acquire early.",
+    "roles": "PASS: frozen cohort declares 251 IDs (125 train, 63 development, 63 locked), with C1/C2 train, C3 development, C4 locked and G61C1 absent; G1C1 and G20C1 are both train.",
+    "limits": "The code permits archive directory metadata listing but checks train role before reading the two member payloads, with <=2 members, <=100000 bytes each, <=200000 decompressed total, and <=30 seconds. It does not execute author code, read dev/locked payloads, parse raw cycling time series, fit or infer.",
+    "scientific_interpretation": "Only a first observed RPT capacity <=0.20 Ah (80% of 0.25 Ah nominal) is summarized; this is not latent physical EOL. Source process_data.py computes cumulative Time by summing durations and fills some missing durations using future neighbors (i+1/i+2); strict as-of validity remains unverified and the runner marks strict_asof_clock_verified=false. The cohort identifies author group/cell IDs, not independently verified physical serials."
+  },
+  "runtime_preconditions": "Before GO is consumed, the single GET must yield the expected archive bytes and the receiver must successfully create both the archive and matching receipt. Any URL, size, digest, role, hash, ownership, lock or claim mismatch must stop the run without retry. A later result review is a separate stage.",
+  "issues": []
+}

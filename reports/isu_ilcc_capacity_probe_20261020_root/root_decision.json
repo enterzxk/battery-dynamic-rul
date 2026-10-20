@@ -1,0 +1,7 @@
+{
+  "decision": "TWO_SOURCE_SUMMARIES_VALID_STRICT_CLOCK_UNVERIFIED_RECOVER_RAW_RPT_TIMESTAMPS_NEXT",
+  "new_fits": 0,
+  "locked_decodes": 0,
+  "global_native_cycle_RUL_allowed": false,
+  "next_scope": "/home/yndx/zxk/rul/reports/isu_ilcc_clock_source_20261020_root/next_clock_recovery_scope.json"
+}

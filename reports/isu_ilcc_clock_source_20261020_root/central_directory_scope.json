@@ -1,0 +1,27 @@
+{
+  "status": "GO_ONE_CENTRAL_DIRECTORY_METADATA_RANGE_ONLY",
+  "source": {
+    "id": 43756491,
+    "name": "RPT_json.zip",
+    "size": 929406930,
+    "download_url": "https://ndownloader.figshare.com/files/43756491",
+    "supplied_md5": "36331bf80f21d00e19a9a45095f542e8",
+    "computed_md5": "36331bf80f21d00e19a9a45095f542e8"
+  },
+  "range_start": 929341394,
+  "range_end": 929406929,
+  "max_range_body_bytes": 65536,
+  "max_logical_GET": 1,
+  "timeout_seconds": 20,
+  "require_HTTP206_and_exact_Content_Range": true,
+  "if_200": "close response before reading body;STOP no retry",
+  "member_payload_reads": 0,
+  "new_fits": 0,
+  "test_member_decodes": 0,
+  "probe_ids": [
+    "G1C1",
+    "G20C1"
+  ],
+  "reason": "Obtain exact source-member sizes before bounding direct timestamp recovery, without downloading929MB archive",
+  "issued_utc": "2026-10-20T08:24:14.310106+00:00"
+}

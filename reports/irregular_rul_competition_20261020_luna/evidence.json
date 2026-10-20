@@ -1,0 +1,87 @@
+{
+  "date": "2026-10-20",
+  "scope": "Primary-source competition review and metadata-only feasibility; no data download/decode or model execution.",
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "93488b4e887ff13c8ac88687d1be4197a52c22667708dfd960d424007f3b1c19"
+    },
+    {
+      "path": "docs/PAPER_ROUTE_20261020_ZH.md",
+      "sha256": "12507161aec43b4482ba7c54daa5caf702527c5c5f7562c12fe394a9ff617e3a"
+    },
+    {
+      "path": "reports/post_mixture_methods_conflict_20261019_root/RESULTS_ZH.md",
+      "role": "reused prior review"
+    }
+  ],
+  "competitors": [
+    {
+      "name": "Unified stochastic degradation learning and liquid neural dynamics for reliable real time remaining useful life prediction of lithium-ion batteries",
+      "doi": "10.1016/j.eswa.2026.133786",
+      "url": "https://doi.org/10.1016/j.eswa.2026.133786",
+      "source": "Elsevier official abstract",
+      "scope": "full text formulas/data/experiments unavailable; high overlap; unverified"
+    },
+    {
+      "name": "EntroLnn: Entropy-Guided Liquid Neural Networks for Operando Refinement of Battery Capacity Fade Trajectories",
+      "url": "https://arxiv.org/html/2601.06195",
+      "doi": "10.1145/3748522.3779909",
+      "scope": "official HTML §§2.1-2.3,3-4; equations 1-12; 124 MIT-Stanford LFP cells; SoH/CFT refinement"
+    },
+    {
+      "name": "Two-Stage Temporal and Correlation Analysis: Enhancing Battery Health and Life Prediction With MINE-Graph-Mamba",
+      "doi": "10.1109/TIM.2025.3635303",
+      "url": "https://doi.org/10.1109/TIM.2025.3635303",
+      "source": "IEEE official abstract only",
+      "scope": "full method/experiment unavailable; unverified"
+    },
+    {
+      "name": "Dynamic survival analysis via a landmarking-gradient boosting approach and its application to kidney transplant data",
+      "doi": "10.1186/s12911-025-03205-2",
+      "url": "https://doi.org/10.1186/s12911-025-03205-2",
+      "scope": "BMC full text methods eq 1,3; landmarking; simulation/application"
+    },
+    {
+      "name": "RUL-QMoE",
+      "url": "https://arxiv.org/abs/2512.23725v1",
+      "scope": "reuse existing project conflict report; no paper reread"
+    }
+  ],
+  "dataset": {
+    "name": "UConn-ISU-ILCC LFP/Gr Battery Aging Dataset",
+    "url": "https://digitalcommons.lib.uconn.edu/reil_datasets/1/",
+    "authors": [
+      "Benjamin Nowacki",
+      "Jayanth Ramamurthy",
+      "Adam Thelen",
+      "Chad Tischer",
+      "Cary L. Pint",
+      "Chao Hu"
+    ],
+    "cells": 64,
+    "conditions": 11,
+    "model": "LithiumWerks APR18650M1B",
+    "rpt": "~3.5 days/~100 cycles variable by condition",
+    "sampling": "1Hz cycling and RPT",
+    "duration": "38 weeks",
+    "eol": "80% remaining capacity; denominator unspecified",
+    "files_kb": {
+      "rpt_zip": 2349987,
+      "cycling_part1_zip": 6552148,
+      "cycling_part2_zip": 7045687,
+      "parameters_csv": 1,
+      "citation": 1
+    },
+    "associated_article_doi": "10.1016/j.jpowsour.2024.235813",
+    "dataset_doi": "not displayed",
+    "license": "CC BY 4.0",
+    "readme": "5 kB official link 403; unread",
+    "raw_downloaded": false
+  },
+  "notes": [
+    "arXiv:2503.13558 withdrawn; excluded.",
+    "10.1109/JSEN.2026.3723690 not primary-verified; no claims.",
+    "ISU Figshare 10.25380/iastate.22582234 is a separate NMC/Gr release."
+  ]
+}

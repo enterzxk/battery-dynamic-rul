@@ -1,0 +1,14 @@
+{
+  "name": "process_data.py",
+  "source_url": "https://ndownloader.figshare.com/files/43754835",
+  "sha256": "ce3e0e25314e7238bdeb0c88d5a0514347ef9fc64ccf897d17d60c580250064b",
+  "HTTP_status": 200,
+  "redirect_hosts": [
+    "s3-eu-west-1.amazonaws.com"
+  ],
+  "bytes": 9769,
+  "md5": "ccb61a35ffb6f2e17b2d55b336f170c8",
+  "raw_curve_reads": 0,
+  "new_fits": 0,
+  "received_utc": "2026-10-20T08:13:47.439622+00:00"
+}

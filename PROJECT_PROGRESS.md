@@ -707,3 +707,11 @@
 - Minimal validation: independent summary recomputation plus2positive train curves PASS; no cal/dev/test, raw archives, model inference or fits.2/42 invalid first-passage intervals, median delay7.5/max228; predeclared3/42 screen FAIL, NO_GO preserved.
 - Blocker/risk: no independent novel-method evidence; ISU semantics/clock/endpoints/roles still unverified; paper225 versus current238 retained. arXiv2503.13558 currently withdrawn; do not use it as primary scientific support.
 - Next: bounded official README/Valid_cells/author processing-code semantic preflight652449bytes, no code execution or capacity payload; preserve all old budget and test gates. CS2 continuity wait no longer blocks all paper work.
+
+
+## 2026-10-20: ISU-ILCC251IDs/two-train summaries and RPT range source
+- Completed:3official documents652449bytes;251unique IDs/63groups;roles125train63dev63locked frozen before capacity.1archive140256bytes;onlyG1C1/G20C1 decoded:52/9rows,first observed0.2Ah crossing49.2451389/9.08620453sourceweeks.
+- Evidence: reports/isu_ilcc_metadata_20261020_root/semantic_decision.json; reports/isu_ilcc_capacity_probe_20261020_root/RESULTS_ZH.md; reports/isu_ilcc_clock_source_20261020_root/central_directory_receipt.json.
+- Minimal validation:size/MD5/SHA/cohort/schema/order/finite values PASS;0fit/model inference/dev/locked decode.65536byte exact RPTZIPtail Range206/ETag verified,252directory entries,no member read.
+- Blocker/risk:author Time has future-neighbor missing-duration filling;source summary is not strict asof clock or exact latentEOL.Original BLOCK/preGO stage correction preserved.
+- Next:exact scoped2train RPT header/member range recovery12403932compressedbytes;implement/review/freshGO,extract stop timestamps without imputation before any model fit.

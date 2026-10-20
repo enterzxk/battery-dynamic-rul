@@ -1,0 +1,14 @@
+{
+  "name": "Valid_cells.csv",
+  "source_url": "https://ndownloader.figshare.com/files/43754763",
+  "sha256": "099876ba651b523f89aeaa417491f25f69fa48321e1f667cb581ad4e27bbc4c5",
+  "HTTP_status": 200,
+  "redirect_hosts": [
+    "s3-eu-west-1.amazonaws.com"
+  ],
+  "bytes": 1727,
+  "md5": "88e4a2a884c436831b6b5f1274409bad",
+  "raw_curve_reads": 0,
+  "new_fits": 0,
+  "received_utc": "2026-10-20T08:13:43.274382+00:00"
+}

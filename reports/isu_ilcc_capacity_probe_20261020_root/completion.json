@@ -1,0 +1,12 @@
+{
+  "status": "COMPLETE_TWO_PRESELECTED_TRAIN_SUMMARIES",
+  "rows": 61,
+  "bytes_decoded": 2338,
+  "archive_bytes": 140256,
+  "member_payload_reads": 2,
+  "locked_member_reads": 0,
+  "development_member_reads": 0,
+  "new_fits": 0,
+  "model_inference": 0,
+  "elapsed_seconds": 0.004619084298610687
+}

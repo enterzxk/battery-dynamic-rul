@@ -1,0 +1,19 @@
+{
+  "status": "GO_ONE_ARCHIVE_AND_TWO_TRAIN_SUMMARIES",
+  "review_path": "/home/yndx/zxk/rul/reports/isu_ilcc_capacity_probe_review_20261020_luna/review_fixed.json",
+  "review_sha256": "a7d4b096453d9a1a45f8b1ece6e67250dcdbd612c063990fe1cc7364d191af95",
+  "max_logical_GET": 1,
+  "max_archive_bytes": 140256,
+  "max_member_payload_reads": 2,
+  "max_new_fits": 0,
+  "max_model_inference": 0,
+  "max_locked_member_reads": 0,
+  "max_development_member_reads": 0,
+  "owner": "01a15846-1ade-7623-88ff-98dd7f94f4fd",
+  "scope": "Acquire official capacity archive, verify, then probe only preselected2train members; no strict clock or latentEOL qualification",
+  "issued_utc": "2026-10-20T08:23:03.717459+00:00",
+  "protocol.json_sha256": "985ba4d969db9ac3a7b445cafadd78b26a8cbe44047a5e77cd76803d7a48a6c3",
+  "cohort.json_sha256": "4469f7f5b6eb8c26a522fa46c4291ec6d03d98e7ae5c20ce7ae77e835b849ae0",
+  "runner.py_sha256": "3a4e3b9330de9467f9b5bec772969a6a993df399a79bad44b9aafab756d43498",
+  "receive_archive.py_sha256": "cab30dae305377d7aee43173abed9258200ac3a94530fb751eff3dceba5c1c65"
+}

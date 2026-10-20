@@ -1,0 +1,76 @@
+{
+  "status": "DOCUMENTS_VERIFIED_SOURCE_SUMMARY_PROBE_ALLOWED_STRICT_TIME_UNVERIFIED",
+  "documents": [
+    {
+      "name": "Valid_cells.csv",
+      "source_url": "https://ndownloader.figshare.com/files/43754763",
+      "sha256": "099876ba651b523f89aeaa417491f25f69fa48321e1f667cb581ad4e27bbc4c5",
+      "HTTP_status": 200,
+      "redirect_hosts": [
+        "s3-eu-west-1.amazonaws.com"
+      ],
+      "bytes": 1727,
+      "md5": "88e4a2a884c436831b6b5f1274409bad",
+      "raw_curve_reads": 0,
+      "new_fits": 0,
+      "received_utc": "2026-10-20T08:13:43.274382+00:00"
+    },
+    {
+      "name": "process_data.py",
+      "source_url": "https://ndownloader.figshare.com/files/43754835",
+      "sha256": "ce3e0e25314e7238bdeb0c88d5a0514347ef9fc64ccf897d17d60c580250064b",
+      "HTTP_status": 200,
+      "redirect_hosts": [
+        "s3-eu-west-1.amazonaws.com"
+      ],
+      "bytes": 9769,
+      "md5": "ccb61a35ffb6f2e17b2d55b336f170c8",
+      "raw_curve_reads": 0,
+      "new_fits": 0,
+      "received_utc": "2026-10-20T08:13:47.439622+00:00"
+    },
+    {
+      "name": "README_V2.0.pdf",
+      "source_url": "https://ndownloader.figshare.com/files/43754898",
+      "sha256": "46fb983297a4590c9fa3274172fbfe60a23e19242ecae21f2fee9fa424c85a57",
+      "HTTP_status": 200,
+      "redirect_hosts": [
+        "s3-eu-west-1.amazonaws.com"
+      ],
+      "bytes": 640953,
+      "md5": "c03da9a1a3499989d2cdb655b41d4d0b",
+      "raw_curve_reads": 0,
+      "new_fits": 0,
+      "received_utc": "2026-10-20T08:13:55.500320+00:00"
+    }
+  ],
+  "valid_ids": 251,
+  "unique_ids": 251,
+  "groups": 63,
+  "README_pages": {
+    "4": "RPT full C/5 and C/2 discharges;7day cycling cadence;extra halfweek forG20-64",
+    "5": "Capacity Ah; time on test source summary not native cycle; raw timestamps exist in RPT_json",
+    "9": "Release fully contains251cells",
+    "11": "known missing RPT week4 forG20-29;weeks23/24 forG25C1/G26all"
+  },
+  "metadata238_vs_valid251": "Website description is not current file membership;251official uniqueIDs plus README release note authoritative for this version. Old receipt retained.",
+  "nominal_Ah": 0.25,
+  "observed_nominal80_threshold_Ah": 0.2,
+  "clock_units": "author-reported cumulative time on test in weeks; not cycle/row/calendar time",
+  "strict_asof_clock_verified": false,
+  "future_duration_imputation_code_lines": [
+    102,
+    103,
+    105,
+    106,
+    108,
+    109,
+    123,
+    124
+  ],
+  "dropna_line": 142,
+  "author_code_executed": false,
+  "raw_capacity_payload_reads": 0,
+  "new_fits": 0,
+  "next": "one140256byte capacity archive with only2preselected train CSV decodes; no scientific model authorization"
+}

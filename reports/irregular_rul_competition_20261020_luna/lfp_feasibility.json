@@ -1,0 +1,63 @@
+{
+  "record": "UConn-ISU-ILCC LFP/Gr Battery Aging Dataset",
+  "official_record_url": "https://digitalcommons.lib.uconn.edu/reil_datasets/1/",
+  "authors": [
+    "Benjamin Nowacki, University of Connecticut",
+    "Jayanth Ramamurthy, Iowa State University",
+    "Adam Thelen, Iowa State University",
+    "Chad Tischer, Iowa Lakes Community College",
+    "Cary L. Pint, Iowa State University",
+    "Chao Hu, University of Connecticut"
+  ],
+  "chemistry": "LFP/graphite; official UConn dataset record title",
+  "cells": 64,
+  "conditions": 11,
+  "cell_model": "LithiumWerks APR18650M1B cylindrical 18650",
+  "nominal_capacity": {
+    "dataset_value": "not stated on dataset record",
+    "manufacturer_current": "1.2 Ah typical / 1.15 Ah minimum",
+    "source": "https://lithiumwerks.com/products/lithium-ion-18650-cells/",
+    "warning": "manufacturer specification is not the cohort's measured BOL capacity or the dataset's EOL denominator"
+  },
+  "observation_design": {
+    "rpt_interval": "about every 3.5 days (~100 cycles, condition-dependent)",
+    "measurements": "current capacity; 100-second CC pulses at three SOC values",
+    "sampling": "cycling and RPT at 1 Hz",
+    "duration": "38 weeks",
+    "eol": "80% remaining capacity, denominator unclear on metadata page"
+  },
+  "associated_publication": {
+    "title": "Rapid estimation of lithium-ion battery capacity and resistances from short duration current pulses",
+    "authors": "Nowacki et al.",
+    "journal": "Journal of Power Sources 628, 235813, Feb 2025",
+    "doi": "10.1016/j.jpowsour.2024.235813"
+  },
+  "dataset_doi": "No standalone DOI displayed on UConn record",
+  "license": "CC BY 4.0",
+  "file_sizes_kb": {
+    "rpt_data_zip": 2349987,
+    "cycling_part1_zip": 6552148,
+    "cycling_part2_zip": 7045687,
+    "cyclingParameters_csv": 1,
+    "citation_bib": 1,
+    "total_three_raw_archives": 15947822
+  },
+  "raw_data_downloaded_or_decoded": false,
+  "readme_status": "The linked 5 kB README could not be fetched (HTTP 403); not read.",
+  "unknowns": [
+    "exact timestamp and cycle-index columns/units",
+    "empirical RPT interval distribution per cell",
+    "denominator used for the 80% EOL threshold",
+    "termination, censoring, and missing-RPT semantics",
+    "whether capacity recovery creates observed recrossings"
+  ],
+  "feasibility": "Promising external metadata candidate for sparse health-inspection evaluation; not yet protocol-ready until README/data dictionary resolve time, EOL, and censoring semantics.",
+  "not_to_conflate": {
+    "other_record": "ISU-ILCC Battery Aging Dataset, Iowa State Figshare",
+    "doi": "10.25380/iastate.22582234",
+    "url": "https://iastate.figshare.com/articles/dataset/_b_ISU-ILCC_Battery_Aging_Dataset_b_/22582234",
+    "chemistry": "NMC/graphite",
+    "metadata": "v2 describes 251 total cells/63 conditions; current release 238 complete + 12 incomplete",
+    "warning": "Separate resource; not same as the 64-cell UConn LFP/Gr dataset."
+  }
+}

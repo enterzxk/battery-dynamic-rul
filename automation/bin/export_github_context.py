@@ -284,6 +284,19 @@ def main():
     for name in ['receipt.json','next_semantic_preflight_scope.json','RESULTS_ZH.md']:
         chosen.add('reports/isu_ilcc_metadata_20261020_root/' + name)
 
+    for name in ['semantic_decision.json','Valid_cells.csv.receipt.json','process_data.py.receipt.json','README_V2.0.pdf.receipt.json']:
+        chosen.add('reports/isu_ilcc_metadata_20261020_root/' + name)
+    for name in ['cohort.json','protocol.json','runner.py','receive_archive.py','ROOT_GO.json','acquisition_receipt.json','stage_resolution.json','probe_results.json','completion.json','RESULTS_ZH.md','root_decision.json']:
+        chosen.add('reports/isu_ilcc_capacity_probe_20261020_root/' + name)
+    for name in ['review.json','review_fixed.json']:
+        chosen.add('reports/isu_ilcc_capacity_probe_review_20261020_luna/' + name)
+    for name in ['central_directory_scope.json','central_directory_receipt.json','next_clock_recovery_scope.json']:
+        chosen.add('reports/isu_ilcc_clock_source_20261020_root/' + name)
+
+    chosen.add('docs/USER_SPARSE_IRREGULAR_RUL_SPRINT_20261020_ZH.md')
+    for name in ['competition_report.md','evidence.json','lfp_feasibility.json']:
+        chosen.add('reports/irregular_rul_competition_20261020_luna/' + name)
+
     contents, files, skipped = {}, [], []
     mapping = {'README.md': 'docs/GITHUB_README_ZH.md', 'agent.md': 'AGENTS.md'}
     mapping.update({rel: rel for rel in sorted(chosen)})

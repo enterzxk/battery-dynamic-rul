@@ -1,0 +1,8 @@
+{
+  "stage": "PRE_GO_ACQUISITION_AND_PARSE",
+  "prior_review_path": "reports/isu_ilcc_capacity_probe_review_20261020_luna/review.json",
+  "prior_review_status": "BLOCK",
+  "resolution": "The archive and acquisition receipt are outputs of the proposed one-GET acquisition, not preexisting required inputs to static pre-GO review. No capacity response has been acquired yet. A new scoped GO will authorize acquisition first, receiver validation second, probe third. Runtime size/MD5/SHA checks remain mandatory. This is stage resolution, not an execution failure.",
+  "old_review_preserved": true,
+  "at_utc": "2026-10-20T08:22:53.177906+00:00"
+}

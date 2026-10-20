@@ -1,0 +1,14 @@
+{
+  "name": "README_V2.0.pdf",
+  "source_url": "https://ndownloader.figshare.com/files/43754898",
+  "sha256": "46fb983297a4590c9fa3274172fbfe60a23e19242ecae21f2fee9fa424c85a57",
+  "HTTP_status": 200,
+  "redirect_hosts": [
+    "s3-eu-west-1.amazonaws.com"
+  ],
+  "bytes": 640953,
+  "md5": "c03da9a1a3499989d2cdb655b41d4d0b",
+  "raw_curve_reads": 0,
+  "new_fits": 0,
+  "received_utc": "2026-10-20T08:13:55.500320+00:00"
+}

@@ -1,0 +1,46 @@
+{
+  "status": "EXACT_NEXT_SCOPE_NOT_EXECUTED_REQUIRES_IMPLEMENTATION_REVIEW_FRESH_GO",
+  "members": [
+    {
+      "name": "RPT_json/Release 1.0/G1C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "17131c9f",
+      "compressed_bytes": 11178398,
+      "bytes": 98549526,
+      "local_header_offset": 124858935
+    },
+    {
+      "name": "RPT_json/Release 1.0/G20C1.json",
+      "flags": 2056,
+      "method": 8,
+      "crc32": "46465cd0",
+      "compressed_bytes": 1225534,
+      "bytes": 7562934,
+      "local_header_offset": 171228909
+    }
+  ],
+  "max_logical_GET": 4,
+  "max_network_body_bytes": 12500000,
+  "max_uncompressed_total_bytes": 134217728,
+  "per_header_GET_bytes": 30,
+  "require206_and_exact_range": true,
+  "require_ETag": "\"36331bf80f21d00e19a9a45095f542e8\"",
+  "header_then_exact_compressed_member_only": true,
+  "data_descriptor_not_requested": true,
+  "max_members": 2,
+  "roles": "G1C1 andG20C1 train only",
+  "target_fields": [
+    "start_stop_time",
+    "capacity_discharge_C_5"
+  ],
+  "timestamp_policy": "Keep original naive source timestamps;measurement becomes visible only at RPT stop; calendar weeks from baseline observed stop. No future-duration imputation or synthetic dates. First observed threshold endpoint separately named.",
+  "cohort_file": "reports/isu_ilcc_capacity_probe_20261020_root/cohort.json",
+  "new_fits": 0,
+  "model_inference": 0,
+  "locked_member_decodes": 0,
+  "CRC32_and_size_required": true,
+  "full_archive_sha256": "UNKNOWN_NOT_DOWNLOADED",
+  "full_archive_ETag_matches_official_MD5": true,
+  "stop": "Any range/ETag/size/CRC/role/timestamp disagreement STOP; preserve partial receipts; no retries, cap expansion, or alternative members"
+}

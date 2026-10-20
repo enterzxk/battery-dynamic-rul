@@ -1,0 +1,35 @@
+{
+  "status": "BLOCK",
+  "reviewed_utc": "2026-10-20T08:20:00Z",
+  "inputs": {
+    "protocol_path": "/home/yndx/zxk/rul/reports/isu_ilcc_capacity_probe_20261020_root/protocol.json",
+    "protocol_sha256": "985ba4d969db9ac3a7b445cafadd78b26a8cbe44047a5e77cd76803d7a48a6c3",
+    "cohort_path": "/home/yndx/zxk/rul/reports/isu_ilcc_capacity_probe_20261020_root/cohort.json",
+    "cohort_sha256": "4469f7f5b6eb8c26a522fa46c4291ec6d03d98e7ae5c20ce7ae77e835b849ae0",
+    "runner_path": "/home/yndx/zxk/rul/reports/isu_ilcc_capacity_probe_20261020_root/runner.py",
+    "runner_sha256": "3a4e3b9330de9467f9b5bec772969a6a993df399a79bad44b9aafab756d43498",
+    "receive_archive_path": "/home/yndx/zxk/rul/reports/isu_ilcc_capacity_probe_20261020_root/receive_archive.py",
+    "receive_archive_sha256": "cab30dae305377d7aee43173abed9258200ac3a94530fb751eff3dceba5c1c65"
+  },
+  "checks": {
+    "role_and_split": "PASS: cohort declares 251 IDs with counts train=125, development=63, locked=63; C1/C2 train, C3 development, C4 locked, and missing G61C1 is not synthesized. Probe IDs G1C1 and G20C1 are both train. README pages 4, 5, 9, and 11 support weekly RPTs, the extra half-week RPT for groups 20-64, 251 released cells, and unrecoverable week-4 RPT data for groups 20-29.",
+    "hashes_and_claim": "PASS STATIC: runner checks GO status plus hashes for protocol, runner, receive script, cohort, and reviewed PASS receipt; it uses nonblocking online_survival_cpu lock and exclusive invocation.claim. Receiver uses coordinator lock and exclusive creation for archive and receipt, and checks URL, bytes, MD5 and supplied SHA. No GO, invocation.claim, or result files were present in the probe directory at review time.",
+    "budget": "PASS STATIC: protocol caps the one GET archive at 140256 bytes, two member payloads at <=100000 bytes each and <=200000 total, and 30 seconds; runner reads only the two preselected train members, permits archive directory metadata listing, reads no dev/locked member payload, runs no author code, fits, inference, or raw time-series parsing.",
+    "time_source_limitation": "Material scientific limitation: source_audit process_data.py lines 84-144 constructs cumulative Time by summing weekly RPT and cycling durations. Missing duration entries are imputed from neighboring values, including future indices i+1 and i+2; cycling-duration imputation also uses neighboring char-duration values. Thus the source Time axis is not verified as-of. The runner correctly marks strict_asof_clock_verified=false; this probe cannot establish strict online timing.",
+    "endpoint_and_identity": "The endpoint is the first observed RPT with capacity <=0.20 Ah (80% of nominal 0.25 Ah), not exact latent physical EOL. README documents periodic/weekly RPTs and special half-week tests; missing week-4 RPT data for groups 20-29 remains a source gap. Cohort identity is author group/cell ID only, not independently verified physical serial identity.",
+    "claim_boundary": "This two-cell train-only schema/capacity summary does not authorize fitting, prediction, calibration, development or locked-set access; it cannot support a strict-online RUL claim or generalization. A no-crossing finite record is not automatically a right-censored lifetime."
+  },
+  "blocking_issues": [
+    {
+      "item": "Required archive and acquisition receipt are absent from the runner's expected locations at review time.",
+      "evidence": "Metadata-only ls found no /home/yndx/zxk/rul/data/raw/ISU_ILCC/official_v2/capacity_fade.zip and no /home/yndx/zxk/rul/reports/isu_ilcc_capacity_probe_20261020_root/acquisition_receipt.json. The probe directory currently contains only cohort.json, protocol.json, runner.py and receive_archive.py.",
+      "impact": "runner.py asserts both files exist, checks archive size/MD5/SHA receipt, and cannot reach the two-member probe without them. Do not issue/run GO until the already-authorized single GET payload and matching receipt are placed at those exact locations through the frozen receiver path."
+    }
+  ],
+  "not_performed": [
+    "no network request",
+    "no capacity_fade.zip read or member listing",
+    "no curve or CSV reads",
+    "no runner or author code execution"
+  ]
+}
