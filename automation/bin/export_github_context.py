@@ -315,6 +315,10 @@ def main():
     for name in ['RESULTS_ZH.md','arm_model_summary.csv','cell_metrics.csv','paired_differences.csv','root_metric_recompute.json']:
         chosen.add('experiments/isu_irregular_rul_seed42_v1/cpu_results_summary/' + name)
 
+    chosen.add('reports/isu_gru_delta_review_20261020_v17_luna/review.json')
+    for name in ['GRU_ONLY_V17_GO.json','gru_only_v17_seed42_receipt.json','six_baseline_seed42_v17/merge_validation.json','six_baseline_seed42_v17/summary/RESULTS_ZH.md','six_baseline_seed42_v17/summary/arm_model_summary.csv','six_baseline_seed42_v17/summary/paired_differences.csv','six_baseline_seed42_v17/summary/root_metric_recompute.json']:
+        chosen.add('experiments/isu_irregular_rul_seed42_v1/' + name)
+
     contents, files, skipped = {}, [], []
     mapping = {'README.md': 'docs/GITHUB_README_ZH.md', 'agent.md': 'AGENTS.md'}
     mapping.update({rel: rel for rel in sorted(chosen)})

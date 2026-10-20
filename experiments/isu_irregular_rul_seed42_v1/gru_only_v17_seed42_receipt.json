@@ -1,0 +1,34 @@
+{
+  "status": "SUCCESS",
+  "request_id": "ISU_GRU_ONLY_V17_SEED42_20261020_RUN1",
+  "data_read": true,
+  "fit_started": 1,
+  "fit_completed": 1,
+  "gru_epochs_checkpointed": 100,
+  "inference_calls": 2745,
+  "owner_thread_id": "01a1598a-bcaa-7443-9579-c48ee2303172",
+  "source_sha256": {
+    "finish_gru_only.py": "852c5254bcef11451b402ab79c3028aaa8872672034b80980420844f96522748",
+    "train_eval.py": "793a4682c96d2db48b806ea13c850f878c96cff4ee6b75f636ec75b05c4a2d4e",
+    "baselines.py": "a8f537e2f2676e9c4a20909c530223bab20521fc7457e544cab092515610187e",
+    "data_adapter.py": "d5effc7ab9aa946feee717e8490983e6ccbebf890492b456091ac49a942763f3",
+    "protocol_candidate.json": "6640ae61ae6e6ae178b2b7c9bb225bcc7a7a6d219505ece3ba8bf4bd1d5c75eb"
+  },
+  "code_manifest_sha256": "a1d28aaff4de91a0cf03967d8e3104431b1a515265ecb4e2622a672a045c0ffa",
+  "protocol_sha256": "6640ae61ae6e6ae178b2b7c9bb225bcc7a7a6d219505ece3ba8bf4bd1d5c75eb",
+  "max_runtime_seconds": 1800,
+  "fit_budget": {
+    "hgb_fits": 0,
+    "aft_fits": 0,
+    "gru_fits": 1
+  },
+  "seed": 42,
+  "epochs_requested": 100,
+  "cpu_threads": 4,
+  "prior_failure_receipt_sha256": "7568854768350a71ecd7a157bef28734c83eec985d0ea9a60c5e8a2e5fcbf4c9",
+  "prior_failure_receipt_path": "/home/yndx/zxk/rul/experiments/isu_irregular_rul_seed42_v1/baseline_run_receipt.json",
+  "last_gru_loss": -1.4555683135986328,
+  "predictions": 2745,
+  "note": "One fresh GRU fit of 100 epochs only; no old CPU estimator/checkpoint was loaded or inferred. Development predictions are standalone and source-observed endpoint descriptive.",
+  "elapsed_seconds": 8.995980978012085
+}

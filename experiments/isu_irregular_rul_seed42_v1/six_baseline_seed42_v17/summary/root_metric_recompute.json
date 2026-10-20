@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "method": "independent Python statistics, per-cell abs error then equal-cell mean",
+  "rows": 16470,
+  "arm_model_rows": 18,
+  "max_absolute_MAE_difference": 1.7763568394002505e-15,
+  "new_fits": 0,
+  "new_inference_calls": 0
+}

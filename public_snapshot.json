@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-20T13:42:25.710353+00:00",
-  "content_sha256": "2561aea3d56730416a9449c9c560dec47fc1d45968e1e789478921864580784e",
-  "file_count": 1114,
+  "snapshot_utc": "2026-10-20T13:47:00.252277+00:00",
+  "content_sha256": "19fa269fa28f26af7f6ee0ebbeaffc8664df462836112217d83f0024f447d839",
+  "file_count": 1122,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,8 +14,8 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 132901,
-      "sha256": "fc2f2796d08a8b5bd9ada30e00ab84cc848a9fe2a38d96e0e1bdefe6fa699340"
+      "bytes": 134540,
+      "sha256": "b1ffea9a42f75b29e20e6fade46527eb522004b273f0235250c2746c4dc0d3f7"
     },
     {
       "path": "README.md",
@@ -38,8 +38,8 @@
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 49469,
-      "sha256": "cbc5749352df63baead01b71ee52d360c76467059a7330946219ebabc96ed3be"
+      "bytes": 49964,
+      "sha256": "6834fcbf4ea0fac6a8d7bd82aa30a6fdb897d9f70eb3ac8eec3415c70552f5c2"
     },
     {
       "path": "automation/bin/matr_raw_batch2_asset_worker_v1.py",
@@ -164,8 +164,8 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 113368,
-      "sha256": "5ce9174adf6551c59b8baa27389930dfc7760e3040ac87edad18411a98f23715"
+      "bytes": 115007,
+      "sha256": "5b90190ce0f6cfb8291719acb3b05d50f4869f44040aeebcdc7b70160d2fa4ea"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
@@ -1200,6 +1200,12 @@
       "sha256": "927a0d4e56890e5eab13780664fa55b4743e5c084801bc1f89bf54f840a710b7"
     },
     {
+      "path": "experiments/isu_irregular_rul_seed42_v1/GRU_ONLY_V17_GO.json",
+      "source_path": "experiments/isu_irregular_rul_seed42_v1/GRU_ONLY_V17_GO.json",
+      "bytes": 2622,
+      "sha256": "0cedb26d195186b4614da9caf2276d21e76c8fa8a5293d0253a07e5c7bac1eb9"
+    },
+    {
       "path": "experiments/isu_irregular_rul_seed42_v1/ROOT_GO.json",
       "source_path": "experiments/isu_irregular_rul_seed42_v1/ROOT_GO.json",
       "bytes": 1865,
@@ -1290,6 +1296,12 @@
       "sha256": "852c5254bcef11451b402ab79c3028aaa8872672034b80980420844f96522748"
     },
     {
+      "path": "experiments/isu_irregular_rul_seed42_v1/gru_only_v17_seed42_receipt.json",
+      "source_path": "experiments/isu_irregular_rul_seed42_v1/gru_only_v17_seed42_receipt.json",
+      "bytes": 1620,
+      "sha256": "c77105173c4502617c77206618328330da52534555380a3a7e5d6a71a815fdce"
+    },
+    {
       "path": "experiments/isu_irregular_rul_seed42_v1/protocol_candidate.json",
       "source_path": "experiments/isu_irregular_rul_seed42_v1/protocol_candidate.json",
       "bytes": 5919,
@@ -1300,6 +1312,36 @@
       "source_path": "experiments/isu_irregular_rul_seed42_v1/recover_cpu_predictions_once.py",
       "bytes": 2948,
       "sha256": "6b5ad4133c0d9fa71e06831b049b9c5d3f07290c8813581536b2d3b8bb88a727"
+    },
+    {
+      "path": "experiments/isu_irregular_rul_seed42_v1/six_baseline_seed42_v17/merge_validation.json",
+      "source_path": "experiments/isu_irregular_rul_seed42_v1/six_baseline_seed42_v17/merge_validation.json",
+      "bytes": 424,
+      "sha256": "35994acef063eb0b93d1030549bc9b54e0c6adb4cfd0ad7f201d13379c21871a"
+    },
+    {
+      "path": "experiments/isu_irregular_rul_seed42_v1/six_baseline_seed42_v17/summary/RESULTS_ZH.md",
+      "source_path": "experiments/isu_irregular_rul_seed42_v1/six_baseline_seed42_v17/summary/RESULTS_ZH.md",
+      "bytes": 5459,
+      "sha256": "0aedbd049134ab494281f53bf0c867c1caf9836b9f7e19ff48c8d310dbe9fd2c"
+    },
+    {
+      "path": "experiments/isu_irregular_rul_seed42_v1/six_baseline_seed42_v17/summary/arm_model_summary.csv",
+      "source_path": "experiments/isu_irregular_rul_seed42_v1/six_baseline_seed42_v17/summary/arm_model_summary.csv",
+      "bytes": 4374,
+      "sha256": "8e945bc9cbd6b1bdb1ef0e2a6a4e94d9593eee1eea99c382b1a314e2cd19e154"
+    },
+    {
+      "path": "experiments/isu_irregular_rul_seed42_v1/six_baseline_seed42_v17/summary/paired_differences.csv",
+      "source_path": "experiments/isu_irregular_rul_seed42_v1/six_baseline_seed42_v17/summary/paired_differences.csv",
+      "bytes": 2834,
+      "sha256": "d6ce73781421ea3e86f06e0dbb15c80b04ace26e07fbecb66a9bbfc7d2303edc"
+    },
+    {
+      "path": "experiments/isu_irregular_rul_seed42_v1/six_baseline_seed42_v17/summary/root_metric_recompute.json",
+      "source_path": "experiments/isu_irregular_rul_seed42_v1/six_baseline_seed42_v17/summary/root_metric_recompute.json",
+      "bytes": 251,
+      "sha256": "92a3c3a5f3ccb80d10fe45cf9c743cc20932cded899d1ace023aa580ea6fe46b"
     },
     {
       "path": "experiments/isu_irregular_rul_seed42_v1/summarize_results.py",
@@ -4474,6 +4516,12 @@
       "source_path": "reports/irregular_rul_competition_20261020_root/eswa_primary_preview.json",
       "bytes": 1143,
       "sha256": "b44d71907826821a194ca39df6120cb931ca129581fa1108a08dfc8fd9f40711"
+    },
+    {
+      "path": "reports/isu_gru_delta_review_20261020_v17_luna/review.json",
+      "source_path": "reports/isu_gru_delta_review_20261020_v17_luna/review.json",
+      "bytes": 9606,
+      "sha256": "3e7cc57eff61ab7f9da272d413c40b755e0f12d71fccdb1ac7153cd806c0d202"
     },
     {
       "path": "reports/isu_ilcc_capacity_probe_20261020_root/RESULTS_ZH.md",

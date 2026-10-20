@@ -1,0 +1,16 @@
+arm,model,reference_model,reference_rule,status,n_expected_cells,n_paired_cells,n_missing_paired_cells,n_invalid_paired_cells,mean_cell_paired_delta_mae,ci95_seed42,wins,ties,losses
+delayed7d,aft_dynamic,hgb_dynamic,post-hoc lowest cell-macro MAE among four simple baselines,OK,61,61,0,0,2.5731356562935632,"[0.624692960218396, 5.048026451911711]",24,0,37
+delayed7d,cdf_fusion,hgb_dynamic,post-hoc lowest cell-macro MAE among four simple baselines,OK,61,61,0,0,-0.008725898813257839,"[-0.3363704678656303, 0.31799006439909927]",33,0,28
+delayed7d,group_frozen,hgb_dynamic,post-hoc lowest cell-macro MAE among four simple baselines,OK,61,61,0,0,0.6426608229711204,"[-0.014555420253371894, 1.2790682905656623]",28,0,33
+delayed7d,gru_dynamic,hgb_dynamic,post-hoc lowest cell-macro MAE among four simple baselines,OK,61,61,0,0,0.724064380420009,"[-0.012821116779691463, 1.5267644279085761]",28,0,33
+delayed7d,hgb_early_health,hgb_dynamic,post-hoc lowest cell-macro MAE among four simple baselines,OK,61,61,0,0,2.8201122287675626,"[1.7346689576528103, 3.894923358773925]",19,0,42
+raw,aft_dynamic,hgb_dynamic,post-hoc lowest cell-macro MAE among four simple baselines,OK,61,61,0,0,2.6514534656417155,"[0.601101909315644, 5.460383361161051]",25,0,36
+raw,cdf_fusion,hgb_dynamic,post-hoc lowest cell-macro MAE among four simple baselines,OK,61,61,0,0,0.14431505262864677,"[-0.1549388948382675, 0.47547548521782085]",30,0,31
+raw,group_frozen,hgb_dynamic,post-hoc lowest cell-macro MAE among four simple baselines,OK,61,61,0,0,0.9262598510147175,"[0.2559412419684135, 1.5758824533954614]",25,0,36
+raw,gru_dynamic,hgb_dynamic,post-hoc lowest cell-macro MAE among four simple baselines,OK,61,61,0,0,0.9834206254738638,"[0.2653360019343724, 1.758658486100613]",26,0,35
+raw,hgb_early_health,hgb_dynamic,post-hoc lowest cell-macro MAE among four simple baselines,OK,61,61,0,0,3.1037112568111596,"[2.087919534968467, 4.223978793878451]",19,0,42
+sparse2rpt,aft_dynamic,hgb_dynamic,post-hoc lowest cell-macro MAE among four simple baselines,OK,61,61,0,0,2.747207353655458,"[0.6229614037684837, 5.4726835287468285]",22,0,39
+sparse2rpt,cdf_fusion,hgb_dynamic,post-hoc lowest cell-macro MAE among four simple baselines,OK,61,61,0,0,0.09306968527976896,"[-0.23925873636536807, 0.41619053380637594]",29,0,32
+sparse2rpt,group_frozen,hgb_dynamic,post-hoc lowest cell-macro MAE among four simple baselines,OK,61,61,0,0,0.8153677493451753,"[0.1526052299113854, 1.4758797934373653]",26,0,35
+sparse2rpt,gru_dynamic,hgb_dynamic,post-hoc lowest cell-macro MAE among four simple baselines,OK,61,61,0,0,0.9320894955061549,"[0.2513875799207254, 1.6931608820953816]",25,0,36
+sparse2rpt,hgb_early_health,hgb_dynamic,post-hoc lowest cell-macro MAE among four simple baselines,OK,61,61,0,0,2.992819155141617,"[1.9794513408978691, 4.077273212431923]",18,0,43

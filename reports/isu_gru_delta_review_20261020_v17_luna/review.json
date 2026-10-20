@@ -1,0 +1,146 @@
+{
+  "schema_version": "1.0",
+  "review_id": "isu_gru_delta_review_20261020_v17_luna",
+  "reviewed_at_utc": "2026-10-20T13:42:07Z",
+  "scope": "Narrow static delta review of finish_gru_only.py, train_eval.py GRU save/call path, protocol_candidate.json, baseline_run_receipt.json, and directly bound manifest/owner/lock/claim evidence. No training, import, model loading, inference, or C4 payload access.",
+  "verdict": "PASS_FRESH_GRU_GO_MAY_BE_ISSUED",
+  "authorization_decision": {
+    "fresh_request": "One new GRU fit, seed 42, 100 epochs / 100 full-batch optimizer steps; zero HGB fits and zero AFT fits.",
+    "may_sign": "YES, after issuing a fresh exact-hash GO for this runner and its dedicated output/receipt/claim paths.",
+    "may_execute_with_current_ROOT_GO": "NO",
+    "retrain_prior_seven_cpu_fits": "NO; the prior receipt records 7 completed CPU fits, while the GRU-only call path requests 0 CPU fits."
+  },
+  "source_sha256": {
+    "experiments/isu_irregular_rul_seed42_v1/finish_gru_only.py": "852c5254bcef11451b402ab79c3028aaa8872672034b80980420844f96522748",
+    "experiments/isu_irregular_rul_seed42_v1/train_eval.py": "793a4682c96d2db48b806ea13c850f878c96cff4ee6b75f636ec75b05c4a2d4e",
+    "experiments/isu_irregular_rul_seed42_v1/baselines.py": "a8f537e2f2676e9c4a20909c530223bab20521fc7457e544cab092515610187e",
+    "experiments/isu_irregular_rul_seed42_v1/data_adapter.py": "d5effc7ab9aa946feee717e8490983e6ccbebf890492b456091ac49a942763f3",
+    "experiments/isu_irregular_rul_seed42_v1/protocol_candidate.json": "6640ae61ae6e6ae178b2b7c9bb225bcc7a7a6d219505ece3ba8bf4bd1d5c75eb",
+    "reports/isu_ilcc_capacity_probe_20261020_root/cohort.json": "4469f7f5b6eb8c26a522fa46c4291ec6d03d98e7ae5c20ce7ae77e835b849ae0",
+    "reports/isu_ilcc_datav2_full_20261020_root/data_manifest.json": "68f53dc481dfc212896658a9bcb69780b5ed7285d853cc870a4002ae658726e1",
+    "experiments/isu_irregular_rul_seed42_v1/baseline_run_receipt.json": "7568854768350a71ecd7a157bef28734c83eec985d0ea9a60c5e8a2e5fcbf4c9",
+    "experiments/isu_irregular_rul_seed42_v1/ROOT_GO.json": "11c59b83f3f54a79d56c15bf2f5ba582668b20030a97b3dd41930073f34e07b0"
+  },
+  "findings": [
+    {
+      "id": "checkpoint_fix_and_call_path",
+      "status": "PASS",
+      "evidence": [
+        {
+          "file": "experiments/isu_irregular_rul_seed42_v1/train_eval.py",
+          "lines": "79-83",
+          "detail": "Checkpoint payload validates positive epoch and finite loss, and stores model plus optimizer state and seed."
+        },
+        {
+          "file": "experiments/isu_irregular_rul_seed42_v1/train_eval.py",
+          "lines": "85-107",
+          "detail": "Exactly one full-batch opt.step() per loop epoch; epoch_idx+1 is saved through a temporary file followed by os.replace, then progress JSON is atomically updated. The prior tuple-plus-int checkpoint expression is absent."
+        },
+        {
+          "file": "experiments/isu_irregular_rul_seed42_v1/finish_gru_only.py",
+          "lines": "89-105",
+          "detail": "Imports the GRU training/evaluation helpers, calls train_gru once for 100 epochs with seed 42, writes final state, then performs development-only evaluation. No HGB/AFT fit, old estimator load, old checkpoint load, or inference path is called."
+        }
+      ],
+      "conclusion": "Fresh fit is 1 GRU fit and 100 optimizer steps; the 7 CPU fits from the failed earlier request are neither repeated nor needed."
+    },
+    {
+      "id": "causal_inputs_and_protocol",
+      "status": "PASS_WITH_SCOPE_LIMIT",
+      "evidence": [
+        {
+          "file": "experiments/isu_irregular_rul_seed42_v1/data_adapter.py",
+          "lines": "74-111",
+          "detail": "Origin builder exposes only arrived measurements strictly before the fixed event endpoint; delayed arrivals are gated by arrival time and event endpoint remains a fixed target."
+        },
+        {
+          "file": "experiments/isu_irregular_rul_seed42_v1/train_eval.py",
+          "lines": "39-45,71-78,92-94",
+          "detail": "Examples are role-separated; GRU sequences use visible_records plus query age/staleness and approved group indicators. Event duration from anchor is the supervised target, not a sequence feature."
+        },
+        {
+          "file": "experiments/isu_irregular_rul_seed42_v1/protocol_candidate.json",
+          "lines": "purpose, endpoint, origins, information_states, locked_role",
+          "detail": "Defines a source-observed first-RPT threshold event, common origins, no future/unarrived features, and excludes locked cohort data."
+        }
+      ],
+      "conclusion": "No material future-feature leakage found in the reviewed GRU path. Results remain event-observed development-only and descriptive; this selection does not establish independent confirmation or latent-EOL performance."
+    },
+    {
+      "id": "manifest_and_data_boundary",
+      "status": "PASS_STATIC_METADATA",
+      "evidence": [
+        {
+          "file": "reports/isu_ilcc_datav2_full_20261020_root/data_manifest.json",
+          "detail": "SHA256 matches the prior receipt/GO; status PASS, 188 manifest entries exactly equal train plus development IDs (125 train, 63 development). Metadata only was inspected; no cell payload was read."
+        },
+        {
+          "file": "experiments/isu_irregular_rul_seed42_v1/finish_gru_only.py",
+          "lines": "50-53,88-94",
+          "detail": "Runner binds cohort and manifest hashes, validates prior failure signature, then load_split enforces manifest PASS, exact train/development ID set, and each allowed record hash/role before examples are made."
+        }
+      ],
+      "conclusion": "Cohort contains 63 locked IDs; they are excluded from the manifest file set and are not loaded by the reviewed loader."
+    },
+    {
+      "id": "prior_failure_receipt_and_claim_budget",
+      "status": "PASS",
+      "evidence": [
+        {
+          "file": "experiments/isu_irregular_rul_seed42_v1/baseline_run_receipt.json",
+          "detail": "FAILED; request ISU_MAIN_BASELINES_SEED42_20261020_V1; fits_started=8, fits_completed=7, gru_epochs_completed=0; traceback points to old train_eval.py checkpoint expression. Receipt binds the same protocol, cohort, manifest, and predecessor owner."
+        },
+        {
+          "file": "experiments/isu_irregular_rul_seed42_v1/finish_gru_only.py",
+          "lines": "50-56,73-86",
+          "detail": "Fresh GO must hash-bind the prior failure receipt and request, require the expected 7-completed/0-GRU failure, and specify budget {hgb_fits:0,aft_fits:0,gru_fits:1}, seed 42, 100 epochs and a runtime cap."
+        },
+        {
+          "file": "automation/locks/isu_baseline_claims/ISU_MAIN_BASELINES_SEED42_20261020_V1.claim",
+          "detail": "Prior request claim remains present; do not reuse that request ID."
+        },
+        {
+          "file": "experiments/isu_irregular_rul_seed42_v1/finish_gru_only.py",
+          "lines": "75-80",
+          "detail": "Fresh request claim is O_EXCL and binds owner plus source hashes; shared and project CPU flocks are acquired nonblocking."
+        }
+      ],
+      "conclusion": "Failure evidence and one-fit budget are sufficient for a distinct fresh GRU-only request; use a new request ID and fresh output/receipt paths."
+    },
+    {
+      "id": "owner_locks_and_current_go",
+      "status": "FRESH_GO_REQUIRED",
+      "evidence": [
+        {
+          "file": "automation/state/coordinator.json",
+          "detail": "At review snapshot owner=thread_id=01a1598a-bcaa-7443-9579-c48ee2303172; actual_cwd=/home/yndx/zxk/rul; takeover_verified=true; state ACTIVE; heartbeat age about 57 seconds."
+        },
+        {
+          "file": "automation/state/coordinator.lock; automation/state/online_survival_cpu.lock; automation/locks/isu_irregular_rul_cpu.lock",
+          "detail": "Lock files exist; lslocks and relevant process listing showed no holder at the snapshot. Runner will independently acquire its two required CPU flocks nonblocking."
+        },
+        {
+          "file": "experiments/isu_irregular_rul_seed42_v1/ROOT_GO.json",
+          "detail": "Current GO is stale for this action: owner is predecessor 01a15846-1ade-7623-88ff-98dd7f94f4fd; source map omits finish_gru_only.py and binds old train_eval.py hash 174d00d8..., while current train_eval.py is 793a4682...; budget is 6 HGB + 1 AFT + 1 GRU."
+        },
+        {
+          "file": "experiments/isu_irregular_rul_seed42_v1/finish_gru_only.py",
+          "lines": "37-68,75-86",
+          "detail": "Runner requires a fresh exact-source/code-manifest GO, current owner, exact cohort/manifest/prior-failure hashes, dedicated paths, fresh request binding and zero-CPU/one-GRU budget."
+        }
+      ],
+      "conclusion": "Do not execute under ROOT_GO.json. Root must issue a fresh GO for the successor owner and the exact five-file source map, with a distinct request ID and dedicated paths. Owner and lock conditions passed at this snapshot but are rechecked at run time."
+    }
+  ],
+  "blockers": [
+    "A fresh exact-hash GRU-only GO has not yet been issued; the existing ROOT_GO.json authorizes the predecessor request and the broader 7-CPU-fit baseline, so it cannot authorize this run."
+  ],
+  "non_blocking_notes": [
+    "The absence of the fresh claim directory and dedicated output directory is expected before execution; finish_gru_only.py creates the exclusive claim and checks output/receipt absence."
+  ],
+  "static_review_only": true,
+  "performance_evidence": false,
+  "data_payloads_read": false,
+  "c4_payload_read": false,
+  "execution_performed": false
+}
