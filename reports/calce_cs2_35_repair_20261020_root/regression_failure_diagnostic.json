@@ -1,0 +1,20 @@
+{
+  "diffs": [
+    {
+      "file": "CS2_35/CS2_35_8_30_10.xlsx",
+      "occ": 16,
+      "cycle": [
+        17,
+        17
+      ],
+      "rows": [
+        375,
+        375
+      ],
+      "endpoint_diff": 7.623775033493985e-08,
+      "partial_diff": 0.0
+    }
+  ],
+  "old_and_new_preserved": true,
+  "raw_rereads": 0
+}

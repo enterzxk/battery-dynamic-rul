@@ -1,0 +1,19 @@
+{
+  "decision": "ROOT_RECONSTRUCTION_DATA_GO",
+  "owner": "01a151cb-bf57-7113-bd9d-a58035e14194",
+  "at_utc": "2026-10-20T07:26:42.736123+00:00",
+  "sha256": {
+    "calce_io.py": "9959e0ef768dcb7f488a6b081cbd664c39fbafb0c347c3e172841b9b999c7209",
+    "capacity_rules.py": "246dae079e00b969b0088868fa0c7c3c01b78b9ff36c3b9ca52e532c4609e7d9",
+    "reconstruct.py": "81e6067c76e2c9f359637bbfeea738300d2f33e6b7a38349f3a2e43592f3b681",
+    "reconstruction_protocol.json": "6b0e870588ed286e6a322126bb65bb3564a7193c1c330f37bc5cbace72ea4218"
+  },
+  "review_sha256": "3adc29e87b5e8dae8e0dd9f67698a81fbc9e26c23cba33b2bf655a96b313b38c",
+  "max_invocations": 1,
+  "max_new_archive_members": 24,
+  "fit": 0,
+  "model_inference": 0,
+  "other_cell_reads": 0,
+  "RUL_label_creation": false,
+  "scope": "user20261020 repair; cached failingfile reuse and affected source recovery; retain old artifacts"
+}

@@ -1,0 +1,34 @@
+{
+  "status": "PASS_MINIMAL_REAL_DATA_VALIDATION",
+  "source_files": 25,
+  "raw_rows": 266914,
+  "source_occurrences": 936,
+  "valid_discharges": 854,
+  "uncertain_occurrences": 32,
+  "exact_duplicate_aliases": 50,
+  "status_counts_reconcile": true,
+  "old304_endpoint_row_partial_integral_regression_exact": true,
+  "representative_cycles": [
+    1,
+    2,
+    50
+  ],
+  "valid_counter_integral_abs_error_Ah_median": 6.249292979543242e-06,
+  "valid_counter_integral_abs_error_Ah_max": 3.170779971473081e-05,
+  "boundary_count": 24,
+  "negative_walltime_boundary_count": 1,
+  "source_cycle_reset_boundaries": 21,
+  "duplicate_alias_sources": {
+    "CS2_35/CS2_35_2_4_11.xlsx": 50
+  },
+  "uncertain_reasons": {
+    "complete_charge_tail_unverified": 30,
+    "no_main_discharge": 4,
+    "cutoff_sample_unverified": 2,
+    "counter_integral_disagree_or_unknown": 1,
+    "exact_duplicate_signal_retained": 50
+  },
+  "capacity_table_sha256": "8818441b59d405ab34948eaf57824a79780591c13d795a15caca2be2643212ea",
+  "measurement_jsonl_sha256": "013faaee2994548dbd4f70d8520bdcc2ac266aa7f757ef5ed23930a325d3f85b",
+  "no_raw_reparse_for_validation": true
+}

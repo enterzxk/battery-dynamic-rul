@@ -1,0 +1,9 @@
+{
+  "status": "PASS_BYTE_EXACT",
+  "original_path": "experiments/cpmlp_hust_recipe_adapt_seed42_v2/validation_predictions_epoch_003.csv",
+  "original_bytes": 117528,
+  "archive_bytes": 48289,
+  "original_sha256": "156b00a5b0832b0b3938c840be2cb1ab270a543092305732945cccfa73c30975",
+  "server_original_and_old_git_history_retained": true,
+  "no_prediction_or_metric_recompute": true
+}

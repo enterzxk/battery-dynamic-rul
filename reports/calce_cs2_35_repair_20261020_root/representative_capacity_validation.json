@@ -1,0 +1,52 @@
+{
+  "status": "PASS_COUNTER_DELTA_VS_STEP_TIME_CURRENT_INTEGRAL",
+  "cases": [
+    {
+      "source_cycle": 1,
+      "step": 7,
+      "baseline_counter_Ah": 1.085583e-09,
+      "first_counter_Ah": 0.009167110117885,
+      "last_counter_Ah": 0.976536612670415,
+      "counter_delta_Ah": 0.9765366115848321,
+      "partial_internal_integral_Ah": 0.9673602026595673,
+      "first_interval_s": 30.015246419537924,
+      "step_start_boundary_gap_s": 0.00011809528223238885,
+      "step_time_corrected_current_integral_Ah": 0.9765264243965442,
+      "abs_difference_Ah": 1.0187188287824611e-05,
+      "last_voltage_V": 2.699620008468628,
+      "last_step_time_s": 3197.432470572041
+    },
+    {
+      "source_cycle": 2,
+      "step": 7,
+      "baseline_counter_Ah": 0.976536615009044,
+      "first_counter_Ah": 0.985703673875186,
+      "last_counter_Ah": 1.951855739471057,
+      "counter_delta_Ah": 0.975319124462013,
+      "partial_internal_integral_Ah": 0.9661403358997073,
+      "first_interval_s": 30.014683286035968,
+      "step_start_boundary_gap_s": 0.0007552418064733502,
+      "step_time_corrected_current_integral_Ah": 0.9753078914177655,
+      "abs_difference_Ah": 1.1233044247438428e-05,
+      "last_voltage_V": 2.699943780899048,
+      "last_step_time_s": 3193.400704741047
+    },
+    {
+      "source_cycle": 50,
+      "step": 7,
+      "baseline_counter_Ah": 47.82544462273729,
+      "first_counter_Ah": 47.83461172099024,
+      "last_counter_Ah": 48.78913177999472,
+      "counter_delta_Ah": 0.9636871572574321,
+      "partial_internal_integral_Ah": 0.954503045227854,
+      "first_interval_s": 30.01553793107437,
+      "step_start_boundary_gap_s": 0.027935853111557662,
+      "step_time_corrected_current_integral_Ah": 0.9636708617850098,
+      "abs_difference_Ah": 1.6295472422322987e-05,
+      "last_voltage_V": 2.699943780899048,
+      "last_step_time_s": 3155.3708031297233
+    }
+  ],
+  "basis": "same-step rest baseline and actual step time; counter continues across cycles, resets at acquisition-session boundary; no future-cycle differencing",
+  "calibration_limit": "agreement verifies recorded signal consistency, not independent sensor calibration"
+}

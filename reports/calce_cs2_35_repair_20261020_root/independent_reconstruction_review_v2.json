@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "review_type": "independent_pre_go_reconstruction_review_v2_delta",
+  "review_status": "BLOCK",
+  "created_at_utc": "2026-10-20",
+  "scope": {
+    "project": "/home/yndx/zxk/rul",
+    "asset": "CALCE CS2-35 capacity reconstruction v2 continuation only",
+    "reviewed_delta": "Legacy endpoint/integral regression, prior raw-cache reuse, and remaining new-member cap",
+    "runner_executed": false,
+    "reviewer_read_raw_zip_xlsx_or_cache": false,
+    "shared_state_changed": false
+  },
+  "reviewed_inputs": {
+    "reports/calce_cs2_35_repair_20261020_root/capacity_rules.py": "2c122995e54a05d81db076bb4093534e77f56a08828d7659ee8d73ff91ab72c7",
+    "reports/calce_cs2_35_repair_20261020_root/reconstruct_v2.py": "9061b5a5f1cf4f3001d5881c54ca3a928c2bcd18117c90ae2b7d318550e728d2",
+    "reports/calce_cs2_35_repair_20261020_root/reconstruction_protocol_v2.json": "e72cf3de81ab5d1e2876e05b74c5a3446d3b6f776513373938655379b973923b"
+  },
+  "findings": [
+    {
+      "id": "REUSED_CACHE_MEMBER_PROVENANCE_MISSING",
+      "severity": "BLOCKING",
+      "location": "reconstruct_v2.py:18-19; reconstruction_protocol_v2.json:41-45",
+      "evidence": "The four prior raw-record caches are checked against pinned gzip-cache SHA256 values, but the runner sets h=None for these entries. The per-file output therefore records member_sha256 as null. The v2 protocol lists only the four cache digests and does not pin their source archive-member SHA256 values or validate an earlier receipt that binds each cache to its member. The continuation text is descriptive, not an executable provenance check.",
+      "required_resolution": "Before GO, bind each reused cache filename to both its records-cache SHA256 and original archive-member SHA256 in the v2 protocol, and emit the verified member SHA256 in the per-file manifest. Alternatively, validate a pinned prior receipt that binds those same cache and member digests."
+    }
+  ],
+  "reviewed_conclusions": {
+    "legacy_regression": "The v2 capacity rules compute the legacy -0.001 A endpoint counter and whole-cycle adjacent trapezoid integral separately from the unchanged -0.01 A main-discharge measurement rule. The runner compares those legacy fields against the old 304 records.",
+    "continuation_budget": "The v2 protocol allocates 20 new member reads, pins four prior record-cache digests, and retains the cached failed-file path; no cap expansion is present in the reviewed files.",
+    "scientific_limit": "Accepted capacity remains sampled-signal consistent only; absolute calibration and exact cutoff are unknown. Whole-life first-passage EOL and native-cycle RUL remain blocked while inter-file continuity is unverified."
+  },
+  "conclusion": "Do not authorize the v2 runner until reused-cache source-member provenance is verified and emitted. No asset or experiment result was produced by this review."
+}

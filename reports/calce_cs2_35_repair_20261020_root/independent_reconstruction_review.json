@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "review_type": "independent_pre_go_reconstruction_review",
+  "review_status": "BLOCK",
+  "created_at_utc": "2026-10-20",
+  "scope": {
+    "project": "/home/yndx/zxk/rul",
+    "asset": "CALCE CS2-35 capacity measurement reconstruction only",
+    "runner_executed": false,
+    "reviewer_read_raw_zip_xlsx_or_cache": false,
+    "shared_state_changed": false
+  },
+  "reviewed_inputs": {
+    "calce_io.py": "9959e0ef768dcb7f488a6b081cbd664c39fbafb0c347c3e172841b9b999c7209",
+    "capacity_rules.py": "dc95998b782e8368ea7b2dcb21114c6391d356b9a8f3e68e58453dde86f55a2e",
+    "reconstruct.py": "5dda441b803a632f0a02ecaa622e96ffd180d9ec0abfaf0a9ab7c35f2dd3920d",
+    "reconstruction_protocol.json": "4a909685ff6c436e5ea0df76fd3a767d37c8a0dda7b559a651cd3c0409ab29e3",
+    "representative_capacity_validation.json": "fba25af310b75dd3385828c46a6254d60d5fae62afa1f06bcd61e8a0101990bb",
+    "measurement_probe_server.json": "68440316ea587fb3a5eb0e3e1f8551f87c2cbc0e6ed653b563c426bd87aca465"
+  },
+  "findings": [
+    {
+      "id": "CACHE_RECORDS_NOT_BOUND_TO_SOURCE_MEMBER",
+      "severity": "BLOCKING",
+      "location": "reconstruct.py:16-18",
+      "evidence": "The cached CS2_35_10_29_10.records.jsonl.gz is decompressed and accepted directly. The code assigns a literal source-member SHA256 and obtains schema metadata from the probe, but checks neither the cache digest nor a recorded cache-to-member provenance link. The probe contains the cache path and schema, but no digest. A stale or substituted cache can therefore be reported as data from the pinned archive.",
+      "required_resolution": "Before GO, bind the expected cached-record artifact digest and its source archive-member digest in a reviewed immutable manifest or receipt, then verify the cache digest before reuse."
+    },
+    {
+      "id": "PER_FILE_CACHE_OUTPUT_CAN_OVERWRITE",
+      "severity": "BLOCKING",
+      "location": "reconstruct.py:24-26",
+      "evidence": "Per-workbook record caches are opened with gzip.open(..., 'wt'), which truncates an existing file. The runner has no exclusive-create or preflight collision guard for these paths, so an existing DataV1 cache could be overwritten despite the protocol requiring old artifacts to be retained.",
+      "required_resolution": "Before GO, make each per-file cache write collision-safe using exclusive creation or a unique run directory with an explicit no-overwrite assertion."
+    }
+  ],
+  "conclusions": {
+    "raw_sheet_selection": "Requires Data_Point and Step_Index and exactly one occurrence of each required normalized field; the saved probe identifies one raw measurement sheet.",
+    "capacity_semantics": "Uses the immediately preceding same-cycle row as counter baseline and adds first Step_Time to internal trapezoids; the three supplied examples agree within configured tolerance.",
+    "claim_limits": "Accepted values are sampled-signal consistent measurements; absolute calibration and exact hardware cutoff remain unknown. Uncertain occurrences are retained. Whole-life first-passage EOL and native-cycle RUL remain blocked while inter-file continuity is unverified.",
+    "verdict": "Do not authorize runner until both blocking findings are resolved. This review produced no capacity asset or experiment result."
+  }
+}

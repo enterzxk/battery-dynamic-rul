@@ -1,0 +1,15 @@
+{
+  "action": "failed cached workbook raw schema parse and first2cycle step/counter diagnosis",
+  "input": "/home/yndx/zxk/rul/data/processed/CALCE_CS2_35_repair_v1/CS2_35_10_29_10.xlsx",
+  "sha256": "831f59a1087c583330bdb8e4a74ceda2b0cc1af0d4f12c16b750bf53683d45ba",
+  "max_invocations": 1,
+  "max_rows": 100000,
+  "max_sheets": 8,
+  "max_seconds": 60,
+  "first_cycles": 2,
+  "raw_records_server_only": true,
+  "newfits": 0,
+  "othercells": 0,
+  "EOL": 0,
+  "schema_rule": "Unique Data_Point plus Step_Index and all unit-specific fields, reject duplicate required columns; Statistics sheet lacks point/step identity and is not raw measurement; no date/sheet-name hardcode"
+}

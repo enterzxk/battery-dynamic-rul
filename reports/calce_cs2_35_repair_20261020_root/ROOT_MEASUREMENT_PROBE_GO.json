@@ -1,0 +1,8 @@
+{
+  "decision": "ROOT_DATA_PROBE_GO",
+  "owner": "01a151cb-bf57-7113-bd9d-a58035e14194",
+  "protocol_sha256": "f04b5bc09e85d214c287c9860af64bcb3d376ee8e5ac0c8f7b3d6d2a8d7e16ee",
+  "code_sha256": "9959e0ef768dcb7f488a6b081cbd664c39fbafb0c347c3e172841b9b999c7209",
+  "review": "Targeted raw identity, unique required columns, unit fields and existing bounded iteration inspected; no physical labels",
+  "max_invocations": 1
+}

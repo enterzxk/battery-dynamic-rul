@@ -682,3 +682,11 @@
 - 最小验证：固定SHA/成员大小CRC/逐行预算/owner/claim一致，保存输出304行及源105207条独立计数一致，无raw重载。源放电counter端点1.002043–54.264202Ah，不能当1.1Ah电芯单循环容量；294相邻对计数差中位1.025143Ah，部分积分中位1.015981Ah，差绝对中位0.009167Ah，仅提示累计计数语义。0fit/推理/checkpoint/devtest，CPU20/神经4fit2580steps不变。
 - 阻塞/风险：失败文件表头未落盘，具体schema原因未知；counter重置/step边界未核，禁止直接生成SOH/EOL或静默以差分/部分积分替换参考容量。未跨文件merge/重编号，首到第二文件墙钟间隔UNVERIFIED；其余14日期及36dev/37–38locked未读，身份/独立确认门保持。CPTransformer epoch2旧预测117540→47894bytes无损归档，原件/历史保留不扩cap。
 - 下一步：失败10/29单文件一次有界sheet表头和counter/step边界诊断，冻结+fresh数据GO后最少记录定位；不重跑24、不复用GO，不以未来反弹删早期记录或改EOL。
+
+
+## 2026-10-20：CS2-35全部25文件测量资产实际完成，完整原生RUL标签保持UNKNOWN
+- 已完成：定位Statistics汇总表与Channel共享字段造成旧schema歧义；采样粒度/唯一字段识别修复。全25日期文件266914条记录落盘，936源片段=854有效放电+32不确定+50精确重复别名，最终v3约21.032秒。25文件归档覆盖不等于无缺口全寿命。
+- 证据：data/processed/CALCE_CS2_35_DataV1_v3/的capacity_series.csv、discharge_measurements.jsonl、25记录缓存、endpoint_labels/数据字典/manifest。CSV SHA8818441b59d405ab34948eaf57824a79780591c13d795a15caca2be2643212ea。reports/calce_cs2_35_repair_20261020_root保存可复用schema/容量代码、v1/v2失败与v3GO/执行回执、final_validation和public_summary。
+- 最小验证：旧304摘要按原定义行数/原cycle/末计数/部分积分全部一致；3代表cycle用放电前同循环基线counter增量核Step_Time首区间+梯形积分，854有效放电差中位6.249μAh、最大31.708μAh。capacity计数跨循环累计，不能用54Ah末计数；旧积分漏约30秒/.00917Ah。v1旧噪声末点对照/v2空字段对照实际STOP均保留，修复后复用缓存，累计24新member不重复补取。0fit/推理/其他cell/test，CPU20/神经4fit2580steps不变。
+- 阻塞/风险：21跨文件cycle重置、1时间重叠（2/4与2/10精确重复50周期）；不强拼原生年龄。first observed nominal80% crossing=2010-12-16T07:23:52原时区未知、12/20源cycle22、Q.876295332Ah；不能称真实首次EOL，末行不当event或合法右删失。物理serial/重叠与原candidate_train角色保持，独立确认ready=false。旧105207只是处理行数，旧仅304摘要；本次补齐逐条缓存，未虚称旧raw逐行已落盘。原数据不公开；完成HUSTrecipe epoch3旧预测117528→48289bytes无损归档，原件/历史保留，不扩cap。
+- 下一步：以原始测试session/日程证据核重置和长休息边界是否漏循环；无新证据保留分段测量资产与globalEOL/RUL未知，不自动扩大数据/模型门或重复解析。

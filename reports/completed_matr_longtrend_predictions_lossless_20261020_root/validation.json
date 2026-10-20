@@ -1,0 +1,9 @@
+{
+  "status": "PASS_BYTE_EXACT",
+  "original_path": "experiments/matr_raw_batch2_longtrend_seed42_v1/development_predictions.csv",
+  "original_bytes": 1438488,
+  "archive_bytes": 542668,
+  "original_sha256": "8813407210851ba05bc96b40cd9607827ff91aa28f8e570b01e8f06e2600a004",
+  "original_server_and_git_history_retained": true,
+  "opaque_bytes_only_no_data_evaluation": true
+}

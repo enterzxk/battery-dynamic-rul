@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "review_type": "independent_reconstruction_review_v2_fixed_delta",
+  "review_status": "PASS_FOR_FIXED_PRE_GO_REVIEW",
+  "created_at_utc": "2026-10-20",
+  "scope": {
+    "project": "/home/yndx/zxk/rul",
+    "asset": "CALCE CS2-35 v2 continuation provenance checks only",
+    "reviewed_delta": "Pinned prior execution receipts and per-cache archive-member bindings",
+    "runner_executed": false,
+    "reviewer_read_raw_zip_xlsx_or_cache": false,
+    "shared_state_changed": false
+  },
+  "reviewed_inputs": {
+    "reports/calce_cs2_35_repair_20261020_root/reconstruct_v2.py": "1cef25708d1a6b858cda00c106c1ff75d99eaac825d19a24304140fdc7dacaf4",
+    "reports/calce_cs2_35_repair_20261020_root/reconstruction_protocol_v2.json": "e633b65f6598ad730b186426a6728b85d5c14d7cbf08e72af4086f8952587d0e"
+  },
+  "prior_receipts_reviewed": {
+    "ROOT_RECONSTRUCTION_GO.json": "89d5860d020279ead7faaa2da57d1df0174ba5e6ea03178a67f74ac766e5b2e1",
+    "reconstruction_claim.json": "8354d01134d5f62ffe14fe9a81287f763e18488b45f1e0bf7314a81a080e38ef",
+    "reconstruction_summary.json": "aa2a6b9a742587621c3bc392bd99520f2c9affed72cbaaf2112cb82d26faa6af"
+  },
+  "findings": [],
+  "reviewed_conclusions": {
+    "prior_receipt_verification": "Runner verifies the prior GO, consumed claim, and partial summary hashes before opening the archive or loading any cached records. The on-disk hashes match the protocol pins.",
+    "cache_member_binding": "Each of the four reused cache entries is bound to the pinned archive SHA, member name, member size, CRC32, and record-cache SHA. The first three original member SHA256 values match their per-file entries in the pinned partial summary.",
+    "fourth_cache_lineage": "For CS2_35_8_30_10.xlsx, the original_member_sha256 remains explicitly null because the prior run stopped during regression before appending that file to its per-file summary. The prior GO/claim/summary, archive SHA, member name/size/CRC, and cache SHA are pinned and checked; no standalone member SHA is fabricated. This limitation is disclosed and does not require rereading the raw member.",
+    "budget": "Protocol retains the 20 remaining new-member reads and the previously pinned cache reuse; no cap expansion or raw data access occurred in this review.",
+    "scientific_limit": "Accepted values remain sampled-signal consistent only. Absolute calibration and exact hardware cutoff are unknown; whole-life first-passage EOL and native-cycle RUL remain blocked while inter-file continuity is unverified."
+  },
+  "conclusion": "The added receipt and cache-member binding checks resolve the prior v2 provenance blocker for this pre-GO review. No reconstruction result or capacity asset was produced by the review."
+}

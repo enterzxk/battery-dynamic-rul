@@ -1,0 +1,17 @@
+{
+  "decision": "ROOT_DATA_CONTINUATION_GO_V3",
+  "owner": "01a151cb-bf57-7113-bd9d-a58035e14194",
+  "sha256": {
+    "calce_io.py": "9959e0ef768dcb7f488a6b081cbd664c39fbafb0c347c3e172841b9b999c7209",
+    "capacity_rules.py": "83a122d85a225f4f4fb3e33c70d8991e11f19bd09ac5d747d1b8989f41392f3c",
+    "reconstruct_v3.py": "0ddaa154b4a268f8764656ebad5534fecdbff47ade93f21cc2d7990901f70431",
+    "reconstruction_protocol_v3.json": "0d8e701742dbc7efe8ced43bc84eec772fca2b4b668e653098bd7910de2909a8"
+  },
+  "max_invocations": 1,
+  "max_new_members": 19,
+  "prior5_consumed_members_reused_only": true,
+  "new_fits": 0,
+  "othercells": 0,
+  "model": 0,
+  "ROOT_delta_review": "Nullable legacy fields and exact old\u2212.001 endpoints reviewed separately from unchanged physical\u2212.01 rule; cache path/pins and exclusive v3 artifacts preserve earlier receipts. Previous independent review physical rule/provenance remains applicable; no new thresholds."
+}

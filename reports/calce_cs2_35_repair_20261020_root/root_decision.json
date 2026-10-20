@@ -1,0 +1,15 @@
+{
+  "decision": "DELIVER_SOURCE_ARCHIVE_COMPLETE_MEASUREMENT_ASSET_WITH_EXPLICIT_UNCERTAINTY",
+  "source_files": 25,
+  "records": 266914,
+  "valid_discharges": 854,
+  "uncertain": 32,
+  "exact_duplicate_aliases": 50,
+  "complete_unbroken_lifetime_proven": false,
+  "RUL_labels_allowed": false,
+  "independent_confirmation_ready": false,
+  "new_fits": 0,
+  "othercells": 0,
+  "authoritative_asset": "/home/yndx/zxk/rul/data/processed/CALCE_CS2_35_DataV1_v3",
+  "next": "external/previously saved test-session schedule evidence for native-cycle continuity; no raw reruns or model gate expansion"
+}

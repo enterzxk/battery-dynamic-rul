@@ -262,6 +262,16 @@ def main():
     for name in ['protocol.json','runner.py','runner_pre_review.py','independent_review.json','independent_review_final.json','ROOT_READ_GO.json','counter_semantics_diagnostic.json','summary.json','minimal_validation.json','root_decision.json','RESULTS_ZH.md']:
         chosen.add('reports/calce_cs2_35_series_20261019_root/' + name)
 
+    for name in ['RESULTS_ZH.md', 'schema_diagnosis.json', 'source_evidence.json', 'calce_io.py', 'capacity_rules.py', 'capacity_rules_before_legacyfix.py', 'capacity_rules_before_nullablefix.py', 'reconstruct.py', 'reconstruct_v2.py', 'reconstruct_v3.py', 'schema_protocol.json', 'ROOT_SCHEMA_GO.json', 'measurement_probe_protocol.json', 'ROOT_MEASUREMENT_PROBE_GO.json', 'reconstruction_protocol.json', 'reconstruction_protocol_v2.json', 'reconstruction_protocol_v3.json', 'ROOT_RECONSTRUCTION_GO.json', 'ROOT_RECONSTRUCTION_GO_v2.json', 'ROOT_RECONSTRUCTION_GO_v3.json', 'reconstruction_summary.json', 'reconstruction_summary_v2.json', 'independent_reconstruction_review.json', 'independent_reconstruction_review_fixed.json', 'independent_reconstruction_review_v2.json', 'independent_reconstruction_review_v2_fixed.json', 'regression_failure_diagnostic.json', 'representative_capacity_validation.json', 'final_validation.json', 'public_summary.json', 'asset_manifest.json', 'endpoint_labels.json', 'DATA_DICTIONARY_ZH.md', 'root_decision.json']:
+        chosen.add('reports/calce_cs2_35_repair_20261020_root/' + name)
+    chosen.discard('experiments/cpmlp_hust_recipe_adapt_seed42_v2/validation_predictions_epoch_003.csv')
+    for name in ['archive.json','decode.py','validation.json']:
+        chosen.add('reports/completed_hust_recipe_epoch3_lossless_20261020_root/' + name)
+
+    chosen.discard('experiments/matr_raw_batch2_longtrend_seed42_v1/development_predictions.csv')
+    for name in ['archive.json','decode.py','validation.json']:
+        chosen.add('reports/completed_matr_longtrend_predictions_lossless_20261020_root/' + name)
+
     contents, files, skipped = {}, [], []
     mapping = {'README.md': 'docs/GITHUB_README_ZH.md', 'agent.md': 'AGENTS.md'}
     mapping.update({rel: rel for rel in sorted(chosen)})

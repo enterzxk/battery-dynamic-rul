@@ -1,0 +1,24 @@
+{
+  "asset_root": "/home/yndx/zxk/rul/data/processed/CALCE_CS2_35_DataV1_v3",
+  "source_archive_sha256": "84d88cb98a43c02049f16c78806a78ec19084776ea5df8a4b7c2f8f7ba4589e5",
+  "artifacts": {
+    "capacity_series.csv": {
+      "bytes": 284787,
+      "sha256": "8818441b59d405ab34948eaf57824a79780591c13d795a15caca2be2643212ea"
+    },
+    "discharge_measurements.jsonl": {
+      "bytes": 1107666,
+      "sha256": "013faaee2994548dbd4f70d8520bdcc2ac266aa7f757ef5ed23930a325d3f85b"
+    },
+    "endpoint_labels.json": {
+      "bytes": 864,
+      "sha256": "6c1e8aa98ffc9e78ac46988408bfa499dea6cadb0e4ad96994c619d5b0711956"
+    },
+    "DATA_DICTIONARY_ZH.md": {
+      "bytes": 2859,
+      "sha256": "f3c7acecbc0b74b139c66def61634fc92e1906c6be5a956a167026d6bd99b194"
+    }
+  },
+  "raw_cache_files": 25,
+  "raw_records_server_only": true
+}

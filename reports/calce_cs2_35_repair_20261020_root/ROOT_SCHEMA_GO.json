@@ -1,0 +1,24 @@
+{
+  "decision": "ROOT_SCHEMA_ONLY_GO",
+  "scope": {
+    "action": "single failing workbook schema diagnosis only",
+    "archive_sha256": "84d88cb98a43c02049f16c78806a78ec19084776ea5df8a4b7c2f8f7ba4589e5",
+    "member": "CS2_35/CS2_35_10_29_10.xlsx",
+    "member_bytes": 2540250,
+    "crc32": "30613f2e",
+    "max_members": 1,
+    "max_header_rows_per_sheet": 20,
+    "max_sheets": 8,
+    "max_columns": 64,
+    "max_xlsx_internal_bytes": 120000000,
+    "max_invocations": 1,
+    "fit": 0,
+    "othercell": 0,
+    "EOL": 0,
+    "raw_cache_server_only": true
+  },
+  "owner": "01a151cb-bf57-7113-bd9d-a58035e14194",
+  "protocol_sha256": "7861d450935ca522c3514a01b92c8465470dac1795090c3aa6ec3e525ea9e805",
+  "self_review": "metadata/header only; no semantic mapping selection or capacity labels; stop on bounds",
+  "at_utc": "2026-10-20T07:18:09.161841+00:00"
+}

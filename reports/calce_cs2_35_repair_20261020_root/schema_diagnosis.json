@@ -1,0 +1,10 @@
+{
+  "status": "RESOLVED_COMPATIBLE_AGGREGATION_GRAIN_DIFFERENCE",
+  "raw_sheet": "Channel_1-008",
+  "extra_aggregation_sheet": "Statistics_1-008",
+  "cause": "old matcher7 fields accepted both; new requires Data_Point/Step_Index/Step_Time(s) and unique unit-specific fields",
+  "date_specific_hardcode": false,
+  "duplicate_required_columns": "STOP_AMBIGUOUS",
+  "missing_measurement_fields": "STOP_NOT_SILENT_FILL",
+  "empty_optional_or_legacy_no_discharge": "retain UNCERTAIN/null, do not manufacture capacity"
+}
