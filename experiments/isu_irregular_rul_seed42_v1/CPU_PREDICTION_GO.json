@@ -1,0 +1,30 @@
+{
+  "status": "APPROVED_CPU_CHECKPOINT_INFERENCE_ONLY",
+  "owner": "01a15846-1ade-7623-88ff-98dd7f94f4fd",
+  "issued_utc": "2026-10-20T13:31:57.834226+00:00",
+  "code_sha256": "6b5ad4133c0d9fa71e06831b049b9c5d3f07290c8813581536b2d3b8bb88a727",
+  "new_fits": 0,
+  "new_optimizer_steps": 0,
+  "allow_saved_ISU_CPU_checkpoint_load": true,
+  "allow_train_prior_deterministic_reconstruction": true,
+  "allow_63_development_inference": true,
+  "locked_reads": 0,
+  "artifacts": {
+    "experiments/isu_irregular_rul_seed42_v1/train_eval_pre_gru_epoch_fix.py": "174d00d8d207627f29aa04297f5acccf421aa09c01cbe05a8f036f503ddefef0",
+    "experiments/isu_irregular_rul_seed42_v1/baselines.py": "a8f537e2f2676e9c4a20909c530223bab20521fc7457e544cab092515610187e",
+    "experiments/isu_irregular_rul_seed42_v1/data_adapter.py": "d5effc7ab9aa946feee717e8490983e6ccbebf890492b456091ac49a942763f3",
+    "experiments/isu_irregular_rul_seed42_v1/protocol_candidate.json": "6640ae61ae6e6ae178b2b7c9bb225bcc7a7a6d219505ece3ba8bf4bd1d5c75eb",
+    "reports/isu_ilcc_datav2_full_20261020_root/data_manifest.json": "68f53dc481dfc212896658a9bcb69780b5ed7285d853cc870a4002ae658726e1",
+    "reports/isu_ilcc_capacity_probe_20261020_root/cohort.json": "4469f7f5b6eb8c26a522fa46c4291ec6d03d98e7ae5c20ce7ae77e835b849ae0",
+    "experiments/isu_irregular_rul_seed42_v1/run_20261020_main/hgb_dynamic_oof_residuals.npy": "39d4e2c652290eda53c494af76b93effd1b00170826972878df0845892c51659",
+    "experiments/isu_irregular_rul_seed42_v1/run_20261020_main/hgb_early_health_oof_cell_equal_weights.npy": "a1288fe6e92c9fc7562cc17450949803dc82566d36934b68ad20fe1c1709478e",
+    "experiments/isu_irregular_rul_seed42_v1/run_20261020_main/hgb_early_health_oof_residuals.npy": "36366e8df76962ebd389df5703e0efd46fea6752eedfca9393f32df3e2e14f22",
+    "experiments/isu_irregular_rul_seed42_v1/run_20261020_main/hgb_dynamic.joblib": "a56da2d3a52e658ec97d0e4df644a0bba2414713d80c908c95b3aa7bf6c320a0",
+    "experiments/isu_irregular_rul_seed42_v1/run_20261020_main/hgb_early_health.joblib": "9d144b911439451b0a0f7d8570ca0300220297a22c2f3b58735aea257b085216",
+    "experiments/isu_irregular_rul_seed42_v1/run_20261020_main/aft_dynamic.joblib": "47c9aa74feb5e5af9029513324ced802c5cf4846980c72e57264517ae4b6d254",
+    "experiments/isu_irregular_rul_seed42_v1/run_20261020_main/aft_distribution.json": "1b88e8259a0f30528eaa20fc9da958419a921bcc80d01783642f1a0cc9615dd0",
+    "experiments/isu_irregular_rul_seed42_v1/run_20261020_main/hgb_dynamic_oof_cell_equal_weights.npy": "87ed5e73c2f97f43104354f1cbbfa48d12fc9f745b7e7daee71c8e5f20f5c3cd"
+  },
+  "original_failed_go_preserved": "11c59b83f3f54a79d56c15bf2f5ba582668b20030a97b3dd41930073f34e07b0",
+  "review_basis": "Original independent baseline review and exact same production predict/score functions, newly materialize already-authorized CPU predictions from saved weights; no estimator fit call. Root static reviewed source guards/artifact mapping."
+}

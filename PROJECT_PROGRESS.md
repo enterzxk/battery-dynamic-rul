@@ -724,3 +724,11 @@
 - 最小验证：106112460解压字节均通过中央目录CRC/长度；两颗首末容量及事件容量与先前摘要一致；日期严格递增、完成后可见、缺失位置保留。首轮SSH空格传输失败仅消耗30字节ZIP头，旧失败和GO保留；修复采用单独新GO明确一次30字节元数据重取，累计5 GET/12404109响应体字节，未重复读取成员payload。
 - 阻塞/风险：日历时间不等于实际cycle/EFC或持续运行时间，后两者在RPT顶层不存在；事件仅为首次实际源RPT容量<=0.20Ah，不能当潜在真实EOL。物理serial未知、非越阈停测原因未知，不能自动宣称独立删失。竞争主源已有随机退化+liquid+online方案；候选核心及基线仍为待正式数据运行的实现，合成检查不是性能证据。
 - 下一步：复用相同解析器构建125训练/63开发的完整DataV2，复用已存两成员而不重新取；另经完整范围审查和新GO后执行剩余186成员。基线修正完成后，以6 HGB+1 AFT+1 GRU固定seed42预算提案进入正式比较；现在训练门仍关闭，封存63电芯只在方法及选择规则冻结后确认。
+
+## 2026-10-20 ISU DataV2 完整资产与首轮五基线真实主表
+
+- 已完成：188颗非封存电芯DataV2导入和一次资格校验PASS；125train/63development/63locked在轨迹前冻结。4108个有效RPT、36缺失，locked读取0。7CPU fit完成，GRU第1步后保存失败；保留7CPU权重，经fresh0fit恢复13,725条预测，形成61颗可用开发电芯、三种观测臂、五模型主表。
+- 证据：reports/isu_ilcc_datav2_full_20261020_root/data_manifest.json（SHA68f53dc481dfc212896658a9bcb69780b5ed7285d853cc870a4002ae658726e1）；experiments/isu_irregular_rul_seed42_v1/cpu_results_summary/RESULTS_ZH.md 和 arm_model_summary.csv；原预测 cpu_prediction_recovery/predictions_dev.csv（SHA01f0b2e5ff973affab97e4ca224911560e0cb6f8383851edd5ad631df53cda82）。动态HGB原始/隔次/延迟7d电芯等权MAE=3.094183/3.205075/3.377782周，早期HGB6.197894周，group prior4.020443周，普通CDF融合3.238498/3.298145/3.369056周。
+- 最小验证：完整manifest PASS；保存预测独立statistics按cell重算15项MAE最大差1.776e-15 PASS，0新fit/0推理。汇总命令 python experiments/isu_irregular_rul_seed42_v1/summarize_results.py --predictions experiments/isu_irregular_rul_seed42_v1/cpu_prediction_recovery/predictions_dev.csv --output experiments/isu_irregular_rul_seed42_v1/cpu_results_summary 已实际执行一次。
+- 阻塞/风险：日历周不等于nativecycle/EFC/运行时间；源实测首次Q<=0.20Ah事件不等于潜在物理首次EOL；missing/非事件停止原因未知。三臂是信息隐藏、pre-event开发描述，概率分数不能当未知事件校准或独立确认。GRU保存变量覆盖已最小修复，失败1fit/1step已消费，7CPU不重训。候选异步滤波已实现但尚无GO/真实结果；不能宣称创新已证明。累计CPU27（MATR41另记）/神经5fit2581steps。自动任务真实ID battery-dynamic-rul，旧ID确实不存在后唯一replacement已核，无重复控制器。
+- 下一步：V16第二次真实压缩2026-10-20T13:35:48.609Z触发V17事务，保存本阶段并迁移现有自动任务；接续主协调经必要delta核查签fresh GRU-only1fit100step预算，直接补齐时序基线，再对候选/标量普通滤波做fold内参数拟合的最多12CPUfit真实比较；C4仍封存。确认选择方案已于首次指标前冻结于 docs/ISU_ILCC_CONFIRMATION_PLAN_20261020_ZH.md。

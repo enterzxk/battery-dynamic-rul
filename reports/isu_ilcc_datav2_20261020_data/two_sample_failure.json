@@ -1,7 +1,0 @@
-{
-  "status": "FAILED_STOP_NO_RETRY",
-  "error_type": "RuntimeError",
-  "error": "REMOTE_usage: receive_datav2.py [-h] [--member MEMBER]\n                         [--controller-sha256 CONTROLLER_SHA256]\n                         {claim,store-header,store-range2,decode,failure}\nreceive_datav2.py: error: unrecognized arguments: 1.0/G1C1.json\n",
-  "network_body_bytes": 30,
-  "logical_gets": 1
-}

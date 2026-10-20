@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "status": "DRAFT_ROOT_REVIEW_REQUIRED",
+  "purpose": "Operational fit contract only. No fit, inference, or real data access was performed.",
+  "scope": {
+    "candidate_features": "Two-state Gamma-moment/OU filter features for the same HGB head.",
+    "input": "Read only origin.visible_records, each with explicit arrival_epoch already screened by the adapter, and origin.origin_stop_epoch. Require sample <= arrival <= query. Never infer arrival from arm names or access labels/targets/future rows.",
+    "causality": "Recompute the complete currently visible prefix in sample-time order, then propagate to the query. This is an O(n) causal reference implementation, not an O(1) online claim.",
+    "late_first_measurement": "Keep the first latent sample-time state internally while recording its actual arrival time. Require explicit arrival_epoch for every visible record and replay each measurement at sample time using its actual arrival time. Export is forbidden before the latest visible arrival.",
+    "replay": "35 days limits each actual arrival_epoch - stop_epoch delayed-measurement replay interval only. It does not limit query minus latest sample or staleness. With no new measurement, propagate state and covariance through the full as-of gap. Full visible-prefix recomputation is O(n); overall runtime is separately controlled by GO.",
+    "arrival_validation": "Every record must include arrival_epoch; require finite stop_epoch <= arrival_epoch <= origin_stop_epoch. Reject any actual arrival-sample lag above 35 days. Do not guess arrival from arm."
+  },
+  "initialization": {
+    "q_reference": "first sample among currently visible records",
+    "x": 0,
+    "z": 0,
+    "loss_variance_Ah2": 1e-05,
+    "offset_variance_Ah2": 1e-05,
+    "cross_covariance_Ah2": 0,
+    "time_unit": "day"
+  },
+  "fit": {
+    "status": "proposal_only_unapproved",
+    "budget": "Six bounded CPU parameter-fit calls total: for each of candidate and scalar control, one full train-role fit plus two cell-fold training-only fits matching fixed seed-42 HGB OOF folds. Each branch has three calls, maxiter 200 each; any FIT_FAILED or IDENTIFIABILITY_STOP among its three stops that branch with no substitution.",
+    "roles": "Full fit uses train-role cells only. Each OOF-fold parameter fit uses only the complementary train-role cells; the held-out cells contribute neither health records to that parameter fit nor future labels. Equal cell weight, mean within-cell innovation loss. No event labels or target RUL.",
+    "objective": "Cell-balanced Gaussian innovation quasi-NLL: average over cells of each cell's mean 0.5*(log(2*pi*S)+e*e/S). Initialization measurement is not scored. This is a moment-Gaussian quasi-likelihood, not an exact Gamma likelihood.",
+    "optimizer": "Deterministic CPU L-BFGS-B, maxiter at most 200; no online updates.",
+    "coordinates": "Optimize theta=log(physical_parameter/reference). Candidate references and fixed starts: mu=0.25/365 Ah/day, v=1e-6 Ah^2/day, lambda=1/7 day^-1, Vz=1e-5 Ah^2, R=1e-6 Ah^2. Scalar references and starts: mu=0.25/365 Ah/day, process variance=1e-6 Ah^2/day, measurement variance=1e-6 Ah^2.",
+    "bounds": {
+      "candidate": {
+        "mu_Ah_per_day": [
+          1e-08,
+          0.25
+        ],
+        "v_Ah2_per_day": [
+          1e-12,
+          0.0625
+        ],
+        "lambda_per_day": [
+          0.02857142857142857,
+          10
+        ],
+        "Vz_Ah2": [
+          1e-12,
+          0.0625
+        ],
+        "R_Ah2": [
+          1e-10,
+          0.0625
+        ]
+      },
+      "scalar": {
+        "mu_Ah_per_day": [
+          1e-08,
+          0.25
+        ],
+        "process_variance_Ah2_per_day": [
+          1e-12,
+          0.0625
+        ],
+        "measurement_variance_Ah2": [
+          1e-10,
+          0.0625
+        ]
+      }
+    },
+    "hessian": "Check parameter boundary proximity first in log coordinates; if any distance <=1e-6, return IDENTIFIABILITY_STOP without Hessian. Otherwise central-difference step per coordinate is min(1e-3, one quarter of the nearest log-bound distance), so all probes remain within bounds. Require finite positive-definite observed Hessian and condition number <=1e8.",
+    "boundaries": "Positive lower bounds exclude exact zero-process branches from these fits. Gamma conversion for positive mu and v: shape rate kappa=mu^2/v and scale theta=v/mu. OU diffusion sigma=sqrt(2*lambda*Vz). No relaxed bounds or retry.",
+    "fail_closed": "Nonconvergence, nonfinite loss/parameters, boundary proximity, non-positive Hessian, or condition number >1e8 returns FIT_FAILED or IDENTIFIABILITY_STOP; parameters are not usable."
+  },
+  "scalar_control": {
+    "model": "One latent scalar cumulative loss x. Propagation x+=mu*dt; variance P+=v*dt. Measurement Q=q_ref-x+epsilon; ordinary Gaussian Kalman update with H=-1 and measurement variance R.",
+    "features": "scalar loss, scalar variance, age, staleness from screened visible records only.",
+    "fit_api": "filter_representation.fit_scalar_kalman_parameters",
+    "innovation_api": "filter_representation.scalar_kalman_innovations"
+  },
+  "candidate_api": {
+    "fit": "filter_representation.fit_candidate_parameters",
+    "features": "filter_representation.filter_features_for_origin"
+  },
+  "downstream": "For each representation, use fold-specific parameters to construct held-out OOF features and full-train parameters for the final full-data HGB head. Same HGB head, objective, weighting and OOF/full budget for every representation. Development is evaluation only and does not tune parameters.",
+  "execution_gate": "No optimizer call is authorized. Requires root exact-hash GO binding the six parameter-fit plus six HGB-fit (12 maximum CPU fits) budget, data/as-of approval, and fit receipt/hash guards. Implementation work is not an experiment.",
+  "validation": {
+    "allowed": "Static fold-role/interface inspection and mocked prediction-key comparison only; no optimizer or real data.",
+    "forbidden": "Real data, optimizer, fit, inference, development or locked reads.",
+    "status": "Pending root review. No optimizer call, real data access, or prediction was performed."
+  }
+}

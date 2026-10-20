@@ -1,0 +1,69 @@
+{
+  "schema_version": "2.0",
+  "status": "PRE_GO_DESIGN_ONLY",
+  "seed": 42,
+  "purpose": "Compare causal dynamic predictions of source-observed first RPT Q<=0.20 Ah event time under common dense-source forecast origins and three health-observation schedules; development only, not latent EOL or independent confirmation.",
+  "endpoint": "At each cell's original dense RPT completion, first source RPT with capacityAh<=0.20; event timestamp is that RPT stop. Event labels and common origins stay fixed across raw, sparse2rpt and delayed7d arms. Non-event cells are retained in acquisition/audit but are not treated as independently right-censored and are excluded from event-only scoring.",
+  "origins": "Second eligible above-threshold RPT is the fixed warm-up anchor. Query origins are dense-source RPT completions at least 7 days after anchor and strictly before the fixed dense-source event. All arms share these origins and targets.",
+  "information_states": {
+    "no_new_measurement": "Propagate the anchor event-time distribution by elapsed calendar age; do not infer survival merely because the cell remains in operation.",
+    "irregular_measurement": "Only RPT values whose stop time has arrived are visible; capacity is known at stop.",
+    "delayed_arrival": "Measurement is visible only at stop plus the specified delay; sample stop and arrival time remain distinct. No future or unarrived measurement is used.",
+    "event_alert": "No separate online event-alert channel; labels do not change by arm. Do not use endpoint observation or post-origin measurements as features.",
+    "static_features": "Group ID and preregistered C-rate only if source provenance/license confirms. Never use full-life MeanDoD, full-life health summaries, raw source path, future RPT, or future event status."
+  },
+  "models": [
+    {
+      "name": "group_frozen",
+      "description": "Group-specific empirical event-duration-from-anchor distribution; no health adaptation; shift by query-anchor elapsed and retain atom at RUL=0."
+    },
+    {
+      "name": "hgb_early_health",
+      "description": "Early frozen comparator: cell-isolated OOF plus full HGB trained only on the first two eligible anchor RPT health values, their slope/gap and permitted group; predicts event duration from anchor."
+    },
+    {
+      "name": "hgb_dynamic",
+      "description": "Dynamic HGB of event duration from anchor using all health visible by query, query age and staleness."
+    },
+    {
+      "name": "aft_dynamic",
+      "description": "Weighted lognormal AFT with the same causal dynamic features except group."
+    },
+    {
+      "name": "gru_dynamic",
+      "description": "Small GRU predicts log event duration from anchor with a lognormal likelihood; query age and staleness plus permitted group are present at every time step."
+    },
+    {
+      "name": "cdf_fusion",
+      "description": "Fixed 50:50 CDF mixture of group_frozen and hgb_dynamic."
+    }
+  ],
+  "training": {
+    "cell_weights": "Each train cell has equal total weight across its arms and origins; early-HGB has one anchor example per cell. OOF residual CDF assigns equal total mass per cell.",
+    "fit_budget": {
+      "hgb_fits": 6,
+      "aft_fits": 1,
+      "gru_fits": 1
+    },
+    "gru_epochs_proposed": 100,
+    "seed": 42,
+    "note": "Proposal only. No fit until root issues an exact-hash GO.",
+    "fit_counting": "HGB fits_started reserves three per HGB helper before execution; on interrupted helper actual completed fit count may be lower. Failed request claims are never reused.",
+    "runtime_cap": "GO must include max_runtime_seconds in [1,21600]; runner arms a hard process alarm before any data read."
+  },
+  "metrics": {
+    "primary": "Cell-wise MAE of RUL in calendar weeks, descriptive over event-observed development cells only.",
+    "secondary": [
+      "severe overprediction >4 weeks",
+      "80% interval score and coverage",
+      "Brier at 4 and 12 calendar weeks",
+      "predicted zero-RUL mass",
+      "cell-bootstrap 95% descriptive CI",
+      "per-model query/update wall time"
+    ],
+    "tail_rule": "No fixed-grid truncation, clipping, cumulative repair, or appended tail mass. Empirical models use exact finite support; lognormal models use analytic unbounded support; quantiles and metrics are evaluated directly. Invalid/nonfinite/nonmonotone CDF fails the run."
+  },
+  "locked_role": "Never read, list, hash, parse or score locked cohort data.",
+  "execution_status": "No data read, no fit, no prediction, no result claim. Fresh output and receipt paths only. Exact GO binds protocol SHA, source SHA mapping for train_eval.py/baselines.py/data_adapter.py/protocol_candidate.json, cohort and data-manifest hashes, coordinator owner thread, issued_utc, seed, fit counts, 100 GRU epochs and max_runtime_seconds. Runner validates ACTIVE coordinator owner/thread/cwd/takeover/heartbeat, takes the project CPU flock and persistent one-shot request claim, then writes durable success/failure receipt and per-epoch GRU checkpoint/progress.",
+  "dynamic_feature_definition": "HGB/AFT use 10 numeric causal features plus 64 permitted group indicators (total 74 when group is approved): origin calendar age; latest visible Q/nominal; gap between last two visible RPTs; last-two-point raw-Ah/week slope; visible RPT count; latest visible age; query staleness; first visible Q/nominal; Theil-Sen median pair slope of normalized capacity (Q/nominal per calendar week) over the most recent at most five arrived RPTs, using only strict positive time separations; and the latest measurement residual from the robust line whose slope is that Theil-Sen median and whose intercept is the median of y-slope*(t-latest_time). No window/scale search. With fewer than two distinct times, robust slope/residual are fixed to 0. GRU remains its separate 71-dimensional per-observation sequence and receives none of these aggregate features."
+}

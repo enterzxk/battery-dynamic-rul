@@ -1,0 +1,43 @@
+{
+  "status": "APPROVED",
+  "request_id": "ISU_MAIN_BASELINES_SEED42_20261020_V1",
+  "owner_thread_id": "01a15846-1ade-7623-88ff-98dd7f94f4fd",
+  "issued_utc": "2026-10-20T13:27:13.290076+00:00",
+  "allow_fit": true,
+  "allow_train_development_data_read": true,
+  "allow_new_model_forward_and_backward": true,
+  "allow_development_inference": true,
+  "allow_locked_or_old_test": false,
+  "protocol_sha256": "6640ae61ae6e6ae178b2b7c9bb225bcc7a7a6d219505ece3ba8bf4bd1d5c75eb",
+  "source_sha256": {
+    "train_eval.py": "174d00d8d207627f29aa04297f5acccf421aa09c01cbe05a8f036f503ddefef0",
+    "baselines.py": "a8f537e2f2676e9c4a20909c530223bab20521fc7457e544cab092515610187e",
+    "data_adapter.py": "d5effc7ab9aa946feee717e8490983e6ccbebf890492b456091ac49a942763f3",
+    "protocol_candidate.json": "6640ae61ae6e6ae178b2b7c9bb225bcc7a7a6d219505ece3ba8bf4bd1d5c75eb"
+  },
+  "cohort_sha256": "4469f7f5b6eb8c26a522fa46c4291ec6d03d98e7ae5c20ce7ae77e835b849ae0",
+  "data_manifest_sha256": "68f53dc481dfc212896658a9bcb69780b5ed7285d853cc870a4002ae658726e1",
+  "implementation_review_sha256": "93e55b97d879d1c6076126e326796cabf0a982483d8a26b245aa019d4fbe7b8b",
+  "launcher_sha256": "340cd03d782e298d492c71d3008e6af27626372f620f4d88d5979db4c2e6e885",
+  "fit_budget": {
+    "hgb_fits": 6,
+    "aft_fits": 1,
+    "gru_fits": 1
+  },
+  "new_CPU_estimator_fits_max": 7,
+  "new_neural_fits_max": 1,
+  "neural_optimizer_steps_max": 100,
+  "deterministic_group_prior_construction": 1,
+  "gru_epochs": 100,
+  "seed": 42,
+  "max_runtime_seconds": 3600,
+  "development_cells": 63,
+  "expected_event_observed_dev_scored_cells": 62,
+  "common_origins_per_arm": 915,
+  "max_development_prediction_rows": 16470,
+  "old_CPUfits_preserved": 20,
+  "old_neural_fits_preserved": 4,
+  "old_neural_steps_preserved": 2580,
+  "old_MATR41_separate": true,
+  "no_replay_or_old_checkpoint_refit": true
+}

@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "independent_formula": "statistics.mean of per-cell mean(abs(pred_mean-target)) from original saved CSV",
+  "rows": 13725,
+  "cells": 61,
+  "max_macro_MAE_delta": 1.7763568394002505e-15,
+  "new_fits": 0,
+  "checkpoint_loads": 0,
+  "new_model_inference": 0,
+  "source_prediction_sha256": "01f0b2e5ff973affab97e4ca224911560e0cb6f8383851edd5ad631df53cda82"
+}

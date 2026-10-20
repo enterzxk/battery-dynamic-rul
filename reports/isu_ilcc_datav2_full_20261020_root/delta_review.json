@@ -1,0 +1,13 @@
+{
+  "status": "PASS_FULL188_DELTA",
+  "version": 2,
+  "prior_go_sha256": "817c7b09b65a3423be939ef2fc87f8f75d8338711c4293342f5a4f15e9c6f26d",
+  "prior_failure": "full_import_failure.json",
+  "source_diagnostic": "G35C1_timestamp_diagnostic.json",
+  "repair": "Lossless drop exactly000 sub-microsecond suffix only for Python3.9 parsing; preserve source strings. Nonzero ns unsupported STOP. Same188scope/limits; G35C1 stored payload reused. No network replay.",
+  "minimal_validation": "6digit and9digit000 timestamps equal; nonzero last3 rejects; PASS",
+  "prior_logical_gets": 157,
+  "prior_network_body_bytes": 272896362,
+  "completed_new_members": 75,
+  "new_fits": 0
+}

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Remote-only bounded decoder and DataV2 contract writer; no network access."""
-import argparse, base64, hashlib, json, math, os, struct, time, zlib, fcntl
+import argparse, base64, hashlib, json, math, os, struct, time, zlib, fcntl, re
 from datetime import datetime
 from pathlib import Path
 
@@ -79,7 +79,10 @@ def store_chunk(kind,member):
 def finite_num(v): return isinstance(v,(int,float)) and not isinstance(v,bool) and math.isfinite(v)
 def parse_dt(v):
     if not isinstance(v,str): return None
-    try: return datetime.fromisoformat(v.replace('Z','+00:00'))
+    try:
+        text=v.replace('Z','+00:00')
+        text=re.sub(r'(\.\d{6})000(?=$|[+-])',r'\1',text)
+        return datetime.fromisoformat(text)
     except ValueError: return None
 def list_field(v,name):
     if not isinstance(v,list): raise ValueError(name+'_NOT_OFFICIAL_LIST_SHAPE')

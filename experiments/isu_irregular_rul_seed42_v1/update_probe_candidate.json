@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "status": "PROPOSAL_ONLY_NOT_AUTHORIZED",
+  "question": "When a capacity RPT sampled earlier arrives late, does timestamp-correct assimilation at its sample time followed by state propagation to the current query improve forecasts over no-arrival propagation, and how much distortion comes from treating the old value as a current measurement?",
+  "target": "Causal update-semantics probe only. It adds no learned parameter or fit. Each evaluated inference call still requires a new exact root GO.",
+  "endpoint_and_origins": {
+    "endpoint": "Keep the frozen source-observed endpoint: first original RPT completed with Q<=0.20 Ah, timestamped at RPT stop. Never call it latent EOL.",
+    "origin": "Use the already frozen common dense-source query origins and same event labels for all variants. Do not add query origins after inspecting scores."
+  },
+  "arrival_design": {
+    "sample_time": "For each qualifying RPT, sample time is its source stop timestamp s; its capacity value is available only at arrival a=s+7 calendar days.",
+    "before_arrival": "At a common query q<a, the delayed arm cannot access this RPT; all delayed variants must use identical prior information and produce identical outputs.",
+    "at_or_after_arrival": "At the same query q>=a, compare these three update rules on the exact same previously visible history and query: (1) propagate-only/no-arrival control; (2) replay the measurement innovation at s using the state uncertainty at s, then propagate the corrected state to q; (3) deliberately naive arrival-time update treating the old sample as if measured at q.",
+    "boundary": "Use one deterministic arrival convention (arrival visible when a<=q); do not mix strict and inclusive boundaries. Preserve both s and a in each audit row."
+  },
+  "information_permissions": {
+    "health": "Capacity at source sample time is hidden until its arrival; after arrival it is a stale observation with known sample timestamp.",
+    "survival": "No event-alert channel. Do not condition on the cell still operating after anchor. Never use future RPTs or dense endpoint data as features.",
+    "labels": "Labels and origins remain identical across variants; artificial delay does not create censoring.",
+    "static_inputs": "Group/C-rate only if provenance and license are approved; no full-life MeanDoD."
+  },
+  "predeclared_comparisons": [
+    "No-arrival propagation at the same query.",
+    "Timestamp-correct historical innovation replay followed by forward propagation.",
+    "Naive arrival-as-current update, explicitly a timing-error control."
+  ],
+  "readouts": [
+    "Same-query per-cell absolute RUL error change versus propagate-only.",
+    "Paired per-cell changes and fixed-seed bootstrap interval, retaining invalid outputs.",
+    "State/uncertainty innovation immediately before and after update, sample-to-query gap, and predicted zero-RUL mass.",
+    "Update latency and exact count of inference calls."
+  ],
+  "parameter_policy": "Use only an explicitly frozen parameter set and code hash supplied by root. No fitting, tuning, calibration, or parameter selection on development outcomes in this probe.",
+  "execution_gates": {
+    "new_fits": 0,
+    "new_inference_calls": "Requires separate exact GO with source/data/cohort/code hashes, owner, query/arrival allowlist, call cap, output path, and runtime cap.",
+    "preconditions": "DataV2 and manifest validated; baseline results summarized; sample/arrival timestamp semantics reviewed; candidate filter API and checkpoint/parameter source frozen.",
+    "stop": "Stop on any sample timestamp not parseable, any arrival boundary mismatch, nonfinite state/score, invalid CDF, changed origins/labels, or any unapproved fit/inference."
+  },
+  "limitations": "This is a development-only update-semantics probe. It cannot establish latent physical failure time, independent confirmation, or novelty of replay/filtering itself.",
+  "full_source_window_event_probability_evaluation": "In addition to the fixed pre-event point-RUL descriptive table, evaluate event-probability calibration over the complete eligible source-RPT query window from the frozen warm-up anchor through the final recorded RPT, not only origins selected by the true future event time. Keep the same fixed source endpoint T and assign target RUL=max(T-query_time,0) for every query, including queries at/after T. At each query, record separately whether the endpoint RPT health value has actually arrived and whether an event alert exists (the current protocol has no separate alert channel). Do not censor/delete post-T queries; report pre-T point-RUL and full-window event-probability results as distinct estimands. Any generation of these additional inference rows still requires a separate exact GO."
+}

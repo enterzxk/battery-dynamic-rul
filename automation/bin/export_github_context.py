@@ -305,6 +305,16 @@ def main():
     chosen.add('reports/isu_ilcc_datav2_full_20261020_root/scope_candidate.json')
     chosen.add('reports/irregular_rul_competition_20261020_root/eswa_primary_preview.json')
 
+    # V17: actual ISU baseline evidence; trajectories, checkpoints and member logs remain private.
+    chosen.add('docs/COORDINATOR_HANDOFF_20261020_V17_ZH.md')
+    chosen.add('docs/ISU_ILCC_CONFIRMATION_PLAN_20261020_ZH.md')
+    for name in ['data_manifest.json','full_import_final.json','full_import_failure.json','delta_review.json','ROOT_GO.json','full188_protocol.md','parser_ns_v2.py','qualify_asset.py']:
+        chosen.add('reports/isu_ilcc_datav2_full_20261020_root/' + name)
+    for name in ['train_eval.py','train_eval_pre_gru_epoch_fix.py','baselines.py','data_adapter.py','protocol_candidate.json','ROOT_GO.json','CPU_PREDICTION_GO.json','baseline_run_receipt.json','cpu_prediction_recovery_receipt.json','recover_cpu_predictions_once.py','summarize_results.py','finish_gru_only.py','candidate_filter.py','filter_representation.py','filter_fit_protocol.json','filter_comparison.py','update_probe_candidate.json']:
+        chosen.add('experiments/isu_irregular_rul_seed42_v1/' + name)
+    for name in ['RESULTS_ZH.md','arm_model_summary.csv','cell_metrics.csv','paired_differences.csv','root_metric_recompute.json']:
+        chosen.add('experiments/isu_irregular_rul_seed42_v1/cpu_results_summary/' + name)
+
     contents, files, skipped = {}, [], []
     mapping = {'README.md': 'docs/GITHUB_README_ZH.md', 'agent.md': 'AGENTS.md'}
     mapping.update({rel: rel for rel in sorted(chosen)})

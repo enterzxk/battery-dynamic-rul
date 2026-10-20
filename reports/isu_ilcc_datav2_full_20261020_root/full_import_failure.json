@@ -1,0 +1,6 @@
+{
+  "status": "FAILED_STOP_NO_RETRY",
+  "error_type": "ValueError",
+  "error": "UNPARSEABLE_SOURCE_START_TIMESTAMP",
+  "operation": "decode"
+}

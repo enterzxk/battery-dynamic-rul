@@ -1,0 +1,11 @@
+{
+  "status": "SUCCESS",
+  "new_fits": 0,
+  "old_models_retrained": 0,
+  "deterministic_group_prior_reconstruction": 1,
+  "loaded_saved_CPU_full_models": 3,
+  "original_CPU_fits_preserved": 7,
+  "predictions": 13725,
+  "locked_reads": 0,
+  "GO_sha256": "927a0d4e56890e5eab13780664fa55b4743e5c084801bc1f89bf54f840a710b7"
+}

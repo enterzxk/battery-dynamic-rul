@@ -1,0 +1,23 @@
+{
+  "request_id": "ISU_MAIN_BASELINES_SEED42_20261020_V1",
+  "status": "FAILED",
+  "data_read": true,
+  "fits_started": 8,
+  "fits_completed": 7,
+  "gru_epochs_completed": 0,
+  "protocol_sha256": "6640ae61ae6e6ae178b2b7c9bb225bcc7a7a6d219505ece3ba8bf4bd1d5c75eb",
+  "source_sha256": {
+    "train_eval.py": "174d00d8d207627f29aa04297f5acccf421aa09c01cbe05a8f036f503ddefef0",
+    "baselines.py": "a8f537e2f2676e9c4a20909c530223bab20521fc7457e544cab092515610187e",
+    "data_adapter.py": "d5effc7ab9aa946feee717e8490983e6ccbebf890492b456091ac49a942763f3",
+    "protocol_candidate.json": "6640ae61ae6e6ae178b2b7c9bb225bcc7a7a6d219505ece3ba8bf4bd1d5c75eb"
+  },
+  "cohort_sha256": "4469f7f5b6eb8c26a522fa46c4291ec6d03d98e7ae5c20ce7ae77e835b849ae0",
+  "data_manifest_sha256": "68f53dc481dfc212896658a9bcb69780b5ed7285d853cc870a4002ae658726e1",
+  "owner_thread_id": "01a15846-1ade-7623-88ff-98dd7f94f4fd",
+  "max_runtime_seconds": 3600,
+  "fit_counting_note": "HGB started count reserves 3 fits before the helper; if a failure interrupts a fold, actual completed fits may be fewer and the request is not reusable.",
+  "error": "TypeError('can only concatenate tuple (not \"int\") to tuple')",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/yndx/zxk/rul/experiments/isu_irregular_rul_seed42_v1/train_eval.py\", line 194, in run\n    gru=train_gru(tr,epochs,checkpoint_dir=out,on_epoch=epoch_progress);rec[\"fits_completed\"]+=1;rec[\"gru_epochs_completed\"]=epochs\n  File \"/home/yndx/zxk/rul/experiments/isu_irregular_rul_seed42_v1/train_eval.py\", line 98, in train_gru\n    cp=Path(checkpoint_dir)/\"gru_epoch_checkpoint.pt\";tmp=cp.with_suffix(\".tmp\");torch.save({\"epoch\":_+1,\"model\":model.state_dict(),\"optimizer\":opt.state_dict(),\"loss\":lv},tmp);os.replace(tmp,cp)\nTypeError: can only concatenate tuple (not \"int\") to tuple\n",
+  "elapsed_seconds": 4.893431186676025
+}
