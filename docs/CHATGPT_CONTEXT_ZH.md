@@ -571,3 +571,12 @@ paper/figures/empirical_reliability_v1/figure.svg为可编辑四面板经验图�
 - 最小验证：旧304摘要按原定义行数/原cycle/末计数/部分积分全部一致；3代表cycle用放电前同循环基线counter增量核Step_Time首区间+梯形积分，854有效放电差中位6.249μAh、最大31.708μAh。capacity计数跨循环累计，不能用54Ah末计数；旧积分漏约30秒/.00917Ah。v1旧噪声末点对照/v2空字段对照实际STOP均保留，修复后复用缓存，累计24新member不重复补取。0fit/推理/其他cell/test，CPU20/神经4fit2580steps不变。
 - 阻塞/风险：21跨文件cycle重置、1时间重叠（2/4与2/10精确重复50周期）；不强拼原生年龄。first observed nominal80% crossing=2010-12-16T07:23:52原时区未知、12/20源cycle22、Q.876295332Ah；不能称真实首次EOL，末行不当event或合法右删失。物理serial/重叠与原candidate_train角色保持，独立确认ready=false。旧105207只是处理行数，旧仅304摘要；本次补齐逐条缓存，未虚称旧raw逐行已落盘。原数据不公开；完成HUSTrecipe epoch3旧预测117528→48289bytes无损归档，原件/历史保留，不扩cap。
 - 下一步：以原始测试session/日程证据核重置和长休息边界是否漏循环；无新证据保留分段测量资产与globalEOL/RUL未知，不自动扩大数据/模型门或重复解析。
+
+
+# 2026-10-20 V16：已保存的测试日程线索有界核验
+
+- 已完成：在既有 CS2-35 来源目录、中央目录清单及已保存 Info 摘要中核验测试日程线索。10/29 的 Info 确有 Start_DateTime=2010-10-22 13:23:25、Schedule_File_Name=CS2_1C.sdu；这是文件名引用，未找到对应日程正文或跨 session 的累计循环/停机记录。
+- 证据：reports/calce_cs2_35_session_evidence_20261020_v16/receipt.json；原 schema_receipt_server.json 的 Info 行4-5、首文件 summary.json 的 Info，以及既存 archive_directory.json。已保存的归档清单只有25个日期XLSX，没有独立 .sdu/.res/session 日志；本轮未打开ZIP或Excel。
+- 最小验证：直接核对既存 Info 字段与清单，保留来源文件SHA；0 raw读取、0下载、0模型推理、0fit，CPU20=RUL18+辅助2及神经4fit/2580steps保持。
+- 阻塞/风险：单个session开始时间和schedule文件名不足以证明24个边界无缺循环，源时区与真实首次EOL仍未知；RUL_labels_allowed=false、independent_confirmation_ready=false、candidate_train角色保持。
+- 下一步：仅在新增测试日程正文、跨session累计循环映射或原始停机/续测记录到达时定向核验；当前没有可执行raw/model GO，不重复解析或循环审计。

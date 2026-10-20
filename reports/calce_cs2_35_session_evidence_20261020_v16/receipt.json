@@ -1,0 +1,172 @@
+{
+  "status": "BOUNDED_SAVED_SESSION_REFERENCE_CHECK_COMPLETE_CONTINUITY_STILL_UNPROVEN",
+  "observed_utc": "2026-10-20T07:48:09.576892+00:00",
+  "thread_id": "01a15846-1ade-7623-88ff-98dd7f94f4fd",
+  "source_hashes": {
+    "reports/calce_cs2_35_firstfile_20261019_root/archive_directory.json": "eaf8004e825c145caeb1b5bffa232a8883fe51456b3e082f4f27fb9f3fc39d69",
+    "reports/calce_cs2_35_firstfile_20261019_root/summary.json": "8d3097640410074962f2b36ac3c3d3c69c26f8ab527519757095711d82cc40f5",
+    "reports/calce_cs2_35_repair_20261020_root/schema_receipt_server.json": "15c5b09334c21e1f5fa6d73ca3324457c1c2c5bc940256e56429d455289aeeca",
+    "reports/calce_cs2_35_repair_20261020_root/source_evidence.json": "d5ad53d2c50937a7da7e9ec24d1e19cdbaa13d10600fe004273951bd943c73f6"
+  },
+  "saved_Info_reference": {
+    "source": "reports/calce_cs2_35_repair_20261020_root/schema_receipt_server.json",
+    "sheet": "Info",
+    "header_row": 4,
+    "value_row": 5,
+    "Start_DateTime": "2010-10-22 13:23:25",
+    "Schedule_File_Name": "CS2_1C.sdu",
+    "schedule_body_present": false,
+    "cross_session_cycle_mapping_present": false,
+    "source_timezone": "UNKNOWN"
+  },
+  "saved_archive_manifest": {
+    "files": 25,
+    "all_xlsx": true,
+    "separate_session_schedule_logs": 0
+  },
+  "scoped_filename_inventory": [
+    {
+      "directory": "data/raw/CALCE/cs2_35_official_v1",
+      "names": [
+        "CS2_35.zip"
+      ]
+    },
+    {
+      "directory": "reports/calce_cs2_35_acquisition_20261019_root",
+      "names": [
+        "RESULTS_ZH.md",
+        "ROOT_ACQUISITION_GO.json",
+        "ROOT_ACQUISITION_GO_precode.json",
+        "receipt.json",
+        "receive_archive.py",
+        "receiver.claim",
+        "root_decision.json",
+        "transfer_control_receipt.json"
+      ]
+    },
+    {
+      "directory": "reports/calce_cs2_35_firstfile_20261019_root",
+      "names": [
+        "RESULTS_ZH.md",
+        "ROOT_READ_GO.json",
+        "archive_directory.json",
+        "claim.json",
+        "independent_review.json",
+        "independent_review_fixed.json",
+        "independent_review_pre_fix.json",
+        "minimal_validation.json",
+        "protocol.json",
+        "public_summary.json",
+        "read_firstfile.py",
+        "read_firstfile_pre_review.py",
+        "root_decision.json",
+        "summary.json"
+      ]
+    },
+    {
+      "directory": "reports/calce_cs2_35_repair_20261020_root",
+      "names": [
+        "DATA_DICTIONARY_ZH.md",
+        "RESULTS_ZH.md",
+        "ROOT_MEASUREMENT_PROBE_GO.json",
+        "ROOT_RECONSTRUCTION_GO.json",
+        "ROOT_RECONSTRUCTION_GO_v2.json",
+        "ROOT_RECONSTRUCTION_GO_v3.json",
+        "ROOT_SCHEMA_GO.json",
+        "asset_manifest.json",
+        "calce_io.py",
+        "capacity_rules.py",
+        "capacity_rules_before_legacyfix.py",
+        "capacity_rules_before_nullablefix.py",
+        "capacity_rules_pre_review.py",
+        "endpoint_labels.json",
+        "final_validation.json",
+        "independent_reconstruction_review.json",
+        "independent_reconstruction_review_fixed.json",
+        "independent_reconstruction_review_v2.json",
+        "independent_reconstruction_review_v2_fixed.json",
+        "measurement_probe_claim.json",
+        "measurement_probe_protocol.json",
+        "measurement_probe_server.json",
+        "public_summary.json",
+        "reconstruct.py",
+        "reconstruct_pre_review.py",
+        "reconstruct_v2.py",
+        "reconstruct_v3.py",
+        "reconstruction_claim.json",
+        "reconstruction_claim_v2.json",
+        "reconstruction_claim_v3.json",
+        "reconstruction_protocol.json",
+        "reconstruction_protocol_v2.json",
+        "reconstruction_protocol_v3.json",
+        "reconstruction_summary.json",
+        "reconstruction_summary_v2.json",
+        "reconstruction_summary_v3.json",
+        "regression_failure_diagnostic.json",
+        "representative_capacity_validation.json",
+        "root_decision.json",
+        "schema_claim.json",
+        "schema_diagnosis.json",
+        "schema_protocol.json",
+        "schema_receipt_server.json",
+        "source_evidence.json"
+      ]
+    },
+    {
+      "directory": "reports/calce_cs2_35_series_20261019_root",
+      "names": [
+        "RESULTS_ZH.md",
+        "ROOT_READ_GO.json",
+        "canonical_occurrences.csv",
+        "claim.json",
+        "counter_semantics_diagnostic.json",
+        "independent_review.json",
+        "independent_review_final.json",
+        "independent_review_fixed_before_reset.json",
+        "independent_review_pre_fix.json",
+        "minimal_validation.json",
+        "protocol.json",
+        "root_decision.json",
+        "runner.py",
+        "runner_pre_review.py",
+        "summary.json"
+      ]
+    },
+    {
+      "directory": "reports/calce_cs2_head_preflight_20261019_root",
+      "names": [
+        "RESULTS_ZH.md",
+        "invocation.claim",
+        "receipt.json"
+      ]
+    },
+    {
+      "directory": "reports/calce_cs2_local_head_20261019_root",
+      "names": [
+        "ROOT_METADATA_GO.json",
+        "receipt.json"
+      ]
+    },
+    {
+      "directory": "reports/calce_cs2_metadata_20261019_root",
+      "names": [
+        "RESULTS_ZH.md",
+        "decision.json",
+        "evidence.json",
+        "header_preflight_budget.json",
+        "prospective_roles.json"
+      ]
+    }
+  ],
+  "decision": "NO_SPECIFIC_UNEXAMINED_SESSION_BODY_AVAILABLE_IN_INSPECTED_SOURCES",
+  "global_continuity_proven": false,
+  "RUL_labels_allowed": false,
+  "independent_confirmation_ready": false,
+  "candidate_role": "candidate_train retained",
+  "raw_payload_reads": 0,
+  "downloads": 0,
+  "model_inference": 0,
+  "new_fits": 0,
+  "no_GO_consumed": true,
+  "limitations": "Scoped existing-source inventory only; not proof that external records do not exist. Info names do not establish cross-file completeness. No raw or schema audit rerun."
+}

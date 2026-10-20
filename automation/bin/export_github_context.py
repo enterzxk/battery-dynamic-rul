@@ -272,6 +272,10 @@ def main():
     for name in ['archive.json','decode.py','validation.json']:
         chosen.add('reports/completed_matr_longtrend_predictions_lossless_20261020_root/' + name)
 
+    chosen.add('docs/COORDINATOR_HANDOFF_20261020_V16_ZH.md')
+    for name in ['receipt.json','RESULTS_ZH.md']:
+        chosen.add('reports/calce_cs2_35_session_evidence_20261020_v16/' + name)
+
     contents, files, skipped = {}, [], []
     mapping = {'README.md': 'docs/GITHUB_README_ZH.md', 'agent.md': 'AGENTS.md'}
     mapping.update({rel: rel for rel in sorted(chosen)})

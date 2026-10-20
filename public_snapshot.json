@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-20T07:36:48.439657+00:00",
-  "content_sha256": "37a17275f3b40a65f65206e02c3493bb5e3ce2cdcc8ed76f274e427d8085b192",
-  "file_count": 1025,
+  "snapshot_utc": "2026-10-20T07:48:23.759201+00:00",
+  "content_sha256": "d98bc5fc4aa9e5bdc2b97e04a6d7706208ec63df93874eca23784f174bdbb7bf",
+  "file_count": 1028,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,8 +14,8 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 125020,
-      "sha256": "fd9409706a6b13fe16ed36b748bce8736ac5e157b37f7e75b5e7596cdc34dd7c"
+      "bytes": 126327,
+      "sha256": "955d4959f9916334c48d90eee7624973bab7c77630045fecdbdf005360bac985"
     },
     {
       "path": "README.md",
@@ -38,8 +38,8 @@
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 45667,
-      "sha256": "e63567aa71ae401a68d12fe66174e1547ef53401d43a4033166c4e20e8cc4b8a"
+      "bytes": 45861,
+      "sha256": "89afa3bd01a921babfe7d5edea30f93bcf8ce15c964b3cba20a2b3073e53e171"
     },
     {
       "path": "automation/bin/matr_raw_batch2_asset_worker_v1.py",
@@ -164,8 +164,8 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 105487,
-      "sha256": "f6c29fd599d76eabadb74766eb4153ae26fea8fd38ecd7116bff9a248dcb8bf8"
+      "bytes": 106794,
+      "sha256": "03f41c889aced91cf9676adc3944e1d85fb47ea08fb09237b5ac20be805fa1f8"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
@@ -184,6 +184,12 @@
       "source_path": "docs/COORDINATOR_HANDOFF_20261019_V15_ZH.md",
       "bytes": 10467,
       "sha256": "82dfcbe79cc39ec85477398901cf4eee1ec2b77095c094cbf18a8555768d30be"
+    },
+    {
+      "path": "docs/COORDINATOR_HANDOFF_20261020_V16_ZH.md",
+      "source_path": "docs/COORDINATOR_HANDOFF_20261020_V16_ZH.md",
+      "bytes": 8008,
+      "sha256": "5ada1990f58bdc32deda4f47689a0ed687b49523fa41a72190cc37de0f84e909"
     },
     {
       "path": "docs/DYNAMIC_RUL_ASOF_FREEZE_CANDIDATE_v3_ZH.md",
@@ -3520,6 +3526,18 @@
       "source_path": "reports/calce_cs2_35_series_20261019_root/summary.json",
       "bytes": 5060,
       "sha256": "57999c434013753857184d35a5babcf9dfba8db430b285a37d70a3fad664508a"
+    },
+    {
+      "path": "reports/calce_cs2_35_session_evidence_20261020_v16/RESULTS_ZH.md",
+      "source_path": "reports/calce_cs2_35_session_evidence_20261020_v16/RESULTS_ZH.md",
+      "bytes": 1305,
+      "sha256": "2f75b6b646109cb998ea7254f556b73b738e85bc85e4763618d02989dbb6b7af"
+    },
+    {
+      "path": "reports/calce_cs2_35_session_evidence_20261020_v16/receipt.json",
+      "source_path": "reports/calce_cs2_35_session_evidence_20261020_v16/receipt.json",
+      "bytes": 5863,
+      "sha256": "f02344b6e3d0d3c292465326181a98db1e6a8fb372020fdeac6b0e73b59efd1d"
     },
     {
       "path": "reports/calce_cs2_head_preflight_20261019_root/RESULTS_ZH.md",
