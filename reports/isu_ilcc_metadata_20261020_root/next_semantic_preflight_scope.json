@@ -1,0 +1,42 @@
+{
+  "status": "FROZEN_SCOPE_NOT_EXECUTED_NO_RAW_CURVE_PERMISSION",
+  "question": "Can official ISU-ILCC v2 support an as-of dynamic study with a known observation clock and lawful endpoint?",
+  "files": [
+    {
+      "id": 43754763,
+      "name": "Valid_cells.csv",
+      "size": 1727,
+      "download_url": "https://ndownloader.figshare.com/files/43754763",
+      "supplied_md5": "88e4a2a884c436831b6b5f1274409bad",
+      "computed_md5": "88e4a2a884c436831b6b5f1274409bad"
+    },
+    {
+      "id": 43754835,
+      "name": "process_data.py",
+      "size": 9769,
+      "download_url": "https://ndownloader.figshare.com/files/43754835",
+      "supplied_md5": "ccb61a35ffb6f2e17b2d55b336f170c8",
+      "computed_md5": "ccb61a35ffb6f2e17b2d55b336f170c8"
+    },
+    {
+      "id": 43754898,
+      "name": "README_V2.0.pdf",
+      "size": 640953,
+      "download_url": "https://ndownloader.figshare.com/files/43754898",
+      "supplied_md5": "c03da9a1a3499989d2cdb655b41d4d0b",
+      "computed_md5": "c03da9a1a3499989d2cdb655b41d4d0b"
+    }
+  ],
+  "max_total_bytes": 652449,
+  "max_requests": 3,
+  "per_request_timeout_seconds": 20,
+  "follow_only_official_download_redirects": true,
+  "do_not_execute_author_code": true,
+  "capacity_zip_reads": 0,
+  "raw_curve_reads": 0,
+  "new_fits": 0,
+  "new_model_inference": 0,
+  "test_access": false,
+  "freeze_cell_roles_before_capacity_payload": true,
+  "stop": "HTTP/auth/hash/size/protocol mismatch STOP; no retry or mirror; preserve count discrepancy and unknown semantics"
+}

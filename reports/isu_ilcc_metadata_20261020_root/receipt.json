@@ -1,0 +1,91 @@
+{
+  "url": "https://api.figshare.com/v2/articles/22582234",
+  "scope": "one public metadata GET only; no file payload; no retries; no auth",
+  "max_body_bytes": 262144,
+  "timeout_seconds": 15,
+  "new_fits": 0,
+  "raw_downloads": 0,
+  "observed_utc": "2026-10-20T08:02:29.224070+00:00",
+  "HTTP_status": 200,
+  "status": "OFFICIAL_PUBLIC_METADATA_READ",
+  "body_sha256": "ed4738a051c51a26a2eafa3198af760d0b21fecb5fb7ecc195e184bd4f022a65",
+  "metadata_bytes": 7659,
+  "article_id": 22582234,
+  "title": "<b>ISU-ILCC Battery Aging Dataset</b>",
+  "doi": "10.25380/iastate.22582234.v2",
+  "version": 2,
+  "license": {
+    "value": 1,
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "published_date": "2023-12-21T14:03:15Z",
+  "url_public_html": "https://iastate.figshare.com/articles/dataset/_b_ISU-ILCC_Battery_Aging_Dataset_b_/22582234",
+  "files": [
+    {
+      "id": 43754763,
+      "name": "Valid_cells.csv",
+      "size": 1727,
+      "download_url": "https://ndownloader.figshare.com/files/43754763",
+      "supplied_md5": "88e4a2a884c436831b6b5f1274409bad",
+      "computed_md5": "88e4a2a884c436831b6b5f1274409bad"
+    },
+    {
+      "id": 43754835,
+      "name": "process_data.py",
+      "size": 9769,
+      "download_url": "https://ndownloader.figshare.com/files/43754835",
+      "supplied_md5": "ccb61a35ffb6f2e17b2d55b336f170c8",
+      "computed_md5": "ccb61a35ffb6f2e17b2d55b336f170c8"
+    },
+    {
+      "id": 43754898,
+      "name": "README_V2.0.pdf",
+      "size": 640953,
+      "download_url": "https://ndownloader.figshare.com/files/43754898",
+      "supplied_md5": "c03da9a1a3499989d2cdb655b41d4d0b",
+      "computed_md5": "c03da9a1a3499989d2cdb655b41d4d0b"
+    },
+    {
+      "id": 43755582,
+      "name": "capacity_fade.zip",
+      "size": 140256,
+      "download_url": "https://ndownloader.figshare.com/files/43755582",
+      "supplied_md5": "a25a6f717d51992f30abbb3d9046909f",
+      "computed_md5": "a25a6f717d51992f30abbb3d9046909f"
+    },
+    {
+      "id": 43755588,
+      "name": "Q_interpolated.zip",
+      "size": 47797453,
+      "download_url": "https://ndownloader.figshare.com/files/43755588",
+      "supplied_md5": "e4402a8a8537956880c2349f2531b358",
+      "computed_md5": "e4402a8a8537956880c2349f2531b358"
+    },
+    {
+      "id": 43756491,
+      "name": "RPT_json.zip",
+      "size": 929406930,
+      "download_url": "https://ndownloader.figshare.com/files/43756491",
+      "supplied_md5": "36331bf80f21d00e19a9a45095f542e8",
+      "computed_md5": "36331bf80f21d00e19a9a45095f542e8"
+    },
+    {
+      "id": 43777470,
+      "name": "Cycling_json.zip",
+      "size": 10208088439,
+      "download_url": "https://ndownloader.figshare.com/files/43777470",
+      "supplied_md5": "27ac156b31f7c35d4f27a78267c0dd56",
+      "computed_md5": "27ac156b31f7c35d4f27a78267c0dd56"
+    }
+  ],
+  "description_facts": {
+    "current_release_cells_author_reported": 238,
+    "related_paper_cells": 225,
+    "total_cells_in_description": 251,
+    "unfinished_cells_in_description": 12,
+    "count_consistency": "251 differs from 238+12; do not silently repair"
+  },
+  "semantic_ready": false,
+  "raw_download_allowed": false
+}

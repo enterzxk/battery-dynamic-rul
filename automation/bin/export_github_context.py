@@ -276,6 +276,14 @@ def main():
     for name in ['receipt.json','RESULTS_ZH.md']:
         chosen.add('reports/calce_cs2_35_session_evidence_20261020_v16/' + name)
 
+    chosen.add('docs/PAPER_ROUTE_20261020_ZH.md')
+    for name in ['protocol.json','runner.py','ROOT_GO.json','summary.json','per_cell.json','semantic_validation.json','completion.json','root_decision.json','RESULTS_ZH.md']:
+        chosen.add('reports/measurement_schedule_firstpassage_20261020_root/' + name)
+    for name in ['review.json','validation.json']:
+        chosen.add('reports/measurement_schedule_firstpassage_review_20261020_luna/' + name)
+    for name in ['receipt.json','next_semantic_preflight_scope.json','RESULTS_ZH.md']:
+        chosen.add('reports/isu_ilcc_metadata_20261020_root/' + name)
+
     contents, files, skipped = {}, [], []
     mapping = {'README.md': 'docs/GITHUB_README_ZH.md', 'agent.md': 'AGENTS.md'}
     mapping.update({rel: rel for rel in sorted(chosen)})

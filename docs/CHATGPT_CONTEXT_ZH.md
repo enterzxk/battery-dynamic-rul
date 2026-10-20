@@ -580,3 +580,11 @@ paper/figures/empirical_reliability_v1/figure.svg为可编辑四面板经验图�
 - 最小验证：直接核对既存 Info 字段与清单，保留来源文件SHA；0 raw读取、0下载、0模型推理、0fit，CPU20=RUL18+辅助2及神经4fit/2580steps保持。
 - 阻塞/风险：单个session开始时间和schedule文件名不足以证明24个边界无缺循环，源时区与真实首次EOL仍未知；RUL_labels_allowed=false、independent_confirmation_ready=false、candidate_train角色保持。
 - 下一步：仅在新增测试日程正文、跨session累计循环映射或原始停机/续测记录到达时定向核验；当前没有可执行raw/model GO，不重复解析或循环审计。
+
+
+## 2026-10-20: paper route reconsidered and fixed20 inspection screen completed
+- Completed: paper-route v2; one train-only sparse inspection diagnostic (42cells/29840rows/599227bytes); one official ISU-ILCC metadata GET (HTTP200/7659bytes).
+- Evidence: docs/PAPER_ROUTE_20261020_ZH.md; reports/measurement_schedule_firstpassage_20261020_root; independent review/validation in matching review directory; reports/isu_ilcc_metadata_20261020_root.
+- Minimal validation: independent summary recomputation plus2positive train curves PASS; no cal/dev/test, raw archives, model inference or fits.2/42 invalid first-passage intervals, median delay7.5/max228; predeclared3/42 screen FAIL, NO_GO preserved.
+- Blocker/risk: no independent novel-method evidence; ISU semantics/clock/endpoints/roles still unverified; paper225 versus current238 retained. arXiv2503.13558 currently withdrawn; do not use it as primary scientific support.
+- Next: bounded official README/Valid_cells/author processing-code semantic preflight652449bytes, no code execution or capacity payload; preserve all old budget and test gates. CS2 continuity wait no longer blocks all paper work.

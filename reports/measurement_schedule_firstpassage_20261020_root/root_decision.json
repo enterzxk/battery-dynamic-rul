@@ -1,0 +1,10 @@
+{
+  "decision": "NO_GO_COMPLEX_OBSERVATION_MECHANISM_EXPANSION_FROM_THIS_SCREEN",
+  "cells": 42,
+  "positive": 2,
+  "predeclared_min": 3,
+  "independent_validation_sha256": "1de79c1475b4bfa0c6cbe4a2d97d3d4737206a107aa01b0aa64065bf982fcea2",
+  "next": "New cohort semantic preflight under paper route; not more tuning on exposed10cal",
+  "new_fits": 0,
+  "model_inference": 0
+}

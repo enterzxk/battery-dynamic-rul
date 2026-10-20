@@ -1,0 +1,93 @@
+{
+  "status": "PASS",
+  "scope": "Independent recomputation from protocol, summary, per_cell, completion, plus exactly two fit CSVs selected by sorted mechanism_positive cell_id. No runner execution.",
+  "input_sha256": {
+    "protocol": "7b87422d7f7408de66e9f74bd3f7aacdf8a17c6c0dd6114f4fb14e04bfa5f2dd",
+    "summary": "26453a5f4a802d2c5558504f872116ff95257fc5665e12c9c28d0f159acbeb24",
+    "per_cell": "90aa6c76b2b0b59fa3d3ea1fed9dfff4deac15a443c900b43c8617b76585f744",
+    "completion": "517d4be43334f2a00ed3590fb1c4c7b55f601a951021256bf2ed6d7f4d086267"
+  },
+  "recomputed_summary": {
+    "cells": 42,
+    "source_rows": 29840,
+    "source_bytes": 599227,
+    "spacing_cycles": 20,
+    "invalid_naive_intervals": 2,
+    "undetected_dense_events": 0,
+    "undetected_with_full_spacing_followup": 0,
+    "cells_with_false_survival_inspections": 2,
+    "false_survival_inspections": 17,
+    "cells_delay_gt_spacing": 2,
+    "detected_cells": 42,
+    "detection_delay_median": 7.5,
+    "detection_delay_max": 228,
+    "mechanism_positive_cells": 2,
+    "screen_pass": false,
+    "new_fits": 0,
+    "new_model_inference": 0,
+    "cal_dev_test_reads": 0,
+    "raw_archive_reads": 0
+  },
+  "summary_matches_per_cell_recomputation": true,
+  "completion_counts_match": true,
+  "checkpoint_loads_recorded_in_summary": 0,
+  "csv_validation": {
+    "selection_rule": "mechanism_positive cells sorted by cell_id; first two only",
+    "csvs_read": 2,
+    "independent_method": "parse actual_cycle/capacity_Ah; dense first Q<=0.88; inspect cycles >=100 where (cycle-100) mod 20 == 0; first inspected Q<=0.88; latest earlier inspected Q>0.88",
+    "examples": [
+      {
+        "cell_id": "MATR_b4c38",
+        "role": "fit",
+        "source_sha256": "d0e2bc96e470fe14810f1bb60fa755cc4f2075fa3f7e47ad4a7be3018f6643cb",
+        "source_bytes": 24894,
+        "threshold_Ah": 0.88,
+        "T_dense_first_crossing": 1056,
+        "capacity_at_T_Ah": 0.86640108,
+        "L_last_inspected_above": 1160,
+        "capacity_at_L_Ah": 0.88384509,
+        "S_first_sparse_below": 1180,
+        "capacity_at_S_Ah": 0.87034327,
+        "L_lt_T_le_S": false,
+        "delay_cycles_S_minus_T": 124,
+        "false_survival_inspection_cycles": [
+          1060,
+          1080,
+          1100,
+          1120,
+          1140,
+          1160
+        ]
+      },
+      {
+        "cell_id": "MATR_b4c40",
+        "role": "fit",
+        "source_sha256": "f8447266dcfc3b269bd43fc3d8c7fe128a4b05b861061adf43b28b3381263ae4",
+        "source_bytes": 22592,
+        "threshold_Ah": 0.88,
+        "T_dense_first_crossing": 872,
+        "capacity_at_T_Ah": 0.86498392,
+        "L_last_inspected_above": 1080,
+        "capacity_at_L_Ah": 0.88996512,
+        "S_first_sparse_below": 1100,
+        "capacity_at_S_Ah": 0.86765409,
+        "L_lt_T_le_S": false,
+        "delay_cycles_S_minus_T": 228,
+        "false_survival_inspection_cycles": [
+          880,
+          900,
+          920,
+          940,
+          960,
+          980,
+          1000,
+          1020,
+          1040,
+          1060,
+          1080
+        ]
+      }
+    ]
+  },
+  "interpretation": "Screen count is 2/42, below the preregistered 3/42 priority trigger. This does not establish absence of the mechanism, significance, predictive gain, or model authorization; no threshold/spacing/phase changes were made."
+}
