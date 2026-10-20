@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "method": "independent statistics cell-equal MAE from saved predictions",
+  "rows": 19215,
+  "models": 7,
+  "cells": 61,
+  "arm_model_rows": 21,
+  "max_absolute_MAE_difference": 1.7763568394002505e-15,
+  "new_fits": 0,
+  "new_inference_calls": 0
+}

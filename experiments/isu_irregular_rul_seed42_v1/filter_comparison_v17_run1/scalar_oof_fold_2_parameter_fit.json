@@ -1,0 +1,21 @@
+{
+  "status": "FIT_OK",
+  "parameters": {
+    "mu_Ah_per_day": 0.00113546883374333,
+    "process_variance_Ah2_per_day": 1.8800963900607395e-05,
+    "measurement_variance_Ah2": 1.6879567528541127e-10
+  },
+  "quasi_nll": -2.9611571360094535,
+  "iterations": 28,
+  "log_coordinates": [
+    0.5054820707413252,
+    2.933908139830479,
+    -8.686821596477714
+  ],
+  "hessian_eigenvalues": [
+    5.249134295116893e-07,
+    0.4666987633084977,
+    0.5609699494856575
+  ],
+  "hessian_condition": 1068690.4124505068
+}

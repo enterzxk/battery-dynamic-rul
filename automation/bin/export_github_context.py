@@ -1,5 +1,6 @@
 """Export an allowlisted text snapshot; no model/data execution or network IO."""
 import datetime
+import base64
 import hashlib
 import json
 from pathlib import Path
@@ -8,6 +9,10 @@ import re
 ROOT = Path('/home/yndx/zxk/rul')
 OUT = ROOT / 'automation/github_export'
 EXT = {'.py', '.md', '.json', '.jsonl', '.csv', '.yaml', '.yml', '.sha256', '.svg'}
+BINARY_PREDICTION_ARCHIVES = {
+    'reports/completed_survival_pilot_public_lossless_v2_20261020_data/archive.bin',
+    'reports/isu_six_baseline_public_lossless_v17_20261021_luna/archive.bin',
+}
 SECRET = re.compile(r'(?:gh[pousr]_[A-Za-z0-9]{25,}|github_pat_[A-Za-z0-9_]{30,}|sk-[A-Za-z0-9_-]{30,}|-----BEGIN (?:RSA |OPENSSH |EC )?PRIVATE KEY-----|https?://[^\s/:]+:[^\s/@]+@)')
 
 
@@ -319,7 +324,23 @@ def main():
     for name in ['GRU_ONLY_V17_GO.json','gru_only_v17_seed42_receipt.json','six_baseline_seed42_v17/merge_validation.json','six_baseline_seed42_v17/summary/RESULTS_ZH.md','six_baseline_seed42_v17/summary/arm_model_summary.csv','six_baseline_seed42_v17/summary/paired_differences.csv','six_baseline_seed42_v17/summary/root_metric_recompute.json']:
         chosen.add('experiments/isu_irregular_rul_seed42_v1/' + name)
 
-    contents, files, skipped = {}, [], []
+    for name in ['review.json','delta_owner_guard.json']:
+        chosen.add('reports/isu_filter_comparison_review_20261020_v17_luna/' + name)
+    for name in ['filter_comparison_pre_v17_owner_guard.py','FILTER_COMPARISON_V17_GO.json','filter_comparison_v17_receipt.json','filter_comparison_v17_run1/filter_parameter_status.json','filter_comparison_v17_run1/candidate_full_parameter_fit.json','filter_comparison_v17_run1/candidate_oof_fold_1_parameter_fit.json','filter_comparison_v17_run1/candidate_oof_fold_2_parameter_fit.json','filter_comparison_v17_run1/scalar_full_parameter_fit.json','filter_comparison_v17_run1/scalar_oof_fold_1_parameter_fit.json','filter_comparison_v17_run1/scalar_oof_fold_2_parameter_fit.json','filter_comparison_v17_run1/feature_contract.json']:
+        chosen.add('experiments/isu_irregular_rul_seed42_v1/' + name)
+
+    # Replace two published prediction wrappers with byte-exact archives; Git keeps prior history.
+    chosen.difference_update(['experiments/online_survival_observed_pilot_seed42_v1/published_prediction_csvs_part1.json','experiments/online_survival_observed_pilot_seed42_v1/published_prediction_csvs_part2.json'])
+    chosen.update(BINARY_PREDICTION_ARCHIVES)
+    for name in ['decode.py','validation.json']:
+        chosen.add('reports/completed_survival_pilot_public_lossless_v2_20261020_data/' + name)
+    for name in ['decode.py','validation.json','README.md']:
+        chosen.add('reports/isu_six_baseline_public_lossless_v17_20261021_luna/' + name)
+
+    for name in ['RESULTS_ZH.md','root_decision.json','summary/RESULTS_ZH.md','summary/arm_model_summary.csv','summary/scalar_cell_metrics.csv','summary/paired_differences.csv','summary/root_metric_recompute.json']:
+        chosen.add('experiments/isu_irregular_rul_seed42_v1/filter_comparison_v17_run1/' + name)
+
+    contents, files, skipped, binary_blobs = {}, [], [], {}
     mapping = {'README.md': 'docs/GITHUB_README_ZH.md', 'agent.md': 'AGENTS.md'}
     mapping.update({rel: rel for rel in sorted(chosen)})
     for public_path, source_path in sorted(mapping.items()):
@@ -329,10 +350,16 @@ def main():
             continue
         if not path.resolve().is_relative_to(ROOT):
             raise RuntimeError('Outside project: ' + source_path)
-        if path.name.startswith('reading_part_') or path.suffix.lower() not in EXT or '__pycache__' in path.parts or path.stat().st_size > 2000000:
+        if path.name.startswith('reading_part_') or (path.suffix.lower() not in EXT and source_path not in BINARY_PREDICTION_ARCHIVES) or '__pycache__' in path.parts or path.stat().st_size > 2000000:
             skipped.append({'path': source_path, 'reason': 'not_small_allowlisted_text'})
             continue
         raw = path.read_bytes()
+        if source_path in BINARY_PREDICTION_ARCHIVES:
+            # Only the two explicitly reviewed prediction archives are eligible.
+            binary_blobs[public_path] = base64.b64encode(raw).decode('ascii')
+            files.append({'path': public_path, 'source_path': source_path, 'bytes': len(raw),
+                          'sha256': hashlib.sha256(raw).hexdigest()})
+            continue
         try:
             text = raw.decode('utf-8')
         except UnicodeDecodeError:
@@ -360,7 +387,7 @@ def main():
     manifest_path.write_text(contents['public_snapshot.json'], encoding='utf-8')
     elements = [{'path': path, 'mode': '100644', 'type': 'blob', 'content': text} for path, text in sorted(contents.items())]
     bundle = {'repository_full_name': 'enterzxk/battery-dynamic-rul', 'content_sha256': digest,
-              'snapshot_utc': observed, 'tree_elements': elements}
+              'snapshot_utc': observed, 'tree_elements': elements, 'binary_blobs': binary_blobs}
     bundle_path = OUT / 'bundle.json'
     bundle_path.write_text(json.dumps(bundle, ensure_ascii=False), encoding='utf-8')
     print(json.dumps({'bundle_path': str(bundle_path), 'file_count': len(elements),

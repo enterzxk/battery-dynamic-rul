@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-20T13:47:00.252277+00:00",
-  "content_sha256": "19fa269fa28f26af7f6ee0ebbeaffc8664df462836112217d83f0024f447d839",
-  "file_count": 1122,
+  "snapshot_utc": "2026-10-20T17:28:14.551439+00:00",
+  "content_sha256": "e792ebec0259eeeae376deaf39a6ffb6f86ba678fdf0911a7d5ff52b65289458",
+  "file_count": 1147,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,8 +14,8 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 134540,
-      "sha256": "b1ffea9a42f75b29e20e6fade46527eb522004b273f0235250c2746c4dc0d3f7"
+      "bytes": 136551,
+      "sha256": "58acbc3001864ba289530d8f08ebfc751f48d547d2645082d0a3381308aff1e2"
     },
     {
       "path": "README.md",
@@ -38,8 +38,8 @@
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 49964,
-      "sha256": "6834fcbf4ea0fac6a8d7bd82aa30a6fdb897d9f70eb3ac8eec3415c70552f5c2"
+      "bytes": 52490,
+      "sha256": "6a0fa1e278b1b78336b5edb1472080d4d9e5c0d92f7bffb9d1052b5c09cbbfd3"
     },
     {
       "path": "automation/bin/matr_raw_batch2_asset_worker_v1.py",
@@ -164,8 +164,8 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 115007,
-      "sha256": "5b90190ce0f6cfb8291719acb3b05d50f4869f44040aeebcdc7b70160d2fa4ea"
+      "bytes": 117018,
+      "sha256": "71f64dee282eaa7516255fd551ec51a63ca40907611ab9be872c3fd2e6b25ef8"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
@@ -1200,6 +1200,12 @@
       "sha256": "927a0d4e56890e5eab13780664fa55b4743e5c084801bc1f89bf54f840a710b7"
     },
     {
+      "path": "experiments/isu_irregular_rul_seed42_v1/FILTER_COMPARISON_V17_GO.json",
+      "source_path": "experiments/isu_irregular_rul_seed42_v1/FILTER_COMPARISON_V17_GO.json",
+      "bytes": 3335,
+      "sha256": "4b73f8479842c847bad46cf56d9f32ac0e7ae911fff0e4287232f5dbea61a2fd"
+    },
+    {
       "path": "experiments/isu_irregular_rul_seed42_v1/GRU_ONLY_V17_GO.json",
       "source_path": "experiments/isu_irregular_rul_seed42_v1/GRU_ONLY_V17_GO.json",
       "bytes": 2622,
@@ -1274,8 +1280,110 @@
     {
       "path": "experiments/isu_irregular_rul_seed42_v1/filter_comparison.py",
       "source_path": "experiments/isu_irregular_rul_seed42_v1/filter_comparison.py",
+      "bytes": 17026,
+      "sha256": "0d1e3850b3766645aa3b0d4775c87e1a86e315a6a2ae382538d1355c85695b26"
+    },
+    {
+      "path": "experiments/isu_irregular_rul_seed42_v1/filter_comparison_pre_v17_owner_guard.py",
+      "source_path": "experiments/isu_irregular_rul_seed42_v1/filter_comparison_pre_v17_owner_guard.py",
       "bytes": 16974,
       "sha256": "0ee9cfb6f91e2515329dde151eb4ff1f873671e0078a310d9c3e66c76a330dfe"
+    },
+    {
+      "path": "experiments/isu_irregular_rul_seed42_v1/filter_comparison_v17_receipt.json",
+      "source_path": "experiments/isu_irregular_rul_seed42_v1/filter_comparison_v17_receipt.json",
+      "bytes": 1872,
+      "sha256": "1b69039229ee5c339ae10274ec841989111a9aff4641afa4491297ad12087f65"
+    },
+    {
+      "path": "experiments/isu_irregular_rul_seed42_v1/filter_comparison_v17_run1/RESULTS_ZH.md",
+      "source_path": "experiments/isu_irregular_rul_seed42_v1/filter_comparison_v17_run1/RESULTS_ZH.md",
+      "bytes": 1995,
+      "sha256": "cc3754af3e8f29d24c19513f785db7fc1e5fc3539ffa55f3265faf9136afd76d"
+    },
+    {
+      "path": "experiments/isu_irregular_rul_seed42_v1/filter_comparison_v17_run1/candidate_full_parameter_fit.json",
+      "source_path": "experiments/isu_irregular_rul_seed42_v1/filter_comparison_v17_run1/candidate_full_parameter_fit.json",
+      "bytes": 403,
+      "sha256": "d157a900f7cf4c67fbe5944152e0ac20eddbd40ad4110494a39d9f34bc0a088b"
+    },
+    {
+      "path": "experiments/isu_irregular_rul_seed42_v1/filter_comparison_v17_run1/candidate_oof_fold_1_parameter_fit.json",
+      "source_path": "experiments/isu_irregular_rul_seed42_v1/filter_comparison_v17_run1/candidate_oof_fold_1_parameter_fit.json",
+      "bytes": 404,
+      "sha256": "b553b53ae6fd6883105612c5f08930ccd3a0f3fcca55b0a5844c2876742f421e"
+    },
+    {
+      "path": "experiments/isu_irregular_rul_seed42_v1/filter_comparison_v17_run1/candidate_oof_fold_2_parameter_fit.json",
+      "source_path": "experiments/isu_irregular_rul_seed42_v1/filter_comparison_v17_run1/candidate_oof_fold_2_parameter_fit.json",
+      "bytes": 95,
+      "sha256": "97cc25fbcf08e2d2a4edecb0390aafafdaf7270792b44d34ad3cba66592b697b"
+    },
+    {
+      "path": "experiments/isu_irregular_rul_seed42_v1/filter_comparison_v17_run1/feature_contract.json",
+      "source_path": "experiments/isu_irregular_rul_seed42_v1/filter_comparison_v17_run1/feature_contract.json",
+      "bytes": 907,
+      "sha256": "bef8a9bd4c8e5f761ec919b4521b709e6e6a63babd71257936b8ed3585d1334f"
+    },
+    {
+      "path": "experiments/isu_irregular_rul_seed42_v1/filter_comparison_v17_run1/filter_parameter_status.json",
+      "source_path": "experiments/isu_irregular_rul_seed42_v1/filter_comparison_v17_run1/filter_parameter_status.json",
+      "bytes": 2985,
+      "sha256": "d99ac673c7d614658a5fb10a8688ed6d06afc8d872425be2be5c0c84e1a2ae23"
+    },
+    {
+      "path": "experiments/isu_irregular_rul_seed42_v1/filter_comparison_v17_run1/root_decision.json",
+      "source_path": "experiments/isu_irregular_rul_seed42_v1/filter_comparison_v17_run1/root_decision.json",
+      "bytes": 3609,
+      "sha256": "26203cc158fd76eb863317439e8e6475bbece639426572e32f1b33a2c425e188"
+    },
+    {
+      "path": "experiments/isu_irregular_rul_seed42_v1/filter_comparison_v17_run1/scalar_full_parameter_fit.json",
+      "source_path": "experiments/isu_irregular_rul_seed42_v1/filter_comparison_v17_run1/scalar_full_parameter_fit.json",
+      "bytes": 509,
+      "sha256": "410ec1aa32144b0162318c1aacecfe2d5f1c6616328694ea37de0d785ec8a094"
+    },
+    {
+      "path": "experiments/isu_irregular_rul_seed42_v1/filter_comparison_v17_run1/scalar_oof_fold_1_parameter_fit.json",
+      "source_path": "experiments/isu_irregular_rul_seed42_v1/filter_comparison_v17_run1/scalar_oof_fold_1_parameter_fit.json",
+      "bytes": 508,
+      "sha256": "7ac4cc326a06f4bfa51afd5dfacbd1f0845e70b9018029ef1b7800279380372e"
+    },
+    {
+      "path": "experiments/isu_irregular_rul_seed42_v1/filter_comparison_v17_run1/scalar_oof_fold_2_parameter_fit.json",
+      "source_path": "experiments/isu_irregular_rul_seed42_v1/filter_comparison_v17_run1/scalar_oof_fold_2_parameter_fit.json",
+      "bytes": 507,
+      "sha256": "b9fa16d0049f913a15eb207cf6da304ebdfb154d7e980f27869a1a8cb1c96c91"
+    },
+    {
+      "path": "experiments/isu_irregular_rul_seed42_v1/filter_comparison_v17_run1/summary/RESULTS_ZH.md",
+      "source_path": "experiments/isu_irregular_rul_seed42_v1/filter_comparison_v17_run1/summary/RESULTS_ZH.md",
+      "bytes": 6241,
+      "sha256": "95a196e69d649a3c3d5ca8caedf8525c9bff413249b344650b380bcfddc04eca"
+    },
+    {
+      "path": "experiments/isu_irregular_rul_seed42_v1/filter_comparison_v17_run1/summary/arm_model_summary.csv",
+      "source_path": "experiments/isu_irregular_rul_seed42_v1/filter_comparison_v17_run1/summary/arm_model_summary.csv",
+      "bytes": 5017,
+      "sha256": "7b58182789045fc4242c84c13cd56c90a37cb7e70b04e8ce5dbce15267a91d0f"
+    },
+    {
+      "path": "experiments/isu_irregular_rul_seed42_v1/filter_comparison_v17_run1/summary/paired_differences.csv",
+      "source_path": "experiments/isu_irregular_rul_seed42_v1/filter_comparison_v17_run1/summary/paired_differences.csv",
+      "bytes": 3383,
+      "sha256": "b90007257645fb25c63795778e21e071ada07ded13a6aa96b08007b94b90d614"
+    },
+    {
+      "path": "experiments/isu_irregular_rul_seed42_v1/filter_comparison_v17_run1/summary/root_metric_recompute.json",
+      "source_path": "experiments/isu_irregular_rul_seed42_v1/filter_comparison_v17_run1/summary/root_metric_recompute.json",
+      "bytes": 271,
+      "sha256": "92ec8e1d5b875b52606ff52a20a3790ab5f24698ab28a02f349b47f0a6e0eff4"
+    },
+    {
+      "path": "experiments/isu_irregular_rul_seed42_v1/filter_comparison_v17_run1/summary/scalar_cell_metrics.csv",
+      "source_path": "experiments/isu_irregular_rul_seed42_v1/filter_comparison_v17_run1/summary/scalar_cell_metrics.csv",
+      "bytes": 27716,
+      "sha256": "93893bfc60ae2da6927f27013f98cbb4188eb2cd95a72343ab0e12acd86d7774"
     },
     {
       "path": "experiments/isu_irregular_rul_seed42_v1/filter_fit_protocol.json",
@@ -1804,18 +1912,6 @@
       "source_path": "experiments/online_survival_observed_pilot_seed42_v1/protocol_before_exclusion_explicit.json",
       "bytes": 3279,
       "sha256": "84991639c5c594cab2f1647b9a3b6889ce83ceb94ef6f576ad79d3b6dc66fdf6"
-    },
-    {
-      "path": "experiments/online_survival_observed_pilot_seed42_v1/published_prediction_csvs_part1.json",
-      "source_path": "experiments/online_survival_observed_pilot_seed42_v1/published_prediction_csvs_part1.json",
-      "bytes": 906458,
-      "sha256": "ea7c3d57be45cc1322251ca627f5a757eb6d9951a20a12fefe47876b3b77ff42"
-    },
-    {
-      "path": "experiments/online_survival_observed_pilot_seed42_v1/published_prediction_csvs_part2.json",
-      "source_path": "experiments/online_survival_observed_pilot_seed42_v1/published_prediction_csvs_part2.json",
-      "bytes": 1615202,
-      "sha256": "57e56b4db561605d8b33bb8e20b3f75e084e9ce51348edb8a01892545b321514"
     },
     {
       "path": "experiments/online_survival_observed_pilot_seed42_v1/root_decision.json",
@@ -4098,6 +4194,24 @@
       "sha256": "8aba2b6fc1eea989ef5082981e1732639c7ae8369aa141db358d28b65869daab"
     },
     {
+      "path": "reports/completed_survival_pilot_public_lossless_v2_20261020_data/archive.bin",
+      "source_path": "reports/completed_survival_pilot_public_lossless_v2_20261020_data/archive.bin",
+      "bytes": 1905425,
+      "sha256": "2594060db7f8f5b70c5dab8f0e49f40224e8c0a961540aec839fd8832b7f0da4"
+    },
+    {
+      "path": "reports/completed_survival_pilot_public_lossless_v2_20261020_data/decode.py",
+      "source_path": "reports/completed_survival_pilot_public_lossless_v2_20261020_data/decode.py",
+      "bytes": 1472,
+      "sha256": "09305509ced15a675d89d34b96e5077ed52db335d4a8cf5c5ceba838c6245be3"
+    },
+    {
+      "path": "reports/completed_survival_pilot_public_lossless_v2_20261020_data/validation.json",
+      "source_path": "reports/completed_survival_pilot_public_lossless_v2_20261020_data/validation.json",
+      "bytes": 1264,
+      "sha256": "22d2a935a901c4115efdcc96bddc0d8e70ac2dd32a5085749737f00991541d15"
+    },
+    {
       "path": "reports/conditional_quantiles_review_20261018_luna/review.json",
       "source_path": "reports/conditional_quantiles_review_20261018_luna/review.json",
       "bytes": 3161,
@@ -4518,6 +4632,18 @@
       "sha256": "b44d71907826821a194ca39df6120cb931ca129581fa1108a08dfc8fd9f40711"
     },
     {
+      "path": "reports/isu_filter_comparison_review_20261020_v17_luna/delta_owner_guard.json",
+      "source_path": "reports/isu_filter_comparison_review_20261020_v17_luna/delta_owner_guard.json",
+      "bytes": 1270,
+      "sha256": "a96e67ed37b13f7d190c7744256b62e1ce4ce332b660f9126c24c29fdf013abf"
+    },
+    {
+      "path": "reports/isu_filter_comparison_review_20261020_v17_luna/review.json",
+      "source_path": "reports/isu_filter_comparison_review_20261020_v17_luna/review.json",
+      "bytes": 9696,
+      "sha256": "9185e4a5dc3f8c16b66dd89a00061673f62087adc389e6d2702ae87434cb08e5"
+    },
+    {
       "path": "reports/isu_gru_delta_review_20261020_v17_luna/review.json",
       "source_path": "reports/isu_gru_delta_review_20261020_v17_luna/review.json",
       "bytes": 9606,
@@ -4792,6 +4918,30 @@
       "source_path": "reports/isu_ilcc_metadata_20261020_root/semantic_decision.json",
       "bytes": 2661,
       "sha256": "52de467015107f77bf2541e1752161905cafa725f83e0d47f0975ac9a23c5663"
+    },
+    {
+      "path": "reports/isu_six_baseline_public_lossless_v17_20261021_luna/README.md",
+      "source_path": "reports/isu_six_baseline_public_lossless_v17_20261021_luna/README.md",
+      "bytes": 429,
+      "sha256": "565a6ebb0ffcaf65bd62b076e9004da412ff88e523e5743367f755cf229b5917"
+    },
+    {
+      "path": "reports/isu_six_baseline_public_lossless_v17_20261021_luna/archive.bin",
+      "source_path": "reports/isu_six_baseline_public_lossless_v17_20261021_luna/archive.bin",
+      "bytes": 654049,
+      "sha256": "55ca4f019963a0bfde3d2999c0e6482b5c3598aa6086acaf5cf5da5ad7ed1524"
+    },
+    {
+      "path": "reports/isu_six_baseline_public_lossless_v17_20261021_luna/decode.py",
+      "source_path": "reports/isu_six_baseline_public_lossless_v17_20261021_luna/decode.py",
+      "bytes": 2126,
+      "sha256": "382935f2e4674ce86f411c81d3e7d793d66f103bf363b4b585d5e75dd67681d2"
+    },
+    {
+      "path": "reports/isu_six_baseline_public_lossless_v17_20261021_luna/validation.json",
+      "source_path": "reports/isu_six_baseline_public_lossless_v17_20261021_luna/validation.json",
+      "bytes": 3388,
+      "sha256": "80f40918f2f2dbc4768464b6d6b3f9318fa3657559cdfefdd3d359811b405e52"
     },
     {
       "path": "reports/learned_capacity_feedback_20261018_root/RESULTS_ZH.md",

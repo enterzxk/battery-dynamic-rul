@@ -1,0 +1,117 @@
+{
+  "status": "CLOSED_BOUNDED_DEVELOPMENT",
+  "candidate_decision": "STOP_PREDECLARED_PARAMETER_IDENTIFIABILITY_AND_OPTIMIZER_GATES",
+  "candidate_statuses": {
+    "full": "IDENTIFIABILITY_STOP",
+    "oof_fold_1": "IDENTIFIABILITY_STOP",
+    "oof_fold_2": "FIT_FAILED_ABNORMAL_TERMINATION_IN_LNSRCH"
+  },
+  "candidate_HGB_fits": 0,
+  "candidate_predictions": 0,
+  "paired_candidate_vs_scalar_comparison_completed": false,
+  "scalar_decision": "NO_GO_FOR_COMPLEXITY_OR_SEED_EXPANSION_FROM_THIS_COMPARISON",
+  "mean3arm_HGB_MAE_weeks": 3.2256801292521886,
+  "mean3arm_scalar_MAE_weeks": 3.2064868956633217,
+  "relative_improvement_scalar_vs_HGB": 0.005950135419446112,
+  "predeclared_development_gain_gate": 0.05,
+  "scalar_all_arm_paired_CI_include_zero": true,
+  "candidate_and_scalar_architecture_innovation_proven": false,
+  "fit_budget": {
+    "maximum_allocated": 12,
+    "parameter_calls_consumed": 6,
+    "hgb_fits_completed": 3,
+    "total_calls_consumed": 9,
+    "unused3_HGB_fits_not_reusable": true
+  },
+  "inference_calls": 2745,
+  "locked_payload_reads": 0,
+  "per_cell_harm": {
+    "raw": {
+      "cells_harmed_gt2w": [],
+      "worst5": [
+        {
+          "cell_id": "G56C3",
+          "delta_MAE_weeks": 0.6021931251162882
+        },
+        {
+          "cell_id": "G27C3",
+          "delta_MAE_weeks": 0.5363090039473395
+        },
+        {
+          "cell_id": "G49C3",
+          "delta_MAE_weeks": 0.35457055145220306
+        },
+        {
+          "cell_id": "G20C3",
+          "delta_MAE_weeks": 0.33873976748254675
+        },
+        {
+          "cell_id": "G6C3",
+          "delta_MAE_weeks": 0.3311477930285367
+        }
+      ]
+    },
+    "sparse2rpt": {
+      "cells_harmed_gt2w": [],
+      "worst5": [
+        {
+          "cell_id": "G64C3",
+          "delta_MAE_weeks": 0.46532136544445335
+        },
+        {
+          "cell_id": "G20C3",
+          "delta_MAE_weeks": 0.3960495367879271
+        },
+        {
+          "cell_id": "G17C3",
+          "delta_MAE_weeks": 0.33183418288751776
+        },
+        {
+          "cell_id": "G62C3",
+          "delta_MAE_weeks": 0.3167626219745924
+        },
+        {
+          "cell_id": "G6C3",
+          "delta_MAE_weeks": 0.31476884812603423
+        }
+      ]
+    },
+    "delayed7d": {
+      "cells_harmed_gt2w": [],
+      "worst5": [
+        {
+          "cell_id": "G20C3",
+          "delta_MAE_weeks": 0.4442844455031305
+        },
+        {
+          "cell_id": "G62C3",
+          "delta_MAE_weeks": 0.2975711333005515
+        },
+        {
+          "cell_id": "G8C3",
+          "delta_MAE_weeks": 0.25632656721916725
+        },
+        {
+          "cell_id": "G58C3",
+          "delta_MAE_weeks": 0.24801397918450263
+        },
+        {
+          "cell_id": "G64C3",
+          "delta_MAE_weeks": 0.23682896629349082
+        }
+      ]
+    }
+  },
+  "evidence": [
+    "FILTER_COMPARISON_V17_GO.json",
+    "filter_comparison_v17_receipt.json",
+    "filter_comparison_v17_run1/filter_parameter_status.json",
+    "filter_comparison_v17_run1/summary/root_metric_recompute.json"
+  ],
+  "limits": [
+    "Boundary outcome is a failure of this fixed constrained formulation, not proof that every Gamma/OU model is structurally unidentifiable.",
+    "Overall runner SUCCESS reflects scalar branch only; no paired candidate/scalar metric exists.",
+    "Source-observed pre-event development results are not latent EOL or independent confirmation."
+  ],
+  "next_action": "Saved-weight full-recordend/sample-arrival update probe with separate0fit GO; diagnose unknown-event behavior before proposing another structure, not parameter rescue."
+}

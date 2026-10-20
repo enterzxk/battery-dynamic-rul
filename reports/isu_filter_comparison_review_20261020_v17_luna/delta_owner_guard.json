@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "review_id": "isu_filter_comparison_review_20261020_v17_luna_owner_guard_delta",
+  "reviewed_at_utc": "2026-10-20T13:49:00Z",
+  "status": "PASS",
+  "scope": "One-line owner-guard delta only; no repeated full review, execution, import, fit, inference, or data read.",
+  "source": {
+    "path": "experiments/isu_irregular_rul_seed42_v1/filter_comparison.py",
+    "sha256": "0d1e3850b3766645aa3b0d4775c87e1a86e315a6a2ae382538d1355c85695b26",
+    "previous_snapshot_path": "experiments/isu_irregular_rul_seed42_v1/filter_comparison_pre_v17_owner_guard.py",
+    "previous_snapshot_sha256": "0ee9cfb6f91e2515329dde151eb4ff1f873671e0078a310d9c3e66c76a330dfe"
+  },
+  "delta": {
+    "line": 177,
+    "added": "check_owner(a.coordinator_json,a.owner_thread_id)",
+    "placement": "Immediately after both CPU flocks are acquired and GO equality is rechecked (lines 174-177), before RUNNING receipt state, baseline prediction read, train/development data read, or fitting.",
+    "result": "PASS; closes the previously reported owner handoff TOCTOU window at the reviewed boundary."
+  },
+  "static_review_only": true,
+  "performance_evidence": false,
+  "runtime_validation_performed": false,
+  "data_payloads_read": false,
+  "c4_payload_read": false
+}

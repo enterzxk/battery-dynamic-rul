@@ -1,0 +1,21 @@
+{
+  "raw_baseline": "The same 74-dimensional vector from baselines.features(x) (10 numeric causal features + 64 group indicators).",
+  "candidate_extra_order": [
+    "long_loss/nominal_Ah",
+    "short_reversible_offset/nominal_Ah",
+    "loss_variance/nominal_Ah^2",
+    "offset_variance/nominal_Ah^2",
+    "state_covariance/nominal_Ah^2",
+    "last_standardized_innovation",
+    "last_innovation_sd/nominal_Ah",
+    "update_was_projected_as_0_or_1"
+  ],
+  "candidate_total_dimensions": 82,
+  "scalar_extra_order": [
+    "scalar_loss/nominal_Ah",
+    "scalar_variance/nominal_Ah^2"
+  ],
+  "scalar_total_dimensions": 76,
+  "age_staleness": "Use the common raw feature vector age and staleness columns exactly once; filter API age/staleness outputs are not appended.",
+  "label_access": "Filter features consume visible records and query only; source endpoint/event labels never enter filter state features."
+}

@@ -740,3 +740,11 @@
 - Minimal validation: independent narrow review reports/isu_gru_delta_review_20261020_v17_luna/review.json PASS; common origin/label keys match. Independent statistics recomputed all18MAEs, maximum absolute difference1.776e-15 PASS.0fit/0inference in merge and recomputation.
 - Risks: source-observed pre-event development only; calendar weeks are not native cycle/EFC or latent true EOL. C4payload remains unread. CPU27(MATR41separate), neural6fits/2681steps total; old failed1fit1step retained. Five-baseline public mirror verified commit cfd0284475144ae053f929bb67c16b14c85a8768. Full prediction CSV stays server; lossless publication remains pending within fixed12MiB cap.
 - Next: finish one narrow independent review, issue fresh exact12CPUfit maximum GO for candidate versus scalar filter, execute once; any nonidentifiability stops its branch without relaxed bounds/retry. No independent confirmation GO.
+
+## 2026-10-21 V17：真实滤波对照完成，双状态候选STOP，普通标量滤波未过增益门
+
+- 已完成：一次fresh exact GO真实执行6个参数拟合调用+3个HGB拟合，84.20秒；双状态候选full/OOF1触及预设lambda与R边界，OOF2优化未收敛，按冻结规则停止，候选头0/预测0。普通scalar3参数检查及3HGB完成，新增2745预测；连同既有六基线共19215条、61cell、3臂/7模型。
+- 证据：experiments/isu_irregular_rul_seed42_v1/{FILTER_COMPARISON_V17_GO.json,filter_comparison_v17_receipt.json}；filter_comparison_v17_run1/{filter_parameter_status.json,RESULTS_ZH.md,root_decision.json,summary/arm_model_summary.csv}。scalar原始/隔次/延迟7d MAE=3.083950/3.196913/3.338598日历周；HGB=3.094183/3.205075/3.377782；三臂平均改善0.595014%，低于首次指标前冻结5%门，逐臂配对95%区间均跨零。
+- 最小验证：独立窄审发现owner锁后复核缺口，单行修复后delta PASS；精确源哈希绑定新GO。21项MAE从保存预测独立重算，最大差1.776e-15 PASS。scalar各臂未出现相对HGB电芯MAE恶化>2周，最差5cell均保留在root_decision.json。
+- 阻塞/风险：回执SUCCESS仅代表scalar，候选/scalar成对性能比较未成立；固定候选未通过使用门不等于证明所有双状态模型不可辨识。scalar噪声接近边界、Hessian条件数较高，不能解释为可靠物理分解。源实测端点/pre-event开发概率不等于潜在EOL/未知事件可靠性。CPU调用累计36=旧20+基线7+参数6+scalar头3（MATR41另记）；神经6fit/2681steps，候选未用3头预算不复用。C4读取0，不新增独立确认/种子预算。
+- 下一步：先公开本次决定性停止证据与普通scalar逐cell结果；完整六基线预测按字节级无损归档在12MiB内发布。随后以已存权重对完整record-end和arrival前后做unknown-event更新诊断，另签0fit/newinference GO，不救援原候选参数或以平均微增益宣称创新。

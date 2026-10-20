@@ -174,6 +174,7 @@ def run(a):
   # Hold both the prior project-wide CPU lock and the ISU-specific lock.
   locks.append(acquire(a.old_cpu_lock,"shared/old CPU"));locks.append(acquire(a.isu_cpu_lock,"ISU CPU"))
   if json.loads(Path(a.go_json).read_text(encoding="utf-8"))!=go:raise RuntimeError("GO changed after claim")
+  check_owner(a.coordinator_json,a.owner_thread_id)
   def alarm(signum,frame):raise TimeoutError("GO hard runtime cap exceeded")
   signal.signal(signal.SIGALRM,alarm);signal.alarm(runtime_cap)
   receipt.update({"status":"RUNNING","source_sha256":sm,"code_manifest_sha256":canonical_hash(sm),

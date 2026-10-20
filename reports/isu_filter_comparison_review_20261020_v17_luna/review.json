@@ -1,0 +1,151 @@
+{
+  "schema_version": "1.0",
+  "review_id": "isu_filter_comparison_review_20261020_v17_luna",
+  "reviewed_at_utc": "2026-10-20T13:45:00Z",
+  "scope": "Static review of filter comparison runner, fit protocol, representation, candidate filter, prior candidate review, and only the interfaces needed for folds, common origins, and baseline provenance. No imports, fits, optimizer calls, inference, model loading, or C4 payload reads.",
+  "verdict": "BLOCK_OWNER_RECHECK_BEFORE_FRESH_GO",
+  "fair_comparison_assessment": {
+    "candidate_parameter_fit_calls": "3 per branch: one full train fit plus two training-only cell-fold fits",
+    "hgb_head_fits": "3 per branch: two cell-held-out OOF fits plus one full-train fit",
+    "maximum_cpu_fits": 12,
+    "train_only_and_oof": "PASS_STATIC",
+    "feature_causality": "PASS_STATIC",
+    "common_origins": "PASS_STATIC",
+    "stop_behavior": "PASS_BRANCH_FAIL_CLOSED; comparison completeness caveat below"
+  },
+  "source_sha256": {
+    "experiments/isu_irregular_rul_seed42_v1/filter_comparison.py": "0ee9cfb6f91e2515329dde151eb4ff1f873671e0078a310d9c3e66c76a330dfe",
+    "experiments/isu_irregular_rul_seed42_v1/filter_representation.py": "2219151ed12c9fd4cbf71d265bd03c3c7d8296c610c369e46e3cc47b8eeb2896",
+    "experiments/isu_irregular_rul_seed42_v1/filter_fit_protocol.json": "35ed51ca8e98a061fd162bbd2694e7f1e81a63daee956b65fb371d592d7dda12",
+    "experiments/isu_irregular_rul_seed42_v1/candidate_filter.py": "ba513f55eae38b6bd0bbdb18aa5c7be2bc3387d111f50e492e6f92e7a620a29e",
+    "experiments/isu_irregular_rul_seed42_v1/train_eval.py": "793a4682c96d2db48b806ea13c850f878c96cff4ee6b75f636ec75b05c4a2d4e",
+    "experiments/isu_irregular_rul_seed42_v1/baselines.py": "a8f537e2f2677e9c4a20909c530223bab20521fc7457e544cab092515610187e",
+    "experiments/isu_irregular_rul_seed42_v1/data_adapter.py": "d5effc7ab9aa946feee717e8490983e6ccbebf890492b456091ac49a942763f3",
+    "experiments/isu_irregular_rul_seed42_v1/protocol_candidate.json": "6640ae61ae6e6ae178b2b7c9bb225bcc7a7a6d219505ece3ba8bf4bd1d5c75eb",
+    "experiments/isu_irregular_rul_seed42_v1/six_baseline_seed42_v17/predictions_dev.csv": "d01e6cb55cddd47c76e91c4741345e327cc9bcb526840507430f49929a8395f3",
+    "experiments/isu_irregular_rul_seed42_v1/cpu_prediction_recovery/predictions_dev.csv": "01f0b2e5ff973affab97e4ca224911560e0cb6f8383851edd5ad631df53cda82",
+    "experiments/isu_irregular_rul_seed42_v1/gru_only_v17_seed42_run1/predictions_dev.csv": "c5803c24a4946e6bf1b3b4d9e503eb765da22deb0799246749d7b4f9c20d27d2",
+    "reports/dora_candidate_review_20261020_luna/review.json": "ec47527095a69af2e2086700cccf74f4c6e7fe986f7e94c91898a0d39fc8d2a5"
+  },
+  "findings": [
+    {
+      "id": "owner_toctou_after_lock_acquisition",
+      "status": "BLOCK",
+      "evidence": [
+        {
+          "file": "experiments/isu_irregular_rul_seed42_v1/filter_comparison.py",
+          "lines": "50-74",
+          "detail": "check_go validates owner once before resource locks are acquired."
+        },
+        {
+          "file": "experiments/isu_irregular_rul_seed42_v1/filter_comparison.py",
+          "lines": "168-186",
+          "detail": "After creating the persistent claim and acquiring both CPU flocks, runner rereads GO equality but does not revalidate coordinator owner/state/cwd/takeover/heartbeat before reading baseline predictions and train/development cells."
+        },
+        {
+          "file": "experiments/isu_irregular_rul_seed42_v1/train_eval.py",
+          "lines": "14-24",
+          "detail": "Owner validator takes and releases coordinator flock before returning; this does not hold ownership through later resource-lock acquisition."
+        }
+      ],
+      "required_resolution": "Revalidate owner after both CPU flocks are held and before baseline/data reads or any parameter fit. If the check fails, preserve the claim and failure receipt. Do this before issuing the fresh comparison GO."
+    },
+    {
+      "id": "train_only_parameter_fit_and_cell_isolated_oof",
+      "status": "PASS_STATIC",
+      "evidence": [
+        {
+          "file": "experiments/isu_irregular_rul_seed42_v1/filter_representation.py",
+          "lines": "85-112,133-165,167-196",
+          "detail": "Parameter objective accepts only nonempty train-role cells, uses health-observation innovations without event/target fields, balances within-cell innovation loss, and stops on fit, boundary, or Hessian failures."
+        },
+        {
+          "file": "experiments/isu_irregular_rul_seed42_v1/filter_comparison.py",
+          "lines": "124-153,198-223",
+          "detail": "Seed-42 folds are cell-isolated. Each branch calls one full-train parameter fit and two complementary train-cell fold fits; a branch is usable only if all three are FIT_OK. Held-out fold cells are excluded from that fold parameter fit."
+        },
+        {
+          "file": "experiments/isu_irregular_rul_seed42_v1/filter_comparison.py",
+          "lines": "130-153",
+          "detail": "Each HGB head uses two cell-held-out OOF fits and one full-train fit, with fold-specific parameters for OOF and full-train parameters for the final head."
+        }
+      ],
+      "conclusion": "No train/development or OOF cell leakage found in the reviewed path."
+    },
+    {
+      "id": "fail_closed_parameter_stop_and_budget",
+      "status": "PASS_WITH_COMPLETENESS_CAVEAT",
+      "evidence": [
+        {
+          "file": "experiments/isu_irregular_rul_seed42_v1/filter_comparison.py",
+          "lines": "202-240,256-258",
+          "detail": "Branch statuses are saved; no parameters are substituted after a branch stop, and a head is fit only when all three branch parameter fits return FIT_OK. GO budget is 3 candidate + 3 scalar parameter calls, 6 HGB fits, 12 maximum CPU fits."
+        },
+        {
+          "file": "experiments/isu_irregular_rul_seed42_v1/filter_fit_protocol.json",
+          "detail": "Specifies train-only full/fold roles, bounded deterministic optimization, no retries or relaxed bounds, and identifiability stop rules."
+        }
+      ],
+      "caveat": "If only one branch is FIT_OK, runner can report overall SUCCESS with only that branch predictions; this is not a completed candidate-versus-scalar comparison. Treat it as partial/STOP and make no paired superiority claim."
+    },
+    {
+      "id": "causal_features_and_common_origins",
+      "status": "PASS_STATIC",
+      "evidence": [
+        {
+          "file": "experiments/isu_irregular_rul_seed42_v1/data_adapter.py",
+          "lines": "74-111",
+          "detail": "Three arms use common dense-source query origins and fixed event targets; delayed visibility is gated by arrival time; visible health is pre-event."
+        },
+        {
+          "file": "experiments/isu_irregular_rul_seed42_v1/filter_representation.py",
+          "lines": "22-44,47-82",
+          "detail": "Filter requires explicit sample/arrival/capacity fields, enforces sample<=arrival<=query and the 35-day per-measurement replay bound, recomputes only visible records, and exports after the as-of query."
+        },
+        {
+          "file": "experiments/isu_irregular_rul_seed42_v1/filter_comparison.py",
+          "lines": "93-111,155-162,241-255",
+          "detail": "Both heads augment the same baseline feature vector; candidate/scalar origin-key multisets must each equal frozen HGB dynamic keys before merge."
+        }
+      ],
+      "conclusion": "No material future-feature leakage found. This is event-observed development evidence only."
+    },
+    {
+      "id": "baseline_artifact_and_resource_gates",
+      "status": "PASS_STATIC_CONDITIONAL_ON_FRESH_GO",
+      "evidence": [
+        {
+          "file": "experiments/isu_irregular_rul_seed42_v1/cpu_prediction_recovery_receipt.json",
+          "detail": "SUCCESS; zero new fits and zero locked reads; preserves original seven CPU fits."
+        },
+        {
+          "file": "experiments/isu_irregular_rul_seed42_v1/six_baseline_seed42_v17/merge_validation.json",
+          "detail": "Saved 16,470-row baseline merge reports same origin/label keys; output SHA matches the saved baseline prediction file."
+        },
+        {
+          "file": "experiments/isu_irregular_rul_seed42_v1/filter_comparison.py",
+          "lines": "61-74,169-180,241-243,267-270",
+          "detail": "GO binds both protocol hashes, eight-source map, cohort/manifest/baseline-prediction hashes, 12-fit budget, seed/cap, output/receipt; runner creates O_EXCL claim, takes both CPU flocks nonblocking, and writes a receipt."
+        }
+      ],
+      "conclusion": "A frozen baseline prediction artifact exists. Root should bind its exact SHA in the fresh GO. Missing fresh GO itself is not a code blocker."
+    }
+  ],
+  "current_gate_snapshot": {
+    "fresh_filter_GO_present": false,
+    "filter_claim_directory_present": false,
+    "filter_runner_process_or_lock_holder_seen": false,
+    "interpretation": "Expected before this pre-GO review; these absences are not blockers against the code."
+  },
+  "prior_review_delta": {
+    "note": "Current candidate and representation hashes differ from the prior BLOCK review. Current code has explicit sample/arrival barriers, processed-observation IDs, bounded train-only fit definitions, and cell-fold parameter handling. This review does not repeat the prior mathematical review."
+  },
+  "blockers": [
+    "Owner/coordinator state is validated before claim and CPU-lock acquisition but not revalidated once both locks are held; resolve this TOCTOU guard before issuing the fresh 12-fit GO."
+  ],
+  "static_review_only": true,
+  "performance_evidence": false,
+  "data_payloads_read": false,
+  "c4_payload_read": false,
+  "execution_performed": false
+}

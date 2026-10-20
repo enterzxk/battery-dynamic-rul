@@ -1,0 +1,35 @@
+{
+  "request_id": "ISU_FILTER_COMPARISON_V17_SEED42_20261021_RUN1",
+  "status": "SUCCESS",
+  "data_read": true,
+  "baseline_predictions_read": true,
+  "parameter_fits_started": 6,
+  "parameter_fits_completed": 6,
+  "parameter_fit_results": {},
+  "hgb_fits_started": 3,
+  "hgb_fits_completed": 3,
+  "inference_calls": 2745,
+  "source_sha256": {
+    "filter_comparison.py": "0d1e3850b3766645aa3b0d4775c87e1a86e315a6a2ae382538d1355c85695b26",
+    "filter_representation.py": "2219151ed12c9fd4cbf71d265bd03c3c7d8296c610c369e46e3cc47b8eeb2896",
+    "candidate_filter.py": "ba513f55eae38b6bd0bbdb18aa5c7be2bc3387d111f50e492e6f92e7a620a29e",
+    "baselines.py": "a8f537e2f2676e9c4a20909c530223bab20521fc7457e544cab092515610187e",
+    "data_adapter.py": "d5effc7ab9aa946feee717e8490983e6ccbebf890492b456091ac49a942763f3",
+    "train_eval.py": "793a4682c96d2db48b806ea13c850f878c96cff4ee6b75f636ec75b05c4a2d4e",
+    "filter_fit_protocol.json": "35ed51ca8e98a061fd162bbd2694e7f1e81a63daee956b65fb371d592d7dda12",
+    "protocol_candidate.json": "6640ae61ae6e6ae178b2b7c9bb225bcc7a7a6d219505ece3ba8bf4bd1d5c75eb"
+  },
+  "code_manifest_sha256": "4ea8757177d3692f8e48157aa0f0684290cf1aa745061914eba799633f2b1304",
+  "max_runtime_seconds": 3600,
+  "fit_counting_note": "Each HGB head reserves 3 fits before two OOF folds+full fit; interruption may yield fewer completed fits. A claimed request is never reused.",
+  "filter_prediction_rows": 2745,
+  "baseline_rows_reused": 16470,
+  "fit_budget_proposal": {
+    "parameter_fits_max": 6,
+    "hgb_fits_max": 6,
+    "total_max": 12
+  },
+  "seed": 42,
+  "note": "Filter parameters fitted on train-role observation records only; labels never enter filter feature construction. Same raw feature vector is augmented for both filter heads. Dev results are descriptive only; no independent confirmation.",
+  "elapsed_seconds": 84.20034265518188
+}

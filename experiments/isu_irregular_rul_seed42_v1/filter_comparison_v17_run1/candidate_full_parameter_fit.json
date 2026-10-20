@@ -1,0 +1,15 @@
+{
+  "status": "IDENTIFIABILITY_STOP",
+  "parameters": {
+    "mu_Ah_per_day": 0.0005100809004400861,
+    "v_Ah2_per_day": 2.345371997112234e-05,
+    "lambda_per_day": 0.02857142857142857,
+    "Vz_Ah2": 2.8682819787998818e-06,
+    "R_Ah2": 1.0000000000000008e-10
+  },
+  "quasi_nll": -2.783633033287867,
+  "iterations": 36,
+  "near_bound": true,
+  "hessian_eigenvalues": null,
+  "hessian_condition": null
+}

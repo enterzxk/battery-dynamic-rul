@@ -1,0 +1,105 @@
+{
+  "candidate": {
+    "full": {
+      "status": "IDENTIFIABILITY_STOP",
+      "parameters": {
+        "mu_Ah_per_day": 0.0005100809004400861,
+        "v_Ah2_per_day": 2.345371997112234e-05,
+        "lambda_per_day": 0.02857142857142857,
+        "Vz_Ah2": 2.8682819787998818e-06,
+        "R_Ah2": 1.0000000000000008e-10
+      },
+      "quasi_nll": -2.783633033287867,
+      "iterations": 36,
+      "near_bound": true,
+      "hessian_eigenvalues": null,
+      "hessian_condition": null
+    },
+    "oof_fold_1": {
+      "status": "IDENTIFIABILITY_STOP",
+      "parameters": {
+        "mu_Ah_per_day": 0.0005695822793147167,
+        "v_Ah2_per_day": 2.939807467900332e-05,
+        "lambda_per_day": 0.02857142857142857,
+        "Vz_Ah2": 1.0899443061268117e-10,
+        "R_Ah2": 1.0000000000000008e-10
+      },
+      "quasi_nll": -2.6603412001136566,
+      "iterations": 19,
+      "near_bound": true,
+      "hessian_eigenvalues": null,
+      "hessian_condition": null
+    },
+    "oof_fold_2": {
+      "status": "FIT_FAILED",
+      "message": "ABNORMAL_TERMINATION_IN_LNSRCH",
+      "iterations": 55
+    },
+    "branch_status": "PARAMETER_CV_STOP"
+  },
+  "scalar": {
+    "full": {
+      "status": "FIT_OK",
+      "parameters": {
+        "mu_Ah_per_day": 0.0011649490897212716,
+        "process_variance_Ah2_per_day": 2.0072981584859283e-05,
+        "measurement_variance_Ah2": 1.1627645127646038e-10
+      },
+      "quasi_nll": -2.9367518533525256,
+      "iterations": 25,
+      "log_coordinates": [
+        0.5311138219729772,
+        2.999374711059874,
+        -9.059540001517597
+      ],
+      "hessian_eigenvalues": [
+        3.006483778063206e-07,
+        0.4781481636037685,
+        0.5505083608006743
+      ],
+      "hessian_condition": 1831070.4511943692
+    },
+    "oof_fold_1": {
+      "status": "FIT_OK",
+      "parameters": {
+        "mu_Ah_per_day": 0.0012687946430768472,
+        "process_variance_Ah2_per_day": 2.6222374164915357e-05,
+        "measurement_variance_Ah2": 4.652606395762075e-10
+      },
+      "quasi_nll": -2.807941595441692,
+      "iterations": 24,
+      "log_coordinates": [
+        0.6165037855707239,
+        3.2666130220973413,
+        -7.672912794189246
+      ],
+      "hessian_eigenvalues": [
+        8.695263368424817e-07,
+        0.4815302782719024,
+        0.49773647652541475
+      ],
+      "hessian_condition": 572422.5425222303
+    },
+    "oof_fold_2": {
+      "status": "FIT_OK",
+      "parameters": {
+        "mu_Ah_per_day": 0.00113546883374333,
+        "process_variance_Ah2_per_day": 1.8800963900607395e-05,
+        "measurement_variance_Ah2": 1.6879567528541127e-10
+      },
+      "quasi_nll": -2.9611571360094535,
+      "iterations": 28,
+      "log_coordinates": [
+        0.5054820707413252,
+        2.933908139830479,
+        -8.686821596477714
+      ],
+      "hessian_eigenvalues": [
+        5.249134295116893e-07,
+        0.4666987633084977,
+        0.5609699494856575
+      ],
+      "hessian_condition": 1068690.4124505068
+    }
+  }
+}
