@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-20T17:40:17.287122+00:00",
-  "content_sha256": "f8592cbe69043c1aaa2b6aa3efefb3304c8778018aede0ec3eb1e52fbadc2338",
-  "file_count": 1150,
+  "snapshot_utc": "2026-10-21T01:05:12.795441+00:00",
+  "content_sha256": "34531876e2da7b3ea7c27969746e66dd27a79c8f14ae412eaeadca08332888b9",
+  "file_count": 1177,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,14 +14,14 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 137533,
-      "sha256": "df72b4bae25f0b476cb9edfa9b7fbd4dc682b26434a3e6998f26fff37a76f93b"
+      "bytes": 2939,
+      "sha256": "c31a421c79b632b80bc704ac1b6f16c5ee4008a1338558a4b0fb9e02e67f9ff8"
     },
     {
       "path": "README.md",
       "source_path": "docs/GITHUB_README_ZH.md",
-      "bytes": 1806,
-      "sha256": "3f8a0029a50e161b7061e90af193bff71d2c2670125a3af9cf1167b3de6b5220"
+      "bytes": 1496,
+      "sha256": "43197e373a8cf421c132f7f0a7702fdac6741aebbaf2cb26fbf82f5e8b147d9e"
     },
     {
       "path": "agent.md",
@@ -38,8 +38,8 @@
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 52683,
-      "sha256": "b1e3992014a1e2a24d9b3800de2f2311452434ee17623764bab59505ed0d2462"
+      "bytes": 54113,
+      "sha256": "78bb144777349fdbc3b91920f713e578c2692ab6789b8910b428e3790cc75f6f"
     },
     {
       "path": "automation/bin/matr_raw_batch2_asset_worker_v1.py",
@@ -164,8 +164,8 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 118000,
-      "sha256": "48f90f24c5d3d10bcf59d0439cd1beced5f2203eee7e6f21dd207d803ae97127"
+      "bytes": 4299,
+      "sha256": "51004021f0340677a7cc6cdab3fdf1dc50cec70b8dfc86f098178d76374e2c48"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
@@ -196,6 +196,12 @@
       "source_path": "docs/COORDINATOR_HANDOFF_20261020_V17_ZH.md",
       "bytes": 12591,
       "sha256": "9907a46455fd55ea6ddb797c23aa2d3283a19f98d703afed5878e9d03767584f"
+    },
+    {
+      "path": "docs/DART_V18_CONFIRMATION_PLAN_ZH.md",
+      "source_path": "docs/DART_V18_CONFIRMATION_PLAN_ZH.md",
+      "bytes": 2781,
+      "sha256": "66230e2b94a0f3f7c332dca802635c223dfed26ca84a70301b02ba75d80e7857"
     },
     {
       "path": "docs/DYNAMIC_RUL_ASOF_FREEZE_CANDIDATE_v3_ZH.md",
@@ -250,6 +256,12 @@
       "source_path": "docs/RESEARCH_PLAN_ZH.md",
       "bytes": 3091,
       "sha256": "91a94a893ead248ab251f498e7f58de7a9c1551a5278d47c4898cd9d93a010e8"
+    },
+    {
+      "path": "docs/USER_DART_RUL_V18_20261021_ZH.md",
+      "source_path": "docs/USER_DART_RUL_V18_20261021_ZH.md",
+      "bytes": 2334,
+      "sha256": "9440142f1d6a21450105692c6526e7d12542bcaf8d5d4e16c1ea82ca599afa01"
     },
     {
       "path": "docs/USER_SINGLE_BATTERY_ONLINE_RUL_20261018_ZH.md",
@@ -1036,6 +1048,96 @@
       "source_path": "experiments/cptransformer_hust_pilot_seed42/fit_runs/fit_20261016T040414_680559Z/train_median_val_predictions_epoch_003.csv",
       "bytes": 85205,
       "sha256": "e5bc14bc1bb85a04fd1b581530137aaaac17ab79e84758e48974cae107ddb0ba"
+    },
+    {
+      "path": "experiments/dart_rul_v18/RESULTS_ZH.md",
+      "source_path": "experiments/dart_rul_v18/RESULTS_ZH.md",
+      "bytes": 10250,
+      "sha256": "4ec045ccdfdbb5e0683044ad0774ef36a627173511c8c0a5bca3fe4c02b2d72b"
+    },
+    {
+      "path": "experiments/dart_rul_v18/analysis_v2/arrival_summary.csv",
+      "source_path": "experiments/dart_rul_v18/analysis_v2/arrival_summary.csv",
+      "bytes": 2798,
+      "sha256": "08fc8ae2c612876776a4c7a9df02e7c0e4f29171808e4e3c5169bcb814cdf27d"
+    },
+    {
+      "path": "experiments/dart_rul_v18/analysis_v2/hidden_and_negative_probability.csv",
+      "source_path": "experiments/dart_rul_v18/analysis_v2/hidden_and_negative_probability.csv",
+      "bytes": 3152,
+      "sha256": "3aa9642560c850afeadbd1674440497a66d70256609a2ebf160011c7e4782807"
+    },
+    {
+      "path": "experiments/dart_rul_v18/analysis_v2/root_decision.json",
+      "source_path": "experiments/dart_rul_v18/analysis_v2/root_decision.json",
+      "bytes": 8764,
+      "sha256": "143103ea0163797b795a43d18213970de9c66675f62884b6b6f1983a19cfb4ea"
+    },
+    {
+      "path": "experiments/dart_rul_v18/analysis_v2/three_seed_arm_summary.csv",
+      "source_path": "experiments/dart_rul_v18/analysis_v2/three_seed_arm_summary.csv",
+      "bytes": 15760,
+      "sha256": "90ac4c6d638160ca7b20658c1b751bb3d4938844351a08e1c306d72d06106537"
+    },
+    {
+      "path": "experiments/dart_rul_v18/analyze_saved_v2.py",
+      "source_path": "experiments/dart_rul_v18/analyze_saved_v2.py",
+      "bytes": 5636,
+      "sha256": "205729ce35ca6299866b5a6274baa24bd429d68f78f816ffa45d98af94e28b10"
+    },
+    {
+      "path": "experiments/dart_rul_v18/arrival_panel.py",
+      "source_path": "experiments/dart_rul_v18/arrival_panel.py",
+      "bytes": 15639,
+      "sha256": "3a4ea7a543d5304e476d58458951721b6a5bb6ae616889a359e272825ab103d1"
+    },
+    {
+      "path": "experiments/dart_rul_v18/benchmark.py",
+      "source_path": "experiments/dart_rul_v18/benchmark.py",
+      "bytes": 7458,
+      "sha256": "40ff8033e45f6a3302072f1b85952d3ed8e332ca7a1867b4dec92dbe15129771"
+    },
+    {
+      "path": "experiments/dart_rul_v18/data_protocol.py",
+      "source_path": "experiments/dart_rul_v18/data_protocol.py",
+      "bytes": 6320,
+      "sha256": "be0b0d14f3034047b009aed8208d7a961c70312ae202b774e556193a2bb53a8c"
+    },
+    {
+      "path": "experiments/dart_rul_v18/distributions.py",
+      "source_path": "experiments/dart_rul_v18/distributions.py",
+      "bytes": 4635,
+      "sha256": "ffb20dfcf577debc63d8f779953f91a3970a8a0b9755d5d9c7e109fd0f457a6e"
+    },
+    {
+      "path": "experiments/dart_rul_v18/evaluate.py",
+      "source_path": "experiments/dart_rul_v18/evaluate.py",
+      "bytes": 6047,
+      "sha256": "8c0a8101da99d5e0761c7f61794ec3436ca1c39e68438396d3d9ef1470772e8a"
+    },
+    {
+      "path": "experiments/dart_rul_v18/hgb_models.py",
+      "source_path": "experiments/dart_rul_v18/hgb_models.py",
+      "bytes": 13293,
+      "sha256": "df341c5a1a495b23c9236cfc884a340de69df5752a5f89531b0a404f9227b543"
+    },
+    {
+      "path": "experiments/dart_rul_v18/neural_models.py",
+      "source_path": "experiments/dart_rul_v18/neural_models.py",
+      "bytes": 10466,
+      "sha256": "af5bbbaec6892530fb41c42dd35f7c9bb29c54085f60efd5df16683d915c7fe1"
+    },
+    {
+      "path": "experiments/dart_rul_v18/protocol.json",
+      "source_path": "experiments/dart_rul_v18/protocol.json",
+      "bytes": 5506,
+      "sha256": "289fb7f076adc98d94a59f0b533fec00e198758ef0de46b6911f8a0576a47791"
+    },
+    {
+      "path": "experiments/dart_rul_v18/recover_evaluation.py",
+      "source_path": "experiments/dart_rul_v18/recover_evaluation.py",
+      "bytes": 6534,
+      "sha256": "1209d28d8846da3fcfd849a88851c6577265c3401a24b5eddb1b0c1795e7225d"
     },
     {
       "path": "experiments/dynamic_A_matr_retrospective_seed42_v1/CENSORED_FAILURE_ZH.md",
@@ -4152,10 +4254,22 @@
       "sha256": "62cc6fb532b2c6f427822e7a3eb4cf5c1abcc0fff28b873c1bb9233ee7b3999a"
     },
     {
-      "path": "reports/completed_matr_longtrend_predictions_lossless_20261020_root/archive.json",
-      "source_path": "reports/completed_matr_longtrend_predictions_lossless_20261020_root/archive.json",
-      "bytes": 542668,
-      "sha256": "cc70d620d3cda575fe74e201e244cd110bf13850808ecefd55a586e9fccf7e0b"
+      "path": "reports/completed_matr_longtrend_binary_lossless_v18_root/archive.bin",
+      "source_path": "reports/completed_matr_longtrend_binary_lossless_v18_root/archive.bin",
+      "bytes": 410378,
+      "sha256": "9c926d5b97a6578bf4b2f995463b9cded277a519adc55e65fa110a601787c307"
+    },
+    {
+      "path": "reports/completed_matr_longtrend_binary_lossless_v18_root/decode.py",
+      "source_path": "reports/completed_matr_longtrend_binary_lossless_v18_root/decode.py",
+      "bytes": 714,
+      "sha256": "91b814ab0509c0090f1dd54a9f34332b4a12400b9eebb0c16140e33a04295866"
+    },
+    {
+      "path": "reports/completed_matr_longtrend_binary_lossless_v18_root/validation.json",
+      "source_path": "reports/completed_matr_longtrend_binary_lossless_v18_root/validation.json",
+      "bytes": 488,
+      "sha256": "3aad67edb5607a8b18c3351eb54f0fc82dc87bbb917065827694a16c8b1d8ca6"
     },
     {
       "path": "reports/completed_matr_longtrend_predictions_lossless_20261020_root/decode.py",
@@ -4288,6 +4402,36 @@
       "source_path": "reports/cpmlp_selection_diagnosis_20261018_root/selection_diagnosis.json",
       "bytes": 3062,
       "sha256": "27e69a6d498d182d71675aea315f2c811d8a531ba25ea613de58fcdb97ea3a57"
+    },
+    {
+      "path": "reports/dart_literature_v18_20261021_luna/NOVELTY_REVIEW_ZH.md",
+      "source_path": "reports/dart_literature_v18_20261021_luna/NOVELTY_REVIEW_ZH.md",
+      "bytes": 8719,
+      "sha256": "3a95345559186d9eea55675d68d76ccbd6fb5d7ec3dfb89cd3451d053e38da70"
+    },
+    {
+      "path": "reports/dart_v18_public_evidence_package_20261021_root/README.md",
+      "source_path": "reports/dart_v18_public_evidence_package_20261021_root/README.md",
+      "bytes": 1105,
+      "sha256": "280b5f4799a9becfa9790d0d0088bed93bb87ff0211ef33339d448c9b4b0d478"
+    },
+    {
+      "path": "reports/dart_v18_public_evidence_package_20261021_root/archive.bin",
+      "source_path": "reports/dart_v18_public_evidence_package_20261021_root/archive.bin",
+      "bytes": 105274,
+      "sha256": "0fd2f83022156a088fa23b4b3525057cd089f1e6dbc1cc68ce6e2ace03c23d03"
+    },
+    {
+      "path": "reports/dart_v18_public_evidence_package_20261021_root/decode.py",
+      "source_path": "reports/dart_v18_public_evidence_package_20261021_root/decode.py",
+      "bytes": 714,
+      "sha256": "91b814ab0509c0090f1dd54a9f34332b4a12400b9eebb0c16140e33a04295866"
+    },
+    {
+      "path": "reports/dart_v18_public_evidence_package_20261021_root/index.json",
+      "source_path": "reports/dart_v18_public_evidence_package_20261021_root/index.json",
+      "bytes": 8739,
+      "sha256": "d3ad47462aacb1413756a459a52653fdcc88ae48871a682dccf93ae50a5394b8"
     },
     {
       "path": "reports/data_schema_audit/final_go_review.json",
@@ -6706,6 +6850,24 @@
       "source_path": "reports/post_mixture_methods_conflict_20261019_root/validation.json",
       "bytes": 457,
       "sha256": "eb3937fc360a847f86f64afc63913db18d2ead2a27301754da36464d44cd3335"
+    },
+    {
+      "path": "reports/progress_history_public_lossless_v18_binary_20261021_root/archive.bin",
+      "source_path": "reports/progress_history_public_lossless_v18_binary_20261021_root/archive.bin",
+      "bytes": 105531,
+      "sha256": "189bfa37833b2c800d24f2ae3c0268a16318375320cd7e09f6e083d4d186f57a"
+    },
+    {
+      "path": "reports/progress_history_public_lossless_v18_binary_20261021_root/decode.py",
+      "source_path": "reports/progress_history_public_lossless_v18_binary_20261021_root/decode.py",
+      "bytes": 714,
+      "sha256": "91b814ab0509c0090f1dd54a9f34332b4a12400b9eebb0c16140e33a04295866"
+    },
+    {
+      "path": "reports/progress_history_public_lossless_v18_binary_20261021_root/validation.json",
+      "source_path": "reports/progress_history_public_lossless_v18_binary_20261021_root/validation.json",
+      "bytes": 605,
+      "sha256": "2ab6e92ae4242cb84946a2294be5782ebc4e6a89548b147d91509d0c0f583c75"
     },
     {
       "path": "reports/reporting_delay_fixed20_review_20261019_luna/review.json",

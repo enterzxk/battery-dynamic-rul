@@ -1,0 +1,105 @@
+{
+  "version": "DART_RUL_V18_DEV_20261021",
+  "status": "FROZEN_BEFORE_V18_FITS_OR_METRICS",
+  "owner_thread_id": "01a1598a-bcaa-7443-9579-c48ee2303172",
+  "question": "Joint hidden source-observed event probability and future RUL under sparse/delayed health arrival; test exact no-report transport and shared-state value against strong simple baselines.",
+  "scope": {
+    "source_event": "first valid original RPT Q<=0.20Ah at stop, not latent physical EOL",
+    "units": "calendar weeks; native cycles/EFC unknown",
+    "cohort": "frozen C1/C2 train125,C3 dev63,C4 locked63 payload0",
+    "data_manifest_sha256": "68f53dc481dfc212896658a9bcb69780b5ed7285d853cc870a4002ae658726e1",
+    "noT": "current source-event label0 only within recorded source window; future RUL None/masked; never independent censoring"
+  },
+  "queries": {
+    "anchor": "second valid RPT without T selection",
+    "grid": "every valid source RPT stop>=anchor+7days to recorded end inclusive",
+    "arms": [
+      "raw",
+      "sparse2",
+      "delay7d"
+    ],
+    "common": "all arms at least3arrived observations; original source-index parity for sparse2; source/arrival/query preserved",
+    "features": "old74causal features at query q and same visible history at a=max(arrival)<=q; query delta only analytic for transported models",
+    "known_event": "any retained arrived health Q<=0.20 => all models RUL0,p1; no negative survival oracle",
+    "clock_fields": "delta_weeks=(q-last_arrival)/week; elapsed_from_warmup_weeks=(q-second_valid_sample)/week are distinct"
+  },
+  "distribution": {
+    "positive_edges_weeks": [
+      0,
+      0.25,
+      0.5,
+      1,
+      2,
+      3,
+      4,
+      6,
+      8,
+      12,
+      16,
+      24,
+      32,
+      48,
+      64,
+      96,
+      128
+    ],
+    "tail": "128+Exponential(scale32weeks), unbounded and explicit",
+    "neural": "zero atom plus16uniform interval masses plus1exponential tail; exact CDF/quantile/positive-part mean",
+    "transport": "R_q=max(R_a-(q-a),0); p(q)=F_a(q-a), no survival conditioning; update history only on actual arrivals",
+    "hgb": "empirical distributions preserve full support; hurdle zero atom plus positive empirical residual distribution"
+  },
+  "models": {
+    "existing_hgb": "load frozen old model, closure;0fits",
+    "hgb_fullwindow": "all knownT full-window log(T-warmupanchor),2cellOOF+full=3fits/seed",
+    "hgb_hurdle": "current event HGBClassifier1fit plus future-positive logRUL HGB2OOF+full3fits=4/seed",
+    "risk_query": "standard discrete hazard MLP query features,48x2 SiLU",
+    "joint_query": "18class shared48x2,query features,delta0; no-transport ablation",
+    "dart_joint": "18class shared48x2,anchor features,analytic delta transport",
+    "dart_split": "separate32x2 p/future networks,same anchor distribution family/loss/transport; actual parameter counts reported"
+  },
+  "loss": {
+    "weight": "each cell total1, same common queries/3arms within cell equal; totalweight=#cells retains original HGB l2 scaling; neural weighted loss divides by weight sum",
+    "known_future": "joint positive R_q density at true positive RUL; no extra double-counted BCE",
+    "past_event": "-log F_anchor(delta), or current event atom for query models",
+    "noT": "-log(1-F_anchor(delta)) current state only; no future loss",
+    "hgb": "cell-weighted event logloss; future regression positive knownT only; complete-event EOL baseline uses knownT; report event-selection limitation",
+    "scale": "train-only; no dev calibration,checkpoint selection,hyperparameter search"
+  },
+  "budget": {
+    "seeds": [
+      42,
+      13,
+      77
+    ],
+    "HGB_fits_per_seed": 7,
+    "total_new_CPU_estimator_fits": 21,
+    "neural_models_per_seed": 4,
+    "total_new_neural_fits": 12,
+    "epochs_per_model": 300,
+    "max_new_optimizer_steps": 3600,
+    "threads": 4,
+    "max_runtime_seconds": 10800,
+    "serial_CPU": true,
+    "GPU": false,
+    "retry": false,
+    "old_CPU_calls": 36,
+    "old_neural_fits": 6,
+    "old_steps": 2681
+  },
+  "evaluation": {
+    "primary": "cell-equal instantaneous event Brier on unconfirmed queries pooled sparse2+delay7d; all-window separately",
+    "probability": "cell-weighted fixed10-bin ECE, reliability counts, horizon4/12 Brier only legally observed labels, noT future masked",
+    "RUL": "mean/median MAE,>4week severe overprediction,IS80/coverage, common-bin logscore retaining zero-probability infinities",
+    "update": "all-arrival/no-new-report consistency and arrival change panel, no T-based selection",
+    "failure": "invalid model/rows retained; no seed deletion/rescue",
+    "summary": "each seed plus mean and per-cell paired bootstrap; no dev scores called independent"
+  },
+  "selection": {
+    "candidate": "dart_joint",
+    "primary_reference": "hgb_hurdle",
+    "stronger_ref_rule": "also compare strongest prespecified simple fullwindow HGB under same primary score, report either",
+    "development_gate": "mean across3seeds>=5% lower unconfirmed sparse+delay Brier vs strongest simple HGB; no arm severe overprediction+>1percentagepoint; knownT MAE not worse>2%; candidate must beat query-risk, no-transport and split-state on mechanism readouts to support mechanism claim",
+    "frozen_C4": "separate once-only confirmation only after all method,weights,metric,selection frozen and freshGO; current GO never includes C4",
+    "novelty": "probability decomposition/transport/zero atom/hazard alone not novelty; require competitor-reviewed mechanism and gains"
+  }
+}

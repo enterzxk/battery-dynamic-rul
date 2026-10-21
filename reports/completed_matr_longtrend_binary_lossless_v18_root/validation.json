@@ -1,0 +1,14 @@
+{
+  "status": "PASS_BYTE_EXACT_ROUNDTRIP",
+  "source": {
+    "path": "reports/completed_matr_longtrend_predictions_lossless_20261020_root/archive.json",
+    "bytes": 542668,
+    "sha256": "cc70d620d3cda575fe74e201e244cd110bf13850808ecefd55a586e9fccf7e0b"
+  },
+  "archive_sha256": "9c926d5b97a6578bf4b2f995463b9cded277a519adc55e65fa110a601787c307",
+  "archive_bytes": 410378,
+  "source_preserved_server": true,
+  "prior_git_history_preserved": true,
+  "new_fits": 0,
+  "new_inference": 0
+}

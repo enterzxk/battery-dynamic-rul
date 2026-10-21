@@ -12,6 +12,9 @@ EXT = {'.py', '.md', '.json', '.jsonl', '.csv', '.yaml', '.yml', '.sha256', '.sv
 BINARY_PREDICTION_ARCHIVES = {
     'reports/completed_survival_pilot_public_lossless_v2_20261020_data/archive.bin',
     'reports/isu_six_baseline_public_lossless_v17_20261021_luna/archive.bin',
+    'reports/progress_history_public_lossless_v18_binary_20261021_root/archive.bin',
+    'reports/dart_v18_public_evidence_package_20261021_root/archive.bin',
+    'reports/completed_matr_longtrend_binary_lossless_v18_root/archive.bin',
 }
 SECRET = re.compile(r'(?:gh[pousr]_[A-Za-z0-9]{25,}|github_pat_[A-Za-z0-9_]{30,}|sk-[A-Za-z0-9_-]{30,}|-----BEGIN (?:RSA |OPENSSH |EC )?PRIVATE KEY-----|https?://[^\s/:]+:[^\s/@]+@)')
 
@@ -342,6 +345,18 @@ def main():
 
     for name in ['PUBLIC_EVIDENCE_ZH.md','run1/root_recompute.json','run1/root_invariants.json']:
         chosen.add('experiments/isu_irregular_rul_seed42_v1/unknown_event_probe_v17/' + name)
+
+
+    # V18 create-only lossless archives retain full prior history/predictions under 12MiB.
+    chosen.discard('reports/completed_matr_longtrend_predictions_lossless_20261020_root/archive.json')
+    for d, names in [
+        ('reports/progress_history_public_lossless_v18_binary_20261021_root',['decode.py','validation.json']),
+        ('reports/completed_matr_longtrend_binary_lossless_v18_root',['decode.py','validation.json']),
+        ('reports/dart_v18_public_evidence_package_20261021_root',['decode.py','README.md','index.json'])]:
+        chosen.update(d+'/'+n for n in names)
+    chosen.update('docs/'+n for n in ['DART_V18_CONFIRMATION_PLAN_ZH.md','USER_DART_RUL_V18_20261021_ZH.md'])
+    chosen.update('experiments/dart_rul_v18/'+n for n in ['RESULTS_ZH.md','protocol.json','data_protocol.py','hgb_models.py','neural_models.py','distributions.py','evaluate.py','benchmark.py','recover_evaluation.py','arrival_panel.py','analyze_saved_v2.py','analysis_v2/root_decision.json','analysis_v2/three_seed_arm_summary.csv','analysis_v2/arrival_summary.csv','analysis_v2/hidden_and_negative_probability.csv'])
+    chosen.add('reports/dart_literature_v18_20261021_luna/NOVELTY_REVIEW_ZH.md')
 
     contents, files, skipped, binary_blobs = {}, [], [], {}
     mapping = {'README.md': 'docs/GITHUB_README_ZH.md', 'agent.md': 'AGENTS.md'}

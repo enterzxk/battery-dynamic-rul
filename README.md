@@ -1,19 +1,17 @@
 # Battery Dynamic RUL
+面向稀疏、不规则和迟到健康报告的单电池动态寿命研究。科研权威源在服务器，GitHub是可供GPT阅读的白名单镜像。
 
-电池动态剩余寿命研究的代码与证据快照，供人工阅读和 GPT 对话解释。此仓库由服务器项目按白名单同步；原始数据、大 checkpoint、论文全文、运行认证信息及完整内部历史留在服务器。
+**最新V18：完整窗口DART-RUL原型未击败强HGB两头基线，NO_GAIN；C4仍封存。**
 
-**从这里开始：**
+- [完整真实结果与限制](experiments/dart_rul_v18/RESULTS_ZH.md)
+- [当前进度](PROJECT_PROGRESS.md)
+- [网页版GPT中文上下文](docs/CHATGPT_CONTEXT_ZH.md)
+- [完整窗口冻结协议](experiments/dart_rul_v18/protocol.json)
+- [主决定与配对结果](experiments/dart_rul_v18/analysis_v2/root_decision.json)
+- [三seed逐臂比较](experiments/dart_rul_v18/analysis_v2/three_seed_arm_summary.csv)
+- [未放行的独立确认方案](docs/DART_V18_CONFIRMATION_PLAN_ZH.md)
+- [V18静态复现证据package](reports/dart_v18_public_evidence_package_20261021_root/README.md)
 
-- [给 GPT 的中文项目说明](docs/CHATGPT_CONTEXT_ZH.md)：研究问题、真实结果、限制和阅读顺序。
-- [项目任务进度](PROJECT_PROGRESS.md)：已完成、证据、最小验证、阻塞/风险、下一步。
-- [快照清单与时间](public_snapshot.json)：实际同步文件、SHA256 和来源。
-- [真实开发结果](results/development_hust_v11_seed42_v1.csv)：CPMLP / CPTransformer / 训练中位数基线。
-- [代码](src/)与[配置](configs/)；[公开同步规则](docs/GITHUB_SYNC_ZH.md)。
+T是原始RPT首次实测Q<=0.20Ah的完成时间，不是潜在物理EOL；未收到报告不代表事件未发生。全部结论是开发研究，不能称独立确认或外部泛化已验证。
 
-当前已有两次有界开发试验，各 300 步；它们是 HUST v11 作者总 EOL 估计的 validation 结果。完整论文复现、PBT 运行及严格在线动态 RUL 比较尚未完成。最终 test 锁定，文献接纳和静态检查不代表性能结论。
-
-在网页版 GPT 中贴此仓库链接，并请它按 `docs/CHATGPT_CONTEXT_ZH.md` 的阅读顺序解释。GPT 必须实际获取文件；聊天记录不会因同步仓库而自动互通。若连接器未收录或网页无法访问，可下载该说明与进度文件上传到对话。
-
-该镜像依赖本地应用定时任务及服务器连接；请以快照时间判断新鲜度，不能把页面当成服务器实时监控。现有代码依赖服务器数据及官方第三方项目；公开文件不等同于已打包完整独立运行环境。
-
-- [41篇精读结论与后续方向详细讨论稿](reports/literature_discussion_20261017_root_v1/LITERATURE_DISCUSSION_ZH.md)，附逐篇结论和证据锚点。
+旧NO_GO、停止和失败记录保留。旧入口全文[无损归档](reports/progress_history_public_lossless_v18_binary_20261021_root/validation.json)；旧Git历史不重写。12MiB镜像仅同步审查白名单，原始数据、checkpoint、论文全文、认证/会话/控制器原始日志不公开。新54MB逐查询预测及完整到达panel只在服务器，镜像摘要和压缩静态证据不构成全部原始实验包。

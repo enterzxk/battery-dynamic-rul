@@ -1,0 +1,21 @@
+{
+  "status": "PASS_BYTE_EXACT_ROUNDTRIP",
+  "files": [
+    {
+      "path": "PROJECT_PROGRESS.md",
+      "bytes": 138738,
+      "sha256": "45bb9ebd4beadbd39515b3917546392f6e7d8b84d3124505b992724cf95d9775"
+    },
+    {
+      "path": "docs/CHATGPT_CONTEXT_ZH.md",
+      "bytes": 119205,
+      "sha256": "c12666caadb15fa05070b2bf8171e5778b579c6226c474debed386bd8b717c91"
+    }
+  ],
+  "archive_sha256": "189bfa37833b2c800d24f2ae3c0268a16318375320cd7e09f6e083d4d186f57a",
+  "archive_bytes": 105531,
+  "new_fits": 0,
+  "model_reads": 0,
+  "raw_data_included": false,
+  "original_server_history_retained": true
+}

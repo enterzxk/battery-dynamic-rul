@@ -1,0 +1,238 @@
+{
+  "status": "PASS_BYTE_EXACT_ROUNDTRIP",
+  "archive_sha256": "0fd2f83022156a088fa23b4b3525057cd089f1e6dbc1cc68ce6e2ace03c23d03",
+  "archive_bytes": 105274,
+  "uncompressed_source_bytes": 361873,
+  "members": [
+    {
+      "path": "experiments/dart_rul_v18/protocol.json",
+      "bytes": 5506,
+      "sha256": "289fb7f076adc98d94a59f0b533fec00e198758ef0de46b6911f8a0576a47791"
+    },
+    {
+      "path": "experiments/dart_rul_v18/data_protocol.py",
+      "bytes": 6320,
+      "sha256": "be0b0d14f3034047b009aed8208d7a961c70312ae202b774e556193a2bb53a8c"
+    },
+    {
+      "path": "experiments/dart_rul_v18/hgb_models.py",
+      "bytes": 13293,
+      "sha256": "df341c5a1a495b23c9236cfc884a340de69df5752a5f89531b0a404f9227b543"
+    },
+    {
+      "path": "experiments/dart_rul_v18/hgb_models_pre_scalar_cdf_fix.py",
+      "bytes": 13285,
+      "sha256": "e623b1d4954b629026aa508e9b77fb18dae65e6ca739c90fb3c92e68c4c6e1c8"
+    },
+    {
+      "path": "experiments/dart_rul_v18/neural_models.py",
+      "bytes": 10466,
+      "sha256": "af5bbbaec6892530fb41c42dd35f7c9bb29c54085f60efd5df16683d915c7fe1"
+    },
+    {
+      "path": "experiments/dart_rul_v18/distributions.py",
+      "bytes": 4635,
+      "sha256": "ffb20dfcf577debc63d8f779953f91a3970a8a0b9755d5d9c7e109fd0f457a6e"
+    },
+    {
+      "path": "experiments/dart_rul_v18/evaluate.py",
+      "bytes": 6047,
+      "sha256": "8c0a8101da99d5e0761c7f61794ec3436ca1c39e68438396d3d9ef1470772e8a"
+    },
+    {
+      "path": "experiments/dart_rul_v18/benchmark.py",
+      "bytes": 7458,
+      "sha256": "40ff8033e45f6a3302072f1b85952d3ed8e332ca7a1867b4dec92dbe15129771"
+    },
+    {
+      "path": "experiments/dart_rul_v18/recover_evaluation.py",
+      "bytes": 6534,
+      "sha256": "1209d28d8846da3fcfd849a88851c6577265c3401a24b5eddb1b0c1795e7225d"
+    },
+    {
+      "path": "experiments/dart_rul_v18/arrival_panel.py",
+      "bytes": 15639,
+      "sha256": "3a4ea7a543d5304e476d58458951721b6a5bb6ae616889a359e272825ab103d1"
+    },
+    {
+      "path": "experiments/dart_rul_v18/analyze_saved_v2.py",
+      "bytes": 5636,
+      "sha256": "205729ce35ca6299866b5a6274baa24bd429d68f78f816ffa45d98af94e28b10"
+    },
+    {
+      "path": "experiments/dart_rul_v18/ROOT_GO.json",
+      "bytes": 3415,
+      "sha256": "9f04b05a2635e307e23838aef9c9af13b0d9d21ee695685bf6cec13dae18cb9a"
+    },
+    {
+      "path": "experiments/dart_rul_v18/RECOVERY_GO.json",
+      "bytes": 6678,
+      "sha256": "26c53b83f377c267333d722252eef84067c879a842d34cb02782e6576671965f"
+    },
+    {
+      "path": "experiments/dart_rul_v18/ARRIVAL_PANEL_GO.json",
+      "bytes": 7228,
+      "sha256": "a17a35b5a9cb7fdcc5db0ef5facb0e36fabdcb9839662523c07a3afc5ebcdfde"
+    },
+    {
+      "path": "experiments/dart_rul_v18/run1_receipt.json",
+      "bytes": 3321,
+      "sha256": "c237a49afb5665cb0f74b6817a6d8e4358ae865bc98398d0cba9bb0507418d54"
+    },
+    {
+      "path": "experiments/dart_rul_v18/evaluation_recovery_v1_receipt.json",
+      "bytes": 516,
+      "sha256": "2dfc3660815a860664937b236303282b57cc3ae490092d512e4578194eea947e"
+    },
+    {
+      "path": "experiments/dart_rul_v18/arrival_panel_v1_receipt.json",
+      "bytes": 6894,
+      "sha256": "3939f2fcdc25caa187d70952d625d1c3d0bc895569818dab1a8d1fd0fa7c0fc8"
+    },
+    {
+      "path": "experiments/dart_rul_v18/scalar_cdf_delta_validation.json",
+      "bytes": 316,
+      "sha256": "dd3644c1134018cd3d48bfa9797926d40c501f976d1143491551500c377cc77d"
+    },
+    {
+      "path": "experiments/dart_rul_v18/root_minimal_validation.json",
+      "bytes": 1033,
+      "sha256": "669cff7966c7f7fab0c950735bea418b4c78cd397152d5d8da1757afec26365a"
+    },
+    {
+      "path": "experiments/dart_rul_v18/arrival_panel_root_review.json",
+      "bytes": 1084,
+      "sha256": "df1d1b486152f465eedeabf8a075a6d2ddd223a327c04e4d28f5ccdb18ab446f"
+    },
+    {
+      "path": "experiments/dart_rul_v18/NEURAL_DESIGN_ZH.md",
+      "bytes": 4307,
+      "sha256": "37e63a98b024137d93ee55238d0762c9d9f7a214aa9e1d96d930543e21cb2bc0"
+    },
+    {
+      "path": "experiments/dart_rul_v18/HGB_DATA_IMPLEMENTATION_ZH.md",
+      "bytes": 4662,
+      "sha256": "58e95249bea57cdcecedd047b1d5107e3b2abf5594d442226d68e82f63b3bcb3"
+    },
+    {
+      "path": "experiments/dart_rul_v18/synthetic_validation.json",
+      "bytes": 1646,
+      "sha256": "9a728c19d96f003cff0ea335d269c09b932f40c032f44fefb4aa282b2c225434"
+    },
+    {
+      "path": "experiments/dart_rul_v18/RESULTS_ZH.md",
+      "bytes": 10250,
+      "sha256": "4ec045ccdfdbb5e0683044ad0774ef36a627173511c8c0a5bca3fe4c02b2d72b"
+    },
+    {
+      "path": "experiments/dart_rul_v18/analysis_v2/root_decision.json",
+      "bytes": 8764,
+      "sha256": "143103ea0163797b795a43d18213970de9c66675f62884b6b6f1983a19cfb4ea"
+    },
+    {
+      "path": "experiments/dart_rul_v18/analysis_v2/three_seed_arm_summary.csv",
+      "bytes": 15760,
+      "sha256": "90ac4c6d638160ca7b20658c1b751bb3d4938844351a08e1c306d72d06106537"
+    },
+    {
+      "path": "experiments/dart_rul_v18/analysis_v2/arrival_summary.csv",
+      "bytes": 2798,
+      "sha256": "08fc8ae2c612876776a4c7a9df02e7c0e4f29171808e4e3c5169bcb814cdf27d"
+    },
+    {
+      "path": "experiments/dart_rul_v18/analysis_v2/hidden_and_negative_probability.csv",
+      "bytes": 3152,
+      "sha256": "3aa9642560c850afeadbd1674440497a66d70256609a2ebf160011c7e4782807"
+    },
+    {
+      "path": "experiments/dart_rul_v18/analysis_v2/arrival_validation.json",
+      "bytes": 267,
+      "sha256": "5c213f7ecca774342fa0278228fe535060b15f7f359dcf752a60cf16101db8f4"
+    },
+    {
+      "path": "experiments/dart_rul_v18/analysis_v2/paired_primary_differences.csv",
+      "bytes": 15064,
+      "sha256": "b9fc11104eb32a4c77ed9c08ba47c7d46ee7f7a9c6fdf24a433a48f5ae9ae591"
+    },
+    {
+      "path": "experiments/dart_rul_v18/evaluation_recovery_v1/temporal_consistency.json",
+      "bytes": 3416,
+      "sha256": "ab09bda5c0528d90ac0c3d78310eef2e9a317c8329db9fe89904384549b6c24d"
+    },
+    {
+      "path": "reports/dart_result_review_v18_20261021_luna/review.json",
+      "bytes": 42723,
+      "sha256": "ff5a77a9ebc65ce05bf699c4ee06f457e4d2fe47b879ef44c35adbf4a8c5deb6"
+    },
+    {
+      "path": "reports/dart_result_review_v18_20261021_luna/review.py",
+      "bytes": 30546,
+      "sha256": "725c5ce570960391941dc71f1728297eae6672563a23dfe5d256c9b3156f6421"
+    },
+    {
+      "path": "reports/dart_eval_recovery_review_v18_20261021_luna/review.json",
+      "bytes": 7236,
+      "sha256": "99200b773ac342a05200450d75304448a291e002770f9ab760ab90cc47251926"
+    },
+    {
+      "path": "reports/dart_eval_recovery_review_v18_20261021_luna/review_amendment.json",
+      "bytes": 2767,
+      "sha256": "8b4796fb631e8994fc203f08947462ae060ecd04e78ebea7c3d52e91f3f65ec5"
+    },
+    {
+      "path": "reports/dart_literature_v18_20261021_luna/NOVELTY_REVIEW_ZH.md",
+      "bytes": 8719,
+      "sha256": "3a95345559186d9eea55675d68d76ccbd6fb5d7ec3dfb89cd3451d053e38da70"
+    },
+    {
+      "path": "reports/dart_literature_v18_20261021_luna/competition_matrix.json",
+      "bytes": 18839,
+      "sha256": "2dbb02beaddf819aa478109ea40d7d0ca4b79305c7373de5704fc16ca26c0c6e"
+    },
+    {
+      "path": "reports/dart_literature_v18_20261021_luna/sources.json",
+      "bytes": 6072,
+      "sha256": "976d2b7324c996960a7838cd5c09499f1a9767a9b9f9eaace5e594bb90043ee8"
+    },
+    {
+      "path": "reports/dart_preGO_review_v18_20261021_luna/review.json",
+      "bytes": 13827,
+      "sha256": "421a6c1381a2d977093df94f09664c6f5dab973cc9a691acbcf1faf9e81d5bcf"
+    },
+    {
+      "path": "reports/dart_targets_v18_20261021_root/target_audit.json",
+      "bytes": 3016,
+      "sha256": "992a1bbee001501fc095940ced986cf588cccf683d21bec979135b2599f4431f"
+    },
+    {
+      "path": "experiments/isu_irregular_rul_seed42_v1/data_adapter.py",
+      "bytes": 5146,
+      "sha256": "d5effc7ab9aa946feee717e8490983e6ccbebf890492b456091ac49a942763f3"
+    },
+    {
+      "path": "experiments/isu_irregular_rul_seed42_v1/baselines.py",
+      "bytes": 5697,
+      "sha256": "a8f537e2f2676e9c4a20909c530223bab20521fc7457e544cab092515610187e"
+    },
+    {
+      "path": "experiments/isu_irregular_rul_seed42_v1/train_eval.py",
+      "bytes": 16780,
+      "sha256": "793a4682c96d2db48b806ea13c850f878c96cff4ee6b75f636ec75b05c4a2d4e"
+    },
+    {
+      "path": "docs/USER_DART_RUL_V18_20261021_ZH.md",
+      "bytes": 2334,
+      "sha256": "9440142f1d6a21450105692c6526e7d12542bcaf8d5d4e16c1ea82ca599afa01"
+    },
+    {
+      "path": "docs/DART_V18_CONFIRMATION_PLAN_ZH.md",
+      "bytes": 2781,
+      "sha256": "66230e2b94a0f3f7c332dca802635c223dfed26ca84a70301b02ba75d80e7857"
+    }
+  ],
+  "raw_data": false,
+  "checkpoints": false,
+  "new_query_prediction_CSV_included": false,
+  "new_fits": 0,
+  "new_inference": 0
+}
