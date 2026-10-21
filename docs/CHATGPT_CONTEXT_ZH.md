@@ -1,18 +1,13 @@
 # Battery Dynamic RUL 当前进度
-2026-10-21：原始信号信息价值研究。权威科研根 `/home/yndx/zxk/rul`；C4封存未读。
+2026-10-21：真实原始信号信息研究已完成第一阶段，独立动力学机制在正式评价中。权威科研根 `/home/yndx/zxk/rul`；C4封存未读。
 
-## 已完成：真实RPT信号资产与首轮信息证据
-- 已完成：188电芯、4108条valid RPT曲线资产；原74维→完整RPT标量→Q-V/dQdV的先导对照，20个新增CPU拟合、22590行开发预测。旧V18结果/权重/失败/预算保留。
-- 证据：[先导结果](experiments/multisource_information_20261021/RESULTS_ZH.md)、[独立复算](reports/multisource_20261021_literature/information_independent/INDEPENDENT_RECOMPUTE_ZH.md)。CatBoost加曲线后完整/隔次/迟报MAE从2.1353/2.2156/2.4135降至1.7912/1.8610/1.9398周；HGB也改善，概率/覆盖并非全面改善。
-- 最小验证：源RPT索引/stop精确匹配、原始CRC/manifest、cell隔离OOF、所有拟合先于开发预测、22590行独立重算及逐cell bootstrap；C4读取0。
-- 风险：仅开发信息证据；未证明容量归一后曲线形状贡献；旧先导F0/F1/F2是嵌套标签，**不是新指令正式2×2的F0/F1/F2/F3**。C3同组新电芯不能叫未见工况。
-- 下一步：[正式2×2设计](experiments/multisource_factorial_20261021/design.json)：F0=74，F1=RPT，F2=Cycling，F3=both；提取真实循环特征，优先无新RPT期间的运行信息价值及公平强基线。
+- 已完成：188电芯4108条RPT及1,248,949条Cycling来源记录的流式缓存资产；正式F0/F1/F2/F3 2×2与6项冗余控制，80次同权限HGB/CatBoost重训、75,300条C3预测；逐电芯配对/概率/尾部风险分析。
+- 证据：[科学结论与主表](reports/multisource_20261021_root/FORMAL_INFORMATION_RESULTS_ZH.md)、[正式回执](experiments/multisource_factorial_20261021/MULTISOURCE_FORMAL_2X2_80FITS_CLOCK_VALIDITY_REPAIR_20261021_receipt.json)、[逐电芯证据](reports/multisource_20261021_root/formal_primary_per_cell.csv)、[六面板图](reports/multisource_20261021_root/formal_information_figure/formal_information.svg)。HGB F0→F3三臂MAE2.029/2.230/2.344→1.606/1.730/1.826周。
+- 最小验证：原成员CRC/SHA、原始索引/时间可见性、125/63来源角色不变，实际query124/62；全部拟合先于C3；配对按物理电芯重抽样。3条无效时钟整记录保留为未知，不推断只有3个真实循环缺失。C4读取0。
+- 风险：CatBoost F3虽平均改善但严重高估/校准误差增加；Q2现有证据主要稀疏RPT时刻对照，off-RPT网格在执行；A首分支完成，F3格式错误前0step已修复，余三分支用新GO继续，F2不重训；B轨迹模型落后同输入强容量基线，失败保留。没有独立确认或未见工况/跨体系结果。
+- 下一步：完成A动力学/观测更新消融、同多源next-capacity强基线和off-RPT网格，依据机制与误差决定方法；不回到V18局部结构调参。
 
-## 方法与原始运行信号
-B轨迹分布原型和独立增量消融各真实500步已完成，开发评估单独GO进行；当前74输入模型不代表多源创新。A等待有源时间戳的Cycling资产，禁止用日历clock冒充运行推进。Cycling归档按成员/小Range缓存，20个完成+1pilot及失败partial保留，恢复只取缺失成员，原始数据不公开。
+V18及旧STOP/NO_GAIN/NO_GO全部保留。旧57CPU+18神经/6281steps；本轮已完成106CPU（20pilot+6capacity+80formal）及B2神经1000steps、A1分支500steps；A剩余3分支进行，实际尝试/步数以回执为准，失败前的尝试不抹除。MATR41另记。新授权不复用旧GO。C4/Final/test未解封。现有heartbeat不重复创建。
+公开仅白名单代码、协议、资产清单、必要结果和文献证据；原始信号/权重/论文全文/认证/会话不公开，12MiB上限维持。旧公开预测无损归档并保留旧提交。
 
-## 保全与公开
-V18完整窗口DART=NO_GAIN，强HGB双头保留，旧PBT/滤波/GRU等STOP/NO_GO不重开。旧累计57CPU+18神经/6281steps；本轮新增20CPU+2神经/1000steps，MATR41另记。C4、Final/test继续锁定。
-GitHub仅白名单代码、协议、主表/逐cell静态证据。旧公开证据通过无损归档保留原UTF8哈希和旧提交，12MiB上限不扩。原始信号/权重/论文全文/认证/模型会话不公开。现有heartbeat不重复创建。
-
-近期竞争审查：[方法差异与全文边界](../reports/multisource_20261021_literature/COMPETITION_REVIEW_ZH.md)。源RPT首次观测阈值T为精确stop；潜在物理首次越阈是不同estimand，容量回弹下不能以lastabove/firstbelow构造未经证明的首次越阈区间。
+请先读取上述科学结论和方法草稿，区分开发信息增益、动力学机制和独立确认。旧先导F0/F1/F2是嵌套标签，与本次正式2×2不同。

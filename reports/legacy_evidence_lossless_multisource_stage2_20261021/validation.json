@@ -1,0 +1,54 @@
+{
+  "status": "EXACT_UTF8_SHA_ROUNDTRIP_PASS",
+  "files": {
+    "experiments/cpmlp_hust_pilot_seed42/fit_runs/fit_20261016T034610_311103Z/train_median_val_predictions_epoch_001.csv": {
+      "bytes": 85205,
+      "sha256": "e5bc14bc1bb85a04fd1b581530137aaaac17ab79e84758e48974cae107ddb0ba"
+    },
+    "experiments/cpmlp_hust_pilot_seed42/fit_runs/fit_20261016T034610_311103Z/train_median_val_predictions_epoch_002.csv": {
+      "bytes": 85205,
+      "sha256": "e5bc14bc1bb85a04fd1b581530137aaaac17ab79e84758e48974cae107ddb0ba"
+    },
+    "experiments/cpmlp_hust_pilot_seed42/fit_runs/fit_20261016T034610_311103Z/train_median_val_predictions_epoch_003.csv": {
+      "bytes": 85205,
+      "sha256": "e5bc14bc1bb85a04fd1b581530137aaaac17ab79e84758e48974cae107ddb0ba"
+    },
+    "experiments/cptransformer_hust_pilot_seed42/fit_runs/fit_20261016T040414_680559Z/train_median_val_predictions_epoch_001.csv": {
+      "bytes": 85205,
+      "sha256": "e5bc14bc1bb85a04fd1b581530137aaaac17ab79e84758e48974cae107ddb0ba"
+    },
+    "experiments/cptransformer_hust_pilot_seed42/fit_runs/fit_20261016T040414_680559Z/train_median_val_predictions_epoch_002.csv": {
+      "bytes": 85205,
+      "sha256": "e5bc14bc1bb85a04fd1b581530137aaaac17ab79e84758e48974cae107ddb0ba"
+    },
+    "experiments/cptransformer_hust_pilot_seed42/fit_runs/fit_20261016T040414_680559Z/train_median_val_predictions_epoch_003.csv": {
+      "bytes": 85205,
+      "sha256": "e5bc14bc1bb85a04fd1b581530137aaaac17ab79e84758e48974cae107ddb0ba"
+    },
+    "experiments/capacity20_forecast_seed42_v1/published_predictions.json": {
+      "bytes": 138400,
+      "sha256": "b45987e47e0eca834068d89b320be2954789cc203cba2609e2fc295673295cea"
+    },
+    "experiments/capacity_endpoint_firstpassage_seed42_v2/published_predictions.json": {
+      "bytes": 135576,
+      "sha256": "69004085991af02ac8033691ff6ec7be07244cee3cd5f54411407358e1121178"
+    },
+    "experiments/capacity_firstpassage_seed42_v1/published_predictions.json": {
+      "bytes": 135028,
+      "sha256": "5e5a24d7a4c47b13e234e75f1d2f7a53df045fc6364814ffb0a0a4efb6f21cc4"
+    },
+    "experiments/dynamic_A_matr_retrospective_seed42_v1/validation_predictions.csv": {
+      "bytes": 77048,
+      "sha256": "b336f3b69219d9f8c1a4044e68bb8e6b9a365b7227673d722118e3b750ca0c22"
+    },
+    "experiments/dynamic_A_matr_retrospective_seed42_v1/terminal_boundary_diagnosis.json": {
+      "bytes": 74769,
+      "sha256": "32ad560bb9d8f5f7a24195d97250b624b44adad66f5cbcc1e1c6c3e5982aa17a"
+    }
+  },
+  "source_bytes": 1072051,
+  "archive_bytes": 363402,
+  "archive_sha256": "dd3dafff87338292ecb84c189290ca514d53a3c67597bc7ae9236ca13a9da542",
+  "source_files_retained": true,
+  "previous_commit": "bee85b675ba37c23924b59bb8e138e23b395949d"
+}

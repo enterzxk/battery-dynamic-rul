@@ -1,0 +1,24 @@
+{
+  "claim": "New raw RPT and Cycling signals improve development MAE, with capacity controls and explicit reliability tradeoffs.",
+  "dimensions_mm": [
+    183,
+    185
+  ],
+  "scope": "C3 same-condition new cells, one seed, no independent confirmation. 61 observed-event cells for MAE; 62 cells for event metrics.",
+  "factorial": "F0=74;F1=F0+RPT;F2=F0+Cycling;F3=all",
+  "uncertainty": "4000 physical-cell percentile bootstrap draws seed20261021. c averages three arms within cell first. d aggregates repeated same-history pairs within cell first. a/b descriptive aggregates, no seed CI.",
+  "inputs": {
+    "experiments/multisource_factorial_20261021/run2_clocksafe/arm_summary.csv": "ad99341383637ce3c4c4be94f1171c7b55cd89fbecc3be2107091d2d832f561a",
+    "experiments/multisource_factorial_20261021/run2_clocksafe/cell_metrics.csv": "5d475738a8aa3a491ee72961182724949bdbe4b53b3ff2742a58b4b372192094",
+    "experiments/multisource_factorial_20261021/run2_clocksafe/no_new_rpt_pairs.csv": "43a7df01e37a72d577d0f53fab2a95b50d7aba97e8c975a3b48d3a508e6798fc"
+  },
+  "counterfactual_limits": "Cycle availability assumed at source completion because transmission times absent. Shape normalized by matching arrived leg capacity. VI/time panel removes six Q/throughput variables but retains observed cycle count.",
+  "panel_roles": {
+    "a": "HGB2x2",
+    "b": "CatBoost2x2",
+    "c": "capacitycontrols",
+    "d": "nonewRPT",
+    "e": "coverageerror",
+    "f": "severeover"
+  }
+}

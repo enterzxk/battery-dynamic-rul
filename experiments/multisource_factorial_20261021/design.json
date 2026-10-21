@@ -1,6 +1,6 @@
 {
   "version": "MULTISOURCE_2X2_USER_SUPPLEMENT_20261021",
-  "status": "DESIGN_BEFORE_FACTORIAL_FITS",
+  "status": "PROTOCOL_FROZEN_AWAITING_FORMAL_GO",
   "factors": {
     "RPT_curve": false,
     "Cycling": false
@@ -28,7 +28,7 @@
     }
   },
   "pilot_separate": "experiments/multisource_information_20261021 is nested original74->extraRPTcapacity->RPTcurve pilot. Its F1/F2 names are historical and NOT formal factorial labels.",
-  "cohort": "C1/C2 train,C3 development,C4 locked; same-condition new cells only; unseen condition requires train-internal group holdout",
+  "cohort": "C1/C2 are training replicate roles, C3 development replicate role within the same G-group conditions, C4 locked; G is operating-condition/group, unseen-G training-internal group holdout is separate later analysis",
   "controls": [
     "match physical cells,queries and RPT arrival protocol across all four arms",
     "same RPT sparse2/delay7d hide all RPT signal fields together",

@@ -1,0 +1,42 @@
+{
+  "status": "SUCCESS",
+  "request_id": "MULTISOURCE_PAIRED_CELL_ANALYSIS_20261021",
+  "created_utc": "2026-10-21T11:49:34.867914+00:00",
+  "analysis_scope": "saved cell_metrics only; no raw payload, predictions, C4, model weights, fits or inference",
+  "input_sha256": {
+    "postprocess_saved.py": "b0e5a16341f02d06b764d7828039f53f22ba98aab8389111f24d3372c2bd3adb",
+    "cell_metrics": "5d475738a8aa3a491ee72961182724949bdbe4b53b3ff2742a58b4b372192094",
+    "formal_receipt": "5eeab340d13c450d028143a6a624e4b0a1431e92b4e2b272e2400c9a285ee8b9",
+    "formal_go": "8d8265fc0fdc2603291bb9dd3673e4833310b84bbfb403ff9ebff139c2a11b1f"
+  },
+  "formal_receipt_status": "SUCCESS",
+  "fits_completed": 80,
+  "C4_payload_reads": 0,
+  "old_model_loads": 0,
+  "saved_cell_metric_rows": 12820,
+  "model_families": [
+    "catboost",
+    "hgb"
+  ],
+  "contrast_count": 12,
+  "paired_summary_rows": 2640,
+  "paired_cell_delta_rows": 152634,
+  "bootstrap": {
+    "unit": "physical cell",
+    "reps": 2000,
+    "seed": 42,
+    "CI": "percentile 95%"
+  },
+  "metric_direction": "lower is better; coverage80 transformed to absolute distance from nominal 0.80; IS80 remains separate",
+  "limits": [
+    "development-only paired stability analysis",
+    "not independent confirmation",
+    "source-observed event may be known from complete arrived RPTs in raw arm",
+    "three invalid-clock source rows are unknown-time whole records; no missing-cycle count is inferred"
+  ],
+  "outputs": [
+    "paired_cell_deltas.csv",
+    "paired_contrast_summary.csv",
+    "RESULTS_ZH.md"
+  ]
+}

@@ -375,6 +375,19 @@ def main():
     BINARY_PREDICTION_ARCHIVES.add('experiments/multisource_information_20261021/public_cell_metrics/archive.bin')
     chosen.update('experiments/multisource_information_20261021/public_cell_metrics/'+n for n in ['archive.bin','validation.json','decode.py'])
 
+    # Formal multisource stage: compact metadata and scientific results only.
+    compact2 = ROOT/'reports/legacy_evidence_lossless_multisource_stage2_20261021'
+    chosen.difference_update(json.loads((compact2/'paths.json').read_text()))
+    BINARY_PREDICTION_ARCHIVES.add('reports/legacy_evidence_lossless_multisource_stage2_20261021/archive.bin')
+    chosen.update('reports/legacy_evidence_lossless_multisource_stage2_20261021/'+n for n in ['archive.bin','decode.py','validation.json','README.md'])
+    chosen.update('data/processed/ISU_ILCC_Multisource_v1/'+n for n in ['asset_manifest.json','README_ZH.md'])
+    chosen.update('reports/multisource_20261021_signals/'+n for n in ['cycling_all188_feature_manifest.json','all188_rpt_features_v1/manifest.json','cycle_asof_features.py','FEATURE_INTERPRETATION_ZH.md','sourcefeature_contract.json'])
+    chosen.update('experiments/multisource_factorial_20261021/'+n for n in ['runner.py','protocol.json','features.py','postprocess_saved.py','ROOT_GO_FORMAL80_CLOCKSAFE.json','MULTISOURCE_FORMAL_2X2_80FITS_CLOCK_VALIDITY_REPAIR_20261021_receipt.json','ROOT_GO_PAIRED_SAVED.json','run2_clocksafe/summary.json','run2_clocksafe/arm_summary.csv','run2_clocksafe/factorial_interactions.csv','paired_saved_analysis_20261021/analysis_receipt.json','paired_saved_analysis_20261021/RESULTS_ZH.md'])
+    chosen.update('reports/multisource_20261021_root/'+n for n in ['FORMAL_INFORMATION_RESULTS_ZH.md','formal_primary_per_cell.csv','formal_paired_all_stratum.csv'])
+    chosen.update('reports/multisource_20261021_root/formal_information_figure/'+n for n in ['plot.py','ROOT_GO.json','figure_contract.json','figure_source.csv','formal_information.svg','alignment.json','collision.json','font_audit.json','VISUAL_QA.md'])
+    chosen.update('reports/multisource_20261021_trajectory_review/'+n for n in ['TRAJECTORY_REVIEW_ZH.md','same_key_metrics.csv','paired_cell_bootstrap.csv','same_key_checks.json','stage_lead_metrics.csv','RECENT_COMPETITORS_ADDENDUM_ZH.md'])
+    chosen.add('paper/multisource_dynamic_rul_20261021/PROBLEM_METHOD_DRAFT.md')
+
     contents, files, skipped, binary_blobs = {}, [], [], {}
     mapping = {'README.md': 'docs/GITHUB_README_ZH.md', 'agent.md': 'AGENTS.md'}
     mapping.update({rel: rel for rel in sorted(chosen)})

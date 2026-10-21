@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 # Streaming summary extractor for one authorized ISU-ILCC Cycling_json ZIP member.
-import sys, os, json, hashlib, pathlib, struct, zlib, datetime, math, codecs
+import sys, os, json, hashlib, pathlib, struct, zlib, datetime, math, codecs, gzip
 ROOT=pathlib.Path('/home/yndx/zxk/rul')
 PLAN=ROOT/'reports/multisource_20261021_root/cycling_members_plan.json'
-GO=ROOT/'reports/multisource_20261021_signals/CYCLING_EXTRACT_V2_GO.json'
-OUT=ROOT/'reports/multisource_20261021_signals/cycling_features_v2'
+GO=ROOT/'reports/multisource_20261021_signals/CYCLING_EXTRACT_ALL_GO.json'
+OUT=ROOT/'reports/multisource_20261021_signals/cycling_features_v3'
 CHUNK=1<<20
 
 class Stream:
@@ -109,6 +109,7 @@ class Stream:
 def main():
     assert len(sys.argv)==2, 'usage: script CELL_ID'
     cid=sys.argv[1]; go=json.loads(GO.read_text()); plan=json.loads(PLAN.read_text()); m=next(x for x in plan if x['cell_id']==cid)
+    state=json.loads((ROOT/'automation/state/coordinator.json').read_text());assert state['owner']==go['owner_thread_id'] and state['state']=='ACTIVE' and state['takeover_verified'] is True
     assert go.get('status')=='APPROVED' and go.get('extractor_sha256')==hashlib.sha256(pathlib.Path(__file__).read_bytes()).hexdigest()
     assert go.get('plan_sha256')==hashlib.sha256(PLAN.read_bytes()).hexdigest()
     assert m['role'] in ('train','development') and not cid.endswith('C4') and cid in go['cell_ids']
@@ -116,9 +117,10 @@ def main():
     assert len(selected)==len(set(go['cell_ids'])) and all(x['role'] in ('train','development') and not x['cell_id'].endswith('C4') for x in selected)
     assert sum(x['compressed_bytes'] for x in selected)<=int(go['max_total_compressed_bytes'])
     assert sum(x['bytes'] for x in selected)<=int(go['max_total_inflated_bytes'])
-    inp=pathlib.Path(go['cache_dir'])/(cid+'.range2.bin'); hdr=pathlib.Path(go['cache_dir'])/(cid+'.header.bin')
-    recp=pathlib.Path(go['cache_dir'])/(cid+'.receipt.json'); receipt=json.loads(recp.read_text())
-    assert hashlib.sha256(recp.read_bytes()).hexdigest()==go['cache_receipt_sha256'][cid]
+    cache=pathlib.Path(go['cache_dir_by_cell'][cid]);assert cache.parent==ROOT/'data/raw'
+    inp=cache/(cid+'.range2.bin'); hdr=cache/(cid+'.header.bin')
+    recp=cache/(cid+'.receipt.json'); receipt=json.loads(recp.read_text())
+    assert receipt['GO_request']==go['cache_request_by_cell'][cid]
     assert receipt.get('status')=='COMPRESSED_CACHE_COMPLETE_NOT_DECODED' and receipt.get('cell_id')==cid and receipt.get('compressed_sha256')
     assert inp.stat().st_size==m['compressed_bytes']+struct.unpack('<4s5H3I2H',hdr.read_bytes())[-2]+struct.unpack('<4s5H3I2H',hdr.read_bytes())[-1]
     limit=int(go['max_member_inflated_bytes']); assert m['bytes']<=limit
@@ -223,11 +225,11 @@ def main():
         qvals=[v for v in (r['capacity_charge_source_units_unknown'],r['capacity_discharge_source_units_unknown']) if isinstance(v,(int,float)) and math.isfinite(v)]
         r['observed_cycle_throughput_source_units']=sum(qvals) if len(qvals)==2 else None
         rows.append(r)
-    OUT.mkdir(parents=True,exist_ok=True); out=OUT/(cid+'.json'); tmp=out.with_suffix('.json.tmp'); assert not out.exists() and not tmp.exists(), 'output_exists_refuse_overwrite'
-    existing=sum(p.stat().st_size for p in OUT.glob('*.json') if p.is_file())
+    OUT.mkdir(parents=True,exist_ok=True); out=OUT/(cid+'.json.gz'); tmp=out.with_suffix('.gz.tmp'); assert not out.exists() and not tmp.exists(), 'output_exists_refuse_overwrite'
+    existing=sum(p.stat().st_size for p in OUT.glob('*.json.gz') if p.is_file())
     assert existing < int(go['max_feature_output_bytes']), 'feature_output_cap_exceeded'
-    with tmp.open('w') as f:
-        json.dump({'cell_id':cid,'role':m['role'],'source_member':m['name'],'compressed_member_sha256':receipt['compressed_sha256'],'source_uncompressed_sha256':src.sha.hexdigest(),'source_uncompressed_bytes':src.n,'cycle_count':len(rows),'time_basis':'source per-leg start/stop ISO strings; no synthetic clock','throughput_basis':'sum of observed charge and discharge capacity per cycle, only when both are present; gaps are not imputed','units':'voltage appears V and current appears A from source convention; capacity, Q, and E source units remain unverified; no unit conversion','cycles':rows},f,separators=(',',':'),allow_nan=False)
+    with gzip.open(tmp,'xt',encoding='utf8',compresslevel=3) as f:
+        json.dump({'cell_id':cid,'role':m['role'],'source_member':m['name'],'compressed_member_sha256':receipt['compressed_sha256'],'source_uncompressed_sha256':src.sha.hexdigest(),'source_uncompressed_bytes':src.n,'cycle_count':len(rows),'time_basis':'source per-leg start/stop ISO strings; no synthetic clock; communication arrival unobserved','throughput_basis':'sum of observed charge and discharge capacity per cycle, only when both are present; gaps/RPT are not imputed','units':'Official README V2 page5: capacity/Q Ah, E Wh, I A, V V. Historical source_units_unknown field names retained for schema compatibility. No scaling or imputation.','cycles':rows},f,separators=(',',':'),allow_nan=False)
     assert tmp.stat().st_size+existing <= int(go['max_feature_output_bytes']), 'feature_output_cap_exceeded'
     os.replace(tmp,out)
     print(json.dumps({'status':'SUCCESS','cell_id':cid,'role':m['role'],'cycles':len(rows),'inflated_bytes':src.n,'source_crc32':m['crc32'],'output_bytes':out.stat().st_size,'output_sha256':hashlib.sha256(out.read_bytes()).hexdigest(),'output':str(out)}))

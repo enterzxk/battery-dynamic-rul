@@ -1,0 +1,99 @@
+{
+  "schema": "MULTISOURCE_FORMAL_FACTORIAL_PROTOCOL_V1",
+  "status": "FROZEN_BEFORE_FORMAL_FITS",
+  "scope": "C1/C2 training and C3 development only; C4 never opened; no independent confirmation claim",
+  "estimand": "Incremental predictive information from source-valid RPT scalar/voltage curves and measured Cycling operating signals, under identical V18 query rows, labels, weighting and fixed model settings.",
+  "cohort": {
+    "source_manifest": "reports/isu_ilcc_datav2_full_20261020_root/data_manifest.json",
+    "role_manifest": "reports/isu_ilcc_capacity_probe_20261020_root/cohort.json",
+    "expected_physical_cells": {
+      "train": 125,
+      "development": 63,
+      "locked_read": 0
+    },
+    "query_examples": "Frozen experiments/dart_rul_v18/data_protocol.py make_examples; all 3 arms share each source query; GO pins exact row counts.",
+    "expected_query_eligible_cells": {
+      "train": 124,
+      "development": 62
+    },
+    "replicate_roles": {
+      "training": "C1/C2 replicate cohorts",
+      "development": "C3 replicate cohort with same G-group conditions but new cells",
+      "locked": "C4 replicate cohort; payload forbidden"
+    },
+    "condition_unit": "G-group denotes the operating condition/group; C1/C2/C3/C4 are replicate roles within G, not condition labels. Unseen-G group holdout inside C1/C2 training cells is a separate later analysis and is not part of this factorial GO."
+  },
+  "outcome": {
+    "event": "First valid source RPT capacityAh <= 0.20 Ah at its recorded stop; this is a source-observed threshold crossing, not latent physical EOL.",
+    "event_binary": "First threshold event is known by query when any arrived valid RPT is at/below threshold; event classifier target follows frozen V18 y_event.",
+    "positive_regression": "log(target_rul_weeks) only where target_rul_weeks is finite and >0; unknown future endpoint rows remain event-negative only within observed window and are excluded from RUL regression metrics.",
+    "known_event_distribution": "Use PointZero for already-observed event rows in evaluation, matching frozen pilot metrics."
+  },
+  "features": {
+    "F0": "Frozen same-query V18 74-vector.",
+    "F1": "F0 + 612 RPT features: 4 C2/C5 charge/discharge capacity scalars and 200 Q(V)/dQdV(V) values; each feature contributes latest, difference from first actually arrived RPT, and past-only stop-time slope/week; every selected record must satisfy stop <= arm arrival <= query.",
+    "F2": "F0 + 24 measured Cycling summary features as-of query end; cycle visibility assumes same-completion availability because transport arrival is unobserved.",
+    "F3": "F0 + the F1 RPT increment + the F2 Cycling increment.",
+    "controls": [
+      "control_rpt_scalar_only (F0 + 12 scalar latest/delta/slope dimensions)",
+      "control_capacity_normalized_shape_only (F0 + 600 Q(V)/dQdV(V) shape dimensions divided by matching leg/rate capacity; no four added capacity magnitudes)",
+      "control_rpt_scalar_plus_shape (F0 + 12 scalars + 600 normalized curve dimensions)",
+      "control_rpt_scalar_plus_shape_cycle (previous control + full 24 Cycling dimensions)",
+      "control_rpt_full_vi_e_time (F0 + full RPT increment + 18 VI/E/time-only Cycling dimensions)",
+      "control_cycle_vi_e_time_only (F0 + 18 VI/E/time-only Cycling dimensions; excludes capacity/throughput/Q-end)"
+    ],
+    "missingness": "Preserve source missing values as NaN; use native HGB/CatBoost missing-value handling; no imputation, smoothing, clipping, future-schedule features, or test-derived scaling.",
+    "availability": "RPT DataV2 valid record joins by original source_rpt_index and remains visible at protocol arrival after source stop. Cycling feature uses max(charge.stop, discharge.stop) <= query; actual data transport latency is unknown and is not represented as measured arrival.",
+    "unit_mapping": {
+      "RPT_capacity_and_Q": "Ah",
+      "RPT_voltage_grid": "V",
+      "RPT_derived_dQdV": "Ah/V (only for the RPT Q(V) source curves)",
+      "RPT_feature_past_slope": "per week of the source quantity after nominal-capacity normalization for F1/F3",
+      "Cycling_capacity_Q_and_observed_throughput": "Ah",
+      "Cycling_voltage": "V",
+      "Cycling_current": "A",
+      "Cycling_energy": "Wh",
+      "Cycling_leg_duration": "s",
+      "Cycling_time_since_completion": "h"
+    },
+    "unavailable_cycling_signals": "No Cycling temperature, rest/relaxation, pulse/HPPC, impedance/EIS or dQ/dV feature is asserted or fabricated; dQ/dV is used only in the RPT-derived curve panel.",
+    "cycle_clock_quality": "Combined24 features require both leg stop clocks to be valid real ISO. Unknown/malformed [] clock rows are retained in original derived assets, excluded from as-of model indexes, and counted only in audit metadata, never features. Naive source timestamps use the same UTC coordinate convention as frozen V18 (not a claim of measured timezone). Missing start time makes duration unavailable."
+  },
+  "models": {
+    "families": [
+      "HistGradientBoosting",
+      "CatBoost"
+    ],
+    "hgb": "HistGradientBoostingClassifier/Regressor, max_iter=150, max_leaf_nodes=15, l2_regularization=1, random_state=42, early_stopping=False.",
+    "catboost": "Classifier/Regressor, iterations=400, depth=5, learning_rate=0.04, l2_leaf_reg=3, random_seed=42, thread_count=4, no dev stopping/tuning.",
+    "weighting": "Each physical cell has total fit/evaluation mass one; all arms and common queries share equal mass within cell using frozen V18 rows.",
+    "distribution": "Hurdle event probability plus log-RUL regressor; 2-fold physical-cell-isolated OOF log residuals form weighted empirical positive distribution; full positive regressor and full event classifier per model/panel.",
+    "fit_count": "Each model/panel uses 1 full event classifier + 2 OOF positive regressors + 1 full positive regressor = 4 fits. Ten panels x two model families x four fits = exactly 80 new CPU fits. F0 is retrained on this identical row cohort; no prior-model loads. All fits complete before any development predictions."
+  },
+  "panels": [
+    "F0",
+    "F1",
+    "F2",
+    "F3",
+    "control_rpt_scalar_only",
+    "control_capacity_normalized_shape_only",
+    "control_rpt_scalar_plus_shape",
+    "control_rpt_scalar_plus_shape_cycle",
+    "control_rpt_full_vi_e_time",
+    "control_cycle_vi_e_time_only"
+  ],
+  "analyses": {
+    "primary": "Development-only paired per-cell and arm results for RUL MAE/median AE, event Brier, Brier4/Brier12, IS80, coverage80, severe_gt4w, and log scores; unknown targets are masked from RUL metrics.",
+    "factorial_interaction": "Zero-fit cell-paired difference-in-differences (F3-F1)-(F2-F0), separately by architecture/arm/stratum, with physical-cell bootstrap 95% intervals.",
+    "no_new_rpt": "Within cell/arm adjacent development queries with identical RPT history_key but increased observed cycle count, compare exact earlier predictive distribution shifted by elapsed weeks against time-only baseline and updated source-signal F2/F3 forecasts; report cell-equal MAE and event Brier deltas. No gain can refute a claimed RPT-gap update benefit but cannot establish causal mechanism because operating updates may be confounded.",
+    "scope": "Development only; no independent confirmation, no claim of deployment performance, and no label-informed feature selection."
+  },
+  "artifacts": "Per-query feature NPZs, source-end row JSONL, separate train/development target JSONLs, complete per-source manifest SHA inventory, observed eligible query-cell/source coverage counts, fit artifacts/progress, row predictions, cell and arm summaries, calibration bins, paired panel deltas, factorial interaction and no-new-RPT panels, exact GO-bound receipt.",
+  "safety": {
+    "C4_payload_reads": 0,
+    "raw_archives": 0,
+    "neural_fits": 0,
+    "external_downloads": 0,
+    "global_environment_changes": 0
+  }
+}

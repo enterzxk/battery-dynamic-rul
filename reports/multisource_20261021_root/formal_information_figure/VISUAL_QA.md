@@ -1,0 +1,1 @@
+Final PNG inspected at final layout: six aligned panels, no clipped labels/data or text overlap. Initial footer overlap corrected by expanding bottom margin and figure height. Font minimum6.2pt; PDF collision audit PASS (0fail/0warn); panel alignment PASS. CI physical-cell resampling; controls average arms within each cell before resampling. No inference or raw data reads.

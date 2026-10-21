@@ -1,0 +1,29 @@
+{
+  "status": "APPROVED",
+  "request_id": "MULTISOURCE_PAIRED_CELL_ANALYSIS_20261021",
+  "owner_thread_id": "01a15c3a-1a06-7d61-8517-27b70b246183",
+  "allow_postprocess": true,
+  "allow_fits": false,
+  "allow_inference": false,
+  "allow_raw_data": false,
+  "allow_c4": false,
+  "allow_model_weights": false,
+  "source_sha256": {
+    "postprocess_saved.py": "b0e5a16341f02d06b764d7828039f53f22ba98aab8389111f24d3372c2bd3adb",
+    "formal_receipt": "5eeab340d13c450d028143a6a624e4b0a1431e92b4e2b272e2400c9a285ee8b9",
+    "formal_go": "8d8265fc0fdc2603291bb9dd3673e4833310b84bbfb403ff9ebff139c2a11b1f",
+    "cell_metrics": "5d475738a8aa3a491ee72961182724949bdbe4b53b3ff2742a58b4b372192094"
+  },
+  "output_dir": "/home/yndx/zxk/rul/experiments/multisource_factorial_20261021/paired_saved_analysis_20261021",
+  "controls": {
+    "input_scope": "saved run2_clocksafe/cell_metrics.csv and formal run receipt only",
+    "output_contains": [
+      "paired_cell_deltas.csv",
+      "paired_contrast_summary.csv",
+      "analysis_receipt.json",
+      "RESULTS_ZH.md"
+    ],
+    "output_must_not_contain_predictions": true
+  },
+  "issued_utc": "2026-10-21T11:49:18.210088+00:00"
+}

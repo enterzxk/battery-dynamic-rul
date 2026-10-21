@@ -1,0 +1,13 @@
+{
+  "status": "APPROVED",
+  "request_id": "FORMAL_SAVED_METRICS_FIGURE_20261021",
+  "owner": "01a15c3a-1a06-7d61-8517-27b70b246183",
+  "issued_utc": "2026-10-21T11:50:10.109047+00:00",
+  "scope": "read only saved metrics for figure, bootstrap, report and publication; no models, inference, fitting, raw payload or C4",
+  "input_sha256": {
+    "experiments/multisource_factorial_20261021/run2_clocksafe/arm_summary.csv": "ad99341383637ce3c4c4be94f1171c7b55cd89fbecc3be2107091d2d832f561a",
+    "experiments/multisource_factorial_20261021/run2_clocksafe/cell_metrics.csv": "5d475738a8aa3a491ee72961182724949bdbe4b53b3ff2742a58b4b372192094",
+    "experiments/multisource_factorial_20261021/run2_clocksafe/no_new_rpt_pairs.csv": "43a7df01e37a72d577d0f53fab2a95b50d7aba97e8c975a3b48d3a508e6798fc"
+  },
+  "output": "/home/yndx/zxk/rul/reports/multisource_20261021_root/formal_information_figure"
+}

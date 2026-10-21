@@ -112,7 +112,7 @@ def fpt_summary(sampled,horizon=128.0,threshold=.20):
  mass=torch.stack(masses,1)
  if not torch.allclose(mass.sum(1),torch.ones_like(tail),atol=1e-5,rtol=0):
   raise RuntimeError("FPT probability mass does not sum to one")
- qs=torch.quantile(rul,torch.tensor([.1,.5,.9],device=rul.device),dim=1).T
+ qs=torch.quantile(rul,torch.tensor([.1,.5,.9],device=rul.device,dtype=rul.dtype),dim=1).T
  return current,probs,rul.mean(1),qs,tail,mass
 
 def write_predictions(models,rows,schedule,scaler,out,batch_size,n_paths,max_batches,device,started,max_runtime):
@@ -145,6 +145,10 @@ def write_predictions(models,rows,schedule,scaler,out,batch_size,n_paths,max_bat
    future=torch.as_tensor(gaps_all,dtype=torch.float32,device=device)
    with torch.no_grad():
     samp=model.sample(xt,cap,hd,future,interval,n_paths=n_paths)
+   # Calendar labels use the exact train-schedule cumulative grid, not float32 GRU clock accumulation.
+   exact_times=samp["relative_weeks"].to(torch.float64)
+   exact_times[:,-len(gaps_all):]=torch.as_tensor(np.cumsum(gaps_all),dtype=torch.float64,device=device)
+   samp["relative_weeks"]=exact_times
    cur,p_h,rm,qs,tail,mass=fpt_summary(samp,H)
    # Source-event closure uses only arrived records.
    for i,r in enumerate(bi):

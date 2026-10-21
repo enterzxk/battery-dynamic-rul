@@ -1,0 +1,1 @@
+Legacy already-public prediction evidence, losslessly re-encoded to retain all history inside the existing12MiB mirror cap. Original scientific server files and prior Git history remain. decode.py lists files or prints exact restored UTF-8 text; validation.json binds every original byte hash. No raw battery signals or model weights.

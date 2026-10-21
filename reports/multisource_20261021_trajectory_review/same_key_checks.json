@@ -1,0 +1,19 @@
+{
+  "exact_join_keys": [
+    "cell_id",
+    "arm",
+    "query_epoch"
+  ],
+  "matched_rows": 7158,
+  "distinct_cells": 61,
+  "cells_per_arm": {
+    "raw": 61,
+    "sparse2": 61,
+    "delay7d": 61
+  },
+  "max_abs_target_difference_Ah": 0.0,
+  "max_abs_horizon_difference_weeks": 0.0,
+  "bootstrap_replicates": 30000,
+  "bootstrap_seed": 20261021,
+  "bootstrap_unit": "physical cell; paired within cell"
+}

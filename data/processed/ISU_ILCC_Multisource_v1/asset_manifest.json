@@ -1,0 +1,46 @@
+{
+  "schema": "ISU_ILCC_MULTISOURCE_FEATURE_ASSET_V1",
+  "status": "SOURCE_FEATURES_COMPLETE_CLOCK_QUALIFIED_ON_QUERY",
+  "train_cells": 125,
+  "development_cells": 63,
+  "C4_payload_reads": 0,
+  "source_cycles": 1248949,
+  "valid_RPT_records": 4108,
+  "created_utc": "2026-10-21T11:31:12.910955+00:00",
+  "entries": {
+    "rpt_features": {
+      "path": "reports/multisource_20261021_signals/all188_rpt_features_v1/manifest.json",
+      "sha256": "f431eb082f09f455e8edec1cc62e944e116cea1a97544ca3b18abe5d6064c255"
+    },
+    "cycling_features": {
+      "path": "reports/multisource_20261021_signals/cycling_all188_feature_manifest.json",
+      "sha256": "51e4c87fc7e59cee6afe2bb79fabb9e72070d98ca6d457c124c553d0b05018cb"
+    },
+    "rpt_extraction": {
+      "path": "reports/multisource_20261021_signals/extract_rpt_signal_features_all188.py",
+      "sha256": "e0ea725e0b5ce0c6642fda88608a58dfebe7be86b8d50dffaa38a0e7b5a2e818"
+    },
+    "cycle_query_adapter": {
+      "path": "reports/multisource_20261021_signals/cycle_asof_features.py",
+      "sha256": "6602c0f4b70a77d36177f87822bee279fb461b1fa2bda42acb3f528c5a0376af"
+    },
+    "factorial_query_adapter": {
+      "path": "experiments/multisource_factorial_20261021/features.py",
+      "sha256": "a6080b915e7f1ae46ec34c172bd0de84ddfd480efb2818eb562d6358c18e88d9"
+    },
+    "feature_contract": {
+      "path": "reports/multisource_20261021_signals/sourcefeature_contract.json",
+      "sha256": "51d2f787d2029ac9e0620f20e8812320e23a04a9503b44560c1b461f2098a39e"
+    },
+    "interpretation": {
+      "path": "reports/multisource_20261021_signals/FEATURE_INTERPRETATION_ZH.md",
+      "sha256": "465fda5a21497bde9838fc7fb0d63b1b913ab40f4d93ed3ba4c93a1d8dd4f28e"
+    },
+    "readme": {
+      "path": "data/processed/ISU_ILCC_Multisource_v1/README_ZH.md",
+      "sha256": "013021afbb7132d01d3614b94700bc5b2bfcfad43c3a0021d356abb20a485fcf"
+    }
+  },
+  "clock_rule": "retainallsource rows,excludeunknownboth-legcompletionfrommodelindex; no imputedclock; countsareauditonly",
+  "actual_arrival": "notobserved; explicitexperimental assumptions inreadme"
+}
