@@ -1,0 +1,31 @@
+{
+  "status": "APPROVED",
+  "request_id": "MULTISOURCE_F0F1F2_HGB_CATBOOST_SEED42_20261021",
+  "owner_thread_id": "01a15c3a-1a06-7d61-8517-27b70b246183",
+  "issued_utc": "2026-10-21T02:27:36.860146+00:00",
+  "allow_fit": true,
+  "fit_budget": 20,
+  "source_sha256": {
+    "experiments/multisource_information_20261021/runner.py": "4f61ebf77af6b1c9cbbf8ca0c20097ff053420cacf7845b8ba990776130e73a7",
+    "experiments/multisource_information_20261021/protocol.json": "246e5c95a9e3ac1a55cd0796860e4bf897d97435ff5f6eb61f2f4d8176bfa1d4",
+    "experiments/dart_rul_v18/data_protocol.py": "be0b0d14f3034047b009aed8208d7a961c70312ae202b774e556193a2bb53a8c",
+    "experiments/dart_rul_v18/hgb_models.py": "df341c5a1a495b23c9236cfc884a340de69df5752a5f89531b0a404f9227b543",
+    "experiments/dart_rul_v18/evaluate.py": "8c0a8101da99d5e0761c7f61794ec3436ca1c39e68438396d3d9ef1470772e8a",
+    "experiments/isu_irregular_rul_seed42_v1/train_eval.py": "793a4682c96d2db48b806ea13c850f878c96cff4ee6b75f636ec75b05c4a2d4e",
+    "experiments/isu_irregular_rul_seed42_v1/baselines.py": "a8f537e2f2676e9c4a20909c530223bab20521fc7457e544cab092515610187e",
+    "experiments/isu_irregular_rul_seed42_v1/data_adapter.py": "d5effc7ab9aa946feee717e8490983e6ccbebf890492b456091ac49a942763f3"
+  },
+  "manifest_sha256": "68f53dc481dfc212896658a9bcb69780b5ed7285d853cc870a4002ae658726e1",
+  "cohort_sha256": "4469f7f5b6eb8c26a522fa46c4291ec6d03d98e7ae5c20ce7ae77e835b849ae0",
+  "feature_cache": "/home/yndx/zxk/rul/reports/multisource_20261021_signals/all188_rpt_features_v1",
+  "feature_cache_sha256": "f431eb082f09f455e8edec1cc62e944e116cea1a97544ca3b18abe5d6064c255",
+  "old_assets": {
+    "experiments/dart_rul_v18/runs/run1/seed42/hgb/hgb_hurdle_classifier_full.joblib": "7375620f4bac0d96673a1969edeb84d1c3dd5de5768b72f45497d38736d05fa4",
+    "experiments/dart_rul_v18/runs/run1/seed42/hgb/hgb_hurdle_positive_full.joblib": "7564a893f3f66a706b63997943a05be0c11b9035d61566871204953ffbcd1210",
+    "experiments/dart_rul_v18/runs/run1/seed42/hgb/hgb_hurdle_distribution.joblib": "ff0ede08f1fc8ac5bb04056492bf8d9cd07a06fa7d6f515c94c458c85f1abcf1"
+  },
+  "output": "/home/yndx/zxk/rul/experiments/multisource_information_20261021/run1",
+  "max_runtime_seconds": 14400,
+  "max_prediction_rows": 22590,
+  "review": "Root full runner source plus independent review/addendum. F0 exact V18 hurdle reused; F1/F2 same rows/current source event/positive target rules; each OOF fit physical-cell isolated, native missingness, no future raw feature. Full features verified against source stop. All 20fits before dev inference. No C4. One seed exploratory information study, not confirmation."
+}

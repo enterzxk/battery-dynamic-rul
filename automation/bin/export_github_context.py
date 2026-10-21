@@ -358,6 +358,23 @@ def main():
     chosen.update('experiments/dart_rul_v18/'+n for n in ['RESULTS_ZH.md','protocol.json','data_protocol.py','hgb_models.py','neural_models.py','distributions.py','evaluate.py','benchmark.py','recover_evaluation.py','arrival_panel.py','analyze_saved_v2.py','analysis_v2/root_decision.json','analysis_v2/three_seed_arm_summary.csv','analysis_v2/arrival_summary.csv','analysis_v2/hidden_and_negative_probability.csv'])
     chosen.add('reports/dart_literature_v18_20261021_luna/NOVELTY_REVIEW_ZH.md')
 
+    # Multisource pilot: reviewed reports/code only; raw curve/cycling caches excluded.
+    compact = ROOT/'reports/public_evidence_compaction_multisource_20261021_root'
+    chosen.difference_update(json.loads((compact/'paths.json').read_text()))
+    BINARY_PREDICTION_ARCHIVES.add('reports/public_evidence_compaction_multisource_20261021_root/archive.bin')
+    chosen.update('reports/public_evidence_compaction_multisource_20261021_root/'+n for n in ['archive.bin','validation.json','decode.py','README.md'])
+    chosen.update('experiments/multisource_information_20261021/'+n for n in ['runner.py','protocol.json','ROOT_GO.json','RESULTS_ZH.md','MULTISOURCE_F0F1F2_HGB_CATBOOST_SEED42_20261021_receipt.json','run1/arm_summary.csv','run1/cell_metrics.csv','run1/reliability_bins.csv','review.json','review_addendum.md'])
+    chosen.add('experiments/multisource_factorial_20261021/design.json')
+    chosen.update('reports/multisource_20261021_signals/'+n for n in ['extract_rpt_signal_features_all188.py','extract_cycling_stream_features.py','ROOT_GO_ALL188.json'])
+    chosen.update('reports/multisource_20261021_literature/'+n for n in ['COMPETITION_REVIEW_ZH.md','fulltext_evidence.json','information_independent/INDEPENDENT_RECOMPUTE_ZH.md','information_independent/recompute.py','information_independent/independent_results.json'])
+    chosen.update('reports/multisource_20261021_literature/information_figure/'+n for n in ['plot.py','figure_contract.json','figure_source_summary.csv','figure_source_paired.csv','rpt_information_pilot.svg','alignment.json','collision.json','VISUAL_QA.md'])
+    chosen.update('experiments/multisource_mechanisms_20261021/train_v1/'+n for n in ['runner.py','targets.py','mechanisms.py','DESIGN_AND_INTERFACES_ZH.md','ROOT_GO.json','runs/run1/receipt.json'])
+    chosen.add('experiments/multisource_mechanisms_20261021/evaluate_v1.py')
+
+    chosen.discard('experiments/multisource_information_20261021/run1/cell_metrics.csv')
+    BINARY_PREDICTION_ARCHIVES.add('experiments/multisource_information_20261021/public_cell_metrics/archive.bin')
+    chosen.update('experiments/multisource_information_20261021/public_cell_metrics/'+n for n in ['archive.bin','validation.json','decode.py'])
+
     contents, files, skipped, binary_blobs = {}, [], [], {}
     mapping = {'README.md': 'docs/GITHUB_README_ZH.md', 'agent.md': 'AGENTS.md'}
     mapping.update({rel: rel for rel in sorted(chosen)})

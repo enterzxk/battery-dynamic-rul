@@ -1,0 +1,37 @@
+{
+  "status": "APPROVED",
+  "allow_fit": true,
+  "request_id": "MULTISOURCE_B_PATH_SEED42_2FITS_1000STEPS_20261021",
+  "owner_thread_id": "01a15c3a-1a06-7d61-8517-27b70b246183",
+  "issued_utc": "2026-10-21T02:28:49.600186+00:00",
+  "source_sha256": {
+    "experiments/multisource_mechanisms_20261021/train_v1/mechanisms.py": "8e68fc5691970e4d649ef64ab4de556b4ff093c8f01a93020597001941af51ec",
+    "experiments/multisource_mechanisms_20261021/train_v1/targets.py": "bda085c03894486c9ea44cf9037c0c8aa4bc9183daefdf223540b52e98535618",
+    "experiments/multisource_mechanisms_20261021/train_v1/runner.py": "eab18620001317b1f32893ea5bf5c7b46edf806bcdd16fc0ed74dc70ea14f2b0",
+    "experiments/dart_rul_v18/protocol.json": "289fb7f076adc98d94a59f0b533fec00e198758ef0de46b6911f8a0576a47791",
+    "experiments/dart_rul_v18/data_protocol.py": "be0b0d14f3034047b009aed8208d7a961c70312ae202b774e556193a2bb53a8c",
+    "experiments/isu_irregular_rul_seed42_v1/train_eval.py": "793a4682c96d2db48b806ea13c850f878c96cff4ee6b75f636ec75b05c4a2d4e",
+    "experiments/isu_irregular_rul_seed42_v1/data_adapter.py": "d5effc7ab9aa946feee717e8490983e6ccbebf890492b456091ac49a942763f3",
+    "experiments/isu_irregular_rul_seed42_v1/baselines.py": "a8f537e2f2676e9c4a20909c530223bab20521fc7457e544cab092515610187e"
+  },
+  "cohort_sha256": "4469f7f5b6eb8c26a522fa46c4291ec6d03d98e7ae5c20ce7ae77e835b849ae0",
+  "manifest_sha256": "68f53dc481dfc212896658a9bcb69780b5ed7285d853cc870a4002ae658726e1",
+  "seed": 42,
+  "models": [
+    "full",
+    "independent"
+  ],
+  "max_steps_per_model": 500,
+  "batch_size": 64,
+  "learning_rate": 0.001,
+  "max_runtime_seconds": 10800,
+  "output_path": "/home/yndx/zxk/rul/experiments/multisource_mechanisms_20261021/train_v1/runs/run1",
+  "receipt_path": "/home/yndx/zxk/rul/experiments/multisource_mechanisms_20261021/train_v1/receipts/run1.json",
+  "device": "cuda",
+  "threads": 4,
+  "schedule_horizon_weeks": 128,
+  "schedule_quantiles": 16,
+  "review": "Root read full initial code + train-only scaler,row-balancedNLL,CPU/GPUlocks,active-mask/source-clock delta. Fit source irregular increments, no RUL loss; first real minibatch finite gradients checked inside counted training; failed fits consumed. Seed42 development prototype, not novel by GRU or FPT alone, no C4, no checkpoint selection. Empirical future inspection schedule distinct estimand from actual source future schedule.",
+  "code_manifest_sha256": "3adab7feffd0710a5c9ded1ac960dc5bb8018ef882d03f10fb9c145d1e07069a",
+  "schedule_contract_sha256": "c4255431723c0cbb374a779bdabe785ba90f5887bca28c6a42ede0a2fc16740b"
+}

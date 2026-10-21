@@ -1,0 +1,44 @@
+{
+  "version": "MULTISOURCE_INFORMATION_20261021",
+  "status": "FROZEN_BEFORE_NEW_FITS",
+  "scientific_question": "Incremental value of full raw RPT scalar and voltage curve history beyond the frozen 74 features",
+  "scope": {
+    "train": "frozen C1/C2 125",
+    "development": "C3 63",
+    "confirmation": "C4 payload forbidden",
+    "target": "first original source RPT Q<=0.20Ah at source stop, not latent physical EOL",
+    "unknown_stop": "Within recorded source window current source-observed event label0 is valid if no source RPT crossed; future RUL/outcome unknown and masked, never independent censoring or latent-EOL negative."
+  },
+  "time_protocol": "exact V18 complete-window queries and 3 arms raw/sparse2/delay7d; arrived feature sample stop<=arrival<=query, sparse filtering before feature construction",
+  "levels": {
+    "F0": "V18 74 causal summary features",
+    "F1": "F0 plus C2/C5 charge/discharge capacities normalized by nominal .25Ah, latest/difference from first actually arrived RPT/past calendar slope",
+    "F2": "F1 plus 4 charge/discharge C2/C5 Q(V) and dQdV curves on fixed 3.00:0.05:4.20V grid, latest/difference/past slope, no test-derived normalization",
+    "F3": "reserved for real Cycling signals; no F3 claim until extracted and source-time audited"
+  },
+  "missing": "native NaN handling HGB/CatBoost; preserve missingness, no extrapolation",
+  "baselines": {
+    "hgb": "same V18 150iter/15leaves/l2=1, seed42; F0 load existing saved classifier/regressor/cellOOF residuals; F1/F2 4fits each",
+    "catboost": "400iterations/depth5/lr.04/l2=3/thread4/seed42, F0/F1/F2 4fits each; no dev stopping/tuning",
+    "distribution": "event atom plus log-RUL positive component with 2 physical-cell OOF residual empirical CDF, all fits finished before dev inference",
+    "weight": "each physical cell total mass1, arms/common queries balanced as V18"
+  },
+  "budget": {
+    "new_CPU_fits": 20,
+    "neural_fits": 0,
+    "old_HGB_asset_loads": 3,
+    "seed": [
+      42
+    ],
+    "max_runtime_seconds": 14400,
+    "C4_payload_reads": 0,
+    "old_refits": 0
+  },
+  "evaluation": {
+    "primary_information_evidence": "paired F1-F0 and F2-F1/F0 cell-equal mean RUL MAE in full/unknown-event strata and all 3 arms, event Brier and IS80 tradeoff; no universal 5percent research stop",
+    "additional": "Brier4/12,logscore including infinities,coverage,severe over4w,per-cell deltas and bootstrap intervals; development only",
+    "scope_limit": "not deployment or independent confirmation; noT future targets masked"
+  },
+  "mechanism_stage": "candidate B and cycling-driven A separately evaluated, cannot call HGB information gains new model novelty",
+  "prior_results": "V18 NO_GAIN and all consumed budgets preserved"
+}

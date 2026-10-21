@@ -1,0 +1,52 @@
+{
+  "version": "MULTISOURCE_2X2_USER_SUPPLEMENT_20261021",
+  "status": "DESIGN_BEFORE_FACTORIAL_FITS",
+  "factors": {
+    "RPT_curve": false,
+    "Cycling": false
+  },
+  "levels": {
+    "F0": {
+      "RPT_curve": false,
+      "Cycling": false,
+      "inputs": "same frozen74+legally arrived capacity history"
+    },
+    "F1": {
+      "RPT_curve": true,
+      "Cycling": false,
+      "inputs": "F0+RPT scalar/curve features at RPT completed stop and protocol arrival"
+    },
+    "F2": {
+      "RPT_curve": false,
+      "Cycling": true,
+      "inputs": "F0+actual source cycling signals completed by query; no future operations"
+    },
+    "F3": {
+      "RPT_curve": true,
+      "Cycling": true,
+      "inputs": "union of F1 and F2"
+    }
+  },
+  "pilot_separate": "experiments/multisource_information_20261021 is nested original74->extraRPTcapacity->RPTcurve pilot. Its F1/F2 names are historical and NOT formal factorial labels.",
+  "cohort": "C1/C2 train,C3 development,C4 locked; same-condition new cells only; unseen condition requires train-internal group holdout",
+  "controls": [
+    "match physical cells,queries and RPT arrival protocol across all four arms",
+    "same RPT sparse2/delay7d hide all RPT signal fields together",
+    "running signals retain actual source-time availability and continue between RPT arrivals",
+    "direct HGB/CatBoost each see exactly same factor inputs as mechanism models",
+    "train-only preprocessing, no actual future operations or future actual inspection schedule input",
+    "curve information control: Q(V)/Qtotal normalization, capacity-matched endpoints, shape-only vs magnitude, derivative redundancy",
+    "no-new-RPT paired query panel: time-only update vs actual operating update",
+    "source-event T defined exact first source RPT Q<=.20Ah at stop, not latentphysicalfirstpassage",
+    "source-gap and missing capacities preserved, observed-throughput distinct from totalnativeEFC"
+  ],
+  "scientific_questions": [
+    "Q1 additionalinformation",
+    "Q2 updates_betweenRPT",
+    "Q3 probability_RPTupdate",
+    "Q4 trajectory_mechanismvalue",
+    "Q5 stage_density_delay_condition_boundaries"
+  ],
+  "old_budgets": "preserve pilot20CPU+2neural1000steps and old57CPU18neural6281steps; no consumed GO reuse",
+  "C4_payload_allowed": false
+}

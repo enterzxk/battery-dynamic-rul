@@ -1,0 +1,8 @@
+{
+  "original_path": "experiments/multisource_information_20261021/run1/cell_metrics.csv",
+  "original_bytes": 646597,
+  "original_sha256": "ccf306ce3c8ed293dd11866839d6326de5d190f6d772450aad7c6d90f477b32e",
+  "archive_bytes": 221471,
+  "archive_sha256": "10b45bf32fe02edf21ed35fb17702a6f8b8fb9df3b684dbee4b4745ffbb0702d",
+  "roundtrip": "PASS"
+}

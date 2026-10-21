@@ -1,0 +1,27 @@
+{
+  "status": "SUCCESS",
+  "CPU_fits_started": 20,
+  "CPU_fits_completed": 20,
+  "old_model_loads": 3,
+  "prediction_rows": 22590,
+  "C4_payload_reads": 0,
+  "data": {
+    "train_queries": 6870,
+    "development_queries": 3765,
+    "train_cells": 124,
+    "dev_cells": 62
+  },
+  "dimensions": {
+    "F0": 74,
+    "F1": 86,
+    "F2": 686
+  },
+  "nonfinite_fraction": {
+    "F0": 0.0,
+    "F1": 0.0,
+    "F2": 0.09520711590937062
+  },
+  "all_fits_completed_before_dev_prediction": true,
+  "output": "/home/yndx/zxk/rul/experiments/multisource_information_20261021/run1",
+  "elapsed_seconds": 51.360300064086914
+}

@@ -1,0 +1,18 @@
+{
+  "claim": "Raw RPT curve history adds development information beyond 74 summary features, with cell-level heterogeneity.",
+  "archetype": "quantitative grid",
+  "backend": "Python matplotlib; existing Python experimental workflow",
+  "panel_roles": {
+    "a": "HGB information-level average error",
+    "b": "CatBoost independent model family information-level error",
+    "c": "all61 paired HGB per-cell effects",
+    "d": "all61 paired CatBoost per-cell effects"
+  },
+  "scope": "Nested RPT pilot only. Formal F0/F1/F2/F3 2x2 not completed. One seed, C3 development; no independent confirmation.",
+  "source": "frozen saved predictions, no models/raw data",
+  "dimensions_mm": [
+    183,
+    118
+  ],
+  "uncertainty": "bottom panels show each cell and mean with 95percent paired-cell bootstrap interval,10000 resamples seed20261021. Top panels aggregate same61 observed-event cells and show no seed uncertainty; this is a descriptive single-seed aggregate."
+}

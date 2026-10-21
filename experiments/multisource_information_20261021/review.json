@@ -1,0 +1,24 @@
+{
+  "review_scope": "runner code/config only; no feature payload, model asset, raw data, or C4 read",
+  "status": "MUST_FIX_BEFORE_GO",
+  "must_fix": [
+    {
+      "issue": "Unknown-stop cells are trained as negative event labels, and this changes the training cohort relative to reused F0 HGB.",
+      "evidence": [
+        "protocol.json:10 declares unknown_stop as event outcome unknown, with no independent censoring or future RUL targets",
+        "dart_rul_v18/data_protocol.py:79-80 sets event_epoch=None when no observed threshold event; lines 101-102 then set target=None but y_event=0",
+        "runner.py:74 includes all loaded train cells; runner.py:82 builds ye from every tr row and fits event classifiers on it at line 103",
+        "isu_irregular_rul_seed42_v1/train_eval.py:39-44 used to fit the reused F0 HGB only on cells with event_observed=True"
+      ],
+      "required_resolution": "Before GO, reconcile protocol and implementation: exclude unknown-stop cells from target-bearing training/evaluation consistently across all model variants and reused F0 assets, or define a justified observed-outcome likelihood. The current protocol explicitly rejects an independent-censoring assumption, so treating unknown as event-negative is invalid. Recompute/bind the exact eligible training cohort and asset provenance in GO."
+    }
+  ],
+  "checks_passed_from_code": [
+    "F1/F2 records are drawn from visible_records; runner asserts latest arrival_epoch <= query_epoch, and V18 make_examples filters arrivals at query time.",
+    "F0 uses x_query; same level-specific matrix is used for HGB and CatBoost.",
+    "Positive-RUL residual folds are grouped by physical cell ID; held-cell predictions produce OOF residuals.",
+    "Hyperparameters are fixed in constructors; no dev-based tuning/stopping is present; dev prediction begins after all 20 new fits complete.",
+    "Fit accounting is 5 new model-level variants x (event + 2 OOF regressors + full regressor) = 20; F0 HGB reuses 3 assets with GO-bound hashes."
+  ]
+}
+EOF

@@ -1,0 +1,51 @@
+{
+  "format": "zlib compressed UTF8 JSON path->original text, exact UTF8 bytes",
+  "source_bytes": 2591796,
+  "archive_bytes": 1949181,
+  "archive_sha256": "3b70b44d2a7fd257c878f79ae1af1be07cc50d3d8a2598efae8cf3554c8474b3",
+  "files": {
+    "experiments/online_survival_robust_rate_seed42_v1/published_predictions_columnar.json": {
+      "bytes": 508521,
+      "sha256": "51775cd46d561fb5f2a41765f01acdd6336705a82dcf40902a1f2cefbe3751e7"
+    },
+    "experiments/matr_raw_heldout_calibration_seed42_v1/published_predictions.json": {
+      "bytes": 452474,
+      "sha256": "ba21da98e23e6230f42815eeb045356720e5493526c7d2fdba27ad7d04ab3b4d"
+    },
+    "experiments/policy_oof_cdf_seed42_v1/predictions_lossless.json": {
+      "bytes": 406298,
+      "sha256": "40a8a224390bd1b19b3b6b7ffb1cc4ac54592ec3fecfa830f8bc3530d9a2619c"
+    },
+    "experiments/policy_fit_scale_seed42_v1/fit_residual_predictions_lossless.json": {
+      "bytes": 249443,
+      "sha256": "6a0389405fdfec39f757e579676c896294296044a0e3b896da19fddf08053ed0"
+    },
+    "reports/completed_static_lossless_20261019_root/archive.json": {
+      "bytes": 217253,
+      "sha256": "f0bb042f16fde898ca119cf21406d1b27c9eeb1b126771d69acd5aa17b2dec89"
+    },
+    "experiments/lossless_equal_CDF_mixture_v2/public_quantiles_lossless.json": {
+      "bytes": 165852,
+      "sha256": "7041b6ca6aedc89f7d6a4d304b3549ed3edf63f055671e95ae02708cdaac7e7e"
+    },
+    "experiments/policy_lossless_schedule_point_seed42_v1/predictions_lossless.json": {
+      "bytes": 153130,
+      "sha256": "4f96ae05ebd8cfd9c4e6b66df3d9e8eed1c9db069aaddfb466ac2b6030e05e8d"
+    },
+    "experiments/policy_local_oof_cdf_fixed5_v1/predictions_lossless.json": {
+      "bytes": 146948,
+      "sha256": "4199febcf87882a46b336385b1e474bbf33100f3e6146158f6f4104ab98367f0"
+    },
+    "reports/completed_plaintext_lossless_20261019_root/archive.json": {
+      "bytes": 146658,
+      "sha256": "71fde4b2a64a3dbdc12eb70b56e8a17b81279f04b5754edcd72b198b5b867656"
+    },
+    "reports/completed_cpmlp_predictions_lossless_20261019_root/archive.json": {
+      "bytes": 145219,
+      "sha256": "4e6a429e893e24633ea2356add5d416df3acfc00df38e0e35560f8531f834589"
+    }
+  },
+  "roundtrip": "PASS",
+  "original_server_files_retained": true,
+  "prior_public_commits_retained": true
+}
