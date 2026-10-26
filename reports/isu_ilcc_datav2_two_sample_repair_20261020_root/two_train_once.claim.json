@@ -1,0 +1,33 @@
+{
+  "status": "CLAIMED",
+  "issued_utc": "2026-10-20T12:46:54.570612+00:00",
+  "go_sha256": "fdb174dc18544cfe36b809d72859a387f696e4e42084b34016c6587338c2246c",
+  "go_bindings": {
+    "owner": "01a15846-1ade-7623-88ff-98dd7f94f4fd",
+    "protocol_sha256": "94e0b2b4b810233a9e472f6383d8d45356970ed4df63fe7eeb00abcfa10d7c3e",
+    "runner_sha256": "36c6d0234f97cd89b124de64cd491041e2fd0b52448d8bbf4a32a42ad18b141d",
+    "receiver_sha256": "36c6d0234f97cd89b124de64cd491041e2fd0b52448d8bbf4a32a42ad18b141d",
+    "cohort_sha256": "4469f7f5b6eb8c26a522fa46c4291ec6d03d98e7ae5c20ce7ae77e835b849ae0",
+    "source_receipt_sha256": "a8bfda36e0c844429997b84c868a256f6e96bc468211e072ed828fbbc6bee233",
+    "scope_sha256": "a996ff82e1e7475042cd8fd19c4bfb0a0bcaf0493ba02524b651eded0e3e8b65",
+    "archive_scope_sha256": "c492d38ceda2f25801d39ef3db4cd9b6c131a6a3921a8e20b10c7b2dad6e19c4",
+    "review_sha256": "ead2457fb678ffa6922e3f7dc6c5c870683354651627fa6c82a5e17abc0d82c0",
+    "source_etag": "\"36331bf80f21d00e19a9a45095f542e8\"",
+    "source_archive_id": 43756491,
+    "source_archive_bytes": 929406930,
+    "max_logical_get": 4,
+    "max_network_body_bytes": 12500000,
+    "max_uncompressed_total_bytes": 134217728,
+    "members": [
+      "RPT_json/Release 1.0/G1C1.json",
+      "RPT_json/Release 1.0/G20C1.json"
+    ],
+    "new_fits": 0,
+    "locked_reads": 0,
+    "training_allowed": false,
+    "controller_sha256": "416b37615827fc3dabb681756b94fe01670ec4a7aa1287c3e929fcf07e752081"
+  },
+  "network_body_bytes": 0,
+  "logical_gets": 0,
+  "members": {}
+}

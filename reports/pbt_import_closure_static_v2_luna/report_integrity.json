@@ -1,8 +1,0 @@
-{
-  "status": "PASS",
-  "report_path": "/home/yndx/zxk/rul/reports/pbt_import_closure_static_v2_luna/report_zh.md",
-  "report_sha256": "807b3ed9c77c228f18f959eae476f9e64c8456f8a9b31d9747b2a39fda184ed6",
-  "bytes": 5467,
-  "c0_bytes_other_than_lf_tab": [],
-  "embedded_tab_or_bell_in_path_lines": false
-}

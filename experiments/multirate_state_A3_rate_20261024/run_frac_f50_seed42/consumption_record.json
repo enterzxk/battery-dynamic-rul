@@ -1,0 +1,14 @@
+{
+  "request_id": "A3_FRAC_F50_20261024_RUN1",
+  "go_sha256": "27fc228a93fd6a5da68c26f3e89466bf0fd486c012d6a1b9637a6d24b84b5c54",
+  "fits_in_this_go": 2,
+  "arms": [
+    "full"
+  ],
+  "refit_scope": "frac_pool",
+  "fraction": 0.5,
+  "fraction_seed": 42,
+  "n_pool_cells": 125,
+  "n_chosen_cells": 62,
+  "out_dir": "/home/yndx/zxk/rul/experiments/multirate_state_A3_rate_20261024/run_frac_f50_seed42"
+}

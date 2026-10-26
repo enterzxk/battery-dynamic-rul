@@ -1,7 +1,0 @@
-{
-  "time_utc": "2026-10-15T16:38:23.133465+00:00",
-  "stage": "labels archive member lookup before any pickle hash/decode",
-  "error": "KeyError: HUST_labels.json not at zip root",
-  "actual_member": "Life labels/HUST_labels.json",
-  "pickle_decode_started": false
-}

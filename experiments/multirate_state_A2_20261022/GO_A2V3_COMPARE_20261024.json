@@ -1,0 +1,45 @@
+{
+  "status": "APPROVED",
+  "request_id": "A2V3_VS_ALL_SAME_KEY_20261024_RUN1",
+  "owner_thread_id": "01a15c3a-1a06-7d61-8517-27b70b246183",
+  "issued_utc": "2026-10-24T04:00:00Z",
+  "max_fits": 0,
+  "allow_saved_prediction_read": true,
+  "allow_checkpoint_read": false,
+  "allow_source_payload_read": false,
+  "allow_C4": false,
+  "scope": "A2-V3 burn-in-fix control vs A3 four arms, all-125 A2, old-100 A2 and eight trees, same global key intersection, 0 fits",
+  "source_sha256": "fd954a86eeafb86e65d7c0e91767b1d778d5f27d00be341ddb3ad46a435c1dd3",
+  "inputs": {
+    "A3": {
+      "path": "/home/yndx/zxk/rul/experiments/multirate_state_A3_rate_20261024/c3_eval_a3_20261024_run2/predictions_c3_a3.csv",
+      "sha256": "9aa4871d498d2ab7dcb847ad0ca0647c33fc7a72be7344a7b346d513a4bf523b"
+    },
+    "A2": {
+      "path": "/home/yndx/zxk/rul/experiments/multirate_state_A2_fullrefit_20261023/c3_eval_run2/predictions_c3_a2.csv",
+      "sha256": "6d97edc26f2ab884349476768a51aa2a6a320885a07b2f77621e3cb6f5e45f10"
+    },
+    "A2_old": {
+      "path": "/home/yndx/zxk/rul/experiments/multirate_state_A2_20261022/c3_eval_v2_20261022/predictions_c3_a2.csv",
+      "sha256": "72a2d955f765a25a8f522602e117d4effa554c0918aa097f136ddc3e89118090"
+    },
+    "A2_v3": {
+      "path": "/home/yndx/zxk/rul/experiments/multirate_state_A2_fullrefit_20261023/c3_eval_v3_20261024/predictions_c3_a2.csv",
+      "sha256": "e04b7a3cb5544d57ff4aa92f4cc92daf8da265105a4b2cc720738d498135f807"
+    },
+    "F0": {
+      "path": "/home/yndx/zxk/rul/experiments/trajectory_strong_baselines_20261021/runs/q4_strong_baselines_20261021_run2/predictions_c3.csv",
+      "sha256": "f1addad1f435458b7bf68e686dd0816e13a2b45cffd4e1d679519ad4c3486d69"
+    },
+    "multisource": {
+      "path": "/home/yndx/zxk/rul/experiments/trajectory_multisource_nextcap_20261021/runs/nextcap18-9e7d9cb1c67f/predictions_c3.csv",
+      "sha256": "0c69390362cba156cd20158ce760d23c837d73963b3dd53bac0539649e364410"
+    }
+  },
+  "output": "/home/yndx/zxk/rul/experiments/multirate_state_A2_20261022/same_key_compare_v3_run1",
+  "receipt_path": "/home/yndx/zxk/rul/experiments/multirate_state_A2_20261022/GO_A2V3_COMPARE_20261024_receipt.json",
+  "inference_go": {
+    "request_id": "A2_V3_C3_INFER_20261024_RUN1",
+    "go_sha256": "2c8597fac9bf9323529337fa955e1ff4e9380eb7d5a7c566bbc99b6bfdf63b63"
+  }
+}

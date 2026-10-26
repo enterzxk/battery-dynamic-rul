@@ -1,0 +1,15 @@
+{
+  "status": "SUCCESS",
+  "GO_sha256": "19bb51cefc9399b520ec5d719a099a7f635ec3fa3dce2e5287ee764ba5451aac",
+  "fits_started": 3,
+  "fits_completed": 3,
+  "optimizer_steps": 1200,
+  "C4_reads": 0,
+  "C3_reads": 0,
+  "raw_archive_reads": 0,
+  "checkpoint_reads": 0,
+  "pid": 650242,
+  "started_utc": "2026-10-23T02:36:45.508592+00:00",
+  "prepared_cache_bytes": 46203449,
+  "elapsed_seconds": 65.72065663337708
+}

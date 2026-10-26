@@ -1,8 +1,0 @@
-{
-  "rows": 4567,
-  "minimum_log_survival": -5.207934789489853,
-  "max_log_conditional_median_identity_error": 7.216449660063518e-15,
-  "minimum_conditional_RUL": 15.873275150566599,
-  "nonpositive_conditional_outputs": 0,
-  "fixed_expired_origins": 756
-}

@@ -1,0 +1,62 @@
+{
+  "status": "COMPLETE_NO_FITS_NO_DEV_TUNING",
+  "fits": 0,
+  "optimizer_steps": 0,
+  "real_run": true,
+  "request_id": "A3_CALIBRATE_20261024_RUN2",
+  "go_sha256": "9b5ad6b6c65c13275605110281ca166fc61fa037ebc0db8e9fe14e59e12eb495",
+  "checkpoint": {
+    "path": "/home/yndx/zxk/rul/experiments/multirate_state_A3_rate_20261024/run1_fits/model_state_dict_full.pt",
+    "sha256": "4b46c92902925c972ac6f5fbbf80396c915a93c6bca1ac07547a78772c6b5820"
+  },
+  "model_arm": "A3_full",
+  "train_rows": 6498,
+  "n_train_queries": 6498,
+  "s": 1.3407351294375938,
+  "train_walker_counters": {
+    "n_cells": 125,
+    "n_rows": 6498,
+    "optimizer_steps": 0,
+    "fits": 0
+  },
+  "honest_flag": "TRAIN_CALIBRATION_INSUFFICIENT",
+  "calibrated_alpha5_cell_macro_all": 0.18230710438648556,
+  "payload_reads": {
+    "files_by_kind": {
+      "go_pinned_checkpoint": 1,
+      "go_pinned_prep_manifest": 1,
+      "go_pinned_prep_npz": 1,
+      "go_pinned_rpt_manifest": 1,
+      "go_pinned_tree_csv": 1,
+      "go_pinned_c3_predictions_csv": 1,
+      "schedule_dir_file": 6,
+      "rpt_manifest": 1,
+      "prep_manifest": 1,
+      "prep_npz": 1,
+      "tree_reference_csv": 1,
+      "rpt_features_json": 186,
+      "checkpoint": 1,
+      "c3_predictions_csv": 1
+    },
+    "bytes_by_kind": {
+      "go_pinned_checkpoint": 16788,
+      "go_pinned_prep_manifest": 130615,
+      "go_pinned_prep_npz": 46203449,
+      "go_pinned_rpt_manifest": 75198,
+      "go_pinned_tree_csv": 3508825,
+      "go_pinned_c3_predictions_csv": 14593331,
+      "schedule_dir_file": 382712,
+      "rpt_manifest": 75198,
+      "prep_manifest": 130615,
+      "prep_npz": 46203449,
+      "tree_reference_csv": 3508825,
+      "rpt_features_json": 61304885,
+      "checkpoint": 16788,
+      "c3_predictions_csv": 14593331
+    },
+    "bytes_total": 190744009
+  },
+  "elapsed_seconds": 360.953649520874,
+  "finished_utc": "2026-10-24T09:00:47.617468+00:00",
+  "registered": true
+}

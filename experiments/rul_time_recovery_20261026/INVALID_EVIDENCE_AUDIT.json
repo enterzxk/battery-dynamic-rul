@@ -1,0 +1,28 @@
+{
+  "status": "INVALID_FOR_GENERALIZATION",
+  "scope": "RUL hybrid 20261026 only; preserve other historical evidence",
+  "source_path": "/tmp/rulhyb.py",
+  "source_sha256": "a3493c1eeb42dbddde8374ede1b46ea0d1454b893275fbcef3a614c4094d3a94",
+  "evidence_lines": {
+    "56": "load_split(development)",
+    "92-93": "fit and predict X_f3_dev",
+    "110-111": "hybrid fit and predict on same development set",
+    "125": "randomly shuffle queries instead of physical cells",
+    "78-79": "eval_mask calculated but not used in reported scoring"
+  },
+  "result_path": "experiments/multirate_state_A3_rate_20261024/rul_hybrid_20261026/result.json",
+  "result_sha256": "113433042bf8f2911e8900ae64cf5b23d461b00dd6a89ecd1199b7bf37a67e0b",
+  "invalid_claims": [
+    "0.506/0.522 weeks as generalization error",
+    "A3 states have no incremental RUL value"
+  ],
+  "conclusion": "Neither positive nor negative generalization conclusions are justified by this experiment.",
+  "other_limitations": [
+    "Missing event targets replaced with 200 weeks in that old script",
+    "Reported NLL calibration used in-sample residuals",
+    "Capacity-task C4 confirmation does not establish RUL competitive gain"
+  ],
+  "checked_utc": "2026-10-26T12:10:13Z",
+  "new_fits": 0,
+  "C4_reads": 0
+}

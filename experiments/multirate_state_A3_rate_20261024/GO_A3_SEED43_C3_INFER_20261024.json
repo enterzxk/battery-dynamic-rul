@@ -1,0 +1,114 @@
+{
+  "status": "APPROVED",
+  "allow_inference": true,
+  "allow_fit": false,
+  "allow_train": false,
+  "allow_C4": false,
+  "scope": "A3 C3 INFERENCE (seed-43 robustness replication checkpoints), frozen query contract, zero fits, C4 sealed",
+  "request_id": "A3_SEED43_C3_INFER_20261024_RUN1",
+  "owner_thread_id": "01a15c3a-1a06-7d61-8517-27b70b246183",
+  "issued_utc": "2026-10-24T16:00:00Z",
+  "issued_by": {
+    "controller": "ZCode CLI session 2026-10-24 (GLM-5.3-Flash)",
+    "delegation": "docs/ZCODE_CONTINUATION_20261024.json + docs/RESEARCH_GOAL_COMPETITIVE_20261024_ZH.md",
+    "review": "a3_infer.py self-check 11/11 verified twice on server; walker bit-exact equivalence fixtures; 25 GO mutations refused"
+  },
+  "data_scope": "C3_source63_development_only_no_C4_no_raw",
+  "device": "cpu",
+  "no_grad": true,
+  "max_rss_gb": 3.0,
+  "max_runtime_seconds": 7200,
+  "expected_cell_count": 63,
+  "code_sha256": {
+    "a3_infer.py": "a653818e9d7de3df52fc08a859a9f4ac159b215e4f43743124e5b6553e15b597",
+    "a3_model.py": "b3c6e1247095cf3e533c12f920d788a60d70066c96070d67bc19c7cee5e50b5d",
+    "a3_train.py": "648eeede3e3d22654c6cec63600ca65818d63a378ddaaa8100028e0409c92918",
+    "a2_infer.py": "1b290fc5fb2ec962125c99c1c2d12a81b546096ec8ffdb209184a1ea59fe76fc",
+    "a2_prep.py": "3b45d148696b830be6555527d6f162b391d18a9cd349851220b293da6454c0c4",
+    "a2_targets.py": "9c73696820e38257a131b421f4b70d3f6d57436eae8ee25da6f7d35ce0900901",
+    "a2_fastdata.py": "c82f00a2950f550087a7bda033b4347922e6cdc580b896b9cf8a22e6eaa33423",
+    "a2_model.py": "24b23883a18b7d4386930b52c582fc5c0bef452c0f2b0cb4cbdf7bab3b4c6c8f",
+    "a2_train.py": "11cf19e4ad21db950e16f32d235e4425cde130f74b0f37c44dc1cf47306563cb",
+    "a2_fixtures.py": "0dc22f205cb767a7d3cf60673eb3e33b6da4c35ac6aa48a7633dfbe4310e43a2"
+  },
+  "cohort": {
+    "path": "/home/yndx/zxk/rul/reports/isu_ilcc_capacity_probe_20261020_root/cohort.json",
+    "sha256": "4469f7f5b6eb8c26a522fa46c4291ec6d03d98e7ae5c20ce7ae77e835b849ae0"
+  },
+  "data_manifest": {
+    "path": "/home/yndx/zxk/rul/reports/isu_ilcc_datav2_full_20261020_root/data_manifest.json",
+    "sha256": "68f53dc481dfc212896658a9bcb69780b5ed7285d853cc870a4002ae658726e1"
+  },
+  "cycling_manifest": {
+    "path": "/home/yndx/zxk/rul/reports/multisource_20261021_signals/cycling_all188_feature_manifest.json",
+    "sha256": "51e4c87fc7e59cee6afe2bb79fabb9e72070d98ca6d457c124c553d0b05018cb"
+  },
+  "rpt_manifest": {
+    "path": "/home/yndx/zxk/rul/reports/multisource_20261021_signals/all188_rpt_features_v1/manifest.json",
+    "sha256": "f431eb082f09f455e8edec1cc62e944e116cea1a97544ca3b18abe5d6064c255"
+  },
+  "checkpoints": {
+    "full": {
+      "path": "/home/yndx/zxk/rul/experiments/multirate_state_A3_rate_20261024/runs_seed43/run1_fits/model_state_dict_full.pt",
+      "sha256": "227beafa73c85cd2f3144278d65bd59eacc36a9f9f2bcf55c03fe8f4f3b054f3"
+    },
+    "noRateUpdate": {
+      "path": "/home/yndx/zxk/rul/experiments/multirate_state_A3_rate_20261024/runs_seed43/run1_fits/model_state_dict_noRateUpdate.pt",
+      "sha256": "c0f6778c2baee3ccc45dae65608af15f233e2e8e86f4e43728835833e853b523"
+    },
+    "time": {
+      "path": "/home/yndx/zxk/rul/experiments/multirate_state_A3_rate_20261024/runs_seed43/run1_fits/model_state_dict_time.pt",
+      "sha256": "724057a146b4f2556e76b840c15c519972d779c98ea0a18387330ae49e9675d1"
+    },
+    "noEll": {
+      "path": "/home/yndx/zxk/rul/experiments/multirate_state_A3_rate_20261024/runs_seed43/run1_fits/model_state_dict_noEll.pt",
+      "sha256": "7c51882e1a32b56f12fc88d398b5aacdb7b9fe1729c80a3edd4dd0b2d37316d0"
+    }
+  },
+  "fit_reports": {
+    "full": {
+      "path": "/home/yndx/zxk/rul/experiments/multirate_state_A3_rate_20261024/runs_seed43/run1_fits/fit_report_full.json",
+      "sha256": "76b7c7a53032d9118edb7477876ccfce00ce868f03888ceb4aa7e3e54744cfb6"
+    },
+    "noRateUpdate": {
+      "path": "/home/yndx/zxk/rul/experiments/multirate_state_A3_rate_20261024/runs_seed43/run1_fits/fit_report_noRateUpdate.json",
+      "sha256": "f40675aba2c1d06fbf8d78e2252eb0f40ae60df27ea83e87d6039fc85491d1e2"
+    },
+    "time": {
+      "path": "/home/yndx/zxk/rul/experiments/multirate_state_A3_rate_20261024/runs_seed43/run1_fits/fit_report_time.json",
+      "sha256": "da72d67b2bc9401fd13a86ed9563054e8293a05c5705135abb209077bcb964dc"
+    },
+    "noEll": {
+      "path": "/home/yndx/zxk/rul/experiments/multirate_state_A3_rate_20261024/runs_seed43/run1_fits/fit_report_noEll.json",
+      "sha256": "61bedd61502e73d99eac6955aeba94a12143b70d249567aaef00a0be1fc73ee3"
+    }
+  },
+  "training_go": {
+    "request_id": "A3_FOURARM_SEED43_20261024_RUN1",
+    "go_sha256": "6cc2a7b0ba61374923a6ab2a9d076d4c9b5312360646d34746dc10ccabf7601d"
+  },
+  "output_dir": "/home/yndx/zxk/rul/experiments/multirate_state_A3_rate_20261024/c3_eval_seed43_20261024",
+  "receipt_path": "/home/yndx/zxk/rul/experiments/multirate_state_A3_rate_20261024/receipts/A3_SEED43_C3_INFER_20261024_RUN1_receipt.json",
+  "query_contract": {
+    "arms": [
+      "raw",
+      "sparse2",
+      "delay7d"
+    ],
+    "horizons_weeks": [
+      1,
+      4,
+      12,
+      32
+    ],
+    "min_visible_records": 3,
+    "query_threshold_ah": 0.2,
+    "delay7d_seconds": 604800,
+    "horizon_tolerance_weeks": 0.5
+  },
+  "supersedes": {
+    "GO": "GO_A3_C3_INFER_20261024_RUN2.json",
+    "reason": "new seed-43 checkpoints"
+  },
+  "scope_note": "seed-43/44 checkpoints from GO_A3_FIT_SEED43_20261024; identical inference contract"
+}

@@ -1,0 +1,45 @@
+{
+  "status": "EXACT_BYTE_ROUNDTRIP_PASS",
+  "source_public_commit": "232986ba5bcd216e1fb49055d67fc25060a1b77e",
+  "source_public_snapshot_sha256": "ec99635b4ca5de78b8e0dc633ad4b9268505ec5ac42c8c8d4559561487549e06",
+  "original_bytes": 957956,
+  "archive_bytes": 381676,
+  "archive_sha256": "971be1cf55b1a6e31c4d2cb99f5a98111b9c13824f840b5a117f6e3ca0f179f4",
+  "files": [
+    {
+      "path": "reports/multisource_20261021_root/formal_paired_all_stratum.csv",
+      "sha256": "caf76704b9cbf29f0fe52500d9b94cefbbee15a855012f6ae7aa2868f29f9d82",
+      "bytes": 157496
+    },
+    {
+      "path": "reports/multisource_20261021_root/formal_primary_per_cell.csv",
+      "sha256": "808b853c37d8ce147213a4779d6d05feb784ca8fad34142ae20bc1c90ef5060d",
+      "bytes": 144117
+    },
+    {
+      "path": "experiments/trajectory_multisource_nextcap_20261021/runs/nextcap18-9e7d9cb1c67f/metrics_by_cell.csv",
+      "sha256": "88a41eafedc938d61c40b26a06435f80e15b110cd893f1d07ac4037615eae23e",
+      "bytes": 120956
+    },
+    {
+      "path": "experiments/multisource_generalization_20261021/run1/paired_panel_deltas.csv",
+      "sha256": "1f67ed329482e2e47b82a7b5c28825843b86bbfad93c19997085349d6e5d9391",
+      "bytes": 89908
+    },
+    {
+      "path": "experiments/causal_linear_threshold_fixed20_v1/public_predictions_lossless.json",
+      "sha256": "1faf3447b630d8892e094ea95b6d412664198c0bd9884cb66fa423877795af68",
+      "bytes": 77653
+    },
+    {
+      "path": "reports/completed_cptransformer_predictions_lossless_20261019_root/archive.json",
+      "sha256": "356bdee1ecea4908af965728cedcff9be1529bf4ccf39bfc73fd27de3fec001b",
+      "bytes": 96686
+    },
+    {
+      "path": "experiments/multirate_state_A2_fullrefit_20261023/same_key_compare_run1/per_cell_metrics.csv",
+      "sha256": "7bec22fbc86935e2894fc7475f269696f69c12580b6bad317a53909f3342091f",
+      "bytes": 271140
+    }
+  ]
+}

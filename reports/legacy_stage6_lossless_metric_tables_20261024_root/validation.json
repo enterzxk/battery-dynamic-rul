@@ -1,0 +1,125 @@
+{
+  "status": "EXACT_BYTE_ROUNDTRIP_PASS",
+  "source_public_commit": "232986ba5bcd216e1fb49055d67fc25060a1b77e",
+  "source_public_snapshot_sha256": "1d91bc186263e7d54927255cb2ec4fc323705747b191cba971c6421d701f0812",
+  "original_bytes": 1466975,
+  "archive_bytes": 470045,
+  "archive_sha256": "e8cd48f0d56c0db0c61e5d37ada3dc9ed8b85b84c4e21261522e63fc7b8c3afd",
+  "files": [
+    {
+      "path": "experiments/multirate_state_A3_rate_20261024/same_key_compare_run1/per_cell_metrics.csv",
+      "sha256": "7dc7d7d4ad6f094cc438bc0c77eead519884d9dd5a45b6822bc710d4fc4a6805",
+      "bytes": 349644
+    },
+    {
+      "path": "experiments/multirate_state_A3_rate_20261024/same_key_compare_run1/paired_cell_bootstrap.csv",
+      "sha256": "fd0b7c840fd1cbcf0cca989ce5d68e2adba537d570db71b973762fdc623609ac",
+      "bytes": 186375
+    },
+    {
+      "path": "experiments/multirate_state_A3_rate_20261024/c3_eval_a3_20261024_run2/summary.json",
+      "sha256": "d4941c83343542629723aacebc3c67cb27bb954a7785106ccec1fdac99861780",
+      "bytes": 122665
+    },
+    {
+      "path": "experiments/multirate_state_A2_fullrefit_20261023/c3_eval_run2/summary.json",
+      "sha256": "44416d59001774f011a7a5ec520293c76a944c167395a2aff59a8861a13d313f",
+      "bytes": 83749
+    },
+    {
+      "path": "experiments/multirate_state_A2_fullrefit_20261023/same_key_compare_run1/paired_cell_bootstrap.csv",
+      "sha256": "4c8e94cae74fa9232ea1285576fb050b15c4db8d7cb5fcc16ae2c634e9071cd2",
+      "bytes": 59923
+    },
+    {
+      "path": "experiments/multirate_state_A2_fullrefit_20261023/same_key_compare_run1/summary.json",
+      "sha256": "db50ac879ed68ace5261d9c2581b99bbbc6dd13e7cd005ccb54a183c75027af1",
+      "bytes": 16253
+    },
+    {
+      "path": "experiments/multisource_factorial_20261021/off_rpt_grid_self_transport_run3/io_scope_receipt.json",
+      "sha256": "9171f7a0ce20da627e8f4acbb0657c5811347fcb081ad94dc3ae6f8f27b5655f",
+      "bytes": 55714
+    },
+    {
+      "path": "experiments/multisource_factorial_20261021/run2_clocksafe/arm_summary.csv",
+      "sha256": "ad99341383637ce3c4c4be94f1171c7b55cd89fbecc3be2107091d2d832f561a",
+      "bytes": 54361
+    },
+    {
+      "path": "reports/completed_ledger_lossless_20261019_root/archive.json",
+      "sha256": "89fdff949822d93899f7d6b1ba3004845dc2f5c481f89336bddab9ea6bbf8820",
+      "bytes": 52701
+    },
+    {
+      "path": "reports/completed_hust_recipe_epoch3_lossless_20261020_root/archive.json",
+      "sha256": "02a71133c23f89fc39ccb4d9d25b0280d29cdffb2939ef9f3aad97f2dd3c4940",
+      "bytes": 48289
+    },
+    {
+      "path": "reports/completed_cptransformer_epoch2_lossless_20261019_root/archive.json",
+      "sha256": "ee2a7e649c6514092429f8be99109d1b17d1b0660b5fb39069cd15fdc949b235",
+      "bytes": 47894
+    },
+    {
+      "path": "reports/completed_eligibility_lossless_20261019_root/archive.json",
+      "sha256": "bfa2610dfc720dbef3ee0f620f1c4021381afeadfc9e8617389efb3aaad4091f",
+      "bytes": 39406
+    },
+    {
+      "path": "reports/completed_calb_ledger_lossless_20261019_root/archive.json",
+      "sha256": "bca7f45ae7fd554b96b26ed27c43f490d3124be298d79bbe69ccf4f5d717ad01",
+      "bytes": 20173
+    },
+    {
+      "path": "experiments/multisource_information_20261021/run1/reliability_bins.csv",
+      "sha256": "948f9b07b9b6c8bf2861fba2984484933b967c697acf826b74329b0eaae37cab",
+      "bytes": 44443
+    },
+    {
+      "path": "experiments/multisource_information_20261021/run1/arm_summary.csv",
+      "sha256": "39ca2485259d33de0452e09f8267c9b81bf895c82673283a40c5a90cc6d6a4c5",
+      "bytes": 15427
+    },
+    {
+      "path": "reports/isu_ilcc_datav2_full_20261020_root/scope_candidate.json",
+      "sha256": "1dfd1a4be9fbba2f2ce5998689358e375856bf8595b7b6fd05d153b20dd4be5a",
+      "bytes": 58089
+    },
+    {
+      "path": "reports/isu_ilcc_datav2_full_20261020_root/full_import_final.json",
+      "sha256": "7b0ec1b38257a375b7baecadb2c1196884ebd4030f01bee06eb3dd500813e10d",
+      "bytes": 39458
+    },
+    {
+      "path": "reports/isu_ilcc_clock_source_20261020_root/central_directory_receipt.json",
+      "sha256": "a8bfda36e0c844429997b84c868a256f6e96bc468211e072ed828fbbc6bee233",
+      "bytes": 57721
+    },
+    {
+      "path": "experiments/multisource_factorial_20261021/OFF_RPT_GRID_SAME_MODEL_TRANSPORT_20261021_RUN3_offgrid_receipt.json",
+      "sha256": "efa1c90234a17fb40f4f0ad4e58a7b47dd0d6970fa0c28594b0e961f5b828874",
+      "bytes": 31255
+    },
+    {
+      "path": "experiments/multisource_factorial_20261021/off_rpt_grid_self_transport_run3/no_new_report_summary.csv",
+      "sha256": "d2a1ad822fd0b0e19169b2413d228bfd036f4f3e157f8613609b174c410e5a36",
+      "bytes": 24395
+    },
+    {
+      "path": "experiments/multisource_factorial_20261021/run2_clocksafe/factorial_interactions.csv",
+      "sha256": "3fb38c6dc6ec205713f29f96193336b4db50e72371ae8dc8c4dcda69b2bf1960",
+      "bytes": 19031
+    },
+    {
+      "path": "experiments/multisource_generalization_20261021/run1/arm_summary.csv",
+      "sha256": "935c07a2f0a8e3c64977c8bb266599f8c887a3ea235e90d4472c21995a582ac0",
+      "bytes": 20262
+    },
+    {
+      "path": "experiments/multisource_factorial_20261021/off_rpt_grid_self_transport_run3/arm_summary.csv",
+      "sha256": "9bef8b834a924bb46476e749cc3f09c201b43dab139a17a54fec7a513f021cc9",
+      "bytes": 19747
+    }
+  ]
+}

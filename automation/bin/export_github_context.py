@@ -10,7 +10,7 @@ ROOT = Path('/home/yndx/zxk/rul')
 OUT = ROOT / 'automation/github_export'
 EXT = {'.py', '.md', '.json', '.jsonl', '.csv', '.yaml', '.yml', '.sha256', '.svg'}
 BINARY_PREDICTION_ARCHIVES = {
-    'reports/completed_survival_pilot_public_lossless_v2_20261020_data/archive.bin',
+
     'reports/isu_six_baseline_public_lossless_v17_20261021_luna/archive.bin',
     'reports/progress_history_public_lossless_v18_binary_20261021_root/archive.bin',
     'reports/dart_v18_public_evidence_package_20261021_root/archive.bin',
@@ -336,7 +336,7 @@ def main():
     chosen.difference_update(['experiments/online_survival_observed_pilot_seed42_v1/published_prediction_csvs_part1.json','experiments/online_survival_observed_pilot_seed42_v1/published_prediction_csvs_part2.json'])
     chosen.update(BINARY_PREDICTION_ARCHIVES)
     for name in ['decode.py','validation.json']:
-        chosen.add('reports/completed_survival_pilot_public_lossless_v2_20261020_data/' + name)
+        pass  # pilot stage moved out of snapshot HEAD (2026-10-24, receipt V7)
     for name in ['decode.py','validation.json','README.md']:
         chosen.add('reports/isu_six_baseline_public_lossless_v17_20261021_luna/' + name)
 
@@ -387,6 +387,175 @@ def main():
     chosen.update('reports/multisource_20261021_root/formal_information_figure/'+n for n in ['plot.py','ROOT_GO.json','figure_contract.json','figure_source.csv','formal_information.svg','alignment.json','collision.json','font_audit.json','VISUAL_QA.md'])
     chosen.update('reports/multisource_20261021_trajectory_review/'+n for n in ['TRAJECTORY_REVIEW_ZH.md','same_key_metrics.csv','paired_cell_bootstrap.csv','same_key_checks.json','stage_lead_metrics.csv','RECENT_COMPETITORS_ADDENDUM_ZH.md'])
     chosen.add('paper/multisource_dynamic_rul_20261021/PROBLEM_METHOD_DRAFT.md')
+
+    # Temporal-update and held-condition science stage; original predictions stay on server.
+    legacy3=ROOT/'reports/legacy_stage3_lossless_multisource_20261021_root'
+    chosen.difference_update(json.loads((legacy3/'paths.json').read_text()))
+    BINARY_PREDICTION_ARCHIVES.add('reports/legacy_stage3_lossless_multisource_20261021_root/archive.bin')
+    chosen.update('reports/legacy_stage3_lossless_multisource_20261021_root/'+n for n in ['archive.bin','validation.json','decode.py','README.md'])
+    chosen.add('reports/multisource_20261021_root/RESEARCH_SYNTHESIS_ZH.md')
+    chosen.update('experiments/multisource_factorial_20261021/'+n for n in ['off_rpt_grid_zerofit.py','ROOT_GO_OFF_RPT_SELF_TRANSPORT_RUN3.json','OFF_RPT_GRID_SAME_MODEL_TRANSPORT_20261021_RUN3_offgrid_receipt.json','off_rpt_grid_self_transport_run3/RESULTS_ZH.md','off_rpt_grid_self_transport_run3/no_new_report_summary.csv','off_rpt_grid_self_transport_run3/arm_summary.csv','off_rpt_grid_self_transport_run3/io_scope_receipt.json'])
+    chosen.update('experiments/multisource_generalization_20261021/'+n for n in ['runner.py','condition_group_split.json','ROOT_GO_G_ISOLATION_32.json','C1C2_G_ISOLATION_32FIT_20261021_receipt.json','run1/RESULTS_ZH.md','run1/arm_summary.csv','run1/paired_panel_deltas.csv'])
+    chosen.update('experiments/trajectory_multisource_nextcap_20261021/'+n for n in ['run_extension.py','PROTOCOL_ZH.md','ROOT_GO_18FIT.json','runs/nextcap18-9e7d9cb1c67f/receipt.json','runs/nextcap18-9e7d9cb1c67f/metrics_by_model_panel_arm.csv','runs/nextcap18-9e7d9cb1c67f/metrics_by_cell.csv','comparisons_B/PAIRED_NEXTCAP_B_REVIEW_ZH.md','comparisons_B/paired_cell_bootstrap.csv','comparisons_B/paired_metrics.csv','comparisons_B/metadata.json'])
+    chosen.add('paper/multisource_dynamic_rul_20261021/METHOD_FLOW.md')
+    chosen.add('reports/uconn_lfp_author_pulse_asset_20261021_root/ACCESS_LIMITATION_ZH.md')
+
+    legacy4=ROOT/'reports/legacy_stage4_lossless_mechanisms_20261023_root'
+    chosen.difference_update(json.loads((legacy4/'paths.json').read_text()))
+    BINARY_PREDICTION_ARCHIVES.add('reports/legacy_stage4_lossless_mechanisms_20261023_root/archive.bin')
+    chosen.update('reports/legacy_stage4_lossless_mechanisms_20261023_root/'+n for n in ['archive.bin','validation.json','decode.py','README.md'])
+    chosen.update('reports/codex_takeover_20261023_root/'+n for n in ['REVIEW_AND_NEXT_ACTION_ZH.md','compare_a2_all_trees.py','ROOT_GO_SAVED_REVIEW_RUN2.json','saved_a2_all_trees_run2/all_model_metrics.csv','saved_a2_all_trees_run2/paired_cell_bootstrap.csv','saved_a2_all_trees_run2/receipt.json'])
+    chosen.update('reports/multisource_20261021_A2_state/'+n for n in ['RESULTS_ZH.md'])
+    chosen.update('reports/multisource_20261021_B2_trajectory/'+n for n in ['RESULTS_ZH.md'])
+    chosen.update('experiments/multirate_state_A2_20261022/'+n for n in ['README_A2_ZH.md','a2_model.py','a2_targets.py','a2_train.py','a2_train_v2.py','a2_fastdata.py','a2_fixtures.py','a2_fixtures_fast.py','a2_prep.py','a2_infer.py','receipts/prep_v2_20261022_receipt.json','receipts/c3_eval_v2_20261022_receipt.json','c3_eval_v2_20261022/summary.json'])
+    chosen.update('experiments/multirate_state_A2_fullrefit_20261023/'+n for n in ['refit_all125.py','inference_once.py','PROTOCOL.md','ROOT_GO_RUN1.json','ROOT_GO_C3_RUN2.json','receipts/run1.json','ROOT_GO_COMPARE_RUN1.json','receipts/c3_eval_run2.json','receipts/c3_run1_preflight_failure.json','c3_eval_run2/summary.json','c3_eval_run2/receipt.json','same_key_compare_run1/summary.json','same_key_compare_run1/schema.json','same_key_compare_run1/all_model_metrics.csv','same_key_compare_run1/paired_cell_bootstrap.csv','same_key_compare_run1/per_cell_metrics.csv','same_key_compare_run1/receipt.json','RESULTS_ZH.md','run1/full/fit_report.json','run1/time/fit_report.json','run1/noRPTupdate/fit_report.json'])
+    chosen.add('experiments/multirate_state_A3_rate_20261024/PROTOCOL.md')
+    chosen.update('experiments/multirate_state_A3_rate_20261024/'+n for n in ['a3_model.py','a3_train.py','a3_fixtures.py','a3_infer.py','README_A3_ZH.md','README_A3_INFER_ZH.md','GO_A3_FIT_4ARM_20261024.json','GO_A3_C3_INFER_20261024_RUN2.json','GO_A3_COMPARE_20261024.json','RESULTS_ZH.md','run1_fits/fit_report_full.json','run1_fits/fit_report_time.json','run1_fits/fit_report_noRateUpdate.json','run1_fits/fit_report_noEll.json','run1_fits/consumption_record.json','c3_eval_a3_20261024_run2/summary.json','c3_eval_a3_20261024_run2/receipt.json','same_key_compare_run1/summary.json','same_key_compare_run1/all_model_metrics.csv','same_key_compare_run1/paired_cell_bootstrap.csv','same_key_compare_run1/per_cell_metrics.csv','same_key_compare_run1/schema.json','same_key_compare_run1/receipt.json','full_vs_time_paired.json'])
+    chosen.add('experiments/state/consumed_gos.jsonl')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/R2_DATA_EFFICIENCY_ZH.md')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/a3_train_frac.py')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/README_A3_FRAC_ZH.md')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/GO_A3_FRAC_F25_20261024_RUN1.json')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/GO_A3_FRAC_F50_20261024_RUN1.json')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/GO_A3_FRAC_INFER_F25_20261024_RUN1.json')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/GO_A3_FRAC_INFER_F50_20261024_RUN1.json')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/GO_A3_DATA_EFFICIENCY_20261024.json')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/data_efficiency_compare_run1/all_model_metrics.csv')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/data_efficiency_compare_run1/summary.json')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/data_efficiency_compare_run1/receipt.json')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/c3_eval_frac_f25_20261024/receipt.json')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/c3_eval_frac_f50_20261024/receipt.json')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/run_frac_f25_seed42/fit_report_full.json')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/run_frac_f50_seed42/fit_report_full.json')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/run_frac_f25_seed42/consumption_record.json')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/run_frac_f50_seed42/consumption_record.json')
+    chosen.add('experiments/multirate_state_A2_20261022/a2_train_v3.py')
+    chosen.add('experiments/multirate_state_A2_20261022/GO_A2_V3_BURNIN_FIX_20261024.json')
+    chosen.add('experiments/multirate_state_A2_20261022/GO_A2V3_C3_INFER_20261024.json')
+    chosen.add('experiments/multirate_state_A2_20261022/GO_A2V3_COMPARE_20261024.json')
+    chosen.add('experiments/multirate_state_A2_20261022/compare_v3.py')
+    chosen.add('experiments/multirate_state_A2_20261022/same_key_compare_v3_run1/all_model_metrics.csv')
+    chosen.add('experiments/multirate_state_A2_20261022/same_key_compare_v3_run1/summary.json')
+    chosen.add('experiments/multirate_state_A2_20261022/same_key_compare_v3_run1/receipt.json')
+    chosen.add('experiments/multirate_state_A2_fullrefit_20261023/c3_eval_v3_20261024/receipt.json')
+    chosen.add('experiments/multirate_state_A2_fullrefit_20261023/runs/a2v3_burnin_20261024/fit_report_full.json')
+    chosen.add('experiments/multirate_state_A2_fullrefit_20261023/runs/a2v3_burnin_20261024/fit_report_time.json')
+    chosen.add('experiments/multirate_state_A2_fullrefit_20261023/runs/a2v3_burnin_20261024/fit_report_noRPTupdate.json')
+    chosen.add('docs/RESEARCH_GOAL_COMPETITIVE_20261024_ZH.md')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/E5_ENSEMBLE_ZH.md')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/compare_ens.py')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/GO_A3_ENSEMBLE_20261024.json')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/ensemble_compare_run1/all_model_metrics.csv')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/ensemble_compare_run1/paired_cell_bootstrap.csv')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/ensemble_compare_run1/receipt.json')
+    chosen.add('paper/multisource_dynamic_rul_20261021/FULL_DRAFT_V1.md')
+    chosen.add('paper/multisource_dynamic_rul_20261021/PAPER_POSITIONING_ZH.md')
+    chosen.add('paper/multisource_dynamic_rul_20261021/TABLES.md')
+    chosen.add('paper/multisource_dynamic_rul_20261021/TABLES_manifest.json')
+    chosen.add('paper/multisource_dynamic_rul_20261021/figures/figs_manifest.json')
+    legacy8=ROOT/'reports/legacy_stage8_lossless_results_zh_20261024_root'
+    chosen.difference_update(json.loads((legacy8/'paths.json').read_text()))
+    BINARY_PREDICTION_ARCHIVES.add('reports/legacy_stage8_lossless_results_zh_20261024_root/archive.bin')
+    chosen.update('reports/legacy_stage8_lossless_results_zh_20261024_root/'+n for n in ['archive.bin','validation.json','decode.py','README.md'])
+    chosen.add('experiments/multirate_state_A3_rate_20261024/R3_SCHEDULE_VALUE_ZH.md')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/V1_EXT_BASELINES_ZH.md')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/V3_CALIBRATION_ZH.md')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/V4_SEED_ROBUSTNESS_ZH.md')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/tree_frac.py')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/schedule_eval.py')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/a3_calibrate.py')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/compare_deg.py')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/compare_ext.py')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/compare_s43.py')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/cells_f25.json')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/cells_f50.json')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/GO_A3_FIT_SEED43_20261024.json')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/GO_A3_SEED43_C3_INFER_20261024.json')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/GO_A3_SEED43_COMPARE_20261024.json')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/GO_TREE_FRAC_20261024_RUN3.json')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/GO_A3_CALIBRATE_20261024_RUN2.json')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/GO_EXT_COMPARE_20261024.json')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/seed43_compare_run1/all_model_metrics.csv')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/seed43_compare_run1/summary.json')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/degradation_curve_compare_run1/all_model_metrics.csv')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/degradation_curve_compare_run1/summary.json')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/ext_compare_run1/all_model_metrics.csv')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/ext_compare_run1/summary.json')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/run_schedule_eval_20261024/policy_table.csv')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/run_schedule_eval_20261024/schedule_summary.json')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/ext_baselines/ext_baselines.py')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/ext_baselines/a3_calibrate.py')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/ext_baselines/README_EXT_BASELINES_ZH.md')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/ext_baselines/README_A3_CALIBRATE_ZH.md')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/ext_baselines/GO_EXT_BASELINES_20261024_RUN2.json')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/ext_baselines/GO_A3_CALIBRATE_20261024_RUN2.json')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/ext_baselines/runs/ext_run2_20261024/fit_report.json')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/ext_baselines/receipts/EXT_BASELINES_20261024_RUN2_receipt.json')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/ext_baselines/receipts/A3_CALIBRATE_20261024_RUN2_receipt.json')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/receipts/A3_SEED43_ROBUSTNESS_20261024_RUN1_receipt.json')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/receipts/A3_VS_TREE_DEGRADATION_CURVE_20261024_RUN1_receipt.json')
+    legacy7=ROOT/'reports/legacy_stage7_lossless_misc_tables_20261024_root'
+    chosen.difference_update(json.loads((legacy7/'paths.json').read_text()))
+    BINARY_PREDICTION_ARCHIVES.add('reports/legacy_stage7_lossless_misc_tables_20261024_root/archive.bin')
+    chosen.update('reports/legacy_stage7_lossless_misc_tables_20261024_root/'+n for n in ['archive.bin','validation.json','decode.py','README.md'])
+    legacy6=ROOT/'reports/legacy_stage6_lossless_metric_tables_20261024_root'
+    chosen.difference_update(json.loads((legacy6/'paths.json').read_text()))
+    BINARY_PREDICTION_ARCHIVES.add('reports/legacy_stage6_lossless_metric_tables_20261024_root/archive.bin')
+    chosen.update('reports/legacy_stage6_lossless_metric_tables_20261024_root/'+n for n in ['archive.bin','validation.json','decode.py','README.md'])
+    legacy5=ROOT/'reports/legacy_stage5_lossless_saved_metrics_20261024_root'
+    chosen.difference_update(json.loads((legacy5/'paths.json').read_text()))
+    BINARY_PREDICTION_ARCHIVES.add('reports/legacy_stage5_lossless_saved_metrics_20261024_root/archive.bin')
+    chosen.update('reports/legacy_stage5_lossless_saved_metrics_20261024_root/'+n for n in ['archive.bin','validation.json','decode.py','README.md'])
+    chosen.add('docs/INDEPENDENT_REVIEW_B2_A2_20261022.md')
+    chosen.add('docs/ZCODE_CONTINUATION_20261024.json')
+    chosen.add('docs/RESEARCH_GOAL_WIN_20261025_ZH.md')
+    chosen.add('paper/multisource_dynamic_rul_20261021/COMPARISON_TABLE_ZH.md')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/V3_CALIBRATION_ZH.md')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/E5_ENSEMBLE_ZH.md')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/E6_THREE_SEED_ZH.md')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/E7_CALCE_ZEROSHOT_ZH.md')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/E8_C4_CONFIRM_ZH.md')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/hybrid/W1_HYB_ENSEMBLE_ZH.md')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/hybrid/hybrid_aug.py')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/hybrid/README_HYBRID_ZH.md')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/a3t/a3t_model.py')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/a3t/a3t_train.py')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/a3t/a3t_infer.py')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/a3t/README_A3T_ZH.md')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/calce_zero_shot/calce_zero_shot.py')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/calce_zero_shot/README_CALCE_ZH_ZH.md')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/calce_scout/CALCE_FEASIBILITY_ZH.md')
+    chosen.add('experiments/multirate_state_A3_rate_20261024/tree_frac.py')
+    chosen.add('experiments/multirate_state_A2_20261022/a2_train_v3.py')
+    chosen.add('experiments/multirate_state_A2_20261022/GO_A2_V3_BURNIN_FIX_20261024.json')
+    chosen.add('experiments/multirate_state_A2_20261022/same_key_compare_v3_run1/all_model_metrics.csv')
+    b2='experiments/trajectory_b2_joint_marked_renewal_20261021/candidate_v2/'
+    chosen.update(b2+n for n in ['PROTOCOL_V2.md','model.py','target_builder.py','prep_runner.py','fit_runner.py','rollout.py','synthetic_check.py','infer_runner.py','eval_rul_compare.py','eval_nextjump.py'])
+
+    chosen.discard('experiments/multirate_state_A2_20261022/c3_eval_v2_20261022/summary.json')
+    chosen.update('experiments/trajectory_b2_joint_marked_renewal_20261021/candidate_v2/'+n for n in ['GO_PREP_V2_1.json','GO_FIT4_V2_1B.json','GO_C3_INFER_20261022T1005Z.json','GO_B2_RUL_COMPARE_20261022T1950Z.json','receipts/prep-v2_1-20261022T0545Z.json','receipts/fit4-20261022T0600Z.json','receipts/c3infer-20261022T1005Z.json','receipts/b2_rul_compare_20261022T1950Z_receipt.json'])
+    legacy8_late = ROOT/'reports/legacy_stage8_lossless_results_zh_20261024_root'
+    chosen.difference_update(json.loads((legacy8_late/'paths.json').read_text()))
+
+
+    # 2026-10-26: RUL recovery allowlist; no raw payload, weights, or controller state.
+    chosen.add('docs/RUL_TIME_RECOVERY_PLAN_20261026_ZH.md')
+    chosen.update('experiments/rul_time_recovery_20261026/'+n for n in ['runner.py', 'p2_diagnostic.py', 'p2_clock.py', 'P2_CLOCK_PROTOCOL_ZH.md', 'INVALID_EVIDENCE_AUDIT.json', 'P1_RESULTS_ZH.md', 'P1_DECISION.json', 'P2_RESULTS_ZH.md', 'P2_DECISION.json', 'GO_P1_RUN1.json', 'GO_P2_DIAG_RUN1.json', 'GO_P2_CLOCK_RUN1.json', 'p1_run1/receipt.json', 'p1_run1/point_summary.csv', 'p1_run1/distribution_summary.csv', 'p1_run1/paired_per_cell.csv', 'p1_run1/independent_recompute.json', 'p2_diag_run1/receipt.json', 'p2_diag_run1/train_oof_error_bins.csv', 'p2_diag_run1/train_oof_correlations.csv', 'p2_diag_run1/PR_summary.csv', 'p2_diag_run1/PR_per_cell.csv', 'p2_clock_run1/receipt.json', 'p2_clock_run1/point_summary.csv', 'p2_clock_run1/distribution_summary.csv', 'p2_clock_run1/paired_per_cell.csv', 'p2_clock_run1/independent_contrasts.json'])
+
+    # Lossless recovery per-cell tables, verified by byte SHA256.
+    chosen.difference_update(['experiments/rul_time_recovery_20261026/p1_run1/paired_per_cell.csv', 'experiments/rul_time_recovery_20261026/p1_run1/distribution_per_cell.csv', 'experiments/rul_time_recovery_20261026/p2_diag_run1/PR_per_cell.csv', 'experiments/rul_time_recovery_20261026/p2_clock_run1/paired_per_cell.csv', 'experiments/rul_time_recovery_20261026/p2_clock_run1/distribution_per_cell.csv'])
+    BINARY_PREDICTION_ARCHIVES.add('experiments/rul_time_recovery_20261026/public_per_cell_v1/archive.bin')
+    chosen.update('experiments/rul_time_recovery_20261026/public_per_cell_v1/'+n for n in ['archive.bin', 'validation.json', 'decode.py', 'README.md'])
+
+    # LZMA replaces v1 DEFLATE archive without losing any source table bytes.
+    chosen.difference_update(['experiments/rul_time_recovery_20261026/public_per_cell_v1/archive.bin', 'experiments/rul_time_recovery_20261026/public_per_cell_v1/validation.json', 'experiments/rul_time_recovery_20261026/public_per_cell_v1/decode.py', 'experiments/rul_time_recovery_20261026/public_per_cell_v1/README.md'])
+    BINARY_PREDICTION_ARCHIVES.add('experiments/rul_time_recovery_20261026/public_per_cell_v2/archive.bin')
+    chosen.update('experiments/rul_time_recovery_20261026/public_per_cell_v2/'+n for n in ['archive.bin', 'validation.json', 'decode.py', 'README.md'])
+
+    # Final lossless evidence package also includes verbose independent recomputes.
+    chosen.difference_update(['experiments/rul_time_recovery_20261026/public_per_cell_v2/archive.bin', 'experiments/rul_time_recovery_20261026/public_per_cell_v2/validation.json', 'experiments/rul_time_recovery_20261026/public_per_cell_v2/decode.py', 'experiments/rul_time_recovery_20261026/public_per_cell_v2/README.md', 'experiments/rul_time_recovery_20261026/p1_run1/independent_recompute.json', 'experiments/rul_time_recovery_20261026/p2_clock_run1/independent_contrasts.json'])
+    BINARY_PREDICTION_ARCHIVES.add('experiments/rul_time_recovery_20261026/public_per_cell_v3/archive.bin')
+    chosen.update('experiments/rul_time_recovery_20261026/public_per_cell_v3/'+n for n in ['archive.bin', 'validation.json', 'decode.py', 'README.md'])
 
     contents, files, skipped, binary_blobs = {}, [], [], {}
     mapping = {'README.md': 'docs/GITHUB_README_ZH.md', 'agent.md': 'AGENTS.md'}
@@ -443,5 +612,3 @@ def main():
                       'snapshot_utc': observed, 'skipped_count': len(skipped)}))
 
 
-if __name__ == '__main__':
-    main()

@@ -1,0 +1,43 @@
+{
+  "request_id": "RUL_TIME_P2_OOF_PR_20261026_RUN1",
+  "owner_thread_id": "01a17810-6ae6-7cf2-9729-5bfcaa8df5f4",
+  "status": "APPROVED",
+  "issued_utc": "2026-10-26T12:16:28Z",
+  "max_predictor_fits": 0,
+  "max_runtime_seconds": 600,
+  "C4_allowed": false,
+  "sha256": {
+    "experiments/rul_time_recovery_20261026/p2_diagnostic.py": "551b4671684883b6df46790c81c9d0309d936952a2ead32f072b54a8d8fc57a9",
+    "experiments/rul_time_recovery_20261026/p1_run1/predictions.csv": "e4686877d8f02bee7ed9a612abc872d856edce34666f87b01c2a7e12a78c5bbb",
+    "experiments/multisource_factorial_20261021/run2_clocksafe/train_features.npz": "9c3794064e64d3b0a437c3fde82e7f8a423aa983d37621d0808088bbcbbf9a15",
+    "experiments/multisource_factorial_20261021/run2_clocksafe/development_features.npz": "dc0a84ffc091be064f1d7e00963270c8279ffb7505be17057e4a61449664ea3f",
+    "experiments/multisource_factorial_20261021/run2_clocksafe/predictions.csv": "30c9dfcf16983c9aa64de179bc16b3e635db00fc915dede5428edb0d95bd67e7",
+    "experiments/multisource_factorial_20261021/run2_clocksafe/hgb_F3_oof0.joblib": "f0c02942f91e6b8bea8ca94b0f88f293fc67ae70848c7a007c1a0d40dd056e49",
+    "experiments/multisource_factorial_20261021/run2_clocksafe/hgb_F3_oof1.joblib": "0a9a22293873333f0f06bedf93feb13786c714af7a2dbbe36ec18a4a5af6fb29",
+    "experiments/multisource_factorial_20261021/run2_clocksafe/hgb_F3_distribution.joblib": "f124e96c9fce11f410b90ddb222978c9ac0d974969bac72ba88ce3b3add595cf",
+    "experiments/multisource_factorial_20261021/run2_clocksafe/train_rows.jsonl": "1b081d57a41bcc12697fae0b9742b5e734290dd1aac0b3b0e82591abd1489537",
+    "experiments/multisource_factorial_20261021/run2_clocksafe/train_targets.jsonl": "981ed8fc56181e8393ad807c39a8dfa19acc7683e531078dab0e030f384ea7aa",
+    "experiments/multisource_factorial_20261021/run2_clocksafe/development_rows.jsonl": "bb64c57a1bc09df34b18f5f4c486ddb152d50a4f73b385e235899af54bddd5e3",
+    "experiments/multisource_factorial_20261021/run2_clocksafe/development_targets.jsonl": "2b9c7f2309691bfa8d213e4b1f4455d272c6e00654b484918ba56e3f24208f3d"
+  },
+  "output": "experiments/rul_time_recovery_20261026/p2_diag_run1",
+  "permission": "Saved C1/C2 train OOF inference plus saved C3 prediction-only causal Eq9 rectification; no C3 target fitting",
+  "diagnostic_features": [
+    0,
+    1,
+    3,
+    4,
+    6,
+    8,
+    686,
+    687
+  ],
+  "PR_variants": [
+    "all-prefix",
+    "recent-three"
+  ],
+  "primary": "raw unconfirmed cell-macro MAE; 8 adaptations exploratory",
+  "literature": "https://arxiv.org/html/2504.09206v1 Sec4.3 Eq9; linear analytic minimizer mean(pred_j+t_j)",
+  "analytic_rectification_count_bound": 30120,
+  "novelty_claim": false
+}

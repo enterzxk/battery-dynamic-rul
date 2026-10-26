@@ -1,8 +1,0 @@
-{
-  "MATR": {
-    "error": "HTTPSConnectionPool(host='data.matr.io', port=443): Max retries exceeded with url: /1/api/v1/file/5c86c0b5fa2ede00015ddf66/download (Caused by NameResolutionError(\"HTTPSConnection(host='data.matr.io', port=443): Failed to resolve 'data.matr.io' ([Errno -3] Temporary failure in name resolution)\"))"
-  },
-  "NASA": {
-    "error": "HTTPSConnectionPool(host='phm-datasets.s3.amazonaws.com', port=443): Max retries exceeded with url: /NASA/5.+Battery+Data+Set.zip (Caused by NameResolutionError(\"HTTPSConnection(host='phm-datasets.s3.amazonaws.com', port=443): Failed to resolve 'phm-datasets.s3.amazonaws.com' ([Errno -3] Temporary failure in name resolution)\"))"
-  }
-}

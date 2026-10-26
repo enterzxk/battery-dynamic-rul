@@ -1,0 +1,143 @@
+{
+  "generated_utc": "2026-10-24T10:34:02Z",
+  "mode": "run",
+  "matplotlib_version": "3.7.5",
+  "png_dpi": 300,
+  "palette": "Okabe-Ito (colour-blind safe)",
+  "script_sha256": "adf37f4be25c049f5a85437c4dbaacec65a8a666530f49b2979f841fd32a5c5a",
+  "fig1_data_efficiency": {
+    "sources": [
+      {
+        "path": "/home/yndx/zxk/rul/experiments/multirate_state_A3_rate_20261024/degradation_curve_compare_run1/all_model_metrics.csv",
+        "sha256": "8b0314227c8131b192343644dca4db032ab240fabe38d320996f6dfcbc53b4a0"
+      }
+    ],
+    "params": {
+      "panels": [
+        "raw",
+        "sparse2"
+      ],
+      "x": "training-pool fraction (%)",
+      "y": "MAE mAh (MAE_Ah * 1000)",
+      "series": {
+        "A3 (state-space)": {
+          "A3f25_full": 25,
+          "A3f50_full": 50,
+          "A3_full": 100
+        },
+        "F0 tree (HGB)": {
+          "TREEf25_F0_hgb": 25,
+          "TREEf50_F0_hgb": 50,
+          "F0_hgb": 100
+        },
+        "F2 tree (HGB)": {
+          "TREEf25_F2_hgb": 25,
+          "TREEf50_F2_hgb": 50,
+          "F2_hgb": 100
+        }
+      },
+      "reference_line": "dotted horizontal at A3@50% MAE per arm",
+      "catboost_models_excluded": true,
+      "figsize_mm": [
+        183,
+        72
+      ]
+    },
+    "outputs": {
+      "fig1_data_efficiency.svg": {
+        "sha256": "9aa35852c410cdd2c7dbae0ccb71b08eb71e5d1a21956e1e16b0fe494f45c42f",
+        "bytes": 46215
+      },
+      "fig1_data_efficiency.png": {
+        "sha256": "7690066c7684c64d8296db01ee53a0016737f0da0e1d27ff43ffd38dd8f7fb75",
+        "bytes": 126055
+      }
+    }
+  },
+  "fig2_schedule_frontier": {
+    "sources": [
+      {
+        "path": "/home/yndx/zxk/rul/experiments/multirate_state_A3_rate_20261024/ext_baselines/runs/calib_run1_20261024/schedule_frontier_calibrated.csv",
+        "sha256": "8d579074bbcdbdf2f1b7e7a31c942e7d06a7255803800a45f7386bb2794a7775"
+      },
+      {
+        "path": "/home/yndx/zxk/rul/experiments/multirate_state_A3_rate_20261024/run_schedule_eval_20261024/policy_table.csv",
+        "sha256": "0460fa618038ae885525f2e41e89eb5dab282c120cdccf8992fce42a2f165d66"
+      }
+    ],
+    "params": {
+      "arm": "all",
+      "x": "mean_interval_pooled (weeks, log2)",
+      "y": "violation_rate_pooled (%)",
+      "a3_variants": {
+        "before_s1": "alphas 0.02/0.05/0.10",
+        "after_calibrated": "alphas 0.02/0.05/0.10"
+      },
+      "a2_time_source": "policy_table.csv (before_s1-equivalent rows)",
+      "fixed_h": [
+        1,
+        4,
+        12,
+        32
+      ],
+      "emphasis": "calibrated A3 alpha=0.05 vs fixed h=4 gap (pp)",
+      "figsize_mm": [
+        122,
+        88
+      ]
+    },
+    "outputs": {
+      "fig2_schedule_frontier.svg": {
+        "sha256": "0571b7428a6eea3be79ce81a44d677ae0ba27b083071ec40235ed8443135ca77",
+        "bytes": 45233
+      },
+      "fig2_schedule_frontier.png": {
+        "sha256": "1f387792eddd6616553ecafe9e5fc4ebdf41e97e4dbb959758a9b859f1df6795",
+        "bytes": 117699
+      }
+    }
+  },
+  "fig3_ablation": {
+    "sources": [
+      {
+        "path": "/home/yndx/zxk/rul/experiments/multirate_state_A3_rate_20261024/same_key_compare_run1/all_model_metrics.csv",
+        "sha256": "fa0da07028f95153a67d14925a1421965739fa8af8cabd3b85aecb46523313ba"
+      }
+    ],
+    "params": {
+      "arm": "raw",
+      "models": [
+        "A3_full",
+        "A3_time",
+        "A3_noRateUpdate",
+        "A3_noEll",
+        "A2_full",
+        "A2_time",
+        "F0_hgb",
+        "F0_catboost",
+        "F2_hgb",
+        "F2_catboost",
+        "F3_hgb",
+        "F3_catboost"
+      ],
+      "sort": "ascending MAE (shared by both panels)",
+      "panel_a": "MAE mAh",
+      "panel_b": "NLL_per_Ah",
+      "excluded": "Old_A2*, A2_noRPTupdate, F1 trees (not in requested set)",
+      "figsize_mm": [
+        183,
+        95
+      ]
+    },
+    "outputs": {
+      "fig3_ablation.svg": {
+        "sha256": "d7ea57812585c79750807a1b8c1e366e49ec2173f1eac9099078a2bd07003737",
+        "bytes": 63113
+      },
+      "fig3_ablation.png": {
+        "sha256": "4c4b1ec4876544c2da98eba4c293cc2303d9e6b541fadb0f590cb6cc0fae464f",
+        "bytes": 166223
+      }
+    }
+  }
+}

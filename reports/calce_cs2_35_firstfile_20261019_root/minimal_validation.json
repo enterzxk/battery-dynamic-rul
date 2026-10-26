@@ -1,9 +1,0 @@
-{
-  "status": "PASS_SAVED_SUMMARY_ARITHMETIC_NO_RAW_RELOAD",
-  "difference_Ah": 9.636331623541494e-06,
-  "relative_counter_difference_percent": 0.0008464356216778841,
-  "source_rows": 1091,
-  "source_occurrences": 1,
-  "one_member_budget_consumed": true,
-  "global_fit_gate_opened": false
-}

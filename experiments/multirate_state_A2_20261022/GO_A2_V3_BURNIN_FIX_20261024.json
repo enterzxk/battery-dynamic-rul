@@ -1,0 +1,40 @@
+{
+  "status": "APPROVED",
+  "allow_fit": true,
+  "allow_train": true,
+  "allow_C4": false,
+  "scope": "A2-V3 TRAIN/FIT: burn-in scatter-back repair control (R1b), three arms full/time/noRPTupdate, selection on 100 internal train cells + frozen-step refit on all 125 cells, exactly 6 fits in this GO; isolates the a2_fastdata._burn_in_state batch-order defect so A3 gains are not misattributed",
+  "request_id": "A2_V3_BURNIN_FIX_20261024_RUN1",
+  "owner_thread_id": "01a15c3a-1a06-7d61-8517-27b70b246183",
+  "issued_utc": "2026-10-24T03:05:00Z",
+  "issued_by": {
+    "controller": "ZCode CLI session 2026-10-24 (GLM-5.3-Flash), automation round",
+    "delegation": "docs/ZCODE_CONTINUATION_20261024.json + docs/RESEARCH_GOAL_COMPETITIVE_20261024_ZH.md (R1b)",
+    "review": "a2_train_v3.py self-check legacy 16/16 + fast 11/11 + discriminating v3 fixture (v3 vs single-cell truth 4.5e-08; pre-fix vs truth 1.3e-01) verified twice on server; a2_fastdata.py byte-identical (c82f00a2...); shared CPU locks added"
+  },
+  "code_sha256": {
+    "a2_train_v3.py": "5db20a757ed7c2663e502102f6cc489885ad20ebbfcc82ceabd3b023b46b64ee",
+    "a2_fastdata.py": "c82f00a2950f550087a7bda033b4347922e6cdc580b896b9cf8a22e6eaa33423"
+  },
+  "max_steps": 3000,
+  "arms": ["full", "time", "noRPTupdate"],
+  "seed": 42,
+  "refit_seed": 43,
+  "batch_cells": 8,
+  "window_events": 256,
+  "burn_in": "exact",
+  "burn_in_events": 128,
+  "lr": 0.001,
+  "weight_decay": 0.0001,
+  "val_every": 50,
+  "patience": 6,
+  "threads": 8,
+  "refit_scope": "all125",
+  "fits_in_this_go": 6,
+  "prepared_manifest": "/home/yndx/zxk/rul/experiments/multirate_state_A2_20261022/prep_v2_20261022/manifest.json",
+  "prepared_manifest_sha256": "3749221779d7becfdd90525077b3b8a89766a6503face6619d36e8f271dac012",
+  "out_dir": "/home/yndx/zxk/rul/experiments/multirate_state_A2_20261022/runs/a2v3_burnin_20261024",
+  "data_scope": "PREP v2 compact npz cache only; no raw archive, no C3/C4 payload, no old checkpoint reads",
+  "stop_conditions": "non-finite loss; GO validation failure; lock unavailable; elapsed > 1800 s",
+  "post_run": "inference under a separate GO; comparison vs A2(100-cell), A2(125-cell), A3, trees"
+}

@@ -1,0 +1,31 @@
+{
+  "schema": "CONTROLLER_CONTINUATION_RECEIPT_V1",
+  "created_utc": "2026-10-24T00:00:00Z",
+  "owner_thread_id": "01a15c3a-1a06-7d61-8517-27b70b246183",
+  "chain": [
+    {
+      "controller": "DSH session-2d48bcb9-ed32-45fe-9647-dff556b5bf81",
+      "model": "deepseek-v4.1-flash / reasoning max",
+      "status": "goal goal-bcc15b20 paused 2026-10-22 after DeepSeek transport failures; turn aborted by user"
+    },
+    {
+      "controller": "Codex retakeover",
+      "evidence": "docs/CODEX_RETAKEOVER_20261023.json (direct human reply: paused goal, stopped generation)",
+      "executed": "saved_review_run2 (11 models, unified RMSE convention) + A2 true all-125 refit run1 (3 fits/1200 steps) + C3 inference run2 + same-key compare run1"
+    },
+    {
+      "controller": "ZCode CLI session 2026-10-24 (GLM-5.3-Flash)",
+      "delegation": "direct human instruction 2026-10-24: continue the task via lab-server, resume goal-mode execution",
+      "scope": "verify 10-23 chain receipts; write durable reports (fullrefit RESULTS_ZH.md, progress 4j, synthesis, paper); prepare next mechanism design; no new fits without a fresh exact-hash GO"
+    }
+  ],
+  "exclusivity_checks": {
+    "live_project_processes": "none (pgrep clean)",
+    "claims": "run1/c3_eval_run1/c3_eval_run2 claims reference dead pids; no active holder",
+    "shared_cpu_locks": "empty files, no holders",
+    "server_rebooted": "2026-10-23 14:59 and 15:30 UTC (before this session)"
+  },
+  "boundaries_preserved": "C1/C2 training, C3 development, C4 sealed (0 C4 reads in this session); owner thread preserved; no new automation/heartbeat/migration; no credentials touched",
+  "protocol_gap_noted": "GO gate lacks one-time consumption enforcement; GO_A2_FITV2_noRPTupdate.json was mutated and re-consumed 2026-10-23 with byte-identical output (determinism confirmed); recommend consumed-registry check in future gates",
+  "next_action": "individual degradation-rate state (ell) design -> targeted fixtures -> fresh exact-hash GO before any fit"
+}

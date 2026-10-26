@@ -1,0 +1,45 @@
+{
+  "format": "ZIP_LZMA",
+  "files": [
+    {
+      "path": "p1_run1/paired_per_cell.csv",
+      "bytes": 241332,
+      "sha256": "9c94fcc8a2c4495d241d83f742e26908cfe21a05ff9ca2851c12bd836830ef59"
+    },
+    {
+      "path": "p1_run1/distribution_per_cell.csv",
+      "bytes": 233961,
+      "sha256": "5de5b23e8b2a2bac31f95e958ce4e3025045eb2dd6440487ed77f4bdb1349df1"
+    },
+    {
+      "path": "p2_diag_run1/PR_per_cell.csv",
+      "bytes": 635653,
+      "sha256": "78bec70c74d276ebe6606e0cf32c1bcc26f4c1ebab794806105be419d9442ad5"
+    },
+    {
+      "path": "p2_clock_run1/paired_per_cell.csv",
+      "bytes": 452290,
+      "sha256": "e935b9794b4a646bb3e1a615666c8f8c6fb85c002859f8eaca5eaa2ac6130ce4"
+    },
+    {
+      "path": "p2_clock_run1/distribution_per_cell.csv",
+      "bytes": 436844,
+      "sha256": "a9e70bdb12032f99ada2bf53d7b293b8b9984776d0a62c8e5bb89c756790bea5"
+    },
+    {
+      "path": "p1_run1/independent_recompute.json",
+      "bytes": 27808,
+      "sha256": "023ce6b88cbbadf12fe0cc253710fcad178a6839600eed8f9e61e81c31fdfc82"
+    },
+    {
+      "path": "p2_clock_run1/independent_contrasts.json",
+      "bytes": 28756,
+      "sha256": "03664987540e2326de42fbc193303b1a3ef5b75ec817149d041dff05d4389da6"
+    }
+  ],
+  "roundtrip": "PASS",
+  "uncompressed_bytes": 2056644,
+  "archive_bytes": 452096,
+  "archive_sha256": "d04ea3012e396df993b77670294eb157d55f53cf1f5d3526a92b69b0c4c236a0",
+  "scope": "Five derived per-cell tables and two independent recompute reports; full per-query predictions remain server-only"
+}

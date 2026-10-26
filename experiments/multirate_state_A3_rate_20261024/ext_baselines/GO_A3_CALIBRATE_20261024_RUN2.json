@@ -1,0 +1,84 @@
+{
+  "status": "APPROVED",
+  "allow_fit": false,
+  "allow_C4": false,
+  "scope": "CALIBRATE: training-internal closed-form variance calibration factor for A3_full (0 optimizer steps, 0 fits, 0 dev tuning), then calibrated C3 re-evaluation and schedule frontier re-evaluation",
+  "request_id": "A3_CALIBRATE_20261024_RUN2",
+  "owner_thread_id": "01a15c3a-1a06-7d61-8517-27b70b246183",
+  "issued_utc": "2026-10-24T14:05:00Z",
+  "issued_by": {
+    "controller": "ZCode CLI session 2026-10-24 (GLM-5.3-Flash)",
+    "review": "worker #5 delivery: self-check 13/13 verified twice on server; walker==reference 1e-12; C3 s=1 recompute reproduces CSV columns 2343/2343; schedule semantics 12/12 matches R3 policy_table"
+  },
+  "seed": 42,
+  "device": "cpu",
+  "threads": 4,
+  "max_runtime_seconds": 14400,
+  "code_sha256": {
+    "a3_calibrate.py": "045545c10be6956fa944e6f683186c1d4a0e628086fb25fda8c588bcb57365c1",
+    "ext_baselines.py": "20849b6eb9edacc9cbb5c55cd4deeb115b24b61388c082380597a16df77d12f7",
+    "a3_infer.py": "a653818e9d7de3df52fc08a859a9f4ac159b215e4f43743124e5b6553e15b597",
+    "a3_model.py": "b3c6e1247095cf3e533c12f920d788a60d70066c96070d67bc19c7cee5e50b5d",
+    "a3_train.py": "648eeede3e3d22654c6cec63600ca65818d63a378ddaaa8100028e0409c92918",
+    "a2_infer.py": "1b290fc5fb2ec962125c99c1c2d12a81b546096ec8ffdb209184a1ea59fe76fc",
+    "a2_prep.py": "3b45d148696b830be6555527d6f162b391d18a9cd349851220b293da6454c0c4",
+    "a2_targets.py": "9c73696820e38257a131b421f4b70d3f6d57436eae8ee25da6f7d35ce0900901",
+    "a2_model.py": "24b23883a18b7d4386930b52c582fc5c0bef452c0f2b0cb4cbdf7bab3b4c6c8f",
+    "a2_fastdata.py": "c82f00a2950f550087a7bda033b4347922e6cdc580b896b9cf8a22e6eaa33423",
+    "a2_train.py": "11cf19e4ad21db950e16f32d235e4425cde130f74b0f37c44dc1cf47306563cb"
+  },
+  "checkpoint": {
+    "path": "/home/yndx/zxk/rul/experiments/multirate_state_A3_rate_20261024/run1_fits/model_state_dict_full.pt",
+    "sha256": "4b46c92902925c972ac6f5fbbf80396c915a93c6bca1ac07547a78772c6b5820"
+  },
+  "assets": {
+    "prep_manifest": {
+      "path": "/home/yndx/zxk/rul/experiments/multirate_state_A2_20261022/prep_v2_20261022/manifest.json",
+      "sha256": "3749221779d7becfdd90525077b3b8a89766a6503face6619d36e8f271dac012"
+    },
+    "prep_npz": {
+      "path": "/home/yndx/zxk/rul/experiments/multirate_state_A2_20261022/prep_v2_20261022/a2_prep_sequences.npz",
+      "sha256": "f746edb8f1ada0bd8d8e685dff185836c26ac8dbb11c4a80561d3601e67e2951"
+    },
+    "rpt_manifest": {
+      "path": "/home/yndx/zxk/rul/reports/multisource_20261021_signals/all188_rpt_features_v1/manifest.json",
+      "sha256": "f431eb082f09f455e8edec1cc62e944e116cea1a97544ca3b18abe5d6064c255"
+    },
+    "tree_csv": {
+      "path": "/home/yndx/zxk/rul/experiments/trajectory_strong_baselines_20261021/runs/q4_strong_baselines_20261021_run2/predictions_c3.csv",
+      "sha256": "f1addad1f435458b7bf68e686dd0816e13a2b45cffd4e1d679519ad4c3486d69"
+    },
+    "c3_predictions_csv": {
+      "path": "/home/yndx/zxk/rul/experiments/multirate_state_A3_rate_20261024/c3_eval_a3_20261024_run2/predictions_c3_a3.csv",
+      "sha256": "9aa4871d498d2ab7dcb847ad0ca0647c33fc7a72be7344a7b346d513a4bf523b"
+    },
+    "schedule_dir": {
+      "path": "/home/yndx/zxk/rul/experiments/multirate_state_A3_rate_20261024/run_schedule_eval_20261024",
+      "sha256": "a3e286d189ca9c68febb9733e37d117544d178b3ad7f996da52d0739018ed86d"
+    }
+  },
+  "panel_contract": {
+    "n_train_queries": 6498,
+    "arms": [
+      "raw",
+      "sparse2",
+      "delay7d"
+    ]
+  },
+  "s_definition": "s = sum((y - pred_mean)^2) / sum(pred_var_total) over ALL training-panel rows (6498 as-of queries, 125 train cells, arms raw/sparse2/delay7d, A3_full walker forecast to the next source RPT stop under the held-recent-control policy); classic variance-scaling MLE under N(mean, s*var); estimated inside the training panel only, never on C3",
+  "eol_threshold_ah": 0.2,
+  "menu_weeks": [
+    1,
+    4,
+    12,
+    32
+  ],
+  "alphas": [
+    0.02,
+    0.05,
+    0.1
+  ],
+  "consumed_registry": "/home/yndx/zxk/rul/experiments/state/consumed_gos.jsonl",
+  "output_dir": "/home/yndx/zxk/rul/experiments/multirate_state_A3_rate_20261024/ext_baselines/runs/calib_run1_20261024",
+  "receipt_path": "/home/yndx/zxk/rul/experiments/multirate_state_A3_rate_20261024/ext_baselines/receipts/A3_CALIBRATE_20261024_RUN2_receipt.json"
+}

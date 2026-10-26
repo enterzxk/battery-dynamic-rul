@@ -1,0 +1,74 @@
+{
+  "status": "APPROVED",
+  "allow_fit": true,
+  "allow_C4": false,
+  "scope": "EXT-BASELINES TRAIN/FIT: paper external baselines (as-of GRU and as-of ElasticNet, Li et al. 2024 Cell Reports style) on the frozen tree query contract, 4 fits in this GO, zero dev selection",
+  "request_id": "EXT_BASELINES_20261024_RUN2",
+  "owner_thread_id": "01a15c3a-1a06-7d61-8517-27b70b246183",
+  "issued_utc": "2026-10-24T10:10:00Z",
+  "issued_by": {
+    "controller": "ZCode CLI session 2026-10-24 (GLM-5.3-Flash)",
+    "review": "worker #5 delivery: self-check 16/16 verified twice on server; 19/19 GO mutations refused; dry-run key derivation exactly matches the tree run2 receipt (6498 train / 3579 dev)"
+  },
+  "seed": 42,
+  "models": [
+    "EXT_GRU",
+    "EXT_ENET"
+  ],
+  "fits_in_this_go": 4,
+  "fit_plan": "per model (EXT_GRU, EXT_ENET): fit 1 = cell-isolated OOF-sigma fit on foldB train rows (predict foldA rows) -> scalar sigma; fit 2 = final fit on all train rows; EXT_GRU 2 + EXT_ENET 2 = 4 fits total",
+  "device": "cpu",
+  "threads": 4,
+  "max_runtime_seconds": 14400,
+  "code_sha256": {
+    "ext_baselines.py": "20849b6eb9edacc9cbb5c55cd4deeb115b24b61388c082380597a16df77d12f7",
+    "a2_prep.py": "3b45d148696b830be6555527d6f162b391d18a9cd349851220b293da6454c0c4",
+    "a2_targets.py": "9c73696820e38257a131b421f4b70d3f6d57436eae8ee25da6f7d35ce0900901",
+    "README_EXT_BASELINES_ZH.md": "c3a9ef0225a168e55349556a75ab7c512268099e7bc4701d2864915b1b1a5232"
+  },
+  "assets": {
+    "prep_manifest": {
+      "path": "/home/yndx/zxk/rul/experiments/multirate_state_A2_20261022/prep_v2_20261022/manifest.json",
+      "sha256": "3749221779d7becfdd90525077b3b8a89766a6503face6619d36e8f271dac012"
+    },
+    "prep_npz": {
+      "path": "/home/yndx/zxk/rul/experiments/multirate_state_A2_20261022/prep_v2_20261022/a2_prep_sequences.npz",
+      "sha256": "f746edb8f1ada0bd8d8e685dff185836c26ac8dbb11c4a80561d3601e67e2951"
+    },
+    "rpt_manifest": {
+      "path": "/home/yndx/zxk/rul/reports/multisource_20261021_signals/all188_rpt_features_v1/manifest.json",
+      "sha256": "f431eb082f09f455e8edec1cc62e944e116cea1a97544ca3b18abe5d6064c255"
+    },
+    "tree_csv": {
+      "path": "/home/yndx/zxk/rul/experiments/trajectory_strong_baselines_20261021/runs/q4_strong_baselines_20261021_run2/predictions_c3.csv",
+      "sha256": "f1addad1f435458b7bf68e686dd0816e13a2b45cffd4e1d679519ad4c3486d69"
+    },
+    "cohort": {
+      "path": "/home/yndx/zxk/rul/reports/isu_ilcc_capacity_probe_20261020_root/cohort.json",
+      "sha256": "4469f7f5b6eb8c26a522fa46c4291ec6d03d98e7ae5c20ce7ae77e835b849ae0"
+    },
+    "data_manifest": {
+      "path": "/home/yndx/zxk/rul/reports/isu_ilcc_datav2_full_20261020_root/data_manifest.json",
+      "sha256": "68f53dc481dfc212896658a9bcb69780b5ed7285d853cc870a4002ae658726e1"
+    },
+    "cycling_manifest": {
+      "path": "/home/yndx/zxk/rul/reports/multisource_20261021_signals/cycling_all188_feature_manifest.json",
+      "sha256": "51e4c87fc7e59cee6afe2bb79fabb9e72070d98ca6d457c124c553d0b05018cb"
+    }
+  },
+  "panel_contract": {
+    "n_keys": 3579,
+    "arms": [
+      "raw",
+      "sparse2",
+      "delay7d"
+    ]
+  },
+  "consumed_registry": "/home/yndx/zxk/rul/experiments/state/consumed_gos.jsonl",
+  "output_dir": "/home/yndx/zxk/rul/experiments/multirate_state_A3_rate_20261024/ext_baselines/runs/ext_run2_20261024",
+  "receipt_path": "/home/yndx/zxk/rul/experiments/multirate_state_A3_rate_20261024/ext_baselines/receipts/EXT_BASELINES_20261024_RUN2_receipt.json",
+  "supersedes": {
+    "request_id": "EXT_BASELINES_20261024_RUN1",
+    "reason": "feature-name order normalization fix (same-set, cross-cell sorted canonical order); RUN1 failed at gate with 0 fits, burned in code"
+  }
+}

@@ -1,6 +1,0 @@
-{
-  "decision": "NO_GO_PARAMETER_FREE_CUMULATIVE_FEEDBACK",
-  "does_not_replace_prior_instant_gate": true,
-  "new_fits": 0,
-  "next": "See learned feedback root_decision; no residual correction fits"
-}

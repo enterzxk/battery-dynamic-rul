@@ -1,0 +1,13 @@
+{
+  "request_id": "A3_FOURARM_FIT_20261024_RUN1",
+  "go_sha256": "7ca47c60dae64ea42d5229c6a35fcd0dc01807ae05016b2bdd2839d0f32aa9c2",
+  "fits_in_this_go": 8,
+  "arms": [
+    "full",
+    "noRateUpdate",
+    "time",
+    "noEll"
+  ],
+  "refit_scope": "all125",
+  "out_dir": "/home/yndx/zxk/rul/experiments/multirate_state_A3_rate_20261024/run1_fits"
+}

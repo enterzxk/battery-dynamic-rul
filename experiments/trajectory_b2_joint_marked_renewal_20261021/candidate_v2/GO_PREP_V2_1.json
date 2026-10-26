@@ -1,0 +1,41 @@
+{
+  "status": "APPROVED_PREP_ONLY",
+  "allow_prep": true,
+  "allow_fit": false,
+  "request_id": "b2-v2_1-prep-20261022T0545Z",
+  "owner_thread_id": "01a15c3a-1a06-7d61-8517-27b70b246183",
+  "issued_utc": "2026-10-22T05:47:25.639Z",
+  "max_runtime_seconds": 7200,
+  "data_scope": "train_C1_C2_processed_and_RPT_assets_only",
+  "device": "cpu",
+  "processed_manifest_path": "/home/yndx/zxk/rul/experiments/trajectory_b2_joint_marked_renewal_20261021/candidate_v2/prep_inputs/processed_manifest.json",
+  "processed_manifest_sha256": "89101542eb0380ce6bb6367a30dd944f93ae42574f893b6f9ea173679fde6097",
+  "rpt_manifest_path": "/home/yndx/zxk/rul/experiments/trajectory_b2_joint_marked_renewal_20261021/candidate_v2/prep_inputs/rpt_assets_manifest.json",
+  "rpt_manifest_sha256": "819114b3294d17f07b15ae52fec2ed979a14b5a0949404d585f0c88c36624313",
+  "source_sha256": {
+    "model.py": "6f87f80baae047146e7c0f8ed9e52566c57e4f2926370f4a7b58eea7eeecb373",
+    "target_builder.py": "c0e986df1505005206f692eff2cdc6ca17f036034438a255a63779b5f723936f",
+    "prep_runner.py": "ceebeacaa96e6d31e46fb8635f4d68289abe2de7775f156ee7697113c0fc62ac",
+    "fit_runner.py": "fdce7ac21ad9891c16ba96cc33f227ef88800db8eab7c7eb692dea4ae3f20e24",
+    "rollout.py": "4d2d620ebfa116b35d9124cf074afae6ebc630b6e7858e36a1d74f49d8ed42ef",
+    "PROTOCOL_V2.md": "abc36cb7180eafcc94c2cf05d2b233779c507214cf15074455318487759014e2",
+    "synthetic_check.py": "863f543821193913c1b177cd5ab9ea6eb3e3248611d380957f4a1745a3a78ccd",
+    "data_protocol.py": "be0b0d14f3034047b009aed8208d7a961c70312ae202b774e556193a2bb53a8c",
+    "data_adapter.py": "d5effc7ab9aa946feee717e8490983e6ccbebf890492b456091ac49a942763f3",
+    "baselines.py": "a8f537e2f2676e9c4a20909c530223bab20521fc7457e544cab092515610187e",
+    "features.py": "a6080b915e7f1ae46ec34c172bd0de84ddfd480efb2818eb562d6358c18e88d9",
+    "cycle_asof_features.py": "6602c0f4b70a77d36177f87822bee279fb461b1fa2bda42acb3f528c5a0376af"
+  },
+  "output_path": "experiments/trajectory_b2_joint_marked_renewal_20261021/candidate_v2/runs/prep-v2_1-20261022T0545Z",
+  "receipt_path": "/home/yndx/zxk/rul/experiments/trajectory_b2_joint_marked_renewal_20261021/candidate_v2/receipts/prep-v2_1-20261022T0545Z.json",
+  "fit_count": 0,
+  "C3_reads": 0,
+  "C4_reads": 0,
+  "issued_by": {
+    "session_id": "session-2d48bcb9-ed32-45fe-9647-dff556b5bf81",
+    "role": "delegated_dsh_execution_controller",
+    "model": "deepseek-v4.1-flash",
+    "reasoning_effort": "max"
+  },
+  "scope_note": "Prep reads only the pinned 125 C1/C2 processed DataV2 cells and the matching 125 RPT feature assets; no raw archive, no C3/C4, zero fits. Mandatory v2.1 fixes were installed and fixtures passed immediately before this GO."
+}

@@ -1,0 +1,58 @@
+{
+  "status": "C3_INFERENCE_COMPLETE",
+  "fit_count": 0,
+  "C4_reads": 0,
+  "C3_reads": 63,
+  "queries": 18922,
+  "request_id": "b2-v2_1-c3infer-20261022T1005Z",
+  "go_sha256": "888a73aab495f10837a5a5cbc8a04445072a85ce2b4ce3deec08180d9d0880e6",
+  "source_sha256": {
+    "infer_runner.py": "8d0b4b4d7d9d970a70807d22ed21cdcdcfde36942710150f936301d7db2ea6bb",
+    "model.py": "f8828e6f8e433a1817908e7e01ecd9deebbc6082aff554bd5b23d9e36e0b6c43",
+    "rollout.py": "7575f37c7bdaa558349a761d389fe9ebd04918ee675b056f957e694aaee17857",
+    "target_builder.py": "c0e986df1505005206f692eff2cdc6ca17f036034438a255a63779b5f723936f",
+    "PROTOCOL_V2.md": "abc36cb7180eafcc94c2cf05d2b233779c507214cf15074455318487759014e2"
+  },
+  "cohorts": {
+    "cohort_sha256": "4469f7f5b6eb8c26a522fa46c4291ec6d03d98e7ae5c20ce7ae77e835b849ae0",
+    "manifest_sha256": "68f53dc481dfc212896658a9bcb69780b5ed7285d853cc870a4002ae658726e1",
+    "rpt_manifest_sha256": "f431eb082f09f455e8edec1cc62e944e116cea1a97544ca3b18abe5d6064c255"
+  },
+  "development_cells": 63,
+  "checkpoints": {
+    "joint": "fa9049566221ea7f9e2cd9f91b76dd6452121c95463db346b8cecda21252f551",
+    "independent": "0a69dfc34b2eaaac252d54bc85da9fcf2f283ff61541a668a698a0f39e072769"
+  },
+  "device": "cuda:0",
+  "samples": 18922,
+  "failures": 68,
+  "known_zero_queries": 815,
+  "elapsed_seconds": 5453.411350011826,
+  "failure_rate": 0.003580832016850974,
+  "arms": {
+    "raw": 7618,
+    "sparse2": 3824,
+    "delay7d": 7480
+  },
+  "conditions": {
+    "main": 6327,
+    "condition_off": 6330,
+    "fixed_gap": 6265
+  },
+  "prediction_rows": 18922,
+  "query_contract": {
+    "n_samples": 256,
+    "max_proposals": 50000,
+    "min_accept_rate": 0.01,
+    "max_valid_checks": 512,
+    "max_weeks": 128.0,
+    "seed": 42,
+    "conditions": [
+      "main",
+      "condition_off",
+      "fixed_gap"
+    ],
+    "max_seconds_per_query": 90.0
+  },
+  "finished_utc": "2026-10-22T11:18:06.801572+00:00"
+}

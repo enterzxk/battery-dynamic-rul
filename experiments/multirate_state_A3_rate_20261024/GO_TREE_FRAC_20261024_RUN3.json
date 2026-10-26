@@ -1,0 +1,90 @@
+{
+  "status": "APPROVED",
+  "allow_fit": true,
+  "allow_C4": false,
+  "scope": "TREE-FRAC TRAIN/FIT: R2 stage B tree subset retrain, F0_hgb + F2_hgb on the frozen f25/f50 fraction pools (identical cell lists to the A3 frac runs), 4 fits in this GO",
+  "request_id": "TREE_FRAC_F25_F50_20261024_RUN3",
+  "owner_thread_id": "01a15c3a-1a06-7d61-8517-27b70b246183",
+  "issued_utc": "2026-10-24T06:05:00Z",
+  "issued_by": {
+    "controller": "ZCode CLI session 2026-10-24 (GLM-5.3-Flash), automation round 3",
+    "review": "worker #4 delivery: self-check 8/8 verified twice on server (first run had a fixture bug, fixed, retained in log); 35/35 GO mutations refused; panel keys exactly reproducible from the frozen reference CSVs"
+  },
+  "code_sha256": {
+    "tree_frac.py": "b8ba2a28e970bffd32d7288cdd565ec4eb4203d0a647f62f7265b65aab47b6e4"
+  },
+  "seed": 42,
+  "fits_in_this_go": 12,
+  "threads": 4,
+  "device": "cpu",
+  "max_runtime_seconds": 10800,
+  "pools": {
+    "f25": {
+      "cells_file": "/home/yndx/zxk/rul/experiments/multirate_state_A3_rate_20261024/cells_f25.json",
+      "cells_sha256": "4dd892e093b688dbebf724c828c59fc43ef930c8465e9e7a2c74600ab5aa88d2"
+    },
+    "f50": {
+      "cells_file": "/home/yndx/zxk/rul/experiments/multirate_state_A3_rate_20261024/cells_f50.json",
+      "cells_sha256": "802562796020d589e9c566dd2a53541e5d59ab98ed2e80abe7238da40b81a421"
+    }
+  },
+  "inputs": {
+    "cohort_json": {
+      "path": "/home/yndx/zxk/rul/reports/isu_ilcc_capacity_probe_20261020_root/cohort.json",
+      "sha256": "4469f7f5b6eb8c26a522fa46c4291ec6d03d98e7ae5c20ce7ae77e835b849ae0"
+    },
+    "data_manifest_json": {
+      "path": "/home/yndx/zxk/rul/reports/isu_ilcc_datav2_full_20261020_root/data_manifest.json",
+      "sha256": "68f53dc481dfc212896658a9bcb69780b5ed7285d853cc870a4002ae658726e1"
+    },
+    "cache_train_features_npz": {
+      "path": "/home/yndx/zxk/rul/experiments/multisource_factorial_20261021/run2_clocksafe/train_features.npz",
+      "sha256": "9c3794064e64d3b0a437c3fde82e7f8a423aa983d37621d0808088bbcbbf9a15"
+    },
+    "cache_development_features_npz": {
+      "path": "/home/yndx/zxk/rul/experiments/multisource_factorial_20261021/run2_clocksafe/development_features.npz",
+      "sha256": "dc0a84ffc091be064f1d7e00963270c8279ffb7505be17057e4a61449664ea3f"
+    },
+    "cache_train_rows_jsonl": {
+      "path": "/home/yndx/zxk/rul/experiments/multisource_factorial_20261021/run2_clocksafe/train_rows.jsonl",
+      "sha256": "1b081d57a41bcc12697fae0b9742b5e734290dd1aac0b3b0e82591abd1489537"
+    },
+    "cache_development_rows_jsonl": {
+      "path": "/home/yndx/zxk/rul/experiments/multisource_factorial_20261021/run2_clocksafe/development_rows.jsonl",
+      "sha256": "bb64c57a1bc09df34b18f5f4c486ddb152d50a4f73b385e235899af54bddd5e3"
+    },
+    "cache_feature_schema_json": {
+      "path": "/home/yndx/zxk/rul/experiments/multisource_factorial_20261021/run2_clocksafe/feature_schema.json",
+      "sha256": "11e50dcf7e2b1f2ae9e05597b6159472ee34d3d0bedb0223531bea69b01fafa7"
+    }
+  },
+  "panel_references": {
+    "F0": {
+      "path": "/home/yndx/zxk/rul/experiments/trajectory_strong_baselines_20261021/runs/q4_strong_baselines_20261021_run2/predictions_c3.csv",
+      "sha256": "f1addad1f435458b7bf68e686dd0816e13a2b45cffd4e1d679519ad4c3486d69"
+    },
+    "F2": {
+      "path": "/home/yndx/zxk/rul/experiments/trajectory_multisource_nextcap_20261021/runs/nextcap18-9e7d9cb1c67f/predictions_c3.csv",
+      "sha256": "0c69390362cba156cd20158ce760d23c837d73963b3dd53bac0539649e364410"
+    }
+  },
+  "model_config": {
+    "hgb": {
+      "max_iter": 150,
+      "max_leaf_nodes": 15,
+      "l2_regularization": 1,
+      "random_state": 42,
+      "early_stopping": false
+    }
+  },
+  "feature_dims": {
+    "F0": 74,
+    "F2": 98
+  },
+  "panel_key_policy": "reference_filter",
+  "out_dir": "/home/yndx/zxk/rul/experiments/multirate_state_A3_rate_20261024/runs/tree_frac_run3_20261024",
+  "supersedes": {
+    "request_id": "TREE_FRAC_F25_F50_20261024_RUN2",
+    "reason": "controller budget mis-specification (4 vs 12 incl. OOF folds); FITS_IN_GO now structurally derived; RUN1+RUN2 burned in code"
+  }
+}

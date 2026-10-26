@@ -1,0 +1,63 @@
+{
+  "status": "APPROVED_C3_INFERENCE",
+  "allow_inference": true,
+  "allow_fit": false,
+  "request_id": "b2-v2_1-c3infer-20261022T1005Z",
+  "owner_thread_id": "01a15c3a-1a06-7d61-8517-27b70b246183",
+  "issued_utc": "2026-10-22T09:47:12.442625+00:00",
+  "max_runtime_seconds": 10800,
+  "data_scope": "C3_source63_development_only_no_C4_no_raw",
+  "device": "cuda:0",
+  "cohort_path": "/home/yndx/zxk/rul/reports/isu_ilcc_capacity_probe_20261020_root/cohort.json",
+  "cohort_sha256": "4469f7f5b6eb8c26a522fa46c4291ec6d03d98e7ae5c20ce7ae77e835b849ae0",
+  "manifest_path": "/home/yndx/zxk/rul/reports/isu_ilcc_datav2_full_20261020_root/data_manifest.json",
+  "manifest_sha256": "68f53dc481dfc212896658a9bcb69780b5ed7285d853cc870a4002ae658726e1",
+  "rpt_manifest_path": "/home/yndx/zxk/rul/reports/multisource_20261021_signals/all188_rpt_features_v1/manifest.json",
+  "rpt_manifest_sha256": "f431eb082f09f455e8edec1cc62e944e116cea1a97544ca3b18abe5d6064c255",
+  "source_sha256": {
+    "infer_runner.py": "8d0b4b4d7d9d970a70807d22ed21cdcdcfde36942710150f936301d7db2ea6bb",
+    "model.py": "f8828e6f8e433a1817908e7e01ecd9deebbc6082aff554bd5b23d9e36e0b6c43",
+    "rollout.py": "7575f37c7bdaa558349a761d389fe9ebd04918ee675b056f957e694aaee17857",
+    "target_builder.py": "c0e986df1505005206f692eff2cdc6ca17f036034438a255a63779b5f723936f",
+    "PROTOCOL_V2.md": "abc36cb7180eafcc94c2cf05d2b233779c507214cf15074455318487759014e2"
+  },
+  "checkpoints": {
+    "joint": {
+      "path": "runs/fit4-20261022T0600Z/joint_full125.pt",
+      "sha256": "fa9049566221ea7f9e2cd9f91b76dd6452121c95463db346b8cecda21252f551"
+    },
+    "independent": {
+      "path": "runs/fit4-20261022T0600Z/independent_full125.pt",
+      "sha256": "0a69dfc34b2eaaac252d54bc85da9fcf2f283ff61541a668a698a0f39e072769"
+    }
+  },
+  "output_path": "experiments/trajectory_b2_joint_marked_renewal_20261021/candidate_v2/runs/c3infer-20261022T1005Z",
+  "receipt_path": "/home/yndx/zxk/rul/experiments/trajectory_b2_joint_marked_renewal_20261021/candidate_v2/receipts/c3infer-20261022T1005Z.json",
+  "query_contract": {
+    "n_samples": 256,
+    "max_proposals": 50000,
+    "min_accept_rate": 0.01,
+    "max_valid_checks": 512,
+    "max_weeks": 128.0,
+    "seed": 42,
+    "conditions": [
+      "main",
+      "condition_off",
+      "fixed_gap"
+    ],
+    "max_seconds_per_query": 90.0
+  },
+  "fit_count": 0,
+  "C3_reads": "development cells only",
+  "C4_reads": 0,
+  "issued_by": {
+    "session_id": "session-2d48bcb9-ed32-45fe-9647-dff556b5bf81",
+    "role": "delegated_dsh_execution_controller",
+    "model": "deepseek-v4.1-flash",
+    "reasoning_effort": "max"
+  },
+  "supersedes": {
+    "note": "Attempt 20261022T0725Z is VOID as a result: a CUDA device-side assert poisoned the context and 59% of rollouts failed (importantly, the runner then wrongly printed a COMPLETE status; a >10% failure gate now exists). This GO pins hardened sources: finite-parameter checks before multinomial, refusal (never clipping) of numerically invalid capacity draws, arm-major query order, per-query wall-clock budget, and the failure-rate gate. Prior runs are retained for diagnosis only."
+  },
+  "scope_note": "C3 source63 development inference from the four completed train-only fits. No fits, no C4 reads, no raw archive, no relaxed retries."
+}

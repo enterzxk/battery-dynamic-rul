@@ -1,0 +1,16 @@
+{
+  "status": "P2_COMPLETE_NO_GAIN_STOP_CLOCK_AND_PR",
+  "goal_status": "ACTIVE",
+  "utc": "2026-10-26T12:21:33Z",
+  "new_CPU_fits_this_stage": 9,
+  "cumulative_recovery_CPU_fits": 15,
+  "new_neural_fits": 0,
+  "C4_reads": 0,
+  "baseline_PR_predictions": 30120,
+  "mechanism_predictions": 15060,
+  "report_sha256": "db925b68c94ad313f2ad7c59db5ca9cebe9a5feca5e4831e7da20af1117252e1",
+  "receipt_sha256": "e10557cb8e2bdb1cf61ccfba83bac7eda483289a328ec81277e597021582d5e4",
+  "next_action": "Fresh GO for low-capacity train-OOF conditional calibration versus unchanged/global calibration; no P1/P2 reruns",
+  "new_fit_GO": null,
+  "github_sync": "PENDING"
+}

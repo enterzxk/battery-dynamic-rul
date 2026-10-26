@@ -1,0 +1,48 @@
+{
+  "B_prediction_path": "experiments/multisource_mechanisms_20261021/evaluation_runs/run3_exact_schedule_clock/predictions_c3.csv",
+  "extension_prediction_path": "experiments/trajectory_multisource_nextcap_20261021/runs/nextcap18-9e7d9cb1c67f/predictions_c3.csv",
+  "stage_source_path": "experiments/trajectory_strong_baselines_20261021/runs/q4_strong_baselines_20261021_run2/predictions_c3.csv",
+  "B_model": "full",
+  "stage_source_model": "hgb",
+  "strong_models": [
+    {
+      "model": "catboost",
+      "panel": "F1",
+      "keys": 3579
+    },
+    {
+      "model": "catboost",
+      "panel": "F2",
+      "keys": 3579
+    },
+    {
+      "model": "catboost",
+      "panel": "F3",
+      "keys": 3579
+    },
+    {
+      "model": "hgb",
+      "panel": "F1",
+      "keys": 3579
+    },
+    {
+      "model": "hgb",
+      "panel": "F2",
+      "keys": 3579
+    },
+    {
+      "model": "hgb",
+      "panel": "F3",
+      "keys": 3579
+    }
+  ],
+  "B_keys": 3765,
+  "stage_keys": 3579,
+  "matched_rows_per_strong_model": 3579,
+  "target_assertion_tolerance_Ah": 1e-12,
+  "horizon_assertion_tolerance_weeks": 1e-06,
+  "primary_metric": "sqrt(mean_cell(mean_query(error_Ah^2)))",
+  "cell_bootstrap_draws": 5000,
+  "bootstrap_seed": 42,
+  "interpretation": "Next-capacity conditional forecast comparison; not trajectory path-RUL. Gaussian NLL uses each method stated sigma and is descriptive unless calibration assumptions hold."
+}

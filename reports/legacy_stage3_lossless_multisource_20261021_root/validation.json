@@ -1,0 +1,105 @@
+{
+  "status": "EXACT_BYTE_ROUNDTRIP_PASS",
+  "prior_commit": "232986ba5bcd216e1fb49055d67fc25060a1b77e",
+  "prior_snapshot_sha256": "b95b02b9262ff8f13abf2c35c2fb28266bfee54a989df87a3561322b975da88d",
+  "archive_sha256": "a37edac5548d77e771ad13883d47cce8d6f25af41c2dfc175565e88f37f3f2d1",
+  "source_bytes": 832756,
+  "archive_bytes": 311992,
+  "files": [
+    {
+      "path": "experiments/isu_irregular_rul_seed42_v1/cpu_results_summary/cell_metrics.csv",
+      "bytes": 131770,
+      "sha256": "61ac42d8404aa00d8e2c66ffb618b3deea327e731c3cb0cb89a40cec2810ff38"
+    },
+    {
+      "path": "reports/saved_examples_lossless_20261018_root/completed_details_lossless.json",
+      "bytes": 94975,
+      "sha256": "6c29524c80d7a39d5b6d3c9f8408389174d1c5e805cb45f16ae880f90c27e0fc"
+    },
+    {
+      "path": "reports/dynamic_A_eligible_20261017_root/candidate_features.csv",
+      "bytes": 69185,
+      "sha256": "b6a4dd686ce922cbbf964e40fcf610612a6e4388078b7f54cec256a18f27d211"
+    },
+    {
+      "path": "experiments/online_survival_observed_pilot_seed42_v1/cohort.json",
+      "bytes": 46061,
+      "sha256": "7ee7d1859d1c72d79d1dff863695ab861ab81aed69712c5ebff60a8053717df4"
+    },
+    {
+      "path": "experiments/online_survival_observed_pilot_seed42_v1/cohort_before_exclusion_explicit.json",
+      "bytes": 45735,
+      "sha256": "e9d0b79e594ed00853422569243662eb491da24921e64ac91eab868be2704494"
+    },
+    {
+      "path": "experiments/dynamic_A_matr_retrospective_seed42_v1/error_contribution.json",
+      "bytes": 43922,
+      "sha256": "54ba2723f7c7cb517c3867d9ead9d8d3169205d886e3b6cc30ddfd358fd5d72c"
+    },
+    {
+      "path": "reports/policy_oof_age_residual_20261019_root/per_cell_age_metrics.json",
+      "bytes": 43389,
+      "sha256": "83e24f376f650c782e2c7ff040a5e305383f8cd74dd6809c8ba24d64354f48cb"
+    },
+    {
+      "path": "experiments/cpmlp_calb_recipe_adapt_seed2021_v1/validation_predictions_epoch_002.csv",
+      "bytes": 42118,
+      "sha256": "bffadd1558ba46cd210f9c74145296dd300a9d0aec04bf72ec8e9011c7a3755c"
+    },
+    {
+      "path": "experiments/policy_context_point_seed42_v1/prediction_delta.json",
+      "bytes": 38264,
+      "sha256": "7bbe567e7cc2d105b989dde3e1f859369613b49707af473b761d652ac1c98cbb"
+    },
+    {
+      "path": "experiments/conditional_quantiles_seed42_v1/prediction_delta.json",
+      "bytes": 34088,
+      "sha256": "67a86ce58ccd5f79e443ce9628846ebc70c6f114d1a42fd8d8cab3ab5f8e615d"
+    },
+    {
+      "path": "experiments/policy_conditional_quantiles_seed42_v1/prediction_delta.json",
+      "bytes": 32474,
+      "sha256": "89387b4b061d17f5d6e1990904f368669e909f3a58b53e120186532dfc7bc7de"
+    },
+    {
+      "path": "reports/development_pilot/cpmlp_hust_seed42_v3/analysis.json",
+      "bytes": 31497,
+      "sha256": "cd709e5a10e92e4488de2e703fd78ba84e6f318e73e849ed94f46f46b2e7237a"
+    },
+    {
+      "path": "experiments/isu_irregular_rul_seed42_v1/filter_comparison_v17_run1/summary/scalar_cell_metrics.csv",
+      "bytes": 27716,
+      "sha256": "93893bfc60ae2da6927f27013f98cbb4188eb2cd95a72343ab0e12acd86d7774"
+    },
+    {
+      "path": "reports/policy_revision_reliability_20261019_root/per_cell_metrics_lossless.json",
+      "bytes": 27507,
+      "sha256": "f6af48000554b23742ef695621a018cd5ceeb0400cb15ea4f7fa2acabff73819"
+    },
+    {
+      "path": "reports/measurement_schedule_firstpassage_20261020_root/per_cell.json",
+      "bytes": 25401,
+      "sha256": "90aa6c76b2b0b59fa3d3ea1fed9dfff4deac15a443c900b43c8617b76585f744"
+    },
+    {
+      "path": "reports/lossless_survival_probability_20261019_root/arithmetic_examples.json",
+      "bytes": 25050,
+      "sha256": "6913f7c280c49cf0a1e11e20ecb3ae52944ff8441a88788e6aee8ab1ff9117b6"
+    },
+    {
+      "path": "reports/policy_survival_probability_20261019_root/arithmetic_examples.json",
+      "bytes": 24736,
+      "sha256": "d3b4e366973f17d4f4d98254658317a3501b26549e1abfbe4343ab9658f1cea5"
+    },
+    {
+      "path": "reports/persistent_capacity_feedback_20261018_root/diagnostic.json",
+      "bytes": 24602,
+      "sha256": "6dcaf32854a87c18564169526a9188d7b27c49b5108d4705c66995914c6fb2ec"
+    },
+    {
+      "path": "experiments/online_survival_observed_pilot_seed42_v1/per_cell_metrics.json",
+      "bytes": 24266,
+      "sha256": "8f0544e4978667376360eb72abc5fe2b2fd4e423e8fcd416fb8d69a276dc6ff7"
+    }
+  ]
+}

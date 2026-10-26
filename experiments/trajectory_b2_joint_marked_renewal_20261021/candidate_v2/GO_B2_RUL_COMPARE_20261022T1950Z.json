@@ -1,0 +1,34 @@
+{
+  "status": "APPROVED",
+  "allow_read_only_postprocess": true,
+  "request_id": "b2-rul-compare-20261022T1950Z",
+  "owner_thread_id": "01a15c3a-1a06-7d61-8517-27b70b246183",
+  "issued_utc": "2026-10-22T11:30:00+00:00",
+  "source_sha256": {
+    "experiments/trajectory_b2_joint_marked_renewal_20261021/candidate_v2/eval_rul_compare.py": "753cf1355c296173265bcc8278e541b5ea56a656967a9963536741f3c0edf998"
+  },
+  "inputs": {
+    "b2_predictions": "/home/yndx/zxk/rul/experiments/trajectory_b2_joint_marked_renewal_20261021/candidate_v2/runs/c3infer-20261022T1005Z/predictions_c3_rul.csv",
+    "b2_samples": "/home/yndx/zxk/rul/experiments/trajectory_b2_joint_marked_renewal_20261021/candidate_v2/runs/c3infer-20261022T1005Z/c3_rul_samples.npz",
+    "comparator_predictions": "/home/yndx/zxk/rul/experiments/multisource_mechanisms_20261021/evaluation_runs/run3_exact_schedule_clock/predictions_c3.csv"
+  },
+  "input_sha256": {
+    "b2_predictions": "725bea0b459138e98b3364a24ac4ff668f4308b3154cdee3d400b092ed323380",
+    "b2_samples": "2dd122036c74f2441d047952c2595c57c2a5ff08e4d98d5975aca36613fb15f5",
+    "comparator_predictions": "0cb15bcd6f01f79d35df2bde14112ed1658fa46286fbaa84b11a1fedcdc9cb56"
+  },
+  "output_path": "/home/yndx/zxk/rul/experiments/trajectory_b2_joint_marked_renewal_20261021/candidate_v2/reports/b2_rul_compare_20261022T1950Z",
+  "receipt_path": "/home/yndx/zxk/rul/experiments/trajectory_b2_joint_marked_renewal_20261021/candidate_v2/receipts/b2_rul_compare_20261022T1950Z_receipt.json",
+  "bootstrap_replicates": 5000,
+  "fit_count": 0,
+  "raw_payload_reads": 0,
+  "model_weight_reads": 0,
+  "C4_reads": 0,
+  "scope": "Saved-results-only RUL comparison: B2 joint/independent trajectories vs the saved same-input B1 mechanism comparator on exact (cell, arm, query) keys, plus predeclared joint-dependence and trajectory-constraint contrasts. No fits, no payload, no checkpoint, no C4.",
+  "issued_by": {
+    "session_id": "session-2d48bcb9-ed32-45fe-9647-dff556b5bf81",
+    "role": "delegated_dsh_execution_controller",
+    "model": "deepseek-v4.1-flash",
+    "reasoning_effort": "max"
+  }
+}

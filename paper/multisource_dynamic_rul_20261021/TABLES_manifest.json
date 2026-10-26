@@ -1,0 +1,23 @@
+{
+  "sources": {
+    "ext_compare": {
+      "path": "/home/yndx/zxk/rul/experiments/multirate_state_A3_rate_20261024/ext_compare_run1/all_model_metrics.csv",
+      "sha256": "dac31d48bae51f38b30ae13643510f5fba0617b47259e9b0f9461bc2e4187003"
+    },
+    "seed43_compare": {
+      "path": "/home/yndx/zxk/rul/experiments/multirate_state_A3_rate_20261024/seed43_compare_run1/all_model_metrics.csv",
+      "sha256": "51c9a15b18afa4fdca89ca63cfa24773aade2afc4ca5143a8f8a6038f2f3927e"
+    },
+    "same_key_run1": {
+      "path": "/home/yndx/zxk/rul/experiments/multirate_state_A3_rate_20261024/same_key_compare_run1/all_model_metrics.csv",
+      "sha256": "fa0da07028f95153a67d14925a1421965739fa8af8cabd3b85aecb46523313ba"
+    },
+    "degradation_curve": {
+      "path": "/home/yndx/zxk/rul/experiments/multirate_state_A3_rate_20261024/degradation_curve_compare_run1/all_model_metrics.csv",
+      "sha256": "8b0314227c8131b192343644dca4db032ab240fabe38d320996f6dfcbc53b4a0"
+    }
+  },
+  "tables_sha256": {
+    "TABLES.md": "a8d13451265add02e5639ec2f1372bc15464a3029477245c285be5cc0f98b290"
+  }
+}

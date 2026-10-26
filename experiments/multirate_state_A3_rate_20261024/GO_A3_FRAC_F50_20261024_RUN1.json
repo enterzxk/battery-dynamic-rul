@@ -1,0 +1,42 @@
+{
+  "status": "APPROVED",
+  "allow_fit": true,
+  "allow_train": true,
+  "allow_C4": false,
+  "scope": "A3 TRAIN/FIT: R2 data-efficiency stage A, arm full only, training pool fraction 0.5 of the 125-cell pool (frozen subset design), 2 fits (selection + refit) in this GO",
+  "request_id": "A3_FRAC_F50_20261024_RUN1",
+  "owner_thread_id": "01a15c3a-1a06-7d61-8517-27b70b246183",
+  "issued_utc": "2026-10-24T03:35:00Z",
+  "issued_by": {
+    "controller": "ZCode CLI session 2026-10-24 (GLM-5.3-Flash), automation round",
+    "review": "worker #3 delivery: self-check 10/10 verified twice on server; 24/24 GO mutations refused; a3_train/a3_model byte-frozen"
+  },
+  "code_sha256": {
+    "a3_train_frac.py": "9edba18f4c76fbd9de0593976744500d166d47c7c568f9cfd09acd3bbe4edea7",
+    "a3_model.py": "b3c6e1247095cf3e533c12f920d788a60d70066c96070d67bc19c7cee5e50b5d",
+    "a3_train.py": "648eeede3e3d22654c6cec63600ca65818d63a378ddaaa8100028e0409c92918"
+  },
+  "max_steps": 3000,
+  "arms": [
+    "full"
+  ],
+  "seed": 42,
+  "refit_seed": 43,
+  "batch_cells": 8,
+  "window_events": 256,
+  "burn_in": "exact",
+  "burn_in_events": 128,
+  "lr": 0.001,
+  "weight_decay": 0.0001,
+  "val_every": 50,
+  "patience": 6,
+  "threads": 8,
+  "refit_scope": "frac_pool",
+  "fraction": 0.5,
+  "fraction_seed": 42,
+  "fits_in_this_go": 2,
+  "prepared_manifest": "/home/yndx/zxk/rul/experiments/multirate_state_A2_20261022/prep_v2_20261022/manifest.json",
+  "prepared_manifest_sha256": "3749221779d7becfdd90525077b3b8a89766a6503face6619d36e8f271dac012",
+  "out_dir": "/home/yndx/zxk/rul/experiments/multirate_state_A3_rate_20261024/run_frac_f50_seed42",
+  "data_scope": "PREP v2 compact npz cache only; no raw archive, no C3/C4 payload, no old checkpoint reads"
+}

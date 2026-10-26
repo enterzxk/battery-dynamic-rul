@@ -1,0 +1,36 @@
+{
+  "request_id": "RUL_TIME_P1_6CPU_20261026_RUN1",
+  "status": "APPROVED",
+  "owner_thread_id": "01a17810-6ae6-7cf2-9729-5bfcaa8df5f4",
+  "issued_utc": "2026-10-26T12:10:32Z",
+  "allow_fit": true,
+  "max_fits": 6,
+  "max_runtime_seconds": 1800,
+  "seed": 42,
+  "C4_allowed": false,
+  "input_sha256": {
+    "experiments/rul_time_recovery_20261026/runner.py": "18819336ee21537a7a4d2aae283fbd681f2f2d9cf83f17b0eb092dd32295fc68",
+    "docs/RUL_TIME_RECOVERY_PLAN_20261026_ZH.md": "ec5b361815d70bebd6e1370a4a78e86b6dbc53fff7c0c88915d76cb98e88b480",
+    "experiments/dart_rul_v18/evaluate.py": "8c0a8101da99d5e0761c7f61794ec3436ca1c39e68438396d3d9ef1470772e8a",
+    "experiments/dart_rul_v18/hgb_models.py": "df341c5a1a495b23c9236cfc884a340de69df5752a5f89531b0a404f9227b543",
+    "reports/isu_ilcc_datav2_full_20261020_root/data_manifest.json": "68f53dc481dfc212896658a9bcb69780b5ed7285d853cc870a4002ae658726e1",
+    "reports/isu_ilcc_capacity_probe_20261020_root/cohort.json": "4469f7f5b6eb8c26a522fa46c4291ec6d03d98e7ae5c20ce7ae77e835b849ae0",
+    "experiments/multisource_factorial_20261021/MULTISOURCE_FORMAL_2X2_80FITS_CLOCK_VALIDITY_REPAIR_20261021_receipt.json": "5eeab340d13c450d028143a6a624e4b0a1431e92b4e2b272e2400c9a285ee8b9",
+    "experiments/multisource_factorial_20261021/run2_clocksafe/train_features.npz": "9c3794064e64d3b0a437c3fde82e7f8a423aa983d37621d0808088bbcbbf9a15",
+    "experiments/multisource_factorial_20261021/run2_clocksafe/train_rows.jsonl": "1b081d57a41bcc12697fae0b9742b5e734290dd1aac0b3b0e82591abd1489537",
+    "experiments/multisource_factorial_20261021/run2_clocksafe/train_targets.jsonl": "981ed8fc56181e8393ad807c39a8dfa19acc7683e531078dab0e030f384ea7aa",
+    "experiments/multisource_factorial_20261021/run2_clocksafe/development_features.npz": "dc0a84ffc091be064f1d7e00963270c8279ffb7505be17057e4a61449664ea3f",
+    "experiments/multisource_factorial_20261021/run2_clocksafe/development_rows.jsonl": "bb64c57a1bc09df34b18f5f4c486ddb152d50a4f73b385e235899af54bddd5e3",
+    "experiments/multisource_factorial_20261021/run2_clocksafe/development_targets.jsonl": "2b9c7f2309691bfa8d213e4b1f4455d272c6e00654b484918ba56e3f24208f3d",
+    "experiments/multisource_factorial_20261021/run2_clocksafe/predictions.csv": "30c9dfcf16983c9aa64de179bc16b3e635db00fc915dede5428edb0d95bd67e7",
+    "experiments/multisource_factorial_20261021/run2_clocksafe/feature_schema.json": "11e50dcf7e2b1f2ae9e05597b6159472ee34d3d0bedb0223531bea69b01fafa7"
+  },
+  "output": "experiments/rul_time_recovery_20261026/p1_run1",
+  "models": [
+    "direct_squared_error",
+    "direct_absolute_error"
+  ],
+  "point_primary": "raw/unconfirmed/cell-macro MAE versus saved F3 median; development only",
+  "unknown_event_policy": "Never invent event time; keep query, exclude unobserved lifetime from absolute-error score",
+  "claim_scope": "Strong baseline construction, not novelty"
+}

@@ -1,0 +1,33 @@
+{
+  "status": "APPROVED",
+  "request_id": "A2_ALL125_VS_OLD_AND_EIGHT_TREES_20261023_RUN1",
+  "owner_thread_id": "01a15c3a-1a06-7d61-8517-27b70b246183",
+  "issued_utc": "2026-10-23T02:56:51.986935+00:00",
+  "max_fits": 0,
+  "allow_saved_prediction_read": true,
+  "allow_checkpoint_read": false,
+  "allow_source_payload_read": false,
+  "allow_C4": false,
+  "scope": "All125 A2, old100 A2 and explicit eight F0/F1/F2/F3 HGB/CatBoost, same global key intersection,0fit,sourcepayload0,C4=0,checkpoint0",
+  "source_sha256": "0711971e8e9d63d3c0d5ff5e059d3c0ecba463a9878582a3e9c0ecf507e4dfe2",
+  "inputs": {
+    "A2": {
+      "path": "/home/yndx/zxk/rul/experiments/multirate_state_A2_fullrefit_20261023/c3_eval_run2/predictions_c3_a2.csv",
+      "sha256": "6d97edc26f2ab884349476768a51aa2a6a320885a07b2f77621e3cb6f5e45f10"
+    },
+    "F0": {
+      "path": "/home/yndx/zxk/rul/experiments/trajectory_strong_baselines_20261021/runs/q4_strong_baselines_20261021_run2/predictions_c3.csv",
+      "sha256": "f1addad1f435458b7bf68e686dd0816e13a2b45cffd4e1d679519ad4c3486d69"
+    },
+    "multisource": {
+      "path": "/home/yndx/zxk/rul/experiments/trajectory_multisource_nextcap_20261021/runs/nextcap18-9e7d9cb1c67f/predictions_c3.csv",
+      "sha256": "0c69390362cba156cd20158ce760d23c837d73963b3dd53bac0539649e364410"
+    },
+    "A2_old": {
+      "path": "/home/yndx/zxk/rul/experiments/multirate_state_A2_20261022/c3_eval_v2_20261022/predictions_c3_a2.csv",
+      "sha256": "72a2d955f765a25a8f522602e117d4effa554c0918aa097f136ddc3e89118090"
+    }
+  },
+  "output": "/home/yndx/zxk/rul/experiments/multirate_state_A2_fullrefit_20261023/same_key_compare_run1",
+  "repair": "Explicit historical F0 CSV field aliases; no target/model/query change; old failed receipt preserved"
+}

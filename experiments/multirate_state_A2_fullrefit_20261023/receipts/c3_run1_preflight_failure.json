@@ -1,0 +1,9 @@
+{
+  "status": "PREFLIGHT_REFUSED",
+  "reason": "Frozen A2 timestamp parser rejected ISO fractional +00:00 issued_utc; use source-supported whole-second Z timestamp. No data/checkpoint reads or fits. Execution claim remains consumed.",
+  "fit_count": 0,
+  "payload_reads": 0,
+  "checkpoint_reads": 0,
+  "C4_reads": 0,
+  "source_unchanged": true
+}

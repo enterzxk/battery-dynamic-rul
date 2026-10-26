@@ -100,3 +100,132 @@ The existing raw-RPT pilot provides real information-value evidence, with paired
 ## Empirical information result (C3 development, 21 October 2026)
 
 The complete 2x2 experiment retrains HGB and CatBoost on equal information and query sets, with80 fits and75300 saved predictions. HGB F0 to F3 MAE is2.029 to1.606 weeks (full),2.230 to1.730 (sparse),2.344 to1.826 (7-day delay). Shape normalization and VI/time controls support further signal research, with model-dependent paired uncertainty. CatBoost severe overestimation and calibration-distance deterioration rule out a blanket reliability claim. The first B trajectory prototype loses against same-information next-capacity tree baselines; its fixed inspection schedule changes the estimand. Candidate A and the off-inspection-time evaluation are pending. See the source-backed Chinese information report for all paired controls and limits. No C4 result is available.
+
+## Empirical results update — 22 October 2026 (C3 development only)
+
+Scope: every number below is C3 source-63 development evidence. C4 was not read, not
+inferred and not trained. Each run was issued under a fresh exact-hash root GO with a
+durable receipt; the zero-fit comparisons read saved predictions only and record zero
+payload, weight and C4 reads. One comparison was retracted during the day and is reported
+here with its correction, not hidden.
+
+### Candidate A (four-state capacity mechanism) — negative, mechanism-diagnosed
+
+- Exact-key matched comparison (3,579 queries, 61 cells, three reporting arms, 5,000
+  cell-bootstrap replicates): A's four variants give cell-balanced RMSE 0.01274–0.01313 Ah,
+  against 0.00782–0.00888 Ah for the same-information tree baselines and 0.01208 Ah for a
+  naive past-slope control. Paired differences exclude zero in every arm.
+- Diagnostics: state-only capacity RMSE is 0.031 Ah while the readout-corrected error is
+  0.0098 Ah (mean signed readout offset +0.019 to +0.026 Ah); RPT updates contract the
+  covariance only 2.8–4.2 % and move the state by 0.002–0.004 Ah against innovations of
+  0.032–0.039 Ah. The parameterisation — nominal 0.25 Ah anchor, learned readout bypass, and
+  a network output used as a variance — absorbs the information before the state can use it.
+- Consequence: A was replaced by A2 (first-arrived Q_ref anchor, state-only Q_ref·e^{−D}+R,
+  no readout bypass, σ as a standard deviation with variance σ²).
+
+### Candidate B (joint marked-renewal trajectories) — negative, with a retracted comparison
+
+- Four mandatory fixes (lock/device/standardisation discipline, global proposal-order
+  truncation, float64 epochs, predeclared conditioning-off and fixed-gap controls with
+  posterior-conditional marks) were implemented before any fit; 38,963 teacher-forced
+  transitions from 2,506 anchored paths over 124 contributing train cells, and exactly four
+  neural fits, were completed. C3 inference produced 18,922 rows over 63 cells with 68
+  frozen-contract failures (0.36 %; 65 of them in the fixed-gap control arm, 3 in the main
+  panel).
+- The first comparison (19:20) concluded that B2 beat the saved B1 mechanism model. That
+  conclusion was wrong: the comparison key map did not filter the comparator's `model`
+  column, so B1's `independent` ablation overwrote B1 `full`. An independent review found
+  it; the comparison was rewritten with an explicit `model == "full"` filter and a
+  per-key target-equality assertion, and re-run under a new GO.
+- Corrected result on 4,637 exact keys / 61 cells: B1 `full` is better on every proper
+  score — cell-MAE 4.111 versus 6.384 (B2 joint) and 6.346 (independent) weeks; pinball50
+  2.056 versus 3.192/3.173; interval score (80 %) 22.96 versus 38.17/35.00; 80 % coverage
+  0.608 versus 0.550/0.687 with a narrower interval (7.11 versus 9.91/18.87 weeks). Paired
+  ΔMAE (B2 − B1 full) is +2.27 weeks [0.76, 4.23]. Including the 815 rule-zero known-event
+  queries, which both models predict as zero, gives 5.05/4.98 versus 3.20 weeks, so the
+  exclusion is conservative.
+- The horizon split does not rescue the claim: only the 0–4 week stratum favours the
+  independent variant (0.74 versus 1.13 weeks); 4–12, 12–32 and 32+ weeks are all worse
+  (3.18/5.07 versus 3.08; 11.5/11.8 versus 6.89; 45.1/29.3 versus 20.4), and joint 80 %
+  coverage at 32+ weeks is 0.074.
+- Mechanistic contrasts are still informative: joint versus product-of-marginals changes MAE
+  by +0.03 weeks [−1.69, +1.79] while halving the interval and dropping coverage from 0.69
+  to 0.55 (over-confident, no accuracy gain); the no-extra-arrival constraint changes MAE by
+  +0.005 weeks [−0.002, +0.012]; fixing the inter-report gap gives +11.7 weeks but that
+  contrast loses 65 of its queries on the acceptance floor, with failed targets at a median
+  of 24.5 weeks versus 10.25 for the survivors, so it is a directional diagnostic rather
+  than a paired effect.
+- One-step next-source capacity (1,806 raw exact-source queries) also favours the 18-fit
+  trees: NLL −3.46 versus +3.55 per Ah and RMSE 0.0057 versus 0.0091 Ah.
+
+### Candidate A2 — mechanism works, still short of strong trees
+
+A2's six selection/refit fits are complete, and its C3 evaluation has run twice: once for the original 100-cell
+checkpoints (63 cells, 2,350 as-of queries, 7,050 model rows; zero fits, zero C4/raw reads) and once after a
+protocol repair that refit the final checkpoints on all 125 training cells (the 25 held-internal-validation cells
+included) with frozen selection step counts. The first-arrived anchor lands at Q_ref = 0.279-0.287 Ah, which is
+exactly the offset that A1 absorbed through its readout. Replacing the readout with the state-only map
+Q = Q_ref·e^{−D} + R, with the RPT innovation NLL and sigma as a standard deviation, moves the
+next-source-capacity error from A1's 0.031 Ah (state-only) to about 0.010 Ah RMSE with no readout at all.
+
+On 903 exact-source raw keys over 61 cells, scored under the primary convention RMSE = sqrt(mean-cell MSE), the
+best A2 arm (time-only control, all-125 refit) reaches NLL −3.122, RMSE 0.0101 Ah and MAE 0.0051 Ah, against
+−3.465 / 0.0057 / 0.0033 for the F3 CatBoost tree on the same keys; the paired cell bootstrap puts A2 time behind
+the F0 HGB tree by 1.97 mAh [1.29, 2.86] MAE on raw (1.35 mAh on sparse2, 4.65 mAh on delay7d) with NLL the same
+direction. The all-125 refit itself changed almost nothing for the time arm (paired MAE +0.00006 Ah versus the
+100-cell version) and slightly improved the full arm's point accuracy while worsening its NLL — the protocol gap
+was real but not load-bearing. The no-RPT-update arm degrades to 0.059 Ah RMSE, an order of magnitude worse, so
+the measurement update is the dominant information source, and the full arm remains 5.4 mAh [3.7, 7.1] worse than
+the time arm: under this parameterisation, training scale and held-operation forecast policy the 24-dimensional
+cycle control hurts (the same cycle information is useful to the F2 trees, so this is not a claim about cycling
+signals in general).
+
+The mechanism is therefore established and clearly better than A1 and B2, but it does not yet beat the strong
+trees, with a single split and seed on the C3 development set. No superiority claim is warranted.
+
+
+
+### Candidate A3 — the individual rate state closes the gap
+
+A3 makes the degradation rate itself a filtered state: x = (D, ℓ, R) with dD = softplus(ℓ)·dt (D is
+pathwise non-decreasing by construction), dℓ = −κ(ℓ − μ_θ(u))·dt + σ_ℓ dW, and the same reversible
+component and RPT observation map as A2. The rate ℓ is not directly observed; it is updated only
+indirectly, through the dependence of the observation on exp(−D). Training follows the repaired
+protocol (selection on the 100 internal train cells, frozen step counts, final refit on all 125
+cells) under a single 8-fit GO, with a consumed-GO registry now enforcing one-time GO use.
+Four ablation arms share the engine: full (cycle-driven rate mean + rate updates), noRateUpdate
+(rate never updated by measurements), time (constant rate mean), and noEll (no rate state at all —
+the A2-type structure with the burn-in repair and the all-125 refit).
+
+On the 2,326 frozen common keys (5,000-cell paired bootstrap), A3-full is the first mechanism model
+in this project that does not lose to the strong same-input trees. On raw exact-source queries its
+MAE 0.003062 Ah is statistically indistinguishable from the best tree (paired difference vs F2 HGB
++12 µAh [−354, +414]); on sparse reporting (sparse2) it is significantly better than F0 HGB
+(−0.44 mAh [−0.92, −0.03]) and F3 CatBoost (−0.49 mAh [−0.84, −0.14]); on 7-day-delayed reporting it
+remains 1.0–1.5 mAh behind on MAE, with NLL already tied. On the full predictive density it wins
+decisively where the trees have no mechanism: NLL is better by 0.42–0.47 nats on raw and 0.52–0.60
+nats on sparse2 against every tree (all CIs exclude zero), with better calibrated intervals
+(cov90 0.959 vs the trees' 0.98 and A2's 0.984).
+
+The ablations attribute the gain to the mechanism, not to the protocol repairs. Removing the rate
+update (noRateUpdate) more than doubles the raw MAE (0.0071 Ah); removing the rate state entirely
+(noEll) costs another 3.1 mAh; and noEll — which contains the burn-in repair and the all-125 refit —
+still beats A2-full by only 4.3 mAh, so the ℓ mechanism contributes an independent ~3.1 mAh beyond
+the repairs. Routing cycle information through the rate state also reverses the A2 finding: the
+full arm now beats the time arm, so completed cycle controls are useful as drivers of the *rate
+prior* even though adding them as exogenous state inputs was harmful. The remaining honest
+limitation is the delay arm and the single split/seed on the development set; no independent-
+confirmation claim is made.
+### Contribution boundary (updated)
+
+The defensible contributions are (i) a quantified information-value result under sparse and
+delayed health reporting and (ii) a diagnosed mechanism account of why the four-state
+capacity parameterisation failed and what the redesign fixed. Neither candidate beats a fair
+strong baseline on C3 yet: B2 is beaten by the previous B1 mechanism model on point,
+probability and interval scores, A2 recovered the state mechanism but stayed behind; its redesigned successor
+A3 — an individual degradation-rate state updated through the capacity measurements — is the
+first candidate that matches the strongest same-input trees on point accuracy (raw and sparse2)
+and beats all of them on the full predictive density, with in-engine ablations attributing the
+gain to the rate mechanism rather than to protocol repairs. These are development-set results
+with a single seed; the delayed-reporting arm is still behind on MAE. No
+independent-confirmation claim is warranted, and the A3 result is not yet replicated.

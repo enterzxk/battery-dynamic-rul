@@ -1,0 +1,18 @@
+{
+  "status": "BLOCK_EXECUTION_PRE_GO_STATIC_REVIEW",
+  "source_path": "reports/isu_ilcc_datav2_20261020_data/prepare_datav2.py",
+  "source_sha256": "a90fd8fbd08b8040f544984af24cfc27f64767227f46a6118694320bc6b2317b",
+  "issues": [
+    "unbounded response.read before206 check can consume entire archive",
+    "code uses3GET/member but frozen scope is2GET/member",
+    "bit3 local deferred sizes/CRC still used for body and checks",
+    "execute path has no runtime GO/hash/review/owner/lock/one-shot claim enforcement",
+    "numeric map source index can be lost;missing/nonfinite capacities and timestamp order not guarded",
+    "verify literal header/jsonl escaping",
+    "bounded decompression and create-only failure handling required"
+  ],
+  "raw_member_reads": 0,
+  "network_requests": 0,
+  "new_fits": 0,
+  "resolution": "Versioned fixes within same2train scope; one delta review then actual execution, no scope expansion"
+}

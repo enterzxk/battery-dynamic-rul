@@ -1,0 +1,104 @@
+{
+  "status": "EXACT_BYTE_ROUNDTRIP_PASS",
+  "source_public_commit": "232986ba5bcd216e1fb49055d67fc25060a1b77e",
+  "original_bytes": 334610,
+  "archive_bytes": 104353,
+  "archive_sha256": "650c3bf1461d0fad7eca51974ff59053c45d05ee19a196fd4fdf79d2d8af5cce",
+  "files": [
+    {
+      "path": "reports/multisource_20261021_literature/information_independent/independent_results.json",
+      "sha256": "1f383509eecb375b2d374fc798a5367a98c54ed43c4eaaabf601b6349e5c9fac",
+      "bytes": 25886
+    },
+    {
+      "path": "experiments/dynamic_A_matr_retrospective_seed42_v1/censored_failure_diagnosis.json",
+      "sha256": "68e7081fe78228b5c1ed1e1e002ebcc72d9993fbe0d1dccc998a328c014ed8c4",
+      "bytes": 19872
+    },
+    {
+      "path": "experiments/dynamic_A_matr_retrospective_seed42_v1/label_boundary_feature_support.json",
+      "sha256": "c1322331a98a49f2a7bfa9f649d51666e7bf673ce25901903b44f9edc685efce",
+      "bytes": 19009
+    },
+    {
+      "path": "experiments/capacity_endpoint_firstpassage_seed42_v2/capacity_prediction_delta.json",
+      "sha256": "5e80663c876d5cf58e4f88d660a76798788d013adb226fd4884d8070cf754ec1",
+      "bytes": 18780
+    },
+    {
+      "path": "reports/calce_cs2_35_repair_20261020_root/public_summary.json",
+      "sha256": "d39e71627ac60a7400a68458f9f0f0652dfe81972c046f29e6f0ca33b85f1b78",
+      "bytes": 18423
+    },
+    {
+      "path": "reports/lossless_survival_probability_20261019_root/per_cell_metrics.json",
+      "sha256": "77ed3787c469b4985b44457333b97e8328cfff119edbbd8cbeec4b143dbebc3c",
+      "bytes": 19095
+    },
+    {
+      "path": "experiments/reporting_delay_fixed20_v1/per_cell_metrics.json",
+      "sha256": "ae8cc63c5849e0d157bc61a47bc4168526eb6dc44a330b9f0ebbaea674e97c3c",
+      "bytes": 18353
+    },
+    {
+      "path": "experiments/native_rul_mae_seed42_v1/prediction_delta.json",
+      "sha256": "20580f159e03400c2ef99a21e0dd4856f4c012b4622dcceb55d6d2c5f6705f41",
+      "bytes": 17079
+    },
+    {
+      "path": "experiments/capacity_firstpassage_seed42_v1/endpoint_data_manifest.json",
+      "sha256": "b2082d158fe8cb0a95e0acd7a0b25077b69a4acab8942d8bfa8afce7cfbf37e3",
+      "bytes": 16131
+    },
+    {
+      "path": "reports/multisource_20261021_signals/sourcefeature_contract.json",
+      "sha256": "51d2f787d2029ac9e0620f20e8812320e23a04a9503b44560c1b461f2098a39e",
+      "bytes": 15936
+    },
+    {
+      "path": "experiments/dart_rul_v18/analysis_v2/three_seed_arm_summary.csv",
+      "sha256": "90ac4c6d638160ca7b20658c1b751bb3d4938844351a08e1c306d72d06106537",
+      "bytes": 15760
+    },
+    {
+      "path": "reports/multisource_20261021_literature/fulltext_evidence.json",
+      "sha256": "d5e333d64c2adc9dfe18498ba268b8df9ff07c4a1f2da71361ecbcd8ac6f1485",
+      "bytes": 15096
+    },
+    {
+      "path": "experiments/multisource_factorial_20261021/run2_clocksafe/factorial_interactions.csv",
+      "sha256": "3fb38c6dc6ec205713f29f96193336b4db50e72371ae8dc8c4dcda69b2bf1960",
+      "bytes": 19031
+    },
+    {
+      "path": "experiments/multisource_generalization_20261021/run1/arm_summary.csv",
+      "sha256": "935c07a2f0a8e3c64977c8bb266599f8c887a3ea235e90d4472c21995a582ac0",
+      "bytes": 20262
+    },
+    {
+      "path": "experiments/multisource_factorial_20261021/off_rpt_grid_self_transport_run3/arm_summary.csv",
+      "sha256": "9bef8b834a924bb46476e749cc3f09c201b43dab139a17a54fec7a513f021cc9",
+      "bytes": 19747
+    },
+    {
+      "path": "experiments/online_survival_observed_pilot_seed42_v1/literature_identity_dedup.json",
+      "sha256": "2dde098445ac2cf8777cf6a1ef4176a6bcc9395fd40141b57dcca3a8fcd73c7b",
+      "bytes": 14347
+    },
+    {
+      "path": "experiments/online_survival_robust_rate_seed42_v1/completion_receipt.json",
+      "sha256": "f86bc04f8bc8002e3782d396b6a62e004a41012df6dc0cac2f8f1dfa0de6f2d6",
+      "bytes": 13966
+    },
+    {
+      "path": "experiments/policy_local_oof_cdf_fixed5_v1/per_cell_metrics.json",
+      "sha256": "676295913a1675e47b6d20634d6c8407a0932cdf097c8d7358656ba239e9e383",
+      "bytes": 14003
+    },
+    {
+      "path": "experiments/policy_lossless_schedule_point_seed42_v1/policy_features.json",
+      "sha256": "d04355dd41069dfd30153fafae4af4d4231af44d14636b00944b53c8de348393",
+      "bytes": 13834
+    }
+  ]
+}

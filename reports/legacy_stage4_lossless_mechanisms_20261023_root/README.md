@@ -1,0 +1,3 @@
+# Lossless archival of previously published legacy tables
+
+337 historical public JSON/CSV files are stored byte-for-byte in archive.bin to preserve the existing 12MiB snapshot cap while making room for current mechanism code and results. Their server originals and prior Git history are unchanged; current Markdown conclusions, V18 and active DataV2/source manifests remain readable. validation.json pins the original public commit and every byte hash. Run `python decode.py` to list paths, or `python decode.py path` to print exact original bytes. Restore a required file to its original relative path before rerunning a legacy script. No source battery signals, weights or model sessions are included.

@@ -1,0 +1,124 @@
+{
+  "schema": "A3_C3_INFERENCE_RECEIPT_V1",
+  "status": "C3_INFERENCE_COMPLETE",
+  "created_utc": "2026-10-23T21:13:51.261268+00:00",
+  "started_utc": "2026-10-23T21:10:29.344240+00:00",
+  "elapsed_seconds": 201.91702860100486,
+  "rss_peak_gb": 2.070306816,
+  "consumes_go": true,
+  "go_consumption": "request_id registered in the canonical consumed-GO registry after full success (a3_train.register_consumed_go)",
+  "registration": {
+    "request_id": "A3_FRAC_INFER_F50_20261024_RUN1",
+    "go_sha256": "55d8b8559c77c69ea472468d8381e3938f7a1893bb816e63bb873ca65a00840b",
+    "finished_utc": "2026-10-23T21:13:51.257690+00:00",
+    "registry": "/home/yndx/zxk/rul/experiments/state/consumed_gos.jsonl",
+    "line": "{\"finished_utc\": \"2026-10-23T21:13:51.257690+00:00\", \"go_sha256\": \"55d8b8559c77c69ea472468d8381e3938f7a1893bb816e63bb873ca65a00840b\", \"request_id\": \"A3_FRAC_INFER_F50_20261024_RUN1\"}"
+  },
+  "error": null,
+  "go": {
+    "path": "/home/yndx/zxk/rul/experiments/multirate_state_A3_rate_20261024/GO_A3_FRAC_INFER_F50_20261024_RUN1.json",
+    "sha256": "55d8b8559c77c69ea472468d8381e3938f7a1893bb816e63bb873ca65a00840b",
+    "status": "APPROVED",
+    "owner_thread_id": "01a15c3a-1a06-7d61-8517-27b70b246183",
+    "data_scope": "C3_source63_development_only_no_C4_no_raw",
+    "device": "cpu",
+    "no_grad": true,
+    "max_rss_gb": 3.0,
+    "max_runtime_seconds": 7200,
+    "request_id": "A3_FRAC_INFER_F50_20261024_RUN1",
+    "checkpoint_subset": [
+      "full"
+    ]
+  },
+  "code_sha256": {
+    "a3_infer.py": "a653818e9d7de3df52fc08a859a9f4ac159b215e4f43743124e5b6553e15b597",
+    "a3_model.py": "b3c6e1247095cf3e533c12f920d788a60d70066c96070d67bc19c7cee5e50b5d",
+    "a3_train.py": "648eeede3e3d22654c6cec63600ca65818d63a378ddaaa8100028e0409c92918",
+    "a2_infer.py": "1b290fc5fb2ec962125c99c1c2d12a81b546096ec8ffdb209184a1ea59fe76fc",
+    "a2_prep.py": "3b45d148696b830be6555527d6f162b391d18a9cd349851220b293da6454c0c4",
+    "a2_targets.py": "9c73696820e38257a131b421f4b70d3f6d57436eae8ee25da6f7d35ce0900901",
+    "a2_fastdata.py": "c82f00a2950f550087a7bda033b4347922e6cdc580b896b9cf8a22e6eaa33423",
+    "a2_model.py": "24b23883a18b7d4386930b52c582fc5c0bef452c0f2b0cb4cbdf7bab3b4c6c8f",
+    "a2_train.py": "11cf19e4ad21db950e16f32d235e4425cde130f74b0f37c44dc1cf47306563cb",
+    "a2_fixtures.py": "0dc22f205cb767a7d3cf60673eb3e33b6da4c35ac6aa48a7633dfbe4310e43a2"
+  },
+  "sources": {
+    "cohort": {
+      "path": "/home/yndx/zxk/rul/reports/isu_ilcc_capacity_probe_20261020_root/cohort.json",
+      "sha256": "4469f7f5b6eb8c26a522fa46c4291ec6d03d98e7ae5c20ce7ae77e835b849ae0"
+    },
+    "data_manifest": {
+      "path": "/home/yndx/zxk/rul/reports/isu_ilcc_datav2_full_20261020_root/data_manifest.json",
+      "sha256": "68f53dc481dfc212896658a9bcb69780b5ed7285d853cc870a4002ae658726e1"
+    },
+    "cycling_manifest": {
+      "path": "/home/yndx/zxk/rul/reports/multisource_20261021_signals/cycling_all188_feature_manifest.json",
+      "sha256": "51e4c87fc7e59cee6afe2bb79fabb9e72070d98ca6d457c124c553d0b05018cb"
+    },
+    "rpt_manifest": {
+      "path": "/home/yndx/zxk/rul/reports/multisource_20261021_signals/all188_rpt_features_v1/manifest.json",
+      "sha256": "f431eb082f09f455e8edec1cc62e944e116cea1a97544ca3b18abe5d6064c255"
+    }
+  },
+  "checkpoints": {
+    "full": {
+      "path": "/home/yndx/zxk/rul/experiments/multirate_state_A3_rate_20261024/run_frac_f50_seed42/model_state_dict_full.pt",
+      "sha256": "afa36d62352bf40858602cb7d504c0bb71d567ce627fdb4c924570124439cab9",
+      "model_arm": "A3_full",
+      "mu_from_control": true,
+      "rate_update": true,
+      "ell_state": true,
+      "checkpoint_param_dtype": "torch.float32",
+      "filter_dtype": "torch.float64",
+      "parameters": 2664,
+      "kappa_per_week": 0.25322059207616365,
+      "sigma_ell_per_sqrt_week": 0.57524282959707,
+      "lambda_per_week": 0.02871983375272378,
+      "sigma_R_ah_per_sqrt_week": 0.0016920657044859353,
+      "obs_sigma_ah": 0.00110907039223057,
+      "mu_base": -5.757255554199219,
+      "control_mean_is_identity": false,
+      "control_scale_is_identity": false
+    }
+  },
+  "counts": {
+    "n_cells": 63,
+    "n_cells_skipped": 0,
+    "n_queries": 2350,
+    "n_queries_by_arm": {
+      "raw": 921,
+      "sparse2": 464,
+      "delay7d": 965
+    },
+    "n_prediction_rows": 2350,
+    "n_query_models": 2350,
+    "n_models": 1,
+    "n_query_arms": 3,
+    "n_scored_rpt_innovations": 2580
+  },
+  "reads": {
+    "processed_cells": 63,
+    "cycling_cells": 62,
+    "files_read": 125,
+    "bytes_read": 119343331,
+    "preflight_hash_files": 141,
+    "preflight_hash_bytes": 120108733,
+    "checkpoint_files_read": 1,
+    "rpt_assets_read": 0,
+    "raw_archives_read": 0,
+    "c4_cells_read": 0,
+    "fits": 0,
+    "optimizer_steps": 0
+  },
+  "outputs": {
+    "predictions_csv": "/home/yndx/zxk/rul/experiments/multirate_state_A3_rate_20261024/c3_eval_frac_f50_20261024/predictions_c3_a3.csv",
+    "predictions_csv_sha256": "1ccdda9dfbd75e9b5cdc7080483804179b6d17470a9e0b66799aa0a731752a68",
+    "predictions_csv_bytes": 4088216,
+    "predictions_rows": 2350,
+    "summary_json": "/home/yndx/zxk/rul/experiments/multirate_state_A3_rate_20261024/c3_eval_frac_f50_20261024/summary.json",
+    "summary_json_sha256": "e993404ff3eb741703391ba3c014fc8147eb35d8216e2e4a0637529cc04e4cb3"
+  },
+  "fits": 0,
+  "optimizer_steps": 0,
+  "c4_cells_read": 0
+}
