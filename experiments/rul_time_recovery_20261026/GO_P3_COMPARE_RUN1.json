@@ -1,0 +1,11 @@
+{
+  "request_id": "RUL_TIME_P3_COMPARE_20261027_RUN1",
+  "max_fits": 0,
+  "sha256": {
+    "experiments/rul_time_recovery_20261026/p3_compare.py": "c6bcddeca4b0dfc01a32012e857f90ee77d4816d5a5925fe6125ba972dd7d0b9",
+    "experiments/rul_time_recovery_20261026/p3_calibration_run1/predictions.csv": "6799d5791ed8fa259d4090e06cd6c14e38abc116d41a9d99fbe39fa9f5579a8a",
+    "experiments/rul_time_recovery_20261026/p1_run1/predictions.csv": "e4686877d8f02bee7ed9a612abc872d856edce34666f87b01c2a7e12a78c5bbb",
+    "experiments/rul_time_recovery_20261026/p3_calibration_run1/ridge_context.joblib": "2ba85988b45810248748f194ecc9cd8cc6047fca0a8b3292706567bcd0ddb1e7"
+  },
+  "output": "experiments/rul_time_recovery_20261026/p3_compare_run1"
+}

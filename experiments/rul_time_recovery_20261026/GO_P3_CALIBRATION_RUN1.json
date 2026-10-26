@@ -1,0 +1,37 @@
+{
+  "request_id": "RUL_TIME_P3_CALIBRATION_3CPU_20261027_RUN1",
+  "owner_thread_id": "01a17810-6ae6-7cf2-9729-5bfcaa8df5f4",
+  "status": "APPROVED",
+  "issued_utc": "2026-10-26T16:45:26Z",
+  "max_calibrator_fits": 3,
+  "max_base_fits": 0,
+  "max_runtime_seconds": 600,
+  "C4_allowed": false,
+  "sha256": {
+    "experiments/rul_time_recovery_20261026/p3_calibration.py": "b391e19e525fad263efc8238a3fd8f1632035b4f5b89be1ed6af04625a21c936",
+    "experiments/rul_time_recovery_20261026/runner.py": "18819336ee21537a7a4d2aae283fbd681f2f2d9cf83f17b0eb092dd32295fc68",
+    "experiments/rul_time_recovery_20261026/P3_CALIBRATION_PROTOCOL_ZH.md": "f7f08fbb2e0e60b963325152a4a2cccd227b6a60f604bc8ddcad5d401a2a7234",
+    "experiments/dart_rul_v18/hgb_models.py": "df341c5a1a495b23c9236cfc884a340de69df5752a5f89531b0a404f9227b543",
+    "experiments/dart_rul_v18/evaluate.py": "8c0a8101da99d5e0761c7f61794ec3436ca1c39e68438396d3d9ef1470772e8a",
+    "experiments/multisource_factorial_20261021/run2_clocksafe/train_targets.jsonl": "981ed8fc56181e8393ad807c39a8dfa19acc7683e531078dab0e030f384ea7aa",
+    "experiments/multisource_factorial_20261021/run2_clocksafe/development_targets.jsonl": "2b9c7f2309691bfa8d213e4b1f4455d272c6e00654b484918ba56e3f24208f3d",
+    "experiments/multisource_factorial_20261021/run2_clocksafe/development_rows.jsonl": "bb64c57a1bc09df34b18f5f4c486ddb152d50a4f73b385e235899af54bddd5e3",
+    "experiments/multisource_factorial_20261021/run2_clocksafe/train_features.npz": "9c3794064e64d3b0a437c3fde82e7f8a423aa983d37621d0808088bbcbbf9a15",
+    "experiments/multisource_factorial_20261021/run2_clocksafe/development_features.npz": "dc0a84ffc091be064f1d7e00963270c8279ffb7505be17057e4a61449664ea3f",
+    "experiments/multisource_factorial_20261021/run2_clocksafe/hgb_F3_oof0.joblib": "f0c02942f91e6b8bea8ca94b0f88f293fc67ae70848c7a007c1a0d40dd056e49",
+    "experiments/multisource_factorial_20261021/run2_clocksafe/hgb_F3_oof1.joblib": "0a9a22293873333f0f06bedf93feb13786c714af7a2dbbe36ec18a4a5af6fb29",
+    "experiments/multisource_factorial_20261021/run2_clocksafe/hgb_F3_distribution.joblib": "f124e96c9fce11f410b90ddb222978c9ac0d974969bac72ba88ce3b3add595cf",
+    "experiments/multisource_factorial_20261021/run2_clocksafe/hgb_F3_positive.joblib": "b044f171d71d29862046d37bb114f868adafe60ac90cc3b702d23abb38bfb1ad",
+    "experiments/multisource_factorial_20261021/run2_clocksafe/predictions.csv": "30c9dfcf16983c9aa64de179bc16b3e635db00fc915dede5428edb0d95bd67e7"
+  },
+  "output": "experiments/rul_time_recovery_20261026/p3_calibration_run1",
+  "seed": 42,
+  "novelty_claim": false,
+  "calibrators": [
+    "ridge_context",
+    "hgb_context",
+    "hgb_mu_only"
+  ],
+  "control": "Exact original global residual law",
+  "minimum_validation": "Context columns and shape; hand-computed global residual centering identity"
+}

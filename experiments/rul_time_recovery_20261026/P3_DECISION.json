@@ -1,0 +1,20 @@
+{
+  "status": "P3_WEAK_DEVELOPMENT_SIGNAL_STRONG_GATE_NOT_MET",
+  "goal_status": "ACTIVE",
+  "utc": "2026-10-26T16:57:47Z",
+  "new_calibrator_fits": 3,
+  "new_base_fits": 0,
+  "cumulative_recovery_CPU_fits": 18,
+  "reference_library_estimations": 1,
+  "C4_reads": 0,
+  "calibrator_predictions": 15060,
+  "peer_predictions": 7530,
+  "global_control_identity_error": 2.1316282072803006e-14,
+  "report_sha256": "34d88dadfb48b2dbaaf3133cd8221b089f12ec318d4df3a3bdf50542e9c6316d",
+  "next_stage": "P4_DIRECT_RUL_HISTORY_INPUT_AUDIT_AND_IMPLEMENTATION",
+  "next_action": "Implement identical current-only/history GRU and historical-summary HGB from P4 plan; cache-only input audit before fresh fit GO",
+  "new_fit_GO": null,
+  "novelty_claim": false,
+  "strong_baseline_gain_confirmed": false,
+  "github_sync": "PENDING"
+}

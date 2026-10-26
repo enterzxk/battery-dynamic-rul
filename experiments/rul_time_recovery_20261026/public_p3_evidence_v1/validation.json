@@ -1,0 +1,34 @@
+{
+  "format": "ZIP_LZMA",
+  "roundtrip": "PASS",
+  "files": [
+    {
+      "path": "p3_calibration_run1/distribution_per_cell.csv",
+      "bytes": 439140,
+      "sha256": "b3c814b479eb1fa7a7fd0571844a0e195fcaf799271ec64213690c90ced9babf"
+    },
+    {
+      "path": "p3_calibration_run1/paired_per_cell.csv",
+      "bytes": 436238,
+      "sha256": "291efb6ddc9efb74a9299540c989fe2e4de83634a03dc10636ebaaeaeaec9ece"
+    },
+    {
+      "path": "p3_peer_run1/distribution_per_cell.csv",
+      "bytes": 181185,
+      "sha256": "02331057b75aab23cb25784dd2e682e30fca1e98bb396f0afd0c1be1c95567f1"
+    },
+    {
+      "path": "p3_peer_run1/paired_per_cell.csv",
+      "bytes": 231429,
+      "sha256": "dcecbe788ba6f420d6db435368cc282fed3018320e876134598280874c945d57"
+    },
+    {
+      "path": "p3_compare_run1/comparisons.json",
+      "bytes": 56494,
+      "sha256": "57f0f5e8301166c075b65ff195b7edab3ca8310974dc9bdc4d4b5e3d42da3162"
+    }
+  ],
+  "original_bytes": 1344486,
+  "archive_bytes": 271806,
+  "archive_sha256": "c911f3861a32779adc3ecfbdd33b7837d006a30949420289c43cdaf059e87be8"
+}

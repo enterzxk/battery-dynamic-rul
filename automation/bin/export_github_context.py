@@ -557,6 +557,15 @@ def main():
     BINARY_PREDICTION_ARCHIVES.add('experiments/rul_time_recovery_20261026/public_per_cell_v3/archive.bin')
     chosen.update('experiments/rul_time_recovery_20261026/public_per_cell_v3/'+n for n in ['archive.bin', 'validation.json', 'decode.py', 'README.md'])
 
+    # 2026-10-27 P3 results and lossless capacity-source compaction.
+    chosen.difference_update(['experiments/multirate_state_A3_rate_20261024/a3_fixtures.py', 'experiments/multirate_state_A3_rate_20261024/a3_infer.py', 'experiments/multirate_state_A3_rate_20261024/a3_model.py', 'experiments/multirate_state_A3_rate_20261024/a3_train_frac.py', 'experiments/multirate_state_A3_rate_20261024/a3t/a3t_infer.py', 'experiments/multirate_state_A3_rate_20261024/calce_zero_shot/calce_zero_shot.py', 'experiments/multirate_state_A3_rate_20261024/ext_baselines/a3_calibrate.py', 'experiments/multirate_state_A3_rate_20261024/ext_baselines/ext_baselines.py', 'experiments/multirate_state_A3_rate_20261024/hybrid/hybrid_aug.py', 'experiments/multirate_state_A3_rate_20261024/schedule_eval.py', 'experiments/multirate_state_A3_rate_20261024/tree_frac.py'])
+    chosen.update('experiments/rul_time_recovery_20261026/'+n for n in ['p3_calibration.py', 'P3_CALIBRATION_PROTOCOL_ZH.md', 'p3_peer.py', 'P3_PEER_PROTOCOL_ZH.md', 'P3_RESULTS_ZH.md', 'P3_DECISION.json', 'P4_HISTORY_PLAN_ZH.md', 'GO_P3_CALIBRATION_RUN1.json', 'GO_P3_PEER_RUN1.json', 'p3_calibration_run1/receipt.json', 'p3_calibration_run1/point_summary.csv', 'p3_calibration_run1/distribution_summary.csv', 'p3_peer_run1/receipt.json', 'p3_peer_run1/point_summary.csv', 'p3_peer_run1/distribution_summary.csv'])
+    BINARY_PREDICTION_ARCHIVES.add('reports/rul_recovery_legacy_capacity_code_20261027/archive.bin')
+    chosen.update('reports/rul_recovery_legacy_capacity_code_20261027/'+n for n in ['archive.bin', 'validation.json', 'decode.py', 'README.md'])
+    BINARY_PREDICTION_ARCHIVES.add('experiments/rul_time_recovery_20261026/public_p3_evidence_v1/archive.bin')
+    chosen.update('experiments/rul_time_recovery_20261026/public_p3_evidence_v1/'+n for n in ['archive.bin', 'validation.json', 'decode.py', 'README.md'])
+
+    chosen.update('experiments/rul_time_recovery_20261026/'+n for n in ['p3_compare.py','GO_P3_COMPARE_RUN1.json'])
     contents, files, skipped, binary_blobs = {}, [], [], {}
     mapping = {'README.md': 'docs/GITHUB_README_ZH.md', 'agent.md': 'AGENTS.md'}
     mapping.update({rel: rel for rel in sorted(chosen)})

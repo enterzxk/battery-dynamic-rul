@@ -1,0 +1,64 @@
+{
+  "format": "ZIP_LZMA",
+  "roundtrip": "PASS",
+  "files": [
+    {
+      "path": "experiments/multirate_state_A3_rate_20261024/a3_fixtures.py",
+      "bytes": 55873,
+      "sha256": "fe09c4fbe5e4cf78fd9304d1490a77df45587107f78dc947eedf1677142623c6"
+    },
+    {
+      "path": "experiments/multirate_state_A3_rate_20261024/a3_infer.py",
+      "bytes": 121850,
+      "sha256": "a653818e9d7de3df52fc08a859a9f4ac159b215e4f43743124e5b6553e15b597"
+    },
+    {
+      "path": "experiments/multirate_state_A3_rate_20261024/a3_model.py",
+      "bytes": 41834,
+      "sha256": "b3c6e1247095cf3e533c12f920d788a60d70066c96070d67bc19c7cee5e50b5d"
+    },
+    {
+      "path": "experiments/multirate_state_A3_rate_20261024/a3_train_frac.py",
+      "bytes": 53143,
+      "sha256": "9edba18f4c76fbd9de0593976744500d166d47c7c568f9cfd09acd3bbe4edea7"
+    },
+    {
+      "path": "experiments/multirate_state_A3_rate_20261024/a3t/a3t_infer.py",
+      "bytes": 131902,
+      "sha256": "80ae02343845c043a9c0ac235a07d5860727391baaebfa078d0c1a222d399c4c"
+    },
+    {
+      "path": "experiments/multirate_state_A3_rate_20261024/calce_zero_shot/calce_zero_shot.py",
+      "bytes": 87121,
+      "sha256": "536a94b308bf46608dacd94dc7a13ece8073e2054038e75c6985aba88be8f370"
+    },
+    {
+      "path": "experiments/multirate_state_A3_rate_20261024/ext_baselines/a3_calibrate.py",
+      "bytes": 80661,
+      "sha256": "045545c10be6956fa944e6f683186c1d4a0e628086fb25fda8c588bcb57365c1"
+    },
+    {
+      "path": "experiments/multirate_state_A3_rate_20261024/ext_baselines/ext_baselines.py",
+      "bytes": 101270,
+      "sha256": "20849b6eb9edacc9cbb5c55cd4deeb115b24b61388c082380597a16df77d12f7"
+    },
+    {
+      "path": "experiments/multirate_state_A3_rate_20261024/hybrid/hybrid_aug.py",
+      "bytes": 107310,
+      "sha256": "c4d25b33e5ecce82c1ed9fabfa58cec41019edc771af6356e25bfc18bf0afbc9"
+    },
+    {
+      "path": "experiments/multirate_state_A3_rate_20261024/schedule_eval.py",
+      "bytes": 80442,
+      "sha256": "756800b2e591bdc6de104eb1247052150cb09cc76a8156033754c563176dd5aa"
+    },
+    {
+      "path": "experiments/multirate_state_A3_rate_20261024/tree_frac.py",
+      "bytes": 100832,
+      "sha256": "b8ba2a28e970bffd32d7288cdd565ec4eb4203d0a647f62f7265b65aab47b6e4"
+    }
+  ],
+  "original_bytes": 962238,
+  "archive_bytes": 225670,
+  "archive_sha256": "f493d35830a748ca0f30f297e121ca6a8da50c3a2b593c084a58bf1253e6f594"
+}
