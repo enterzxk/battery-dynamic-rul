@@ -1,0 +1,17 @@
+{
+  "status": "EXPLORATORY_PENDING_RESOURCE_FRONTIER_NEEDS_REPLICATION",
+  "paper_ready": false,
+  "strict_equal_cost": false,
+  "full_event_distribution_validated": false,
+  "prior_gain_NO_GAIN_preserved": true,
+  "held_cohort_independently_confirmatory": false,
+  "hypothetical_report_delay_days": 14,
+  "limits": [
+    "Age comparator was added after held outcomes were examined.",
+    "Matching station hours was calibrated on train fleet only and remains approximate on held fleet.",
+    "One coupled fleet per population, no independent fleet confidence interval.",
+    "Conditional positive-RUL proxy lacks event probability, coverage and early-warning metrics.",
+    "Substantial out-of-training-range staleness and unconfirmed post-event cases."
+  ],
+  "next": "Freeze all rules, then evaluate the same policy and train-calibrated baselines with full event-distribution predictions on disjoint C3 development fleet groups; C3 remains prior-used development, not C4 or independent confirmation."
+}

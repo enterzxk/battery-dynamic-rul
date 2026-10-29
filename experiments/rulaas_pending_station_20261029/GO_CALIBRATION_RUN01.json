@@ -1,0 +1,44 @@
+{
+  "status": "APPROVED",
+  "request_id": "RULAAS_AGE_CALIBRATION_20261029_RUN01",
+  "owner": "01a17810-6ae6-7cf2-9729-5bfcaa8df5f4",
+  "issued_utc": "2026-10-29T15:47:05.414206+00:00",
+  "actual_model": "gpt-6.1-terra",
+  "model_preference_source": "User explicitly chose Terra on 2026-10-29.",
+  "allow_fits": false,
+  "allow_C3": false,
+  "allow_C4": false,
+  "age_grid_weeks": [
+    2.0,
+    2.25,
+    2.5,
+    2.75,
+    3.0,
+    3.25,
+    3.5,
+    4.0,
+    4.5,
+    5.0,
+    6.0,
+    8.0
+  ],
+  "capacities": [
+    2,
+    4
+  ],
+  "source_cell_cap": 24,
+  "output": "experiments/rulaas_pending_station_20261029/calibration01",
+  "input_sha256": {
+    "experiments/rulaas_pending_station_20261029/calibrate_age.py": "eadf2bedc11cc0a8a987156525c66d5e157f6dc69167972f58d2b03679788457",
+    "experiments/rulaas_pending_station_20261029/CALIBRATION_PROTOCOL_ZH.md": "c274bc826a6bf3acb21264418f29ad9e3d19428be0b233014b0c6207c403ff4a",
+    "experiments/rulaas_pending_station_20261029/TRAIN_TARGET_ONLY.json": "8dde41a520e2651aeb8ece74fcb8057586028f54a484f377e79316015aea0f92",
+    "experiments/rulaas_pending_station_20261029/run01/fleet_world.json": "7c6839727524ea60f79eea703075d281e9d85c01f77c8bfe583872118a419a0e",
+    "experiments/rulaas_pending_station_20261029/run01/INDEPENDENT_RECOMPUTE.json": "d625cac47d3df6fba6927b1273fdfc3b9892e195582336f59704e56d375b2c79",
+    "experiments/rulaas_gain_identifiability_20261029/run02/cell_split.json": "322cc75a533c248ddc9fc39159431924d9e2ba0e5cb82c40efbf11391cc51e43",
+    "experiments/rulaas_gain_identifiability_20261029/run02/receipt.json": "41dcfd090cf5cb92507e9dfeef67fcaa6fd19b792a3992ca26cbbca2c7233082",
+    "experiments/isu_irregular_rul_seed42_v1/data_adapter.py": "d5effc7ab9aa946feee717e8490983e6ccbebf890492b456091ac49a942763f3",
+    "experiments/isu_irregular_rul_seed42_v1/baselines.py": "a8f537e2f2676e9c4a20909c530223bab20521fc7457e544cab092515610187e",
+    "experiments/dart_rul_v18/data_protocol.py": "be0b0d14f3034047b009aed8208d7a961c70312ae202b774e556193a2bb53a8c",
+    "AGENTS.md": "93488b4e887ff13c8ac88687d1be4197a52c22667708dfd960d424007f3b1c19"
+  }
+}

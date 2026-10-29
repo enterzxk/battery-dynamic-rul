@@ -1,0 +1,5 @@
+population,stations,candidate,reference,paired_primary_cells,cell_macro_delta_MAE,cells_improved,cells_unchanged,cells_worse,worst_cell,worst_cell_delta,paired_uncertainty
+kernel_fit,2,age_no_pending,age,24,-0.05091662552493673,10,0,14,G10C1,0.6367518632793607,Not estimated from a single coupled fleet.
+kernel_fit,4,age_no_pending,age,24,0.2777874419193574,5,0,19,G10C1,0.9356293725234828,Not estimated from a single coupled fleet.
+kernel_held,2,age_no_pending,age,24,-0.0422490492034854,10,4,10,G2C1,0.5846607940835864,Not estimated from a single coupled fleet.
+kernel_held,4,age_no_pending,age,24,0.13888132419096813,8,2,14,G47C1,0.6672221895623061,Not estimated from a single coupled fleet.

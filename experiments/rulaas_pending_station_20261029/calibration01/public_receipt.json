@@ -1,0 +1,43 @@
+{
+  "status": "SUCCESS",
+  "started_utc": "2026-10-29T15:47:07.922535+00:00",
+  "request_id": "RULAAS_AGE_CALIBRATION_20261029_RUN01",
+  "new_fits": 0,
+  "model_prediction_rows": 0,
+  "training_source_cells_read": 24,
+  "held_fleet_outcomes_used": 0,
+  "C3_payload_reads": 0,
+  "C4_payload_reads": 0,
+  "actual_coordinator_model_recorded": "gpt-6.1-terra",
+  "finished_utc": "2026-10-29T15:47:07.951540+00:00",
+  "elapsed_seconds": 0.029015779495239258,
+  "simulated_worlds": 24,
+  "request_events_per_world": 454,
+  "selected": [
+    {
+      "stations": 2,
+      "age_threshold_weeks": 2.75,
+      "training_admitted_tests": 186,
+      "training_station_hours": 3529.8036111111105,
+      "target_training_station_hours": 3383.081111111113,
+      "absolute_station_hour_difference": 146.72249999999758,
+      "relative_station_hour_difference": 0.0433694892854074,
+      "busy_rejections": 60,
+      "known_event_skips": 73,
+      "age_rejections": 135
+    },
+    {
+      "stations": 4,
+      "age_threshold_weeks": 3.25,
+      "training_admitted_tests": 192,
+      "training_station_hours": 3720.8825000000015,
+      "target_training_station_hours": 3633.9458333333355,
+      "absolute_station_hour_difference": 86.93666666666604,
+      "relative_station_hour_difference": 0.02392348996212776,
+      "busy_rejections": 7,
+      "known_event_skips": 82,
+      "age_rejections": 173
+    }
+  ],
+  "GO_sha256": "ff5cbbab34bc87d07441683a6ec99516432912059e40b7b1bf21f90e6021c428"
+}

@@ -1,0 +1,50 @@
+{
+  "status": "TRAIN_ONLY_THRESHOLDS_FROZEN",
+  "selected": [
+    {
+      "stations": 2,
+      "age_threshold_weeks": 2.75,
+      "training_admitted_tests": 186,
+      "training_station_hours": 3529.8036111111105,
+      "target_training_station_hours": 3383.081111111113,
+      "absolute_station_hour_difference": 146.72249999999758,
+      "relative_station_hour_difference": 0.0433694892854074,
+      "busy_rejections": 60,
+      "known_event_skips": 73,
+      "age_rejections": 135
+    },
+    {
+      "stations": 4,
+      "age_threshold_weeks": 3.25,
+      "training_admitted_tests": 192,
+      "training_station_hours": 3720.8825000000015,
+      "target_training_station_hours": 3633.9458333333355,
+      "absolute_station_hour_difference": 86.93666666666604,
+      "relative_station_hour_difference": 0.02392348996212776,
+      "busy_rejections": 7,
+      "known_event_skips": 82,
+      "age_rejections": 173
+    }
+  ],
+  "grid": [
+    2.0,
+    2.25,
+    2.5,
+    2.75,
+    3.0,
+    3.25,
+    3.5,
+    4.0,
+    4.5,
+    5.0,
+    6.0,
+    8.0
+  ],
+  "tie_break": "smallest threshold",
+  "uses_held_fleet_outcomes": false,
+  "uses_lifetime_labels": false,
+  "simulation_worlds": 24,
+  "source_cells": 24,
+  "request_events_per_world": 454,
+  "limitation": "Frozen after inspecting earlier held outcomes; this is a post-hoc stronger development comparator, not independent confirmation."
+}

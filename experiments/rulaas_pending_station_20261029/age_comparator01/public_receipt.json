@@ -1,0 +1,17 @@
+{
+  "status": "SUCCESS",
+  "request_id": "RULAAS_AGE_COMPARATOR_20261029_RUN01",
+  "started_utc": "2026-10-29T15:48:17.110003+00:00",
+  "new_fits": 0,
+  "model_prediction_rows": 1262,
+  "held_source_cells_read": 24,
+  "C3_payload_reads": 0,
+  "C4_payload_reads": 0,
+  "actual_coordinator_model_recorded": "gpt-6.1-terra",
+  "finished_utc": "2026-10-29T15:48:31.739079+00:00",
+  "elapsed_seconds": 14.629092931747437,
+  "GO_sha256": "83cdcb0f6e865735ae128468aea6ca569fbe1d9e306d36523509874a26ac0ec0",
+  "age_prediction_rows": 1794,
+  "frozen_candidate_rows": 1794,
+  "common_query_and_target_keys": "PASS"
+}

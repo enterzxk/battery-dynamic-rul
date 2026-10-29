@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "new_fits": 0,
+  "new_inference_rows": 0,
+  "C3_payload_reads": 0,
+  "C4_payload_reads": 0,
+  "training_calibration_worlds_recomputed": 24,
+  "training_cells": 24,
+  "held_cells": 24,
+  "held_decisions_checked": 802,
+  "held_station_allocations_checked": 346,
+  "common_query_pairs_checked": 1794,
+  "same_visible_input_equal_prediction_checks": 365,
+  "max_per_cell_MAE_recomputation_error": 0.0,
+  "age_thresholds_weeks": {
+    "2": 2.75,
+    "4": 3.25
+  },
+  "limits": [
+    "Post-hoc comparator, calibrated on training fleet only after earlier held outcomes were inspected.",
+    "Same available stations; actual station hours differ, so not strictly equal-cost.",
+    "Single coupled fleet per population; no independent-fleet confidence interval.",
+    "Proxy excludes full event distribution, false-alarm metrics, real report delays and censored-label adaptation."
+  ],
+  "input_sha256": {
+    "experiments/rulaas_pending_station_20261029/calibration01/grid.csv": "aacd16d5a9ed06d40057430a27ecd86e2ecf3db2c48b1f7ec161bdf92c89d8e0",
+    "experiments/rulaas_pending_station_20261029/calibration01/CALIBRATED.json": "ffc2eac8b834a0746a33daa2721b0cd7b505e59b5c97d1699226d687fcc12333",
+    "experiments/rulaas_pending_station_20261029/calibration01/receipt.json": "89519f252688cc0b6d94685711c2be00710bc4cc384652a73f1ba0d949b92b7c",
+    "experiments/rulaas_pending_station_20261029/age_comparator01/age_decisions.csv": "7dde10766e3ec037da36e862eb7c905365e57a3d81a95bbc2a8c86aa3908b899",
+    "experiments/rulaas_pending_station_20261029/age_comparator01/age_predictions.csv": "2546635d915dd8e2f5d6e928cac9ad368f227102e329ee45c778d5062b18fce3",
+    "experiments/rulaas_pending_station_20261029/age_comparator01/paired_per_cell.csv": "82162be0667747360759ccdf12f0ecda9aa332e7a9594ee6321051e729295b75",
+    "experiments/rulaas_pending_station_20261029/age_comparator01/summary.csv": "90da51198e060fc813fc99a3ede57e6d9cd3ab62c48e140d8ba99b443b22f6a8",
+    "experiments/rulaas_pending_station_20261029/age_comparator01/receipt.json": "6bd8a3135636e3fe8961f2a4a1c09bb444a493a5f70ae53e4e14f24c09e14667",
+    "experiments/rulaas_pending_station_20261029/run01/INDEPENDENT_RECOMPUTE.json": "d625cac47d3df6fba6927b1273fdfc3b9892e195582336f59704e56d375b2c79"
+  }
+}

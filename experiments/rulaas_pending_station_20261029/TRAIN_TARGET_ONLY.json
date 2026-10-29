@@ -1,0 +1,11 @@
+{
+  "population": "kernel_fit",
+  "policy": "age_no_pending",
+  "station_hours": {
+    "2": 3383.081111111113,
+    "4": 3633.9458333333355
+  },
+  "source": "experiments/rulaas_pending_station_20261029/run01/summary.csv",
+  "source_sha256": "32659e76a3dd1d711cb25f99dc254259a1319c927e9b47281293dac5ecf9e33f",
+  "held_fleet_results_in_file": false
+}

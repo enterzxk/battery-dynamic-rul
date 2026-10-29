@@ -581,6 +581,12 @@ def main():
     chosen.update('experiments/rulaas_gain_oof_repair_20261029/'+n for n in ['run.py','review_saved.py','PROTOCOL_ZH.md','GO_RUN01.json','run01/RESULTS_ZH.md','run01/label_change_summary.json','run01/INDEPENDENT_RECOMPUTE.json','run01/per_cell_label_change.csv','run01/fold_manifest.json','run01/public_receipt.json'])
     # Pending information overlap 2026-10-29. No raw data or checkpoints.
     chosen.update('experiments/rulaas_pending_value_20261029/'+n for n in ['run.py','review_saved.py','PROTOCOL_ZH.md','GO_RUN01.json','run01/RESULTS_ZH.md','run01/ROOT_DECISION.json','run01/summary.json','run01/support_stratification.json','run01/INDEPENDENT_RECOMPUTE.json','run01/per_cell.csv','run01/public_receipt.json'])
+    # Station and matched age pilot 2026-10-29. No raw data or checkpoints.
+    chosen.update('experiments/rulaas_pending_station_20261029/'+n for n in ['run.py','review_saved.py','PROTOCOL_ZH.md','GO_RUN01.json','calibrate_age.py','CALIBRATION_PROTOCOL_ZH.md','GO_CALIBRATION_RUN01.json','TRAIN_TARGET_ONLY.json','evaluate_age.py','review_age_saved.py','GO_AGE_EVAL_RUN01.json','RESULTS_ZH.md','ROOT_DECISION.json','run01/summary.csv','run01/comparisons.csv','run01/INDEPENDENT_RECOMPUTE.json','run01/public_receipt.json','run01/train_only_threshold.json','calibration01/grid.csv','calibration01/CALIBRATED.json','calibration01/public_receipt.json','age_comparator01/summary.csv','age_comparator01/paired_per_cell.csv','age_comparator01/INDEPENDENT_RECOMPUTE.json','age_comparator01/public_receipt.json'])
+    # Preserve two large prior P4 source files in a verified lossless public archive.
+    chosen.difference_update(['experiments/rul_time_recovery_20261026/p4_history.py','experiments/rul_time_recovery_20261026/p4_history_run_20261027T1610Z/paired_bootstrap.csv'])
+    BINARY_PREDICTION_ARCHIVES.add('reports/rulaas_public_p4_lossless_20261029_v1/archive.bin')
+    chosen.update('reports/rulaas_public_p4_lossless_20261029_v1/'+n for n in ['archive.bin','validation.json','decode.py','README.md'])
     contents, files, skipped, binary_blobs = {}, [], [], {}
     mapping = {'README.md': 'docs/GITHUB_README_ZH.md', 'agent.md': 'AGENTS.md'}
     mapping.update({rel: rel for rel in sorted(chosen)})

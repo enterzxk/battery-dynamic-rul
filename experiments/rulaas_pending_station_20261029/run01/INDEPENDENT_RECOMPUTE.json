@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "new_fits": 0,
+  "new_inference_rows": 0,
+  "C3_payload_reads": 0,
+  "C4_payload_reads": 0,
+  "source_cells_checked": 48,
+  "worlds_checked": 12,
+  "decisions_checked": 5130,
+  "station_allocations_checked": 3003,
+  "query_predictions_checked": 11484,
+  "all_worlds_share_population_query_and_target_keys": true,
+  "resource_replay_and_visibility": "PASS",
+  "same_visible_query_model_output_identity": "PASS",
+  "max_per_cell_MAE_recomputation_error": 0.0,
+  "limits": [
+    "Hypothetical 14-day delay and one time-shifted fleet per population.",
+    "Equal available stations, not equal realized station hours.",
+    "Conditional point proxy without event probability or pre-event alarm metrics.",
+    "Held C1/C2 cells already used in development diagnosis; no independent paper confirmation."
+  ],
+  "input_sha256": {
+    "experiments/rulaas_pending_station_20261029/run01/decisions.csv": "79b3ca92fdef6c737401923819f0cdb5acf11ebfc1de8fae76789ec3744f2b8a",
+    "experiments/rulaas_pending_station_20261029/run01/predictions.csv": "26799b19c1d2a913e53c337919879a1c72974c298c506d4a133dde9755ea752e",
+    "experiments/rulaas_pending_station_20261029/run01/per_cell.csv": "56fc14948e6ac347fb3652198bd071d6267d0b464de25b04e42d254dc010c066",
+    "experiments/rulaas_pending_station_20261029/run01/summary.csv": "32659e76a3dd1d711cb25f99dc254259a1319c927e9b47281293dac5ecf9e33f",
+    "experiments/rulaas_pending_station_20261029/run01/comparisons.csv": "ee65c57424523024d9e57c7011865f34baba27d71a1cc1b70cdc1129fe8ccac8",
+    "experiments/rulaas_pending_station_20261029/run01/fleet_world.json": "7c6839727524ea60f79eea703075d281e9d85c01f77c8bfe583872118a419a0e",
+    "experiments/rulaas_pending_station_20261029/run01/train_only_threshold.json": "5db30af7e56ce877ee876dc406623b3d294b788808641046853684d755535057",
+    "experiments/rulaas_pending_station_20261029/run01/receipt.json": "12402512562717852e91616439912b27de6d6057f3abedd263b4a57c15757254"
+  }
+}

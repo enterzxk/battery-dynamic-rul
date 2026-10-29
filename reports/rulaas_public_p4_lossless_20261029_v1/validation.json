@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "archive_type": "ZIP",
+  "archive_sha256": "7fd612e05ad779697759bc9e3b74ceb1578c14ffa80e799c99bc08c8767a445b",
+  "archive_bytes": 44974,
+  "originals_unchanged_on_server": true,
+  "prior_commit": "be1ebc88102ed81c5905faf37934db0786e005fd",
+  "members": [
+    {
+      "original_path": "experiments/rul_time_recovery_20261026/p4_history.py",
+      "original_bytes": 98659,
+      "original_sha256": "13c3a36deae09de9d0168c6c51a25b5ec6b9badb4db3729f62fb56186b2d6a34",
+      "prior_immutable_url": "https://github.com/enterzxk/battery-dynamic-rul/blob/be1ebc88102ed81c5905faf37934db0786e005fd/experiments/rul_time_recovery_20261026/p4_history.py"
+    },
+    {
+      "original_path": "experiments/rul_time_recovery_20261026/p4_history_run_20261027T1610Z/paired_bootstrap.csv",
+      "original_bytes": 54546,
+      "original_sha256": "3711948625f8b7d04c3a65af213dda7f51f8a05d7823ee1ea47302e157359e03",
+      "prior_immutable_url": "https://github.com/enterzxk/battery-dynamic-rul/blob/be1ebc88102ed81c5905faf37934db0786e005fd/experiments/rul_time_recovery_20261026/p4_history_run_20261027T1610Z/paired_bootstrap.csv"
+    }
+  ],
+  "contains_raw_battery_data": false,
+  "contains_checkpoints": false
+}
