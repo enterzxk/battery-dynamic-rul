@@ -1,0 +1,116 @@
+{
+  "status": "PASS",
+  "actual_coordinator_model": "gpt-6.1-terra",
+  "model_choice": "User explicitly chose Terra after repository model preference was disclosed.",
+  "new_fits": 0,
+  "new_inference_rows": 0,
+  "C3_payload_reads": 0,
+  "C4_payload_reads": 0,
+  "original_predictive_estimator_fits": 5,
+  "original_preprocessing_fits": 4,
+  "held_cases": 85,
+  "held_cells": 24,
+  "held_groups": 24,
+  "all_models_share_case_keys": true,
+  "recomputed_MAE_max_error": 0.0,
+  "zero_gain_MAE": 0.65026284683352,
+  "training_cell_weighted_median": 0.6317035694064149,
+  "weighted_median_gain_MAE": 0.7530171558540308,
+  "all_models_cell_macro_gain_MAE": {
+    "constant": 0.8808556097805263,
+    "ridge_age_point": 0.8177561451362335,
+    "ridge_F2_point": 0.8900082068871068,
+    "hgb_F0_point": 0.738705473315426,
+    "hgb_F2_point": 0.7398055160563963,
+    "hgb_F3_point": 0.7497916258846248,
+    "zero_gain": 0.65026284683352,
+    "train_cell_weighted_median": 0.7530171558540308
+  },
+  "post_hoc_zero_comparisons": [
+    {
+      "model": "ridge_age_point",
+      "reference": "zero_gain",
+      "delta_cell_macro_gain_MAE": 0.16749329830271373,
+      "exploratory_group_bootstrap_95_CI": [
+        0.006603060264344813,
+        0.3376524079975316
+      ],
+      "cells_better_than_zero": 10,
+      "cells_worse_than_zero": 14,
+      "worst_cell": "G1C2",
+      "worst_cell_delta": 1.1015023989546824,
+      "post_hoc": true
+    },
+    {
+      "model": "ridge_F2_point",
+      "reference": "zero_gain",
+      "delta_cell_macro_gain_MAE": 0.23974536005358674,
+      "exploratory_group_bootstrap_95_CI": [
+        0.049411762664981006,
+        0.43208183807364237
+      ],
+      "cells_better_than_zero": 9,
+      "cells_worse_than_zero": 15,
+      "worst_cell": "G35C1",
+      "worst_cell_delta": 1.202216774225235,
+      "post_hoc": true
+    },
+    {
+      "model": "hgb_F0_point",
+      "reference": "zero_gain",
+      "delta_cell_macro_gain_MAE": 0.08844262648190615,
+      "exploratory_group_bootstrap_95_CI": [
+        -0.09670962243746231,
+        0.2678733232152863
+      ],
+      "cells_better_than_zero": 10,
+      "cells_worse_than_zero": 14,
+      "worst_cell": "G1C2",
+      "worst_cell_delta": 0.8728662563891163,
+      "post_hoc": true
+    },
+    {
+      "model": "hgb_F2_point",
+      "reference": "zero_gain",
+      "delta_cell_macro_gain_MAE": 0.08954266922287635,
+      "exploratory_group_bootstrap_95_CI": [
+        -0.11215994137890034,
+        0.28935470234682253
+      ],
+      "cells_better_than_zero": 10,
+      "cells_worse_than_zero": 14,
+      "worst_cell": "G13C1",
+      "worst_cell_delta": 0.9894378644933352,
+      "post_hoc": true
+    },
+    {
+      "model": "hgb_F3_point",
+      "reference": "zero_gain",
+      "delta_cell_macro_gain_MAE": 0.09952877905110487,
+      "exploratory_group_bootstrap_95_CI": [
+        -0.08437632290834012,
+        0.27589147564478306
+      ],
+      "cells_better_than_zero": 9,
+      "cells_worse_than_zero": 15,
+      "worst_cell": "G13C1",
+      "worst_cell_delta": 0.9900187865487383,
+      "post_hoc": true
+    }
+  ],
+  "limitations": [
+    "zero and median references were added after seeing the pilot and are exploratory",
+    "zero gain is a prediction baseline, not a recommended no-inspection policy",
+    "kernel-fit gain labels came from a head trained on those cells; held labels came from unseen cells",
+    "24 held historical cells are not an independent paper confirmation",
+    "no pending report, fleet replay or SLO validation"
+  ],
+  "inputs_sha256": {
+    "experiments/rulaas_gain_learning_20261029/run01/predictions.csv": "e67887db550766ccd34c203db7ee4f5a1c929ef8d454ab9bc7b5b7b111f78108",
+    "experiments/rulaas_gain_learning_20261029/run01/summary.csv": "aed03c7ac1e0cde2a3d4221a78136053cb8252b5f58d54ea13a5e861a8bd8972",
+    "experiments/rulaas_gain_learning_20261029/run01/paired_contrasts.csv": "6978934ac3194be04180802a0a815729868282ac0526402da24279dd7a6eef4c",
+    "experiments/rulaas_gain_learning_20261029/run01/receipt.json": "b9dc6ce43f6a797c12548e3e3ed42ce42ec630078351ef14f41b0575e90e2b94",
+    "experiments/rulaas_gain_identifiability_20261029/run02/cases.csv": "fe0ad373ab544f4a55703bd5bbf50219023db766419eed00f8a2387c622dcecb",
+    "experiments/rulaas_gain_identifiability_20261029/run02/cell_split.json": "322cc75a533c248ddc9fc39159431924d9e2ba0e5cb82c40efbf11391cc51e43"
+  }
+}

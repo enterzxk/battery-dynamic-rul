@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "new_fits": 0,
+  "new_inference_rows": 0,
+  "C3_payload_reads": 0,
+  "C4_payload_reads": 0,
+  "training_cases": 101,
+  "held_cases": 85,
+  "training_cells": 24,
+  "held_cells": 24,
+  "slot_checks": 808,
+  "pre_arrival_prediction_identity_checks": 176,
+  "max_recomputed_label_error": 0.0,
+  "all_training_710_input_values_and_held_711_inputs_unchanged": true,
+  "held_case_rows_unchanged": true,
+  "all_three_heads_exclude_all_60_original_held_cells": true,
+  "own_cell_excluded_from_its_training_head": true,
+  "case_weighted_old_gain_mean": 0.8671195102909156,
+  "case_weighted_crossfit_gain_mean": 0.4615106306146918,
+  "paired_absolute_mean_change": 0.7543927492083641,
+  "cell_macro_change": -0.3607393911398587,
+  "old_negative": 4,
+  "crossfit_negative": 19,
+  "limits": [
+    "No change in held labels or input; this is a diagnostic, not a measured RUL improvement.",
+    "The 40-cell versus 60-cell head training sizes differ, so change cannot be attributed solely to removing in-sample optimism.",
+    "Splits are by physical cell; shared operating groups can cross folds.",
+    "Passive information-withholding and fixed 7-day hypothetical delivery; no pending variation."
+  ],
+  "input_sha256": {
+    "experiments/rulaas_gain_identifiability_20261029/run02/cases.csv": "fe0ad373ab544f4a55703bd5bbf50219023db766419eed00f8a2387c622dcecb",
+    "experiments/rulaas_gain_identifiability_20261029/run02/request_features.npz": "6e5d60ac951daec7ebe79db550a306237b5b2ef215c4fcd165e48d0e2005bead",
+    "experiments/rulaas_gain_identifiability_20261029/run02/cell_split.json": "322cc75a533c248ddc9fc39159431924d9e2ba0e5cb82c40efbf11391cc51e43",
+    "experiments/rulaas_gain_oof_repair_20261029/run01/cases.csv": "e29f99585e9068c732a9edcee2a7aef6dd1af18d8106a2c12626c7d472afdb59",
+    "experiments/rulaas_gain_oof_repair_20261029/run01/request_features.npz": "3044bbb170e58345efd0d3514c66f086b1a5fe527fce67e0d9bd9d1c8414d66e",
+    "experiments/rulaas_gain_oof_repair_20261029/run01/crossfit_train_points.csv": "10eb7a381b9800422f239d57024a3a2f9a34cae967808d2e42510fff998ef642",
+    "experiments/rulaas_gain_oof_repair_20261029/run01/fold_manifest.json": "6cdcd10ba1f22b2221cc200a123cb1d5aabb11a592c14fc6d52a3690debc79a7",
+    "experiments/rulaas_gain_oof_repair_20261029/run01/receipt.json": "f5d9b01f229339c607abcf465fb268b8c82e9e42fe38496d510ec5ea0db24b5b"
+  }
+}

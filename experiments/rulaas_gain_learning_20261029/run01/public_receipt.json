@@ -1,0 +1,22 @@
+{
+  "status": "SUCCESS",
+  "request_id": "RULAAS_GAIN_LEARNING_20261029_RUN01",
+  "started_utc": "2026-10-29T15:27:33.994093+00:00",
+  "predictive_estimator_fits_started": 5,
+  "predictive_estimator_fits_completed": 5,
+  "preprocessor_components_fit": 4,
+  "model_prediction_rows": 930,
+  "C3_payload_reads": 0,
+  "C4_payload_reads": 0,
+  "coordinator_model_recorded": "gpt-6.1-terra",
+  "model_record_note": "Recorded by the coordinator; Python runner cannot independently introspect the assistant model.",
+  "all_fits_before_held_predictions": true,
+  "finished_utc": "2026-10-29T15:27:35.865925+00:00",
+  "elapsed_seconds": 1.8718454837799072,
+  "train_cells": 24,
+  "held_cells": 24,
+  "train_cases": 101,
+  "held_cases": 85,
+  "sklearn_version": "1.6.1",
+  "GO_sha256": "d991484422718086f8cc48b37987aa7f45364aebca735a17b6a7c77cf7121e33"
+}

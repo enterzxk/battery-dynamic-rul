@@ -1,0 +1,17 @@
+{
+  "n_train_cases": 101,
+  "n_train_cells": 24,
+  "n_held_cases": 85,
+  "n_held_cells": 24,
+  "old_train_case_mean_gain": 0.8671195102909156,
+  "crossfit_train_case_mean_gain": 0.4615106306146918,
+  "paired_label_change_case_mean": -0.4056088796762236,
+  "paired_label_change_median": -0.28768907770557584,
+  "paired_label_change_absolute_mean": 0.7543927492083641,
+  "paired_label_change_cell_macro": -0.3607393911398587,
+  "old_train_negative_cases": 4,
+  "crossfit_train_negative_cases": 19,
+  "held_inputs_and_labels_bitwise_unchanged": true,
+  "full_held_fold_excluded_from_all_three_fits": true,
+  "all_training_requests_reconstructed_exactly": true
+}

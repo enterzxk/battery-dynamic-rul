@@ -1,0 +1,10 @@
+candidate,reference,delta_gain_MAE,family_corrected_CI_low,family_corrected_CI_high,relative_gain_MAE_improvement,held_cells,held_groups,bootstrap_replicates,CI_scope
+hgb_F3_point,constant,-0.1310639838959015,-0.2635004364067532,0.0011555748778744603,0.14879167759237796,24,24,5000,resample source groups; within-group cells retained; conditional on fixed proxy and cases
+hgb_F3_point,ridge_age_point,-0.06796451925160885,-0.19946502241996988,0.07669470684987796,0.08311098565977298,24,24,5000,resample source groups; within-group cells retained; conditional on fixed proxy and cases
+hgb_F3_point,hgb_F0_point,0.01108615256919871,-0.05861670020820771,0.08330505697308609,-0.015007540853112091,24,24,5000,resample source groups; within-group cells retained; conditional on fixed proxy and cases
+hgb_F3_point,ridge_F2_point,-0.14021658100248188,-0.33995862326097465,0.042383939380860505,0.15754526746770528,24,24,5000,resample source groups; within-group cells retained; conditional on fixed proxy and cases
+hgb_F3_point,hgb_F2_point,0.009986109828228522,-0.08568264946476731,0.0923062506722304,-0.013498290579746363,24,24,5000,resample source groups; within-group cells retained; conditional on fixed proxy and cases
+hgb_F2_point,constant,-0.14105009372413002,-0.29059411178282185,0.015650980796288863,0.16012850705381101,24,24,5000,resample source groups; within-group cells retained; conditional on fixed proxy and cases
+hgb_F2_point,ridge_age_point,-0.07795062907983738,-0.20314923704770008,0.05462637882162016,0.09532258429785453,24,24,5000,resample source groups; within-group cells retained; conditional on fixed proxy and cases
+hgb_F2_point,hgb_F0_point,0.0011000427409701835,-0.051675798861975195,0.05606082510755894,-0.0014891493033524499,24,24,5000,resample source groups; within-group cells retained; conditional on fixed proxy and cases
+hgb_F2_point,ridge_F2_point,-0.1502026908307104,-0.32265096094747114,0.008370263997433883,0.16876551212494936,24,24,5000,resample source groups; within-group cells retained; conditional on fixed proxy and cases
