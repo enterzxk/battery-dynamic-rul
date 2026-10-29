@@ -1,0 +1,10 @@
+{
+  "age_weeks": 1.3776759266853333,
+  "width_weeks": 15.9321809805656,
+  "arrival_risk": 0.0035239646004735703,
+  "expected_duration_seconds": 67059.5,
+  "expected_report_lead_weeks": 1.110878802910053,
+  "healthy_train_rows": 5090,
+  "uses_RUL_labels_for_thresholds": false,
+  "new_predictor_fits": 0
+}

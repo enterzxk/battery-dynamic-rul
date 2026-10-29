@@ -1,3 +1,15 @@
+# 2026-10-29 有限检测站基线已完成（当前）
+
+目标ACTIVE，论文门未通过。真实回放62电芯、2960共同查询、2/4台检测站四种策略，共23680预测；21730实际模型行，0新拟合/0C4。全部可见前缀、来源事件、站点重叠与成本独立重算通过。
+
+M4陈旧程度规则：占站13415.1→9303.3小时（−30.65%），失效前MAE2.8097→2.8400周（+0.0303），漏报同为2/61，但80%覆盖率降低2.38pp且误报增加；只有一个耦合车队，不称非劣/正式节费。M2同规则省23.48%占站、MAE+0.0196周，最坏电芯恶化2.609周。固定宽度门限漏报58/59个事件，停止该配置；固定风险门限近似全接纳，未见可靠选择效果。
+
+[结果](experiments/rulaas_station_admission_20261029/run01/RESULTS_ZH.md)、[独立复核与逐电芯损害](experiments/rulaas_station_admission_20261029/run01/INDEPENDENT_RECOMPUTE.json)、[方法冲突核查](experiments/rulaas_station_admission_20261029/METHOD_CONFLICT_CHECK_ZH.md)。
+
+下一条：[训练检测增益可辨识性](experiments/rulaas_station_admission_20261029/NEXT_GAIN_IDENTIFIABILITY_PLAN_ZH.md)，需新GO；不重跑失败配置、不在C3调门限。完整服务收益、迟到寿命标签反馈、独立确认仍未完成。
+
+---
+
 # 2026-10-29 RULaaS 首轮开发实验已完成
 
 目标模式 ACTIVE。冻结强 HGB，0 新拟合、0 优化步、0 C4，完成 17760 条重建可见历史的预测；62 个查询电芯。六种策略共用固定查询、参考事件及廉价循环信息。

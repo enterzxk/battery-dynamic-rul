@@ -569,6 +569,9 @@ def main():
     # RULaaS fixed-model information gate; exact public evidence only.
     chosen.update('experiments/rulaas_value_gate_20261029/'+n for n in ['value_gate.py','PLAN_ZH.md','GO_RUN02.json','run02/RESULTS.md','run02/RESULTS_ZH.md','run02/summary.csv','run02/per_cell.csv','run02/paired_bootstrap.csv','run02/information_access.csv','run02/event_episodes.csv','run02/decision.json','run02/INDEPENDENT_RECOMPUTE.json','run02/excluded_cells.json'])
     chosen.update('experiments/rul_time_recovery_20261026/'+n for n in ['P4_RESULTS_ZH.md','P4_DECISION.json','p4_history.py','p4_history_run_20261027T1610Z/point_summary.csv','p4_history_run_20261027T1610Z/paired_bootstrap.csv','M2_RESULTS_ZH.md','M2_DECISION.json','P2_DIAGNOSIS_ZH.md'])
+    # Finite recorded-window station pilot: summaries, executable source and explicit limits.
+    chosen.update('experiments/rulaas_station_admission_20261029/'+n for n in ['run.py','review_saved_v2.py','PROTOCOL_ZH.md','GO_RUN01.json','METHOD_CONFLICT_CHECK_ZH.md','NEXT_GAIN_IDENTIFIABILITY_PLAN_ZH.md','run01/RESULTS_ZH.md','run01/summary.csv','run01/ROOT_DECISION.json','run01/INDEPENDENT_RECOMPUTE.json','run01/train_only_thresholds.json','run01/public_receipt.json'])
+    chosen.update('experiments/rulaas_value_gate_20261029/'+n for n in ['support_timing_diagnosis.py','run02/SUPPORT_AND_TIMING_DIAGNOSIS.json','NEXT_STAGE_PROTOCOL_ZH.md'])
     contents, files, skipped, binary_blobs = {}, [], [], {}
     mapping = {'README.md': 'docs/GITHUB_README_ZH.md', 'agent.md': 'AGENTS.md'}
     mapping.update({rel: rel for rel in sorted(chosen)})

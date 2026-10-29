@@ -1,0 +1,10 @@
+{
+  "status": "BASELINE_PILOT_COMPLETE_PAPER_GATE_NOT_MET",
+  "fixed_width_threshold": "NO_GO_STARVATION_AND_MISSED_EVENTS_STOP_THIS_CONFIGURATION",
+  "fixed_arrival_risk_threshold": "NO_ESTABLISHED_GAIN_NEAR_ALL_ACCEPT",
+  "age_baseline": "RETAIN_STRONG_SIMPLE_REFERENCE_POINT_SIGNAL_NOT_NONINFERIORITY_PROOF",
+  "new_method_validated": false,
+  "paper_ready": false,
+  "independent_confirmation": false,
+  "next_action": "Train-only identifiable acquisition-benefit construction and nearest-method conflict check; no C3 threshold rescue or new predictor scaling. Fresh exact GO required for fits/inference."
+}

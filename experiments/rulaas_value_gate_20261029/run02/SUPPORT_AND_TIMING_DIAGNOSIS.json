@@ -1,0 +1,423 @@
+{
+  "status": "COMPLETED_SAVED_SUPPORT_AND_SOURCE_TIMING_DIAGNOSIS",
+  "new_fits": 0,
+  "new_inference_rows": 0,
+  "C4_payload_reads": 0,
+  "train_staleness": {
+    "n_rows": 6870,
+    "p95": 1.329271924495697,
+    "max": 3.426952600479126
+  },
+  "policy_staleness": [
+    {
+      "policy": "all0",
+      "n_queries": 2261,
+      "p50_staleness_weeks": 0.6480109126984127,
+      "max_staleness_weeks": 3.315625,
+      "query_fraction_above_train_p95": 0.03494029190623618,
+      "cell_macro_MAE_within_train_p95": 2.3298607676085807,
+      "cells_within_train_p95": 61,
+      "query_fraction_above_train_max": 0.0,
+      "cell_macro_MAE_within_train_max": 2.350901186200701,
+      "cells_within_train_max": 61
+    },
+    {
+      "policy": "all7",
+      "n_queries": 2261,
+      "p50_staleness_weeks": 1.5910449735449737,
+      "max_staleness_weeks": 4.315625,
+      "query_fraction_above_train_p95": 0.7372843874391862,
+      "cell_macro_MAE_within_train_p95": 2.498541249822418,
+      "cells_within_train_p95": 61,
+      "query_fraction_above_train_max": 0.0008845643520566122,
+      "cell_macro_MAE_within_train_max": 2.525389971798301,
+      "cells_within_train_max": 61
+    },
+    {
+      "policy": "anchor7",
+      "n_queries": 2261,
+      "p50_staleness_weeks": 10.5,
+      "max_staleness_weeks": 71.0,
+      "query_fraction_above_train_p95": 0.9730207872622734,
+      "cell_macro_MAE_within_train_p95": 4.4132664927015295,
+      "cells_within_train_p95": 61,
+      "query_fraction_above_train_max": 0.8668730650154799,
+      "cell_macro_MAE_within_train_max": 4.511454814343788,
+      "cells_within_train_max": 61
+    },
+    {
+      "policy": "half_even7",
+      "n_queries": 2261,
+      "p50_staleness_weeks": 2.071106150793651,
+      "max_staleness_weeks": 5.457207341269841,
+      "query_fraction_above_train_p95": 0.848297213622291,
+      "cell_macro_MAE_within_train_p95": 2.673957160238969,
+      "cells_within_train_p95": 61,
+      "query_fraction_above_train_max": 0.039805395842547546,
+      "cell_macro_MAE_within_train_max": 2.68082417135668,
+      "cells_within_train_max": 61
+    },
+    {
+      "policy": "half_hash7",
+      "n_queries": 2261,
+      "p50_staleness_weeks": 2.1397982804232805,
+      "max_staleness_weeks": 5.4683597883597885,
+      "query_fraction_above_train_p95": 0.8558160106147722,
+      "cell_macro_MAE_within_train_p95": 2.6752553762761226,
+      "cells_within_train_p95": 61,
+      "query_fraction_above_train_max": 0.12251216275984078,
+      "cell_macro_MAE_within_train_max": 2.6626665997686323,
+      "cells_within_train_max": 61
+    },
+    {
+      "policy": "half_odd7",
+      "n_queries": 2261,
+      "p50_staleness_weeks": 2.1703108465608465,
+      "max_staleness_weeks": 5.315625,
+      "query_fraction_above_train_p95": 0.8620079610791685,
+      "cell_macro_MAE_within_train_p95": 2.666313624109275,
+      "cells_within_train_p95": 61,
+      "query_fraction_above_train_max": 0.0437859354268023,
+      "cell_macro_MAE_within_train_max": 2.7080829890171434,
+      "cells_within_train_max": 61
+    }
+  ],
+  "RPT_timing": {
+    "n_valid_durations": 1444,
+    "median_hours": 18.610416666666666,
+    "p95_hours": 25.064805555555548,
+    "min_hours": 4.808888888888889,
+    "max_hours": 26.77861111111111,
+    "missing_or_invalid_start_stop": [],
+    "within_cell_overlapping_intervals": []
+  },
+  "sources": [
+    {
+      "cell_id": "G10C3",
+      "sha256": "1c1be252a5d0d595242fc8d2708dca0ba95c169656b9d5070092514c8dac2727",
+      "path": "data/processed/ISU_ILCC_DataV2_v1/G10C3.json"
+    },
+    {
+      "cell_id": "G11C3",
+      "sha256": "252871284cfb3bcadc2541f7b56c3e6e27c00e52d4ad94b82e1c0fc58dd797a4",
+      "path": "data/processed/ISU_ILCC_DataV2_v1/G11C3.json"
+    },
+    {
+      "cell_id": "G12C3",
+      "sha256": "8395b943efd9c39bbb8307bb950879d284a82c049506ccd5a8f7b4472c77a77a",
+      "path": "data/processed/ISU_ILCC_DataV2_v1/G12C3.json"
+    },
+    {
+      "cell_id": "G13C3",
+      "sha256": "e8ed6af6a845a44988d9a9e3f1b291c16b070a99945bf9dca32891016b32a86f",
+      "path": "data/processed/ISU_ILCC_DataV2_v1/G13C3.json"
+    },
+    {
+      "cell_id": "G14C3",
+      "sha256": "dff6aa364323662493ad89ad1263fd35c317164e9756b7ffd1052ef3b3472ec5",
+      "path": "data/processed/ISU_ILCC_DataV2_v1/G14C3.json"
+    },
+    {
+      "cell_id": "G16C3",
+      "sha256": "f2eb52b12c4a6db913f017a58c9ff9e64f90a76423d15e0f425712c82c8da61b",
+      "path": "data/processed/ISU_ILCC_DataV2_v1/G16C3.json"
+    },
+    {
+      "cell_id": "G17C3",
+      "sha256": "50c3cd747d177f034e5fd2f72485679419c4ec775b257748ec0772b102901246",
+      "path": "data/processed/ISU_ILCC_DataV2_v1/G17C3.json"
+    },
+    {
+      "cell_id": "G18C3",
+      "sha256": "e2302d6c263583c8f22fda30d0c3ac3f25e5f40f844f957f86a96c376a272ee6",
+      "path": "data/processed/ISU_ILCC_DataV2_v1/G18C3.json"
+    },
+    {
+      "cell_id": "G19C3",
+      "sha256": "6576f4999b32579fc4a5d3457a6ba0b999aee82ad066306792aa46ac5bbc786d",
+      "path": "data/processed/ISU_ILCC_DataV2_v1/G19C3.json"
+    },
+    {
+      "cell_id": "G1C3",
+      "sha256": "2a85aba8f5f79fee92296af668665e4c1eac0ea66f0b8e3b18c95ece2625440f",
+      "path": "data/processed/ISU_ILCC_DataV2_v1/G1C3.json"
+    },
+    {
+      "cell_id": "G20C3",
+      "sha256": "f80906c62a54540cfbf9cd7a5415c5772a5122afe76bf4b87b83f238f51d37ed",
+      "path": "data/processed/ISU_ILCC_DataV2_v1/G20C3.json"
+    },
+    {
+      "cell_id": "G21C3",
+      "sha256": "d1493601b0fad85565e67e0dfe5bd6894503739eb5534cb813cc6ae6014569cf",
+      "path": "data/processed/ISU_ILCC_DataV2_v1/G21C3.json"
+    },
+    {
+      "cell_id": "G22C3",
+      "sha256": "02adbcc0d8865ae995e3df768caea244d9eec39ca7c3d55678cc18081928ecb0",
+      "path": "data/processed/ISU_ILCC_DataV2_v1/G22C3.json"
+    },
+    {
+      "cell_id": "G23C3",
+      "sha256": "46353f8545525ea0b210275b50360701445efe83bb76741601b492aa896bcae6",
+      "path": "data/processed/ISU_ILCC_DataV2_v1/G23C3.json"
+    },
+    {
+      "cell_id": "G24C3",
+      "sha256": "0259abdaae3fd3e376f2ed6e2db6b3627c9f0cb70d25da709eba1b4a049d97ed",
+      "path": "data/processed/ISU_ILCC_DataV2_v1/G24C3.json"
+    },
+    {
+      "cell_id": "G25C3",
+      "sha256": "9532ca869803cdb219c61b53a058f22ebfbaf8ec8d072b4add50b69ddd714070",
+      "path": "data/processed/ISU_ILCC_DataV2_v1/G25C3.json"
+    },
+    {
+      "cell_id": "G26C3",
+      "sha256": "c6161d9f37eea451a2942ed3efd24bea99c6465a7af46ebd40b052d074bc68b2",
+      "path": "data/processed/ISU_ILCC_DataV2_v1/G26C3.json"
+    },
+    {
+      "cell_id": "G27C3",
+      "sha256": "a1ee803c85717a0d0e4160a2994acbdbabe915f85de5a33e507e0e1e4e9dd86a",
+      "path": "data/processed/ISU_ILCC_DataV2_v1/G27C3.json"
+    },
+    {
+      "cell_id": "G28C3",
+      "sha256": "19a37840564a8055e20949a7ad170e4a1ffbddb31915f488f5760a76c40dcfae",
+      "path": "data/processed/ISU_ILCC_DataV2_v1/G28C3.json"
+    },
+    {
+      "cell_id": "G29C3",
+      "sha256": "64c3d8792445604a9181a8eb3f49eaf895ee2e4e90e0cffd451b4d53cedbc167",
+      "path": "data/processed/ISU_ILCC_DataV2_v1/G29C3.json"
+    },
+    {
+      "cell_id": "G2C3",
+      "sha256": "b4b09cc0161bbd1b0a0b329fd18253658e67fc9047aeee704ba79ffc44b28ae7",
+      "path": "data/processed/ISU_ILCC_DataV2_v1/G2C3.json"
+    },
+    {
+      "cell_id": "G30C3",
+      "sha256": "56a17860d2437f68a754af7464a8134bcf0c5050676a9ac33daa8d2fc03212db",
+      "path": "data/processed/ISU_ILCC_DataV2_v1/G30C3.json"
+    },
+    {
+      "cell_id": "G31C3",
+      "sha256": "7e67f8f295e253b89632c5b5243c0c2f8bbe686c95af1ab91855719cda8372d7",
+      "path": "data/processed/ISU_ILCC_DataV2_v1/G31C3.json"
+    },
+    {
+      "cell_id": "G32C3",
+      "sha256": "cd5e3ebaf2ead7ae3872efc56b018b12a7ce7bb5a755c2ddc7f743595d6f5273",
+      "path": "data/processed/ISU_ILCC_DataV2_v1/G32C3.json"
+    },
+    {
+      "cell_id": "G33C3",
+      "sha256": "7afec2767ffaed16f4bc9a65b01e18bc4314c0761f6f4ef63d9d5e0cbbf287f8",
+      "path": "data/processed/ISU_ILCC_DataV2_v1/G33C3.json"
+    },
+    {
+      "cell_id": "G34C3",
+      "sha256": "bc4b2ed28baf7f337103d20c1f5a442d92f19797bf65d24dda60c92371ab760a",
+      "path": "data/processed/ISU_ILCC_DataV2_v1/G34C3.json"
+    },
+    {
+      "cell_id": "G35C3",
+      "sha256": "769f032b73f686f792817a7dadff424334606d1c07fad269f7eb54bdecd1051c",
+      "path": "data/processed/ISU_ILCC_DataV2_v1/G35C3.json"
+    },
+    {
+      "cell_id": "G36C3",
+      "sha256": "36f34e8cf98f28a8aea4560b8acfd4d73a0538eafb92ca82393f9360d141789d",
+      "path": "data/processed/ISU_ILCC_DataV2_v1/G36C3.json"
+    },
+    {
+      "cell_id": "G37C3",
+      "sha256": "89e8366201f3f9382818d8fbbfb5f5c1fcf2d5135cf9567cdef8895216b8f798",
+      "path": "data/processed/ISU_ILCC_DataV2_v1/G37C3.json"
+    },
+    {
+      "cell_id": "G38C3",
+      "sha256": "1e3a5ff6b67424f4bb24edb63a01831fb441582618c544b2b6095764148101d9",
+      "path": "data/processed/ISU_ILCC_DataV2_v1/G38C3.json"
+    },
+    {
+      "cell_id": "G39C3",
+      "sha256": "18d013c38ed48d9712f558f00ffc3effa7e4d0c1d0e93cdcedb5e1ae7dbd145a",
+      "path": "data/processed/ISU_ILCC_DataV2_v1/G39C3.json"
+    },
+    {
+      "cell_id": "G3C3",
+      "sha256": "e9f6e756a621e1ae58c78ccc3db283d66251ac6620f85dd2c3f94d9d64cb3ab6",
+      "path": "data/processed/ISU_ILCC_DataV2_v1/G3C3.json"
+    },
+    {
+      "cell_id": "G40C3",
+      "sha256": "138751bcf0607d1063186e88ff2ba2845f6909ffecca8494699d90ddfa06cfe4",
+      "path": "data/processed/ISU_ILCC_DataV2_v1/G40C3.json"
+    },
+    {
+      "cell_id": "G41C3",
+      "sha256": "345916a9ec64d6ae5a703796edcc2d9e5ed71eef227ff0c5f12d1b91e083d5c9",
+      "path": "data/processed/ISU_ILCC_DataV2_v1/G41C3.json"
+    },
+    {
+      "cell_id": "G42C3",
+      "sha256": "0d3af720084ff5621063b496e6ee96636a09c69301fd61c45ee6b068e7f2dbda",
+      "path": "data/processed/ISU_ILCC_DataV2_v1/G42C3.json"
+    },
+    {
+      "cell_id": "G43C3",
+      "sha256": "10e1ca84891421545712839f9488815d8f860b6db8095d624940c85e91fcfabf",
+      "path": "data/processed/ISU_ILCC_DataV2_v1/G43C3.json"
+    },
+    {
+      "cell_id": "G44C3",
+      "sha256": "e28bfe28e45d8252a90098cb646b56c72a49ccd8de6f7b8c2ed42c5a0614920f",
+      "path": "data/processed/ISU_ILCC_DataV2_v1/G44C3.json"
+    },
+    {
+      "cell_id": "G45C3",
+      "sha256": "ecf4fb3718386e0007056636bf9cf1322034aff18721cfa144b118ebe7184b65",
+      "path": "data/processed/ISU_ILCC_DataV2_v1/G45C3.json"
+    },
+    {
+      "cell_id": "G46C3",
+      "sha256": "b831063732346b596a490fa402ea8175d5411dd7e8cf3823698810b0ff6e2786",
+      "path": "data/processed/ISU_ILCC_DataV2_v1/G46C3.json"
+    },
+    {
+      "cell_id": "G47C3",
+      "sha256": "bb49893401ca60b0948315342d7749a26baa6ca0f9aa8c0ca6cbaf9b38046ad1",
+      "path": "data/processed/ISU_ILCC_DataV2_v1/G47C3.json"
+    },
+    {
+      "cell_id": "G48C3",
+      "sha256": "6dd764a7f314b3b3a8b79bb3ea8a67432371ef6814ba19973be846688e96aac7",
+      "path": "data/processed/ISU_ILCC_DataV2_v1/G48C3.json"
+    },
+    {
+      "cell_id": "G49C3",
+      "sha256": "5c433063bf3c3493a91c2a9c4f71e1d5b496938df4e6297d67f7c998e6da3fd7",
+      "path": "data/processed/ISU_ILCC_DataV2_v1/G49C3.json"
+    },
+    {
+      "cell_id": "G4C3",
+      "sha256": "a9e781c7847d48c548967f2bc53d37fd747262eeb916820633ac70415d819fe4",
+      "path": "data/processed/ISU_ILCC_DataV2_v1/G4C3.json"
+    },
+    {
+      "cell_id": "G50C3",
+      "sha256": "a4785745d62fa803a1cb8515557f49b08c4b82c0eabcee6345c0ab06d573e281",
+      "path": "data/processed/ISU_ILCC_DataV2_v1/G50C3.json"
+    },
+    {
+      "cell_id": "G51C3",
+      "sha256": "2f3e3c41cd20283cc4643a69518bd4cb238fa96400a47d71e2711b13f5a9a55c",
+      "path": "data/processed/ISU_ILCC_DataV2_v1/G51C3.json"
+    },
+    {
+      "cell_id": "G52C3",
+      "sha256": "5c99b98ca8ec67cd680e5c578635a0301ab629ffd52092972998dfa1a4ec2b81",
+      "path": "data/processed/ISU_ILCC_DataV2_v1/G52C3.json"
+    },
+    {
+      "cell_id": "G53C3",
+      "sha256": "22f1d39a372077deb345ae45e4324cd87e70dca67531af117c377ead9e45cdd3",
+      "path": "data/processed/ISU_ILCC_DataV2_v1/G53C3.json"
+    },
+    {
+      "cell_id": "G54C3",
+      "sha256": "beae8341440629592c445d2994b66420a9b626d06a8f3cb591cd05adb7c5c2f7",
+      "path": "data/processed/ISU_ILCC_DataV2_v1/G54C3.json"
+    },
+    {
+      "cell_id": "G55C3",
+      "sha256": "fe2bc277810f47e09eed8c174e054872b7f78910572b4c2ec8a503f1286603b7",
+      "path": "data/processed/ISU_ILCC_DataV2_v1/G55C3.json"
+    },
+    {
+      "cell_id": "G56C3",
+      "sha256": "9ea1ebd7d4c69baaf8c476b7e38be1e78fbec3d512bdc19f060bcb846f9f8aac",
+      "path": "data/processed/ISU_ILCC_DataV2_v1/G56C3.json"
+    },
+    {
+      "cell_id": "G57C3",
+      "sha256": "cfd30698aa67d8d87f7aeddd3a437b6baf84703f937af5b55d195ed86fc78fc3",
+      "path": "data/processed/ISU_ILCC_DataV2_v1/G57C3.json"
+    },
+    {
+      "cell_id": "G58C3",
+      "sha256": "a87ac726cd8867c36abd0074724af60cf191c9a019c892444dcd7b6960270a76",
+      "path": "data/processed/ISU_ILCC_DataV2_v1/G58C3.json"
+    },
+    {
+      "cell_id": "G59C3",
+      "sha256": "4c80a5fc8c66aa3a30d9405dd1e4af561be36c00287aaae7c70ba91cdcb035f7",
+      "path": "data/processed/ISU_ILCC_DataV2_v1/G59C3.json"
+    },
+    {
+      "cell_id": "G5C3",
+      "sha256": "3628e4e137e58ca0695eceb892181fc4070a45d77b51f6863c4898aed1037db0",
+      "path": "data/processed/ISU_ILCC_DataV2_v1/G5C3.json"
+    },
+    {
+      "cell_id": "G60C3",
+      "sha256": "d990e9f3e5ba0d051f694440e7cb04964c391bb523949c5df68338013da84a76",
+      "path": "data/processed/ISU_ILCC_DataV2_v1/G60C3.json"
+    },
+    {
+      "cell_id": "G61C3",
+      "sha256": "8b8e628b13c8c38a9e6c1c8bcca24b3995f80cc25dc1abc74978c6cbe45d6bfa",
+      "path": "data/processed/ISU_ILCC_DataV2_v1/G61C3.json"
+    },
+    {
+      "cell_id": "G62C3",
+      "sha256": "237b5e9d89f8841157e94635152bdaf391c749f75c494ced3a0345efabbf0819",
+      "path": "data/processed/ISU_ILCC_DataV2_v1/G62C3.json"
+    },
+    {
+      "cell_id": "G63C3",
+      "sha256": "5f99990756905b5e10500eef631cc6daf0849cc776a9ab593d5beabb3c5d7992",
+      "path": "data/processed/ISU_ILCC_DataV2_v1/G63C3.json"
+    },
+    {
+      "cell_id": "G64C3",
+      "sha256": "bf7af2da67f6e6fe7d52e02c7af6ca65e8120753fdd3112edd6c21904fb6ad79",
+      "path": "data/processed/ISU_ILCC_DataV2_v1/G64C3.json"
+    },
+    {
+      "cell_id": "G6C3",
+      "sha256": "0a5427088430ebde012bea5fbb47d9ad33e1a5a196b3ee1a5e6235e77087c1a2",
+      "path": "data/processed/ISU_ILCC_DataV2_v1/G6C3.json"
+    },
+    {
+      "cell_id": "G7C3",
+      "sha256": "9478ca4b36367cad6b4c6bad817085ba0b2ad148432ae35de731c3d888ce30b9",
+      "path": "data/processed/ISU_ILCC_DataV2_v1/G7C3.json"
+    },
+    {
+      "cell_id": "G8C3",
+      "sha256": "c16727630afc4c2555f436bb337adf531ee07a5f7df83279b9d0b7f77c9971bb",
+      "path": "data/processed/ISU_ILCC_DataV2_v1/G8C3.json"
+    },
+    {
+      "cell_id": "G9C3",
+      "sha256": "ca65f1b1b6c3cd7ed6cc65b9e3f5c192947adfb697ad8d5e889aa06f8ee9af21",
+      "path": "data/processed/ISU_ILCC_DataV2_v1/G9C3.json"
+    }
+  ],
+  "input_sha256": {
+    "experiments/multisource_factorial_20261021/run2_clocksafe/train_features.npz": "9c3794064e64d3b0a437c3fde82e7f8a423aa983d37621d0808088bbcbbf9a15",
+    "experiments/multisource_factorial_20261021/run2_clocksafe/feature_schema.json": "11e50dcf7e2b1f2ae9e05597b6159472ee34d3d0bedb0223531bea69b01fafa7",
+    "experiments/rulaas_value_gate_20261029/run02/predictions.csv": "cd0ae1d4c8569e677a9ab52103b97c3fd23af8703e3c4cb9da1cf61fe237e43b",
+    "experiments/rulaas_value_gate_20261029/support_timing_diagnosis.py": "afc9b8ca4eeb71ff3ad529380325da8b502534e0f3d9c6df9e415670634d8b53"
+  },
+  "interpretation": [
+    "Frozen HGB support does not establish information-theoretic value; compare staleness regimes explicitly.",
+    "Within-support summaries use different row populations by policy and are descriptive only, not fair paired method comparisons.",
+    "Recorded start/stop supports actual occupied test intervals. Deferring physical sampling beyond its recorded interval would require an unobserved counterfactual outcome.",
+    "A faithful finite-station replay can admit/reject fixed recorded opportunities; a reporting/analysis queue after sampling must be named separately and cannot be claimed to save already incurred physical testing cost."
+  ]
+}

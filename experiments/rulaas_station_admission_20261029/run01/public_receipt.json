@@ -1,0 +1,27 @@
+{
+  "request_id": "RULAAS_STATION_ADMISSION_20261029_RUN01",
+  "status": "SUCCESS",
+  "started_utc": "2026-10-29T10:39:25.080537+00:00",
+  "new_fits": 0,
+  "optimizer_steps": 0,
+  "C4_payload_reads": 0,
+  "model_rows": 21730,
+  "finished_utc": "2026-10-29T10:42:37.388118+00:00",
+  "elapsed_seconds": 192.3075966835022,
+  "training_threshold_model_rows": 6870,
+  "development_model_rows": 14860,
+  "prediction_rows": 23680,
+  "query_cells": 62,
+  "timeline_events": 4215,
+  "fixture_max_error": 0.0,
+  "resource_conservation": "PASS",
+  "GO_sha256": "e33cacae6018ce75dd9612b4d653fb182ab0fdd4295465a269aec58772153731",
+  "full_receipt_sha256": "5ccf5649eb4a42381b62e526294ae450ae2a56ea4e4ba344410edc9a4af8957c",
+  "source_file_count": 312,
+  "output_sha256": {
+    "summary.csv": "c3099f8c80bd10d901652958e97f265f811cbcab5193a714deaa66a023a9e5d4",
+    "INDEPENDENT_RECOMPUTE.json": "45c3376afedbb12af84f567b03358c3c85d4d97f30a32cd21cdb4d39d55e6701",
+    "ROOT_DECISION.json": "a369beb0d588a3f5667063c42ac6301884c1b7acdd7d6ca65b15d1d09490c874",
+    "RESULTS_ZH.md": "b3ff4eeecedfb71e9622201706e8ec1e017aedc8385fd6d6ed641632910d28c9"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "status": "APPROVED",
+  "request_id": "RULAAS_STATION_ADMISSION_20261029_RUN01",
+  "owner": "01a17810-6ae6-7cf2-9729-5bfcaa8df5f4",
+  "issued_utc": "2026-10-29T10:39:18.827119+00:00",
+  "allow_inference": true,
+  "allow_fits": false,
+  "allow_C4": false,
+  "max_model_rows": 40000,
+  "max_C3_source_cells": 63,
+  "max_train_metadata_cells": 125,
+  "seed": 42,
+  "stations": [
+    2,
+    4
+  ],
+  "policies": [
+    "all",
+    "age",
+    "width",
+    "arrival_risk"
+  ],
+  "output": "experiments/rulaas_station_admission_20261029/run01",
+  "input_sha256": {
+    "experiments/rulaas_station_admission_20261029/run.py": "ec31bac84a6f655eb4b40bf82ff8bdc5df5457acaad702ba4cfede1b52c8646c",
+    "experiments/rulaas_station_admission_20261029/PROTOCOL_ZH.md": "817fcfd3c953cb322e07718a2e583be0de2ba998f45c849cd8ac50ba9aefd30c",
+    "experiments/rulaas_value_gate_20261029/value_gate.py": "9d9a06eb3d9a538895fe5a93f6e53c62792e2c55e98cca7fad9118f4daf99fd0",
+    "experiments/rulaas_value_gate_20261029/run02/predictions.csv": "cd0ae1d4c8569e677a9ab52103b97c3fd23af8703e3c4cb9da1cf61fe237e43b",
+    "experiments/multisource_factorial_20261021/features.py": "a6080b915e7f1ae46ec34c172bd0de84ddfd480efb2818eb562d6358c18e88d9",
+    "reports/multisource_20261021_signals/cycle_asof_features.py": "6602c0f4b70a77d36177f87822bee279fb461b1fa2bda42acb3f528c5a0376af",
+    "experiments/isu_irregular_rul_seed42_v1/data_adapter.py": "d5effc7ab9aa946feee717e8490983e6ccbebf890492b456091ac49a942763f3",
+    "experiments/isu_irregular_rul_seed42_v1/baselines.py": "a8f537e2f2676e9c4a20909c530223bab20521fc7457e544cab092515610187e",
+    "experiments/dart_rul_v18/data_protocol.py": "be0b0d14f3034047b009aed8208d7a961c70312ae202b774e556193a2bb53a8c",
+    "reports/isu_ilcc_datav2_full_20261020_root/data_manifest.json": "68f53dc481dfc212896658a9bcb69780b5ed7285d853cc870a4002ae658726e1",
+    "reports/isu_ilcc_capacity_probe_20261020_root/cohort.json": "4469f7f5b6eb8c26a522fa46c4291ec6d03d98e7ae5c20ce7ae77e835b849ae0",
+    "reports/multisource_20261021_signals/all188_rpt_features_v1/manifest.json": "f431eb082f09f455e8edec1cc62e944e116cea1a97544ca3b18abe5d6064c255",
+    "reports/multisource_20261021_signals/cycling_all188_feature_manifest.json": "51e4c87fc7e59cee6afe2bb79fabb9e72070d98ca6d457c124c553d0b05018cb",
+    "experiments/multisource_factorial_20261021/run2_clocksafe/train_features.npz": "9c3794064e64d3b0a437c3fde82e7f8a423aa983d37621d0808088bbcbbf9a15",
+    "experiments/multisource_factorial_20261021/run2_clocksafe/feature_schema.json": "11e50dcf7e2b1f2ae9e05597b6159472ee34d3d0bedb0223531bea69b01fafa7",
+    "experiments/multisource_factorial_20261021/run2_clocksafe/hgb_F3_event.joblib": "1651aa2246df6c5bdfa1b868d8a73581247847c5d9ef2922f15f72faed6e231d",
+    "experiments/multisource_factorial_20261021/run2_clocksafe/hgb_F3_positive.joblib": "b044f171d71d29862046d37bb114f868adafe60ac90cc3b702d23abb38bfb1ad",
+    "experiments/multisource_factorial_20261021/run2_clocksafe/hgb_F3_distribution.joblib": "f124e96c9fce11f410b90ddb222978c9ac0d974969bac72ba88ce3b3add595cf"
+  }
+}
