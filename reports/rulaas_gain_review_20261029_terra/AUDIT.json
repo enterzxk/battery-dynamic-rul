@@ -1,0 +1,82 @@
+{
+  "status": "PASS",
+  "model_used_for_this_audit": "gpt-6.1-terra (environment-selected; original project default gpt-6.1-sol/high)",
+  "new_fits": 0,
+  "new_inference_rows": 0,
+  "C3_payload_reads": 0,
+  "C4_payload_reads": 0,
+  "cases": 186,
+  "slots": 1488,
+  "split_and_original_OOF_identity": "PASS",
+  "source_events_and_recorded_test_windows": "PASS",
+  "gain_recomputation_max_error": 0.0,
+  "request_feature_reconstruction_and_unarrived_mutation": {
+    "populations_checked": [
+      "kernel_fit",
+      "kernel_held"
+    ],
+    "max_feature_error": 0.0
+  },
+  "physical_interval_overlap_at_candidate": [],
+  "nonfinite_feature_values": 11506,
+  "results": [
+    {
+      "population": "kernel_fit",
+      "n_cells": 24,
+      "n_cases": 101,
+      "immediate_gain_cell_macro": 0.9673453120140305,
+      "delay7d_gain_cell_macro": 0.8390815657836305,
+      "immediate_minus_delayed_cell_macro": 0.12826374623040004,
+      "difference_bootstrap95_ci": [
+        0.09692549365259115,
+        0.1583003559045564
+      ],
+      "CI_scope": "exploratory paired resampling by cell; conditional on fixed proxy and selected cases; same-group dependence not modeled",
+      "negative_delay_gain_cases": 4,
+      "zero_delay_gain_cases": 18,
+      "positive_delay_gain_cases": 79,
+      "immediate_hurts_cases": 3,
+      "delay_improves_proxy_gain_cases": 18,
+      "pending_prior_report_cases": 0,
+      "max_case_harm_delay_weeks": -0.7514262688043489,
+      "max_case_benefit_delay_weeks": 2.839477348638444
+    },
+    {
+      "population": "kernel_held",
+      "n_cells": 24,
+      "n_cases": 85,
+      "immediate_gain_cell_macro": 0.5261358410068208,
+      "delay7d_gain_cell_macro": 0.3911082338969442,
+      "immediate_minus_delayed_cell_macro": 0.13502760710987655,
+      "difference_bootstrap95_ci": [
+        0.06058569628155049,
+        0.20656112401364266
+      ],
+      "CI_scope": "exploratory paired resampling by cell; conditional on fixed proxy and selected cases; same-group dependence not modeled",
+      "negative_delay_gain_cases": 24,
+      "zero_delay_gain_cases": 14,
+      "positive_delay_gain_cases": 47,
+      "immediate_hurts_cases": 22,
+      "delay_improves_proxy_gain_cases": 31,
+      "pending_prior_report_cases": 0,
+      "max_case_harm_delay_weeks": -2.9172522399679037,
+      "max_case_benefit_delay_weeks": 5.061768878210881
+    }
+  ],
+  "input_sha256": {
+    "cases.csv": "fe0ad373ab544f4a55703bd5bbf50219023db766419eed00f8a2387c622dcecb",
+    "counterfactual_points.csv": "6dcafcb81cbdb815b4a1be8f1ade56d1b57713ea8aed2a18472c2d79691ba544",
+    "request_features.npz": "6e5d60ac951daec7ebe79db550a306237b5b2ef215c4fcd165e48d0e2005bead",
+    "feature_schema.json": "fae53263a69ae8a2724eeb982aba35d07702d582e2c26f3842a514df2d02b507",
+    "cell_split.json": "322cc75a533c248ddc9fc39159431924d9e2ba0e5cb82c40efbf11391cc51e43",
+    "receipt.json": "41dcfd090cf5cb92507e9dfeef67fcaa6fd19b792a3992ca26cbbca2c7233082",
+    "summary.csv": "71be639b03c9f69a94348e0cec7f4a15d73b2209dc2ebac48a0f91df882ab1ef"
+  },
+  "limits": [
+    "conditional positive-RUL proxy is not full hurdle service predictor",
+    "future supervised labels available retrospectively; never online inputs",
+    "48 selected historical source cells; not independent final confirmation",
+    "no value-learning fit, resource scheduling or SLO validation in this audit",
+    "passive observation replay does not establish skipped-test effect on physical health"
+  ]
+}

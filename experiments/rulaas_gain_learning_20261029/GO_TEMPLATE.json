@@ -1,0 +1,23 @@
+{
+  "status": "DRAFT_NOT_AUTHORIZED_TO_RUN",
+  "owner": "01a17810-6ae6-7cf2-9729-5bfcaa8df5f4",
+  "prepared_utc": "2026-10-29T15:22:45.388666+00:00",
+  "model_preference_resolved": false,
+  "actual_model": null,
+  "allow_fits": false,
+  "allow_C3": false,
+  "allow_C4": false,
+  "predictive_estimator_fit_cap": 5,
+  "prediction_row_cap": 1000,
+  "seed": 42,
+  "input_sha256": {
+    "experiments/rulaas_gain_learning_20261029/run.py": "8b66e7d20ed793f9e00006ae85bc1fc9aeab6f0921cb4fb6f59f16d9a1af519f",
+    "experiments/rulaas_gain_learning_20261029/PROTOCOL_ZH.md": "ba17e8e13ad2f1b32701907d642b9d363e1b360c39c816c06a3d27c34e8af4cd",
+    "experiments/rulaas_gain_identifiability_20261029/run02/request_features.npz": "6e5d60ac951daec7ebe79db550a306237b5b2ef215c4fcd165e48d0e2005bead",
+    "experiments/rulaas_gain_identifiability_20261029/run02/cases.csv": "fe0ad373ab544f4a55703bd5bbf50219023db766419eed00f8a2387c622dcecb",
+    "experiments/rulaas_gain_identifiability_20261029/run02/feature_schema.json": "fae53263a69ae8a2724eeb982aba35d07702d582e2c26f3842a514df2d02b507",
+    "experiments/rulaas_gain_identifiability_20261029/run02/cell_split.json": "322cc75a533c248ddc9fc39159431924d9e2ba0e5cb82c40efbf11391cc51e43",
+    "experiments/rulaas_gain_identifiability_20261029/run02/receipt.json": "41dcfd090cf5cb92507e9dfeef67fcaa6fd19b792a3992ca26cbbca2c7233082",
+    "reports/rulaas_gain_review_20261029_terra/AUDIT.json": "ac8ed48e133ca4fe3e853ef45d09a8efc32283d2a531f726d2132d4f0ea06f48"
+  }
+}

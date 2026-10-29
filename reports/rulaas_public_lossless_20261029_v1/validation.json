@@ -1,0 +1,32 @@
+{
+  "status": "PASS_LOSSLESS_ARCHIVE",
+  "prior_public_commit": "2a8de5e8d5bb18549778764fed9921286b0caa17",
+  "archive_sha256": "00472589c5ff84ce0a28cbdb722c34b7d4bb2c8ca8ce9c828dcc497e2f66dcdd",
+  "archive_bytes": 67879,
+  "archive_git_blob_sha": "4e323530dc11f05d26550445c93f65911136374e",
+  "members": [
+    {
+      "original_path": "experiments/multirate_state_A2_20261022/a2_infer.py",
+      "original_bytes": 115857,
+      "original_sha256": "1b290fc5fb2ec962125c99c1c2d12a81b546096ec8ffdb209184a1ea59fe76fc",
+      "git_blob_sha": "011259df4153d09930acd83aaf3ed9e1abd9dde6",
+      "public_at_prior_commit": "https://github.com/enterzxk/battery-dynamic-rul/blob/2a8de5e8d5bb18549778764fed9921286b0caa17/experiments/multirate_state_A2_20261022/a2_infer.py"
+    },
+    {
+      "original_path": "experiments/multirate_state_A2_20261022/a2_prep.py",
+      "original_bytes": 90486,
+      "original_sha256": "3b45d148696b830be6555527d6f162b391d18a9cd349851220b293da6454c0c4",
+      "git_blob_sha": "bec71f16a3f28a0d872828d2b80ee9f3c0143568",
+      "public_at_prior_commit": "https://github.com/enterzxk/battery-dynamic-rul/blob/2a8de5e8d5bb18549778764fed9921286b0caa17/experiments/multirate_state_A2_20261022/a2_prep.py"
+    },
+    {
+      "original_path": "experiments/multirate_state_A3_rate_20261024/ensemble_compare_run1/paired_cell_bootstrap.csv",
+      "original_bytes": 77729,
+      "original_sha256": "fe0ac4e3e42188850a22f38d9c1d75c415b41cd77ccf0342db49516f1a6f5f7e",
+      "git_blob_sha": "9c37176818f9296956c875df327c607e16b9fcce",
+      "public_at_prior_commit": "https://github.com/enterzxk/battery-dynamic-rul/blob/2a8de5e8d5bb18549778764fed9921286b0caa17/experiments/multirate_state_A3_rate_20261024/ensemble_compare_run1/paired_cell_bootstrap.csv"
+    }
+  ],
+  "scientific_server_files_removed": false,
+  "prior_git_history_preserved": true
+}

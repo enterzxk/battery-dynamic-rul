@@ -1,0 +1,15 @@
+{
+  "request_id": "RULAAS_GAIN_IDENTIFIABILITY_20261029_RUN01",
+  "status": "FAILED",
+  "started_utc": "2026-10-29T11:05:20.889593+00:00",
+  "new_fits": 0,
+  "optimizer_steps": 0,
+  "C3_payload_reads": 0,
+  "C4_payload_reads": 0,
+  "model_rows": 2298,
+  "kernel": "exp(mu) from hgb_F3_oof0 positive-RUL head only; no event head/global residual calibration",
+  "error": "NameError(\"name 'C' is not defined\")",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/yndx/zxk/rul/experiments/rulaas_gain_identifiability_20261029/run.py\", line 87, in main\n    rpt=readj(ROOT/ri[cid][\"path\"]);cycle=MemoCycle(C.build_cycle_index(ROOT/ci[cid][\"path\"]))\nNameError: name 'C' is not defined\n",
+  "finished_utc": "2026-10-29T11:05:21.443654+00:00",
+  "elapsed_seconds": 0.5540745258331299
+}

@@ -1,0 +1,107 @@
+{
+  "status": "COMPLETE_EXPLORATORY_METADATA",
+  "new_fits": 0,
+  "new_model_rows": 0,
+  "C3_payload_reads": 0,
+  "C4_payload_reads": 0,
+  "summary": [
+    {
+      "population": "kernel_fit",
+      "lag_days": 7,
+      "eligible_cases": 88,
+      "eligible_cells": 24,
+      "pending_cases": 9,
+      "pending_cells": 6,
+      "pending_remaining_median_days": 0.011423611111111112,
+      "pending_remaining_gt_3_5days": 0,
+      "staleness_exceeds_train_max_cases": 1,
+      "pre_reference_event_cases": 87,
+      "skipped_by_reason": {
+        "known_event": 30
+      }
+    },
+    {
+      "population": "kernel_fit",
+      "lag_days": 14,
+      "eligible_cases": 99,
+      "eligible_cells": 24,
+      "pending_cases": 88,
+      "pending_cells": 24,
+      "pending_remaining_median_days": 6.809756944444445,
+      "pending_remaining_gt_3_5days": 84,
+      "staleness_exceeds_train_max_cases": 29,
+      "pre_reference_event_cases": 87,
+      "skipped_by_reason": {
+        "known_event": 19
+      }
+    },
+    {
+      "population": "kernel_fit",
+      "lag_days": 21,
+      "eligible_cases": 76,
+      "eligible_cells": 24,
+      "pending_cases": 76,
+      "pending_cells": 24,
+      "pending_remaining_median_days": 13.762418981481481,
+      "pending_remaining_gt_3_5days": 76,
+      "staleness_exceeds_train_max_cases": 41,
+      "pre_reference_event_cases": 63,
+      "skipped_by_reason": {
+        "less_than_3_visible": 24,
+        "known_event": 18
+      }
+    },
+    {
+      "population": "kernel_held",
+      "lag_days": 7,
+      "eligible_cases": 76,
+      "eligible_cells": 24,
+      "pending_cases": 3,
+      "pending_cells": 2,
+      "pending_remaining_median_days": 0.035902777777777777,
+      "pending_remaining_gt_3_5days": 0,
+      "staleness_exceeds_train_max_cases": 1,
+      "pre_reference_event_cases": 76,
+      "skipped_by_reason": {
+        "known_event": 19
+      }
+    },
+    {
+      "population": "kernel_held",
+      "lag_days": 14,
+      "eligible_cases": 85,
+      "eligible_cells": 24,
+      "pending_cases": 80,
+      "pending_cells": 24,
+      "pending_remaining_median_days": 6.716140046296296,
+      "pending_remaining_gt_3_5days": 71,
+      "staleness_exceeds_train_max_cases": 33,
+      "pre_reference_event_cases": 76,
+      "skipped_by_reason": {
+        "known_event": 10
+      }
+    },
+    {
+      "population": "kernel_held",
+      "lag_days": 21,
+      "eligible_cases": 63,
+      "eligible_cells": 21,
+      "pending_cases": 63,
+      "pending_cells": 21,
+      "pending_remaining_median_days": 13.694849537037037,
+      "pending_remaining_gt_3_5days": 63,
+      "staleness_exceeds_train_max_cases": 40,
+      "pre_reference_event_cases": 52,
+      "skipped_by_reason": {
+        "less_than_3_visible": 24,
+        "known_event": 8
+      }
+    }
+  ],
+  "limits": [
+    "report arrival lag is hypothetical, not measured",
+    "selected successful recorded opportunities only",
+    "staleness support metric is descriptive, not a coverage guarantee",
+    "no paired gains, resource-scheduling evaluation or policy fit"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "status": "PROXY_GAIN_LABELS_BUILT_NOT_SERVICE_SUCCESS",
+  "new_method_validated": false,
+  "paper_ready": false,
+  "no_RUL_head_refit": true,
+  "limits": [
+    "Only one conditional positive-RUL proxy, not full service distribution",
+    "Kernel-fit population has in-sample optimism; held population never fitted by this head",
+    "Post-failure primary-time utility defined zero; not a complete failure-detection objective",
+    "Passive observation/information-withholding replay; no verified health-trajectory intervention",
+    "48 training-source cells, fixed source-index opportunities, not independent final confirmation"
+  ],
+  "next_action": "Independently recompute proxy gains and split provenance. If heterogeneous nonzero held-cell gains exist, freeze a small value-prediction test against age and point-scale controls using only kernel-fit cases for fitting. Full-kernel and resource validation still required."
+}

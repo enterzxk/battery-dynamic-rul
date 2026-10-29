@@ -1,0 +1,7 @@
+# 旧公开证据的无损归档
+
+为维持12 MiB公开快照上限，三份历史A2/A3代码与配对结果以无损ZIP保存；科研服务器原件与旧Git提交均保留。validation.json列明每份SHA256和原始旧提交直链。执行 python decode.py 仅核验；添加 --output-dir 新目录可恢复全部原文件，禁止覆盖。当前目录的归档未包含原始电池数据、模型权重或论文全文。
+
+- [experiments/multirate_state_A2_20261022/a2_infer.py](https://github.com/enterzxk/battery-dynamic-rul/blob/2a8de5e8d5bb18549778764fed9921286b0caa17/experiments/multirate_state_A2_20261022/a2_infer.py)；SHA256 1b290fc5fb2ec962125c99c1c2d12a81b546096ec8ffdb209184a1ea59fe76fc
+- [experiments/multirate_state_A2_20261022/a2_prep.py](https://github.com/enterzxk/battery-dynamic-rul/blob/2a8de5e8d5bb18549778764fed9921286b0caa17/experiments/multirate_state_A2_20261022/a2_prep.py)；SHA256 3b45d148696b830be6555527d6f162b391d18a9cd349851220b293da6454c0c4
+- [experiments/multirate_state_A3_rate_20261024/ensemble_compare_run1/paired_cell_bootstrap.csv](https://github.com/enterzxk/battery-dynamic-rul/blob/2a8de5e8d5bb18549778764fed9921286b0caa17/experiments/multirate_state_A3_rate_20261024/ensemble_compare_run1/paired_cell_bootstrap.csv)；SHA256 fe0ac4e3e42188850a22f38d9c1d75c415b41cd77ccf0342db49516f1a6f5f7e
