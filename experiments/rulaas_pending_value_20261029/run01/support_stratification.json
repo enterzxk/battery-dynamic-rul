@@ -1,0 +1,50 @@
+{
+  "status": "PRESPECIFIED_SUPPORT_STRATIFICATION_DESCRIPTIVE",
+  "subsets": [
+    {
+      "population": "kernel_fit",
+      "request_stale_above_train_max": false,
+      "cases": 59,
+      "cells": 24,
+      "cell_macro_difference_weeks": 0.2535118533520387,
+      "case_mean_difference_weeks": 0.3353332489227352
+    },
+    {
+      "population": "kernel_fit",
+      "request_stale_above_train_max": true,
+      "cases": 29,
+      "cells": 16,
+      "cell_macro_difference_weeks": 0.48410877489158877,
+      "case_mean_difference_weeks": 0.6150097897318281
+    },
+    {
+      "population": "kernel_held",
+      "request_stale_above_train_max": false,
+      "cases": 47,
+      "cells": 24,
+      "cell_macro_difference_weeks": 0.2899618780327478,
+      "case_mean_difference_weeks": 0.37155591442911173
+    },
+    {
+      "population": "kernel_held",
+      "request_stale_above_train_max": true,
+      "cases": 33,
+      "cells": 13,
+      "cell_macro_difference_weeks": 0.33205738999719636,
+      "case_mean_difference_weeks": 0.27608919536257875
+    }
+  ],
+  "held_worst_cell": {
+    "cell_id": "G1C2",
+    "difference_weeks": -0.5440307320059989
+  },
+  "held_best_cell": {
+    "cell_id": "G20C2",
+    "difference_weeks": 1.667680850520703
+  },
+  "new_fits": 0,
+  "new_inference_rows": 0,
+  "C3_payload_reads": 0,
+  "C4_payload_reads": 0,
+  "warning": "Subsets are descriptive and have differing cells; do not selectively report or claim guaranteed in-distribution predictions."
+}

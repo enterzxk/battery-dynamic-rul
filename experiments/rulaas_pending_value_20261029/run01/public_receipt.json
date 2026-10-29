@@ -1,0 +1,21 @@
+{
+  "status": "SUCCESS",
+  "request_id": "RULAAS_PENDING_VALUE_20261029_RUN01",
+  "started_utc": "2026-10-29T15:38:44.031701+00:00",
+  "new_fits": 0,
+  "model_prediction_rows": 3165,
+  "source_train_cells_read": 48,
+  "C3_payload_reads": 0,
+  "C4_payload_reads": 0,
+  "actual_coordinator_model_recorded": "gpt-6.1-terra",
+  "hypothetical_delay_days": 14.0,
+  "cases_completed": 184,
+  "finished_utc": "2026-10-29T15:39:15.359642+00:00",
+  "elapsed_seconds": 31.32795524597168,
+  "GO_sha256": "5d494c3a01b9aa040dc109bffcb2c904d5898d23dd688dd8004291b84a3d8d13",
+  "eligible_cases": 184,
+  "counterfactual_slots": 1472,
+  "excluded_cases": 29,
+  "unarrived_signal_mutation": "PASS",
+  "model_prediction_rows_outside_original_staleness_range": 1766
+}

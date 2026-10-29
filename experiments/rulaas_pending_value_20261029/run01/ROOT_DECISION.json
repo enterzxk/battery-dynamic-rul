@@ -1,0 +1,15 @@
+{
+  "status": "EXPLORATORY_INFLIGHT_OVERLAP_SIGNAL_NOT_POLICY_GAIN",
+  "paper_ready": false,
+  "service_cost_saving_validated": false,
+  "existing_no_gain_preserved": true,
+  "hypothetical_report_lag_days": 14,
+  "limits": [
+    "Hypothetical fixed 14-day delay; not real arrival data.",
+    "Suppression is a counterfactual information comparison, not equal-resource policy.",
+    "Post-event time reward zero; not a complete event-detection objective.",
+    "40 versus 60 head-training cells; operating groups may overlap.",
+    "Fixed positive proxy only; no hurdle distribution or physical intervention proof."
+  ],
+  "next": "Freeze an online pending-aware policy versus age and full acceptance at common station capacity and query keys; do not call differing realized costs matched. A real event distribution and independent validation remain necessary."
+}

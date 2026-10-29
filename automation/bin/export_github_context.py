@@ -579,6 +579,8 @@ def main():
     # Completed OOF gain stages 2026-10-29. No raw data or checkpoints.
     chosen.update('experiments/rulaas_gain_learning_20261029/'+n for n in ['GO_RUN01.json','review_saved.py','run01/RESULTS_ZH.md','run01/summary.csv','run01/paired_contrasts.csv','run01/INDEPENDENT_RECOMPUTE.json','run01/ROOT_DECISION.json','run01/public_receipt.json'])
     chosen.update('experiments/rulaas_gain_oof_repair_20261029/'+n for n in ['run.py','review_saved.py','PROTOCOL_ZH.md','GO_RUN01.json','run01/RESULTS_ZH.md','run01/label_change_summary.json','run01/INDEPENDENT_RECOMPUTE.json','run01/per_cell_label_change.csv','run01/fold_manifest.json','run01/public_receipt.json'])
+    # Pending information overlap 2026-10-29. No raw data or checkpoints.
+    chosen.update('experiments/rulaas_pending_value_20261029/'+n for n in ['run.py','review_saved.py','PROTOCOL_ZH.md','GO_RUN01.json','run01/RESULTS_ZH.md','run01/ROOT_DECISION.json','run01/summary.json','run01/support_stratification.json','run01/INDEPENDENT_RECOMPUTE.json','run01/per_cell.csv','run01/public_receipt.json'])
     contents, files, skipped, binary_blobs = {}, [], [], {}
     mapping = {'README.md': 'docs/GITHUB_README_ZH.md', 'agent.md': 'AGENTS.md'}
     mapping.update({rel: rel for rel in sorted(chosen)})

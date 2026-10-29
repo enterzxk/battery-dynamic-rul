@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "new_fits": 0,
+  "new_inference_rows": 0,
+  "C3_payload_reads": 0,
+  "C4_payload_reads": 0,
+  "cases_checked": 184,
+  "slot_checks": 1472,
+  "candidate_pre_arrival_checks": 588,
+  "existing_pending_pre_arrival_checks": 139,
+  "no_pending_identity_checks": 85,
+  "max_label_recomputation_error": 0.0,
+  "population_recomputations": [
+    {
+      "population": "kernel_fit",
+      "n_pending_cases": 88,
+      "n_cells": 24,
+      "n_groups": 22,
+      "difference_cell_macro_weeks": 0.26787226824865257,
+      "group_bootstrap_95_CI": [
+        -0.19354879594600113,
+        0.5799679253592033
+      ]
+    },
+    {
+      "population": "kernel_held",
+      "n_pending_cases": 80,
+      "n_cells": 24,
+      "n_groups": 24,
+      "difference_cell_macro_weeks": 0.293542301589307,
+      "group_bootstrap_95_CI": [
+        0.12140386943767305,
+        0.480793528400453
+      ]
+    }
+  ],
+  "limits": [
+    "Fixed 14-day delay is hypothetical.",
+    "Suppressed prior reports are an analytic information comparison, not a feasible matched-cost queue policy.",
+    "0 post-event time utility is not complete failure-detection reward.",
+    "Historical C1/C2 cells and a conditional RUL point proxy are not independent service confirmation."
+  ],
+  "input_sha256": {
+    "experiments/rulaas_pending_value_20261029/run01/cases.csv": "ed1ab8769e5ab849d25f153d9713b3f9bc127f303fe77370bec5c8be9aaab5f0",
+    "experiments/rulaas_pending_value_20261029/run01/counterfactual_points.csv": "b8c843b7dc3c57e26a9f2f4b78b4cc729d909a008f0b1ce0022c8e5dbdc30b81",
+    "experiments/rulaas_pending_value_20261029/run01/summary.json": "4e659d8cdca9bd004a5791fa0b41b1b6769c53b1c8be84d6060bc7bfba9eef6a",
+    "experiments/rulaas_pending_value_20261029/run01/per_cell.csv": "56b02d66f07dd68ae8782b024f9793fb28dece3107fb65803682eee39d93153f",
+    "experiments/rulaas_pending_value_20261029/run01/receipt.json": "cae0b2ee6fabb5cc39e00bbb23586c873f0cb14bf8757888b6920c7c34b127f3"
+  }
+}

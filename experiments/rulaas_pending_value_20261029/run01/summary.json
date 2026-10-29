@@ -1,0 +1,65 @@
+{
+  "populations": [
+    {
+      "population": "kernel_fit",
+      "eligible_cases": 99,
+      "eligible_cells": 24,
+      "pending_cases": 88,
+      "pending_cells": 24,
+      "pending_source_groups": 22,
+      "unknown_post_event_cases": 12,
+      "input_stale_above_original_training_max_cases": 29,
+      "pending_realistic_gain_cell_macro_weeks": 0.2476267598687045,
+      "pending_suppressed_gain_cell_macro_weeks": 0.515499028117357,
+      "difference_cell_macro_weeks": 0.26787226824865257,
+      "group_bootstrap_95_CI": [
+        -0.19354879594600113,
+        0.5799679253592033
+      ],
+      "difference_positive_cases": 52,
+      "difference_zero_cases": 21,
+      "difference_negative_cases": 15,
+      "cells_positive": 21,
+      "cells_zero": 0,
+      "cells_negative": 3,
+      "interpretation": "Fixed-proxy informational overlap; hypothetical suppressed-inflight world is not a deployable equal-resource policy."
+    },
+    {
+      "population": "kernel_held",
+      "eligible_cases": 85,
+      "eligible_cells": 24,
+      "pending_cases": 80,
+      "pending_cells": 24,
+      "pending_source_groups": 24,
+      "unknown_post_event_cases": 9,
+      "input_stale_above_original_training_max_cases": 33,
+      "pending_realistic_gain_cell_macro_weeks": 0.12894599609941457,
+      "pending_suppressed_gain_cell_macro_weeks": 0.42248829768872165,
+      "difference_cell_macro_weeks": 0.293542301589307,
+      "group_bootstrap_95_CI": [
+        0.12140386943767305,
+        0.480793528400453
+      ],
+      "difference_positive_cases": 42,
+      "difference_zero_cases": 21,
+      "difference_negative_cases": 17,
+      "cells_positive": 17,
+      "cells_zero": 2,
+      "cells_negative": 5,
+      "interpretation": "Fixed-proxy informational overlap; hypothetical suppressed-inflight world is not a deployable equal-resource policy."
+    }
+  ],
+  "model_prediction_rows_outside_original_staleness_range": 1766,
+  "model_prediction_rows_total": 3165,
+  "C3_payload_reads": 0,
+  "C4_payload_reads": 0,
+  "new_fits": 0,
+  "pending_candidate_mutation_request_input": "PASS",
+  "limits": [
+    "Hypothetical fixed 14-day delay; not real arrival data.",
+    "Suppression is a counterfactual information comparison, not equal-resource policy.",
+    "Post-event time reward zero; not a complete event-detection objective.",
+    "40 versus 60 head-training cells; operating groups may overlap.",
+    "Fixed positive proxy only; no hurdle distribution or physical intervention proof."
+  ]
+}
