@@ -1,0 +1,17 @@
+{
+  "request_id": "RUL_TIME_M2_SWITCH_20261027T1935Z",
+  "decision": "NO_GAIN",
+  "why": "Training-cell OOF selection drove the switch threshold to the grid edge (tau*=40, OOF MAE monotone decreasing 3.208 at tau=8 to 2.480 at tau=40), i.e. training data rejects slope extrapolation. On C3 the frozen rule changes overall cell-macro MAE by -0.015 weeks (CI [-0.046, 0.000]) versus the tree: no gain. The tau=12 C3 tail improvement (32+ bucket 11.92 -> 9.17) does not reproduce on OOF and is therefore a C3-specific artifact, not a mechanism.",
+  "closed_direction": "Slope-based crossing-time extrapolation for the long-RUL tail.",
+  "preserved_negative_result": "All variants (F3/P1/P3 calibration/M2) underestimate the 32+ bucket by about 11 weeks; this is a data/information limit under the current as-of features, not a tuning problem.",
+  "next_candidates": [
+    "Look for identifiable long-life information in training data (early coulombic efficiency / temperature / protocol group), with a fresh GO and a strong simple control.",
+    "Or make the honest failure boundary explicit: report a lower-bound/interval for 32+ week predictions and present the tail as a documented limitation rather than a solved case."
+  ],
+  "fits": 0,
+  "C4_reads": 0,
+  "evidence": [
+    "m2_switch_run_20261027T1935Z/m2_switch.json",
+    "M2_RESULTS_ZH.md"
+  ]
+}

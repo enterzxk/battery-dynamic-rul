@@ -1,0 +1,23 @@
+{
+  "status": "COMPLETED_DEVELOPMENT_GATE",
+  "screen_noninferiority_margin_weeks": 0.1,
+  "margin_status": "engineering screening only; not externally justified SLO",
+  "no_novelty_claim": true,
+  "no_service_SLO_claim": true,
+  "additional_RPT_value": "SUPPORTED_IN_THIS_FIXED_MODEL_GATE",
+  "next_action": "Implement a bounded queue-aware observed-opportunity scheduler comparison; frozen model and delayed visibility, no controller using unavailable RUL labels.",
+  "thinning_screen": [
+    {
+      "candidate": "half_even7",
+      "passes_development_screen": false
+    },
+    {
+      "candidate": "half_odd7",
+      "passes_development_screen": false
+    },
+    {
+      "candidate": "half_hash7",
+      "passes_development_screen": false
+    }
+  ]
+}

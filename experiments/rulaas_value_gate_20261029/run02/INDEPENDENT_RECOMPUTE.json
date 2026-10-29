@@ -1,0 +1,66 @@
+{
+  "status": "PASS",
+  "prediction_rows": 17760,
+  "common_query_times": 2960,
+  "policies": [
+    "all0",
+    "all7",
+    "anchor7",
+    "half_even7",
+    "half_hash7",
+    "half_odd7"
+  ],
+  "primary_MAE_recompute_max_error": 1.7763568394002505e-15,
+  "same_targets_and_primary_population": true,
+  "cheap_cycle_count_identical_between_policies": true,
+  "all_reports_arrived_by_query": true,
+  "new_fits": 0,
+  "C4_payload_reads": 0,
+  "per_cell_harm": [
+    {
+      "candidate": "anchor7",
+      "reference": "all7",
+      "n_cells": 61,
+      "improved_cells": 1,
+      "harmed_cells": 59,
+      "worst_cell": "G18C3",
+      "worst_delta_weeks": 16.509335245179678
+    },
+    {
+      "candidate": "half_even7",
+      "reference": "all7",
+      "n_cells": 61,
+      "improved_cells": 15,
+      "harmed_cells": 45,
+      "worst_cell": "G6C3",
+      "worst_delta_weeks": 0.9403299121778304
+    },
+    {
+      "candidate": "half_odd7",
+      "reference": "all7",
+      "n_cells": 61,
+      "improved_cells": 13,
+      "harmed_cells": 47,
+      "worst_cell": "G1C3",
+      "worst_delta_weeks": 1.2099922932808482
+    },
+    {
+      "candidate": "half_hash7",
+      "reference": "all7",
+      "n_cells": 61,
+      "improved_cells": 16,
+      "harmed_cells": 44,
+      "worst_cell": "G7C3",
+      "worst_delta_weeks": 0.8563226383569225
+    },
+    {
+      "candidate": "all0",
+      "reference": "all7",
+      "n_cells": 61,
+      "improved_cells": 40,
+      "harmed_cells": 20,
+      "worst_cell": "G48C3",
+      "worst_delta_weeks": 0.35574667405083404
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "request_id": "RUL_TIME_P4_HISTORY_20261027T1600Z",
+  "decision": "NO_GAIN",
+  "reason": "Full-history summary is not better than the static F3 snapshot (HGB_history_summary +0.124 wk vs F3 median, CI [-0.006,+0.266]); direct RUL-supervised GRUs are far worse (7.1-7.7 wk) and history is worse than current-only. The P4 hypothesis (static summary loses usable history) is not supported at this budget.",
+  "stopped_configuration": "P4 GRU/HGB history comparators; no network scaling, no extra seeds, no endpoint changes.",
+  "evidence": "p4_history_run_20261027T1610Z/{point_summary.csv,paired_bootstrap.csv,receipt.json}; P4_RESULTS_ZH.md",
+  "fits": {
+    "neural": 4,
+    "hgb": 3,
+    "optimizer_steps": 720
+  },
+  "C4_reads": 0,
+  "single_seed": 42,
+  "limitations": [
+    "C3 development only",
+    "single split/seed",
+    "pre-registered 400+400 step GRU budget",
+    "fixed 769-d history summary"
+  ],
+  "next": "Per RUL_TIME_RECOVERY_PLAN: P2 mechanism selection must be evidence-driven; no more history-only comparators. Any new mechanism requires a fresh GO and must beat P3 ridge/F3 mean on raw/unconfirmed with a paired CI excluding 0."
+}

@@ -566,6 +566,9 @@ def main():
     chosen.update('experiments/rul_time_recovery_20261026/public_p3_evidence_v1/'+n for n in ['archive.bin', 'validation.json', 'decode.py', 'README.md'])
 
     chosen.update('experiments/rul_time_recovery_20261026/'+n for n in ['p3_compare.py','GO_P3_COMPARE_RUN1.json'])
+    # RULaaS fixed-model information gate; exact public evidence only.
+    chosen.update('experiments/rulaas_value_gate_20261029/'+n for n in ['value_gate.py','PLAN_ZH.md','GO_RUN02.json','run02/RESULTS.md','run02/RESULTS_ZH.md','run02/summary.csv','run02/per_cell.csv','run02/paired_bootstrap.csv','run02/information_access.csv','run02/event_episodes.csv','run02/decision.json','run02/INDEPENDENT_RECOMPUTE.json','run02/excluded_cells.json'])
+    chosen.update('experiments/rul_time_recovery_20261026/'+n for n in ['P4_RESULTS_ZH.md','P4_DECISION.json','p4_history.py','p4_history_run_20261027T1610Z/point_summary.csv','p4_history_run_20261027T1610Z/paired_bootstrap.csv','M2_RESULTS_ZH.md','M2_DECISION.json','P2_DIAGNOSIS_ZH.md'])
     contents, files, skipped, binary_blobs = {}, [], [], {}
     mapping = {'README.md': 'docs/GITHUB_README_ZH.md', 'agent.md': 'AGENTS.md'}
     mapping.update({rel: rel for rel in sorted(chosen)})

@@ -1,16 +1,16 @@
 {
-  "status": "P2_COMPLETE_NO_GAIN_STOP_CLOCK_AND_PR",
-  "goal_status": "ACTIVE",
-  "utc": "2026-10-26T12:21:33Z",
-  "new_CPU_fits_this_stage": 9,
-  "cumulative_recovery_CPU_fits": 15,
-  "new_neural_fits": 0,
+  "request_id": "RUL_TIME_P2_TAIL_PROBE_20261027T1925Z",
+  "decision": "NO_GAIN_FOR_PREREGISTERED_RULE",
+  "diagnosis": "Error is dominated by long-life shrinkage: |error| correlates 0.853 with target RUL; the 32+ week bucket (261 queries on 7 cells) carries 41.5% of total absolute error with -11.5 weeks bias; 12-32 weeks carries 37.4%. All existing methods (F3, P1, P3 calibration) fail the same way.",
+  "probe": "Slope crossing-time extrapolation improves the 32+ bucket (11.46 -> 9.08 weeks) but degrades 12-32 (3.71 -> 4.89); overall +0.317 weeks, CI [-0.107,+0.754] -> no net gain. Extrapolation alone is far worse (7.858 overall).",
+  "stopped": "The pre-registered >12-week blend. No threshold tuning on C3, no endpoint change, no extra seeds.",
+  "next_protocol": "M2 tail switch with the switching rule selected on training-cell OOF and frozen before C3 scoring; contrasts TREE / EXTRAP-only / fixed-threshold M1 / OOF-selected switch; key ablation drops the slope term; success requires 32+ improvement without 12-32 degradation and a paired CI excluding 0. Budget: 0 new fits (existing OOF residuals), <=2 CPU fits only if a small tree is needed.",
+  "fits": 0,
   "C4_reads": 0,
-  "baseline_PR_predictions": 30120,
-  "mechanism_predictions": 15060,
-  "report_sha256": "db925b68c94ad313f2ad7c59db5ca9cebe9a5feca5e4831e7da20af1117252e1",
-  "receipt_sha256": "e10557cb8e2bdb1cf61ccfba83bac7eda483289a328ec81277e597021582d5e4",
-  "next_action": "Fresh GO for low-capacity train-OOF conditional calibration versus unchanged/global calibration; no P1/P2 reruns",
-  "new_fit_GO": null,
-  "github_sync": "PENDING"
+  "single_seed": 42,
+  "evidence": [
+    "p2_diagnosis_run_20261027T1900Z/diagnosis.json",
+    "p2_tail_probe_run_20261027T1925Z/probe.json",
+    "P2_DIAGNOSIS_ZH.md"
+  ]
 }

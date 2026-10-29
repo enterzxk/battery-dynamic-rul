@@ -1,3 +1,23 @@
+# 2026-10-29 RULaaS 首轮开发实验已完成
+
+目标模式 ACTIVE。冻结强 HGB，0 新拟合、0 优化步、0 C4，完成 17760 条重建可见历史的预测；62 个查询电芯。六种策略共用固定查询、参考事件及廉价循环信息。
+
+结论：SUPPORTED_IN_THIS_FIXED_MODEL_GATE。只检验已有检测机会的信息保留价值；没有共享队列/真实干预或SLO保证。
+
+[真实结果](experiments/rulaas_value_gate_20261029/run02/RESULTS_ZH.md)、[计划](experiments/rulaas_value_gate_20261029/PLAN_ZH.md)、[独立指标重算](experiments/rulaas_value_gate_20261029/run02/INDEPENDENT_RECOMPUTE.json)。
+
+下一步：Implement a bounded queue-aware observed-opportunity scheduler comparison; frozen model and delayed visibility, no controller using unavailable RUL labels.
+
+P4 已完成 NO_GAIN；旧“历史已被完全表达”的表述应收缩为该表示与预算未检出增量。既有尾部探针/OOF切换 NO_GAIN 继续保留，不重跑。C3 仍是多轮开发，不能宣称独立确认。
+
+---
+
+# 2026-10-29 RULaaS goal activated
+
+Human approved continued bounded experiments toward publication-quality evidence. First action: fixed-HGB RPT-information retention gate, 0 fits, 0 C4; plan and exact-hash GO in experiments/rulaas_value_gate_20261029. No new service gain established. P4 actually completed on 2026-10-27 with NO_GAIN (4 neural fits, 3 HGB fits, 720 optimizer steps); older pending wording below is historical.
+
+---
+
 # 2026-10-27 P3 更新（当前）
 
 完成3次训练OOF条件校准+1次同工况参考库装配。线性校准raw/unconfirmed中位数MAE2.188周，但相对更强F3均值/P1直接回归的配对CI含0，竞争门槛未过；同组寿命/容量参考失败。累计18次CPU估计器拟合，0C4。
