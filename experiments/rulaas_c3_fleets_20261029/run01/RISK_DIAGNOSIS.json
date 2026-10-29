@@ -1,0 +1,289 @@
+{
+  "status": "RISK_STOP_REASONS_FROM_SAVED_OUTPUTS",
+  "new_fits": 0,
+  "new_inference_rows": 0,
+  "C4_payload_reads": 0,
+  "C3_unique_new_cells_read": 0,
+  "capacities": [
+    {
+      "stations": 2,
+      "paired_primary_cells": 60,
+      "paired_delta_mean": -0.07156842972170785,
+      "cells_improved": 33,
+      "cells_unchanged": 2,
+      "cells_worse": 25,
+      "worst_cell_delta": 1.255948026649933,
+      "age_cell_macro_MAE": 3.1091956382245205,
+      "pending_cell_macro_MAE": 3.0376272085028124,
+      "age_cell_macro_coverage80": 0.6660228580097514,
+      "pending_cell_macro_coverage80": 0.676263870375083,
+      "age_station_hours": 9594.61,
+      "pending_station_hours": 9552.04138888889,
+      "age_missed": 3,
+      "pending_missed": 4,
+      "eligible_events": 60,
+      "new_missed_cells": [
+        "G24C3",
+        "G44C3",
+        "G58C3"
+      ],
+      "recovered_missed_cells": [
+        "G38C3",
+        "G46C3"
+      ]
+    },
+    {
+      "stations": 4,
+      "paired_primary_cells": 60,
+      "paired_delta_mean": -0.09092558487347124,
+      "cells_improved": 40,
+      "cells_unchanged": 1,
+      "cells_worse": 19,
+      "worst_cell_delta": 0.6190960115981836,
+      "age_cell_macro_MAE": 3.0578010143849483,
+      "pending_cell_macro_MAE": 2.966875429511477,
+      "age_cell_macro_coverage80": 0.6738498008356565,
+      "pending_cell_macro_coverage80": 0.6857468157935814,
+      "age_station_hours": 10239.195277777779,
+      "pending_station_hours": 10057.734444444446,
+      "age_missed": 4,
+      "pending_missed": 3,
+      "eligible_events": 60,
+      "new_missed_cells": [
+        "G24C3",
+        "G44C3"
+      ],
+      "recovered_missed_cells": [
+        "G40C3",
+        "G46C3",
+        "G58C3"
+      ]
+    }
+  ],
+  "new_miss_peak_risk": [
+    {
+      "stations": 2,
+      "cell_id": "G44C3",
+      "policy": "age_calibrated",
+      "eligible_queries": 8,
+      "max_p_4week": 0.572945062171645,
+      "query_epoch": 1680908067.0,
+      "target_rul_weeks": 0.39582837301587304,
+      "visible_RPT_indices": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        7,
+        10,
+        11,
+        14,
+        15,
+        18,
+        19,
+        22,
+        23
+      ],
+      "pending_reports": 0,
+      "staleness_weeks": 3.170342261904762
+    },
+    {
+      "stations": 2,
+      "cell_id": "G44C3",
+      "policy": "age_no_pending",
+      "eligible_queries": 8,
+      "max_p_4week": 0.4984987752198014,
+      "query_epoch": 1680908067.0,
+      "target_rul_weeks": 0.39582837301587304,
+      "visible_RPT_indices": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15,
+        17,
+        19,
+        21,
+        23
+      ],
+      "pending_reports": 1,
+      "staleness_weeks": 3.170342261904762
+    },
+    {
+      "stations": 2,
+      "cell_id": "G58C3",
+      "policy": "age_calibrated",
+      "eligible_queries": 8,
+      "max_p_4week": 0.8578816707379004,
+      "query_epoch": 1669378071.0,
+      "target_rul_weeks": 0.44482804232804235,
+      "visible_RPT_indices": [
+        0,
+        1,
+        2,
+        3,
+        7,
+        8,
+        12,
+        13
+      ],
+      "pending_reports": 0,
+      "staleness_weeks": 2.9886210317460318
+    },
+    {
+      "stations": 2,
+      "cell_id": "G58C3",
+      "policy": "age_no_pending",
+      "eligible_queries": 8,
+      "max_p_4week": 0.3974864928815633,
+      "query_epoch": 1668470871.0,
+      "target_rul_weeks": 1.9448280423280424,
+      "visible_RPT_indices": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        7,
+        9,
+        12
+      ],
+      "pending_reports": 1,
+      "staleness_weeks": 2.753844246031746
+    },
+    {
+      "stations": 2,
+      "cell_id": "G24C3",
+      "policy": "age_calibrated",
+      "eligible_queries": 8,
+      "max_p_4week": 0.6550619640171611,
+      "query_epoch": 1646537866.0,
+      "target_rul_weeks": 0.2943154761904762,
+      "visible_RPT_indices": [
+        0,
+        1,
+        2,
+        6,
+        7
+      ],
+      "pending_reports": 0,
+      "staleness_weeks": 3.1137318121693123
+    },
+    {
+      "stations": 2,
+      "cell_id": "G24C3",
+      "policy": "age_no_pending",
+      "eligible_queries": 8,
+      "max_p_4week": 0.1259544163154698,
+      "query_epoch": 1645328266.0,
+      "target_rul_weeks": 2.294315476190476,
+      "visible_RPT_indices": [
+        0,
+        1,
+        2,
+        6
+      ],
+      "pending_reports": 1,
+      "staleness_weeks": 2.4093683862433863
+    },
+    {
+      "stations": 4,
+      "cell_id": "G44C3",
+      "policy": "age_calibrated",
+      "eligible_queries": 8,
+      "max_p_4week": 0.572945062171645,
+      "query_epoch": 1680908067.0,
+      "target_rul_weeks": 0.39582837301587304,
+      "visible_RPT_indices": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        7,
+        10,
+        11,
+        14,
+        15,
+        18,
+        19,
+        22,
+        23
+      ],
+      "pending_reports": 0,
+      "staleness_weeks": 3.170342261904762
+    },
+    {
+      "stations": 4,
+      "cell_id": "G44C3",
+      "policy": "age_no_pending",
+      "eligible_queries": 8,
+      "max_p_4week": 0.4984987752198014,
+      "query_epoch": 1680908067.0,
+      "target_rul_weeks": 0.39582837301587304,
+      "visible_RPT_indices": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15,
+        17,
+        19,
+        21,
+        23
+      ],
+      "pending_reports": 1,
+      "staleness_weeks": 3.170342261904762
+    },
+    {
+      "stations": 4,
+      "cell_id": "G24C3",
+      "policy": "age_calibrated",
+      "eligible_queries": 8,
+      "max_p_4week": 0.6747017159359845,
+      "query_epoch": 1646537866.0,
+      "target_rul_weeks": 0.2943154761904762,
+      "visible_RPT_indices": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        7
+      ],
+      "pending_reports": 0,
+      "staleness_weeks": 3.1137318121693123
+    },
+    {
+      "stations": 4,
+      "cell_id": "G24C3",
+      "policy": "age_no_pending",
+      "eligible_queries": 8,
+      "max_p_4week": 0.12601313991622687,
+      "query_epoch": 1645328266.0,
+      "target_rul_weeks": 2.294315476190476,
+      "visible_RPT_indices": [
+        0,
+        1,
+        2,
+        3,
+        6
+      ],
+      "pending_reports": 1,
+      "staleness_weeks": 2.4093683862433863
+    }
+  ],
+  "scope_note": "Post-hoc failure diagnosis only; do not tune C3 policy from these labels.",
+  "group_overlap_note": "All 63 C3 source groups also have training C1/C2 cells; fleet groups are mutually disjoint but not unseen-group validation."
+}

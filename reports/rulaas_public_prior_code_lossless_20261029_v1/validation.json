@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "archive_type": "ZIP",
+  "archive_sha256": "8301a02542f16f1a7cf92ce926b880ebb3b87253d1f45353c69718ceb4e8b058",
+  "archive_bytes": 23873,
+  "originals_unchanged_on_server": true,
+  "prior_commit": "660eedb9aab747591dacd53a04165cb5d8ed17d5",
+  "members": [
+    {
+      "original_path": "experiments/multirate_state_A2_20261022/a2_fastdata.py",
+      "original_bytes": 47818,
+      "original_sha256": "c82f00a2950f550087a7bda033b4347922e6cdc580b896b9cf8a22e6eaa33423",
+      "prior_immutable_url": "https://github.com/enterzxk/battery-dynamic-rul/blob/660eedb9aab747591dacd53a04165cb5d8ed17d5/experiments/multirate_state_A2_20261022/a2_fastdata.py"
+    },
+    {
+      "original_path": "reports/pbt_stage1_dkp_keys_v4_root/stage1_dkp_key_scanner_v4.py",
+      "original_bytes": 34230,
+      "original_sha256": "c2c8600cb990203da33542f271f0a5d679f8b5df70037ac4ee05d7a98d417bcb",
+      "prior_immutable_url": "https://github.com/enterzxk/battery-dynamic-rul/blob/660eedb9aab747591dacd53a04165cb5d8ed17d5/reports/pbt_stage1_dkp_keys_v4_root/stage1_dkp_key_scanner_v4.py"
+    }
+  ],
+  "contains_raw_battery_data": false,
+  "contains_checkpoints": false
+}

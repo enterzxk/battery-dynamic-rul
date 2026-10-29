@@ -587,6 +587,12 @@ def main():
     chosen.difference_update(['experiments/rul_time_recovery_20261026/p4_history.py','experiments/rul_time_recovery_20261026/p4_history_run_20261027T1610Z/paired_bootstrap.csv'])
     BINARY_PREDICTION_ARCHIVES.add('reports/rulaas_public_p4_lossless_20261029_v1/archive.bin')
     chosen.update('reports/rulaas_public_p4_lossless_20261029_v1/'+n for n in ['archive.bin','validation.json','decode.py','README.md'])
+    # C3 frozen-fleet risk gate 2026-10-29. No raw data or checkpoints.
+    chosen.update('experiments/rulaas_c3_fleets_20261029/'+n for n in ['run.py','review_saved.py','PROTOCOL_ZH.md','GO_RUN01.json','RESULTS_ZH.md','run01/ROOT_DECISION.json','run01/INDEPENDENT_RECOMPUTE.json','run01/RISK_DIAGNOSIS.json','run01/paired_per_cell.csv','run01/summary.csv','run01/comparisons.csv','run01/fleet_partition.json','run01/excluded_cells.csv','run01/public_receipt.json'])
+    # Preserve two older source scripts in a verified lossless archive.
+    chosen.difference_update(['experiments/multirate_state_A2_20261022/a2_fastdata.py','reports/pbt_stage1_dkp_keys_v4_root/stage1_dkp_key_scanner_v4.py'])
+    BINARY_PREDICTION_ARCHIVES.add('reports/rulaas_public_prior_code_lossless_20261029_v1/archive.bin')
+    chosen.update('reports/rulaas_public_prior_code_lossless_20261029_v1/'+n for n in ['archive.bin','validation.json','decode.py','README.md'])
     contents, files, skipped, binary_blobs = {}, [], [], {}
     mapping = {'README.md': 'docs/GITHUB_README_ZH.md', 'agent.md': 'AGENTS.md'}
     mapping.update({rel: rel for rel in sorted(chosen)})

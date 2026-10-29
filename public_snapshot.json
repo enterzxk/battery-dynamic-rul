@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-29T15:51:30.808190+00:00",
-  "content_sha256": "7d691b936e7d290da54fbd1aa483f5ee9307a86bd82b876bf16e12ec81298523",
-  "file_count": 1176,
+  "snapshot_utc": "2026-10-29T16:02:16.779716+00:00",
+  "content_sha256": "5409149217dce7582f8946e2469c8f00e9c5711f18b2d9c18d41429d1b4212e9",
+  "file_count": 1192,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,8 +14,8 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 13830,
-      "sha256": "23576e9194154ae4e8e381c13f0ee40aecec80f9482040e3f51b66787c02b70c"
+      "bytes": 15678,
+      "sha256": "07f306fc22ab2c183e3ac063614f3d803cf1a3f7d9f1ffd03b8e38a9596ee837"
     },
     {
       "path": "README.md",
@@ -38,8 +38,8 @@
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 85884,
-      "sha256": "d80fbc85f2609614e21ce16f45e186b7a7d48a2b243ec96e51ccdf57e4948290"
+      "bytes": 86828,
+      "sha256": "69b88d7eb12be880f35ec5f1e12f2e5e693072200013f731fc406afb1d485af7"
     },
     {
       "path": "automation/bin/matr_raw_batch2_asset_worker_v1.py",
@@ -176,8 +176,8 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 17275,
-      "sha256": "2da6f375fce68484aada8375424fac67b509358647f39bb643afc04582cf00f5"
+      "bytes": 19138,
+      "sha256": "eb01ec6be2b843b8abba6096babbb9e1283a54c117414a8f6582b629eea94b02"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
@@ -1768,12 +1768,6 @@
       "source_path": "experiments/multirate_state_A2_20261022/README_A2_ZH.md",
       "bytes": 27895,
       "sha256": "67a217c17f345dfab05e0ae0b502fe392a398f8633d1041f7933af2cdcb220b8"
-    },
-    {
-      "path": "experiments/multirate_state_A2_20261022/a2_fastdata.py",
-      "source_path": "experiments/multirate_state_A2_20261022/a2_fastdata.py",
-      "bytes": 47818,
-      "sha256": "c82f00a2950f550087a7bda033b4347922e6cdc580b896b9cf8a22e6eaa33423"
     },
     {
       "path": "experiments/multirate_state_A2_20261022/a2_fixtures.py",
@@ -3748,6 +3742,90 @@
       "source_path": "experiments/rul_time_recovery_20261026/runner.py",
       "bytes": 12931,
       "sha256": "18819336ee21537a7a4d2aae283fbd681f2f2d9cf83f17b0eb092dd32295fc68"
+    },
+    {
+      "path": "experiments/rulaas_c3_fleets_20261029/GO_RUN01.json",
+      "source_path": "experiments/rulaas_c3_fleets_20261029/GO_RUN01.json",
+      "bytes": 3388,
+      "sha256": "2c23cf4fa3cd8f73ce6d99c9c1986b34753325c34d88abc963b4b0f6af0a49ab"
+    },
+    {
+      "path": "experiments/rulaas_c3_fleets_20261029/PROTOCOL_ZH.md",
+      "source_path": "experiments/rulaas_c3_fleets_20261029/PROTOCOL_ZH.md",
+      "bytes": 3192,
+      "sha256": "080fe6f95b8653dbae9dae307f66ba8ec4661076a051e7a84e6584957a800bbc"
+    },
+    {
+      "path": "experiments/rulaas_c3_fleets_20261029/RESULTS_ZH.md",
+      "source_path": "experiments/rulaas_c3_fleets_20261029/RESULTS_ZH.md",
+      "bytes": 3686,
+      "sha256": "716008b7f0cb9949af9cf233c606431e738b45fe753d71a748d98305c54e2c08"
+    },
+    {
+      "path": "experiments/rulaas_c3_fleets_20261029/review_saved.py",
+      "source_path": "experiments/rulaas_c3_fleets_20261029/review_saved.py",
+      "bytes": 11935,
+      "sha256": "648d3cf53d6fb9d4300996e39017cfb2ce24779ac10f30b9d17ccd5e8adec29a"
+    },
+    {
+      "path": "experiments/rulaas_c3_fleets_20261029/run.py",
+      "source_path": "experiments/rulaas_c3_fleets_20261029/run.py",
+      "bytes": 19554,
+      "sha256": "5efc8fa7c8336f54d415eb167fc20a52be84616c0e3e56ed5228ed8cf744bff8"
+    },
+    {
+      "path": "experiments/rulaas_c3_fleets_20261029/run01/INDEPENDENT_RECOMPUTE.json",
+      "source_path": "experiments/rulaas_c3_fleets_20261029/run01/INDEPENDENT_RECOMPUTE.json",
+      "bytes": 1926,
+      "sha256": "75109fa9dfd1bb314bcc35b0e20257097f56c73077e279df018c506fe3b42de2"
+    },
+    {
+      "path": "experiments/rulaas_c3_fleets_20261029/run01/RISK_DIAGNOSIS.json",
+      "source_path": "experiments/rulaas_c3_fleets_20261029/run01/RISK_DIAGNOSIS.json",
+      "bytes": 6632,
+      "sha256": "683dc2e8a2ab4ebe9c04cade1422f2c480c69fe1f68f40a84491db628548d5f7"
+    },
+    {
+      "path": "experiments/rulaas_c3_fleets_20261029/run01/ROOT_DECISION.json",
+      "source_path": "experiments/rulaas_c3_fleets_20261029/run01/ROOT_DECISION.json",
+      "bytes": 1084,
+      "sha256": "69e0b50bcb28cd3f6dac80801b156612a1affbcfba2a9401cd5bfdb6fc91bd4b"
+    },
+    {
+      "path": "experiments/rulaas_c3_fleets_20261029/run01/comparisons.csv",
+      "source_path": "experiments/rulaas_c3_fleets_20261029/run01/comparisons.csv",
+      "bytes": 1788,
+      "sha256": "26d729b909e267194dc0d66ef0c555cb82b1ad35fe087d22540dd6cce488fd9c"
+    },
+    {
+      "path": "experiments/rulaas_c3_fleets_20261029/run01/excluded_cells.csv",
+      "source_path": "experiments/rulaas_c3_fleets_20261029/run01/excluded_cells.csv",
+      "bytes": 90,
+      "sha256": "052265e4fba6acce8e566133d709935f2d03e78d43166e69b4ec16ea513123fc"
+    },
+    {
+      "path": "experiments/rulaas_c3_fleets_20261029/run01/fleet_partition.json",
+      "source_path": "experiments/rulaas_c3_fleets_20261029/run01/fleet_partition.json",
+      "bytes": 3457,
+      "sha256": "65f27355886f22f371a30a80215737652a363c698d4c51daa7c86a7afa78324f"
+    },
+    {
+      "path": "experiments/rulaas_c3_fleets_20261029/run01/paired_per_cell.csv",
+      "source_path": "experiments/rulaas_c3_fleets_20261029/run01/paired_per_cell.csv",
+      "bytes": 17090,
+      "sha256": "0248ab858a048e34ad6ba25b23b7f80ce6b9467ea9273f2d4d94f23cd294ba74"
+    },
+    {
+      "path": "experiments/rulaas_c3_fleets_20261029/run01/public_receipt.json",
+      "source_path": "experiments/rulaas_c3_fleets_20261029/run01/public_receipt.json",
+      "bytes": 784,
+      "sha256": "0c309d67308cc868d7a55cbfee083abe6804f1282664728f2c56c3125e6983b7"
+    },
+    {
+      "path": "experiments/rulaas_c3_fleets_20261029/run01/summary.csv",
+      "source_path": "experiments/rulaas_c3_fleets_20261029/run01/summary.csv",
+      "bytes": 4336,
+      "sha256": "07c38afa48e076828b85a1f3b24134c82a5eebcbcaae4cdf03b297b8063c12b8"
     },
     {
       "path": "experiments/rulaas_gain_identifiability_20261029/PROTOCOL_ZH.md",
@@ -6534,12 +6612,6 @@
       "sha256": "c72430ec406fc82a7a97c775ccd088ef31eb403841b5817e30ed10614b6e7743"
     },
     {
-      "path": "reports/pbt_stage1_dkp_keys_v4_root/stage1_dkp_key_scanner_v4.py",
-      "source_path": "reports/pbt_stage1_dkp_keys_v4_root/stage1_dkp_key_scanner_v4.py",
-      "bytes": 34230,
-      "sha256": "c2c8600cb990203da33542f271f0a5d679f8b5df70037ac4ee05d7a98d417bcb"
-    },
-    {
       "path": "reports/pbt_val_pairing_independent_v1_luna/report_zh.md",
       "source_path": "reports/pbt_val_pairing_independent_v1_luna/report_zh.md",
       "bytes": 1905,
@@ -6874,6 +6946,30 @@
       "source_path": "reports/rulaas_public_p4_lossless_20261029_v1/validation.json",
       "bytes": 1216,
       "sha256": "7bbb6ff6e20a490ebdfb57f79df3baa0436c1df80a798de3e250e16923d619e6"
+    },
+    {
+      "path": "reports/rulaas_public_prior_code_lossless_20261029_v1/README.md",
+      "source_path": "reports/rulaas_public_prior_code_lossless_20261029_v1/README.md",
+      "bytes": 924,
+      "sha256": "a107c7edbe207c5afb39dfbdbbab20b48294913f04a9badf88b0299e9e55f76e"
+    },
+    {
+      "path": "reports/rulaas_public_prior_code_lossless_20261029_v1/archive.bin",
+      "source_path": "reports/rulaas_public_prior_code_lossless_20261029_v1/archive.bin",
+      "bytes": 23873,
+      "sha256": "8301a02542f16f1a7cf92ce926b880ebb3b87253d1f45353c69718ceb4e8b058"
+    },
+    {
+      "path": "reports/rulaas_public_prior_code_lossless_20261029_v1/decode.py",
+      "source_path": "reports/rulaas_public_prior_code_lossless_20261029_v1/decode.py",
+      "bytes": 1050,
+      "sha256": "d154cfa112bac4095684ea6fba77782dbaec433589270198aa309ed07bc19a77"
+    },
+    {
+      "path": "reports/rulaas_public_prior_code_lossless_20261029_v1/validation.json",
+      "source_path": "reports/rulaas_public_prior_code_lossless_20261029_v1/validation.json",
+      "bytes": 1170,
+      "sha256": "ef78453bb3749531c4cbf386573f316ae86ee93c7a4c66e87b7dbc4d0b5927ca"
     },
     {
       "path": "reports/saved_examples_lossless_20261018_root/decode.py",

@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "new_fits": 0,
+  "new_inference_rows": 0,
+  "C3_source_cells_read": 63,
+  "C4_payload_reads": 0,
+  "fleet_partitions": 3,
+  "worlds_checked": 18,
+  "decisions_checked": 7524,
+  "station_allocations_checked": 3839,
+  "query_predictions_checked": 17022,
+  "same_visible_input_equal_prediction_checks": 4342,
+  "all_six_worlds_within_fleet_same_query_target_and_censor_keys": true,
+  "resource_visibility_probability_interval_episode_recomputation": "PASS",
+  "max_absolute_error_recomputation_error": 0.0,
+  "limits": [
+    "14-day reporting lag and fleet phases are synthetic.",
+    "Three non-overlapping fleets share one previously used C3 development dataset.",
+    "Same available stations do not imply equal station hours.",
+    "No independent-fleet CI; no C4 or external data confirmation."
+  ],
+  "input_sha256": {
+    "experiments/rulaas_c3_fleets_20261029/run01/fleet_partition.json": "65f27355886f22f371a30a80215737652a363c698d4c51daa7c86a7afa78324f",
+    "experiments/rulaas_c3_fleets_20261029/run01/decisions.csv": "80149f2194d166f4b413725bbf3868bfb4a88459372b677846f8886f420ec137",
+    "experiments/rulaas_c3_fleets_20261029/run01/predictions.csv": "f1319e782dc1a3f7545775cf15f29baa3e4f226732cf3f642aad5b7aca26a58a",
+    "experiments/rulaas_c3_fleets_20261029/run01/per_cell.csv": "603d079536b7c35f7c7675d7f3c9a011f1ce61168871d6b80a5228c676cbdfc8",
+    "experiments/rulaas_c3_fleets_20261029/run01/event_episodes.csv": "c52da7a7fb7665c3ccb6ecbaa2c5b4cc3ee1918a865be5f1079e41e69e869d3e",
+    "experiments/rulaas_c3_fleets_20261029/run01/summary.csv": "07c38afa48e076828b85a1f3b24134c82a5eebcbcaae4cdf03b297b8063c12b8",
+    "experiments/rulaas_c3_fleets_20261029/run01/comparisons.csv": "26d729b909e267194dc0d66ef0c555cb82b1ad35fe087d22540dd6cce488fd9c",
+    "experiments/rulaas_c3_fleets_20261029/run01/receipt.json": "c537a25b25605c7ea02cba2c0a680cfd2cd62aaba0be5b19b15fe11a9245767e"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "status": "APPROVED",
+  "request_id": "RULAAS_C3_FLEETS_20261029_RUN01",
+  "owner": "01a17810-6ae6-7cf2-9729-5bfcaa8df5f4",
+  "issued_utc": "2026-10-29T15:55:54.884579+00:00",
+  "actual_model": "gpt-6.1-terra",
+  "model_preference_source": "User explicitly chose Terra on 2026-10-29.",
+  "allow_fits": false,
+  "allow_C3": true,
+  "allow_C4": false,
+  "model_row_cap": 25000,
+  "source_cell_cap": 63,
+  "capacities": [
+    2,
+    4
+  ],
+  "policies": [
+    "all",
+    "age_calibrated",
+    "age_no_pending"
+  ],
+  "hypothetical_delay_days": 14,
+  "seed": 42,
+  "output": "experiments/rulaas_c3_fleets_20261029/run01",
+  "input_sha256": {
+    "experiments/rulaas_value_gate_20261029/value_gate.py": "9d9a06eb3d9a538895fe5a93f6e53c62792e2c55e98cca7fad9118f4daf99fd0",
+    "experiments/multisource_factorial_20261021/features.py": "a6080b915e7f1ae46ec34c172bd0de84ddfd480efb2818eb562d6358c18e88d9",
+    "reports/multisource_20261021_signals/cycle_asof_features.py": "6602c0f4b70a77d36177f87822bee279fb461b1fa2bda42acb3f528c5a0376af",
+    "experiments/isu_irregular_rul_seed42_v1/data_adapter.py": "d5effc7ab9aa946feee717e8490983e6ccbebf890492b456091ac49a942763f3",
+    "experiments/isu_irregular_rul_seed42_v1/baselines.py": "a8f537e2f2676e9c4a20909c530223bab20521fc7457e544cab092515610187e",
+    "experiments/dart_rul_v18/data_protocol.py": "be0b0d14f3034047b009aed8208d7a961c70312ae202b774e556193a2bb53a8c",
+    "reports/isu_ilcc_datav2_full_20261020_root/data_manifest.json": "68f53dc481dfc212896658a9bcb69780b5ed7285d853cc870a4002ae658726e1",
+    "reports/isu_ilcc_capacity_probe_20261020_root/cohort.json": "4469f7f5b6eb8c26a522fa46c4291ec6d03d98e7ae5c20ce7ae77e835b849ae0",
+    "reports/multisource_20261021_signals/all188_rpt_features_v1/manifest.json": "f431eb082f09f455e8edec1cc62e944e116cea1a97544ca3b18abe5d6064c255",
+    "reports/multisource_20261021_signals/cycling_all188_feature_manifest.json": "51e4c87fc7e59cee6afe2bb79fabb9e72070d98ca6d457c124c553d0b05018cb",
+    "experiments/multisource_factorial_20261021/run2_clocksafe/feature_schema.json": "11e50dcf7e2b1f2ae9e05597b6159472ee34d3d0bedb0223531bea69b01fafa7",
+    "experiments/multisource_factorial_20261021/run2_clocksafe/hgb_F3_event.joblib": "1651aa2246df6c5bdfa1b868d8a73581247847c5d9ef2922f15f72faed6e231d",
+    "experiments/multisource_factorial_20261021/run2_clocksafe/hgb_F3_positive.joblib": "b044f171d71d29862046d37bb114f868adafe60ac90cc3b702d23abb38bfb1ad",
+    "experiments/multisource_factorial_20261021/run2_clocksafe/hgb_F3_distribution.joblib": "f124e96c9fce11f410b90ddb222978c9ac0d974969bac72ba88ce3b3add595cf",
+    "AGENTS.md": "93488b4e887ff13c8ac88687d1be4197a52c22667708dfd960d424007f3b1c19",
+    "experiments/rulaas_c3_fleets_20261029/run.py": "5efc8fa7c8336f54d415eb167fc20a52be84616c0e3e56ed5228ed8cf744bff8",
+    "experiments/rulaas_c3_fleets_20261029/PROTOCOL_ZH.md": "080fe6f95b8653dbae9dae307f66ba8ec4661076a051e7a84e6584957a800bbc",
+    "experiments/rulaas_pending_station_20261029/calibration01/CALIBRATED.json": "ffc2eac8b834a0746a33daa2721b0cd7b505e59b5c97d1699226d687fcc12333",
+    "experiments/rulaas_pending_station_20261029/age_comparator01/INDEPENDENT_RECOMPUTE.json": "f2ed612d5fed78542cdd715c0b39a7aed39c31069ef0ed9a2a54752e6ed182d4",
+    "experiments/rulaas_pending_station_20261029/ROOT_DECISION.json": "234bfcf0664f0bafa0fbe045b43d73006ba5c4c3570ee930a4a53b3d71ae9fd0"
+  }
+}
