@@ -631,6 +631,8 @@ def main():
     chosen.difference_update(['experiments/rulaas_pending_station_20261029/evaluate_age.py','experiments/rulaas_gain_identifiability_20261029/run.py','experiments/rulaas_temporal_risk_20261029/partial_feedback.py','experiments/rulaas_pending_value_20261029/run.py','reports/multisource_20261021_signals/cycle_asof_features.py','experiments/rulaas_gain_oof_repair_20261029/run.py','experiments/rulaas_gain_learning_20261029/run.py','reports/multisource_20261021_signals/extract_rpt_signal_features_all188.py','experiments/isu_irregular_rul_seed42_v1/filter_representation.py','experiments/trajectory_b2_joint_marked_renewal_20261021/candidate_v2/eval_rul_compare.py'])
     BINARY_PREDICTION_ARCHIVES.add('reports/rulaas_public_queue_value_lossless_20261030_v1/archive.bin')
     chosen.update('reports/rulaas_public_queue_value_lossless_20261030_v1/'+n for n in ['archive.bin','validation.json','decode.py','README.md'])
+    # KIT delay diagnosis 2026-10-30. No raw data or checkpoints.
+    chosen.update('experiments/rulaas_external_kit_20261030/'+n for n in ['DELAY_DIAGNOSIS_PROTOCOL_ZH.md','DELAY_DIAGNOSIS_RESULTS_ZH.md','GO_DELAY_DIAGNOSIS01.json','GO_DELAY_DIAGNOSIS_REVIEW01.json','delay_diagnosis.py','review_delay_diagnosis.py','delay_alarm_groups.py','delay_diagnosis01/summary.csv','delay_diagnosis01/positive_alarm_crosses.csv','delay_diagnosis01/POSTHOC_ALARM_GROUPS.json','delay_diagnosis01/DECISION.json','delay_diagnosis01/INDEPENDENT_RECOMPUTE.json','delay_diagnosis01/public_receipt.json'])
     contents, files, skipped, binary_blobs = {}, [], [], {}
     mapping = {'README.md': 'docs/GITHUB_README_ZH.md', 'agent.md': 'AGENTS.md'}
     mapping.update({rel: rel for rel in sorted(chosen)})

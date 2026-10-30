@@ -1,0 +1,6 @@
+mode_a,mode_b,positive_queries,both_alarm,both_miss,a_miss_b_alarm,a_alarm_b_miss
+queued1,immediate,66,55,5,6,0
+queued1,delay14_noqueue,66,55,11,0,0
+queued2,immediate,66,55,5,6,0
+queued2,delay14_noqueue,66,55,11,0,0
+delay14_noqueue,immediate,66,55,5,6,0

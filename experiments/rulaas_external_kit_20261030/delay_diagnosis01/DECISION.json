@@ -1,0 +1,14 @@
+{
+  "status": "DESCRIPTIVE_FIXED_AVAILABILITY_DIAGNOSTIC",
+  "paper_ready": false,
+  "queue_value_NO_GAIN_preserved": true,
+  "ideal_references_not_resource_matched": true,
+  "more_information_not_assumed_better": true,
+  "limits": [
+    "retrospective development data",
+    "synthetic delay and queue",
+    "six event groups",
+    "recorded event not physical failure",
+    "no independent confirmation"
+  ]
+}

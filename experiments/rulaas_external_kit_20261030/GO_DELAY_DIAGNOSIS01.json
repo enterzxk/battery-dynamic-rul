@@ -1,0 +1,23 @@
+{
+  "status": "APPROVED",
+  "request_id": "KIT_DELAY_DIAGNOSIS_20261030_01",
+  "owner": "01a17810-6ae6-7cf2-9729-5bfcaa8df5f4",
+  "issued_utc": "2026-10-30T05:55:28.638509+00:00",
+  "actual_model": "gpt-6.1-terra",
+  "allow_fits": false,
+  "queue_dispatch_cap": 0,
+  "reference_query_cap": 3440,
+  "allow_C3": false,
+  "allow_C4": false,
+  "allow_confirmation_groups": false,
+  "input_sha256": {
+    "AGENTS.md": "93488b4e887ff13c8ac88687d1be4197a52c22667708dfd960d424007f3b1c19",
+    "experiments/rulaas_external_kit_20261030/TRAIN_SPLIT.json": "659ae78046e734c4729c2e3b741e0cfd6d42aaecdf98a46cfec9e900bc82829c",
+    "experiments/rulaas_external_kit_20261030/development_audit01/development_candidates.csv": "8dd7af27c3568d1e2ae24766f4ce420587c2f75fe68f5f90d0edc463929d4e27",
+    "experiments/rulaas_external_kit_20261030/anchor_day100_01/fit_manifest.json": "445008f528c9013ffd596cd1525aab674c4dfd60ee98ea0b6c0c9d82200c16bf",
+    "experiments/rulaas_external_kit_20261030/queue_value01/predictions.csv": "ded12554b1210e42fc6e1bf651ac380e86da8e6ebfe9b03c7df6c5a3647bad98",
+    "experiments/rulaas_external_kit_20261030/queue_value01/INDEPENDENT_RECOMPUTE.json": "b9cfbb968f75f92da58eacb49f271e0c058b24dcd515c4b0f009286a3698d6a0",
+    "experiments/rulaas_external_kit_20261030/DELAY_DIAGNOSIS_PROTOCOL_ZH.md": "efaeb6ee773f23e92e222dcaae02248b6950d7d027e4a4f16bb33150695cef06",
+    "experiments/rulaas_external_kit_20261030/delay_diagnosis.py": "085e674bacfa3297fe5dba7dac7fa0f8ee2e179bedae60fa45ca3fe30d370cf1"
+  }
+}

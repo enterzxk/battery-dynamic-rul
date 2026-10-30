@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "reference_predictions_independently_reconstructed": 3440,
+  "method": "incremental available-prefix stream",
+  "same_key_targets_checked": true,
+  "summary_and_positive_alarm_crosses_checked": true,
+  "metrics": {
+    "immediate": {
+      "MAE": 3.1124928919876003,
+      "TN": 1033,
+      "FP": 24,
+      "TP": 61,
+      "FN": 5
+    },
+    "delay14_noqueue": {
+      "MAE": 3.7160529168771492,
+      "TN": 1028,
+      "FP": 29,
+      "TP": 55,
+      "FN": 11
+    },
+    "queued1": {
+      "MAE": 3.740234840114795,
+      "TN": 1028,
+      "FP": 29,
+      "TP": 55,
+      "FN": 11
+    },
+    "queued2": {
+      "MAE": 3.7160529168771492,
+      "TN": 1028,
+      "FP": 29,
+      "TP": 55,
+      "FN": 11
+    }
+  },
+  "new_global_fits": 0,
+  "new_queue_dispatches": 0,
+  "C3_payload_reads": 0,
+  "C4_payload_reads": 0,
+  "confirmation_groups_opened": 0,
+  "GO_sha256": "e996f926ada9afaf489624783346de955178e3c86d26b24575bde035f98a8524",
+  "finished_utc": "2026-10-30T05:56:00.651798+00:00",
+  "limit": "Retrospective development data; ideal availability arms do not match queue resources."
+}

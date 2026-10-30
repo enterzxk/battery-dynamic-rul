@@ -1,0 +1,18 @@
+{
+  "status": "SUCCESS",
+  "new_global_fits": 0,
+  "new_local_fits": 0,
+  "new_queue_dispatches": 0,
+  "new_reference_queries": 3440,
+  "C3_payload_reads": 0,
+  "C4_payload_reads": 0,
+  "confirmation_groups_opened": 0,
+  "actual_coordinator_model_recorded": "gpt-6.1-terra",
+  "finished_utc": "2026-10-30T05:55:28.743085+00:00",
+  "elapsed_seconds": 0.10519957542419434,
+  "GO_sha256": "f01d68c41d27dbf3a8ea2e48fb0e65aa315318694d0d95ffe366d4aa96cdb516",
+  "shared_grid_queries": 1720,
+  "positive_horizon_queries": 66,
+  "reference_predictions_made_before_reusing_outcomes": true,
+  "queued_history_nested_in_both_reference_prefixes": true
+}

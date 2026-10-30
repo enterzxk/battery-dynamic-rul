@@ -1,0 +1,63 @@
+{
+  "status": "PASS",
+  "posthoc_descriptive_only": true,
+  "reference": "one_station_pending_value_vs_immediate",
+  "categories": {
+    "both_miss": {
+      "queries": 5,
+      "cells": 5,
+      "groups": 2,
+      "by_group": {
+        "P052": 2,
+        "P076": 3
+      },
+      "median_queued_age_weeks": 2.2604150132275134,
+      "median_immediate_age_weeks": 2.2604150132275134
+    },
+    "a_miss_b_alarm": {
+      "queries": 6,
+      "cells": 4,
+      "groups": 2,
+      "by_group": {
+        "P052": 3,
+        "P076": 3
+      },
+      "median_queued_age_weeks": 3.2631944444444443,
+      "median_immediate_age_weeks": 0.2652397486772487
+    },
+    "a_alarm_b_miss": {
+      "queries": 0,
+      "cells": 0,
+      "groups": 0,
+      "by_group": {},
+      "median_queued_age_weeks": null,
+      "median_immediate_age_weeks": null
+    },
+    "both_alarm": {
+      "queries": 55,
+      "cells": 17,
+      "groups": 6,
+      "by_group": {
+        "P041": 10,
+        "P052": 3,
+        "P038": 12,
+        "P063": 12,
+        "P076": 6,
+        "P037": 12
+      },
+      "median_queued_age_weeks": 2.271560846560847,
+      "median_immediate_age_weeks": 2.140486111111111
+    }
+  },
+  "source_sha256": {
+    "experiments/rulaas_external_kit_20261030/delay_diagnosis01/positive_alarm_per_query.csv": "f49d06dd0173b9579b97ef1873e08726607ca736240ac2a8e5cb294a1481ef4a",
+    "experiments/rulaas_external_kit_20261030/delay_diagnosis01/reference_predictions.csv": "60d0d78e4a78ab0bb2a0c1537aef4f937415a0e0c878af2146e1123761e76565",
+    "experiments/rulaas_external_kit_20261030/queue_value01/predictions.csv": "ded12554b1210e42fc6e1bf651ac380e86da8e6ebfe9b03c7df6c5a3647bad98"
+  },
+  "new_fits": 0,
+  "new_predictions": 0,
+  "new_queue_dispatches": 0,
+  "C3_payload_reads": 0,
+  "C4_payload_reads": 0,
+  "confirmation_groups_opened": 0
+}

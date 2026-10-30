@@ -1,0 +1,21 @@
+{
+  "status": "APPROVED",
+  "owner": "01a17810-6ae6-7cf2-9729-5bfcaa8df5f4",
+  "issued_utc": "2026-10-30T05:56:00.561108+00:00",
+  "new_model_fits": 0,
+  "reconstruction_queries_cap": 3440,
+  "allow_C3": false,
+  "allow_C4": false,
+  "allow_confirmation_groups": false,
+  "input_sha256": {
+    "experiments/rulaas_external_kit_20261030/GO_DELAY_DIAGNOSIS01.json": "f01d68c41d27dbf3a8ea2e48fb0e65aa315318694d0d95ffe366d4aa96cdb516",
+    "experiments/rulaas_external_kit_20261030/TRAIN_SPLIT.json": "659ae78046e734c4729c2e3b741e0cfd6d42aaecdf98a46cfec9e900bc82829c",
+    "experiments/rulaas_external_kit_20261030/development_audit01/development_candidates.csv": "8dd7af27c3568d1e2ae24766f4ce420587c2f75fe68f5f90d0edc463929d4e27",
+    "experiments/rulaas_external_kit_20261030/anchor_day100_01/fit_manifest.json": "445008f528c9013ffd596cd1525aab674c4dfd60ee98ea0b6c0c9d82200c16bf",
+    "experiments/rulaas_external_kit_20261030/queue_value01/predictions.csv": "ded12554b1210e42fc6e1bf651ac380e86da8e6ebfe9b03c7df6c5a3647bad98",
+    "experiments/rulaas_external_kit_20261030/delay_diagnosis01/reference_predictions.csv": "60d0d78e4a78ab0bb2a0c1537aef4f937415a0e0c878af2146e1123761e76565",
+    "experiments/rulaas_external_kit_20261030/delay_diagnosis01/summary.csv": "2959a748d1411f46af75649adf41441c59f767a26ce19a374a60c2312d69e428",
+    "experiments/rulaas_external_kit_20261030/delay_diagnosis01/positive_alarm_crosses.csv": "03c2bff7bf0f04fddb77440689d47eb8c0233ea9f68c79a58ad5bf4975539911",
+    "experiments/rulaas_external_kit_20261030/review_delay_diagnosis.py": "bc6d5ff9825ea9dc731eef67b55db0ff485ad5bee81c9e777b1935baec890332"
+  }
+}

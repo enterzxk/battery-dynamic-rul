@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-30T05:52:43.002483+00:00",
-  "content_sha256": "7ca0ce7b6f7ec42c02e6da2abf6eb8ceaa8dd59a9a99f08fcda126aec3b24a2f",
-  "file_count": 1320,
+  "snapshot_utc": "2026-10-30T05:57:53.199054+00:00",
+  "content_sha256": "3a942ade2a6157adca31d2206273ec51c8f135ba5d59f44777e2df8b64e6655b",
+  "file_count": 1333,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,8 +14,8 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 29673,
-      "sha256": "06d60d324f40244f0c7afeefd595cec198168e399f7b2adb751995847fadcfa1"
+      "bytes": 31558,
+      "sha256": "bf40b81c212cab23f92cea9a6a5cc7ba26fddad44463ec743eb99a8fb6d07fb7"
     },
     {
       "path": "README.md",
@@ -38,8 +38,8 @@
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 98261,
-      "sha256": "bb01473bdf1e8627d626b4b598149ecd381caa064e42d80bf96878fcf91718b8"
+      "bytes": 98850,
+      "sha256": "73948a6a84c175d3a3036466c7b2847f9e769fed713bf0248770d03b33faff08"
     },
     {
       "path": "automation/bin/matr_raw_batch2_asset_worker_v1.py",
@@ -176,8 +176,8 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 33247,
-      "sha256": "d0f6475995b7b7dc39466a1a1a3cecac8f70c257f0f5395c2b5dc074f7d4698c"
+      "bytes": 35147,
+      "sha256": "766f05dab58bed23dea7b0141b868274b359fe002d8d6de52d93e19f8c0b15a6"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
@@ -3696,6 +3696,18 @@
       "sha256": "2cec7579c294717c4691f1dfe9bec39a397f393c7da28f6486604b47ff71f1b2"
     },
     {
+      "path": "experiments/rulaas_external_kit_20261030/DELAY_DIAGNOSIS_PROTOCOL_ZH.md",
+      "source_path": "experiments/rulaas_external_kit_20261030/DELAY_DIAGNOSIS_PROTOCOL_ZH.md",
+      "bytes": 1729,
+      "sha256": "efaeb6ee773f23e92e222dcaae02248b6950d7d027e4a4f16bb33150695cef06"
+    },
+    {
+      "path": "experiments/rulaas_external_kit_20261030/DELAY_DIAGNOSIS_RESULTS_ZH.md",
+      "source_path": "experiments/rulaas_external_kit_20261030/DELAY_DIAGNOSIS_RESULTS_ZH.md",
+      "bytes": 3904,
+      "sha256": "9d48ef350ff9eec42fdbe95047f68f7fe7eb1ffd8ed70d31b9d4a357509e58e0"
+    },
+    {
       "path": "experiments/rulaas_external_kit_20261030/DEVELOPMENT_AUDIT_PROTOCOL_ZH.md",
       "source_path": "experiments/rulaas_external_kit_20261030/DEVELOPMENT_AUDIT_PROTOCOL_ZH.md",
       "bytes": 1947,
@@ -3760,6 +3772,18 @@
       "source_path": "experiments/rulaas_external_kit_20261030/GO_CUTOFF_SUPPORT01.json",
       "bytes": 1694,
       "sha256": "a914199b9e29be7b6ee2272ca06e6fcf0b299d2e1aaf96e63ec3b4d300c32341"
+    },
+    {
+      "path": "experiments/rulaas_external_kit_20261030/GO_DELAY_DIAGNOSIS01.json",
+      "source_path": "experiments/rulaas_external_kit_20261030/GO_DELAY_DIAGNOSIS01.json",
+      "bytes": 1517,
+      "sha256": "f01d68c41d27dbf3a8ea2e48fb0e65aa315318694d0d95ffe366d4aa96cdb516"
+    },
+    {
+      "path": "experiments/rulaas_external_kit_20261030/GO_DELAY_DIAGNOSIS_REVIEW01.json",
+      "source_path": "experiments/rulaas_external_kit_20261030/GO_DELAY_DIAGNOSIS_REVIEW01.json",
+      "bytes": 1638,
+      "sha256": "e996f926ada9afaf489624783346de955178e3c86d26b24575bde035f98a8524"
     },
     {
       "path": "experiments/rulaas_external_kit_20261030/GO_EIS_VALUE01.json",
@@ -3960,6 +3984,54 @@
       "sha256": "778219aece861b6b8be65a4dd65d0312e073dcb5e23d984e4eb05713b6c192f4"
     },
     {
+      "path": "experiments/rulaas_external_kit_20261030/delay_alarm_groups.py",
+      "source_path": "experiments/rulaas_external_kit_20261030/delay_alarm_groups.py",
+      "bytes": 2696,
+      "sha256": "13d7346d43ebae3933a2dbc856ee8c77604f6126e5b9d913d11c02c27cd49ba6"
+    },
+    {
+      "path": "experiments/rulaas_external_kit_20261030/delay_diagnosis.py",
+      "source_path": "experiments/rulaas_external_kit_20261030/delay_diagnosis.py",
+      "bytes": 10079,
+      "sha256": "085e674bacfa3297fe5dba7dac7fa0f8ee2e179bedae60fa45ca3fe30d370cf1"
+    },
+    {
+      "path": "experiments/rulaas_external_kit_20261030/delay_diagnosis01/DECISION.json",
+      "source_path": "experiments/rulaas_external_kit_20261030/delay_diagnosis01/DECISION.json",
+      "bytes": 411,
+      "sha256": "2fb007a254a4b38d14b5a465eca73fc139f6fa69e2ae6bb8c2c26bc22c5e0128"
+    },
+    {
+      "path": "experiments/rulaas_external_kit_20261030/delay_diagnosis01/INDEPENDENT_RECOMPUTE.json",
+      "source_path": "experiments/rulaas_external_kit_20261030/delay_diagnosis01/INDEPENDENT_RECOMPUTE.json",
+      "bytes": 1114,
+      "sha256": "7f60edf75ab9a18bcb66dcf4ee68ba01a31fadfce451b93cd83089063a955686"
+    },
+    {
+      "path": "experiments/rulaas_external_kit_20261030/delay_diagnosis01/POSTHOC_ALARM_GROUPS.json",
+      "source_path": "experiments/rulaas_external_kit_20261030/delay_diagnosis01/POSTHOC_ALARM_GROUPS.json",
+      "bytes": 1833,
+      "sha256": "6a2a79dba5a67d64c621f1f0be230e5687674625e9d5a742491f8d4b2f30a45e"
+    },
+    {
+      "path": "experiments/rulaas_external_kit_20261030/delay_diagnosis01/positive_alarm_crosses.csv",
+      "source_path": "experiments/rulaas_external_kit_20261030/delay_diagnosis01/positive_alarm_crosses.csv",
+      "bytes": 260,
+      "sha256": "03c2bff7bf0f04fddb77440689d47eb8c0233ea9f68c79a58ad5bf4975539911"
+    },
+    {
+      "path": "experiments/rulaas_external_kit_20261030/delay_diagnosis01/public_receipt.json",
+      "source_path": "experiments/rulaas_external_kit_20261030/delay_diagnosis01/public_receipt.json",
+      "bytes": 641,
+      "sha256": "418d27a9e86b329ca0b781174d6a1c22a8ea1c22abe796c58af4cc6cb0ddf43b"
+    },
+    {
+      "path": "experiments/rulaas_external_kit_20261030/delay_diagnosis01/summary.csv",
+      "source_path": "experiments/rulaas_external_kit_20261030/delay_diagnosis01/summary.csv",
+      "bytes": 439,
+      "sha256": "2959a748d1411f46af75649adf41441c59f767a26ce19a374a60c2312d69e428"
+    },
+    {
       "path": "experiments/rulaas_external_kit_20261030/development_audit01/SUMMARY.json",
       "source_path": "experiments/rulaas_external_kit_20261030/development_audit01/SUMMARY.json",
       "bytes": 1427,
@@ -4066,6 +4138,12 @@
       "source_path": "experiments/rulaas_external_kit_20261030/queue_value01/summary.csv",
       "bytes": 1144,
       "sha256": "71e6913293426eeeccbd3f735e540510f03b641c2e5861afc0ebcf221fc724cd"
+    },
+    {
+      "path": "experiments/rulaas_external_kit_20261030/review_delay_diagnosis.py",
+      "source_path": "experiments/rulaas_external_kit_20261030/review_delay_diagnosis.py",
+      "bytes": 6922,
+      "sha256": "bc6d5ff9825ea9dc731eef67b55db0ff485ad5bee81c9e777b1935baec890332"
     },
     {
       "path": "experiments/rulaas_external_kit_20261030/review_trend_window.py",
