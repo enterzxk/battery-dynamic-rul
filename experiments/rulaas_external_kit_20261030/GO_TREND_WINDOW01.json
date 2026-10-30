@@ -1,0 +1,26 @@
+{
+  "status": "APPROVED",
+  "request_id": "KIT_TREND_WINDOW_20261030_01",
+  "owner": "01a17810-6ae6-7cf2-9729-5bfcaa8df5f4",
+  "issued_utc": "2026-10-30T01:42:27.361447+00:00",
+  "actual_model": "gpt-6.1-terra",
+  "allow_global_fits": false,
+  "local_linear_fit_cap": 1038,
+  "new_prediction_cap": 1038,
+  "seed": 42,
+  "group_bootstrap_draws": 10000,
+  "familywise_CI": 0.975,
+  "allow_confirmation_groups": false,
+  "allow_C3": false,
+  "allow_C4": false,
+  "input_sha256": {
+    "AGENTS.md": "93488b4e887ff13c8ac88687d1be4197a52c22667708dfd960d424007f3b1c19",
+    "experiments/rulaas_external_kit_20261030/TRAIN_SPLIT.json": "659ae78046e734c4729c2e3b741e0cfd6d42aaecdf98a46cfec9e900bc82829c",
+    "experiments/rulaas_external_kit_20261030/development_audit01/development_candidates.csv": "8dd7af27c3568d1e2ae24766f4ce420587c2f75fe68f5f90d0edc463929d4e27",
+    "experiments/rulaas_external_kit_20261030/anchor_day100_01/fit_manifest.json": "445008f528c9013ffd596cd1525aab674c4dfd60ee98ea0b6c0c9d82200c16bf",
+    "experiments/rulaas_external_kit_20261030/anchor_day100_01/predictions.csv": "d6021e5b25d63f3e4b2a85c9a0308acab0bddb231d31ac729ba2c5ebe87b2f1f",
+    "experiments/rulaas_external_kit_20261030/slope_censor_diagnostic01/INDEPENDENT_RECOMPUTE.json": "4e4c905874d5887456eab129ce8c4eb4e1ef4c7d1d594c0471986270e8a2f66b",
+    "experiments/rulaas_external_kit_20261030/TREND_WINDOW_PROTOCOL_ZH.md": "7dd6a380b1e52f2195129f17fa138ee6f458a2ac7f97b8298eb751756367f4e3",
+    "experiments/rulaas_external_kit_20261030/trend_window.py": "27d0034dd04f38810c602c9a90d0e55ac904374692a6215e88ef5ee905abe864"
+  }
+}

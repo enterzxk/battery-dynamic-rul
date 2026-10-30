@@ -1,0 +1,59 @@
+{
+  "status": "PASS",
+  "candidate_predictions_recomputed_from_past_prefix": 1038,
+  "method": "independent numpy.linalg.lstsq",
+  "saved_baselines_checked": 519,
+  "paired_statistics_recomputed": true,
+  "group_bootstrap_seed": 42,
+  "group_bootstrap_draws": 10000,
+  "metrics": {
+    "last2": {
+      "event_cell_macro_MAE_weeks": 2.791665377384949,
+      "predicted_before_censor_queries": 22,
+      "TP": 16,
+      "FP": 3,
+      "TN": 482,
+      "FN": 0
+    },
+    "ols3": {
+      "event_cell_macro_MAE_weeks": 2.985280874076565,
+      "predicted_before_censor_queries": 23,
+      "TP": 16,
+      "FP": 3,
+      "TN": 482,
+      "FN": 0
+    },
+    "ols5": {
+      "event_cell_macro_MAE_weeks": 3.5685777329806116,
+      "predicted_before_censor_queries": 28,
+      "TP": 16,
+      "FP": 6,
+      "TN": 479,
+      "FN": 0
+    }
+  },
+  "contrasts": {
+    "ols3": {
+      "delta": 0.1936154966916157,
+      "CI97_5_low": -0.08166240010170674,
+      "CI97_5_high": 0.41422403524951257,
+      "cells_better": 4,
+      "cells_worse": 12
+    },
+    "ols5": {
+      "delta": 0.7769123555956625,
+      "CI97_5_low": 0.2067928884335362,
+      "CI97_5_high": 1.1375551202446035,
+      "cells_better": 2,
+      "cells_worse": 14
+    }
+  },
+  "new_global_fits": 0,
+  "local_fit_reconstruction_checks": 1038,
+  "C3_payload_reads": 0,
+  "C4_payload_reads": 0,
+  "confirmation_groups_opened": 0,
+  "GO_sha256": "8efb9753ecf8f462f656106ac4d985bb3182fc24b72ec5bed995d3bce8e08038",
+  "finished_utc": "2026-10-30T01:43:04.347010+00:00",
+  "limit": "Development outcomes previously inspected; six event groups; unknown true reporting delay."
+}

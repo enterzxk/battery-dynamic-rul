@@ -1,0 +1,21 @@
+{
+  "status": "APPROVED",
+  "owner": "01a17810-6ae6-7cf2-9729-5bfcaa8df5f4",
+  "issued_utc": "2026-10-30T01:43:04.185989+00:00",
+  "new_global_fits": 0,
+  "reconstruction_local_fit_cap": 1038,
+  "allow_C3": false,
+  "allow_C4": false,
+  "allow_confirmation_groups": false,
+  "input_sha256": {
+    "experiments/rulaas_external_kit_20261030/GO_TREND_WINDOW01.json": "c248e0e230a45c34ae53360559be1e64e2d295c7e5fdbaf1f7364b0b71e66ace",
+    "experiments/rulaas_external_kit_20261030/TRAIN_SPLIT.json": "659ae78046e734c4729c2e3b741e0cfd6d42aaecdf98a46cfec9e900bc82829c",
+    "experiments/rulaas_external_kit_20261030/development_audit01/development_candidates.csv": "8dd7af27c3568d1e2ae24766f4ce420587c2f75fe68f5f90d0edc463929d4e27",
+    "experiments/rulaas_external_kit_20261030/anchor_day100_01/predictions.csv": "d6021e5b25d63f3e4b2a85c9a0308acab0bddb231d31ac729ba2c5ebe87b2f1f",
+    "experiments/rulaas_external_kit_20261030/anchor_day100_01/fit_manifest.json": "445008f528c9013ffd596cd1525aab674c4dfd60ee98ea0b6c0c9d82200c16bf",
+    "experiments/rulaas_external_kit_20261030/trend_window01/predictions.csv": "6eed27403a2002b6faf80b9d6555db1d98dff3ac29bd3cd46cd53a363f9c4583",
+    "experiments/rulaas_external_kit_20261030/trend_window01/summary.csv": "0db113bf2ae19e7cee1adf8c766b2bc7fb292a3cca556409d0c171ac562f9e12",
+    "experiments/rulaas_external_kit_20261030/trend_window01/paired_contrasts.csv": "5e6303d4004d131315c5e240d46c9d131c75794d1c72983e510c800a15ec424d",
+    "experiments/rulaas_external_kit_20261030/review_trend_window.py": "d1d1600b6fb7b01f37e7f66f8ed6cc27732b6aa7678a8a7c53af34675edbdd69"
+  }
+}

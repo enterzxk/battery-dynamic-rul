@@ -1,0 +1,20 @@
+{
+  "status": "SUCCESS",
+  "local_regression_fits": 1038,
+  "new_model_predictions": 1038,
+  "new_global_model_fits": 0,
+  "C3_payload_reads": 0,
+  "C4_payload_reads": 0,
+  "confirmation_groups_opened": 0,
+  "actual_coordinator_model_recorded": "gpt-6.1-terra",
+  "finished_utc": "2026-10-30T01:42:27.437891+00:00",
+  "elapsed_seconds": 0.07717442512512207,
+  "GO_sha256": "c248e0e230a45c34ae53360559be1e64e2d295c7e5fdbaf1f7364b0b71e66ace",
+  "saved_baseline_predictions_reconstructed": 519,
+  "validation_queries": 519,
+  "event_cells": 16,
+  "event_groups": 6,
+  "feature_prefix_timestamp_checks": "PASS",
+  "bootstrap_seed": 42,
+  "bootstrap_draws": 10000
+}

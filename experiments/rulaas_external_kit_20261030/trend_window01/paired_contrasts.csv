@@ -1,0 +1,3 @@
+candidate,reference,delta_event_cell_macro_MAE_weeks,CI97_5_low,CI97_5_high,relative_improvement,cells_better,cells_worse,development_gate_pass
+ols3,last2,0.19361549669161573,-0.08166240010170668,0.41422403524951257,-0.0693548368153572,4,12,False
+ols5,last2,0.7769123555956627,0.20679288843353613,1.137555120244604,-0.27829709172502026,2,14,False

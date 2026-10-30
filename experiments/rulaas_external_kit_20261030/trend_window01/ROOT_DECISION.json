@@ -1,0 +1,16 @@
+{
+  "status": "NO_GAIN_FIXED_TREND_WINDOW",
+  "passing_candidates": [],
+  "paper_ready": false,
+  "baseline": "last2",
+  "criterion": ">=5% lower event-cell macro MAE, 97.5% group-bootstrap upper bound <0, no extra missed event cells, false-positive queries or positive-followup censor-bound early counts",
+  "prior_eis_and_anchor_NO_GAIN_preserved": true,
+  "limits": [
+    "six event groups",
+    "previously used development outcomes",
+    "retrospective cutoff",
+    "unknown report arrival and simulated immediate visibility",
+    "descriptive censor bound, not exact event",
+    "no real queue or inspection cost"
+  ]
+}

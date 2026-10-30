@@ -1,0 +1,4 @@
+model,queries,cells,event_queries,censored_queries,positive_followup_censored_queries,predicted_before_censor_queries,event_query_MAE_weeks,TP,FP,TN,FN,unknown_horizon_queries,fallback_queries,fewer_than_requested_window_queries,event_cell_macro_MAE_weeks,pre_event_episode_cells,missed_episode_cells
+last2,519,34,105,414,396,22,3.203435133623931,16,3,482,0,18,4,0,2.791665377384949,16,0
+ols3,519,34,105,414,396,23,3.4316454139557533,16,3,482,0,18,4,0,2.985280874076565,16,0
+ols5,519,34,105,414,396,28,4.199160644607813,16,6,479,0,18,0,0,3.5685777329806116,16,0
