@@ -1,0 +1,42 @@
+{
+  "status": "APPROVED",
+  "request_id": "KIT_INTERVAL_RISK_20261030_01",
+  "owner": "01a17810-6ae6-7cf2-9729-5bfcaa8df5f4",
+  "issued_utc": "2026-10-30T06:12:05.291739+00:00",
+  "actual_model": "gpt-6.1-terra",
+  "fit_cap": 6,
+  "preprocessor_cap": 0,
+  "model_row_cap": 10000,
+  "seed": 42,
+  "group_bootstrap_draws": 10000,
+  "features": [
+    "origin_age_query_weeks",
+    "capacity_baseline_Ah",
+    "capacity_current_Ah",
+    "capacity_ratio",
+    "prior_gap_weeks",
+    "recent_capacity_slope_Ah_per_week",
+    "visible_checkup_count",
+    "sample_age_weeks",
+    "age_type",
+    "age_temp",
+    "age_soc",
+    "age_chg_rate",
+    "age_dischg_rate",
+    "age_profile"
+  ],
+  "cutoff_epoch": 1674233100.0,
+  "assumed_report_delay_seconds": 1209600.0,
+  "allow_confirmation_groups": false,
+  "allow_C3": false,
+  "allow_C4": false,
+  "input_sha256": {
+    "AGENTS.md": "93488b4e887ff13c8ac88687d1be4197a52c22667708dfd960d424007f3b1c19",
+    "experiments/rulaas_external_kit_20261030/TRAIN_SPLIT.json": "659ae78046e734c4729c2e3b741e0cfd6d42aaecdf98a46cfec9e900bc82829c",
+    "experiments/rulaas_external_kit_20261030/development_audit01/development_candidates.csv": "8dd7af27c3568d1e2ae24766f4ce420587c2f75fe68f5f90d0edc463929d4e27",
+    "experiments/rulaas_external_kit_20261030/delayed_interval_support01/training_cases.csv": "a638ca9cbd58a6f383296364fdfc9b8f784ce2d9b51aa65e9bfb6dc29b92a8b3",
+    "experiments/rulaas_external_kit_20261030/delayed_interval_support01/INDEPENDENT_RECOMPUTE.json": "bb8a5f156128d980fd247a197cc5ae2468355e138623750e397e71a62c959247",
+    "experiments/rulaas_external_kit_20261030/INTERVAL_RISK_PROTOCOL_ZH.md": "d2f62aedd6055c9ca1996faf79e8ab7302b9fd970318e3b66009d77bf11bb7c7",
+    "experiments/rulaas_external_kit_20261030/interval_risk.py": "b6890b370181c2b61fafb196290b3724fe3debffecc33c009bfcd3738b995329"
+  }
+}

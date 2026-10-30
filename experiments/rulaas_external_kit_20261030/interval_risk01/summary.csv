@@ -1,0 +1,5 @@
+model,all_queries,all_cells,event_cells,event_groups,mature_horizon_queries,unknown_horizon_queries,positive_horizon_queries,negative_horizon_queries,mature_cells,mature_groups,Brier_cell_macro,recorded_event_median_MAE_cell_macro,interval_error_lower_cell_macro,interval_error_upper_cell_macro,pre_recorded_event_episode_cells,missed_episode_cells,TP,FP,TN,FN
+aft_interval,555,36,17,6,506,49,28,478,35,12,0.19083625097932017,356.28069397555817,356.28069397555817,359.2716822458663,17,17,0,0,478,28
+aft_recorded,555,36,17,6,506,49,28,478,35,12,0.18940689019974447,347.8142375095732,347.8142375095732,350.80522577988137,17,17,0,0,478,28
+hgb_recorded,555,36,17,6,506,49,28,478,35,12,0.7818477797065757,23.37370883245541,20.382720562147288,23.37370883245541,17,0,28,478,0,0
+slope_point,555,36,17,6,506,49,28,478,35,12,0.034773559773559774,3.2448842968300258,1.193263987635656,3.772701321912262,17,0,24,7,471,4

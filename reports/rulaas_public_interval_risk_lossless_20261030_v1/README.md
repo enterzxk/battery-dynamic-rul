@@ -1,0 +1,16 @@
+# 延迟区间风险对照及历史源码无损归档
+
+为满足公开快照大小限制，2 个风险对照源码和 10 个先前公开源码保存在 archive.bin。服务器原件及下列旧提交中的原文件均保留。执行 python decode.py 校验；指定 --output-dir 到新目录可恢复且不覆盖现有文件。归档不含原始电池数据、模型权重或论文全文。
+
+- [experiments/dart_rul_v18/hgb_models.py](https://github.com/enterzxk/battery-dynamic-rul/blob/48c7dbfa31930995b71955e52450072a097a6a09/experiments/dart_rul_v18/hgb_models.py)；SHA256 df341c5a1a495b23c9236cfc884a340de69df5752a5f89531b0a404f9227b543
+- [reports/isu_ilcc_datav2_full_20261020_root/parser_ns_v2.py](https://github.com/enterzxk/battery-dynamic-rul/blob/48c7dbfa31930995b71955e52450072a097a6a09/reports/isu_ilcc_datav2_full_20261020_root/parser_ns_v2.py)；SHA256 ff5fbe7bb921672d83310dd5d9eab2418d4bc8bb633ade58df7d835ec4df06b2
+- [experiments/rulaas_station_admission_20261029/review_saved_v2.py](https://github.com/enterzxk/battery-dynamic-rul/blob/48c7dbfa31930995b71955e52450072a097a6a09/experiments/rulaas_station_admission_20261029/review_saved_v2.py)；SHA256 c8834fe487b67260bf5e0d995b0ddcdcdea97e34652c4f623ae820e973ba03ea
+- [experiments/rulaas_c3_fleets_20261029/review_saved.py](https://github.com/enterzxk/battery-dynamic-rul/blob/48c7dbfa31930995b71955e52450072a097a6a09/experiments/rulaas_c3_fleets_20261029/review_saved.py)；SHA256 648d3cf53d6fb9d4300996e39017cfb2ce24779ac10f30b9d17ccd5e8adec29a
+- [experiments/rulaas_temporal_risk_20261029/audit_v2.py](https://github.com/enterzxk/battery-dynamic-rul/blob/48c7dbfa31930995b71955e52450072a097a6a09/experiments/rulaas_temporal_risk_20261029/audit_v2.py)；SHA256 a8fef5bb1ea6e4aae56ec69422d14cb6ed5b5f46b315418251aa4e5f6cb1f5e6
+- [experiments/rulaas_pending_station_20261029/review_age_saved.py](https://github.com/enterzxk/battery-dynamic-rul/blob/48c7dbfa31930995b71955e52450072a097a6a09/experiments/rulaas_pending_station_20261029/review_age_saved.py)；SHA256 7c582e81fcd0d80b612c2b4f18f752f27252eeabbcd34c8042eac2e1c950b24f
+- [experiments/policy_oof_cdf_seed42_v1/runner.py](https://github.com/enterzxk/battery-dynamic-rul/blob/48c7dbfa31930995b71955e52450072a097a6a09/experiments/policy_oof_cdf_seed42_v1/runner.py)；SHA256 f9d46ad77e94c4ec0fe6485aea53057ec09962d4a10f9215cea5bbddbc702ade
+- [experiments/isu_irregular_rul_seed42_v1/candidate_filter.py](https://github.com/enterzxk/battery-dynamic-rul/blob/48c7dbfa31930995b71955e52450072a097a6a09/experiments/isu_irregular_rul_seed42_v1/candidate_filter.py)；SHA256 ba513f55eae38b6bd0bbdb18aa5c7be2bc3387d111f50e492e6f92e7a620a29e
+- [experiments/isu_irregular_rul_seed42_v1/train_eval.py](https://github.com/enterzxk/battery-dynamic-rul/blob/48c7dbfa31930995b71955e52450072a097a6a09/experiments/isu_irregular_rul_seed42_v1/train_eval.py)；SHA256 793a4682c96d2db48b806ea13c850f878c96cff4ee6b75f636ec75b05c4a2d4e
+- [experiments/rulaas_external_kit_20261030/trend_window.py](https://github.com/enterzxk/battery-dynamic-rul/blob/48c7dbfa31930995b71955e52450072a097a6a09/experiments/rulaas_external_kit_20261030/trend_window.py)；SHA256 27d0034dd04f38810c602c9a90d0e55ac904374692a6215e88ef5ee905abe864
+- experiments/rulaas_external_kit_20261030/interval_risk.py；SHA256 b6890b370181c2b61fafb196290b3724fe3debffecc33c009bfcd3738b995329
+- experiments/rulaas_external_kit_20261030/review_interval_risk.py；SHA256 9de9e40e69b892973dfd83d3b9f859f6bf28af7ce1142bd828c2e203ea97784f

@@ -1,0 +1,30 @@
+{
+  "status": "APPROVED",
+  "owner": "01a17810-6ae6-7cf2-9729-5bfcaa8df5f4",
+  "issued_utc": "2026-10-30T06:14:05.557313+00:00",
+  "new_fits": 0,
+  "reconstructed_model_rows_cap": 10000,
+  "allow_C3": false,
+  "allow_C4": false,
+  "allow_confirmation_groups": false,
+  "input_sha256": {
+    "experiments/rulaas_external_kit_20261030/GO_INTERVAL_RISK01.json": "821cd509e33c33243e6054a1c50efa4897af2177800ab2d4ab832391bf8f5833",
+    "experiments/rulaas_external_kit_20261030/TRAIN_SPLIT.json": "659ae78046e734c4729c2e3b741e0cfd6d42aaecdf98a46cfec9e900bc82829c",
+    "experiments/rulaas_external_kit_20261030/development_audit01/development_candidates.csv": "8dd7af27c3568d1e2ae24766f4ce420587c2f75fe68f5f90d0edc463929d4e27",
+    "experiments/rulaas_external_kit_20261030/delayed_interval_support01/training_cases.csv": "a638ca9cbd58a6f383296364fdfc9b8f784ce2d9b51aa65e9bfb6dc29b92a8b3",
+    "experiments/rulaas_external_kit_20261030/interval_risk01/validation_features.csv": "d2e89d3b31ced60038ce4f0112d31a222b8807fd6f3abbb1a4a63dfb4f38d354",
+    "experiments/rulaas_external_kit_20261030/interval_risk01/predictions.csv": "a9e53cba7efa0212264f8c6aaa94dbc0900c489d098151be954c286a05e90d80",
+    "experiments/rulaas_external_kit_20261030/interval_risk01/summary.csv": "b2d74c960be7328a33f87be4d6e66b2dcac932bebaea65a225568496dbd0a27a",
+    "experiments/rulaas_external_kit_20261030/interval_risk01/paired_contrasts.csv": "97274779cbb55a2bd4de26c128f06552a5a6d1f3fbb1c3ecc210aa3b5199fbcc",
+    "experiments/rulaas_external_kit_20261030/interval_risk01/fit_manifest.json": "b5a9d278be2cdca48cf8c30540dd807bb87c7a1ee913f6f55e504fd44222ffcb",
+    "experiments/rulaas_external_kit_20261030/interval_risk01/hgb_oof.csv": "fe1ff6903bef90f3b1449b28db6762a99ea853180e429490aa271501c8d812c9",
+    "experiments/rulaas_external_kit_20261030/interval_risk01/hgb_residuals.npz": "45a16cac301e998b35bf3cbda4574de85f2e490e6c83771befc2cf4af37774af",
+    "experiments/rulaas_external_kit_20261030/interval_risk01/hgb_final.joblib": "ad92df086c4a5b08b9bcbed14c4b2f3bbdf6f275b7cad9e29f89661f46c11565",
+    "experiments/rulaas_external_kit_20261030/interval_risk01/hgb_fold0.joblib": "67414bdbc8bc513021a2bc30979f7e7659887c3461f570524a8bc02ddf7a7922",
+    "experiments/rulaas_external_kit_20261030/interval_risk01/hgb_fold1.joblib": "5462b2645a6e9582528cd5b5d93ced761318d923c5ea54e8b4eb2f99bdf30392",
+    "experiments/rulaas_external_kit_20261030/interval_risk01/hgb_fold2.joblib": "7954758bf0017fb84d034b3e2e1d74d53918066fb46e15122a216ae2fc932980",
+    "experiments/rulaas_external_kit_20261030/interval_risk01/aft_recorded.json": "533d02a5505da84f44184aeff750234a84c03d064702b5ab6fa1eeaa62ed8fcf",
+    "experiments/rulaas_external_kit_20261030/interval_risk01/aft_interval.json": "404aa9dcd42eb5bca820a8bfcc3c6b588e1efcbcc606ddda60234189ee1edade",
+    "experiments/rulaas_external_kit_20261030/review_interval_risk.py": "9de9e40e69b892973dfd83d3b9f859f6bf28af7ce1142bd828c2e203ea97784f"
+  }
+}

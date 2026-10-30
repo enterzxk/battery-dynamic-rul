@@ -1,0 +1,93 @@
+{
+  "status": "PASS",
+  "posthoc_descriptive_only": true,
+  "validation_queries": 555,
+  "features": {
+    "origin_age_query_weeks": {
+      "train_min": 2.9987285052910053,
+      "train_max": 11.990363756613757,
+      "validation_below": 0,
+      "validation_above": 555
+    },
+    "capacity_baseline_Ah": {
+      "train_min": 2.929299,
+      "train_max": 2.970551,
+      "validation_below": 0,
+      "validation_above": 0
+    },
+    "capacity_current_Ah": {
+      "train_min": 2.358183,
+      "train_max": 2.962058,
+      "validation_below": 1,
+      "validation_above": 0
+    },
+    "capacity_ratio": {
+      "train_min": 0.8010571316842142,
+      "train_max": 0.999097919157087,
+      "validation_below": 1,
+      "validation_above": 0
+    },
+    "prior_gap_weeks": {
+      "train_min": 0.9987285052910052,
+      "train_max": 3.013973214285714,
+      "validation_below": 0,
+      "validation_above": 102
+    },
+    "recent_capacity_slope_Ah_per_week": {
+      "train_min": -0.5091433731050228,
+      "train_max": -0.0026448906873505,
+      "validation_below": 0,
+      "validation_above": 234
+    },
+    "visible_checkup_count": {
+      "train_min": 2.0,
+      "train_max": 5.0,
+      "validation_below": 0,
+      "validation_above": 555
+    },
+    "sample_age_weeks": {
+      "train_min": 2.0,
+      "train_max": 2.0,
+      "validation_below": 0,
+      "validation_above": 0
+    },
+    "age_type": {
+      "train_min": 1.0,
+      "train_max": 3.0,
+      "validation_below": 0,
+      "validation_above": 0
+    },
+    "age_temp": {
+      "train_min": 0.0,
+      "train_max": 40.0,
+      "validation_below": 0,
+      "validation_above": 0
+    },
+    "age_soc": {
+      "train_min": 0.0,
+      "train_max": 100.0,
+      "validation_below": 0,
+      "validation_above": 0
+    },
+    "age_chg_rate": {
+      "train_min": 0.0,
+      "train_max": 1.67,
+      "validation_below": 0,
+      "validation_above": 0
+    },
+    "age_dischg_rate": {
+      "train_min": 0.0,
+      "train_max": 1.0,
+      "validation_below": 0,
+      "validation_above": 0
+    },
+    "age_profile": {
+      "train_min": 0.0,
+      "train_max": 4.0,
+      "validation_below": 0,
+      "validation_above": 0
+    }
+  },
+  "origin_age_outside_training_max": 555,
+  "caution": "Outside the training range is a support warning, not proof of the causal source of model failure."
+}

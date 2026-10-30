@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "validation_feature_prefixes_reconstructed": 555,
+  "stored_prediction_rows_recomputed": 2220,
+  "model_prediction_rows_recomputed": 1741,
+  "group_oof_residuals_and_fallback_checked": true,
+  "cutoff_and_interval_truth_checked": true,
+  "cell_metrics_and_group_bootstrap_checked": true,
+  "training_feature_support_report": "OOD_SUPPORT.json",
+  "new_fits": 0,
+  "C3_payload_reads": 0,
+  "C4_payload_reads": 0,
+  "confirmation_groups_opened": 0,
+  "GO_sha256": "1ddc767afefdee366463c2ad2b7b3f7a0fbd2043f5ef9f4db8093d80caf8362a",
+  "finished_utc": "2026-10-30T06:14:05.960810+00:00",
+  "limit": "Fixed prior-used development cohorts, simulated delay and unverified monotone crossing assumption."
+}

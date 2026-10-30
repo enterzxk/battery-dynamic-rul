@@ -1,4 +1,18 @@
-# 2026-10-30 KIT 延迟到达的区间与删失标签支持（当前）
+# 2026-10-30 KIT 延迟区间风险固定对照：NO_GAIN（当前）
+
+目标 ACTIVE，论文门未通过。相同已到达容量和 555 个共同查询下，区间 AFT、记录事件 AFT、成熟事件 HGB、两点斜率的电芯等权 Brier 为 0.1908、0.1894、0.7818、0.0348；506 条风险标签可判定，49 条未知保留。候选相对斜率差 +0.1561，三项校正 98.333% 工况组区间 [+0.0189,+0.3927]，5/35 电芯改善、30/35 恶化；`NO_GAIN_FIXED_INTERVAL_RISK`。
+
+区间 AFT 以首次记录越阈为目标的事件电芯等权中位 MAE 356.28 周，斜率为 3.24 周；AFT 漏掉全部 17/17 个记录事件前预警窗口，斜率 0/17。候选虽优于把全部查询判为阳性的 HGB，但本身把全部可判定查询判为阴性，不得掩盖风险。预测风险是截至 q+4 周事件已发生，可能包含 q 前已发生事件，并非已知存活后的条件未来风险。
+
+训练年龄范围约 3.00–11.99 周，全部 555 个保留查询超过训练最大年龄且可见检查次数超过训练最大值；这是支持范围警告，不能单独断言失败原因。正式 6 次 CPU 拟合；独立复核 555 个前缀、2220 行预测、折外残差、标签、逐电芯指标与组区间通过。首次复核调用在 GO 创建前因语法错误未执行，修复后另签复核票据通过；无额外拟合，原结果不重跑。
+
+已记录事件来自 17 电芯/6 工况，Brier 可判定来自 35 电芯/12 工况；保留组先前使用，截止回顾性，14 天延迟模拟，区间依赖不可逆/测量可靠假设，删失可能信息性。0 C3/C4、0 封存确认工况读取。下一步先审计逐期只用已成熟标签的训练年龄支持，另行固定策略，不通过调参或重复种子挽救此 NO_GAIN。
+
+[完整对照报告](experiments/rulaas_external_kit_20261030/INTERVAL_RISK_RESULTS_ZH.md)、[固定协议](experiments/rulaas_external_kit_20261030/INTERVAL_RISK_PROTOCOL_ZH.md)、[逐电芯](experiments/rulaas_external_kit_20261030/interval_risk01/per_cell.csv)、[配对区间](experiments/rulaas_external_kit_20261030/interval_risk01/paired_contrasts.csv)、[支持范围](experiments/rulaas_external_kit_20261030/interval_risk01/OOD_SUPPORT.json)、[独立复核](experiments/rulaas_external_kit_20261030/interval_risk01/INDEPENDENT_RECOMPUTE.json)、[源码及历史源码无损归档](reports/rulaas_public_interval_risk_lossless_20261030_v1/README.md)。
+
+---
+
+# 2026-10-30 KIT 延迟到达的区间与删失标签支持（已完成）
 
 目标 ACTIVE，论文门未通过。仅使用 45 个训练工况、假设容量报告延迟 14 天、按先前回顾性选择的第 100 天截止，构造 135 电芯的 444 条可见前缀：76 条已成熟区间事件查询覆盖 42 电芯/15 工况；368 条右删失查询覆盖 93 电芯/33 工况。0 拟合、0 新预测、0 保留组结局解析、0 C3/C4 或封存确认工况读取。
 

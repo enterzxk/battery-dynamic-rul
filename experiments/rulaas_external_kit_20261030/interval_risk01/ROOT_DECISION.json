@@ -1,0 +1,14 @@
+{
+  "status": "NO_GAIN_FIXED_INTERVAL_RISK",
+  "paper_ready": false,
+  "prior_NO_GAIN_preserved": true,
+  "criterion": ">=5% lower cell-macro Brier than all three references with 98.333% paired group CI upper bounds <0; no additional recorded-event episode misses; recorded-event MAE <= slope",
+  "limits": [
+    "Horizon probability means event by q+4 including possible past event, not conditional future hazard",
+    "Interval bounds assume irreversible accurately observed crossing",
+    "Unknown horizon labels omitted from Brier and retained",
+    "Censoring may be informative",
+    "Development outcomes previously inspected; cutoff retrospective",
+    "14-day arrival simulated"
+  ]
+}

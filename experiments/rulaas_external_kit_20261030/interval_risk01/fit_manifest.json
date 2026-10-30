@@ -1,0 +1,128 @@
+{
+  "features": [
+    "origin_age_query_weeks",
+    "capacity_baseline_Ah",
+    "capacity_current_Ah",
+    "capacity_ratio",
+    "prior_gap_weeks",
+    "recent_capacity_slope_Ah_per_week",
+    "visible_checkup_count",
+    "sample_age_weeks",
+    "age_type",
+    "age_temp",
+    "age_soc",
+    "age_chg_rate",
+    "age_dischg_rate",
+    "age_profile"
+  ],
+  "folds": [
+    {
+      "fold": 0,
+      "fit_groups": [
+        "P018",
+        "P019",
+        "P023",
+        "P028",
+        "P030",
+        "P032",
+        "P035",
+        "P040",
+        "P042",
+        "P067"
+      ],
+      "oof_groups": [
+        "P020",
+        "P027",
+        "P036",
+        "P043",
+        "P044"
+      ],
+      "fit_rows": 53,
+      "oof_rows": 23
+    },
+    {
+      "fold": 1,
+      "fit_groups": [
+        "P018",
+        "P020",
+        "P027",
+        "P030",
+        "P035",
+        "P036",
+        "P040",
+        "P043",
+        "P044",
+        "P067"
+      ],
+      "oof_groups": [
+        "P019",
+        "P023",
+        "P028",
+        "P032",
+        "P042"
+      ],
+      "fit_rows": 58,
+      "oof_rows": 18
+    },
+    {
+      "fold": 2,
+      "fit_groups": [
+        "P019",
+        "P020",
+        "P023",
+        "P027",
+        "P028",
+        "P032",
+        "P036",
+        "P042",
+        "P043",
+        "P044"
+      ],
+      "oof_groups": [
+        "P018",
+        "P030",
+        "P035",
+        "P040",
+        "P067"
+      ],
+      "fit_rows": 41,
+      "oof_rows": 35
+    }
+  ],
+  "training_queries": 444,
+  "training_interval_queries": 76,
+  "training_censored_queries": 368,
+  "fallback_from_mature_training_weeks": 3.0068328373015873,
+  "AFT_parameters": {
+    "objective": "survival:aft",
+    "eval_metric": "aft-nloglik",
+    "aft_loss_distribution": "normal",
+    "aft_loss_distribution_scale": 1.2,
+    "tree_method": "hist",
+    "learning_rate": 0.05,
+    "max_depth": 4,
+    "reg_lambda": 1.0,
+    "seed": 42,
+    "nthread": 4,
+    "verbosity": 0
+  },
+  "AFT_rounds": 150,
+  "validation_queries": 555,
+  "validation_groups": [
+    "P006",
+    "P008",
+    "P009",
+    "P010",
+    "P011",
+    "P037",
+    "P038",
+    "P041",
+    "P049",
+    "P052",
+    "P060",
+    "P063",
+    "P076"
+  ],
+  "validation_outcomes_previously_inspected": true,
+  "retrospective_cutoff": true
+}
