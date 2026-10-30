@@ -1,0 +1,39 @@
+{
+  "status": "DEVELOPMENT_SOURCE_AUDITED_NO_EVENT_LABELS_OR_MODEL",
+  "source_doi": "10.35097/1969",
+  "development_groups": 60,
+  "development_cells": 180,
+  "source_uncompressed_bytes": 379488098,
+  "source_rows": 994127,
+  "checkup_discharge_rows": 2934,
+  "valid_capacity_candidates": 2934,
+  "checkup_discharge_missing_capacity_rows": 0,
+  "valid_capacity_missing_timestamp_rows": 0,
+  "candidate_rows_per_cell": {
+    "min": 2,
+    "median": 15.5,
+    "max": 29
+  },
+  "checkup_ids_with_multiple_candidates": 0,
+  "cells_with_multiple_candidates_per_checkup": 0,
+  "timestamp_origin_counts": {
+    "1": 2934
+  },
+  "timestamp_origin_exact_fraction": 1.0,
+  "source_timestamp_decreases": 0,
+  "no_valid_candidate_cells": 0,
+  "no_event_or_RUL_labels_generated": true,
+  "report_arrival_times_observed": false,
+  "provenance_official_container_and_bagit": "PASS",
+  "locked_groups_opened": 0,
+  "side_experiment_files_opened": 0,
+  "new_fits": 0,
+  "C3_payload_reads": 0,
+  "C4_payload_reads": 0,
+  "limits": [
+    "Repeated checkup discharge candidate rows are retained without selecting an event measurement.",
+    "Dataset timestamps include non-exact origins and are not actual report-arrival times.",
+    "Potential safety shutdowns and side experiment need individual provenance treatment before labels.",
+    "Source is development data only; no locked group outcomes or model performance have been examined."
+  ]
+}

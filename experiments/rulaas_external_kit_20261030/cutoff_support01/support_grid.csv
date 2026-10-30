@@ -1,0 +1,8 @@
+days_since_start,cutoff_epoch,cutoff_utc,exact_training_queries,exact_training_groups,right_censored_training_queries,right_censored_training_groups,zero_followup_queries,later_event_cells_by_day400,later_event_groups_by_day400,later_event_queries_by_day400,passes_predeclared_support
+100,1674233100,2023-01-20T16:45:00+00:00,112,18,330,29,84,44,15,174,True
+150,1678553100,2023-03-11T16:45:00+00:00,153,21,446,26,76,29,11,87,True
+200,1682873100,2023-04-30T16:45:00+00:00,393,31,389,16,45,8,3,28,False
+250,1687193100,2023-06-19T16:45:00+00:00,455,34,409,14,39,4,2,14,False
+300,1691513100,2023-08-08T16:45:00+00:00,505,34,431,12,35,2,1,8,False
+350,1695833100,2023-09-27T16:45:00+00:00,505,34,530,12,35,2,1,2,False
+400,1700153100,2023-11-16T16:45:00+00:00,541,35,560,12,33,0,0,0,False

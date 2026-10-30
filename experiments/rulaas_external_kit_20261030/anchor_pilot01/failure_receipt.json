@@ -1,0 +1,16 @@
+{
+  "status": "FAILED",
+  "predictive_fits_started": 0,
+  "predictive_fits_completed": 0,
+  "preprocessor_components_fitted": 0,
+  "model_prediction_rows": 0,
+  "internal_validation_outcomes_read": 0,
+  "confirmation_groups_opened": 0,
+  "C3_payload_reads": 0,
+  "C4_payload_reads": 0,
+  "actual_coordinator_model_recorded": "gpt-6.1-terra",
+  "error": "ImportError(\"/lib/x86_64-linux-gnu/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by /home/yndx/miniconda3/envs/a40_env/lib/python3.9/site-packages/sklearn/metrics/_pairwise_distances_reduction/_base.cpython-39-x86_64-linux-gnu.so)\")",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/yndx/zxk/rul/experiments/rulaas_external_kit_20261030/anchor_pilot.py\", line 54, in <module>\n    from sklearn.ensemble import HistGradientBoostingRegressor\n  File \"/home/yndx/miniconda3/envs/a40_env/lib/python3.9/site-packages/sklearn/ensemble/__init__.py\", line 6, in <module>\n    from ._bagging import BaggingClassifier, BaggingRegressor\n  File \"/home/yndx/miniconda3/envs/a40_env/lib/python3.9/site-packages/sklearn/ensemble/_bagging.py\", line 17, in <module>\n    from ..metrics import accuracy_score, r2_score\n  File \"/home/yndx/miniconda3/envs/a40_env/lib/python3.9/site-packages/sklearn/metrics/__init__.py\", line 6, in <module>\n    from . import cluster\n  File \"/home/yndx/miniconda3/envs/a40_env/lib/python3.9/site-packages/sklearn/metrics/cluster/__init__.py\", line 28, in <module>\n    from ._unsupervised import (\n  File \"/home/yndx/miniconda3/envs/a40_env/lib/python3.9/site-packages/sklearn/metrics/cluster/_unsupervised.py\", line 21, in <module>\n    from ..pairwise import _VALID_METRICS, pairwise_distances, pairwise_distances_chunked\n  File \"/home/yndx/miniconda3/envs/a40_env/lib/python3.9/site-packages/sklearn/metrics/pairwise.py\", line 46, in <module>\n    from ._pairwise_distances_reduction import ArgKmin\n  File \"/home/yndx/miniconda3/envs/a40_env/lib/python3.9/site-packages/sklearn/metrics/_pairwise_distances_reduction/__init__.py\", line 97, in <module>\n    from ._dispatcher import (\n  File \"/home/yndx/miniconda3/envs/a40_env/lib/python3.9/site-packages/sklearn/metrics/_pairwise_distances_reduction/_dispatcher.py\", line 16, in <module>\n    from ._argkmin import (\n  File \"sklearn/metrics/_pairwise_distances_reduction/_argkmin.pyx\", line 1, in init sklearn.metrics._pairwise_distances_reduction._argkmin\nImportError: /lib/x86_64-linux-gnu/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by /home/yndx/miniconda3/envs/a40_env/lib/python3.9/site-packages/sklearn/metrics/_pairwise_distances_reduction/_base.cpython-39-x86_64-linux-gnu.so)\n",
+  "finished_utc": "2026-10-30T01:09:29.282050+00:00",
+  "elapsed_seconds": 0.22430920600891113
+}

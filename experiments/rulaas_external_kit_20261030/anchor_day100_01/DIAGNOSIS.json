@@ -1,0 +1,38 @@
+{
+  "status": "POSTHOC_DAY100_FAILURE_DIAGNOSIS",
+  "validation_queries": 519,
+  "event_observed_queries": 105,
+  "censored_queries": 414,
+  "event_cells": 16,
+  "event_groups": 6,
+  "horizon_labels": {
+    "0": 485,
+    "unknown": 18,
+    "1": 16
+  },
+  "slope_fallback_queries": 4,
+  "anchored_median_over_slope_all_queries": {
+    "p10": 8.091936732182822,
+    "median": 14.280651148059006,
+    "p90": 47.90054201530626,
+    "max": 51.80038667279231
+  },
+  "anchored_median_over_slope_event_queries": {
+    "p10": 2.52251392818161,
+    "median": 10.784434212485753,
+    "p90": 26.494276034792485,
+    "max": 44.500172417515024
+  },
+  "pre_event_misses": {
+    "hgb": 1,
+    "aft_exact": 0,
+    "aft_censored": 16,
+    "aft_slope_anchor": 15
+  },
+  "interpretation": "The fitted anchor correction and group/censor composition may contribute to extrapolation; these descriptive observations do not establish causation. Event-only MAE excludes censored queries.",
+  "new_fits": 0,
+  "model_prediction_rows": 519,
+  "confirmation_groups_opened": 0,
+  "C3_payload_reads": 0,
+  "C4_payload_reads": 0
+}

@@ -1,0 +1,13 @@
+{
+  "status": "INSUFFICIENT_KIT_DEVELOPMENT_SUPPORT",
+  "paper_ready": false,
+  "criterion": "At least 5 event groups, 10 event cells and 5 pre-event risk cells; >=5% lower median MAE against four baselines with all 98.75% paired group CI upper bounds below zero, Brier <= HGB +0.02, misses no worse than HGB or unanchored censor AFT, and coverage drop <=5 points.",
+  "prior_ISU_censored_RUL_NO_GAIN_preserved": true,
+  "limits": [
+    "KIT development assessment, not unopened confirmation groups or cross-dataset transfer.",
+    "Known-event MAE and coverage exclude censored query outcomes; all queries retained in prediction file.",
+    "Four-week Brier excludes only horizons whose outcome is unknowable; this selection is not necessarily censor-unbiased.",
+    "Immediate measurement-end availability is assumed, not actual report-arrival time.",
+    "Censoring may be informative; the existing literature combines slope and survival and no novelty is claimed."
+  ]
+}

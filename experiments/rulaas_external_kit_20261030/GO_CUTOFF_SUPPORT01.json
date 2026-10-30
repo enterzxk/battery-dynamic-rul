@@ -1,0 +1,33 @@
+{
+  "status": "APPROVED",
+  "request_id": "KIT_1969_CUTOFF_SUPPORT_20261030_01",
+  "owner": "01a17810-6ae6-7cf2-9729-5bfcaa8df5f4",
+  "issued_utc": "2026-10-30T01:15:58.026315+00:00",
+  "actual_model": "gpt-6.1-terra",
+  "days": [
+    100,
+    150,
+    200,
+    250,
+    300,
+    350,
+    400
+  ],
+  "max_source_epoch": 1700153100,
+  "allow_fits": false,
+  "allow_prediction": false,
+  "allow_validation_outcomes": false,
+  "allow_confirmation_groups": false,
+  "allow_C3": false,
+  "allow_C4": false,
+  "selection_rule": "First cutoff with >=100 exact query rows, >=10 event groups, >=100 censored query rows, >=5 censor groups, >=10 later event cells, >=5 later event groups, all from fit cohort.",
+  "input_sha256": {
+    "AGENTS.md": "93488b4e887ff13c8ac88687d1be4197a52c22667708dfd960d424007f3b1c19",
+    "experiments/rulaas_external_kit_20261030/TRAIN_SPLIT.json": "659ae78046e734c4729c2e3b741e0cfd6d42aaecdf98a46cfec9e900bc82829c",
+    "experiments/rulaas_external_kit_20261030/development_audit01/development_candidates.csv": "8dd7af27c3568d1e2ae24766f4ce420587c2f75fe68f5f90d0edc463929d4e27",
+    "experiments/rulaas_external_kit_20261030/anchor_pilot02/ROOT_DECISION.json": "05c3c18a7a59b8d84202aadb882506877ec5a38183061f5321780d5f66640aa9",
+    "experiments/rulaas_external_kit_20261030/anchor_pilot02/INDEPENDENT_RECOMPUTE.json": "4085da28d371be1d05b444d40b8b5961532039d31a777deda9f93994b8e5abb4",
+    "experiments/rulaas_external_kit_20261030/CUTOFF_SUPPORT_PROTOCOL_ZH.md": "2cec7579c294717c4691f1dfe9bec39a397f393c7da28f6486604b47ff71f1b2",
+    "experiments/rulaas_external_kit_20261030/cutoff_support.py": "63fbccd31afe79edc4e04f6d233cd93789f34b2a18fd31c4fd593cc0a8f8d5ae"
+  }
+}

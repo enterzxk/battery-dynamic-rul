@@ -1,0 +1,6 @@
+model,all_queries,all_cells,event_observed_queries,censored_queries,mature_horizon_queries,unknown_horizon_queries,event_cells,event_groups,median_MAE,mean_MAE,Brier4,coverage80,width80,pre_event_episode_cells,missed_pre_event_episode_cells,slope_fallback_queries
+hgb,162,18,0,162,144,18,0,0,,,6.257609252851468e-07,,,0,0,4
+aft_exact,162,18,0,162,144,18,0,0,,,0.0030460558088381043,,,0,0,4
+aft_censored,162,18,0,162,144,18,0,0,,,3.480356465289945e-05,,,0,0,4
+aft_slope_anchor,162,18,0,162,144,18,0,0,,,7.786337469087065e-06,,,0,0,4
+slope,162,18,0,162,144,18,0,0,,,,,,0,,4

@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "recomputed_training_cases": 526,
+  "counts": {
+    "right_censored": 330,
+    "unknown_zero_followup": 84,
+    "exact_event": 112
+  },
+  "prefix_features_and_asof_labels": "PASS",
+  "group_role_exclusion": "PASS",
+  "zero_followup_not_imputed": "PASS",
+  "new_fits": 0,
+  "new_model_predictions": 0,
+  "internal_validation_outcomes_read": 0,
+  "confirmation_groups_opened": 0,
+  "C3_payload_reads": 0,
+  "C4_payload_reads": 0,
+  "GO_sha256": "8acd03f7922900ea36b5ce72681462fd62709a24beb037ccb35da12a9df09252",
+  "input_sha256": {
+    "AGENTS.md": "93488b4e887ff13c8ac88687d1be4197a52c22667708dfd960d424007f3b1c19",
+    "experiments/rulaas_external_kit_20261030/TRAIN_SPLIT.json": "659ae78046e734c4729c2e3b741e0cfd6d42aaecdf98a46cfec9e900bc82829c",
+    "experiments/rulaas_external_kit_20261030/cutoff_support01/SELECTION.json": "7a8b1871234f33424ac924bc29fee0bbd9712a98e2592bd11421b010aa8e59df",
+    "experiments/rulaas_external_kit_20261030/development_audit01/development_candidates.csv": "8dd7af27c3568d1e2ae24766f4ce420587c2f75fe68f5f90d0edc463929d4e27",
+    "experiments/rulaas_external_kit_20261030/train_day100_01/training_cases_asof.csv": "898c998b55fd340c95c9bc34db92d90a1d96639d1903622475c57d49aa5a0c6d",
+    "experiments/rulaas_external_kit_20261030/train_day100_01/SUMMARY.json": "076e67b7602d89e81d86ed0b9fae96906f388cf7d395a1ff0ddd60dd17a268ca",
+    "experiments/rulaas_external_kit_20261030/train_day100_01/receipt.json": "84b42be40ccd28b6f6572bebeac10570151488efc68f3a2644773460a2945134",
+    "experiments/rulaas_external_kit_20261030/review_train_day100.py": "8a37ac28309bc285154fa89a89da526c520bfc9965dec241201f1ad0e9265d9e"
+  },
+  "limit": "First recorded 80 percent event and immediate measurement availability are assumptions; censoring may be informative."
+}

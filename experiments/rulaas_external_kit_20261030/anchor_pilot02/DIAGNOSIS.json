@@ -1,0 +1,23 @@
+{
+  "status": "POSTHOC_VALIDATION_SUPPORT_DIAGNOSIS",
+  "validation_groups": 15,
+  "validation_cells": 45,
+  "no_recorded_event_by_end": 22,
+  "cells_without_eligible_query": 27,
+  "event_on_or_before_cutoff": 23,
+  "eligible_queries": 162,
+  "eligible_cells": 18,
+  "four_week_labels": {
+    "0": 144,
+    "unknown": 18
+  },
+  "recorded_event_queries": 0,
+  "censored_queries": 162,
+  "slope_fallback_queries": 4,
+  "interpretation": "The fixed cutoff and check-up-only query schedule leave no evaluable post-cutoff positive event queries; all mature four-week labels are negative. The small Brier scores cannot establish sensitivity or RUL accuracy.",
+  "new_fits": 0,
+  "model_prediction_rows": 162,
+  "confirmation_groups_opened": 0,
+  "C3_payload_reads": 0,
+  "C4_payload_reads": 0
+}

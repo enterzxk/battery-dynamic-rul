@@ -1,0 +1,18 @@
+{
+  "status": "PASS_MIRROR_CONTAINER_MD5_MATCH_OFFICIAL",
+  "official_url": "https://www.radar-service.eu/radar/en/dataset/CoNQplSNoVeXExyV",
+  "official_archive_md5": "aa60c8fd08755a253ac7479dde41c93d",
+  "mirror_inner_archive_md5": "aa60c8fd08755a253ac7479dde41c93d",
+  "mirror_inner_archive_sha256": "5bb11e1a1d3eb5d8a13585bf32a9cfefcf34b94a488b5e0727994861f98d272e",
+  "inner_archive_bytes": 333402624,
+  "inner_tar_ustar_header": true,
+  "mirror_outer_zip_sha256": "9c1c6b1422305c2046a39fe260f5c05ab29672adac300fe257238815cc2932bb",
+  "individual_cell_payloads_extracted_or_parsed": false,
+  "confirmation_groups_opened": false,
+  "new_fits": 0,
+  "C3_payload_reads": 0,
+  "C4_payload_reads": 0,
+  "GO_sha256": "3873c57ab2bedf4d540df7e04425e34eb958a59d94eb12c9f5d2daf0c7421247",
+  "finished_utc": "2026-10-30T01:00:31.589407+00:00",
+  "limit": "MD5 matches official published archive checksum; this is a provenance/integrity check, not model validation or a cryptographic signature."
+}

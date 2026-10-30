@@ -1,0 +1,38 @@
+{
+  "status": "TRAIN_SUPPORT_AUDITED_NOT_MODEL_RESULT",
+  "source_doi": "10.35097/1969",
+  "cutoff_epoch": 1674233100,
+  "cutoff_utc": "2023-01-20T16:45:00+00:00",
+  "event_definition": "first check-up estimated capacity <= 0.8 of initial valid check-up capacity",
+  "fit_groups": 45,
+  "fit_cells_with_any_precutoff_candidate": 135,
+  "fit_cells_with_valid_initial_baseline": 135,
+  "missing_initial_baseline_cells": 0,
+  "recorded_event_cells_by_cutoff": 51,
+  "recorded_event_groups_by_cutoff": 18,
+  "no_recorded_event_cells_by_cutoff": 84,
+  "no_recorded_event_groups_by_cutoff": 30,
+  "training_queries": {
+    "right_censored": 330,
+    "unknown_zero_followup": 84,
+    "exact_event": 112
+  },
+  "documented_side_experiment_cells_in_fit": 4,
+  "documented_safety_shutdown_cells_in_fit": 2,
+  "post_cutoff_fit_rows_skipped": 1240,
+  "internal_validation_lines_skipped_before_parsing": 959,
+  "internal_validation_event_outcomes_read": 0,
+  "external_confirmation_groups_opened": 0,
+  "observed_report_arrival_time": false,
+  "new_fits": 0,
+  "C3_payload_reads": 0,
+  "C4_payload_reads": 0,
+  "limits": [
+    "Result timestamp is the end of measurement; immediate service availability is an assumption, not a measured reporting delay.",
+    "Event is first recorded crossing, not true physical failure.",
+    "Censoring can be informative, including published safety shutdowns.",
+    "The 15 internal validation groups were included in the earlier raw-input audit; they are not blind final confirmation.",
+    "The 16 external confirmation groups remain sealed.",
+    "The 15 internal validation group outcomes were inspected in the prior 400-day pilot; subsequent day-100 scoring is exploratory, not independent confirmation."
+  ]
+}

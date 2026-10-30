@@ -1,4 +1,16 @@
-# 2026-10-30 右删失动态剩余寿命对照（当前）
+# 2026-10-30 KIT 开发对照：斜率锚定候选未通过（当前）
+
+目标 ACTIVE，论文门未通过。KIT 来源与官方归档及清单校验一致；16 个外部工况仍封存。第 400 天方案在 162 个截止后查询上全为删失，`INSUFFICIENT_KIT_DEVELOPMENT_SUPPORT`；再按训练工况预列支持规则回顾性选择第 100 天，原结论保留。
+
+第 100 天开发对照保留 519 查询（105 后续事件、414 删失）；在 6 个事件工况、16 电芯上，纯斜率、HGB、删失 AFT、斜率锚定 AFT 的中位预测 MAE 分别 2.79、7.70、21.05、96.25 周。锚定相对纯斜率增量 +93.46 周，四项校正区间 [+13.09,+194.37]；15/16 电芯恶化，预警遗漏 15/16。状态 `NO_GAIN_FIXED_KIT_SLOPE_ANCHOR`；独立重算 2595 行并复核 519 次保存模型输出通过，停止该配置。0 C3/C4。
+
+四周可判定标签仅 16 阳性、485 阴性，另 18 未知；低 Brier 不能掩盖漏报。保留组结局先前使用过，时点选择回顾性，且结果只覆盖有可观察事件的电芯；报告到达时间未知，不能称论文达标或独立确认。下一步审计其他检测信号在查询时是否已完成，比较其信息增量及纯斜率强基线。
+
+[第100天结果](experiments/rulaas_external_kit_20261030/ANCHOR_DAY100_RESULTS_ZH.md)、[逐电芯](experiments/rulaas_external_kit_20261030/anchor_day100_01/paired_per_cell.csv)、[独立复核](experiments/rulaas_external_kit_20261030/anchor_day100_01/INDEPENDENT_RECOMPUTE.json)、[第400天结果](experiments/rulaas_external_kit_20261030/ANCHOR_DAY400_RESULTS_ZH.md)、[源码与旧文件无损归档](reports/rulaas_public_kit_code_lossless_20261030_v3/README.md)。
+
+---
+
+# 2026-10-30 右删失动态剩余寿命对照（已完成）
 
 目标 ACTIVE，论文门未通过。同一 10 个既用保留工况组、18 电芯、536 查询，HGB、完整事件 AFT、加入右删失的 AFT 的中位数 MAE 分别为 1.952、1.788、4.640 周；加入删失相对 HGB 的增量为 +2.688 周，双比较校正区间 [+0.370,+5.088]，相对完整事件 AFT 为 +2.852 周，区间 [+0.602,+5.176]。预警遗漏从 0/51 增至 1/51，11/18 电芯比 HGB 更差。预设判定 `NO_GAIN_FIXED_CENSORED_RUL_SCREEN`，独立重算通过，停止此配置；0 C3/C4。
 

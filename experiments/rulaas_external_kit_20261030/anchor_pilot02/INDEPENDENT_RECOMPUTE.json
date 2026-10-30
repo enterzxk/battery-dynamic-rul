@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "source_prefix_query_keys_and_censoring": "PASS",
+  "baseline_and_threshold": "PASS",
+  "group_split": "PASS",
+  "hgb_group_oof_residuals": "PASS",
+  "mixture_distributions_and_brier": "PASS",
+  "anchored_saved_model_and_base_margin": "PASS",
+  "recomputed_model_outputs": 162,
+  "checked_stored_rows": 810,
+  "new_fits": 0,
+  "confirmation_groups_opened": 0,
+  "C3_payload_reads": 0,
+  "C4_payload_reads": 0,
+  "GO_sha256": "c69541bd6478a9cd9da2d611910e53ff50028b1164375fadc3cbd2509c4dae73",
+  "input_sha256": {
+    "AGENTS.md": "93488b4e887ff13c8ac88687d1be4197a52c22667708dfd960d424007f3b1c19",
+    "experiments/rulaas_external_kit_20261030/TRAIN_SPLIT.json": "659ae78046e734c4729c2e3b741e0cfd6d42aaecdf98a46cfec9e900bc82829c",
+    "experiments/rulaas_external_kit_20261030/development_audit01/development_candidates.csv": "8dd7af27c3568d1e2ae24766f4ce420587c2f75fe68f5f90d0edc463929d4e27",
+    "experiments/rulaas_external_kit_20261030/anchor_pilot02/predictions.csv": "2221aa81bb30873bada9076894b39e4c4c2258ef2126730abfc45c8185cd1386",
+    "experiments/rulaas_external_kit_20261030/anchor_pilot02/summary.csv": "aed472a8287687b495b23871b9dd69e499a28f4c8555c0f188eca2df91476718",
+    "experiments/rulaas_external_kit_20261030/anchor_pilot02/hgb_oof.csv": "2722b84e951698fc93e40c57be223d96d55bd29a6a588ed9d59f1699270c1f87",
+    "experiments/rulaas_external_kit_20261030/anchor_pilot02/hgb_residuals.npz": "287c5dd71767a0da3c123be1464124a40d8a1f9f4bffeaf107860637c4b6846e",
+    "experiments/rulaas_external_kit_20261030/anchor_pilot02/aft_slope_anchor.json": "e83f27400bc9ba328b9e071e7c538969296b1e0fc1be9815913a00e892bc1e4d",
+    "experiments/rulaas_external_kit_20261030/anchor_pilot02/fit_manifest.json": "ac2ce7001ceaba2ad75f0fe9305675e08a482cb7ff9fa853bd0698780df0731e",
+    "experiments/rulaas_external_kit_20261030/anchor_pilot02/receipt.json": "0d9b4992adc5d4812651e0f75305ce6cdef8a2f46e552d83c2fec54728b18e61",
+    "experiments/rulaas_external_kit_20261030/anchor_pilot02/ROOT_DECISION.json": "05c3c18a7a59b8d84202aadb882506877ec5a38183061f5321780d5f66640aa9",
+    "experiments/rulaas_external_kit_20261030/review_anchor_pilot.py": "27ec35b3e61de6436b4159dda5d259b0ead8a713ea035da03895de1ea7ec1c5e"
+  },
+  "limit": "No observed events in evaluation; no positive-label discrimination or RUL MAE is estimable."
+}
