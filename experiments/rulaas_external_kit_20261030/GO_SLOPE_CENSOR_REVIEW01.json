@@ -1,0 +1,18 @@
+{
+  "status": "APPROVED",
+  "owner": "01a17810-6ae6-7cf2-9729-5bfcaa8df5f4",
+  "issued_utc": "2026-10-30T01:36:17.873714+00:00",
+  "allow_fits": false,
+  "allow_new_predictions": false,
+  "allow_C3": false,
+  "allow_C4": false,
+  "allow_confirmation_groups": false,
+  "input_sha256": {
+    "experiments/rulaas_external_kit_20261030/GO_SLOPE_CENSOR_DIAGNOSTIC01.json": "058921ad99f634b10eb87071f683f6d04ac7630bb9306b2c25f98b241e870581",
+    "experiments/rulaas_external_kit_20261030/anchor_day100_01/predictions.csv": "d6021e5b25d63f3e4b2a85c9a0308acab0bddb231d31ac729ba2c5ebe87b2f1f",
+    "experiments/rulaas_external_kit_20261030/eis_value01/predictions.csv": "683b6998a5e4b266434d3967e7ab05cf0b045c2d1cd44b00c89d125d4321652a",
+    "experiments/rulaas_external_kit_20261030/slope_censor_diagnostic01/summary.csv": "a1bd0491fcd81fb39ebf141d582b23521602e17957cb62453a2093f9a3011bb7",
+    "experiments/rulaas_external_kit_20261030/slope_censor_diagnostic01/per_cell.csv": "ef2bcd179cf7f5922436bda7382df3944f53f2e19e68f8e89f1078e0f41961f0",
+    "experiments/rulaas_external_kit_20261030/review_slope_censor.py": "128b10fffd459c093b85eee1c16c2c29c42d4b7eac02c8f0176b3b8a0e96924e"
+  }
+}

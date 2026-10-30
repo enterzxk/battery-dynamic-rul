@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-30T01:32:43.914995+00:00",
-  "content_sha256": "12de69a15e5f41deef87e85c9734e0a49ea2d9b757e406d94590c6de4e246c38",
-  "file_count": 1298,
+  "snapshot_utc": "2026-10-30T01:38:36.304096+00:00",
+  "content_sha256": "e380f0eeeadf9f6d8f5e2f34700c78527f49d401ea390dc8e4762e0363b18d6e",
+  "file_count": 1302,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,8 +14,8 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 23809,
-      "sha256": "268cc797323e78dc82bd22ce050116b32326c04a16042e1bf04cc83ca445b17d"
+      "bytes": 25618,
+      "sha256": "67ebfd33f40c477005aab255275a32ccb5a887d754e482fca7c2fad3554793f5"
     },
     {
       "path": "README.md",
@@ -38,8 +38,8 @@
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 94792,
-      "sha256": "29176898ede46c582b04a0256b4b69d95eaad917eb57739b627d02e09dc4924a"
+      "bytes": 96284,
+      "sha256": "8fba44ef147586e3b66e822789bc15bfdf57a5acadb286010477c3f624851b40"
     },
     {
       "path": "automation/bin/matr_raw_batch2_asset_worker_v1.py",
@@ -176,8 +176,8 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 27335,
-      "sha256": "263b51d6f6486d27b41c5389785dd1649e9d98f8596cbb880eafd65ffb66f8e9"
+      "bytes": 29159,
+      "sha256": "7ac9baf1b7b4c0a4085f80bb792d08ac603403bdebca0661551072c67710fb50"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
@@ -804,12 +804,6 @@
       "sha256": "29d35d7ecffa064510b5d6cf90d1a2ba4fba467c81582633489616af31c3e9ec"
     },
     {
-      "path": "experiments/cpmlp_calb_recipe_adapt_seed2021_v1/runner.py",
-      "source_path": "experiments/cpmlp_calb_recipe_adapt_seed2021_v1/runner.py",
-      "bytes": 14355,
-      "sha256": "2bc776d4a94249d4cb83777edc84224e4e8361466f8229b0f4b860928be235bb"
-    },
-    {
       "path": "experiments/cpmlp_hust_pilot_seed42/fit_runs/fit_20261016T034610_311103Z/artifact_manifest.json",
       "source_path": "experiments/cpmlp_hust_pilot_seed42/fit_runs/fit_20261016T034610_311103Z/artifact_manifest.json",
       "bytes": 3188,
@@ -864,12 +858,6 @@
       "sha256": "7fd41a9588442bcc91352f97aae8c3faca7bccbadaa640078e61658687d9288d"
     },
     {
-      "path": "experiments/cpmlp_hust_recipe_adapt_seed42_v1/runner.py",
-      "source_path": "experiments/cpmlp_hust_recipe_adapt_seed42_v1/runner.py",
-      "bytes": 12884,
-      "sha256": "dee7a03d894531ceb3910edf41d976cacbb45c3ffd96793157fcc91427c1a056"
-    },
-    {
       "path": "experiments/cpmlp_hust_recipe_adapt_seed42_v1/stopping_check.json",
       "source_path": "experiments/cpmlp_hust_recipe_adapt_seed42_v1/stopping_check.json",
       "bytes": 239,
@@ -922,12 +910,6 @@
       "source_path": "experiments/cpmlp_hust_recipe_adapt_seed42_v2/run_manifest.json",
       "bytes": 3004,
       "sha256": "92df7cadbe48241843f619354098301a858bd8fa8eccf8995f458510c4a76583"
-    },
-    {
-      "path": "experiments/cpmlp_hust_recipe_adapt_seed42_v2/runner.py",
-      "source_path": "experiments/cpmlp_hust_recipe_adapt_seed42_v2/runner.py",
-      "bytes": 12884,
-      "sha256": "709d899447dba343cca27ba61ce0e95f67c0e7093090e3f6182895d7fbeaef6e"
     },
     {
       "path": "experiments/cpmlp_hust_recipe_adapt_seed42_v2/runtime_repair_review.json",
@@ -1740,18 +1722,6 @@
       "sha256": "67a217c17f345dfab05e0ae0b502fe392a398f8633d1041f7933af2cdcb220b8"
     },
     {
-      "path": "experiments/multirate_state_A2_20261022/a2_model.py",
-      "source_path": "experiments/multirate_state_A2_20261022/a2_model.py",
-      "bytes": 15296,
-      "sha256": "24b23883a18b7d4386930b52c582fc5c0bef452c0f2b0cb4cbdf7bab3b4c6c8f"
-    },
-    {
-      "path": "experiments/multirate_state_A2_20261022/a2_train_v2.py",
-      "source_path": "experiments/multirate_state_A2_20261022/a2_train_v2.py",
-      "bytes": 15435,
-      "sha256": "57e99fbb9ac4258e85f2fd8cb3534d91845ffb2747cda3726807dc2388568d54"
-    },
-    {
       "path": "experiments/multirate_state_A2_20261022/compare_v3.py",
       "source_path": "experiments/multirate_state_A2_20261022/compare_v3.py",
       "bytes": 6007,
@@ -2334,12 +2304,6 @@
       "sha256": "bd2ff867666f879100eaea518ffb0350673f8fdf3ae95baefcf20c91d8c3626f"
     },
     {
-      "path": "experiments/multisource_factorial_20261021/features.py",
-      "source_path": "experiments/multisource_factorial_20261021/features.py",
-      "bytes": 15141,
-      "sha256": "a6080b915e7f1ae46ec34c172bd0de84ddfd480efb2818eb562d6358c18e88d9"
-    },
-    {
       "path": "experiments/multisource_factorial_20261021/off_rpt_grid_self_transport_run3/RESULTS_ZH.md",
       "source_path": "experiments/multisource_factorial_20261021/off_rpt_grid_self_transport_run3/RESULTS_ZH.md",
       "bytes": 9203,
@@ -2356,12 +2320,6 @@
       "source_path": "experiments/multisource_factorial_20261021/paired_saved_analysis_20261021/analysis_receipt.json",
       "bytes": 1561,
       "sha256": "7964c8c128f00a4f4adfe5ed85c595f6a9cff4e6826ea30439d6722a7fcd9966"
-    },
-    {
-      "path": "experiments/multisource_factorial_20261021/postprocess_saved.py",
-      "source_path": "experiments/multisource_factorial_20261021/postprocess_saved.py",
-      "bytes": 15711,
-      "sha256": "b0e5a16341f02d06b764d7828039f53f22ba98aab8389111f24d3372c2bd3adb"
     },
     {
       "path": "experiments/multisource_factorial_20261021/protocol.json",
@@ -3816,10 +3774,34 @@
       "sha256": "2153f19f0745ba587eb0b072cef4d6b7de179e78fc7999e30224595702b93a31"
     },
     {
+      "path": "experiments/rulaas_external_kit_20261030/GO_SLOPE_CENSOR_DIAGNOSTIC01.json",
+      "source_path": "experiments/rulaas_external_kit_20261030/GO_SLOPE_CENSOR_DIAGNOSTIC01.json",
+      "bytes": 1859,
+      "sha256": "058921ad99f634b10eb87071f683f6d04ac7630bb9306b2c25f98b241e870581"
+    },
+    {
+      "path": "experiments/rulaas_external_kit_20261030/GO_SLOPE_CENSOR_REVIEW01.json",
+      "source_path": "experiments/rulaas_external_kit_20261030/GO_SLOPE_CENSOR_REVIEW01.json",
+      "bytes": 1181,
+      "sha256": "e97c4bc05eca31e622a690e2a24473794a0c7ac74fb9c76bc864824997aaa896"
+    },
+    {
       "path": "experiments/rulaas_external_kit_20261030/IDENTITY_RECEIPT01.json",
       "source_path": "experiments/rulaas_external_kit_20261030/IDENTITY_RECEIPT01.json",
       "bytes": 990,
       "sha256": "c039e99d0571872c12947dab451c8e3993389bb533a55a0eb290183a4dd81698"
+    },
+    {
+      "path": "experiments/rulaas_external_kit_20261030/SLOPE_CENSOR_DIAGNOSTIC_PROTOCOL_ZH.md",
+      "source_path": "experiments/rulaas_external_kit_20261030/SLOPE_CENSOR_DIAGNOSTIC_PROTOCOL_ZH.md",
+      "bytes": 2508,
+      "sha256": "9779134efbb994404f90a20ad22963024cec80321a495a18ebfea6346a535614"
+    },
+    {
+      "path": "experiments/rulaas_external_kit_20261030/SLOPE_CENSOR_RESULTS_ZH.md",
+      "source_path": "experiments/rulaas_external_kit_20261030/SLOPE_CENSOR_RESULTS_ZH.md",
+      "bytes": 3758,
+      "sha256": "c2ac96ff9fa8c8a70306125d16188e62a524bbebebb4c7d5e907909935ad310b"
     },
     {
       "path": "experiments/rulaas_external_kit_20261030/TRAIN_DAY100_PROTOCOL_ZH.md",
@@ -4000,6 +3982,42 @@
       "source_path": "experiments/rulaas_external_kit_20261030/eis_value01/summary.csv",
       "bytes": 713,
       "sha256": "adc19c20d843093141972dfcc3ec630a586529160c4970081261e1aac7c910f9"
+    },
+    {
+      "path": "experiments/rulaas_external_kit_20261030/slope_censor_diagnostic01/DECISION.json",
+      "source_path": "experiments/rulaas_external_kit_20261030/slope_censor_diagnostic01/DECISION.json",
+      "bytes": 718,
+      "sha256": "46756e79477356e5a1756d6e1f460e46b87c3316bcaa0dac375f15ae13147282"
+    },
+    {
+      "path": "experiments/rulaas_external_kit_20261030/slope_censor_diagnostic01/INDEPENDENT_RECOMPUTE.json",
+      "source_path": "experiments/rulaas_external_kit_20261030/slope_censor_diagnostic01/INDEPENDENT_RECOMPUTE.json",
+      "bytes": 3483,
+      "sha256": "4e4c905874d5887456eab129ce8c4eb4e1ef4c7d1d594c0471986270e8a2f66b"
+    },
+    {
+      "path": "experiments/rulaas_external_kit_20261030/slope_censor_diagnostic01/per_cell.csv",
+      "source_path": "experiments/rulaas_external_kit_20261030/slope_censor_diagnostic01/per_cell.csv",
+      "bytes": 26766,
+      "sha256": "ef2bcd179cf7f5922436bda7382df3944f53f2e19e68f8e89f1078e0f41961f0"
+    },
+    {
+      "path": "experiments/rulaas_external_kit_20261030/slope_censor_diagnostic01/per_group.csv",
+      "source_path": "experiments/rulaas_external_kit_20261030/slope_censor_diagnostic01/per_group.csv",
+      "bytes": 9367,
+      "sha256": "544c4b1017f7385681b22a5175ec515139c00d2d1a3ff8defb73318329111d9e"
+    },
+    {
+      "path": "experiments/rulaas_external_kit_20261030/slope_censor_diagnostic01/public_receipt.json",
+      "source_path": "experiments/rulaas_external_kit_20261030/slope_censor_diagnostic01/public_receipt.json",
+      "bytes": 593,
+      "sha256": "f5e109a5891172930c473a3c9d2d693b1a8732b98faffed13718616159059ba9"
+    },
+    {
+      "path": "experiments/rulaas_external_kit_20261030/slope_censor_diagnostic01/summary.csv",
+      "source_path": "experiments/rulaas_external_kit_20261030/slope_censor_diagnostic01/summary.csv",
+      "bytes": 2251,
+      "sha256": "a1bd0491fcd81fb39ebf141d582b23521602e17957cb62453a2093f9a3011bb7"
     },
     {
       "path": "experiments/rulaas_external_kit_20261030/train_day100_01/INDEPENDENT_RECOMPUTE.json",
@@ -5010,12 +5028,6 @@
       "sha256": "fdce7ac21ad9891c16ba96cc33f227ef88800db8eab7c7eb692dea4ae3f20e24"
     },
     {
-      "path": "experiments/trajectory_b2_joint_marked_renewal_20261021/candidate_v2/model.py",
-      "source_path": "experiments/trajectory_b2_joint_marked_renewal_20261021/candidate_v2/model.py",
-      "bytes": 13890,
-      "sha256": "f8828e6f8e433a1817908e7e01ecd9deebbc6082aff554bd5b23d9e36e0b6c43"
-    },
-    {
       "path": "experiments/trajectory_b2_joint_marked_renewal_20261021/candidate_v2/prep_runner.py",
       "source_path": "experiments/trajectory_b2_joint_marked_renewal_20261021/candidate_v2/prep_runner.py",
       "bytes": 4788,
@@ -5098,12 +5110,6 @@
       "source_path": "experiments/trajectory_multisource_nextcap_20261021/comparisons_B/paired_metrics.csv",
       "bytes": 13718,
       "sha256": "7a5cfef053bd6ebe3564e7ef5019aaf4aac82b3e1d2a419971b48ca984c08964"
-    },
-    {
-      "path": "experiments/trajectory_multisource_nextcap_20261021/run_extension.py",
-      "source_path": "experiments/trajectory_multisource_nextcap_20261021/run_extension.py",
-      "bytes": 14179,
-      "sha256": "5e552eb2c0045eb1a92b8450d8c02c3e4abf3882f2d7d31f704e92548f88e017"
     },
     {
       "path": "experiments/trajectory_multisource_nextcap_20261021/runs/nextcap18-9e7d9cb1c67f/metrics_by_model_panel_arm.csv",
@@ -7170,12 +7176,6 @@
       "sha256": "a72820d21725d03dc53089ad6421dca69092f08998f137172ae5a1b9b7f152f1"
     },
     {
-      "path": "reports/pbt_valid_cycle_production_io_20261017_luna/production_io_wrapper_v2.py",
-      "source_path": "reports/pbt_valid_cycle_production_io_20261017_luna/production_io_wrapper_v2.py",
-      "bytes": 14317,
-      "sha256": "756e3ff1957a41fff5e3dc26c6ea900a1657d6b69a296f5436eb8038d7987c7e"
-    },
-    {
       "path": "reports/persistent_capacity_feedback_20261018_root/RESULTS_ZH.md",
       "source_path": "reports/persistent_capacity_feedback_20261018_root/RESULTS_ZH.md",
       "bytes": 2104,
@@ -7600,6 +7600,30 @@
       "source_path": "reports/rulaas_public_prior_code_lossless_20261029_v1/validation.json",
       "bytes": 1170,
       "sha256": "ef78453bb3749531c4cbf386573f316ae86ee93c7a4c66e87b7dbc4d0b5927ca"
+    },
+    {
+      "path": "reports/rulaas_public_slope_diagnostic_lossless_20261030_v1/README.md",
+      "source_path": "reports/rulaas_public_slope_diagnostic_lossless_20261030_v1/README.md",
+      "bytes": 3646,
+      "sha256": "abe0517bd9f5f3f23e7295adf60068af01277436086fcb76a47e275d16be208e"
+    },
+    {
+      "path": "reports/rulaas_public_slope_diagnostic_lossless_20261030_v1/archive.bin",
+      "source_path": "reports/rulaas_public_slope_diagnostic_lossless_20261030_v1/archive.bin",
+      "bytes": 57450,
+      "sha256": "62019c7138559a1bff7d2f29db6565a651d30713ecb1f9a82c42b6b916d539ef"
+    },
+    {
+      "path": "reports/rulaas_public_slope_diagnostic_lossless_20261030_v1/decode.py",
+      "source_path": "reports/rulaas_public_slope_diagnostic_lossless_20261030_v1/decode.py",
+      "bytes": 1050,
+      "sha256": "d154cfa112bac4095684ea6fba77782dbaec433589270198aa309ed07bc19a77"
+    },
+    {
+      "path": "reports/rulaas_public_slope_diagnostic_lossless_20261030_v1/validation.json",
+      "source_path": "reports/rulaas_public_slope_diagnostic_lossless_20261030_v1/validation.json",
+      "bytes": 5413,
+      "sha256": "086799d8f0223a00c4a9a8a83801eb14bf9d617950e979bcbcb2441a3db3eff3"
     },
     {
       "path": "reports/rulaas_public_survival_code_lossless_20261030_v1/README.md",

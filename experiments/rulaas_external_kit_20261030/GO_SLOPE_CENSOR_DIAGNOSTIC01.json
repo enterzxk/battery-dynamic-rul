@@ -1,0 +1,27 @@
+{
+  "status": "APPROVED",
+  "request_id": "KIT_SLOPE_CENSOR_DIAGNOSTIC_20261030_01",
+  "owner": "01a17810-6ae6-7cf2-9729-5bfcaa8df5f4",
+  "issued_utc": "2026-10-30T01:35:36.484121+00:00",
+  "actual_model": "gpt-6.1-terra",
+  "allow_fits": false,
+  "allow_new_predictions": false,
+  "allow_confirmation_groups": false,
+  "allow_C3": false,
+  "allow_C4": false,
+  "fit_cap": 0,
+  "prediction_row_cap": 0,
+  "seed": null,
+  "input_sha256": {
+    "AGENTS.md": "93488b4e887ff13c8ac88687d1be4197a52c22667708dfd960d424007f3b1c19",
+    "experiments/rulaas_external_kit_20261030/TRAIN_SPLIT.json": "659ae78046e734c4729c2e3b741e0cfd6d42aaecdf98a46cfec9e900bc82829c",
+    "experiments/rulaas_external_kit_20261030/anchor_day100_01/predictions.csv": "d6021e5b25d63f3e4b2a85c9a0308acab0bddb231d31ac729ba2c5ebe87b2f1f",
+    "experiments/rulaas_external_kit_20261030/anchor_day100_01/summary.csv": "0af213de262fcaac5338031cba6cf9e42cb01a48d66913c121467ed2a095a7e2",
+    "experiments/rulaas_external_kit_20261030/anchor_day100_01/INDEPENDENT_RECOMPUTE.json": "c79c25ba4be83964fd3d0c6cd6f1aef32430daef56f08939a9791526d7ec3a24",
+    "experiments/rulaas_external_kit_20261030/eis_value01/predictions.csv": "683b6998a5e4b266434d3967e7ab05cf0b045c2d1cd44b00c89d125d4321652a",
+    "experiments/rulaas_external_kit_20261030/eis_value01/INDEPENDENT_RECOMPUTE.json": "9905cfb79e48e5bd97b4636c9a522c0c7d13c915eb8490fa3d63a1cb962d95dd",
+    "experiments/rulaas_external_kit_20261030/eis_value01/ROOT_DECISION.json": "931a6301d66d1405a50f37c0be0bbf760576855cb7589d60f36b1f5f1e4ce6c0",
+    "experiments/rulaas_external_kit_20261030/SLOPE_CENSOR_DIAGNOSTIC_PROTOCOL_ZH.md": "9779134efbb994404f90a20ad22963024cec80321a495a18ebfea6346a535614",
+    "experiments/rulaas_external_kit_20261030/slope_censor_diagnostic.py": "2b2b9a92640e04503c800f14648204b6db7ee23761404f970382cbd1e7e85f78"
+  }
+}

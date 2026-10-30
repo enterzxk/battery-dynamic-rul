@@ -1,4 +1,16 @@
-# 2026-10-30 KIT 阻抗数值增量开发对照（当前）
+# 2026-10-30 KIT 强斜率参考：删失与预警边界诊断（当前）
+
+目标 ACTIVE，论文门未通过。复用先前固定预测，新增拟合和模型预测 0，C3/C4 与 16 个封存确认工况读取 0；独立重算 7 种方法共 3633 行通过。纯斜率在 16 个观察到事件的电芯上 MAE 为 2.79 周；396 个有正随访的删失查询中，22 个预测时间早于最后一次仍未记录越阈的随访，涉及 7 电芯、5 工况，其中 18 次集中在 P049。
+
+按统一规则“预测中位寿命不超过 4 周”，可判定的 16 个阳性和 485 个阴性查询上，斜率 TP/FP/TN/FN 为 16/3/482/0，原 HGB 为 14/75/410/2。18 个未知查询未填为阴性；四周查询高度依赖电芯和工况，不是独立样本。这个中位数规则与此前 HGB 的概率阈值规则不同，不能混用漏报数。
+
+删失 AFT 尽管没有预测早于删失下界，却漏掉全部 16 个阳性查询；概率模型中位数早于某个删失下界本身也不证明概率分布错误。结果为回顾性开发诊断，截止时点回顾性、工况少、删失可能信息性，缺少真实报告到达时间和服务成本，不是独立确认。下一步基于斜率波动与检测间隔设计因果、同资源的机制对照，先审查相关文献。
+
+[诊断报告](experiments/rulaas_external_kit_20261030/SLOPE_CENSOR_RESULTS_ZH.md)、[逐电芯](experiments/rulaas_external_kit_20261030/slope_censor_diagnostic01/per_cell.csv)、[逐工况](experiments/rulaas_external_kit_20261030/slope_censor_diagnostic01/per_group.csv)、[独立复核](experiments/rulaas_external_kit_20261030/slope_censor_diagnostic01/INDEPENDENT_RECOMPUTE.json)、[源码和历史文件无损归档](reports/rulaas_public_slope_diagnostic_lossless_20261030_v1/README.md)。
+
+---
+
+# 2026-10-30 KIT 阻抗数值增量开发对照（已完成）
 
 目标 ACTIVE，论文门未通过。KIT 16 个外部工况仍封存；C3/C4 读取均为 0。519 个共同查询中 105 个随后观察到记录事件、414 个右删失。当前阻抗配置 `NO_GAIN_FIXED_KIT_EIS_INFORMATION`：相同阻抗检测时间信息下，HGB 中位预测 MAE 为 7.75 周，加入阻抗数值后为 8.17 周；配对差 +0.42 周，三项比较校正后的 98.333% 工况组重抽样区间 [+0.17,+0.58] 周，2/16 电芯改善、14/16 恶化。纯容量斜率参考 2.79 周。
 

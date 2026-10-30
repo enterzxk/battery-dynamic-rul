@@ -1,0 +1,23 @@
+{
+  "status": "DESCRIPTIVE_SLOPE_CENSOR_DIAGNOSTIC",
+  "paper_ready": false,
+  "prediction_before_censor_is_not_a_probability_calibration_failure_by_itself": true,
+  "fixed_predictions_only": true,
+  "prior_eis_and_anchor_NO_GAIN_preserved": true,
+  "slope_positive_followup_queries": 396,
+  "slope_median_before_positive_censor_queries": 22,
+  "slope_cells_with_median_before_censor": 7,
+  "horizon_confusion": {
+    "TP": 16,
+    "FP": 3,
+    "TN": 482,
+    "FN": 0
+  },
+  "limits": [
+    "previously used development outcomes",
+    "retrospective cutoff",
+    "informative censoring possible",
+    "first recorded crossing is not exact physical failure",
+    "no measured reporting delay or intervention cost"
+  ]
+}
