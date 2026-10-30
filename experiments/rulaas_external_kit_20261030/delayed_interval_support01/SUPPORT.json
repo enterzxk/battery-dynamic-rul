@@ -1,0 +1,32 @@
+{
+  "status": "TRAINING_ONLY_DELAYED_INTERVAL_SUPPORT_AUDITED",
+  "cutoff_epoch": 1674233100.0,
+  "assumed_report_delay_days": 14,
+  "training_groups_allowed": 45,
+  "cells_with_any_available_record": 135,
+  "eligible_cells": 135,
+  "eligible_groups": 45,
+  "training_queries": 444,
+  "label_status_counts": {
+    "right_censored": 368,
+    "interval_event": 76
+  },
+  "query_relation_to_label_counts": {
+    "known_healthy_at_query_by_later_cutoff": 275,
+    "query_after_last_known_healthy": 93,
+    "before_or_at_last_healthy": 34,
+    "within_crossing_interval": 42
+  },
+  "interval_event_cells": 42,
+  "interval_event_groups": 15,
+  "right_censored_cells": 93,
+  "right_censored_groups": 33,
+  "zero_lower_interval_queries": 0,
+  "zero_lower_censor_queries": 0,
+  "event_interval_width_median_weeks": 2.9887996031746034,
+  "excluded": {},
+  "labels_use_absolute_age": true,
+  "arrival_delay_is_simulated": true,
+  "cutoff_chosen_retrospectively": true,
+  "physical_crossing_interval_assumption_unverified": true
+}

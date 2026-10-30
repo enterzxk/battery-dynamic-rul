@@ -1,0 +1,19 @@
+{
+  "status": "APPROVED",
+  "owner": "01a17810-6ae6-7cf2-9729-5bfcaa8df5f4",
+  "issued_utc": "2026-10-30T06:07:17.052269+00:00",
+  "new_fits": 0,
+  "new_predictions": 0,
+  "allow_validation_outcomes": false,
+  "allow_C3": false,
+  "allow_C4": false,
+  "allow_confirmation_groups": false,
+  "input_sha256": {
+    "experiments/rulaas_external_kit_20261030/GO_DELAYED_INTERVAL_SUPPORT01.json": "f96bc223ee25f724fc14ac1190d94c4c1e32ceb9d07f157b0a19535660e6db56",
+    "experiments/rulaas_external_kit_20261030/TRAIN_SPLIT.json": "659ae78046e734c4729c2e3b741e0cfd6d42aaecdf98a46cfec9e900bc82829c",
+    "experiments/rulaas_external_kit_20261030/development_audit01/development_candidates.csv": "8dd7af27c3568d1e2ae24766f4ce420587c2f75fe68f5f90d0edc463929d4e27",
+    "experiments/rulaas_external_kit_20261030/delayed_interval_support01/training_cases.csv": "a638ca9cbd58a6f383296364fdfc9b8f784ce2d9b51aa65e9bfb6dc29b92a8b3",
+    "experiments/rulaas_external_kit_20261030/delayed_interval_support01/SUPPORT.json": "c3b39dc265ccf83f382ab3856b65175cb36bad7798542e1a9ea88e039739b82a",
+    "experiments/rulaas_external_kit_20261030/review_delayed_interval_support.py": "4c1856bb2f07fd6d19809096e96aba875b81d024f9d24771a0fcb38375ca6149"
+  }
+}

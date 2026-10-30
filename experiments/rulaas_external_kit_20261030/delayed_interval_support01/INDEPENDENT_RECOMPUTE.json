@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "training_queries_independently_reconstructed": 444,
+  "source_query_key_coverage_exact": true,
+  "feature_prefix_and_report_delay_checked": true,
+  "absolute_interval_and_right_censor_labels_checked": true,
+  "label_maturity_before_cutoff_checked": true,
+  "training_group_isolation_checked": true,
+  "statuses": {
+    "right_censored": 368,
+    "interval_event": 76
+  },
+  "query_relations": {
+    "known_healthy_at_query_by_later_cutoff": 275,
+    "query_after_last_known_healthy": 93,
+    "before_or_at_last_healthy": 34,
+    "within_crossing_interval": 42
+  },
+  "new_fits": 0,
+  "new_predictions": 0,
+  "validation_outcomes_parsed": 0,
+  "C3_payload_reads": 0,
+  "C4_payload_reads": 0,
+  "confirmation_groups_opened": 0,
+  "GO_sha256": "9132d0a02912147e5c58b62b09e74ba9b732d9df5a882f055671b8c2ade946c0",
+  "finished_utc": "2026-10-30T06:07:17.071360+00:00",
+  "limit": "14-day reporting delay and physical irreversibility remain assumptions; cutoff was selected retrospectively."
+}

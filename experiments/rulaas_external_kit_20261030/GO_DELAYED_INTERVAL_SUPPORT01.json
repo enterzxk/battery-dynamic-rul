@@ -1,0 +1,25 @@
+{
+  "status": "APPROVED",
+  "request_id": "KIT_DELAYED_INTERVAL_SUPPORT_20261030_01",
+  "owner": "01a17810-6ae6-7cf2-9729-5bfcaa8df5f4",
+  "issued_utc": "2026-10-30T06:06:48.570453+00:00",
+  "actual_model": "gpt-6.1-terra",
+  "new_fit_cap": 0,
+  "new_model_prediction_cap": 0,
+  "training_row_cap": 5000,
+  "cutoff_epoch": 1674233100.0,
+  "assumed_report_delay_seconds": 1209600.0,
+  "allow_validation_outcomes": false,
+  "allow_confirmation_groups": false,
+  "allow_C3": false,
+  "allow_C4": false,
+  "input_sha256": {
+    "AGENTS.md": "93488b4e887ff13c8ac88687d1be4197a52c22667708dfd960d424007f3b1c19",
+    "experiments/rulaas_external_kit_20261030/TRAIN_SPLIT.json": "659ae78046e734c4729c2e3b741e0cfd6d42aaecdf98a46cfec9e900bc82829c",
+    "experiments/rulaas_external_kit_20261030/cutoff_support01/SELECTION.json": "7a8b1871234f33424ac924bc29fee0bbd9712a98e2592bd11421b010aa8e59df",
+    "experiments/rulaas_external_kit_20261030/development_audit01/development_candidates.csv": "8dd7af27c3568d1e2ae24766f4ce420587c2f75fe68f5f90d0edc463929d4e27",
+    "experiments/rulaas_external_kit_20261030/interval_identifiability01/INDEPENDENT_RECOMPUTE.json": "ffcc32c87300011c617cbb4b096940692d610c8e8e253c0b9217cab87d96d315",
+    "experiments/rulaas_external_kit_20261030/DELAYED_INTERVAL_SUPPORT_PROTOCOL_ZH.md": "9acb481fe1fae8cc000994f1490ca3a23c81be11ce4c899579698ae52f452869",
+    "experiments/rulaas_external_kit_20261030/delayed_interval_support.py": "a0d34bcedc98b1b9603c079e8bf28f3a34f87ca846602ea755e52fd9dc97923c"
+  }
+}

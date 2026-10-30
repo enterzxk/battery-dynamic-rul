@@ -1,0 +1,14 @@
+{
+  "status": "TRAINING_ONLY_DELAYED_INTERVAL_LABELS_BUILT_NOT_MODEL_GAIN",
+  "paper_ready": false,
+  "labels_available_by_cutoff_only": true,
+  "no_assumed_alive_at_query": true,
+  "prior_no_gain_preserved": true,
+  "limits": [
+    "first recorded crossing brackets a latent crossing only under unverified irreversibility",
+    "14-day report delay simulated",
+    "informative censoring possible",
+    "cutoff choice retrospective",
+    "no validation performance"
+  ]
+}

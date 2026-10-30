@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-30T06:03:57.210647+00:00",
-  "content_sha256": "c405815e4be7e7eeccc8399432b780f3050357f8fc681befb067bb6b6f9c9975",
-  "file_count": 1336,
+  "snapshot_utc": "2026-10-30T06:07:57.467488+00:00",
+  "content_sha256": "af53aa8d3f4a3945264d1ab311f1f9d6ed1d63ef845983dfc26de517318be39f",
+  "file_count": 1346,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,8 +14,8 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 33529,
-      "sha256": "eef1b9c92b7e20ea9d914ebb071cfe56242a2baec97c8cc05a8e475030ebb33a"
+      "bytes": 35298,
+      "sha256": "bf8e14b1eeef2ce0b49a6d37e5f4e379526da2f6983469975388e5c2208cf7b8"
     },
     {
       "path": "README.md",
@@ -38,8 +38,8 @@
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 100627,
-      "sha256": "8e45aa2966a3a850a17e1279b5ec57c9733fd6ddd793984a0bef5a92f8070f32"
+      "bytes": 101199,
+      "sha256": "9c1aa357146cee147356af045ae36b2491b3cc68f6e47f2cd50672258493ebc7"
     },
     {
       "path": "automation/bin/matr_raw_batch2_asset_worker_v1.py",
@@ -176,8 +176,8 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 37133,
-      "sha256": "786a9ce7a55a4d24cfadfb7e1803d6fbc6de01d8ed3a1508607b040a43f6f7a3"
+      "bytes": 38914,
+      "sha256": "9102c0ab9cdc503ddd3f666aa0d824046827988e886ef802e711fc4dc034d992"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
@@ -3684,6 +3684,18 @@
       "sha256": "2cec7579c294717c4691f1dfe9bec39a397f393c7da28f6486604b47ff71f1b2"
     },
     {
+      "path": "experiments/rulaas_external_kit_20261030/DELAYED_INTERVAL_SUPPORT_PROTOCOL_ZH.md",
+      "source_path": "experiments/rulaas_external_kit_20261030/DELAYED_INTERVAL_SUPPORT_PROTOCOL_ZH.md",
+      "bytes": 2974,
+      "sha256": "9acb481fe1fae8cc000994f1490ca3a23c81be11ce4c899579698ae52f452869"
+    },
+    {
+      "path": "experiments/rulaas_external_kit_20261030/DELAYED_INTERVAL_SUPPORT_RESULTS_ZH.md",
+      "source_path": "experiments/rulaas_external_kit_20261030/DELAYED_INTERVAL_SUPPORT_RESULTS_ZH.md",
+      "bytes": 2904,
+      "sha256": "a49e0a3f128bb47f4fde2df2698ac577071a9118530ec0800db1071b242e8459"
+    },
+    {
       "path": "experiments/rulaas_external_kit_20261030/DELAY_DIAGNOSIS_PROTOCOL_ZH.md",
       "source_path": "experiments/rulaas_external_kit_20261030/DELAY_DIAGNOSIS_PROTOCOL_ZH.md",
       "bytes": 1729,
@@ -3760,6 +3772,18 @@
       "source_path": "experiments/rulaas_external_kit_20261030/GO_CUTOFF_SUPPORT01.json",
       "bytes": 1694,
       "sha256": "a914199b9e29be7b6ee2272ca06e6fcf0b299d2e1aaf96e63ec3b4d300c32341"
+    },
+    {
+      "path": "experiments/rulaas_external_kit_20261030/GO_DELAYED_INTERVAL_SUPPORT01.json",
+      "source_path": "experiments/rulaas_external_kit_20261030/GO_DELAYED_INTERVAL_SUPPORT01.json",
+      "bytes": 1523,
+      "sha256": "f96bc223ee25f724fc14ac1190d94c4c1e32ceb9d07f157b0a19535660e6db56"
+    },
+    {
+      "path": "experiments/rulaas_external_kit_20261030/GO_DELAYED_INTERVAL_SUPPORT_REVIEW01.json",
+      "source_path": "experiments/rulaas_external_kit_20261030/GO_DELAYED_INTERVAL_SUPPORT_REVIEW01.json",
+      "bytes": 1228,
+      "sha256": "9132d0a02912147e5c58b62b09e74ba9b732d9df5a882f055671b8c2ade946c0"
     },
     {
       "path": "experiments/rulaas_external_kit_20261030/GO_DELAY_DIAGNOSIS01.json",
@@ -4044,6 +4068,36 @@
       "sha256": "2959a748d1411f46af75649adf41441c59f767a26ce19a374a60c2312d69e428"
     },
     {
+      "path": "experiments/rulaas_external_kit_20261030/delayed_interval_support.py",
+      "source_path": "experiments/rulaas_external_kit_20261030/delayed_interval_support.py",
+      "bytes": 9729,
+      "sha256": "a0d34bcedc98b1b9603c079e8bf28f3a34f87ca846602ea755e52fd9dc97923c"
+    },
+    {
+      "path": "experiments/rulaas_external_kit_20261030/delayed_interval_support01/DECISION.json",
+      "source_path": "experiments/rulaas_external_kit_20261030/delayed_interval_support01/DECISION.json",
+      "bytes": 472,
+      "sha256": "542dcabd6ad865881c14fcdf0e9cf09b6dee69fcafb53bcf7efd753b78188f61"
+    },
+    {
+      "path": "experiments/rulaas_external_kit_20261030/delayed_interval_support01/INDEPENDENT_RECOMPUTE.json",
+      "source_path": "experiments/rulaas_external_kit_20261030/delayed_interval_support01/INDEPENDENT_RECOMPUTE.json",
+      "bytes": 1011,
+      "sha256": "bb8a5f156128d980fd247a197cc5ae2468355e138623750e397e71a62c959247"
+    },
+    {
+      "path": "experiments/rulaas_external_kit_20261030/delayed_interval_support01/SUPPORT.json",
+      "source_path": "experiments/rulaas_external_kit_20261030/delayed_interval_support01/SUPPORT.json",
+      "bytes": 1018,
+      "sha256": "c3b39dc265ccf83f382ab3856b65175cb36bad7798542e1a9ea88e039739b82a"
+    },
+    {
+      "path": "experiments/rulaas_external_kit_20261030/delayed_interval_support01/public_receipt.json",
+      "source_path": "experiments/rulaas_external_kit_20261030/delayed_interval_support01/public_receipt.json",
+      "bytes": 562,
+      "sha256": "ec8dbed4f7f8405ac12b95bcba2584f02580bc9b8264b0ded2dd0e98117ad6c8"
+    },
+    {
       "path": "experiments/rulaas_external_kit_20261030/development_audit01/SUMMARY.json",
       "source_path": "experiments/rulaas_external_kit_20261030/development_audit01/SUMMARY.json",
       "bytes": 1427,
@@ -4198,6 +4252,12 @@
       "source_path": "experiments/rulaas_external_kit_20261030/review_delay_diagnosis.py",
       "bytes": 6922,
       "sha256": "bc6d5ff9825ea9dc731eef67b55db0ff485ad5bee81c9e777b1935baec890332"
+    },
+    {
+      "path": "experiments/rulaas_external_kit_20261030/review_delayed_interval_support.py",
+      "source_path": "experiments/rulaas_external_kit_20261030/review_delayed_interval_support.py",
+      "bytes": 7062,
+      "sha256": "4c1856bb2f07fd6d19809096e96aba875b81d024f9d24771a0fcb38375ca6149"
     },
     {
       "path": "experiments/rulaas_external_kit_20261030/review_trend_window.py",
