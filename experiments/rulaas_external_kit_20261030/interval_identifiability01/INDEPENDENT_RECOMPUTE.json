@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "event_intervals_independently_reconstructed": 17,
+  "saved_forecasts_evaluated": 1396,
+  "query_membership_and_conservative_bounds_checked": true,
+  "posthoc_recorded_capacity_check": {
+    "event_cells": 17,
+    "cells_with_later_above_threshold_record": 0,
+    "cells_with_any_pre_event_capacity_increase": 0,
+    "pre_event_increasing_adjacent_steps": 0,
+    "pre_event_adjacent_steps": 190,
+    "interpretation": "Recorded-capacity increases/rebounds can reflect measurement noise; neither prove nor disprove monotonicity of latent physical health."
+  },
+  "unverified_physical_irreversibility_assumption": true,
+  "new_fits": 0,
+  "new_predictions": 0,
+  "new_queue_dispatches": 0,
+  "C3_payload_reads": 0,
+  "C4_payload_reads": 0,
+  "confirmation_groups_opened": 0,
+  "GO_sha256": "e3ca4f3490409fa00efdf978cfd0c9ca78ae8a72311a101b1f3912464390ea14",
+  "finished_utc": "2026-10-30T06:00:49.076053+00:00"
+}

@@ -1,0 +1,15 @@
+{
+  "event_cells": 17,
+  "event_groups": 6,
+  "event_query_count": 349,
+  "event_queries_strictly_inside_interval": 50,
+  "four_week_positive_queries": 66,
+  "four_week_positives_strictly_inside_interval": 50,
+  "queued1_missed_positive_queries": 11,
+  "queued1_missed_positives_strictly_inside_interval": 6,
+  "median_observation_interval_weeks": 2.998411044973545,
+  "min_observation_interval_weeks": 2.8737962962962964,
+  "max_observation_interval_weeks": 3.020838293650794,
+  "assumption": "Potential continuous first threshold crossing is bracketed only under an unverified irreversible, accurately measured threshold-state assumption.",
+  "observed_event_target_remains_the_first_recorded_crossing": true
+}

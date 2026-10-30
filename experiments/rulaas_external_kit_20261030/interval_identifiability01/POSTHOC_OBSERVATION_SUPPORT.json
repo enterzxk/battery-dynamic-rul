@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "posthoc_descriptive_only": true,
+  "event_cells": 17,
+  "cells_with_post_event_records": 17,
+  "post_event_records": 175,
+  "cells_with_later_above_threshold": 0,
+  "alarm_category_by_interval_position": {
+    "both_alarm": {
+      "inside_interval": 44,
+      "at_or_before_last_healthy": 11
+    },
+    "both_miss": {
+      "at_or_before_last_healthy": 5
+    },
+    "a_miss_b_alarm": {
+      "inside_interval": 6
+    }
+  },
+  "limit": "Recorded samples and first recorded threshold crossings only; latent continuous irreversibility remains unverified.",
+  "source_sha256": {
+    "experiments/rulaas_external_kit_20261030/development_audit01/development_candidates.csv": "8dd7af27c3568d1e2ae24766f4ce420587c2f75fe68f5f90d0edc463929d4e27",
+    "experiments/rulaas_external_kit_20261030/queue_value01/predictions.csv": "ded12554b1210e42fc6e1bf651ac380e86da8e6ebfe9b03c7df6c5a3647bad98",
+    "experiments/rulaas_external_kit_20261030/delay_diagnosis01/positive_alarm_per_query.csv": "f49d06dd0173b9579b97ef1873e08726607ca736240ac2a8e5cb294a1481ef4a"
+  },
+  "new_fits": 0,
+  "new_predictions": 0,
+  "new_queue_dispatches": 0,
+  "C3_payload_reads": 0,
+  "C4_payload_reads": 0,
+  "confirmation_groups_opened": 0
+}

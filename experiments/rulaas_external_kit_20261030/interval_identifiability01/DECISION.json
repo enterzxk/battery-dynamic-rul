@@ -1,0 +1,13 @@
+{
+  "status": "RECORDED_EVENT_INTERVAL_IDENTIFIABILITY_DIAGNOSTIC",
+  "paper_ready": false,
+  "physical_crossing_bracket_assumption_unverified": true,
+  "lower_and_upper_are_error_bounds_not_actual_MAE": true,
+  "prior_queue_NO_GAIN_preserved": true,
+  "limits": [
+    "capacity regeneration or noise can invalidate monotone threshold bracketing",
+    "previously used development outcomes",
+    "informative censoring possible",
+    "no real reporting delay"
+  ]
+}

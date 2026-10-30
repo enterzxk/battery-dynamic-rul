@@ -1,0 +1,16 @@
+{
+  "status": "SUCCESS",
+  "new_global_fits": 0,
+  "new_local_fits": 0,
+  "new_model_predictions": 0,
+  "new_queue_dispatches": 0,
+  "C3_payload_reads": 0,
+  "C4_payload_reads": 0,
+  "confirmation_groups_opened": 0,
+  "actual_coordinator_model_recorded": "gpt-6.1-terra",
+  "finished_utc": "2026-10-30T06:00:12.586015+00:00",
+  "elapsed_seconds": 0.07833337783813477,
+  "GO_sha256": "cc1eb0418410fcce00b78ac2296c3035d739cbcdfd7a730738be7b18d05a4ef1",
+  "saved_event_predictions_evaluated": 1396,
+  "intervals_reconstructed": 17
+}

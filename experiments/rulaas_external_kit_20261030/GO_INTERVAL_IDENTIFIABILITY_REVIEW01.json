@@ -1,0 +1,22 @@
+{
+  "status": "APPROVED",
+  "owner": "01a17810-6ae6-7cf2-9729-5bfcaa8df5f4",
+  "issued_utc": "2026-10-30T06:00:48.995487+00:00",
+  "new_fits": 0,
+  "new_predictions": 0,
+  "new_queue_dispatches": 0,
+  "allow_C3": false,
+  "allow_C4": false,
+  "allow_confirmation_groups": false,
+  "input_sha256": {
+    "experiments/rulaas_external_kit_20261030/GO_INTERVAL_IDENTIFIABILITY01.json": "cc1eb0418410fcce00b78ac2296c3035d739cbcdfd7a730738be7b18d05a4ef1",
+    "experiments/rulaas_external_kit_20261030/TRAIN_SPLIT.json": "659ae78046e734c4729c2e3b741e0cfd6d42aaecdf98a46cfec9e900bc82829c",
+    "experiments/rulaas_external_kit_20261030/development_audit01/development_candidates.csv": "8dd7af27c3568d1e2ae24766f4ce420587c2f75fe68f5f90d0edc463929d4e27",
+    "experiments/rulaas_external_kit_20261030/queue_value01/predictions.csv": "ded12554b1210e42fc6e1bf651ac380e86da8e6ebfe9b03c7df6c5a3647bad98",
+    "experiments/rulaas_external_kit_20261030/delay_diagnosis01/reference_predictions.csv": "60d0d78e4a78ab0bb2a0c1537aef4f937415a0e0c878af2146e1123761e76565",
+    "experiments/rulaas_external_kit_20261030/interval_identifiability01/SUPPORT.json": "9ab39358802c9e785b6d0b914b34339578413fcdf6f5fb6dd535ce4f2ab4135d",
+    "experiments/rulaas_external_kit_20261030/interval_identifiability01/summary.csv": "de32124977a156e1eeb18ad99a5bcc99cf740830131e40a3aa125e80e2797c90",
+    "experiments/rulaas_external_kit_20261030/interval_identifiability01/per_cell.csv": "599563065e0dd2d9e28659978a142bc684da9541efcc51a5b79e06342bf70580",
+    "experiments/rulaas_external_kit_20261030/review_interval_identifiability.py": "6f77b4f25b4cc408e0b6de2bf2f1781f77f9616280e92df03d67267ef53bc874"
+  }
+}
