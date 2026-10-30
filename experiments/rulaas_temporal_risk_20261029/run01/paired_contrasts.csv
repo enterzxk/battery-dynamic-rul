@@ -1,0 +1,3 @@
+candidate,reference,delta_Brier4,family_corrected_CI_low,family_corrected_CI_high,relative_Brier_improvement,candidate_missed_episodes,reference_missed_episodes,groups,cells,worst_cell,worst_cell_delta,bootstrap_replicates,interpretation
+hgb_F3_platt,logit_F3_platt,-0.10891743556901462,-0.16130687468401889,-0.06850024014167773,0.522328825172643,1,51,10,18,G1C2,0.041934920490506844,5000,"Conditional development bootstrap over ten source groups, not paper confirmation."
+hgb_F3_platt,hgb_F0_platt,-0.004746499125286244,-0.03846996238573051,0.02879381720043064,0.04548555135922151,1,0,10,18,G55C2,0.10079354066801417,5000,"Conditional development bootstrap over ten source groups, not paper confirmation."

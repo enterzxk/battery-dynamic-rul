@@ -1,0 +1,13 @@
+{
+  "status": "NO_GAIN_FIXED_F3_RISK_SCREEN",
+  "paper_ready": false,
+  "prior_pending_policy_stopped": true,
+  "primary_gate": "F3 calibrated Brier improves >=5 percent vs both F3 logistic and F0 HGB, each family-corrected CI below zero, and misses no more pre-event cell/arm episodes.",
+  "limits": [
+    "Only 10 held groups and 15 mature training groups.",
+    "Hypothetical EOL+14d feedback, not measured label availability.",
+    "Retrospective cutoff selected on historical query support; same dataset has prior development exposure.",
+    "Censored train queries excluded from supervised loss, not solved.",
+    "Static probability component, no online scheduler, interval distribution, real service or independent dataset."
+  ]
+}

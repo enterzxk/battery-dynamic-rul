@@ -593,6 +593,12 @@ def main():
     chosen.difference_update(['experiments/multirate_state_A2_20261022/a2_fastdata.py','reports/pbt_stage1_dkp_keys_v4_root/stage1_dkp_key_scanner_v4.py'])
     BINARY_PREDICTION_ARCHIVES.add('reports/rulaas_public_prior_code_lossless_20261029_v1/archive.bin')
     chosen.update('reports/rulaas_public_prior_code_lossless_20261029_v1/'+n for n in ['archive.bin','validation.json','decode.py','README.md'])
+    # Group and as-of risk pilot 2026-10-30. No raw data or checkpoints.
+    chosen.update('experiments/rulaas_temporal_risk_20261029/'+n for n in ['audit_v2.py','AUDIT_PROTOCOL_ZH.md','GO_AUDIT_RUN01.json','GO_AUDIT_RUN02.json','audit01/failure_receipt.json','audit02/AUDIT.json','audit02/split.json','audit02/public_receipt.json','run.py','PROTOCOL_ZH.md','GO_RUN01.json','RESULTS_ZH.md','review_saved_v2.py','run01/REVIEW01_FAILURE.json','run01/summary.csv','run01/arm_metrics.csv','run01/calibration_bins.csv','run01/paired_contrasts.csv','run01/fit_manifest.json','run01/INDEPENDENT_RECOMPUTE_V2.json','run01/ROOT_DECISION.json','run01/public_receipt.json','diagnose_oof.py','GO_OOF_DIAGNOSIS_RUN01.json','oof_diagnosis01/summary.json','oof_diagnosis01/INDEPENDENT_RECOMPUTE.json','oof_diagnosis01/public_receipt.json','audit_horizon.py','HORIZON_AUDIT_PROTOCOL_ZH.md','HORIZON_RESULTS_ZH.md','GO_HORIZON_AUDIT_RUN01.json','horizon_audit01/SUMMARY.json','horizon_audit01/per_group.csv','horizon_audit01/INDEPENDENT_RECOMPUTE.json','horizon_audit01/public_receipt.json','STAGE_DECISION.json'])
+    # Preserve seven older A2/A3 files in a verified lossless archive.
+    chosen.difference_update(['experiments/multirate_state_A2_20261022/a2_fixtures.py','experiments/multirate_state_A2_20261022/a2_fixtures_fast.py','experiments/multirate_state_A2_20261022/a2_train_v3.py','experiments/multirate_state_A2_20261022/a2_targets.py','experiments/multirate_state_A3_rate_20261024/a3t/a3t_model.py','experiments/multirate_state_A3_rate_20261024/a3t/a3t_train.py','experiments/multirate_state_A3_rate_20261024/a3_train.py'])
+    BINARY_PREDICTION_ARCHIVES.add('reports/rulaas_public_multirate_code_lossless_20261030_v1/archive.bin')
+    chosen.update('reports/rulaas_public_multirate_code_lossless_20261030_v1/'+n for n in ['archive.bin','validation.json','decode.py','README.md'])
     contents, files, skipped, binary_blobs = {}, [], [], {}
     mapping = {'README.md': 'docs/GITHUB_README_ZH.md', 'agent.md': 'AGENTS.md'}
     mapping.update({rel: rel for rel in sorted(chosen)})

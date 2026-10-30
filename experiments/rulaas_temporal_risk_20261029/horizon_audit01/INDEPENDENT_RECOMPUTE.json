@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "new_fits": 0,
+  "new_inference_rows": 0,
+  "C1C2_source_cells_read": 51,
+  "C3_payload_reads": 0,
+  "C4_payload_reads": 0,
+  "checked_rows": 1593,
+  "counts": {
+    "mature_negative": 963,
+    "old": 940,
+    "new": 279,
+    "new_no_EOL": 0,
+    "mature_positive": 256,
+    "unmatured_or_censored_at_cutoff": 374
+  },
+  "prefix_only_evidence_and_arrival": "PASS",
+  "held_group_exclusion": "PASS",
+  "unknown_horizons_not_imputed": "PASS",
+  "caveat": "Synthetic full-source reference registry, not a measured service feedback channel.",
+  "input_sha256": {
+    "experiments/rulaas_temporal_risk_20261029/horizon_audit01/training_label_status.csv": "508b8c55bc06e4263c2d1249442d91c8b120decee2a87c975a96e5254b34b44e",
+    "experiments/rulaas_temporal_risk_20261029/horizon_audit01/SUMMARY.json": "ee1954e32061c3703fb4dce5d1f85bfb3462f0468f34a3874a2e25c77e5dc982",
+    "experiments/rulaas_temporal_risk_20261029/horizon_audit01/receipt.json": "2c2bb4e09c60feec361d18f01199caa1e9850541a3cedaa7335e3c8dd81f9e40",
+    "experiments/rulaas_temporal_risk_20261029/audit02/split.json": "a107dcda6a5c0f853312418c50d2002a80f5566e2723bf3de02f0b06cbfd9ba2"
+  }
+}

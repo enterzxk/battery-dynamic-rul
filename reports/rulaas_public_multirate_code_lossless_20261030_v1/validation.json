@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "archive_type": "ZIP",
+  "archive_sha256": "14c000545124b7654249a3bc6dddeb4d114a0a49f65d1ebade39b6c861094ad6",
+  "archive_bytes": 52165,
+  "originals_unchanged_on_server": true,
+  "prior_commit": "c77ea6ab59a983314915706cb117ec48b6714cca",
+  "members": [
+    {
+      "original_path": "experiments/multirate_state_A2_20261022/a2_fixtures.py",
+      "original_bytes": 27824,
+      "original_sha256": "0dc22f205cb767a7d3cf60673eb3e33b6da4c35ac6aa48a7633dfbe4310e43a2",
+      "prior_immutable_url": "https://github.com/enterzxk/battery-dynamic-rul/blob/c77ea6ab59a983314915706cb117ec48b6714cca/experiments/multirate_state_A2_20261022/a2_fixtures.py"
+    },
+    {
+      "original_path": "experiments/multirate_state_A2_20261022/a2_fixtures_fast.py",
+      "original_bytes": 26881,
+      "original_sha256": "37e2f359fda5ddd715001d9e78f8ad0bc61b19874cc6a7eaab3b9f16e08d8785",
+      "prior_immutable_url": "https://github.com/enterzxk/battery-dynamic-rul/blob/c77ea6ab59a983314915706cb117ec48b6714cca/experiments/multirate_state_A2_20261022/a2_fixtures_fast.py"
+    },
+    {
+      "original_path": "experiments/multirate_state_A2_20261022/a2_train_v3.py",
+      "original_bytes": 23496,
+      "original_sha256": "5db20a757ed7c2663e502102f6cc489885ad20ebbfcc82ceabd3b023b46b64ee",
+      "prior_immutable_url": "https://github.com/enterzxk/battery-dynamic-rul/blob/c77ea6ab59a983314915706cb117ec48b6714cca/experiments/multirate_state_A2_20261022/a2_train_v3.py"
+    },
+    {
+      "original_path": "experiments/multirate_state_A2_20261022/a2_targets.py",
+      "original_bytes": 22500,
+      "original_sha256": "9c73696820e38257a131b421f4b70d3f6d57436eae8ee25da6f7d35ce0900901",
+      "prior_immutable_url": "https://github.com/enterzxk/battery-dynamic-rul/blob/c77ea6ab59a983314915706cb117ec48b6714cca/experiments/multirate_state_A2_20261022/a2_targets.py"
+    },
+    {
+      "original_path": "experiments/multirate_state_A3_rate_20261024/a3t/a3t_model.py",
+      "original_bytes": 25210,
+      "original_sha256": "eaad56b6449ed6596ea02c9418c98816e610378128ba61e8bf8041bc6445fd45",
+      "prior_immutable_url": "https://github.com/enterzxk/battery-dynamic-rul/blob/c77ea6ab59a983314915706cb117ec48b6714cca/experiments/multirate_state_A3_rate_20261024/a3t/a3t_model.py"
+    },
+    {
+      "original_path": "experiments/multirate_state_A3_rate_20261024/a3t/a3t_train.py",
+      "original_bytes": 24835,
+      "original_sha256": "04edd9054fab53cbb53259a85dbaa5c6a85d820764bca5f22769d3225a3e8f2b",
+      "prior_immutable_url": "https://github.com/enterzxk/battery-dynamic-rul/blob/c77ea6ab59a983314915706cb117ec48b6714cca/experiments/multirate_state_A3_rate_20261024/a3t/a3t_train.py"
+    },
+    {
+      "original_path": "experiments/multirate_state_A3_rate_20261024/a3_train.py",
+      "original_bytes": 24592,
+      "original_sha256": "648eeede3e3d22654c6cec63600ca65818d63a378ddaaa8100028e0409c92918",
+      "prior_immutable_url": "https://github.com/enterzxk/battery-dynamic-rul/blob/c77ea6ab59a983314915706cb117ec48b6714cca/experiments/multirate_state_A3_rate_20261024/a3_train.py"
+    }
+  ],
+  "contains_raw_battery_data": false,
+  "contains_checkpoints": false
+}

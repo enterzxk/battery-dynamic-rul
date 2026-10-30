@@ -1,0 +1,80 @@
+{
+  "status": "PASS",
+  "new_fits": 0,
+  "new_inference_rows": 0,
+  "C3_payload_reads": 0,
+  "C4_payload_reads": 0,
+  "methods": 7,
+  "held_queries": 536,
+  "held_cells": 18,
+  "held_groups": 10,
+  "common_keys_targets_and_censor_status": true,
+  "group_oof_fit_manifest": "PASS",
+  "metrics_and_family_bootstrap": "PASS",
+  "max_Brier_recompute_error": 0.0,
+  "platt_parameters": {
+    "hgb_F0": {
+      "slope": 0.27959069332993475,
+      "intercept": 0.15582922829732915
+    },
+    "hgb_F3": {
+      "slope": 0.28013887910521995,
+      "intercept": -0.07339127288248196
+    },
+    "logit_F3": {
+      "slope": 0.032603570705189926,
+      "intercept": -0.5720050747646607
+    }
+  },
+  "logit_raw_scores_at_least_half": 137,
+  "logit_calibrated_scores_at_least_half": 0,
+  "logit_raw_pre_event_misses": 6,
+  "logit_calibrated_pre_event_misses": 51,
+  "posthoc_stronger_references": [
+    {
+      "candidate": "hgb_F3_platt",
+      "reference": "logit_F3_raw",
+      "delta_Brier4": -0.01234458373247483,
+      "CI_low": -0.048880168854320394,
+      "CI_high": 0.031142771780843844,
+      "candidate_missed_episodes": 1,
+      "reference_missed_episodes": 6,
+      "cells_better": 11,
+      "cells_worse": 7,
+      "worst_cell": "G41C1",
+      "worst_cell_delta": 0.14202754770480364
+    },
+    {
+      "candidate": "hgb_F3_platt",
+      "reference": "hgb_F0_raw",
+      "delta_Brier4": -0.0014258029650116844,
+      "CI_low": -0.05347210512255556,
+      "CI_high": 0.044811987765501875,
+      "candidate_missed_episodes": 1,
+      "reference_missed_episodes": 0,
+      "cells_better": 8,
+      "cells_worse": 10,
+      "worst_cell": "G47C1",
+      "worst_cell_delta": 0.13265564090547366
+    }
+  ],
+  "posthoc_note": "Raw-score references and their unadjusted intervals were added after results; they are not preregistered or independent.",
+  "limits": [
+    "Ten held operating groups; retrospective cutoff based on historical query support.",
+    "Synthetic event+14-day label availability, not measured feedback.",
+    "198 original censored training rows are not learned as negatives; censor-aware training remains unresolved.",
+    "No C3/C4, no online policy evaluation, no independent external test."
+  ],
+  "input_sha256": {
+    "experiments/rulaas_temporal_risk_20261029/run01/predictions.csv": "adaf9a2a76b4b518228ecbdd0fe6b2b1428e3646a69ed03125bae7b759d945d2",
+    "experiments/rulaas_temporal_risk_20261029/run01/summary.csv": "ecf7f1709ea2ad32750c10a2dbc2828b63508ade5a1097d4cb045da85157346e",
+    "experiments/rulaas_temporal_risk_20261029/run01/paired_contrasts.csv": "ca712608ccd1d2220d18853e3061bf9a9ccaeebe0e9db6e61bacc58ac50ca178",
+    "experiments/rulaas_temporal_risk_20261029/run01/arm_metrics.csv": "b95e29780e9131df6f4282551628d9549ac3753a5601a2f89558370af18d01b4",
+    "experiments/rulaas_temporal_risk_20261029/run01/calibration_bins.csv": "7d1da262d16ab2faa04f194ecb5ab3119929067fbd2093aca47766ed3577e950",
+    "experiments/rulaas_temporal_risk_20261029/run01/fit_manifest.json": "87034c6b1efefe5a5779b18e43778d4bbce9f2d2146936ad3b5d31dbde399921",
+    "experiments/rulaas_temporal_risk_20261029/run01/receipt.json": "d01fb8919343c88c4bdf2a29db0137b49326883dc911c6788662254d60e0abc7",
+    "experiments/rulaas_temporal_risk_20261029/run01/ROOT_DECISION.json": "141ee87291393b6bd9771b9b1e007ec01f88657f9ea3fbfe8e0e9a0b68c0e014",
+    "experiments/rulaas_temporal_risk_20261029/audit02/AUDIT.json": "3599057353bce8d8e618cda8a890874dd5a517b86a5b93a0f82e83299f584603",
+    "experiments/rulaas_temporal_risk_20261029/audit02/split.json": "a107dcda6a5c0f853312418c50d2002a80f5566e2723bf3de02f0b06cbfd9ba2"
+  }
+}

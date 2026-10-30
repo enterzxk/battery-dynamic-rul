@@ -1,0 +1,163 @@
+{
+  "status": "PASS_GROUP_AND_HYPOTHETICAL_ASOF_SUPPORT",
+  "new_fits": 0,
+  "model_prediction_rows": 0,
+  "C1C2_source_cells_read": 124,
+  "C3_payload_reads": 0,
+  "C4_payload_reads": 0,
+  "total_rows": 6870,
+  "source_cells": 124,
+  "source_groups": 63,
+  "common_key_duplicates": 0,
+  "F0_F3_first74_identical": true,
+  "RPT_visibility_and_known_event": "PASS",
+  "cycle_timestamp_checks": 6870,
+  "source_event_and_censor_label": "PASS",
+  "max_RUL_label_error": 0.0,
+  "cutoff_grid": [
+    {
+      "training_maturity_quantile": 0.2,
+      "cutoff_epoch": 1644617327.4,
+      "cutoff_utc": "2022-02-11T22:08:47.400000+00:00",
+      "mature_training_groups": 10,
+      "mature_training_cells": 18,
+      "mature_training_rows": 670,
+      "held_groups_with_unconfirmed_query": 11,
+      "held_cells_with_unconfirmed_query": 22,
+      "held_unconfirmed_query_rows": 724,
+      "meets_metadata_support": false
+    },
+    {
+      "training_maturity_quantile": 0.25,
+      "cutoff_epoch": 1648092430.25,
+      "cutoff_utc": "2022-03-24T03:27:10.250000+00:00",
+      "mature_training_groups": 13,
+      "mature_training_cells": 23,
+      "mature_training_rows": 848,
+      "held_groups_with_unconfirmed_query": 10,
+      "held_cells_with_unconfirmed_query": 19,
+      "held_unconfirmed_query_rows": 588,
+      "meets_metadata_support": false
+    },
+    {
+      "training_maturity_quantile": 0.3,
+      "cutoff_epoch": 1649324336.2,
+      "cutoff_utc": "2022-04-07T09:38:56.200000+00:00",
+      "mature_training_groups": 15,
+      "mature_training_cells": 27,
+      "mature_training_rows": 940,
+      "held_groups_with_unconfirmed_query": 10,
+      "held_cells_with_unconfirmed_query": 18,
+      "held_unconfirmed_query_rows": 536,
+      "meets_metadata_support": true
+    },
+    {
+      "training_maturity_quantile": 0.35,
+      "cutoff_epoch": 1651657421.55,
+      "cutoff_utc": "2022-05-04T09:43:41.550000+00:00",
+      "mature_training_groups": 19,
+      "mature_training_cells": 32,
+      "mature_training_rows": 1113,
+      "held_groups_with_unconfirmed_query": 8,
+      "held_cells_with_unconfirmed_query": 16,
+      "held_unconfirmed_query_rows": 464,
+      "meets_metadata_support": false
+    },
+    {
+      "training_maturity_quantile": 0.4,
+      "cutoff_epoch": 1653730064.2,
+      "cutoff_utc": "2022-05-28T09:27:44.200000+00:00",
+      "mature_training_groups": 21,
+      "mature_training_cells": 36,
+      "mature_training_rows": 1243,
+      "held_groups_with_unconfirmed_query": 8,
+      "held_cells_with_unconfirmed_query": 15,
+      "held_unconfirmed_query_rows": 418,
+      "meets_metadata_support": false
+    },
+    {
+      "training_maturity_quantile": 0.5,
+      "cutoff_epoch": 1658875823.0,
+      "cutoff_utc": "2022-07-26T22:50:23+00:00",
+      "mature_training_groups": 24,
+      "mature_training_cells": 45,
+      "mature_training_rows": 1663,
+      "held_groups_with_unconfirmed_query": 6,
+      "held_cells_with_unconfirmed_query": 11,
+      "held_unconfirmed_query_rows": 341,
+      "meets_metadata_support": false
+    }
+  ],
+  "selected_cutoff": {
+    "training_maturity_quantile": 0.3,
+    "cutoff_epoch": 1649324336.2,
+    "cutoff_utc": "2022-04-07T09:38:56.200000+00:00",
+    "mature_training_groups": 15,
+    "mature_training_cells": 27,
+    "mature_training_rows": 940,
+    "held_groups_with_unconfirmed_query": 10,
+    "held_cells_with_unconfirmed_query": 18,
+    "held_unconfirmed_query_rows": 536,
+    "meets_metadata_support": true
+  },
+  "training": {
+    "rows": 940,
+    "cells": 27,
+    "groups": 15,
+    "within4": 256,
+    "after4": 684,
+    "no_exact_label": 0
+  },
+  "held_observed": {
+    "rows": 536,
+    "cells": 18,
+    "groups": 10,
+    "within4": 179,
+    "after4": 357,
+    "no_exact_label": 0
+  },
+  "held_censored": {
+    "rows": 0,
+    "cells": 0,
+    "groups": 0,
+    "within4": 0,
+    "after4": 0,
+    "no_exact_label": 0
+  },
+  "training_group_oof_folds": [
+    {
+      "rows": 416,
+      "cells": 10,
+      "groups": 5,
+      "within4": 92,
+      "after4": 324,
+      "no_exact_label": 0
+    },
+    {
+      "rows": 313,
+      "cells": 9,
+      "groups": 5,
+      "within4": 79,
+      "after4": 234,
+      "no_exact_label": 0
+    },
+    {
+      "rows": 211,
+      "cells": 8,
+      "groups": 5,
+      "within4": 85,
+      "after4": 126,
+      "no_exact_label": 0
+    }
+  ],
+  "row_status_counts": {
+    "outer_train_event_not_mature_by_cutoff": 3870,
+    "outer_train_no_exact_event_label": 198
+  },
+  "limits": [
+    "Retrospective support-driven cutoff, no blind independent confirmation.",
+    "Event label availability is assumed at source EOL measurement plus 14 days; real service feedback is not measured.",
+    "Filtering to exact event labels excludes censored training rows; censor-aware learning remains unresolved.",
+    "Held query support is selected from historical input metadata and previous experiments used this source."
+  ]
+}

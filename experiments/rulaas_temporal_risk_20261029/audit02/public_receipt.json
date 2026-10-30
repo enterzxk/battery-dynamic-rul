@@ -1,0 +1,15 @@
+{
+  "status": "SUCCESS",
+  "request_id": "RULAAS_TEMPORAL_RISK_AUDIT_20261029_RUN02",
+  "started_utc": "2026-10-29T16:07:17.430070+00:00",
+  "new_fits": 0,
+  "model_prediction_rows": 0,
+  "C1C2_source_cells_read": 124,
+  "C3_payload_reads": 0,
+  "C4_payload_reads": 0,
+  "actual_coordinator_model_recorded": "gpt-6.1-terra",
+  "finished_utc": "2026-10-29T16:07:17.872172+00:00",
+  "elapsed_seconds": 0.44211316108703613,
+  "GO_sha256": "5cc8bb7ab454481fcb1f52a6f6e7b27f6290827deccda1c126b1bd284038c1e6",
+  "audit": "PASS_GROUP_AND_HYPOTHETICAL_ASOF_SUPPORT"
+}

@@ -1,0 +1,8 @@
+model,held_cells,held_groups,observed_rows,censored_rows,positive_rows,negative_rows,cell_macro_Brier4,cell_macro_logloss,false_negative_fraction,false_positive_fraction,pre_event_episode_units,missed_pre_event_episode_units,episode_unit
+constant_train_cell_mean,18,10,536,0,179,357,0.24369754878361136,0.6805450074548693,1.0,0.0,51,51,cell and arm; fixed 0.5 probability threshold
+hgb_F0_raw,18,10,536,0,179,357,0.1010311031133196,0.38312493611522036,0.03910614525139665,0.17647058823529413,51,0,cell and arm; fixed 0.5 probability threshold
+hgb_F0_platt,18,10,536,0,179,357,0.10435179927359416,0.35079742234595923,0.027932960893854747,0.2184873949579832,51,0,cell and arm; fixed 0.5 probability threshold
+hgb_F3_raw,18,10,536,0,179,357,0.1144302702661209,0.4685538144461348,0.15083798882681565,0.15126050420168066,51,1,cell and arm; fixed 0.5 probability threshold
+hgb_F3_platt,18,10,536,0,179,357,0.09960530014830792,0.3399683510798954,0.15083798882681565,0.14565826330532214,51,1,cell and arm; fixed 0.5 probability threshold
+logit_F3_raw,18,10,536,0,179,357,0.11194988388078274,0.49960572316080337,0.33519553072625696,0.05042016806722689,51,6,cell and arm; fixed 0.5 probability threshold
+logit_F3_platt,18,10,536,0,179,357,0.20852273571732252,0.6014646311806039,1.0,0.0,51,51,cell and arm; fixed 0.5 probability threshold

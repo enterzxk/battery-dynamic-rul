@@ -1,0 +1,18 @@
+{
+  "status": "RISK_NO_GAIN_HORIZON_LABEL_SUPPORT_ONLY",
+  "paper_ready": false,
+  "stop_fixed_F3_risk_screen": true,
+  "stop_fixed_pending_policy": true,
+  "C4_locked": true,
+  "substantive_findings": [
+    "F3 calibrated Brier 0.0996 vs F0 calibrated 0.1044; corrected CI contains zero and F3 misses 1 vs 0.",
+    "F3 logistic Platt collapses alarms; raw comparator must remain visible.",
+    "279 extra negative horizon labels mature under a hypothetical full-source reference registry; 374 remain unknown."
+  ],
+  "limits": [
+    "10 held groups, retrospectively selected cutoff, prior source development.",
+    "Reference feedback at source stop+14 days is hypothetical and assumes recorded RPTs remain available when a policy might skip them.",
+    "No actual censor-aware fit, online policy, independent external dataset, or C4 confirmation."
+  ],
+  "next": "Test partial-horizon feedback as a distinct train-only label-availability mechanism using fixed F0 baseline and same group/time keys; do not rerun stopped F3 configuration."
+}

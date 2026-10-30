@@ -1,0 +1,13 @@
+{
+  "status": "FAILED_SERIALIZATION",
+  "error": "TypeError: Object of type int64 is not JSON serializable",
+  "partial_artifact": "run01/INDEPENDENT_RECOMPUTE.json",
+  "partial_sha256": "0547346271e3ea59587831b12e193569531249d84215e0cebba950c416832b7d",
+  "reviewer": "review_saved.py",
+  "reviewer_sha256": "ee787de81b7b83876a19daf4bea6cab8fdf3f261179f874f9f112d16bb66adb5",
+  "new_fits": 0,
+  "new_inference_rows": 0,
+  "C3_payload_reads": 0,
+  "C4_payload_reads": 0,
+  "recorded_utc": "2026-10-29T16:11:25.217612+00:00"
+}

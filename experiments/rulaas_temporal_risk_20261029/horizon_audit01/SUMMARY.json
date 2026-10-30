@@ -1,0 +1,32 @@
+{
+  "status": "HORIZON_LABEL_SUPPORT_AUDITED_NOT_MODEL_GAIN",
+  "cutoff_epoch": 1649324336.2,
+  "hypothetical_label_delay_days": 14,
+  "training_unknown_status_rows": 1593,
+  "old_event_matured_rows": 940,
+  "mature_horizon_rows": 1219,
+  "mature_horizon_cells": 37,
+  "mature_horizon_groups": 19,
+  "mature_positive": 256,
+  "mature_negative": 963,
+  "newly_matured_rows": 279,
+  "newly_matured_positive": 0,
+  "newly_matured_negative": 279,
+  "new_negative_without_exact_EOL": 0,
+  "label_already_available_by_query_in_reference_registry": 0,
+  "unmatured_or_censored_at_cutoff": 374,
+  "unmatured_or_censored_groups": 13,
+  "known_event_at_query": 207,
+  "future_value_mutation_checks": 1593,
+  "new_fits": 0,
+  "model_prediction_rows": 0,
+  "C3_payload_reads": 0,
+  "C4_payload_reads": 0,
+  "limits": [
+    "Reference registry is assumed to receive every recorded RPT after 14 days, including tests a hypothetical policy might have skipped; not a measured feedback stream.",
+    "If reference registry labels were available to the service at query time, unknown-event inputs might need revision; the two channels have not been validated.",
+    "Unknown or incompletely followed horizons remain unlabeled; 0 is not imputed.",
+    "No model performance or independent validation is established.",
+    "Cutoff was selected retrospectively from input support."
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "new_fits": 0,
+  "new_inference_rows": 0,
+  "C3_payload_reads": 0,
+  "C4_payload_reads": 0,
+  "training_oof_cases": 940,
+  "score_rows_checked": 5640,
+  "group_split": "PASS",
+  "all_models_same_keys": true,
+  "max_calibrator_formula_error": 0.0,
+  "calibration_metrics_note": "Calibrators are evaluated on the same OOF scores used to fit them; not independent calibration validation.",
+  "input_sha256": {
+    "experiments/rulaas_temporal_risk_20261029/oof_diagnosis01/oof_scores.csv": "6dabdaa507eb25ac47a98406f1540e4089c78aab583f36aa97577391e9c1dd57",
+    "experiments/rulaas_temporal_risk_20261029/oof_diagnosis01/summary.json": "f23ba1243d5993696b3347f3b5c3b0028ce14eada861f4808fad520e9359702c",
+    "experiments/rulaas_temporal_risk_20261029/oof_diagnosis01/receipt.json": "78055a792a71e67ab58b1ad41e01ea01549bf3748da30e6fbf3f20a58129d768",
+    "experiments/rulaas_temporal_risk_20261029/audit02/split.json": "a107dcda6a5c0f853312418c50d2002a80f5566e2723bf3de02f0b06cbfd9ba2",
+    "experiments/rulaas_temporal_risk_20261029/run01/fit_manifest.json": "87034c6b1efefe5a5779b18e43778d4bbce9f2d2146936ad3b5d31dbde399921"
+  }
+}
