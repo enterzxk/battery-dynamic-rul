@@ -1,0 +1,10 @@
+# 历史公开试验文件的无损归档
+
+为保持 12 MiB 公开快照上限，6 份历史代码和指标以无损 ZIP 保存；科研服务器原件和旧 Git 提交均保留。执行 python decode.py 可核验，指定 --output-dir 到新目录可恢复，恢复不覆盖文件。归档不含原始电池数据、模型权重或论文全文。
+
+- [src/experiments/cptransformer_hust_pilot.py](https://github.com/enterzxk/battery-dynamic-rul/blob/edb4eb8fbd0d9ca36cdf1d22f783f3be5409e668/src/experiments/cptransformer_hust_pilot.py)；SHA256 260648dbae2030d2fb1be340adab4580047421233166ba12598214306b6adb46
+- [src/experiments/cpmlp_hust_pilot.py](https://github.com/enterzxk/battery-dynamic-rul/blob/edb4eb8fbd0d9ca36cdf1d22f783f3be5409e668/src/experiments/cpmlp_hust_pilot.py)；SHA256 64b4f517cc9089f8702cc60fb41e9bdd1bc19924dc02e7344bbadbb8a5ff5529
+- [experiments/cpmlp_hust_recipe_adapt_seed42_v2/epoch_metrics.jsonl](https://github.com/enterzxk/battery-dynamic-rul/blob/edb4eb8fbd0d9ca36cdf1d22f783f3be5409e668/experiments/cpmlp_hust_recipe_adapt_seed42_v2/epoch_metrics.jsonl)；SHA256 0ffc1611bd963a9ffb992f01ae9d2b72e11d649828971acc7731e4518d4642aa
+- [experiments/multirate_state_A2_20261022/same_key_compare_v3_run1/summary.json](https://github.com/enterzxk/battery-dynamic-rul/blob/edb4eb8fbd0d9ca36cdf1d22f783f3be5409e668/experiments/multirate_state_A2_20261022/same_key_compare_v3_run1/summary.json)；SHA256 1392ec6d56b9eadc789dac8e78fb88ef2f941da3f0bce69665f63b91efc9dd4a
+- [experiments/multirate_state_A3_rate_20261024/data_efficiency_compare_run1/summary.json](https://github.com/enterzxk/battery-dynamic-rul/blob/edb4eb8fbd0d9ca36cdf1d22f783f3be5409e668/experiments/multirate_state_A3_rate_20261024/data_efficiency_compare_run1/summary.json)；SHA256 ee2abddc99c079e7b274fda579cd5c485b4cdac142bc9d5f0c868b4add8babcd
+- [experiments/rul_time_recovery_20261026/p2_clock_run1/receipt.json](https://github.com/enterzxk/battery-dynamic-rul/blob/edb4eb8fbd0d9ca36cdf1d22f783f3be5409e668/experiments/rul_time_recovery_20261026/p2_clock_run1/receipt.json)；SHA256 e10557cb8e2bdb1cf61ccfba83bac7eda483289a328ec81277e597021582d5e4

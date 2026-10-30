@@ -599,6 +599,12 @@ def main():
     chosen.difference_update(['experiments/multirate_state_A2_20261022/a2_fixtures.py','experiments/multirate_state_A2_20261022/a2_fixtures_fast.py','experiments/multirate_state_A2_20261022/a2_train_v3.py','experiments/multirate_state_A2_20261022/a2_targets.py','experiments/multirate_state_A3_rate_20261024/a3t/a3t_model.py','experiments/multirate_state_A3_rate_20261024/a3t/a3t_train.py','experiments/multirate_state_A3_rate_20261024/a3_train.py'])
     BINARY_PREDICTION_ARCHIVES.add('reports/rulaas_public_multirate_code_lossless_20261030_v1/archive.bin')
     chosen.update('reports/rulaas_public_multirate_code_lossless_20261030_v1/'+n for n in ['archive.bin','validation.json','decode.py','README.md'])
+    # Partial horizon feedback 2026-10-30. No raw data or checkpoints.
+    chosen.update('experiments/rulaas_temporal_risk_20261029/'+n for n in ['partial_feedback.py','PARTIAL_FEEDBACK_PROTOCOL_ZH.md','GO_PARTIAL_FEEDBACK_RUN01.json','PARTIAL_FEEDBACK_RESULTS_ZH.md','METHOD_CONFLICT_CHECK_ZH.md','review_partial_feedback.py','partial_feedback01/summary.csv','partial_feedback01/arm_metrics.csv','partial_feedback01/paired_contrasts.csv','partial_feedback01/paired_per_cell.csv','partial_feedback01/fit_manifest.json','partial_feedback01/ROOT_DECISION.json','partial_feedback01/INDEPENDENT_RECOMPUTE.json','partial_feedback01/public_receipt.json'])
+    # Preserve historical pilots in a verified lossless archive.
+    chosen.difference_update(['src/experiments/cptransformer_hust_pilot.py','src/experiments/cpmlp_hust_pilot.py','experiments/cpmlp_hust_recipe_adapt_seed42_v2/epoch_metrics.jsonl','experiments/multirate_state_A2_20261022/same_key_compare_v3_run1/summary.json','experiments/multirate_state_A3_rate_20261024/data_efficiency_compare_run1/summary.json','experiments/rul_time_recovery_20261026/p2_clock_run1/receipt.json'])
+    BINARY_PREDICTION_ARCHIVES.add('reports/rulaas_public_legacy_pilots_lossless_20261030_v1/archive.bin')
+    chosen.update('reports/rulaas_public_legacy_pilots_lossless_20261030_v1/'+n for n in ['archive.bin','validation.json','decode.py','README.md'])
     contents, files, skipped, binary_blobs = {}, [], [], {}
     mapping = {'README.md': 'docs/GITHUB_README_ZH.md', 'agent.md': 'AGENTS.md'}
     mapping.update({rel: rel for rel in sorted(chosen)})

@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "archive_type": "ZIP",
+  "archive_sha256": "2411bed504ee3197e059ac27cc3c69955c7ab60c729c7625f7cf7735789cdcc4",
+  "archive_bytes": 31212,
+  "originals_unchanged_on_server": true,
+  "prior_commit": "edb4eb8fbd0d9ca36cdf1d22f783f3be5409e668",
+  "members": [
+    {
+      "original_path": "src/experiments/cptransformer_hust_pilot.py",
+      "original_bytes": 28871,
+      "original_sha256": "260648dbae2030d2fb1be340adab4580047421233166ba12598214306b6adb46",
+      "prior_immutable_url": "https://github.com/enterzxk/battery-dynamic-rul/blob/edb4eb8fbd0d9ca36cdf1d22f783f3be5409e668/src/experiments/cptransformer_hust_pilot.py"
+    },
+    {
+      "original_path": "src/experiments/cpmlp_hust_pilot.py",
+      "original_bytes": 27754,
+      "original_sha256": "64b4f517cc9089f8702cc60fb41e9bdd1bc19924dc02e7344bbadbb8a5ff5529",
+      "prior_immutable_url": "https://github.com/enterzxk/battery-dynamic-rul/blob/edb4eb8fbd0d9ca36cdf1d22f783f3be5409e668/src/experiments/cpmlp_hust_pilot.py"
+    },
+    {
+      "original_path": "experiments/cpmlp_hust_recipe_adapt_seed42_v2/epoch_metrics.jsonl",
+      "original_bytes": 23610,
+      "original_sha256": "0ffc1611bd963a9ffb992f01ae9d2b72e11d649828971acc7731e4518d4642aa",
+      "prior_immutable_url": "https://github.com/enterzxk/battery-dynamic-rul/blob/edb4eb8fbd0d9ca36cdf1d22f783f3be5409e668/experiments/cpmlp_hust_recipe_adapt_seed42_v2/epoch_metrics.jsonl"
+    },
+    {
+      "original_path": "experiments/multirate_state_A2_20261022/same_key_compare_v3_run1/summary.json",
+      "original_bytes": 22352,
+      "original_sha256": "1392ec6d56b9eadc789dac8e78fb88ef2f941da3f0bce69665f63b91efc9dd4a",
+      "prior_immutable_url": "https://github.com/enterzxk/battery-dynamic-rul/blob/edb4eb8fbd0d9ca36cdf1d22f783f3be5409e668/experiments/multirate_state_A2_20261022/same_key_compare_v3_run1/summary.json"
+    },
+    {
+      "original_path": "experiments/multirate_state_A3_rate_20261024/data_efficiency_compare_run1/summary.json",
+      "original_bytes": 20114,
+      "original_sha256": "ee2abddc99c079e7b274fda579cd5c485b4cdac142bc9d5f0c868b4add8babcd",
+      "prior_immutable_url": "https://github.com/enterzxk/battery-dynamic-rul/blob/edb4eb8fbd0d9ca36cdf1d22f783f3be5409e668/experiments/multirate_state_A3_rate_20261024/data_efficiency_compare_run1/summary.json"
+    },
+    {
+      "original_path": "experiments/rul_time_recovery_20261026/p2_clock_run1/receipt.json",
+      "original_bytes": 22261,
+      "original_sha256": "e10557cb8e2bdb1cf61ccfba83bac7eda483289a328ec81277e597021582d5e4",
+      "prior_immutable_url": "https://github.com/enterzxk/battery-dynamic-rul/blob/edb4eb8fbd0d9ca36cdf1d22f783f3be5409e668/experiments/rul_time_recovery_20261026/p2_clock_run1/receipt.json"
+    }
+  ],
+  "contains_raw_battery_data": false,
+  "contains_checkpoints": false
+}

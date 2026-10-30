@@ -1,0 +1,13 @@
+{
+  "status": "NO_GAIN_FIXED_PARTIAL_FEEDBACK_F0",
+  "paper_ready": false,
+  "prior_F3_risk_NO_GAIN_preserved": true,
+  "prior_pending_policy_NO_GO_preserved": true,
+  "criterion": ">=5 percent relative Brier improvement and group-bootstrap 95 percent CI upper below zero; missed pre-event cell-arm episodes no worse.",
+  "limits": [
+    "Partial feedback is a hypothetical full-source registry, not measured online feedback.",
+    "Baseline and candidate have different train group counts and class balance; effects not attributable to one factor.",
+    "Same 10 held groups were previously inspected and cutoff is retrospective.",
+    "374 unknown labels remain unused; no event-distribution or service-budget outcome."
+  ]
+}

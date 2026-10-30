@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-29T16:18:37.675199+00:00",
-  "content_sha256": "57b28c54eb8b2563a1ec1f1277a681c7b0f091eea8d2c52b7b60c9f4184a531a",
-  "file_count": 1225,
+  "snapshot_utc": "2026-10-30T00:46:58.803417+00:00",
+  "content_sha256": "e9ce6e2502e1994f3b37fc9abddbaae497fd9350ebe73c853ccb07baeff5edfd",
+  "file_count": 1237,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,8 +14,8 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 17510,
-      "sha256": "0d5f54f18b90cb0f022211d44bace29f418defb59a151c2c1967127cc2e3a900"
+      "bytes": 19209,
+      "sha256": "6db2de864d4ce6353669e36b759e997f06ef348fb37a904ce6567f13470d6bde"
     },
     {
       "path": "README.md",
@@ -38,8 +38,8 @@
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 88705,
-      "sha256": "989e51531744a5abb43472ca957a21e5ce790811d2a17d5dbfb241228370f2fb"
+      "bytes": 90096,
+      "sha256": "0024dfef02f0767fd509cc827b04bf45617ff9a7924812636e76f29bfb2f7bdb"
     },
     {
       "path": "automation/bin/matr_raw_batch2_asset_worker_v1.py",
@@ -176,8 +176,8 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 20982,
-      "sha256": "dad1e17a29d1c8c6d40ac9ebb1719a15ceb057a6d244a2a151789bde957143ca"
+      "bytes": 22693,
+      "sha256": "1990e82ddb05f7a8029c942065143cc7b4f069ee277c8aebf66b9295e513eacb"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
@@ -892,12 +892,6 @@
       "source_path": "experiments/cpmlp_hust_recipe_adapt_seed42_v2/config.json",
       "bytes": 4873,
       "sha256": "9fb2031e0b7d6a44ea95ae4dc17ff2c927681b1a24966720be033cfc99e8f4c7"
-    },
-    {
-      "path": "experiments/cpmlp_hust_recipe_adapt_seed42_v2/epoch_metrics.jsonl",
-      "source_path": "experiments/cpmlp_hust_recipe_adapt_seed42_v2/epoch_metrics.jsonl",
-      "bytes": 23610,
-      "sha256": "0ffc1611bd963a9ffb992f01ae9d2b72e11d649828971acc7731e4518d4642aa"
     },
     {
       "path": "experiments/cpmlp_hust_recipe_adapt_seed42_v2/independent_metric_recompute.py",
@@ -1812,12 +1806,6 @@
       "sha256": "2dd5b82f91d9a77c83b158dabe334f277fc6258e2498fb0c81ad4c3b01bab72d"
     },
     {
-      "path": "experiments/multirate_state_A2_20261022/same_key_compare_v3_run1/summary.json",
-      "source_path": "experiments/multirate_state_A2_20261022/same_key_compare_v3_run1/summary.json",
-      "bytes": 22352,
-      "sha256": "1392ec6d56b9eadc789dac8e78fb88ef2f941da3f0bce69665f63b91efc9dd4a"
-    },
-    {
       "path": "experiments/multirate_state_A2_fullrefit_20261023/PROTOCOL.md",
       "source_path": "experiments/multirate_state_A2_fullrefit_20261023/PROTOCOL.md",
       "bytes": 1606,
@@ -2170,12 +2158,6 @@
       "source_path": "experiments/multirate_state_A3_rate_20261024/data_efficiency_compare_run1/all_model_metrics.csv",
       "bytes": 8480,
       "sha256": "e6a8d7ef71f9c9e1eb0c87f2b599a0b0ab88bb92c64512253f1dd89271e82660"
-    },
-    {
-      "path": "experiments/multirate_state_A3_rate_20261024/data_efficiency_compare_run1/summary.json",
-      "source_path": "experiments/multirate_state_A3_rate_20261024/data_efficiency_compare_run1/summary.json",
-      "bytes": 20114,
-      "sha256": "ee2abddc99c079e7b274fda579cd5c485b4cdac142bc9d5f0c868b4add8babcd"
     },
     {
       "path": "experiments/multirate_state_A3_rate_20261024/degradation_curve_compare_run1/all_model_metrics.csv",
@@ -3552,12 +3534,6 @@
       "sha256": "ce46413c95b5ec58792f8335d4ee9b86d9325348aa8a39413291d04c51094af3"
     },
     {
-      "path": "experiments/rul_time_recovery_20261026/p2_clock_run1/receipt.json",
-      "source_path": "experiments/rul_time_recovery_20261026/p2_clock_run1/receipt.json",
-      "bytes": 22261,
-      "sha256": "e10557cb8e2bdb1cf61ccfba83bac7eda483289a328ec81277e597021582d5e4"
-    },
-    {
       "path": "experiments/rul_time_recovery_20261026/p2_diag_run1/PR_summary.csv",
       "source_path": "experiments/rul_time_recovery_20261026/p2_diag_run1/PR_summary.csv",
       "bytes": 18331,
@@ -4290,6 +4266,12 @@
       "sha256": "e3006f8df1af3d19d95f9e8aace69a966cbf5e16b40dd9f5fcfed837252ab6c8"
     },
     {
+      "path": "experiments/rulaas_temporal_risk_20261029/GO_PARTIAL_FEEDBACK_RUN01.json",
+      "source_path": "experiments/rulaas_temporal_risk_20261029/GO_PARTIAL_FEEDBACK_RUN01.json",
+      "bytes": 4262,
+      "sha256": "a3c15e83b80614bb34ed729c7b0af7772e2a433fb27c28361986a5cc7fbc5111"
+    },
+    {
       "path": "experiments/rulaas_temporal_risk_20261029/GO_RUN01.json",
       "source_path": "experiments/rulaas_temporal_risk_20261029/GO_RUN01.json",
       "bytes": 3123,
@@ -4306,6 +4288,24 @@
       "source_path": "experiments/rulaas_temporal_risk_20261029/HORIZON_RESULTS_ZH.md",
       "bytes": 1592,
       "sha256": "3fa708b6b49962398dcd9dd59652252132aaf2d76dc4d115b0cb3a7cc1e752e3"
+    },
+    {
+      "path": "experiments/rulaas_temporal_risk_20261029/METHOD_CONFLICT_CHECK_ZH.md",
+      "source_path": "experiments/rulaas_temporal_risk_20261029/METHOD_CONFLICT_CHECK_ZH.md",
+      "bytes": 3062,
+      "sha256": "bf7fc4e0d7b7592aa8e745d6f5487c6162b9fc84a37c6f09a1140f66549f3bdc"
+    },
+    {
+      "path": "experiments/rulaas_temporal_risk_20261029/PARTIAL_FEEDBACK_PROTOCOL_ZH.md",
+      "source_path": "experiments/rulaas_temporal_risk_20261029/PARTIAL_FEEDBACK_PROTOCOL_ZH.md",
+      "bytes": 2711,
+      "sha256": "2efc9d515d5b22f528f4907b6c6a3c3d377c591422a8a0914fd94da235a9910e"
+    },
+    {
+      "path": "experiments/rulaas_temporal_risk_20261029/PARTIAL_FEEDBACK_RESULTS_ZH.md",
+      "source_path": "experiments/rulaas_temporal_risk_20261029/PARTIAL_FEEDBACK_RESULTS_ZH.md",
+      "bytes": 2767,
+      "sha256": "77fc495e2db497fb2114c8a92f45ecd48fdfd66db631e43274b4c670ae3b0c94"
     },
     {
       "path": "experiments/rulaas_temporal_risk_20261029/PROTOCOL_ZH.md",
@@ -4408,6 +4408,66 @@
       "source_path": "experiments/rulaas_temporal_risk_20261029/oof_diagnosis01/summary.json",
       "bytes": 3572,
       "sha256": "f23ba1243d5993696b3347f3b5c3b0028ce14eada861f4808fad520e9359702c"
+    },
+    {
+      "path": "experiments/rulaas_temporal_risk_20261029/partial_feedback.py",
+      "source_path": "experiments/rulaas_temporal_risk_20261029/partial_feedback.py",
+      "bytes": 15123,
+      "sha256": "4f51b6330976c6ff4cd21eb8b3dd631812bc70707f8b6b7d8f7ea8b4430e110c"
+    },
+    {
+      "path": "experiments/rulaas_temporal_risk_20261029/partial_feedback01/INDEPENDENT_RECOMPUTE.json",
+      "source_path": "experiments/rulaas_temporal_risk_20261029/partial_feedback01/INDEPENDENT_RECOMPUTE.json",
+      "bytes": 2644,
+      "sha256": "6a6f5a01329f7727d5b1373269ccbd1d50ab380771b89930bf2cf32788e1a7fc"
+    },
+    {
+      "path": "experiments/rulaas_temporal_risk_20261029/partial_feedback01/ROOT_DECISION.json",
+      "source_path": "experiments/rulaas_temporal_risk_20261029/partial_feedback01/ROOT_DECISION.json",
+      "bytes": 727,
+      "sha256": "f9f94cefa25efbb0faa39ef017696535a8767b1ebd1b5e7e66edfb40d74072d8"
+    },
+    {
+      "path": "experiments/rulaas_temporal_risk_20261029/partial_feedback01/arm_metrics.csv",
+      "source_path": "experiments/rulaas_temporal_risk_20261029/partial_feedback01/arm_metrics.csv",
+      "bytes": 669,
+      "sha256": "9b030880002ca9a89fe79d23aa1117313265e7fbf33b7f7e678130cfab7c91ac"
+    },
+    {
+      "path": "experiments/rulaas_temporal_risk_20261029/partial_feedback01/fit_manifest.json",
+      "source_path": "experiments/rulaas_temporal_risk_20261029/partial_feedback01/fit_manifest.json",
+      "bytes": 1836,
+      "sha256": "6017a3b13a0ad0d85b37b98085bec562b8e30c11d1625a2433e4389fb2228367"
+    },
+    {
+      "path": "experiments/rulaas_temporal_risk_20261029/partial_feedback01/paired_contrasts.csv",
+      "source_path": "experiments/rulaas_temporal_risk_20261029/partial_feedback01/paired_contrasts.csv",
+      "bytes": 756,
+      "sha256": "7f11faccc48cd32c65b76e33fd460685c086e6d19a1f1f27da0a2a695af98836"
+    },
+    {
+      "path": "experiments/rulaas_temporal_risk_20261029/partial_feedback01/paired_per_cell.csv",
+      "source_path": "experiments/rulaas_temporal_risk_20261029/partial_feedback01/paired_per_cell.csv",
+      "bytes": 3989,
+      "sha256": "42e21a7c89a75303fae0fb2ae578bb092383dcb14f99fe3895a009b64f46c757"
+    },
+    {
+      "path": "experiments/rulaas_temporal_risk_20261029/partial_feedback01/public_receipt.json",
+      "source_path": "experiments/rulaas_temporal_risk_20261029/partial_feedback01/public_receipt.json",
+      "bytes": 770,
+      "sha256": "28bd5710c8b94ee1161978c5287a62da080841128f84c88146995712eeb69372"
+    },
+    {
+      "path": "experiments/rulaas_temporal_risk_20261029/partial_feedback01/summary.csv",
+      "source_path": "experiments/rulaas_temporal_risk_20261029/partial_feedback01/summary.csv",
+      "bytes": 691,
+      "sha256": "6185adaa2ae891826e3747c7e39104b680fcc644e72baa9b099cbd4dcd82d39d"
+    },
+    {
+      "path": "experiments/rulaas_temporal_risk_20261029/review_partial_feedback.py",
+      "source_path": "experiments/rulaas_temporal_risk_20261029/review_partial_feedback.py",
+      "bytes": 8696,
+      "sha256": "7e974c63fc2a87e010e317ec2db4bb51f45e218b7231d2aac4b9211f4074008f"
     },
     {
       "path": "experiments/rulaas_temporal_risk_20261029/review_saved_v2.py",
@@ -7074,6 +7134,30 @@
       "sha256": "34e5cb5c19655cf4b90a5388debfbc076760a6e56b25ea55b9e60c79a3f9756c"
     },
     {
+      "path": "reports/rulaas_public_legacy_pilots_lossless_20261030_v1/README.md",
+      "source_path": "reports/rulaas_public_legacy_pilots_lossless_20261030_v1/README.md",
+      "bytes": 2141,
+      "sha256": "cd1115e27d0b3396d4c1b5f3951f8522a76b00f1fa366ae08a984619fd2a492b"
+    },
+    {
+      "path": "reports/rulaas_public_legacy_pilots_lossless_20261030_v1/archive.bin",
+      "source_path": "reports/rulaas_public_legacy_pilots_lossless_20261030_v1/archive.bin",
+      "bytes": 31212,
+      "sha256": "2411bed504ee3197e059ac27cc3c69955c7ab60c729c7625f7cf7735789cdcc4"
+    },
+    {
+      "path": "reports/rulaas_public_legacy_pilots_lossless_20261030_v1/decode.py",
+      "source_path": "reports/rulaas_public_legacy_pilots_lossless_20261030_v1/decode.py",
+      "bytes": 1050,
+      "sha256": "d154cfa112bac4095684ea6fba77782dbaec433589270198aa309ed07bc19a77"
+    },
+    {
+      "path": "reports/rulaas_public_legacy_pilots_lossless_20261030_v1/validation.json",
+      "source_path": "reports/rulaas_public_legacy_pilots_lossless_20261030_v1/validation.json",
+      "bytes": 2836,
+      "sha256": "9e1709740ac3f33b0732cd5f685bc953b5452ee0d488e088be8ba344514c4b08"
+    },
+    {
       "path": "reports/rulaas_public_lossless_20261029_v1/README.md",
       "source_path": "reports/rulaas_public_lossless_20261029_v1/README.md",
       "bytes": 1338,
@@ -7294,18 +7378,6 @@
       "source_path": "src/data_audit/test_primitive_pickle.py",
       "bytes": 1196,
       "sha256": "d33f4aa4b9c8d9d1f1a648c6cda9fd986cb0ec74cc8d5cc2a38516181bece635"
-    },
-    {
-      "path": "src/experiments/cpmlp_hust_pilot.py",
-      "source_path": "src/experiments/cpmlp_hust_pilot.py",
-      "bytes": 27754,
-      "sha256": "64b4f517cc9089f8702cc60fb41e9bdd1bc19924dc02e7344bbadbb8a5ff5529"
-    },
-    {
-      "path": "src/experiments/cptransformer_hust_pilot.py",
-      "source_path": "src/experiments/cptransformer_hust_pilot.py",
-      "bytes": 28871,
-      "sha256": "260648dbae2030d2fb1be340adab4580047421233166ba12598214306b6adb46"
     },
     {
       "path": "src/experiments/cptransformer_hust_pilot_preflight.py",

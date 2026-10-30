@@ -1,0 +1,22 @@
+{
+  "status": "SUCCESS",
+  "request_id": "RULAAS_PARTIAL_FEEDBACK_F0_20261030_RUN01",
+  "started_utc": "2026-10-30T00:42:39.372946+00:00",
+  "predictive_fits_started": 5,
+  "predictive_fits_completed": 5,
+  "preprocessor_components_fitted": 0,
+  "model_prediction_rows": 2291,
+  "C3_payload_reads": 0,
+  "C4_payload_reads": 0,
+  "actual_coordinator_model_recorded": "gpt-6.1-terra",
+  "all_fits_before_held_scoring": true,
+  "finished_utc": "2026-10-30T00:42:40.749362+00:00",
+  "elapsed_seconds": 1.3764293193817139,
+  "GO_sha256": "a3c15e83b80614bb34ed729c7b0af7772e2a433fb27c28361986a5cc7fbc5111",
+  "training_rows": 1219,
+  "training_groups": 19,
+  "held_rows": 536,
+  "held_groups": 10,
+  "prior_reference_reused_without_refit": true,
+  "sklearn_version": "1.6.1"
+}

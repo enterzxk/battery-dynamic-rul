@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "new_fits": 0,
+  "new_inference_rows": 0,
+  "C3_payload_reads": 0,
+  "C4_payload_reads": 0,
+  "training_mature_rows": 1219,
+  "training_unknown_rows": 374,
+  "training_groups": 19,
+  "held_common_queries": 536,
+  "held_cells": 18,
+  "held_groups": 10,
+  "all_models_same_keys_targets": true,
+  "old_baseline_predictions_unchanged": true,
+  "training_asof_and_group_isolation": "PASS",
+  "oof_and_calibration_formula": "PASS",
+  "max_calibrator_formula_error": 0.0,
+  "max_Brier_recompute_error": 0.0,
+  "predeclared_gate": "NO_GAIN because upper CI >= 0",
+  "limits": [
+    "Training group and class composition differ between label regimes.",
+    "Feedback registry is synthetic and includes recorded detections a deployed policy could skip.",
+    "Same ten held groups were previously inspected; no independent confirmation.",
+    "374 training labels remain unknown; no general censoring solution."
+  ],
+  "input_sha256": {
+    "experiments/rulaas_temporal_risk_20261029/partial_feedback01/training_oof.csv": "4ec25a27bc67e6e6f947e9671e5d4fd5c4b8536b8b8f4e4ec244fac008ed9e34",
+    "experiments/rulaas_temporal_risk_20261029/partial_feedback01/predictions.csv": "80a42d9ec1f8de1cfbbb025b92ec2423fc4f72052a3562857d3f749d5030c083",
+    "experiments/rulaas_temporal_risk_20261029/partial_feedback01/summary.csv": "6185adaa2ae891826e3747c7e39104b680fcc644e72baa9b099cbd4dcd82d39d",
+    "experiments/rulaas_temporal_risk_20261029/partial_feedback01/arm_metrics.csv": "9b030880002ca9a89fe79d23aa1117313265e7fbf33b7f7e678130cfab7c91ac",
+    "experiments/rulaas_temporal_risk_20261029/partial_feedback01/paired_contrasts.csv": "7f11faccc48cd32c65b76e33fd460685c086e6d19a1f1f27da0a2a695af98836",
+    "experiments/rulaas_temporal_risk_20261029/partial_feedback01/paired_per_cell.csv": "42e21a7c89a75303fae0fb2ae578bb092383dcb14f99fe3895a009b64f46c757",
+    "experiments/rulaas_temporal_risk_20261029/partial_feedback01/fit_manifest.json": "6017a3b13a0ad0d85b37b98085bec562b8e30c11d1625a2433e4389fb2228367",
+    "experiments/rulaas_temporal_risk_20261029/partial_feedback01/receipt.json": "1a790f2cd68a5d0caf5244ef0f5f304386db93c398e2f4ec117e63fa4c68ecf8",
+    "experiments/rulaas_temporal_risk_20261029/partial_feedback01/ROOT_DECISION.json": "f9f94cefa25efbb0faa39ef017696535a8767b1ebd1b5e7e66edfb40d74072d8",
+    "experiments/rulaas_temporal_risk_20261029/horizon_audit01/INDEPENDENT_RECOMPUTE.json": "f0430d0b2c22f8fd328ff5d30082f6ee429e5ea36c88166697b075d585c66d4a",
+    "experiments/rulaas_temporal_risk_20261029/run01/INDEPENDENT_RECOMPUTE_V2.json": "bb78013f2b7b16aac605f44134d1de8aae1aff52d0d5698eca37c8969e8993d6"
+  }
+}

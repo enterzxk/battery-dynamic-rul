@@ -1,0 +1,13 @@
+model,arm,rows,cells,cell_macro_Brier4
+event_only_raw,delay7d,188,18,0.11397128520570608
+event_only_raw,raw,170,17,0.09264421005946909
+event_only_raw,sparse2,178,18,0.10073994921653653
+event_only_platt,delay7d,188,18,0.11250205242538909
+event_only_platt,raw,170,17,0.0977704312549424
+event_only_platt,sparse2,178,18,0.1072769894785374
+horizon_mature_raw,delay7d,188,18,0.10210542728133366
+horizon_mature_raw,raw,170,17,0.10034532988143044
+horizon_mature_raw,sparse2,178,18,0.10056577283822711
+horizon_mature_platt,delay7d,188,18,0.0921768334704342
+horizon_mature_platt,raw,170,17,0.08846281987019138
+horizon_mature_platt,sparse2,178,18,0.09286340874304026
