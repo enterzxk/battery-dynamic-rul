@@ -1,0 +1,17 @@
+{
+  "status": "NO_GAIN_FIXED_QUEUE_VALUE",
+  "paper_ready": false,
+  "prior_fixed_pending_admission_NO_GO_preserved": true,
+  "all_arms_process_identical_jobs": true,
+  "equal_service_intervals_by_station_scenario": true,
+  "source_report_delay_measured": false,
+  "real_intervention_or_cost_claim": false,
+  "limits": [
+    "previously used development outcomes",
+    "retrospective cutoff and synthetic service delay",
+    "recorded event rather than continuous failure",
+    "possible informative censoring",
+    "no real queue or skip intervention",
+    "few event groups"
+  ]
+}

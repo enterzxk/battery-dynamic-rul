@@ -1,0 +1,4 @@
+candidate,reference,delta_average_event_cell_MAE_weeks,CI98_333_low,CI98_333_high,relative_improvement,cells_better,cells_worse,safety_and_per_scenario_guard,comparison_pass
+pending_value,fifo,-0.017423689902593596,-0.053692346587294555,0.01716963137893255,0.0046518156686312755,4,3,True,False
+pending_value,oldest_info,-0.013617644293020977,-0.07234165056797746,0.01639754906447625,0.0036393672365498076,4,3,False,False
+pending_value,earliest_eol,0.0,0.0,0.0,-0.0,0,0,False,False

@@ -1,0 +1,23 @@
+{
+  "status": "APPROVED",
+  "owner": "01a17810-6ae6-7cf2-9729-5bfcaa8df5f4",
+  "issued_utc": "2026-10-30T05:50:49.992865+00:00",
+  "new_model_fits": 0,
+  "dispatch_rank_checks_cap": 3760,
+  "query_reconstruction_cap": 13760,
+  "allow_C3": false,
+  "allow_C4": false,
+  "allow_confirmation_groups": false,
+  "input_sha256": {
+    "experiments/rulaas_external_kit_20261030/GO_QUEUE_VALUE01.json": "c8f4a6062d713e4891e4720f6cdf347cc6887245242b7c4f84d31c542b485343",
+    "experiments/rulaas_external_kit_20261030/TRAIN_SPLIT.json": "659ae78046e734c4729c2e3b741e0cfd6d42aaecdf98a46cfec9e900bc82829c",
+    "experiments/rulaas_external_kit_20261030/development_audit01/development_candidates.csv": "8dd7af27c3568d1e2ae24766f4ce420587c2f75fe68f5f90d0edc463929d4e27",
+    "experiments/rulaas_external_kit_20261030/anchor_day100_01/fit_manifest.json": "445008f528c9013ffd596cd1525aab674c4dfd60ee98ea0b6c0c9d82200c16bf",
+    "experiments/rulaas_external_kit_20261030/queue_value01/service_trace.csv": "b6824bf2f17b90e72ff815e6e927c4ab9d93381885da98e8a65202494a6f00d9",
+    "experiments/rulaas_external_kit_20261030/queue_value01/predictions.csv": "ded12554b1210e42fc6e1bf651ac380e86da8e6ebfe9b03c7df6c5a3647bad98",
+    "experiments/rulaas_external_kit_20261030/queue_value01/summary.csv": "71e6913293426eeeccbd3f735e540510f03b641c2e5861afc0ebcf221fc724cd",
+    "experiments/rulaas_external_kit_20261030/queue_value01/per_cell.csv": "afaa13a71b07bf2c4cb7d4d207dff1b670d68825b397cb67baf5f4b2411d8252",
+    "experiments/rulaas_external_kit_20261030/queue_value01/paired_contrasts.csv": "013e027649c19a491035a68e15fd25f77c7b65c78837a11920ccc2caf6e417a0",
+    "experiments/rulaas_external_kit_20261030/review_queue_value.py": "c15706916bc33f8a02002a1e5ca82ccafd5ac8f98439ea620e512c99e1c6495e"
+  }
+}

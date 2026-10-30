@@ -1,0 +1,38 @@
+{
+  "status": "APPROVED",
+  "request_id": "KIT_QUEUE_VALUE_20261030_01",
+  "owner": "01a17810-6ae6-7cf2-9729-5bfcaa8df5f4",
+  "issued_utc": "2026-10-30T05:49:20.538067+00:00",
+  "actual_model": "gpt-6.1-terra",
+  "allow_global_fits": false,
+  "allow_local_fits": false,
+  "dispatch_cap": 3760,
+  "grid_query_row_cap": 13760,
+  "seed": 42,
+  "group_bootstrap_draws": 10000,
+  "stations": [
+    1,
+    2
+  ],
+  "policies": [
+    "fifo",
+    "oldest_info",
+    "earliest_eol",
+    "pending_value"
+  ],
+  "synthetic_service_seconds": 10800.0,
+  "synthetic_report_delay_seconds": 1209600.0,
+  "allow_confirmation_groups": false,
+  "allow_C3": false,
+  "allow_C4": false,
+  "input_sha256": {
+    "AGENTS.md": "93488b4e887ff13c8ac88687d1be4197a52c22667708dfd960d424007f3b1c19",
+    "experiments/rulaas_external_kit_20261030/TRAIN_SPLIT.json": "659ae78046e734c4729c2e3b741e0cfd6d42aaecdf98a46cfec9e900bc82829c",
+    "experiments/rulaas_external_kit_20261030/development_audit01/development_candidates.csv": "8dd7af27c3568d1e2ae24766f4ce420587c2f75fe68f5f90d0edc463929d4e27",
+    "experiments/rulaas_external_kit_20261030/anchor_day100_01/fit_manifest.json": "445008f528c9013ffd596cd1525aab674c4dfd60ee98ea0b6c0c9d82200c16bf",
+    "experiments/rulaas_external_kit_20261030/trend_window01/ROOT_DECISION.json": "e7be7b6abd9dd3f77d060d9d7f7038f5c2640f3c26617823e8152b4622ccae02",
+    "experiments/rulaas_external_kit_20261030/trend_window01/INDEPENDENT_RECOMPUTE.json": "434c58ceba9930f509a5cac893e090b3f8d7b09038564b66a8ec2ef46bd5a592",
+    "experiments/rulaas_external_kit_20261030/QUEUE_VALUE_PROTOCOL_ZH.md": "9c29e087eae50a07fffdc1a4c4871bd6a6209c879e7c2c23f5249a7c4989d2e8",
+    "experiments/rulaas_external_kit_20261030/queue_value.py": "f3732873a8f171f6cd9909abec66cbc682297ef25c82c6943ac21df75d7a8269"
+  }
+}

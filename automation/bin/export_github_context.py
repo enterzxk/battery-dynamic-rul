@@ -626,6 +626,11 @@ def main():
     chosen.update('reports/rulaas_public_slope_diagnostic_lossless_20261030_v1/'+n for n in ['archive.bin','validation.json','decode.py','README.md'])
     # KIT fixed trend window 2026-10-30. No raw data or checkpoints.
     chosen.update('experiments/rulaas_external_kit_20261030/'+n for n in ['TREND_WINDOW_PROTOCOL_ZH.md','TREND_WINDOW_RESULTS_ZH.md','GO_TREND_WINDOW01.json','GO_TREND_WINDOW_REVIEW01.json','trend_window.py','review_trend_window.py','trend_window01/summary.csv','trend_window01/paired_contrasts.csv','trend_window01/paired_per_cell.csv','trend_window01/per_group.csv','trend_window01/ROOT_DECISION.json','trend_window01/INDEPENDENT_RECOMPUTE.json','trend_window01/public_receipt.json'])
+    # KIT queued report value 2026-10-30. No raw data or checkpoints.
+    chosen.update('experiments/rulaas_external_kit_20261030/'+n for n in ['QUEUE_VALUE_PROTOCOL_ZH.md','QUEUE_VALUE_RESULTS_ZH.md','GO_QUEUE_VALUE01.json','GO_QUEUE_VALUE_REVIEW01.json','queue_value01/summary.csv','queue_value01/per_cell.csv','queue_value01/paired_contrasts.csv','queue_value01/paired_per_cell.csv','queue_value01/ROOT_DECISION.json','queue_value01/INDEPENDENT_RECOMPUTE.json','queue_value01/public_receipt.json'])
+    chosen.difference_update(['experiments/rulaas_pending_station_20261029/evaluate_age.py','experiments/rulaas_gain_identifiability_20261029/run.py','experiments/rulaas_temporal_risk_20261029/partial_feedback.py','experiments/rulaas_pending_value_20261029/run.py','reports/multisource_20261021_signals/cycle_asof_features.py','experiments/rulaas_gain_oof_repair_20261029/run.py','experiments/rulaas_gain_learning_20261029/run.py','reports/multisource_20261021_signals/extract_rpt_signal_features_all188.py','experiments/isu_irregular_rul_seed42_v1/filter_representation.py','experiments/trajectory_b2_joint_marked_renewal_20261021/candidate_v2/eval_rul_compare.py'])
+    BINARY_PREDICTION_ARCHIVES.add('reports/rulaas_public_queue_value_lossless_20261030_v1/archive.bin')
+    chosen.update('reports/rulaas_public_queue_value_lossless_20261030_v1/'+n for n in ['archive.bin','validation.json','decode.py','README.md'])
     contents, files, skipped, binary_blobs = {}, [], [], {}
     mapping = {'README.md': 'docs/GITHUB_README_ZH.md', 'agent.md': 'AGENTS.md'}
     mapping.update({rel: rel for rel in sorted(chosen)})

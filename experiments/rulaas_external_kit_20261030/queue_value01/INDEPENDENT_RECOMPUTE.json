@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "dispatch_ranks_independently_reconstructed": 3760,
+  "grid_predictions_and_outcomes_independently_reconstructed": 13760,
+  "identical_work_conserving_resource_intervals": true,
+  "all_station_nonoverlap_checked": true,
+  "causal_availability_and_two_latest_reports_checked": true,
+  "cell_metrics_confusion_and_detection_delays_checked": true,
+  "paired_group_bootstrap_checked": true,
+  "recorded_event_cells": 17,
+  "event_groups": 6,
+  "new_global_fits": 0,
+  "C3_payload_reads": 0,
+  "C4_payload_reads": 0,
+  "confirmation_groups_opened": 0,
+  "GO_sha256": "3c2d852079e89431759933cfd0a2adccb916ea125b69ad844846379e34da79ed",
+  "finished_utc": "2026-10-30T05:50:50.396713+00:00",
+  "elapsed_seconds": 0.4044458866119385,
+  "limits": [
+    "simulated 3h processing and 14d delay",
+    "previously used development data",
+    "informative censoring possible"
+  ]
+}
