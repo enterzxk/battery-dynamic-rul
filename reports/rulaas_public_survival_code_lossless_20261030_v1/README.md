@@ -1,0 +1,8 @@
+# 动态 RUL 删失实验源码的无损归档
+
+为符合公开快照大小限制，4 个实验和复核源码以可校验的 ZIP 存在 archive.bin；服务器原件保留。执行 python decode.py 可核验，指定 --output-dir 到新目录可恢复，恢复不覆盖文件。无原始电池数据和模型权重。
+
+- experiments/rulaas_temporal_risk_20261029/survival_support.py；SHA256 ce74d9884b725f05d79b07db1fab76d037da63136f14e6dcb6f81928171a007d
+- experiments/rulaas_temporal_risk_20261029/review_survival_support.py；SHA256 eb73a216a5fe3fe76da3490c633fbbeca57654992549ccfb039bd6c98c67cc6e
+- experiments/rulaas_temporal_risk_20261029/survival_pilot.py；SHA256 f9adf251d64ec15f464d85ccd3b0f8d84f4820b36f096f220ec4196d8a6e76d7
+- experiments/rulaas_temporal_risk_20261029/review_survival_pilot.py；SHA256 5673b930c7ad0e766e5893feacd4e56b3eb66a20a9540c19b991abd8af80b257

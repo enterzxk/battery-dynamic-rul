@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-30T00:46:58.803417+00:00",
-  "content_sha256": "e9ce6e2502e1994f3b37fc9abddbaae497fd9350ebe73c853ccb07baeff5edfd",
-  "file_count": 1237,
+  "snapshot_utc": "2026-10-30T00:58:29.322865+00:00",
+  "content_sha256": "cafb0298bfc6f105299b49786d530f981578650b99e74fb42c85396ced45dfe9",
+  "file_count": 1256,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,8 +14,8 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 19209,
-      "sha256": "6db2de864d4ce6353669e36b759e997f06ef348fb37a904ce6567f13470d6bde"
+      "bytes": 20566,
+      "sha256": "a48ca23fe01b45e451c0d7957fb50286b929540cf0905ee5740e38fd8ca76eb5"
     },
     {
       "path": "README.md",
@@ -38,8 +38,8 @@
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 90096,
-      "sha256": "0024dfef02f0767fd509cc827b04bf45617ff9a7924812636e76f29bfb2f7bdb"
+      "bytes": 91040,
+      "sha256": "369858a8f19622fe4dc9b34f1510fa9aa87ac25af8479c73bab951a2ea0c4c33"
     },
     {
       "path": "automation/bin/matr_raw_batch2_asset_worker_v1.py",
@@ -176,8 +176,8 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 22693,
-      "sha256": "1990e82ddb05f7a8029c942065143cc7b4f069ee277c8aebf66b9295e513eacb"
+      "bytes": 24062,
+      "sha256": "cebd960ba36897cc92c38c17145c75959224e3d79bcc3c8eec3984397fba63ec"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
@@ -4278,6 +4278,18 @@
       "sha256": "17816bc7a4de7968e18801e6295ac690b9756e04bc3f5a6e42309eaf515b67da"
     },
     {
+      "path": "experiments/rulaas_temporal_risk_20261029/GO_SURVIVAL_PILOT_RUN01.json",
+      "source_path": "experiments/rulaas_temporal_risk_20261029/GO_SURVIVAL_PILOT_RUN01.json",
+      "bytes": 2564,
+      "sha256": "8f40e4b2a5002b40d78e3956ee2daea29878c4ccdac77dffdb184806c229e137"
+    },
+    {
+      "path": "experiments/rulaas_temporal_risk_20261029/GO_SURVIVAL_SUPPORT_RUN01.json",
+      "source_path": "experiments/rulaas_temporal_risk_20261029/GO_SURVIVAL_SUPPORT_RUN01.json",
+      "bytes": 1853,
+      "sha256": "33431df48ed763611bdd1f3b050eb05ad3bfc482450b4d0bf47c5b2c98c6ab49"
+    },
+    {
       "path": "experiments/rulaas_temporal_risk_20261029/HORIZON_AUDIT_PROTOCOL_ZH.md",
       "source_path": "experiments/rulaas_temporal_risk_20261029/HORIZON_AUDIT_PROTOCOL_ZH.md",
       "bytes": 1894,
@@ -4324,6 +4336,24 @@
       "source_path": "experiments/rulaas_temporal_risk_20261029/STAGE_DECISION.json",
       "bytes": 1041,
       "sha256": "6fcbabb008e1d90f79346f04d404ea1a5bbd393f6cc56b434aea263723645650"
+    },
+    {
+      "path": "experiments/rulaas_temporal_risk_20261029/SURVIVAL_PILOT_PROTOCOL_ZH.md",
+      "source_path": "experiments/rulaas_temporal_risk_20261029/SURVIVAL_PILOT_PROTOCOL_ZH.md",
+      "bytes": 3615,
+      "sha256": "bbbbe5dc371ec68e2adf9f62c1ebd2734b757a6b40bea9de36a016c793b6facb"
+    },
+    {
+      "path": "experiments/rulaas_temporal_risk_20261029/SURVIVAL_PILOT_RESULTS_ZH.md",
+      "source_path": "experiments/rulaas_temporal_risk_20261029/SURVIVAL_PILOT_RESULTS_ZH.md",
+      "bytes": 3980,
+      "sha256": "e505f730a6612e4b1ec2e13e49352bae8b10830718c047031827790e0896c441"
+    },
+    {
+      "path": "experiments/rulaas_temporal_risk_20261029/SURVIVAL_SUPPORT_PROTOCOL_ZH.md",
+      "source_path": "experiments/rulaas_temporal_risk_20261029/SURVIVAL_SUPPORT_PROTOCOL_ZH.md",
+      "bytes": 1810,
+      "sha256": "dbe3878171172ea6b87e41493b6c88d385ec3ae9c79edadb93fa2069cad91554"
     },
     {
       "path": "experiments/rulaas_temporal_risk_20261029/audit01/failure_receipt.json",
@@ -4534,6 +4564,66 @@
       "source_path": "experiments/rulaas_temporal_risk_20261029/run01/summary.csv",
       "bytes": 1336,
       "sha256": "ecf7f1709ea2ad32750c10a2dbc2828b63508ade5a1097d4cb045da85157346e"
+    },
+    {
+      "path": "experiments/rulaas_temporal_risk_20261029/survival_pilot01/DIAGNOSIS.json",
+      "source_path": "experiments/rulaas_temporal_risk_20261029/survival_pilot01/DIAGNOSIS.json",
+      "bytes": 1099,
+      "sha256": "617981d17c72a9d440785d404add533354640e7dcc8ad0d18057adac593d228b"
+    },
+    {
+      "path": "experiments/rulaas_temporal_risk_20261029/survival_pilot01/INDEPENDENT_RECOMPUTE.json",
+      "source_path": "experiments/rulaas_temporal_risk_20261029/survival_pilot01/INDEPENDENT_RECOMPUTE.json",
+      "bytes": 3348,
+      "sha256": "d03858418f2e65e351c88d205204f7ab6b83a27da69f73735dd1582707b0c219"
+    },
+    {
+      "path": "experiments/rulaas_temporal_risk_20261029/survival_pilot01/ROOT_DECISION.json",
+      "source_path": "experiments/rulaas_temporal_risk_20261029/survival_pilot01/ROOT_DECISION.json",
+      "bytes": 918,
+      "sha256": "f78335a6cf9c869910728e6d93f11ce45939b4d8aabcd03a3e33859742e67413"
+    },
+    {
+      "path": "experiments/rulaas_temporal_risk_20261029/survival_pilot01/fit_manifest.json",
+      "source_path": "experiments/rulaas_temporal_risk_20261029/survival_pilot01/fit_manifest.json",
+      "bytes": 2018,
+      "sha256": "f8c862a7c9aad84a55d49721aa67490dd441311ca67fda3a4782473ba755c79e"
+    },
+    {
+      "path": "experiments/rulaas_temporal_risk_20261029/survival_pilot01/paired_contrasts.csv",
+      "source_path": "experiments/rulaas_temporal_risk_20261029/survival_pilot01/paired_contrasts.csv",
+      "bytes": 466,
+      "sha256": "7fb247fce996e2018f8f34a5724e3333265c0d80c1f10cf96e0c48c5810eca2d"
+    },
+    {
+      "path": "experiments/rulaas_temporal_risk_20261029/survival_pilot01/paired_per_cell.csv",
+      "source_path": "experiments/rulaas_temporal_risk_20261029/survival_pilot01/paired_per_cell.csv",
+      "bytes": 3237,
+      "sha256": "86c554f7f993f676ce9e04f327aaeafc5b1a80e63373e10a864d6080c20f2f42"
+    },
+    {
+      "path": "experiments/rulaas_temporal_risk_20261029/survival_pilot01/public_receipt.json",
+      "source_path": "experiments/rulaas_temporal_risk_20261029/survival_pilot01/public_receipt.json",
+      "bytes": 818,
+      "sha256": "eec167c64b33b7f9c45c09bf633bec0e65a8079576db13f4be31bf072bf5863f"
+    },
+    {
+      "path": "experiments/rulaas_temporal_risk_20261029/survival_pilot01/summary.csv",
+      "source_path": "experiments/rulaas_temporal_risk_20261029/survival_pilot01/summary.csv",
+      "bytes": 501,
+      "sha256": "ac28fa11eca2377e9ae0782b378eaacecee8f74d9c7ccc503af0c973e29f1d4b"
+    },
+    {
+      "path": "experiments/rulaas_temporal_risk_20261029/survival_support01/INDEPENDENT_RECOMPUTE.json",
+      "source_path": "experiments/rulaas_temporal_risk_20261029/survival_support01/INDEPENDENT_RECOMPUTE.json",
+      "bytes": 2125,
+      "sha256": "fd5b6ebfe147e568012d7c83d53b2807bb1eda8ebe601647dc177e5115e2093d"
+    },
+    {
+      "path": "experiments/rulaas_temporal_risk_20261029/survival_support01/SUMMARY.json",
+      "source_path": "experiments/rulaas_temporal_risk_20261029/survival_support01/SUMMARY.json",
+      "bytes": 2257,
+      "sha256": "2d6c7c144cf8d7f1597331c1ba7b4a5d06928243dda322525d775e8af3fbb6c6"
     },
     {
       "path": "experiments/rulaas_value_gate_20261029/GO_RUN02.json",
@@ -7252,6 +7342,30 @@
       "source_path": "reports/rulaas_public_prior_code_lossless_20261029_v1/validation.json",
       "bytes": 1170,
       "sha256": "ef78453bb3749531c4cbf386573f316ae86ee93c7a4c66e87b7dbc4d0b5927ca"
+    },
+    {
+      "path": "reports/rulaas_public_survival_code_lossless_20261030_v1/README.md",
+      "source_path": "reports/rulaas_public_survival_code_lossless_20261030_v1/README.md",
+      "bytes": 882,
+      "sha256": "e0b72eebb82210fd7721e906a1b5506830a0082d20676a4c06b0cc7e12c6f92f"
+    },
+    {
+      "path": "reports/rulaas_public_survival_code_lossless_20261030_v1/archive.bin",
+      "source_path": "reports/rulaas_public_survival_code_lossless_20261030_v1/archive.bin",
+      "bytes": 17459,
+      "sha256": "208bd71139a4858628f0354669a1416e7bf6e2e144820fcd652b7e8456892b5a"
+    },
+    {
+      "path": "reports/rulaas_public_survival_code_lossless_20261030_v1/decode.py",
+      "source_path": "reports/rulaas_public_survival_code_lossless_20261030_v1/decode.py",
+      "bytes": 1050,
+      "sha256": "d154cfa112bac4095684ea6fba77782dbaec433589270198aa309ed07bc19a77"
+    },
+    {
+      "path": "reports/rulaas_public_survival_code_lossless_20261030_v1/validation.json",
+      "source_path": "reports/rulaas_public_survival_code_lossless_20261030_v1/validation.json",
+      "bytes": 1196,
+      "sha256": "8cb460d7524bc48422cf2dddf58338d7920c3d0b601e9b8446e0981cf56cb382"
     },
     {
       "path": "reports/saved_examples_lossless_20261018_root/decode.py",

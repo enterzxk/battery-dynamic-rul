@@ -1,0 +1,25 @@
+{
+  "status": "APPROVED",
+  "request_id": "RULAAS_SURVIVAL_SUPPORT_20261030_RUN01",
+  "owner": "01a17810-6ae6-7cf2-9729-5bfcaa8df5f4",
+  "issued_utc": "2026-10-30T00:50:41.575632+00:00",
+  "actual_model": "gpt-6.1-terra",
+  "model_preference_source": "User explicitly chose Terra.",
+  "allow_fits": false,
+  "allow_C3": false,
+  "allow_C4": false,
+  "source_cell_cap": 92,
+  "output": "experiments/rulaas_temporal_risk_20261029/survival_support01",
+  "input_sha256": {
+    "AGENTS.md": "93488b4e887ff13c8ac88687d1be4197a52c22667708dfd960d424007f3b1c19",
+    "experiments/isu_irregular_rul_seed42_v1/data_adapter.py": "d5effc7ab9aa946feee717e8490983e6ccbebf890492b456091ac49a942763f3",
+    "experiments/multisource_factorial_20261021/run2_clocksafe/train_targets.jsonl": "981ed8fc56181e8393ad807c39a8dfa19acc7683e531078dab0e030f384ea7aa",
+    "experiments/rulaas_temporal_risk_20261029/audit02/AUDIT.json": "3599057353bce8d8e618cda8a890874dd5a517b86a5b93a0f82e83299f584603",
+    "experiments/rulaas_temporal_risk_20261029/audit02/split.json": "a107dcda6a5c0f853312418c50d2002a80f5566e2723bf3de02f0b06cbfd9ba2",
+    "experiments/rulaas_temporal_risk_20261029/audit02/receipt.json": "30dfe8bc432214ac9bd453ef21ba216a6022900accacc23bfaa20f1767a886fb",
+    "experiments/rulaas_temporal_risk_20261029/horizon_audit01/INDEPENDENT_RECOMPUTE.json": "f0430d0b2c22f8fd328ff5d30082f6ee429e5ea36c88166697b075d585c66d4a",
+    "experiments/rulaas_temporal_risk_20261029/partial_feedback01/ROOT_DECISION.json": "f9f94cefa25efbb0faa39ef017696535a8767b1ebd1b5e7e66edfb40d74072d8",
+    "experiments/rulaas_temporal_risk_20261029/survival_support.py": "ce74d9884b725f05d79b07db1fab76d037da63136f14e6dcb6f81928171a007d",
+    "experiments/rulaas_temporal_risk_20261029/SURVIVAL_SUPPORT_PROTOCOL_ZH.md": "dbe3878171172ea6b87e41493b6c88d385ec3ae9c79edadb93fa2069cad91554"
+  }
+}

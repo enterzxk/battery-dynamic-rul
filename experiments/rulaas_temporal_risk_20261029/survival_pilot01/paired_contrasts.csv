@@ -1,0 +1,3 @@
+candidate,reference,delta_median_MAE_weeks,familywise_CI_low,familywise_CI_high,relative_improvement,cells_better,cells_worse,worst_cell,worst_cell_delta,groups,cells,bootstrap_replicates
+aft_censored,hgb_exact,2.6878816377615897,0.3697833711093771,5.087713616971156,-1.3771594120414659,6,11,G60C2,9.81450585255722,10,18,5000
+aft_censored,aft_exact,2.851820446511844,0.601793840815075,5.176389117823335,-1.5951393540800305,5,12,G60C2,9.592308298982502,10,18,5000

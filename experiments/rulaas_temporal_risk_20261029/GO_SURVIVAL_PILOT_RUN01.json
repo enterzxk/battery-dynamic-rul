@@ -1,0 +1,33 @@
+{
+  "status": "APPROVED",
+  "request_id": "RULAAS_SURVIVAL_PILOT_20261030_RUN01",
+  "owner": "01a17810-6ae6-7cf2-9729-5bfcaa8df5f4",
+  "issued_utc": "2026-10-30T00:53:10.060437+00:00",
+  "actual_model": "gpt-6.1-terra",
+  "model_preference_source": "User explicitly chose Terra.",
+  "allow_fits": true,
+  "allow_C3": false,
+  "allow_C4": false,
+  "seed": 42,
+  "fit_cap": 7,
+  "model_row_cap": 3100,
+  "preprocessor_cap": 0,
+  "source_cell_cap": 0,
+  "output": "experiments/rulaas_temporal_risk_20261029/survival_pilot01",
+  "input_sha256": {
+    "AGENTS.md": "93488b4e887ff13c8ac88687d1be4197a52c22667708dfd960d424007f3b1c19",
+    "experiments/multisource_factorial_20261021/run2_clocksafe/train_features.npz": "9c3794064e64d3b0a437c3fde82e7f8a423aa983d37621d0808088bbcbbf9a15",
+    "experiments/multisource_factorial_20261021/run2_clocksafe/train_targets.jsonl": "981ed8fc56181e8393ad807c39a8dfa19acc7683e531078dab0e030f384ea7aa",
+    "experiments/rulaas_temporal_risk_20261029/audit02/AUDIT.json": "3599057353bce8d8e618cda8a890874dd5a517b86a5b93a0f82e83299f584603",
+    "experiments/rulaas_temporal_risk_20261029/audit02/split.json": "a107dcda6a5c0f853312418c50d2002a80f5566e2723bf3de02f0b06cbfd9ba2",
+    "experiments/rulaas_temporal_risk_20261029/run01/predictions.csv": "adaf9a2a76b4b518228ecbdd0fe6b2b1428e3646a69ed03125bae7b759d945d2",
+    "experiments/rulaas_temporal_risk_20261029/run01/INDEPENDENT_RECOMPUTE_V2.json": "bb78013f2b7b16aac605f44134d1de8aae1aff52d0d5698eca37c8969e8993d6",
+    "experiments/rulaas_temporal_risk_20261029/partial_feedback01/ROOT_DECISION.json": "f9f94cefa25efbb0faa39ef017696535a8767b1ebd1b5e7e66edfb40d74072d8",
+    "experiments/rulaas_temporal_risk_20261029/survival_support01/training_survival_status.csv": "6d8259bd19d49cc16a72fb47a6dc9e1295b5c0e99ff3a97d67a5496df206a966",
+    "experiments/rulaas_temporal_risk_20261029/survival_support01/SUMMARY.json": "2d6c7c144cf8d7f1597331c1ba7b4a5d06928243dda322525d775e8af3fbb6c6",
+    "experiments/rulaas_temporal_risk_20261029/survival_support01/receipt.json": "fca97278049f95f672a6fd0d31b6c67cc35a76b8132f54692c40b6165584dd81",
+    "experiments/rulaas_temporal_risk_20261029/survival_support01/INDEPENDENT_RECOMPUTE.json": "fd5b6ebfe147e568012d7c83d53b2807bb1eda8ebe601647dc177e5115e2093d",
+    "experiments/rulaas_temporal_risk_20261029/survival_pilot.py": "f9adf251d64ec15f464d85ccd3b0f8d84f4820b36f096f220ec4196d8a6e76d7",
+    "experiments/rulaas_temporal_risk_20261029/SURVIVAL_PILOT_PROTOCOL_ZH.md": "bbbbe5dc371ec68e2adf9f62c1ebd2734b757a6b40bea9de36a016c793b6facb"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "status": "NO_GAIN_FIXED_CENSORED_RUL_SCREEN",
+  "paper_ready": false,
+  "criterion": "At least 5% lower median MAE with both Bonferroni 97.5% paired group CI upper bounds below zero, no more pre-event missed episodes than HGB, and 80% coverage no more than 5 points lower.",
+  "prior_F3_risk_NO_GAIN_preserved": true,
+  "prior_partial_feedback_NO_GAIN_preserved": true,
+  "prior_pending_policy_NO_GO_preserved": true,
+  "limits": [
+    "Hypothetical full-source 14-day registry, not a measured online reporting process.",
+    "Exact and censored cases largely come from different operating groups; comparison cannot identify causal effect of censoring alone.",
+    "Same 10 held groups previously inspected; retrospective cutoff; no independent confirmation.",
+    "Event means first recorded threshold crossing, not latent physical EOL.",
+    "AFT is an existing survival baseline and not a novelty claim."
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "status": "POSTHOC_DESCRIPTIVE_DIAGNOSIS",
+  "training_exact_positive_weeks": {
+    "p10": 2.2585213293650797,
+    "median": 8.807710813492063,
+    "p90": 20.45615889550265
+  },
+  "training_censor_lower_bound_weeks": {
+    "p10": 1.1667152777777778,
+    "median": 7.247366898148148,
+    "p90": 26.61504828042328
+  },
+  "exact_training_groups": 14,
+  "censored_training_groups": 13,
+  "overlap_groups": 2,
+  "held_aft_censored_minus_exact_log_location": {
+    "p10": -0.018251851201057434,
+    "median": 0.20839303731918335,
+    "p90": 0.5583585500717163
+  },
+  "held_aft_censored_over_exact_positive_conditional_median": {
+    "p10": 0.9819144748784534,
+    "median": 1.2316976466420644,
+    "p90": 1.7480528335159817
+  },
+  "missed_pre_event_episodes": {
+    "hgb_exact": 0,
+    "aft_exact": 0,
+    "aft_censored": 1
+  },
+  "interpretation": "Censor lower bounds and observed-event times have different group/time composition; extrapolation shift is descriptive and is not a causal explanation.",
+  "new_fits": 0,
+  "new_model_predictions": 0,
+  "C3_payload_reads": 0,
+  "C4_payload_reads": 0
+}

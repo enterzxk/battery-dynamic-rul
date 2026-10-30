@@ -605,6 +605,10 @@ def main():
     chosen.difference_update(['src/experiments/cptransformer_hust_pilot.py','src/experiments/cpmlp_hust_pilot.py','experiments/cpmlp_hust_recipe_adapt_seed42_v2/epoch_metrics.jsonl','experiments/multirate_state_A2_20261022/same_key_compare_v3_run1/summary.json','experiments/multirate_state_A3_rate_20261024/data_efficiency_compare_run1/summary.json','experiments/rul_time_recovery_20261026/p2_clock_run1/receipt.json'])
     BINARY_PREDICTION_ARCHIVES.add('reports/rulaas_public_legacy_pilots_lossless_20261030_v1/archive.bin')
     chosen.update('reports/rulaas_public_legacy_pilots_lossless_20261030_v1/'+n for n in ['archive.bin','validation.json','decode.py','README.md'])
+    # Censored RUL pilot 2026-10-30. No raw data or checkpoints.
+    chosen.update('experiments/rulaas_temporal_risk_20261029/'+n for n in ['SURVIVAL_SUPPORT_PROTOCOL_ZH.md','GO_SURVIVAL_SUPPORT_RUN01.json','survival_support01/SUMMARY.json','survival_support01/INDEPENDENT_RECOMPUTE.json','SURVIVAL_PILOT_PROTOCOL_ZH.md','SURVIVAL_PILOT_RESULTS_ZH.md','GO_SURVIVAL_PILOT_RUN01.json','survival_pilot01/summary.csv','survival_pilot01/paired_contrasts.csv','survival_pilot01/paired_per_cell.csv','survival_pilot01/fit_manifest.json','survival_pilot01/ROOT_DECISION.json','survival_pilot01/INDEPENDENT_RECOMPUTE.json','survival_pilot01/DIAGNOSIS.json','survival_pilot01/public_receipt.json'])
+    BINARY_PREDICTION_ARCHIVES.add('reports/rulaas_public_survival_code_lossless_20261030_v1/archive.bin')
+    chosen.update('reports/rulaas_public_survival_code_lossless_20261030_v1/'+n for n in ['archive.bin','validation.json','decode.py','README.md'])
     contents, files, skipped, binary_blobs = {}, [], [], {}
     mapping = {'README.md': 'docs/GITHUB_README_ZH.md', 'agent.md': 'AGENTS.md'}
     mapping.update({rel: rel for rel in sorted(chosen)})

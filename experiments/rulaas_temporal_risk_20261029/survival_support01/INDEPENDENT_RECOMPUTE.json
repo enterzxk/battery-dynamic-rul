@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "new_fits": 0,
+  "new_inference_rows": 0,
+  "C1C2_source_cells_read": 51,
+  "C3_payload_reads": 0,
+  "C4_payload_reads": 0,
+  "checked_rows": 1593,
+  "status_counts": {
+    "event_zero": 40,
+    "event_exact_positive": 900,
+    "right_censored_positive": 450,
+    "alive_zero_followup": 72,
+    "unknown_no_positive_followup": 131
+  },
+  "source_prefix_and_arrival": "PASS",
+  "prior_4week_labels": "PASS",
+  "held_group_exclusion": "PASS",
+  "no_unknown_imputation": "PASS",
+  "GO_sha256": "18af5e3acb6f468820353a114d5b9697555de48bc4b96d26c78b59895864310f",
+  "input_sha256": {
+    "AGENTS.md": "93488b4e887ff13c8ac88687d1be4197a52c22667708dfd960d424007f3b1c19",
+    "experiments/isu_irregular_rul_seed42_v1/data_adapter.py": "d5effc7ab9aa946feee717e8490983e6ccbebf890492b456091ac49a942763f3",
+    "experiments/multisource_factorial_20261021/run2_clocksafe/train_targets.jsonl": "981ed8fc56181e8393ad807c39a8dfa19acc7683e531078dab0e030f384ea7aa",
+    "experiments/rulaas_temporal_risk_20261029/audit02/split.json": "a107dcda6a5c0f853312418c50d2002a80f5566e2723bf3de02f0b06cbfd9ba2",
+    "experiments/rulaas_temporal_risk_20261029/audit02/receipt.json": "30dfe8bc432214ac9bd453ef21ba216a6022900accacc23bfaa20f1767a886fb",
+    "experiments/rulaas_temporal_risk_20261029/horizon_audit01/training_label_status.csv": "508b8c55bc06e4263c2d1249442d91c8b120decee2a87c975a96e5254b34b44e",
+    "experiments/rulaas_temporal_risk_20261029/survival_support01/training_survival_status.csv": "6d8259bd19d49cc16a72fb47a6dc9e1295b5c0e99ff3a97d67a5496df206a966",
+    "experiments/rulaas_temporal_risk_20261029/survival_support01/SUMMARY.json": "2d6c7c144cf8d7f1597331c1ba7b4a5d06928243dda322525d775e8af3fbb6c6",
+    "experiments/rulaas_temporal_risk_20261029/survival_support01/receipt.json": "fca97278049f95f672a6fd0d31b6c67cc35a76b8132f54692c40b6165584dd81",
+    "experiments/rulaas_temporal_risk_20261029/review_survival_support.py": "eb73a216a5fe3fe76da3490c633fbbeca57654992549ccfb039bd6c98c67cc6e"
+  },
+  "caveat": "Assumed full-source 14-day registry; censoring may be strongly confounded by operating group."
+}

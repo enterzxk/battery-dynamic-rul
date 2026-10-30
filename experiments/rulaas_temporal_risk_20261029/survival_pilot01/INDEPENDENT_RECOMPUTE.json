@@ -1,0 +1,59 @@
+{
+  "status": "PASS",
+  "new_fits": 0,
+  "new_inference_rows": 0,
+  "C1C2_source_cells_read": 0,
+  "C3_payload_reads": 0,
+  "C4_payload_reads": 0,
+  "checked_held_rows": 1608,
+  "common_queries": 536,
+  "held_cells": 18,
+  "held_groups": 10,
+  "shared_zero_head": "PASS",
+  "group_oof_residuals": "PASS",
+  "mixture_distribution_formulas": "PASS",
+  "target_alignment": "PASS",
+  "cell_metrics_and_group_bootstrap": "PASS",
+  "paired": [
+    {
+      "reference": "hgb_exact",
+      "delta": 2.6878816377615897,
+      "CI_low": 0.3697833711093771,
+      "CI_high": 5.087713616971156,
+      "cells_better": 6,
+      "cells_worse": 11
+    },
+    {
+      "reference": "aft_exact",
+      "delta": 2.851820446511844,
+      "CI_low": 0.601793840815075,
+      "CI_high": 5.176389117823335,
+      "cells_better": 5,
+      "cells_worse": 12
+    }
+  ],
+  "missed_pre_event_episodes": {
+    "hgb_exact": 0,
+    "aft_exact": 0,
+    "aft_censored": 1
+  },
+  "GO_sha256": "864169443f4d81208bd78f293a2eb3794350bb4547fc0929d5029a6af2305acc",
+  "input_sha256": {
+    "AGENTS.md": "93488b4e887ff13c8ac88687d1be4197a52c22667708dfd960d424007f3b1c19",
+    "experiments/rulaas_temporal_risk_20261029/audit02/split.json": "a107dcda6a5c0f853312418c50d2002a80f5566e2723bf3de02f0b06cbfd9ba2",
+    "experiments/rulaas_temporal_risk_20261029/survival_support01/training_survival_status.csv": "6d8259bd19d49cc16a72fb47a6dc9e1295b5c0e99ff3a97d67a5496df206a966",
+    "experiments/rulaas_temporal_risk_20261029/survival_support01/INDEPENDENT_RECOMPUTE.json": "fd5b6ebfe147e568012d7c83d53b2807bb1eda8ebe601647dc177e5115e2093d",
+    "experiments/rulaas_temporal_risk_20261029/run01/predictions.csv": "adaf9a2a76b4b518228ecbdd0fe6b2b1428e3646a69ed03125bae7b759d945d2",
+    "experiments/rulaas_temporal_risk_20261029/GO_SURVIVAL_PILOT_RUN01.json": "8f40e4b2a5002b40d78e3956ee2daea29878c4ccdac77dffdb184806c229e137",
+    "experiments/rulaas_temporal_risk_20261029/survival_pilot01/predictions.csv": "f9276bdbeab71b971350075115a39b4953634ac66ba7f8ddda13526198280eff",
+    "experiments/rulaas_temporal_risk_20261029/survival_pilot01/summary.csv": "ac28fa11eca2377e9ae0782b378eaacecee8f74d9c7ccc503af0c973e29f1d4b",
+    "experiments/rulaas_temporal_risk_20261029/survival_pilot01/paired_contrasts.csv": "7fb247fce996e2018f8f34a5724e3333265c0d80c1f10cf96e0c48c5810eca2d",
+    "experiments/rulaas_temporal_risk_20261029/survival_pilot01/hgb_oof.csv": "5d5f679025727ca512db18991bcca27b217fbeb4c49fd97e11bf1b379f053775",
+    "experiments/rulaas_temporal_risk_20261029/survival_pilot01/hgb_residuals.npz": "a4737bdb0c8f2573049e32bc3b17d29d0c045f8893e1284cfb1378be091e1973",
+    "experiments/rulaas_temporal_risk_20261029/survival_pilot01/fit_manifest.json": "f8c862a7c9aad84a55d49721aa67490dd441311ca67fda3a4782473ba755c79e",
+    "experiments/rulaas_temporal_risk_20261029/survival_pilot01/receipt.json": "e275b01a42980df2da40eb3a7a34c95e9b1e66d260719c82aba6d895fefb2b3d",
+    "experiments/rulaas_temporal_risk_20261029/survival_pilot01/ROOT_DECISION.json": "f78335a6cf9c869910728e6d93f11ce45939b4d8aabcd03a3e33859742e67413",
+    "experiments/rulaas_temporal_risk_20261029/review_survival_pilot.py": "5673b930c7ad0e766e5893feacd4e56b3eb66a20a9540c19b991abd8af80b257"
+  },
+  "caveat": "Reused held groups and hypothetical full-source registry; screen does not establish publication readiness."
+}

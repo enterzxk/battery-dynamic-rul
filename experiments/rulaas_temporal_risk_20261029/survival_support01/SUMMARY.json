@@ -1,0 +1,89 @@
+{
+  "status": "SURVIVAL_SUPPORT_AUDITED_NOT_MODEL_GAIN",
+  "cutoff_epoch": 1649324336.2,
+  "hypothetical_label_delay_days": 14,
+  "training_unknown_status_rows": 1593,
+  "status_rows": {
+    "event_zero": 40,
+    "event_exact_positive": 900,
+    "right_censored_positive": 450,
+    "alive_zero_followup": 72,
+    "unknown_no_positive_followup": 131
+  },
+  "status_groups": {
+    "event_zero": 15,
+    "event_exact_positive": 14,
+    "right_censored_positive": 13,
+    "alive_zero_followup": 13,
+    "unknown_no_positive_followup": 13
+  },
+  "status_cells": {
+    "event_zero": 27,
+    "event_exact_positive": 26,
+    "right_censored_positive": 24,
+    "alive_zero_followup": 24,
+    "unknown_no_positive_followup": 24
+  },
+  "censored_group_ids": [
+    "G18",
+    "G24",
+    "G26",
+    "G27",
+    "G29",
+    "G35",
+    "G36",
+    "G37",
+    "G38",
+    "G39",
+    "G40",
+    "G42",
+    "G6"
+  ],
+  "censored_cell_ids": [
+    "G18C1",
+    "G24C2",
+    "G26C1",
+    "G26C2",
+    "G27C1",
+    "G27C2",
+    "G29C1",
+    "G29C2",
+    "G35C1",
+    "G35C2",
+    "G36C1",
+    "G36C2",
+    "G37C1",
+    "G37C2",
+    "G38C1",
+    "G38C2",
+    "G39C1",
+    "G39C2",
+    "G40C1",
+    "G40C2",
+    "G42C1",
+    "G42C2",
+    "G6C1",
+    "G6C2"
+  ],
+  "event_and_censor_overlapping_groups": 2,
+  "censor_bounds_weeks": {
+    "min": 1.1422833994708994,
+    "median": 7.249943783068783,
+    "max": 36.128113425925925
+  },
+  "offline_no_recorded_event_reference_by_status": {},
+  "zero_event_available_by_query": 0,
+  "known_event_at_query": 207,
+  "future_value_mutation_checks": 1593,
+  "new_fits": 0,
+  "model_prediction_rows": 0,
+  "C3_payload_reads": 0,
+  "C4_payload_reads": 0,
+  "limits": [
+    "The reference registry hypothetically receives every recorded RPT after 14 days, including tests a proposed policy may skip; this is not measured feedback.",
+    "Censoring bounds are relative to first recorded threshold event, not latent physical EOL.",
+    "First-event and reference-missing checks read future train-cell records only to validate labels; they do not select train labels.",
+    "Unknown cases receive no invented event or censor label.",
+    "Cutoff was chosen retrospectively; held data have been seen and no independent validation is established."
+  ]
+}

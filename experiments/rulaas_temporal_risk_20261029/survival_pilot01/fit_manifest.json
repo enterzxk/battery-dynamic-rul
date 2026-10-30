@@ -1,0 +1,136 @@
+{
+  "folds": [
+    {
+      "fold": 0,
+      "fit_groups": [
+        "G10",
+        "G12",
+        "G18",
+        "G2",
+        "G20",
+        "G23",
+        "G28",
+        "G3",
+        "G9"
+      ],
+      "oof_groups": [
+        "G13",
+        "G16",
+        "G17",
+        "G24",
+        "G4"
+      ],
+      "fit_rows": 543,
+      "oof_rows": 357
+    },
+    {
+      "fold": 1,
+      "fit_groups": [
+        "G10",
+        "G13",
+        "G16",
+        "G17",
+        "G23",
+        "G24",
+        "G28",
+        "G4",
+        "G9"
+      ],
+      "oof_groups": [
+        "G12",
+        "G18",
+        "G2",
+        "G20",
+        "G3"
+      ],
+      "fit_rows": 534,
+      "oof_rows": 366
+    },
+    {
+      "fold": 2,
+      "fit_groups": [
+        "G12",
+        "G13",
+        "G16",
+        "G17",
+        "G18",
+        "G2",
+        "G20",
+        "G24",
+        "G3",
+        "G4"
+      ],
+      "oof_groups": [
+        "G10",
+        "G23",
+        "G28",
+        "G9"
+      ],
+      "fit_rows": 723,
+      "oof_rows": 177
+    }
+  ],
+  "exact_rows": 900,
+  "censored_rows": 450,
+  "p0_rows": 1462,
+  "exact_groups": [
+    "G10",
+    "G12",
+    "G13",
+    "G16",
+    "G17",
+    "G18",
+    "G2",
+    "G20",
+    "G23",
+    "G24",
+    "G28",
+    "G3",
+    "G4",
+    "G9"
+  ],
+  "censored_groups": [
+    "G18",
+    "G24",
+    "G26",
+    "G27",
+    "G29",
+    "G35",
+    "G36",
+    "G37",
+    "G38",
+    "G39",
+    "G40",
+    "G42",
+    "G6"
+  ],
+  "held_groups": [
+    "G1",
+    "G21",
+    "G25",
+    "G33",
+    "G41",
+    "G43",
+    "G47",
+    "G55",
+    "G60",
+    "G62"
+  ],
+  "seed": 42,
+  "aft_parameters": {
+    "objective": "survival:aft",
+    "eval_metric": "aft-nloglik",
+    "aft_loss_distribution": "normal",
+    "aft_loss_distribution_scale": 1.2,
+    "tree_method": "hist",
+    "learning_rate": 0.05,
+    "max_depth": 4,
+    "reg_lambda": 1.0,
+    "seed": 42,
+    "nthread": 4,
+    "verbosity": 0
+  },
+  "aft_boost_rounds": 150,
+  "cutoff_epoch": 1649324336.2,
+  "held_outcomes_previously_seen": true
+}
