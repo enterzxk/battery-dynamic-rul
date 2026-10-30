@@ -1,0 +1,22 @@
+{
+  "status": "SUCCESS",
+  "predictive_fits_started": 8,
+  "predictive_fits_completed": 8,
+  "preprocessor_components_fitted": 0,
+  "model_prediction_rows": 1262,
+  "internal_validation_outcomes_read_this_run": 1,
+  "confirmation_groups_opened": 0,
+  "C3_payload_reads": 0,
+  "C4_payload_reads": 0,
+  "actual_coordinator_model_recorded": "gpt-6.1-terra",
+  "all_fits_before_internal_validation_outcomes_in_this_run": true,
+  "finished_utc": "2026-10-30T01:28:43.876257+00:00",
+  "elapsed_seconds": 0.6201715469360352,
+  "GO_sha256": "2153f19f0745ba587eb0b072cef4d6b7de179e78fc7999e30224595702b93a31",
+  "training_exact_rows": 112,
+  "validation_queries": 519,
+  "validation_event_cells": 16,
+  "validation_event_groups": 6,
+  "sklearn_version": "1.6.1",
+  "saved_prior_models_reused_without_refit": true
+}

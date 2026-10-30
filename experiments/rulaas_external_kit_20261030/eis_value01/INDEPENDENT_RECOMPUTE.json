@@ -1,0 +1,63 @@
+{
+  "status": "PASS",
+  "common_query_outcomes_and_saved_baselines": "PASS",
+  "causal_eis_feature_join": "PASS",
+  "group_oof_residuals": "PASS",
+  "predictive_distributions_and_cell_metrics": "PASS",
+  "paired_group_bootstrap": "PASS",
+  "saved_eis_model_and_reconstructed_features": "PASS",
+  "recomputed_model_outputs": 519,
+  "checked_stored_rows": 2076,
+  "paired": [
+    {
+      "reference": "hgb_schedule",
+      "delta": 0.4166637818094956,
+      "CI_low": 0.1703627307925157,
+      "CI_high": 0.5785501358972915,
+      "cells_better": 2,
+      "cells_worse": 14
+    },
+    {
+      "reference": "hgb_prior",
+      "delta": 0.46504271459641344,
+      "CI_low": 0.13950751867140557,
+      "CI_high": 0.6245269177379071,
+      "cells_better": 2,
+      "cells_worse": 14
+    },
+    {
+      "reference": "slope",
+      "delta": 5.373596616979708,
+      "CI_low": 1.0603994908909917,
+      "CI_high": 9.039011633353276,
+      "cells_better": 3,
+      "cells_worse": 13
+    }
+  ],
+  "new_fits": 0,
+  "confirmation_groups_opened": 0,
+  "C3_payload_reads": 0,
+  "C4_payload_reads": 0,
+  "GO_sha256": "b87517c616457e64c05ad58ea4f5870476aab1040af5131a845046c46303b9b4",
+  "input_sha256": {
+    "AGENTS.md": "93488b4e887ff13c8ac88687d1be4197a52c22667708dfd960d424007f3b1c19",
+    "experiments/rulaas_external_kit_20261030/TRAIN_SPLIT.json": "659ae78046e734c4729c2e3b741e0cfd6d42aaecdf98a46cfec9e900bc82829c",
+    "experiments/rulaas_external_kit_20261030/development_audit01/development_candidates.csv": "8dd7af27c3568d1e2ae24766f4ce420587c2f75fe68f5f90d0edc463929d4e27",
+    "experiments/rulaas_external_kit_20261030/eis_asof_audit01/query_eis_asof.csv": "6bbec19d4c354a682dc9d37f2c7caf07357da2fc019d71fd9d1a6fe38521fc6e",
+    "experiments/rulaas_external_kit_20261030/eis_asof_audit01/INDEPENDENT_RECOMPUTE.json": "6b1d5cbfcd505082c2bd05efc1ccccb33a89081d95a67c680ef92327106368f2",
+    "experiments/rulaas_external_kit_20261030/anchor_day100_01/predictions.csv": "d6021e5b25d63f3e4b2a85c9a0308acab0bddb231d31ac729ba2c5ebe87b2f1f",
+    "experiments/rulaas_external_kit_20261030/eis_value01/predictions.csv": "683b6998a5e4b266434d3967e7ab05cf0b045c2d1cd44b00c89d125d4321652a",
+    "experiments/rulaas_external_kit_20261030/eis_value01/summary.csv": "adc19c20d843093141972dfcc3ec630a586529160c4970081261e1aac7c910f9",
+    "experiments/rulaas_external_kit_20261030/eis_value01/paired_contrasts.csv": "4b0a74d81dce5be1fae16e26c940d2ca84d03af3fa5028f741aaa26055c32884",
+    "experiments/rulaas_external_kit_20261030/eis_value01/hgb_schedule_oof.csv": "7a478f3b9dd0e2ef3667678c1f6a6b8504f99cf0d5ec6965e362425f8ede50c0",
+    "experiments/rulaas_external_kit_20261030/eis_value01/hgb_eis_oof.csv": "5d88f7049d1d065ae0c3bb75cd3e451d642db7eecb8025bf60b5c79de49b8446",
+    "experiments/rulaas_external_kit_20261030/eis_value01/hgb_schedule_residuals.npz": "db2e74ff5ba3ee20a07793bf0ba3341e2336fe40d5bc79847446fad46e85b946",
+    "experiments/rulaas_external_kit_20261030/eis_value01/hgb_eis_residuals.npz": "3a632883e37a4cf3fd02dc4b51bd1df0aafd97a5699256e7f8d3ede817ebb018",
+    "experiments/rulaas_external_kit_20261030/eis_value01/hgb_eis_final.joblib": "c1a1941712ac76b3dee9968f204f6180e3213cb171aadd3cabbba2b611b61895",
+    "experiments/rulaas_external_kit_20261030/eis_value01/fit_manifest.json": "e6ba6dea405e657fe2d6159cb06357f8045a6f38b94ca87f38851a2e4c105c83",
+    "experiments/rulaas_external_kit_20261030/eis_value01/receipt.json": "4f67b5fe32a2af83f90ba48de3f90ea5e06324ef1169f0b7ed58c023e837b7e5",
+    "experiments/rulaas_external_kit_20261030/eis_value01/ROOT_DECISION.json": "931a6301d66d1405a50f37c0be0bbf760576855cb7589d60f36b1f5f1e4ce6c0",
+    "experiments/rulaas_external_kit_20261030/review_eis_value.py": "8827be20383cf669435b635df8763032d3e0ab82128f787a778f6f3e4fc62632"
+  },
+  "limit": "Repeated development groups, retrospectively chosen cutoff, six event groups, and unobserved actual reporting delay."
+}

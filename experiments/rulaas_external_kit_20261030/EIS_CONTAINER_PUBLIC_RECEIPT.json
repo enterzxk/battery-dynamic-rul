@@ -1,0 +1,15 @@
+{
+  "status": "EIS_CONTAINER_VERIFIED_NO_CELL_PAYLOAD_OPENED",
+  "path": "data/raw/KIT_1969_V2_20261030/containers/cell_eisv2.zip",
+  "bytes": 19894633,
+  "md5": "6eb09ae51c8a9e9b4b02b33e739787ab",
+  "sha256": "bc1c56e05f50a41ed9d9f752f65fc7833b49ad6bc369f67ccfc14288a9815fed",
+  "official_bagit_md5": "PASS",
+  "individual_cell_payloads_extracted_or_parsed": false,
+  "confirmation_groups_opened": 0,
+  "new_fits": 0,
+  "C3_payload_reads": 0,
+  "C4_payload_reads": 0,
+  "GO_sha256": "ecaed191f06e3236cb825fa6cf4a669d0a9a5514d3f2cff8fe2763166e68f4c2",
+  "finished_utc": "2026-10-30T01:24:03.726403+00:00"
+}

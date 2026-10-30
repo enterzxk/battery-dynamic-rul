@@ -1,0 +1,159 @@
+{
+  "folds": [
+    {
+      "fold": 0,
+      "fit_groups": [
+        "P019",
+        "P023",
+        "P030",
+        "P032",
+        "P035",
+        "P036",
+        "P042",
+        "P043",
+        "P044",
+        "P055",
+        "P059",
+        "P070"
+      ],
+      "oof_groups": [
+        "P018",
+        "P020",
+        "P027",
+        "P028",
+        "P040",
+        "P067"
+      ],
+      "fit_rows": 77,
+      "oof_rows": 35
+    },
+    {
+      "fold": 1,
+      "fit_groups": [
+        "P018",
+        "P020",
+        "P027",
+        "P028",
+        "P030",
+        "P032",
+        "P035",
+        "P040",
+        "P042",
+        "P044",
+        "P067",
+        "P070"
+      ],
+      "oof_groups": [
+        "P019",
+        "P023",
+        "P036",
+        "P043",
+        "P055",
+        "P059"
+      ],
+      "fit_rows": 77,
+      "oof_rows": 35
+    },
+    {
+      "fold": 2,
+      "fit_groups": [
+        "P018",
+        "P019",
+        "P020",
+        "P023",
+        "P027",
+        "P028",
+        "P036",
+        "P040",
+        "P043",
+        "P055",
+        "P059",
+        "P067"
+      ],
+      "oof_groups": [
+        "P030",
+        "P032",
+        "P035",
+        "P042",
+        "P044",
+        "P070"
+      ],
+      "fit_rows": 70,
+      "oof_rows": 42
+    }
+  ],
+  "exact_training_rows": 112,
+  "training_event_groups": 18,
+  "validation_queries": 519,
+  "features_base": [
+    "origin_age_weeks",
+    "capacity_baseline_Ah",
+    "capacity_current_Ah",
+    "capacity_ratio",
+    "prior_gap_weeks",
+    "recent_capacity_slope_Ah_per_week",
+    "visible_checkup_count",
+    "age_type",
+    "age_temp",
+    "age_soc",
+    "age_chg_rate",
+    "age_dischg_rate",
+    "age_profile"
+  ],
+  "features_schedule": [
+    "eis_present",
+    "eis_age_weeks",
+    "eis_history_count",
+    "eis_previous_gap_weeks"
+  ],
+  "features_eis": [
+    "eis_z_ref_mOhm",
+    "eis_first_z_ref_mOhm",
+    "eis_z_ratio",
+    "eis_recent_z_slope_mOhm_per_week",
+    "eis_re_0p5",
+    "eis_im_0p5",
+    "eis_re_2p083",
+    "eis_im_2p083",
+    "eis_re_10",
+    "eis_im_10"
+  ],
+  "missing_feature_counts": {
+    "training": {
+      "eis_present": 0,
+      "eis_age_weeks": 0,
+      "eis_history_count": 0,
+      "eis_previous_gap_weeks": 43,
+      "eis_z_ref_mOhm": 0,
+      "eis_first_z_ref_mOhm": 0,
+      "eis_z_ratio": 0,
+      "eis_recent_z_slope_mOhm_per_week": 43,
+      "eis_re_0p5": 1,
+      "eis_im_0p5": 1,
+      "eis_re_2p083": 0,
+      "eis_im_2p083": 0,
+      "eis_re_10": 0,
+      "eis_im_10": 0
+    },
+    "validation": {
+      "eis_present": 0,
+      "eis_age_weeks": 0,
+      "eis_history_count": 0,
+      "eis_previous_gap_weeks": 0,
+      "eis_z_ref_mOhm": 0,
+      "eis_first_z_ref_mOhm": 0,
+      "eis_z_ratio": 0,
+      "eis_recent_z_slope_mOhm_per_week": 0,
+      "eis_re_0p5": 0,
+      "eis_im_0p5": 0,
+      "eis_re_2p083": 0,
+      "eis_im_2p083": 0,
+      "eis_re_10": 0,
+      "eis_im_10": 0
+    }
+  },
+  "cutoff_epoch": 1674233100,
+  "saved_prior_models_reused_without_refit": true,
+  "validation_outcomes_previously_inspected": true,
+  "retrospective_cutoff_choice": true
+}

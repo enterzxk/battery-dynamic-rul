@@ -1,0 +1,106 @@
+{
+  "status": "PASS",
+  "archive_type": "ZIP",
+  "archive_sha256": "dc3d87eeebf367bd1e482e78c811627c5203c510b19d82d8f15c69cd03f1e814",
+  "archive_bytes": 78748,
+  "originals_unchanged_on_server": true,
+  "old_sources_count": 8,
+  "new_sources_count": 6,
+  "old_sources_readback_verified_at_commit": "ed3452bece8d01dfc03d5c2f6d27d3f88044679b",
+  "members": [
+    {
+      "original_path": "experiments/rulaas_station_admission_20261029/run.py",
+      "original_bytes": 19593,
+      "original_sha256": "ec31bac84a6f655eb4b40bf82ff8bdc5df5457acaad702ba4cfede1b52c8646c",
+      "previously_public": true,
+      "prior_immutable_url": "https://github.com/enterzxk/battery-dynamic-rul/blob/ed3452bece8d01dfc03d5c2f6d27d3f88044679b/experiments/rulaas_station_admission_20261029/run.py"
+    },
+    {
+      "original_path": "experiments/rulaas_c3_fleets_20261029/run.py",
+      "original_bytes": 19554,
+      "original_sha256": "5efc8fa7c8336f54d415eb167fc20a52be84616c0e3e56ed5228ed8cf744bff8",
+      "previously_public": true,
+      "prior_immutable_url": "https://github.com/enterzxk/battery-dynamic-rul/blob/ed3452bece8d01dfc03d5c2f6d27d3f88044679b/experiments/rulaas_c3_fleets_20261029/run.py"
+    },
+    {
+      "original_path": "experiments/multisource_factorial_20261021/runner.py",
+      "original_bytes": 27353,
+      "original_sha256": "e2eaf5893fa03f5a4879a0d67e44746b47e1289b59ccc5cd74422826ed6fb87d",
+      "previously_public": true,
+      "prior_immutable_url": "https://github.com/enterzxk/battery-dynamic-rul/blob/ed3452bece8d01dfc03d5c2f6d27d3f88044679b/experiments/multisource_factorial_20261021/runner.py"
+    },
+    {
+      "original_path": "experiments/rulaas_pending_station_20261029/run.py",
+      "original_bytes": 17319,
+      "original_sha256": "287c5e156feade1be864a2e7c1df6beb2b347147b263a36260bbd4619a547d69",
+      "previously_public": true,
+      "prior_immutable_url": "https://github.com/enterzxk/battery-dynamic-rul/blob/ed3452bece8d01dfc03d5c2f6d27d3f88044679b/experiments/rulaas_pending_station_20261029/run.py"
+    },
+    {
+      "original_path": "experiments/rulaas_temporal_risk_20261029/run.py",
+      "original_bytes": 17658,
+      "original_sha256": "2b14df9e5a8edda53eabefb9879db5d0f609e95bfb1cec46d9bb847b16686a35",
+      "previously_public": true,
+      "prior_immutable_url": "https://github.com/enterzxk/battery-dynamic-rul/blob/ed3452bece8d01dfc03d5c2f6d27d3f88044679b/experiments/rulaas_temporal_risk_20261029/run.py"
+    },
+    {
+      "original_path": "experiments/rulaas_value_gate_20261029/value_gate.py",
+      "original_bytes": 18204,
+      "original_sha256": "9d9a06eb3d9a538895fe5a93f6e53c62792e2c55e98cca7fad9118f4daf99fd0",
+      "previously_public": true,
+      "prior_immutable_url": "https://github.com/enterzxk/battery-dynamic-rul/blob/ed3452bece8d01dfc03d5c2f6d27d3f88044679b/experiments/rulaas_value_gate_20261029/value_gate.py"
+    },
+    {
+      "original_path": "experiments/dart_rul_v18/arrival_panel.py",
+      "original_bytes": 15639,
+      "original_sha256": "3a4ea7a543d5304e476d58458951721b6a5bb6ae616889a359e272825ab103d1",
+      "previously_public": true,
+      "prior_immutable_url": "https://github.com/enterzxk/battery-dynamic-rul/blob/ed3452bece8d01dfc03d5c2f6d27d3f88044679b/experiments/dart_rul_v18/arrival_panel.py"
+    },
+    {
+      "original_path": "reports/multisource_20261021_signals/extract_cycling_stream_features.py",
+      "original_bytes": 15524,
+      "original_sha256": "5530912eb4c7f66eaca6ec5f28abb99f1493ee410ec054ec3b90f405d9f94dc4",
+      "previously_public": true,
+      "prior_immutable_url": "https://github.com/enterzxk/battery-dynamic-rul/blob/ed3452bece8d01dfc03d5c2f6d27d3f88044679b/reports/multisource_20261021_signals/extract_cycling_stream_features.py"
+    },
+    {
+      "original_path": "experiments/rulaas_external_kit_20261030/eis_container.py",
+      "original_bytes": 4668,
+      "original_sha256": "0fd44f391ed1132729570bb66a986b57dcace3c11fee225b9d224a8a105bcc4c",
+      "previously_public": false
+    },
+    {
+      "original_path": "experiments/rulaas_external_kit_20261030/eis_schema_sample.py",
+      "original_bytes": 4328,
+      "original_sha256": "6387179fa538474da5848da8d92e4fbe407dbdfe015a78611359fb2514f413b4",
+      "previously_public": false
+    },
+    {
+      "original_path": "experiments/rulaas_external_kit_20261030/eis_asof_audit.py",
+      "original_bytes": 11727,
+      "original_sha256": "99868fc7965378146ddea7db732e3c84134409c951446db656462a8d8dfe9ab0",
+      "previously_public": false
+    },
+    {
+      "original_path": "experiments/rulaas_external_kit_20261030/review_eis_asof.py",
+      "original_bytes": 8916,
+      "original_sha256": "072ccbcad237d4f07b56c72f566b87f4cd566eddf86fbd59c99018fd83708d47",
+      "previously_public": false
+    },
+    {
+      "original_path": "experiments/rulaas_external_kit_20261030/eis_value.py",
+      "original_bytes": 18897,
+      "original_sha256": "432dfeaa11e3af252475e2284448e2224ed92911f34ad158824267d8ece77013",
+      "previously_public": false
+    },
+    {
+      "original_path": "experiments/rulaas_external_kit_20261030/review_eis_value.py",
+      "original_bytes": 13459,
+      "original_sha256": "8827be20383cf669435b635df8763032d3e0ab82128f787a778f6f3e4fc62632",
+      "previously_public": false
+    }
+  ],
+  "contains_raw_battery_data": false,
+  "contains_checkpoints": false
+}

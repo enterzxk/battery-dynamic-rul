@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "source_cells_rechecked": 6,
+  "sampled_source_cells": [
+    "P001_1",
+    "P001_2",
+    "P001_3",
+    "P006_1",
+    "P006_2",
+    "P006_3"
+  ],
+  "source_usable_procedures_recomputed": 174,
+  "sampled_invalid_procedures": 0,
+  "query_keys_recomputed": 1045,
+  "temporal_availability_and_causal_initial_reference": "PASS",
+  "source_frequency_values": "PASS",
+  "missing_queries_retained": "PASS",
+  "new_fits": 0,
+  "new_model_predictions": 0,
+  "confirmation_groups_opened": 0,
+  "C3_payload_reads": 0,
+  "C4_payload_reads": 0,
+  "GO_sha256": "de269e13b6fea4711d14cc2dd316fee220c217dd12b9c9451098c2743f8bea64",
+  "input_sha256": {
+    "AGENTS.md": "93488b4e887ff13c8ac88687d1be4197a52c22667708dfd960d424007f3b1c19",
+    "experiments/rulaas_external_kit_20261030/TRAIN_SPLIT.json": "659ae78046e734c4729c2e3b741e0cfd6d42aaecdf98a46cfec9e900bc82829c",
+    "experiments/rulaas_external_kit_20261030/EIS_CONTAINER_RECEIPT01.json": "21fe0ad693ee6a17660480f2333744d3151bdd4dd3da1a6146b4785afcff4956",
+    "experiments/rulaas_external_kit_20261030/eis_asof_audit01/usable_procedures.csv": "aaeac555b2193de0f7f2fee248e8692a547cecbf69b88d0890e18a2c5bd484d6",
+    "experiments/rulaas_external_kit_20261030/eis_asof_audit01/query_eis_asof.csv": "6bbec19d4c354a682dc9d37f2c7caf07357da2fc019d71fd9d1a6fe38521fc6e",
+    "experiments/rulaas_external_kit_20261030/eis_asof_audit01/SUMMARY.json": "aeb53cbacf827b1dba6f9b9c7ec53d3ef986f893a09a04d23cb0764162ae55e4",
+    "experiments/rulaas_external_kit_20261030/eis_asof_audit01/receipt.json": "0ce98ec11ce6c2869f76106873e8b31f229431f86d6b74bbe23f5e0fb547c05d",
+    "experiments/rulaas_external_kit_20261030/train_day100_01/training_cases_asof.csv": "898c998b55fd340c95c9bc34db92d90a1d96639d1903622475c57d49aa5a0c6d",
+    "experiments/rulaas_external_kit_20261030/anchor_day100_01/predictions.csv": "d6021e5b25d63f3e4b2a85c9a0308acab0bddb231d31ac729ba2c5ebe87b2f1f",
+    "experiments/rulaas_external_kit_20261030/review_eis_asof.py": "072ccbcad237d4f07b56c72f566b87f4cd566eddf86fbd59c99018fd83708d47"
+  },
+  "limit": "Six source cells were checked directly; all 1045 query joins were recomputed. Measurement-end proxy is not a measured report-arrival time."
+}

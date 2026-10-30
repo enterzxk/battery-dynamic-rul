@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "enterzxk/battery-dynamic-rul",
-  "snapshot_utc": "2026-10-30T01:22:34.494316+00:00",
-  "content_sha256": "50b860bbc8abab248cb35643eb336b160e8ea5e7b410c196b1f6451ca91c34a0",
-  "file_count": 1287,
+  "snapshot_utc": "2026-10-30T01:32:43.914995+00:00",
+  "content_sha256": "12de69a15e5f41deef87e85c9734e0a49ea2d9b757e406d94590c6de4e246c38",
+  "file_count": 1298,
   "files": [
     {
       "path": "AGENTS.md",
@@ -14,8 +14,8 @@
     {
       "path": "PROJECT_PROGRESS.md",
       "source_path": "PROJECT_PROGRESS.md",
-      "bytes": 22288,
-      "sha256": "d88f94df2f9472214d901ca4c6fe243e233b150179d6bf3a28e3eae486891933"
+      "bytes": 23809,
+      "sha256": "268cc797323e78dc82bd22ce050116b32326c04a16042e1bf04cc83ca445b17d"
     },
     {
       "path": "README.md",
@@ -38,8 +38,8 @@
     {
       "path": "automation/bin/export_github_context.py",
       "source_path": "automation/bin/export_github_context.py",
-      "bytes": 93460,
-      "sha256": "05d76367bd2546d8d8cd7633a9a5a04fa07dccb503783fa3a2709fb1a096d551"
+      "bytes": 94792,
+      "sha256": "29176898ede46c582b04a0256b4b69d95eaad917eb57739b627d02e09dc4924a"
     },
     {
       "path": "automation/bin/matr_raw_batch2_asset_worker_v1.py",
@@ -176,8 +176,8 @@
     {
       "path": "docs/CHATGPT_CONTEXT_ZH.md",
       "source_path": "docs/CHATGPT_CONTEXT_ZH.md",
-      "bytes": 25799,
-      "sha256": "81947f973db3c705b99a9e453c65217d957533a9c018e99b2db885ba42ee30ea"
+      "bytes": 27335,
+      "sha256": "263b51d6f6486d27b41c5389785dd1649e9d98f8596cbb880eafd65ffb66f8e9"
     },
     {
       "path": "docs/CONTINUATION_POLICY.md",
@@ -982,12 +982,6 @@
       "source_path": "experiments/dart_rul_v18/analyze_saved_v2.py",
       "bytes": 5636,
       "sha256": "205729ce35ca6299866b5a6274baa24bd429d68f78f816ffa45d98af94e28b10"
-    },
-    {
-      "path": "experiments/dart_rul_v18/arrival_panel.py",
-      "source_path": "experiments/dart_rul_v18/arrival_panel.py",
-      "bytes": 15639,
-      "sha256": "3a4ea7a543d5304e476d58458951721b6a5bb6ae616889a359e272825ab103d1"
     },
     {
       "path": "experiments/dart_rul_v18/benchmark.py",
@@ -2376,12 +2370,6 @@
       "sha256": "55cf0d90596956cc0007c45ea23f81c7debe559c05a97556a25e6f930e46df7f"
     },
     {
-      "path": "experiments/multisource_factorial_20261021/runner.py",
-      "source_path": "experiments/multisource_factorial_20261021/runner.py",
-      "bytes": 27353,
-      "sha256": "e2eaf5893fa03f5a4879a0d67e44746b47e1289b59ccc5cd74422826ed6fb87d"
-    },
-    {
       "path": "experiments/multisource_generalization_20261021/C1C2_G_ISOLATION_32FIT_20261021_receipt.json",
       "source_path": "experiments/multisource_generalization_20261021/C1C2_G_ISOLATION_32FIT_20261021_receipt.json",
       "bytes": 723,
@@ -3666,12 +3654,6 @@
       "sha256": "648d3cf53d6fb9d4300996e39017cfb2ce24779ac10f30b9d17ccd5e8adec29a"
     },
     {
-      "path": "experiments/rulaas_c3_fleets_20261029/run.py",
-      "source_path": "experiments/rulaas_c3_fleets_20261029/run.py",
-      "bytes": 19554,
-      "sha256": "5efc8fa7c8336f54d415eb167fc20a52be84616c0e3e56ed5228ed8cf744bff8"
-    },
-    {
       "path": "experiments/rulaas_c3_fleets_20261029/run01/INDEPENDENT_RECOMPUTE.json",
       "source_path": "experiments/rulaas_c3_fleets_20261029/run01/INDEPENDENT_RECOMPUTE.json",
       "bytes": 1926,
@@ -3768,6 +3750,30 @@
       "sha256": "61acd690d49e1d5863889eb91a76d8db42becbfab80adbbe2b81179e2cecb2af"
     },
     {
+      "path": "experiments/rulaas_external_kit_20261030/EIS_ASOF_PROTOCOL_ZH.md",
+      "source_path": "experiments/rulaas_external_kit_20261030/EIS_ASOF_PROTOCOL_ZH.md",
+      "bytes": 2036,
+      "sha256": "74655e8aae5752b5b16edc6f7cae2310fb84dcb085160872173faa700add6814"
+    },
+    {
+      "path": "experiments/rulaas_external_kit_20261030/EIS_CONTAINER_PUBLIC_RECEIPT.json",
+      "source_path": "experiments/rulaas_external_kit_20261030/EIS_CONTAINER_PUBLIC_RECEIPT.json",
+      "bytes": 606,
+      "sha256": "38eb2bf7678ec8595f07d432a20150a4d744f4e17986130fa47d2217ab532c1c"
+    },
+    {
+      "path": "experiments/rulaas_external_kit_20261030/EIS_VALUE_PROTOCOL_ZH.md",
+      "source_path": "experiments/rulaas_external_kit_20261030/EIS_VALUE_PROTOCOL_ZH.md",
+      "bytes": 3886,
+      "sha256": "c94ddd129b184460c03f643da832172d682c01d04aabc325736544a91c538ff2"
+    },
+    {
+      "path": "experiments/rulaas_external_kit_20261030/EIS_VALUE_RESULTS_ZH.md",
+      "source_path": "experiments/rulaas_external_kit_20261030/EIS_VALUE_RESULTS_ZH.md",
+      "bytes": 3665,
+      "sha256": "b80ae1c4336a9fb8303c2889ab287777a2c1354d5772f6d0642ae0f4f9ef2ae6"
+    },
+    {
       "path": "experiments/rulaas_external_kit_20261030/EXTERNAL_PLAN_ZH.md",
       "source_path": "experiments/rulaas_external_kit_20261030/EXTERNAL_PLAN_ZH.md",
       "bytes": 2230,
@@ -3802,6 +3808,12 @@
       "source_path": "experiments/rulaas_external_kit_20261030/GO_CUTOFF_SUPPORT01.json",
       "bytes": 1694,
       "sha256": "a914199b9e29be7b6ee2272ca06e6fcf0b299d2e1aaf96e63ec3b4d300c32341"
+    },
+    {
+      "path": "experiments/rulaas_external_kit_20261030/GO_EIS_VALUE01.json",
+      "source_path": "experiments/rulaas_external_kit_20261030/GO_EIS_VALUE01.json",
+      "bytes": 3032,
+      "sha256": "2153f19f0745ba587eb0b072cef4d6b7de179e78fc7999e30224595702b93a31"
     },
     {
       "path": "experiments/rulaas_external_kit_20261030/IDENTITY_RECEIPT01.json",
@@ -3928,6 +3940,66 @@
       "source_path": "experiments/rulaas_external_kit_20261030/development_audit01/SUMMARY.json",
       "bytes": 1427,
       "sha256": "c94be90811d663de2dc2b471c95ff712ad5a09d924a55bdbe1e516dd08ff53c0"
+    },
+    {
+      "path": "experiments/rulaas_external_kit_20261030/eis_asof_audit01/INDEPENDENT_RECOMPUTE.json",
+      "source_path": "experiments/rulaas_external_kit_20261030/eis_asof_audit01/INDEPENDENT_RECOMPUTE.json",
+      "bytes": 2216,
+      "sha256": "6b1d5cbfcd505082c2bd05efc1ccccb33a89081d95a67c680ef92327106368f2"
+    },
+    {
+      "path": "experiments/rulaas_external_kit_20261030/eis_asof_audit01/SUMMARY.json",
+      "source_path": "experiments/rulaas_external_kit_20261030/eis_asof_audit01/SUMMARY.json",
+      "bytes": 1671,
+      "sha256": "aeb53cbacf827b1dba6f9b9c7ec53d3ef986f893a09a04d23cb0764162ae55e4"
+    },
+    {
+      "path": "experiments/rulaas_external_kit_20261030/eis_value01/DIAGNOSIS.json",
+      "source_path": "experiments/rulaas_external_kit_20261030/eis_value01/DIAGNOSIS.json",
+      "bytes": 785,
+      "sha256": "92cf09094c97a1ed51c39914ce79ec10b01c503ebc18e0793779e2b10a5489ac"
+    },
+    {
+      "path": "experiments/rulaas_external_kit_20261030/eis_value01/INDEPENDENT_RECOMPUTE.json",
+      "source_path": "experiments/rulaas_external_kit_20261030/eis_value01/INDEPENDENT_RECOMPUTE.json",
+      "bytes": 3915,
+      "sha256": "9905cfb79e48e5bd97b4636c9a522c0c7d13c915eb8490fa3d63a1cb962d95dd"
+    },
+    {
+      "path": "experiments/rulaas_external_kit_20261030/eis_value01/ROOT_DECISION.json",
+      "source_path": "experiments/rulaas_external_kit_20261030/eis_value01/ROOT_DECISION.json",
+      "bytes": 952,
+      "sha256": "931a6301d66d1405a50f37c0be0bbf760576855cb7589d60f36b1f5f1e4ce6c0"
+    },
+    {
+      "path": "experiments/rulaas_external_kit_20261030/eis_value01/fit_manifest.json",
+      "source_path": "experiments/rulaas_external_kit_20261030/eis_value01/fit_manifest.json",
+      "bytes": 3093,
+      "sha256": "e6ba6dea405e657fe2d6159cb06357f8045a6f38b94ca87f38851a2e4c105c83"
+    },
+    {
+      "path": "experiments/rulaas_external_kit_20261030/eis_value01/paired_contrasts.csv",
+      "source_path": "experiments/rulaas_external_kit_20261030/eis_value01/paired_contrasts.csv",
+      "bytes": 614,
+      "sha256": "4b0a74d81dce5be1fae16e26c940d2ca84d03af3fa5028f741aaa26055c32884"
+    },
+    {
+      "path": "experiments/rulaas_external_kit_20261030/eis_value01/paired_per_cell.csv",
+      "source_path": "experiments/rulaas_external_kit_20261030/eis_value01/paired_per_cell.csv",
+      "bytes": 4281,
+      "sha256": "b844c103fb533c30fb025ec5659c24936d490fe4779db024df818d166dd66c87"
+    },
+    {
+      "path": "experiments/rulaas_external_kit_20261030/eis_value01/public_receipt.json",
+      "source_path": "experiments/rulaas_external_kit_20261030/eis_value01/public_receipt.json",
+      "bytes": 805,
+      "sha256": "f826ec5debe803fb2e5907b9ffc7c0d03ae66db3f14556c40e6510ee21136659"
+    },
+    {
+      "path": "experiments/rulaas_external_kit_20261030/eis_value01/summary.csv",
+      "source_path": "experiments/rulaas_external_kit_20261030/eis_value01/summary.csv",
+      "bytes": 713,
+      "sha256": "adc19c20d843093141972dfcc3ec630a586529160c4970081261e1aac7c910f9"
     },
     {
       "path": "experiments/rulaas_external_kit_20261030/train_day100_01/INDEPENDENT_RECOMPUTE.json",
@@ -4254,12 +4326,6 @@
       "sha256": "30b486fa0a4757ba3cca2ae66fb6015e2ec6ffb7cd9c0c647c5161a6c7bca959"
     },
     {
-      "path": "experiments/rulaas_pending_station_20261029/run.py",
-      "source_path": "experiments/rulaas_pending_station_20261029/run.py",
-      "bytes": 17319,
-      "sha256": "287c5e156feade1be864a2e7c1df6beb2b347147b263a36260bbd4619a547d69"
-    },
-    {
       "path": "experiments/rulaas_pending_station_20261029/run01/INDEPENDENT_RECOMPUTE.json",
       "source_path": "experiments/rulaas_pending_station_20261029/run01/INDEPENDENT_RECOMPUTE.json",
       "bytes": 1977,
@@ -4384,12 +4450,6 @@
       "source_path": "experiments/rulaas_station_admission_20261029/review_saved_v2.py",
       "bytes": 12001,
       "sha256": "c8834fe487b67260bf5e0d995b0ddcdcdea97e34652c4f623ae820e973ba03ea"
-    },
-    {
-      "path": "experiments/rulaas_station_admission_20261029/run.py",
-      "source_path": "experiments/rulaas_station_admission_20261029/run.py",
-      "bytes": 19593,
-      "sha256": "ec31bac84a6f655eb4b40bf82ff8bdc5df5457acaad702ba4cfede1b52c8646c"
     },
     {
       "path": "experiments/rulaas_station_admission_20261029/run01/INDEPENDENT_RECOMPUTE.json",
@@ -4698,12 +4758,6 @@
       "sha256": "ed62ee8b802e8d0fdb056d5cb55d00853e950d7e8e89db9fad47ebe8e6dc6774"
     },
     {
-      "path": "experiments/rulaas_temporal_risk_20261029/run.py",
-      "source_path": "experiments/rulaas_temporal_risk_20261029/run.py",
-      "bytes": 17658,
-      "sha256": "2b14df9e5a8edda53eabefb9879db5d0f609e95bfb1cec46d9bb847b16686a35"
-    },
-    {
       "path": "experiments/rulaas_temporal_risk_20261029/run01/INDEPENDENT_RECOMPUTE_V2.json",
       "source_path": "experiments/rulaas_temporal_risk_20261029/run01/INDEPENDENT_RECOMPUTE_V2.json",
       "bytes": 3630,
@@ -4900,12 +4954,6 @@
       "source_path": "experiments/rulaas_value_gate_20261029/support_timing_diagnosis.py",
       "bytes": 4151,
       "sha256": "afc9b8ca4eeb71ff3ad529380325da8b502534e0f3d9c6df9e415670634d8b53"
-    },
-    {
-      "path": "experiments/rulaas_value_gate_20261029/value_gate.py",
-      "source_path": "experiments/rulaas_value_gate_20261029/value_gate.py",
-      "bytes": 18204,
-      "sha256": "9d9a06eb3d9a538895fe5a93f6e53c62792e2c55e98cca7fad9118f4daf99fd0"
     },
     {
       "path": "experiments/state/consumed_gos.jsonl",
@@ -6954,12 +7002,6 @@
       "sha256": "6602c0f4b70a77d36177f87822bee279fb461b1fa2bda42acb3f528c5a0376af"
     },
     {
-      "path": "reports/multisource_20261021_signals/extract_cycling_stream_features.py",
-      "source_path": "reports/multisource_20261021_signals/extract_cycling_stream_features.py",
-      "bytes": 15524,
-      "sha256": "5530912eb4c7f66eaca6ec5f28abb99f1493ee410ec054ec3b90f405d9f94dc4"
-    },
-    {
       "path": "reports/multisource_20261021_signals/extract_rpt_signal_features_all188.py",
       "source_path": "reports/multisource_20261021_signals/extract_rpt_signal_features_all188.py",
       "bytes": 12831,
@@ -7390,6 +7432,30 @@
       "source_path": "reports/rulaas_pending_lag_support_20261029_terra/AUDIT.json",
       "bytes": 3065,
       "sha256": "34e5cb5c19655cf4b90a5388debfbc076760a6e56b25ea55b9e60c79a3f9756c"
+    },
+    {
+      "path": "reports/rulaas_public_eis_code_lossless_20261030_v1/README.md",
+      "source_path": "reports/rulaas_public_eis_code_lossless_20261030_v1/README.md",
+      "bytes": 3418,
+      "sha256": "a07b77bd7bba13e368bdac4ea552c22a198396c1cb58f2cff5fdc7bde44eb66d"
+    },
+    {
+      "path": "reports/rulaas_public_eis_code_lossless_20261030_v1/archive.bin",
+      "source_path": "reports/rulaas_public_eis_code_lossless_20261030_v1/archive.bin",
+      "bytes": 78748,
+      "sha256": "dc3d87eeebf367bd1e482e78c811627c5203c510b19d82d8f15c69cd03f1e814"
+    },
+    {
+      "path": "reports/rulaas_public_eis_code_lossless_20261030_v1/decode.py",
+      "source_path": "reports/rulaas_public_eis_code_lossless_20261030_v1/decode.py",
+      "bytes": 1050,
+      "sha256": "d154cfa112bac4095684ea6fba77782dbaec433589270198aa309ed07bc19a77"
+    },
+    {
+      "path": "reports/rulaas_public_eis_code_lossless_20261030_v1/validation.json",
+      "source_path": "reports/rulaas_public_eis_code_lossless_20261030_v1/validation.json",
+      "bytes": 5364,
+      "sha256": "154ed4c28a827bc33c13669a991945534b4fcce9cdef4b8a60e34197ab14ef6a"
     },
     {
       "path": "reports/rulaas_public_kit_code_lossless_20261030_v3/README.md",

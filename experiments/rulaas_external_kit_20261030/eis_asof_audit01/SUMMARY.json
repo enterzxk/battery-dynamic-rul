@@ -1,0 +1,52 @@
+{
+  "status": "EIS_ASOF_SUPPORT_AUDITED_NOT_MODEL_GAIN",
+  "source_doi": "10.35097/1969",
+  "development_groups": 60,
+  "development_cells": 180,
+  "source_uncompressed_bytes": 123710718,
+  "procedure_reason_counts": {
+    "selected_rows_missing_timestamp": 0,
+    "usable": 2929,
+    "invalid_measurement_flag": 4
+  },
+  "usable_eis_procedures": 2929,
+  "usable_eis_cells": 180,
+  "eis_duration_seconds_median": 740.67,
+  "query_roles": {
+    "fit": {
+      "queries": 526,
+      "cells": 135,
+      "groups": 45,
+      "with_prior_eis": 526,
+      "without_prior_eis": 0,
+      "prior_eis_fraction": 1.0,
+      "prior_eis_age_weeks_median": 2.9507918154761668,
+      "with_at_least_two_eis": 401
+    },
+    "internal_validation": {
+      "queries": 519,
+      "cells": 34,
+      "groups": 12,
+      "with_prior_eis": 519,
+      "without_prior_eis": 0,
+      "prior_eis_fraction": 1.0,
+      "prior_eis_age_weeks_median": 2.975767113095317,
+      "with_at_least_two_eis": 519
+    }
+  },
+  "causal_prefix_checks": 1045,
+  "availability_rule": "timestamp_s + full eis_duration_s <= query_epoch",
+  "uses_published_z_ref_init": false,
+  "query_missing_eis_retained": true,
+  "locked_groups_opened": 0,
+  "side_experiment_files_opened": 0,
+  "new_fits": 0,
+  "C3_payload_reads": 0,
+  "C4_payload_reads": 0,
+  "limits": [
+    "Conservative end-of-measurement proxy, not a measured report-arrival timestamp.",
+    "Previous validation group outcomes were inspected; information-value assessment would be exploratory.",
+    "EIS quality is limited; invalid and missing frequencies are recorded, not inferred.",
+    "Interval and resource outcomes are not evaluated here."
+  ]
+}

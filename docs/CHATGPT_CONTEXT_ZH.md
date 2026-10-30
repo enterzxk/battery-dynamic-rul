@@ -1,4 +1,14 @@
-# 2026-10-30 KIT 开发对照：斜率锚定候选未通过（当前）
+# 2026-10-30 KIT 阻抗数值增量开发对照（当前）
+
+目标 ACTIVE，论文门未通过。KIT 16 个外部工况仍封存；C3/C4 读取均为 0。519 个共同查询中 105 个随后观察到记录事件、414 个右删失。当前阻抗配置 `NO_GAIN_FIXED_KIT_EIS_INFORMATION`：相同阻抗检测时间信息下，HGB 中位预测 MAE 为 7.75 周，加入阻抗数值后为 8.17 周；配对差 +0.42 周，三项比较校正后的 98.333% 工况组重抽样区间 [+0.17,+0.58] 周，2/16 电芯改善、14/16 恶化。纯容量斜率参考 2.79 周。
+
+阻抗候选四周 Brier 从 0.1583 升至 0.2212，事件前四周漏报由 1/16 降至 0/16，名义 80% 区间在事件查询中覆盖约 34%；保留这一权衡。查询时序复核 1045 条通过；独立重算 2076 行及 519 条保存模型预测通过。仅有 6 个可观察事件工况；开发结局先前已使用，截止时点回顾性选取。报告送达时间未知；不能认定所有阻抗信息无用，更不能视为独立确认。
+
+[阻抗对照报告](../experiments/rulaas_external_kit_20261030/EIS_VALUE_RESULTS_ZH.md)、[逐电芯](../experiments/rulaas_external_kit_20261030/eis_value01/paired_per_cell.csv)、[独立复核](../experiments/rulaas_external_kit_20261030/eis_value01/INDEPENDENT_RECOMPUTE.json)、[阻抗时序审计](../experiments/rulaas_external_kit_20261030/eis_asof_audit01/INDEPENDENT_RECOMPUTE.json)、[源码及历史文件无损归档](../reports/rulaas_public_eis_code_lossless_20261030_v1/README.md)。
+
+---
+
+# 2026-10-30 KIT 开发对照：斜率锚定候选未通过（已完成）
 
 目标 ACTIVE，论文门未通过。KIT 来源与官方归档及清单校验一致；16 个外部工况仍封存。第 400 天方案在 162 个截止后查询上全为删失，`INSUFFICIENT_KIT_DEVELOPMENT_SUPPORT`；再按训练工况预列支持规则回顾性选择第 100 天，原结论保留。
 

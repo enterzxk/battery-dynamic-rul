@@ -1,0 +1,15 @@
+{
+  "status": "NO_GAIN_FIXED_KIT_EIS_INFORMATION",
+  "paper_ready": false,
+  "criterion": ">=5% lower median MAE than common-schedule HGB, prior HGB and pure slope, all three 98.333% group CI upper bounds below zero, no more risk misses, Brier <= common-schedule HGB +0.02, coverage decrease <=5 points.",
+  "prior_KIT_slope_anchor_NO_GAIN_preserved": true,
+  "prior_ISU_censored_AFT_NO_GAIN_preserved": true,
+  "limits": [
+    "KIT development groups and outcomes were previously inspected; not independent confirmation.",
+    "Cutoff was chosen retrospectively from training-side support.",
+    "MAE and interval coverage include only later-observed events, not all censored queries.",
+    "Brier uses only mature horizons, which may be informatively censored.",
+    "EIS completion time is a conservative measurement proxy, not an observed reporting delay.",
+    "Shared schedule comparison does not estimate the cost savings of skipping EIS."
+  ]
+}

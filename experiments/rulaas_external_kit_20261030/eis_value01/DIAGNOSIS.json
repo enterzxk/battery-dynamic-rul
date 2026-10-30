@@ -1,0 +1,25 @@
+{
+  "status": "POSTHOC_EIS_INFORMATION_DIAGNOSIS",
+  "all_queries": 519,
+  "event_observed_queries": 105,
+  "censored_queries": 414,
+  "event_cells": 16,
+  "event_groups": 6,
+  "horizon_labels": {
+    "0": 485,
+    "unknown": 18,
+    "1": 16
+  },
+  "pre_event_misses": {
+    "hgb_schedule": 1,
+    "hgb_eis": 0,
+    "hgb_prior": 1
+  },
+  "information_comparison": "Same query and shared EIS scheduling metadata; EIS numeric values were the extra information.",
+  "interpretation": "Observed worsening is development evidence for this fixed tree configuration, not proof that all EIS features have no value. Event-only MAE excludes censored queries.",
+  "new_fits": 0,
+  "model_prediction_rows": 519,
+  "confirmation_groups_opened": 0,
+  "C3_payload_reads": 0,
+  "C4_payload_reads": 0
+}
